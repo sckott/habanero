@@ -25,7 +25,7 @@ import pydoi
 
 ### License
 
-This code is released under the MIT license; please see [LICENSE][LICENSE] for more details.
+This code is released under the MIT license; please see [LICENSE](LICENSE) for more details.
 
 ### To do
 
