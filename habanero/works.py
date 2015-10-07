@@ -12,8 +12,8 @@ def works(ids = None, query = None, filter = None, offset = None,
 
     Usage
     # A basic example
-    >>> import pydoi
-    >>> pydoi.works(ids = '10.1371/journal.pone.0033693')
+    >>> import habanero
+    >>> habanero.works(ids = '10.1371/journal.pone.0033693')
     '''
 
     url = "http://api.crossref.org/works/"
