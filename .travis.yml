@@ -8,4 +8,4 @@ python:
 install:
   - pip install 'requests>=2.7'
 
-script: nosetests
+script: make test
