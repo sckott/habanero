@@ -12,4 +12,4 @@ install:
 after_success:
   codecov
 
-script: make test
+script: python -m unittest --verbose
