@@ -1,8 +1,6 @@
 import sys
-import requests
-import json
 
-from .response import Response
+from .request import request
 
 class Habanero(object):
     '''
@@ -96,6 +94,8 @@ class Habanero(object):
         :param facet: [Boolean] Include facet results. Default: false
         :param works: [Boolean] If true, works returned as well. Default: false
 
+        :return: Object response class, light wrapper around a dict
+
         Usage
         >>> from habanero import Habanero
         >>> hb = Habanero()
@@ -107,31 +107,6 @@ class Habanero(object):
           query, filter, offset, limit, sample, sort,
           order, facet, works, **kwargs)
         return res
-
-def request(url, path, ids = None, query = None, filter = None,
-        offset = None, limit = None, sample = None, sort = None,
-        order = None, facet = None, works = None, **kwargs):
-
-  url = url + path
-
-  if(ids.__class__.__name__ == 'NoneType'):
-      pass
-  else:
-    if works:
-      url = url + str(ids) + "/works"
-    else:
-      url = url + str(ids)
-
-  url = url.strip("/")
-
-  payload = {'query':query, 'filter':filter, 'offset':offset,
-             'rows':limit, 'sample':sample, 'sort':sort,
-             'order':order, 'facet':facet}
-  payload = dict((k, v) for k, v in payload.iteritems() if v)
-
-  tt = requests.get(url, params = payload, **kwargs)
-  tt_out = Response(result = tt.json())
-  return tt_out
 
 # helpers ----------
 def converter(x):
