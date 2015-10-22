@@ -12,4 +12,7 @@ install:
 script: coverage run -m unittest
 
 after_success:
+  - ls -al
+  - coverage xml
+  - cat coverage.xml
   - codecov
