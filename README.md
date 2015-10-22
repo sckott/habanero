@@ -2,6 +2,7 @@ habanero
 =======
 
 [![Build Status](https://travis-ci.org/sckott/habanero.svg)](https://travis-ci.org/sckott/habanero)
+[![codecov.io](https://codecov.io/github/sckott/habanero/coverage.svg?branch=master)](https://codecov.io/github/sckott/habanero?branch=master)
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to ineract with all from one client. 
 
