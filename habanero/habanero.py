@@ -157,3 +157,87 @@ class Habanero(object):
           sample = sample, sort = sort, order = order, facet = facet,
           works = works, **kwargs)
         return res
+
+    def fundref(self, ids = None, query = None, filter = None, offset = None,
+              limit = None, sample = None, sort = None,
+              order = None, facet = None, works = False, **kwargs):
+        '''
+        Search Crossref fundref
+
+        :param ids: [Array] DOIs (digital object identifier) or other identifiers
+        :param query: [String] A query string
+        :param filter: [Hash] Filter options. See ...
+        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        the limit and offset parameters are ignored.
+        :param sort: [String] Field to sort on, one of score, relevance,
+        updated (date of most recent change to metadata. Currently the same as deposited),
+        deposited (time of most recent deposit), indexed (time of most recent index), or
+        published (publication date). Note: If the API call includes a query, then the sort
+        order will be by the relevance score. If no query is included, then the sort order
+        will be by DOI update date.
+        :param order: [String] Sort order, one of 'asc' or 'desc'
+        :param facet: [Boolean] Include facet results. Default: false
+        :param works: [Boolean] If true, works returned as well. Default: false
+
+        :return: Object response class, light wrapper around a dict
+
+        Usage
+        >>> from habanero import Habanero
+        >>> hb = Habanero()
+        >>> hb.fundref(ids = '10.13039/100000001')
+        >>> hb.fundref(query = "NSF")
+        >>> # get works
+        >>> hb.fundref(ids = '10.13039/100000001', works = True)
+        '''
+        res = request(self.base_url, "/fundref/", ids,
+          query, filter, offset, limit, sample, sort,
+          order, facet, works, **kwargs)
+        return res
+
+    def journals(self, ids = None, query = None, filter = None, offset = None,
+              limit = None, sample = None, sort = None,
+              order = None, facet = None, works = False, **kwargs):
+        '''
+        Search Crossref journals
+
+        :param ids: [Array] DOIs (digital object identifier) or other identifiers
+        :param query: [String] A query string
+        :param filter: [Hash] Filter options. See ...
+        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        the limit and offset parameters are ignored.
+        :param sort: [String] Field to sort on, one of score, relevance,
+        updated (date of most recent change to metadata. Currently the same as deposited),
+        deposited (time of most recent deposit), indexed (time of most recent index), or
+        published (publication date). Note: If the API call includes a query, then the sort
+        order will be by the relevance score. If no query is included, then the sort order
+        will be by DOI update date.
+        :param order: [String] Sort order, one of 'asc' or 'desc'
+        :param facet: [Boolean] Include facet results. Default: false
+        :param works: [Boolean] If true, works returned as well. Default: false
+
+        :return: Object response class, light wrapper around a dict
+
+        Usage
+        >>> from habanero import Habanero
+        >>> hb = Habanero()
+        >>> hb.journals(ids = "2167-8359")
+        >>> hb.journals()
+        >>> hb.journals(ids = "2167-8359", works: TRUE)
+        >>> hb.journals(ids = ['1803-2427', '2326-4225'])
+        >>> hb.journals(query = "ecology")
+        >>> hb.journals(query = "peerj")
+        >>> hb.journals(ids = "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "asc")
+        >>> hb.journals(ids = "2167-8359", query: 'ecology', works: TRUE, sort: 'score', order: "desc")
+        >>> hb.journals(ids = "2167-8359", works: TRUE, filter: {from_pub_date: '2014-03-03'})
+        >>> hb.journals(ids = '1803-2427', works: TRUE)
+        >>> hb.journals(ids = '1803-2427', works: TRUE, sample: 1)
+        >>> hb.journals(limit: 2)
+        '''
+        res = request(self.base_url, "/journals/", ids,
+          query, filter, offset, limit, sample, sort,
+          order, facet, works, **kwargs)
+        return res
