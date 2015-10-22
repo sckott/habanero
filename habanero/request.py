@@ -2,6 +2,7 @@ import requests
 import json
 
 from .response import Response
+from .filterhandler import filter_handler
 
 def request(url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
@@ -19,7 +20,9 @@ def request(url, path, ids = None, query = None, filter = None,
 
   url = url.strip("/")
 
-  payload = {'query':query, 'filter':filter, 'offset':offset,
+  filt = filter_handler(filter)
+
+  payload = {'query':query, 'filter':filt, 'offset':offset,
              'rows':limit, 'sample':sample, 'sort':sort,
              'order':order, 'facet':facet}
   payload = dict((k, v) for k, v in payload.iteritems() if v)

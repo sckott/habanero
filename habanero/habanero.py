@@ -65,6 +65,12 @@ class Habanero(object):
         >>> x.items_per_page()
         >>> x.query()
         >>> x.items()
+        >>>
+        >>> # filters - pass in as a dict
+        >>> ## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+        >>> hb.works(filter = {'has_full_text': True})
+        >>> hb.works(filter = {'has_funder': True, 'has_full_text': True})
+        >>> hb.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
         '''
         res = request(self.base_url, "/works/", ids,
           query, filter, offset, limit, sample, sort,
