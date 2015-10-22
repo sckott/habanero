@@ -1,7 +1,7 @@
 import sys
 
 from .request import request
-import habanero_utils
+from .habanero_utils import sub_str
 
 class Habanero(object):
     '''
@@ -113,4 +113,47 @@ class Habanero(object):
         res = request(self.base_url, "/members/", ids,
           query, filter, offset, limit, sample, sort,
           order, facet, works, **kwargs)
+        return res
+
+    def prefixes(self, ids = None, filter = None, offset = None,
+              limit = None, sample = None, sort = None,
+              order = None, facet = None, works = False, **kwargs):
+
+        '''
+        Search Crossref prefixes
+
+        :param ids: [Array] DOIs (digital object identifier) or other identifiers
+        :param filter: [Hash] Filter options. See ...
+        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        the limit and offset parameters are ignored.
+        :param sort: [String] Field to sort on, one of score, relevance,
+        updated (date of most recent change to metadata. Currently the same as deposited),
+        deposited (time of most recent deposit), indexed (time of most recent index), or
+        published (publication date). Note: If the API call includes a query, then the sort
+        order will be by the relevance score. If no query is included, then the sort order
+        will be by DOI update date.
+        :param order: [String] Sort order, one of 'asc' or 'desc'
+        :param facet: [Boolean] Include facet results. Default: false
+        :param works: [Boolean] If true, works returned as well. Default: false
+
+        :return: Object response class, light wrapper around a dict
+
+        Usage
+        >>> from habanero import Habanero
+        >>> hb = Habanero()
+        >>> hb.prefixes(ids = "10.1016")
+        >>> hb.prefixes(ids = ['10.1016','10.1371','10.1023','10.4176','10.1093'])
+        >>> # get works
+        >>> hb.prefixes(ids = "10.1016", works = True)
+        >>> # Limit number of results
+        >>> hb.prefixes(ids = "10.1016", works = True, limit = 3)
+        >>> # Sort and order
+        >>> hb.prefixes(ids = "10.1016", works = True, sort = "relevance", order = "asc")
+        '''
+        res = request(self.base_url, "/prefixes/", ids,
+          query = None, filter = filter, offset = offset, limit = limit,
+          sample = sample, sort = sort, order = order, facet = facet,
+          works = works, **kwargs)
         return res
