@@ -13,6 +13,16 @@ Other Crossref API clients:
 - Ruby: [serrano](https://github.com/sckott/serrano)
 - R: [rcrossref](https://github.com/ropensci/rcrossref)
 
+`habanero` includes methods matching Crossref API routes:
+
+- `/works`
+- `/members`
+- `/prefixes`
+- `/fundref`
+- `/journals`
+- `/types`
+- `/licenses`
+
 ### Installation
 
 ```

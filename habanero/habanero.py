@@ -10,6 +10,11 @@ class Habanero(object):
     Includes methods matching Crossref API routes:
     - /works
     - /members
+    - /prefixes
+    - /fundref
+    - /journals
+    - /types
+    - /licenses
 
     >>> from habanero import Habanero
     >>>
@@ -241,3 +246,74 @@ class Habanero(object):
           query, filter, offset, limit, sample, sort,
           order, facet, works, **kwargs)
         return res
+
+    def types(self, ids = None, query = None, filter = None, offset = None,
+              limit = None, sample = None, sort = None,
+              order = None, facet = None, works = False, **kwargs):
+        '''
+        Search Crossref types
+
+        :param ids: [Array] Type identifier, e.g., journal
+        :param query: [String] A query string
+        :param filter: [Hash] Filter options. See ...
+        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        the limit and offset parameters are ignored.
+        :param sort: [String] Field to sort on, one of score, relevance,
+        updated (date of most recent change to metadata. Currently the same as deposited),
+        deposited (time of most recent deposit), indexed (time of most recent index), or
+        published (publication date). Note: If the API call includes a query, then the sort
+        order will be by the relevance score. If no query is included, then the sort order
+        will be by DOI update date.
+        :param order: [String] Sort order, one of 'asc' or 'desc'
+        :param facet: [Boolean] Include facet results. Default: false
+        :param works: [Boolean] If true, works returned as well. Default: false
+
+        :return: Object response class, light wrapper around a dict
+
+        Usage
+        >>> from habanero import Habanero
+        >>> hb = Habanero()
+        >>> hb.types()
+        >>> hb.types(ids = "journal")
+        >>> hb.types(ids = "journal", works = True)
+        '''
+        res = request(self.base_url, "/types/", ids,
+            query, filter, offset, limit, sample, sort,
+            order, facet, works, **kwargs)
+        return res
+
+    def licenses(self, query = None, offset = None,
+              limit = None, sample = None, sort = None,
+              order = None, facet = None, **kwargs):
+        '''
+        Search Crossref licenses
+
+        :param query: [String] A query string
+        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        the limit and offset parameters are ignored.
+        :param sort: [String] Field to sort on, one of score, relevance,
+        updated (date of most recent change to metadata. Currently the same as deposited),
+        deposited (time of most recent deposit), indexed (time of most recent index), or
+        published (publication date). Note: If the API call includes a query, then the sort
+        order will be by the relevance score. If no query is included, then the sort order
+        will be by DOI update date.
+        :param order: [String] Sort order, one of 'asc' or 'desc'
+        :param facet: [Boolean] Include facet results. Default: false
+
+        :return: Object response class, light wrapper around a dict
+
+        Usage
+        >>> from habanero import Habanero
+        >>> hb = Habanero()
+        >>> hb.licenses()
+        >>> hb.licenses(query = "creative")
+        '''
+        res = request(self.base_url, "/licenses/", None,
+            query, None, offset, limit, sample, sort,
+            order, facet, None, **kwargs)
+        return res
+
