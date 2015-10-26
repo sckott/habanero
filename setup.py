@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='habanero',
-	version='0.0.2.9300',
+	version='0.0.2.9350',
 	description='Low Level Client for Crossref Search API',
   author='Scott Chamberlain',
   author_email='myrmecocystus@gmail.com',
