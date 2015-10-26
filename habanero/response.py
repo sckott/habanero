@@ -28,3 +28,8 @@ class Response(object):
 
   def items(self):
       return self.result['message']['items']
+
+  def links(self):
+      tmp = [ z.get('link') for z in self.result['message']['items'] ]
+      tmp = [x for x in tmp if x is not None]
+      return tmp

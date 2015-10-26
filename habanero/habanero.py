@@ -72,6 +72,10 @@ class Habanero(object):
         >>> x.query()
         >>> x.items()
         >>>
+        >>> # Get full text links
+        >>> x = hb.works(filter = {'has_full_text': True})
+        >>> x.links()
+        >>>
         >>> # filters - pass in as a dict
         >>> ## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
         >>> hb.works(filter = {'has_full_text': True})
