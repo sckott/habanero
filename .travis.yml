@@ -10,7 +10,7 @@ install:
   - pip install coveralls
 
 script:
-	- coverage run test
+  - nosetests -v --with-coverage --cover-package=habanero
 
 after_success:
-  - coveralls
+  - coveralls --verbose
