@@ -331,3 +331,21 @@ class Habanero(object):
             order, facet, None, **kwargs)
         return res
 
+    def agency(self, ids, **kwargs):
+        '''
+        Determine registration agency for DOIs
+
+        :param ids: [Array] DOIs (digital object identifier) or other identifiers
+
+        :return: Object response class, light wrapper around a dict
+
+        Usage
+        >>> from habanero import Habanero
+        >>> hb = Habanero()
+        >>> x = hb.agency('10.1371/journal.pone.0033693')
+        >>> x = hb.agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+        '''
+        res = request(self.base_url, "/works/", ids,
+            None, None, None, None, None, None,
+            None, None, None, True, **kwargs)
+        return res
