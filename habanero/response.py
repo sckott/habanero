@@ -1,6 +1,8 @@
-class Response(object):
+class Works(object):
   '''
-  Habanero: habanero response class
+  Habanero: response class
+
+  This is the response wrapper for any works data responses
   '''
   def __init__(self, result):
     self.result = result

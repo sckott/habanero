@@ -1,8 +1,8 @@
 import requests
 import json
 
-from .response import Response
 from .filterhandler import filter_handler
+from .habanero_utils import switch_classes
 
 def request(url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
@@ -20,10 +20,13 @@ def request(url, path, ids = None, query = None, filter = None,
   if(ids.__class__.__name__ == 'NoneType'):
     url = url.strip("/")
     tt = requests.get(url, params = payload, **kwargs)
-    coll = Response(result = tt.json())
+    js = tt.json()
+    coll = switch_classes(js, path, works)
   else:
     if(ids.__class__.__name__ == "str"):
       ids = ids.split()
+    if(ids.__class__.__name__ == "int"):
+      ids = [ids]
     coll = []
     for i in range(len(ids)):
       if works:
@@ -35,10 +38,9 @@ def request(url, path, ids = None, query = None, filter = None,
           endpt = url + str(ids[i])
 
       endpt = endpt.strip("/")
-
       tt = requests.get(endpt, params = payload, **kwargs)
-      tt_out = Response(result = tt.json())
-
+      js = tt.json()
+      tt_out = switch_classes(js, path, works)
       coll.append(tt_out)
 
     if len(coll) == 1:

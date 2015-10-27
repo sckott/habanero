@@ -210,7 +210,7 @@ class Habanero(object):
         >>> # get works
         >>> hb.fundref(ids = '10.13039/100000001', works = True)
         '''
-        res = request(self.base_url, "/fundref/", ids,
+        res = request(self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
           order, facet, works, **kwargs)
         return res
@@ -343,9 +343,12 @@ class Habanero(object):
         >>> from habanero import Habanero
         >>> hb = Habanero()
         >>> x = hb.agency('10.1371/journal.pone.0033693')
+        >>> x.agency()
         >>> x = hb.agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+        >>> [ z.agency() for z in x ]
         '''
         res = request(self.base_url, "/works/", ids,
             None, None, None, None, None, None,
             None, None, None, True, **kwargs)
         return res
+
