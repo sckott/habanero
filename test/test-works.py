@@ -7,9 +7,17 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 
 def test_works():
     "Basic test of works"
-    res = hb.works(ids = '10.1371/journal.pone.0033693')
+    res = hb.works(query = "ecology", limit = 2)
     assert 'ok' == res.status()
-    # assert a == res.content
+    assert 'dict' == res.query().__class__.__name__
+    assert 2 == res.items_per_page()
+
+def test_works_filter():
+    "Test of works with filter"
+    res = hb.works(filter = {'has_full_text': True}, limit = 3)
+    assert 'ok' == res.status()
+    assert 'dict' == res.query().__class__.__name__
+    assert 3 == res.items_per_page()
 
 # """Tests for works"""
 # import os

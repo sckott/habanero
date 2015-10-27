@@ -7,9 +7,10 @@ python:
 
 install:
   - pip install 'requests>=2.7'
-  - pip install codecov
+  - pip install coveralls
 
-script: nosetests
+script:
+	- coverage run test
 
 after_success:
-  - codecov
+  - coveralls
