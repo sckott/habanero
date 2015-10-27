@@ -9,7 +9,7 @@ install:
   - pip install 'requests>=2.7'
   - pip install codecov
 
-script: coverage run -m unittest
+script: nosetests
 
 after_success:
   - codecov
