@@ -11,7 +11,7 @@ class Habanero(object):
     - /works
     - /members
     - /prefixes
-    - /fundref
+    - /funders
     - /journals
     - /types
     - /licenses
@@ -177,11 +177,11 @@ class Habanero(object):
           works = works, **kwargs)
         return res
 
-    def fundref(self, ids = None, query = None, filter = None, offset = None,
+    def funders(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
               order = None, facet = None, works = False, **kwargs):
         '''
-        Search Crossref fundref
+        Search Crossref funders
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
@@ -205,10 +205,10 @@ class Habanero(object):
         Usage
         >>> from habanero import Habanero
         >>> hb = Habanero()
-        >>> hb.fundref(ids = '10.13039/100000001')
-        >>> hb.fundref(query = "NSF")
+        >>> hb.funders(ids = '10.13039/100000001')
+        >>> hb.funders(query = "NSF")
         >>> # get works
-        >>> hb.fundref(ids = '10.13039/100000001', works = True)
+        >>> hb.funders(ids = '10.13039/100000001', works = True)
         '''
         res = request(self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,

@@ -18,7 +18,7 @@ Other Crossref API clients:
 - `/works`
 - `/members`
 - `/prefixes`
-- `/fundref`
+- `/funders`
 - `/journals`
 - `/types`
 - `/licenses`
