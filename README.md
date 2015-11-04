@@ -62,6 +62,7 @@ Members route
 hb.members(ids = 98, works = True)
 ```
 
-### License
+###Meta
 
-MIT; see [LICENSE](LICENSE) for details
+* Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+* License: MIT; see [LICENSE](LICENSE) for details
