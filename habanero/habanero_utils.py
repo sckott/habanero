@@ -2,6 +2,7 @@ import re
 
 from .response import Works
 from .noworks import NoWorks
+from .agency import Agency
 
 # helpers ----------
 def converter(x):
@@ -16,8 +17,11 @@ def sub_str(x, n = 3):
   else:
     return str(x[:n]) + '***'
 
-def switch_classes(x, path, works):
-  if works or re.sub("/", "", path) == "works" and re.sub("/", "", path) != "licenses":
-  	return Works(result = x)
+def switch_classes(x, path, works, agency):
+  if agency:
+    return Agency(result = x)
   else:
-  	return NoWorks(result = x)
+    if works or re.sub("/", "", path) == "works" and re.sub("/", "", path) != "licenses":
+    	return Works(result = x)
+    else:
+    	return NoWorks(result = x)

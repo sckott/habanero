@@ -21,7 +21,7 @@ def request(url, path, ids = None, query = None, filter = None,
     url = url.strip("/")
     tt = requests.get(url, params = payload, **kwargs)
     js = tt.json()
-    coll = switch_classes(js, path, works)
+    coll = switch_classes(js, path, works, agency)
   else:
     if(ids.__class__.__name__ == "str"):
       ids = ids.split()
@@ -40,7 +40,7 @@ def request(url, path, ids = None, query = None, filter = None,
       endpt = endpt.strip("/")
       tt = requests.get(endpt, params = payload, **kwargs)
       js = tt.json()
-      tt_out = switch_classes(js, path, works)
+      tt_out = switch_classes(js, path, works, agency)
       coll.append(tt_out)
 
     if len(coll) == 1:

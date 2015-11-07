@@ -74,7 +74,7 @@ class Habanero(object):
         >>>
         >>> # Get full text links
         >>> x = hb.works(filter = {'has_full_text': True})
-        >>> x.links()
+        >>> x
         >>>
         >>> # Parse output to various data pieces
         >>> x = hb.works(filter = {'has_full_text': True})
@@ -351,4 +351,3 @@ class Habanero(object):
             None, None, None, None, None, None,
             None, None, None, True, **kwargs)
         return res
-
