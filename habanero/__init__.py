@@ -41,3 +41,4 @@ Example usage:
 '''
 
 from .habanero import Habanero
+from .filters import filters

@@ -1,11 +1,13 @@
 from setuptools import setup
+from setuptools import find_packages
 
-setup(name='habanero',
-	version='0.0.3.9390',
-	description='Low Level Client for Crossref Search API',
-  author='Scott Chamberlain',
-  author_email='myrmecocystus@gmail.com',
-  url='https://github.com/sckott/habanero',
-  packages=['habanero'],
-  install_requires=['requests>=2.7.0']
+setup(
+	name             = 'habanero',
+	version          = '0.0.3.9399',
+	description      = 'Low Level Client for Crossref Search API',
+  author           = 'Scott Chamberlain',
+  author_email     = 'myrmecocystus@gmail.com',
+  url              = 'https://github.com/sckott/habanero',
+  packages         = find_packages(exclude=['test-*']),
+  install_requires = ['requests>=2.7.0']
 )
