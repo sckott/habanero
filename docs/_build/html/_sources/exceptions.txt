@@ -1,0 +1,6 @@
+.. _exceptions:
+
+Exceptions
+==========
+
+...coming

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Search &mdash; habanero 0.0.4.9000 documentation</title>
+  <title>works &mdash; habanero 0.0.4.9000 documentation</title>
   
 
   
@@ -30,7 +30,8 @@
   
 
   
-    <link rel="top" title="habanero 0.0.4.9000 documentation" href="index.html"/> 
+    <link rel="top" title="habanero 0.0.4.9000 documentation" href="index.html"/>
+        <link rel="prev" title="API Documentation" href="api.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -65,7 +66,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="#" method="get">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -79,11 +80,13 @@
           
             
             
-                <ul>
+                <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="works.html">works</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">works</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#load">Load</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -114,8 +117,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>works</li>
       <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/works.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
   </ul>
@@ -124,23 +131,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <noscript>
-  <div id="fallback" class="admonition warning">
-    <p class="last">
-      Please activate JavaScript to enable the search
-      functionality.
-    </p>
-  </div>
-  </noscript>
+  <div class="section" id="works">
+<span id="id1"></span><h1>works<a class="headerlink" href="#works" title="Permalink to this headline">¶</a></h1>
+<p>Search all works (journal articles, conference proceedings, books, components, etc),
+by one or more DOIs, or a query phrase.</p>
+<div class="section" id="load">
+<h2>Load<a class="headerlink" href="#load" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">habanero</span>
+<span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre># Parse output to various data pieces
+            x = hb.works(filter = {&#39;has_full_text&#39;: True})
 
-  
-  <div id="search-results">
-  
-  </div>
+            ## get doi for each item
+            [ z[&#39;DOI&#39;] for z in x.result[&#39;message&#39;][&#39;items&#39;] ]
+
+            ## get doi and url for each item
+            [ {&quot;doi&quot;: z[&#39;DOI&#39;], &quot;url&quot;: z[&#39;URL&#39;]} for z in x.result[&#39;message&#39;][&#39;items&#39;] ]
+
+            ### print every doi
+            for i in x.result[&#39;message&#39;][&#39;items&#39;]:
+                 print i[&#39;DOI&#39;]
+
+            # filters - pass in as a dict
+            ## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            hb.works(filter = {&#39;has_full_text&#39;: True})
+</pre></div>
+</div>
+</div>
+</div>
+
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="api.html" class="btn btn-neutral" title="API Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -178,7 +213,6 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/searchtools.js"></script>
 
   
 
@@ -194,14 +228,7 @@
           SphinxRtdTheme.StickyNav.enable();
       });
   </script>
-  
-  <script type="text/javascript">
-    jQuery(function() { Search.loadIndex("searchindex.js"); });
-  </script>
-  
-  <script type="text/javascript" id="searchindexloader"></script>
    
-
 
 </body>
 </html>
