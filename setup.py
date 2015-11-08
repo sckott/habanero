@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
 	name             = 'habanero',
-	version          = '0.0.3.9500',
+	version          = '0.0.4.9000',
 	description      = 'Low Level Client for Crossref Search API',
   author           = 'Scott Chamberlain',
   author_email     = 'myrmecocystus@gmail.com',

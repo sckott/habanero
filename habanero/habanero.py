@@ -1,6 +1,7 @@
 import sys
 
 from .request import request
+from .cnrequest import CNRequest
 from .habanero_utils import sub_str
 
 class Habanero(object):
@@ -16,6 +17,9 @@ class Habanero(object):
     - /types
     - /licenses
 
+    Also:
+    - agency
+
     >>> from habanero import Habanero
     >>>
     >>> hb = Habanero()
@@ -24,14 +28,16 @@ class Habanero(object):
     >>> # set an api key
     >>> Habanero(api_key = "123456")
     '''
-    def __init__(self, base_url = "http://api.crossref.org", api_key = None):
-        # super(ids, self).__init__()
+    def __init__(self, base_url = "http://api.crossref.org",
+        cn_base_url = "http://dx.doi.org", api_key = None):
+
         self.base_url = base_url
+        self.cn_base_url = cn_base_url
         self.api_key = api_key
 
     def __repr__(self):
-      return """< %s \nURL: %s\nKEY: %s\n>""" % (type(self).__name__,
-        self.base_url, sub_str(self.api_key))
+      return """< %s \nURL: %s\nKEY: %s\nCN-URL: %s\n>""" % (type(self).__name__,
+        self.base_url, sub_str(self.api_key), self.cn_base_url)
 
     def works(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
@@ -351,3 +357,62 @@ class Habanero(object):
             None, None, None, None, None, None,
             None, None, None, True, **kwargs)
         return res
+
+    def content_negotiation(self, ids = None, format = "bibtex", style = 'apa',
+        locale = "en-US", **kwargs):
+        '''
+        Get citations in various formats from CrossRef
+
+        :param idsc [String] DOIs
+        :param format: [String] Format
+        :param style: [String] Style
+        :param locale: [String] Locale
+
+        :return: Hash
+
+        Usage
+        >>> from habanero import Habanero
+        >>> hb = Habanero()
+        >>> hb.content_negotiation(ids = '10.1126/science.169.3946.635')
+        >>>
+        >>> # get citeproc-json
+        >>> hb.content_negotiation(ids = '10.1126/science.169.3946.635', format = "citeproc-json")
+        >>>
+        >>> # some other formats
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "rdf-xml")
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "crossref-xml")
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text")
+        >>>
+        >>> # return an R bibentry type
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "bibentry")
+        >>> hb.content_negotiation(ids = "10.6084/m9.figshare.97218", format = "bibentry")
+        >>>
+        >>> # return an apa style citation
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "apa")
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "harvard3")
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "elsevier-harvard")
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "ecoscience")
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "heredity")
+        >>> hb.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "oikos")
+        >>>
+        >>> # Using DataCite DOIs
+        >>> ## some formats don't work
+        >>> # hb.content_negotiation(ids = "10.5284/1011335", format = "text")
+        >>> # hb.content_negotiation(ids = "10.5284/1011335", format = "crossref-xml")
+        >>> # hb.content_negotiation(ids = "10.5284/1011335", format = "crossref-tdm")
+        >>>
+        >>> ## But most do work
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "datacite-xml")
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "rdf-xml")
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "turtle")
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "citeproc-json")
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "ris")
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "bibtex")
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "bibentry")
+        >>> hb.content_negotiation(ids = "10.5284/1011335", format = "bibtex")
+        >>>
+        >>> # many DOIs
+        >>> dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', '10.5167/UZH-38402','10.5167/UZH-41217']
+        >>> x = hb.content_negotiation(ids = dois)
+        '''
+        return CNRequest(self.cn_base_url, ids, format, style, locale, **kwargs)

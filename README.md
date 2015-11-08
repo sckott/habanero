@@ -23,6 +23,11 @@ Other Crossref API clients:
 - `/types`
 - `/licenses`
 
+Other methods
+
+- `agency` - get DOI minting agency
+- `content_negotiation` - get citations in a variety of formats
+
 ### Installation
 
 ```
