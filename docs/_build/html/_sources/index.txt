@@ -40,7 +40,7 @@ Initialize a client
 
     hb = Habanero()
 
-Or each module individually as needed.
+Usage
 
 ::
 
@@ -68,8 +68,6 @@ Contents
    :maxdepth: 2
 
    api
-   works
-   exceptions
    Changelog
 
 License
