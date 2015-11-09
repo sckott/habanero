@@ -2,7 +2,7 @@ import sys
 
 from .request import request
 from .cnrequest import CNRequest
-from .habanero_utils import sub_str
+from .habanero_utils import sub_str,check_kwargs
 
 class Habanero(object):
     '''
@@ -191,6 +191,7 @@ class Habanero(object):
             # Sort and order
             hb.prefixes(ids = "10.1016", works = True, sort = "relevance", order = "asc")
         '''
+        check_kwargs(["query"], kwargs)
         res = request(self.base_url, "/prefixes/", ids,
           query = None, filter = filter, offset = offset, limit = limit,
           sample = sample, sort = sort, order = order, facet = facet,
@@ -358,6 +359,7 @@ class Habanero(object):
             hb.licenses()
             hb.licenses(query = "creative")
         '''
+        check_kwargs(["ids", "filter", "works"], kwargs)
         res = request(self.base_url, "/licenses/", None,
             query, None, offset, limit, sample, sort,
             order, facet, None, **kwargs)
@@ -382,6 +384,8 @@ class Habanero(object):
             x = hb.agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
             [ z.agency() for z in x ]
         '''
+        check_kwargs(["query", "filter", "offset", "limit", "sample", "sort",
+            "order", "facet", "works"], kwargs)
         res = request(self.base_url, "/works/", ids,
             None, None, None, None, None, None,
             None, None, None, True, **kwargs)

@@ -1,5 +1,7 @@
 """Tests for Habanero.prefixes"""
 import os
+from nose.tools import *
+
 from habanero import Habanero
 hb = Habanero()
 
@@ -16,9 +18,10 @@ def test_prefixes_works():
     "prefixes - param: works"
     res = hb.prefixes(ids = "10.1016", works=True, sample = 2)
     assert 'ok' == res.status()
-    assert 'instancemethod' == res.result.__class__.__name__
+    assert 'dict' == res.result.__class__.__name__
+    assert 0 == res.query()['start-index']
 
+@raises(Exception)
 def test_prefixes_filter():
     "prefixes - param: filter"
-    res = hb.prefixes(filter = {'has_full_text': True})
-    assert 'failed' == res.status()
+    hb.prefixes(filter = {'has_full_text': True})

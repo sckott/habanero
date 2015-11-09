@@ -1,5 +1,7 @@
 """Tests for Habanero.members"""
 import os
+from nose.tools import *
+
 from habanero import Habanero
 hb = Habanero()
 
@@ -26,7 +28,7 @@ def test_members_sample():
     assert 'dict' == res.result.__class__.__name__
     assert 'dict' == res.message().__class__.__name__
 
+@raises(Exception)
 def test_members_filter():
     "members - param: filter"
-    res = hb.members(filter = {'has_full_text': True})
-    assert 'failed' == res.status()
+    hb.members(filter = {'has_full_text': True})
