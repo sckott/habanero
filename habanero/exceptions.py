@@ -5,19 +5,20 @@ class Error(Exception):
 class RequestError(Error):
     """
     Exception raised for request errors.
+
+    This error occurrs when a request sent to the Crossref API
+    results in an error. We give back:
+
+    - HTTP status code
+    - Error message
     """
 
     @property
     def status_code(self):
-        """
-        The HTTP status code of the response that precipitated the error or
-        ``'N/A'`` if not applicable.
-        """
         return self.args[0]
 
     @property
     def error(self):
-        """ A string error message. """
         return self.args[1]
 
     def __str__(self):

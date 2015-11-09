@@ -3,4 +3,6 @@
 Exceptions
 ==========
 
-...coming
+.. py:module:: habanero
+
+.. autoclass:: RequestError

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Exceptions &mdash; habanero 0.0.4.9000 documentation</title>
+  <title>Exceptions &mdash; habanero 0.0.6 documentation</title>
   
 
   
@@ -30,8 +30,9 @@
   
 
   
-    <link rel="top" title="habanero 0.0.4.9000 documentation" href="index.html"/>
-        <link rel="prev" title="works" href="works.html"/> 
+    <link rel="top" title="habanero 0.0.6 documentation" href="index.html"/>
+        <link rel="next" title="Changelog" href="Changelog.html"/>
+        <link rel="prev" title="API Documentation" href="api.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -59,7 +60,7 @@
             
             
               <div class="version">
-                0.0.4.9000
+                0.0.6
               </div>
             
           
@@ -82,8 +83,8 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="works.html">works</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="">Exceptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
 
             
@@ -130,7 +131,18 @@
             
   <div class="section" id="exceptions">
 <span id="id1"></span><h1>Exceptions<a class="headerlink" href="#exceptions" title="Permalink to this headline">¶</a></h1>
-<p>...coming</p>
+<span class="target" id="module-habanero"></span><dl class="class">
+<dt id="habanero.RequestError">
+<em class="property">class </em><code class="descclassname">habanero.</code><code class="descname">RequestError</code><a class="reference internal" href="_modules/habanero/exceptions.html#RequestError"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.RequestError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Exception raised for request errors.</p>
+<p>This error occurrs when a request sent to the Crossref API
+results in an error. We give back:</p>
+<ul class="simple">
+<li>HTTP status code</li>
+<li>Error message</li>
+</ul>
+</dd></dl>
+
 </div>
 
 
@@ -140,8 +152,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="Changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="works.html" class="btn btn-neutral" title="works" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="api.html" class="btn btn-neutral" title="API Documentation" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -172,7 +186,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.0.4.9000',
+            VERSION:'0.0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

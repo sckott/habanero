@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.habanero &mdash; habanero 0.0.4.9000 documentation</title>
+  <title>habanero.habanero &mdash; habanero 0.0.6 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.0.4.9000 documentation" href="../../index.html"/>
+    <link rel="top" title="habanero 0.0.6 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.0.4.9000
+                0.0.6
               </div>
             
           
@@ -82,6 +82,7 @@
             
                 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../api.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Changelog.html">Changelog</a></li>
 </ul>
 
@@ -132,7 +133,7 @@
 
 <span class="kn">from</span> <span class="nn">.request</span> <span class="kn">import</span> <span class="n">request</span>
 <span class="kn">from</span> <span class="nn">.cnrequest</span> <span class="kn">import</span> <span class="n">CNRequest</span>
-<span class="kn">from</span> <span class="nn">.habanero_utils</span> <span class="kn">import</span> <span class="n">sub_str</span>
+<span class="kn">from</span> <span class="nn">.habanero_utils</span> <span class="kn">import</span> <span class="n">sub_str</span><span class="p">,</span><span class="n">check_kwargs</span>
 
 <div class="viewcode-block" id="Habanero"><a class="viewcode-back" href="../../api.html#habanero.Habanero">[docs]</a><span class="k">class</span> <span class="nc">Habanero</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
@@ -321,6 +322,7 @@
 <span class="sd">            # Sort and order</span>
 <span class="sd">            hb.prefixes(ids = &quot;10.1016&quot;, works = True, sort = &quot;relevance&quot;, order = &quot;asc&quot;)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;query&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="n">limit</span><span class="p">,</span>
           <span class="n">sample</span> <span class="o">=</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="n">sort</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="n">facet</span><span class="p">,</span>
@@ -488,6 +490,7 @@
 <span class="sd">            hb.licenses()</span>
 <span class="sd">            hb.licenses(query = &quot;creative&quot;)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;ids&quot;</span><span class="p">,</span> <span class="s">&quot;filter&quot;</span><span class="p">,</span> <span class="s">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/licenses/&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -512,6 +515,8 @@
 <span class="sd">            x = hb.agency(ids = [&#39;10.1007/12080.1874-1746&#39;,&#39;10.1007/10452.1573-5125&#39;, &#39;10.1111/(issn)1442-9993&#39;])</span>
 <span class="sd">            [ z.agency() for z in x ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;query&quot;</span><span class="p">,</span> <span class="s">&quot;filter&quot;</span><span class="p">,</span> <span class="s">&quot;offset&quot;</span><span class="p">,</span> <span class="s">&quot;limit&quot;</span><span class="p">,</span> <span class="s">&quot;sample&quot;</span><span class="p">,</span> <span class="s">&quot;sort&quot;</span><span class="p">,</span>
+            <span class="s">&quot;order&quot;</span><span class="p">,</span> <span class="s">&quot;facet&quot;</span><span class="p">,</span> <span class="s">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -611,7 +616,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.0.4.9000',
+            VERSION:'0.0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

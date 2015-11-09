@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Python Crossref Client &mdash; habanero 0.0.4.9000 documentation</title>
+  <title>Python Crossref Client &mdash; habanero 0.0.6 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.0.4.9000 documentation" href="#"/>
+    <link rel="top" title="habanero 0.0.6 documentation" href="#"/>
         <link rel="next" title="API Documentation" href="api.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.0.4.9000
+                0.0.6
               </div>
             
           
@@ -82,6 +82,7 @@
             
                 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
 
@@ -156,21 +157,21 @@
 </pre></div>
 </div>
 <p>Usage</p>
-<div class="highlight-python"><div class="highlight"><pre># Query Crossref works
-x = hb.works(query = &quot;ecology&quot;)
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># Query Crossref works</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;ecology&quot;</span><span class="p">)</span>
 
-# The output is in the `results` object
-x.results
+<span class="c"># The output is in the `results` object</span>
+<span class="n">x</span><span class="o">.</span><span class="n">results</span>
 
-# A variety of functions help you drill down into result
-x.status()
-x.message_type()
-      x.message_version()
-      x.message()
-      x.total_results()
-      x.items_per_page()
-      x.query()
-      x.items()
+<span class="c"># A variety of functions help you drill down into result</span>
+<span class="n">x</span><span class="o">.</span><span class="n">status</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">message_type</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">message_version</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">message</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">total_results</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">items_per_page</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">query</span><span class="p">()</span>
+<span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -179,8 +180,9 @@ x.message_type()
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id2">0.0.7 (2015-11-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id2">0.0.6 (2015-11-09)</a></li>
 </ul>
 </li>
 </ul>
@@ -239,7 +241,7 @@ x.message_type()
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.0.4.9000',
+            VERSION:'0.0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

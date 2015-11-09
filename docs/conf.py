@@ -61,7 +61,7 @@ author = u'Scott Chamberlain'
 # built documents.
 #
 # The short X.Y version.
-version = '0.0.4.9000'
+version = '0.0.6'
 # The full version, including alpha/beta/rc tags.
 release = version
 

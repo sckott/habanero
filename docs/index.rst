@@ -53,12 +53,12 @@ Usage
     # A variety of functions help you drill down into result
     x.status()
     x.message_type()
-	  x.message_version()
-	  x.message()
-	  x.total_results()
-	  x.items_per_page()
-	  x.query()
-	  x.items()
+    x.message_version()
+    x.message()
+    x.total_results()
+    x.items_per_page()
+    x.query()
+    x.items()
 
 
 Contents
@@ -68,6 +68,7 @@ Contents
    :maxdepth: 2
 
    api
+   exceptions
    Changelog
 
 License

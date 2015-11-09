@@ -42,3 +42,4 @@ Example usage:
 
 from .habanero import Habanero
 from .filters import filters
+from .exceptions import *
