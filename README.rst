@@ -37,13 +37,19 @@ Other methods
 Installation
 ============
 
-.. code-block:: console
-
-	sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero
-
-OR
+Stable version
 
 .. code-block:: console
+
+	pip install habanero
+
+Dev version
+
+.. code-block:: console
+
+		sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero
+
+		# OR
 
 		git clone git@github.com:sckott/habanero.git
 		cd habanero
