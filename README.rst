@@ -1,14 +1,7 @@
 habanero
 ========
 
-.. image:: https://travis-ci.org/sckott/habanero.svg
-	 :target: https://travis-ci.org/sckott/habanero
-
-.. image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
-	 :target: https://coveralls.io/github/sckott/habanero?branch=master
-
-.. image:: https://readthedocs.org/projects/habanero/badge/?version=latest
-   :target: http://habanero.rtfd.org/
+|pypi| |docs| |travis| |coverage|
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to ineract with all from one client.
 
@@ -86,3 +79,16 @@ Meta
 
 * Please note that this project is released with a `Contributor Code of Conduct <CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
 * License: MIT; see `LICENSE file <LICENSE>`__
+
+.. |pypi| image:: https://img.shields.io/pypi/v/habanero.svg
+   :target: https://pypi.python.org/pypi/habanero
+
+.. |docs| image:: https://readthedocs.org/projects/habanero/badge/?version=latest
+   :target: http://habanero.rtfd.org/
+
+.. |travis| image:: https://travis-ci.org/sckott/habanero.svg
+	 :target: https://travis-ci.org/sckott/habanero
+
+.. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
+	 :target: https://coveralls.io/github/sckott/habanero?branch=master
+
