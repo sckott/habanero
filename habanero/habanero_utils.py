@@ -27,7 +27,7 @@ def switch_classes(x, path, works, agency):
     	return NoWorks(result = x)
 
 def check_kwargs(keys, kwargs):
-  for x in xrange(len(keys)):
+  for x in range(len(keys)):
     if keys[x] in kwargs.keys():
       mssg = "The %s parameter is not allowed with this method" % keys[x]
       raise Exception(mssg)

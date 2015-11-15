@@ -17,7 +17,7 @@ def request(url, path, ids = None, query = None, filter = None,
   payload = {'query':query, 'filter':filt, 'offset':offset,
              'rows':limit, 'sample':sample, 'sort':sort,
              'order':order, 'facet':facet}
-  payload = dict((k, v) for k, v in payload.iteritems() if v)
+  payload = dict((k, v) for k, v in payload.items() if v)
 
   if(ids.__class__.__name__ == 'NoneType'):
     url = url.strip("/")

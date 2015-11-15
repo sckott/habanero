@@ -5,7 +5,7 @@ def filter_handler(x = None):
     return None
   else:
     # lowercase bools
-    for k, v in x.iteritems():
+    for k, v in x.items():
       if v.__class__ == bool:
         x[k] = str(v).lower()
 
@@ -23,7 +23,7 @@ def filter_handler(x = None):
     newnn = [ re.sub("_", "-", z) for z in nn ]
     newnnd = dict(zip(x.keys(), newnn))
     x = rename_keys(x, newnnd)
-    x = ','.join(['{}:{}'.format(k,v) for k,v in x.iteritems()])
+    x = ','.join(['{}:{}'.format(k,v) for k,v in x.items()])
     return x
 
 others = ['license_url','license_version','license_delay',
