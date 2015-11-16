@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.habanero &mdash; habanero 0.0.6 documentation</title>
+  <title>habanero.crossref.crossref &mdash; habanero 0.0.6 documentation</title>
   
 
   
@@ -24,17 +24,17 @@
 
   
   
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   
 
   
 
   
-    <link rel="top" title="habanero 0.0.6 documentation" href="../../index.html"/>
-        <link rel="up" title="Module code" href="../index.html"/> 
+    <link rel="top" title="habanero 0.0.6 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/> 
 
   
-  <script src="../../_static/js/modernizr.min.js"></script>
+  <script src="../../../_static/js/modernizr.min.js"></script>
 
 </head>
 
@@ -49,7 +49,7 @@
           
 
           
-            <a href="../../index.html" class="icon icon-home"> habanero
+            <a href="../../../index.html" class="icon icon-home"> habanero
           
 
           
@@ -66,7 +66,7 @@
 
           
 <div role="search">
-  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
@@ -81,12 +81,12 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../api.html">Crossref Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../counts.html">Citation counts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../cn.html">Content negotiation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../exceptions.html">Exceptions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../Changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">Crossref Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../filters.html">Crossref Search Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../counts.html">Citation counts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cn.html">Content negotiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../exceptions.html">Exceptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Changelog.html">Changelog</a></li>
 </ul>
 
             
@@ -100,7 +100,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../index.html">habanero</a>
+        <a href="../../../index.html">habanero</a>
       </nav>
 
 
@@ -115,11 +115,11 @@
 
 <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../../index.html">Docs</a> &raquo;</li>
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
       
-          <li><a href="../index.html">Module code</a> &raquo;</li>
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
       
-    <li>habanero.habanero</li>
+    <li>habanero.crossref.crossref</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -131,60 +131,56 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Source code for habanero.habanero</h1><div class="highlight"><pre>
+  <h1>Source code for habanero.crossref.crossref</h1><div class="highlight"><pre>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">from</span> <span class="nn">xml.dom</span> <span class="kn">import</span> <span class="n">minidom</span>
+<span class="kn">from</span> <span class="nn">..request</span> <span class="kn">import</span> <span class="n">request</span>
+<span class="kn">from</span> <span class="nn">..habanero_utils</span> <span class="kn">import</span> <span class="n">sub_str</span><span class="p">,</span><span class="n">check_kwargs</span>
+<span class="kn">from</span> <span class="nn">..cross_cite</span> <span class="kn">import</span> <span class="n">ccite</span>
+<span class="kn">from</span> <span class="nn">.filters</span> <span class="kn">import</span> <span class="n">filter_names</span><span class="p">,</span> <span class="n">filter_details</span>
 
-<span class="kn">from</span> <span class="nn">.request</span> <span class="kn">import</span> <span class="n">request</span>
-<span class="kn">from</span> <span class="nn">.cnrequest</span> <span class="kn">import</span> <span class="n">CNRequest</span>
-<span class="kn">from</span> <span class="nn">.habanero_utils</span> <span class="kn">import</span> <span class="n">sub_str</span><span class="p">,</span><span class="n">check_kwargs</span>
-<span class="kn">from</span> <span class="nn">.cross_cite</span> <span class="kn">import</span> <span class="n">ccite</span>
-
-<div class="viewcode-block" id="Habanero"><a class="viewcode-back" href="../../api.html#habanero.Habanero">[docs]</a><span class="k">class</span> <span class="nc">Habanero</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="Crossref"><a class="viewcode-back" href="../../../api.html#habanero.Crossref">[docs]</a><span class="k">class</span> <span class="nc">Crossref</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    Habanero: Main habanero class</span>
+<span class="sd">    Crossref: Class for Crossref search API methods</span>
 
 <span class="sd">    Includes methods matching Crossref API routes:</span>
 
-<span class="sd">    * /works - :func:`~habanero.Habanero.works`</span>
-<span class="sd">    * /members - :func:`~habanero.Habanero.members`</span>
-<span class="sd">    * /prefixes - :func:`~habanero.Habanero.prefixes`</span>
-<span class="sd">    * /funders - :func:`~habanero.Habanero.funders`</span>
-<span class="sd">    * /journals - :func:`~habanero.Habanero.journals`</span>
-<span class="sd">    * /types - :func:`~habanero.Habanero.types`</span>
-<span class="sd">    * /licenses - :func:`~habanero.Habanero.licenses`</span>
+<span class="sd">    * /works - :func:`~habanero.Crossref.works`</span>
+<span class="sd">    * /members - :func:`~habanero.Crossref.members`</span>
+<span class="sd">    * /prefixes - :func:`~habanero.Crossref.prefixes`</span>
+<span class="sd">    * /funders - :func:`~habanero.Crossref.funders`</span>
+<span class="sd">    * /journals - :func:`~habanero.Crossref.journals`</span>
+<span class="sd">    * /types - :func:`~habanero.Crossref.types`</span>
+<span class="sd">    * /licenses - :func:`~habanero.Crossref.licenses`</span>
 
 <span class="sd">    Also:</span>
 
-<span class="sd">    * registration_agency - :func:`~habanero.Habanero.registration_agency`</span>
-<span class="sd">    * content negotiation - :func:`~habanero.Habanero.content_negotiation`</span>
-<span class="sd">    * citation_count - :func:`~habanero.Habanero.citation_count`</span>
-<span class="sd">    * random_dois - :func:`~habanero.Habanero.random_dois`</span>
-<span class="sd">    * crosscite - :func:`~habanero.Habanero.crosscite`</span>
+<span class="sd">    * registration_agency - :func:`~habanero.Crossref.registration_agency`</span>
+<span class="sd">    * content negotiation - :func:`~habanero.Crossref.content_negotiation`</span>
+<span class="sd">    * citation_count - :func:`~habanero.Crossref.citation_count`</span>
+<span class="sd">    * random_dois - :func:`~habanero.Crossref.random_dois`</span>
+<span class="sd">    * crosscite - :func:`~habanero.Crossref.crosscite`</span>
 
 <span class="sd">    Doing setup::</span>
 
-<span class="sd">        from habanero import Habanero</span>
-<span class="sd">        hb = Habanero()</span>
+<span class="sd">        from habanero import Crossref</span>
+<span class="sd">        cr = Crossref()</span>
 <span class="sd">        # set a different base url</span>
-<span class="sd">        Habanero(base_url = &quot;http://some.other.url&quot;)</span>
+<span class="sd">        Crossref(base_url = &quot;http://some.other.url&quot;)</span>
 <span class="sd">        # set an api key</span>
-<span class="sd">        Habanero(api_key = &quot;123456&quot;)</span>
+<span class="sd">        Crossref(api_key = &quot;123456&quot;)</span>
 
 <span class="sd">    &#39;&#39;&#39;</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base_url</span> <span class="o">=</span> <span class="s">&quot;http://api.crossref.org&quot;</span><span class="p">,</span>
-        <span class="n">cn_base_url</span> <span class="o">=</span> <span class="s">&quot;http://dx.doi.org&quot;</span><span class="p">,</span> <span class="n">api_key</span> <span class="o">=</span> <span class="bp">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base_url</span> <span class="o">=</span> <span class="s">&quot;http://api.crossref.org&quot;</span><span class="p">,</span> <span class="n">api_key</span> <span class="o">=</span> <span class="bp">None</span><span class="p">):</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span> <span class="o">=</span> <span class="n">base_url</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">cn_base_url</span> <span class="o">=</span> <span class="n">cn_base_url</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="n">api_key</span>
 
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-      <span class="k">return</span> <span class="s">&quot;&quot;&quot;&lt; </span><span class="si">%s</span><span class="s"> </span><span class="se">\n</span><span class="s">URL: </span><span class="si">%s</span><span class="se">\n</span><span class="s">KEY: </span><span class="si">%s</span><span class="se">\n</span><span class="s">CN-URL: </span><span class="si">%s</span><span class="se">\n</span><span class="s">&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="n">sub_str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_key</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">cn_base_url</span><span class="p">)</span>
+      <span class="k">return</span> <span class="s">&quot;&quot;&quot;&lt; </span><span class="si">%s</span><span class="s"> </span><span class="se">\n</span><span class="s">URL: </span><span class="si">%s</span><span class="se">\n</span><span class="s">KEY: </span><span class="si">%s</span><span class="se">\n</span><span class="s">&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="n">sub_str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_key</span><span class="p">))</span>
 
-<div class="viewcode-block" id="Habanero.works"><a class="viewcode-back" href="../../api.html#habanero.Habanero.works">[docs]</a>    <span class="k">def</span> <span class="nf">works</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.works"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.works">[docs]</a>    <span class="k">def</span> <span class="nf">works</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -212,11 +208,11 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.works()</span>
-<span class="sd">            hb.works(ids = &#39;10.1371/journal.pone.0033693&#39;)</span>
-<span class="sd">            x = hb.works(query = &quot;ecology&quot;)</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.works()</span>
+<span class="sd">            cr.works(ids = &#39;10.1371/journal.pone.0033693&#39;)</span>
+<span class="sd">            x = cr.works(query = &quot;ecology&quot;)</span>
 <span class="sd">            x.status()</span>
 <span class="sd">            x.message_type()</span>
 <span class="sd">            x.message_version()</span>
@@ -227,11 +223,11 @@
 <span class="sd">            x.items()</span>
 
 <span class="sd">            # Get full text links</span>
-<span class="sd">            x = hb.works(filter = {&#39;has_full_text&#39;: True})</span>
+<span class="sd">            x = cr.works(filter = {&#39;has_full_text&#39;: True})</span>
 <span class="sd">            x</span>
 
 <span class="sd">            # Parse output to various data pieces</span>
-<span class="sd">            x = hb.works(filter = {&#39;has_full_text&#39;: True})</span>
+<span class="sd">            x = cr.works(filter = {&#39;has_full_text&#39;: True})</span>
 <span class="sd">            ## get doi for each item</span>
 <span class="sd">            [ z[&#39;DOI&#39;] for z in x.result[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">            ## get doi and url for each item</span>
@@ -242,16 +238,16 @@
 
 <span class="sd">            # filters - pass in as a dict</span>
 <span class="sd">            ## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
-<span class="sd">            hb.works(filter = {&#39;has_full_text&#39;: True})</span>
-<span class="sd">            hb.works(filter = {&#39;has_funder&#39;: True, &#39;has_full_text&#39;: True})</span>
-<span class="sd">            hb.works(filter = {&#39;award_number&#39;: &#39;CBET-0756451&#39;, &#39;award_funder&#39;: &#39;10.13039/100000001&#39;})</span>
+<span class="sd">            cr.works(filter = {&#39;has_full_text&#39;: True})</span>
+<span class="sd">            cr.works(filter = {&#39;has_funder&#39;: True, &#39;has_full_text&#39;: True})</span>
+<span class="sd">            cr.works(filter = {&#39;award_number&#39;: &#39;CBET-0756451&#39;, &#39;award_funder&#39;: &#39;10.13039/100000001&#39;})</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.members"><a class="viewcode-back" href="../../api.html#habanero.Habanero.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -280,21 +276,20 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.members(ids = 98)</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.members(ids = 98)</span>
 <span class="sd">            # get works</span>
-<span class="sd">            hb.members(ids = 98, works = True)</span>
+<span class="sd">            cr.members(ids = 98, works = True)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.prefixes"><a class="viewcode-back" href="../../api.html#habanero.Habanero.prefixes">[docs]</a>    <span class="k">def</span> <span class="nf">prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.prefixes"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.prefixes">[docs]</a>    <span class="k">def</span> <span class="nf">prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref prefixes</span>
 
@@ -320,16 +315,16 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.prefixes(ids = &quot;10.1016&quot;)</span>
-<span class="sd">            hb.prefixes(ids = [&#39;10.1016&#39;,&#39;10.1371&#39;,&#39;10.1023&#39;,&#39;10.4176&#39;,&#39;10.1093&#39;])</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;)</span>
+<span class="sd">            cr.prefixes(ids = [&#39;10.1016&#39;,&#39;10.1371&#39;,&#39;10.1023&#39;,&#39;10.4176&#39;,&#39;10.1093&#39;])</span>
 <span class="sd">            # get works</span>
-<span class="sd">            hb.prefixes(ids = &quot;10.1016&quot;, works = True)</span>
+<span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;, works = True)</span>
 <span class="sd">            # Limit number of results</span>
-<span class="sd">            hb.prefixes(ids = &quot;10.1016&quot;, works = True, limit = 3)</span>
+<span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;, works = True, limit = 3)</span>
 <span class="sd">            # Sort and order</span>
-<span class="sd">            hb.prefixes(ids = &quot;10.1016&quot;, works = True, sort = &quot;relevance&quot;, order = &quot;asc&quot;)</span>
+<span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;, works = True, sort = &quot;relevance&quot;, order = &quot;asc&quot;)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;query&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
@@ -338,7 +333,7 @@
           <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.funders"><a class="viewcode-back" href="../../api.html#habanero.Habanero.funders">[docs]</a>    <span class="k">def</span> <span class="nf">funders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.funders"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.funders">[docs]</a>    <span class="k">def</span> <span class="nf">funders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -367,19 +362,19 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.funders(ids = &#39;10.13039/100000001&#39;)</span>
-<span class="sd">            hb.funders(query = &quot;NSF&quot;)</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.funders(ids = &#39;10.13039/100000001&#39;)</span>
+<span class="sd">            cr.funders(query = &quot;NSF&quot;)</span>
 <span class="sd">            # get works</span>
-<span class="sd">            hb.funders(ids = &#39;10.13039/100000001&#39;, works = True)</span>
+<span class="sd">            cr.funders(ids = &#39;10.13039/100000001&#39;, works = True)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.journals"><a class="viewcode-back" href="../../api.html#habanero.Habanero.journals">[docs]</a>    <span class="k">def</span> <span class="nf">journals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.journals"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.journals">[docs]</a>    <span class="k">def</span> <span class="nf">journals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -408,27 +403,27 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.journals(ids = &quot;2167-8359&quot;)</span>
-<span class="sd">            hb.journals()</span>
-<span class="sd">            hb.journals(ids = &quot;2167-8359&quot;, works = True)</span>
-<span class="sd">            hb.journals(ids = [&#39;1803-2427&#39;, &#39;2326-4225&#39;])</span>
-<span class="sd">            hb.journals(query = &quot;ecology&quot;)</span>
-<span class="sd">            hb.journals(query = &quot;peerj&quot;)</span>
-<span class="sd">            hb.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;asc&quot;)</span>
-<span class="sd">            hb.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;desc&quot;)</span>
-<span class="sd">            hb.journals(ids = &quot;2167-8359&quot;, works = True, filter = {&#39;from_pub_date&#39;: &#39;2014-03-03&#39;})</span>
-<span class="sd">            hb.journals(ids = &#39;1803-2427&#39;, works = True)</span>
-<span class="sd">            hb.journals(ids = &#39;1803-2427&#39;, works = True, sample = 1)</span>
-<span class="sd">            hb.journals(limit: 2)</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.journals(ids = &quot;2167-8359&quot;)</span>
+<span class="sd">            cr.journals()</span>
+<span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, works = True)</span>
+<span class="sd">            cr.journals(ids = [&#39;1803-2427&#39;, &#39;2326-4225&#39;])</span>
+<span class="sd">            cr.journals(query = &quot;ecology&quot;)</span>
+<span class="sd">            cr.journals(query = &quot;peerj&quot;)</span>
+<span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;asc&quot;)</span>
+<span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;desc&quot;)</span>
+<span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, works = True, filter = {&#39;from_pub_date&#39;: &#39;2014-03-03&#39;})</span>
+<span class="sd">            cr.journals(ids = &#39;1803-2427&#39;, works = True)</span>
+<span class="sd">            cr.journals(ids = &#39;1803-2427&#39;, works = True, sample = 1)</span>
+<span class="sd">            cr.journals(limit: 2)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.types"><a class="viewcode-back" href="../../api.html#habanero.Habanero.types">[docs]</a>    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.types"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.types">[docs]</a>    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -457,18 +452,18 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.types()</span>
-<span class="sd">            hb.types(ids = &quot;journal&quot;)</span>
-<span class="sd">            hb.types(ids = &quot;journal&quot;, works = True)</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.types()</span>
+<span class="sd">            cr.types(ids = &quot;journal&quot;)</span>
+<span class="sd">            cr.types(ids = &quot;journal&quot;, works = True)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.licenses"><a class="viewcode-back" href="../../api.html#habanero.Habanero.licenses">[docs]</a>    <span class="k">def</span> <span class="nf">licenses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.licenses"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.licenses">[docs]</a>    <span class="k">def</span> <span class="nf">licenses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -494,10 +489,10 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.licenses()</span>
-<span class="sd">            hb.licenses(query = &quot;creative&quot;)</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.licenses()</span>
+<span class="sd">            cr.licenses(query = &quot;creative&quot;)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;ids&quot;</span><span class="p">,</span> <span class="s">&quot;filter&quot;</span><span class="p">,</span> <span class="s">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/licenses/&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
@@ -505,7 +500,7 @@
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.registration_agency"><a class="viewcode-back" href="../../api.html#habanero.Habanero.registration_agency">[docs]</a>    <span class="k">def</span> <span class="nf">registration_agency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Crossref.registration_agency"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.registration_agency">[docs]</a>    <span class="k">def</span> <span class="nf">registration_agency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Determine registration agency for DOIs</span>
 
@@ -517,10 +512,10 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.registration_agency(&#39;10.1371/journal.pone.0033693&#39;)</span>
-<span class="sd">            hb.registration_agency(ids = [&#39;10.1007/12080.1874-1746&#39;,&#39;10.1007/10452.1573-5125&#39;, &#39;10.1111/(issn)1442-9993&#39;])</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.registration_agency(&#39;10.1371/journal.pone.0033693&#39;)</span>
+<span class="sd">            cr.registration_agency(ids = [&#39;10.1007/12080.1874-1746&#39;,&#39;10.1007/10452.1573-5125&#39;, &#39;10.1111/(issn)1442-9993&#39;])</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;query&quot;</span><span class="p">,</span> <span class="s">&quot;filter&quot;</span><span class="p">,</span> <span class="s">&quot;offset&quot;</span><span class="p">,</span> <span class="s">&quot;limit&quot;</span><span class="p">,</span> <span class="s">&quot;sample&quot;</span><span class="p">,</span> <span class="s">&quot;sort&quot;</span><span class="p">,</span>
             <span class="s">&quot;order&quot;</span><span class="p">,</span> <span class="s">&quot;facet&quot;</span><span class="p">,</span> <span class="s">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
@@ -534,7 +529,7 @@
             <span class="n">k</span> <span class="o">=</span> <span class="n">res</span>
         <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;agency&#39;</span><span class="p">][</span><span class="s">&#39;label&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">k</span> <span class="p">]</span>
 </div>
-<div class="viewcode-block" id="Habanero.random_dois"><a class="viewcode-back" href="../../api.html#habanero.Habanero.random_dois">[docs]</a>    <span class="k">def</span> <span class="nf">random_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Crossref.random_dois"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.random_dois">[docs]</a>    <span class="k">def</span> <span class="nf">random_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Get a random set of DOIs</span>
 
@@ -546,109 +541,19 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.random_dois(1)</span>
-<span class="sd">            hb.random_dois(10)</span>
-<span class="sd">            hb.random_dois(50)</span>
-<span class="sd">            hb.random_dois(100)</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.random_dois(1)</span>
+<span class="sd">            cr.random_dois(10)</span>
+<span class="sd">            cr.random_dois(50)</span>
+<span class="sd">            cr.random_dois(100)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/works/&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 </div>
-<div class="viewcode-block" id="Habanero.content_negotiation"><a class="viewcode-back" href="../../api.html#habanero.Habanero.content_negotiation">[docs]</a>    <span class="k">def</span> <span class="nf">content_negotiation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;bibtex&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s">&#39;apa&#39;</span><span class="p">,</span>
-        <span class="n">locale</span> <span class="o">=</span> <span class="s">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Get citations in various formats from CrossRef</span>
-
-<span class="sd">        :param idsc [String] DOIs</span>
-<span class="sd">        :param format: [String] Format</span>
-<span class="sd">        :param style: [String] Style</span>
-<span class="sd">        :param locale: [String] Locale</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
-
-<span class="sd">        :return: Hash</span>
-
-<span class="sd">        Usage::</span>
-
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.content_negotiation(ids = &#39;10.1126/science.169.3946.635&#39;)</span>
-
-<span class="sd">            # get citeproc-json</span>
-<span class="sd">            hb.content_negotiation(ids = &#39;10.1126/science.169.3946.635&#39;, format = &quot;citeproc-json&quot;)</span>
-
-<span class="sd">            # some other formats</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;rdf-xml&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;crossref-xml&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;)</span>
-
-<span class="sd">            # return an R bibentry type</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;bibentry&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.6084/m9.figshare.97218&quot;, format = &quot;bibentry&quot;)</span>
-
-<span class="sd">            # return an apa style citation</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;apa&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;harvard3&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;elsevier-harvard&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;ecoscience&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;heredity&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;oikos&quot;)</span>
-
-<span class="sd">            # Using DataCite DOIs</span>
-<span class="sd">            ## some formats don&#39;t work</span>
-<span class="sd">            # hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;text&quot;)</span>
-<span class="sd">            # hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;crossref-xml&quot;)</span>
-<span class="sd">            # hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;crossref-tdm&quot;)</span>
-
-<span class="sd">            ## But most do work</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;datacite-xml&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;rdf-xml&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;turtle&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;citeproc-json&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;ris&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;bibtex&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;bibentry&quot;)</span>
-<span class="sd">            hb.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;bibtex&quot;)</span>
-
-<span class="sd">            # many DOIs</span>
-<span class="sd">            dois = [&#39;10.5167/UZH-30455&#39;,&#39;10.5167/UZH-49216&#39;,&#39;10.5167/UZH-503&#39;, &#39;10.5167/UZH-38402&#39;,&#39;10.5167/UZH-41217&#39;]</span>
-<span class="sd">            x = hb.content_negotiation(ids = dois)</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cn_base_url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</div>
-<div class="viewcode-block" id="Habanero.citation_count"><a class="viewcode-back" href="../../api.html#habanero.Habanero.citation_count">[docs]</a>    <span class="k">def</span> <span class="nf">citation_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doi</span><span class="p">,</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;http://www.crossref.org/openurl/&quot;</span><span class="p">,</span>
-        <span class="n">key</span> <span class="o">=</span> <span class="s">&quot;cboettig@ropensci.org&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Get a citation count with a DOI</span>
-
-<span class="sd">        :@param doi: [String] DOI, digital object identifier</span>
-<span class="sd">        :@param url: [String] the API url for the function (should be left to default)</span>
-<span class="sd">        :@param keyc [String] your API key</span>
-
-<span class="sd">        See http://labs.crossref.org/openurl/ for more info on this Crossref API service.</span>
-
-<span class="sd">        Usage::</span>
-
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.citation_count(doi = &quot;10.1371/journal.pone.0042793&quot;)</span>
-<span class="sd">            hb.citation_count(doi = &quot;10.1016/j.fbr.2012.01.001&quot;)</span>
-<span class="sd">            # DOI not found</span>
-<span class="sd">            ## FIXME</span>
-<span class="sd">            hb.citation_count(doi = &quot;10.1016/j.fbr.2012&quot;)</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">args</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;id&quot;</span><span class="p">:</span> <span class="s">&quot;doi:&quot;</span> <span class="o">+</span> <span class="n">doi</span><span class="p">,</span> <span class="s">&quot;pid&quot;</span><span class="p">:</span> <span class="n">key</span><span class="p">,</span> <span class="s">&quot;noredirect&quot;</span><span class="p">:</span> <span class="bp">True</span><span class="p">}</span>
-        <span class="n">args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">args</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span><span class="p">)</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="n">xmldoc</span> <span class="o">=</span> <span class="n">minidom</span><span class="o">.</span><span class="n">parseString</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
-        <span class="n">val</span> <span class="o">=</span> <span class="n">xmldoc</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s">&#39;query&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s">&#39;fl_count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
-        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">val</span><span class="p">))</span>
-</div>
-<div class="viewcode-block" id="Habanero.crosscite"><a class="viewcode-back" href="../../api.html#habanero.Habanero.crosscite">[docs]</a>    <span class="k">def</span> <span class="nf">crosscite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doi</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s">&#39;apa&#39;</span><span class="p">,</span> <span class="n">locale</span> <span class="o">=</span> <span class="s">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Crossref.crosscite"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.crosscite">[docs]</a>    <span class="k">def</span> <span class="nf">crosscite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doi</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s">&#39;apa&#39;</span><span class="p">,</span> <span class="n">locale</span> <span class="o">=</span> <span class="s">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Crosscite - citation formatter</span>
 
@@ -662,10 +567,10 @@
 
 <span class="sd">        Usage::</span>
 
-<span class="sd">            from habanero import Habanero</span>
-<span class="sd">            hb = Habanero()</span>
-<span class="sd">            hb.crosscite(&quot;10.5284/1011335&quot;)</span>
-<span class="sd">            hb.crosscite(doi = [&#39;10.5169/SEALS-52668&#39;,&#39;10.2314/GBV:493109919&#39;,&#39;10.2314/GBV:493105263&#39;,&#39;10.2314/GBV:487077911&#39;,&#39;10.2314/GBV:607866403&#39;])</span>
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.crosscite(&quot;10.5284/1011335&quot;)</span>
+<span class="sd">            cr.crosscite(doi = [&#39;10.5169/SEALS-52668&#39;,&#39;10.2314/GBV:493109919&#39;,&#39;10.2314/GBV:493105263&#39;,&#39;10.2314/GBV:487077911&#39;,&#39;10.2314/GBV:607866403&#39;])</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">if</span> <span class="n">doi</span><span class="o">.</span><span class="n">__class__</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
             <span class="n">doi</span> <span class="o">=</span> <span class="p">[</span><span class="n">doi</span><span class="p">]</span>
@@ -675,7 +580,29 @@
             <span class="n">coll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ccite</span><span class="p">(</span><span class="n">doi</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
           <span class="k">return</span> <span class="n">coll</span>
         <span class="k">else</span><span class="p">:</span>
-          <span class="k">return</span> <span class="n">ccite</span><span class="p">(</span><span class="n">doi</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div></div>
+          <span class="k">return</span> <span class="n">ccite</span><span class="p">(</span><span class="n">doi</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</div>
+    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="Crossref.filter_names"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_names">[docs]</a>    <span class="k">def</span> <span class="nf">filter_names</span><span class="p">():</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Filter names - just the names of each filter</span>
+
+<span class="sd">        Filters are used in the Crossref search API to modify searches</span>
+
+<span class="sd">        :return: dict</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="n">filter_names</span>
+</div>
+    <span class="nd">@staticmethod</span>
+<div class="viewcode-block" id="Crossref.filter_details"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_details">[docs]</a>    <span class="k">def</span> <span class="nf">filter_details</span><span class="p">():</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Filter details - filter names, possible values, and description</span>
+
+<span class="sd">        Filters are used in the Crossref search API to modify searches</span>
+
+<span class="sd">        :return: dict</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="n">filter_details</span></div></div>
 </pre></div>
 
            </div>
@@ -708,22 +635,22 @@
 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../',
+            URL_ROOT:'../../../',
             VERSION:'0.0.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
         };
     </script>
-      <script type="text/javascript" src="../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
 
   
 
   
   
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
   
 
   

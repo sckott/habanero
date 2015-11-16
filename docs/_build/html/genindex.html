@@ -81,7 +81,10 @@
             
             
                 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
@@ -146,17 +149,21 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.citation_count">citation_count() (habanero.Habanero method)</a>
+  <dt><a href="counts.html#habanero.counts.citation_count">citation_count() (habanero.counts method)</a>
   </dt>
 
       
-  <dt><a href="api.html#habanero.Habanero.content_negotiation">content_negotiation() (habanero.Habanero method)</a>
+  <dt><a href="cn.html#habanero.cn.content_negotiation">content_negotiation() (habanero.cn method)</a>
   </dt>
 
   </dl></td>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.crosscite">crosscite() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.crosscite">crosscite() (habanero.Crossref method)</a>
+  </dt>
+
+      
+  <dt><a href="api.html#habanero.Crossref">Crossref (class in habanero)</a>
   </dt>
 
   </dl></td>
@@ -166,7 +173,17 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.funders">funders() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.filter_details">filter_details() (habanero.Crossref static method)</a>, <a href="filters.html#habanero.Crossref.filter_details">[1]</a>
+  </dt>
+
+      
+  <dt><a href="api.html#habanero.Crossref.filter_names">filter_names() (habanero.Crossref static method)</a>, <a href="filters.html#habanero.Crossref.filter_names">[1]</a>
+  </dt>
+
+  </dl></td>
+  <td style="width: 33%" valign="top"><dl>
+      
+  <dt><a href="api.html#habanero.Crossref.funders">funders() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>
@@ -176,13 +193,7 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero">Habanero (class in habanero)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="api.html#module-habanero">habanero (module)</a>, <a href="exceptions.html#module-habanero">[1]</a>
+  <dt><a href="api.html#module-habanero">habanero (module)</a>, <a href="cn.html#module-habanero">[1]</a>, <a href="counts.html#module-habanero">[2]</a>, <a href="exceptions.html#module-habanero">[3]</a>, <a href="filters.html#module-habanero">[4]</a>
   </dt>
 
   </dl></td>
@@ -192,7 +203,7 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.journals">journals() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.journals">journals() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>
@@ -202,7 +213,7 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.licenses">licenses() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.licenses">licenses() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>
@@ -212,7 +223,7 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.members">members() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.members">members() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>
@@ -222,7 +233,7 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.prefixes">prefixes() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.prefixes">prefixes() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>
@@ -232,11 +243,11 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.random_dois">random_dois() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.random_dois">random_dois() (habanero.Crossref method)</a>
   </dt>
 
       
-  <dt><a href="api.html#habanero.Habanero.registration_agency">registration_agency() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.registration_agency">registration_agency() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>
@@ -252,7 +263,7 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.types">types() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.types">types() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>
@@ -262,7 +273,7 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%" valign="top"><dl>
       
-  <dt><a href="api.html#habanero.Habanero.works">works() (habanero.Habanero method)</a>
+  <dt><a href="api.html#habanero.Crossref.works">works() (habanero.Crossref method)</a>
   </dt>
 
   </dl></td>

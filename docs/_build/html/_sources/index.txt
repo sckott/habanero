@@ -68,6 +68,9 @@ Contents
    :maxdepth: 2
 
    api
+   filters
+   counts
+   cn
    exceptions
    Changelog
 

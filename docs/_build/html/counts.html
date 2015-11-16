@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Python Module Index &mdash; habanero 0.0.6 documentation</title>
+  <title>Citation counts &mdash; habanero 0.0.6 documentation</title>
   
 
   
@@ -31,13 +31,8 @@
 
   
     <link rel="top" title="habanero 0.0.6 documentation" href="index.html"/>
- 
-
-    <script type="text/javascript">
-      DOCUMENTATION_OPTIONS.COLLAPSE_INDEX = true;
-    </script>
-
-
+        <link rel="next" title="Exceptions" href="exceptions.html"/>
+        <link rel="prev" title="Crossref Class" href="api.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -86,11 +81,9 @@
           
             
             
-                <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Class</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Citation counts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a></li>
 </ul>
@@ -123,9 +116,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Citation counts</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/counts.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -135,28 +130,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
+  <div class="section" id="module-habanero">
+<span id="citation-counts"></span><span id="counts"></span><h1>Citation counts<a class="headerlink" href="#module-habanero" title="Permalink to this headline">¶</a></h1>
+<dl class="method">
+<dt id="habanero.counts.citation_count">
+<code class="descclassname">counts.</code><code class="descname">citation_count</code><span class="sig-paren">(</span><em>doi</em>, <em>url='http://www.crossref.org/openurl/'</em>, <em>key='cboettig&#64;ropensci.org'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#habanero.counts.citation_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a citation count with a DOI</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">&#64;param doi:</th><td class="field-body">[String] DOI, digital object identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">&#64;param url:</th><td class="field-body">[String] the API url for the function (should be left to default)</td>
+</tr>
+</tbody>
+</table>
+<p>:&#64;param keyc [String] your API key</p>
+<p>See <a class="reference external" href="http://labs.crossref.org/openurl/">http://labs.crossref.org/openurl/</a> for more info on this Crossref API service.</p>
+<p>Usage:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
+<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1371/journal.pone.0042793&quot;</span><span class="p">)</span>
+<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
+<span class="c"># DOI not found</span>
+<span class="c">## FIXME</span>
+<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1016/j.fbr.2012&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
 
-   <h1>Python Module Index</h1>
-
-   <div class="modindex-jumpbox">
-   <a href="#cap-h"><strong>h</strong></a>
-   </div>
-
-   <table class="indextable modindextable" cellspacing="0" cellpadding="2">
-     <tr class="pcap"><td></td><td>&nbsp;</td><td></td></tr>
-     <tr class="cap" id="cap-h"><td></td><td>
-       <strong>h</strong></td><td></td></tr>
-     <tr>
-       <td></td>
-       <td>
-       <a href="filters.html#module-habanero"><code class="xref">habanero</code></a></td><td>
-       <em></em></td></tr>
-   </table>
+</div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="exceptions.html" class="btn btn-neutral float-right" title="Exceptions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="api.html" class="btn btn-neutral" title="Crossref Class" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

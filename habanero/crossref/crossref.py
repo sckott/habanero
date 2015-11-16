@@ -1,41 +1,40 @@
 import sys
 import requests
+from ..request import request
+from ..habanero_utils import sub_str,check_kwargs
+from ..cross_cite import ccite
+from .filters import filter_names, filter_details
 
-from .request import request
-from .cnrequest import CNRequest
-from .habanero_utils import sub_str,check_kwargs
-from .cross_cite import ccite
-
-class Habanero(object):
+class Crossref(object):
     '''
-    Habanero: Main habanero class
+    Crossref: Class for Crossref search API methods
 
     Includes methods matching Crossref API routes:
 
-    * /works - :func:`~habanero.Habanero.works`
-    * /members - :func:`~habanero.Habanero.members`
-    * /prefixes - :func:`~habanero.Habanero.prefixes`
-    * /funders - :func:`~habanero.Habanero.funders`
-    * /journals - :func:`~habanero.Habanero.journals`
-    * /types - :func:`~habanero.Habanero.types`
-    * /licenses - :func:`~habanero.Habanero.licenses`
+    * /works - :func:`~habanero.Crossref.works`
+    * /members - :func:`~habanero.Crossref.members`
+    * /prefixes - :func:`~habanero.Crossref.prefixes`
+    * /funders - :func:`~habanero.Crossref.funders`
+    * /journals - :func:`~habanero.Crossref.journals`
+    * /types - :func:`~habanero.Crossref.types`
+    * /licenses - :func:`~habanero.Crossref.licenses`
 
     Also:
 
-    * registration_agency - :func:`~habanero.Habanero.registration_agency`
-    * content negotiation - :func:`~habanero.Habanero.content_negotiation`
-    * citation_count - :func:`~habanero.Habanero.citation_count`
-    * random_dois - :func:`~habanero.Habanero.random_dois`
-    * crosscite - :func:`~habanero.Habanero.crosscite`
+    * registration_agency - :func:`~habanero.Crossref.registration_agency`
+    * content negotiation - :func:`~habanero.Crossref.content_negotiation`
+    * citation_count - :func:`~habanero.Crossref.citation_count`
+    * random_dois - :func:`~habanero.Crossref.random_dois`
+    * crosscite - :func:`~habanero.Crossref.crosscite`
 
     Doing setup::
 
-        from habanero import Habanero
-        hb = Habanero()
+        from habanero import Crossref
+        cr = Crossref()
         # set a different base url
-        Habanero(base_url = "http://some.other.url")
+        Crossref(base_url = "http://some.other.url")
         # set an api key
-        Habanero(api_key = "123456")
+        Crossref(api_key = "123456")
 
     '''
     def __init__(self, base_url = "http://api.crossref.org", api_key = None):
@@ -75,11 +74,11 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.works()
-            hb.works(ids = '10.1371/journal.pone.0033693')
-            x = hb.works(query = "ecology")
+            from habanero import Crossref
+            cr = Crossref()
+            cr.works()
+            cr.works(ids = '10.1371/journal.pone.0033693')
+            x = cr.works(query = "ecology")
             x.status()
             x.message_type()
             x.message_version()
@@ -90,11 +89,11 @@ class Habanero(object):
             x.items()
 
             # Get full text links
-            x = hb.works(filter = {'has_full_text': True})
+            x = cr.works(filter = {'has_full_text': True})
             x
 
             # Parse output to various data pieces
-            x = hb.works(filter = {'has_full_text': True})
+            x = cr.works(filter = {'has_full_text': True})
             ## get doi for each item
             [ z['DOI'] for z in x.result['message']['items'] ]
             ## get doi and url for each item
@@ -105,9 +104,9 @@ class Habanero(object):
 
             # filters - pass in as a dict
             ## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
-            hb.works(filter = {'has_full_text': True})
-            hb.works(filter = {'has_funder': True, 'has_full_text': True})
-            hb.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
+            cr.works(filter = {'has_full_text': True})
+            cr.works(filter = {'has_funder': True, 'has_full_text': True})
+            cr.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
         '''
         res = request(self.base_url, "/works/", ids,
           query, filter, offset, limit, sample, sort,
@@ -143,11 +142,11 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.members(ids = 98)
+            from habanero import Crossref
+            cr = Crossref()
+            cr.members(ids = 98)
             # get works
-            hb.members(ids = 98, works = True)
+            cr.members(ids = 98, works = True)
         '''
         res = request(self.base_url, "/members/", ids,
           query, filter, offset, limit, sample, sort,
@@ -157,7 +156,6 @@ class Habanero(object):
     def prefixes(self, ids = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
               order = None, facet = None, works = False, **kwargs):
-
         '''
         Search Crossref prefixes
 
@@ -183,16 +181,16 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.prefixes(ids = "10.1016")
-            hb.prefixes(ids = ['10.1016','10.1371','10.1023','10.4176','10.1093'])
+            from habanero import Crossref
+            cr = Crossref()
+            cr.prefixes(ids = "10.1016")
+            cr.prefixes(ids = ['10.1016','10.1371','10.1023','10.4176','10.1093'])
             # get works
-            hb.prefixes(ids = "10.1016", works = True)
+            cr.prefixes(ids = "10.1016", works = True)
             # Limit number of results
-            hb.prefixes(ids = "10.1016", works = True, limit = 3)
+            cr.prefixes(ids = "10.1016", works = True, limit = 3)
             # Sort and order
-            hb.prefixes(ids = "10.1016", works = True, sort = "relevance", order = "asc")
+            cr.prefixes(ids = "10.1016", works = True, sort = "relevance", order = "asc")
         '''
         check_kwargs(["query"], kwargs)
         res = request(self.base_url, "/prefixes/", ids,
@@ -230,12 +228,12 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.funders(ids = '10.13039/100000001')
-            hb.funders(query = "NSF")
+            from habanero import Crossref
+            cr = Crossref()
+            cr.funders(ids = '10.13039/100000001')
+            cr.funders(query = "NSF")
             # get works
-            hb.funders(ids = '10.13039/100000001', works = True)
+            cr.funders(ids = '10.13039/100000001', works = True)
         '''
         res = request(self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
@@ -271,20 +269,20 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.journals(ids = "2167-8359")
-            hb.journals()
-            hb.journals(ids = "2167-8359", works = True)
-            hb.journals(ids = ['1803-2427', '2326-4225'])
-            hb.journals(query = "ecology")
-            hb.journals(query = "peerj")
-            hb.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "asc")
-            hb.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "desc")
-            hb.journals(ids = "2167-8359", works = True, filter = {'from_pub_date': '2014-03-03'})
-            hb.journals(ids = '1803-2427', works = True)
-            hb.journals(ids = '1803-2427', works = True, sample = 1)
-            hb.journals(limit: 2)
+            from habanero import Crossref
+            cr = Crossref()
+            cr.journals(ids = "2167-8359")
+            cr.journals()
+            cr.journals(ids = "2167-8359", works = True)
+            cr.journals(ids = ['1803-2427', '2326-4225'])
+            cr.journals(query = "ecology")
+            cr.journals(query = "peerj")
+            cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "asc")
+            cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "desc")
+            cr.journals(ids = "2167-8359", works = True, filter = {'from_pub_date': '2014-03-03'})
+            cr.journals(ids = '1803-2427', works = True)
+            cr.journals(ids = '1803-2427', works = True, sample = 1)
+            cr.journals(limit: 2)
         '''
         res = request(self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
@@ -320,11 +318,11 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.types()
-            hb.types(ids = "journal")
-            hb.types(ids = "journal", works = True)
+            from habanero import Crossref
+            cr = Crossref()
+            cr.types()
+            cr.types(ids = "journal")
+            cr.types(ids = "journal", works = True)
         '''
         res = request(self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,
@@ -357,10 +355,10 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.licenses()
-            hb.licenses(query = "creative")
+            from habanero import Crossref
+            cr = Crossref()
+            cr.licenses()
+            cr.licenses(query = "creative")
         '''
         check_kwargs(["ids", "filter", "works"], kwargs)
         res = request(self.base_url, "/licenses/", None,
@@ -380,10 +378,10 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.registration_agency('10.1371/journal.pone.0033693')
-            hb.registration_agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
+            from habanero import Crossref
+            cr = Crossref()
+            cr.registration_agency('10.1371/journal.pone.0033693')
+            cr.registration_agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
         '''
         check_kwargs(["query", "filter", "offset", "limit", "sample", "sort",
             "order", "facet", "works"], kwargs)
@@ -409,12 +407,12 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.random_dois(1)
-            hb.random_dois(10)
-            hb.random_dois(50)
-            hb.random_dois(100)
+            from habanero import Crossref
+            cr = Crossref()
+            cr.random_dois(1)
+            cr.random_dois(10)
+            cr.random_dois(50)
+            cr.random_dois(100)
         '''
         res = request(self.base_url, "/works/", None,
             None, None, None, None, sample, None,
@@ -435,10 +433,10 @@ class Habanero(object):
 
         Usage::
 
-            from habanero import Habanero
-            hb = Habanero()
-            hb.crosscite("10.5284/1011335")
-            hb.crosscite(doi = ['10.5169/SEALS-52668','10.2314/GBV:493109919','10.2314/GBV:493105263','10.2314/GBV:487077911','10.2314/GBV:607866403'])
+            from habanero import Crossref
+            cr = Crossref()
+            cr.crosscite("10.5284/1011335")
+            cr.crosscite(doi = ['10.5169/SEALS-52668','10.2314/GBV:493109919','10.2314/GBV:493105263','10.2314/GBV:487077911','10.2314/GBV:607866403'])
         '''
         if doi.__class__ == str:
             doi = [doi]
@@ -449,3 +447,25 @@ class Habanero(object):
           return coll
         else:
           return ccite(doi[0], style, locale, **kwargs)
+
+    @staticmethod
+    def filter_names():
+        '''
+        Filter names - just the names of each filter
+
+        Filters are used in the Crossref search API to modify searches
+
+        :return: dict
+        '''
+        return filter_names
+
+    @staticmethod
+    def filter_details():
+        '''
+        Filter details - filter names, possible values, and description
+
+        Filters are used in the Crossref search API to modify searches
+
+        :return: dict
+        '''
+        return filter_details

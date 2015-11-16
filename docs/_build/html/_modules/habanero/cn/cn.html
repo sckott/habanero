@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>habanero.cn.cn &mdash; habanero 0.0.6 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="habanero 0.0.6 documentation" href="../../../index.html"/>
+        <link rel="up" title="Module code" href="../../index.html"/> 
+
+  
+  <script src="../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../index.html" class="icon icon-home"> habanero
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.6
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">Crossref Search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../filters.html">Crossref Search Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../counts.html">Citation counts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../cn.html">Content negotiation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../exceptions.html">Exceptions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../Changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../index.html">habanero</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../index.html">Module code</a> &raquo;</li>
+      
+    <li>habanero.cn.cn</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for habanero.cn.cn</h1><div class="highlight"><pre>
+<span class="kn">from</span> <span class="nn">..cnrequest</span> <span class="kn">import</span> <span class="n">CNRequest</span>
+<span class="kn">from</span> <span class="nn">.constants</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;bibtex&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s">&#39;apa&#39;</span><span class="p">,</span>
+    <span class="n">locale</span> <span class="o">=</span> <span class="s">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Get citations in various formats from CrossRef</span>
+
+<span class="sd">    :param ids: [str] DOIs</span>
+<span class="sd">    :param format: [str] Format</span>
+<span class="sd">    :param style: [str] Style</span>
+<span class="sd">    :param locale: [str] Locale</span>
+<span class="sd">    :param kwargs: any additional arguments will be passed on to `requests.get`</span>
+
+<span class="sd">    :return: string, which can be parsed to various formats depending on what</span>
+<span class="sd">        format you request (e.g., JSON vs. XML vs. bibtex)</span>
+
+<span class="sd">    Usage::</span>
+
+<span class="sd">        from habanero import cn</span>
+<span class="sd">        cn.content_negotiation(ids = &#39;10.1126/science.169.3946.635&#39;)</span>
+
+<span class="sd">        # get citeproc-json</span>
+<span class="sd">        cn.content_negotiation(ids = &#39;10.1126/science.169.3946.635&#39;, format = &quot;citeproc-json&quot;)</span>
+
+<span class="sd">        # some other formats</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;rdf-xml&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;crossref-xml&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;)</span>
+
+<span class="sd">        # return an R bibentry type</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;bibentry&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.6084/m9.figshare.97218&quot;, format = &quot;bibentry&quot;)</span>
+
+<span class="sd">        # return an apa style citation</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;apa&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;harvard3&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;elsevier-harvard&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;ecoscience&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;heredity&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, format = &quot;text&quot;, style = &quot;oikos&quot;)</span>
+
+<span class="sd">        # Using DataCite DOIs</span>
+<span class="sd">        ## some formats don&#39;t work</span>
+<span class="sd">        # cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;text&quot;)</span>
+<span class="sd">        # cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;crossref-xml&quot;)</span>
+<span class="sd">        # cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;crossref-tdm&quot;)</span>
+
+<span class="sd">        ## But most do work</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;datacite-xml&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;rdf-xml&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;turtle&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;citeproc-json&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;ris&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;bibtex&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;bibentry&quot;)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;bibtex&quot;)</span>
+
+<span class="sd">        # many DOIs</span>
+<span class="sd">        dois = [&#39;10.5167/UZH-30455&#39;,&#39;10.5167/UZH-49216&#39;,&#39;10.5167/UZH-503&#39;, &#39;10.5167/UZH-38402&#39;,&#39;10.5167/UZH-41217&#39;]</span>
+<span class="sd">        x = cn.content_negotiation(ids = dois)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="n">cn_base_url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Scott Chamberlain.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../',
+            VERSION:'0.0.6',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

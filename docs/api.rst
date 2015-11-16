@@ -1,9 +1,9 @@
-.. _api:
+.. _crossref:
 
-API Documentation
-=================
+Crossref Search
+===============
 
 .. py:module:: habanero
 
-.. autoclass:: Habanero
+.. autoclass:: Crossref
    :members:
