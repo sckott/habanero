@@ -504,23 +504,50 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: list of DOI minting agencies</span>
 
 <span class="sd">        Usage::</span>
 
 <span class="sd">            from habanero import Habanero</span>
 <span class="sd">            hb = Habanero()</span>
-<span class="sd">            x = hb.registration_agency(&#39;10.1371/journal.pone.0033693&#39;)</span>
-<span class="sd">            x.registration_agency()</span>
-<span class="sd">            x = hb.agency(ids = [&#39;10.1007/12080.1874-1746&#39;,&#39;10.1007/10452.1573-5125&#39;, &#39;10.1111/(issn)1442-9993&#39;])</span>
-<span class="sd">            [ z.registration_agency() for z in x ]</span>
+<span class="sd">            hb.registration_agency(&#39;10.1371/journal.pone.0033693&#39;)</span>
+<span class="sd">            hb.registration_agency(ids = [&#39;10.1007/12080.1874-1746&#39;,&#39;10.1007/10452.1573-5125&#39;, &#39;10.1111/(issn)1442-9993&#39;])</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;query&quot;</span><span class="p">,</span> <span class="s">&quot;filter&quot;</span><span class="p">,</span> <span class="s">&quot;offset&quot;</span><span class="p">,</span> <span class="s">&quot;limit&quot;</span><span class="p">,</span> <span class="s">&quot;sample&quot;</span><span class="p">,</span> <span class="s">&quot;sort&quot;</span><span class="p">,</span>
             <span class="s">&quot;order&quot;</span><span class="p">,</span> <span class="s">&quot;facet&quot;</span><span class="p">,</span> <span class="s">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+        <span class="k">if</span> <span class="n">res</span><span class="o">.</span><span class="n">__class__</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">k</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">res</span>
+        <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;agency&#39;</span><span class="p">][</span><span class="s">&#39;label&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">k</span> <span class="p">]</span>
+</div>
+<div class="viewcode-block" id="Habanero.random_dois"><a class="viewcode-back" href="../../api.html#habanero.Habanero.random_dois">[docs]</a>    <span class="k">def</span> <span class="nf">random_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Get a random set of DOIs</span>
+
+<span class="sd">        :param sample: [Fixnum] Number of random DOIs to return. Default: 10</span>
+<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
+<span class="sd">            `requests.get`</span>
+
+<span class="sd">        :return: [Array] of DOIs</span>
+
+<span class="sd">        Usage::</span>
+
+<span class="sd">            from habanero import Habanero</span>
+<span class="sd">            hb = Habanero()</span>
+<span class="sd">            hb.random_dois(1)</span>
+<span class="sd">            hb.random_dois(10)</span>
+<span class="sd">            hb.random_dois(50)</span>
+<span class="sd">            hb.random_dois(100)</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/works/&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
+            <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
+            <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 </div>
 <div class="viewcode-block" id="Habanero.content_negotiation"><a class="viewcode-back" href="../../api.html#habanero.Habanero.content_negotiation">[docs]</a>    <span class="k">def</span> <span class="nf">content_negotiation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;bibtex&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s">&#39;apa&#39;</span><span class="p">,</span>
         <span class="n">locale</span> <span class="o">=</span> <span class="s">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>

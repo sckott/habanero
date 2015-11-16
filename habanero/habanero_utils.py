@@ -17,14 +17,11 @@ def sub_str(x, n = 3):
   else:
     return str(x[:n]) + '***'
 
-def switch_classes(x, path, works, agency):
-  if agency:
-    return Agency(result = x)
+def switch_classes(x, path, works):
+  if works or re.sub("/", "", path) == "works" and re.sub("/", "", path) != "licenses":
+  	return Works(result = x)
   else:
-    if works or re.sub("/", "", path) == "works" and re.sub("/", "", path) != "licenses":
-    	return Works(result = x)
-    else:
-    	return NoWorks(result = x)
+  	return NoWorks(result = x)
 
 def check_kwargs(keys, kwargs):
   for x in range(len(keys)):

@@ -46,7 +46,7 @@ def request(url, path, ids = None, query = None, filter = None,
       tt.raise_for_status()
       check_json(tt)
       js = tt.json()
-      tt_out = switch_classes(js, path, works, agency)
+      tt_out = switch_classes(js, path, works)
       coll.append(tt_out)
 
     if len(coll) == 1:

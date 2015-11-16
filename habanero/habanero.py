@@ -373,23 +373,50 @@ class Habanero(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: list of DOI minting agencies
 
         Usage::
 
             from habanero import Habanero
             hb = Habanero()
-            x = hb.registration_agency('10.1371/journal.pone.0033693')
-            x.registration_agency()
-            x = hb.agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
-            [ z.registration_agency() for z in x ]
+            hb.registration_agency('10.1371/journal.pone.0033693')
+            hb.registration_agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
         '''
         check_kwargs(["query", "filter", "offset", "limit", "sample", "sort",
             "order", "facet", "works"], kwargs)
         res = request(self.base_url, "/works/", ids,
             None, None, None, None, None, None,
             None, None, None, True, **kwargs)
-        return res
+        if res.__class__ != list:
+            k = []
+            k.append(res)
+        else:
+            k = res
+        return [ z.result['message']['agency']['label'] for z in k ]
+
+    def random_dois(self, sample = 10, **kwargs):
+        '''
+        Get a random set of DOIs
+
+        :param sample: [Fixnum] Number of random DOIs to return. Default: 10
+        :param kwargs: any additional arguments will be passed on to
+            `requests.get`
+
+        :return: [Array] of DOIs
+
+        Usage::
+
+            from habanero import Habanero
+            hb = Habanero()
+            hb.random_dois(1)
+            hb.random_dois(10)
+            hb.random_dois(50)
+            hb.random_dois(100)
+        '''
+        res = request(self.base_url, "/works/", None,
+            None, None, None, None, sample, None,
+            None, None, None, True, **kwargs)
+        return [ z['DOI'] for z in res.result['message']['items'] ]
 
     def content_negotiation(self, ids = None, format = "bibtex", style = 'apa',
         locale = "en-US", **kwargs):

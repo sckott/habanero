@@ -462,6 +462,37 @@ will be by DOI update date.</li>
 </dd></dl>
 
 <dl class="method">
+<dt id="habanero.Habanero.random_dois">
+<code class="descname">random_dois</code><span class="sig-paren">(</span><em>sample=10</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.random_dois"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.random_dois" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a random set of DOIs</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sample</strong> &#8211; [Fixnum] Number of random DOIs to return. Default: 10</li>
+<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
+<cite>requests.get</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">[Array] of DOIs</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Usage:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
+<span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">random_dois</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">random_dois</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">random_dois</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">random_dois</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
 <dt id="habanero.Habanero.registration_agency">
 <code class="descname">registration_agency</code><span class="sig-paren">(</span><em>ids</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.registration_agency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.registration_agency" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine registration agency for DOIs</p>
@@ -476,7 +507,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">list of DOI minting agencies</p>
 </td>
 </tr>
 </tbody>
@@ -484,10 +515,8 @@ will be by DOI update date.</li>
 <p>Usage:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
 <span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="s">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
-<span class="n">x</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">()</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">agency</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.1007/12080.1874-1746&#39;</span><span class="p">,</span><span class="s">&#39;10.1007/10452.1573-5125&#39;</span><span class="p">,</span> <span class="s">&#39;10.1111/(issn)1442-9993&#39;</span><span class="p">])</span>
-<span class="p">[</span> <span class="n">z</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">()</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span> <span class="p">]</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="s">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.1007/12080.1874-1746&#39;</span><span class="p">,</span><span class="s">&#39;10.1007/10452.1573-5125&#39;</span><span class="p">,</span> <span class="s">&#39;10.1111/(issn)1442-9993&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </dd></dl>
