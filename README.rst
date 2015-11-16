@@ -26,6 +26,7 @@ Other methods
 
 - `registration_agency` - get DOI minting agency
 - `content_negotiation` - get citations in a variety of formats
+- `citation_count` - get citation count for a DOI
 
 Installation
 ============

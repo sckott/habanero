@@ -130,6 +130,8 @@
             
   <h1>Source code for habanero.habanero</h1><div class="highlight"><pre>
 <span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">from</span> <span class="nn">xml.dom</span> <span class="kn">import</span> <span class="n">minidom</span>
 
 <span class="kn">from</span> <span class="nn">.request</span> <span class="kn">import</span> <span class="n">request</span>
 <span class="kn">from</span> <span class="nn">.cnrequest</span> <span class="kn">import</span> <span class="n">CNRequest</span>
@@ -153,6 +155,7 @@
 
 <span class="sd">    * registration_agency - :func:`~habanero.Habanero.registration_agency`</span>
 <span class="sd">    * content negotiation - :func:`~habanero.Habanero.content_negotiation`</span>
+<span class="sd">    * citation_count - :func:`~habanero.Habanero.citation_count`</span>
 
 <span class="sd">    Doing setup::</span>
 
@@ -609,7 +612,35 @@
 <span class="sd">            dois = [&#39;10.5167/UZH-30455&#39;,&#39;10.5167/UZH-49216&#39;,&#39;10.5167/UZH-503&#39;, &#39;10.5167/UZH-38402&#39;,&#39;10.5167/UZH-41217&#39;]</span>
 <span class="sd">            x = hb.content_negotiation(ids = dois)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cn_base_url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div></div>
+        <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cn_base_url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</div>
+<div class="viewcode-block" id="Habanero.citation_count"><a class="viewcode-back" href="../../api.html#habanero.Habanero.citation_count">[docs]</a>    <span class="k">def</span> <span class="nf">citation_count</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doi</span><span class="p">,</span> <span class="n">url</span> <span class="o">=</span> <span class="s">&quot;http://www.crossref.org/openurl/&quot;</span><span class="p">,</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="s">&quot;cboettig@ropensci.org&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">        Get a citation count with a DOI</span>
+
+<span class="sd">        :@param doi: [String] DOI, digital object identifier</span>
+<span class="sd">        :@param url: [String] the API url for the function (should be left to default)</span>
+<span class="sd">        :@param keyc [String] your API key</span>
+
+<span class="sd">        See http://labs.crossref.org/openurl/ for more info on this Crossref API service.</span>
+
+<span class="sd">        Usage::</span>
+
+<span class="sd">            from habanero import Habanero</span>
+<span class="sd">            hb = Habanero()</span>
+<span class="sd">            hb.citation_count(doi = &quot;10.1371/journal.pone.0042793&quot;)</span>
+<span class="sd">            hb.citation_count(doi = &quot;10.1016/j.fbr.2012.01.001&quot;)</span>
+<span class="sd">            # DOI not found</span>
+<span class="sd">            ## FIXME</span>
+<span class="sd">            hb.citation_count(doi = &quot;10.1016/j.fbr.2012&quot;)</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="p">{</span><span class="s">&quot;id&quot;</span><span class="p">:</span> <span class="s">&quot;doi:&quot;</span> <span class="o">+</span> <span class="n">doi</span><span class="p">,</span> <span class="s">&quot;pid&quot;</span><span class="p">:</span> <span class="n">key</span><span class="p">,</span> <span class="s">&quot;noredirect&quot;</span><span class="p">:</span> <span class="bp">True</span><span class="p">}</span>
+        <span class="n">args</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">args</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span> <span class="o">=</span> <span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">xmldoc</span> <span class="o">=</span> <span class="n">minidom</span><span class="o">.</span><span class="n">parseString</span><span class="p">(</span><span class="n">res</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">xmldoc</span><span class="o">.</span><span class="n">getElementsByTagName</span><span class="p">(</span><span class="s">&#39;query&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="s">&#39;fl_count&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">val</span><span class="p">))</span></div></div>
 </pre></div>
 
            </div>

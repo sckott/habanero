@@ -149,6 +149,7 @@
 <ul class="simple">
 <li>registration_agency - <a class="reference internal" href="#habanero.Habanero.registration_agency" title="habanero.Habanero.registration_agency"><code class="xref py py-func docutils literal"><span class="pre">registration_agency()</span></code></a></li>
 <li>content negotiation - <a class="reference internal" href="#habanero.Habanero.content_negotiation" title="habanero.Habanero.content_negotiation"><code class="xref py py-func docutils literal"><span class="pre">content_negotiation()</span></code></a></li>
+<li>citation_count - <a class="reference internal" href="#habanero.Habanero.citation_count" title="habanero.Habanero.citation_count"><code class="xref py py-func docutils literal"><span class="pre">citation_count()</span></code></a></li>
 </ul>
 <p>Doing setup:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
@@ -159,6 +160,34 @@
 <span class="n">Habanero</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s">&quot;123456&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<dl class="method">
+<dt id="habanero.Habanero.citation_count">
+<code class="descname">citation_count</code><span class="sig-paren">(</span><em>doi</em>, <em>url='http://www.crossref.org/openurl/'</em>, <em>key='cboettig&#64;ropensci.org'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.citation_count"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.citation_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a citation count with a DOI</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">&#64;param doi:</th><td class="field-body">[String] DOI, digital object identifier</td>
+</tr>
+<tr class="field-even field"><th class="field-name">&#64;param url:</th><td class="field-body">[String] the API url for the function (should be left to default)</td>
+</tr>
+</tbody>
+</table>
+<p>:&#64;param keyc [String] your API key</p>
+<p>See <a class="reference external" href="http://labs.crossref.org/openurl/">http://labs.crossref.org/openurl/</a> for more info on this Crossref API service.</p>
+<p>Usage:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
+<span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1371/journal.pone.0042793&quot;</span><span class="p">)</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
+<span class="c"># DOI not found</span>
+<span class="c">## FIXME</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1016/j.fbr.2012&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
 <dl class="method">
 <dt id="habanero.Habanero.content_negotiation">
 <code class="descname">content_negotiation</code><span class="sig-paren">(</span><em>ids=None</em>, <em>format='bibtex'</em>, <em>style='apa'</em>, <em>locale='en-US'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.content_negotiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.content_negotiation" title="Permalink to this definition">¶</a></dt>

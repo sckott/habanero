@@ -1,4 +1,6 @@
 import sys
+import requests
+from xml.dom import minidom
 
 from .request import request
 from .cnrequest import CNRequest
@@ -22,6 +24,7 @@ class Habanero(object):
 
     * registration_agency - :func:`~habanero.Habanero.registration_agency`
     * content negotiation - :func:`~habanero.Habanero.content_negotiation`
+    * citation_count - :func:`~habanero.Habanero.citation_count`
 
     Doing setup::
 
@@ -479,3 +482,31 @@ class Habanero(object):
             x = hb.content_negotiation(ids = dois)
         '''
         return CNRequest(self.cn_base_url, ids, format, style, locale, **kwargs)
+
+    def citation_count(self, doi, url = "http://www.crossref.org/openurl/",
+        key = "cboettig@ropensci.org", **kwargs):
+        '''
+        Get a citation count with a DOI
+
+        :@param doi: [String] DOI, digital object identifier
+        :@param url: [String] the API url for the function (should be left to default)
+        :@param keyc [String] your API key
+
+        See http://labs.crossref.org/openurl/ for more info on this Crossref API service.
+
+        Usage::
+
+            from habanero import Habanero
+            hb = Habanero()
+            hb.citation_count(doi = "10.1371/journal.pone.0042793")
+            hb.citation_count(doi = "10.1016/j.fbr.2012.01.001")
+            # DOI not found
+            ## FIXME
+            hb.citation_count(doi = "10.1016/j.fbr.2012")
+        '''
+        args = {"id": "doi:" + doi, "pid": key, "noredirect": True}
+        args = dict((k, v) for k, v in args.items() if v)
+        res = requests.get(url, params = args, **kwargs)
+        xmldoc = minidom.parseString(res.content)
+        val = xmldoc.getElementsByTagName('query')[0].attributes['fl_count'].value
+        return int(str(val))
