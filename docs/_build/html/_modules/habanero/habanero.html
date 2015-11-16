@@ -151,7 +151,7 @@
 
 <span class="sd">    Also:</span>
 
-<span class="sd">    * agency - :func:`~habanero.Habanero.agency`</span>
+<span class="sd">    * registration_agency - :func:`~habanero.Habanero.registration_agency`</span>
 <span class="sd">    * content negotiation - :func:`~habanero.Habanero.content_negotiation`</span>
 
 <span class="sd">    Doing setup::</span>
@@ -496,7 +496,7 @@
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>
-<div class="viewcode-block" id="Habanero.agency"><a class="viewcode-back" href="../../api.html#habanero.Habanero.agency">[docs]</a>    <span class="k">def</span> <span class="nf">agency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Habanero.registration_agency"><a class="viewcode-back" href="../../api.html#habanero.Habanero.registration_agency">[docs]</a>    <span class="k">def</span> <span class="nf">registration_agency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Determine registration agency for DOIs</span>
 
@@ -510,10 +510,10 @@
 
 <span class="sd">            from habanero import Habanero</span>
 <span class="sd">            hb = Habanero()</span>
-<span class="sd">            x = hb.agency(&#39;10.1371/journal.pone.0033693&#39;)</span>
-<span class="sd">            x.agency()</span>
+<span class="sd">            x = hb.registration_agency(&#39;10.1371/journal.pone.0033693&#39;)</span>
+<span class="sd">            x.registration_agency()</span>
 <span class="sd">            x = hb.agency(ids = [&#39;10.1007/12080.1874-1746&#39;,&#39;10.1007/10452.1573-5125&#39;, &#39;10.1111/(issn)1442-9993&#39;])</span>
-<span class="sd">            [ z.agency() for z in x ]</span>
+<span class="sd">            [ z.registration_agency() for z in x ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;query&quot;</span><span class="p">,</span> <span class="s">&quot;filter&quot;</span><span class="p">,</span> <span class="s">&quot;offset&quot;</span><span class="p">,</span> <span class="s">&quot;limit&quot;</span><span class="p">,</span> <span class="s">&quot;sample&quot;</span><span class="p">,</span> <span class="s">&quot;sort&quot;</span><span class="p">,</span>
             <span class="s">&quot;order&quot;</span><span class="p">,</span> <span class="s">&quot;facet&quot;</span><span class="p">,</span> <span class="s">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>

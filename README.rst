@@ -24,7 +24,7 @@ Other Crossref API clients:
 
 Other methods
 
-- `agency` - get DOI minting agency
+- `registration_agency` - get DOI minting agency
 - `content_negotiation` - get citations in a variety of formats
 
 Installation

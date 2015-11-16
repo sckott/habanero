@@ -20,7 +20,7 @@ class Habanero(object):
 
     Also:
 
-    * agency - :func:`~habanero.Habanero.agency`
+    * registration_agency - :func:`~habanero.Habanero.registration_agency`
     * content negotiation - :func:`~habanero.Habanero.content_negotiation`
 
     Doing setup::
@@ -365,7 +365,7 @@ class Habanero(object):
             order, facet, None, **kwargs)
         return res
 
-    def agency(self, ids, **kwargs):
+    def registration_agency(self, ids, **kwargs):
         '''
         Determine registration agency for DOIs
 
@@ -379,10 +379,10 @@ class Habanero(object):
 
             from habanero import Habanero
             hb = Habanero()
-            x = hb.agency('10.1371/journal.pone.0033693')
-            x.agency()
+            x = hb.registration_agency('10.1371/journal.pone.0033693')
+            x.registration_agency()
             x = hb.agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
-            [ z.agency() for z in x ]
+            [ z.registration_agency() for z in x ]
         '''
         check_kwargs(["query", "filter", "offset", "limit", "sample", "sort",
             "order", "facet", "works"], kwargs)

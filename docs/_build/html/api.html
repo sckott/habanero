@@ -147,7 +147,7 @@
 </ul>
 <p>Also:</p>
 <ul class="simple">
-<li>agency - <a class="reference internal" href="#habanero.Habanero.agency" title="habanero.Habanero.agency"><code class="xref py py-func docutils literal"><span class="pre">agency()</span></code></a></li>
+<li>registration_agency - <a class="reference internal" href="#habanero.Habanero.registration_agency" title="habanero.Habanero.registration_agency"><code class="xref py py-func docutils literal"><span class="pre">registration_agency()</span></code></a></li>
 <li>content negotiation - <a class="reference internal" href="#habanero.Habanero.content_negotiation" title="habanero.Habanero.content_negotiation"><code class="xref py py-func docutils literal"><span class="pre">content_negotiation()</span></code></a></li>
 </ul>
 <p>Doing setup:</p>
@@ -159,37 +159,6 @@
 <span class="n">Habanero</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s">&quot;123456&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<dl class="method">
-<dt id="habanero.Habanero.agency">
-<code class="descname">agency</code><span class="sig-paren">(</span><em>ids</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.agency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.agency" title="Permalink to this definition">¶</a></dt>
-<dd><p>Determine registration agency for DOIs</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p>Usage:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
-<span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">agency</span><span class="p">(</span><span class="s">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
-<span class="n">x</span><span class="o">.</span><span class="n">agency</span><span class="p">()</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">agency</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.1007/12080.1874-1746&#39;</span><span class="p">,</span><span class="s">&#39;10.1007/10452.1573-5125&#39;</span><span class="p">,</span> <span class="s">&#39;10.1111/(issn)1442-9993&#39;</span><span class="p">])</span>
-<span class="p">[</span> <span class="n">z</span><span class="o">.</span><span class="n">agency</span><span class="p">()</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span> <span class="p">]</span>
-</pre></div>
-</div>
-</dd></dl>
-
 <dl class="method">
 <dt id="habanero.Habanero.content_negotiation">
 <code class="descname">content_negotiation</code><span class="sig-paren">(</span><em>ids=None</em>, <em>format='bibtex'</em>, <em>style='apa'</em>, <em>locale='en-US'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.content_negotiation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.content_negotiation" title="Permalink to this definition">¶</a></dt>
@@ -488,6 +457,37 @@ will be by DOI update date.</li>
 <span class="n">hb</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
 <span class="c"># Sort and order</span>
 <span class="n">hb</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="s">&quot;relevance&quot;</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="s">&quot;asc&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="habanero.Habanero.registration_agency">
+<code class="descname">registration_agency</code><span class="sig-paren">(</span><em>ids</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.registration_agency"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.registration_agency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine registration agency for DOIs</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
+<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
+<cite>requests.get</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Usage:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
+<span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="s">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
+<span class="n">x</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">agency</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.1007/12080.1874-1746&#39;</span><span class="p">,</span><span class="s">&#39;10.1007/10452.1573-5125&#39;</span><span class="p">,</span> <span class="s">&#39;10.1111/(issn)1442-9993&#39;</span><span class="p">])</span>
+<span class="p">[</span> <span class="n">z</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">()</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
