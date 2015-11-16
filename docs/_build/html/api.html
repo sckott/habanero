@@ -150,6 +150,7 @@
 <li>registration_agency - <a class="reference internal" href="#habanero.Habanero.registration_agency" title="habanero.Habanero.registration_agency"><code class="xref py py-func docutils literal"><span class="pre">registration_agency()</span></code></a></li>
 <li>content negotiation - <a class="reference internal" href="#habanero.Habanero.content_negotiation" title="habanero.Habanero.content_negotiation"><code class="xref py py-func docutils literal"><span class="pre">content_negotiation()</span></code></a></li>
 <li>citation_count - <a class="reference internal" href="#habanero.Habanero.citation_count" title="habanero.Habanero.citation_count"><code class="xref py py-func docutils literal"><span class="pre">citation_count()</span></code></a></li>
+<li>crosscite - <a class="reference internal" href="#habanero.Habanero.crosscite" title="habanero.Habanero.crosscite"><code class="xref py py-func docutils literal"><span class="pre">crosscite()</span></code></a></li>
 </ul>
 <p>Doing setup:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
@@ -251,6 +252,36 @@
 <span class="c"># many DOIs</span>
 <span class="n">dois</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.5167/UZH-30455&#39;</span><span class="p">,</span><span class="s">&#39;10.5167/UZH-49216&#39;</span><span class="p">,</span><span class="s">&#39;10.5167/UZH-503&#39;</span><span class="p">,</span> <span class="s">&#39;10.5167/UZH-38402&#39;</span><span class="p">,</span><span class="s">&#39;10.5167/UZH-41217&#39;</span><span class="p">]</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="n">dois</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="habanero.Habanero.crosscite">
+<code class="descname">crosscite</code><span class="sig-paren">(</span><em>doi</em>, <em>style='apa'</em>, <em>locale='en-US'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/habanero.html#Habanero.crosscite"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Habanero.crosscite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Crosscite - citation formatter</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">&#64;param doi:</th><td class="field-body">[String,Array] Search by a single DOI or many DOIs.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">&#64;param style:</th><td class="field-body">[String] a CSL style (for text format only). See {Serrano.csl_styles}
+for options. Default: apa. If there&#8217;s a style that CrossRef doesn&#8217;t support you&#8217;ll get</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">&#64;param locale:</th><td class="field-body">[String] Language locale</td>
+</tr>
+</tbody>
+</table>
+<dl class="docutils">
+<dt>See <a class="reference external" href="http://www.crosscite.org/cn/">http://www.crosscite.org/cn/</a> for more info on the</dt>
+<dd>Crossref Content Negotiation API service</dd>
+</dl>
+<p>Usage:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Habanero</span>
+<span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">crosscite</span><span class="p">(</span><span class="s">&quot;10.5284/1011335&quot;</span><span class="p">)</span>
+<span class="n">hb</span><span class="o">.</span><span class="n">crosscite</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.5169/SEALS-52668&#39;</span><span class="p">,</span><span class="s">&#39;10.2314/GBV:493109919&#39;</span><span class="p">,</span><span class="s">&#39;10.2314/GBV:493105263&#39;</span><span class="p">,</span><span class="s">&#39;10.2314/GBV:487077911&#39;</span><span class="p">,</span><span class="s">&#39;10.2314/GBV:607866403&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </dd></dl>

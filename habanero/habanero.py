@@ -5,6 +5,7 @@ from xml.dom import minidom
 from .request import request
 from .cnrequest import CNRequest
 from .habanero_utils import sub_str,check_kwargs
+from .cross_cite import ccite
 
 class Habanero(object):
     '''
@@ -25,6 +26,7 @@ class Habanero(object):
     * registration_agency - :func:`~habanero.Habanero.registration_agency`
     * content negotiation - :func:`~habanero.Habanero.content_negotiation`
     * citation_count - :func:`~habanero.Habanero.citation_count`
+    * crosscite - :func:`~habanero.Habanero.crosscite`
 
     Doing setup::
 
@@ -510,3 +512,32 @@ class Habanero(object):
         xmldoc = minidom.parseString(res.content)
         val = xmldoc.getElementsByTagName('query')[0].attributes['fl_count'].value
         return int(str(val))
+
+    def crosscite(self, doi, style = 'apa', locale = "en-US", **kwargs):
+        '''
+        Crosscite - citation formatter
+
+        :@param doi: [String,Array] Search by a single DOI or many DOIs.
+        :@param style: [String] a CSL style (for text format only). See {Serrano.csl_styles}
+            for options. Default: apa. If there's a style that CrossRef doesn't support you'll get
+        :@param locale: [String] Language locale
+
+        See http://www.crosscite.org/cn/ for more info on the
+            Crossref Content Negotiation API service
+
+        Usage::
+
+            from habanero import Habanero
+            hb = Habanero()
+            hb.crosscite("10.5284/1011335")
+            hb.crosscite(doi = ['10.5169/SEALS-52668','10.2314/GBV:493109919','10.2314/GBV:493105263','10.2314/GBV:487077911','10.2314/GBV:607866403'])
+        '''
+        if doi.__class__ == str:
+            doi = [doi]
+        if len(doi) > 1:
+          coll = []
+          for i in range(len(doi)):
+            coll.append(ccite(doi[i], style, locale, **kwargs))
+          return coll
+        else:
+          return ccite(doi[0], style, locale, **kwargs)
