@@ -25,7 +25,7 @@ def request(url, path, ids = None, query = None, filter = None,
     tt.raise_for_status()
     check_json(tt)
     js = tt.json()
-    coll = switch_classes(js, path, works, agency)
+    coll = switch_classes(js, path, works)
   else:
     if(ids.__class__.__name__ == "str"):
       ids = ids.split()
