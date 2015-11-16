@@ -26,6 +26,7 @@ class Habanero(object):
     * registration_agency - :func:`~habanero.Habanero.registration_agency`
     * content negotiation - :func:`~habanero.Habanero.content_negotiation`
     * citation_count - :func:`~habanero.Habanero.citation_count`
+    * random_dois - :func:`~habanero.Habanero.random_dois`
     * crosscite - :func:`~habanero.Habanero.crosscite`
 
     Doing setup::
