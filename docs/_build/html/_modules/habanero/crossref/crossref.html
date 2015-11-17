@@ -159,7 +159,6 @@
 <span class="sd">    * content negotiation - :func:`~habanero.Crossref.content_negotiation`</span>
 <span class="sd">    * citation_count - :func:`~habanero.Crossref.citation_count`</span>
 <span class="sd">    * random_dois - :func:`~habanero.Crossref.random_dois`</span>
-<span class="sd">    * crosscite - :func:`~habanero.Crossref.crosscite`</span>
 
 <span class="sd">    Doing setup::</span>
 
@@ -552,35 +551,6 @@
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
-</div>
-<div class="viewcode-block" id="Crossref.crosscite"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.crosscite">[docs]</a>    <span class="k">def</span> <span class="nf">crosscite</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doi</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s">&#39;apa&#39;</span><span class="p">,</span> <span class="n">locale</span> <span class="o">=</span> <span class="s">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Crosscite - citation formatter</span>
-
-<span class="sd">        :@param doi: [String,Array] Search by a single DOI or many DOIs.</span>
-<span class="sd">        :@param style: [String] a CSL style (for text format only). See {Serrano.csl_styles}</span>
-<span class="sd">            for options. Default: apa. If there&#39;s a style that CrossRef doesn&#39;t support you&#39;ll get</span>
-<span class="sd">        :@param locale: [String] Language locale</span>
-
-<span class="sd">        See http://www.crosscite.org/cn/ for more info on the</span>
-<span class="sd">            Crossref Content Negotiation API service</span>
-
-<span class="sd">        Usage::</span>
-
-<span class="sd">            from habanero import Crossref</span>
-<span class="sd">            cr = Crossref()</span>
-<span class="sd">            cr.crosscite(&quot;10.5284/1011335&quot;)</span>
-<span class="sd">            cr.crosscite(doi = [&#39;10.5169/SEALS-52668&#39;,&#39;10.2314/GBV:493109919&#39;,&#39;10.2314/GBV:493105263&#39;,&#39;10.2314/GBV:487077911&#39;,&#39;10.2314/GBV:607866403&#39;])</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">if</span> <span class="n">doi</span><span class="o">.</span><span class="n">__class__</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
-            <span class="n">doi</span> <span class="o">=</span> <span class="p">[</span><span class="n">doi</span><span class="p">]</span>
-        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">doi</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-          <span class="n">coll</span> <span class="o">=</span> <span class="p">[]</span>
-          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">doi</span><span class="p">)):</span>
-            <span class="n">coll</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ccite</span><span class="p">(</span><span class="n">doi</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>
-          <span class="k">return</span> <span class="n">coll</span>
-        <span class="k">else</span><span class="p">:</span>
-          <span class="k">return</span> <span class="n">ccite</span><span class="p">(</span><span class="n">doi</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </div>
     <span class="nd">@staticmethod</span>
 <div class="viewcode-block" id="Crossref.filter_names"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_names">[docs]</a>    <span class="k">def</span> <span class="nf">filter_names</span><span class="p">():</span>

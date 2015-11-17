@@ -25,7 +25,6 @@ class Crossref(object):
     * content negotiation - :func:`~habanero.Crossref.content_negotiation`
     * citation_count - :func:`~habanero.Crossref.citation_count`
     * random_dois - :func:`~habanero.Crossref.random_dois`
-    * crosscite - :func:`~habanero.Crossref.crosscite`
 
     Doing setup::
 
@@ -418,35 +417,6 @@ class Crossref(object):
             None, None, None, None, sample, None,
             None, None, None, True, **kwargs)
         return [ z['DOI'] for z in res.result['message']['items'] ]
-
-    def crosscite(self, doi, style = 'apa', locale = "en-US", **kwargs):
-        '''
-        Crosscite - citation formatter
-
-        :@param doi: [String,Array] Search by a single DOI or many DOIs.
-        :@param style: [String] a CSL style (for text format only). See {Serrano.csl_styles}
-            for options. Default: apa. If there's a style that CrossRef doesn't support you'll get
-        :@param locale: [String] Language locale
-
-        See http://www.crosscite.org/cn/ for more info on the
-            Crossref Content Negotiation API service
-
-        Usage::
-
-            from habanero import Crossref
-            cr = Crossref()
-            cr.crosscite("10.5284/1011335")
-            cr.crosscite(doi = ['10.5169/SEALS-52668','10.2314/GBV:493109919','10.2314/GBV:493105263','10.2314/GBV:487077911','10.2314/GBV:607866403'])
-        '''
-        if doi.__class__ == str:
-            doi = [doi]
-        if len(doi) > 1:
-          coll = []
-          for i in range(len(doi)):
-            coll.append(ccite(doi[i], style, locale, **kwargs))
-          return coll
-        else:
-          return ccite(doi[0], style, locale, **kwargs)
 
     @staticmethod
     def filter_names():
