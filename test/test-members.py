@@ -1,4 +1,4 @@
-"""Tests for Habanero.members"""
+"""Tests for Crossref.members"""
 import os
 from nose.tools import *
 
