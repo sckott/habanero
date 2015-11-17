@@ -56,14 +56,14 @@ Initialize
 
 .. code-block:: python
 
-		from habanero import Habanero
-		hb = Habanero()
+		from habanero import Crossref
+		cr = Crossref()
 
 Works route
 
 .. code-block:: python
 
-	x = hb.works(query = "ecology")
+	x = cr.works(query = "ecology")
 	x.status()
 	x.message()
 	x.total_results()
@@ -73,7 +73,7 @@ Members route
 
 .. code-block:: python
 
-	hb.members(ids = 98, works = True)
+	cr.members(ids = 98, works = True)
 
 Meta
 ====
