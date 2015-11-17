@@ -560,6 +560,12 @@
 <span class="sd">        Filters are used in the Crossref search API to modify searches</span>
 
 <span class="sd">        :return: dict</span>
+
+<span class="sd">        Usage::</span>
+
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.filter_names()</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">filter_names</span>
 </div>
@@ -571,6 +577,15 @@
 <span class="sd">        Filters are used in the Crossref search API to modify searches</span>
 
 <span class="sd">        :return: dict</span>
+
+<span class="sd">        Usage::</span>
+
+<span class="sd">            from habanero import Crossref</span>
+<span class="sd">            cr = Crossref()</span>
+<span class="sd">            cr.filter_details()</span>
+<span class="sd">            # Get descriptions for each filter</span>
+<span class="sd">            x = cr.filter_details()</span>
+<span class="sd">            [ z[&#39;description&#39;] for z in x.values() ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">filter_details</span></div></div>
 </pre></div>

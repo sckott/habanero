@@ -426,6 +426,12 @@ class Crossref(object):
         Filters are used in the Crossref search API to modify searches
 
         :return: dict
+
+        Usage::
+
+            from habanero import Crossref
+            cr = Crossref()
+            cr.filter_names()
         '''
         return filter_names
 
@@ -437,5 +443,14 @@ class Crossref(object):
         Filters are used in the Crossref search API to modify searches
 
         :return: dict
+
+        Usage::
+
+            from habanero import Crossref
+            cr = Crossref()
+            cr.filter_details()
+            # Get descriptions for each filter
+            x = cr.filter_details()
+            [ z['description'] for z in x.values() ]
         '''
         return filter_details
