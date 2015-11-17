@@ -30,10 +30,10 @@ def make_request(url, ids, format, style, locale, **kwargs):
 
   if format == "citeproc-json":
     url = "http://api.crossref.org/works/" + ids + "/" + type
-    return requests.get(url, headers = head, allow_redirects = True, **kwargs).content
+    return requests.get(url, headers = head, allow_redirects = True, **kwargs).text
   else:
     if format == "text":
       type = type + "; style = " + style + "; locale = " + locale
     url = url + "/" + ids
-    return requests.get(url, headers = head, allow_redirects = True, **kwargs).content
+    return requests.get(url, headers = head, allow_redirects = True, **kwargs).text
 
