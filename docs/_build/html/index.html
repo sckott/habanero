@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Python Crossref Client &mdash; habanero 0.1.0 documentation</title>
+  <title>habanero &mdash; habanero 0.1.1 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.1.0 documentation" href="#"/>
+    <link rel="top" title="habanero 0.1.1 documentation" href="#"/>
         <link rel="next" title="Crossref Search" href="api.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.1.0
+                0.1.1
               </div>
             
           
@@ -117,7 +117,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="#">Docs</a> &raquo;</li>
       
-    <li>Python Crossref Client</li>
+    <li>habanero</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -131,50 +131,69 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="python-crossref-client">
-<h1>Python Crossref Client<a class="headerlink" href="#python-crossref-client" title="Permalink to this headline">¶</a></h1>
-<p>Low-level client for the Crossref API.</p>
-<p><cite>habanero</cite> is split up into modules for each of the major groups of API methods.</p>
+  <div class="section" id="habanero">
+<h1>habanero<a class="headerlink" href="#habanero" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://pypi.python.org/pypi/habanero"><img src="https://img.shields.io/pypi/v/habanero.svg" /></a>
+<a class="reference external image-reference" href="http://habanero.rtfd.org/"><img alt="https://readthedocs.org/projects/habanero/badge/?version=latest" src="https://readthedocs.org/projects/habanero/badge/?version=latest" /></a>
+<a class="reference external image-reference" href="https://travis-ci.org/sckott/habanero"><img src="https://travis-ci.org/sckott/habanero.svg" /></a>
+<a class="reference external image-reference" href="https://coveralls.io/github/sckott/habanero?branch=master"><img alt="https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&amp;service=github" src="https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&amp;service=github" /></a>
+<p>This is a low level client for working with Crossref&#8217;s search API. It&#8217;s been named to be more generic, as other organizations are/will adopt Crossref&#8217;s search API, making it possible to ineract with all from one client.</p>
+<p><a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md](https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API docs</a></p>
+<p>Other Crossref API clients:</p>
 <ul class="simple">
-<li><a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API docs</a></li>
+<li>Ruby: <cite>serrano</cite>, <a class="reference external" href="https://github.com/sckott/serrano">https://github.com/sckott/serrano</a></li>
+<li>R: <cite>rcrossref</cite>, <a class="reference external" href="https://github.com/ropensci/rcrossref">https://github.com/ropensci/rcrossref</a></li>
 </ul>
-<p>Other Crossref clients:</p>
+<p><cite>habanero</cite> includes methods matching Crossref API routes:</p>
 <ul class="simple">
-<li>R: <a class="reference external" href="https://github.com/ropensci/rcrossref">rcrossref</a></li>
-<li>Ruby: <a class="reference external" href="https://github.com/sckott/serrano">serrano</a></li>
+<li><cite>/works</cite></li>
+<li><cite>/members</cite></li>
+<li><cite>/prefixes</cite></li>
+<li><cite>/funders</cite></li>
+<li><cite>/journals</cite></li>
+<li><cite>/types</cite></li>
+<li><cite>/licenses</cite></li>
+</ul>
+<p>Other methods</p>
+<ul class="simple">
+<li><cite>registration_agency</cite> - get DOI minting agency</li>
+<li><cite>content_negotiation</cite> - get citations in a variety of formats</li>
+<li><cite>citation_count</cite> - get citation count for a DOI</li>
 </ul>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Stable version</p>
 <div class="highlight-python"><div class="highlight"><pre>pip install habanero
 </pre></div>
 </div>
-</div>
-<div class="section" id="example-usage">
-<h2>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
-<p>Import</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">habanero</span>
+<p>Dev version</p>
+<div class="highlight-python"><div class="highlight"><pre>sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero
+
+# OR
+
+git clone git@github.com:sckott/habanero.git
+cd habanero
+make install
 </pre></div>
 </div>
-<p>Initialize a client</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">hb</span> <span class="o">=</span> <span class="n">Habanero</span><span class="p">()</span>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Initialize</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
+<span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 </pre></div>
 </div>
-<p>Usage</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c"># Query Crossref works</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">hb</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;ecology&quot;</span><span class="p">)</span>
-
-<span class="c"># The output is in the `results` object</span>
-<span class="n">x</span><span class="o">.</span><span class="n">results</span>
-
-<span class="c"># A variety of functions help you drill down into result</span>
+<p>Works route</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;ecology&quot;</span><span class="p">)</span>
 <span class="n">x</span><span class="o">.</span><span class="n">status</span><span class="p">()</span>
-<span class="n">x</span><span class="o">.</span><span class="n">message_type</span><span class="p">()</span>
-<span class="n">x</span><span class="o">.</span><span class="n">message_version</span><span class="p">()</span>
 <span class="n">x</span><span class="o">.</span><span class="n">message</span><span class="p">()</span>
 <span class="n">x</span><span class="o">.</span><span class="n">total_results</span><span class="p">()</span>
-<span class="n">x</span><span class="o">.</span><span class="n">items_per_page</span><span class="p">()</span>
-<span class="n">x</span><span class="o">.</span><span class="n">query</span><span class="p">()</span>
 <span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Members route</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -189,7 +208,8 @@
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Changelog.html">Changelog</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Changelog.html#id2">0.1.0 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id3">0.0.6 (2015-11-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id3">0.1.0 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Changelog.html#id4">0.0.6 (2015-11-09)</a></li>
 </ul>
 </li>
 </ul>
@@ -248,7 +268,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.1.0',
+            VERSION:'0.1.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

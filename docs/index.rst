@@ -1,64 +1,89 @@
-Python Crossref Client
-===========================
+habanero
+========
 
-Low-level client for the Crossref API.
+.. image:: https://img.shields.io/pypi/v/habanero.svg
+   :target: https://pypi.python.org/pypi/habanero
 
-`habanero` is split up into modules for each of the major groups of API methods.
+.. image:: https://readthedocs.org/projects/habanero/badge/?version=latest
+   :target: http://habanero.rtfd.org/
 
-* `Crossref API docs`_
+.. image:: https://travis-ci.org/sckott/habanero.svg
+   :target: https://travis-ci.org/sckott/habanero
 
-Other Crossref clients:
+.. image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
+   :target: https://coveralls.io/github/sckott/habanero?branch=master
 
-* R: rcrossref_
-* Ruby: serrano_
+This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to ineract with all from one client.
 
-.. _habanero: https://github.com/sckott/habanero
-.. _rcrossref: https://github.com/ropensci/rcrossref
-.. _serrano: https://github.com/sckott/serrano
-.. _Crossref API Docs: https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md
+`Crossref API docs <https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md](https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md>`__
+
+Other Crossref API clients:
+
+- Ruby: `serrano`, `<https://github.com/sckott/serrano>`__
+- R: `rcrossref`, `<https://github.com/ropensci/rcrossref>`__
+
+`habanero` includes methods matching Crossref API routes:
+
+- `/works`
+- `/members`
+- `/prefixes`
+- `/funders`
+- `/journals`
+- `/types`
+- `/licenses`
+
+Other methods
+
+- `registration_agency` - get DOI minting agency
+- `content_negotiation` - get citations in a variety of formats
+- `citation_count` - get citation count for a DOI
 
 Installation
--------------
+------------
+
+Stable version
 
 ::
 
-    pip install habanero
+  pip install habanero
 
-
-Example Usage
--------------
-
-Import
+Dev version
 
 ::
 
-    import habanero
+    sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero
 
-Initialize a client
+    # OR
 
-::
-
-    hb = Habanero()
+    git clone git@github.com:sckott/habanero.git
+    cd habanero
+    make install
 
 Usage
+-----
+
+Initialize
 
 ::
 
-    # Query Crossref works
-    x = hb.works(query = "ecology")
+    from habanero import Crossref
+    cr = Crossref()
 
-    # The output is in the `results` object
-    x.results
+Works route
 
-    # A variety of functions help you drill down into result
-    x.status()
-    x.message_type()
-    x.message_version()
-    x.message()
-    x.total_results()
-    x.items_per_page()
-    x.query()
-    x.items()
+::
+
+  x = cr.works(query = "ecology")
+  x.status()
+  x.message()
+  x.total_results()
+  x.items()
+
+Members route
+
+::
+
+  cr.members(ids = 98, works = True)
 
 
 Contents

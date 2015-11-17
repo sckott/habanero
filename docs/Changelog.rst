@@ -5,6 +5,10 @@ Changelog
 
 0.1.0 (2015-11-17)
 --------------------
+* Fix readme
+
+0.1.0 (2015-11-17)
+--------------------
 * Now compatible with Python 2x and 3x
 * `agency()` method changed to `registration_agency()`
 * New method `citation_count()` - get citation counts for DOIs
