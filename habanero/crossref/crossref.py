@@ -2,7 +2,6 @@ import sys
 import requests
 from ..request import request
 from ..habanero_utils import sub_str,check_kwargs
-from ..cross_cite import ccite
 from .filters import filter_names, filter_details
 
 class Crossref(object):
