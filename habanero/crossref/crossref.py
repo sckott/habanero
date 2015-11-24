@@ -123,7 +123,7 @@ class Crossref(object):
         :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
-            the limit and offset parameters are ignored.
+            the limit and offset parameters are ignored. This parameter only used when works requested.
         :param sort: [String] Field to sort on, one of score, relevance,
             updated (date of most recent change to metadata. Currently the same as deposited),
             deposited (time of most recent deposit), indexed (time of most recent index), or
@@ -162,7 +162,7 @@ class Crossref(object):
         :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
-            the limit and offset parameters are ignored.
+            the limit and offset parameters are ignored. This parameter only used when works requested.
         :param sort: [String] Field to sort on, one of score, relevance,
             updated (date of most recent change to metadata. Currently the same as deposited),
             deposited (time of most recent deposit), indexed (time of most recent index), or
@@ -212,7 +212,7 @@ class Crossref(object):
         :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
-            the limit and offset parameters are ignored.
+            the limit and offset parameters are ignored. This parameter only used when works requested.
         :param sort: [String] Field to sort on, one of score, relevance,
             updated (date of most recent change to metadata. Currently the same as deposited),
             deposited (time of most recent deposit), indexed (time of most recent index), or
@@ -253,7 +253,7 @@ class Crossref(object):
         :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
-            the limit and offset parameters are ignored.
+            the limit and offset parameters are ignored. This parameter only used when works requested.
         :param sort: [String] Field to sort on, one of score, relevance,
             updated (date of most recent change to metadata. Currently the same as deposited),
             deposited (time of most recent deposit), indexed (time of most recent index), or
@@ -302,7 +302,7 @@ class Crossref(object):
         :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
-            the limit and offset parameters are ignored.
+            the limit and offset parameters are ignored. This parameter only used when works requested.
         :param sort: [String] Field to sort on, one of score, relevance,
             updated (date of most recent change to metadata. Currently the same as deposited),
             deposited (time of most recent deposit), indexed (time of most recent index), or
@@ -339,8 +339,6 @@ class Crossref(object):
         :param query: [String] A query string
         :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
-        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
-            the limit and offset parameters are ignored.
         :param sort: [String] Field to sort on, one of score, relevance,
             updated (date of most recent change to metadata. Currently the same as deposited),
             deposited (time of most recent deposit), indexed (time of most recent index), or
@@ -363,7 +361,7 @@ class Crossref(object):
         '''
         check_kwargs(["ids", "filter", "works"], kwargs)
         res = request(self.base_url, "/licenses/", None,
-            query, None, offset, limit, sample, sort,
+            query, None, offset, limit, None, sort,
             order, facet, None, **kwargs)
         return res
 

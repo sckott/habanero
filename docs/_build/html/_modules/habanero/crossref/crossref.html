@@ -257,7 +257,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -296,7 +296,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -346,7 +346,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -387,7 +387,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -436,7 +436,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -473,8 +473,6 @@
 <span class="sd">        :param query: [String] A query string</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
-<span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored.</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -497,7 +495,7 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;ids&quot;</span><span class="p">,</span> <span class="s">&quot;filter&quot;</span><span class="p">,</span> <span class="s">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/licenses/&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
-            <span class="n">query</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
+            <span class="n">query</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span>
 </div>

@@ -2,7 +2,6 @@ import re
 
 from .response import Works
 from .noworks import NoWorks
-from .agency import Agency
 
 # helpers ----------
 def converter(x):
