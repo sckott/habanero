@@ -204,6 +204,9 @@ class Crossref(object):
         '''
         Search Crossref funders
 
+        Note that funders without IDs don't show up on the `/funders` route,
+        that is, won't show up in searches via this method
+
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
         :param filter: [Hash] Filter options. See ...
