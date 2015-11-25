@@ -87,7 +87,7 @@ Meta
 .. |docs| image:: https://readthedocs.org/projects/habanero/badge/?version=latest
    :target: http://habanero.rtfd.org/
 
-.. |travis| image:: https://travis-ci.org/sckott/habanero.svg
+.. |travis| image:: https://travis-ci.org/sckott/habanero.svg?branch=master
 	 :target: https://travis-ci.org/sckott/habanero
 
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
