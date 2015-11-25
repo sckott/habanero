@@ -8,7 +8,8 @@ from .exceptions import *
 
 def request(url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
-        order = None, facet = None, works = None, agency = False, **kwargs):
+        order = None, facet = None, cursor = None, works = None,
+        agency = False, **kwargs):
 
   url = url + path
 
@@ -16,7 +17,7 @@ def request(url, path, ids = None, query = None, filter = None,
 
   payload = {'query':query, 'filter':filt, 'offset':offset,
              'rows':limit, 'sample':sample, 'sort':sort,
-             'order':order, 'facet':facet}
+             'order':order, 'facet':facet, 'cursor':cursor}
   payload = dict((k, v) for k, v in payload.items() if v)
 
   if(ids.__class__.__name__ == 'NoneType'):

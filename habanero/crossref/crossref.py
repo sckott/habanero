@@ -1,6 +1,7 @@
 import sys
 import requests
 from ..request import request
+from ..request_class import Request
 from ..habanero_utils import sub_str,check_kwargs
 from .filters import filter_names, filter_details
 
@@ -46,7 +47,8 @@ class Crossref(object):
 
     def works(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, **kwargs):
+              order = None, facet = None, cursor = None,
+              cursor_max = 5000, **kwargs):
         '''
         Search Crossref works
 
@@ -65,6 +67,15 @@ class Crossref(object):
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
+        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+            Pass in '*' to start deep paging. Any combination of query, filters and facets may be
+            used with deep paging cursors. While rows may be specified along with cursor, offset
+            and sample cannot be used.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+            deep paging can result in continuous requests until all are retrieved, use this
+            parameter to set a maximum number of records. Of course, if there are less records
+            found than this value, you will get only those found.
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
@@ -105,10 +116,26 @@ class Crossref(object):
             cr.works(filter = {'has_full_text': True})
             cr.works(filter = {'has_funder': True, 'has_full_text': True})
             cr.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
+
+            # Deep paging, using the cursor parameter
+            ## this search should lead to only about 209 results
+            cr.works(query = "widget", cursor = "*", limit = 100)
+            cr.works(query = "widget", cursor = "*", limit = 30)
+            ## about 150 results
+            res = cr.works(query = "extravagant", cursor = "*", limit = 50)
+            sum([ len(z['message']['items']) for z in res ])
+            ## cursor_max to get back only a maximum set of results
+            res = cr.works(query = "widget", cursor = "*", cursor_max = 100)
+            sum([ len(z['message']['items']) for z in res ])
+            ## cursor_max - especially useful when a request could be very large
+            ### e.g., "ecology" results in 269,812 records, lets max at 1000
+            ###   with 100 at a time
+            res = cr.works(query = "ecology", cursor = "*", cursor_max = 1000, rows = 100)
+            sum([ len(z['message']['items']) for z in res ])
         '''
-        res = request(self.base_url, "/works/", ids,
+        res = Request(self.base_url, "/works/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, works = False, **kwargs)
+          order, facet, cursor, cursor_max, works = False).do_request()
         return res
 
     def members(self, ids = None, query = None, filter = None, offset = None,

@@ -27,3 +27,6 @@ def check_kwargs(keys, kwargs):
     if keys[x] in kwargs.keys():
       mssg = "The %s parameter is not allowed with this method" % keys[x]
       raise Exception(mssg)
+
+# def function():
+#   pass
