@@ -5,54 +5,13 @@ from nose.tools import *
 from habanero import Crossref
 cr = Crossref()
 
-a = [{u'ISSN': [u'2151-7290'],
-  u'breakdowns': {u'dois-by-issued-year': [[2010, 28],
-    [2012, 25],
-    [2013, 23],
-    [2011, 23],
-    [2009, 13]]},
-  u'counts': {u'backfile-dois': 89, u'current-dois': 0, u'total-dois': 89},
-  u'coverage': {u'award-numbers-backfile': 0.0,
-   u'award-numbers-current': 0,
-   u'funders-backfile': 0.0,
-   u'funders-current': 0,
-   u'licenses-backfile': 0.0,
-   u'licenses-current': 0,
-   u'orcids-backfile': 0.0,
-   u'orcids-current': 0,
-   u'references-backfile': 0.0,
-   u'references-current': 0,
-   u'resource-links-backfile': 0.0,
-   u'resource-links-current': 0,
-   u'update-policies-backfile': 0.0,
-   u'update-policies-current': 0},
-  u'flags': {u'deposits': True,
-   u'deposits-articles': True,
-   u'deposits-award-numbers-backfile': False,
-   u'deposits-award-numbers-current': False,
-   u'deposits-funders-backfile': False,
-   u'deposits-funders-current': False,
-   u'deposits-licenses-backfile': False,
-   u'deposits-licenses-current': False,
-   u'deposits-orcids-backfile': False,
-   u'deposits-orcids-current': False,
-   u'deposits-references-backfile': False,
-   u'deposits-references-current': False,
-   u'deposits-resource-links-backfile': False,
-   u'deposits-resource-links-current': False,
-   u'deposits-update-policies-backfile': False,
-   u'deposits-update-policies-current': False},
-  u'last-status-check-time': 1448434836534,
-  u'publisher': u'Muse - Johns Hopkins University Press',
-  u'title': u'a/b Auto/Biography Studies'}]
-
 def test_journals():
     "journals - basic test"
     res = cr.journals(limit = 1)
     assert 'ok' == res.status()
     assert 'dict' == res.result.__class__.__name__
     assert 'dict' == res.message().__class__.__name__
-    assert a == res.message()['items']
+    assert 1 == res.message()['items-per-page']
 
 def test_journals_query():
     "journals - param: query"
