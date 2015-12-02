@@ -16,6 +16,7 @@ Other Crossref API clients:
 import all):
 
 - `Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a convenience method to get DOI minting agency:
+
   - `works` - `/works` route
   - `members` - `/members` route
   - `prefixes` - `/prefixes` route
@@ -26,9 +27,11 @@ import all):
   - `registration_agency` - get DOI minting agency
 
 - `counts` - citation counts
+
   - `citation_count` - get citation count for a DOI
 
 - `cn` - content negotiation
+
   - `content_negotiation` - get citations in a variety of formats
 
 
@@ -115,6 +118,8 @@ Meta
 
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
    :target: https://coveralls.io/github/sckott/habanero?branch=master
+
+
 
 
 
