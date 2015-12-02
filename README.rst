@@ -17,22 +17,22 @@ import all):
 
 - `Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a convenience method to get DOI minting agency:
 
-	- `works` - `/works` route
-	- `members` - `/members` route
-	- `prefixes` - `/prefixes` route
-	- `funders` - `/funders` route
-	- `journals` - `/journals` route
-	- `types` - `/types` route
-	- `licenses` - `/licenses` route
-	- `registration_agency` - get DOI minting agency
+  - `works` - `/works` route
+  - `members` - `/members` route
+  - `prefixes` - `/prefixes` route
+  - `funders` - `/funders` route
+  - `journals` - `/journals` route
+  - `types` - `/types` route
+  - `licenses` - `/licenses` route
+  - `registration_agency` - get DOI minting agency
 
 - `counts` - citation counts
 
-	- `citation_count` - get citation count for a DOI
+  - `citation_count` - get citation count for a DOI
 
 - `cn` - content negotiation
 
-	- `content_negotiation` - get citations in a variety of formats
+  - `content_negotiation` - get citations in a variety of formats
 
 
 Installation
@@ -42,19 +42,19 @@ Stable version
 
 .. code-block:: console
 
-	pip install habanero
+  pip install habanero
 
 Dev version
 
 .. code-block:: console
 
-		sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero
+    sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero
 
-		# OR
+    # OR
 
-		git clone git@github.com:sckott/habanero.git
-		cd habanero
-		make install
+    git clone git@github.com:sckott/habanero.git
+    cd habanero
+    make install
 
 Usage
 =====
@@ -63,37 +63,37 @@ Initialize a client
 
 .. code-block:: python
 
-		from habanero import Crossref
-		cr = Crossref()
+    from habanero import Crossref
+    cr = Crossref()
 
 Works route
 
 .. code-block:: python
 
-	x = cr.works(query = "ecology")
-	x.status()
-	x.message()
-	x.total_results()
-	x.items()
+  x = cr.works(query = "ecology")
+  x.status()
+  x.message()
+  x.total_results()
+  x.items()
 
 Members route
 
 .. code-block:: python
 
-	cr.members(ids = 98, works = True)
+  cr.members(ids = 98, works = True)
 
 Citation counts
 
 .. code-block:: python
 
-	from habanero import counts
-	counts.citation_count(doi = "10.1016/j.fbr.2012.01.001")
+  from habanero import counts
+  counts.citation_count(doi = "10.1016/j.fbr.2012.01.001")
 
 Content negotiation - get citations in many formats
 
 .. code-block:: python
 
-	from habanero import cn
+  from habanero import cn
   cn.content_negotiation(ids = '10.1126/science.169.3946.635')
   cn.content_negotiation(ids = '10.1126/science.169.3946.635', format = "citeproc-json")
   cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "rdf-xml")
@@ -114,8 +114,8 @@ Meta
    :target: http://habanero.rtfd.org/
 
 .. |travis| image:: https://travis-ci.org/sckott/habanero.svg?branch=master
-	 :target: https://travis-ci.org/sckott/habanero
+   :target: https://travis-ci.org/sckott/habanero
 
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
-	 :target: https://coveralls.io/github/sckott/habanero?branch=master
+   :target: https://coveralls.io/github/sckott/habanero?branch=master
 
