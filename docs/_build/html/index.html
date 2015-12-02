@@ -133,10 +133,7 @@
             
   <div class="section" id="habanero">
 <h1>habanero<a class="headerlink" href="#habanero" title="Permalink to this headline">¶</a></h1>
-<a class="reference external image-reference" href="https://pypi.python.org/pypi/habanero"><img src="https://img.shields.io/pypi/v/habanero.svg" /></a>
-<a class="reference external image-reference" href="http://habanero.rtfd.org/"><img alt="https://readthedocs.org/projects/habanero/badge/?version=latest" src="https://readthedocs.org/projects/habanero/badge/?version=latest" /></a>
-<a class="reference external image-reference" href="https://travis-ci.org/sckott/habanero"><img src="https://travis-ci.org/sckott/habanero.svg" /></a>
-<a class="reference external image-reference" href="https://coveralls.io/github/sckott/habanero?branch=master"><img alt="https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&amp;service=github" src="https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&amp;service=github" /></a>
+<p><a class="reference external" href="https://pypi.python.org/pypi/habanero"><img alt="pypi" src="https://img.shields.io/pypi/v/habanero.svg" /></a> <a class="reference external" href="http://habanero.rtfd.org/"><img alt="docs" src="https://readthedocs.org/projects/habanero/badge/?version=latest" /></a> <a class="reference external" href="https://travis-ci.org/sckott/habanero"><img alt="travis" src="https://travis-ci.org/sckott/habanero.svg?branch=master" /></a> <a class="reference external" href="https://coveralls.io/github/sckott/habanero?branch=master"><img alt="coverage" src="https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&amp;service=github" /></a></p>
 <p>This is a low level client for working with Crossref&#8217;s search API. It&#8217;s been named to be more generic, as other organizations are/will adopt Crossref&#8217;s search API, making it possible to ineract with all from one client.</p>
 <p><a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md](https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">Crossref API docs</a></p>
 <p>Other Crossref API clients:</p>
@@ -144,42 +141,44 @@
 <li>Ruby: <cite>serrano</cite>, <a class="reference external" href="https://github.com/sckott/serrano">https://github.com/sckott/serrano</a></li>
 <li>R: <cite>rcrossref</cite>, <a class="reference external" href="https://github.com/ropensci/rcrossref">https://github.com/ropensci/rcrossref</a></li>
 </ul>
-<p><cite>habanero</cite> includes methods matching Crossref API routes:</p>
+<p><cite>habanero</cite> includes three modules you can import as needed (or
+import all):</p>
 <ul class="simple">
-<li><cite>/works</cite></li>
-<li><cite>/members</cite></li>
-<li><cite>/prefixes</cite></li>
-<li><cite>/funders</cite></li>
-<li><cite>/journals</cite></li>
-<li><cite>/types</cite></li>
-<li><cite>/licenses</cite></li>
+<li><cite>Crossref</cite> - Crossref search API. The <cite>Crossref</cite> module includes methods matching Crossref API routes, and a convenience method to get DOI minting agency:
+- <cite>works</cite> - <cite>/works</cite> route
+- <cite>members</cite> - <cite>/members</cite> route
+- <cite>prefixes</cite> - <cite>/prefixes</cite> route
+- <cite>funders</cite> - <cite>/funders</cite> route
+- <cite>journals</cite> - <cite>/journals</cite> route
+- <cite>types</cite> - <cite>/types</cite> route
+- <cite>licenses</cite> - <cite>/licenses</cite> route
+- <cite>registration_agency</cite> - get DOI minting agency</li>
+<li><cite>counts</cite> - citation counts
+- <cite>citation_count</cite> - get citation count for a DOI</li>
+<li><cite>cn</cite> - content negotiation
+- <cite>content_negotiation</cite> - get citations in a variety of formats</li>
 </ul>
-<p>Other methods</p>
-<ul class="simple">
-<li><cite>registration_agency</cite> - get DOI minting agency</li>
-<li><cite>content_negotiation</cite> - get citations in a variety of formats</li>
-<li><cite>citation_count</cite> - get citation count for a DOI</li>
-</ul>
+</div>
 <div class="section" id="installation">
-<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
 <p>Stable version</p>
-<div class="highlight-python"><div class="highlight"><pre>pip install habanero
+<div class="highlight-console"><div class="highlight"><pre><span class="go">pip install habanero</span>
 </pre></div>
 </div>
 <p>Dev version</p>
-<div class="highlight-python"><div class="highlight"><pre>sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero
+<div class="highlight-console"><div class="highlight"><pre><span class="go">sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero</span>
 
-# OR
+<span class="gp">#</span> OR
 
-git clone git@github.com:sckott/habanero.git
-cd habanero
-make install
+<span class="go">git clone git@github.com:sckott/habanero.git</span>
+<span class="go">cd habanero</span>
+<span class="go">make install</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="usage">
-<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Initialize</p>
+<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
+<p>Initialize a client</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 </pre></div>
@@ -196,7 +195,28 @@ make install
 <div class="highlight-python"><div class="highlight"><pre><span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Citation counts</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
+<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
+</pre></div>
 </div>
+<p>Content negotiation - get citations in many formats</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">cn</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;citeproc-json&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;rdf-xml&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s">&quot;apa&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s">&quot;bibentry&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="meta">
+<h1>Meta<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Please note that this project is released with a <a class="reference external" href="CONDUCT.md">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</li>
+<li>License: MIT; see <a class="reference external" href="LICENSE">LICENSE file</a></li>
+</ul>
 <div class="section" id="contents">
 <h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">

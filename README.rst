@@ -12,21 +12,25 @@ Other Crossref API clients:
 - Ruby: `serrano`, `<https://github.com/sckott/serrano>`__
 - R: `rcrossref`, `<https://github.com/ropensci/rcrossref>`__
 
-`habanero` includes methods matching Crossref API routes:
+`habanero` includes three modules you can import as needed (or
+import all):
 
-- `/works`
-- `/members`
-- `/prefixes`
-- `/funders`
-- `/journals`
-- `/types`
-- `/licenses`
+- `Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a convenience method to get DOI minting agency:
+	- `works` - `/works` route
+	- `members` - `/members` route
+	- `prefixes` - `/prefixes` route
+	- `funders` - `/funders` route
+	- `journals` - `/journals` route
+	- `types` - `/types` route
+	- `licenses` - `/licenses` route
+	- `registration_agency` - get DOI minting agency
 
-Other methods
+- `counts` - citation counts
+	- `citation_count` - get citation count for a DOI
 
-- `registration_agency` - get DOI minting agency
-- `content_negotiation` - get citations in a variety of formats
-- `citation_count` - get citation count for a DOI
+- `cn` - content negotiation
+	- `content_negotiation` - get citations in a variety of formats
+
 
 Installation
 ============
@@ -52,7 +56,7 @@ Dev version
 Usage
 =====
 
-Initialize
+Initialize a client
 
 .. code-block:: python
 
@@ -74,6 +78,25 @@ Members route
 .. code-block:: python
 
 	cr.members(ids = 98, works = True)
+
+Citation counts
+
+.. code-block:: python
+
+	from habanero import counts
+	counts.citation_count(doi = "10.1016/j.fbr.2012.01.001")
+
+Content negotiation - get citations in many formats
+
+.. code-block:: python
+
+	from habanero import cn
+  cn.content_negotiation(ids = '10.1126/science.169.3946.635')
+  cn.content_negotiation(ids = '10.1126/science.169.3946.635', format = "citeproc-json")
+  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "rdf-xml")
+  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text")
+  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "apa")
+  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "bibentry")
 
 Meta
 ====
