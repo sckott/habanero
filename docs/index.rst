@@ -15,7 +15,7 @@ Other Crossref API clients:
 `habanero` includes three modules you can import as needed (or
 import all):
 
-- `Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a convenience method to get DOI minting agency:
+- `Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a few convenience methods for getting DOI agency and random DOIs:
 
   - `works` - `/works` route
   - `members` - `/members` route
@@ -25,6 +25,7 @@ import all):
   - `types` - `/types` route
   - `licenses` - `/licenses` route
   - `registration_agency` - get DOI minting agency
+  - `random_dois` - get random set of DOIs
 
 - `counts` - citation counts
 
@@ -118,7 +119,6 @@ Meta
 
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
    :target: https://coveralls.io/github/sckott/habanero?branch=master
-
 
 
 
