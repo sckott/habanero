@@ -97,7 +97,7 @@ Contents
    counts
    cn
    exceptions
-   Changelog
+   changelog_link
 
 License
 -------
