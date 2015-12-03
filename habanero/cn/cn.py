@@ -6,7 +6,8 @@ def content_negotiation(ids = None, format = "bibtex", style = 'apa',
     '''
     Get citations in various formats from CrossRef
 
-    :param ids: [str] DOIs
+    :param ids: [str] Search by a single DOI or many DOIs, each a string. If many
+        passed in, do so in a list
     :param format: [str] Name of the format. One of "rdf-xml", "turtle", "citeproc-json",
         "citeproc-json-ish", "text", "ris", "bibtex" (Default), "crossref-xml",
         "datacite-xml","bibentry", or "crossref-tdm"
