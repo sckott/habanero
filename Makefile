@@ -25,5 +25,8 @@ distclean:
 dist:
 	python setup.py sdist bdist_wheel --universal
 
+register:
+	python setup.py register
+
 upload:
 	twine upload dist/*
