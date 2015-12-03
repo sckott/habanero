@@ -47,6 +47,6 @@ __author__ = 'Scott Chamberlain'
 __license__ = 'MIT'
 
 from .crossref import Crossref
-from .cn import content_negotiation
+from .cn import content_negotiation, csl_styles
 from .counts import citation_count
 from .exceptions import *

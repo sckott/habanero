@@ -27,3 +27,12 @@ def check_kwargs(keys, kwargs):
     if keys[x] in kwargs.keys():
       mssg = "The %s parameter is not allowed with this method" % keys[x]
       raise Exception(mssg)
+
+def check_json(x):
+  ctype = x.headers['Content-Type']
+  matched = re.match("application/json", ctype)
+  if matched.__class__.__name__ == 'NoneType':
+    scode = x.status_code
+    if str(x.text) == "Not implemented.":
+      scode = 400
+    raise RequestError(scode, str(x.text))

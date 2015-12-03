@@ -7,9 +7,13 @@ def content_negotiation(ids = None, format = "bibtex", style = 'apa',
     Get citations in various formats from CrossRef
 
     :param ids: [str] DOIs
-    :param format: [str] Format
-    :param style: [str] Style
-    :param locale: [str] Locale
+    :param format: [str] Name of the format. One of "rdf-xml", "turtle", "citeproc-json",
+        "citeproc-json-ish", "text", "ris", "bibtex" (Default), "crossref-xml",
+        "datacite-xml","bibentry", or "crossref-tdm"
+    :param style: [str] A CSL style (for text format only). See :func:`~habanero.cn.csl_styles`
+        for options. Default: "apa". If there's a style that CrossRef doesn't support
+        you'll get a `(500) Internal Server Error`
+    :param locale: [str] Language locale. See `locale.locale_alias`
     :param kwargs: any additional arguments will be passed on to `requests.get`
 
     :return: string, which can be parsed to various formats depending on what
