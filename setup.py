@@ -12,7 +12,7 @@ long_description = readme + '\n\n' + changes
 
 setup(
 	name             = 'habanero',
-	version          = '0.1.2.9600',
+	version          = '0.1.3',
 	description      = 'Low Level Client for Crossref Search API',
 	long_description = long_description,
   author           = 'Scott Chamberlain',
@@ -29,6 +29,7 @@ setup(
     'License :: OSI Approved :: MIT License',
     'Programming Language :: Python',
     'Programming Language :: Python :: 2.6',
-    'Programming Language :: Python :: 2.7'
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3'
 	)
 )
