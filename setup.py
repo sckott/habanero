@@ -8,7 +8,7 @@ with codecs.open('README.rst', 'r', 'utf-8') as f:
 with codecs.open('Changelog.rst', 'r', 'utf-8') as f:
     changes = f.read()
 
-long_description = readme + '\n\n' + changes
+long_description = '\n\n' + readme + '\n\n' + changes
 
 setup(
 	name             = 'habanero',
