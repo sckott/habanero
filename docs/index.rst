@@ -15,26 +15,24 @@ Other Crossref API clients:
 `habanero` includes three modules you can import as needed (or
 import all):
 
-- `Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a few convenience methods for getting DOI agency and random DOIs:
+`Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a few convenience methods for getting DOI agency and random DOIs:
 
-  - `works` - `/works` route
-  - `members` - `/members` route
-  - `prefixes` - `/prefixes` route
-  - `funders` - `/funders` route
-  - `journals` - `/journals` route
-  - `types` - `/types` route
-  - `licenses` - `/licenses` route
-  - `registration_agency` - get DOI minting agency
-  - `random_dois` - get random set of DOIs
+- `works` - `/works` route
+- `members` - `/members` route
+- `prefixes` - `/prefixes` route
+- `funders` - `/funders` route
+- `journals` - `/journals` route
+- `types` - `/types` route
+- `licenses` - `/licenses` route
+- `registration_agency` - get DOI minting agency
+- `random_dois` - get random set of DOIs
 
-- `counts` - citation counts
+`counts` - citation counts. Includes the single `citation_count` method
 
-  - `citation_count` - get citation count for a DOI
+`cn` - content negotiation. Includes the methods:
 
-- `cn` - content negotiation
-
-  - `content_negotiation` - get citations in a variety of formats
-  - `csl_styles` - get CSL styles, used in `content_negotation` method
+- `content_negotiation` - get citations in a variety of formats
+- `csl_styles` - get CSL styles, used in `content_negotation` method
 
 
 Installation
@@ -120,6 +118,7 @@ Meta
 
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
    :target: https://coveralls.io/github/sckott/habanero?branch=master
+
 
 
 
