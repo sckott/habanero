@@ -34,6 +34,7 @@ import all):
 - `cn` - content negotiation
 
   - `content_negotiation` - get citations in a variety of formats
+  - `csl_styles` - get CSL styles, used in `content_negotation` method
 
 
 Installation
