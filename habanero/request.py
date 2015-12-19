@@ -3,7 +3,7 @@ import json
 import re
 
 from .filterhandler import filter_handler
-from .habanero_utils import switch_classes
+from .habanero_utils import switch_classes, check_json
 from .exceptions import *
 
 def request(url, path, ids = None, query = None, filter = None,
@@ -54,12 +54,3 @@ def request(url, path, ids = None, query = None, filter = None,
       coll = coll[0]
 
   return coll
-
-def check_json(x):
-  ctype = x.headers['Content-Type']
-  matched = re.match("application/json", ctype)
-  if matched.__class__.__name__ == 'NoneType':
-    scode = x.status_code
-    if str(x.text) == "Not implemented.":
-      scode = 400
-    raise RequestError(scode, str(x.text))

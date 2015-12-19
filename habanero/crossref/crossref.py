@@ -22,8 +22,6 @@ class Crossref(object):
     Also:
 
     * registration_agency - :func:`~habanero.Crossref.registration_agency`
-    * content negotiation - :func:`~habanero.Crossref.content_negotiation`
-    * citation_count - :func:`~habanero.Crossref.citation_count`
     * random_dois - :func:`~habanero.Crossref.random_dois`
 
     Doing setup::

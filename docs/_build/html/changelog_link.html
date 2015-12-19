@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Citation counts &mdash; habanero 0.1.3 documentation</title>
+  <title>Changelog &mdash; habanero 0.1.3 documentation</title>
   
 
   
@@ -31,8 +31,7 @@
 
   
     <link rel="top" title="habanero 0.1.3 documentation" href="index.html"/>
-        <link rel="next" title="Content negotiation" href="cn.html"/>
-        <link rel="prev" title="Crossref Search Filters" href="filters.html"/> 
+        <link rel="prev" title="Exceptions" href="exceptions.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -84,10 +83,16 @@
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Citation counts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog_link.html">Changelog</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.1.3 (2015-12-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.1.1 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">0.1.0 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">0.0.6 (2015-11-09)</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -118,11 +123,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Citation counts</li>
+    <li>Changelog</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/counts.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/changelog_link.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -132,35 +137,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-habanero">
-<span id="citation-counts"></span><span id="counts"></span><h1>Citation counts<a class="headerlink" href="#module-habanero" title="Permalink to this headline">¶</a></h1>
-<dl class="method">
-<dt id="habanero.counts.citation_count">
-<code class="descclassname">counts.</code><code class="descname">citation_count</code><span class="sig-paren">(</span><em>doi</em>, <em>url='http://www.crossref.org/openurl/'</em>, <em>key='cboettig&#64;ropensci.org'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#habanero.counts.citation_count" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get a citation count with a DOI</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">&#64;param doi:</th><td class="field-body">[String] DOI, digital object identifier</td>
-</tr>
-<tr class="field-even field"><th class="field-name">&#64;param url:</th><td class="field-body">[String] the API url for the function (should be left to default)</td>
-</tr>
-</tbody>
-</table>
-<p>:&#64;param keyc [String] your API key</p>
-<p>See <a class="reference external" href="http://labs.crossref.org/openurl/">http://labs.crossref.org/openurl/</a> for more info on this Crossref API service.</p>
-<p>Usage:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
-<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1371/journal.pone.0042793&quot;</span><span class="p">)</span>
-<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
-<span class="c"># DOI not found</span>
-<span class="c">## FIXME</span>
-<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s">&quot;10.1016/j.fbr.2012&quot;</span><span class="p">)</span>
-</pre></div>
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id1">
+<h2>0.1.3 (2015-12-02)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Fix wheel file to be a universal to install on python2 and python3 (#25)</li>
+<li>Added method <cite>csl_styles</cite> to get CSL styles for use in content negotiation (#27)</li>
+<li>More documentation for content negotiation (#26)</li>
+<li>Made note in docs that <cite>sample</cite> param ignored unless <cite>/works</cite> used (#24)</li>
+<li>Made note in docs that funders without IDs don&#8217;t show up on the <cite>/funders</cite> route (#23)</li>
+</ul>
 </div>
-</dd></dl>
-
+<div class="section" id="id2">
+<h2>0.1.1 (2015-11-17)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Fix readme</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>0.1.0 (2015-11-17)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Now compatible with Python 2x and 3x</li>
+<li><cite>agency()</cite> method changed to <cite>registration_agency()</cite></li>
+<li>New method <cite>citation_count()</cite> - get citation counts for DOIs</li>
+<li>New method <cite>crosscite()</cite> - get a citation for DOIs, only supports simple text format</li>
+<li>New method <cite>random_dois()</cite> - get a random set of DOIs</li>
+<li>Now importing <cite>xml.dom</cite> to do small amount of XML parsing</li>
+<li>Changed library structure, now with module system, separated into modules for the main Crossref search API (i.e., <cite>api.crossref.org</cite>) including higher level methods (e.g., <cite>registration_agency</cite>), content negotiation, and citation counts.</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>0.0.6 (2015-11-09)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>First pypi release</li>
+</ul>
+</div>
 </div>
 
 
@@ -170,10 +182,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="cn.html" class="btn btn-neutral float-right" title="Content negotiation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="filters.html" class="btn btn-neutral" title="Crossref Search Filters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="exceptions.html" class="btn btn-neutral" title="Exceptions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

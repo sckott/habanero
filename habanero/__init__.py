@@ -42,11 +42,11 @@ Usage::
 '''
 
 __title__ = 'habanero'
-__version__ = '0.1.2.9000'
+__version__ = '0.1.3'
 __author__ = 'Scott Chamberlain'
 __license__ = 'MIT'
 
 from .crossref import Crossref
-from .cn import content_negotiation
+from .cn import content_negotiation, csl_styles
 from .counts import citation_count
 from .exceptions import *
