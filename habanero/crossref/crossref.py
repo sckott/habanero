@@ -116,9 +116,11 @@ class Crossref(object):
             cr.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
 
             # Deep paging, using the cursor parameter
-            ## this search should lead to only about 209 results
+            ## this search should lead to only ~215 results
             cr.works(query = "widget", cursor = "*", limit = 100)
-            cr.works(query = "widget", cursor = "*", limit = 30)
+            ## this search should lead to only ~2500 results, in chunks of 500
+            res = cr.works(query = "octopus", cursor = "*", limit = 500)
+            sum([ len(z['message']['items']) for z in res ])
             ## about 150 results
             res = cr.works(query = "extravagant", cursor = "*", limit = 50)
             sum([ len(z['message']['items']) for z in res ])
@@ -126,10 +128,13 @@ class Crossref(object):
             res = cr.works(query = "widget", cursor = "*", cursor_max = 100)
             sum([ len(z['message']['items']) for z in res ])
             ## cursor_max - especially useful when a request could be very large
-            ### e.g., "ecology" results in 269,812 records, lets max at 1000
-            ###   with 100 at a time
-            res = cr.works(query = "ecology", cursor = "*", cursor_max = 1000, rows = 100)
+            ### e.g., "ecology" results in ~275K records, lets max at 10,000
+            ###   with 1000 at a time
+            res = cr.works(query = "ecology", cursor = "*", cursor_max = 10000, limit = 1000)
             sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
         res = Request(self.base_url, "/works/", ids,
           query, filter, offset, limit, sample, sort,
