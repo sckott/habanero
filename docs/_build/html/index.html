@@ -188,10 +188,9 @@ import all):</p>
 </div>
 <p>Works route</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;ecology&quot;</span><span class="p">)</span>
-<span class="n">x</span><span class="o">.</span><span class="n">status</span><span class="p">()</span>
-<span class="n">x</span><span class="o">.</span><span class="n">message</span><span class="p">()</span>
-<span class="n">x</span><span class="o">.</span><span class="n">total_results</span><span class="p">()</span>
-<span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="n">x</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">]</span>
+<span class="n">x</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;total-results&#39;</span><span class="p">]</span>
+<span class="n">x</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Members route</p>

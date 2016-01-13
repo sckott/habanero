@@ -211,7 +211,7 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: A dict</span>
 
 <span class="sd">        Usage::</span>
 
@@ -300,7 +300,7 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: A dict</span>
 
 <span class="sd">        Usage::</span>
 
@@ -309,7 +309,9 @@
 <span class="sd">            cr.members(ids = 98)</span>
 
 <span class="sd">            # get works</span>
-<span class="sd">            cr.members(ids = 98, works = True, limit = 3)</span>
+<span class="sd">            res = cr.members(ids = 98, works = True, limit = 3)</span>
+<span class="sd">            len(res[&#39;message&#39;][&#39;items&#39;])</span>
+<span class="sd">            [ z[&#39;DOI&#39;] for z in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 
 <span class="sd">            # cursor - deep paging</span>
 <span class="sd">            res = cr.members(ids = 98, works = True, cursor = &quot;*&quot;)</span>
@@ -347,7 +349,7 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: A dict</span>
 
 <span class="sd">        Usage::</span>
 
@@ -407,7 +409,7 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: A dict</span>
 
 <span class="sd">        Usage::</span>
 
@@ -456,7 +458,7 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: A dict</span>
 
 <span class="sd">        Usage::</span>
 
@@ -518,7 +520,7 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: A dict</span>
 
 <span class="sd">        Usage::</span>
 
@@ -552,7 +554,7 @@
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
-<span class="sd">        :return: Object response class, light wrapper around a dict</span>
+<span class="sd">        :return: A dict</span>
 
 <span class="sd">        Usage::</span>
 

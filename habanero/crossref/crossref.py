@@ -77,7 +77,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -166,7 +166,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -215,7 +215,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -275,7 +275,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -324,7 +324,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -386,7 +386,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -420,7 +420,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 

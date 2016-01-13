@@ -239,7 +239,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -293,7 +293,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -355,7 +355,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -399,7 +399,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -410,7 +410,9 @@ will be by DOI update date.</li>
 <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">)</span>
 
 <span class="c"># get works</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 
 <span class="c"># cursor - deep paging</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">)</span>
@@ -451,7 +453,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -571,7 +573,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -624,7 +626,7 @@ found than this value, you will get only those found.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
