@@ -135,6 +135,7 @@
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">..request</span> <span class="kn">import</span> <span class="n">request</span>
+<span class="kn">from</span> <span class="nn">..request_class</span> <span class="kn">import</span> <span class="n">Request</span>
 <span class="kn">from</span> <span class="nn">..habanero_utils</span> <span class="kn">import</span> <span class="n">sub_str</span><span class="p">,</span><span class="n">check_kwargs</span>
 <span class="kn">from</span> <span class="nn">.filters</span> <span class="kn">import</span> <span class="n">filter_names</span><span class="p">,</span> <span class="n">filter_details</span>
 
@@ -178,7 +179,8 @@
 
 <div class="viewcode-block" id="Crossref.works"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.works">[docs]</a>    <span class="k">def</span> <span class="nf">works</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
+              <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref works</span>
 
@@ -197,6 +199,15 @@
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param cursor: [String] Cursor character string to do deep paging. Default is None.</span>
+<span class="sd">            Pass in &#39;*&#39; to start deep paging. Any combination of query, filters and facets may be</span>
+<span class="sd">            used with deep paging cursors. While rows may be specified along with cursor, offset</span>
+<span class="sd">            and sample cannot be used.</span>
+<span class="sd">            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors</span>
+<span class="sd">        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because</span>
+<span class="sd">            deep paging can result in continuous requests until all are retrieved, use this</span>
+<span class="sd">            parameter to set a maximum number of records. Of course, if there are less records</span>
+<span class="sd">            found than this value, you will get only those found.</span>
 <span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
 <span class="sd">            `requests.get`</span>
 
@@ -237,15 +248,36 @@
 <span class="sd">            cr.works(filter = {&#39;has_full_text&#39;: True})</span>
 <span class="sd">            cr.works(filter = {&#39;has_funder&#39;: True, &#39;has_full_text&#39;: True})</span>
 <span class="sd">            cr.works(filter = {&#39;award_number&#39;: &#39;CBET-0756451&#39;, &#39;award_funder&#39;: &#39;10.13039/100000001&#39;})</span>
+
+<span class="sd">            # Deep paging, using the cursor parameter</span>
+<span class="sd">            ## this search should lead to only ~215 results</span>
+<span class="sd">            cr.works(query = &quot;widget&quot;, cursor = &quot;*&quot;, limit = 100)</span>
+<span class="sd">            ## this search should lead to only ~2500 results, in chunks of 500</span>
+<span class="sd">            res = cr.works(query = &quot;octopus&quot;, cursor = &quot;*&quot;, limit = 500)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            ## about 150 results</span>
+<span class="sd">            res = cr.works(query = &quot;extravagant&quot;, cursor = &quot;*&quot;, limit = 50)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            ## cursor_max to get back only a maximum set of results</span>
+<span class="sd">            res = cr.works(query = &quot;widget&quot;, cursor = &quot;*&quot;, cursor_max = 100)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            ## cursor_max - especially useful when a request could be very large</span>
+<span class="sd">            ### e.g., &quot;ecology&quot; results in ~275K records, lets max at 10,000</span>
+<span class="sd">            ###   with 1000 at a time</span>
+<span class="sd">            res = cr.works(query = &quot;ecology&quot;, cursor = &quot;*&quot;, cursor_max = 10000, limit = 1000)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
+<span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
+<span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/works/&quot;</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span>
 </div>
 <div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+              <span class="n">cursor</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref members</span>
 
@@ -275,17 +307,25 @@
 <span class="sd">            from habanero import Crossref</span>
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.members(ids = 98)</span>
+
 <span class="sd">            # get works</span>
-<span class="sd">            cr.members(ids = 98, works = True)</span>
+<span class="sd">            cr.members(ids = 98, works = True, limit = 3)</span>
+
+<span class="sd">            # cursor - deep paging</span>
+<span class="sd">            res = cr.members(ids = 98, works = True, cursor = &quot;*&quot;)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
+<span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
+<span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
-          <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+            <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
+            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </div>
 <div class="viewcode-block" id="Crossref.prefixes"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.prefixes">[docs]</a>    <span class="k">def</span> <span class="nf">prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+              <span class="n">cursor</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref prefixes</span>
 
@@ -315,23 +355,33 @@
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;)</span>
 <span class="sd">            cr.prefixes(ids = [&#39;10.1016&#39;,&#39;10.1371&#39;,&#39;10.1023&#39;,&#39;10.4176&#39;,&#39;10.1093&#39;])</span>
+
 <span class="sd">            # get works</span>
 <span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;, works = True)</span>
+
 <span class="sd">            # Limit number of results</span>
 <span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;, works = True, limit = 3)</span>
+
 <span class="sd">            # Sort and order</span>
 <span class="sd">            cr.prefixes(ids = &quot;10.1016&quot;, works = True, sort = &quot;relevance&quot;, order = &quot;asc&quot;)</span>
+
+<span class="sd">            # cursor - deep paging</span>
+<span class="sd">            res = cr.prefixes(ids = &quot;10.1016&quot;, works = True, cursor = &quot;*&quot;, limit = 200)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
+<span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
+<span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s">&quot;query&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="n">limit</span><span class="p">,</span>
-          <span class="n">sample</span> <span class="o">=</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="n">sort</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="n">facet</span><span class="p">,</span>
-          <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+          <span class="n">sample</span> <span class="o">=</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="n">sort</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span>
+          <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </div>
 <div class="viewcode-block" id="Crossref.funders"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.funders">[docs]</a>    <span class="k">def</span> <span class="nf">funders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+              <span class="n">cursor</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref funders</span>
 
@@ -365,17 +415,25 @@
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.funders(ids = &#39;10.13039/100000001&#39;)</span>
 <span class="sd">            cr.funders(query = &quot;NSF&quot;)</span>
+
 <span class="sd">            # get works</span>
 <span class="sd">            cr.funders(ids = &#39;10.13039/100000001&#39;, works = True)</span>
+
+<span class="sd">            # cursor - deep paging</span>
+<span class="sd">            res = cr.funders(ids = &#39;10.13039/100000001&#39;, works = True, cursor = &quot;*&quot;, limit = 200)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
+<span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
+<span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </div>
 <div class="viewcode-block" id="Crossref.journals"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.journals">[docs]</a>    <span class="k">def</span> <span class="nf">journals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+              <span class="n">cursor</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref journals</span>
 
@@ -406,25 +464,38 @@
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.journals(ids = &quot;2167-8359&quot;)</span>
 <span class="sd">            cr.journals()</span>
-<span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, works = True)</span>
+
+<span class="sd">            # pass many ids</span>
 <span class="sd">            cr.journals(ids = [&#39;1803-2427&#39;, &#39;2326-4225&#39;])</span>
+
+<span class="sd">            # search</span>
 <span class="sd">            cr.journals(query = &quot;ecology&quot;)</span>
 <span class="sd">            cr.journals(query = &quot;peerj&quot;)</span>
+
+<span class="sd">            # get works</span>
+<span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, works = True)</span>
 <span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;asc&quot;)</span>
 <span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;desc&quot;)</span>
 <span class="sd">            cr.journals(ids = &quot;2167-8359&quot;, works = True, filter = {&#39;from_pub_date&#39;: &#39;2014-03-03&#39;})</span>
 <span class="sd">            cr.journals(ids = &#39;1803-2427&#39;, works = True)</span>
 <span class="sd">            cr.journals(ids = &#39;1803-2427&#39;, works = True, sample = 1)</span>
 <span class="sd">            cr.journals(limit: 2)</span>
+
+<span class="sd">            # cursor - deep paging</span>
+<span class="sd">            res = cr.funders(ids = &#39;10.13039/100000001&#39;, works = True, cursor = &quot;*&quot;, limit = 200)</span>
+<span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
+<span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
+<span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
+<span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </div>
 <div class="viewcode-block" id="Crossref.types"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.types">[docs]</a>    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+              <span class="n">cursor</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref types</span>
 
@@ -457,10 +528,9 @@
 <span class="sd">            cr.types(ids = &quot;journal&quot;)</span>
 <span class="sd">            cr.types(ids = &quot;journal&quot;, works = True)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
+            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </div>
 <div class="viewcode-block" id="Crossref.licenses"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.licenses">[docs]</a>    <span class="k">def</span> <span class="nf">licenses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>

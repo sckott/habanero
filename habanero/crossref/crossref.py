@@ -136,14 +136,14 @@ class Crossref(object):
             items = [ item for sublist in items for item in sublist ]
             [ z['DOI'] for z in items ][0:50]
         '''
-        res = Request(self.base_url, "/works/", ids,
+        return Request(self.base_url, "/works/",
           query, filter, offset, limit, sample, sort,
-          order, facet, cursor, cursor_max, works = False).do_request()
-        return res
+          order, facet, cursor, cursor_max).do_request()
 
     def members(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref members
 
@@ -173,17 +173,25 @@ class Crossref(object):
             from habanero import Crossref
             cr = Crossref()
             cr.members(ids = 98)
+
             # get works
-            cr.members(ids = 98, works = True)
+            cr.members(ids = 98, works = True, limit = 3)
+
+            # cursor - deep paging
+            res = cr.members(ids = 98, works = True, cursor = "*")
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
-        res = request(self.base_url, "/members/", ids,
-          query, filter, offset, limit, sample, sort,
-          order, facet, works, **kwargs)
-        return res
+        return request(self.base_url, "/members/", ids,
+            query, filter, offset, limit, sample, sort,
+            order, facet, works, cursor, cursor_max, **kwargs)
 
     def prefixes(self, ids = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref prefixes
 
@@ -213,23 +221,33 @@ class Crossref(object):
             cr = Crossref()
             cr.prefixes(ids = "10.1016")
             cr.prefixes(ids = ['10.1016','10.1371','10.1023','10.4176','10.1093'])
+
             # get works
             cr.prefixes(ids = "10.1016", works = True)
+
             # Limit number of results
             cr.prefixes(ids = "10.1016", works = True, limit = 3)
+
             # Sort and order
             cr.prefixes(ids = "10.1016", works = True, sort = "relevance", order = "asc")
+
+            # cursor - deep paging
+            res = cr.prefixes(ids = "10.1016", works = True, cursor = "*", limit = 200)
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
         check_kwargs(["query"], kwargs)
-        res = request(self.base_url, "/prefixes/", ids,
+        return request(self.base_url, "/prefixes/", ids,
           query = None, filter = filter, offset = offset, limit = limit,
-          sample = sample, sort = sort, order = order, facet = facet,
-          works = works, **kwargs)
-        return res
+          sample = sample, sort = sort, order = order, facet = facet, works = works,
+          cursor = cursor, cursor_max = cursor_max, **kwargs)
 
     def funders(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref funders
 
@@ -263,17 +281,25 @@ class Crossref(object):
             cr = Crossref()
             cr.funders(ids = '10.13039/100000001')
             cr.funders(query = "NSF")
+
             # get works
             cr.funders(ids = '10.13039/100000001', works = True)
+
+            # cursor - deep paging
+            res = cr.funders(ids = '10.13039/100000001', works = True, cursor = "*", limit = 200)
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
-        res = request(self.base_url, "/funders/", ids,
+        return request(self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, works, **kwargs)
-        return res
+          order, facet, works, cursor, cursor_max, **kwargs)
 
     def journals(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref journals
 
@@ -304,25 +330,38 @@ class Crossref(object):
             cr = Crossref()
             cr.journals(ids = "2167-8359")
             cr.journals()
-            cr.journals(ids = "2167-8359", works = True)
+
+            # pass many ids
             cr.journals(ids = ['1803-2427', '2326-4225'])
+
+            # search
             cr.journals(query = "ecology")
             cr.journals(query = "peerj")
+
+            # get works
+            cr.journals(ids = "2167-8359", works = True)
             cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "asc")
             cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "desc")
             cr.journals(ids = "2167-8359", works = True, filter = {'from_pub_date': '2014-03-03'})
             cr.journals(ids = '1803-2427', works = True)
             cr.journals(ids = '1803-2427', works = True, sample = 1)
             cr.journals(limit: 2)
+
+            # cursor - deep paging
+            res = cr.funders(ids = '10.13039/100000001', works = True, cursor = "*", limit = 200)
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
-        res = request(self.base_url, "/journals/", ids,
+        return request(self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, works, **kwargs)
-        return res
+          order, facet, works, cursor, cursor_max, **kwargs)
 
     def types(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref types
 
@@ -355,10 +394,9 @@ class Crossref(object):
             cr.types(ids = "journal")
             cr.types(ids = "journal", works = True)
         '''
-        res = request(self.base_url, "/types/", ids,
+        return request(self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,
-            order, facet, works, **kwargs)
-        return res
+            order, facet, works, cursor, cursor_max, **kwargs)
 
     def licenses(self, query = None, offset = None,
               limit = None, sample = None, sort = None,

@@ -32,11 +32,10 @@ def test_journals_ids():
 def test_journals_works():
     "journals - param: works"
     res1 = cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "asc")
-    scores1 = [ x['score'] for x in res1.result['message']['items'] ]
+    scores1 = [ x['score'] for x in res1['message']['items'] ]
     res2 = cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "desc")
-    scores2 = [ x['score'] for x in res2.result['message']['items'] ]
-    assert 'ok' == res1.status()
-    assert 'Works' == res1.__class__.__name__
-    assert 'work-list' == res1.result['message-type']
+    scores2 = [ x['score'] for x in res2['message']['items'] ]
+    assert dict == res1.__class__
+    assert 'work-list' == res1['message-type']
     assert max(scores1) == scores1[-1]
     assert min(scores2) == scores2[-1]

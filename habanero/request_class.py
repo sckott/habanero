@@ -12,13 +12,12 @@ class Request(object):
 
   This is the request class for all requests
   '''
-  def __init__(self, url, path, ids = None, query = None, filter = None,
+  def __init__(self, url, path, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, cursor = None, cursor_max = None,
-        works = None, agency = False):
+        agency = False):
     self.url = url
     self.path = path
-    self.ids = ids
     self.query = query
     self.filter = filter
     self.offset = offset
@@ -29,7 +28,6 @@ class Request(object):
     self.facet = facet
     self.cursor = cursor
     self.cursor_max = cursor_max
-    self.works = works
     self.agency = agency
 
   def _url(self):

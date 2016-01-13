@@ -17,9 +17,7 @@ def test_prefixes():
 def test_prefixes_works():
     "prefixes - param: works"
     res = cr.prefixes(ids = "10.1016", works=True, sample = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 0 == res.query()['start-index']
+    assert dict == res.__class__
 
 @raises(Exception)
 def test_prefixes_filter():

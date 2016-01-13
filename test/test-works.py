@@ -8,27 +8,24 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 def test_works():
     "works - basic test"
     res = cr.works(limit = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.query().__class__.__name__
-    assert 2 == res.items_per_page()
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
+    assert 2 == len(res['message']['items'])
 
 def test_works_query():
     "works - param: query"
     res = cr.works(query = "ecology", limit = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.query().__class__.__name__
-    assert 2 == res.items_per_page()
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
 
 def test_works_sample():
     "works - param: sample"
     res = cr.works(sample = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.query().__class__.__name__
-    assert 20 == res.items_per_page()
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
 
 def test_works_filter():
     "works - param: filter"
     res = cr.works(filter = {'has_full_text': True}, limit = 3)
-    assert 'ok' == res.status()
-    assert 'dict' == res.query().__class__.__name__
-    assert 3 == res.items_per_page()
+    assert dict == res.__class__
+    assert 5 == len(res['message'])

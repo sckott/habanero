@@ -55,6 +55,5 @@ def test_types_ids():
 def test_types_works():
     "types - param: works"
     res = cr.types(ids = "journal", works = True, limit = 2)
-    assert 'ok' == res.status()
-    assert 'Works' == res.__class__.__name__
-    assert 'work-list' == res.result['message-type']
+    assert dict == res.__class__
+    assert 'work-list' == res['message-type']
