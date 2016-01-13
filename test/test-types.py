@@ -35,26 +35,23 @@ a = {u'items': [{u'id': u'book-section', u'label': u'Book Section'},
 def test_types():
     "types - basic test"
     res = cr.types()
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 'dict' == res.message().__class__.__name__
-    assert a == res.message()
+    assert dict == res.__class__
+    assert dict == res['message'].__class__
+    assert a == res['message']
 
 def test_types_query():
     "types - param: query - doesn't do anything without works"
     res = cr.types(query = "journal")
-    assert a == res.message()
+    assert a == res['message']
 
 def test_types_ids():
     "types - param: ids"
     res = cr.types(ids = "journal")
-    assert 'ok' == res.status()
-    assert 'NoWorks' == res.__class__.__name__
-    assert {u'id': u'journal', u'label': u'Journal'} == res.message()
+    assert dict == res.__class__
+    assert {u'id': u'journal', u'label': u'Journal'} == res['message']
 
 def test_types_works():
     "types - param: works"
     res = cr.types(ids = "journal", works = True, limit = 2)
-    assert 'ok' == res.status()
-    assert 'Works' == res.__class__.__name__
-    assert 'work-list' == res.result['message-type']
+    assert dict == res.__class__
+    assert 'work-list' == res['message-type']

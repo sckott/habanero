@@ -1,6 +1,7 @@
 import sys
 import requests
 from ..request import request
+from ..request_class import Request
 from ..habanero_utils import sub_str,check_kwargs
 from .filters import filter_names, filter_details
 
@@ -44,7 +45,8 @@ class Crossref(object):
 
     def works(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, **kwargs):
+              order = None, facet = None, cursor = None,
+              cursor_max = 5000, **kwargs):
         '''
         Search Crossref works
 
@@ -63,10 +65,19 @@ class Crossref(object):
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
+        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+            Pass in '*' to start deep paging. Any combination of query, filters and facets may be
+            used with deep paging cursors. While rows may be specified along with cursor, offset
+            and sample cannot be used.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+            deep paging can result in continuous requests until all are retrieved, use this
+            parameter to set a maximum number of records. Of course, if there are less records
+            found than this value, you will get only those found.
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -103,15 +114,36 @@ class Crossref(object):
             cr.works(filter = {'has_full_text': True})
             cr.works(filter = {'has_funder': True, 'has_full_text': True})
             cr.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
+
+            # Deep paging, using the cursor parameter
+            ## this search should lead to only ~215 results
+            cr.works(query = "widget", cursor = "*", limit = 100)
+            ## this search should lead to only ~2500 results, in chunks of 500
+            res = cr.works(query = "octopus", cursor = "*", limit = 500)
+            sum([ len(z['message']['items']) for z in res ])
+            ## about 150 results
+            res = cr.works(query = "extravagant", cursor = "*", limit = 50)
+            sum([ len(z['message']['items']) for z in res ])
+            ## cursor_max to get back only a maximum set of results
+            res = cr.works(query = "widget", cursor = "*", cursor_max = 100)
+            sum([ len(z['message']['items']) for z in res ])
+            ## cursor_max - especially useful when a request could be very large
+            ### e.g., "ecology" results in ~275K records, lets max at 10,000
+            ###   with 1000 at a time
+            res = cr.works(query = "ecology", cursor = "*", cursor_max = 10000, limit = 1000)
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
-        res = request(self.base_url, "/works/", ids,
+        return Request(self.base_url, "/works/",
           query, filter, offset, limit, sample, sort,
-          order, facet, works = False, **kwargs)
-        return res
+          order, facet, cursor, cursor_max).do_request()
 
     def members(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref members
 
@@ -134,24 +166,34 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
             from habanero import Crossref
             cr = Crossref()
             cr.members(ids = 98)
+
             # get works
-            cr.members(ids = 98, works = True)
+            res = cr.members(ids = 98, works = True, limit = 3)
+            len(res['message']['items'])
+            [ z['DOI'] for z in res['message']['items'] ]
+
+            # cursor - deep paging
+            res = cr.members(ids = 98, works = True, cursor = "*")
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
-        res = request(self.base_url, "/members/", ids,
-          query, filter, offset, limit, sample, sort,
-          order, facet, works, **kwargs)
-        return res
+        return request(self.base_url, "/members/", ids,
+            query, filter, offset, limit, sample, sort,
+            order, facet, works, cursor, cursor_max, **kwargs)
 
     def prefixes(self, ids = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref prefixes
 
@@ -173,7 +215,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -181,23 +223,33 @@ class Crossref(object):
             cr = Crossref()
             cr.prefixes(ids = "10.1016")
             cr.prefixes(ids = ['10.1016','10.1371','10.1023','10.4176','10.1093'])
+
             # get works
             cr.prefixes(ids = "10.1016", works = True)
+
             # Limit number of results
             cr.prefixes(ids = "10.1016", works = True, limit = 3)
+
             # Sort and order
             cr.prefixes(ids = "10.1016", works = True, sort = "relevance", order = "asc")
+
+            # cursor - deep paging
+            res = cr.prefixes(ids = "10.1016", works = True, cursor = "*", limit = 200)
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
         check_kwargs(["query"], kwargs)
-        res = request(self.base_url, "/prefixes/", ids,
+        return request(self.base_url, "/prefixes/", ids,
           query = None, filter = filter, offset = offset, limit = limit,
-          sample = sample, sort = sort, order = order, facet = facet,
-          works = works, **kwargs)
-        return res
+          sample = sample, sort = sort, order = order, facet = facet, works = works,
+          cursor = cursor, cursor_max = cursor_max, **kwargs)
 
     def funders(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref funders
 
@@ -223,7 +275,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -231,17 +283,25 @@ class Crossref(object):
             cr = Crossref()
             cr.funders(ids = '10.13039/100000001')
             cr.funders(query = "NSF")
+
             # get works
             cr.funders(ids = '10.13039/100000001', works = True)
+
+            # cursor - deep paging
+            res = cr.funders(ids = '10.13039/100000001', works = True, cursor = "*", limit = 200)
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
-        res = request(self.base_url, "/funders/", ids,
+        return request(self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, works, **kwargs)
-        return res
+          order, facet, works, cursor, cursor_max, **kwargs)
 
     def journals(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref journals
 
@@ -264,7 +324,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -272,25 +332,38 @@ class Crossref(object):
             cr = Crossref()
             cr.journals(ids = "2167-8359")
             cr.journals()
-            cr.journals(ids = "2167-8359", works = True)
+
+            # pass many ids
             cr.journals(ids = ['1803-2427', '2326-4225'])
+
+            # search
             cr.journals(query = "ecology")
             cr.journals(query = "peerj")
+
+            # get works
+            cr.journals(ids = "2167-8359", works = True)
             cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "asc")
             cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "desc")
             cr.journals(ids = "2167-8359", works = True, filter = {'from_pub_date': '2014-03-03'})
             cr.journals(ids = '1803-2427', works = True)
             cr.journals(ids = '1803-2427', works = True, sample = 1)
             cr.journals(limit: 2)
+
+            # cursor - deep paging
+            res = cr.funders(ids = '10.13039/100000001', works = True, cursor = "*", limit = 200)
+            sum([ len(z['message']['items']) for z in res ])
+            items = [ z['message']['items'] for z in res ]
+            items = [ item for sublist in items for item in sublist ]
+            [ z['DOI'] for z in items ][0:50]
         '''
-        res = request(self.base_url, "/journals/", ids,
+        return request(self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, works, **kwargs)
-        return res
+          order, facet, works, cursor, cursor_max, **kwargs)
 
     def types(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, **kwargs):
+              order = None, facet = None, works = False,
+              cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref types
 
@@ -313,7 +386,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 
@@ -323,10 +396,9 @@ class Crossref(object):
             cr.types(ids = "journal")
             cr.types(ids = "journal", works = True)
         '''
-        res = request(self.base_url, "/types/", ids,
+        return request(self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,
-            order, facet, works, **kwargs)
-        return res
+            order, facet, works, cursor, cursor_max, **kwargs)
 
     def licenses(self, query = None, offset = None,
               limit = None, sample = None, sort = None,
@@ -348,7 +420,7 @@ class Crossref(object):
         :param kwargs: any additional arguments will be passed on to
             `requests.get`
 
-        :return: Object response class, light wrapper around a dict
+        :return: A dict
 
         Usage::
 

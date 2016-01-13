@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Crossref Search &mdash; habanero 0.1.3 documentation</title>
+  <title>Crossref Search &mdash; habanero 0.1.3.9800 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.1.3 documentation" href="index.html"/>
+    <link rel="top" title="habanero 0.1.3.9800 documentation" href="index.html"/>
         <link rel="next" title="Crossref Search Filters" href="filters.html"/>
         <link rel="prev" title="habanero" href="index.html"/> 
 
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                0.1.3
+                0.1.3.9800
               </div>
             
           
@@ -209,7 +209,7 @@
 
 <dl class="method">
 <dt id="habanero.Crossref.funders">
-<code class="descname">funders</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.funders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.funders" title="Permalink to this definition">¶</a></dt>
+<code class="descname">funders</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.funders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.funders" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref funders</p>
 <p>Note that funders without IDs don&#8217;t show up on the <cite>/funders</cite> route,
 that is, won&#8217;t show up in searches via this method</p>
@@ -239,7 +239,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -249,15 +249,23 @@ will be by DOI update date.</li>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">)</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;NSF&quot;</span><span class="p">)</span>
+
 <span class="c"># get works</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="c"># cursor - deep paging</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">200</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="habanero.Crossref.journals">
-<code class="descname">journals</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.journals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.journals" title="Permalink to this definition">¶</a></dt>
+<code class="descname">journals</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.journals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.journals" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref journals</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -285,7 +293,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -295,16 +303,29 @@ will be by DOI update date.</li>
 cr = Crossref()
 cr.journals(ids = &quot;2167-8359&quot;)
 cr.journals()
-cr.journals(ids = &quot;2167-8359&quot;, works = True)
+
+# pass many ids
 cr.journals(ids = [&#39;1803-2427&#39;, &#39;2326-4225&#39;])
+
+# search
 cr.journals(query = &quot;ecology&quot;)
 cr.journals(query = &quot;peerj&quot;)
+
+# get works
+cr.journals(ids = &quot;2167-8359&quot;, works = True)
 cr.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;asc&quot;)
 cr.journals(ids = &quot;2167-8359&quot;, query = &#39;ecology&#39;, works = True, sort = &#39;score&#39;, order = &quot;desc&quot;)
 cr.journals(ids = &quot;2167-8359&quot;, works = True, filter = {&#39;from_pub_date&#39;: &#39;2014-03-03&#39;})
 cr.journals(ids = &#39;1803-2427&#39;, works = True)
 cr.journals(ids = &#39;1803-2427&#39;, works = True, sample = 1)
 cr.journals(limit: 2)
+
+# cursor - deep paging
+res = cr.funders(ids = &#39;10.13039/100000001&#39;, works = True, cursor = &quot;*&quot;, limit = 200)
+sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])
+items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]
+items = [ item for sublist in items for item in sublist ]
+[ z[&#39;DOI&#39;] for z in items ][0:50]
 </pre></div>
 </div>
 </dd></dl>
@@ -334,7 +355,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -350,7 +371,7 @@ will be by DOI update date.</li>
 
 <dl class="method">
 <dt id="habanero.Crossref.members">
-<code class="descname">members</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.members"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.members" title="Permalink to this definition">¶</a></dt>
+<code class="descname">members</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.members"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.members" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref members</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -378,7 +399,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -387,15 +408,25 @@ will be by DOI update date.</li>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">)</span>
+
 <span class="c"># get works</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="c"># cursor - deep paging</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="habanero.Crossref.prefixes">
-<code class="descname">prefixes</code><span class="sig-paren">(</span><em>ids=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.prefixes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.prefixes" title="Permalink to this definition">¶</a></dt>
+<code class="descname">prefixes</code><span class="sig-paren">(</span><em>ids=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.prefixes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.prefixes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref prefixes</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -422,7 +453,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -432,12 +463,22 @@ will be by DOI update date.</li>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">)</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.1016&#39;</span><span class="p">,</span><span class="s">&#39;10.1371&#39;</span><span class="p">,</span><span class="s">&#39;10.1023&#39;</span><span class="p">,</span><span class="s">&#39;10.4176&#39;</span><span class="p">,</span><span class="s">&#39;10.1093&#39;</span><span class="p">])</span>
+
 <span class="c"># get works</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+
 <span class="c"># Limit number of results</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+
 <span class="c"># Sort and order</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="s">&quot;relevance&quot;</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="s">&quot;asc&quot;</span><span class="p">)</span>
+
+<span class="c"># cursor - deep paging</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">200</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -504,7 +545,7 @@ will be by DOI update date.</li>
 
 <dl class="method">
 <dt id="habanero.Crossref.types">
-<code class="descname">types</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.types"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.types" title="Permalink to this definition">¶</a></dt>
+<code class="descname">types</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.types"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.types" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref types</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -532,7 +573,7 @@ will be by DOI update date.</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -549,7 +590,7 @@ will be by DOI update date.</li>
 
 <dl class="method">
 <dt id="habanero.Crossref.works">
-<code class="descname">works</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.works"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.works" title="Permalink to this definition">¶</a></dt>
+<code class="descname">works</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.works"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.works" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref works</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -571,12 +612,21 @@ order will be by the relevance score. If no query is included, then the sort ord
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>cursor</strong> &#8211; [String] Cursor character string to do deep paging. Default is None.
+Pass in &#8216;*&#8217; to start deep paging. Any combination of query, filters and facets may be
+used with deep paging cursors. While rows may be specified along with cursor, offset
+and sample cannot be used.
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors</a></li>
+<li><strong>cursor_max</strong> &#8211; [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+deep paging can result in continuous requests until all are retrieved, use this
+parameter to set a maximum number of records. Of course, if there are less records
+found than this value, you will get only those found.</li>
 <li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
 <cite>requests.get</cite></li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Object response class, light wrapper around a dict</p>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">A dict</p>
 </td>
 </tr>
 </tbody>
@@ -615,6 +665,27 @@ will be by DOI update date.</li>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;has_funder&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span> <span class="s">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;award_number&#39;</span><span class="p">:</span> <span class="s">&#39;CBET-0756451&#39;</span><span class="p">,</span> <span class="s">&#39;award_funder&#39;</span><span class="p">:</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">})</span>
+
+<span class="c"># Deep paging, using the cursor parameter</span>
+<span class="c">## this search should lead to only ~215 results</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;widget&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<span class="c">## this search should lead to only ~2500 results, in chunks of 500</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;octopus&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">500</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="c">## about 150 results</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;extravagant&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="c">## cursor_max to get back only a maximum set of results</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;widget&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="c">## cursor_max - especially useful when a request could be very large</span>
+<span class="c">### e.g., &quot;ecology&quot; results in ~275K records, lets max at 10,000</span>
+<span class="c">###   with 1000 at a time</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;ecology&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -642,7 +713,7 @@ will be by DOI update date.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2015, Scott Chamberlain.
+        &copy; Copyright 2016, Scott Chamberlain.
 
     </p>
   </div>
@@ -664,7 +735,7 @@ will be by DOI update date.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.1.3',
+            VERSION:'0.1.3.9800',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

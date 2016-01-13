@@ -71,10 +71,9 @@ Works route
 .. code-block:: python
 
   x = cr.works(query = "ecology")
-  x.status()
-  x.message()
-  x.total_results()
-  x.items()
+  x['message']
+  x['message']['total-results']
+  x['message']['items']
 
 Members route
 

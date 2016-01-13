@@ -5,10 +5,12 @@ import re
 from .filterhandler import filter_handler
 from .habanero_utils import switch_classes, check_json
 from .exceptions import *
+from .request_class import Request
 
 def request(url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
-        order = None, facet = None, works = None, agency = False, **kwargs):
+        order = None, facet = None, works = None,
+        cursor = None, cursor_max = None, agency = False, **kwargs):
 
   url = url + path
 
@@ -16,7 +18,7 @@ def request(url, path, ids = None, query = None, filter = None,
 
   payload = {'query':query, 'filter':filt, 'offset':offset,
              'rows':limit, 'sample':sample, 'sort':sort,
-             'order':order, 'facet':facet}
+             'order':order, 'facet':facet, 'cursor':cursor}
   payload = dict((k, v) for k, v in payload.items() if v)
 
   if(ids.__class__.__name__ == 'NoneType'):
@@ -24,8 +26,8 @@ def request(url, path, ids = None, query = None, filter = None,
     tt = requests.get(url, params = payload, **kwargs)
     tt.raise_for_status()
     check_json(tt)
-    js = tt.json()
-    coll = switch_classes(js, path, works)
+    coll = tt.json()
+    # coll = switch_classes(js, path, works)
   else:
     if(ids.__class__.__name__ == "str"):
       ids = ids.split()
@@ -34,20 +36,23 @@ def request(url, path, ids = None, query = None, filter = None,
     coll = []
     for i in range(len(ids)):
       if works:
-        endpt = url + str(ids[i]) + "/works"
+        res = Request(url, str(ids[i]) + "/works",
+          query, filter, offset, limit, sample, sort,
+          order, facet, cursor, cursor_max).do_request()
+        coll.append(res)
       else:
         if agency:
           endpt = url + str(ids[i]) + "/agency"
         else:
           endpt = url + str(ids[i])
 
-      endpt = endpt.strip("/")
-      tt = requests.get(endpt, params = payload, **kwargs)
-      tt.raise_for_status()
-      check_json(tt)
-      js = tt.json()
-      tt_out = switch_classes(js, path, works)
-      coll.append(tt_out)
+        endpt = endpt.strip("/")
+        tt = requests.get(endpt, params = payload, **kwargs)
+        tt.raise_for_status()
+        check_json(tt)
+        js = tt.json()
+        #tt_out = switch_classes(js, path, works)
+        coll.append(js)
 
     if len(coll) == 1:
       coll = coll[0]
