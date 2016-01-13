@@ -76,6 +76,6 @@ class Request(object):
       else:
         r.raise_for_status()
     except requests.exceptions.RequestException as e:
-      print e
+      print(e)
     check_json(r)
     return r.json()
