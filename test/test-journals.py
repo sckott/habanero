@@ -36,3 +36,8 @@ def test_journals_works():
     assert 'work-list' == res1['message-type']
     assert max(scores1) == scores1[-1]
     assert min(scores2) == scores2[-1]
+
+@raises(Exception)
+def test_journals_filter_fails_noidsworks():
+    "journals - filter fails, no ids or works"
+    cr.journals(filter = {'from_pub_date': '2014-03-03'})
