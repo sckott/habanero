@@ -175,7 +175,9 @@ class Crossref(object):
             cr.members(ids = 98)
 
             # get works
-            cr.members(ids = 98, works = True, limit = 3)
+            res = cr.members(ids = 98, works = True, limit = 3)
+            len(res['message']['items'])
+            [ z['DOI'] for z in res['message']['items'] ]
 
             # cursor - deep paging
             res = cr.members(ids = 98, works = True, cursor = "*")

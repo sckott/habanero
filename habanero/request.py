@@ -26,8 +26,8 @@ def request(url, path, ids = None, query = None, filter = None,
     tt = requests.get(url, params = payload, **kwargs)
     tt.raise_for_status()
     check_json(tt)
-    js = tt.json()
-    coll = switch_classes(js, path, works)
+    coll = tt.json()
+    # coll = switch_classes(js, path, works)
   else:
     if(ids.__class__.__name__ == "str"):
       ids = ids.split()
@@ -51,8 +51,8 @@ def request(url, path, ids = None, query = None, filter = None,
         tt.raise_for_status()
         check_json(tt)
         js = tt.json()
-        tt_out = switch_classes(js, path, works)
-        coll.append(tt_out)
+        #tt_out = switch_classes(js, path, works)
+        coll.append(js)
 
     if len(coll) == 1:
       coll = coll[0]

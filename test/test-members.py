@@ -10,23 +10,20 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 def test_members():
     "members - basic test"
     res = cr.members(limit = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 'dict' == res.message().__class__.__name__
+    assert dict == res.__class__
+    assert dict == res['message'].__class__
 
 def test_members_query():
     "members - param: query"
     res = cr.members(query = "ecology", limit = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 'dict' == res.message().__class__.__name__
+    assert dict == res.__class__
+    assert dict == res['message'].__class__
 
 def test_members_sample():
     "members - param: sample"
     res = cr.members(sample = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 'dict' == res.message().__class__.__name__
+    assert dict == res.__class__
+    assert dict == res['message'].__class__
 
 @raises(Exception)
 def test_members_filter():

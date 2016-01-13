@@ -10,9 +10,8 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 def test_prefixes():
     "prefixes - basic test"
     res = cr.prefixes(ids = "10.1016")
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 'dict' == res.message().__class__.__name__
+    assert dict == res.__class__
+    assert dict == res['message'].__class__
 
 def test_prefixes_works():
     "prefixes - param: works"

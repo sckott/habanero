@@ -8,26 +8,23 @@ cr = Crossref()
 def test_journals():
     "journals - basic test"
     res = cr.journals(limit = 1)
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 'dict' == res.message().__class__.__name__
-    assert 1 == res.message()['items-per-page']
+    assert dict == res.__class__
+    assert dict == res['message'].__class__
+    assert 1 == res['message']['items-per-page']
 
 def test_journals_query():
     "journals - param: query"
     res = cr.journals(query = "ecology", limit = 2)
-    assert 'ok' == res.status()
-    assert 'dict' == res.result.__class__.__name__
-    assert 2 == res.result['message']['items-per-page']
-    assert 'journal-list' == res.result['message-type']
+    assert dict == res.__class__
+    assert 2 == res['message']['items-per-page']
+    assert 'journal-list' == res['message-type']
 
 def test_journals_ids():
     "journals - param: ids"
     res = cr.journals(ids = ['1803-2427', '2326-4225'])
-    assert 'ok' == res[0].status()
-    assert 'list' == res.__class__.__name__
-    assert 'NoWorks' == res[0].__class__.__name__
-    assert 'journal' == res[0].result['message-type']
+    assert list == res.__class__
+    assert dict == res[0].__class__
+    assert 'journal' == res[0]['message-type']
 
 def test_journals_works():
     "journals - param: works"
