@@ -432,7 +432,7 @@ class Crossref(object):
         check_kwargs(["ids", "filter", "works"], kwargs)
         res = request(self.base_url, "/licenses/", None,
             query, None, offset, limit, None, sort,
-            order, facet, None, **kwargs)
+            order, facet, None, None, None, None, **kwargs)
         return res
 
     def registration_agency(self, ids, **kwargs):

@@ -37,8 +37,9 @@ class Request(object):
   def do_request(self):
     filt = filter_handler(self.filter)
 
-    if self.cursor_max.__class__ != int:
-      raise ValueError("cursor_max must be of class int")
+    if self.cursor_max.__class__.__name__ != 'NoneType':
+      if self.cursor_max.__class__ != int:
+        raise ValueError("cursor_max must be of class int")
 
     payload = {'query':self.query, 'filter':filt, 'offset':self.offset,
                'rows':self.limit, 'sample':self.sample, 'sort':self.sort,
