@@ -36,3 +36,12 @@ def check_json(x):
     if str(x.text) == "Not implemented.":
       scode = 400
     raise RequestError(scode, str(x.text))
+
+def is_json(x):
+  if re.search('json', x.headers['Content-Type']).__class__.__name__ == 'NoneType':
+    return False
+  else:
+    return True
+
+def parse_json_err(x):
+  return x.json()['message'][0]['message']

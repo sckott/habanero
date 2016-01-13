@@ -3,7 +3,7 @@ import json
 import re
 
 from .filterhandler import filter_handler
-from .habanero_utils import switch_classes, check_json
+from .habanero_utils import switch_classes,check_json,is_json,parse_json_err
 from .exceptions import *
 from .request_class import Request
 
@@ -14,6 +14,9 @@ def request(url, path, ids = None, query = None, filter = None,
 
   url = url + path
 
+  if cursor_max.__class__ != int:
+    raise ValueError("cursor_max must be of class int")
+
   filt = filter_handler(filter)
 
   payload = {'query':query, 'filter':filt, 'offset':offset,
@@ -23,10 +26,18 @@ def request(url, path, ids = None, query = None, filter = None,
 
   if(ids.__class__.__name__ == 'NoneType'):
     url = url.strip("/")
-    tt = requests.get(url, params = payload, **kwargs)
-    tt.raise_for_status()
-    check_json(tt)
-    coll = tt.json()
+    try:
+      r = requests.get(url, params = payload, **kwargs)
+      r.raise_for_status()
+    except requests.exceptions.HTTPError:
+      if is_json(r):
+        raise RequestError(r.status_code, parse_json_err(r))
+      else:
+        r.raise_for_status()
+    except requests.exceptions.RequestException as e:
+      print e
+    check_json(r)
+    coll = r.json()
     # coll = switch_classes(js, path, works)
   else:
     if(ids.__class__.__name__ == "str"):
@@ -47,10 +58,19 @@ def request(url, path, ids = None, query = None, filter = None,
           endpt = url + str(ids[i])
 
         endpt = endpt.strip("/")
-        tt = requests.get(endpt, params = payload, **kwargs)
-        tt.raise_for_status()
-        check_json(tt)
-        js = tt.json()
+
+        try:
+          r = requests.get(endpt, params = payload, **kwargs)
+          r.raise_for_status()
+        except requests.exceptions.HTTPError:
+          if is_json(r):
+            raise RequestError(r.status_code, parse_json_err(r))
+          else:
+            r.raise_for_status()
+        except requests.exceptions.RequestException as e:
+          print e
+        check_json(r)
+        js = r.json()
         #tt_out = switch_classes(js, path, works)
         coll.append(js)
 

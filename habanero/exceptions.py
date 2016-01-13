@@ -22,6 +22,17 @@ class RequestError(Error):
         return self.args[1]
 
     def __str__(self):
-      return 'RequestError(%s) caused by "%s"' % (
+      return '(%s) caused by "%s"' % (
         self.status_code, self.error)
 
+# url = "http://api.crossref.org/works?rows=fart"
+# url = "http://api.crossref.org/funders?filter=from-pub-date%3A2014-03-03"
+# foobar(url)
+# def foobar(x):
+#     try:
+#         r = requests.get(x)
+#         r.raise_for_status()
+#     except requests.exceptions.HTTPError:
+#         raise RequestError(r.status_code, r.json()['message'][0]['message'])
+#     except requests.exceptions.RequestException as e:
+#         print e

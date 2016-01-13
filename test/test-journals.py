@@ -1,6 +1,7 @@
 """Tests for Crossref.journals"""
 import os
 from nose.tools import *
+from habanero import exceptions
 
 from habanero import Crossref
 cr = Crossref()
@@ -37,7 +38,32 @@ def test_journals_works():
     assert max(scores1) == scores1[-1]
     assert min(scores2) == scores2[-1]
 
-@raises(Exception)
+@raises(exceptions.RequestError)
 def test_journals_filter_fails_noidsworks():
     "journals - filter fails, no ids or works"
     cr.journals(filter = {'from_pub_date': '2014-03-03'})
+
+@raises(exceptions.RequestError)
+def test_journals_filter_fails_noidsworks():
+    "journals - filter fails, no ids or works"
+    cr.journals(filter = {'from_pub_date': '2014-03-03'})
+
+@raises(exceptions.RequestError)
+def test_journals_filter_fails_noids():
+    "journals - filter fails, no ids"
+    cr.journals(works = True, filter = {'has_assertion': True})
+
+@raises(exceptions.RequestError)
+def test_journals_fail_limit():
+    "journals - fails on wrong input type to limit"
+    cr.journals(limit = 'things')
+
+@raises(exceptions.RequestError)
+def test_journals_fail_offset():
+    "journals - fails on wrong input type to offset"
+    cr.journals(offset = 'things')
+
+@raises(exceptions.RequestError)
+def test_journals_fail_sort():
+    "journals - fails on wrong input type to offset"
+    cr.journals(sort = 'things')

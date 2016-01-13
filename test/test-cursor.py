@@ -1,6 +1,9 @@
 """Tests for cursor"""
 from nose.tools import *
 import os
+from habanero import exceptions
+from requests import exceptions as ex
+
 from habanero import Crossref
 cr = Crossref()
 
@@ -25,7 +28,12 @@ def test_cursor_max():
     assert 60 == len(items1)
     assert 40 == len(items2)
 
-@raises(Exception)
-def test_cursor_fails():
-    "cursor works - fails well"
+@raises(ex.HTTPError)
+def test_cursor_fails_cursor_value():
+    "cursor works - fails when cursor value not allowed"
     cr.works(query = "widget", cursor = "thing")
+
+@raises(ValueError)
+def test_cursor_fails_cursor_max():
+    "cursor works - fails when cursor value not allowed"
+    cr.works(query = "widget", cursor = "*", cursor_max = "thing")

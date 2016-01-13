@@ -3,7 +3,7 @@ import json
 import re
 
 from .filterhandler import filter_handler
-from .habanero_utils import switch_classes
+from .habanero_utils import switch_classes,check_json,is_json,parse_json_err
 from .exceptions import *
 
 class Request(object):
@@ -37,6 +37,9 @@ class Request(object):
   def do_request(self):
     filt = filter_handler(self.filter)
 
+    if self.cursor_max.__class__ != int:
+      raise ValueError("cursor_max must be of class int")
+
     payload = {'query':self.query, 'filter':filt, 'offset':self.offset,
                'rows':self.limit, 'sample':self.sample, 'sort':self.sort,
                'order':self.order, 'facet':self.facet, 'cursor':self.cursor}
@@ -64,16 +67,15 @@ class Request(object):
       return js
 
   def _req(self, payload):
-    tt = requests.get(self._url(), params = payload)
-    tt.raise_for_status()
-    check_json(tt)
-    return tt.json()
-
-def check_json(x):
-  ctype = x.headers['Content-Type']
-  matched = re.match("application/json", ctype)
-  if matched.__class__.__name__ == 'NoneType':
-    scode = x.status_code
-    if str(x.text) == "Not implemented.":
-      scode = 400
-    raise RequestError(scode, str(x.text))
+    try:
+      r = requests.get(self._url(), params = payload)
+      r.raise_for_status()
+    except requests.exceptions.HTTPError:
+      if is_json(r):
+        raise RequestError(r.status_code, parse_json_err(r))
+      else:
+        r.raise_for_status()
+    except requests.exceptions.RequestException as e:
+      print e
+    check_json(r)
+    return r.json()
