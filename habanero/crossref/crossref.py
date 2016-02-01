@@ -24,6 +24,16 @@ class Crossref(object):
     * registration_agency - :func:`~habanero.Crossref.registration_agency`
     * random_dois - :func:`~habanero.Crossref.random_dois`
 
+    What am I actually searching when using the Crossref search API?:
+
+    You are using the Crossref search API described at
+    https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md.
+    When you search with query terms, on Crossref servers they are not
+    searching full text, or even abstracts of articles, but only what is
+    available in the data that is returned to you. That is, they search
+    article titles, authors, etc. For some discussion on this, see
+    https://github.com/CrossRef/rest-api-doc/issues/101
+
     Doing setup::
 
         from habanero import Crossref

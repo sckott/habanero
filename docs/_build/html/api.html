@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Crossref Search &mdash; habanero 0.1.3.9840 documentation</title>
+  <title>Crossref Search &mdash; habanero 0.1.3.9849 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.1.3.9840 documentation" href="index.html"/>
+    <link rel="top" title="habanero 0.1.3.9849 documentation" href="index.html"/>
         <link rel="next" title="Crossref Search Filters" href="filters.html"/>
         <link rel="prev" title="habanero" href="index.html"/> 
 
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                0.1.3.9840
+                0.1.3.9849
               </div>
             
           
@@ -153,13 +153,21 @@
 <li>registration_agency - <a class="reference internal" href="#habanero.Crossref.registration_agency" title="habanero.Crossref.registration_agency"><code class="xref py py-func docutils literal"><span class="pre">registration_agency()</span></code></a></li>
 <li>random_dois - <a class="reference internal" href="#habanero.Crossref.random_dois" title="habanero.Crossref.random_dois"><code class="xref py py-func docutils literal"><span class="pre">random_dois()</span></code></a></li>
 </ul>
+<p>What am I actually searching when using the Crossref search API?:</p>
+<p>You are using the Crossref search API described at
+<a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md</a>.
+When you search with query terms, on Crossref servers they are not
+searching full text, or even abstracts of articles, but only what is
+available in the data that is returned to you. That is, they search
+article titles, authors, etc. For some discussion on this, see
+<a class="reference external" href="https://github.com/CrossRef/rest-api-doc/issues/101">https://github.com/CrossRef/rest-api-doc/issues/101</a></p>
 <p>Doing setup:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
-<span class="c"># set a different base url</span>
-<span class="n">Crossref</span><span class="p">(</span><span class="n">base_url</span> <span class="o">=</span> <span class="s">&quot;http://some.other.url&quot;</span><span class="p">)</span>
-<span class="c"># set an api key</span>
-<span class="n">Crossref</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s">&quot;123456&quot;</span><span class="p">)</span>
+<span class="c1"># set a different base url</span>
+<span class="n">Crossref</span><span class="p">(</span><span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;http://some.other.url&quot;</span><span class="p">)</span>
+<span class="c1"># set an api key</span>
+<span class="n">Crossref</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;123456&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="staticmethod">
@@ -179,9 +187,9 @@
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">filter_details</span><span class="p">()</span>
-<span class="c"># Get descriptions for each filter</span>
+<span class="c1"># Get descriptions for each filter</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">filter_details</span><span class="p">()</span>
-<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;description&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -247,18 +255,18 @@ will be by DOI update date.</li>
 <p>Usage:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">)</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;NSF&quot;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.13039/100000001&#39;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;NSF&quot;</span><span class="p">)</span>
 
-<span class="c"># get works</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="c1"># get works</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.13039/100000001&#39;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 
-<span class="c"># cursor - deep paging</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">200</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
-<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="c1"># cursor - deep paging</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.13039/100000001&#39;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">200</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
-<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -364,7 +372,7 @@ will be by DOI update date.</li>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">licenses</span><span class="p">()</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">licenses</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;creative&quot;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">licenses</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;creative&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -409,17 +417,17 @@ will be by DOI update date.</li>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">)</span>
 
-<span class="c"># get works</span>
+<span class="c1"># get works</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span>
-<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 
-<span class="c"># cursor - deep paging</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
-<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="c1"># cursor - deep paging</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
-<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -461,24 +469,24 @@ will be by DOI update date.</li>
 <p>Usage:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">)</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.1016&#39;</span><span class="p">,</span><span class="s">&#39;10.1371&#39;</span><span class="p">,</span><span class="s">&#39;10.1023&#39;</span><span class="p">,</span><span class="s">&#39;10.4176&#39;</span><span class="p">,</span><span class="s">&#39;10.1093&#39;</span><span class="p">])</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1016&quot;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;10.1016&#39;</span><span class="p">,</span><span class="s1">&#39;10.1371&#39;</span><span class="p">,</span><span class="s1">&#39;10.1023&#39;</span><span class="p">,</span><span class="s1">&#39;10.4176&#39;</span><span class="p">,</span><span class="s1">&#39;10.1093&#39;</span><span class="p">])</span>
 
-<span class="c"># get works</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="c1"># get works</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 
-<span class="c"># Limit number of results</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
+<span class="c1"># Limit number of results</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">3</span><span class="p">)</span>
 
-<span class="c"># Sort and order</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="s">&quot;relevance&quot;</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="s">&quot;asc&quot;</span><span class="p">)</span>
+<span class="c1"># Sort and order</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="s2">&quot;relevance&quot;</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="s2">&quot;asc&quot;</span><span class="p">)</span>
 
-<span class="c"># cursor - deep paging</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">200</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
-<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="c1"># cursor - deep paging</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1016&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">200</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
-<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -537,8 +545,8 @@ will be by DOI update date.</li>
 <p>Usage:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="s">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;10.1007/12080.1874-1746&#39;</span><span class="p">,</span><span class="s">&#39;10.1007/10452.1573-5125&#39;</span><span class="p">,</span> <span class="s">&#39;10.1111/(issn)1442-9993&#39;</span><span class="p">])</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="s1">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">registration_agency</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;10.1007/12080.1874-1746&#39;</span><span class="p">,</span><span class="s1">&#39;10.1007/10452.1573-5125&#39;</span><span class="p">,</span> <span class="s1">&#39;10.1111/(issn)1442-9993&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -582,8 +590,8 @@ will be by DOI update date.</li>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">()</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;journal&quot;</span><span class="p">)</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&quot;journal&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;journal&quot;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;journal&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -635,8 +643,8 @@ found than this value, you will get only those found.</li>
 <div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">()</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;ecology&quot;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1371/journal.pone.0033693&#39;</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">)</span>
 <span class="n">x</span><span class="o">.</span><span class="n">status</span><span class="p">()</span>
 <span class="n">x</span><span class="o">.</span><span class="n">message_type</span><span class="p">()</span>
 <span class="n">x</span><span class="o">.</span><span class="n">message_version</span><span class="p">()</span>
@@ -646,46 +654,46 @@ found than this value, you will get only those found.</li>
 <span class="n">x</span><span class="o">.</span><span class="n">query</span><span class="p">()</span>
 <span class="n">x</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
 
-<span class="c"># Get full text links</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
+<span class="c1"># Get full text links</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
 <span class="n">x</span>
 
-<span class="c"># Parse output to various data pieces</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
-<span class="c">## get doi for each item</span>
-<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
-<span class="c">## get doi and url for each item</span>
-<span class="p">[</span> <span class="p">{</span><span class="s">&quot;doi&quot;</span><span class="p">:</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">],</span> <span class="s">&quot;url&quot;</span><span class="p">:</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;URL&#39;</span><span class="p">]}</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
-<span class="c">### print every doi</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]:</span>
-     <span class="k">print</span> <span class="n">i</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span>
+<span class="c1"># Parse output to various data pieces</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
+<span class="c1">## get doi for each item</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="c1">## get doi and url for each item</span>
+<span class="p">[</span> <span class="p">{</span><span class="s2">&quot;doi&quot;</span><span class="p">:</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">],</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;URL&#39;</span><span class="p">]}</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="c1">### print every doi</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">x</span><span class="o">.</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]:</span>
+     <span class="k">print</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span>
 
-<span class="c"># filters - pass in as a dict</span>
-<span class="c">## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;has_funder&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span> <span class="s">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;award_number&#39;</span><span class="p">:</span> <span class="s">&#39;CBET-0756451&#39;</span><span class="p">,</span> <span class="s">&#39;award_funder&#39;</span><span class="p">:</span> <span class="s">&#39;10.13039/100000001&#39;</span><span class="p">})</span>
+<span class="c1"># filters - pass in as a dict</span>
+<span class="c1">## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_funder&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span> <span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">})</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;award_number&#39;</span><span class="p">:</span> <span class="s1">&#39;CBET-0756451&#39;</span><span class="p">,</span> <span class="s1">&#39;award_funder&#39;</span><span class="p">:</span> <span class="s1">&#39;10.13039/100000001&#39;</span><span class="p">})</span>
 
-<span class="c"># Deep paging, using the cursor parameter</span>
-<span class="c">## this search should lead to only ~215 results</span>
-<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;widget&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
-<span class="c">## this search should lead to only ~2500 results, in chunks of 500</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;octopus&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">500</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
-<span class="c">## about 150 results</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;extravagant&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
-<span class="c">## cursor_max to get back only a maximum set of results</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;widget&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
-<span class="c">## cursor_max - especially useful when a request could be very large</span>
-<span class="c">### e.g., &quot;ecology&quot; results in ~275K records, lets max at 10,000</span>
-<span class="c">###   with 1000 at a time</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s">&quot;ecology&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">)</span>
-<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
-<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;message&#39;</span><span class="p">][</span><span class="s">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
+<span class="c1"># Deep paging, using the cursor parameter</span>
+<span class="c1">## this search should lead to only ~215 results</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;widget&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<span class="c1">## this search should lead to only ~2500 results, in chunks of 500</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;octopus&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">500</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="c1">## about 150 results</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;extravagant&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="c1">## cursor_max to get back only a maximum set of results</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;widget&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="c1">## cursor_max - especially useful when a request could be very large</span>
+<span class="c1">### e.g., &quot;ecology&quot; results in ~275K records, lets max at 10,000</span>
+<span class="c1">###   with 1000 at a time</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="s2">&quot;*&quot;</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="nb">sum</span><span class="p">([</span> <span class="nb">len</span><span class="p">(</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">])</span>
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
-<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -735,7 +743,7 @@ found than this value, you will get only those found.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.1.3.9840',
+            VERSION:'0.1.3.9849',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
