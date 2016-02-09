@@ -3,7 +3,7 @@ import json
 import re
 
 from .filterhandler import filter_handler
-from .habanero_utils import switch_classes,check_json,is_json,parse_json_err
+from .habanero_utils import switch_classes,check_json,is_json,parse_json_err,make_ua
 from .exceptions import *
 from .request_class import Request
 
@@ -28,7 +28,7 @@ def request(url, path, ids = None, query = None, filter = None,
   if(ids.__class__.__name__ == 'NoneType'):
     url = url.strip("/")
     try:
-      r = requests.get(url, params = payload, **kwargs)
+      r = requests.get(url, params = payload, headers = make_ua(), **kwargs)
       r.raise_for_status()
     except requests.exceptions.HTTPError:
       if is_json(r):
@@ -61,7 +61,7 @@ def request(url, path, ids = None, query = None, filter = None,
         endpt = endpt.strip("/")
 
         try:
-          r = requests.get(endpt, params = payload, **kwargs)
+          r = requests.get(endpt, params = payload, headers = make_ua(), **kwargs)
           r.raise_for_status()
         except requests.exceptions.HTTPError:
           if is_json(r):

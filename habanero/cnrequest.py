@@ -1,7 +1,7 @@
 import requests
 import json
 
-from .habanero_utils import switch_classes
+from .habanero_utils import switch_classes,make_ua
 from .cn_formats import *
 
 def CNRequest(url, ids = None, format = None, style = None,
@@ -26,7 +26,8 @@ def CNRequest(url, ids = None, format = None, style = None,
 
 def make_request(url, ids, format, style, locale, **kwargs):
   type = cn_format_headers[format]
-  head = {'Accept': type}
+  htype = {'Accept': type}
+  head = dict(make_ua(), **htype)
 
   if format == "citeproc-json":
     url = "http://api.crossref.org/works/" + ids + "/" + type

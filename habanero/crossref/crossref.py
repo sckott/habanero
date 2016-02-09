@@ -495,8 +495,8 @@ class Crossref(object):
         '''
         res = request(self.base_url, "/works/", None,
             None, None, None, None, sample, None,
-            None, None, None, True, **kwargs)
-        return [ z['DOI'] for z in res.result['message']['items'] ]
+            None, None, True, **kwargs)
+        return [ z['DOI'] for z in res['message']['items'] ]
 
     @staticmethod
     def filter_names():

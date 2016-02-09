@@ -12,7 +12,7 @@ long_description = '\n\n' + readme + '\n\n' + changes
 
 setup(
 	name             = 'habanero',
-	version          = '0.1.3.9849',
+	version          = '0.1.3.9930',
 	description      = 'Low Level Client for Crossref Search API',
 	long_description = long_description,
   author           = 'Scott Chamberlain',

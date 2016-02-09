@@ -1,4 +1,6 @@
 import re
+import requests
+from . import __version__
 
 from .response import Works
 from .noworks import NoWorks
@@ -45,3 +47,13 @@ def is_json(x):
 
 def parse_json_err(x):
   return x.json()['message'][0]['message']
+
+def make_ua():
+    requa = 'python-requests/' + requests.__version__
+    habua = 'rOpenSci(habanero/%s)' % __version__
+    ua = requa + ' ' + habua
+    str = {
+      'User-Agent': ua,
+      'X-USER-AGENT': ua
+    }
+    return str

@@ -42,7 +42,7 @@ Usage::
 '''
 
 __title__ = 'habanero'
-__version__ = '0.1.3'
+__version__ = '0.1.3.9930'
 __author__ = 'Scott Chamberlain'
 __license__ = 'MIT'
 
