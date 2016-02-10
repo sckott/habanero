@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.2.0 (2016-02-10)
+--------------------
+* user-agent strings now passed in every http request to Crossref, including a `X-USER-AGENT` header in case the `User-Agent` string is lost (#33)
+* added a disclaimer to docs about what is actually searched when searching the Crossref API - that is, only what is returned in the API, so no full text or abstracts are searched (#32)
+* improved http error parsing - now passes on the hopefully meaningful error messages from the Crossref API (#31)
+* more tests added (#30)
+* habanero now supports cursor for deep paging. note that cursor only works with requests to the `/works` route (#18)
+
 0.1.3 (2015-12-02)
 --------------------
 * Fix wheel file to be a universal to install on python2 and python3 (#25)

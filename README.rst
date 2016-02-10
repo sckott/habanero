@@ -5,7 +5,7 @@ habanero
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to ineract with all from one client.
 
-`Crossref API docs <https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md](https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md>`__
+`Crossref API docs <https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md>`__
 
 Other Crossref API clients:
 
@@ -107,8 +107,8 @@ Content negotiation - get citations in many formats
 Meta
 ====
 
-* Please note that this project is released with a `Contributor Code of Conduct <CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
-* License: MIT; see `LICENSE file <LICENSE>`__
+* Please note that this project is released with a `Contributor Code of Conduct <https://github.com/sckott/habanero/blob/master/CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
+* License: MIT; see `LICENSE file <https://github.com/sckott/habanero/blob/master/LICENSE>`__
 
 .. |pypi| image:: https://img.shields.io/pypi/v/habanero.svg
    :target: https://pypi.python.org/pypi/habanero
