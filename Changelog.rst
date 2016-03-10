@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.2.2 (2016-03-09)
+--------------------
+* fixed some example code that included non-working examples (#34)
+* fixed bug in `registration_agency()` method, works now! (#35)
+* removed redundant `filter_names` and `filter_details` bits in docs
+
 0.2.0 (2016-02-10)
 --------------------
 * user-agent strings now passed in every http request to Crossref, including a `X-USER-AGENT` header in case the `User-Agent` string is lost (#33)
