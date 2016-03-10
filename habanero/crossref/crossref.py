@@ -466,13 +466,13 @@ class Crossref(object):
             "order", "facet", "works"], kwargs)
         res = request(self.base_url, "/works/", ids,
             None, None, None, None, None, None,
-            None, None, None, True, **kwargs)
+            None, None, None, None, None, True, **kwargs)
         if res.__class__ != list:
             k = []
             k.append(res)
         else:
             k = res
-        return [ z.result['message']['agency']['label'] for z in k ]
+        return [ z['message']['agency']['label'] for z in k ]
 
     def random_dois(self, sample = 10, **kwargs):
         '''
