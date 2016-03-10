@@ -1,7 +1,7 @@
 .. _filters:
 
 Crossref Search Filters
-===============
+=======================
 
 .. py:module:: habanero
 

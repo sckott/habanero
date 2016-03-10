@@ -7,3 +7,4 @@ Crossref Search
 
 .. autoclass:: Crossref
    :members:
+   :exclude-members: filter_names, filter_details

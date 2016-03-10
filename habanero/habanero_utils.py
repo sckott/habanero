@@ -50,7 +50,7 @@ def parse_json_err(x):
 
 def make_ua():
     requa = 'python-requests/' + requests.__version__
-    habua = 'rOpenSci(habanero/%s)' % __version__
+    habua = 'habanero/%s' % __version__
     ua = requa + ' ' + habua
     str = {
       'User-Agent': ua,

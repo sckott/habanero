@@ -230,14 +230,14 @@
 <span class="sd">            cr.works()</span>
 <span class="sd">            cr.works(ids = &#39;10.1371/journal.pone.0033693&#39;)</span>
 <span class="sd">            x = cr.works(query = &quot;ecology&quot;)</span>
-<span class="sd">            x.status()</span>
-<span class="sd">            x.message_type()</span>
-<span class="sd">            x.message_version()</span>
-<span class="sd">            x.message()</span>
-<span class="sd">            x.total_results()</span>
-<span class="sd">            x.items_per_page()</span>
-<span class="sd">            x.query()</span>
-<span class="sd">            x.items()</span>
+<span class="sd">            x[&#39;status&#39;]</span>
+<span class="sd">            x[&#39;message-type&#39;]</span>
+<span class="sd">            x[&#39;message-version&#39;]</span>
+<span class="sd">            x[&#39;message&#39;]</span>
+<span class="sd">            x[&#39;message&#39;][&#39;total-results&#39;]</span>
+<span class="sd">            x[&#39;message&#39;][&#39;items-per-page&#39;]</span>
+<span class="sd">            x[&#39;message&#39;][&#39;query&#39;]</span>
+<span class="sd">            x[&#39;message&#39;][&#39;items&#39;]</span>
 
 <span class="sd">            # Get full text links</span>
 <span class="sd">            x = cr.works(filter = {&#39;has_full_text&#39;: True})</span>
@@ -246,11 +246,11 @@
 <span class="sd">            # Parse output to various data pieces</span>
 <span class="sd">            x = cr.works(filter = {&#39;has_full_text&#39;: True})</span>
 <span class="sd">            ## get doi for each item</span>
-<span class="sd">            [ z[&#39;DOI&#39;] for z in x.result[&#39;message&#39;][&#39;items&#39;] ]</span>
+<span class="sd">            [ z[&#39;DOI&#39;] for z in x[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">            ## get doi and url for each item</span>
-<span class="sd">            [ {&quot;doi&quot;: z[&#39;DOI&#39;], &quot;url&quot;: z[&#39;URL&#39;]} for z in x.result[&#39;message&#39;][&#39;items&#39;] ]</span>
+<span class="sd">            [ {&quot;doi&quot;: z[&#39;DOI&#39;], &quot;url&quot;: z[&#39;URL&#39;]} for z in x[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">            ### print every doi</span>
-<span class="sd">            for i in x.result[&#39;message&#39;][&#39;items&#39;]:</span>
+<span class="sd">            for i in x[&#39;message&#39;][&#39;items&#39;]:</span>
 <span class="sd">                 print i[&#39;DOI&#39;]</span>
 
 <span class="sd">            # filters - pass in as a dict</span>
@@ -261,12 +261,12 @@
 
 <span class="sd">            # Deep paging, using the cursor parameter</span>
 <span class="sd">            ## this search should lead to only ~215 results</span>
-<span class="sd">            cr.works(query = &quot;widget&quot;, cursor = &quot;*&quot;, limit = 100)</span>
+<span class="sd">            cr.works(query = &quot;widget&quot;, cursor = &quot;*&quot;, cursor_max = 100)</span>
 <span class="sd">            ## this search should lead to only ~2500 results, in chunks of 500</span>
 <span class="sd">            res = cr.works(query = &quot;octopus&quot;, cursor = &quot;*&quot;, limit = 500)</span>
 <span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
 <span class="sd">            ## about 150 results</span>
-<span class="sd">            res = cr.works(query = &quot;extravagant&quot;, cursor = &quot;*&quot;, limit = 50)</span>
+<span class="sd">            res = cr.works(query = &quot;extravagant&quot;, cursor = &quot;*&quot;, limit = 50, cursor_max = 500)</span>
 <span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
 <span class="sd">            ## cursor_max to get back only a maximum set of results</span>
 <span class="sd">            res = cr.works(query = &quot;widget&quot;, cursor = &quot;*&quot;, cursor_max = 100)</span>
@@ -633,7 +633,7 @@
         <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 </div>
     <span class="nd">@staticmethod</span>
-<div class="viewcode-block" id="Crossref.filter_names"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_names">[docs]</a>    <span class="k">def</span> <span class="nf">filter_names</span><span class="p">():</span>
+<div class="viewcode-block" id="Crossref.filter_names"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.filter_names">[docs]</a>    <span class="k">def</span> <span class="nf">filter_names</span><span class="p">():</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Filter names - just the names of each filter</span>
 
@@ -650,7 +650,7 @@
         <span class="k">return</span> <span class="n">filter_names</span>
 </div>
     <span class="nd">@staticmethod</span>
-<div class="viewcode-block" id="Crossref.filter_details"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_details">[docs]</a>    <span class="k">def</span> <span class="nf">filter_details</span><span class="p">():</span>
+<div class="viewcode-block" id="Crossref.filter_details"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.filter_details">[docs]</a>    <span class="k">def</span> <span class="nf">filter_details</span><span class="p">():</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Filter details - filter names, possible values, and description</span>
 

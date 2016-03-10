@@ -96,14 +96,14 @@ class Crossref(object):
             cr.works()
             cr.works(ids = '10.1371/journal.pone.0033693')
             x = cr.works(query = "ecology")
-            x.status()
-            x.message_type()
-            x.message_version()
-            x.message()
-            x.total_results()
-            x.items_per_page()
-            x.query()
-            x.items()
+            x['status']
+            x['message-type']
+            x['message-version']
+            x['message']
+            x['message']['total-results']
+            x['message']['items-per-page']
+            x['message']['query']
+            x['message']['items']
 
             # Get full text links
             x = cr.works(filter = {'has_full_text': True})
@@ -112,11 +112,11 @@ class Crossref(object):
             # Parse output to various data pieces
             x = cr.works(filter = {'has_full_text': True})
             ## get doi for each item
-            [ z['DOI'] for z in x.result['message']['items'] ]
+            [ z['DOI'] for z in x['message']['items'] ]
             ## get doi and url for each item
-            [ {"doi": z['DOI'], "url": z['URL']} for z in x.result['message']['items'] ]
+            [ {"doi": z['DOI'], "url": z['URL']} for z in x['message']['items'] ]
             ### print every doi
-            for i in x.result['message']['items']:
+            for i in x['message']['items']:
                  print i['DOI']
 
             # filters - pass in as a dict
@@ -127,12 +127,12 @@ class Crossref(object):
 
             # Deep paging, using the cursor parameter
             ## this search should lead to only ~215 results
-            cr.works(query = "widget", cursor = "*", limit = 100)
+            cr.works(query = "widget", cursor = "*", cursor_max = 100)
             ## this search should lead to only ~2500 results, in chunks of 500
             res = cr.works(query = "octopus", cursor = "*", limit = 500)
             sum([ len(z['message']['items']) for z in res ])
             ## about 150 results
-            res = cr.works(query = "extravagant", cursor = "*", limit = 50)
+            res = cr.works(query = "extravagant", cursor = "*", limit = 50, cursor_max = 500)
             sum([ len(z['message']['items']) for z in res ])
             ## cursor_max to get back only a maximum set of results
             res = cr.works(query = "widget", cursor = "*", cursor_max = 100)
