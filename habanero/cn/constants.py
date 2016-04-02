@@ -1,1 +1,1 @@
-cn_base_url = "http://dx.doi.org"
+cn_base_url = "https://doi.org"
