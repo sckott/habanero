@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero &mdash; habanero 0.2.2 documentation</title>
+  <title>habanero &mdash; habanero 0.2.2.9100 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.2.2 documentation" href="#"/>
+    <link rel="top" title="habanero 0.2.2.9100 documentation" href="#"/>
         <link rel="next" title="Crossref Search" href="api.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.2.2
+                0.2.2.9100
               </div>
             
           
@@ -109,7 +109,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -167,11 +167,11 @@ import all):</p>
 <div class="section" id="installation">
 <h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
 <p>Stable version</p>
-<div class="highlight-console"><div class="highlight"><pre><span class="go">pip install habanero</span>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">pip install habanero</span>
 </pre></div>
 </div>
 <p>Dev version</p>
-<div class="highlight-console"><div class="highlight"><pre><span class="go">sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero</span>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero</span>
 
 <span class="gp">#</span> OR
 
@@ -184,28 +184,28 @@ import all):</p>
 <div class="section" id="usage">
 <h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
 <p>Initialize a client</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Works route</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">)</span>
 <span class="n">x</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span>
 <span class="n">x</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;total-results&#39;</span><span class="p">]</span>
 <span class="n">x</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
 <p>Members route</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Citation counts</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
 <span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Content negotiation - get citations in many formats</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">cn</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">cn</span>
 <span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">)</span>
 <span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;citeproc-json&quot;</span><span class="p">)</span>
 <span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;rdf-xml&quot;</span><span class="p">)</span>
@@ -231,12 +231,13 @@ import all):</p>
 <li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog_link.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id1">0.2.2 (2016-03-09)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id2">0.2.0 (2016-02-10)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id3">0.1.3 (2015-12-02)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id4">0.1.1 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id5">0.1.0 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id6">0.0.6 (2015-11-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id1">0.2.2.9100 (2016-06-23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id2">0.2.2 (2016-03-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id3">0.2.0 (2016-02-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id4">0.1.3 (2015-12-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id5">0.1.1 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id6">0.1.0 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id7">0.0.6 (2015-11-09)</a></li>
 </ul>
 </li>
 </ul>
@@ -249,9 +250,9 @@ import all):</p>
 <div class="section" id="indices-and-tables">
 <h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
 </div>
 </div>
@@ -295,7 +296,7 @@ import all):</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.2',
+            VERSION:'0.2.2.9100',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

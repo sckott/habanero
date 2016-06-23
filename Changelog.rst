@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.2.2.9100 (2016-06-23)
+--------------------
+* fixed problem with `cr.works()` where DOIs passed weren't making
+the correct API request to Crossref (#40)
+
 0.2.2 (2016-03-09)
 --------------------
 * fixed some example code that included non-working examples (#34)

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.exceptions &mdash; habanero 0.2.2 documentation</title>
+  <title>habanero.exceptions &mdash; habanero 0.2.2.9100 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.2.2 documentation" href="../../index.html"/>
+    <link rel="top" title="habanero 0.2.2.9100 documentation" href="../../index.html"/>
         <link rel="up" title="Module code" href="../index.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.2.2
+                0.2.2.9100
               </div>
             
           
@@ -132,7 +132,7 @@
            <div itemprop="articleBody">
             
   <h1>Source code for habanero.exceptions</h1><div class="highlight"><pre>
-<span class="k">class</span> <span class="nc">Error</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span></span><span class="k">class</span> <span class="nc">Error</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Base class for exceptions in this module.&quot;&quot;&quot;</span>
     <span class="k">pass</span>
 
@@ -157,7 +157,7 @@
 
     <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
       <span class="k">return</span> <span class="s1">&#39;(</span><span class="si">%s</span><span class="s1">) caused by &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="p">(</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">error</span><span class="p">)</span></div>
 
 <span class="c1"># url = &quot;http://api.crossref.org/works?rows=fart&quot;</span>
 <span class="c1"># url = &quot;http://api.crossref.org/funders?filter=from-pub-date%3A2014-03-03&quot;</span>
@@ -169,7 +169,7 @@
 <span class="c1">#     except requests.exceptions.HTTPError:</span>
 <span class="c1">#         raise RequestError(r.status_code, r.json()[&#39;message&#39;][0][&#39;message&#39;])</span>
 <span class="c1">#     except requests.exceptions.RequestException as e:</span>
-<span class="c1">#         print e</span></div>
+<span class="c1">#         print e</span>
 </pre></div>
 
            </div>
@@ -203,7 +203,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.2.2',
+            VERSION:'0.2.2.9100',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

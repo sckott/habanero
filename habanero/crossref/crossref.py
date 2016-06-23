@@ -95,6 +95,8 @@ class Crossref(object):
             cr = Crossref()
             cr.works()
             cr.works(ids = '10.1371/journal.pone.0033693')
+            dois = ['10.1371/journal.pone.0033693', ]
+            cr.works(ids = dois)
             x = cr.works(query = "ecology")
             x['status']
             x['message-type']
@@ -131,7 +133,7 @@ class Crossref(object):
             ## this search should lead to only ~2500 results, in chunks of 500
             res = cr.works(query = "octopus", cursor = "*", limit = 500)
             sum([ len(z['message']['items']) for z in res ])
-            ## about 150 results
+            ## about 167 results
             res = cr.works(query = "extravagant", cursor = "*", limit = 50, cursor_max = 500)
             sum([ len(z['message']['items']) for z in res ])
             ## cursor_max to get back only a maximum set of results
@@ -146,9 +148,14 @@ class Crossref(object):
             items = [ item for sublist in items for item in sublist ]
             [ z['DOI'] for z in items ][0:50]
         '''
-        return Request(self.base_url, "/works/",
-          query, filter, offset, limit, sample, sort,
-          order, facet, cursor, cursor_max).do_request()
+        if ids.__class__.__name__ != 'NoneType':
+            return request(self.base_url, "/works/", ids,
+                query, filter, offset, limit, sample, sort,
+                order, facet, None, None, None, **kwargs)
+        else:
+            return Request(self.base_url, "/works/",
+              query, filter, offset, limit, sample, sort,
+              order, facet, cursor, cursor_max).do_request()
 
     def members(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,

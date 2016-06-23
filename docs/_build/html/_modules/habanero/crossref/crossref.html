@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.crossref.crossref &mdash; habanero 0.2.2 documentation</title>
+  <title>habanero.crossref.crossref &mdash; habanero 0.2.2.9100 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.2.2 documentation" href="../../../index.html"/>
+    <link rel="top" title="habanero 0.2.2.9100 documentation" href="../../../index.html"/>
         <link rel="up" title="Module code" href="../../index.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.2.2
+                0.2.2.9100
               </div>
             
           
@@ -132,7 +132,7 @@
            <div itemprop="articleBody">
             
   <h1>Source code for habanero.crossref.crossref</h1><div class="highlight"><pre>
-<span class="kn">import</span> <span class="nn">sys</span>
+<span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">from</span> <span class="nn">..request</span> <span class="kn">import</span> <span class="n">request</span>
 <span class="kn">from</span> <span class="nn">..request_class</span> <span class="kn">import</span> <span class="n">Request</span>
@@ -229,6 +229,8 @@
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.works()</span>
 <span class="sd">            cr.works(ids = &#39;10.1371/journal.pone.0033693&#39;)</span>
+<span class="sd">            dois = [&#39;10.1371/journal.pone.0033693&#39;, ]</span>
+<span class="sd">            cr.works(ids = dois)</span>
 <span class="sd">            x = cr.works(query = &quot;ecology&quot;)</span>
 <span class="sd">            x[&#39;status&#39;]</span>
 <span class="sd">            x[&#39;message-type&#39;]</span>
@@ -265,7 +267,7 @@
 <span class="sd">            ## this search should lead to only ~2500 results, in chunks of 500</span>
 <span class="sd">            res = cr.works(query = &quot;octopus&quot;, cursor = &quot;*&quot;, limit = 500)</span>
 <span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
-<span class="sd">            ## about 150 results</span>
+<span class="sd">            ## about 167 results</span>
 <span class="sd">            res = cr.works(query = &quot;extravagant&quot;, cursor = &quot;*&quot;, limit = 50, cursor_max = 500)</span>
 <span class="sd">            sum([ len(z[&#39;message&#39;][&#39;items&#39;]) for z in res ])</span>
 <span class="sd">            ## cursor_max to get back only a maximum set of results</span>
@@ -280,10 +282,15 @@
 <span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
 <span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span>
-          <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span>
-</div>
+        <span class="k">if</span> <span class="n">ids</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span> <span class="o">!=</span> <span class="s1">&#39;NoneType&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+                <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
+                <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span>
+              <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
+              <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
+
 <div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
@@ -332,8 +339,8 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</div>
+            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="Crossref.prefixes"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.prefixes">[docs]</a>    <span class="k">def</span> <span class="nf">prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
@@ -388,8 +395,8 @@
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="n">limit</span><span class="p">,</span>
           <span class="n">sample</span> <span class="o">=</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="n">sort</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span>
-          <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</div>
+          <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="Crossref.funders"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.funders">[docs]</a>    <span class="k">def</span> <span class="nf">funders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
@@ -440,8 +447,8 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</div>
+          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="Crossref.journals"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.journals">[docs]</a>    <span class="k">def</span> <span class="nf">journals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
@@ -502,8 +509,8 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</div>
+          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="Crossref.types"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.types">[docs]</a>    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
@@ -542,8 +549,8 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-</div>
+            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
 <div class="viewcode-block" id="Crossref.licenses"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.licenses">[docs]</a>    <span class="k">def</span> <span class="nf">licenses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -577,8 +584,8 @@
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/licenses/&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">res</span>
-</div>
+        <span class="k">return</span> <span class="n">res</span></div>
+
 <div class="viewcode-block" id="Crossref.registration_agency"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.registration_agency">[docs]</a>    <span class="k">def</span> <span class="nf">registration_agency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Determine registration agency for DOIs</span>
@@ -606,8 +613,8 @@
             <span class="n">k</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">k</span> <span class="o">=</span> <span class="n">res</span>
-        <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;agency&#39;</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">k</span> <span class="p">]</span>
-</div>
+        <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;agency&#39;</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">k</span> <span class="p">]</span></div>
+
 <div class="viewcode-block" id="Crossref.random_dois"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.random_dois">[docs]</a>    <span class="k">def</span> <span class="nf">random_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Get a random set of DOIs</span>
@@ -630,8 +637,8 @@
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span>
             <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
-</div>
+        <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span></div>
+
     <span class="nd">@staticmethod</span>
 <div class="viewcode-block" id="Crossref.filter_names"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_names">[docs]</a>    <span class="k">def</span> <span class="nf">filter_names</span><span class="p">():</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -647,8 +654,8 @@
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.filter_names()</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">filter_names</span>
-</div>
+        <span class="k">return</span> <span class="n">filter_names</span></div>
+
     <span class="nd">@staticmethod</span>
 <div class="viewcode-block" id="Crossref.filter_details"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_details">[docs]</a>    <span class="k">def</span> <span class="nf">filter_details</span><span class="p">():</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -701,7 +708,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
-            VERSION:'0.2.2',
+            VERSION:'0.2.2.9100',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Changelog &mdash; habanero 0.2.2 documentation</title>
+  <title>Changelog &mdash; habanero 0.2.2.9100 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.2.2 documentation" href="index.html"/>
+    <link rel="top" title="habanero 0.2.2.9100 documentation" href="index.html"/>
         <link rel="prev" title="Exceptions" href="exceptions.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.2.2
+                0.2.2.9100
               </div>
             
           
@@ -86,13 +86,14 @@
 <li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">0.2.2 (2016-03-09)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">0.2.0 (2016-02-10)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">0.1.3 (2015-12-02)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">0.1.1 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">0.1.0 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">0.0.6 (2015-11-09)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.2.2.9100 (2016-06-23)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.2.2 (2016-03-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">0.2.0 (2016-02-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">0.1.3 (2015-12-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">0.1.1 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.1.0 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">0.0.6 (2015-11-09)</a></li>
 </ul>
 </li>
 </ul>
@@ -117,7 +118,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -142,15 +143,22 @@
   <div class="section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>0.2.2 (2016-03-09)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>0.2.2.9100 (2016-06-23)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>fixed problem with <cite>cr.works()</cite> where DOIs passed weren&#8217;t making</li>
+</ul>
+<p>the correct API request to Crossref (#40)</p>
+</div>
+<div class="section" id="id2">
+<h2>0.2.2 (2016-03-09)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>fixed some example code that included non-working examples (#34)</li>
 <li>fixed bug in <cite>registration_agency()</cite> method, works now! (#35)</li>
 <li>removed redundant <cite>filter_names</cite> and <cite>filter_details</cite> bits in docs</li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h2>0.2.0 (2016-02-10)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>0.2.0 (2016-02-10)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>user-agent strings now passed in every http request to Crossref, including a <cite>X-USER-AGENT</cite> header in case the <cite>User-Agent</cite> string is lost (#33)</li>
 <li>added a disclaimer to docs about what is actually searched when searching the Crossref API - that is, only what is returned in the API, so no full text or abstracts are searched (#32)</li>
@@ -159,8 +167,8 @@
 <li>habanero now supports cursor for deep paging. note that cursor only works with requests to the <cite>/works</cite> route (#18)</li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h2>0.1.3 (2015-12-02)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>0.1.3 (2015-12-02)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Fix wheel file to be a universal to install on python2 and python3 (#25)</li>
 <li>Added method <cite>csl_styles</cite> to get CSL styles for use in content negotiation (#27)</li>
@@ -169,14 +177,14 @@
 <li>Made note in docs that funders without IDs don&#8217;t show up on the <cite>/funders</cite> route (#23)</li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h2>0.1.1 (2015-11-17)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>0.1.1 (2015-11-17)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Fix readme</li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h2>0.1.0 (2015-11-17)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>0.1.0 (2015-11-17)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Now compatible with Python 2x and 3x</li>
 <li><cite>agency()</cite> method changed to <cite>registration_agency()</cite></li>
@@ -187,8 +195,8 @@
 <li>Changed library structure, now with module system, separated into modules for the main Crossref search API (i.e., <cite>api.crossref.org</cite>) including higher level methods (e.g., <cite>registration_agency</cite>), content negotiation, and citation counts.</li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h2>0.0.6 (2015-11-09)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>0.0.6 (2015-11-09)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>First pypi release</li>
 </ul>
@@ -234,7 +242,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.2',
+            VERSION:'0.2.2.9100',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

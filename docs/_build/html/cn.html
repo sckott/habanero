@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Content negotiation &mdash; habanero 0.2.2 documentation</title>
+  <title>Content negotiation &mdash; habanero 0.2.2.9100 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.2.2 documentation" href="index.html"/>
+    <link rel="top" title="habanero 0.2.2.9100 documentation" href="index.html"/>
         <link rel="next" title="Exceptions" href="exceptions.html"/>
         <link rel="prev" title="Citation counts" href="counts.html"/> 
 
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                0.2.2
+                0.2.2.9100
               </div>
             
           
@@ -85,7 +85,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Content negotiation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Content negotiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog_link.html">Changelog</a></li>
 </ul>
@@ -110,7 +110,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -163,28 +163,28 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
 </tbody>
 </table>
 <p>Usage:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">cn</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="k">import</span> <span class="n">cn</span>
 <span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">)</span>
 
 <span class="c1"># get citeproc-json</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;citeproc-json&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;citeproc-json&quot;</span><span class="p">)</span>
 
 <span class="c1"># some other formats</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;rdf-xml&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;crossref-xml&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;rdf-xml&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;crossref-xml&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">)</span>
 
 <span class="c1"># return an R bibentry type</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;bibentry&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.6084/m9.figshare.97218&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;bibentry&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;bibentry&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.6084/m9.figshare.97218&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;bibentry&quot;</span><span class="p">)</span>
 
 <span class="c1"># return an apa style citation</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;apa&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;harvard3&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;elsevier-harvard&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;ecoscience&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;heredity&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;oikos&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;apa&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;harvard3&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;elsevier-harvard&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;ecoscience&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;heredity&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;oikos&quot;</span><span class="p">)</span>
 
 <span class="c1"># Using DataCite DOIs</span>
 <span class="c1">## some formats don&#39;t work</span>
@@ -193,14 +193,14 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
 <span class="c1"># cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, format = &quot;crossref-tdm&quot;)</span>
 
 <span class="c1">## But most do work</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;datacite-xml&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;rdf-xml&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;turtle&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;citeproc-json&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;ris&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;bibtex&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;bibentry&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;bibtex&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;datacite-xml&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;rdf-xml&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;turtle&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;citeproc-json&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;ris&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;bibtex&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;bibentry&quot;</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;bibtex&quot;</span><span class="p">)</span>
 
 <span class="c1"># many DOIs</span>
 <span class="n">dois</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;10.5167/UZH-30455&#39;</span><span class="p">,</span><span class="s1">&#39;10.5167/UZH-49216&#39;</span><span class="p">,</span><span class="s1">&#39;10.5167/UZH-503&#39;</span><span class="p">,</span> <span class="s1">&#39;10.5167/UZH-38402&#39;</span><span class="p">,</span><span class="s1">&#39;10.5167/UZH-41217&#39;</span><span class="p">]</span>
@@ -224,7 +224,7 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
 </tbody>
 </table>
 <p>Usage:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">cn</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="k">import</span> <span class="n">cn</span>
 <span class="n">cn</span><span class="o">.</span><span class="n">csl_styles</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -273,7 +273,7 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.2',
+            VERSION:'0.2.2.9100',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
