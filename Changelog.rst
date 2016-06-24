@@ -1,10 +1,12 @@
 Changelog
 =========
 
-0.2.2.9100 (2016-06-23)
+0.2.6 (2016-06-24)
 --------------------
 * fixed problem with `cr.works()` where DOIs passed weren't making
 the correct API request to Crossref (#40)
+* added support for field queries to all methods that support
+`/works` (<https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries>) (#38)
 
 0.2.2 (2016-03-09)
 --------------------

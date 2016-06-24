@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.crossref.crossref &mdash; habanero 0.2.2.9100 documentation</title>
+  <title>habanero.crossref.crossref &mdash; habanero 0.2.6 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.2.2.9100 documentation" href="../../../index.html"/>
+    <link rel="top" title="habanero 0.2.6 documentation" href="../../../index.html"/>
         <link rel="up" title="Module code" href="../../index.html"/> 
 
   
@@ -59,7 +59,7 @@
             
             
               <div class="version">
-                0.2.2.9100
+                0.2.6
               </div>
             
           
@@ -281,6 +281,10 @@
 <span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
 <span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
 <span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
+
+<span class="sd">            # field queries</span>
+<span class="sd">            res = cr.works(query = &quot;ecology&quot;, query_author = &#39;carl boettiger&#39;)</span>
+<span class="sd">            [ x[&#39;author&#39;][0][&#39;family&#39;] for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">if</span> <span class="n">ids</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span> <span class="o">!=</span> <span class="s1">&#39;NoneType&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
@@ -289,7 +293,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span>
               <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-              <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
+              <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
 
 <div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span>
@@ -336,6 +340,10 @@
 <span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
 <span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
 <span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
+
+<span class="sd">            # field queries</span>
+<span class="sd">            res = cr.members(ids = 98, works = True, query_author = &#39;carl boettiger&#39;, limit = 7)</span>
+<span class="sd">            [ x[&#39;author&#39;][0][&#39;family&#39;] for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
@@ -390,6 +398,11 @@
 <span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
 <span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
 <span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
+
+<span class="sd">            # field queries</span>
+<span class="sd">            res = cr.prefixes(ids = &quot;10.1371&quot;, works = True, query_editor = &#39;cooper&#39;, filter = {&#39;type&#39;: &#39;journal-article&#39;})</span>
+<span class="sd">            eds = [ x.get(&#39;editor&#39;) for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
+<span class="sd">            [ z for z in eds if z is not None ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s2">&quot;query&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
@@ -444,6 +457,11 @@
 <span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
 <span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
 <span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
+
+<span class="sd">            # field queries</span>
+<span class="sd">            res = cr.funders(ids = &quot;10.13039/100000001&quot;, works = True, query_container_title = &#39;engineering&#39;, filter = {&#39;type&#39;: &#39;journal-article&#39;})</span>
+<span class="sd">            eds = [ x.get(&#39;editor&#39;) for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
+<span class="sd">            [ z for z in eds if z is not None ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
@@ -506,6 +524,10 @@
 <span class="sd">            items = [ z[&#39;message&#39;][&#39;items&#39;] for z in res ]</span>
 <span class="sd">            items = [ item for sublist in items for item in sublist ]</span>
 <span class="sd">            [ z[&#39;DOI&#39;] for z in items ][0:50]</span>
+
+<span class="sd">            # field queries</span>
+<span class="sd">            res = cr.journals(ids = &quot;2167-8359&quot;, works = True, query_title = &#39;fish&#39;, filter = {&#39;type&#39;: &#39;journal-article&#39;})</span>
+<span class="sd">            [ x.get(&#39;title&#39;) for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
@@ -545,7 +567,12 @@
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.types()</span>
 <span class="sd">            cr.types(ids = &quot;journal&quot;)</span>
+<span class="sd">            cr.types(ids = &quot;journal-article&quot;)</span>
 <span class="sd">            cr.types(ids = &quot;journal&quot;, works = True)</span>
+
+<span class="sd">            # field queries</span>
+<span class="sd">            res = cr.types(ids = &quot;journal-article&quot;, works = True, query_title = &#39;gender&#39;, rows = 100)</span>
+<span class="sd">            [ x.get(&#39;title&#39;) for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
@@ -708,7 +735,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
-            VERSION:'0.2.2.9100',
+            VERSION:'0.2.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

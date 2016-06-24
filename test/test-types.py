@@ -2,6 +2,8 @@
 import os
 from nose.tools import *
 
+from habanero import exceptions
+
 from habanero import Crossref
 cr = Crossref()
 
@@ -55,3 +57,18 @@ def test_types_works():
     res = cr.types(ids = "journal", works = True, limit = 2)
     assert dict == res.__class__
     assert 'work-list' == res['message-type']
+
+def test_types_field_queries():
+    "types - param: kwargs - field queries work as expected"
+    res = cr.types(ids = "journal-article", works = True, query_title = 'gender', rows = 20)
+    titles = [ str(x.get('title')[0]) for x in res['message']['items'] ]
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
+    assert list == titles.__class__
+    assert str == titles[0].__class__
+
+@raises(exceptions.RequestError)
+def test_types_query_filters_not_allowed_with_typeid():
+    "types - param: kwargs - query filters not allowed on types/type/ route"
+    cr.types(ids = "journal-article", query_title = 'gender')
+

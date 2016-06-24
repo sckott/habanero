@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Crossref Search &mdash; habanero 0.2.2.9100 documentation</title>
+  <title>Crossref Search &mdash; habanero 0.2.6 documentation</title>
   
 
   
@@ -30,7 +30,7 @@
   
 
   
-    <link rel="top" title="habanero 0.2.2.9100 documentation" href="index.html"/>
+    <link rel="top" title="habanero 0.2.6 documentation" href="index.html"/>
         <link rel="next" title="Crossref Search Filters" href="filters.html"/>
         <link rel="prev" title="habanero" href="index.html"/> 
 
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                0.2.2.9100
+                0.2.6
               </div>
             
           
@@ -222,6 +222,11 @@ will be by DOI update date.</li>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
 <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+
+<span class="c1"># field queries</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">funders</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.13039/100000001&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">query_container_title</span> <span class="o">=</span> <span class="s1">&#39;engineering&#39;</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;journal-article&#39;</span><span class="p">})</span>
+<span class="n">eds</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;editor&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">eds</span> <span class="k">if</span> <span class="n">z</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -289,6 +294,10 @@ will be by DOI update date.</li>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
 <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+
+<span class="c1"># field queries</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">journals</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;2167-8359&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">query_title</span> <span class="o">=</span> <span class="s1">&#39;fish&#39;</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;journal-article&#39;</span><span class="p">})</span>
+<span class="p">[</span> <span class="n">x</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -383,6 +392,10 @@ will be by DOI update date.</li>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
 <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+
+<span class="c1"># field queries</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">query_author</span> <span class="o">=</span> <span class="s1">&#39;carl boettiger&#39;</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">7</span><span class="p">)</span>
+<span class="p">[</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;family&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -442,6 +455,11 @@ will be by DOI update date.</li>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
 <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+
+<span class="c1"># field queries</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">prefixes</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1371&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">query_editor</span> <span class="o">=</span> <span class="s1">&#39;cooper&#39;</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="s1">&#39;journal-article&#39;</span><span class="p">})</span>
+<span class="n">eds</span> <span class="o">=</span> <span class="p">[</span> <span class="n">x</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;editor&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
+<span class="p">[</span> <span class="n">z</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">eds</span> <span class="k">if</span> <span class="n">z</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -546,7 +564,12 @@ will be by DOI update date.</li>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;journal&quot;</span><span class="p">)</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;journal-article&quot;</span><span class="p">)</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;journal&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># field queries</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">types</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;journal-article&quot;</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">query_title</span> <span class="o">=</span> <span class="s1">&#39;gender&#39;</span><span class="p">,</span> <span class="n">rows</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<span class="p">[</span> <span class="n">x</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -651,6 +674,10 @@ found than this value, you will get only those found.</li>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span> <span class="p">]</span>
 <span class="n">items</span> <span class="o">=</span> <span class="p">[</span> <span class="n">item</span> <span class="k">for</span> <span class="n">sublist</span> <span class="ow">in</span> <span class="n">items</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">sublist</span> <span class="p">]</span>
 <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">items</span> <span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span>
+
+<span class="c1"># field queries</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">,</span> <span class="n">query_author</span> <span class="o">=</span> <span class="s1">&#39;carl boettiger&#39;</span><span class="p">)</span>
+<span class="p">[</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;family&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -700,7 +727,7 @@ found than this value, you will get only those found.</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.2.9100',
+            VERSION:'0.2.6',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

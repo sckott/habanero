@@ -57,3 +57,12 @@ def make_ua():
       'X-USER-AGENT': ua
     }
     return str
+
+def filter_dict(x):
+  return dict((k, x[k]) for k, v in x.items() if k.find('query_') == 0 )
+
+def rename_query_filters(x):
+  newkeys = [ re.sub('container_title', 'container-title', v) for v in x ]
+  newkeys = [ re.sub('query_', 'query.', v) for v in newkeys ]
+  mapping = dict(zip(x.keys(), newkeys))
+  return { mapping[k]: v for k, v in x.items() }

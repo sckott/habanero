@@ -2,6 +2,8 @@
 import os
 from nose.tools import *
 
+from habanero import exceptions
+
 from habanero import Crossref
 cr = Crossref()
 
@@ -22,3 +24,18 @@ def test_prefixes_works():
 def test_prefixes_filter():
     "prefixes - param: filter"
     cr.prefixes(filter = {'has_full_text': True})
+
+def test_prefixes_field_queries():
+    "prefixes - param: kwargs - field queries work as expected"
+    res = cr.prefixes(ids = "10.1371", works = True, query_editor = 'cooper', filter = {'type': 'journal-article'})
+    eds = [ x.get('editor')[0] for x in res['message']['items'] ]
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
+    assert list == eds.__class__
+    assert dict == eds[0].__class__
+
+@raises(exceptions.RequestError)
+def test_prefixes_query_filters_not_allowed_with_dois():
+    "prefixes - param: kwargs - query filters not allowed on prefixes/prefix/ route"
+    cr.prefixes(ids = "10.1371", query_editor = 'cooper')
+

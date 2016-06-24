@@ -2,6 +2,8 @@
 import os
 from nose.tools import *
 
+from habanero import exceptions
+
 from habanero import Crossref
 cr = Crossref()
 
@@ -29,3 +31,17 @@ def test_members_sample():
 def test_members_filter():
     "members - param: filter"
     cr.members(filter = {'has_full_text': True})
+
+def test_members_field_queries():
+    "members - param: kwargs - field queries work as expected"
+    res = cr.members(ids = 98, works = True, query_author = 'carl boettiger', limit = 7)
+    auths = [ x['author'][0]['family'] for x in res['message']['items'] ]
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
+    assert list == auths.__class__
+    assert str == str(auths[0]).__class__
+
+@raises(exceptions.RequestError)
+def test_members_query_filters_not_allowed_with_dois():
+    "members - param: kwargs - query filters not allowed on works/memberid/ route"
+    cr.members(ids = 98, query_author = 'carl boettiger')

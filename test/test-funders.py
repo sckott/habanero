@@ -56,3 +56,18 @@ def test_funders_fail_offset():
 def test_funders_fail_sort():
     "funders - fails on wrong input type to offset"
     cr.funders(sort = 'things')
+
+def test_funders_field_queries():
+    "funders - param: kwargs - field queries work as expected"
+    res = cr.funders(ids = "10.13039/100000001", works = True, query_container_title = 'engineering', filter = {'type': 'journal-article'}, limit = 100)
+    titles = [ x.get('title') for x in res['message']['items'] ]
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
+    assert list == titles.__class__
+    assert 100 == len(titles)
+
+@raises(exceptions.RequestError)
+def test_funders_query_filters_not_allowed_with_dois():
+    "funders - param: kwargs - query filters not allowed on works/funderid/ route"
+    cr.funders(ids = "10.13039/100000001", query_container_title = 'engineering')
+

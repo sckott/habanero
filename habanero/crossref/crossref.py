@@ -147,6 +147,10 @@ class Crossref(object):
             items = [ z['message']['items'] for z in res ]
             items = [ item for sublist in items for item in sublist ]
             [ z['DOI'] for z in items ][0:50]
+
+            # field queries
+            res = cr.works(query = "ecology", query_author = 'carl boettiger')
+            [ x['author'][0]['family'] for x in res['message']['items'] ]
         '''
         if ids.__class__.__name__ != 'NoneType':
             return request(self.base_url, "/works/", ids,
@@ -155,7 +159,7 @@ class Crossref(object):
         else:
             return Request(self.base_url, "/works/",
               query, filter, offset, limit, sample, sort,
-              order, facet, cursor, cursor_max).do_request()
+              order, facet, cursor, cursor_max, **kwargs).do_request()
 
     def members(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
@@ -202,6 +206,10 @@ class Crossref(object):
             items = [ z['message']['items'] for z in res ]
             items = [ item for sublist in items for item in sublist ]
             [ z['DOI'] for z in items ][0:50]
+
+            # field queries
+            res = cr.members(ids = 98, works = True, query_author = 'carl boettiger', limit = 7)
+            [ x['author'][0]['family'] for x in res['message']['items'] ]
         '''
         return request(self.base_url, "/members/", ids,
             query, filter, offset, limit, sample, sort,
@@ -256,6 +264,11 @@ class Crossref(object):
             items = [ z['message']['items'] for z in res ]
             items = [ item for sublist in items for item in sublist ]
             [ z['DOI'] for z in items ][0:50]
+
+            # field queries
+            res = cr.prefixes(ids = "10.1371", works = True, query_editor = 'cooper', filter = {'type': 'journal-article'})
+            eds = [ x.get('editor') for x in res['message']['items'] ]
+            [ z for z in eds if z is not None ]
         '''
         check_kwargs(["query"], kwargs)
         return request(self.base_url, "/prefixes/", ids,
@@ -310,6 +323,11 @@ class Crossref(object):
             items = [ z['message']['items'] for z in res ]
             items = [ item for sublist in items for item in sublist ]
             [ z['DOI'] for z in items ][0:50]
+
+            # field queries
+            res = cr.funders(ids = "10.13039/100000001", works = True, query_container_title = 'engineering', filter = {'type': 'journal-article'})
+            eds = [ x.get('editor') for x in res['message']['items'] ]
+            [ z for z in eds if z is not None ]
         '''
         return request(self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
@@ -372,6 +390,10 @@ class Crossref(object):
             items = [ z['message']['items'] for z in res ]
             items = [ item for sublist in items for item in sublist ]
             [ z['DOI'] for z in items ][0:50]
+
+            # field queries
+            res = cr.journals(ids = "2167-8359", works = True, query_title = 'fish', filter = {'type': 'journal-article'})
+            [ x.get('title') for x in res['message']['items'] ]
         '''
         return request(self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
@@ -411,7 +433,12 @@ class Crossref(object):
             cr = Crossref()
             cr.types()
             cr.types(ids = "journal")
+            cr.types(ids = "journal-article")
             cr.types(ids = "journal", works = True)
+
+            # field queries
+            res = cr.types(ids = "journal-article", works = True, query_title = 'gender', rows = 100)
+            [ x.get('title') for x in res['message']['items'] ]
         '''
         return request(self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,

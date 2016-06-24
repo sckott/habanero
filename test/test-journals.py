@@ -67,3 +67,17 @@ def test_journals_fail_offset():
 def test_journals_fail_sort():
     "journals - fails on wrong input type to offset"
     cr.journals(sort = 'things')
+
+def test_journals_field_queries():
+    "journals - param: kwargs - field queries work as expected"
+    res = cr.journals(ids = "2167-8359", works = True, query_title = 'fish', filter = {'type': 'journal-article'})
+    titles = [ x.get('title')[0] for x in res['message']['items'] ]
+    assert dict == res.__class__
+    assert 5 == len(res['message'])
+    assert list == titles.__class__
+    assert str == str(titles[0]).__class__
+
+@raises(exceptions.RequestError)
+def test_journals_query_filters_not_allowed_with_dois():
+    "journals - param: kwargs - query filters not allowed on works/journalid/ route"
+    res = cr.journals(ids = "2167-8359", query_title = 'fish')

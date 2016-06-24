@@ -3,7 +3,7 @@ import json
 import re
 
 from .filterhandler import filter_handler
-from .habanero_utils import switch_classes,check_json,is_json,parse_json_err,make_ua
+from .habanero_utils import switch_classes,check_json,is_json,parse_json_err,make_ua,filter_dict,rename_query_filters
 from .exceptions import *
 
 class Request(object):
@@ -15,7 +15,7 @@ class Request(object):
   def __init__(self, url, path, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, cursor = None, cursor_max = None,
-        agency = False):
+        agency = False, **kwargs):
     self.url = url
     self.path = path
     self.query = query
@@ -29,6 +29,7 @@ class Request(object):
     self.cursor = cursor
     self.cursor_max = cursor_max
     self.agency = agency
+    self.kwargs = kwargs
 
   def _url(self):
     tmpurl = self.url + self.path
@@ -45,6 +46,10 @@ class Request(object):
                'rows':self.limit, 'sample':self.sample, 'sort':self.sort,
                'order':self.order, 'facet':self.facet, 'cursor':self.cursor}
     payload = dict((k, v) for k, v in payload.items() if v)
+    # add query filters
+    payload.update(filter_dict(self.kwargs))
+    # rename query filters
+    payload = rename_query_filters(payload)
 
     js = self._req(payload = payload)
     cu = js['message'].get('next-cursor')
