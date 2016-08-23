@@ -41,6 +41,7 @@ def request(url, path, ids = None, query = None, filter = None,
         r.raise_for_status()
     except requests.exceptions.RequestException as e:
       print(e)
+      raise
     check_json(r)
     coll = r.json()
     # coll = switch_classes(js, path, works)
@@ -74,6 +75,7 @@ def request(url, path, ids = None, query = None, filter = None,
             r.raise_for_status()
         except requests.exceptions.RequestException as e:
           print(e)
+          raise
         check_json(r)
         js = r.json()
         #tt_out = switch_classes(js, path, works)
