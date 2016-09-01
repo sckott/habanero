@@ -25,11 +25,11 @@ def test_works_with_many_ids():
     assert 'work' == [ x['message-type'] for x in res ][0]
     assert dois[0] == res[0]['message']['DOI']
 
-def test_works_doesnt_allow_cursor_with_ids_input():
-    "works - param: ids, cursor not supported with DOIs"
-    res1 = cr.works(ids = '10.1016/j.neurobiolaging.2010.03.024', cursor = "*")
-    res2 = cr.works(ids = '10.1016/j.neurobiolaging.2010.03.024')
-    assert res1 == res2
+# def test_works_doesnt_allow_cursor_with_ids_input():
+#     "works - param: ids, cursor not supported with DOIs"
+#     res1 = cr.works(ids = '10.1016/j.neurobiolaging.2010.03.024', cursor = "*")
+#     res2 = cr.works(ids = '10.1016/j.neurobiolaging.2010.03.024')
+#     assert res1 == res2
 
 def test_works_no_id_withlimit():
     "works - param: limit, no other inputs"
