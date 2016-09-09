@@ -11,7 +11,8 @@ a = {u'items': [{u'id': u'book-section', u'label': u'Book Section'},
   {u'id': u'monograph', u'label': u'Monograph'},
   {u'id': u'report', u'label': u'Report'},
   {u'id': u'book-track', u'label': u'Book Track'},
-  {u'id': u'journal-article', u'label': None},
+  {u'id': u'journal-article', u'label': u'Journal Article'},
+  {u'id': u'preprint', u'label': u'Preprint'},
   {u'id': u'book-part', u'label': u'Part'},
   {u'id': u'other', u'label': u'Other'},
   {u'id': u'book', u'label': u'Book'},
@@ -32,7 +33,7 @@ a = {u'items': [{u'id': u'book-section', u'label': u'Book Section'},
   {u'id': u'book-series', u'label': u'Book Series'},
   {u'id': u'edited-book', u'label': u'Edited Book'},
   {u'id': u'standard-series', u'label': u'Standard Series'}],
- u'total-results': 25}
+ u'total-results': 26}
 
 def test_types():
     "types - basic test"
