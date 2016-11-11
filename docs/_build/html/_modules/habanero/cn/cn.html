@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.cn.cn &mdash; habanero 0.2.6 documentation</title>
+  <title>habanero.cn.cn &mdash; habanero 0.2.6.1 documentation</title>
   
 
   
@@ -30,7 +30,10 @@
   
 
   
-    <link rel="top" title="habanero 0.2.6 documentation" href="../../../index.html"/>
+        <link rel="index" title="Index"
+              href="../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="habanero 0.2.6.1 documentation" href="../../../index.html"/>
         <link rel="up" title="Module code" href="../../index.html"/> 
 
   
@@ -59,7 +62,7 @@
             
             
               <div class="version">
-                0.2.6
+                0.2.6.1
               </div>
             
           
@@ -132,10 +135,10 @@
            <div itemprop="articleBody">
             
   <h1>Source code for habanero.cn.cn</h1><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">..cnrequest</span> <span class="kn">import</span> <span class="n">CNRequest</span>
-<span class="kn">from</span> <span class="nn">.constants</span> <span class="kn">import</span> <span class="o">*</span>
+<span></span><span class="kn">from</span> <span class="nn">..cnrequest</span> <span class="k">import</span> <span class="n">CNRequest</span>
+<span class="kn">from</span> <span class="nn">.constants</span> <span class="k">import</span> <span class="o">*</span>
 
-<span class="k">def</span> <span class="nf">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;bibtex&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s1">&#39;apa&#39;</span><span class="p">,</span>
+<span class="k">def</span> <span class="nf">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;bibtex&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s1">&#39;apa&#39;</span><span class="p">,</span>
     <span class="n">locale</span> <span class="o">=</span> <span class="s2">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Get citations in various formats from CrossRef</span>
@@ -199,7 +202,7 @@
 <span class="sd">        dois = [&#39;10.5167/UZH-30455&#39;,&#39;10.5167/UZH-49216&#39;,&#39;10.5167/UZH-503&#39;, &#39;10.5167/UZH-38402&#39;,&#39;10.5167/UZH-41217&#39;]</span>
 <span class="sd">        x = cn.content_negotiation(ids = dois)</span>
 <span class="sd">    &#39;&#39;&#39;</span>
-    <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="n">cn_base_url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="n">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="n">cn_base_url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </pre></div>
 
            </div>
@@ -233,7 +236,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
-            VERSION:'0.2.6',
+            VERSION:'0.2.6.1',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true
