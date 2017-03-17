@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.crossref.crossref &mdash; habanero 0.2.6.2 documentation</title>
+  <title>habanero.crossref.crossref &mdash; habanero 0.2.6.3 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="habanero 0.2.6.2 documentation" href="../../../index.html"/>
+    <link rel="top" title="habanero 0.2.6.3 documentation" href="../../../index.html"/>
         <link rel="up" title="Module code" href="../../index.html"/> 
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                0.2.6.2
+                0.2.6.3
               </div>
             
           
@@ -180,6 +180,27 @@
 <span class="sd">        # set an api key</span>
 <span class="sd">        Crossref(api_key = &quot;123456&quot;)</span>
 
+<span class="sd">    Rate limits</span>
+
+<span class="sd">    See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current</span>
+<span class="sd">    rate limits. As of this writing the limit is 50 requests per second,</span>
+<span class="sd">    but that could change. In addiiton, it&#39;s not clear what the time is to reset.</span>
+<span class="sd">    See below for getting header info for your requests.</span>
+
+<span class="sd">    Verbose curl output::</span>
+
+<span class="sd">        import requests</span>
+<span class="sd">        import logging</span>
+<span class="sd">        import httplib as http_client</span>
+<span class="sd">        http_client.HTTPConnection.debuglevel = 1</span>
+<span class="sd">        logging.basicConfig()</span>
+<span class="sd">        logging.getLogger().setLevel(logging.DEBUG)</span>
+<span class="sd">        requests_log = logging.getLogger(&quot;requests.packages.urllib3&quot;)</span>
+<span class="sd">        requests_log.setLevel(logging.DEBUG)</span>
+<span class="sd">        requests_log.propagate = True</span>
+<span class="sd">        from habanero import Crossref</span>
+<span class="sd">        cr = Crossref()</span>
+<span class="sd">        cr.works(query = &quot;ecology&quot;)</span>
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;http://api.crossref.org&quot;</span><span class="p">,</span> <span class="n">api_key</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 
@@ -321,8 +342,8 @@
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -374,8 +395,8 @@
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -439,8 +460,8 @@
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -493,8 +514,8 @@
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -559,8 +580,8 @@
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -598,8 +619,8 @@
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -621,8 +642,8 @@
 <span class="sd">        Determine registration agency for DOIs</span>
 
 <span class="sd">        :param ids: [Array] DOIs (digital object identifier) or other identifiers</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: list of DOI minting agencies</span>
 
@@ -650,8 +671,8 @@
 <span class="sd">        Get a random set of DOIs</span>
 
 <span class="sd">        :param sample: [Fixnum] Number of random DOIs to return. Default: 10</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: [Array] of DOIs</span>
 
@@ -738,7 +759,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
-            VERSION:'0.2.6.2',
+            VERSION:'0.2.6.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Crossref Search &mdash; habanero 0.2.6.2 documentation</title>
+  <title>Crossref Search &mdash; habanero 0.2.6.3 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="habanero 0.2.6.2 documentation" href="index.html"/>
+    <link rel="top" title="habanero 0.2.6.3 documentation" href="index.html"/>
         <link rel="next" title="Crossref Search Filters" href="filters.html"/>
         <link rel="prev" title="habanero" href="index.html"/> 
 
@@ -63,7 +63,7 @@
             
             
               <div class="version">
-                0.2.6.2
+                0.2.6.3
               </div>
             
           
@@ -173,6 +173,26 @@ article titles, authors, etc. For some discussion on this, see
 <span class="n">Crossref</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;123456&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>Rate limits</p>
+<p>See the headers <cite>X-Rate-Limit-Limit</cite> and <cite>X-Rate-Limit-Interval</cite> for current
+rate limits. As of this writing the limit is 50 requests per second,
+but that could change. In addiiton, it&#8217;s not clear what the time is to reset.
+See below for getting header info for your requests.</p>
+<p>Verbose curl output:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">httplib</span> <span class="k">as</span> <span class="nn">http_client</span>
+<span class="n">http_client</span><span class="o">.</span><span class="n">HTTPConnection</span><span class="o">.</span><span class="n">debuglevel</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">()</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">()</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+<span class="n">requests_log</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;requests.packages.urllib3&quot;</span><span class="p">)</span>
+<span class="n">requests_log</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+<span class="n">requests_log</span><span class="o">.</span><span class="n">propagate</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="kn">from</span> <span class="nn">habanero</span> <span class="k">import</span> <span class="n">Crossref</span>
+<span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
 <dl class="method">
 <dt id="habanero.Crossref.funders">
 <code class="descname">funders</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.funders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.funders" title="Permalink to this definition">¶</a></dt>
@@ -200,8 +220,8 @@ will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -259,8 +279,8 @@ will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -325,8 +345,8 @@ order will be by the relevance score. If no query is included, then the sort ord
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -369,8 +389,8 @@ will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -427,8 +447,8 @@ will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -477,8 +497,8 @@ will be by DOI update date.</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random DOIs to return. Default: 10</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -508,8 +528,8 @@ will be by DOI update date.</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -552,8 +572,8 @@ will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
-<li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to
-<cite>requests.get</cite></li>
+<li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
+queries (see examples)</li>
 </ul>
 </td>
 </tr>
@@ -730,7 +750,7 @@ queries (see examples)</li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.2.6.2',
+            VERSION:'0.2.6.3',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

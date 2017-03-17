@@ -43,6 +43,27 @@ class Crossref(object):
         # set an api key
         Crossref(api_key = "123456")
 
+    Rate limits
+
+    See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current
+    rate limits. As of this writing the limit is 50 requests per second,
+    but that could change. In addiiton, it's not clear what the time is to reset.
+    See below for getting header info for your requests.
+
+    Verbose curl output::
+
+        import requests
+        import logging
+        import httplib as http_client
+        http_client.HTTPConnection.debuglevel = 1
+        logging.basicConfig()
+        logging.getLogger().setLevel(logging.DEBUG)
+        requests_log = logging.getLogger("requests.packages.urllib3")
+        requests_log.setLevel(logging.DEBUG)
+        requests_log.propagate = True
+        from habanero import Crossref
+        cr = Crossref()
+        cr.works(query = "ecology")
     '''
     def __init__(self, base_url = "http://api.crossref.org", api_key = None):
 
@@ -184,8 +205,8 @@ class Crossref(object):
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
         :param works: [Boolean] If true, works returned as well. Default: false
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: A dict
 
@@ -237,8 +258,8 @@ class Crossref(object):
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
         :param works: [Boolean] If true, works returned as well. Default: false
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: A dict
 
@@ -302,8 +323,8 @@ class Crossref(object):
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
         :param works: [Boolean] If true, works returned as well. Default: false
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: A dict
 
@@ -356,8 +377,8 @@ class Crossref(object):
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
         :param works: [Boolean] If true, works returned as well. Default: false
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: A dict
 
@@ -422,8 +443,8 @@ class Crossref(object):
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
         :param works: [Boolean] If true, works returned as well. Default: false
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: A dict
 
@@ -461,8 +482,8 @@ class Crossref(object):
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean] Include facet results. Default: false
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: A dict
 
@@ -484,8 +505,8 @@ class Crossref(object):
         Determine registration agency for DOIs
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: list of DOI minting agencies
 
@@ -513,8 +534,8 @@ class Crossref(object):
         Get a random set of DOIs
 
         :param sample: [Fixnum] Number of random DOIs to return. Default: 10
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: [Array] of DOIs
 
