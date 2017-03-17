@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.crossref.crossref &mdash; habanero 0.2.6.1 documentation</title>
+  <title>habanero.crossref.crossref &mdash; habanero 0.2.6.2 documentation</title>
   
 
   
@@ -33,7 +33,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="habanero 0.2.6.1 documentation" href="../../../index.html"/>
+    <link rel="top" title="habanero 0.2.6.2 documentation" href="../../../index.html"/>
         <link rel="up" title="Module code" href="../../index.html"/> 
 
   
@@ -62,7 +62,7 @@
             
             
               <div class="version">
-                0.2.6.1
+                0.2.6.2
               </div>
             
           
@@ -221,8 +221,8 @@
 <span class="sd">            deep paging can result in continuous requests until all are retrieved, use this</span>
 <span class="sd">            parameter to set a maximum number of records. Of course, if there are less records</span>
 <span class="sd">            found than this value, you will get only those found.</span>
-<span class="sd">        :param kwargs: any additional arguments will be passed on to</span>
-<span class="sd">            `requests.get`</span>
+<span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
+<span class="sd">            queries (see examples)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -292,11 +292,11 @@
         <span class="k">if</span> <span class="n">ids</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span> <span class="o">!=</span> <span class="s1">&#39;NoneType&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
                 <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-                <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+                <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span>
               <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-              <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
+              <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
 
 <div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -738,7 +738,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
-            VERSION:'0.2.6.1',
+            VERSION:'0.2.6.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

@@ -23,10 +23,7 @@ Usage::
    cr.works(ids = '10.1371/journal.pone.0033693')
 
    # curl options
-   ## For example, set a timeout
-   cr.works(query = "ecology", timeout=0.1)
-
-   ## advanced logging
+   ## verbose curl output
    ### setup first
    import requests
    import logging
@@ -42,7 +39,7 @@ Usage::
 '''
 
 __title__ = 'habanero'
-__version__ = '0.2.6.1'
+__version__ = '0.2.6.2'
 __author__ = 'Scott Chamberlain'
 __license__ = 'MIT'
 

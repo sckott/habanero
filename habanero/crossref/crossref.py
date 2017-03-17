@@ -84,8 +84,8 @@ class Crossref(object):
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found.
-        :param kwargs: any additional arguments will be passed on to
-            `requests.get`
+        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
+            queries (see examples)
 
         :return: A dict
 
@@ -155,11 +155,11 @@ class Crossref(object):
         if ids.__class__.__name__ != 'NoneType':
             return request(self.base_url, "/works/", ids,
                 query, filter, offset, limit, sample, sort,
-                order, facet, None, None, None, **kwargs)
+                order, facet, None, None, None, None, **kwargs)
         else:
             return Request(self.base_url, "/works/",
               query, filter, offset, limit, sample, sort,
-              order, facet, cursor, cursor_max, **kwargs).do_request()
+              order, facet, cursor, cursor_max, None, **kwargs).do_request()
 
     def members(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
