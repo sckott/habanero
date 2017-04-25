@@ -40,7 +40,7 @@ def check_json(x):
     raise RequestError(scode, str(x.text))
 
 def is_json(x):
-  if re.search('json', x.headers['Content-Type']).__class__.__name__ == 'NoneType':
+  if re.search('json', x.headers.get('Content-Type')).__class__.__name__ == 'NoneType':
     return False
   else:
     return True

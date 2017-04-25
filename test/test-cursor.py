@@ -30,10 +30,10 @@ def test_cursor_max():
 
 @raises(ex.HTTPError)
 def test_cursor_fails_cursor_value():
-    "cursor works - fails when cursor value not allowed"
+    "cursor works - fails when cursor value bad"
     cr.works(query = "widget", cursor = "thing")
 
 @raises(ValueError)
 def test_cursor_fails_cursor_max():
-    "cursor works - fails when cursor value not allowed"
+    "cursor works - fails when cursor_max value bad"
     cr.works(query = "widget", cursor = "*", cursor_max = "thing")

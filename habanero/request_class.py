@@ -64,7 +64,6 @@ class Request(object):
       while(cu.__class__.__name__ != 'NoneType' and self.cursor_max > total and total < max_avail):
         payload['cursor'] = cu
         out = self._req(payload = payload)
-        # out = _req(url = url, payload = payload)
         cu = out['message'].get('next-cursor')
         res.append(out)
         total = sum([ len(z['message']['items']) for z in res ])
@@ -77,9 +76,10 @@ class Request(object):
       r = requests.get(self._url(), params = payload, headers = make_ua())
       r.raise_for_status()
     except requests.exceptions.HTTPError:
-      if is_json(r):
-        raise RequestError(r.status_code, parse_json_err(r))
-      else:
+      try:
+        f = r.json()
+        raise RequestError(r.status_code, f['message'][0]['message'])
+      except:
         r.raise_for_status()
     except requests.exceptions.RequestException as e:
       print(e)
