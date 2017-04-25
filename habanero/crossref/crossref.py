@@ -65,7 +65,7 @@ class Crossref(object):
         cr = Crossref()
         cr.works(query = "ecology")
     '''
-    def __init__(self, base_url = "http://api.crossref.org", api_key = None):
+    def __init__(self, base_url = "https://api.crossref.org", api_key = None):
 
         self.base_url = base_url
         self.api_key = api_key
