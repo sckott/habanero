@@ -31,10 +31,14 @@ def make_request(url, ids, format, style, locale, **kwargs):
 
   if format == "citeproc-json":
     url = "http://api.crossref.org/works/" + ids + "/" + type
-    return requests.get(url, headers = head, allow_redirects = True, **kwargs).text
   else:
     if format == "text":
       type = type + "; style = " + style + "; locale = " + locale
     url = url + "/" + ids
-    return requests.get(url, headers = head, allow_redirects = True, **kwargs).text
 
+  response = requests.get(url, headers = head, allow_redirects = True, **kwargs)
+
+  # Raise an HTTPError if the status code of the response is 4XX or 5XX
+  response.raise_for_status()
+
+  return response.text
