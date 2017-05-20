@@ -95,7 +95,8 @@ class Crossref(object):
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean] Include facet results. Default: false
+        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
         :param cursor: [String] Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
@@ -203,7 +204,8 @@ class Crossref(object):
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean] Include facet results. Default: false
+        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
@@ -256,7 +258,8 @@ class Crossref(object):
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean] Include facet results. Default: false
+        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
@@ -321,7 +324,8 @@ class Crossref(object):
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean] Include facet results. Default: false
+        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
@@ -375,7 +379,8 @@ class Crossref(object):
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean] Include facet results. Default: false
+        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
@@ -441,7 +446,8 @@ class Crossref(object):
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean] Include facet results. Default: false
+        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
@@ -481,7 +487,8 @@ class Crossref(object):
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date.
         :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean] Include facet results. Default: false
+        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
 

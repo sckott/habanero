@@ -232,7 +232,8 @@
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
-<span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">        :param cursor: [String] Cursor character string to do deep paging. Default is None.</span>
 <span class="sd">            Pass in &#39;*&#39; to start deep paging. Any combination of query, filters and facets may be</span>
 <span class="sd">            used with deep paging cursors. While rows may be specified along with cursor, offset</span>
@@ -340,7 +341,8 @@
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
-<span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples)</span>
@@ -393,7 +395,8 @@
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
-<span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples)</span>
@@ -458,7 +461,8 @@
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
-<span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples)</span>
@@ -512,7 +516,8 @@
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
-<span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples)</span>
@@ -578,7 +583,8 @@
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
-<span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples)</span>
@@ -618,7 +624,8 @@
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
-<span class="sd">        :param facet: [Boolean] Include facet results. Default: false</span>
+<span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples)</span>
 

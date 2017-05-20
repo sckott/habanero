@@ -218,7 +218,8 @@ published (publication date). Note: If the API call includes a query, then the s
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
-<li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples)</li>
@@ -277,7 +278,8 @@ published (publication date). Note: If the API call includes a query, then the s
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
-<li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples)</li>
@@ -344,7 +346,8 @@ published (publication date). Note: If the API call includes a query, then the s
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
-<li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples)</li>
 </ul>
@@ -387,7 +390,8 @@ published (publication date). Note: If the API call includes a query, then the s
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
-<li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples)</li>
@@ -445,7 +449,8 @@ published (publication date). Note: If the API call includes a query, then the s
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
-<li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples)</li>
@@ -570,7 +575,8 @@ published (publication date). Note: If the API call includes a query, then the s
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
-<li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples)</li>
@@ -620,7 +626,8 @@ published (publication date). Note: If the API call includes a query, then the s
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
-<li><strong>facet</strong> &#8211; [Boolean] Include facet results. Default: false</li>
+<li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
 <li><strong>cursor</strong> &#8211; [String] Cursor character string to do deep paging. Default is None.
 Pass in &#8216;*&#8217; to start deep paging. Any combination of query, filters and facets may be
 used with deep paging cursors. While rows may be specified along with cursor, offset
