@@ -84,7 +84,7 @@ class Crossref(object):
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
         :param filter: [Hash] Filter options. See ...
-        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored.
@@ -192,7 +192,7 @@ class Crossref(object):
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
         :param filter: [Hash] Filter options. See ...
-        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested.
@@ -245,7 +245,7 @@ class Crossref(object):
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param filter: [Hash] Filter options. See ...
-        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested.
@@ -310,7 +310,7 @@ class Crossref(object):
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
         :param filter: [Hash] Filter options. See ...
-        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested.
@@ -364,7 +364,7 @@ class Crossref(object):
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
         :param filter: [Hash] Filter options. See ...
-        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested.
@@ -430,7 +430,7 @@ class Crossref(object):
         :param ids: [Array] Type identifier, e.g., journal
         :param query: [String] A query string
         :param filter: [Hash] Filter options. See ...
-        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested.
@@ -472,7 +472,7 @@ class Crossref(object):
         Search Crossref licenses
 
         :param query: [String] A query string
-        :param offset: [Fixnum] Number of record to start at, from 1 to infinity.
+        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sort: [String] Field to sort on, one of score, relevance,
             updated (date of most recent change to metadata. Currently the same as deposited),

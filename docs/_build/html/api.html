@@ -139,7 +139,7 @@
 <span id="crossref-search"></span><span id="crossref"></span><h1>Crossref Search<a class="headerlink" href="#module-habanero" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="habanero.Crossref">
-<em class="property">class </em><code class="descclassname">habanero.</code><code class="descname">Crossref</code><span class="sig-paren">(</span><em>base_url='http://api.crossref.org'</em>, <em>api_key=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">habanero.</code><code class="descname">Crossref</code><span class="sig-paren">(</span><em>base_url='https://api.crossref.org'</em>, <em>api_key=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crossref: Class for Crossref search API methods</p>
 <p>Includes methods matching Crossref API routes:</p>
 <ul class="simple">
@@ -207,7 +207,7 @@ that is, won&#8217;t show up in searches via this method</p>
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
 <li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
-<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to infinity.</li>
+<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested.</li>
@@ -266,7 +266,7 @@ queries (see examples)</li>
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
 <li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
-<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to infinity.</li>
+<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested.</li>
@@ -335,7 +335,7 @@ queries (see examples)</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>query</strong> &#8211; [String] A query string</li>
-<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to infinity.</li>
+<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
 updated (date of most recent change to metadata. Currently the same as deposited),
@@ -376,7 +376,7 @@ queries (see examples)</li>
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
 <li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
-<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to infinity.</li>
+<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested.</li>
@@ -434,7 +434,7 @@ queries (see examples)</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
-<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to infinity.</li>
+<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested.</li>
@@ -559,7 +559,7 @@ queries (see examples)</li>
 <li><strong>ids</strong> &#8211; [Array] Type identifier, e.g., journal</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
 <li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
-<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to infinity.</li>
+<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested.</li>
@@ -609,7 +609,7 @@ queries (see examples)</li>
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
 <li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
-<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to infinity.</li>
+<li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored.</li>
