@@ -224,7 +224,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored.</span>
+<span class="sd">            the limit and offset parameters are ignored. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -332,7 +332,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -385,7 +385,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -450,7 +450,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -504,7 +504,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -570,7 +570,7 @@
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
-<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested.</span>
+<span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
 <span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
 <span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
@@ -670,7 +670,7 @@
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Get a random set of DOIs</span>
 
-<span class="sd">        :param sample: [Fixnum] Number of random DOIs to return. Default: 10</span>
+<span class="sd">        :param sample: [Fixnum] Number of random DOIs to return. Default: 10. Max: 100</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples)</span>
 
