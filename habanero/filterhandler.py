@@ -23,8 +23,18 @@ def filter_handler(x = None):
     newnn = [ re.sub("_", "-", z) for z in nn ]
     newnnd = dict(zip(x.keys(), newnn))
     x = rename_keys(x, newnnd)
-    x = ','.join(['{}:{}'.format(k,v) for k,v in x.items()])
-    return x
+
+    # split any lists into duplicated key/filter names
+    newx = []
+    for k, v in x.items():
+      if v.__class__ == list:
+        for a,b in enumerate(v):
+          newx.append(':'.join([k, b]))
+      else:
+        newx.append(':'.join([k, v]))
+
+    newx = ','.join(newx)
+    return newx
 
 others = ['license_url','license_version','license_delay',
           'full_text_version','full_text_type','award_number',

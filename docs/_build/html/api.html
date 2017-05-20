@@ -230,7 +230,13 @@ that is, won&#8217;t show up in searches via this method</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
-<li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
+<li><strong>filter</strong> &#8211; [Hash] Filter options. See examples for usage.
+Accepts a dict, with filter names and their values. For repeating filter names
+pass in a list of the values to that filter name, e.g.,
+<cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -290,7 +296,13 @@ queries (see examples)</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
-<li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
+<li><strong>filter</strong> &#8211; [Hash] Filter options. See examples for usage.
+Accepts a dict, with filter names and their values. For repeating filter names
+pass in a list of the values to that filter name, e.g.,
+<cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -402,7 +414,13 @@ queries (see examples)</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
-<li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
+<li><strong>filter</strong> &#8211; [Hash] Filter options. See examples for usage.
+Accepts a dict, with filter names and their values. For repeating filter names
+pass in a list of the values to that filter name, e.g.,
+<cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -461,7 +479,13 @@ queries (see examples)</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
-<li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
+<li><strong>filter</strong> &#8211; [Hash] Filter options. See examples for usage.
+Accepts a dict, with filter names and their values. For repeating filter names
+pass in a list of the values to that filter name, e.g.,
+<cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -587,7 +611,13 @@ queries (see examples)</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] Type identifier, e.g., journal</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
-<li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
+<li><strong>filter</strong> &#8211; [Hash] Filter options. See examples for usage.
+Accepts a dict, with filter names and their values. For repeating filter names
+pass in a list of the values to that filter name, e.g.,
+<cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -638,7 +668,13 @@ queries (see examples)</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>ids</strong> &#8211; [Array] DOIs (digital object identifier) or other identifiers</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
-<li><strong>filter</strong> &#8211; [Hash] Filter options. See ...</li>
+<li><strong>filter</strong> &#8211; [Hash] Filter options. See examples for usage.
+Accepts a dict, with filter names and their values. For repeating filter names
+pass in a list of the values to that filter name, e.g.,
+<cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -707,6 +743,9 @@ queries (see examples)</li>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_funder&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;award_number&#39;</span><span class="p">:</span> <span class="s1">&#39;CBET-0756451&#39;</span><span class="p">,</span> <span class="s1">&#39;award_funder&#39;</span><span class="p">:</span> <span class="s1">&#39;10.13039/100000001&#39;</span><span class="p">})</span>
+<span class="c1">## to repeat a filter name, pass in a list</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;award_funder&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;10.13039/100004440&#39;</span><span class="p">,</span> <span class="s1">&#39;10.13039/100000861&#39;</span><span class="p">]},</span> <span class="n">limit</span> <span class="o">=</span> <span class="mi">100</span><span class="p">)</span>
+<span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">z</span><span class="p">:</span><span class="n">z</span><span class="p">[</span><span class="s1">&#39;funder&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;DOI&#39;</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">])</span>
 
 <span class="c1"># Deep paging, using the cursor parameter</span>
 <span class="c1">## this search should lead to only ~215 results</span>

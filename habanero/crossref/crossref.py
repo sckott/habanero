@@ -106,7 +106,13 @@ class Crossref(object):
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
-        :param filter: [Hash] Filter options. See ...
+        :param filter: [Hash] Filter options. See examples for usage.
+            Accepts a dict, with filter names and their values. For repeating filter names
+            pass in a list of the values to that filter name, e.g.,
+            `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
+            and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -171,6 +177,9 @@ class Crossref(object):
             cr.works(filter = {'has_full_text': True})
             cr.works(filter = {'has_funder': True, 'has_full_text': True})
             cr.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
+            ## to repeat a filter name, pass in a list
+            x = cr.works(filter = {'award_funder': ['10.13039/100004440', '10.13039/100000861']}, limit = 100)
+            map(lambda z:z['funder'][0]['DOI'], x['message']['items'])
 
             # Deep paging, using the cursor parameter
             ## this search should lead to only ~215 results
@@ -215,7 +224,13 @@ class Crossref(object):
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
-        :param filter: [Hash] Filter options. See ...
+        :param filter: [Hash] Filter options. See examples for usage.
+            Accepts a dict, with filter names and their values. For repeating filter names
+            pass in a list of the values to that filter name, e.g.,
+            `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
+            and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -269,7 +284,13 @@ class Crossref(object):
         Search Crossref prefixes
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
-        :param filter: [Hash] Filter options. See ...
+        :param filter: [Hash] Filter options. See examples for usage.
+            Accepts a dict, with filter names and their values. For repeating filter names
+            pass in a list of the values to that filter name, e.g.,
+            `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
+            and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -335,7 +356,13 @@ class Crossref(object):
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
-        :param filter: [Hash] Filter options. See ...
+        :param filter: [Hash] Filter options. See examples for usage.
+            Accepts a dict, with filter names and their values. For repeating filter names
+            pass in a list of the values to that filter name, e.g.,
+            `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
+            and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -390,7 +417,13 @@ class Crossref(object):
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
         :param query: [String] A query string
-        :param filter: [Hash] Filter options. See ...
+        :param filter: [Hash] Filter options. See examples for usage.
+            Accepts a dict, with filter names and their values. For repeating filter names
+            pass in a list of the values to that filter name, e.g.,
+            `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
+            and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -457,7 +490,13 @@ class Crossref(object):
 
         :param ids: [Array] Type identifier, e.g., journal
         :param query: [String] A query string
-        :param filter: [Hash] Filter options. See ...
+        :param filter: [Hash] Filter options. See examples for usage.
+            Accepts a dict, with filter names and their values. For repeating filter names
+            pass in a list of the values to that filter name, e.g.,
+            `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
+            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
+            and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
