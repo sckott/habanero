@@ -9,7 +9,11 @@ class Crossref(object):
     '''
     Crossref: Class for Crossref search API methods
 
-    Includes methods matching Crossref API routes:
+    |
+    |
+    |
+
+    **Includes methods matching Crossref API routes**
 
     * /works - :func:`~habanero.Crossref.works`
     * /members - :func:`~habanero.Crossref.members`
@@ -24,7 +28,7 @@ class Crossref(object):
     * registration_agency - :func:`~habanero.Crossref.registration_agency`
     * random_dois - :func:`~habanero.Crossref.random_dois`
 
-    What am I actually searching when using the Crossref search API?:
+    **What am I actually searching when using the Crossref search API?**
 
     You are using the Crossref search API described at
     https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md.
@@ -34,7 +38,7 @@ class Crossref(object):
     article titles, authors, etc. For some discussion on this, see
     https://github.com/CrossRef/rest-api-doc/issues/101
 
-    Doing setup::
+    **Doing setup**::
 
         from habanero import Crossref
         cr = Crossref()
@@ -43,14 +47,14 @@ class Crossref(object):
         # set an api key
         Crossref(api_key = "123456")
 
-    Rate limits
+    **Rate limits**
 
     See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current
     rate limits. As of this writing the limit is 50 requests per second,
     but that could change. In addiiton, it's not clear what the time is to reset.
     See below for getting header info for your requests.
 
-    Verbose curl output::
+    **Verbose curl output**::
 
         import requests
         import logging
@@ -64,6 +68,25 @@ class Crossref(object):
         from habanero import Crossref
         cr = Crossref()
         cr.works(query = "ecology")
+
+    **Field queries**
+
+    One or more field queries. Field queries are searches on specific fields.
+    For example, using `query_title` searches titles instead of full search
+    across all fields as would happen by default. Acceptable set of field
+    query parameters are:
+
+    * `query_title` - Query title and subtitle
+    * `query_container_title` - Query container-title aka. publication name
+    * `query_author` - Query author first and given names
+    * `query_editor` - Query editor first and given names
+    * `query_chair` - Query chair first and given names
+    * `query_translator` - Query translator first and given names
+    * `query_contributor` - Query author, editor, chair and translator first and given names
+
+    |
+    |
+    |
     '''
     def __init__(self, base_url = "https://api.crossref.org", api_key = None):
 

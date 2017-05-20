@@ -7,9 +7,9 @@ def citation_count(doi, url = "http://www.crossref.org/openurl/",
     '''
     Get a citation count with a DOI
 
-    :@param doi: [String] DOI, digital object identifier
-    :@param url: [String] the API url for the function (should be left to default)
-    :@param keyc [String] your API key
+    :param doi: [String] DOI, digital object identifier
+    :param url: [String] the API url for the function (should be left to default)
+    :param keyc: [String] your API key
 
     See http://labs.crossref.org/openurl/ for more info on this Crossref API service.
 

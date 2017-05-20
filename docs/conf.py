@@ -34,7 +34,10 @@ import habanero
 extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
-    'sphinx.ext.autodoc'
+    'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
+    'sphinx.ext.doctest',
+    'sphinx.ext.inheritance_diagram'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

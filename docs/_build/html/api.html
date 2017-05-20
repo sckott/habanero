@@ -141,7 +141,12 @@
 <dt id="habanero.Crossref">
 <em class="property">class </em><code class="descclassname">habanero.</code><code class="descname">Crossref</code><span class="sig-paren">(</span><em>base_url='https://api.crossref.org'</em>, <em>api_key=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crossref: Class for Crossref search API methods</p>
-<p>Includes methods matching Crossref API routes:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+<p><strong>Includes methods matching Crossref API routes</strong></p>
 <ul class="simple">
 <li>/works - <a class="reference internal" href="#habanero.Crossref.works" title="habanero.Crossref.works"><code class="xref py py-func docutils literal"><span class="pre">works()</span></code></a></li>
 <li>/members - <a class="reference internal" href="#habanero.Crossref.members" title="habanero.Crossref.members"><code class="xref py py-func docutils literal"><span class="pre">members()</span></code></a></li>
@@ -156,7 +161,7 @@
 <li>registration_agency - <a class="reference internal" href="#habanero.Crossref.registration_agency" title="habanero.Crossref.registration_agency"><code class="xref py py-func docutils literal"><span class="pre">registration_agency()</span></code></a></li>
 <li>random_dois - <a class="reference internal" href="#habanero.Crossref.random_dois" title="habanero.Crossref.random_dois"><code class="xref py py-func docutils literal"><span class="pre">random_dois()</span></code></a></li>
 </ul>
-<p>What am I actually searching when using the Crossref search API?:</p>
+<p><strong>What am I actually searching when using the Crossref search API?</strong></p>
 <p>You are using the Crossref search API described at
 <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md</a>.
 When you search with query terms, on Crossref servers they are not
@@ -164,7 +169,7 @@ searching full text, or even abstracts of articles, but only what is
 available in the data that is returned to you. That is, they search
 article titles, authors, etc. For some discussion on this, see
 <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/issues/101">https://github.com/CrossRef/rest-api-doc/issues/101</a></p>
-<p>Doing setup:</p>
+<p><strong>Doing setup</strong>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="k">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="c1"># set a different base url</span>
@@ -173,12 +178,12 @@ article titles, authors, etc. For some discussion on this, see
 <span class="n">Crossref</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;123456&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Rate limits</p>
+<p><strong>Rate limits</strong></p>
 <p>See the headers <cite>X-Rate-Limit-Limit</cite> and <cite>X-Rate-Limit-Interval</cite> for current
 rate limits. As of this writing the limit is 50 requests per second,
 but that could change. In addiiton, it&#8217;s not clear what the time is to reset.
 See below for getting header info for your requests.</p>
-<p>Verbose curl output:</p>
+<p><strong>Verbose curl output</strong>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">import</span> <span class="nn">httplib</span> <span class="k">as</span> <span class="nn">http_client</span>
@@ -192,6 +197,25 @@ See below for getting header info for your requests.</p>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">)</span>
 </pre></div>
+</div>
+<p><strong>Field queries</strong></p>
+<p>One or more field queries. Field queries are searches on specific fields.
+For example, using <cite>query_title</cite> searches titles instead of full search
+across all fields as would happen by default. Acceptable set of field
+query parameters are:</p>
+<ul class="simple">
+<li><cite>query_title</cite> - Query title and subtitle</li>
+<li><cite>query_container_title</cite> - Query container-title aka. publication name</li>
+<li><cite>query_author</cite> - Query author first and given names</li>
+<li><cite>query_editor</cite> - Query editor first and given names</li>
+<li><cite>query_chair</cite> - Query chair first and given names</li>
+<li><cite>query_translator</cite> - Query translator first and given names</li>
+<li><cite>query_contributor</cite> - Query author, editor, chair and translator first and given names</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+<div class="line"><br /></div>
 </div>
 <dl class="method">
 <dt id="habanero.Crossref.funders">
