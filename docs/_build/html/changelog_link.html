@@ -90,7 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">0.3.0 (2017-05-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.3.0 (2017-05-21)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id2">0.2.6 (2016-06-24)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id3">0.2.2 (2016-03-09)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">0.2.0 (2016-02-10)</a></li>
@@ -147,16 +147,17 @@
   <div class="section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>0.3.0 (2017-05-20)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>0.3.0 (2017-05-21)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>xxx (#xx)</li>
-<li>xxx (#xx)</li>
-<li>xxx (#xx)</li>
-<li>xxx (#xx)</li>
-<li>xxx (#xx)</li>
-<li>xxx (#xx)</li>
-<li>xxx (#xx)</li>
-<li>xxx (#xx)</li>
+<li>Added more documentation for field queries, describing available fields that support field queries, and how to do field queries (#50)</li>
+<li><cite>sample</cite> parameter maximum value is 100 - has been for a while, but wasn&#8217;t updated in Crossref docs (#44)</li>
+<li>Updated docs that <cite>facet</cite> parameter can be a string query in addition to a boolean (#49)</li>
+<li>Documented new 10,000 max value for <cite>/works</cite> requests - that is, for the <cite>offset</cite> parameter - if you need more results than that use <cite>cursor</cite> (see <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors</a>) (#47)</li>
+<li>Added to docs a bit about rate limiting, their current values, that they can change, and how to show them in verbose curl responses (#45)</li>
+<li>Now using <cite>https://doi.org</cite> for <cite>cn.content_negotation</cite> - and function gains new parameter <cite>url</cite> to  specify different base URLs for content negotiation (#36)</li>
+<li>Fixes to kwargs and fix docs for what can be passed to kwargs  (#41)</li>
+<li>Duplicated names passed to <cite>filter</cite> were not working - fixed now (#48)</li>
+<li>Raise proper HTTP errors when appropriate for <cite>cn.content_negotiation</cite> thanks &#64;jmaupetit (#55)</li>
 </ul>
 </div>
 <div class="section" id="id2">

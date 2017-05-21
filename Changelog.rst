@@ -3,25 +3,15 @@ Changelog
 
 0.3.0 (2017-05-21)
 --------------------
-* Added more documentation for field queries, describing available fields
-that support field queries, and how to do field queries (#50)
-* `sample` parameter maximum value is 100 - has been for a while,
-but wasn't updated in Crossref docs (#44)
-* Updated docs that `facet`parameter can be a string query in addition to
-a boolean (#49)
-* Documented new 10,000 max value for `/works` requests - that is, for the
-`offset` parameter - if you need more results than that use `cursor`
-(see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors)
-(#47)
-* Added to docs a bit about rate limiting, their current values, that they
-can change, and how to show them in verbose curl responses (#45)
-* Now using `https://doi.org` for `cn.content_negotation` - and function
-gains new parameter `url` to specify different base URLs for content
-negotiation (#36)
+* Added more documentation for field queries, describing available fields that support field queries, and how to do field queries (#50)
+* `sample` parameter maximum value is 100 - has been for a while, but wasn't updated in Crossref docs (#44)
+* Updated docs that `facet` parameter can be a string query in addition to a boolean (#49)
+* Documented new 10,000 max value for `/works` requests - that is, for the `offset` parameter - if you need more results than that use `cursor` (see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors) (#47)
+* Added to docs a bit about rate limiting, their current values, that they can change, and how to show them in verbose curl responses (#45)
+* Now using `https://doi.org` for `cn.content_negotation` - and function gains new parameter `url` to  specify different base URLs for content negotiation (#36)
 * Fixes to kwargs and fix docs for what can be passed to kwargs  (#41)
 * Duplicated names passed to `filter` were not working - fixed now (#48)
-* Raise proper HTTP errors when appropriate for `cn.content_negotiation`
-thanks @jmaupetit (#55)
+* Raise proper HTTP errors when appropriate for `cn.content_negotiation` thanks @jmaupetit (#55)
 
 0.2.6 (2016-06-24)
 --------------------
