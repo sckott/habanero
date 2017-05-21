@@ -2,7 +2,7 @@ from ..cnrequest import CNRequest
 from .constants import *
 
 def content_negotiation(ids = None, format = "bibtex", style = 'apa',
-    locale = "en-US", **kwargs):
+    locale = "en-US", url = None, **kwargs):
     '''
     Get citations in various formats from CrossRef
 
@@ -15,6 +15,7 @@ def content_negotiation(ids = None, format = "bibtex", style = 'apa',
         for options. Default: "apa". If there's a style that CrossRef doesn't support
         you'll get a `(500) Internal Server Error`
     :param locale: [str] Language locale. See `locale.locale_alias`
+    :param url: [str] Base URL for the content negotiation request. Default: `https://doi.org`
     :param kwargs: any additional arguments will be passed on to `requests.get`
 
     :return: string, which can be parsed to various formats depending on what
@@ -64,5 +65,12 @@ def content_negotiation(ids = None, format = "bibtex", style = 'apa',
         # many DOIs
         dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', '10.5167/UZH-38402','10.5167/UZH-41217']
         x = cn.content_negotiation(ids = dois)
+
+        # Use a different base url
+        url = "http://dx.doi.org"
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", url = url)
+        cn.content_negotiation(ids = "10.5284/1011335", url = url)
     '''
-    return CNRequest(cn_base_url, ids, format, style, locale, **kwargs)
+    if url is None:
+        url = cn_base_url
+    return CNRequest(url, ids, format, style, locale, **kwargs)

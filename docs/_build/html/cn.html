@@ -139,7 +139,7 @@
 <span id="content-negotiation"></span><span id="cn"></span><h1>Content negotiation<a class="headerlink" href="#module-habanero" title="Permalink to this headline">¶</a></h1>
 <dl class="method">
 <dt id="habanero.cn.content_negotiation">
-<code class="descclassname">cn.</code><code class="descname">content_negotiation</code><span class="sig-paren">(</span><em>ids=None</em>, <em>format='bibtex'</em>, <em>style='apa'</em>, <em>locale='en-US'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#habanero.cn.content_negotiation" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">cn.</code><code class="descname">content_negotiation</code><span class="sig-paren">(</span><em>ids=None</em>, <em>format='bibtex'</em>, <em>style='apa'</em>, <em>locale='en-US'</em>, <em>url=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#habanero.cn.content_negotiation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get citations in various formats from CrossRef</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -155,6 +155,7 @@ passed in, do so in a list</li>
 for options. Default: &#8220;apa&#8221;. If there&#8217;s a style that CrossRef doesn&#8217;t support
 you&#8217;ll get a <cite>(500) Internal Server Error</cite></li>
 <li><strong>locale</strong> &#8211; [str] Language locale. See <cite>locale.locale_alias</cite></li>
+<li><strong>url</strong> &#8211; [str] Base URL for the content negotiation request. Default: <cite>https://doi.org</cite></li>
 <li><strong>kwargs</strong> &#8211; any additional arguments will be passed on to <cite>requests.get</cite></li>
 </ul>
 </td>
@@ -208,6 +209,11 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
 <span class="c1"># many DOIs</span>
 <span class="n">dois</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;10.5167/UZH-30455&#39;</span><span class="p">,</span><span class="s1">&#39;10.5167/UZH-49216&#39;</span><span class="p">,</span><span class="s1">&#39;10.5167/UZH-503&#39;</span><span class="p">,</span> <span class="s1">&#39;10.5167/UZH-38402&#39;</span><span class="p">,</span><span class="s1">&#39;10.5167/UZH-41217&#39;</span><span class="p">]</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="n">dois</span><span class="p">)</span>
+
+<span class="c1"># Use a different base url</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;http://dx.doi.org&quot;</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">url</span> <span class="o">=</span> <span class="n">url</span><span class="p">)</span>
+<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.5284/1011335&quot;</span><span class="p">,</span> <span class="n">url</span> <span class="o">=</span> <span class="n">url</span><span class="p">)</span>
 </pre></div>
 </div>
 </dd></dl>

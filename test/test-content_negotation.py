@@ -18,6 +18,11 @@ def test_content_negotiation_citeproc_json():
     res = cn.content_negotiation(ids = '10.1126/science.169.3946.635', format = "citeproc-json")
     assert str == str(res).__class__
 
+def test_content_negotiation_alt_url():
+    "content negotiation - alternative url"
+    res = cn.content_negotiation(ids = '10.1126/science.169.3946.635', url = "http://doi.org")
+    assert str == str(res).__class__
+
 @raises(HTTPError)
 def test_content_negotiation_raises_an_http_error_with_bad_requests():
     "content negotiation - raises an HTTPError with bad requests"

@@ -139,7 +139,7 @@
 <span class="kn">from</span> <span class="nn">.constants</span> <span class="k">import</span> <span class="o">*</span>
 
 <span class="k">def</span> <span class="nf">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">format</span> <span class="o">=</span> <span class="s2">&quot;bibtex&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s1">&#39;apa&#39;</span><span class="p">,</span>
-    <span class="n">locale</span> <span class="o">=</span> <span class="s2">&quot;en-US&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="n">locale</span> <span class="o">=</span> <span class="s2">&quot;en-US&quot;</span><span class="p">,</span> <span class="n">url</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Get citations in various formats from CrossRef</span>
 
@@ -152,6 +152,7 @@
 <span class="sd">        for options. Default: &quot;apa&quot;. If there&#39;s a style that CrossRef doesn&#39;t support</span>
 <span class="sd">        you&#39;ll get a `(500) Internal Server Error`</span>
 <span class="sd">    :param locale: [str] Language locale. See `locale.locale_alias`</span>
+<span class="sd">    :param url: [str] Base URL for the content negotiation request. Default: `https://doi.org`</span>
 <span class="sd">    :param kwargs: any additional arguments will be passed on to `requests.get`</span>
 
 <span class="sd">    :return: string, which can be parsed to various formats depending on what</span>
@@ -201,8 +202,15 @@
 <span class="sd">        # many DOIs</span>
 <span class="sd">        dois = [&#39;10.5167/UZH-30455&#39;,&#39;10.5167/UZH-49216&#39;,&#39;10.5167/UZH-503&#39;, &#39;10.5167/UZH-38402&#39;,&#39;10.5167/UZH-41217&#39;]</span>
 <span class="sd">        x = cn.content_negotiation(ids = dois)</span>
+
+<span class="sd">        # Use a different base url</span>
+<span class="sd">        url = &quot;http://dx.doi.org&quot;</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.1126/science.169.3946.635&quot;, url = url)</span>
+<span class="sd">        cn.content_negotiation(ids = &quot;10.5284/1011335&quot;, url = url)</span>
 <span class="sd">    &#39;&#39;&#39;</span>
-    <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="n">cn_base_url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">url</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">url</span> <span class="o">=</span> <span class="n">cn_base_url</span>
+    <span class="k">return</span> <span class="n">CNRequest</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="nb">format</span><span class="p">,</span> <span class="n">style</span><span class="p">,</span> <span class="n">locale</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 </pre></div>
 
            </div>
