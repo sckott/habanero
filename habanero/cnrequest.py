@@ -19,7 +19,7 @@ def CNRequest(url, ids = None, format = None, style = None,
   if should_split:
     ids = ids.split()
 
-  if(ids.__class__.__name__ == "int"):
+  if isinstance(ids, int):
     ids = [ids]
 
   if(len(ids) == 1):
