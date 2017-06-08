@@ -7,8 +7,18 @@ from .cn_formats import *
 def CNRequest(url, ids = None, format = None, style = None,
         locale = None, **kwargs):
 
-  if(ids.__class__.__name__ == "str"):
+  should_split = False
+  try:
+    # Python 2
+    if isinstance(ids, (str, unicode)):
+      should_split = True
+  except NameError:
+    # Python 3
+    if isinstance(ids, str):
+      should_split = True
+  if should_split:
     ids = ids.split()
+
   if(ids.__class__.__name__ == "int"):
     ids = [ids]
 
