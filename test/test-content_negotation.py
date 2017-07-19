@@ -28,6 +28,12 @@ def test_content_negotiation_alt_url():
     res = cn.content_negotiation(ids = '10.1126/science.169.3946.635', url = "http://doi.org")
     assert str == str(res).__class__
 
+def test_content_negotiation_style():
+    "content negotiation - style"
+    res_apa = cn.content_negotiation(ids = u'10.1126/science.169.3946.635', format = "text", style = "apa")
+    res_ieee = cn.content_negotiation(ids = u'10.1126/science.169.3946.635', format = "text", style = "ieee")
+    assert res_apa != res_ieee
+
 @raises(HTTPError)
 def test_content_negotiation_raises_an_http_error_with_bad_requests():
     "content negotiation - raises an HTTPError with bad requests"

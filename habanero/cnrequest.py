@@ -36,8 +36,6 @@ def CNRequest(url, ids = None, format = None, style = None,
 
 def make_request(url, ids, format, style, locale, **kwargs):
   type = cn_format_headers[format]
-  htype = {'Accept': type}
-  head = dict(make_ua(), **htype)
 
   if format == "citeproc-json":
     url = "http://api.crossref.org/works/" + ids + "/" + type
@@ -46,6 +44,8 @@ def make_request(url, ids, format, style, locale, **kwargs):
       type = type + "; style = " + style + "; locale = " + locale
     url = url + "/" + ids
 
+  htype = {'Accept': type}
+  head = dict(make_ua(), **htype)
   response = requests.get(url, headers = head, allow_redirects = True, **kwargs)
 
   # Raise an HTTPError if the status code of the response is 4XX or 5XX
