@@ -90,14 +90,15 @@
 <li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1">0.3.0 (2017-05-21)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">0.2.6 (2016-06-24)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">0.2.2 (2016-03-09)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">0.2.0 (2016-02-10)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">0.1.3 (2015-12-02)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">0.1.1 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7">0.1.0 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">0.0.6 (2015-11-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">0.5.0 (2017-07-20)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">0.3.0 (2017-05-21)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">0.2.6 (2016-06-24)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">0.2.2 (2016-03-09)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">0.2.0 (2016-02-10)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">0.1.3 (2015-12-02)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">0.1.1 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">0.1.0 (2015-11-17)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">0.0.6 (2015-11-09)</a></li>
 </ul>
 </li>
 </ul>
@@ -147,7 +148,20 @@
   <div class="section" id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="id1">
-<h2>0.3.0 (2017-05-21)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h2>0.5.0 (2017-07-20)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Now using <cite>vcrpy</cite> to mock all unit tests (#54)</li>
+<li>Can now set your own base URL for content negotation (#37)</li>
+<li>Some field queries with <cite>works()</cite> were failing, but now seem</li>
+</ul>
+<p>to be working, likely due to fixes in Crossref API (#53)
+* style input to <cite>content_negotiation</cite> was fixed (#57) (#58)
+thanks &#64;talbertc-usgs
+* Fix to <cite>content_negotiation</cite> when inputting a DOI as a
+unicode string (#56)</p>
+</div>
+<div class="section" id="id2">
+<h2>0.3.0 (2017-05-21)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Added more documentation for field queries, describing available fields that support field queries, and how to do field queries (#50)</li>
 <li><cite>sample</cite> parameter maximum value is 100 - has been for a while, but wasn&#8217;t updated in Crossref docs (#44)</li>
@@ -160,23 +174,23 @@
 <li>Raise proper HTTP errors when appropriate for <cite>cn.content_negotiation</cite> thanks &#64;jmaupetit (#55)</li>
 </ul>
 </div>
-<div class="section" id="id2">
-<h2>0.2.6 (2016-06-24)<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h2>0.2.6 (2016-06-24)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>fixed problem with <cite>cr.works()</cite> where DOIs passed weren&#8217;t making the correct API request to Crossref (#40)</li>
 <li>added support for field queries to all methods that support <cite>/works</cite> (&lt;<a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#field-queries</a>&gt;) (#38)</li>
 </ul>
 </div>
-<div class="section" id="id3">
-<h2>0.2.2 (2016-03-09)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>0.2.2 (2016-03-09)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>fixed some example code that included non-working examples (#34)</li>
 <li>fixed bug in <cite>registration_agency()</cite> method, works now! (#35)</li>
 <li>removed redundant <cite>filter_names</cite> and <cite>filter_details</cite> bits in docs</li>
 </ul>
 </div>
-<div class="section" id="id4">
-<h2>0.2.0 (2016-02-10)<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h2>0.2.0 (2016-02-10)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>user-agent strings now passed in every http request to Crossref, including a <cite>X-USER-AGENT</cite> header in case the <cite>User-Agent</cite> string is lost (#33)</li>
 <li>added a disclaimer to docs about what is actually searched when searching the Crossref API - that is, only what is returned in the API, so no full text or abstracts are searched (#32)</li>
@@ -185,8 +199,8 @@
 <li>habanero now supports cursor for deep paging. note that cursor only works with requests to the <cite>/works</cite> route (#18)</li>
 </ul>
 </div>
-<div class="section" id="id5">
-<h2>0.1.3 (2015-12-02)<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id6">
+<h2>0.1.3 (2015-12-02)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Fix wheel file to be a universal to install on python2 and python3 (#25)</li>
 <li>Added method <cite>csl_styles</cite> to get CSL styles for use in content negotiation (#27)</li>
@@ -195,14 +209,14 @@
 <li>Made note in docs that funders without IDs don&#8217;t show up on the <cite>/funders</cite> route (#23)</li>
 </ul>
 </div>
-<div class="section" id="id6">
-<h2>0.1.1 (2015-11-17)<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h2>0.1.1 (2015-11-17)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Fix readme</li>
 </ul>
 </div>
-<div class="section" id="id7">
-<h2>0.1.0 (2015-11-17)<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h2>0.1.0 (2015-11-17)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Now compatible with Python 2x and 3x</li>
 <li><cite>agency()</cite> method changed to <cite>registration_agency()</cite></li>
@@ -213,8 +227,8 @@
 <li>Changed library structure, now with module system, separated into modules for the main Crossref search API (i.e., <cite>api.crossref.org</cite>) including higher level methods (e.g., <cite>registration_agency</cite>), content negotiation, and citation counts.</li>
 </ul>
 </div>
-<div class="section" id="id8">
-<h2>0.0.6 (2015-11-09)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h2>0.0.6 (2015-11-09)<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>First pypi release</li>
 </ul>

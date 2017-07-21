@@ -184,12 +184,16 @@
 <span class="sd">        # set an api key</span>
 <span class="sd">        Crossref(api_key = &quot;123456&quot;)</span>
 
+<span class="sd">    .. _RateLimits:</span>
+
 <span class="sd">    **Rate limits**</span>
 
 <span class="sd">    See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current</span>
 <span class="sd">    rate limits. As of this writing the limit is 50 requests per second,</span>
 <span class="sd">    but that could change. In addiiton, it&#39;s not clear what the time is to reset.</span>
 <span class="sd">    See below for getting header info for your requests.</span>
+
+<span class="sd">    .. _CurlOpts:</span>
 
 <span class="sd">    **Verbose curl output**::</span>
 
@@ -206,6 +210,8 @@
 <span class="sd">        cr = Crossref()</span>
 <span class="sd">        cr.works(query = &quot;ecology&quot;)</span>
 
+<span class="sd">    .. _FieldQueries:</span>
+
 <span class="sd">    **Field queries**</span>
 
 <span class="sd">    One or more field queries. Field queries are searches on specific fields.</span>
@@ -220,6 +226,44 @@
 <span class="sd">    * `query_chair` - Query chair first and given names</span>
 <span class="sd">    * `query_translator` - Query translator first and given names</span>
 <span class="sd">    * `query_contributor` - Query author, editor, chair and translator first and given names</span>
+
+<span class="sd">    .. _sorting:</span>
+
+<span class="sd">    **Sort options**</span>
+
+<span class="sd">    * `score` or `relevance` - Sort by relevance score</span>
+<span class="sd">    * `updated` - Sort by date of most recent change to metadata. Currently the same as deposited.</span>
+<span class="sd">    * `deposited` - Sort by time of most recent deposit</span>
+<span class="sd">    * `indexed` - Sort by time of most recent index</span>
+<span class="sd">    * `published` - Sort by publication date</span>
+<span class="sd">    * `published-print` - Sort by print publication date</span>
+<span class="sd">    * `published-online` - Sort by online publication date</span>
+<span class="sd">    * `issued` - Sort by issued date (earliest known publication date)</span>
+<span class="sd">    * `is-referenced-by-count` - Sort by number of references to documents</span>
+<span class="sd">    * `references-count` - Sort by number of references made by documents</span>
+
+
+<span class="sd">    .. _Facets:</span>
+
+<span class="sd">    **Facet count options**</span>
+
+<span class="sd">    * `affiliation` - Author affiliation. Allowed value: *</span>
+<span class="sd">    * `year` - Earliest year of publication, synonym for published. Allowed value: *</span>
+<span class="sd">    * `funder-name` - Funder literal name as deposited alongside DOIs. Allowed value: *</span>
+<span class="sd">    * `funder-doi` - Funder DOI. Allowed value: *</span>
+<span class="sd">    * `orcid` - Contributor ORCID. Max value: 100</span>
+<span class="sd">    * `container-title` - Work container title, such as journal title, or book title. Max value: 100</span>
+<span class="sd">    * `assertion` - Custom Crossmark assertion name. Allowed value: *</span>
+<span class="sd">    * `archive` - Archive location. Allowed value: *</span>
+<span class="sd">    * `update-type` - Significant update type. Allowed value: *</span>
+<span class="sd">    * `issn` - Journal ISSN (any - print, electronic, link). Max value: 100</span>
+<span class="sd">    * `published` - Earliest year of publication. Allowed value: *</span>
+<span class="sd">    * `type-name` - Work type name, such as journal-article or book-chapter. Allowed value: *</span>
+<span class="sd">    * `license` - License URI of work. Allowed value: *</span>
+<span class="sd">    * `category-name` - Category name of work. Allowed value: *</span>
+<span class="sd">    * `relation-type` - Relation type described by work or described by another work with work as object. Allowed value: *</span>
+<span class="sd">    * `assertion-group` - Custom Crossmark assertion group name. Allowed value: *</span>
+
 
 <span class="sd">    |</span>
 <span class="sd">    |</span>
@@ -247,22 +291,20 @@
 <span class="sd">            Accepts a dict, with filter names and their values. For repeating filter names</span>
 <span class="sd">            pass in a list of the values to that filter name, e.g.,</span>
 <span class="sd">            `{&#39;award_funder&#39;: [&#39;10.13039/100004440&#39;, &#39;10.13039/100000861&#39;]}`.</span>
-<span class="sd">            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="sd">            See https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. Max: 100</span>
-<span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
-<span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
-<span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
-<span class="sd">            published (publication date). Note: If the API call includes a query, then the sort</span>
+<span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
-<span class="sd">            will be by DOI update date.</span>
+<span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
-<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.</span>
+<span class="sd">            See Facets_ for options.</span>
 <span class="sd">        :param cursor: [String] Cursor character string to do deep paging. Default is None.</span>
 <span class="sd">            Pass in &#39;*&#39; to start deep paging. Any combination of query, filters and facets may be</span>
 <span class="sd">            used with deep paging cursors. While rows may be specified along with cursor, offset</span>
@@ -273,7 +315,7 @@
 <span class="sd">            parameter to set a maximum number of records. Of course, if there are less records</span>
 <span class="sd">            found than this value, you will get only those found.</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
-<span class="sd">            queries (see examples)</span>
+<span class="sd">            queries (see examples and FieldQueries_)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -310,7 +352,7 @@
 <span class="sd">                 print i[&#39;DOI&#39;]</span>
 
 <span class="sd">            # filters - pass in as a dict</span>
-<span class="sd">            ## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="sd">            ## see https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="sd">            cr.works(filter = {&#39;has_full_text&#39;: True})</span>
 <span class="sd">            cr.works(filter = {&#39;has_funder&#39;: True, &#39;has_full_text&#39;: True})</span>
 <span class="sd">            cr.works(filter = {&#39;award_number&#39;: &#39;CBET-0756451&#39;, &#39;award_funder&#39;: &#39;10.13039/100000001&#39;})</span>
@@ -365,25 +407,23 @@
 <span class="sd">            Accepts a dict, with filter names and their values. For repeating filter names</span>
 <span class="sd">            pass in a list of the values to that filter name, e.g.,</span>
 <span class="sd">            `{&#39;award_funder&#39;: [&#39;10.13039/100004440&#39;, &#39;10.13039/100000861&#39;]}`.</span>
-<span class="sd">            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="sd">            See https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
-<span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
-<span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
-<span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
-<span class="sd">            published (publication date). Note: If the API call includes a query, then the sort</span>
+<span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
-<span class="sd">            will be by DOI update date.</span>
+<span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
+<span class="sd">            See Facets_ for options.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
-<span class="sd">            queries (see examples)</span>
+<span class="sd">            queries (see examples and FieldQueries_)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -425,25 +465,23 @@
 <span class="sd">            Accepts a dict, with filter names and their values. For repeating filter names</span>
 <span class="sd">            pass in a list of the values to that filter name, e.g.,</span>
 <span class="sd">            `{&#39;award_funder&#39;: [&#39;10.13039/100004440&#39;, &#39;10.13039/100000861&#39;]}`.</span>
-<span class="sd">            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="sd">            See https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
-<span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
-<span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
-<span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
-<span class="sd">            published (publication date). Note: If the API call includes a query, then the sort</span>
+<span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
-<span class="sd">            will be by DOI update date.</span>
+<span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
+<span class="sd">            See Facets_ for options.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
-<span class="sd">            queries (see examples)</span>
+<span class="sd">            queries (see examples and FieldQueries_)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -497,25 +535,23 @@
 <span class="sd">            Accepts a dict, with filter names and their values. For repeating filter names</span>
 <span class="sd">            pass in a list of the values to that filter name, e.g.,</span>
 <span class="sd">            `{&#39;award_funder&#39;: [&#39;10.13039/100004440&#39;, &#39;10.13039/100000861&#39;]}`.</span>
-<span class="sd">            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="sd">            See https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
-<span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
-<span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
-<span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
-<span class="sd">            published (publication date). Note: If the API call includes a query, then the sort</span>
+<span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
-<span class="sd">            will be by DOI update date.</span>
+<span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
+<span class="sd">            See Facets_ for options.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
-<span class="sd">            queries (see examples)</span>
+<span class="sd">            queries (see examples and FieldQueries_)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -558,25 +594,23 @@
 <span class="sd">            Accepts a dict, with filter names and their values. For repeating filter names</span>
 <span class="sd">            pass in a list of the values to that filter name, e.g.,</span>
 <span class="sd">            `{&#39;award_funder&#39;: [&#39;10.13039/100004440&#39;, &#39;10.13039/100000861&#39;]}`.</span>
-<span class="sd">            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="sd">            See https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
-<span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
-<span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
-<span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
-<span class="sd">            published (publication date). Note: If the API call includes a query, then the sort</span>
+<span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
-<span class="sd">            will be by DOI update date.</span>
+<span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
-<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
+<span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.</span>
+<span class="sd">            See Facets_ for options.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
-<span class="sd">            queries (see examples)</span>
+<span class="sd">            queries (see examples and FieldQueries_)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -631,25 +665,23 @@
 <span class="sd">            Accepts a dict, with filter names and their values. For repeating filter names</span>
 <span class="sd">            pass in a list of the values to that filter name, e.g.,</span>
 <span class="sd">            `{&#39;award_funder&#39;: [&#39;10.13039/100004440&#39;, &#39;10.13039/100000861&#39;]}`.</span>
-<span class="sd">            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="sd">            See https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
-<span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
-<span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
-<span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
-<span class="sd">            published (publication date). Note: If the API call includes a query, then the sort</span>
+<span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
-<span class="sd">            will be by DOI update date.</span>
+<span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
+<span class="sd">            See Facets_ for options.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
-<span class="sd">            queries (see examples)</span>
+<span class="sd">            queries (see examples and FieldQueries_)</span>
 
 <span class="sd">        :return: A dict</span>
 
@@ -679,17 +711,15 @@
 <span class="sd">        :param query: [String] A query string</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
 <span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
-<span class="sd">        :param sort: [String] Field to sort on, one of score, relevance,</span>
-<span class="sd">            updated (date of most recent change to metadata. Currently the same as deposited),</span>
-<span class="sd">            deposited (time of most recent deposit), indexed (time of most recent index), or</span>
-<span class="sd">            published (publication date). Note: If the API call includes a query, then the sort</span>
+<span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
-<span class="sd">            will be by DOI update date.</span>
+<span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
 <span class="sd">        :param order: [String] Sort order, one of &#39;asc&#39; or &#39;desc&#39;</span>
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
+<span class="sd">            See Facets_ for options.</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
-<span class="sd">            queries (see examples)</span>
+<span class="sd">            queries (see examples and FieldQueries_)</span>
 
 <span class="sd">        :return: A dict</span>
 

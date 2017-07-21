@@ -47,12 +47,16 @@ class Crossref(object):
         # set an api key
         Crossref(api_key = "123456")
 
+    .. _RateLimits:
+
     **Rate limits**
 
     See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current
     rate limits. As of this writing the limit is 50 requests per second,
     but that could change. In addiiton, it's not clear what the time is to reset.
     See below for getting header info for your requests.
+
+    .. _CurlOpts:
 
     **Verbose curl output**::
 
@@ -69,6 +73,8 @@ class Crossref(object):
         cr = Crossref()
         cr.works(query = "ecology")
 
+    .. _FieldQueries:
+
     **Field queries**
 
     One or more field queries. Field queries are searches on specific fields.
@@ -83,6 +89,44 @@ class Crossref(object):
     * `query_chair` - Query chair first and given names
     * `query_translator` - Query translator first and given names
     * `query_contributor` - Query author, editor, chair and translator first and given names
+
+    .. _sorting:
+
+    **Sort options**
+
+    * `score` or `relevance` - Sort by relevance score
+    * `updated` - Sort by date of most recent change to metadata. Currently the same as deposited.
+    * `deposited` - Sort by time of most recent deposit
+    * `indexed` - Sort by time of most recent index
+    * `published` - Sort by publication date
+    * `published-print` - Sort by print publication date
+    * `published-online` - Sort by online publication date
+    * `issued` - Sort by issued date (earliest known publication date)
+    * `is-referenced-by-count` - Sort by number of references to documents
+    * `references-count` - Sort by number of references made by documents
+
+
+    .. _Facets:
+
+    **Facet count options**
+
+    * `affiliation` - Author affiliation. Allowed value: *
+    * `year` - Earliest year of publication, synonym for published. Allowed value: *
+    * `funder-name` - Funder literal name as deposited alongside DOIs. Allowed value: *
+    * `funder-doi` - Funder DOI. Allowed value: *
+    * `orcid` - Contributor ORCID. Max value: 100
+    * `container-title` - Work container title, such as journal title, or book title. Max value: 100
+    * `assertion` - Custom Crossmark assertion name. Allowed value: *
+    * `archive` - Archive location. Allowed value: *
+    * `update-type` - Significant update type. Allowed value: *
+    * `issn` - Journal ISSN (any - print, electronic, link). Max value: 100
+    * `published` - Earliest year of publication. Allowed value: *
+    * `type-name` - Work type name, such as journal-article or book-chapter. Allowed value: *
+    * `license` - License URI of work. Allowed value: *
+    * `category-name` - Category name of work. Allowed value: *
+    * `relation-type` - Relation type described by work or described by another work with work as object. Allowed value: *
+    * `assertion-group` - Custom Crossmark assertion group name. Allowed value: *
+
 
     |
     |
@@ -110,22 +154,20 @@ class Crossref(object):
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. Max: 100
-        :param sort: [String] Field to sort on, one of score, relevance,
-            updated (date of most recent change to metadata. Currently the same as deposited),
-            deposited (time of most recent deposit), indexed (time of most recent index), or
-            published (publication date). Note: If the API call includes a query, then the sort
+        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
-            will be by DOI update date.
+            will be by DOI update date. See sorting_ for possible values.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
-            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.
+            See Facets_ for options.
         :param cursor: [String] Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
@@ -136,7 +178,7 @@ class Crossref(object):
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 
@@ -173,7 +215,7 @@ class Crossref(object):
                  print i['DOI']
 
             # filters - pass in as a dict
-            ## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            ## see https://github.com/CrossRef/rest-api-doc#filter-names
             cr.works(filter = {'has_full_text': True})
             cr.works(filter = {'has_funder': True, 'has_full_text': True})
             cr.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
@@ -228,25 +270,23 @@ class Crossref(object):
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on, one of score, relevance,
-            updated (date of most recent change to metadata. Currently the same as deposited),
-            deposited (time of most recent deposit), indexed (time of most recent index), or
-            published (publication date). Note: If the API call includes a query, then the sort
+        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
-            will be by DOI update date.
+            will be by DOI update date. See sorting_ for possible values.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
+            See Facets_ for options.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 
@@ -288,25 +328,23 @@ class Crossref(object):
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on, one of score, relevance,
-            updated (date of most recent change to metadata. Currently the same as deposited),
-            deposited (time of most recent deposit), indexed (time of most recent index), or
-            published (publication date). Note: If the API call includes a query, then the sort
+        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
-            will be by DOI update date.
+            will be by DOI update date. See sorting_ for possible values.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
+            See Facets_ for options.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 
@@ -360,25 +398,23 @@ class Crossref(object):
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on, one of score, relevance,
-            updated (date of most recent change to metadata. Currently the same as deposited),
-            deposited (time of most recent deposit), indexed (time of most recent index), or
-            published (publication date). Note: If the API call includes a query, then the sort
+        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
-            will be by DOI update date.
+            will be by DOI update date. See sorting_ for possible values.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
+            See Facets_ for options.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 
@@ -421,25 +457,23 @@ class Crossref(object):
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on, one of score, relevance,
-            updated (date of most recent change to metadata. Currently the same as deposited),
-            deposited (time of most recent deposit), indexed (time of most recent index), or
-            published (publication date). Note: If the API call includes a query, then the sort
+        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
-            will be by DOI update date.
+            will be by DOI update date. See sorting_ for possible values.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
-            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
+            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.
+            See Facets_ for options.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 
@@ -494,25 +528,23 @@ class Crossref(object):
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names
+            See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on, one of score, relevance,
-            updated (date of most recent change to metadata. Currently the same as deposited),
-            deposited (time of most recent deposit), indexed (time of most recent index), or
-            published (publication date). Note: If the API call includes a query, then the sort
+        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
-            will be by DOI update date.
+            will be by DOI update date. See sorting_ for possible values.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
+            See Facets_ for options.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 
@@ -542,17 +574,15 @@ class Crossref(object):
         :param query: [String] A query string
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
-        :param sort: [String] Field to sort on, one of score, relevance,
-            updated (date of most recent change to metadata. Currently the same as deposited),
-            deposited (time of most recent deposit), indexed (time of most recent index), or
-            published (publication date). Note: If the API call includes a query, then the sort
+        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
-            will be by DOI update date.
+            will be by DOI update date. See sorting_ for possible values.
         :param order: [String] Sort order, one of 'asc' or 'desc'
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
+            See Facets_ for options.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 

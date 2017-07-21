@@ -178,12 +178,12 @@ article titles, authors, etc. For some discussion on this, see
 <span class="n">Crossref</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;123456&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Rate limits</strong></p>
+<p id="ratelimits"><strong>Rate limits</strong></p>
 <p>See the headers <cite>X-Rate-Limit-Limit</cite> and <cite>X-Rate-Limit-Interval</cite> for current
 rate limits. As of this writing the limit is 50 requests per second,
 but that could change. In addiiton, it&#8217;s not clear what the time is to reset.
 See below for getting header info for your requests.</p>
-<p><strong>Verbose curl output</strong>:</p>
+<p id="curlopts"><strong>Verbose curl output</strong>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">import</span> <span class="nn">httplib</span> <span class="k">as</span> <span class="nn">http_client</span>
@@ -198,7 +198,7 @@ See below for getting header info for your requests.</p>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
-<p><strong>Field queries</strong></p>
+<p id="fieldqueries"><strong>Field queries</strong></p>
 <p>One or more field queries. Field queries are searches on specific fields.
 For example, using <cite>query_title</cite> searches titles instead of full search
 across all fields as would happen by default. Acceptable set of field
@@ -211,6 +211,38 @@ query parameters are:</p>
 <li><cite>query_chair</cite> - Query chair first and given names</li>
 <li><cite>query_translator</cite> - Query translator first and given names</li>
 <li><cite>query_contributor</cite> - Query author, editor, chair and translator first and given names</li>
+</ul>
+<p id="sorting"><strong>Sort options</strong></p>
+<ul class="simple">
+<li><cite>score</cite> or <cite>relevance</cite> - Sort by relevance score</li>
+<li><cite>updated</cite> - Sort by date of most recent change to metadata. Currently the same as deposited.</li>
+<li><cite>deposited</cite> - Sort by time of most recent deposit</li>
+<li><cite>indexed</cite> - Sort by time of most recent index</li>
+<li><cite>published</cite> - Sort by publication date</li>
+<li><cite>published-print</cite> - Sort by print publication date</li>
+<li><cite>published-online</cite> - Sort by online publication date</li>
+<li><cite>issued</cite> - Sort by issued date (earliest known publication date)</li>
+<li><cite>is-referenced-by-count</cite> - Sort by number of references to documents</li>
+<li><cite>references-count</cite> - Sort by number of references made by documents</li>
+</ul>
+<p id="facets"><strong>Facet count options</strong></p>
+<ul class="simple">
+<li><cite>affiliation</cite> - Author affiliation. Allowed value: *</li>
+<li><cite>year</cite> - Earliest year of publication, synonym for published. Allowed value: *</li>
+<li><cite>funder-name</cite> - Funder literal name as deposited alongside DOIs. Allowed value: *</li>
+<li><cite>funder-doi</cite> - Funder DOI. Allowed value: *</li>
+<li><cite>orcid</cite> - Contributor ORCID. Max value: 100</li>
+<li><cite>container-title</cite> - Work container title, such as journal title, or book title. Max value: 100</li>
+<li><cite>assertion</cite> - Custom Crossmark assertion name. Allowed value: *</li>
+<li><cite>archive</cite> - Archive location. Allowed value: *</li>
+<li><cite>update-type</cite> - Significant update type. Allowed value: *</li>
+<li><cite>issn</cite> - Journal ISSN (any - print, electronic, link). Max value: 100</li>
+<li><cite>published</cite> - Earliest year of publication. Allowed value: *</li>
+<li><cite>type-name</cite> - Work type name, such as journal-article or book-chapter. Allowed value: *</li>
+<li><cite>license</cite> - License URI of work. Allowed value: *</li>
+<li><cite>category-name</cite> - Category name of work. Allowed value: *</li>
+<li><cite>relation-type</cite> - Relation type described by work or described by another work with work as object. Allowed value: *</li>
+<li><cite>assertion-group</cite> - Custom Crossmark assertion group name. Allowed value: *</li>
 </ul>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -234,25 +266,23 @@ that is, won&#8217;t show up in searches via this method</p>
 Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
-See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
-<li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
-updated (date of most recent change to metadata. Currently the same as deposited),
-deposited (time of most recent deposit), indexed (time of most recent index), or
-published (publication date). Note: If the API call includes a query, then the sort
+<li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
-will be by DOI update date.</li>
+will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
-Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
+See <a class="reference internal" href="#facets">Facets</a> for options.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
-queries (see examples)</li>
+queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
 </ul>
 </td>
 </tr>
@@ -300,25 +330,23 @@ queries (see examples)</li>
 Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
-See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
-<li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
-updated (date of most recent change to metadata. Currently the same as deposited),
-deposited (time of most recent deposit), indexed (time of most recent index), or
-published (publication date). Note: If the API call includes a query, then the sort
+<li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
-will be by DOI update date.</li>
+will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
-Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>.
+See <a class="reference internal" href="#facets">Facets</a> for options.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
-queries (see examples)</li>
+queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
 </ul>
 </td>
 </tr>
@@ -375,17 +403,15 @@ queries (see examples)</li>
 <li><strong>query</strong> &#8211; [String] A query string</li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
-<li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
-updated (date of most recent change to metadata. Currently the same as deposited),
-deposited (time of most recent deposit), indexed (time of most recent index), or
-published (publication date). Note: If the API call includes a query, then the sort
+<li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
-will be by DOI update date.</li>
+will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
-Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
+See <a class="reference internal" href="#facets">Facets</a> for options.</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
-queries (see examples)</li>
+queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
 </ul>
 </td>
 </tr>
@@ -418,25 +444,23 @@ queries (see examples)</li>
 Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
-See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
-<li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
-updated (date of most recent change to metadata. Currently the same as deposited),
-deposited (time of most recent deposit), indexed (time of most recent index), or
-published (publication date). Note: If the API call includes a query, then the sort
+<li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
-will be by DOI update date.</li>
+will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
-Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
+See <a class="reference internal" href="#facets">Facets</a> for options.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
-queries (see examples)</li>
+queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
 </ul>
 </td>
 </tr>
@@ -483,25 +507,23 @@ queries (see examples)</li>
 Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
-See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
-<li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
-updated (date of most recent change to metadata. Currently the same as deposited),
-deposited (time of most recent deposit), indexed (time of most recent index), or
-published (publication date). Note: If the API call includes a query, then the sort
+<li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
-will be by DOI update date.</li>
+will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
-Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
+See <a class="reference internal" href="#facets">Facets</a> for options.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
-queries (see examples)</li>
+queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
 </ul>
 </td>
 </tr>
@@ -615,25 +637,23 @@ queries (see examples)</li>
 Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
-See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
-<li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
-updated (date of most recent change to metadata. Currently the same as deposited),
-deposited (time of most recent deposit), indexed (time of most recent index), or
-published (publication date). Note: If the API call includes a query, then the sort
+<li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
-will be by DOI update date.</li>
+will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
-Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
+See <a class="reference internal" href="#facets">Facets</a> for options.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
-queries (see examples)</li>
+queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
 </ul>
 </td>
 </tr>
@@ -672,22 +692,20 @@ queries (see examples)</li>
 Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
-See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names">https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</a>
+See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. Max: 100</li>
-<li><strong>sort</strong> &#8211; [String] Field to sort on, one of score, relevance,
-updated (date of most recent change to metadata. Currently the same as deposited),
-deposited (time of most recent deposit), indexed (time of most recent index), or
-published (publication date). Note: If the API call includes a query, then the sort
+<li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
-will be by DOI update date.</li>
+will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
 <li><strong>order</strong> &#8211; [String] Sort order, one of &#8216;asc&#8217; or &#8216;desc&#8217;</li>
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
-Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite></li>
+Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>.
+See <a class="reference internal" href="#facets">Facets</a> for options.</li>
 <li><strong>cursor</strong> &#8211; [String] Cursor character string to do deep paging. Default is None.
 Pass in &#8216;*&#8217; to start deep paging. Any combination of query, filters and facets may be
 used with deep paging cursors. While rows may be specified along with cursor, offset
@@ -698,7 +716,7 @@ deep paging can result in continuous requests until all are retrieved, use this
 parameter to set a maximum number of records. Of course, if there are less records
 found than this value, you will get only those found.</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
-queries (see examples)</li>
+queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
 </ul>
 </td>
 </tr>
@@ -739,7 +757,7 @@ queries (see examples)</li>
      <span class="nb">print</span> <span class="n">i</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span>
 
 <span class="c1"># filters - pass in as a dict</span>
-<span class="c1">## see https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#filter-names</span>
+<span class="c1">## see https://github.com/CrossRef/rest-api-doc#filter-names</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;has_funder&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;has_full_text&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
 <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="nb">filter</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;award_number&#39;</span><span class="p">:</span> <span class="s1">&#39;CBET-0756451&#39;</span><span class="p">,</span> <span class="s1">&#39;award_funder&#39;</span><span class="p">:</span> <span class="s1">&#39;10.13039/100000001&#39;</span><span class="p">})</span>
