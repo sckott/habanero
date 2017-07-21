@@ -5,7 +5,7 @@ habanero
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to ineract with all from one client.
 
-`Crossref API docs <https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md>`__
+`Crossref API docs <https://github.com/CrossRef/rest-api-doc>`__
 
 Other Crossref API clients:
 
