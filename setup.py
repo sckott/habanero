@@ -1,6 +1,15 @@
 import codecs
+import re
 from setuptools import setup
 from setuptools import find_packages
+
+version = ''
+with open('habanero/__init__.py', 'r') as fd:
+    version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',
+                        fd.read(), re.MULTILINE).group(1)
+
+if not version:
+    raise RuntimeError('Cannot find version information')
 
 with codecs.open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
@@ -12,7 +21,7 @@ long_description = '\n\n' + readme + '\n\n' + changes
 
 setup(
 	name             = 'habanero',
-	version          = '0.3.1',
+	version          = version,
 	description      = 'Low Level Client for Crossref Search API',
 	long_description = long_description,
   author           = 'Scott Chamberlain',
