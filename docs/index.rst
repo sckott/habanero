@@ -3,7 +3,7 @@ habanero
 
 |pypi| |docs| |travis| |coverage|
 
-This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to ineract with all from one client.
+This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to interact with all from one client.
 
 `Crossref API docs <https://github.com/CrossRef/rest-api-doc>`__
 
@@ -36,7 +36,11 @@ import all):
 
 Note about searching:
 
-You are using the Crossref search API described at https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md. When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://github.com/CrossRef/rest-api-doc/issues/101
+You are using the Crossref search API described at https://github.com/CrossRef/rest-api-doc. When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://github.com/CrossRef/rest-api-doc/issues/101
+
+Rate limits
+
+See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current rate limits.
 
 
 Installation
@@ -121,6 +125,7 @@ Meta
 
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
    :target: https://coveralls.io/github/sckott/habanero?branch=master
+
 
 
 
