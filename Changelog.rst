@@ -1,6 +1,17 @@
 Changelog
 =========
 
+0.5.0 (2017-07-20)
+--------------------
+* Now using `vcrpy` to mock all unit tests (#54)
+* Can now set your own base URL for content negotation (#37)
+* Some field queries with `works()` were failing, but now seem
+to be working, likely due to fixes in Crossref API (#53)
+* style input to `content_negotiation` was fixed (#57) (#58)
+thanks @talbertc-usgs
+* Fix to `content_negotiation` when inputting a DOI as a
+unicode string (#56)
+
 0.3.0 (2017-05-21)
 --------------------
 * Added more documentation for field queries, describing available fields that support field queries, and how to do field queries (#50)
