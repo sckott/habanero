@@ -37,8 +37,12 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.doctest',
-    'sphinx.ext.inheritance_diagram'
+    'sphinx.ext.inheritance_diagram',
+    'sphinxcontrib.issuetracker'
 ]
+
+issuetracker = 'github'
+issuetracker_project = 'sckott/habanero'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
