@@ -1,0 +1,30 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/works?rows=2
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":90216773,"items":[{"indexed":{"date-parts":[[2017,5,13]],"date-time":"2017-05-13T03:48:29Z","timestamp":1494647309655},"reference-count":0,"publisher":"IOSR
+        Journals","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IOSR-JCE"],"published-print":{"date-parts":[[2013]]},"DOI":"10.9790\/0661-141","type":"journal-issue","created":{"date-parts":[[2013,9,23]],"date-time":"2013-09-23T05:10:36Z","timestamp":1379913036000},"source":"Crossref","is-referenced-by-count":0,"title":[],"prefix":"10.9790","volume":"14","member":"4786","container-title":["IOSR
+        Journal of Computer Engineering"],"original-title":[],"deposited":{"date-parts":[[2013,9,23]],"date-time":"2013-09-23T05:10:36Z","timestamp":1379913036000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2013]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.9790\/0661-141","relation":{},"ISSN":["2278-8727","2278-0661"],"issn-type":[{"value":"2278-8727","type":"print"},{"value":"2278-0661","type":"electronic"}]},{"indexed":{"date-parts":[[2017,5,13]],"date-time":"2017-05-13T03:20:49Z","timestamp":1494645649221},"reference-count":0,"publisher":"Journals
+        of Biomedical Presentations Smart Sci Solutions, Inc.","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JAP"],"DOI":"10.15510\/jbmp_jap.2374-5258.2012.v1.p1","type":"journal-issue","created":{"date-parts":[[2015,3,7]],"date-time":"2015-03-07T01:51:56Z","timestamp":1425693116000},"source":"Crossref","is-referenced-by-count":0,"title":[],"prefix":"10.15510","volume":"1","member":"6172","published-online":{"date-parts":[[2012]]},"container-title":["Journal
+        of Anesthesiology Presentations"],"original-title":[],"deposited":{"date-parts":[[2015,3,7]],"date-time":"2015-03-07T01:51:56Z","timestamp":1425693116000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.15510\/jbmp_jap.2374-5258.2012.v1.p1","relation":{},"ISSN":["2374-5258"],"issn-type":[{"value":"2374-5258","type":"electronic"}]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['2267']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 02:06:08 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

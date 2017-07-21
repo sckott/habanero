@@ -1,0 +1,28 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/funders?filter=has-assertion%3Atrue
+  response:
+    body: {string: !!python/unicode '{"status":"failed","message-type":"validation-failure","message":[{"type":"filter-not-available","value":"has-assertion","message":"Filter
+        has-assertion specified but there is no such filter for this route. Valid
+        filters for this route are: location"}]}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['253']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 01:45:25 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 400, message: Bad Request}
+version: 1

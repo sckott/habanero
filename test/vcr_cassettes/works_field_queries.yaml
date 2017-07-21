@@ -1,0 +1,652 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/works?query=ecology&query.author=carl+boettiger
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":744,"items":[{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T12:56:38Z","timestamp":1495716998899},"posted":{"date-parts":[[2016,5,30]]},"group-title":"Ecology","reference-count":0,"publisher":"Cold
+        Spring Harbor Laboratory Press","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"accepted":{"date-parts":[[2016,5,30]]},"abstract":"<jats:p>Over
+        the past 30 years, researchers have used various approximations to address
+        the impact of measurement uncertainty on optimal management policy. This literature
+        has consistently suggested the counter-intuitive proposition that increasing
+        harvest levels in the presence of measurement error is often optimal. Here,
+        we use state-of-the art algorithms for Partially Observed Markov Decision
+        Processes (POMDPs) to provide the first complete solution to this classic
+        problem, and demonstrate that contrary to previous work, the resulting policy
+        is usually more conservative than without measurement error. We demonstrate
+        that management which underestimates the measurement error results in both
+        low economic returns and high frequency of stock collapses, while overestimating
+        the role of measurement error can still result in nearly-optimal economic
+        performance while avoiding stock collapse.<\/jats:p>","DOI":"10.1101\/055319","type":"posted-content","created":{"date-parts":[[2016,5,31]],"date-time":"2016-05-31T05:11:36Z","timestamp":1464671496000},"source":"Crossref","is-referenced-by-count":0,"title":["Measurement
+        uncertainty matters: ecological management using POMDPs"],"prefix":"10.1101","author":[{"ORCID":"http:\/\/orcid.org\/0000-0001-7672-6033","authenticated-orcid":false,"given":"Milad","family":"Memarzadeh","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1642-628X","authenticated-orcid":false,"given":"Carl","family":"Boettiger","affiliation":[]}],"member":"246","container-title":[],"original-title":[],"deposited":{"date-parts":[[2017,1,4]],"date-time":"2017-01-04T06:16:15Z","timestamp":1483510575000},"score":30.315395,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,5,30]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1101\/055319","relation":{}},{"indexed":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T01:52:29Z","timestamp":1498009949047},"reference-count":50,"publisher":"Wiley-Blackwell","issue":"6","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":1055,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Methods
+        Ecol Evol"],"published-print":{"date-parts":[[2012,12]]},"DOI":"10.1111\/j.2041-210x.2012.00247.x","type":"journal-article","created":{"date-parts":[[2012,10,11]],"date-time":"2012-10-11T17:38:12Z","timestamp":1349977092000},"page":"1060-1066","source":"Crossref","is-referenced-by-count":0,"title":["Treebase:
+        an R package for discovery, access and manipulation of online phylogenies"],"prefix":"10.1111","volume":"3","author":[{"given":"Carl","family":"Boettiger","affiliation":[{"name":"Center
+        for Population Biology; University of California; Davis; CA; 95616; USA"}]},{"given":"Duncan","family":"Temple
+        Lang","affiliation":[{"name":"Department of Statistics; University of California;
+        Davis; CA; 95616; USA"}]}],"member":"311","published-online":{"date-parts":[[2012,10,11]]},"reference":[{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0001|mee3247-cit-0001","first-page":"717","DOI":"10.1111\/j.0014-3820.2003.tb00285.x","article-title":"Testing
+        for phylogenetic signal in comparative data: behavioral traits are more labile","volume":"57","author":"Blomberg","year":"2003","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0002|mee3247-cit-0002","author":"Boettiger","year":"2012","article-title":"rfishbase:
+        exploring, manipulating and visualizing FishBase data from R","journal-title":"Journal
+        of Fish Biology","DOI":"10.1111\/j.1095-8649.2012.03464.x"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0003|mee3247-cit-0003","first-page":"2240","DOI":"10.1111\/j.1558-5646.2011.01574.x","article-title":"Is
+        your phylogeny informative? Measuring the power of comparative methods","volume":"66","author":"Boettiger","year":"2012","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0004|mee3247-cit-0004","first-page":"683","DOI":"10.1086\/426002","article-title":"Phylogenetic
+        comparative analysis: a modeling approach for adaptive evolution","volume":"164","author":"Butler","year":"2004","journal-title":"The
+        American Naturalist"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0005|mee3247-cit-0005","unstructured":"Chamberlain
+        , S. Boettiger , C. Ram , K. 2012 rdryad: Dryad API interface http:\/\/www.github.com\/ropensci\/rdryad"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0006|mee3247-cit-0006","first-page":"1841","DOI":"10.1111\/j.1558-5646.2011.01265.x","article-title":"Neutral
+        biodiversity theory can explain the imbalance of phylogenetic trees but not
+        the tempo of their diversification","volume":"65","author":"Davies","year":"2011","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0007|mee3247-cit-0007","first-page":"2973","DOI":"10.1111\/j.1558-5646.2011.01374.x","article-title":"Lineage
+        diversification and morphological evolution in a large-scale continental radiation:
+        the neotropical ovenbirds and woodcreepers (Aves: Furnariidae)","volume":"65","author":"Derryberry","year":"2011","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0008|mee3247-cit-0008","first-page":"214","DOI":"10.1186\/1471-2148-7-214","article-title":"BEAST:
+        Bayesian evolutionary analysis by sampling trees","volume":"7","author":"Drummond","year":"2007","journal-title":"BMC
+        Evolutionary Biology"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0009|mee3247-cit-0009","first-page":"3578","DOI":"10.1111\/j.1558-5646.2011.01401.x","article-title":"A
+        novel comparative method for identifying shifts in the rate of character evolution
+        on trees","volume":"65","author":"Eastman","year":"2011","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0010|mee3247-cit-0010","first-page":"225","DOI":"10.1086\/595757","article-title":"Climate,
+        niche evolution, and diversification of the \u2018bird-cage\u2019 evening
+        primroses (Oenothera, sections Anogra and Kleinia)","volume":"173","author":"Evans","year":"2009","journal-title":"The
+        American Naturalist"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0011|mee3247-cit-0011","first-page":"1","DOI":"10.1111\/j.1558-5646.2010.01182.x","article-title":"The
+        advent of mandatory data archiving","volume":"65","author":"Fairbairn","year":"2010","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0012|mee3247-cit-0012","first-page":"619","DOI":"10.1093\/sysbio\/syq053","article-title":"Quantitative
+        traits and diversification","volume":"59","author":"Fitzjohn","year":"2010","journal-title":"Systematic
+        Biology"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0013|mee3247-cit-0013","author":"Gentleman","year":"2004","article-title":"Statistical
+        analyses and reproducible research","journal-title":"Bioconductor Project
+        Working Papers"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0014|mee3247-cit-0014","first-page":"451","DOI":"10.1093\/sysbio\/syr046","article-title":"Phylogenetic
+        inference of reciprocal effects between geographic range evolution and diversification","volume":"60","author":"Goldberg","year":"2011","journal-title":"Systematic
+        Biology"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0015|mee3247-cit-0015","first-page":"129","DOI":"10.1093\/bioinformatics\/btm538","article-title":"Geiger:
+        investigating evolutionary radiations","volume":"24","author":"Harmon","year":"2008","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0016|mee3247-cit-0016","first-page":"754","DOI":"10.1093\/bioinformatics\/17.8.754","article-title":"MRBAYES:
+        Bayesian inference of phylogenetic trees","volume":"17","author":"Huelsenbeck","year":"2001","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0017|mee3247-cit-0017","first-page":"1907","DOI":"10.1093\/bioinformatics\/btq292","article-title":"Adephylo:
+        new tools for investigating the phylogenetic signal in biological traits","volume":"26","author":"Jombart","year":"2010","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0018|mee3247-cit-0018","first-page":"1463","DOI":"10.1093\/bioinformatics\/btq166","article-title":"Picante:
+        R tools for integrating phylogenies and ecology","volume":"26","author":"Kembel","year":"2010","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0019|mee3247-cit-0019","first-page":"3384","DOI":"10.1093\/bioinformatics\/btm438","article-title":"TreeSnatcher:
+        coding trees from images","volume":"23","author":"Laubach","year":"2007","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0020|mee3247-cit-0020","unstructured":"Maddison
+        , W.P. Maddison , D.R. 2011 Mesquite: a modular system for evolutionary analysis
+        http:\/\/mesquiteproject.org"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0021|mee3247-cit-0021","author":"Martins","year":"2004","volume-title":"COMPARE,
+        version Computer programs for the statistical analysis of comparative data"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0022|mee3247-cit-0022","first-page":"97","DOI":"10.1086\/512135","article-title":"Clade
+        age and not diversification rate explains species richness among animal taxa","volume":"169","author":"McPeek","year":"2007","journal-title":"The
+        American Naturalist"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0023|mee3247-cit-0023","first-page":"270","DOI":"10.1086\/593137","article-title":"The
+        ecological dynamics of clade diversification and community assembly","volume":"172","author":"McPeek","year":"2008","journal-title":"The
+        American Naturalist"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0024|mee3247-cit-0024","first-page":"569","DOI":"10.1126\/science.273.5275.569","article-title":"TreeBASE:
+        the roots of phylogeny","volume":"273","author":"Morell","year":"1996","journal-title":"Science"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0025|mee3247-cit-0025","first-page":"289","DOI":"10.1093\/bioinformatics\/btg412","article-title":"APE:
+        analyses of phylogenetics and evolution in R language","volume":"20","author":"Paradis","year":"2004","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0026|mee3247-cit-0026","first-page":"94","DOI":"10.1016\/j.tree.2011.11.001","article-title":"Evolutionary
+        informatics: unifying knowledge about the diversity of life","volume":"27","author":"Parr","year":"2011","journal-title":"Trends
+        in Ecology & Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0027|mee3247-cit-0027","first-page":"1226","DOI":"10.1126\/science.1213847","article-title":"Reproducible
+        research in computational science","volume":"334","author":"Peng","year":"2011","journal-title":"Science"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0028|mee3247-cit-0028","first-page":"71","DOI":"10.1371\/journal.pbio.0060071","article-title":"Density-dependent
+        cladogenesis in birds","volume":"6","author":"Phillimore","year":"2008","journal-title":"PLoS
+        Biology"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0029|mee3247-cit-0029","first-page":"285","DOI":"10.1038\/473285a","article-title":"Data
+        archiving is a good investment","volume":"473","author":"Piwowar","year":"2011","journal-title":"Nature"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0030|mee3247-cit-0030","first-page":"2267","DOI":"10.1098\/rspb.2000.1278","article-title":"Testing
+        macro-evolutionary models using incomplete molecular phylogenies","volume":"267","author":"Pybus","year":"2000","journal-title":"Proceedings
+        of The Royal Society B"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0031|mee3247-cit-0031","first-page":"434","DOI":"10.1016\/j.tree.2010.05.002","article-title":"Diversity
+        dynamics: molecular phylogenies need the fossil record","volume":"25","author":"Quental","year":"2010","journal-title":"Trends
+        in Ecology & Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0032|mee3247-cit-0032","author":"R
+        Development Core Team","year":"2012","volume-title":"R: A Language and Environment
+        for Statistical Computing"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0033|mee3247-cit-0033","first-page":"273","article-title":"LASER:
+        a maximum likelihood toolkit for detecting temporal shifts in diversification
+        rates from molecular phylogenies","volume":"2","author":"Rabosky","year":"2006","journal-title":"Evolutionary
+        Bioinformatics Online"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0034|mee3247-cit-0034","first-page":"135","DOI":"10.1111\/j.1558-5646.2011.01435.x","article-title":"A
+        new phylogenetic method for identifying exceptional phenotypic diversification","volume":"66","author":"Revell","year":"2011","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0035|mee3247-cit-0035","first-page":"183","article-title":"TreeBASE:
+        a prototype database of phylogenetic analyses and an interactive tool for
+        browsing the phylogeny of life","volume":"81","author":"Sanderson","year":"1994","journal-title":"American
+        Journal of Botany"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0036|mee3247-cit-0036","first-page":"592","DOI":"10.1093\/bioinformatics\/btq706","article-title":"phangorn:
+        phylogenetic analysis in R","volume":"27","author":"Schliep","year":"2010","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0037|mee3247-cit-0037","first-page":"61","DOI":"10.1109\/5992.881708","article-title":"Making
+        scientific computations reproducible","volume":"2","author":"Schwab","year":"2000","journal-title":"Computing
+        in Science & Engineering"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0038|mee3247-cit-0038","first-page":"676","DOI":"10.1093\/sysbio\/syr029","article-title":"Simulating
+        trees with a fixed number of extant species","volume":"60","author":"Stadler","year":"2011a","journal-title":"Systematic
+        Biology"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0039|mee3247-cit-0039","first-page":"6187","DOI":"10.1073\/pnas.1016876108","article-title":"Mammalian
+        phylogeny reveals recent diversification rate shifts","volume":"108","author":"Stadler","year":"2011b","journal-title":"Proceedings
+        of the National Academy of Sciences"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0040|mee3247-cit-0040","first-page":"2688","DOI":"10.1093\/bioinformatics\/btl446","article-title":"RAxML-VI-HPC:
+        maximum likelihood-based phylogenetic analyses with thousands of taxa and
+        mixed models","volume":"22","author":"Stamatakis","year":"2006","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0041|mee3247-cit-0041","first-page":"1569","DOI":"10.1093\/bioinformatics\/btq228","article-title":"DendroPy:
+        a Python Library for phylogenetic computing","volume":"26","author":"Sukumaran","year":"2010","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0042|mee3247-cit-0042","unstructured":"Temple
+        Lang , D. 2012a RCurl: General network (HTTP\/FTP\/...) client interface for
+        R http:\/\/cran.r-project.org\/packageR=Curl"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0043|mee3247-cit-0043","unstructured":"Temple
+        Lang , D. 2012b XML: Tools for parsing and generating XML within R and S-Plus
+        http:\/\/cran.r-project.org\/packageX=ML"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0044|mee3247-cit-0044","author":"Vos","year":"2010","article-title":"TreeBase2:
+        rise of the machines","journal-title":"Nature Precedings","DOI":"10.1038\/npre.2010.4600"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0045|mee3247-cit-0045","first-page":"675","DOI":"10.1093\/sysbio\/sys025","article-title":"NeXML:
+        rich, extensible, and verifiable representation of comparative data and metadata","volume":"61","author":"Vos","year":"2012","journal-title":"Systematic
+        Biology"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0046|mee3247-cit-0046","first-page":"63","DOI":"10.1186\/1471-2105-12-63","article-title":"BIO::Phylo-phyloinformatic
+        analysis using perl","volume":"12","author":"Vos","year":"2011","journal-title":"BMC
+        Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0047|mee3247-cit-0047","first-page":"2868","DOI":"10.1111\/j.1558-5646.2008.00482.x","article-title":"Environmental
+        niche equivalency versus conservatism: quantitative approaches to niche evolution","volume":"62","author":"Warren","year":"2008","journal-title":"Evolution"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0048|mee3247-cit-0048","first-page":"2098","DOI":"10.1093\/bioinformatics\/btn358","article-title":"Phylocom:
+        software for the analysis of phylogenetic community structure and trait evolution","volume":"24","author":"Webb","year":"2008","journal-title":"Bioinformatics"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0049|mee3247-cit-0049","first-page":"145","DOI":"10.1086\/650340","article-title":"Data
+        archiving","volume":"175","author":"Whitlock","year":"2010","journal-title":"The
+        American Naturalist"},{"key":"10.1111\/j.2041-210X.2012.00247.x-BIB0050|mee3247-cit-0050","unstructured":"Xie
+        , Y. 2012 knitr: A general-purpose package for dynamic report generation in
+        R http:\/\/yihui.name\/knitr\/"}],"container-title":["Methods in Ecology and
+        Evolution"],"original-title":[],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.2041-210X.2012.00247.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T01:18:02Z","timestamp":1498007882000},"score":26.6862,"subtitle":[],"editor":[{"given":"Luke","family":"Harmon","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,10,11]]},"references-count":50,"URL":"http:\/\/dx.doi.org\/10.1111\/j.2041-210x.2012.00247.x","relation":{"cites":[]},"ISSN":["2041-210X"],"issn-type":[{"value":"2041-210X","type":"print"}]},{"indexed":{"date-parts":[[2017,5,29]],"date-time":"2017-05-29T07:30:32Z","timestamp":1496043032662},"posted":{"date-parts":[[2015,2,4]]},"group-title":"Ecology","reference-count":0,"publisher":"Cold
+        Spring Harbor Laboratory Press","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"accepted":{"date-parts":[[2016,2,17]]},"abstract":"<jats:p>Increased
+        dispersal propensity often evolves on expanding range edges due to the Olympic
+        Village effect, which involves the fastest and fittest finding themselves
+        together in the same place at the same time, mating, and giving rise to like
+        individuals. But what happens after the range''s leading edge has passed and
+        the games are over? Although empirical studies indicate that dispersal propensity
+        attenuates following range expansion, hypotheses about the mechanisms driving
+        this attenuation have not been clearly articulated or tested. Here we use
+        a simple model of the spatiotemporal dynamics of two phenotypes, one fast
+        and the other slow, to propose that dispersal attenuation beyond pre-expansion
+        levels is only possible in the presence of trade-offs between dispersal and
+        life-history traits. The Olympic Village effect ensures that fast dispersers
+        pre-empt locations far from the range''s previous limits. When trade-offs
+        are absent, this pre-emptive spatial advantage has a lasting impact, with
+        highly dispersive individuals attaining equilibrium frequencies that are strictly
+        higher than their introduction frequencies. When trade-offs are present, dispersal
+        propensity decays rapidly at all locations. Our model''s results about the
+        post-colonization trajectory of dispersal evolution are clear and, in principle,
+        should be observable in field studies. We conclude that empirical observations
+        of post-colonization dispersal attenuation offer a novel way to detect the
+        existence of otherwise elusive trade-offs between dispersal and life-history
+        traits.<\/jats:p>","DOI":"10.1101\/014852","type":"posted-content","created":{"date-parts":[[2015,2,9]],"date-time":"2015-02-09T18:04:29Z","timestamp":1423505069000},"source":"Crossref","is-referenced-by-count":0,"title":["After
+        the games are over: life-history trade-offs drive dispersal attenuation following
+        range expansion"],"prefix":"10.1101","author":[{"given":"Alex","family":"Perkins","affiliation":[]},{"given":"Carl","family":"Boettiger","affiliation":[]},{"given":"Ben","family":"Phillips","affiliation":[]}],"member":"246","container-title":[],"original-title":[],"deposited":{"date-parts":[[2017,4,12]],"date-time":"2017-04-12T18:03:50Z","timestamp":1492020230000},"score":25.338974,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,2,4]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1101\/014852","relation":{"is-preprint-of":[{"id-type":"doi","id":"10.1002\/ece3.2314","asserted-by":"subject"}]}},{"indexed":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T15:53:57Z","timestamp":1498060437554},"reference-count":74,"publisher":"Springer
+        Nature","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Theor
+        Ecol"],"published-print":{"date-parts":[[2013,8]]},"DOI":"10.1007\/s12080-013-0192-6","type":"journal-article","created":{"date-parts":[[2013,6,20]],"date-time":"2013-06-20T11:38:41Z","timestamp":1371728321000},"page":"255-264","source":"Crossref","is-referenced-by-count":0,"title":["Early
+        warning signals: the charted and uncharted territories"],"prefix":"10.1007","volume":"6","author":[{"given":"Carl","family":"Boettiger","affiliation":[]},{"given":"Noam","family":"Ross","affiliation":[]},{"given":"Alan","family":"Hastings","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2013,6,21]]},"reference":[{"key":"192_CR1","unstructured":"The
+        Resilience Alliance (2010) Assessing resilience in social-ecological systems:
+        workbook for practitioners. Version 2.0."},{"key":"192_CR2","first-page":"23","DOI":"10.1007\/s10021-001-0053-9","volume":"5","author":"JM
+        Anderies","year":"2002","unstructured":"Anderies JM, Janssen MA, Walker BH
+        (2002) Grazing management, resilience, and the dynamics of a fire-driven rangeland
+        system. Ecosystems 5:23\u201344","journal-title":"Ecosystems"},{"key":"192_CR3","unstructured":"Bailey
+        RM (2010) Spatial and temporal signatures of fragility and threshold proximity
+        in modelled semi-arid vegetation. In: Proceedings of the Royal Society: Biological
+        Sciences"},{"key":"192_CR4","first-page":"52","DOI":"10.1038\/nature11018","volume":"486","author":"AD
+        Barnosky","year":"2012","unstructured":"Barnosky AD, Hadly EA, Bascompte J,
+        Berlow EL, Brown JH, Fortelius M, Getz WM, Harte J, Hastings A, Marquet PA,
+        Martinez ND, Mooers A, Roopnarine P, Vermeij G, Williams JW, Gillespie R,
+        Kitzes J, Marshall C, Matzke N, Mindell DP, Revilla E, Smith AB (2012) Approaching
+        a state shift in earth\u2019s biosphere. Nature 486:52\u201358","journal-title":"Nature"},{"key":"192_CR5","first-page":"591","DOI":"10.1007\/s12080-011-0149-6","volume":"5","author":"G
+        Bel","year":"2012","unstructured":"Bel G, Hagberg A, Meron E (2012) Gradual
+        regime shifts in spatially extended ecosystems. Theor Ecol 5:591\u2013604","journal-title":"Theor
+        Ecol"},{"key":"192_CR6","first-page":"62033","DOI":"10.1371\/journal.pone.0062033","volume":"8","author":"MC
+        Boerlijst","year":"2013","unstructured":"Boerlijst MC, Oudman T, de Roos AM
+        (2013) Catastrophic collapse can occur without early warning: examples of
+        silent catastrophes in structured ecological models. PLoS ONE 8:62033","journal-title":"PLoS
+        ONE"},{"key":"192_CR7","first-page":"4734","DOI":"10.1098\/rspb.2012.2085","volume":"279","author":"C
+        Boettiger","year":"2012a","unstructured":"Boettiger C, Hastings A (2012a)
+        Early warning signals and the prosecutor\u2019s fallacy. Proc Royal Soc Biol
+        Sci 279:4734\u20134739","journal-title":"Proc Royal Soc Biol Sci"},{"key":"192_CR8","first-page":"2527","DOI":"10.1098\/rsif.2012.0125","volume":"9","author":"C
+        Boettiger","year":"2012b","unstructured":"Boettiger C, Hastings A (2012b)
+        Quantifying limits to detection of early warning for critical transitions.
+        J R Soc Interface R Soc 9:2527\u20132539","journal-title":"J R Soc Interface
+        R Soc"},{"key":"192_CR9","first-page":"353","DOI":"10.1890\/09-1824.1","volume":"80","author":"WA
+        Brock","year":"2010","unstructured":"Brock WA, Carpenter SR (2010) Interacting
+        regime shifts in ecosystems: implication for early warnings. Ecol Monogr 80:353\u2013367","journal-title":"Ecol
+        Monogr"},{"key":"192_CR10","first-page":"45586","DOI":"10.1371\/journal.pone.0045586","volume":"7","author":"WA
+        Brock","year":"2012","unstructured":"Brock WA, Carpenter SR (2012) Early warnings
+        of regime shift when the ecosystem structure is unknown. PLoS ONE 7:45586","journal-title":"PLoS
+        ONE"},{"key":"192_CR11","first-page":"2196","DOI":"10.1890\/11-0716.1","volume":"92","author":"SR
+        Carpenter","year":"2011","unstructured":"Carpenter SR (2011) Early warnings
+        of unknown nonlinear shifts: a nonparametric approach. Ecology 92:2196\u20132201","journal-title":"Ecology"},{"key":"192_CR12","first-page":"311","DOI":"10.1111\/j.1461-0248.2005.00877.x","volume":"9","author":"SR
+        Carpenter","year":"2006","unstructured":"Carpenter SR, Brock WA (2006) Rising
+        variance: a leading indicator of ecological transition. Ecol Lett 9:311\u2013318","journal-title":"Ecol
+        Lett"},{"key":"192_CR13","first-page":"10","DOI":"10.1890\/ES10-00016.1","volume":"1","author":"SR
+        Carpenter","year":"2010","unstructured":"Carpenter SR, Brock WA (2010) Early
+        warnings of regime shifts in spatial dynamics using the discrete Fourier transform.
+        Ecosphere 1:10","journal-title":"Ecosphere"},{"key":"192_CR14","author":"SR
+        Carpenter","year":"1996","unstructured":"Carpenter SR, Kitchell JF (1996)
+        The trophic cascade in lakes. Cambridge University Press, Cambridge","volume-title":"The
+        trophic cascade in lakes"},{"key":"192_CR15","first-page":"751","DOI":"10.1890\/1051-0761(1999)009[0751:MOEFLS]2.0.CO;2","volume":"9","author":"SR
+        Carpenter","year":"1999","unstructured":"Carpenter SR, Ludwig D, Brock WA
+        (1999) Management of eutrophication for lakes subject to potentially irreversible
+        change. Ecol Appl 9:751\u2013771","journal-title":"Ecol Appl"},{"key":"192_CR16","first-page":"128","volume":"11","author":"SR
+        Carpenter","year":"2008","unstructured":"Carpenter SR, Brock WA, Cole JJ,
+        Kitchell JF, Pace ML (2008) Leading indicators of trophic cascades. Ecol Lett
+        11:128\u2013138","journal-title":"Ecol Lett"},{"key":"192_CR17","first-page":"1079","DOI":"10.1126\/science.1203672","volume":"332","author":"SR
+        Carpenter","year":"2011","unstructured":"Carpenter SR, Cole JJ, Pace ML, Batt
+        R, Brock WA, Cline T, Coloso J, Hodgson JR, Kitchell JF, Seekell DA, Smith
+        L, Weidel B (2011) Early warnings of regime shifts: a whole-ecosystem experiment.
+        Science 332:1079\u20131082","journal-title":"Science"},{"key":"192_CR18","first-page":"142","DOI":"10.1016\/j.jtbi.2008.11.008","volume":"257","author":"RA
+        Chisholm","year":"2009","unstructured":"Chisholm RA, Filotas E (2009) Critical
+        slowing down as an indicator of transitions in two-species models. J Theor
+        Biol 257:142\u2013149","journal-title":"J Theor Biol"},{"key":"192_CR19","first-page":"323","DOI":"10.5194\/cp-9-323-2013","volume":"9","author":"AA
+        Cimatoribus","year":"2013","unstructured":"Cimatoribus AA, Drijfhout SS, Livina
+        V, van der Schrier G (2013) Dansgaard\u2013Oeschger events: bifurcation points
+        in the climate system. Clim Past 9:323\u2013333","journal-title":"Clim Past"},{"key":"192_CR20","first-page":"389","DOI":"10.1126\/science.275.5298.389","volume":"275","author":"RF
+        Costantino","year":"1997","unstructured":"Costantino RF, Desharnais RA, Cushing
+        JM, Dennis B (1997) Chaotic dynamics in an insect population. Science 275:389\u2013391","journal-title":"Science"},{"key":"192_CR21","first-page":"1175","DOI":"10.1126\/science.1219805","volume":"336","author":"L
+        Dai","year":"2012","unstructured":"Dai L, Vorselen D, Korolev KS, Gore J (2012)
+        Generic indicators for loss of resilience before a tipping point leading to
+        population collapse. Science 336:1175\u20131177","journal-title":"Science"},{"key":"192_CR22","first-page":"14308","DOI":"10.1073\/pnas.0802430105","volume":"105","author":"V
+        Dakos","year":"2008","unstructured":"Dakos V, Scheffer M, van Nes EH, Brovkin
+        V, Petoukhov V, Held H (2008) Slowing down as an early warning signal for
+        abrupt climate change. Proc Natl Acad Sci 105:14308\u201314312","journal-title":"Proc
+        Natl Acad Sci"},{"key":"192_CR23","first-page":"163","DOI":"10.1007\/s12080-009-0060-6","volume":"3","author":"V
+        Dakos","year":"2009","unstructured":"Dakos V, Nes EH, Donangelo R, Fort H,
+        Scheffer M (2009) Spatial correlation as leading indicator of catastrophic
+        shifts. Theor Ecol 3:163\u2013174","journal-title":"Theor Ecol"},{"key":"192_CR24","first-page":"153","DOI":"10.1086\/659945","volume":"177","author":"V
+        Dakos","year":"2011a","unstructured":"Dakos V, K\u00e9fi S, Rietkerk M, van
+        Nes EH, Scheffer M (2011a) Slowing down in spatially patterned ecosystems
+        at the brink of collapse. Am Nat 177:153","journal-title":"Am Nat"},{"key":"192_CR25","first-page":"264","DOI":"10.1890\/11-0889.1","volume":"93","author":"V
+        Dakos","year":"2011b","unstructured":"Dakos V, van Nes EH, D\u2019Odorico
+        P, Scheffer M (2011b) Robustness of variance and autocorrelation as indicators
+        of critical slowing down. Ecology 93:264\u2013271","journal-title":"Ecology"},{"key":"192_CR26","first-page":"e41010","DOI":"10.1371\/journal.pone.0041010","volume":"7","author":"V
+        Dakos","year":"2012","unstructured":"Dakos V, Carpenter SR, Brock WA, Ellison
+        AM, Guttal V, Ives AR, K\u00e9fi S, Livina V, Seekell DA, van Nes EH, Scheffer
+        M (2012) Methods for detecting early warnings of critical transitions in time
+        series illustrated using simulated ecological data. PLoS ONE 7:e41010","journal-title":"PLoS
+        ONE"},{"key":"192_CR27","first-page":"2496","DOI":"10.1073\/pnas.1218022110","volume":"110","author":"E
+        Di Lorenzo","year":"2013","unstructured":"Di Lorenzo E, Ohman MD (2013) A
+        double-integration hypothesis to explain ocean ecosystem response to climate
+        forcing. Proc Natl Acad Sci USA 110:2496\u20132499","journal-title":"Proc
+        Natl Acad Sci USA"},{"key":"192_CR28","first-page":"2","DOI":"10.1029\/2010GL044486","volume":"37","author":"PD
+        Ditlevsen","year":"2010","unstructured":"Ditlevsen PD, Johnsen SJ (2010) Tipping
+        points: early warning and wishful thinking. Geophys Res Lett 37:2\u20135","journal-title":"Geophys
+        Res Lett"},{"key":"192_CR29","first-page":"2438","DOI":"10.1073\/pnas.1222736110","volume":"110","author":"SC
+        Doney","year":"2013","unstructured":"Doney SC, Sailley SF (2013) When an ecological
+        regime shift is really just stochastic noise. Proc Natl Acad Sci USA 110:2438\u20132439","journal-title":"Proc
+        Natl Acad Sci USA"},{"key":"192_CR30","first-page":"456","DOI":"10.1038\/nature09389","volume":"467","author":"JM
+        Drake","year":"2010","unstructured":"Drake JM, Griffen BD (2010) Early warning
+        signals of extinction in deteriorating environments. Nature 467:456\u2013457","journal-title":"Nature"},{"key":"192_CR31","first-page":"549","DOI":"10.1016\/j.tree.2009.03.020","volume":"24","author":"J
+        Fischer","year":"2009","unstructured":"Fischer J, Peterson GD, Gardner TA,
+        Gordon LJ, Fazey I, Elmqvist T, Felton A, Folke C, Dovers S (2009) Integrating
+        resilience thinking and optimisation for conservation. Trends Ecol Evol 24:549\u2013554","journal-title":"Trends
+        Ecol Evol"},{"key":"192_CR32","first-page":"363","DOI":"10.1006\/jtbi.1998.0660","volume":"192","author":"A
+        Gandhi","year":"1998","unstructured":"Gandhi A, Levin S, Orszag S (1998) Critical
+        slowing down in time-to-extinction: an example of critical phenomena in ecology.
+        J Theor Biol 192:363\u2013376","journal-title":"J Theor Biol"},{"key":"192_CR33","first-page":"181","DOI":"10.1016\/0167-2789(83)90126-4","volume":"7","author":"C
+        Grebogi","year":"1983","unstructured":"Grebogi C, Ott E, Yorke JA (1983) Crises,
+        sudden changes in chaotic attractors and transient chaos. Phys D Nonlinear
+        Phenom 7:181\u2013200","journal-title":"Phys D Nonlinear Phenom"},{"key":"192_CR34","first-page":"3","DOI":"10.1007\/s12080-008-0033-1","volume":"2","author":"V
+        Guttal","year":"2008","unstructured":"Guttal V, Jayaprakash C (2008a) Spatial
+        variance and spatial skewness: leading indicators of regime shifts in spatial
+        ecological systems. Theor Ecol 2:3\u201312","journal-title":"Theor Ecol"},{"key":"192_CR35","first-page":"450","DOI":"10.1111\/j.1461-0248.2008.01160.x","volume":"11","author":"V
+        Guttal","year":"2008","unstructured":"Guttal V, Jayaprakash C (2008b) Changing
+        skewness: an early warning signal of regime shifts in ecosystems. Ecol Lett
+        11:450\u2013460","journal-title":"Ecol Lett"},{"key":"192_CR36","first-page":"103","DOI":"10.1016\/S0079-6611(00)00033-1","volume":"47","author":"SR
+        Hare","year":"2000","unstructured":"Hare SR, Mantua NJ (2000) Empirical evidence
+        for North Pacific regime shifts in 1977 and 1989. Prog Oceanogr 47:103\u2013145","journal-title":"Prog
+        Oceanogr"},{"key":"192_CR37","unstructured":"Hastings A (1998) Transients
+        in spatial ecological models. In: Bascompte J, Sole\u0301 RV (eds) Modeling
+        spatiotemporal dynamics in ecology. Springer, Berlin, pp 189\u2013198"},{"key":"192_CR38","first-page":"464","DOI":"10.1111\/j.1461-0248.2010.01439.x","volume":"13","author":"A
+        Hastings","year":"2010","unstructured":"Hastings A, Wysham DB (2010) Regime
+        shifts in ecological systems can occur with no warning. Ecol Lett 13:464\u2013472","journal-title":"Ecol
+        Lett"},{"key":"192_CR39","first-page":"1","DOI":"10.1146\/annurev.es.24.110193.000245","volume":"24","author":"A
+        Hastings","year":"1993","unstructured":"Hastings A, Hom CL, Ellner S, Turchin
+        P, Godfray HCJ (1993) Chaos in ecology: is mother nature a strange attractor?Annu
+        Rev Ecol Syst 24:1\u201333","journal-title":"Annu Rev Ecol Syst"},{"key":"192_CR40","first-page":"232","DOI":"10.1126\/science.1210657","volume":"334","author":"M
+        Hirota","year":"2011","unstructured":"Hirota M, Holmgren M, Van Nes EH, Scheffer
+        M (2011) Global resilience of tropical forest and savanna to critical transitions.
+        Science 334:232\u2013235","journal-title":"Science"},{"key":"192_CR41","first-page":"1","DOI":"10.1146\/annurev.es.04.110173.000245","volume":"4","author":"CSS
+        Holling","year":"1973","unstructured":"Holling CSS (1973) Resilience and stability
+        of ecological systems. Annu Rev Ecol Syst 4:1\u201323","journal-title":"Annu
+        Rev Ecol Syst"},{"key":"192_CR42","first-page":"629","DOI":"10.1126\/science.1059199","volume":"293","author":"JB
+        Jackson","year":"2001","unstructured":"Jackson JB, Kirby MX, Berger WH, Bjorndal
+        KA, Botsford LW, Bourque BJ, Bradbury RH, Cooke R, Erlandson J, Estes JA,
+        Hughes TP, Kidwell S, Lange CB, Lenihan HS, Pandolfi JM, Peterson CH, Steneck
+        RS, Tegner MJ, Warner RR (2001) Historical overfishing and the recent collapse
+        of coastal ecosystems. Science (New York) 293:629\u2013637","journal-title":"Science
+        (New York)"},{"key":"192_CR43","first-page":"213","DOI":"10.1038\/nature06111","volume":"449","author":"S
+        K\u00e9fi","year":"2007","unstructured":"K\u00e9fi S, Rietkerk M, Alados CL,
+        Pueyo Y, Papanastasis VP, Elaich A, de Ruiter PC, Alados L, Ruiter PCD (2007)
+        Spatial vegetation patterns and imminent desertification in Mediterranean
+        arid ecosystems. Nature 449:213\u2013217","journal-title":"Nature"},{"key":"192_CR44","first-page":"641","DOI":"10.1111\/j.1600-0706.2012.20838.x","volume":"122","author":"S
+        K\u00e9fi","year":"2012","unstructured":"K\u00e9fi S, Dakos V, Scheffer M,
+        van Nes EH, Rietkerk M (2012) Early warning signals also precede non-catastrophic
+        transitions. Oikos 122:641\u2013648","journal-title":"Oikos"},{"key":"192_CR45","first-page":"e1002360","DOI":"10.1371\/journal.pcbi.1002360","volume":"8","author":"SJ
+        Lade","year":"2012","unstructured":"Lade SJ, Gross T (2012) Early warning
+        signals for critical transitions: a generalized modeling approach. PLoS Comput
+        Biol 8:e1002360","journal-title":"PLoS Comput Biol"},{"key":"192_CR46","first-page":"871","DOI":"10.1098\/rsta.2008.0171","volume":"367","author":"TM
+        Lenton","year":"2009","unstructured":"Lenton TM, Myerscough RJ, Marsh R, Livina
+        VN, Price AR, Cox SJ, Team G (2009) Using GENIE to study a tipping point in
+        the climate system. Philos Trans A Math Phys Eng Sci 367:871\u2013884","journal-title":"Philos
+        Trans A Math Phys Eng Sci"},{"key":"192_CR47","first-page":"1185","DOI":"10.1098\/rsta.2011.0304","volume":"370","author":"TM
+        Lenton","year":"2012","unstructured":"Lenton TM, Livina VN, Dakos V, van Nes
+        EH, Scheffer M (2012) Early warning of climate tipping points from critical
+        slowing down: comparing methods to improve robustness. Philos Trans A Math
+        Phys Eng Sci 370:1185\u20131204","journal-title":"Philos Trans A Math Phys
+        Eng Sci"},{"key":"192_CR48","author":"RC Lewontin","first-page":"13","year":"1969","unstructured":"Lewontin
+        RC (1969) The meaning of stability. In: Woodwell GW, Smith HH (eds) Brookhaven
+        symposia in biology. Brookhaven National Laboratory, Upton, pp 13\u201325","volume-title":"Brookhaven
+        symposia in biology"},{"key":"192_CR49","first-page":"e38410","DOI":"10.1371\/journal.pone.0038410","volume":"7","author":"M
+        Lindegren","year":"2012","unstructured":"Lindegren M, Dakos V, Gr\u00f6ger
+        JP, G\u00e5rdmark A, Kornilovs G, Otto SA, M\u00f6llmann C (2012) Early detection
+        of ecosystem regime shifts: a multiple method evaluation for management application.
+        PLoS ONE 7:e38410","journal-title":"PLoS ONE"},{"key":"192_CR50","first-page":"1331","DOI":"10.1890\/07-0998.1","volume":"18","author":"MA
+        Litzow","year":"2008","unstructured":"Litzow MA, Urban JD, Laurel BJ (2008)
+        Increased spatial variance accompanies reorganization of two continental shelf
+        ecosystems. Ecol Appl 18:1331\u20131337","journal-title":"Ecol Appl"},{"key":"192_CR51","first-page":"315","DOI":"10.2307\/3939","volume":"47","author":"D
+        Ludwig","year":"1978","unstructured":"Ludwig D, Jones DD, Holling CS (1978)
+        Qualitative analysis of insect outbreak systems: the spruce budworm and forest.
+        J Anim Ecol 47:315\u2013332","journal-title":"J Anim Ecol"},{"key":"192_CR52","first-page":"471","DOI":"10.1038\/269471a0","volume":"269","author":"RM
+        May","year":"1977","unstructured":"May RM (1977) Thresholds and breakpoints
+        in ecosystems with a multiplicity of stable states. Nature 269:471\u2013477","journal-title":"Nature"},{"key":"192_CR53","first-page":"100","DOI":"10.1038\/nature06922","volume":"454","author":"BA
+        Melbourne","year":"2008","unstructured":"Melbourne BA, Hastings A (2008) Extinction
+        risk depends strongly on factors contributing to stochasticity. Nature 454:100\u2013103","journal-title":"Nature"},{"key":"192_CR54","first-page":"98","DOI":"10.1038\/nature06252","volume":"450","author":"PJ
+        Mumby","year":"2007","unstructured":"Mumby PJ, Hastings A, Edwards HJ (2007)
+        Thresholds and the resilience of Caribbean coral reefs. Nature 450:98\u2013101","journal-title":"Nature"},{"key":"192_CR55","first-page":"1772","DOI":"10.1890\/11-0161.1","volume":"22","author":"CT
+        Perretti","year":"2012","unstructured":"Perretti CT, Munch SB (2012) Regime
+        shift indicators fail under noise levels commonly observed in ecological systems.
+        Ecol Appl 22:1772\u20131779","journal-title":"Ecol Appl"},{"key":"192_CR56","first-page":"398","DOI":"10.1016\/j.tree.2011.04.007","volume":"26","author":"S
+        Polasky","year":"2011","unstructured":"Polasky S, Carpenter SR, Folke C, Keeler
+        B (2011) Decision-making under great uncertainty: environmental management
+        in an era of global change. Trends Ecol Evol 26:398\u2013404","journal-title":"Trends
+        Ecol Evol"},{"key":"192_CR57","first-page":"684","DOI":"10.1126\/science.1230492","volume":"339","author":"PR
+        Renne","year":"2013","unstructured":"Renne PR, Deino AL, Hilgen FJ, Kuiper
+        KF, Mark DF, Mitchell WS, Morgan LE, Mundil R, Smit J (2013) Time scales of
+        critical events around the Cretaceous-Paleogene boundary. Science 339:684\u2013687","journal-title":"Science"},{"key":"192_CR58","first-page":"169","DOI":"10.1016\/j.tree.2007.10.013","volume":"23","author":"M
+        Rietkerk","year":"2008","unstructured":"Rietkerk M, van de Koppel J (2008)
+        Regular pattern formation in real ecosystems. Trends Ecol Evol 23:169\u2013175","journal-title":"Trends
+        Ecol Evol"},{"key":"192_CR59","first-page":"1926","DOI":"10.1126\/science.1101867","volume":"305","author":"M
+        Rietkerk","year":"2004","unstructured":"Rietkerk M, van de Koppel J, Dekker
+        SC, de Ruiter PC (2004) Self-organized patchiness and catastrophic shifts
+        in ecosystems. Science 305:1926\u20131929","journal-title":"Science"},{"key":"192_CR60","first-page":"591","DOI":"10.1038\/35098000","volume":"413","author":"M
+        Scheffer","year":"2001","unstructured":"Scheffer M, Carpenter SR, Foley JA,
+        Folke C, Walker B (2001) Catastrophic shifts in ecosystems. Nature 413:591\u2013596","journal-title":"Nature"},{"key":"192_CR61","first-page":"53","DOI":"10.1038\/nature08227","volume":"461","author":"M
+        Scheffer","year":"2009","unstructured":"Scheffer M, Bascompte J, Brock WA,
+        Brovkin V, Carpenter SR, Dakos V, Held H, van Nes EH, Rietkerk M, Sugihara
+        G (2009) Early-warning signals for critical transitions. Nature 461:53\u201359","journal-title":"Nature"},{"key":"192_CR62","first-page":"344","DOI":"10.1126\/science.1225244","volume":"338","author":"M
+        Scheffer","year":"2012","unstructured":"Scheffer M, Carpenter SR, Lenton TM,
+        Bascompte J, Brock WA, Dakos V, van de Koppel J, van de Leemput IA, Levin
+        SA, van Nes EH, Pascual M, Vandermeer J (2012) Anticipating critical transitions.
+        Science 338:344\u2013348","journal-title":"Science"},{"key":"192_CR63","first-page":"86","DOI":"10.1038\/nature09735","volume":"470","author":"SS
+        Schooler","year":"2011","unstructured":"Schooler SS, Salau B, Julien MH, Ives
+        AR (2011) Alternative stable states explain unpredictable biological control
+        of Salvinia molesta in Kakadu. Nature 470:86\u201389","journal-title":"Nature"},{"key":"192_CR64","first-page":"201","DOI":"10.1016\/S0040-5809(03)00072-8","volume":"64","author":"SJ
+        Schreiber","year":"2003","unstructured":"Schreiber SJ (2003) Allee effects,
+        extinctions, and chaotic transients in simple population models. Theor Popul
+        Biol 64:201\u2013209","journal-title":"Theor Popul Biol"},{"key":"192_CR65","first-page":"430","volume":"93","author":"SJ
+        Schreiber","year":"2004","unstructured":"Schreiber SJ, Rittenhouse S (2004)
+        From simple rules to cycling in community assembly. Oikos 93:430\u2013358","journal-title":"Oikos"},{"key":"192_CR66","first-page":"576","DOI":"10.1111\/j.1461-0248.2008.01171.x","volume":"11","author":"S
+        Schreiber","year":"2008","unstructured":"Schreiber S, Rudolf VHW (2008) Crossing
+        habitat boundaries: coupling dynamics of ecosystems through complex life cycles.
+        Ecol Lett 11:576\u2013587","journal-title":"Ecol Lett"},{"key":"192_CR67","first-page":"442","DOI":"10.1086\/661898","volume":"178","author":"DA
+        Seekell","year":"2011","unstructured":"Seekell DA, Carpenter SR, Pace ML (2011)
+        Conditional heteroscedasticity as a leading indicator of ecological regime
+        shifts. Am Nat 178:442\u2013451","journal-title":"Am Nat"},{"key":"192_CR68","first-page":"1063","DOI":"10.1890\/i0012-9658-92-5-1063","volume":"92","author":"AC
+        Staver","year":"2011","unstructured":"Staver AC, Archibald S, Levin S (2011)
+        Tree cover in sub-Saharan Africa: rainfall and fire constrain forest and savanna
+        as alternative stable states. Ecology 92:1063\u20131072","journal-title":"Ecology"},{"key":"192_CR69","first-page":"357","volume":"481","author":"AJ
+        Veraart","year":"2012","unstructured":"Veraart AJ, Faassen EJ, Dakos V, van
+        Nes EH, L\u00fcrling M, Scheffer M (2012) Recovery rates reflect distance
+        to a tipping point in a living system. Nature 481:357\u2013359","journal-title":"Nature"},{"issue":"2\u20133","key":"192_CR74","first-page":"80","volume":"22","author":"BH
+        Walker","year":"1993","unstructured":"Walker BH (1993) Rangeland ecology -
+        understanding and managing change. Ambio 22(2\u20133):80\u201387","journal-title":"Ambio"},{"key":"192_CR70","first-page":"39","DOI":"10.1139\/f00-160","volume":"58","author":"C
+        Walters","year":"2001","unstructured":"Walters C, Kitchell JF (2001) Cultivation\/depensation
+        effects on juvenile survival and recruitment: implications for the theory
+        of fishing. Can J Fish Aquat Sci 58:39\u201350","journal-title":"Can J Fish
+        Aquat Sci"},{"key":"192_CR71","first-page":"419","DOI":"10.1038\/nature11655","volume":"492","author":"R
+        Wang","year":"2012","unstructured":"Wang R, Dearing JA, Langdon PG, Zhang
+        E, Yang X, Dakos V, Scheffer M (2012) Flickering gives early warning signals
+        of a critical transition to a eutrophic lake state. Nature 492:419\u2013422","journal-title":"Nature"},{"key":"192_CR72","first-page":"664","DOI":"10.1111\/j.1365-2745.2011.01810.x","volume":"99","author":"JW
+        Williams","year":"2011","unstructured":"Williams JW, Blois JL, Shuman BN (2011)
+        Extrinsic and intrinsic forcing of abrupt ecological change: case studies
+        from the late Quaternary. J Ecol 99:664\u2013677","journal-title":"J Ecol"},{"key":"192_CR73","first-page":"101","DOI":"10.1007\/BF00384470","volume":"65","author":"C
+        Wissel","year":"1984","unstructured":"Wissel C (1984) A universal law of the
+        characteristic return time near thresholds. Oecologia 65:101\u2013107","journal-title":"Oecologia"}],"container-title":["Theoretical
+        Ecology"],"original-title":[],"deposited":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T14:58:05Z","timestamp":1498057085000},"score":24.519835,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2013,6,21]]},"references-count":74,"alternative-id":["192"],"URL":"http:\/\/dx.doi.org\/10.1007\/s12080-013-0192-6","relation":{"cites":[]},"ISSN":["1874-1738","1874-1746"],"issn-type":[{"value":"1874-1738","type":"print"},{"value":"1874-1746","type":"electronic"}],"subject":["Ecological
+        Modelling","Ecology"]},{"indexed":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T21:40:23Z","timestamp":1498340423868},"reference-count":36,"publisher":"Wiley-Blackwell","issue":"18","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Ecol
+        Evol"],"published-print":{"date-parts":[[2016,9]]},"DOI":"10.1002\/ece3.2314","type":"journal-article","created":{"date-parts":[[2016,8,19]],"date-time":"2016-08-19T04:14:49Z","timestamp":1471580089000},"page":"6425-6434","source":"Crossref","is-referenced-by-count":0,"title":["After
+        the games are over: life-history trade-offs drive dispersal attenuation following
+        range expansion"],"prefix":"10.1002","volume":"6","author":[{"given":"T. Alex","family":"Perkins","affiliation":[{"name":"Department
+        of Biological Sciences and Eck Institute for Global Health; University of
+        Notre Dame; Notre Dame Indiana"}]},{"given":"Carl","family":"Boettiger","affiliation":[{"name":"Department
+        of Environmental Science, Policy, & Management; University of California,
+        Berkeley; Berkeley California"}]},{"given":"Benjamin L.","family":"Phillips","affiliation":[{"name":"School
+        of Biosciences; University of Melbourne; Melbourne Vic. Australia"}]}],"member":"311","published-online":{"date-parts":[[2016,8,18]]},"reference":[{"key":"10.1002\/ece3.2314-BIB0001|ece32314-cit-0001","first-page":"23","DOI":"10.1071\/WR08021","article-title":"Comparisons
+        through time and space suggest rapid evolution of dispersal behavior in an
+        invasive species","volume":"36","author":"Alford","year":"2009","journal-title":"Wildl.
+        Res."},{"key":"10.1002\/ece3.2314-BIB0002|ece32314-cit-0002","first-page":"203","DOI":"10.1111\/j.1420-9101.2005.00976.x","article-title":"Geographical
+        patterns of adaptation within a species'' range: interactions between drift
+        and gene flow","volume":"19","author":"Alleaume","year":"2006","journal-title":"J.
+        Evol. Biol."},{"key":"10.1002\/ece3.2314-BIB0003|ece32314-cit-0003","first-page":"041908","DOI":"10.1103\/PhysRevE.86.041908","article-title":"Front
+        acceleration by dynamic selection in Fisher population waves","volume":"86","author":"Benichou","year":"2012","journal-title":"Phys.
+        Rev. E"},{"key":"10.1002\/ece3.2314-BIB0004|ece32314-cit-0004","first-page":"485","DOI":"10.1111\/j.1461-0248.2010.01442.x","article-title":"Why
+        is adaptation prevented at ecological margins? New insights from individual-based
+        simulations","volume":"13","author":"Bridle","year":"2010","journal-title":"Ecol.
+        Lett."},{"key":"10.1002\/ece3.2314-BIB0005|ece32314-cit-0005","first-page":"1210","DOI":"10.1111\/j.1461-0248.2010.01505.x","article-title":"Trade-offs
+        and the evolution of life-histories during range expansion","volume":"13","author":"Burton","year":"2010","journal-title":"Ecol.
+        Lett."},{"key":"10.1002\/ece3.2314-BIB0006|ece32314-cit-0006","first-page":"427","DOI":"10.1086\/378213","article-title":"The
+        evolution of dispersal under demographic stochasticity","volume":"162","author":"Cadet","year":"2003","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0007|ece32314-cit-0007","first-page":"463","DOI":"10.1086\/284651","article-title":"Geographical
+        variation of lodgepole pine in relation to population history","volume":"129","author":"Cwynar","year":"1987","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0008|ece32314-cit-0008","first-page":"697","DOI":"10.1016\/j.celrep.2013.07.026","article-title":"Convergent
+        evolution of hyperswarming leads to impaired biofilm formation in pathogenic
+        bacteria","volume":"4","author":"Ditmarsch","year":"2013","journal-title":"Cell
+        Rep."},{"key":"10.1002\/ece3.2314-BIB0009|ece32314-cit-0009","first-page":"S4","DOI":"10.1086\/588289","article-title":"Adaptive
+        dispersal strategies and the dynamics of range expansion","volume":"172","author":"Duckworth","year":"2008","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0010|ece32314-cit-0010","first-page":"15017","DOI":"10.1073\/pnas.0706174104","article-title":"Coupling
+        of dispersal and aggression facilitates the rapid range expansion of a passerine
+        bird","volume":"104","author":"Duckworth","year":"2007","journal-title":"Proc.
+        Natl Acad. Sci. USA"},{"key":"10.1002\/ece3.2314-BIB0011|ece32314-cit-0011","first-page":"968","DOI":"10.1111\/j.1558-5646.2009.00625.x","article-title":"Evolution
+        of genetic integration between dispersal and colonization ability of a bird","volume":"63","author":"Duckworth","year":"2009","journal-title":"Evolution"},{"key":"10.1002\/ece3.2314-BIB0012|ece32314-cit-0012","first-page":"151","DOI":"10.1086\/681621","article-title":"Trade-offs
+        and coexistence in fluctuating environments: evidence for a key dispersal
+        fecundity trade-off in five non-pollinating fig wasps","volume":"186","author":"Duthie","year":"2015","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0013|ece32314-cit-0013","first-page":"5","DOI":"10.1111\/1365-2435.12170","article-title":"Evolution
+        of dispersal and mating systems along geographic gradients: implications for
+        shifting ranges","volume":"28","author":"Hargreaves","year":"2013","journal-title":"Funct.
+        Ecol."},{"key":"10.1002\/ece3.2314-BIB0014|ece32314-cit-0014","first-page":"743","DOI":"10.1111\/bij.12618","article-title":"Virgins
+        in the vanguard: low reproductive frequency in invasion front toads","volume":"116","author":"Hudson","year":"2015","journal-title":"Biol.
+        J. Linn. Soc."},{"key":"10.1002\/ece3.2314-BIB0015|ece32314-cit-0015","first-page":"S147","DOI":"10.1098\/rsbl.2003.0049","article-title":"Evolutionary
+        trade-offs between reproduction and dispersal in populations at expanding
+        range boundaries","volume":"270","author":"Hughes","year":"2003","journal-title":"Proc.
+        R. Soc. Lond. B Biol. Sci."},{"key":"10.1002\/ece3.2314-BIB0016|ece32314-cit-0016","first-page":"1","DOI":"10.1086\/286054","article-title":"Evolution
+        of a species'' range","volume":"150","author":"Kirkpatrick","year":"1997","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0017|ece32314-cit-0017","first-page":"e5377","DOI":"10.1371\/journal.pone.0005377","article-title":"Range
+        expansion drives dispersal evolution in an equatorial three-species symbiosis","volume":"4","author":"Leotard","year":"2009","journal-title":"PLoS
+        One"},{"key":"10.1002\/ece3.2314-BIB0018|ece32314-cit-0018","first-page":"13452","DOI":"10.1073\/pnas.1303157110","article-title":"Rapid
+        shifts in dispersal behavior on an expanding range edge","volume":"110","author":"Lindstrom","year":"2013","journal-title":"Proc.
+        Natl Acad. Sci. USA"},{"key":"10.1002\/ece3.2314-BIB0019|ece32314-cit-0019","first-page":"508","DOI":"10.1111\/jeb.12316","article-title":"Rapid
+        increase in dispersal during range expansion in the invasive ladybird Harmonia
+        axyridis","volume":"27","author":"Lombaert","year":"2014","journal-title":"J.
+        Evol. Biol."},{"key":"10.1002\/ece3.2314-BIB0020|ece32314-cit-0020","author":"Okubo","year":"2001","volume-title":"Diffusion
+        and ecological problems: modern perspectives","DOI":"10.1007\/978-1-4757-4978-6"},{"key":"10.1002\/ece3.2314-BIB0021|ece32314-cit-0021","first-page":"1","DOI":"10.3389\/fonc.2013.00045","article-title":"Tumor
+        evolution in space: the effects of competition colonization tradeoffs on tumor
+        invasion dynamics","volume":"3","author":"Orlando","year":"2013","journal-title":"Front.
+        Oncol."},{"key":"10.1002\/ece3.2314-BIB0022|ece32314-cit-0022","first-page":"E37","DOI":"10.1086\/663682","article-title":"Evolutionarily
+        labile species interactions and spatial spread of invasive species","volume":"170","author":"Perkins","year":"2012","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0023|ece32314-cit-0023","first-page":"1079","DOI":"10.1111\/ele.12136","article-title":"Evolution
+        of dispersal and life-history interact to drive accelerating spread of an
+        invasive species","volume":"16","author":"Perkins","year":"2013","journal-title":"Ecol.
+        Lett."},{"key":"10.1002\/ece3.2314-BIB0024|ece32314-cit-0024","first-page":"324","DOI":"10.1086\/319197","article-title":"Dimensional
+        approaches to scaling experimental ecosystems: designing mousetraps to catch
+        elephants","volume":"157","author":"Petersen","year":"2001","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0025|ece32314-cit-0025","first-page":"S34","DOI":"10.1086\/588255","article-title":"Reid''s
+        paradox revisited: the evolution of dispersal kernels during range expansion","volume":"172","author":"Phillips","year":"2008","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0026|ece32314-cit-0026","first-page":"1617","DOI":"10.1890\/09-0910.1","article-title":"Life-history
+        evolution in range-shifting populations","volume":"91","author":"Phillips","year":"2010","journal-title":"Ecology"},{"key":"10.1002\/ece3.2314-BIB0027|ece32314-cit-0027","author":"R
+        Core Team","year":"2014","volume-title":"R: a language and environment for
+        statistical computing"},{"key":"10.1002\/ece3.2314-BIB0028|ece32314-cit-0028","first-page":"231","DOI":"10.1146\/annurev.ecolsys.38.091206.095611","article-title":"How
+        does it feel to be like a rolling stone? Ten questions about dispersal evolution","volume":"38","author":"Ronce","year":"2007","journal-title":"Annu.
+        Rev. Ecol. Evol. Syst."},{"key":"10.1002\/ece3.2314-BIB0029|ece32314-cit-0029","first-page":"415","DOI":"10.1146\/annurev.ecolsys.110308.120317","article-title":"Evolution
+        and ecology of species range limits","volume":"40","author":"Sexton","year":"2009","journal-title":"Annu.
+        Rev. Ecol. Evol. Syst."},{"key":"10.1002\/ece3.2314-BIB0030|ece32314-cit-0030","first-page":"631","DOI":"10.1086\/680511","article-title":"Dispersal
+        evolution in the presence of Allee effects can speed up or slow down invasions","volume":"185","author":"Shaw","year":"2015","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0031|ece32314-cit-0031","first-page":"5708","DOI":"10.1073\/pnas.1018989108","article-title":"An
+        evolutionary process that assembles phenotypes through space rather than through
+        time","volume":"108","author":"Shine","year":"2011","journal-title":"Proc.
+        Natl Acad. Sci. USA"},{"key":"10.1002\/ece3.2314-BIB0032|ece32314-cit-0032","first-page":"378","DOI":"10.1086\/423430","article-title":"Changes
+        in dispersal during species'' range expansions","volume":"164","author":"Simmons","year":"2004","journal-title":"Am.
+        Nat."},{"key":"10.1002\/ece3.2314-BIB0033|ece32314-cit-0033","first-page":"1","DOI":"10.18637\/jss.v033.i09","article-title":"Solving
+        differential equations in R: packages deSolve","volume":"33","author":"Soetaert","year":"2010","journal-title":"J.
+        Stat. Softw."},{"key":"10.1002\/ece3.2314-BIB0034|ece32314-cit-0034","first-page":"1119","article-title":"Dispersal
+        evolution during invasions","volume":"4","author":"Travis","year":"2002","journal-title":"Evol.
+        Ecol. Res."},{"key":"10.1002\/ece3.2314-BIB0035|ece32314-cit-0035","first-page":"2656","DOI":"10.1111\/j.1420-9101.2010.02123.x","article-title":"Mutation
+        surfing and the evolution of dispersal during range expansions","volume":"23","author":"Travis","year":"2010","journal-title":"J.
+        Evol. Biol."},{"key":"10.1002\/ece3.2314-BIB0036|ece32314-cit-0036","first-page":"591","DOI":"10.2307\/2406942","article-title":"Group
+        selection and the evolution of dispersal","volume":"25","author":"Valen","year":"1971","journal-title":"Evolution"}],"container-title":["Ecology
+        and Evolution"],"original-title":[],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fece3.2314","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T20:59:23Z","timestamp":1498337963000},"score":21.748678,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,8,18]]},"references-count":36,"URL":"http:\/\/dx.doi.org\/10.1002\/ece3.2314","archive":["Portico"],"relation":{"cites":[]},"ISSN":["2045-7758"],"issn-type":[{"value":"2045-7758","type":"print"}]},{"indexed":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T20:50:53Z","timestamp":1498251053140},"reference-count":25,"publisher":"Wiley-Blackwell","issue":"3","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100007514","name":"National
+        Evolutionary Synthesis Center","doi-asserted-by":"publisher","award":["NSF
+        #EF-0905606"]},{"DOI":"10.13039\/100000001","name":"National Science Foundation","doi-asserted-by":"publisher","award":["DBI-1306697"]},{"DOI":"10.13039\/100000879","name":"Alfred
+        P. Sloan Foundation","doi-asserted-by":"publisher","award":["2013-6-22"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Methods
+        Ecol Evol"],"published-print":{"date-parts":[[2016,3]]},"DOI":"10.1111\/2041-210x.12469","type":"journal-article","created":{"date-parts":[[2015,9,3]],"date-time":"2015-09-03T09:09:31Z","timestamp":1441271371000},"page":"352-357","source":"Crossref","is-referenced-by-count":0,"title":["RNeXML:
+        a package for reading and writing richly annotated phylogenetic, character
+        and trait data inr"],"prefix":"10.1111","volume":"7","author":[{"given":"Carl","family":"Boettiger","affiliation":[{"name":"Department
+        of Environmental Science; Policy; and Management; University of California;
+        Berkeley CA USA"}]},{"given":"Scott","family":"Chamberlain","affiliation":[{"name":"rOpenSci,
+        University of California; Berkeley CA USA"}]},{"given":"Rutger","family":"Vos","affiliation":[{"name":"Naturalis
+        Biodiversity Center; Leiden The Netherlands"}]},{"given":"Hilmar","family":"Lapp","affiliation":[{"name":"Center
+        for Genomic and Computational Biology; National Evolutionary Synthesis Center;
+        Duke University; Durham NC USA"}]}],"member":"311","published-online":{"date-parts":[[2015,10,19]]},"reference":[{"key":"10.1111\/2041-210X.12469-BIB0001|mee312469-cit-0001","unstructured":"Boettiger
+        , C. Vos , R. Chamberlain , S. Lapp , H. 2014 RNeXML v2.0.0 http:\/\/dx.doi.org\/10.5281\/zenodo.13131"},{"key":"10.1111\/2041-210X.12469-BIB0002|mee312469-cit-0002","first-page":"88","DOI":"10.1186\/1471-2105-7-88","article-title":"SIMMAP:
+        stochastic character mapping of discrete traits on phylogenies","volume":"7","author":"Bollback","year":"2006","journal-title":"BMC
+        Bioinformatics"},{"key":"10.1111\/2041-210X.12469-BIB0003|mee312469-cit-0003","author":"Chamberlain","volume":"2","year":"2013","article-title":"Taxize:
+        taxonomic search and retrieval in R","journal-title":"F1000Research","DOI":"10.12688\/f1000research.2-191.v2"},{"key":"10.1111\/2041-210X.12469-BIB0004|mee312469-cit-0004","author":"Cranston","volume":"2014","year":"2014","article-title":"Best
+        practices for data sharing in phylogenetic research","journal-title":"PLoS
+        Currents","DOI":"10.1371\/currents.tol.bf01eff4a6b60ca4825c69293dc59645"},{"key":"10.1111\/2041-210X.12469-BIB0005|mee312469-cit-0005","first-page":"e1001636","DOI":"10.1371\/journal.pbio.1001636","article-title":"Lost
+        branches on the tree of life","volume":"11","author":"Drew","year":"2013","journal-title":"PLoS
+        Biology"},{"key":"10.1111\/2041-210X.12469-BIB0006|mee312469-cit-0006","author":"Hartig","first-page":"506","year":"2012","volume-title":"An
+        Introduction to sPARQL and Queries Over Linked Data."},{"key":"10.1111\/2041-210X.12469-BIB0007|mee312469-cit-0007","first-page":"131","DOI":"10.1080\/10635150390192780","article-title":"Stochastic
+        mapping of morphological characters","volume":"52","author":"Huelsenbeck","year":"2003","journal-title":"Systematic
+        Biology"},{"key":"10.1111\/2041-210X.12469-BIB0008|mee312469-cit-0008","unstructured":"Lang
+        , D.T. 2013 XML: tools for parsing and generating xML within r and s-plus
+        http:\/\/CRAN.R-project.org\/package=XML"},{"key":"10.1111\/2041-210X.12469-BIB0009|mee312469-cit-0009","first-page":"590","DOI":"10.1093\/sysbio\/46.4.590","article-title":"NEXUS:
+        an extensible file format for systematic information","volume":"46","author":"Maddison","year":"1997","journal-title":"Systematic
+        Biology"},{"key":"10.1111\/2041-210X.12469-BIB0010|mee312469-cit-0010","first-page":"34","DOI":"10.1186\/2041-1480-4-34","article-title":"The
+        vertebrate taxonomy ontology: a framework for reasoning across model organism
+        and species phenotypes","volume":"4","author":"Midford","year":"2013","journal-title":"Journal
+        of Biomedical Semantics"},{"key":"10.1111\/2041-210X.12469-BIB0011|mee312469-cit-0011","unstructured":"NESCENT
+        R Hackathon Team 2014 Phylobase: base package for phylogenetic structures
+        and comparative data http:\/\/CRAN.R-project.org\/package=phylobase"},{"key":"10.1111\/2041-210X.12469-BIB0012|mee312469-cit-0012","unstructured":"O''Meara
+        , B. 2014 CRAN task view: phylogenetics, especially comparative methods http:\/\/cran.r-project.org\/web\/views\/Phylogenetics.html"},{"key":"10.1111\/2041-210X.12469-BIB0013|mee312469-cit-0013","first-page":"289","DOI":"10.1093\/bioinformatics\/btg412","article-title":"APE:
+        analyses of phylogenetics and evolution in R language","volume":"20","author":"Paradis","year":"2004","journal-title":"Bioinformatics"},{"key":"10.1111\/2041-210X.12469-BIB0014|mee312469-cit-0014","first-page":"94","DOI":"10.1016\/j.tree.2011.11.001","article-title":"Evolutionary
+        informatics: unifying knowledge about the diversity of life","volume":"27","author":"Parr","year":"2011","journal-title":"Trends
+        in Ecology & Evolution"},{"key":"10.1111\/2041-210X.12469-BIB0015|mee312469-cit-0015","first-page":"2216","DOI":"10.1093\/bioinformatics\/btu181","article-title":"Geiger
+        v2.0: an expanded suite of methods for fitting macroevolutionary models to
+        phylogenetic trees","volume":"30","author":"Pennell","year":"2014","journal-title":"Bioinformatics"},{"key":"10.1111\/2041-210X.12469-BIB0016|mee312469-cit-0016","author":"Piel","first-page":"41","year":"2002","volume-title":"The
+        Interoperable \u2018Catalog of Life\u2019"},{"key":"10.1111\/2041-210X.12469-BIB0017|mee312469-cit-0017","unstructured":"Piel
+        , W.H. Chan , L. Dominus , M.J. Ruan , J. Vos , R.A. Tannen , V. 2009 TreeBASE
+        v. 2: a database of phylogenetic knowledge http:\/\/www.e-biosphere09.org"},{"key":"10.1111\/2041-210X.12469-BIB0018|mee312469-cit-0018","unstructured":"Prud''hommeaux
+        , E. 2014 SPARQL query language for rDF.W3C http:\/\/www.w3.org\/TR\/rdf-sparql-369"},{"key":"10.1111\/2041-210X.12469-BIB0019|mee312469-cit-0019","author":"R
+        Core Team","year":"2014","volume-title":"R: A Language and Environment for
+        Statistical Computing"},{"key":"10.1111\/2041-210X.12469-BIB0020|mee312469-cit-0020","first-page":"603","DOI":"10.1111\/j.1558-5646.2009.00940.x","article-title":"Data
+        archiving","volume":"64","author":"Rausher","year":"2010","journal-title":"Evolution"},{"key":"10.1111\/2041-210X.12469-BIB0021|mee312469-cit-0021","first-page":"217","DOI":"10.1111\/j.2041-210X.2011.00169.x","article-title":"Phytools:
+        an R package for phylogenetic comparative biology (and other things)","volume":"3","author":"Revell","year":"2012","journal-title":"Methods
+        in Ecology and Evolution"},{"key":"10.1111\/2041-210X.12469-BIB0022|mee312469-cit-0022","first-page":"1","article-title":"The
+        scientific method in practice: reproducibility in the computational sciences","volume":"4773-10","author":"Stodden","year":"2014","journal-title":"SSRN
+        Journal"},{"key":"10.1111\/2041-210X.12469-BIB0023|mee312469-cit-0023","first-page":"574","DOI":"10.1186\/1756-0500-5-574","article-title":"Sharing
+        and re-use of phylogenetic trees\u00a0(and associated data) to facilitate
+        synthesis","volume":"5","author":"Stoltzfus","year":"2012","journal-title":"BMC
+        Research Notes"},{"key":"10.1111\/2041-210X.12469-BIB0024|mee312469-cit-0024","first-page":"e21101","DOI":"10.1371\/journal.pone.0021101","article-title":"Data
+        sharing by scientists: practices and perceptions (C. Neylon, Ed.)","volume":"6","author":"Tenopir","year":"2011","journal-title":"PLoS
+        One"},{"key":"10.1111\/2041-210X.12469-BIB0025|mee312469-cit-0025","first-page":"675","DOI":"10.1093\/sysbio\/sys025","article-title":"NeXML:
+        rich, extensible, and verifiable representation of comparative data and metadata","volume":"61","author":"Vos","year":"2012","journal-title":"Systematic
+        Biology"}],"container-title":["Methods in Ecology and Evolution"],"original-title":[],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2F2041-210X.12469","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T18:51:29Z","timestamp":1498243889000},"score":20.713419,"subtitle":[],"editor":[{"given":"Richard","family":"Fitzjohn","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2015,10,19]]},"references-count":25,"URL":"http:\/\/dx.doi.org\/10.1111\/2041-210x.12469","archive":["Portico"],"relation":{"cites":[]},"ISSN":["2041-210X"],"issn-type":[{"value":"2041-210X","type":"print"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T02:31:01Z","timestamp":1495679461042},"publisher-location":"New
+        York","reference-count":8,"publisher":"Palgrave Macmillan US","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2012,1,1]],"date-time":"2012-01-01T00:00:00Z","timestamp":1325376000000},"delay-in-days":0,"content-version":"vor"},{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2012,1,1]],"date-time":"2012-01-01T00:00:00Z","timestamp":1325376000000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"published-print":{"date-parts":[[2012]]},"DOI":"10.1057\/9781137282262_8","type":"book-chapter","created":{"date-parts":[[2016,5,21]],"date-time":"2016-05-21T15:31:43Z","timestamp":1463844703000},"page":"197-207","source":"Crossref","is-referenced-by-count":0,"title":["Postscript:
+        Ecology and Population"],"prefix":"10.1057","author":[{"given":"Carl","family":"Boggs","affiliation":[]}],"member":"339","reference":[{"key":"8_CR1","author":"C
+        Hedges","first-page":"271","year":"2010","unstructured":"Chris Hedges, The
+        World as It Is (New York: Nation Books, 2010), p. 271.","volume-title":"The
+        World as It Is"},{"key":"8_CR2","author":"C Williams","first-page":"33","year":"2010","unstructured":"Chris
+        Williams, Ecology and Socialism (Chicago: Haymarket Books, 2010), pp. 33,
+        66.","volume-title":"Ecology and Socialism"},{"key":"8_CR3","author":"B McKibben","first-page":"44","year":"2010","unstructured":"Bill
+        McKibben, Eaarth (New York: Henry Holt and Co., 2010), p. 44.","volume-title":"Eaarth"},{"key":"8_CR4","author":"S
+        Postel","first-page":"80","year":"2010","unstructured":"Sandra Postel, \u201cWater:
+        Adapting to a New Normal,\u201d in Richard Heinberg and Daniel Lerch, eds.,
+        The Post Carbon Reader (Healdsburg, CA: Watershed Media, 2010), p. 80.","volume-title":"The
+        Post Carbon Reader"},{"key":"8_CR5","author":"L Brown","first-page":"226","year":"2009","unstructured":"Lester
+        Brown, Plan B 4.0 (New York: W. W. Norton and Co., 2009), pp. 226\u201327.","volume-title":"Plan
+        B 4.0"},{"key":"8_CR6","author":"J Robbins","first-page":"37","year":"2001","unstructured":"John
+        Robbins, The Food Revolution (Berkeley: Conari Press, 2001), pp. 236\u201337.","volume-title":"The
+        Food Revolution"},{"key":"8_CR7","author":"E Schlosser","year":"2001","unstructured":"On
+        the dramatic global ramifications of the American fast-food industry, see
+        Eric Schlosser, Fast-Food Nation (Boston: Houghton-Mifflin, 2001), ch. 10.","volume-title":"Fast-Food
+        Nation"},{"key":"8_CR8","author":"David","first-page":"45","year":"2006","unstructured":"David
+        and Marcia Pimentel, \u201cWorld Population, Food, Natural Resources, and
+        Survival,\u201d in Ervin Laszlo and Peter Seidel, eds., Global Survival (New
+        York: SelectBooks, 2006), p. 45.","volume-title":"Global Survival"}],"container-title":["Ecology
+        and Revolution"],"original-title":[],"deposited":{"date-parts":[[2016,5,21]],"date-time":"2016-05-21T17:03:27Z","timestamp":1463850207000},"score":17.527317,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012]]},"ISBN":["978-1-349-44284-3","978-1-137-28226-2"],"references-count":8,"URL":"http:\/\/dx.doi.org\/10.1057\/9781137282262_8","relation":{"cites":[]}},{"indexed":{"date-parts":[[2017,5,28]],"date-time":"2017-05-28T13:59:43Z","timestamp":1495979983282},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"6","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2011,9,1]],"date-time":"2011-09-01T00:00:00Z","timestamp":1314835200000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Basic
+        and Applied Ecology"],"published-print":{"date-parts":[[2011,9]]},"DOI":"10.1016\/j.baae.2011.06.006","type":"journal-article","created":{"date-parts":[[2011,7,24]],"date-time":"2011-07-24T01:31:16Z","timestamp":1311471076000},"page":"553","source":"Crossref","is-referenced-by-count":0,"title":[""],"prefix":"10.1016","volume":"12","author":[{"given":"Carl","family":"Beierkuhnlein","affiliation":[]}],"member":"78","container-title":["Basic
+        and Applied Ecology"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S1439179111000788?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S1439179111000788?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,1,5]],"date-time":"2016-01-05T01:12:28Z","timestamp":1451956348000},"score":17.124683,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2011,9]]},"references-count":0,"alternative-id":["S1439179111000788"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.baae.2011.06.006","relation":{},"ISSN":["1439-1791"],"issn-type":[{"value":"1439-1791","type":"print"}],"subject":["Ecology,
+        Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T02:26:43Z","timestamp":1497493603962},"reference-count":7,"publisher":"Wiley-Blackwell","issue":"11","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","start":{"date-parts":[[2016,11,1]],"date-time":"2016-11-01T00:00:00Z","timestamp":1477958400000},"delay-in-days":0,"content-version":"tdm"},{"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions","start":{"date-parts":[[2016,11,3]],"date-time":"2016-11-03T00:00:00Z","timestamp":1478131200000},"delay-in-days":2,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Ecology"],"published-print":{"date-parts":[[2016,11]]},"DOI":"10.1002\/ecy.1550","type":"journal-article","created":{"date-parts":[[2016,11,3]],"date-time":"2016-11-03T13:58:33Z","timestamp":1478181513000},"page":"3246-3248","source":"Crossref","is-referenced-by-count":0,"title":["Understanding
+        macroevolution through the origin of higher taxa"],"prefix":"10.1002","volume":"97","author":[{"given":"Carl","family":"Simpson","affiliation":[{"name":"Department
+        of Paleobiology, MRC-121; National Museum of Natural History; PO Box 37012
+        Washington District of Columbia 20013-7012 USA"}]}],"member":"311","published-online":{"date-parts":[[2016,11,3]]},"reference":[{"key":"10.1002\/ecy.1550-BIB0001|ecy1550-cit-0002","first-page":"3758","article-title":"Dynamic
+        evolutionary change in post-Paleozoic echinoids and the importance of scale
+        when interpreting changes in rates of evolution","volume":"112","author":"Hopkins","year":"2015","journal-title":"Proceedings
+        of the National Academy of Sciences"},{"key":"10.1002\/ecy.1550-BIB0002|ecy1550-cit-0003","first-page":"513","DOI":"10.1534\/genetics.166.1.513","article-title":"Developmental
+        associations between traits: covariance and beyond","volume":"166","author":"Rice","year":"2004a","journal-title":"Genetics"},{"key":"10.1002\/ecy.1550-BIB0003|ecy1550-cit-0004","author":"Rice","year":"2004b","volume-title":"Evolutionary
+        theory: mathematical and conceptual foundations"},{"key":"10.1002\/ecy.1550-BIB0004|ecy1550-cit-0005","first-page":"67","DOI":"10.1196\/annals.1438.002","article-title":"Theoretical
+        approaches to the evolution of development and genetic architecture","volume":"1133","author":"Rice","year":"2008","journal-title":"Annals
+        of the New York Academy of Sciences"},{"key":"10.1002\/ecy.1550-BIB0005|ecy1550-cit-0006","first-page":"517","DOI":"10.1146\/annurev-earth-040809-152402","article-title":"Evolution
+        of grasses and grassland ecosystems","volume":"39","author":"Str\u00f6mberg","year":"2011","journal-title":"Annual
+        Review of Earth and Planetary Sciences"},{"key":"10.1002\/ecy.1550-BIB0006|ecy1550-cit-0007","first-page":"179","article-title":"Energy
+        and evolution","volume":"1","author":"Van Valen","year":"1976","journal-title":"Evolutionary
+        Theory"},{"key":"10.1002\/ecy.1550-BIB0007|ecy1550-cit-0008","author":"Wagner","year":"2014","volume-title":"Homology,
+        genes, and evolutionary innovation","DOI":"10.1515\/9781400851461"}],"container-title":["Ecology"],"original-title":[],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fecy.1550","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fecy.1550","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T01:31:14Z","timestamp":1497490274000},"score":17.124683,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,11]]},"references-count":7,"URL":"http:\/\/dx.doi.org\/10.1002\/ecy.1550","archive":["Portico"],"relation":{"cites":[]},"ISSN":["0012-9658"],"issn-type":[{"value":"0012-9658","type":"print"}],"subject":["Ecology,
+        Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,5,28]],"date-time":"2017-05-28T09:20:50Z","timestamp":1495963250773},"publisher-location":"New
+        York","reference-count":0,"publisher":"Palgrave Macmillan US","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2012,1,1]],"date-time":"2012-01-01T00:00:00Z","timestamp":1325376000000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"published-print":{"date-parts":[[2012]]},"DOI":"10.1057\/9781137282262","type":"book","created":{"date-parts":[[2012,11,5]],"date-time":"2012-11-05T09:25:42Z","timestamp":1352107542000},"source":"Crossref","is-referenced-by-count":0,"title":["Ecology
+        and Revolution"],"prefix":"10.1057","author":[{"given":"Carl","family":"Boggs","affiliation":[]}],"member":"339","container-title":[],"original-title":[],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1057\/9781137282262.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,5,21]],"date-time":"2016-05-21T17:03:03Z","timestamp":1463850183000},"score":16.768951,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012]]},"ISBN":["978-1-349-44284-3","978-1-137-28226-2"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1057\/9781137282262","relation":{}},{"indexed":{"date-parts":[[2017,4,8]],"date-time":"2017-04-08T07:41:08Z","timestamp":1491637268979},"reference-count":0,"publisher":"Wiley-Blackwell","issue":"2","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":6028,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Ecology"],"published-print":{"date-parts":[[1999,3]]},"DOI":"10.2307\/176654","type":"journal-article","created":{"date-parts":[[2006,4,26]],"date-time":"2006-04-26T15:15:48Z","timestamp":1146064548000},"page":"731","source":"Crossref","is-referenced-by-count":0,"title":["An
+        Ecology Text for Beginners"],"prefix":"10.1002","volume":"80","author":[{"given":"Thomas","family":"Mowbray","affiliation":[]},{"suffix":"join(''
+        ''","given":"Manuel Carl","family":"Molles","affiliation":[]}],"member":"311","container-title":["Ecology"],"original-title":[],"link":[{"URL":"http:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.2307%2F176654","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,3,7]],"date-time":"2016-03-07T17:31:20Z","timestamp":1457371880000},"score":16.70511,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1999,3]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2307\/176654","relation":{},"ISSN":["0012-9658"],"issn-type":[{"value":"0012-9658","type":"print"}],"subject":["Ecology,
+        Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,5,24]],"date-time":"2017-05-24T21:12:29Z","timestamp":1495660349913},"reference-count":0,"publisher":"Resilience
+        Alliance, Inc.","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["E&S"],"DOI":"10.5751\/es-03356-140244","type":"journal-article","created":{"date-parts":[[2016,11,21]],"date-time":"2016-11-21T22:22:45Z","timestamp":1479766965000},"source":"Crossref","is-referenced-by-count":0,"title":["The
+        Ecology and Society NetWork"],"prefix":"10.5751","volume":"14","author":[{"given":"Lance","family":"Gunderson","affiliation":[]},{"given":"Carl","family":"Folke","affiliation":[]}],"member":"3750","published-online":{"date-parts":[[2009]]},"container-title":["Ecology
+        and Society"],"original-title":[],"deposited":{"date-parts":[[2016,11,21]],"date-time":"2016-11-21T22:22:45Z","timestamp":1479766965000},"score":16.333492,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5751\/es-03356-140244","relation":{},"ISSN":["1708-3087"],"issn-type":[{"value":"1708-3087","type":"print"}],"subject":["Ecology"],"article-number":"art44"},{"indexed":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T04:17:17Z","timestamp":1497673037018},"reference-count":67,"publisher":"Elsevier
+        BV","issue":"6","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2006,6,1]],"date-time":"2006-06-01T00:00:00Z","timestamp":1149120000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Trends
+        in Ecology & Evolution"],"published-print":{"date-parts":[[2006,6]]},"DOI":"10.1016\/j.tree.2006.02.007","type":"journal-article","created":{"date-parts":[[2006,3,14]],"date-time":"2006-03-14T13:46:41Z","timestamp":1142344001000},"page":"309-315","source":"Crossref","is-referenced-by-count":0,"title":["Ecology
+        for transformation"],"prefix":"10.1016","volume":"21","author":[{"given":"Stephen
+        R.","family":"Carpenter","affiliation":[]},{"given":"Carl","family":"Folke","affiliation":[]}],"member":"78","container-title":["Trends
+        in Ecology & Evolution"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0169534706000619?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0169534706000619?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T03:47:02Z","timestamp":1497671222000},"score":16.242147,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2006,6]]},"references-count":67,"alternative-id":["S0169534706000619"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.tree.2006.02.007","relation":{},"ISSN":["0169-5347"],"issn-type":[{"value":"0169-5347","type":"print"}],"subject":["Ecology,
+        Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,7,21]],"date-time":"2017-07-21T00:47:27Z","timestamp":1500598047002},"reference-count":0,"publisher":"JSTOR","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of Ecology"],"published-print":{"date-parts":[[1983,7]]},"DOI":"10.2307\/2259749","type":"journal-article","created":{"date-parts":[[2006,6,17]],"date-time":"2006-06-17T15:54:16Z","timestamp":1150559656000},"page":"655","source":"Crossref","is-referenced-by-count":0,"title":["Tropical
+        Ecology. Benchmark Papers in Ecology."],"prefix":"10.2307","volume":"71","author":[{"given":"T.
+        C.","family":"Whitmore","affiliation":[]},{"given":"Carl F.","family":"Jordan","affiliation":[]}],"member":"1121","container-title":["The
+        Journal of Ecology"],"original-title":[],"deposited":{"date-parts":[[2013,3,19]],"date-time":"2013-03-19T18:02:37Z","timestamp":1363716157000},"score":16.134798,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1983,7]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2307\/2259749","relation":{},"ISSN":["0022-0477"],"issn-type":[{"value":"0022-0477","type":"print"}],"subject":["Plant
+        Science","Ecology","Ecology, Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,5,24]],"date-time":"2017-05-24T20:26:39Z","timestamp":1495657599342},"reference-count":0,"publisher":"Resilience
+        Alliance, Inc.","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["E&S"],"DOI":"10.5751\/es-00602-090119","type":"journal-article","created":{"date-parts":[[2016,11,15]],"date-time":"2016-11-15T18:54:05Z","timestamp":1479236045000},"source":"Crossref","is-referenced-by-count":2,"title":["Challenging
+        Complexities of Change - the First Issue of Ecology and Society"],"prefix":"10.5751","volume":"9","author":[{"given":"Carl","family":"Folke","affiliation":[]},{"given":"Lance","family":"Gunderson","affiliation":[]}],"member":"3750","published-online":{"date-parts":[[2004]]},"container-title":["Ecology
+        and Society"],"original-title":[],"deposited":{"date-parts":[[2016,11,15]],"date-time":"2016-11-15T18:54:05Z","timestamp":1479236045000},"score":15.779753,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2004]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5751\/es-00602-090119","relation":{},"ISSN":["1708-3087"],"issn-type":[{"value":"1708-3087","type":"print"}],"subject":["Ecology"],"article-number":"art19"},{"indexed":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T04:16:11Z","timestamp":1497586571689},"reference-count":11,"publisher":"Informa
+        UK Limited","issue":"1","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Infection
+        Ecology & Epidemiology"],"published-print":{"date-parts":[[2015,1]]},"DOI":"10.3402\/iee.v5.27060","type":"journal-article","created":{"date-parts":[[2015,6,24]],"date-time":"2015-06-24T08:47:27Z","timestamp":1435135647000},"page":"27060","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":16,"title":["How
+        urbanization affects the epidemiology of emerging infectious diseases"],"prefix":"10.1080","volume":"5","author":[{"given":"Carl-Johan","family":"Neiderud","affiliation":[{"name":"
+        Section of Infectious Diseases, Department of Medical Sciences, Uppsala University,
+        Uppsala, Sweden"}]}],"member":"301","published-online":{"date-parts":[[2015,6,24]]},"reference":[{"key":"CIT0001","unstructured":"World
+        urbanization prospects: 2014 revision highlights. 2014; New York: United Nations."},{"key":"CIT0002","unstructured":"WHO.
+        Hidden cities: unmasking and overcoming health inequities in urban settings.
+        2010; Kobe, Japan: World Health Organizaiton."},{"key":"CIT0003","author":"Phillips
+        DR","volume":"106","first-page":"93","year":"1993","journal-title":"Parasitology","DOI":"10.1017\/S0031182000086145"},{"key":"CIT0006","unstructured":"State
+        of the world''s cities. United Nations Human Settlements Programme (UN-Habitet).
+        2012\/2013; New York.\n2013."},{"key":"CIT0008","unstructured":"WHO. Our cities,
+        our health, our future \u2013 acting on social determinants for health equity
+        in urban settings. 2008; Kobe, Japan: World Health Organization."},{"key":"CIT0012","author":"Lawoyin
+        TO","volume":"15","first-page":"367","year":"1999","journal-title":"Eur J
+        of Epidemiol","DOI":"10.1023\/A:1007547117763"},{"key":"CIT0020","unstructured":"WHO.
+        Progress on drinking water and sanitation \u2013 Joint Monitoring Programme
+        update 2014. 2014; Geneva, Switzerland: World Health Organization."},{"key":"CIT0034","unstructured":"WHO.
+        Sustaining the drive to overcome the global impact of neglected tropical diseases
+        \u2013 second WHO report on neglected diseases. 2013; Geneva, Switzerland:
+        World Health Organization."},{"key":"CIT0048","unstructured":"WHO. The world
+        health report 2007 \u2013 a safer future: global public health security in
+        the 21st century. 2007; Geneva, Switzerland: World Health Organization."},{"key":"CIT0053","author":"T\u00e4ngd\u00e9n
+        T","volume":"54","first-page":"3564","year":"2010","journal-title":"Antimicrob
+        Agents Chemother","DOI":"10.1128\/AAC.00220-10"},{"key":"CIT0067","unstructured":"WHO.
+        World malaria report 2014. 2014; Geneva, Switzerland: World Health Organization."}],"container-title":["Infection
+        Ecology & Epidemiology"],"original-title":[],"deposited":{"date-parts":[[2017,5,30]],"date-time":"2017-05-30T16:42:59Z","timestamp":1496162579000},"score":15.779753,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,1]]},"references-count":11,"alternative-id":["10.3402\/iee.v5.27060"],"URL":"http:\/\/dx.doi.org\/10.3402\/iee.v5.27060","relation":{"cites":[]},"ISSN":["2000-8686"],"issn-type":[{"value":"2000-8686","type":"electronic"}],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ziee20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ziee20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T18:16:58Z","timestamp":1497550618587},"reference-count":26,"publisher":"Elsevier
+        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1983,5,1]],"date-time":"1983-05-01T00:00:00Z","timestamp":420595200000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Biochemical
+        Systematics and Ecology"],"published-print":{"date-parts":[[1983,5]]},"DOI":"10.1016\/0305-1978(83)90009-1","type":"journal-article","created":{"date-parts":[[2003,2,10]],"date-time":"2003-02-10T21:25:05Z","timestamp":1044912305000},"page":"115-122","source":"Crossref","is-referenced-by-count":0,"title":["Taxonomic
+        serology of Amoeba proteus"],"prefix":"10.1016","volume":"11","author":[{"given":"Carl
+        T.","family":"Friz","affiliation":[]}],"member":"78","container-title":["Biochemical
+        Systematics and Ecology"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0305197883900091?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0305197883900091?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T17:47:50Z","timestamp":1497548870000},"score":15.779753,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1983,5]]},"references-count":26,"alternative-id":["0305197883900091"],"URL":"http:\/\/dx.doi.org\/10.1016\/0305-1978(83)90009-1","relation":{},"ISSN":["0305-1978"],"issn-type":[{"value":"0305-1978","type":"print"}],"subject":["Biochemistry","Ecology,
+        Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,5,28]],"date-time":"2017-05-28T13:41:27Z","timestamp":1495978887449},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"1","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1983,6,1]],"date-time":"1983-06-01T00:00:00Z","timestamp":423273600000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Forest
+        Ecology and Management"],"published-print":{"date-parts":[[1983,6]]},"DOI":"10.1016\/0378-1127(83)90010-5","type":"journal-article","created":{"date-parts":[[2003,9,12]],"date-time":"2003-09-12T05:06:58Z","timestamp":1063343218000},"page":"86-87","source":"Crossref","is-referenced-by-count":0,"title":["Woodpower:
+        New perspectives on forest usage"],"prefix":"10.1016","volume":"6","author":[{"given":"Carl
+        M.","family":"Gallegos","affiliation":[]}],"member":"78","container-title":["Forest
+        Ecology and Management"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0378112783900105?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0378112783900105?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,10,1]],"date-time":"2015-10-01T22:56:41Z","timestamp":1443740201000},"score":15.779753,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1983,6]]},"references-count":0,"alternative-id":["0378112783900105"],"URL":"http:\/\/dx.doi.org\/10.1016\/0378-1127(83)90010-5","relation":{},"ISSN":["0378-1127"],"issn-type":[{"value":"0378-1127","type":"print"}],"subject":["Forestry","Management,
+        Monitoring, Policy and Law","Nature and Landscape Conservation"]},{"indexed":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T23:44:05Z","timestamp":1497570245401},"reference-count":8,"publisher":"Elsevier
+        BV","issue":"10","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2003,10,1]],"date-time":"2003-10-01T00:00:00Z","timestamp":1064966400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Trends
+        in Ecology & Evolution"],"published-print":{"date-parts":[[2003,10]]},"DOI":"10.1016\/s0169-5347(03)00190-3","type":"journal-article","created":{"date-parts":[[2003,7,16]],"date-time":"2003-07-16T18:00:25Z","timestamp":1058378425000},"page":"496-497","source":"Crossref","is-referenced-by-count":0,"title":["Environment
+        rules"],"prefix":"10.1016","volume":"18","author":[{"given":"Carl D","family":"Schlichting","affiliation":[]}],"member":"78","container-title":["Trends
+        in Ecology & Evolution"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0169534703001903?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0169534703001903?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T23:08:17Z","timestamp":1497568097000},"score":15.779753,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2003,10]]},"references-count":8,"alternative-id":["S0169534703001903"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0169-5347(03)00190-3","relation":{},"ISSN":["0169-5347"],"issn-type":[{"value":"0169-5347","type":"print"}],"subject":["Ecology,
+        Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,6,19]],"date-time":"2017-06-19T03:18:13Z","timestamp":1497842293544},"reference-count":75,"publisher":"Association
+        for Fire Ecology","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Fire
+        Ecology"],"published-print":{"date-parts":[[2006,12]]},"DOI":"10.4996\/fireecology.0202034","type":"journal-article","created":{"date-parts":[[2009,12,10]],"date-time":"2009-12-10T04:57:21Z","timestamp":1260421041000},"page":"34-59","source":"Crossref","is-referenced-by-count":0,"title":["Ecological
+        and Sampling Constraints on Defining Landscape Fire Severity"],"prefix":"10.4996","volume":"2","author":[{"given":"Carl
+        H.","family":"Key","affiliation":[]}],"member":"2899","container-title":["Fire
+        Ecology"],"original-title":[],"deposited":{"date-parts":[[2017,6,19]],"date-time":"2017-06-19T02:39:10Z","timestamp":1497839950000},"score":15.779753,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2006,12]]},"references-count":75,"URL":"http:\/\/dx.doi.org\/10.4996\/fireecology.0202034","relation":{},"ISSN":["1933-9747"],"issn-type":[{"value":"1933-9747","type":"electronic"}],"subject":["Forestry","Environmental
+        Science (miscellaneous)","Ecology, Evolution, Behavior and Systematics"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['95259']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 02:06:12 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

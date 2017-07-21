@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/works?query=ecology&rows=2
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":304037,"items":[{"indexed":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T01:42:23Z","timestamp":1498009343120},"publisher-location":"Chichester,
+        UK","reference-count":17,"publisher":"John Wiley & Sons, Ltd","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1002\/9780470979365.ch7","type":"book-chapter","created":{"date-parts":[[2012,10,8]],"date-time":"2012-10-08T10:32:21Z","timestamp":1349692341000},"page":"271-318","source":"Crossref","is-referenced-by-count":0,"title":["Behavioural
+        Ecology"],"prefix":"10.1002","member":"311","published-online":{"date-parts":[[2012,10,8]]},"reference":[{"key":"10.1002\/9780470979365.ch7-BIB1|cit1","unstructured":""},{"key":"10.1002\/9780470979365.ch7-BIB2|cit2","author":"Krebs","year":"1997","volume-title":"Behavioural
+        Ecology: An Evolutionary Approach"},{"key":"10.1002\/9780470979365.ch7-BIB3|cit3","author":"Westneat","year":"2010","volume-title":"Evolutionary
+        Behavioral Ecology"},{"key":"10.1002\/9780470979365.ch7-BIB4|cit4","unstructured":""},{"key":"10.1002\/9780470979365.ch7-BIB5|cit5","first-page":"78","DOI":"10.1111\/j.1469-7998.2010.00701.x","article-title":"How
+        stupid not to have thought of that: post-copulatory sexual selection","volume":"281","author":"Birkhead","year":"2010","journal-title":"Journal
+        of Zoology"},{"key":"10.1002\/9780470979365.ch7-BIB6|cit6","first-page":"205","DOI":"10.1017\/S1464793104006645","article-title":"Causes
+        and consequences of animal dispersal strategies: relating individual behaviour
+        to spatial dynamics","volume":"80","author":"Bowler","year":"2005","journal-title":"Biological
+        Review"},{"key":"10.1002\/9780470979365.ch7-BIB7|cit7","first-page":"1400","DOI":"10.2193\/0022-541X(2005)69[1400:MATTSO]2.0.CO;2","article-title":"Molecular
+        approaches to the study of parentage, relatedness, and fitness: Practical
+        applications for wild animals","volume":"69","author":"DeWoody","year":"2005","journal-title":"Journal
+        of Wildlife Management"},{"key":"10.1002\/9780470979365.ch7-BIB8|cit8","first-page":"539","DOI":"10.1016\/j.anbehav.2009.12.023","article-title":"Immunity
+        and mate choice: a new outlook","volume":"79","author":"Drury","year":"2010","journal-title":"Animal
+        Behaviour"},{"key":"10.1002\/9780470979365.ch7-BIB9|cit9","first-page":"96","DOI":"10.1016\/j.tree.2004.11.017","article-title":"Candidate
+        genes for behavioural ecology","volume":"20","author":"Fitzpatrick","year":"2005","journal-title":"Trends
+        in Ecology and Evolution"},{"key":"10.1002\/9780470979365.ch7-BIB10|cit10","first-page":"3217","DOI":"10.1098\/rstb.2009.0109","article-title":"The
+        evolution of co-operative breeding in birds: kinship, dispersal and life history","volume":"364","author":"Hatchwell","year":"2009","journal-title":"Philosophical
+        Transactions of the Royal Society B"},{"key":"10.1002\/9780470979365.ch7-BIB11|cit11","first-page":"1","DOI":"10.1111\/j.1439-0310.2009.01704.x","article-title":"Mate
+        choice for genetic benefits: Time to put the pieces together","volume":"116","author":"Hettyey","year":"2010","journal-title":"Ethology"},{"key":"10.1002\/9780470979365.ch7-BIB12|cit12","first-page":"6","DOI":"10.1111\/j.1755-0998.2009.02778.x","article-title":"A
+        practical guide to methods of parentage analysis","volume":"10","author":"Jones","year":"2010","journal-title":"Molecular
+        Ecology Resources"},{"key":"10.1002\/9780470979365.ch7-BIB13|cit13","first-page":"947","DOI":"10.1111\/j.1365-294X.2007.03613.x","article-title":"Molecular
+        analysis of predation: a review of best practice for DNA-based approaches","volume":"17","author":"King","year":"2008","journal-title":"Molecular
+        Ecology"},{"key":"10.1002\/9780470979365.ch7-BIB14|cit14","first-page":"1559","DOI":"10.1111\/j.1365-294X.2006.03152.x","article-title":"Advances
+        in our understanding of mammalian sex-biased dispersal","volume":"16","author":"Lawson
+        Handley","year":"2007","journal-title":"Molecular Ecology"},{"key":"10.1002\/9780470979365.ch7-BIB15|cit15","first-page":"19","DOI":"10.1111\/j.1365-294X.2004.02395.x","article-title":"Genetic
+        quality and sexual selection: an integrated framework for good genes and compatible
+        genes","volume":"14","author":"Neff","year":"2005","journal-title":"Molecular
+        Ecology"},{"key":"10.1002\/9780470979365.ch7-BIB16|cit16","first-page":"553","DOI":"10.1017\/S1464793103006146","article-title":"Potential
+        mechanisms of avian sex manipulation","volume":"78","author":"Pike","year":"2003","journal-title":"Biological
+        Reviews"},{"key":"10.1002\/9780470979365.ch7-BIB17|cit17","first-page":"847","DOI":"10.1038\/nrg1707","article-title":"Genotyping
+        errors: causes, consequences and solutions","volume":"6","author":"Pompanon","year":"2005","journal-title":"Nature
+        Reviews Genetics"}],"container-title":["Molecular Ecology"],"original-title":[],"deposited":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T01:07:10Z","timestamp":1498007230000},"score":10.183633,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,10,8]]},"ISBN":["9780470979365","9780470748343"],"references-count":17,"URL":"http:\/\/dx.doi.org\/10.1002\/9780470979365.ch7","relation":{"cites":[]}},{"indexed":{"date-parts":[[2017,5,28]],"date-time":"2017-05-28T14:45:20Z","timestamp":1495982720867},"publisher-location":"Berlin\/Heidelberg","reference-count":0,"publisher":"Springer-Verlag","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1007\/springerreference_29611","type":"reference-entry","created":{"date-parts":[[2011,8,3]],"date-time":"2011-08-03T22:03:59Z","timestamp":1312409039000},"source":"Crossref","is-referenced-by-count":0,"title":["Human
+        ecology (cultural ecology)"],"prefix":"10.1007","member":"297","container-title":["SpringerReference"],"original-title":[],"deposited":{"date-parts":[[2011,8,3]],"date-time":"2011-08-03T22:06:02Z","timestamp":1312409162000},"score":9.941895,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/springerreference_29611","relation":{}}],"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"}}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['6220']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 02:06:09 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

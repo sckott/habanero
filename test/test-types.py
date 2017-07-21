@@ -1,5 +1,6 @@
 """Tests for Crossref.types"""
 import os
+import vcr
 from nose.tools import *
 
 from habanero import exceptions
@@ -35,6 +36,7 @@ a = {u'items': [{u'id': u'book-section', u'label': u'Book Section'},
   {u'id': u'standard-series', u'label': u'Standard Series'}],
  u'total-results': 26}
 
+@vcr.use_cassette('test/vcr_cassettes/types.yaml')
 def test_types():
     "types - basic test"
     res = cr.types()
@@ -42,17 +44,20 @@ def test_types():
     assert dict == res['message'].__class__
     assert a == res['message']
 
+@vcr.use_cassette('test/vcr_cassettes/types_query.yaml')
 def test_types_query():
     "types - param: query - doesn't do anything without works"
     res = cr.types(query = "journal")
     assert a == res['message']
 
+@vcr.use_cassette('test/vcr_cassettes/types_ids.yaml')
 def test_types_ids():
     "types - param: ids"
     res = cr.types(ids = "journal")
     assert dict == res.__class__
     assert {u'id': u'journal', u'label': u'Journal'} == res['message']
 
+@vcr.use_cassette('test/vcr_cassettes/types_works.yaml')
 def test_types_works():
     "types - param: works"
     res = cr.types(ids = "journal", works = True, limit = 2)
@@ -71,6 +76,7 @@ def test_types_works():
 #     assert str == titles[0].__class__
 
 @raises(exceptions.RequestError)
+@vcr.use_cassette('test/vcr_cassettes/types_filters_not_allowed_with_typeid.yaml')
 def test_types_query_filters_not_allowed_with_typeid():
     "types - param: kwargs - query filters not allowed on types/type/ route"
     cr.types(ids = "journal-article", query_title = 'gender')

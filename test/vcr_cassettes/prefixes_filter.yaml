@@ -1,0 +1,24 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/prefixes?filter=has-full-text%3Atrue
+  response:
+    body: {string: !!python/unicode ''}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['0']
+      date: ['Fri, 21 Jul 2017 01:57:24 GMT']
+      server: [http-kit]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

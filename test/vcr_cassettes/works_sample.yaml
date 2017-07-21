@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/works?sample=2
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":90216773,"items":[{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T22:04:34Z","timestamp":1495922674656},"reference-count":0,"publisher":"Portico","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"published-print":{"date-parts":[[2001]]},"DOI":"10.1093\/alrr\/2001.1.295","type":"journal-article","created":{"date-parts":[[2011,1,25]],"date-time":"2011-01-25T20:07:38Z","timestamp":1295986058000},"page":"295-302","source":"Crossref","is-referenced-by-count":0,"title":["Doherty
+        Contracts Ltd v Moon"],"prefix":"10.3730","volume":"2001","member":"1320","container-title":["Arbitration
+        Law Reports and Review"],"original-title":[],"deposited":{"date-parts":[[2017,2,7]],"date-time":"2017-02-07T20:56:36Z","timestamp":1486500996000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/alrr\/2001.1.295","relation":{},"ISSN":["2044-8651","2044-9887"],"issn-type":[{"value":"2044-8651","type":"print"},{"value":"2044-9887","type":"electronic"}]},{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T18:10:35Z","timestamp":1495908635595},"reference-count":0,"publisher":"Ovid
+        Technologies (Wolters Kluwer Health)","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of Nervous and Mental Disease"],"published-print":{"date-parts":[[1987,5]]},"DOI":"10.1097\/00005053-198705000-00006","type":"journal-article","created":{"date-parts":[[2006,10,17]],"date-time":"2006-10-17T00:57:54Z","timestamp":1161046674000},"page":"276","source":"Crossref","is-referenced-by-count":5,"title":["A
+        Reply from Naomi Breslau and Glenn C. Davis"],"prefix":"10.1097","volume":"175","author":[{"given":"&NA;","family":"&NA;","affiliation":[]}],"member":"276","container-title":["The
+        Journal of Nervous and Mental Disease"],"original-title":[],"deposited":{"date-parts":[[2012,11,9]],"date-time":"2012-11-09T13:32:02Z","timestamp":1352467922000},"score":1.0,"subtitle":[""],"short-title":[],"issued":{"date-parts":[[1987,5]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1097\/00005053-198705000-00006","relation":{},"ISSN":["0022-3018"],"issn-type":[{"value":"0022-3018","type":"print"}],"subject":["Medicine(all)"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['2489']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 02:06:11 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

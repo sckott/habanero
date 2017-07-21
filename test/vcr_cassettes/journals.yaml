@@ -1,0 +1,26 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/journals?rows=1
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"journal-list","message-version":"1.0.0","message":{"items-per-page":1,"query":{"start-index":0,"search-terms":null},"total-results":52135,"items":[{"title":"JNSM","publisher":"JScholar","ISSN":[],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null}]}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['321']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 01:51:40 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

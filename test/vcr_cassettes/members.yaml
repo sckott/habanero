@@ -1,0 +1,35 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/members?rows=2
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":8548,"items":[{"last-status-check-time":1499317248250,"primary-name":"Hogrefe
+        Publishing Group","counts":{"total-dois":35121,"current-dois":3508,"backfile-dois":31613},"breakdowns":{"dois-by-issued-year":[[2003,2329],[2004,2264],[2002,2211],[2005,2204],[2006,2158],[2007,2121],[2016,1941],[2008,1884],[2015,1837],[2012,1827],[2013,1805],[2014,1796],[2009,1760],[2010,1718],[2011,1681],[2001,1479],[2000,1477],[1999,1267],[2017,1008],[1997,164],[1996,140],[1998,138],[1995,103],[1994,11],[1993,11],[2018,2],[0,1]]},"prefixes":["10.1024","10.1027","10.1026"],"coverage":{"affiliations-current":0.20039908587932587,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.05636921525001526,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"orcids-current":0.0,"references-backfile":0.35918766260147095,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.00940706953406334},"prefix":[{"public-references":false,"name":"Hogrefe
+        Publishing Group","value":"10.1024"},{"public-references":false,"name":"Hogrefe
+        Publishing Group","value":"10.1027"},{"public-references":false,"name":"Hogrefe
+        Publishing Group","value":"10.1026"}],"id":101,"tokens":["hogrefe","publishing","group"],"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":true,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"location":"Langgass-Strasse
+        76 Berne CH-3000 Switzerland","names":["Hogrefe Publishing Group"]},{"last-status-check-time":1499317248376,"primary-name":"Ebsco
+        Publishing","counts":{"total-dois":89,"current-dois":0,"backfile-dois":89},"breakdowns":{"dois-by-issued-year":[[2007,23],[2006,23],[2004,18],[2005,14],[2003,11]]},"prefixes":["10.1033"],"coverage":{"affiliations-current":0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0,"orcids-current":0,"references-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0,"award-numbers-current":0,"abstracts-backfile":0.0,"resource-links-current":0,"abstracts-current":0,"references-current":0},"prefix":[{"public-references":false,"name":"EBSCO
+        Publishing","value":"10.1033"}],"id":324,"tokens":["ebsco","publishing"],"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"location":"P
+        O Box 602 Attn: Accounts Payable P O Box 602 Ipswich MA 1938 United States","names":["Ebsco
+        Publishing","EBSCO Publishing"]}]}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['4066']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 01:56:22 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

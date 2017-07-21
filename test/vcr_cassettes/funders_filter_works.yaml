@@ -1,0 +1,672 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/funders/10.13039/100000001/works?filter=has-assertion%3Atrue
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"items-per-page":20,"query":{"start-index":0,"search-terms":null},"total-results":30722,"items":[{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:48:31Z","timestamp":1495673311436},"reference-count":73,"publisher":"Informa
+        UK Limited","issue":"1","funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["Graduate Research
+        Fellowship Program\/1342962"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Developmental
+        Neuropsychology"],"published-print":{"date-parts":[[2017,1,2]]},"DOI":"10.1080\/87565641.2016.1247162","type":"journal-article","created":{"date-parts":[[2017,1,6]],"date-time":"2017-01-06T22:04:44Z","timestamp":1483740284000},"page":"1-24","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Changes
+        in the NoGo N2 Event-Related Potential Component Across Childhood: A Systematic
+        Review and Meta-Analysis"],"prefix":"10.1080","volume":"42","author":[{"given":"Caroline","family":"Hoyniak","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2017,1,6]]},"reference":[{"key":"CIT0001","DOI":"10.1176\/appi.books.9780890425596"},{"key":"CIT0002","DOI":"10.1016\/S0165-1781(02)00104-X"},{"key":"CIT0003","DOI":"10.1007\/BF00909976"},{"key":"CIT0004","DOI":"10.1037\/0033-2909.121.1.65"},{"key":"CIT0005","DOI":"10.1016\/j.cogbrainres.2004.08.011"},{"key":"CIT0006","DOI":"10.1111\/j.1467-8624.2010.01499.x"},{"key":"CIT0007","DOI":"10.1016\/S1388-2457(01)00691-5"},{"key":"CIT0008","author":"Borenstein
+        M.","year":"2009","volume-title":"The handbook of research synthesis and meta-analysis"},{"key":"CIT0009","DOI":"10.1016\/j.ijpsycho.2005.03.008"},{"key":"CIT0010","DOI":"10.1038\/nrn3475"},{"key":"CIT0011","DOI":"10.1016\/0160-2896(94)90019-1"},{"key":"CIT0012","DOI":"10.1016\/j.tics.2005.01.011"},{"key":"CIT0013","DOI":"10.1162\/jocn.1997.9.6.835"},{"key":"CIT0014","DOI":"10.1111\/j.1469-8986.2011.01349.x"},{"key":"CIT0015","DOI":"10.2307\/3001666"},{"key":"CIT0016","author":"Cohen
+        J.","year":"1977","volume-title":"Statistical power analysis for the behavioral
+        sciences"},{"key":"CIT0017","DOI":"10.4135\/9781483348858.n11"},{"key":"CIT0018","author":"Cooper
+        H.","year":"2009","volume-title":"The handbook of research synthesis and meta-analysis"},{"key":"CIT0019","DOI":"10.1016\/0013-4694(78)90291-2"},{"key":"CIT0020","DOI":"10.1002\/dev.20391"},{"key":"CIT0021","DOI":"10.1162\/089892903321593144"},{"key":"CIT0022","author":"de
+        Haan M.","year":"2007","volume-title":"Infant EEG and event-related potentials"},{"key":"CIT0023","author":"de
+        Haan M.","year":"2007","volume-title":"Infant EEG and event-related potentials"},{"key":"CIT0024","DOI":"10.1002\/0470870168.ch2"},{"key":"CIT0025","DOI":"10.1037\/1082-989X.1.2.170"},{"key":"CIT0026","DOI":"10.1016\/j.neuropsychologia.2005.10.010"},{"key":"CIT0027","DOI":"10.1111\/1467-7687.00235"},{"key":"CIT0028","DOI":"10.1111\/j.0006-341X.2000.00455.x"},{"key":"CIT0029","DOI":"10.1007\/s00213-008-1127-6"},{"key":"CIT0030","DOI":"10.1136\/bmj.315.7109.629"},{"key":"CIT0031","DOI":"10.1044\/2014_JSLHR-L-13-0234"},{"key":"CIT0032","DOI":"10.1097\/00004691-200201000-00008"},{"key":"CIT0033","DOI":"10.1111\/j.1469-8986.2007.00628.x"},{"key":"CIT0034","DOI":"10.1016\/j.biopsych.2009.09.029"},{"key":"CIT0035","author":"Hedges
+        L. V.","year":"1985","volume-title":"Statistical method for meta-analysis"},{"key":"CIT0036","DOI":"10.1016\/j.neubiorev.2015.06.002"},{"key":"CIT0037","DOI":"10.1002\/0470870168.ch4"},{"key":"CIT0038","DOI":"10.1016\/j.physbeh.2014.03.008"},{"key":"CIT0039","DOI":"10.1523\/JNEUROSCI.2825-10.2010"},{"key":"CIT0040","DOI":"10.1016\/j.ijpsycho.2006.07.001"},{"key":"CIT0041","DOI":"10.1027\/0269-8803.19.1.11"},{"key":"CIT0042","DOI":"10.1016\/j.clinph.2007.01.017"},{"key":"CIT0043","DOI":"10.1097\/00001756-199803090-00037"},{"key":"CIT0044","DOI":"10.1176\/appi.ajp.157.2.163"},{"key":"CIT0045","DOI":"10.1111\/j.1749-6632.1984.tb23551.x"},{"key":"CIT0046","DOI":"10.1111\/j.1460-9568.2004.03683.x"},{"key":"CIT0047","DOI":"10.1016\/j.bandc.2013.06.009"},{"key":"CIT0048","DOI":"10.1111\/jcpp.1980.21.issue-1"},{"key":"CIT0049","DOI":"10.1162\/jocn.2006.18.3.430"},{"key":"CIT0050","DOI":"10.7326\/0003-4819-151-4-200908180-00136"},{"key":"CIT0051","DOI":"10.1037\/0033-295X.91.3.295"},{"key":"CIT0052","DOI":"10.1017\/S0954579400004302"},{"key":"CIT0053","DOI":"10.7326\/0003-4819-151-4-200908180-00135"},{"key":"CIT0054","DOI":"10.1016\/j.tics.2004.01.005"},{"key":"CIT0055","DOI":"10.1016\/S0166-4115(08)62036-1"},{"key":"CIT0056","DOI":"10.1097\/CHI.0b013e318185a6d8"},{"key":"CIT0057","DOI":"10.3758\/CABN.3.1.17"},{"key":"CIT0058","DOI":"10.1016\/0167-8760(92)90010-9"},{"key":"CIT0059","DOI":"10.1016\/j.dr.2016.02.001"},{"key":"CIT0060","author":"Pritchard
+        W. S.","volume":"4","first-page":"43","year":"1991","journal-title":"Advances
+        in Psychophysiology"},{"key":"CIT0061","author":"R Core Team","year":"2014","volume-title":"R:
+        A language and environment for statistical computing"},{"key":"CIT0062","DOI":"10.1007\/s00221-004-1985-z"},{"key":"CIT0063","author":"Rosenthal
+        R.","volume":"6","year":"1984","volume-title":"Meta-analytic procedures for
+        social research"},{"key":"CIT0064","DOI":"10.1186\/1471-2202-5-39"},{"key":"CIT0065","DOI":"10.1016\/j.bbr.2013.06.001"},{"key":"CIT0066","author":"Sutton
+        A. J.","year":"2009","volume-title":"H. Cooper, L. V. Hedges & J. C. Valentine
+        (Eds.), The handbook of research synthesis and meta-analysis"},{"key":"CIT0067","DOI":"10.1016\/j.neuroimage.2011.02.070"},{"key":"CIT0068","DOI":"10.1097\/00004583-200210000-00013"},{"key":"CIT0069","DOI":"10.1111\/1467-7687.00372"},{"key":"CIT0070","author":"van
+        Dinteren R.","first-page":"9","year":"2014","journal-title":"PloS One"},{"key":"CIT0071","author":"Vaughan
+        H. G.","volume":"24","year":"1992","volume-title":"Developmental behavioral
+        neuroscience: The Minnesota symposia on child psychology"},{"key":"CIT0072","DOI":"10.18637\/jss.v036.i03"},{"key":"CIT0073","DOI":"10.1002\/jrsm.11"}],"container-title":["Developmental
+        Neuropsychology"],"original-title":[],"deposited":{"date-parts":[[2017,3,6]],"date-time":"2017-03-06T08:49:04Z","timestamp":1488790144000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,1,2]]},"references-count":73,"alternative-id":["10.1080\/87565641.2016.1247162"],"URL":"http:\/\/dx.doi.org\/10.1080\/87565641.2016.1247162","relation":{"cites":[]},"ISSN":["8756-5641","1532-6942"],"issn-type":[{"value":"8756-5641","type":"print"},{"value":"1532-6942","type":"electronic"}],"subject":["Developmental
+        and Educational Psychology","Neuropsychology and Physiological Psychology"],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=hdvn20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=hdvn20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:49:23Z","timestamp":1495673363086},"reference-count":26,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,5,1]],"date-time":"2017-05-01T00:00:00Z","timestamp":1493596800000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["#1634577"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Extreme
+        Mechanics Letters"],"published-print":{"date-parts":[[2017,5]]},"DOI":"10.1016\/j.eml.2017.01.001","type":"journal-article","created":{"date-parts":[[2017,1,7]],"date-time":"2017-01-07T06:32:01Z","timestamp":1483770721000},"page":"135-140","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Cusp
+        singularity-based bistability criterion for geometrically nonlinear structures"],"prefix":"10.1016","volume":"13","author":[{"given":"Larry
+        A.","family":"Danso","affiliation":[]},{"given":"Eduard G.","family":"Karpov","affiliation":[]}],"member":"78","container-title":["Extreme
+        Mechanics Letters"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S2352431616302279?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S2352431616302279?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,4,29]],"date-time":"2017-04-29T21:00:48Z","timestamp":1493499648000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,5]]},"references-count":26,"alternative-id":["S2352431616302279"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.eml.2017.01.001","relation":{},"ISSN":["2352-4316"],"issn-type":[{"value":"2352-4316","type":"print"}],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Cusp singularity-based bistability criterion
+        for geometrically nonlinear structures","name":"articletitle","label":"Article
+        Title"},{"value":"Extreme Mechanics Letters","name":"journaltitle","label":"Journal
+        Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.eml.2017.01.001","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2017 Elsevier Ltd. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:52:19Z","timestamp":1495673539537},"reference-count":75,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2016,7,1]],"date-time":"2016-07-01T00:00:00Z","timestamp":1467331200000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000087","name":"Office
+        of Polar Programs","doi-asserted-by":"crossref","award":["1246357"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Global
+        and Planetary Change"],"published-print":{"date-parts":[[2016,7]]},"DOI":"10.1016\/j.gloplacha.2016.04.009","type":"journal-article","created":{"date-parts":[[2016,5,5]],"date-time":"2016-05-05T13:57:17Z","timestamp":1462456637000},"page":"87-95","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":1,"title":["The
+        influence of continental shelf bathymetry on Antarctic Ice Sheet response
+        to climate forcing"],"prefix":"10.1016","volume":"142","author":[{"given":"Philip
+        J.","family":"Bart","affiliation":[]},{"given":"Dan","family":"Mullally","affiliation":[]},{"given":"Nicholas
+        R.","family":"Golledge","affiliation":[]}],"member":"78","container-title":["Global
+        and Planetary Change"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0921818115300916?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0921818115300916?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,4,29]],"date-time":"2017-04-29T07:45:23Z","timestamp":1493451923000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,7]]},"references-count":75,"alternative-id":["S0921818115300916"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.gloplacha.2016.04.009","relation":{},"ISSN":["0921-8181"],"issn-type":[{"value":"0921-8181","type":"print"}],"subject":["Global
+        and Planetary Change","Oceanography"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"The influence of continental shelf bathymetry
+        on Antarctic Ice Sheet response to climate forcing","name":"articletitle","label":"Article
+        Title"},{"value":"Global and Planetary Change","name":"journaltitle","label":"Journal
+        Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.gloplacha.2016.04.009","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2016 Elsevier B.V. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:52:08Z","timestamp":1495673528886},"reference-count":45,"publisher":"Informa
+        UK Limited","issue":"1","funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["BNS-8301542"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["\u00d1awpa
+        Pacha"],"published-print":{"date-parts":[[2016,1,2]]},"DOI":"10.1080\/00776297.2016.1169715","type":"journal-article","created":{"date-parts":[[2016,5,5]],"date-time":"2016-05-05T12:43:26Z","timestamp":1462452206000},"page":"1-21","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Barcoding
+        spindles and decorating whorls: How weavers marked their property at Cerro
+        Azul, Peru"],"prefix":"10.1080","volume":"36","author":[{"given":"Joyce","family":"Marcus","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,5,5]]},"reference":[{"key":"CIT0001","author":"Arriaga
+        Pablo Jos\u00e9 de","year":"1968","volume-title":"Cr\u00f3nicas peruanas de
+        inter\u00e9s ind\u00edgena"},{"key":"CIT0003","DOI":"10.1006\/jasc.2000.0588"},{"key":"CIT0004","author":"Cobo
+        Bernab\u00e9","year":"1956","volume-title":"Obras completas del P. Bernab\u00e9
+        Cobo. Edici\u00f3n de"},{"key":"CIT0005","DOI":"10.1179\/naw.1983.21.1.001"},{"key":"CIT0006","DOI":"10.2307\/972234"},{"key":"CIT0007","author":"Costin
+        Cathy Lynne","volume":"14","first-page":"3","year":"1993","journal-title":"Research
+        in Economic Anthropology"},{"key":"CIT0008","author":"Costin Cathy Lynne","first-page":"123","year":"1998","volume-title":"Craft
+        and social identity"},{"key":"CIT0009","author":"Day Kent C.","first-page":"333","year":"1982","volume-title":"Chan
+        Chan: Andean desert city"},{"key":"CIT0010","DOI":"10.2307\/281493"},{"key":"CIT0011","DOI":"10.1179\/naw.2008.29.1.002"},{"key":"CIT0012","DOI":"10.1179\/0077629714Z.00000000013"},{"key":"CIT0013","author":"Franquemont
+        Edward","first-page":"309","year":"1986","volume-title":"Junius B. Bird conference
+        on Andean textiles"},{"key":"CIT0014","author":"Franquemont Edward","volume":"26","first-page":"54","year":"1987","journal-title":"Textile
+        Museum Journal"},{"key":"CIT0015","author":"Gillin John","year":"1947","volume-title":"Moche:
+        a Peruvian coastal community"},{"key":"CIT0016","author":"Goldstein Paul S.","year":"2005","volume-title":"Andean
+        diaspora: the Tiwanaku colonies and the origins of South American empire"},{"key":"CIT0017","author":"Gonz\u00e1lez
+        Holgu\u00edn Diego","year":"1952","volume-title":"Vocabulario de la lengua
+        general de todo el Per\u00fa"},{"key":"CIT0018","author":"Kroeber Alfred L.","year":"1937","volume-title":"Archaeological
+        explorations in Peru. Part IV: Ca\u00f1ete Valley"},{"issue":"4","key":"CIT0020","first-page":"393","volume":"75","author":"Marcus
+        Joyce","year":"1987","journal-title":"American Scientist"},{"key":"CIT0120","DOI":"10.1073\/pnas.96.11.6564"},{"key":"CIT0021","author":"Marcus
+        Joyce","year":"2008","volume-title":"Excavations at Cerro Azul, Peru: the
+        architecture and pottery"},{"key":"CIT0022","author":"Marcus Joyce","first-page":"303","year":"2009","volume-title":"Andean
+        civilization: a tribute to Michael E. Moseley"},{"key":"CIT0023","DOI":"10.1179\/0077629715Z.00000000022"},{"key":"CIT0024","DOI":"10.1525\/aa.1989.91.3.02a00090"},{"key":"CIT0025","author":"Morris
+        Craig","first-page":"21","year":"1979","volume-title":"Fermented food beverages
+        in nutrition"},{"key":"CIT0026","author":"Morris Craig","first-page":"153","year":"1982","volume-title":"The
+        Inca and Aztec states, 1400\u20131800: anthropology and history"},{"key":"CIT0027","author":"Morris
+        Craig","year":"1985","volume-title":"Hu\u00e1nuco Pampa: an Inca city and
+        its hinterland"},{"key":"CIT0028","author":"Morris Craig","year":"2011","volume-title":"The
+        Hu\u00e1nuco Pampa archaeological project, Volume I: the plaza and palace
+        complex"},{"key":"CIT0029","author":"Munsell Color Company","year":"1954","volume-title":"Munsell
+        soil color charts"},{"key":"CIT0030","DOI":"10.1525\/aa.1962.64.4.02a00020"},{"key":"CIT0031","author":"Murra
+        John V.","year":"1980","volume-title":"The economic organization of the Inca
+        state"},{"key":"CIT0032","author":"Murra John V.","first-page":"275","year":"1989","volume-title":"Cloth
+        and human experience"},{"key":"CIT0033","author":"O''Neale Lila M.","year":"1949","volume-title":"Handbook
+        of South American Indians"},{"key":"CIT0034","author":"Reiss Wilhelm","year":"1880","volume-title":"The
+        necropolis of Ancon in Peru: a contribution to our knowledge of the culture
+        and industries of the empire of the Incas, being the results of excavations
+        made on the spot \u2026"},{"key":"CIT0035","author":"Rostworowski de Diez
+        Canseco Mar\u00eda","year":"1977","volume-title":"Etn\u00eda y sociedad: costa
+        peruana prehisp\u00e1nica"},{"key":"CIT0037","author":"Stone-Miller Rebecca","year":"1992","volume-title":"To
+        weave for the sun: ancient Andean textiles in the Museum of Fine Arts, Boston"},{"key":"CIT0038","author":"Stumer
+        Louis M.","volume":"5","first-page":"25","year":"1971","journal-title":"Arqueolog\u00eda
+        y Sociedad"},{"key":"CIT0039","author":"Tello Julio C.","year":"2000","volume-title":"Cuadernos
+        de Investigaci\u00f3n del Archivo Tello No. 2"},{"key":"CIT0040","DOI":"10.3998\/jar.0521004.0062.103"},{"key":"CIT0041","author":"Vaughn
+        Kevin J.","year":"2009","volume-title":"The ancient Andean village: Marcaya
+        in prehispanic Nasca"},{"key":"CIT0042","author":"Villar C\u00f3rdova Pedro
+        Eduardo","year":"1935","volume-title":"Las culturas pre-hisp\u00e1nicas del
+        departamento de Lima"},{"key":"CIT0044","DOI":"10.1086\/202064"},{"key":"CIT0045","author":"Waman
+        Puma de Ayala Felipe","year":"1980","volume-title":"El primer nueva cor\u00f3nica
+        y buen gobierno de los Incas"},{"key":"CIT0046","author":"Weiner Annette B.","first-page":"33","year":"1989","volume-title":"Cloth
+        and human experience"},{"key":"CIT0047","author":"Willey Gordon R.","year":"1974","volume-title":"Das
+        alte America"},{"key":"CIT0048","author":"Young-S\u00e1nchez Margaret","first-page":"43","year":"1992","volume-title":"To
+        weave for the sun: Andean textiles in the Museum of Fine Arts"}],"container-title":["\u00d1awpa
+        Pacha"],"original-title":[],"deposited":{"date-parts":[[2016,12,16]],"date-time":"2016-12-16T13:51:27Z","timestamp":1481896287000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,1,2]]},"references-count":45,"alternative-id":["10.1080\/00776297.2016.1169715"],"URL":"http:\/\/dx.doi.org\/10.1080\/00776297.2016.1169715","relation":{"cites":[]},"ISSN":["0077-6297","2051-6207"],"issn-type":[{"value":"0077-6297","type":"print"},{"value":"2051-6207","type":"electronic"}],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ynaw20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ynaw20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:40:48Z","timestamp":1495672848573},"reference-count":18,"publisher":"Informa
+        UK Limited","issue":"4-5","funder":[{"DOI":"10.13039\/100000156","name":"Division
+        of Emerging Frontiers","doi-asserted-by":"publisher","award":["EF-1137336,EF-1240142"]},{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["EF-1137336, EF-124012"]},{"DOI":"10.13039\/100000106","name":"Office
+        of Integrative Activities","doi-asserted-by":"publisher","award":["1208732"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Isotopes
+        in Environmental and Health Studies"],"published-print":{"date-parts":[[2016,7,3]]},"DOI":"10.1080\/10256016.2016.1171217","type":"journal-article","created":{"date-parts":[[2016,5,4]],"date-time":"2016-05-04T09:08:35Z","timestamp":1462352915000},"page":"477-486","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":2,"title":["Urban
+        water \u2013 a new frontier in isotope hydrology\u2020"],"prefix":"10.1080","volume":"52","author":[{"given":"James
+        R.","family":"Ehleringer","affiliation":[]},{"given":"Janet E.","family":"Barnette","affiliation":[]},{"given":"Yusuf","family":"Jameel","affiliation":[]},{"given":"Brett
+        J.","family":"Tipple","affiliation":[]},{"given":"Gabriel J.","family":"Bowen","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,5,4]]},"reference":[{"key":"CIT0002","DOI":"10.1175\/2012EI000501.1"},{"key":"CIT0003","author":"Bowen
+        GJ","volume":"16","year":"2014","journal-title":"Geophys Res Abstr"},{"key":"CIT0004","DOI":"10.1061\/(ASCE)WR.1943-5452.0000541"},{"key":"CIT0005","DOI":"10.1146\/annurev-earth-040809-152429"},{"key":"CIT0006","DOI":"10.1029\/2006WR005186"},{"key":"CIT0007","author":"Kahrl
+        WL","year":"1982","volume-title":"Water and power. The conflict over Los Angeles\u2019
+        water supply in the Owens Valley"},{"key":"CIT0008","author":"Lowitt R","year":"1984","volume-title":"The
+        new deal and the west"},{"key":"CIT0009","DOI":"10.1016\/S0022-1694(03)00043-X"},{"key":"CIT0010","DOI":"10.1029\/2005WR004178"},{"key":"CIT0011","DOI":"10.1029\/009WSA09"},{"key":"CIT0012","DOI":"10.1002\/eco.209"},{"key":"CIT0013","DOI":"10.1021\/ac00243a035"},{"key":"CIT0014","DOI":"10.1002\/rcm.1076"},{"key":"CIT0015","DOI":"10.1016\/0016-7037(53)90051-9"},{"key":"CIT0016","DOI":"10.1002\/rcm.4083"},{"key":"CIT0018","author":"Benjamin
+        L","year":"2004","volume-title":"Development of a local meteoric water line
+        for southeastern Idaho, western Wyoming, and south-central Montana"},{"key":"CIT0022","DOI":"10.1016\/j.forsciint.2010.11.021"},{"key":"CIT0023","DOI":"10.1002\/2014WR015884"}],"container-title":["Isotopes
+        in Environmental and Health Studies"],"original-title":[],"deposited":{"date-parts":[[2016,12,14]],"date-time":"2016-12-14T14:59:10Z","timestamp":1481727550000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,5,4]]},"references-count":18,"alternative-id":["10.1080\/10256016.2016.1171217"],"URL":"http:\/\/dx.doi.org\/10.1080\/10256016.2016.1171217","relation":{"cites":[]},"ISSN":["1025-6016","1477-2639"],"issn-type":[{"value":"1025-6016","type":"print"},{"value":"1477-2639","type":"electronic"}],"subject":["Inorganic
+        Chemistry","Environmental Science(all)","Environmental Chemistry"],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gieh20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gieh20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:38:00Z","timestamp":1495672680901},"reference-count":25,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,5,1]],"date-time":"2017-05-01T00:00:00Z","timestamp":1493596800000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["NSF-DMR 1161070"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Polymer"],"published-print":{"date-parts":[[2017,5]]},"DOI":"10.1016\/j.polymer.2017.01.001","type":"journal-article","created":{"date-parts":[[2017,1,5]],"date-time":"2017-01-05T18:41:06Z","timestamp":1483641666000},"page":"350-356","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Role
+        of molecular complexation in solid-liquid phase diagram of poly-ethylene oxide\/urea
+        mixture"],"prefix":"10.1016","volume":"116","author":[{"given":"Guopeng","family":"Fu","affiliation":[]},{"given":"Thein","family":"Kyu","affiliation":[]}],"member":"78","container-title":["Polymer"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0032386117300010?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0032386117300010?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,4,26]],"date-time":"2017-04-26T19:18:29Z","timestamp":1493234309000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,5]]},"references-count":25,"alternative-id":["S0032386117300010"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.polymer.2017.01.001","relation":{},"ISSN":["0032-3861"],"issn-type":[{"value":"0032-3861","type":"print"}],"subject":["Organic
+        Chemistry","Polymers and Plastics"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Role of molecular complexation in solid-liquid
+        phase diagram of poly-ethylene oxide\/urea mixture","name":"articletitle","label":"Article
+        Title"},{"value":"Polymer","name":"journaltitle","label":"Journal Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.polymer.2017.01.001","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2017 Published by Elsevier Ltd.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:45:21Z","timestamp":1495673121940},"reference-count":31,"publisher":"Informa
+        UK Limited","issue":"4","funder":[{"DOI":"10.13039\/100000147","name":"Division
+        of Civil, Mechanical and Manufacturing Innovation","doi-asserted-by":"publisher","award":["NSF-CMMI-0700363"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["International
+        Journal of Construction Education and Research"],"published-print":{"date-parts":[[2016,10]]},"DOI":"10.1080\/15578771.2016.1172140","type":"journal-article","created":{"date-parts":[[2016,5,4]],"date-time":"2016-05-04T10:44:43Z","timestamp":1462358683000},"page":"285-302","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":1,"title":["Analysis
+        of Differing Site Condition (DSC) Litigation Reasoning Through Statistical
+        Modeling"],"prefix":"10.1080","volume":"12","author":[{"given":"Tarek","family":"Mahfouz","affiliation":[]},{"given":"Sukhrob","family":"Davlyatov","affiliation":[]},{"given":"Amr","family":"Kandil","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,5,4]]},"reference":[{"key":"CIT0001","author":"All
+        County Paving Corp. v. Suffolk County Water Authority, No. 20 A.D.3d 438;
+        798 N.Y.S.2d 523","year":"2005","volume-title":"New York Supreme Court"},{"key":"CIT0002","DOI":"10.1111\/0885-9507.00087"},{"key":"CIT0003","DOI":"10.1061\/(ASCE)0887-3801(2005)19:4(387)"},{"key":"CIT0004","DOI":"10.1111\/0885-9507.00157"},{"key":"CIT0007","DOI":"10.1061\/(ASCE)0887-3801(2002)16:4(234)"},{"key":"CIT0008","author":"Chau
+        K. W.","volume":"3533","first-page":"571","year":"2005","journal-title":"Lecture
+        Notes in Artificial Intelligence"},{"key":"CIT0009","DOI":"10.1016\/j.autcon.2006.11.008"},{"key":"CIT0010","DOI":"10.1007\/11779568_59"},{"key":"CIT0011","DOI":"10.1016\/j.autcon.2007.03.003"},{"key":"CIT0012","DOI":"10.1061\/(ASCE)CO.1943-7862.0000532"},{"issue":"2","key":"CIT0013","first-page":"39","volume":"17","author":"Cobb
+        J. E.","year":"1986","journal-title":"Project Management Journal"},{"key":"CIT0014","DOI":"10.1061\/(ASCE)0733-9364(1984)110:4(391)"},{"key":"CIT0015","author":"Drake
+        &amp; Piper v. New York State Thruway Authority, No. 22 A.D.2d 321; 255 N.Y.S.2d
+        368","year":"1965","volume-title":"N.Y. App. Div (New York Supreme Court 1965)"},{"key":"CIT0016","author":"El-Saadi
+        M. M. H.","year":"1998","volume-title":"Administrative Procedures for the
+        Management of Construction Claims"},{"key":"CIT0017","author":"Erickson-Shaver
+        Contracting Corp. v. United States, No. 9 Cl. Ct. 302, 304","year":"1985","volume-title":"(New
+        York Supreme Court 1985)"},{"key":"CIT0018","author":"Greene H. W.","year":"1998","volume-title":"LIMDEP\u2014User\u2019s
+        Manual, Version 7. In E. S. Inc"},{"key":"CIT0019","DOI":"10.1007\/s11123-012-0276-0"},{"key":"CIT0020","author":"Jervis
+        B. M.","year":"1998","volume-title":"Construction law principles and practice"},{"key":"CIT0021","unstructured":"Kim,
+        M. P. (1989). U.S. Army Corps Engineers construction contract claims guidance
+        system (pp. 203\u2013209). New York, NY: American Society of Civil Engineers."},{"key":"CIT0022","author":"Kinser
+        Construction Company v. The State of New York, No. 204 N.Y. 381; 97 N.E. 871","year":"1912","volume-title":"New
+        York Supreme Court 1912"},{"key":"CIT0023","author":"Levin P.","year":"1998","volume-title":"Construction
+        contracts, claims, and disputes"},{"key":"CIT0024","author":"Mahfouz T.","year":"2011","volume-title":"Application
+        of latent semantic analysis for conceptual cost estimates: Assessment in the
+        construction industry"},{"key":"CIT0025","DOI":"10.1061\/41020(339)25"},{"key":"CIT0026","DOI":"10.1061\/41109(373)88"},{"key":"CIT0027","DOI":"10.1061\/(ASCE)CP.1943-5487.0000148"},{"key":"CIT0029","DOI":"10.12691\/ajcea-2-6-2"},{"key":"CIT0031","DOI":"10.1108\/eb021181"},{"key":"CIT0032","author":"Robinson
+        S.","year":"2004","volume-title":"Issues in corpus development for multi-party
+        multi-modal task-oriented dialogue"},{"issue":"2","key":"CIT0033","first-page":"100","volume":"11","author":"Tarkoy
+        P.","year":"1998","journal-title":"The Mining Journal"},{"key":"CIT0034","author":"Carfagno
+        Tony","year":"1919","volume-title":"Others v. The City of New York, No. 187
+        A.D. 489; 175 N.Y.S. 682; 1919 N.Y. App. Div"},{"key":"CIT0036","DOI":"10.1201\/9780203497111"}],"container-title":["International
+        Journal of Construction Education and Research"],"original-title":[],"deposited":{"date-parts":[[2016,12,14]],"date-time":"2016-12-14T06:22:53Z","timestamp":1481696573000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,5,4]]},"references-count":31,"alternative-id":["10.1080\/15578771.2016.1172140"],"URL":"http:\/\/dx.doi.org\/10.1080\/15578771.2016.1172140","relation":{"cites":[]},"ISSN":["1557-8771","1550-3984"],"issn-type":[{"value":"1557-8771","type":"print"},{"value":"1550-3984","type":"electronic"}],"subject":["Education","Building
+        and Construction"],"assertion":[{"value":"The publishing and review policy
+        for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=uice20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=uice20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:58:48Z","timestamp":1495673928099},"reference-count":17,"publisher":"Informa
+        UK Limited","funder":[{"DOI":"10.13039\/100000001","name":"National Science
+        Foundation","doi-asserted-by":"publisher","award":["ESI-0455846"]},{"DOI":"10.13039\/100005554","name":"Division
+        of Elementary, Secondary, and Informal Education","doi-asserted-by":"publisher","award":[]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["International
+        Journal of Science Education"],"DOI":"10.1080\/09500693.2016.1265158","type":"journal-article","created":{"date-parts":[[2017,1,9]],"date-time":"2017-01-09T22:19:47Z","timestamp":1484000387000},"page":"1-20","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Teacher
+        pedagogical content knowledge, practice, and student achievement"],"prefix":"10.1080","author":[{"given":"Julie","family":"Gess-Newsome","affiliation":[]},{"given":"Joseph
+        A.","family":"Taylor","affiliation":[]},{"given":"Janet","family":"Carlson","affiliation":[]},{"given":"April
+        L.","family":"Gardner","affiliation":[]},{"given":"Christopher D.","family":"Wilson","affiliation":[]},{"given":"Molly
+        A. M.","family":"Stuhlsatz","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2017,1,9]]},"reference":[{"key":"CIT0001","DOI":"10.3102\/0002831209345157"},{"key":"CIT0002","DOI":"10.1002\/tea.20293"},{"key":"CIT0003","author":"Brophy
+        J. E.","first-page":"328","year":"1986","edition":"3","volume-title":"Third
+        handbook of research on teaching"},{"key":"CIT0004","author":"Carlson J.","first-page":"14","year":"2015","volume-title":"Re-examining
+        pedagogical content knowledge in science education"},{"key":"CIT0006","author":"Gess-Newsome
+        J.","first-page":"28","year":"2015","volume-title":"Re-examining pedagogical
+        content knowledge in science education"},{"key":"CIT0007","DOI":"10.1080\/09500690802187017"},{"key":"CIT0008","DOI":"10.3102\/00028312042002371"},{"key":"CIT0009","DOI":"10.3102\/0013189X10390804"},{"key":"CIT0010","DOI":"10.1080\/09500693.2016.1190479"},{"key":"CIT0011","author":"Magnusson
+        S.","first-page":"95","year":"1999","volume-title":"Examining pedagogical
+        content knowledge"},{"key":"CIT0012","author":"Milken Family Foundation","year":"2000","volume-title":"How
+        teaching matters: Bringing the classroom back into discussion of teacher quality"},{"key":"CIT0013","DOI":"10.1016\/0272-7757(94)90003-5"},{"key":"CIT0014","DOI":"10.1002\/tea.20234"},{"key":"CIT0016","DOI":"10.1023\/A:1016569117024"},{"key":"CIT0017","DOI":"10.3102\/0013189X015002004"},{"key":"CIT0019","author":"Thompson
+        C.","first-page":"341","year":"1999","volume-title":"Teaching as the learning
+        profession"},{"key":"CIT0020","DOI":"10.3102\/00346543073001089"}],"container-title":["International
+        Journal of Science Education"],"original-title":[],"deposited":{"date-parts":[[2017,1,9]],"date-time":"2017-01-09T22:19:51Z","timestamp":1484000391000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,1,9]]},"references-count":17,"alternative-id":["10.1080\/09500693.2016.1265158"],"URL":"http:\/\/dx.doi.org\/10.1080\/09500693.2016.1265158","relation":{"cites":[]},"ISSN":["0950-0693","1464-5289"],"issn-type":[{"value":"0950-0693","type":"print"},{"value":"1464-5289","type":"electronic"}],"subject":["Education"],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=tsed20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=tsed20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:57:45Z","timestamp":1495673865635},"reference-count":55,"publisher":"Informa
+        UK Limited","issue":"4-5","funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["1225799"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Housing
+        Policy Debate"],"published-print":{"date-parts":[[2016,9,2]]},"DOI":"10.1080\/10511482.2016.1163277","type":"journal-article","created":{"date-parts":[[2016,5,6]],"date-time":"2016-05-06T16:37:14Z","timestamp":1462552634000},"page":"766-784","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":1,"title":["Who
+        Buys Foreclosed Homes? How Neighborhood Characteristics Influence Real Estate-Owned
+        Home Sales to Investors and Households"],"prefix":"10.1080","volume":"26","author":[{"given":"Andrew","family":"McMillan","affiliation":[]},{"given":"Arnab","family":"Chakraborty","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,5,6]]},"reference":[{"key":"CIT0002","DOI":"10.1080\/02723638.2015.1055931"},{"key":"CIT0003","author":"Apgar
+        W. C.","year":"2005","volume-title":"Collateral damage: The municipal impact
+        of today\u2019s mortgage foreclosure boom"},{"key":"CIT0004","DOI":"10.1080\/00420988320080291"},{"key":"CIT0005","author":"Bostic
+        R.","first-page":"218","year":"2009","volume-title":"Insufficient Funds: Savings,
+        Assets, Credit, and Banking among Low-Income Households"},{"key":"CIT0006","author":"Center
+        for Transit-Oriented Development, C. for N. T.","year":"2006","volume-title":"The
+        affordability index: A new tool for measuring the true affordability of a
+        housing choice. (Metropolitan Policy Program)"},{"key":"CIT0008","author":"Coulton
+        C.","year":"2008","volume-title":"Beyond REO: Property transfers at extremely
+        distressed prices in Cuyahoga County, 2005\u20132008"},{"key":"CIT0009","author":"Currie
+        G.","first-page":"25","year":"2007","volume-title":"30th Australasian transport
+        research forum"},{"key":"CIT0011","DOI":"10.1080\/02673037.2014.882496"},{"key":"CIT0013","author":"Frame
+        W. S.","year":"2010","journal-title":"Estimating the effect of mortgage foreclosures
+        on nearby property values: A critical review of the literature"},{"key":"CIT0014","author":"Galster
+        G. C.","year":"1987","volume-title":"Homeowners and neighborhood reinvestment"},{"key":"CIT0015","DOI":"10.1007\/s11146-011-9324-1"},{"key":"CIT0016","DOI":"10.1016\/j.cities.2014.08.001"},{"key":"CIT0019","author":"Goldstein
+        H.","year":"1987","volume-title":"Multilevel models in education and social
+        research"},{"key":"CIT0020","DOI":"10.1016\/0094-1190(74)90013-8"},{"key":"CIT0022","author":"Henry
+        J.","year":"2010","volume-title":"Reducing foreclosures and environmental
+        impacts through location-efficient neighborhood design"},{"key":"CIT0023","author":"Herbert
+        C. E.","year":"2013","journal-title":"The role of investors in acquiring foreclosed
+        properties in low-and moderate-income neighborhoods: A review of findings
+        from four case studies"},{"key":"CIT0024","DOI":"10.1080\/00420980701256005"},{"key":"CIT0025","author":"Hirsch
+        W. Z.","year":"1998","volume-title":"Urban economics"},{"key":"CIT0026","author":"Hoffman
+        S.","year":"2015","volume-title":"Chicago market outlook"},{"key":"CIT0028","author":"Hwang
+        J.","year":"2015","volume-title":"Racialized recovery: Post-foreclosure pathways
+        in distressed neighborhoods in Boston"},{"key":"CIT0029","DOI":"10.1080\/01944360903124316"},{"key":"CIT0030","DOI":"10.1177\/1078087410375404"},{"key":"CIT0031","DOI":"10.1080\/10511482.2015.1042208"},{"key":"CIT0032","DOI":"10.1080\/10511482.2013.850733"},{"key":"CIT0033","DOI":"10.1080\/02723638.2013.858510"},{"key":"CIT0034","author":"Immergluck
+        D.","year":"2005","volume-title":"There goes the neighborhood: The effect
+        of single-family mortgage foreclosures on property values"},{"key":"CIT0035","DOI":"10.1016\/S0166-0462(01)00082-5"},{"key":"CIT0038","author":"King
+        L. A.","year":"2008","journal-title":"Housing diversity and accessibility"},{"key":"CIT0039","DOI":"10.1086\/652788"},{"key":"CIT0040","author":"Krainer
+        J.","year":"2014","volume-title":"FRBSF economic letter (No. 32)"},{"key":"CIT0041","author":"Kremer
+        K. S.","first-page":"130","year":"2010","journal-title":"Michigan Sociological
+        Review"},{"key":"CIT0042","author":"Lauridsen J. T.","year":"2006","journal-title":"Paper
+        presented at the European Network for Housing Research"},{"key":"CIT0043","author":"Lee
+        K.","first-page":"55","year":"2010","journal-title":"REO and Vacant Properties
+        Strategies for Neighborhood Stabilization"},{"key":"CIT0044","DOI":"10.1177\/0739456X07306393"},{"key":"CIT0046","author":"Lucy
+        W. H.","year":"2010","volume-title":"Foreclosing the dream: How America\u2019s
+        housing crisis is reshaping our cities and suburbs"},{"key":"CIT0047","author":"Mallach
+        A.","year":"2009","volume-title":"Stabilizing communities: A federal response
+        to the secondary impacts of the foreclosure crisis"},{"key":"CIT0048","author":"Mallach
+        A.","first-page":"13","year":"2010","journal-title":"REO Vacant Properties
+        & Strategies for Neighborhood Stabilization"},{"key":"CIT0049","DOI":"10.1080\/10511482.2013.872160"},{"key":"CIT0052","author":"Mills
+        E. S.","first-page":"197","year":"1967","journal-title":"The American Economic
+        Review"},{"key":"CIT0053","author":"Moore N.","year":"2014","journal-title":"Why
+        don\u2019t black Chicago neighborhoods gentrify"},{"key":"CIT0054","author":"Muth
+        R. F.","year":"1969","volume-title":"Cities and housing: The spatial pattern
+        of urban residential land use"},{"key":"CIT0056","DOI":"10.1111\/reec.1991.19.issue-3"},{"key":"CIT0057","DOI":"10.1080\/10511482.2012.731655"},{"key":"CIT0058","author":"Pivo
+        G.","year":"2013","journal-title":"The definition of affordable housing: Concerns
+        and related evidence"},{"key":"CIT0059","author":"Rauterkus S. Y.","volume":"2","first-page":"117","year":"2010","journal-title":"The
+        Journal of Sustainable Real Estate"},{"key":"CIT0062","author":"Reid C. K.","first-page":"23","year":"2010","journal-title":"REO
+        Vacant Properties & Strategies for Neighborhood Stabilization"},{"key":"CIT0063","author":"Rodkin
+        D.","year":"2013","volume-title":"There are two housing recoveries going on
+        in Chicago"},{"key":"CIT0065","author":"Schilling J.","volume":"2","first-page":"101","year":"2009","journal-title":"Alb.
+        Gov\u2019t L. Rev."},{"key":"CIT0066","author":"Smith G.","year":"2009","volume-title":"Roadblock
+        to recovery: Examining the disparate impact of vacant lender-owned properties
+        in Chicago"},{"key":"CIT0067","DOI":"10.1108\/14635789710163793"},{"key":"CIT0068","author":"Treiman
+        D. J.","year":"2014","volume-title":"Quantitative data analysis: Doing social
+        research to test ideas"},{"key":"CIT0069","author":"Treuhaft S.","first-page":"19","year":"2011","journal-title":"Community
+        Investments"},{"key":"CIT0070","author":"U.S. Census Bureau","year":"2010","journal-title":"2010
+        Census Summary Files (Summery File 1)"},{"key":"CIT0071","author":"U.S. Census
+        Bureau","year":"2010","journal-title":"American Community Survey, 2006-2010"},{"key":"CIT0072","author":"U.S.
+        Department of Housing and Urban Development (HUD)","year":"2015","journal-title":"Location
+        Affordability Portal"}],"container-title":["Housing Policy Debate"],"original-title":[],"deposited":{"date-parts":[[2016,12,14]],"date-time":"2016-12-14T02:26:59Z","timestamp":1481682419000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,5,6]]},"references-count":55,"alternative-id":["10.1080\/10511482.2016.1163277"],"URL":"http:\/\/dx.doi.org\/10.1080\/10511482.2016.1163277","relation":{"cites":[]},"ISSN":["1051-1482","2152-050X"],"issn-type":[{"value":"1051-1482","type":"print"},{"value":"2152-050X","type":"electronic"}],"subject":["Development","Management,
+        Monitoring, Policy and Law","Urban Studies"],"assertion":[{"value":"The publishing
+        and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rhpd20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rhpd20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:36:39Z","timestamp":1495672599620},"reference-count":31,"publisher":"Informa
+        UK Limited","issue":"9","funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"crossref","award":["0921757"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["The
+        Journal of Development Studies"],"published-print":{"date-parts":[[2016,9]]},"DOI":"10.1080\/00220388.2016.1146701","type":"journal-article","created":{"date-parts":[[2016,5,3]],"date-time":"2016-05-03T03:04:25Z","timestamp":1462244665000},"page":"1306-1319","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["The
+        Formal Divide: Customary Rights and the Allocation of Credit to Agriculture
+        in Tanzania"],"prefix":"10.1080","volume":"52","author":[{"given":"Howard","family":"Stein","affiliation":[]},{"given":"Faustin
+        P.","family":"Maganga","affiliation":[]},{"given":"Rie","family":"Odgaard","affiliation":[]},{"given":"Kelly","family":"Askew","affiliation":[]},{"given":"Sam","family":"Cunningham","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,5,2]]},"reference":[{"key":"CIT0001","DOI":"10.1017\/S0001972012000745"},{"key":"CIT0002","author":"Bank
+        of Tanzania","year":"2012","volume-title":"Economics and operations report"},{"key":"CIT0003","DOI":"10.1016\/0305-750X(96)00001-0"},{"key":"CIT0004","DOI":"10.1080\/03066150.2012.667405"},{"key":"CIT0005","DOI":"10.1086\/262008"},{"key":"CIT0007","DOI":"10.1016\/S0197-3975(03)00072-9"},{"key":"CIT0008","author":"De
+        Laiglesia J. R.","year":"2005","volume-title":"Annual Conference of Verein
+        f\u00fcr Socialpolitik"},{"key":"CIT0009","author":"De Soto H.","year":"2000","volume-title":"The
+        mystery of capital"},{"key":"CIT0010","author":"Deininger K.","year":"2003","volume-title":"Land
+        policies for growth and poverty reduction"},{"key":"CIT0011","author":"Fairley
+        E.","year":"2012","volume-title":"World Bank (Ed.), Annual conference on land
+        and poverty"},{"key":"CIT0012","author":"Feder G.","year":"1988","volume-title":"Land
+        policies and farm productivity in Thailand"},{"key":"CIT0013","unstructured":"Fernqvist,
+        K. (2012).Local Voices on Land Titling - Anticipated, Possible and Actual
+        Benefits of Certificates of Customary Right of Occupancy in Babati District(Tanzania
+        Undergraduate Thesis). School of Life Science, S\u00f6dert\u00f6rn University"},{"key":"CIT0014","author":"Field
+        A. J.","volume":"100","year":"2006","volume-title":"Property rights and crop
+        choice in rural Peru, 1994-2004"},{"issue":"4","key":"CIT0017","first-page":"379","volume":"11","author":"Haidari
+        K. R.","year":"1987","journal-title":"Savings and Development"},{"key":"CIT0018","author":"Hayuma
+        M.","year":"2006","volume-title":"Land policies and legal empowerment of the
+        poor"},{"key":"CIT0019","DOI":"10.3362\/9781780443720"},{"key":"CIT0021","unstructured":"Leonard,
+        R. & Ayutthaya, N. (2003).Kingkorn Narintarakul: Thailand\u2019s land titling
+        program northern development foundation."},{"key":"CIT0022","unstructured":"Locke,
+        A., Henley, G. & Nshala, R. (2014, February).A proposed land tenure support
+        programme for Tanzania. Overseas Development Institute."},{"key":"CIT0023","DOI":"10.1111\/mlr.2010.73.issue-6"},{"key":"CIT0025","DOI":"10.1080\/01436590701637334"},{"key":"CIT0026","author":"Myenzi
+        Y.","year":"2005","volume-title":"Implications of the recent land reforms
+        in Tanzania on the land rights of small producers"},{"key":"CIT0027","author":"Odgaard
+        R.","year":"2003","volume-title":"Securing land rights in Africa"},{"key":"CIT0028","DOI":"10.2307\/3147118"},{"key":"CIT0030","author":"Shivji
+        I.","year":"1998","volume-title":"Not yet democracy: Reforming land tenure
+        in Tanzania"},{"key":"CIT0031","author":"Shivji I.","year":"2006","volume-title":"Lawyers
+        in neoliberalism"},{"key":"CIT0032","DOI":"10.1093\/oxrep\/5.4.55"},{"key":"CIT0033","DOI":"10.1093\/wber\/7.suppl_1.19"},{"key":"CIT0034","unstructured":"United
+        Republic of Tanzania. (URT, 1999a.).The land act, no. 4. Dar es Salaam: Government
+        Printer."},{"key":"CIT0035","unstructured":"United Republic of Tanzania. (URT,
+        1999b.).The village Land act, no.5. Dar es Salaam: Government Printer."},{"key":"CIT0036","unstructured":"World
+        Bank. (2005, November).Project appraisal document on a proposed credit in
+        the amount of SDR 65.5 million (US$95 Million Equivalent) to the United Republic
+        of Tanzania for a private sector competitiveness project. Washington, DC:
+        World Bank."},{"key":"CIT0038","author":"World Bank","year":"2015","volume-title":"Tanzania
+        mainland poverty assessment"}],"container-title":["The Journal of Development
+        Studies"],"original-title":[],"deposited":{"date-parts":[[2016,12,18]],"date-time":"2016-12-18T13:44:06Z","timestamp":1482068646000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,5,2]]},"references-count":31,"alternative-id":["10.1080\/00220388.2016.1146701"],"URL":"http:\/\/dx.doi.org\/10.1080\/00220388.2016.1146701","relation":{"cites":[]},"ISSN":["0022-0388","1743-9140"],"issn-type":[{"value":"0022-0388","type":"print"},{"value":"1743-9140","type":"electronic"}],"subject":["Development"],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=fjds20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=fjds20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:38:53Z","timestamp":1495672733140},"reference-count":27,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,5,1]],"date-time":"2017-05-01T00:00:00Z","timestamp":1493596800000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["DMR-1121262","CMMI1534120","CMMI1400169","DMR1121262","CMMI1300846"]},{"DOI":"10.13039\/100007059","name":"Northwestern
+        University","doi-asserted-by":"publisher","award":[]},{"DOI":"10.13039\/501100004543","name":"China
+        Scholarship Council","doi-asserted-by":"crossref","award":[]},{"name":"Materials
+        Research Science and Engineering Center","award":[]},{"name":"NIH","award":["R01EB019337"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Carbon"],"published-print":{"date-parts":[[2017,5]]},"DOI":"10.1016\/j.carbon.2017.01.006","type":"journal-article","created":{"date-parts":[[2017,1,5]],"date-time":"2017-01-05T20:59:29Z","timestamp":1483649969000},"page":"380-387","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Electromechanical
+        properties of reduced graphene oxide thin film on 3D elastomeric substrate"],"prefix":"10.1016","volume":"115","author":[{"given":"Yue
+        Yang","family":"Yu","affiliation":[]},{"given":"Xue Jun","family":"Bai","affiliation":[]},{"given":"Mayfair
+        C.","family":"Kung","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1968-5092","authenticated-orcid":false,"given":"Yeguang","family":"Xue","affiliation":[]},{"given":"Yonggang","family":"Huang","affiliation":[]},{"given":"Denis
+        T.","family":"Keane","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0001-9599-0155","authenticated-orcid":false,"given":"Harold
+        H.","family":"Kung","affiliation":[]}],"member":"78","container-title":["Carbon"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0008622317300064?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0008622317300064?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,5,17]],"date-time":"2017-05-17T13:05:27Z","timestamp":1495026327000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,5]]},"references-count":27,"alternative-id":["S0008622317300064"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.carbon.2017.01.006","relation":{},"ISSN":["0008-6223"],"issn-type":[{"value":"0008-6223","type":"print"}],"subject":["Chemistry(all)"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Electromechanical properties of reduced
+        graphene oxide thin film on 3D elastomeric substrate","name":"articletitle","label":"Article
+        Title"},{"value":"Carbon","name":"journaltitle","label":"Journal Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.carbon.2017.01.006","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2017 Elsevier Ltd. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:38:13Z","timestamp":1495672693935},"reference-count":80,"publisher":"Cambridge
+        University Press (CUP)","issue":"01","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2016,7,1]],"date-time":"2016-07-01T00:00:00Z","timestamp":1467331200000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["DEB-1146297"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Quat.
+        res."],"published-print":{"date-parts":[[2016,7]]},"abstract":"<jats:title>Abstract<\/jats:title>\n            <jats:p>We
+        present a new oxygen isotope (\u03b4<jats:sup>18<\/jats:sup>O) record from
+        carbonate-rich lake sediments from central Vermont. The record from Twin Ponds
+        spans from 13.5 cal ka BP (1950 AD) to present, but contains a 6 ka long hiatus
+        starting shortly after 7.5 cal ka BP. We compare the record for ca. 13.5\u20137.5
+        cal ka BP with published \u03b4<jats:sup>18<\/jats:sup>O data from the region
+        after using a Bayesian approach to produce many possible chronologies for
+        each site. Principal component analysis then identified chronologically-robust,
+        multi-site oxygen isotope signals, including negative values during the Younger
+        Dryas, but no significant deviations from the early Holocene mean of the regional
+        records. However, differences among sites indicate significant trends that
+        likely relate to interacting changes in the regional gradients of seasonal
+        temperatures and precipitation as well as moisture sources, moisture pathways,
+        and aridity that were controlled by large-scale climatic controls such as
+        insolation, the progressive decline of the Laurentide Ice Sheet, and changes
+        in oceanic circulation. Centennial shifts punctuate these trends at ca. 9.3
+        and 8.2 cal ka BP, and reveal that the local character of these short-lived
+        features requires a detailed understanding of lake hydrology and regional
+        isotopic gradients to yield reliable information for regional climate reconstructions.<\/jats:p>","DOI":"10.1016\/j.yqres.2016.02.009","type":"journal-article","created":{"date-parts":[[2016,5,3]],"date-time":"2016-05-03T13:52:59Z","timestamp":1462283579000},"page":"67-78","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Estimating
+        the regional climate signal in a late Pleistocene and early Holocene lake-sediment
+        \u03b418O record from Vermont, USA."],"prefix":"10.1017","volume":"86","author":[{"given":"Maximilian
+        Benedict","family":"Mandl","affiliation":[]},{"given":"Bryan Nolan","family":"Shuman","affiliation":[]},{"given":"Jeremiah","family":"Marsicek","affiliation":[]},{"given":"Laurie","family":"Grigg","affiliation":[]}],"member":"56","published-online":{"date-parts":[[2017,1,20]]},"reference":[{"key":"S0033589400039727_ref58","DOI":"10.1038\/ngeo513"},{"key":"S0033589400039727_ref57","DOI":"10.1017\/S0033822200034202"},{"key":"S0033589400039727_ref56","first-page":"111","year":"2006","journal-title":"Journal
+        of Geophysical Research"},{"key":"S0033589400039727_ref55","volume":"3184","first-page":"3","year":"2011","journal-title":"Geological
+        Survey Scientific Investigations Map"},{"key":"S0033589400039727_ref54","year":"2013","journal-title":"R
+        Foundation for Statistical Computing"},{"key":"S0033589400039727_ref53","DOI":"10.1016\/j.quascirev.2008.07.009"},{"key":"S0033589400039727_ref52","year":"2014","journal-title":"R
+        package version 3.1."},{"key":"S0033589400039727_ref51","DOI":"10.1016\/j.yqres.2011.01.006"},{"key":"S0033589400039727_ref50","DOI":"10.1002\/2014GL060183"},{"key":"S0033589400039727_ref49","DOI":"10.1006\/qres.1999.2120"},{"key":"S0033589400039727_ref48","DOI":"10.1016\/j.quascirev.2009.02.020"},{"key":"S0033589400039727_ref47","DOI":"10.5194\/cp-9-955-2013"},{"key":"S0033589400039727_ref46","first-page":"32","year":"2005","journal-title":"Geophysical
+        Research Letters"},{"key":"S0033589400039727_ref45","DOI":"10.1016\/j.epsl.2004.05.007"},{"key":"S0033589400039727_ref44","DOI":"10.1126\/science.291.5501.112"},{"key":"S0033589400039727_ref43","DOI":"10.1016\/j.quascirev.2013.09.001"},{"key":"S0033589400039727_ref42","DOI":"10.1126\/science.1228026"},{"key":"S0033589400039727_ref41","DOI":"10.1016\/j.quascirev.2012.05.001"},{"key":"S0033589400039727_ref40","DOI":"10.1038\/385423a0"},{"key":"S0033589400039727_ref39","DOI":"10.1073\/pnas.0510095103"},{"key":"S0033589400039727_ref38","first-page":"23","year":"2008","journal-title":"Paleoceanography"},{"key":"S0033589400039727_ref59","volume":"497","first-page":"15","year":"2003","journal-title":"New
+        York State Museum Bulletin"},{"key":"S0033589400039727_ref36","DOI":"10.1130\/0016-7606(2002)114&lt;1326:LGHACA&gt;2.0.CO;2"},{"key":"S0033589400039727_ref35","DOI":"10.1007\/s00382-002-0227-y"},{"key":"S0033589400039727_ref34","DOI":"10.1016\/S0016-7037(97)00169-5"},{"key":"S0033589400039727_ref33","DOI":"10.1016\/S0277-3791(99)00069-4"},{"key":"S0033589400039727_ref32","DOI":"10.1016\/j.gloplacha.2009.10.001"},{"key":"S0033589400039727_ref31","DOI":"10.1007\/978-94-015-8905-5_4"},{"key":"S0033589400039727_ref30","DOI":"10.1023\/B:JOPL.0000021855.80535.13"},{"key":"S0033589400039727_ref29","DOI":"10.1130\/0091-7613(2002)030&lt;1103:HIROPA&gt;2.0.CO;2"},{"key":"S0033589400039727_ref28","DOI":"10.1177\/0959683611427329"},{"key":"S0033589400039727_ref27","first-page":"34","year":"2007","journal-title":"Geophysical
+        Research Letters"},{"key":"S0033589400039727_ref26","DOI":"10.1130\/B26441.1"},{"key":"S0033589400039727_ref25","DOI":"10.1016\/j.epsl.2010.09.024"},{"key":"S0033589400039727_ref24","DOI":"10.1111\/j.1467-9876.2008.00623.x"},{"key":"S0033589400039727_ref23","DOI":"10.1007\/s003820050210"},{"key":"S0033589400039727_ref22","DOI":"10.1126\/science.284.5420.1654"},{"key":"S0033589400039727_ref21","DOI":"10.1016\/S0022-1694(02)00022-7"},{"key":"S0033589400039727_ref20","DOI":"10.1007\/978-3-642-85132-2_5"},{"key":"S0033589400039727_ref80","DOI":"10.1016\/j.quascirev.2010.03.018"},{"key":"S0033589400039727_ref19","volume":"23","year":"2008","journal-title":"Paleoceanography"},{"key":"S0033589400039727_ref18","DOI":"10.1016\/S1571-0866(04)80209-4"},{"key":"S0033589400039727_ref17","year":"1983"},{"key":"S0033589400039727_ref16","volume":"44","first-page":"242","year":"1974","journal-title":"Journal
+        of Sedimentary Research"},{"key":"S0033589400039727_ref15","DOI":"10.1111\/j.2153-3490.1964.tb00181.x"},{"key":"S0033589400039727_ref79","DOI":"10.1126\/science.1187860"},{"key":"S0033589400039727_ref14","DOI":"10.1006\/qres.1995.1046"},{"key":"S0033589400039727_ref78","DOI":"10.1006\/qres.1993.1073"},{"key":"S0033589400039727_ref13","DOI":"10.1126\/science.1062517"},{"key":"S0033589400039727_ref77","DOI":"10.1016\/S0277-3791(98)00013-4"},{"key":"S0033589400039727_ref37","DOI":"10.1016\/S0277-3791(98)00009-2"},{"key":"S0033589400039727_ref12","DOI":"10.1175\/1520-0442(2004)017&lt;3415:PMSOTW&gt;2.0.CO;2"},{"key":"S0033589400039727_ref76","first-page":"111","year":"2006","journal-title":"Journal
+        of Geophysical Research: Atmospheres"},{"key":"S0033589400039727_ref11","first-page":"341","year":"1989","journal-title":"Nature"},{"key":"S0033589400039727_ref75","DOI":"10.1016\/S0277-3791(01)00145-7"},{"key":"S0033589400039727_ref10","DOI":"10.1130\/0091-7613(2002)030&lt;0315:SDOOIM&gt;2.0.CO;2"},{"key":"S0033589400039727_ref74","DOI":"10.1006\/qres.1995.1079"},{"key":"S0033589400039727_ref73","DOI":"10.4319\/lo.2010.55.6.2231"},{"key":"S0033589400039727_ref72","DOI":"10.1002\/2014GL059499"},{"key":"S0033589400039727_ref71","DOI":"10.1016\/j.gca.2012.11.026"},{"key":"S0033589400039727_ref70","DOI":"10.1016\/j.gca.2012.11.027"},{"key":"S0033589400039727_ref69","DOI":"10.1016\/j.quascirev.2009.04.005"},{"key":"S0033589400039727_ref68","DOI":"10.1016\/j.quascirev.2006.02.021"},{"key":"S0033589400039727_ref67","DOI":"10.1016\/j.yqres.2005.09.001"},{"key":"S0033589400039727_ref66","DOI":"10.1006\/qres.2001.2273"},{"key":"S0033589400039727_ref65","DOI":"10.1016\/j.quascirev.2006.08.009"},{"key":"S0033589400039727_ref64","DOI":"10.1016\/S0277-3791(02)00025-2"},{"key":"S0033589400039727_ref63","volume":"112","first-page":"2156","year":"2007","journal-title":"Journal
+        of Geophysical Research Atmospheres"},{"key":"S0033589400039727_ref62","first-page":"34","year":"2007","journal-title":"Geophysical
+        Research Letters"},{"key":"S0033589400039727_ref61","DOI":"10.1016\/0031-0182(81)90097-3"},{"key":"S0033589400039727_ref60","DOI":"10.1007\/BF01277044"},{"key":"S0033589400039727_ref9","first-page":"39","year":"2003","journal-title":"Water
+        Resources Research"},{"key":"S0033589400039727_ref8","DOI":"10.1016\/0277-3791(91)90033-Q"},{"key":"S0033589400039727_ref7","first-page":"19","year":"2004","journal-title":"Paleoceanography"},{"key":"S0033589400039727_ref6","first-page":"11","year":"1997","volume-title":"Springer
+        Berlin Heidelberg"},{"key":"S0033589400039727_ref5","DOI":"10.1016\/S0277-3791(98)00012-2"},{"key":"S0033589400039727_ref4","DOI":"10.1038\/22504"},{"key":"S0033589400039727_ref3","DOI":"10.1007\/s00382-012-1483-0"},{"key":"S0033589400039727_ref2","DOI":"10.1130\/0091-7613(1997)025&lt;0483:HCIAPW&gt;2.3.CO;2"},{"key":"S0033589400039727_ref1","DOI":"10.1016\/j.quascirev.2004.12.004"}],"container-title":["Quaternary
+        Research"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0033589416000235?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0033589416000235?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,4,23]],"date-time":"2017-04-23T01:05:54Z","timestamp":1492909554000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,7]]},"references-count":80,"alternative-id":["S0033589400039727"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.yqres.2016.02.009","relation":{"cites":[]},"ISSN":["0033-5894","1096-0287"],"issn-type":[{"value":"0033-5894","type":"print"},{"value":"1096-0287","type":"electronic"}],"subject":["Earth-Surface
+        Processes","Earth and Planetary Sciences(all)"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Estimating the regional climate signal
+        in a late Pleistocene and early Holocene lake-sediment \u03b418O record from
+        Vermont, USA.","name":"articletitle","label":"Article Title"},{"value":"Quaternary
+        Research","name":"journaltitle","label":"Journal Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.yqres.2016.02.009","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2016 University of Washington. Published by Elsevier
+        Inc. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:53:07Z","timestamp":1495673587971},"reference-count":49,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,4,1]],"date-time":"2017-04-01T00:00:00Z","timestamp":1491004800000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000738","name":"U.S.
+        Department of Veterans Affairs","doi-asserted-by":"crossref","award":["IK2-RX001479","B1097-I"]},{"DOI":"10.13039\/100000002","name":"National
+        Institutes of Health","doi-asserted-by":"publisher","award":["NICHD U54-HD086984","NINDS
+        T32-NS043126"]},{"DOI":"10.13039\/100000001","name":"National Science Foundation","doi-asserted-by":"publisher","award":["DGE-0947936"]},{"name":"Penn''s
+        University Research Foundation","award":["02202014"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Experimental
+        Neurology"],"published-print":{"date-parts":[[2017,4]]},"DOI":"10.1016\/j.expneurol.2017.01.004","type":"journal-article","created":{"date-parts":[[2017,1,9]],"date-time":"2017-01-09T08:16:23Z","timestamp":1483949783000},"page":"85-94","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Rapid
+        neuroinflammatory response localized to injured neurons after diffuse traumatic
+        brain injury in swine"],"prefix":"10.1016","volume":"290","author":[{"given":"Kathryn
+        L.","family":"Wofford","affiliation":[]},{"given":"James P.","family":"Harris","affiliation":[]},{"given":"Kevin
+        D.","family":"Browne","affiliation":[]},{"given":"Daniel P.","family":"Brown","affiliation":[]},{"given":"Michael
+        R.","family":"Grovola","affiliation":[]},{"given":"Constance J.","family":"Mietus","affiliation":[]},{"given":"John
+        A.","family":"Wolf","affiliation":[]},{"given":"John E.","family":"Duda","affiliation":[]},{"given":"Mary
+        E.","family":"Putt","affiliation":[]},{"given":"Kara L.","family":"Spiller","affiliation":[]},{"given":"D.
+        Kacy","family":"Cullen","affiliation":[]}],"member":"78","container-title":["Experimental
+        Neurology"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0014488617300043?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0014488617300043?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,4,26]],"date-time":"2017-04-26T10:56:13Z","timestamp":1493204173000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,4]]},"references-count":49,"alternative-id":["S0014488617300043"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.expneurol.2017.01.004","relation":{},"ISSN":["0014-4886"],"issn-type":[{"value":"0014-4886","type":"print"}],"subject":["Developmental
+        Neuroscience","Neurology"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Rapid neuroinflammatory response localized
+        to injured neurons after diffuse traumatic brain injury in swine","name":"articletitle","label":"Article
+        Title"},{"value":"Experimental Neurology","name":"journaltitle","label":"Journal
+        Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.expneurol.2017.01.004","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2017 Elsevier Inc. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:50:43Z","timestamp":1495673443186},"reference-count":64,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,3,1]],"date-time":"2017-03-01T00:00:00Z","timestamp":1488326400000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["ECS-0335765"]},{"name":"Presidential
+        Research Fund","award":[]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Science
+        of The Total Environment"],"published-print":{"date-parts":[[2017,3]]},"DOI":"10.1016\/j.scitotenv.2016.12.168","type":"journal-article","created":{"date-parts":[[2017,1,7]],"date-time":"2017-01-07T14:15:29Z","timestamp":1483798529000},"page":"589-600","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Characterizing
+        nutrient distributions and fluxes in a eutrophic reservoir, Midwestern United
+        States"],"prefix":"10.1016","volume":"581-582","author":[{"given":"Alexandra
+        R.","family":"Pearce","affiliation":[]},{"given":"Lisa G.","family":"Chambers","affiliation":[]},{"given":"Elizabeth
+        A.","family":"Hasenmueller","affiliation":[]}],"member":"78","container-title":["Science
+        of The Total Environment"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0048969716328571?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0048969716328571?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,5,2]],"date-time":"2017-05-02T07:19:43Z","timestamp":1493709583000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,3]]},"references-count":64,"alternative-id":["S0048969716328571"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.scitotenv.2016.12.168","relation":{},"ISSN":["0048-9697"],"issn-type":[{"value":"0048-9697","type":"print"}],"subject":["Environmental
+        Engineering","Waste Management and Disposal","Pollution","Environmental Chemistry"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Characterizing nutrient distributions
+        and fluxes in a eutrophic reservoir, Midwestern United States","name":"articletitle","label":"Article
+        Title"},{"value":"Science of The Total Environment","name":"journaltitle","label":"Journal
+        Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.scitotenv.2016.12.168","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2017 Elsevier B.V. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:56:20Z","timestamp":1495673780397},"reference-count":51,"publisher":"IOP
+        Publishing","issue":"24","license":[{"URL":"http:\/\/iopscience.iop.org\/info\/page\/text-and-data-mining","start":{"date-parts":[[2016,5,6]],"date-time":"2016-05-06T00:00:00Z","timestamp":1462492800000},"delay-in-days":0,"content-version":"tdm"},{"URL":"http:\/\/iopscience.iop.org\/page\/copyright","start":{"date-parts":[[2016,5,6]],"date-time":"2016-05-06T00:00:00Z","timestamp":1462492800000},"delay-in-days":0,"content-version":"vor"},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","start":{"date-parts":[[2017,5,6]],"date-time":"2017-05-06T00:00:00Z","timestamp":1494028800000},"delay-in-days":365,"content-version":"am"}],"funder":[{"DOI":"10.13039\/100000078","name":"Division
+        of Materials Research","doi-asserted-by":"publisher","award":["DMR-1305879"]}],"content-domain":{"domain":["iopscience.iop.org"],"crossmark-restriction":true},"short-container-title":["Nanotechnology"],"published-print":{"date-parts":[[2016,6,17]]},"DOI":"10.1088\/0957-4484\/27\/24\/245201","type":"journal-article","created":{"date-parts":[[2016,5,6]],"date-time":"2016-05-06T13:24:51Z","timestamp":1462541091000},"page":"245201","update-policy":"http:\/\/dx.doi.org\/10.1088\/crossmark-policy","source":"Crossref","is-referenced-by-count":0,"title":["Evolution
+        of shot noise in suspended lithographic gold break junctions with bias and
+        temperature"],"prefix":"10.1088","volume":"27","author":[{"given":"Ruoyu","family":"Chen","affiliation":[]},{"given":"D","family":"Natelson","affiliation":[]}],"member":"266","published-online":{"date-parts":[[2016,5,6]]},"container-title":["Nanotechnology"],"original-title":[],"link":[{"URL":"http:\/\/stacks.iop.org\/0957-4484\/27\/i=24\/a=245201\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"}],"deposited":{"date-parts":[[2016,5,10]],"date-time":"2016-05-10T07:12:08Z","timestamp":1462864328000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,5,6]]},"references-count":51,"URL":"http:\/\/dx.doi.org\/10.1088\/0957-4484\/27\/24\/245201","relation":{},"ISSN":["0957-4484","1361-6528"],"issn-type":[{"value":"0957-4484","type":"print"},{"value":"1361-6528","type":"electronic"}],"subject":["Mechanical
+        Engineering","Electrical and Electronic Engineering","Materials Science(all)","Mechanics
+        of Materials","Bioengineering","Chemistry(all)"],"assertion":[{"value":"Nanotechnology","name":"journal_title","label":"Journal
+        title"},{"value":"paper","name":"article_type","label":"Article type"},{"value":"Evolution
+        of shot noise in suspended lithographic gold break junctions with bias and
+        temperature","name":"article_title","label":"Article title"},{"value":"\u00a9
+        2016 IOP Publishing Ltd","name":"copyright_information","label":"Copyright
+        information"},{"value":"2016-02-14","name":"date_received","label":"Date received","group":{"name":"publication_dates","label":"Publication
+        dates"}},{"value":"2016-04-20","name":"date_accepted","label":"Date accepted","group":{"name":"publication_dates","label":"Publication
+        dates"}},{"value":"2016-05-06","name":"date_epub","label":"Online publication
+        date","group":{"name":"publication_dates","label":"Publication dates"}}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:56:25Z","timestamp":1495673785086},"reference-count":18,"publisher":"Informa
+        UK Limited","issue":"16","funder":[{"DOI":"10.13039\/100000002","name":"National
+        Institutes of Health","doi-asserted-by":"publisher","award":["R01 HL73021","R01
+        HL111090","R01 HL063954"]},{"DOI":"10.13039\/100000001","name":"National Science
+        Foundation","doi-asserted-by":"publisher","award":["CMMI-1538754"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Computer
+        Methods in Biomechanics and Biomedical Engineering"],"published-print":{"date-parts":[[2016,12,9]]},"DOI":"10.1080\/10255842.2016.1183122","type":"journal-article","created":{"date-parts":[[2016,5,6]],"date-time":"2016-05-06T13:34:50Z","timestamp":1462541690000},"page":"1714-1720","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Effects
+        of using the unloaded configuration in predicting the in vivo diastolic properties
+        of the heart"],"prefix":"10.1080","volume":"19","author":[{"given":"Amir","family":"Nikou","affiliation":[]},{"given":"Shauna
+        M.","family":"Dorsey","affiliation":[]},{"given":"Jeremy R.","family":"McGarvey","affiliation":[]},{"suffix":"III","given":"Joseph
+        H.","family":"Gorman","affiliation":[]},{"given":"Jason A.","family":"Burdick","affiliation":[]},{"given":"James
+        J.","family":"Pilla","affiliation":[]},{"given":"Robert C.","family":"Gorman","affiliation":[]},{"given":"Jonathan
+        F.","family":"Wenk","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,5,6]]},"reference":[{"key":"CIT0001","DOI":"10.1002\/cnm.v26:1"},{"key":"CIT0004","DOI":"10.1016\/j.cam.2012.10.034"},{"key":"CIT0005","DOI":"10.1152\/ajpheart.00111.2002"},{"key":"CIT0006","DOI":"10.1115\/1.2894084"},{"key":"CIT0007","DOI":"10.1196\/annals.1341.026"},{"key":"CIT0008","DOI":"10.1098\/rsta.2009.0091"},{"key":"CIT0009","DOI":"10.1152\/ajpheart.01240.2005"},{"key":"CIT0010","DOI":"10.1016\/j.jcp.2012.09.015"},{"key":"CIT0011","DOI":"10.1109\/TMI.2012.2212450"},{"key":"CIT0002","DOI":"10.1007\/s10439-015-1403-7"},{"key":"CIT0012","DOI":"10.1115\/1.1289625"},{"key":"CIT0013","DOI":"10.1002\/(ISSN)1097-0207"},{"key":"CIT0014","DOI":"10.1007\/978-1-4419-6691-9_10"},{"key":"CIT0015","DOI":"10.1152\/ajpheart.01226.2004"},{"key":"CIT0016","DOI":"10.1007\/s10237-013-0488-x"},{"key":"CIT0017","DOI":"10.1115\/1.4003438"},{"key":"CIT0018","DOI":"10.1016\/j.athoracsur.2011.12.066"},{"key":"CIT0019","DOI":"10.1016\/j.media.2012.08.001"}],"container-title":["Computer
+        Methods in Biomechanics and Biomedical Engineering"],"original-title":[],"deposited":{"date-parts":[[2016,12,12]],"date-time":"2016-12-12T23:43:30Z","timestamp":1481586210000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2016,5,6]]},"references-count":18,"alternative-id":["10.1080\/10255842.2016.1183122"],"URL":"http:\/\/dx.doi.org\/10.1080\/10255842.2016.1183122","relation":{"cites":[]},"ISSN":["1025-5842","1476-8259"],"issn-type":[{"value":"1025-5842","type":"print"},{"value":"1476-8259","type":"electronic"}],"subject":["Human-Computer
+        Interaction","Bioengineering","Biomedical Engineering","Computer Science Applications"],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gcmb20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gcmb20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:56:34Z","timestamp":1495673794344},"reference-count":45,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,6,1]],"date-time":"2017-06-01T00:00:00Z","timestamp":1496275200000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["CBET-1402712"]},{"name":"Program
+        on Fundamental Studies of the National Academy of Sciences of Ukraine \u00abFine
+        Chemicals\u00bb","award":["DMR 1505234"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Journal
+        of Molecular Liquids"],"published-print":{"date-parts":[[2017,6]]},"DOI":"10.1016\/j.molliq.2017.01.020","type":"journal-article","created":{"date-parts":[[2017,1,9]],"date-time":"2017-01-09T19:46:18Z","timestamp":1483991178000},"page":"68-76","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Synthesis
+        and properties of protic hydroxylic ionic liquids with two types of basic
+        centers in their composition"],"prefix":"10.1016","volume":"235","author":[{"given":"V.V.","family":"Shevchenko","affiliation":[]},{"given":"M.A.","family":"Gumenna","affiliation":[]},{"given":"V.F.","family":"Korolovych","affiliation":[]},{"given":"A.V.","family":"Stryutsky","affiliation":[]},{"given":"V.V.","family":"Trachevsky","affiliation":[]},{"given":"O.","family":"Hrebnov","affiliation":[]},{"given":"V.V.","family":"Klepko","affiliation":[]},{"given":"N.S.","family":"Klymenko","affiliation":[]},{"given":"V.F.","family":"Shumsky","affiliation":[]},{"given":"V.V.","family":"Davydenko","affiliation":[]},{"given":"P.A.","family":"Ledin","affiliation":[]}],"member":"78","container-title":["Journal
+        of Molecular Liquids"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0167732216332135?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0167732216332135?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,5,8]],"date-time":"2017-05-08T20:02:21Z","timestamp":1494273741000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,6]]},"references-count":45,"alternative-id":["S0167732216332135"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.molliq.2017.01.020","relation":{},"ISSN":["0167-7322"],"issn-type":[{"value":"0167-7322","type":"print"}],"subject":["Physical
+        and Theoretical Chemistry","Spectroscopy","Materials Chemistry","Atomic and
+        Molecular Physics, and Optics","Electronic, Optical and Magnetic Materials","Condensed
+        Matter Physics"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Synthesis and properties of protic hydroxylic
+        ionic liquids with two types of basic centers in their composition","name":"articletitle","label":"Article
+        Title"},{"value":"Journal of Molecular Liquids","name":"journaltitle","label":"Journal
+        Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.molliq.2017.01.020","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"Published by Elsevier B.V.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T00:48:24Z","timestamp":1495673304850},"reference-count":27,"publisher":"Informa
+        UK Limited","funder":[{"DOI":"10.13039\/100000169","name":"Division of Behavioral
+        and Cognitive Sciences","doi-asserted-by":"publisher","award":["BCS 0217299
+        and BCS 0907901"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Medical
+        Anthropology"],"DOI":"10.1080\/01459740.2016.1276904","type":"journal-article","created":{"date-parts":[[2017,1,6]],"date-time":"2017-01-06T20:53:01Z","timestamp":1483735981000},"page":"1-13","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Searching
+        for Love and Test-Tube Babies: Iraqi Refugee Men in Reproductive Exile on
+        the Margins of Detroit"],"prefix":"10.1080","author":[{"given":"Marcia C.","family":"Inhorn","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2017,1,6]]},"reference":[{"key":"CIT0001","author":"Abbey-Lambertz
+        K.","year":"2014","volume-title":"Most Detroit families can\u2019t afford
+        their basic needs: Report"},{"key":"CIT0002","author":"Abraham N.","year":"2011","volume-title":"Arab
+        Detroit 9\/11: Life in the Terror Decade"},{"key":"CIT0003","author":"Abraham
+        N.","year":"2000","volume-title":"Arab Detroit: From Margin to Mainstream"},{"key":"CIT0004","author":"Bouffard
+        K.","year":"2015","volume-title":"Census bureau: Detroit is poorest big city
+        in US. The Detroit News"},{"key":"CIT0005","DOI":"10.1111\/j.1360-0443.2011.03615.x"},{"key":"CIT0006","DOI":"10.1146\/annurev.publhealth.27.021405.102103"},{"key":"CIT0007","DOI":"10.2105\/AJPH.2016.303155"},{"key":"CIT0008","author":"Campbell
+        M. O.","year":"2016","volume-title":"Interpreters of Occupation: Gender and
+        the Politics of Belonging in an Iraqi Refugee Network"},{"key":"CIT0009","DOI":"10.1093\/humupd\/dmq013"},{"key":"CIT0010","author":"Davey
+        M.","year":"2014","volume-title":"Detroit is out of bankruptcy, but not out
+        of the woods"},{"key":"CIT0011","author":"Detroit Arab American Study Team","year":"2009","volume-title":"Citizenship
+        and Crisis: Arab Detroit after 9\/11"},{"key":"CIT0012","DOI":"10.4324\/9780203414965"},{"key":"CIT0013","author":"Gutmann
+        M.","year":"2007","volume-title":"Fixing Men: Sex, Birth Control, and AIDS
+        in Mexico"},{"key":"CIT0014","author":"Human Rights Institute, Georgetown
+        University Law Center","year":"2009","volume-title":"Refugee Crisis in America:
+        Iraqis and Their Resettlement Experience"},{"key":"CIT0015","author":"Inhorn
+        M. C","year":"1996","volume-title":"Infertility and Patriarchy: The Cultural
+        Politics of Gender and Patriarchy in Egypt"},{"key":"CIT0016","author":"\u2014\u2014\u2014","year":"2003","volume-title":"Local
+        Babies, Global Science: Gender, Religion, and In Vitro Fertilization in Egypt"},{"key":"CIT0017","author":"\u2014\u2014\u2014","year":"2012","volume-title":"The
+        New Arab Man: Emergent Masculinities, Technologies, and Islam in the Middle
+        East"},{"key":"CIT0018","author":"\u2014\u2014\u2014","year":"2015","volume-title":"Cosmopolitan
+        Conceptions: IVF Sojourns in Global Dubai"},{"key":"CIT0019","DOI":"10.111\/maq.12275"},{"key":"CIT0020","author":"Maraniss
+        D.","year":"2015","volume-title":"Once in a Great City: A Detroit Story"},{"key":"CIT0021","DOI":"10.1016\/S0010-7824(01)00304-3"},{"key":"CIT0022","DOI":"10.1080\/01459740.2011.576725"},{"key":"CIT0023","author":"Sadik
+        S.","volume":"8","first-page":"39","year":"2011","journal-title":"Mental Health
+        in Family Medicine"},{"key":"CIT0024","author":"Schopmeyer K.","first-page":"29","year":"2011","volume-title":"In
+        Arab Detroit 9\/11: Life in the Terror Decade"},{"key":"CIT0025","author":"Sheppard
+        C.","volume":"3","first-page":"2011","year":"2011","journal-title":"March"},{"key":"CIT0026","author":"Svab
+        P.","year":"2013","volume-title":"110,000 Iraqi refugees in US, where are
+        they? The Epoch Times"},{"key":"CIT0027","DOI":"10.1007\/s10903-013-9893-6"}],"container-title":["Medical
+        Anthropology"],"original-title":[],"deposited":{"date-parts":[[2017,2,24]],"date-time":"2017-02-24T12:16:35Z","timestamp":1487938595000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017,1,6]]},"references-count":27,"alternative-id":["10.1080\/01459740.2016.1276904"],"URL":"http:\/\/dx.doi.org\/10.1080\/01459740.2016.1276904","relation":{"cites":[]},"ISSN":["0145-9740","1545-5882"],"issn-type":[{"value":"0145-9740","type":"print"},{"value":"1545-5882","type":"electronic"}],"subject":["Medicine(all)"],"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gmea20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gmea20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T12:20:14Z","timestamp":1495714814612},"reference-count":79,"publisher":"Royal
+        Society of Chemistry (RSC)","issue":"5","funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["DMR-1121107"]}],"content-domain":{"domain":["rsc.org"],"crossmark-restriction":true},"short-container-title":["Chem.
+        Sci."],"DOI":"10.1039\/c7sc00057j","type":"journal-article","created":{"date-parts":[[2017,2,23]],"date-time":"2017-02-23T10:56:09Z","timestamp":1487847369000},"page":"3832-3837","update-policy":"http:\/\/dx.doi.org\/10.1039\/rsc_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Shape-transformable
+        liquid metal nanoparticles in aqueous solution"],"prefix":"10.1039","volume":"8","author":[{"ORCID":"http:\/\/orcid.org\/0000-0001-9403-9464","authenticated-orcid":false,"given":"Yiliang","family":"Lin","affiliation":[]},{"given":"Yang","family":"Liu","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1633-238X","authenticated-orcid":false,"given":"Jan","family":"Genzer","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-1251-1871","authenticated-orcid":false,"given":"Michael
+        D.","family":"Dickey","affiliation":[]}],"member":"292","published-online":{"date-parts":[[2017]]},"reference":[{"key":"C7SC00057J-(cit1)\/*[position()=1]","author":"Clarkson","volume":"36","first-page":"609","year":"2006","journal-title":"Crit.
+        Rev. Toxicol.","DOI":"10.1080\/10408440600845619"},{"key":"C7SC00057J-(cit2)\/*[position()=1]","author":"Dickey","volume":"18","first-page":"1097","year":"2008","journal-title":"Adv.
+        Funct. Mater.","DOI":"10.1002\/adfm.200701216"},{"key":"C7SC00057J-(cit3)\/*[position()=1]","author":"Liu","volume":"21","first-page":"443","year":"2012","journal-title":"J.
+        Microelectromech. Syst.","DOI":"10.1109\/JMEMS.2011.2174421"},{"key":"C7SC00057J-(cit4)\/*[position()=1]","author":"Geiger","volume":"8","first-page":"425","year":"1987","journal-title":"Int.
+        J. Thermophys.","DOI":"10.1007\/BF00567103"},{"key":"C7SC00057J-(cit5a)\/*[position()=1]","author":"Haynes","year":"2014","unstructured":"  W.
+        M. Haynes , CRC Handbook of Chemistry and Physics, CRC Press, 95th edn, 2014","volume-title":"CRC
+        Handbook of Chemistry and Physics"},{"key":"C7SC00057J-(cit5b)\/*[position()=1]","author":"Lu","volume":"6","first-page":"10066","year":"2015","journal-title":"Nat.
+        Commun.","DOI":"10.1038\/ncomms10066"},{"key":"C7SC00057J-(cit6a)\/*[position()=1]","author":"Dickey","volume":"6","first-page":"18369","year":"2014","journal-title":"ACS
+        Appl. Mater. Interfaces","DOI":"10.1021\/am5043017"},{"key":"C7SC00057J-(cit6b)\/*[position()=1]","author":"Khoshmanesh","year":"2017","journal-title":"Lab
+        Chip","DOI":"10.1039\/c7lc00046d"},{"key":"C7SC00057J-(cit7a)\/*[position()=1]","author":"Palleau","volume":"25","first-page":"1589","year":"2013","journal-title":"Adv.
+        Mater.","DOI":"10.1002\/adma.201203921"},{"key":"C7SC00057J-(cit7b)\/*[position()=1]","author":"Zhu","volume":"23","first-page":"2308","year":"2013","journal-title":"Adv.
+        Funct. Mater.","DOI":"10.1002\/adfm.201202405"},{"key":"C7SC00057J-(cit7c)\/*[position()=1]","author":"Mineart","volume":"9","first-page":"7695","year":"2013","journal-title":"Soft
+        Matter","DOI":"10.1039\/c3sm51136g"},{"key":"C7SC00057J-(cit8)\/*[position()=1]","author":"Lin","volume":"11","first-page":"6397","year":"2015","journal-title":"Small","DOI":"10.1002\/smll.201502692"},{"key":"C7SC00057J-(cit9a)\/*[position()=1]","author":"Lazarus","volume":"5","first-page":"78695","year":"2015","journal-title":"RSC
+        Adv.","DOI":"10.1039\/C5RA17479A"},{"key":"C7SC00057J-(cit9b)\/*[position()=1]","author":"Lazarus","volume":"23","first-page":"85036","year":"2014","journal-title":"Smart
+        Mater. Struct.","DOI":"10.1088\/0964-1726\/23\/8\/085036"},{"key":"C7SC00057J-(cit10a)\/*[position()=1]","author":"Cheng","volume":"94","first-page":"144103","year":"2009","journal-title":"Appl.
+        Phys. Lett.","DOI":"10.1063\/1.3114381"},{"key":"C7SC00057J-(cit10b)\/*[position()=1]","author":"Hayes","volume":"60","first-page":"2151","year":"2012","journal-title":"IEEE
+        Trans. Antennas Propag.","DOI":"10.1109\/TAP.2012.2189698"},{"key":"C7SC00057J-(cit10c)\/*[position()=1]","author":"Huang","volume":"14","first-page":"4205","year":"2014","journal-title":"Lab
+        Chip","DOI":"10.1039\/C4LC00762J"},{"key":"C7SC00057J-(cit10d)\/*[position()=1]","author":"Khan","volume":"99","first-page":"13501","year":"2011","journal-title":"Appl.
+        Phys. Lett.","DOI":"10.1063\/1.3603961"},{"key":"C7SC00057J-(cit10e)\/*[position()=1]","author":"Kubo","volume":"22","first-page":"2749","year":"2010","journal-title":"Adv.
+        Mater.","DOI":"10.1002\/adma.200904201"},{"key":"C7SC00057J-(cit10f)\/*[position()=1]","author":"Morishita","volume":"12","first-page":"1388","year":"2013","journal-title":"IEEE
+        Antenn. Wireless Propag. Lett.","DOI":"10.1109\/LAWP.2013.2286544"},{"key":"C7SC00057J-(cit10g)\/*[position()=1]","author":"So","volume":"19","first-page":"3632","year":"2009","journal-title":"Adv.
+        Funct. Mater.","DOI":"10.1002\/adfm.200900604"},{"key":"C7SC00057J-(cit10h)\/*[position()=1]","author":"Jobs","volume":"9","first-page":"3230","year":"2013","journal-title":"Small"},{"key":"C7SC00057J-(cit11a)\/*[position()=1]","author":"Tang","volume":"111","first-page":"3304","year":"2014","journal-title":"Proc.
+        Natl. Acad. Sci. U. S. A.","DOI":"10.1073\/pnas.1319878111"},{"key":"C7SC00057J-(cit11b)\/*[position()=1]","author":"Gao","volume":"14","first-page":"1866","year":"2014","journal-title":"Lab
+        Chip","DOI":"10.1039\/c4lc00111g"},{"key":"C7SC00057J-(cit12a)\/*[position()=1]","author":"So","volume":"11","first-page":"905","year":"2011","journal-title":"Lab
+        Chip","DOI":"10.1039\/c0lc00501k"},{"key":"C7SC00057J-(cit12b)\/*[position()=1]","author":"Hallfors","volume":"13","first-page":"522","year":"2013","journal-title":"Lab
+        Chip","DOI":"10.1039\/C2LC40954B"},{"key":"C7SC00057J-(cit12c)\/*[position()=1]","author":"Richards","volume":"22","first-page":"115012","year":"2012","journal-title":"J.
+        Micromech. Microeng.","DOI":"10.1088\/0960-1317\/22\/11\/115012"},{"key":"C7SC00057J-(cit13a)\/*[position()=1]","author":"Lipomi","volume":"6","first-page":"788","year":"2011","journal-title":"Nat.
+        Nanotechnol.","DOI":"10.1038\/nnano.2011.184"},{"key":"C7SC00057J-(cit13b)\/*[position()=1]","author":"Majidi","volume":"20","first-page":"105017","year":"2011","journal-title":"Smart
+        Mater. Struct.","DOI":"10.1088\/0964-1726\/20\/10\/105017"},{"key":"C7SC00057J-(cit13c)\/*[position()=1]","author":"Meng\u00fc\u00e7","first-page":"278364914543793","year":"2014","journal-title":"Int.
+        J. Robot. Res."},{"key":"C7SC00057J-(cit13d)\/*[position()=1]","author":"Park","volume":"20","first-page":"125029","year":"2010","journal-title":"J.
+        Micromech. Microeng.","DOI":"10.1088\/0960-1317\/20\/12\/125029"},{"key":"C7SC00057J-(cit13e)\/*[position()=1]","author":"Ponce
+        Wong","volume":"179","first-page":"62","year":"2012","journal-title":"Sens.
+        Actuators, A","DOI":"10.1016\/j.sna.2012.03.023"},{"key":"C7SC00057J-(cit13f)\/*[position()=1]","author":"Kramer","year":"2011","unstructured":"  R.
+        K. Kramer , C.Majidi, R.Sahai and R. J.Wood, in 2011 IEEE\/RSJ International
+        Conference on Intelligent Robots and Systems (IROS), 2011, pp. 1919\u20131926","volume-title":"2011
+        IEEE\/RSJ International Conference on Intelligent Robots and Systems (IROS)"},{"key":"C7SC00057J-(cit14)\/*[position()=1]","author":"Koo","volume":"23","first-page":"3559","year":"2011","journal-title":"Adv.
+        Mater.","DOI":"10.1002\/adma.201101257"},{"key":"C7SC00057J-(cit15)\/*[position()=1]","author":"Tang","volume":"24","first-page":"5851","year":"2014","journal-title":"Adv.
+        Funct. Mater.","DOI":"10.1002\/adfm.201400689"},{"key":"C7SC00057J-(cit16)\/*[position()=1]","author":"Tang","volume":"12","first-page":"3861","year":"2016","journal-title":"Small","DOI":"10.1002\/smll.201600737"},{"key":"C7SC00057J-(cit17)\/*[position()=1]","author":"Boley","volume":"27","first-page":"2355","year":"2015","journal-title":"Adv.
+        Mater.","DOI":"10.1002\/adma.201404790"},{"key":"C7SC00057J-(cit18)\/*[position()=1]","author":"Hoshyargar","volume":"139","first-page":"1464","year":"2017","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/jacs.6b05957"},{"key":"C7SC00057J-(cit19)\/*[position()=1]","author":"Mohammed","volume":"4","first-page":"465","year":"2014","journal-title":"Metals","DOI":"10.3390\/met4040465"},{"key":"C7SC00057J-(cit20a)\/*[position()=1]","author":"Thelen","volume":"12","first-page":"3961","year":"2012","journal-title":"Lab
+        Chip","DOI":"10.1039\/c2lc40492c"},{"key":"C7SC00057J-(cit20b)\/*[position()=1]","author":"Tang","volume":"28","first-page":"604","year":"2016","journal-title":"Adv.
+        Mater.","DOI":"10.1002\/adma.201503875"},{"key":"C7SC00057J-(cit20c)\/*[position()=1]","author":"Hutter","volume":"22","first-page":"2624","year":"2012","journal-title":"Adv.
+        Funct. Mater.","DOI":"10.1002\/adfm.201200324"},{"key":"C7SC00057J-(cit21)\/*[position()=1]","author":"Hohman","volume":"11","first-page":"5104","year":"2011","journal-title":"Nano
+        Lett.","DOI":"10.1021\/nl202728j"},{"key":"C7SC00057J-(cit22)\/*[position()=1]","author":"Yamaguchi","volume":"54","first-page":"12809","year":"2015","journal-title":"Angew.
+        Chem., Int. Ed.","DOI":"10.1002\/anie.201506469"},{"key":"C7SC00057J-(cit23a)\/*[position()=1]","author":"Venkataraman","volume":"63","first-page":"1228","year":"2011","journal-title":"Adv.
+        Drug Delivery Rev.","DOI":"10.1016\/j.addr.2011.06.016"},{"key":"C7SC00057J-(cit23b)\/*[position()=1]","author":"Champion","volume":"121","first-page":"3","year":"2007","journal-title":"J.
+        Controlled Release","DOI":"10.1016\/j.jconrel.2007.03.022"},{"key":"C7SC00057J-(cit24a)\/*[position()=1]","author":"Narayanan","volume":"109","first-page":"12663","year":"2005","journal-title":"J.
+        Phys. Chem. B","DOI":"10.1021\/jp051066p"},{"key":"C7SC00057J-(cit24b)\/*[position()=1]","author":"Tao","volume":"4","first-page":"310","year":"2008","journal-title":"Small","DOI":"10.1002\/smll.200701295"},{"key":"C7SC00057J-(cit25a)\/*[position()=1]","author":"Donev","volume":"303","first-page":"990","year":"2004","journal-title":"Science","DOI":"10.1126\/science.1093010"},{"key":"C7SC00057J-(cit25b)\/*[position()=1]","author":"Donev","volume":"75","first-page":"51304","year":"2007","journal-title":"Phys.
+        Rev. E: Stat., Nonlinear, Soft Matter Phys.","DOI":"10.1103\/PhysRevE.75.051304"},{"key":"C7SC00057J-(cit26a)\/*[position()=1]","author":"Cobley","volume":"4","first-page":"171","year":"2009","journal-title":"Plasmonics","DOI":"10.1007\/s11468-009-9088-0"},{"key":"C7SC00057J-(cit26b)\/*[position()=1]","author":"Murphy","volume":"109","first-page":"13857","year":"2005","journal-title":"J.
+        Phys. Chem. B","DOI":"10.1021\/jp0516846"},{"key":"C7SC00057J-(cit27a)\/*[position()=1]","author":"Lu","volume":"7","first-page":"1764","year":"2007","journal-title":"Nano
+        Lett.","DOI":"10.1021\/nl070838l"},{"key":"C7SC00057J-(cit27b)\/*[position()=1]","author":"Erlebacher","volume":"410","first-page":"450","year":"2001","journal-title":"Nature","DOI":"10.1038\/35068529"},{"key":"C7SC00057J-(cit28a)\/*[position()=1]","author":"Alfantazi","volume":"16","first-page":"687","year":"2003","journal-title":"Miner.
+        Eng.","DOI":"10.1016\/S0892-6875(03)00168-7"},{"key":"C7SC00057J-(cit28b)\/*[position()=1]","author":"Fortes","volume":"11","first-page":"447","year":"1998","journal-title":"Miner.
+        Eng.","DOI":"10.1016\/S0892-6875(98)00023-5"},{"key":"C7SC00057J-(cit28c)\/*[position()=1]","author":"Nishihama","volume":"38","first-page":"1032","year":"1999","journal-title":"Ind.
+        Eng. Chem. Res.","DOI":"10.1021\/ie980510q"},{"key":"C7SC00057J-(cit29)\/*[position()=1]","author":"Hoshyargar","volume":"51","first-page":"14026","year":"2015","journal-title":"Chem.
+        Commun.","DOI":"10.1039\/C5CC05246G"},{"key":"C7SC00057J-(cit30a)\/*[position()=1]","author":"Li","volume":"407","first-page":"7","year":"2005","journal-title":"Mater.
+        Sci. Eng., A","DOI":"10.1016\/j.msea.2005.05.066"},{"key":"C7SC00057J-(cit30b)\/*[position()=1]","author":"Zhao","volume":"107","first-page":"7574","year":"2003","journal-title":"J.
+        Phys. Chem. B","DOI":"10.1021\/jp027768l"},{"key":"C7SC00057J-(cit31a)\/*[position()=1]","author":"Alargova","volume":"20","first-page":"10371","year":"2004","journal-title":"Langmuir","DOI":"10.1021\/la048647a"},{"key":"C7SC00057J-(cit31b)\/*[position()=1]","author":"Binks","volume":"117","first-page":"3788","year":"2005","journal-title":"Angew.
+        Chem.","DOI":"10.1002\/ange.200462470"},{"key":"C7SC00057J-(cit31c)\/*[position()=1]","author":"Gonzenbach","volume":"45","first-page":"3526","year":"2006","journal-title":"Angew.
+        Chem., Int. Ed.","DOI":"10.1002\/anie.200503676"},{"key":"C7SC00057J-(cit32)\/*[position()=1]","author":"Karakashev","volume":"382","first-page":"132","year":"2011","journal-title":"Colloids
+        Surf., A","DOI":"10.1016\/j.colsurfa.2010.09.023"},{"key":"C7SC00057J-(cit33)\/*[position()=1]","author":"Avivi","volume":"121","first-page":"4196","year":"1999","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja9835584"},{"key":"C7SC00057J-(cit34a)\/*[position()=1]","author":"Horasawa","volume":"16","first-page":"200","year":"1997","journal-title":"Dent.
+        Mater. J.","DOI":"10.4012\/dmj.16.200"},{"key":"C7SC00057J-(cit34b)\/*[position()=1]","author":"Khan","volume":"25","first-page":"671","year":"2015","journal-title":"Adv.
+        Funct. Mater.","DOI":"10.1002\/adfm.201403042"},{"key":"C7SC00057J-(cit35)\/*[position()=1]","author":"French","volume":"42","first-page":"265","year":"1937","journal-title":"J.
+        Phys. Chem.","DOI":"10.1021\/j100897a011"},{"key":"C7SC00057J-(cit36)\/*[position()=1]","author":"Ren","volume":"26","first-page":"8111","year":"2016","journal-title":"Adv.
+        Funct. Mater.","DOI":"10.1002\/adfm.201603427"},{"key":"C7SC00057J-(cit37a)\/*[position()=1]","author":"Zhang","volume":"61","first-page":"1497","year":"2007","journal-title":"Mater.
+        Lett.","DOI":"10.1016\/j.matlet.2006.07.060"},{"key":"C7SC00057J-(cit37b)\/*[position()=1]","author":"Huang","volume":"34","first-page":"103","year":"2010","journal-title":"New
+        J. Chem.","DOI":"10.1039\/B9NJ00392D"},{"key":"C7SC00057J-(cit37c)\/*[position()=1]","author":"Zhao","volume":"111","first-page":"16290","year":"2007","journal-title":"J.
+        Phys. Chem. C","DOI":"10.1021\/jp075575y"},{"key":"C7SC00057J-(cit37d)\/*[position()=1]","author":"Zhao","volume":"112","first-page":"3568","year":"2008","journal-title":"J.
+        Phys. Chem. C","DOI":"10.1021\/jp710545p"},{"key":"C7SC00057J-(cit37e)\/*[position()=1]","author":"Quan","volume":"121","first-page":"142","year":"2010","journal-title":"Mater.
+        Chem. Phys.","DOI":"10.1016\/j.matchemphys.2010.01.009"},{"key":"C7SC00057J-(cit37f)\/*[position()=1]","author":"Sun","volume":"21","first-page":"355601","year":"2010","journal-title":"Nanotechnology","DOI":"10.1088\/0957-4484\/21\/35\/355601"},{"key":"C7SC00057J-(cit38)\/*[position()=1]","author":"Huang","volume":"108","first-page":"4940","year":"2004","journal-title":"J.
+        Phys. Chem. B","DOI":"10.1021\/jp037427n"},{"key":"C7SC00057J-(cit39a)\/*[position()=1]","author":"Friedman","volume":"20","first-page":"432","year":"2013","journal-title":"Ultrason.
+        Sonochem.","DOI":"10.1016\/j.ultsonch.2012.08.009"},{"key":"C7SC00057J-(cit39b)\/*[position()=1]","author":"Kumar","volume":"26","first-page":"340","year":"2015","journal-title":"Ultrason.
+        Sonochem.","DOI":"10.1016\/j.ultsonch.2015.03.012"},{"key":"C7SC00057J-(cit40)\/*[position()=1]","author":"Qian","volume":"8","first-page":"1282","year":"2008","journal-title":"Cryst.
+        Growth Des.","DOI":"10.1021\/cg701004w"}],"container-title":["Chem. Sci."],"original-title":[],"deposited":{"date-parts":[[2017,5,3]],"date-time":"2017-05-03T09:23:48Z","timestamp":1493803428000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017]]},"references-count":79,"URL":"http:\/\/dx.doi.org\/10.1039\/c7sc00057j","relation":{"cites":[]},"ISSN":["2041-6520","2041-6539"],"issn-type":[{"value":"2041-6520","type":"print"},{"value":"2041-6539","type":"electronic"}],"assertion":[{"value":"This
+        document is CrossCheck deposited","name":"crosscheck","explanation":{"URL":"http:\/\/www.crossref.org\/crosscheck\/index.html"},"group":{"name":"crosscheck","label":"CROSSCHECK"}},{"value":"Supplementary
+        Information","URL":"http:\/\/dx.doi.org\/10.1039\/C7SC00057J","name":"related_data","group":{"name":"related_data","label":"RELATED
+        DATA"}},{"value":"Yiliang Lin (ORCID)","URL":"http:\/\/orcid.org\/0000-0001-9403-9464","name":"identifier","group":{"name":"author_identifiers","label":"IDENTIFIERS"}},{"value":"Jan
+        Genzer (ORCID)","URL":"http:\/\/orcid.org\/0000-0002-1633-238X","name":"identifier","group":{"name":"author_identifiers","label":"IDENTIFIERS"}},{"value":"Michael
+        D. Dickey (ORCID)","URL":"http:\/\/orcid.org\/0000-0003-1251-1871","name":"identifier","group":{"name":"author_identifiers","label":"IDENTIFIERS"}},{"value":"The
+        Royal Society of Chemistry has an exclusive publication licence for this journal","name":"copyright_licence","group":{"name":"copyright_licensing","label":"COPYRIGHT
+        AND LICENSING"}},{"value":"This article is freely available. This article
+        is licensed under a Creative Commons Attribution Non Commercial 3.0 Unported
+        Licence (CC BY-NC 3.0)","URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","name":"copyright_licence","label":"OPEN
+        ACCESS","group":{"name":"copyright_licensing","label":"COPYRIGHT AND LICENSING"}},{"value":"Received
+        5 January 2017; Accepted 22 February 2017;  Accepted Manuscript published
+        23 February 2017;  Advance Article published 22 March 2017;  Version of Record
+        published 3 May 2017","order":1,"name":"history","group":{"name":"publication_history","label":"PUBLICATION
+        HISTORY"}}]},{"indexed":{"date-parts":[[2017,5,25]],"date-time":"2017-05-25T12:20:56Z","timestamp":1495714856173},"reference-count":48,"publisher":"Royal
+        Society of Chemistry (RSC)","issue":"17","funder":[{"DOI":"10.13039\/100000165","name":"Division
+        of Chemistry","doi-asserted-by":"publisher","award":["CHE-1565676"]}],"content-domain":{"domain":["rsc.org"],"crossmark-restriction":true},"short-container-title":["Dalton
+        Trans."],"DOI":"10.1039\/c7dt00066a","type":"journal-article","created":{"date-parts":[[2017,2,23]],"date-time":"2017-02-23T09:23:34Z","timestamp":1487841814000},"page":"5508-5512","update-policy":"http:\/\/dx.doi.org\/10.1039\/rsc_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["C4-Ferrocenylsilyl-bridged
+        and -substituted N-heterocyclic carbenes: complexation of germanium chloride"],"prefix":"10.1039","volume":"46","author":[{"given":"Yuzhong","family":"Wang","affiliation":[]},{"given":"Hunter
+        P.","family":"Hickox","affiliation":[]},{"given":"Pingrong","family":"Wei","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-2260-3019","authenticated-orcid":false,"given":"Gregory
+        H.","family":"Robinson","affiliation":[]}],"member":"292","published-online":{"date-parts":[[2017]]},"reference":[{"key":"C7DT00066A-(cit1)\/*[position()=1]","author":"Nolan","year":"2006","unstructured":"  S.
+        P. Nolan , N-Heterocyclic Carbenes in Synthesis, Wiley-VCH, Weinheim, 2006","volume-title":"N-Heterocyclic
+        Carbenes in Synthesis","DOI":"10.1002\/9783527609451"},{"key":"C7DT00066A-(cit2)\/*[position()=1]","author":"Bourissou","volume":"100","first-page":"39","year":"2000","journal-title":"Chem.
+        Rev.","DOI":"10.1021\/cr940472u"},{"key":"C7DT00066A-(cit3)\/*[position()=1]","author":"Carmalt","volume":"50","first-page":"1","year":"2000","journal-title":"Adv.
+        Inorg. Chem.","DOI":"10.1016\/S0898-8838(00)50001-4"},{"key":"C7DT00066A-(cit4)\/*[position()=1]","author":"Martin","volume":"30","first-page":"5304","year":"2011","journal-title":"Organometallics","DOI":"10.1021\/om200650x"},{"key":"C7DT00066A-(cit5)\/*[position()=1]","author":"Martin","volume":"2","first-page":"389","year":"2011","journal-title":"Chem.
+        Sci.","DOI":"10.1039\/C0SC00388C"},{"key":"C7DT00066A-(cit6)\/*[position()=1]","author":"Martin","volume":"4","first-page":"3020","year":"2013","journal-title":"Chem.
+        Sci.","DOI":"10.1039\/c3sc51174j"},{"key":"C7DT00066A-(cit7)\/*[position()=1]","author":"Ghadwal","volume":"46","first-page":"444","year":"2013","journal-title":"Acc.
+        Chem. Res.","DOI":"10.1021\/ar300196u"},{"key":"C7DT00066A-(cit8)\/*[position()=1]","author":"Roy","volume":"49","first-page":"357","year":"2016","journal-title":"Acc.
+        Chem. Res.","DOI":"10.1021\/acs.accounts.5b00381"},{"key":"C7DT00066A-(cit9)\/*[position()=1]","author":"Wilson","volume":"19","first-page":"13626","year":"2013","journal-title":"Chem.
+        \u2013 Eur. J.","DOI":"10.1002\/chem.201302715"},{"key":"C7DT00066A-(cit10)\/*[position()=1]","author":"Braunschweig","volume":"52","first-page":"3574","year":"2013","journal-title":"Angew.
+        Chem., Int. Ed.","DOI":"10.1002\/anie.201208189"},{"key":"C7DT00066A-(cit11)\/*[position()=1]","author":"Braunschweig","volume":"33","first-page":"6271","year":"2014","journal-title":"Organometallics","DOI":"10.1021\/om500875g"},{"key":"C7DT00066A-(cit12)\/*[position()=1]","author":"Rivard","volume":"43","first-page":"8577","year":"2014","journal-title":"Dalton
+        Trans.","DOI":"10.1039\/c4dt00481g"},{"key":"C7DT00066A-(cit13)\/*[position()=1]","author":"Prabusankar","volume":"269","first-page":"96","year":"2014","journal-title":"Coord.
+        Chem. Rev.","DOI":"10.1016\/j.ccr.2014.01.036"},{"key":"C7DT00066A-(cit14)\/*[position()=1]","author":"Wang","volume":"50","first-page":"12326","year":"2011","journal-title":"Inorg.
+        Chem.","DOI":"10.1021\/ic200675u"},{"key":"C7DT00066A-(cit15)\/*[position()=1]","author":"Wang","volume":"41","first-page":"337","year":"2012","journal-title":"Dalton
+        Trans.","DOI":"10.1039\/C1DT11165E"},{"key":"C7DT00066A-(cit16)\/*[position()=1]","author":"Wang","volume":"53","first-page":"11815","year":"2014","journal-title":"Inorg.
+        Chem.","DOI":"10.1021\/ic502231m"},{"key":"C7DT00066A-(cit17)\/*[position()=1]","author":"K\u00fchl","year":"2010","unstructured":"  O.
+        K\u00fchl , Functionalised N-Heterocyclic Carbene Complexes, Wiley, 2010","volume-title":"Functionalised
+        N-Heterocyclic Carbene Complexes","DOI":"10.1002\/9780470685839"},{"key":"C7DT00066A-(cit18)\/*[position()=1]","author":"Nguyen","volume":"99","first-page":"1515","year":"1999","journal-title":"Chem.
+        Rev.","DOI":"10.1021\/cr960113u"},{"key":"C7DT00066A-(cit19)\/*[position()=1]","author":"Bildstein","volume":"18","first-page":"4325","year":"1999","journal-title":"Organometallics","DOI":"10.1021\/om990377h"},{"key":"C7DT00066A-(cit20)\/*[position()=1]","author":"Bildstein","volume":"572","first-page":"177","year":"1999","journal-title":"J.
+        Organomet. Chem.","DOI":"10.1016\/S0022-328X(98)00943-7"},{"key":"C7DT00066A-(cit21)\/*[position()=1]","author":"Varnado","first-page":"7253","year":"2009","journal-title":"Dalton
+        Trans.","DOI":"10.1039\/b908696j"},{"key":"C7DT00066A-(cit22)\/*[position()=1]","author":"Rosen","volume":"28","first-page":"6695","year":"2009","journal-title":"Organometallics","DOI":"10.1021\/om900698x"},{"key":"C7DT00066A-(cit23)\/*[position()=1]","author":"Khramov","volume":"47","first-page":"2267","year":"2008","journal-title":"Angew.
+        Chem., Int. Ed.","DOI":"10.1002\/anie.200704978"},{"key":"C7DT00066A-(cit24)\/*[position()=1]","author":"Petrov","volume":"54","first-page":"6657","year":"2015","journal-title":"Inorg.
+        Chem.","DOI":"10.1021\/acs.inorgchem.5b01064"},{"key":"C7DT00066A-(cit25)\/*[position()=1]","author":"Bates","volume":"48","first-page":"9844","year":"2009","journal-title":"Angew.
+        Chem., Int. Ed.","DOI":"10.1002\/anie.200905401"},{"key":"C7DT00066A-(cit26)\/*[position()=1]","author":"Mendoza-Espinosa","volume":"132","first-page":"7264","year":"2010","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja102639a"},{"key":"C7DT00066A-(cit27)\/*[position()=1]","author":"Ghadwal","volume":"132","first-page":"10018","year":"2010","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja104386g"},{"key":"C7DT00066A-(cit28)\/*[position()=1]","author":"Ghadwal","volume":"43","first-page":"13704","year":"2014","journal-title":"Dalton
+        Trans.","DOI":"10.1039\/C4DT01681E"},{"key":"C7DT00066A-(cit29)\/*[position()=1]","author":"Wang","volume":"129","first-page":"12412","year":"2007","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja075932i"},{"key":"C7DT00066A-(cit30)\/*[position()=1]","author":"Wang","volume":"130","first-page":"3298","year":"2008","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja800257j"},{"key":"C7DT00066A-(cit31)\/*[position()=1]","author":"Wang","volume":"321","first-page":"1069","year":"2008","journal-title":"Science","DOI":"10.1126\/science.1160768"},{"key":"C7DT00066A-(cit32)\/*[position()=1]","author":"Wang","volume":"130","first-page":"14970","year":"2008","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja807828t"},{"key":"C7DT00066A-(cit33)\/*[position()=1]","author":"Abraham","volume":"16","first-page":"432","year":"2010","journal-title":"Chem.
+        \u2013 Eur. J.","DOI":"10.1002\/chem.200902840"},{"key":"C7DT00066A-(cit34)\/*[position()=1]","author":"Wang","volume":"7","first-page":"509","year":"2015","journal-title":"Nat.
+        Chem.","DOI":"10.1038\/nchem.2234"},{"key":"C7DT00066A-(cit35)\/*[position()=1]","author":"Wang","volume":"137","first-page":"8396","year":"2015","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/jacs.5b05202"},{"key":"C7DT00066A-(cit37)\/*[position()=1]","author":"Wang","volume":"132","first-page":"14370","year":"2010","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja106631r"},{"key":"C7DT00066A-(cit38)\/*[position()=1]","author":"Ghadwal","volume":"45","first-page":"16081","year":"2016","journal-title":"Dalton
+        Trans.","DOI":"10.1039\/C6DT02158A"},{"key":"C7DT00066A-(cit39)\/*[position()=1]","author":"Nasr","volume":"316","first-page":"68","year":"2016","journal-title":"Coord.
+        Chem. Rev.","DOI":"10.1016\/j.ccr.2016.02.011"},{"key":"C7DT00066A-(cit40)\/*[position()=1]","author":"Waters","volume":"293","first-page":"80","year":"2015","journal-title":"Coord.
+        Chem. Rev.","DOI":"10.1016\/j.ccr.2014.09.020"},{"key":"C7DT00066A-(cit41)\/*[position()=1]","author":"Wang","volume":"45","first-page":"5941","year":"2016","journal-title":"Dalton
+        Trans.","DOI":"10.1039\/C5DT03894D"},{"key":"C7DT00066A-(cit42)\/*[position()=1]","author":"Butler","volume":"4","first-page":"2196","year":"1985","journal-title":"Organometallics","DOI":"10.1021\/om00131a023"},{"key":"C7DT00066A-(cit43)\/*[position()=1]","author":"Poyatos","volume":"109","first-page":"3677","year":"2009","journal-title":"Chem.
+        Rev.","DOI":"10.1021\/cr800501s"},{"key":"C7DT00066A-(cit44)\/*[position()=1]","author":"Musgrave","volume":"34","first-page":"897","year":"2015","journal-title":"Organometallics","DOI":"10.1021\/om5012598"},{"key":"C7DT00066A-(cit45)\/*[position()=1]","author":"Ito","volume":"136","first-page":"6183","year":"2014","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja500465x"},{"key":"C7DT00066A-(cit46)\/*[position()=1]","author":"Sidiropoulos","volume":"48","first-page":"9701","year":"2009","journal-title":"Angew.
+        Chem., Int. Ed.","DOI":"10.1002\/anie.200905495"},{"key":"C7DT00066A-(cit47)\/*[position()=1]","author":"Mootz","volume":"533","first-page":"23","year":"1986","journal-title":"Z.
+        Anorg. Allg. Chem.","DOI":"10.1002\/zaac.19865330204"},{"key":"C7DT00066A-(cit48)\/*[position()=1]","author":"Simons","volume":"16","first-page":"1920","year":"1997","journal-title":"Organometallics","DOI":"10.1021\/om960929l"},{"key":"C7DT00066A-(cit49)\/*[position()=1]","author":"Twamley","volume":"121","first-page":"3357","year":"1999","journal-title":"J.
+        Am. Chem. Soc.","DOI":"10.1021\/ja983999n"}],"container-title":["Dalton Trans."],"original-title":[],"deposited":{"date-parts":[[2017,5,2]],"date-time":"2017-05-02T12:23:39Z","timestamp":1493727819000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2017]]},"references-count":48,"URL":"http:\/\/dx.doi.org\/10.1039\/c7dt00066a","relation":{"cites":[]},"ISSN":["1477-9226","1477-9234"],"issn-type":[{"value":"1477-9226","type":"print"},{"value":"1477-9234","type":"electronic"}],"subject":["Inorganic
+        Chemistry"],"assertion":[{"value":"This document is CrossCheck deposited","name":"crosscheck","explanation":{"URL":"http:\/\/www.crossref.org\/crosscheck\/index.html"},"group":{"name":"crosscheck","label":"CROSSCHECK"}},{"value":"Supplementary
+        Information","URL":"http:\/\/dx.doi.org\/10.1039\/C7DT00066A","name":"related_data","group":{"name":"related_data","label":"RELATED
+        DATA"}},{"value":"Crystal Structure Data","URL":"http:\/\/xlink.rsc.org?ccdc=true&msid=C7DT00066A","name":"related_data","group":{"label":"RELATED
+        DATA"}},{"value":"Gregory H. Robinson (ORCID)","URL":"http:\/\/orcid.org\/0000-0002-2260-3019","name":"identifier","group":{"name":"author_identifiers","label":"IDENTIFIERS"}},{"value":"The
+        Royal Society of Chemistry has an exclusive publication licence for this journal","name":"copyright_licence","group":{"name":"copyright_licensing","label":"COPYRIGHT
+        AND LICENSING"}},{"value":"Received 8 January 2017; Accepted 16 February 2017;  Advance
+        Article published 23 February 2017;  Version of Record published 2 May 2017","order":1,"name":"history","group":{"name":"publication_history","label":"PUBLICATION
+        HISTORY"}}]}]}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['116379']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 01:45:26 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

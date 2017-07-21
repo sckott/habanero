@@ -1,0 +1,35 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/types?query=journal
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":26,"items":[{"id":"book-section","label":"Book
+        Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"book-track","label":"Book
+        Track"},{"id":"journal-article","label":"Journal Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
+        Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
+        Entry"},{"id":"proceedings-article","label":"Proceedings Article"},{"id":"journal","label":"Journal"},{"id":"component","label":"Component"},{"id":"book-chapter","label":"Book
+        Chapter"},{"id":"report-series","label":"Report Series"},{"id":"proceedings","label":"Proceedings"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
+        Book"},{"id":"posted-content","label":"Posted Content"},{"id":"journal-issue","label":"Journal
+        Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
+        Series"},{"id":"edited-book","label":"Edited Book"},{"id":"standard-series","label":"Standard
+        Series"}]}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['1216']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 01:58:25 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

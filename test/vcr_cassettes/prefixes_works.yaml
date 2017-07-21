@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"items-per-page":20,"query":{"start-index":0,"search-terms":null},"total-results":15023195,"items":[{"indexed":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T16:14:09Z","timestamp":1497716049832},"reference-count":39,"publisher":"Elsevier
+        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2007,1,1]],"date-time":"2007-01-01T00:00:00Z","timestamp":1167609600000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["International
+        Biodeterioration & Biodegradation"],"published-print":{"date-parts":[[2007,1]]},"DOI":"10.1016\/j.ibiod.2007.02.001","type":"journal-article","created":{"date-parts":[[2007,3,24]],"date-time":"2007-03-24T11:06:19Z","timestamp":1174734379000},"page":"116-125","source":"Crossref","is-referenced-by-count":0,"title":["Organic
+        matter evolution and partial detoxification in two-phase olive mill waste
+        colonized by white-rot fungi"],"prefix":"10.1016","volume":"60","author":[{"given":"Inmaculada","family":"Sampedro","affiliation":[]},{"given":"Sara","family":"Marinari","affiliation":[]},{"given":"Alessandro","family":"D\u2019Annibale","affiliation":[]},{"given":"Stefano","family":"Grego","affiliation":[]},{"given":"Juan
+        A.","family":"Ocampo","affiliation":[]},{"given":"Inmaculada","family":"Garc\u00eda-Romera","affiliation":[]}],"member":"78","container-title":["International
+        Biodeterioration & Biodegradation"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0964830507000182?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0964830507000182?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T15:39:36Z","timestamp":1497713976000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2007,1]]},"references-count":39,"alternative-id":["S0964830507000182"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.ibiod.2007.02.001","relation":{},"ISSN":["0964-8305"],"issn-type":[{"value":"0964-8305","type":"print"}]},{"indexed":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T18:53:26Z","timestamp":1497552806705},"reference-count":12,"publisher":"Elsevier
+        BV","issue":"1","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1976,2,1]],"date-time":"1976-02-01T00:00:00Z","timestamp":191980800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Clinica
+        Chimica Acta"],"published-print":{"date-parts":[[1976,2]]},"DOI":"10.1016\/0009-8981(76)90219-9","type":"journal-article","created":{"date-parts":[[2003,2,11]],"date-time":"2003-02-11T21:17:38Z","timestamp":1044998258000},"page":"79-83","source":"Crossref","is-referenced-by-count":0,"title":["Electrophoresis
+        of \u03b3-glutamyltranspeptidase on cellogel. The appearance of the \u03b12-\u03b2
+        band in positive LP-X sera"],"prefix":"10.1016","volume":"67","author":[{"given":"C.P.","family":"Degenaar","affiliation":[]},{"given":"Carla","family":"Thijssen","affiliation":[]},{"given":"G.","family":"Van
+        Der Wal","affiliation":[]},{"given":"G.T.","family":"Berends","affiliation":[]}],"member":"78","container-title":["Clinica
+        Chimica Acta"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0009898176902199?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0009898176902199?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T18:13:57Z","timestamp":1497550437000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1976,2]]},"references-count":12,"alternative-id":["0009898176902199"],"URL":"http:\/\/dx.doi.org\/10.1016\/0009-8981(76)90219-9","relation":{},"ISSN":["0009-8981"],"issn-type":[{"value":"0009-8981","type":"print"}],"subject":["Clinical
+        Biochemistry","Biochemistry","Biochemistry, medical"]}]}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['4444']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 01:57:23 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

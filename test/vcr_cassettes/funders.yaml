@@ -1,0 +1,28 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/funders?rows=2
+  response:
+    body: {string: !!python/unicode '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":14811,"items":[{"id":"501100000314","location":"United
+        Kingdom","name":"ABBEY AWARDS","alt-names":["Abbey"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100000314","replaces":[],"replaced-by":[],"tokens":["abbey","awards","abbey"]},{"id":"501100001316","location":"United
+        Kingdom","name":"University of Kent","alt-names":[],"uri":"http:\/\/dx.doi.org\/10.13039\/501100001316","replaces":[],"replaced-by":[],"tokens":["university","of","kent"]}]}}'}
+    headers:
+      access-control-allow-headers: [X-Requested-With]
+      access-control-allow-origin: ['*']
+      connection: [close]
+      content-length: ['604']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 21 Jul 2017 01:45:23 GMT']
+      server: [http-kit]
+      vary: [Accept]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

@@ -1,0 +1,29 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+    method: GET
+    uri: https://api.crossref.org/works?cursor=thing&query=widget
+  response:
+    body: {string: !!python/unicode '{"status":"error","message-type":"exception","message-version":"1.0.0","message":{"name":"class
+        org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException","description":"org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException:
+        Error from server at http:\/\/mds9:8983\/solr\/crmds1: Unable to parse ''cursorMark''
+        after totem: value must either be ''*'' or the ''nextCursorMark'' returned
+        by a previous search: thing","message":"Error from server at http:\/\/mds9:8983\/solr\/crmds1:
+        Unable to parse ''cursorMark'' after totem: value must either be ''*'' or
+        the ''nextCursorMark'' returned by a previous search: thing","cause":null}}'}
+    headers:
+      connection: [close]
+      content-length: ['644']
+      date: ['Fri, 21 Jul 2017 01:42:12 GMT']
+      exception-name: [class org.apache.solr.client.solrj.impl.HttpSolrClient$RemoteSolrException]
+      server: [http-kit]
+      x-rate-limit-interval: [1s]
+      x-rate-limit-limit: ['10']
+    status: {code: 500, message: Internal Server Error}
+version: 1

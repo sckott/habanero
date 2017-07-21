@@ -1,12 +1,14 @@
 """Tests for cursor"""
 from nose.tools import *
 import os
+import vcr
 from habanero import exceptions
 from requests import exceptions as ex
 
 from habanero import Crossref
 cr = Crossref()
 
+@vcr.use_cassette('test/vcr_cassettes/cursor.yaml')
 def test_cursor():
     "cursor works - basic test"
     res = cr.works(query = "widget", cursor = "*", cursor_max = 10)
@@ -15,6 +17,7 @@ def test_cursor():
     assert 4 == len(res)
     assert 6 == len(res['message'])
 
+@vcr.use_cassette('test/vcr_cassettes/cursor_cursormax.yaml')
 def test_cursor_max():
     "cursor works - cursor_max works"
     res1 = cr.works(query = "widget", cursor = "*", cursor_max = 60)
@@ -29,11 +32,13 @@ def test_cursor_max():
     assert 40 == len(items2)
 
 @raises(ex.HTTPError)
+@vcr.use_cassette('test/vcr_cassettes/cursor_err1.yaml')
 def test_cursor_fails_cursor_value():
     "cursor works - fails when cursor value bad"
     cr.works(query = "widget", cursor = "thing")
 
 @raises(ValueError)
+@vcr.use_cassette('test/vcr_cassettes/cursor_err2.yaml')
 def test_cursor_fails_cursor_max():
     "cursor works - fails when cursor_max value bad"
     cr.works(query = "widget", cursor = "*", cursor_max = "thing")
