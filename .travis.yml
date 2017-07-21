@@ -10,6 +10,7 @@ python:
 install:
   - pip install 'requests>=2.7'
   - pip install coveralls
+  - pip install vcrpy
 
 script:
   - nosetests -v --cover-package=habanero
