@@ -9,7 +9,7 @@ from .request_class import Request
 
 def request(mailto, url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
-        order = None, facet = None, works = None,
+        order = None, facet = None, select = None, works = None,
         cursor = None, cursor_max = None, agency = False, **kwargs):
 
   url = url + path
@@ -19,10 +19,13 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
       raise ValueError("cursor_max must be of class int")
 
   filt = filter_handler(filter)
+  if select.__class__ is list:
+    select = ','.join(select)
 
   payload = {'query':query, 'filter':filt, 'offset':offset,
              'rows':limit, 'sample':sample, 'sort':sort,
-             'order':order, 'facet':facet, 'cursor':cursor}
+             'order':order, 'facet':facet, 'select':select,
+             'cursor':cursor}
   payload = dict((k, v) for k, v in payload.items() if v)
   # add query filters
   payload.update(filter_dict(kwargs))
@@ -54,7 +57,7 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
       if works:
         res = Request(mailto, url, str(ids[i]) + "/works",
           query, filter, offset, limit, sample, sort,
-          order, facet, cursor, cursor_max, **kwargs).do_request()
+          order, facet, select, cursor, cursor_max, **kwargs).do_request()
         coll.append(res)
       else:
         if agency:

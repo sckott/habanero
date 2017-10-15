@@ -5,13 +5,13 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.1 habanero/0.5.0.2]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.5.0.2]
     method: GET
     uri: https://api.crossref.org/members/98/works?rows=7&query.author=carl+boettiger
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"items-per-page":7,"query":{"start-index":0,"search-terms":null},"total-results":241,"items":[{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T21:15:03Z","timestamp":1495919703014},"reference-count":0,"publisher":"Hindawi
-        Publishing Corporation","issue":"3-4","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1997,1,1]],"date-time":"1997-01-01T00:00:00Z","timestamp":852076800000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Abstract
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":244,"items":[{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T13:37:42Z","timestamp":1502199462632},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"3-4","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1997,1,1]],"date-time":"1997-01-01T00:00:00Z","timestamp":852076800000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Abstract
         and Applied Analysis"],"published-print":{"date-parts":[[1997]]},"abstract":"<jats:p>In
         this paper we consider a quasilinear parabolic equation in a bounded domain
         under periodic Dirichlet boundary conditions. Our main goal is to prove the
@@ -23,9 +23,9 @@ interactions:
         of extremal periodic solutions for quasilinear parabolic equations"],"prefix":"10.1155","volume":"2","author":[{"given":"Siegfried","family":"Carl","affiliation":[{"name":"Martin-Luther-Universit\u00e4t
         Halle-Wittenberg, Fachbereich Mathematik und Informatik, Institut f\u00fcr
         Analysis, Halle D-06099, Germany"}]}],"member":"98","container-title":["Abstract
-        and Applied Analysis"],"original-title":[],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/aaa\/1997\/743028.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T14:37:29Z","timestamp":1471963049000},"score":9.621031,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997]]},"references-count":0,"alternative-id":["743028"],"URL":"http:\/\/dx.doi.org\/10.1155\/s1085337597000389","relation":{},"ISSN":["1085-3375"],"issn-type":[{"value":"1085-3375","type":"print"}],"subject":["Applied
-        Mathematics","Analysis"]},{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T21:14:43Z","timestamp":1495919683323},"reference-count":0,"publisher":"Hindawi
-        Publishing Corporation","issue":"8","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[2001,1,1]],"date-time":"2001-01-01T00:00:00Z","timestamp":978307200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["International
+        and Applied Analysis"],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/aaa\/1997\/743028.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/aaa\/1997\/743028.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T14:37:29Z","timestamp":1471963049000},"score":9.653286,"issued":{"date-parts":[[1997]]},"references-count":0,"alternative-id":["743028"],"URL":"http:\/\/dx.doi.org\/10.1155\/s1085337597000389","ISSN":["1085-3375"],"issn-type":[{"value":"1085-3375","type":"print"}],"subject":["Applied
+        Mathematics","Analysis"]},{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T13:37:13Z","timestamp":1502199433419},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"8","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[2001,1,1]],"date-time":"2001-01-01T00:00:00Z","timestamp":978307200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["International
         Journal of Mathematics and Mathematical Sciences"],"published-print":{"date-parts":[[2001]]},"abstract":"<jats:p>Let<mml:math
         xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$L = (1 -
         z^2)D^2 - 2zD$\"><mml:mi>L<\/mml:mi><mml:mo>=<\/mml:mo><mml:mrow><mml:mo>(<\/mml:mo><mml:mrow><mml:mn>1<\/mml:mn><mml:mo>\u2212<\/mml:mo><mml:msup><mml:mi>z<\/mml:mi><mml:mn>2<\/mml:mn><\/mml:msup><\/mml:mrow><mml:mo>)<\/mml:mo><\/mml:mrow><mml:msup><mml:mi>D<\/mml:mi><mml:mn>2<\/mml:mn><\/mml:msup><mml:mo>\u2212<\/mml:mo><mml:mn>2<\/mml:mn><mml:mi>z<\/mml:mi><mml:mi>D<\/mml:mi><\/mml:math>,<mml:math
@@ -47,66 +47,90 @@ interactions:
         alttext=\"$O(k \\ln k)$\"><mml:mi>O<\/mml:mi><mml:mrow><mml:mo>(<\/mml:mo><mml:mrow><mml:mi>k<\/mml:mi><mml:mo>ln<\/mml:mo><mml:mi>k<\/mml:mi><\/mml:mrow><mml:mo>)<\/mml:mo><\/mml:mrow><\/mml:math>.<\/jats:p>","DOI":"10.1155\/s0161171201006056","type":"journal-article","created":{"date-parts":[[2002,9,16]],"date-time":"2002-09-16T12:00:16Z","timestamp":1032177616000},"page":"461-467","source":"Crossref","is-referenced-by-count":1,"title":["On
         the number of zeros of iterated operators on analytic Legendre expansions"],"prefix":"10.1155","volume":"28","author":[{"given":"Carl","family":"Prather","affiliation":[{"name":"Department
         of Mathematics, Virginia Tech, Blacksburg 24061-0123, VA, USA"}]}],"member":"98","container-title":["International
-        Journal of Mathematics and Mathematical Sciences"],"original-title":[],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/ijmms\/2001\/386745.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T08:57:38Z","timestamp":1471942658000},"score":9.621031,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":0,"alternative-id":["386745"],"URL":"http:\/\/dx.doi.org\/10.1155\/s0161171201006056","relation":{},"ISSN":["0161-1712","1687-0425"],"issn-type":[{"value":"0161-1712","type":"print"},{"value":"1687-0425","type":"electronic"}],"subject":["Mathematics
-        (miscellaneous)"]},{"indexed":{"date-parts":[[2017,5,26]],"date-time":"2017-05-26T23:01:10Z","timestamp":1495839670503},"reference-count":0,"publisher":"Hindawi
-        Publishing Corporation","issue":"3-4","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1944,1,1]],"date-time":"1944-01-01T00:00:00Z","timestamp":-820540800000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psyche:
+        Journal of Mathematics and Mathematical Sciences"],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/ijmms\/2001\/386745.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ijmms\/2001\/386745.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T08:57:38Z","timestamp":1471942658000},"score":9.653286,"issued":{"date-parts":[[2001]]},"references-count":0,"alternative-id":["386745"],"URL":"http:\/\/dx.doi.org\/10.1155\/s0161171201006056","ISSN":["0161-1712","1687-0425"],"issn-type":[{"value":"0161-1712","type":"print"},{"value":"1687-0425","type":"electronic"}],"subject":["Mathematics
+        (miscellaneous)"]},{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T01:18:27Z","timestamp":1502155107323},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"3-4","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1944,1,1]],"date-time":"1944-01-01T00:00:00Z","timestamp":-820540800000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psyche:
         A Journal of Entomology"],"published-print":{"date-parts":[[1944]]},"DOI":"10.1155\/1944\/53098","type":"journal-article","created":{"date-parts":[[2008,4,17]],"date-time":"2008-04-17T22:29:21Z","timestamp":1208471361000},"page":"162-165","source":"Crossref","is-referenced-by-count":2,"title":["Note
         on the Habits of Osmia Georgica Cresson as Ascertained by the Glass-Tube Method"],"prefix":"10.1155","volume":"51","author":[{"given":"Carl
         G.","family":"Hartman","affiliation":[]},{"given":"Paul","family":"Hartman","affiliation":[]},{"given":"Philip","family":"Hartman","affiliation":[]},{"given":"Carl","family":"Rettenmeyer","affiliation":[]}],"member":"98","container-title":["Psyche:
-        A Journal of Entomology"],"original-title":[],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1944\/053098.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1944\/053098.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,2,26]],"date-time":"2016-02-26T02:08:20Z","timestamp":1456452500000},"score":8.945765,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1944]]},"references-count":0,"alternative-id":["053098"],"URL":"http:\/\/dx.doi.org\/10.1155\/1944\/53098","relation":{},"ISSN":["0033-2615","1687-7438"],"issn-type":[{"value":"0033-2615","type":"print"},{"value":"1687-7438","type":"electronic"}]},{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T21:14:44Z","timestamp":1495919684555},"reference-count":0,"publisher":"Hindawi
-        Publishing Corporation","issue":"4","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1978,1,1]],"date-time":"1978-01-01T00:00:00Z","timestamp":252460800000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["International
-        Journal of Mathematics and Mathematical Sciences"],"published-print":{"date-parts":[[1978]]},"abstract":"<jats:p>In
-        this paper we give a further result which states sufficient conditions for
-        the theory of convergence of minimizing sequences to be applicable, develop
-        the theory further, and give an application.<\/jats:p>","DOI":"10.1155\/s0161171278000538","type":"journal-article","created":{"date-parts":[[2002,9,16]],"date-time":"2002-09-16T12:00:16Z","timestamp":1032177616000},"page":"533-539","source":"Crossref","is-referenced-by-count":0,"title":["Dentable
-        functions and radially uniform quasi-convexity"],"prefix":"10.1155","volume":"1","author":[{"given":"Carl
-        G.","family":"Looney","affiliation":[{"name":"Department of Mathematics, University
-        of Toledo, Toledo 43606, Ohio, USA"}]}],"member":"98","container-title":["International
-        Journal of Mathematics and Mathematical Sciences"],"original-title":[],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/ijmms\/1978\/231678.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T07:35:12Z","timestamp":1471937712000},"score":8.82984,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1978]]},"references-count":0,"alternative-id":["231678"],"URL":"http:\/\/dx.doi.org\/10.1155\/s0161171278000538","relation":{},"ISSN":["0161-1712","1687-0425"],"issn-type":[{"value":"0161-1712","type":"print"},{"value":"1687-0425","type":"electronic"}],"subject":["Mathematics
-        (miscellaneous)"]},{"indexed":{"date-parts":[[2017,5,24]],"date-time":"2017-05-24T19:26:32Z","timestamp":1495653992481},"reference-count":0,"publisher":"Hindawi
-        Publishing Corporation","issue":"1","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2008,1,1]],"date-time":"2008-01-01T00:00:00Z","timestamp":1199145600000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Pain
-        Research and Management"],"published-print":{"date-parts":[[2008]]},"DOI":"10.1155\/2008\/890412","type":"journal-article","created":{"date-parts":[[2016,3,15]],"date-time":"2016-03-15T08:06:32Z","timestamp":1458029192000},"page":"65-69","source":"Crossref","is-referenced-by-count":0,"title":["Letter
-        to the Editor"],"prefix":"10.1155","volume":"13","author":[{"given":"Carl","family":"von
-        Baeyer","affiliation":[{"name":"University of Saskatchewan, Saskatoon, Saskatchewan,
-        Canada"}]}],"member":"98","container-title":["Pain Research and Management"],"original-title":[],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/prm\/2008\/890412.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T15:52:10Z","timestamp":1471967530000},"score":8.82984,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2008]]},"references-count":0,"alternative-id":["890412"],"URL":"http:\/\/dx.doi.org\/10.1155\/2008\/890412","relation":{},"ISSN":["1203-6765"],"issn-type":[{"value":"1203-6765","type":"print"}],"subject":["Anesthesiology
-        and Pain Medicine","Neurology"]},{"indexed":{"date-parts":[[2017,5,24]],"date-time":"2017-05-24T19:25:59Z","timestamp":1495653959484},"reference-count":0,"publisher":"Hindawi
-        Publishing Corporation","issue":"1","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2009,1,1]],"date-time":"2009-01-01T00:00:00Z","timestamp":1230768000000},"delay-in-days":0,"content-version":"vor"}],"funder":[{"DOI":"10.13039\/501100000024","name":"Canadian
-        Institutes of Health Research","doi-asserted-by":"publisher","award":[]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Pain
-        Research and Management"],"published-print":{"date-parts":[[2009]]},"abstract":"<jats:p>The
-        present paper provides a short, practical introduction to children\u2019s
-        self-report measures of pain intensity, followed by an overview of principles
-        and issues. Details on individual self-report scales were previously reported
-        in a landmark systematic review in 2006 and will not be repeated here. Broader
-        measurement issues discussed here include interpretation of pain scores over
-        time, across individuals and in relation to contextual factors; special considerations
-        affecting children younger than six years of age; social communicative functions
-        of pain reports; cognitive developmental factors in understanding pain scales
-        and their anchors; screening for the ability to use self-report scales and
-        training for children who do not have this skill; level of measurement (interval
-        versus ordinal); estimating clinically significant change for groups and individuals;
-        and measurement of aspects of pain other than intensity. Also highlighted
-        are areas in which there has been progress and a lack of progress since the
-        last time this topic was featured at the International Forum on Pediatric
-        Pain in 1996. The present article closes with an outline of key areas for
-        further research on children\u2019s self-report of pain and a brief summary
-        of recommendations for clinicians.<\/jats:p>","DOI":"10.1155\/2009\/259759","type":"journal-article","created":{"date-parts":[[2016,3,15]],"date-time":"2016-03-15T07:52:08Z","timestamp":1458028328000},"page":"39-45","source":"Crossref","is-referenced-by-count":54,"title":["Children\u2019s
-        Self-Report of Pain Intensity: What We Know, Where We Are Headed"],"prefix":"10.1155","volume":"14","author":[{"given":"Carl
-        L","family":"von Baeyer","affiliation":[{"name":"Departments of Psychology
-        and Pediatrics, University of Saskatchewan, Saskatoon, Saskatchewan, Canada"}]}],"member":"98","container-title":["Pain
-        Research and Management"],"original-title":[],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/prm\/2009\/259759.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T07:10:36Z","timestamp":1471936236000},"score":8.82984,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009]]},"references-count":0,"alternative-id":["259759"],"URL":"http:\/\/dx.doi.org\/10.1155\/2009\/259759","relation":{},"ISSN":["1203-6765"],"issn-type":[{"value":"1203-6765","type":"print"}],"subject":["Anesthesiology
-        and Pain Medicine","Neurology"]},{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T08:30:39Z","timestamp":1495873839259},"reference-count":0,"publisher":"Hindawi
-        Publishing Corporation","issue":"257","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1897,1,1]],"date-time":"1897-01-01T00:00:00Z","timestamp":-2303596800000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psyche:
-        A Journal of Entomology"],"published-print":{"date-parts":[[1897]]},"DOI":"10.1155\/1897\/65374","type":"journal-article","created":{"date-parts":[[2008,8,7]],"date-time":"2008-08-07T09:24:08Z","timestamp":1218101048000},"page":"114-119","source":"Crossref","is-referenced-by-count":0,"title":["Notes
-        on the Genus Deltocephalus"],"prefix":"10.1155","volume":"8","author":[{"given":"Carl
-        F.","family":"Baker","affiliation":[{"name":"AlA. Polytechnic Inst., Auburn,
-        ALA., USA"}]}],"member":"98","container-title":["Psyche: A Journal of Entomology"],"original-title":[],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1897\/065374.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,8,22]],"date-time":"2016-08-22T17:02:03Z","timestamp":1471885323000},"score":8.82984,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1897]]},"references-count":0,"alternative-id":["065374"],"URL":"http:\/\/dx.doi.org\/10.1155\/1897\/65374","relation":{},"ISSN":["0033-2615","1687-7438"],"issn-type":[{"value":"0033-2615","type":"print"},{"value":"1687-7438","type":"electronic"}]}]}}'}
+        A Journal of Entomology"],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1944\/053098.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1944\/053098.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1944\/053098.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,2,26]],"date-time":"2016-02-26T02:08:20Z","timestamp":1456452500000},"score":9.008883,"issued":{"date-parts":[[1944]]},"references-count":0,"alternative-id":["053098"],"URL":"http:\/\/dx.doi.org\/10.1155\/1944\/53098","ISSN":["0033-2615","1687-7438"],"issn-type":[{"value":"0033-2615","type":"print"},{"value":"1687-7438","type":"electronic"}],"subject":["Insect
+        Science","Ecology, Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T15:02:52Z","timestamp":1502204572782},"reference-count":0,"publisher":"Hindawi
+        Limited","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[2001,1,1]],"date-time":"2001-01-01T00:00:00Z","timestamp":978307200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Scientific World JOURNAL"],"published-print":{"date-parts":[[2001]]},"abstract":"<jats:p>A
+        long-held hypothesis in neuroscience holds that learning and memory mechanisms
+        involve lasting changes in synaptic weights. Multiple mechanisms for producing
+        such changes exist, of which NMDA-receptor\u2013dependent long-term potentiation
+        (LTP) is the most widely studied. Curiously, the relatively simple hypothesis
+        that LTP plays a role in learning and memory has proven difficult to test.
+        A current experimental strategy is to generate genetically altered mice with
+        mutations in genes thought to be involved in LTP and assess the effects of
+        these mutations both on LTP and animal behavior[1,2]. A difficulty associated
+        with these approaches has been that they are not temporally or spatially refined.
+        To alleviate this problem, Dr. Isabelle Mansuy and colleagues used an inducible
+        and reversible transgene expression system in which transgene expression could
+        be controlled on a week-to-week timescale to assess the effects of genetic
+        reduction of the activity of a protein phosphatase known as calcineurin or
+        PP2B in adult mouse forebrain[3,4].<\/jats:p>","DOI":"10.1100\/tsw.2001.259","type":"journal-article","created":{"date-parts":[[2005,3,16]],"date-time":"2005-03-16T15:43:15Z","timestamp":1110987795000},"page":"530-533","source":"Crossref","is-referenced-by-count":2,"title":["Calcineurin,
+        Synaptic Plasticity, and Memory"],"prefix":"10.1100","volume":"1","author":[{"given":"Carl","family":"Weitlauf","affiliation":[{"name":"Vanderbilt
+        University School of Medicine, Department of Molecular Physiology and Biophysics,
+        Nasville, TN 37235, USA"}]},{"given":"Danny","family":"Winder","affiliation":[{"name":"Vanderbilt
+        University School of Medicine, Department of Molecular Physiology and Biophysics,
+        Nasville, TN 37235, USA"}]}],"member":"98","container-title":["The Scientific
+        World JOURNAL"],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/tswj\/2001\/952059.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/tswj\/2001\/952059.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T16:05:44Z","timestamp":1471968344000},"score":8.875452,"issued":{"date-parts":[[2001]]},"references-count":0,"alternative-id":["952059"],"URL":"http:\/\/dx.doi.org\/10.1100\/tsw.2001.259","ISSN":["1537-744X"],"issn-type":[{"value":"1537-744X","type":"electronic"}],"subject":["General
+        Biochemistry, Genetics and Molecular Biology","General Environmental Science","General
+        Medicine"]},{"indexed":{"date-parts":[[2017,8,11]],"date-time":"2017-08-11T04:36:53Z","timestamp":1502426213001},"reference-count":17,"publisher":"Hindawi
+        Limited","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2015,1,1]],"date-time":"2015-01-01T00:00:00Z","timestamp":1420070400000},"delay-in-days":0,"content-version":"vor"}],"funder":[{"DOI":"10.13039\/501100001809","name":"National
+        Natural Science Foundation of China","doi-asserted-by":"publisher","award":["51405502"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Shock
+        and Vibration"],"published-print":{"date-parts":[[2015]]},"abstract":"<jats:p>Prediction
+        of bending wave transmission across systems of coupled plates which incorporate
+        periodic ribbed plates is considered using Statistical Energy Analysis (SEA)
+        in the low- and mid-frequency ranges and Advanced SEA (ASEA) in the high-frequency
+        range. This paper investigates the crossover from prediction with SEA to ASEA
+        through comparison with Finite Element Methods. Results from L-junctions confirm
+        that this crossover occurs near the frequency band containing the fundamental
+        bending mode of the individual bays on the ribbed plate when ribs are parallel
+        to the junction line. Below this frequency band, SEA models treating each
+        periodic ribbed plate as a single subsystem were shown to be appropriate.
+        Above this frequency band, large reductions occur in the vibration level when
+        propagation takes place across successive bays on ribbed plates when the ribs
+        are parallel to the junction. This is due to spatial filtering; hence it is
+        necessary to use ASEA which can incorporate indirect coupling associated with
+        this transmission mechanism. A system of three coupled plates was also modelled
+        which introduced flanking transmission. The results show that a wide frequency
+        range can be covered by using both SEA and ASEA for systems of coupled plates
+        where some or all of the plates are periodic ribbed plates.<\/jats:p>","DOI":"10.1155\/2015\/467875","type":"journal-article","created":{"date-parts":[[2015,12,2]],"date-time":"2015-12-02T21:02:12Z","timestamp":1449090132000},"page":"1-19","source":"Crossref","is-referenced-by-count":0,"title":["Modelling
+        Bending Wave Transmission across Coupled Plate Systems Comprising Periodic
+        Ribbed Plates in the Low-, Mid-, and High-Frequency Ranges Using Forms of
+        Statistical Energy Analysis"],"prefix":"10.1155","volume":"2015","author":[{"given":"Jianfei","family":"Yin","affiliation":[{"name":"Vibration
+        and Acoustics Research Group, Laboratory of Science and Technology on Integrated
+        Logistics Support, National University of Defense Technology, Changsha, Hunan
+        410073, China"}]},{"given":"Carl","family":"Hopkins","affiliation":[{"name":"Acoustics
+        Research Unit, School of Architecture, University of Liverpool, Liverpool
+        L69 7ZN, UK"}]}],"member":"98","reference":[{"key":"1","year":"1976"},{"key":"2","DOI":"10.1121\/1.1908750","doi-asserted-by":"publisher"},{"key":"3","DOI":"10.1115\/1.3428014","doi-asserted-by":"publisher"},{"key":"4","DOI":"10.1155\/1995\/392839","doi-asserted-by":"publisher"},{"key":"5","year":"1995"},{"key":"6","DOI":"10.3813\/aaa.918685","doi-asserted-by":"publisher"},{"key":"7","DOI":"10.3813\/aaa.918686","doi-asserted-by":"publisher"},{"key":"8","volume":"346","first-page":"431","year":"1994","journal-title":"Philosophical
+        Transactions of the Royal Society of London A","DOI":"10.1098\/rsta.1994.0027","doi-asserted-by":"crossref"},{"key":"9","DOI":"10.1098\/rsta.1994.0032","doi-asserted-by":"publisher"},{"key":"10","DOI":"10.1121\/1.4792361","doi-asserted-by":"publisher"},{"key":"11","DOI":"10.1016\/j.jsv.2014.12.029","doi-asserted-by":"publisher"},{"key":"12","DOI":"10.1016\/j.jsv.2015.01.031","doi-asserted-by":"publisher"},{"key":"13","DOI":"10.1098\/rsta.1994.0031","doi-asserted-by":"publisher"},{"key":"14","DOI":"10.1006\/jsvi.1998.1608","doi-asserted-by":"publisher"},{"key":"15","DOI":"10.1006\/jsvi.1996.0107","doi-asserted-by":"publisher"},{"key":"16","DOI":"10.1088\/0034-4885\/49\/2\/001","doi-asserted-by":"publisher"},{"key":"17","DOI":"10.1121\/1.389847","doi-asserted-by":"publisher"}],"container-title":["Shock
+        and Vibration"],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/sv\/2015\/467875.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/sv\/2015\/467875.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/sv\/2015\/467875.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T00:55:14Z","timestamp":1498265714000},"score":8.875452,"issued":{"date-parts":[[2015]]},"references-count":17,"alternative-id":["467875","467875"],"URL":"http:\/\/dx.doi.org\/10.1155\/2015\/467875","relation":{"cites":[]},"ISSN":["1070-9622","1875-9203"],"issn-type":[{"value":"1070-9622","type":"print"},{"value":"1875-9203","type":"electronic"}],"subject":["Geotechnical
+        Engineering and Engineering Geology","Mechanical Engineering","Mechanics of
+        Materials","Civil and Structural Engineering","Condensed Matter Physics"]},{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T01:18:25Z","timestamp":1502155105841},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"2-3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1939,1,1]],"date-time":"1939-01-01T00:00:00Z","timestamp":-978307200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psyche:
+        A Journal of Entomology"],"published-print":{"date-parts":[[1939]]},"DOI":"10.1155\/1939\/91214","type":"journal-article","created":{"date-parts":[[2008,4,17]],"date-time":"2008-04-17T22:29:21Z","timestamp":1208471361000},"page":"68-69","source":"Crossref","is-referenced-by-count":0,"title":["Two
+        New Tingitids (Hemiptera) From Panama"],"prefix":"10.1155","volume":"46","author":[{"given":"Carl
+        J.","family":"Drake","affiliation":[{"name":"Ames, Iowa, USA"}]}],"member":"98","container-title":["Psyche:
+        A Journal of Entomology"],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1939\/091214.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1939\/091214.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T06:34:15Z","timestamp":1471934055000},"score":8.875452,"issued":{"date-parts":[[1939]]},"references-count":0,"alternative-id":["091214"],"URL":"http:\/\/dx.doi.org\/10.1155\/1939\/91214","ISSN":["0033-2615","1687-7438"],"issn-type":[{"value":"0033-2615","type":"print"},{"value":"1687-7438","type":"electronic"}],"subject":["Insect
+        Science","Ecology, Evolution, Behavior and Systematics"]},{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T01:18:26Z","timestamp":1502155106939},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"1-2","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","start":{"date-parts":[[1944,1,1]],"date-time":"1944-01-01T00:00:00Z","timestamp":-820540800000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psyche:
+        A Journal of Entomology"],"published-print":{"date-parts":[[1944]]},"DOI":"10.1155\/1944\/81709","type":"journal-article","created":{"date-parts":[[2008,4,17]],"date-time":"2008-04-17T22:29:21Z","timestamp":1208471361000},"page":"1-4","source":"Crossref","is-referenced-by-count":0,"title":["How
+        Odynerus Suspends Her Egg"],"prefix":"10.1155","volume":"51","author":[{"given":"Carl
+        G.","family":"Hartman","affiliation":[{"name":"Department of Zo\u00f6logy
+        and Physiology, University of Illinois, Urbana, Illinois, USA"}]}],"member":"98","container-title":["Psyche:
+        A Journal of Entomology"],"link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1944\/081709.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1944\/081709.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T06:22:47Z","timestamp":1471933367000},"score":8.875452,"issued":{"date-parts":[[1944]]},"references-count":0,"alternative-id":["081709"],"URL":"http:\/\/dx.doi.org\/10.1155\/1944\/81709","ISSN":["0033-2615","1687-7438"],"issn-type":[{"value":"0033-2615","type":"print"},{"value":"1687-7438","type":"electronic"}],"subject":["Insect
+        Science","Ecology, Evolution, Behavior and Systematics"]}],"items-per-page":7,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
       access-control-allow-headers: [X-Requested-With]
       access-control-allow-origin: ['*']
       connection: [close]
-      content-length: ['18061']
+      content-length: ['21988']
       content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 01:56:25 GMT']
+      date: ['Sun, 15 Oct 2017 20:21:49 GMT']
       server: [http-kit]
       vary: [Accept]
       x-rate-limit-interval: [1s]

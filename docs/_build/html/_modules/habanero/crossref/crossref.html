@@ -300,7 +300,7 @@
 
 <div class="viewcode-block" id="Crossref.works"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.works">[docs]</a>    <span class="k">def</span> <span class="nf">works</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref works</span>
@@ -315,7 +315,8 @@
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
-<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
+<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois.</span>
+<span class="sd">            Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
@@ -325,6 +326,10 @@
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.</span>
 <span class="sd">            See Facets_ for options.</span>
+<span class="sd">        :param select: [String/list(Strings)] Crossref metadata records can be</span>
+<span class="sd">            quite large. Sometimes you just want a few elements from the schema. You can &quot;select&quot;</span>
+<span class="sd">            a subset of elements to return. This can make your API calls much more efficient. Not</span>
+<span class="sd">            clear yet which fields are allowed here.</span>
 <span class="sd">        :param cursor: [String] Cursor character string to do deep paging. Default is None.</span>
 <span class="sd">            Pass in &#39;*&#39; to start deep paging. Any combination of query, filters and facets may be</span>
 <span class="sd">            used with deep paging cursors. While rows may be specified along with cursor, offset</span>
@@ -404,19 +409,25 @@
 <span class="sd">            # field queries</span>
 <span class="sd">            res = cr.works(query = &quot;ecology&quot;, query_author = &#39;carl boettiger&#39;)</span>
 <span class="sd">            [ x[&#39;author&#39;][0][&#39;family&#39;] for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
+
+<span class="sd">            # select certain fields to return</span>
+<span class="sd">            ## as a comma separated string</span>
+<span class="sd">            cr.works(query = &quot;ecology&quot;, select = &quot;DOI,title&quot;)</span>
+<span class="sd">            ## or as a list</span>
+<span class="sd">            cr.works(query = &quot;ecology&quot;, select = [&quot;DOI&quot;,&quot;title&quot;])</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">if</span> <span class="n">ids</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">!=</span> <span class="s1">&#39;NoneType&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
                 <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-                <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+                <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span>
               <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-              <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
+              <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
 
 <div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref members</span>
@@ -441,6 +452,10 @@
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">            See Facets_ for options.</span>
+<span class="sd">        :param select: [String/list(Strings)] Crossref metadata records can be</span>
+<span class="sd">            quite large. Sometimes you just want a few elements from the schema. You can &quot;select&quot;</span>
+<span class="sd">            a subset of elements to return. This can make your API calls much more efficient. Not</span>
+<span class="sd">            clear yet which fields are allowed here.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples and FieldQueries_)</span>
@@ -471,11 +486,11 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Crossref.prefixes"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.prefixes">[docs]</a>    <span class="k">def</span> <span class="nf">prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref prefixes</span>
@@ -499,6 +514,10 @@
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">            See Facets_ for options.</span>
+<span class="sd">        :param select: [String/list(Strings)] Crossref metadata records can be</span>
+<span class="sd">            quite large. Sometimes you just want a few elements from the schema. You can &quot;select&quot;</span>
+<span class="sd">            a subset of elements to return. This can make your API calls much more efficient. Not</span>
+<span class="sd">            clear yet which fields are allowed here.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples and FieldQueries_)</span>
@@ -536,12 +555,13 @@
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s2">&quot;query&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="n">limit</span><span class="p">,</span>
-          <span class="n">sample</span> <span class="o">=</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="n">sort</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span>
-          <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+          <span class="n">sample</span> <span class="o">=</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="n">sort</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="n">facet</span><span class="p">,</span>
+          <span class="n">select</span> <span class="o">=</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="n">cursor_max</span><span class="p">,</span>
+          <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Crossref.funders"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.funders">[docs]</a>    <span class="k">def</span> <span class="nf">funders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref funders</span>
@@ -569,6 +589,10 @@
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">            See Facets_ for options.</span>
+<span class="sd">        :param select: [String/list(Strings)] Crossref metadata records can be</span>
+<span class="sd">            quite large. Sometimes you just want a few elements from the schema. You can &quot;select&quot;</span>
+<span class="sd">            a subset of elements to return. This can make your API calls much more efficient. Not</span>
+<span class="sd">            clear yet which fields are allowed here.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples and FieldQueries_)</span>
@@ -599,11 +623,11 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Crossref.journals"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.journals">[docs]</a>    <span class="k">def</span> <span class="nf">journals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref journals</span>
@@ -628,6 +652,10 @@
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.</span>
 <span class="sd">            See Facets_ for options.</span>
+<span class="sd">        :param select: [String/list(Strings)] Crossref metadata records can be</span>
+<span class="sd">            quite large. Sometimes you just want a few elements from the schema. You can &quot;select&quot;</span>
+<span class="sd">            a subset of elements to return. This can make your API calls much more efficient. Not</span>
+<span class="sd">            clear yet which fields are allowed here.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples and FieldQueries_)</span>
@@ -670,11 +698,11 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+          <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Crossref.types"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.types">[docs]</a>    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+              <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Search Crossref types</span>
@@ -699,6 +727,10 @@
 <span class="sd">        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).</span>
 <span class="sd">            Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`</span>
 <span class="sd">            See Facets_ for options.</span>
+<span class="sd">        :param select: [String/list(Strings)] Crossref metadata records can be</span>
+<span class="sd">            quite large. Sometimes you just want a few elements from the schema. You can &quot;select&quot;</span>
+<span class="sd">            a subset of elements to return. This can make your API calls much more efficient. Not</span>
+<span class="sd">            clear yet which fields are allowed here.</span>
 <span class="sd">        :param works: [Boolean] If true, works returned as well. Default: false</span>
 <span class="sd">        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field</span>
 <span class="sd">            queries (see examples and FieldQueries_)</span>
@@ -720,7 +752,7 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
-            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+            <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Crossref.licenses"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.licenses">[docs]</a>    <span class="k">def</span> <span class="nf">licenses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>

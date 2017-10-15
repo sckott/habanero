@@ -266,7 +266,7 @@ query parameters are:</p>
 </div>
 <dl class="method">
 <dt id="habanero.Crossref.funders">
-<code class="descname">funders</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.funders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.funders" title="Permalink to this definition">¶</a></dt>
+<code class="descname">funders</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>select=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.funders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.funders" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref funders</p>
 <p>Note that funders without IDs don&#8217;t show up on the <cite>/funders</cite> route,
 that is, won&#8217;t show up in searches via this method</p>
@@ -295,6 +295,10 @@ will be by DOI update date. See <a class="reference internal" href="#sorting">so
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
 Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
 See <a class="reference internal" href="#facets">Facets</a> for options.</li>
+<li><strong>select</strong> &#8211; [String/list(Strings)] Crossref metadata records can be
+quite large. Sometimes you just want a few elements from the schema. You can &#8220;select&#8221;
+a subset of elements to return. This can make your API calls much more efficient. Not
+clear yet which fields are allowed here.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
@@ -332,7 +336,7 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
 
 <dl class="method">
 <dt id="habanero.Crossref.journals">
-<code class="descname">journals</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.journals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.journals" title="Permalink to this definition">¶</a></dt>
+<code class="descname">journals</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>select=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.journals"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.journals" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref journals</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -359,6 +363,10 @@ will be by DOI update date. See <a class="reference internal" href="#sorting">so
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
 Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>.
 See <a class="reference internal" href="#facets">Facets</a> for options.</li>
+<li><strong>select</strong> &#8211; [String/list(Strings)] Crossref metadata records can be
+quite large. Sometimes you just want a few elements from the schema. You can &#8220;select&#8221;
+a subset of elements to return. This can make your API calls much more efficient. Not
+clear yet which fields are allowed here.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
@@ -446,7 +454,7 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
 
 <dl class="method">
 <dt id="habanero.Crossref.members">
-<code class="descname">members</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.members"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.members" title="Permalink to this definition">¶</a></dt>
+<code class="descname">members</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>select=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.members"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.members" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref members</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -473,6 +481,10 @@ will be by DOI update date. See <a class="reference internal" href="#sorting">so
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
 Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
 See <a class="reference internal" href="#facets">Facets</a> for options.</li>
+<li><strong>select</strong> &#8211; [String/list(Strings)] Crossref metadata records can be
+quite large. Sometimes you just want a few elements from the schema. You can &#8220;select&#8221;
+a subset of elements to return. This can make your API calls much more efficient. Not
+clear yet which fields are allowed here.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
@@ -510,7 +522,7 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
 
 <dl class="method">
 <dt id="habanero.Crossref.prefixes">
-<code class="descname">prefixes</code><span class="sig-paren">(</span><em>ids=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.prefixes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.prefixes" title="Permalink to this definition">¶</a></dt>
+<code class="descname">prefixes</code><span class="sig-paren">(</span><em>ids=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>select=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.prefixes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.prefixes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref prefixes</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -536,6 +548,10 @@ will be by DOI update date. See <a class="reference internal" href="#sorting">so
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
 Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
 See <a class="reference internal" href="#facets">Facets</a> for options.</li>
+<li><strong>select</strong> &#8211; [String/list(Strings)] Crossref metadata records can be
+quite large. Sometimes you just want a few elements from the schema. You can &#8220;select&#8221;
+a subset of elements to return. This can make your API calls much more efficient. Not
+clear yet which fields are allowed here.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
@@ -639,7 +655,7 @@ queries (see examples)</li>
 
 <dl class="method">
 <dt id="habanero.Crossref.types">
-<code class="descname">types</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.types"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.types" title="Permalink to this definition">¶</a></dt>
+<code class="descname">types</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>works=False</em>, <em>select=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.types"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.types" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref types</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -666,6 +682,10 @@ will be by DOI update date. See <a class="reference internal" href="#sorting">so
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
 Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>
 See <a class="reference internal" href="#facets">Facets</a> for options.</li>
+<li><strong>select</strong> &#8211; [String/list(Strings)] Crossref metadata records can be
+quite large. Sometimes you just want a few elements from the schema. You can &#8220;select&#8221;
+a subset of elements to return. This can make your API calls much more efficient. Not
+clear yet which fields are allowed here.</li>
 <li><strong>works</strong> &#8211; [Boolean] If true, works returned as well. Default: false</li>
 <li><strong>kwargs</strong> &#8211; additional named arguments passed on to <cite>requests.get</cite>, e.g., field
 queries (see examples and <a class="reference internal" href="#fieldqueries">FieldQueries</a>)</li>
@@ -694,7 +714,7 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
 
 <dl class="method">
 <dt id="habanero.Crossref.works">
-<code class="descname">works</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.works"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.works" title="Permalink to this definition">¶</a></dt>
+<code class="descname">works</code><span class="sig-paren">(</span><em>ids=None</em>, <em>query=None</em>, <em>filter=None</em>, <em>offset=None</em>, <em>limit=None</em>, <em>sample=None</em>, <em>sort=None</em>, <em>order=None</em>, <em>facet=None</em>, <em>select=None</em>, <em>cursor=None</em>, <em>cursor_max=5000</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref.works"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref.works" title="Permalink to this definition">¶</a></dt>
 <dd><p>Search Crossref works</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -711,7 +731,8 @@ See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
-<li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
+<li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois.
+Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. Max: 100</li>
 <li><strong>sort</strong> &#8211; [String] Field to sort on. Note: If the API call includes a query, then the sort
@@ -721,6 +742,10 @@ will be by DOI update date. See <a class="reference internal" href="#sorting">so
 <li><strong>facet</strong> &#8211; [Boolean/String] Set to <cite>true</cite> to include facet results (default: false).
 Optionally, pass a query string, e.g., <cite>facet=type-name:*</cite> or <cite>facet=license=*</cite>.
 See <a class="reference internal" href="#facets">Facets</a> for options.</li>
+<li><strong>select</strong> &#8211; [String/list(Strings)] Crossref metadata records can be
+quite large. Sometimes you just want a few elements from the schema. You can &#8220;select&#8221;
+a subset of elements to return. This can make your API calls much more efficient. Not
+clear yet which fields are allowed here.</li>
 <li><strong>cursor</strong> &#8211; [String] Cursor character string to do deep paging. Default is None.
 Pass in &#8216;*&#8217; to start deep paging. Any combination of query, filters and facets may be
 used with deep paging cursors. While rows may be specified along with cursor, offset
@@ -804,6 +829,12 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
 <span class="c1"># field queries</span>
 <span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">,</span> <span class="n">query_author</span> <span class="o">=</span> <span class="s1">&#39;carl boettiger&#39;</span><span class="p">)</span>
 <span class="p">[</span> <span class="n">x</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;family&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="c1"># select certain fields to return</span>
+<span class="c1">## as a comma separated string</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="s2">&quot;DOI,title&quot;</span><span class="p">)</span>
+<span class="c1">## or as a list</span>
+<span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;DOI&quot;</span><span class="p">,</span><span class="s2">&quot;title&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
 </dd></dl>

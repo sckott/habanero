@@ -77,3 +77,11 @@ def test_works_field_queries():
 def test_works_query_filters_not_allowed_with_dois():
     "works - param: kwargs - query filters not allowed on works/DOI/ route"
     cr.works(ids = '10.1371/journal.pone.0033693', query_author = 'carl boettiger')
+
+@vcr.use_cassette('test/vcr_cassettes/works_with_select_param.yaml')
+def test_works_with_select_param():
+    "works - param: select"
+    res1 = cr.works(query = "ecology", select = "DOI,title")
+    res2 = cr.works(query = "ecology", select = ["DOI","title"])
+    assert res1 == res2
+    assert res1['message']['items'][0].keys() == ['DOI', 'title']

@@ -4,6 +4,7 @@ Changelog
 0.5.0.2 (2017-10-15)
 --------------------
 * Added `mailto` support (#68) and added docs about polite pool (#66)
+* Added support for `select` parameter (#65)
 
 0.5.0 (2017-07-20)
 --------------------

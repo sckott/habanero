@@ -14,8 +14,8 @@ class Request(object):
   '''
   def __init__(self, mailto, url, path, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
-        order = None, facet = None, cursor = None, cursor_max = None,
-        agency = False, **kwargs):
+        order = None, facet = None, select = None, cursor = None,
+        cursor_max = None, agency = False, **kwargs):
     self.mailto = mailto
     self.url = url
     self.path = path
@@ -27,6 +27,7 @@ class Request(object):
     self.sort = sort
     self.order = order
     self.facet = facet
+    self.select = select
     self.cursor = cursor
     self.cursor_max = cursor_max
     self.agency = agency
@@ -38,13 +39,16 @@ class Request(object):
 
   def do_request(self):
     filt = filter_handler(self.filter)
+    if self.select.__class__ is list:
+      self.select = ','.join(self.select)
 
     if not isinstance(self.cursor_max, (type(None), int)):
       raise ValueError("cursor_max must be of class int")
 
     payload = {'query':self.query, 'filter':filt, 'offset':self.offset,
                'rows':self.limit, 'sample':self.sample, 'sort':self.sort,
-               'order':self.order, 'facet':self.facet, 'cursor':self.cursor}
+               'order':self.order, 'facet':self.facet, 'select':self.select,
+               'cursor':self.cursor}
     payload = dict((k, v) for k, v in payload.items() if v)
     # add query filters
     payload.update(filter_dict(self.kwargs))

@@ -5,24 +5,26 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.1 habanero/0.5.0.2]
+      X-USER-AGENT: [python-requests/2.18.1 habanero/0.5.0.2]
     method: GET
     uri: https://api.crossref.org/types/journal/works?rows=2
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":23248,"items":[{"indexed":{"date-parts":[[2017,5,13]],"date-time":"2017-05-13T03:19:53Z","timestamp":1494645593490},"reference-count":0,"publisher":"Noble
-        Research Publishers","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.14312\/2053-2482","type":"journal","created":{"date-parts":[[2015,5,19]],"date-time":"2015-05-19T15:44:56Z","timestamp":1432050296000},"source":"Crossref","is-referenced-by-count":0,"title":["Journal
-        of Biochemical & Microbial Technology"],"prefix":"10.14312","member":"5412","container-title":[],"original-title":[],"deposited":{"date-parts":[[2015,5,19]],"date-time":"2015-05-19T15:44:56Z","timestamp":1432050296000},"score":1.0,"subtitle":[],"short-title":["J
-        Biochem Microb Technol"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.14312\/2053-2482","relation":{},"ISSN":["2053-2482"],"issn-type":[{"value":"2053-2482","type":"electronic"}]},{"indexed":{"date-parts":[[2017,5,13]],"date-time":"2017-05-13T02:48:48Z","timestamp":1494643728319},"reference-count":0,"publisher":"Centre
-        of Sociological Research, NGO","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.14254\/2071-789x.2008","type":"journal","created":{"date-parts":[[2013,9,13]],"date-time":"2013-09-13T19:52:52Z","timestamp":1379101972000},"source":"Crossref","is-referenced-by-count":0,"title":["Economics
-        & Sociology"],"prefix":"10.14254","member":"5381","container-title":[],"original-title":[],"deposited":{"date-parts":[[2013,9,13]],"date-time":"2013-09-13T19:52:52Z","timestamp":1379101972000},"score":1.0,"subtitle":[],"short-title":["E&S"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.14254\/2071-789x.2008","relation":{},"ISSN":["2071-789X","2306-3459"],"issn-type":[{"value":"2071-789X","type":"print"},{"value":"2306-3459","type":"electronic"}]}]}}'}
+    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":23919,"items":[{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T15:23:53Z","timestamp":1502205833635},"reference-count":0,"publisher":"Hindawi
+        Limited","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1155\/aess","type":"journal","created":{"date-parts":[[2009,4,9]],"date-time":"2009-04-09T07:35:25Z","timestamp":1239262525000},"source":"Crossref","is-referenced-by-count":0,"title":["Applied
+        and Environmental Soil Science"],"prefix":"10.1155","member":"98","deposited":{"date-parts":[[2009,4,9]],"date-time":"2009-04-09T07:35:25Z","timestamp":1239262525000},"score":1.0,"short-title":["Applied
+        and Environmental Soil Science"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1155\/aess","ISSN":["1687-7667","1687-7675"],"issn-type":[{"value":"1687-7667","type":"print"},{"value":"1687-7675","type":"electronic"}],"subject":["Earth-Surface
+        Processes","Soil Science"]},{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T15:26:06Z","timestamp":1502205966594},"reference-count":0,"publisher":"Colegio
+        Brasileiro de Atividade Fisica Saude e Esporte (COBRASE)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.3900\/fpj.3.5.254.s","type":"journal","created":{"date-parts":[[2009,4,16]],"date-time":"2009-04-16T14:44:34Z","timestamp":1239893074000},"source":"Crossref","is-referenced-by-count":0,"title":["Fitness
+        & Performance Journal"],"prefix":"10.3900","member":"2264","deposited":{"date-parts":[[2009,4,16]],"date-time":"2009-04-16T16:18:51Z","timestamp":1239898731000},"score":1.0,"short-title":["Fit
+        Per J"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3900\/fpj.3.5.254.s","ISSN":["1676-5133"],"issn-type":[{"value":"1676-5133","type":"electronic"}]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
       access-control-allow-headers: [X-Requested-With]
       access-control-allow-origin: ['*']
       connection: [close]
-      content-length: ['2098']
+      content-length: ['1974']
       content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 01:58:26 GMT']
+      date: ['Sun, 15 Oct 2017 20:21:54 GMT']
       server: [http-kit]
       vary: [Accept]
       x-rate-limit-interval: [1s]

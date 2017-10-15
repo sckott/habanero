@@ -161,7 +161,7 @@ class Crossref(object):
 
     def works(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, cursor = None,
+              order = None, facet = None, select = None, cursor = None,
               cursor_max = 5000, **kwargs):
         '''
         Search Crossref works
@@ -176,7 +176,8 @@ class Crossref(object):
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois.
+            Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. Max: 100
         :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
@@ -186,6 +187,10 @@ class Crossref(object):
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.
             See Facets_ for options.
+        :param select: [String/list(Strings)] Crossref metadata records can be
+            quite large. Sometimes you just want a few elements from the schema. You can "select"
+            a subset of elements to return. This can make your API calls much more efficient. Not
+            clear yet which fields are allowed here.
         :param cursor: [String] Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
@@ -265,19 +270,25 @@ class Crossref(object):
             # field queries
             res = cr.works(query = "ecology", query_author = 'carl boettiger')
             [ x['author'][0]['family'] for x in res['message']['items'] ]
+
+            # select certain fields to return
+            ## as a comma separated string
+            cr.works(query = "ecology", select = "DOI,title")
+            ## or as a list
+            cr.works(query = "ecology", select = ["DOI","title"])
         '''
         if ids.__class__.__name__ != 'NoneType':
             return request(self.mailto, self.base_url, "/works/", ids,
                 query, filter, offset, limit, sample, sort,
-                order, facet, None, None, None, None, **kwargs)
+                order, facet, select, None, None, None, None, **kwargs)
         else:
             return Request(self.mailto, self.base_url, "/works/",
               query, filter, offset, limit, sample, sort,
-              order, facet, cursor, cursor_max, None, **kwargs).do_request()
+              order, facet, select, cursor, cursor_max, None, **kwargs).do_request()
 
     def members(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False,
+              order = None, facet = None, works = False, select = None,
               cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref members
@@ -302,6 +313,10 @@ class Crossref(object):
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
+        :param select: [String/list(Strings)] Crossref metadata records can be
+            quite large. Sometimes you just want a few elements from the schema. You can "select"
+            a subset of elements to return. This can make your API calls much more efficient. Not
+            clear yet which fields are allowed here.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
@@ -332,11 +347,11 @@ class Crossref(object):
         '''
         return request(self.mailto, self.base_url, "/members/", ids,
             query, filter, offset, limit, sample, sort,
-            order, facet, works, cursor, cursor_max, **kwargs)
+            order, facet, select, works, cursor, cursor_max, **kwargs)
 
     def prefixes(self, ids = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False,
+              order = None, facet = None, works = False, select = None,
               cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref prefixes
@@ -360,6 +375,10 @@ class Crossref(object):
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
+        :param select: [String/list(Strings)] Crossref metadata records can be
+            quite large. Sometimes you just want a few elements from the schema. You can "select"
+            a subset of elements to return. This can make your API calls much more efficient. Not
+            clear yet which fields are allowed here.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
@@ -397,12 +416,13 @@ class Crossref(object):
         check_kwargs(["query"], kwargs)
         return request(self.mailto, self.base_url, "/prefixes/", ids,
           query = None, filter = filter, offset = offset, limit = limit,
-          sample = sample, sort = sort, order = order, facet = facet, works = works,
-          cursor = cursor, cursor_max = cursor_max, **kwargs)
+          sample = sample, sort = sort, order = order, facet = facet,
+          select = select, works = works, cursor = cursor, cursor_max = cursor_max,
+          **kwargs)
 
     def funders(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False,
+              order = None, facet = None, works = False, select = None,
               cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref funders
@@ -430,6 +450,10 @@ class Crossref(object):
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
+        :param select: [String/list(Strings)] Crossref metadata records can be
+            quite large. Sometimes you just want a few elements from the schema. You can "select"
+            a subset of elements to return. This can make your API calls much more efficient. Not
+            clear yet which fields are allowed here.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
@@ -460,11 +484,11 @@ class Crossref(object):
         '''
         return request(self.mailto, self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, works, cursor, cursor_max, **kwargs)
+          order, facet, select, works, cursor, cursor_max, **kwargs)
 
     def journals(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False,
+              order = None, facet = None, works = False, select = None,
               cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref journals
@@ -489,6 +513,10 @@ class Crossref(object):
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.
             See Facets_ for options.
+        :param select: [String/list(Strings)] Crossref metadata records can be
+            quite large. Sometimes you just want a few elements from the schema. You can "select"
+            a subset of elements to return. This can make your API calls much more efficient. Not
+            clear yet which fields are allowed here.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
@@ -531,11 +559,11 @@ class Crossref(object):
         '''
         return request(self.mailto, self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, works, cursor, cursor_max, **kwargs)
+          order, facet, select, works, cursor, cursor_max, **kwargs)
 
     def types(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False,
+              order = None, facet = None, works = False, select = None,
               cursor = None, cursor_max = 5000, **kwargs):
         '''
         Search Crossref types
@@ -560,6 +588,10 @@ class Crossref(object):
         :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
+        :param select: [String/list(Strings)] Crossref metadata records can be
+            quite large. Sometimes you just want a few elements from the schema. You can "select"
+            a subset of elements to return. This can make your API calls much more efficient. Not
+            clear yet which fields are allowed here.
         :param works: [Boolean] If true, works returned as well. Default: false
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
@@ -581,7 +613,7 @@ class Crossref(object):
         '''
         return request(self.mailto, self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,
-            order, facet, works, cursor, cursor_max, **kwargs)
+            order, facet, select, works, cursor, cursor_max, **kwargs)
 
     def licenses(self, query = None, offset = None,
               limit = None, sample = None, sort = None,
