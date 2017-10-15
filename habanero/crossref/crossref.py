@@ -38,6 +38,20 @@ class Crossref(object):
     article titles, authors, etc. For some discussion on this, see
     https://github.com/CrossRef/rest-api-doc/issues/101
 
+    **The Polite Pool**
+
+    As of September 18th 2017 any API queries that use HTTPS and have
+    appropriate contact information will be directed to a special pool
+    of API machines that are reserved for polite users. If you connect
+    to the Crossreef API using HTTPS and provide contact
+    information, then they will send you to a separate pool of machines,
+    with better control the performance of these machines because they can
+    block abusive users.
+
+    We have been using `https` in `habanero` for a while now, so that's good
+    to go. To get into the Polite Pool, also set your mailto email address
+    when you instantiate the `Crossref` object. See examples below.
+
     **Doing setup**::
 
         from habanero import Crossref
@@ -46,6 +60,8 @@ class Crossref(object):
         Crossref(base_url = "http://some.other.url")
         # set an api key
         Crossref(api_key = "123456")
+        # set a mailto address
+        Crossref(mailto = "foo@bar.com")
 
     .. _RateLimits:
 
@@ -132,14 +148,16 @@ class Crossref(object):
     |
     |
     '''
-    def __init__(self, base_url = "https://api.crossref.org", api_key = None):
+    def __init__(self, base_url = "https://api.crossref.org",
+        api_key = None, mailto = None):
 
         self.base_url = base_url
         self.api_key = api_key
+        self.mailto = mailto
 
     def __repr__(self):
-      return """< %s \nURL: %s\nKEY: %s\n>""" % (type(self).__name__,
-        self.base_url, sub_str(self.api_key))
+      return """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\n>""" % (type(self).__name__,
+        self.base_url, sub_str(self.api_key), self.mailto)
 
     def works(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
@@ -249,11 +267,11 @@ class Crossref(object):
             [ x['author'][0]['family'] for x in res['message']['items'] ]
         '''
         if ids.__class__.__name__ != 'NoneType':
-            return request(self.base_url, "/works/", ids,
+            return request(self.mailto, self.base_url, "/works/", ids,
                 query, filter, offset, limit, sample, sort,
                 order, facet, None, None, None, None, **kwargs)
         else:
-            return Request(self.base_url, "/works/",
+            return Request(self.mailto, self.base_url, "/works/",
               query, filter, offset, limit, sample, sort,
               order, facet, cursor, cursor_max, None, **kwargs).do_request()
 
@@ -312,7 +330,7 @@ class Crossref(object):
             res = cr.members(ids = 98, works = True, query_author = 'carl boettiger', limit = 7)
             [ x['author'][0]['family'] for x in res['message']['items'] ]
         '''
-        return request(self.base_url, "/members/", ids,
+        return request(self.mailto, self.base_url, "/members/", ids,
             query, filter, offset, limit, sample, sort,
             order, facet, works, cursor, cursor_max, **kwargs)
 
@@ -377,7 +395,7 @@ class Crossref(object):
             [ z for z in eds if z is not None ]
         '''
         check_kwargs(["query"], kwargs)
-        return request(self.base_url, "/prefixes/", ids,
+        return request(self.mailto, self.base_url, "/prefixes/", ids,
           query = None, filter = filter, offset = offset, limit = limit,
           sample = sample, sort = sort, order = order, facet = facet, works = works,
           cursor = cursor, cursor_max = cursor_max, **kwargs)
@@ -440,7 +458,7 @@ class Crossref(object):
             eds = [ x.get('editor') for x in res['message']['items'] ]
             [ z for z in eds if z is not None ]
         '''
-        return request(self.base_url, "/funders/", ids,
+        return request(self.mailto, self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
           order, facet, works, cursor, cursor_max, **kwargs)
 
@@ -511,7 +529,7 @@ class Crossref(object):
             res = cr.journals(ids = "2167-8359", works = True, query_title = 'fish', filter = {'type': 'journal-article'})
             [ x.get('title') for x in res['message']['items'] ]
         '''
-        return request(self.base_url, "/journals/", ids,
+        return request(self.mailto, self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
           order, facet, works, cursor, cursor_max, **kwargs)
 
@@ -561,7 +579,7 @@ class Crossref(object):
             res = cr.types(ids = "journal-article", works = True, query_title = 'gender', rows = 100)
             [ x.get('title') for x in res['message']['items'] ]
         '''
-        return request(self.base_url, "/types/", ids,
+        return request(self.mailto, self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,
             order, facet, works, cursor, cursor_max, **kwargs)
 
@@ -594,7 +612,7 @@ class Crossref(object):
             cr.licenses(query = "creative")
         '''
         check_kwargs(["ids", "filter", "works"], kwargs)
-        res = request(self.base_url, "/licenses/", None,
+        res = request(self.mailto, self.base_url, "/licenses/", None,
             query, None, offset, limit, None, sort,
             order, facet, None, None, None, None, **kwargs)
         return res
@@ -618,7 +636,7 @@ class Crossref(object):
         '''
         check_kwargs(["query", "filter", "offset", "limit", "sample", "sort",
             "order", "facet", "works"], kwargs)
-        res = request(self.base_url, "/works/", ids,
+        res = request(self.mailto, self.base_url, "/works/", ids,
             None, None, None, None, None, None,
             None, None, None, None, None, True, **kwargs)
         if res.__class__ != list:
@@ -647,7 +665,7 @@ class Crossref(object):
             cr.random_dois(50)
             cr.random_dois(100)
         '''
-        res = request(self.base_url, "/works/", None,
+        res = request(self.mailto, self.base_url, "/works/", None,
             None, None, None, None, sample, None,
             None, None, True, **kwargs)
         return [ z['DOI'] for z in res['message']['items'] ]

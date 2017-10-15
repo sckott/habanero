@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero.crossref.crossref &mdash; habanero 0.5.0 documentation</title>
+  <title>habanero.crossref.crossref &mdash; habanero 0.5.0.2 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="../../../genindex.html"/>
         <link rel="search" title="Search" href="../../../search.html"/>
-    <link rel="top" title="habanero 0.5.0 documentation" href="../../../index.html"/>
+    <link rel="top" title="habanero 0.5.0.2 documentation" href="../../../index.html"/>
         <link rel="up" title="Module code" href="../../index.html"/> 
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                0.5.0
+                0.5.0.2
               </div>
             
           
@@ -177,6 +177,20 @@
 <span class="sd">    article titles, authors, etc. For some discussion on this, see</span>
 <span class="sd">    https://github.com/CrossRef/rest-api-doc/issues/101</span>
 
+<span class="sd">    **The Polite Pool**</span>
+
+<span class="sd">    As of September 18th 2017 any API queries that use HTTPS and have</span>
+<span class="sd">    appropriate contact information will be directed to a special pool</span>
+<span class="sd">    of API machines that are reserved for polite users. If you connect</span>
+<span class="sd">    to the Crossreef API using HTTPS and provide contact</span>
+<span class="sd">    information, then they will send you to a separate pool of machines,</span>
+<span class="sd">    with better control the performance of these machines because they can</span>
+<span class="sd">    block abusive users.</span>
+
+<span class="sd">    We have been using `https` in `habanero` for a while now, so that&#39;s good</span>
+<span class="sd">    to go. To get into the Polite Pool, also set your mailto email address</span>
+<span class="sd">    when you instantiate the `Crossref` object. See examples below.</span>
+
 <span class="sd">    **Doing setup**::</span>
 
 <span class="sd">        from habanero import Crossref</span>
@@ -185,6 +199,8 @@
 <span class="sd">        Crossref(base_url = &quot;http://some.other.url&quot;)</span>
 <span class="sd">        # set an api key</span>
 <span class="sd">        Crossref(api_key = &quot;123456&quot;)</span>
+<span class="sd">        # set a mailto address</span>
+<span class="sd">        Crossref(mailto = &quot;foo@bar.com&quot;)</span>
 
 <span class="sd">    .. _RateLimits:</span>
 
@@ -271,14 +287,16 @@
 <span class="sd">    |</span>
 <span class="sd">    |</span>
 <span class="sd">    &#39;&#39;&#39;</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.crossref.org&quot;</span><span class="p">,</span> <span class="n">api_key</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.crossref.org&quot;</span><span class="p">,</span>
+        <span class="n">api_key</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">mailto</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span> <span class="o">=</span> <span class="n">base_url</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="n">api_key</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">mailto</span> <span class="o">=</span> <span class="n">mailto</span>
 
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-      <span class="k">return</span> <span class="s2">&quot;&quot;&quot;&lt; </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">URL: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">KEY: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="n">sub_str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_key</span><span class="p">))</span>
+      <span class="k">return</span> <span class="s2">&quot;&quot;&quot;&lt; </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">URL: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">KEY: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">MAILTO: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="n">sub_str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_key</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">)</span>
 
 <div class="viewcode-block" id="Crossref.works"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.works">[docs]</a>    <span class="k">def</span> <span class="nf">works</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
@@ -388,11 +406,11 @@
 <span class="sd">            [ x[&#39;author&#39;][0][&#39;family&#39;] for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="k">if</span> <span class="n">ids</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">!=</span> <span class="s1">&#39;NoneType&#39;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+            <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
                 <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
                 <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span>
+            <span class="k">return</span> <span class="n">Request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span>
               <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
               <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
 
@@ -451,7 +469,7 @@
 <span class="sd">            res = cr.members(ids = 98, works = True, query_author = &#39;carl boettiger&#39;, limit = 7)</span>
 <span class="sd">            [ x[&#39;author&#39;][0][&#39;family&#39;] for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/members/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
@@ -516,7 +534,7 @@
 <span class="sd">            [ z for z in eds if z is not None ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s2">&quot;query&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/prefixes/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span> <span class="o">=</span> <span class="n">limit</span><span class="p">,</span>
           <span class="n">sample</span> <span class="o">=</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="n">sort</span><span class="p">,</span> <span class="n">order</span> <span class="o">=</span> <span class="n">order</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span>
           <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
@@ -579,7 +597,7 @@
 <span class="sd">            eds = [ x.get(&#39;editor&#39;) for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">            [ z for z in eds if z is not None ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/funders/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
@@ -650,7 +668,7 @@
 <span class="sd">            res = cr.journals(ids = &quot;2167-8359&quot;, works = True, query_title = &#39;fish&#39;, filter = {&#39;type&#39;: &#39;journal-article&#39;})</span>
 <span class="sd">            [ x.get(&#39;title&#39;) for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/journals/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
@@ -700,7 +718,7 @@
 <span class="sd">            res = cr.types(ids = &quot;journal-article&quot;, works = True, query_title = &#39;gender&#39;, rows = 100)</span>
 <span class="sd">            [ x.get(&#39;title&#39;) for x in res[&#39;message&#39;][&#39;items&#39;] ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/types/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
@@ -733,7 +751,7 @@
 <span class="sd">            cr.licenses(query = &quot;creative&quot;)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s2">&quot;ids&quot;</span><span class="p">,</span> <span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="s2">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/licenses/&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/licenses/&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
             <span class="n">query</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span></div>
@@ -757,7 +775,7 @@
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="n">check_kwargs</span><span class="p">([</span><span class="s2">&quot;query&quot;</span><span class="p">,</span> <span class="s2">&quot;filter&quot;</span><span class="p">,</span> <span class="s2">&quot;offset&quot;</span><span class="p">,</span> <span class="s2">&quot;limit&quot;</span><span class="p">,</span> <span class="s2">&quot;sample&quot;</span><span class="p">,</span> <span class="s2">&quot;sort&quot;</span><span class="p">,</span>
             <span class="s2">&quot;order&quot;</span><span class="p">,</span> <span class="s2">&quot;facet&quot;</span><span class="p">,</span> <span class="s2">&quot;works&quot;</span><span class="p">],</span> <span class="n">kwargs</span><span class="p">)</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
             <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">res</span><span class="o">.</span><span class="vm">__class__</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
@@ -786,7 +804,7 @@
 <span class="sd">            cr.random_dois(50)</span>
 <span class="sd">            cr.random_dois(100)</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
             <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
             <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span></div>
@@ -860,7 +878,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../../',
-            VERSION:'0.5.0',
+            VERSION:'0.5.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

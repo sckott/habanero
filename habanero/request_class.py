@@ -12,10 +12,11 @@ class Request(object):
 
   This is the request class for all requests
   '''
-  def __init__(self, url, path, query = None, filter = None,
+  def __init__(self, mailto, url, path, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, cursor = None, cursor_max = None,
         agency = False, **kwargs):
+    self.mailto = mailto
     self.url = url
     self.path = path
     self.query = query
@@ -72,7 +73,7 @@ class Request(object):
 
   def _req(self, payload):
     try:
-      r = requests.get(self._url(), params = payload, headers = make_ua())
+      r = requests.get(self._url(), params = payload, headers = make_ua(self.mailto))
       r.raise_for_status()
     except requests.exceptions.HTTPError:
       try:

@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.5.0.2 (2017-10-15)
+--------------------
+* Added `mailto` support (#68) and added docs about polite pool (#66)
+
 0.5.0 (2017-07-20)
 --------------------
 * Now using `vcrpy` to mock all unit tests (#54)

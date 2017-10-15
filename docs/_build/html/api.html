@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Crossref Search &mdash; habanero 0.5.0 documentation</title>
+  <title>Crossref Search &mdash; habanero 0.5.0.2 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="habanero 0.5.0 documentation" href="index.html"/>
+    <link rel="top" title="habanero 0.5.0.2 documentation" href="index.html"/>
         <link rel="next" title="Crossref Search Filters" href="filters.html"/>
         <link rel="prev" title="habanero" href="index.html"/> 
 
@@ -65,7 +65,7 @@
             
             
               <div class="version">
-                0.5.0
+                0.5.0.2
               </div>
             
           
@@ -141,7 +141,7 @@
 <span id="crossref-search"></span><span id="crossref"></span><h1>Crossref Search<a class="headerlink" href="#module-habanero" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="habanero.Crossref">
-<em class="property">class </em><code class="descclassname">habanero.</code><code class="descname">Crossref</code><span class="sig-paren">(</span><em>base_url='https://api.crossref.org'</em>, <em>api_key=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">habanero.</code><code class="descname">Crossref</code><span class="sig-paren">(</span><em>base_url='https://api.crossref.org'</em>, <em>api_key=None</em>, <em>mailto=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/habanero/crossref/crossref.html#Crossref"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#habanero.Crossref" title="Permalink to this definition">¶</a></dt>
 <dd><p>Crossref: Class for Crossref search API methods</p>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -171,6 +171,17 @@ searching full text, or even abstracts of articles, but only what is
 available in the data that is returned to you. That is, they search
 article titles, authors, etc. For some discussion on this, see
 <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/issues/101">https://github.com/CrossRef/rest-api-doc/issues/101</a></p>
+<p><strong>The Polite Pool</strong></p>
+<p>As of September 18th 2017 any API queries that use HTTPS and have
+appropriate contact information will be directed to a special pool
+of API machines that are reserved for polite users. If you connect
+to the Crossreef API using HTTPS and provide contact
+information, then they will send you to a separate pool of machines,
+with better control the performance of these machines because they can
+block abusive users.</p>
+<p>We have been using <cite>https</cite> in <cite>habanero</cite> for a while now, so that&#8217;s good
+to go. To get into the Polite Pool, also set your mailto email address
+when you instantiate the <cite>Crossref</cite> object. See examples below.</p>
 <p><strong>Doing setup</strong>:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="k">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
@@ -178,6 +189,8 @@ article titles, authors, etc. For some discussion on this, see
 <span class="n">Crossref</span><span class="p">(</span><span class="n">base_url</span> <span class="o">=</span> <span class="s2">&quot;http://some.other.url&quot;</span><span class="p">)</span>
 <span class="c1"># set an api key</span>
 <span class="n">Crossref</span><span class="p">(</span><span class="n">api_key</span> <span class="o">=</span> <span class="s2">&quot;123456&quot;</span><span class="p">)</span>
+<span class="c1"># set a mailto address</span>
+<span class="n">Crossref</span><span class="p">(</span><span class="n">mailto</span> <span class="o">=</span> <span class="s2">&quot;foo@bar.com&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p id="ratelimits"><strong>Rate limits</strong></p>
@@ -840,7 +853,7 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.5.0',
+            VERSION:'0.5.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

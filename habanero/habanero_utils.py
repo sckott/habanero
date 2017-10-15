@@ -48,10 +48,12 @@ def is_json(x):
 def parse_json_err(x):
   return x.json()['message'][0]['message']
 
-def make_ua():
+def make_ua(mailto = None):
     requa = 'python-requests/' + requests.__version__
     habua = 'habanero/%s' % __version__
     ua = requa + ' ' + habua
+    if mailto is not None:
+      ua = ua + " (mailto:%s)" % mailto
     str = {
       'User-Agent': ua,
       'X-USER-AGENT': ua
