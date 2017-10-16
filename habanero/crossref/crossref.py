@@ -105,6 +105,8 @@ class Crossref(object):
     * `query_chair` - Query chair first and given names
     * `query_translator` - Query translator first and given names
     * `query_contributor` - Query author, editor, chair and translator first and given names
+    * `query_bibliographic` - Query bibliographic infomration, useful for citation look up. Includes titles, authors, ISSNs and publication years
+    * `query_affiliation` - Query contributor affiliations
 
     .. _sorting:
 
