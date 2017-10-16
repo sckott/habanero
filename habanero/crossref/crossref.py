@@ -3,7 +3,7 @@ import requests
 from ..request import request
 from ..request_class import Request
 from ..habanero_utils import sub_str,check_kwargs
-from .filters import filter_names, filter_details
+from .filters import filter_details
 
 class Crossref(object):
     '''
@@ -719,7 +719,9 @@ class Crossref(object):
             cr = Crossref()
             cr.filter_names()
         '''
-        return filter_names
+        nms = filter_details.keys()
+        nms.sort()
+        return nms
 
     @staticmethod
     def filter_details():

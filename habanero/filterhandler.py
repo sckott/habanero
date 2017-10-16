@@ -37,8 +37,8 @@ def filter_handler(x = None):
     return newx
 
 others = ['license_url','license_version','license_delay',
-          'full_text_version','full_text_type','award_number',
-          'award_funder']
+          'full_text_version','full_text_type','full_text_application',
+          'award_number','award_funder']
 
 dict_filts = {
   'license_url': 'license.url',
@@ -47,7 +47,10 @@ dict_filts = {
   'full_text_version': 'full-text.version',
   'full_text_type': 'full-text.type',
   'award_number': 'award.number',
-  'award_funder': 'award.funder'
+  'award_funder': 'award.funder',
+  "relation_type": "relation.type",
+  "relation_object": "relation.object",
+  "relation_object_type": "relation.object-type"
 }
 
 def switch_filters(x):

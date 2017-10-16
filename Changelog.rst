@@ -5,6 +5,7 @@ Changelog
 --------------------
 * Added `mailto` support (#68) and added docs about polite pool (#66)
 * Added support for `select` parameter (#65)
+* Added all new `/works` route filters, and simplified filter option handling within library (#60)
 
 0.5.0 (2017-07-20)
 --------------------

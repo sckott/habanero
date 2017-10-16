@@ -142,7 +142,7 @@
 <span class="kn">from</span> <span class="nn">..request</span> <span class="k">import</span> <span class="n">request</span>
 <span class="kn">from</span> <span class="nn">..request_class</span> <span class="k">import</span> <span class="n">Request</span>
 <span class="kn">from</span> <span class="nn">..habanero_utils</span> <span class="k">import</span> <span class="n">sub_str</span><span class="p">,</span><span class="n">check_kwargs</span>
-<span class="kn">from</span> <span class="nn">.filters</span> <span class="k">import</span> <span class="n">filter_names</span><span class="p">,</span> <span class="n">filter_details</span>
+<span class="kn">from</span> <span class="nn">.filters</span> <span class="k">import</span> <span class="n">filter_details</span>
 
 <div class="viewcode-block" id="Crossref"><a class="viewcode-back" href="../../../api.html#habanero.Crossref">[docs]</a><span class="k">class</span> <span class="nc">Crossref</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
@@ -858,7 +858,9 @@
 <span class="sd">            cr = Crossref()</span>
 <span class="sd">            cr.filter_names()</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">filter_names</span></div>
+        <span class="n">nms</span> <span class="o">=</span> <span class="n">filter_details</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+        <span class="n">nms</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">nms</span></div>
 
     <span class="nd">@staticmethod</span>
 <div class="viewcode-block" id="Crossref.filter_details"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_details">[docs]</a>    <span class="k">def</span> <span class="nf">filter_details</span><span class="p">():</span>
