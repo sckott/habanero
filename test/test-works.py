@@ -84,4 +84,4 @@ def test_works_with_select_param():
     res1 = cr.works(query = "ecology", select = "DOI,title")
     res2 = cr.works(query = "ecology", select = ["DOI","title"])
     assert res1 == res2
-    assert res1['message']['items'][0].keys() == ['DOI', 'title']
+    assert list(res2['message']['items'][0].keys()) == ['DOI', 'title']

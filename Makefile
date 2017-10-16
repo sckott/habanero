@@ -3,10 +3,10 @@ all: build install
 .PHONY: build install test docs distclean dist upload
 
 build:
-	python setup.py build
+	python3 setup.py build
 
 install:
-	python setup.py install
+	python3 setup.py install
 
 test:
 	nosetests -v --with-coverage --cover-package=habanero
@@ -23,10 +23,10 @@ distclean:
 	rm dist/*
 
 dist:
-	python setup.py sdist bdist_wheel --universal
+	python3 setup.py sdist bdist_wheel --universal
 
 register:
-	python setup.py register
+	python3 setup.py register
 
 upload:
 	twine upload dist/*
