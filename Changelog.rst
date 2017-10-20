@@ -1,9 +1,12 @@
 Changelog
 =========
 
-0.5.0.2 (2017-10-15)
+0.6.0 (2017-10-20)
 --------------------
-* Added `mailto` support (#68) and added docs about polite pool (#66)
+* Added support for new feature of filters on `/members` and `/funders` routes (#67)
+* Added verification and docs for additional Crossref search filters (#62)
+* Big improvement to docs on readthedocs (#59)
+* Added `mailto` support (#68) (#63) and related added docs about polite pool (#66)
 * Added support for `select` parameter (#65)
 * Added all new `/works` route filters, and simplified filter option handling within library (#60)
 

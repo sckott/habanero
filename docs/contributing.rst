@@ -6,7 +6,7 @@ Contributing
 .. important::
 
     Double check you are reading the most recent version of this document at
-    http://habanero.readthedocs.io/en/latest/registry.html
+    http://habanero.readthedocs.io/en/latest/index.html
 
 Bug reports
 -----------
