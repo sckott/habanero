@@ -31,7 +31,7 @@ setup(
   packages         = find_packages(exclude=['test-*']),
   install_requires = ['requests>=2.7.0'],
   classifiers      = (
-    'Development Status :: 3 - Alpha',
+    'Development Status :: 4 - Beta',
     'Intended Audience :: Science/Research',
     'Intended Audience :: Developers',
     'Topic :: Scientific/Engineering :: Bio-Informatics',
@@ -40,6 +40,7 @@ setup(
     'Programming Language :: Python',
     'Programming Language :: Python :: 2.6',
     'Programming Language :: Python :: 2.7',
-    'Programming Language :: Python :: 3'
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.5'
 	)
 )

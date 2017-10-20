@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>cn module &mdash; habanero 0.5.0.2 documentation</title>
+  <title>cn module &mdash; habanero 0.6.0 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
         <link rel="index" title="Index"
               href="../genindex.html"/>
         <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="habanero 0.5.0.2 documentation" href="../index.html"/>
-        <link rel="next" title="Changelog" href="../changelog_link.html"/>
+    <link rel="top" title="habanero 0.6.0 documentation" href="../index.html"/>
+        <link rel="next" title="Exceptions" href="../exceptions.html"/>
         <link rel="prev" title="counts module" href="counts.html"/> 
 
   
@@ -66,7 +66,7 @@
             
             
               <div class="version">
-                0.5.0.2
+                0.6.0
               </div>
             
           
@@ -103,6 +103,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">habanero modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="crossref.html">crossref module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="counts.html">counts module</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">cn module</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#module-habanero">cn API</a></li>
@@ -111,6 +112,7 @@
 </ul>
 <p class="caption"><span class="caption-text">All the rest</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="../exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../changelog_link.html">Changelog</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributors.html">Contributors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing</a></li>
@@ -211,7 +213,7 @@ passed in, do so in a list</li>
 <li><strong>format</strong> &#8211; [str] Name of the format. One of &#8220;rdf-xml&#8221;, &#8220;turtle&#8221;, &#8220;citeproc-json&#8221;,
 &#8220;citeproc-json-ish&#8221;, &#8220;text&#8221;, &#8220;ris&#8221;, &#8220;bibtex&#8221; (Default), &#8220;crossref-xml&#8221;,
 &#8220;datacite-xml&#8221;,&#8221;bibentry&#8221;, or &#8220;crossref-tdm&#8221;</li>
-<li><strong>style</strong> &#8211; [str] A CSL style (for text format only). See <a class="reference internal" href="../cn.html#habanero.cn.csl_styles" title="habanero.cn.csl_styles"><code class="xref py py-func docutils literal"><span class="pre">csl_styles()</span></code></a>
+<li><strong>style</strong> &#8211; [str] A CSL style (for text format only). See <code class="xref py py-func docutils literal"><span class="pre">csl_styles()</span></code>
 for options. Default: &#8220;apa&#8221;. If there&#8217;s a style that CrossRef doesn&#8217;t support
 you&#8217;ll get a <cite>(500) Internal Server Error</cite></li>
 <li><strong>locale</strong> &#8211; [str] Language locale. See <cite>locale.locale_alias</cite></li>
@@ -291,7 +293,7 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../changelog_link.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../exceptions.html" class="btn btn-neutral float-right" title="Exceptions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="counts.html" class="btn btn-neutral" title="counts module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -303,7 +305,7 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Scott Chamberlain.
+        &copy; Copyright 2017, Scott Chamberlain.
 
     </p>
   </div>
@@ -325,7 +327,7 @@ format you request (e.g., JSON vs. XML vs. bibtex)</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.5.0.2',
+            VERSION:'0.6.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

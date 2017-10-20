@@ -3,7 +3,6 @@ Changelog
 
 0.6.0 (2017-10-20)
 --------------------
-* Added support for new feature of filters on `/members` and `/funders` routes (#67)
 * Added verification and docs for additional Crossref search filters (#62)
 * Big improvement to docs on readthedocs (#59)
 * Added `mailto` support (#68) (#63) and related added docs about polite pool (#66)

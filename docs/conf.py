@@ -59,7 +59,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'habanero'
-copyright = u'2016, Scott Chamberlain'
+copyright = u'2017, Scott Chamberlain'
 author = u'Scott Chamberlain'
 
 # The version info for the project you're documenting, acts as replacement for
