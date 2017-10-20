@@ -37,8 +37,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.doctest',
-    'sphinx.ext.inheritance_diagram',
-    'sphinxcontrib.issuetracker'
+    'sphinx.ext.inheritance_diagram'
 ]
 
 issuetracker = 'github'

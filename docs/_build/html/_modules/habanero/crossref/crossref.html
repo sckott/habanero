@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -27,8 +29,6 @@
     <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
   
 
-  
-    <link rel="stylesheet" href="../../../_static/issuetracker.css" type="text/css" />
   
 
   
@@ -45,6 +45,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -85,13 +86,34 @@
           
             
             
-                <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../api.html">Crossref Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../counts.html">Citation counts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../cn.html">Content negotiation</a></li>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../intro/install.html">Installation guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../docs/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../docs/usecases.html">Usecases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/intro.html">habanero modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/crossref.html">crossref module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/filters.html">Crossref Search Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/counts.html">counts module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules/cn.html">cn module</a></li>
+</ul>
+<p class="caption"><span class="caption-text">All the rest</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../changelog_link.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../conduct.html">Contributor Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">LICENSE</a></li>
 </ul>
 
             
@@ -104,8 +126,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../../index.html">habanero</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">habanero</a>
+        
       </nav>
 
 
@@ -118,19 +142,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="../../../index.html">Docs</a> &raquo;</li>
-      
+    
+      <li><a href="../../../index.html">Docs</a> &raquo;</li>
+        
           <li><a href="../../index.html">Module code</a> &raquo;</li>
-      
-    <li>habanero.crossref.crossref</li>
+        
+      <li>habanero.crossref.crossref</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -297,10 +338,10 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">mailto</span> <span class="o">=</span> <span class="n">mailto</span>
 
     <span class="k">def</span> <span class="nf">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-      <span class="k">return</span> <span class="s2">&quot;&quot;&quot;&lt; </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">URL: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">KEY: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">MAILTO: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span>
+      <span class="k">return</span> <span class="s2">&quot;&quot;&quot;&lt; </span><span class="si">%s</span><span class="s2"> </span><span class="se">\n</span><span class="s2">URL: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">KEY: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">MAILTO: </span><span class="si">%s</span><span class="se">\n</span><span class="s2">&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">__name__</span><span class="p">,</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="n">sub_str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">api_key</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Crossref.works"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.works">[docs]</a>    <span class="k">def</span> <span class="nf">works</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.works"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.works">[docs]</a>    <span class="k">def</span> <span class="nf">works</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -418,7 +459,7 @@
 <span class="sd">            ## or as a list</span>
 <span class="sd">            cr.works(query = &quot;ecology&quot;, select = [&quot;DOI&quot;,&quot;title&quot;])</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">if</span> <span class="n">ids</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span> <span class="o">!=</span> <span class="s1">&#39;NoneType&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">ids</span><span class="o">.</span><span class="n">__class__</span><span class="o">.</span><span class="n">__name__</span> <span class="o">!=</span> <span class="s1">&#39;NoneType&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
                 <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
                 <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
@@ -427,7 +468,7 @@
               <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
               <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">do_request</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.members"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.members">[docs]</a>    <span class="k">def</span> <span class="nf">members</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -490,7 +531,7 @@
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Crossref.prefixes"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.prefixes">[docs]</a>    <span class="k">def</span> <span class="nf">prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.prefixes"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.prefixes">[docs]</a>    <span class="k">def</span> <span class="nf">prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -561,7 +602,7 @@
           <span class="n">select</span> <span class="o">=</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span> <span class="o">=</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="n">cursor_max</span><span class="p">,</span>
           <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Crossref.funders"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.funders">[docs]</a>    <span class="k">def</span> <span class="nf">funders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.funders"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.funders">[docs]</a>    <span class="k">def</span> <span class="nf">funders</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -627,7 +668,7 @@
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Crossref.journals"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.journals">[docs]</a>    <span class="k">def</span> <span class="nf">journals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.journals"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.journals">[docs]</a>    <span class="k">def</span> <span class="nf">journals</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -702,7 +743,7 @@
           <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
           <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Crossref.types"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.types">[docs]</a>    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.types"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.types">[docs]</a>    <span class="k">def</span> <span class="nf">types</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="nb">filter</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span> <span class="n">select</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">cursor</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">cursor_max</span> <span class="o">=</span> <span class="mi">5000</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
@@ -756,7 +797,7 @@
             <span class="n">query</span><span class="p">,</span> <span class="nb">filter</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">limit</span><span class="p">,</span> <span class="n">sample</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span>
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">works</span><span class="p">,</span> <span class="n">cursor</span><span class="p">,</span> <span class="n">cursor_max</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Crossref.licenses"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.licenses">[docs]</a>    <span class="k">def</span> <span class="nf">licenses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<div class="viewcode-block" id="Crossref.licenses"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.licenses">[docs]</a>    <span class="k">def</span> <span class="nf">licenses</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">offset</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">limit</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">sort</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">order</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">facet</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
@@ -790,7 +831,7 @@
             <span class="n">order</span><span class="p">,</span> <span class="n">facet</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">res</span></div>
 
-<div class="viewcode-block" id="Crossref.registration_agency"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.registration_agency">[docs]</a>    <span class="k">def</span> <span class="nf">registration_agency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Crossref.registration_agency"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.registration_agency">[docs]</a>    <span class="k">def</span> <span class="nf">registration_agency</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Determine registration agency for DOIs</span>
 
@@ -812,14 +853,14 @@
         <span class="n">res</span> <span class="o">=</span> <span class="n">request</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">mailto</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">,</span> <span class="s2">&quot;/works/&quot;</span><span class="p">,</span> <span class="n">ids</span><span class="p">,</span>
             <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span>
             <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">res</span><span class="o">.</span><span class="vm">__class__</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">res</span><span class="o">.</span><span class="n">__class__</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
             <span class="n">k</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="n">k</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">k</span> <span class="o">=</span> <span class="n">res</span>
         <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;agency&#39;</span><span class="p">][</span><span class="s1">&#39;label&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">k</span> <span class="p">]</span></div>
 
-<div class="viewcode-block" id="Crossref.random_dois"><a class="viewcode-back" href="../../../api.html#habanero.Crossref.random_dois">[docs]</a>    <span class="k">def</span> <span class="nf">random_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class="viewcode-block" id="Crossref.random_dois"><a class="viewcode-back" href="../../../modules/crossref.html#habanero.Crossref.random_dois">[docs]</a>    <span class="k">def</span> <span class="nf">random_dois</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sample</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Get a random set of DOIs</span>
 
@@ -844,7 +885,7 @@
         <span class="k">return</span> <span class="p">[</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;DOI&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span> <span class="p">]</span></div>
 
     <span class="nd">@staticmethod</span>
-<div class="viewcode-block" id="Crossref.filter_names"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_names">[docs]</a>    <span class="k">def</span> <span class="nf">filter_names</span><span class="p">():</span>
+<div class="viewcode-block" id="Crossref.filter_names"><a class="viewcode-back" href="../../../modules/filters.html#habanero.Crossref.filter_names">[docs]</a>    <span class="k">def</span> <span class="nf">filter_names</span><span class="p">():</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Filter names - just the names of each filter</span>
 
@@ -863,7 +904,7 @@
         <span class="k">return</span> <span class="n">nms</span></div>
 
     <span class="nd">@staticmethod</span>
-<div class="viewcode-block" id="Crossref.filter_details"><a class="viewcode-back" href="../../../filters.html#habanero.Crossref.filter_details">[docs]</a>    <span class="k">def</span> <span class="nf">filter_details</span><span class="p">():</span>
+<div class="viewcode-block" id="Crossref.filter_details"><a class="viewcode-back" href="../../../modules/filters.html#habanero.Crossref.filter_details">[docs]</a>    <span class="k">def</span> <span class="nf">filter_details</span><span class="p">():</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Filter details - filter names, possible values, and description</span>
 
@@ -883,6 +924,9 @@
         <span class="k">return</span> <span class="n">filter_details</span></div></div>
 </pre></div>
 
+           </div>
+           <div class="articleComments">
+            
            </div>
           </div>
           <footer>
@@ -917,7 +961,8 @@
             VERSION:'0.5.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="../../../_static/jquery.js"></script>

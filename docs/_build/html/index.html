@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>habanero &mdash; habanero 0.5.0.2 documentation</title>
+  <title>habanero 0.5.0.2 documentation &mdash; habanero 0.5.0.2 documentation</title>
   
 
+  
+  
   
   
 
@@ -28,15 +30,13 @@
   
 
   
-    <link rel="stylesheet" href="_static/issuetracker.css" type="text/css" />
-  
 
   
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="habanero 0.5.0.2 documentation" href="#"/>
-        <link rel="next" title="Crossref Search" href="api.html"/> 
+        <link rel="next" title="Installation guide" href="intro/install.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -45,6 +45,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -85,13 +86,34 @@
           
             
             
-                <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro/install.html">Installation guide</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Docs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="docs/faq.html">Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/usecases.html">Usecases</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/intro.html">habanero modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/crossref.html">crossref module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/filters.html">Crossref Search Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/counts.html">counts module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/cn.html">cn module</a></li>
+</ul>
+<p class="caption"><span class="caption-text">All the rest</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="changelog_link.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conduct.html">Contributor Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
 </ul>
 
             
@@ -104,8 +126,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="#">habanero</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">habanero</a>
+        
       </nav>
 
 
@@ -114,151 +138,116 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="#">Docs</a> &raquo;</li>
-      
-    <li>habanero</li>
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>habanero 0.5.0.2 documentation</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="habanero">
-<h1>habanero<a class="headerlink" href="#habanero" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://pypi.python.org/pypi/habanero"><img alt="pypi" src="https://img.shields.io/pypi/v/habanero.svg" /></a> <a class="reference external" href="http://habanero.rtfd.org/"><img alt="docs" src="https://readthedocs.org/projects/habanero/badge/?version=latest" /></a> <a class="reference external" href="https://travis-ci.org/sckott/habanero"><img alt="travis" src="https://travis-ci.org/sckott/habanero.svg?branch=master" /></a> <a class="reference external" href="https://coveralls.io/github/sckott/habanero?branch=master"><img alt="coverage" src="https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&amp;service=github" /></a></p>
-<p>This is a low level client for working with Crossref&#8217;s search API. It&#8217;s been named to be more generic, as other organizations are/will adopt Crossref&#8217;s search API, making it possible to interact with all from one client.</p>
-<p><a class="reference external" href="https://github.com/CrossRef/rest-api-doc">Crossref API docs</a></p>
-<p>Other Crossref API clients:</p>
+  <div class="section" id="habanero-version-documentation">
+<h1>habanero 0.5.0.2 documentation<a class="headerlink" href="#habanero-version-documentation" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://pypi.python.org/pypi/habanero"><img alt="pypi" src="https://img.shields.io/pypi/v/habanero.svg" /></a> <a class="reference external" href="http://habanero.rtfd.org/"><img alt="docs" src="https://readthedocs.org/projects/habanero/badge/?version=latest" /></a> <a class="reference external" href="https://travis-ci.org/sckott/habanero"><img alt="travis" src="https://travis-ci.org/sckott/habanero.svg" /></a> <a class="reference external" href="https://coveralls.io/github/sckott/habanero?branch=master"><img alt="coverage" src="https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&amp;service=github" /></a></p>
+<p>Python client for the <a class="reference external" href="http://www.gbif.org/developer/summary">Crossref API</a></p>
+<p>Source on GitHub at <a class="reference external" href="https://github.com/sckott/habanero">sckott/habanero</a></p>
+<div class="section" id="getting-help">
+<h2>Getting help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
+<p>Having trouble? Or want to know how to get started?</p>
 <ul class="simple">
-<li>Ruby: <cite>serrano</cite>, <a class="reference external" href="https://github.com/sckott/serrano">https://github.com/sckott/serrano</a></li>
-<li>R: <cite>rcrossref</cite>, <a class="reference external" href="https://github.com/ropensci/rcrossref">https://github.com/ropensci/rcrossref</a></li>
+<li>Try the <a class="reference internal" href="docs/faq.html"><span class="doc">FAQ</span></a> &#8211; it&#8217;s got answers to some common questions.</li>
+<li>Looking for specific information? Try the <a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li>Report bugs with habanero in our <a class="reference external" href="https://github.com/sckott/habanero/issues">issue tracker</a>.</li>
 </ul>
-<p><cite>habanero</cite> includes three modules you can import as needed (or
-import all):</p>
-<p><cite>Crossref</cite> - Crossref search API. The <cite>Crossref</cite> module includes methods matching Crossref API routes, and a few convenience methods for getting DOI agency and random DOIs:</p>
-<ul class="simple">
-<li><cite>works</cite> - <cite>/works</cite> route</li>
-<li><cite>members</cite> - <cite>/members</cite> route</li>
-<li><cite>prefixes</cite> - <cite>/prefixes</cite> route</li>
-<li><cite>funders</cite> - <cite>/funders</cite> route</li>
-<li><cite>journals</cite> - <cite>/journals</cite> route</li>
-<li><cite>types</cite> - <cite>/types</cite> route</li>
-<li><cite>licenses</cite> - <cite>/licenses</cite> route</li>
-<li><cite>registration_agency</cite> - get DOI minting agency</li>
-<li><cite>random_dois</cite> - get random set of DOIs</li>
-</ul>
-<p><cite>counts</cite> - citation counts. Includes the single <cite>citation_count</cite> method</p>
-<p><cite>cn</cite> - content negotiation. Includes the methods:</p>
-<ul class="simple">
-<li><cite>content_negotiation</cite> - get citations in a variety of formats</li>
-<li><cite>csl_styles</cite> - get CSL styles, used in <cite>content_negotation</cite> method</li>
-</ul>
-<p>Note about searching:</p>
-<p>You are using the Crossref search API described at <a class="reference external" href="https://github.com/CrossRef/rest-api-doc">https://github.com/CrossRef/rest-api-doc</a>. When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see <a class="reference external" href="https://github.com/CrossRef/rest-api-doc/issues/101">https://github.com/CrossRef/rest-api-doc/issues/101</a></p>
-<p>Rate limits</p>
-<p>See the headers <cite>X-Rate-Limit-Limit</cite> and <cite>X-Rate-Limit-Interval</cite> for current rate limits.</p>
 </div>
 <div class="section" id="installation">
-<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<p>Stable version</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">pip install habanero</span>
-</pre></div>
-</div>
-<p>Dev version</p>
-<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">sudo pip install git+git://github.com/sckott/habanero.git#egg=habanero</span>
-
-<span class="gp">#</span> OR
-
-<span class="go">git clone git@github.com:sckott/habanero.git</span>
-<span class="go">cd habanero</span>
-<span class="go">make install</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="usage">
-<h1>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h1>
-<p>Initialize a client</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
-<span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Works route</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">query</span> <span class="o">=</span> <span class="s2">&quot;ecology&quot;</span><span class="p">)</span>
-<span class="n">x</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">]</span>
-<span class="n">x</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;total-results&#39;</span><span class="p">]</span>
-<span class="n">x</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;items&#39;</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Members route</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">cr</span><span class="o">.</span><span class="n">members</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="mi">98</span><span class="p">,</span> <span class="n">works</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Citation counts</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
-<span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Content negotiation - get citations in many formats</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">cn</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s1">&#39;10.1126/science.169.3946.635&#39;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;citeproc-json&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;rdf-xml&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;text&quot;</span><span class="p">,</span> <span class="n">style</span> <span class="o">=</span> <span class="s2">&quot;apa&quot;</span><span class="p">)</span>
-<span class="n">cn</span><span class="o">.</span><span class="n">content_negotiation</span><span class="p">(</span><span class="n">ids</span> <span class="o">=</span> <span class="s2">&quot;10.1126/science.169.3946.635&quot;</span><span class="p">,</span> <span class="n">format</span> <span class="o">=</span> <span class="s2">&quot;bibentry&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="meta">
-<h1>Meta<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li>Please note that this project is released with a <a class="reference external" href="https://github.com/sckott/habanero/blob/master/CONDUCT.md">Contributor Code of Conduct</a>. By participating in this project you agree to abide by its terms.</li>
-<li>License: MIT; see <a class="reference external" href="https://github.com/sckott/habanero/blob/master/LICENSE">LICENSE file</a></li>
-</ul>
-<div class="section" id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog_link.html">Changelog</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id1">0.5.0.2 (2017-10-15)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id2">0.5.0 (2017-07-20)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id3">0.3.0 (2017-05-21)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id4">0.2.6 (2016-06-24)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id5">0.2.2 (2016-03-09)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id6">0.2.0 (2016-02-10)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id7">0.1.3 (2015-12-02)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id8">0.1.1 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id9">0.1.0 (2015-11-17)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog_link.html#id10">0.0.6 (2015-11-09)</a></li>
-</ul>
-</li>
-</ul>
 </div>
+<dl class="docutils">
+<dt><a class="reference internal" href="intro/install.html"><span class="doc">Installation guide</span></a></dt>
+<dd>How to install habanero.</dd>
+</dl>
 </div>
-<div class="section" id="license">
-<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
-<p>MIT</p>
+<div class="section" id="docs">
+<h2>Docs<a class="headerlink" href="#docs" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
 </div>
+<dl class="docutils">
+<dt><a class="reference internal" href="docs/faq.html"><span class="doc">Frequently Asked Questions</span></a></dt>
+<dd>Frequently asked questions.</dd>
+<dt><a class="reference internal" href="docs/usecases.html"><span class="doc">Usecases</span></a></dt>
+<dd>Usecases for habanero.</dd>
+</dl>
+</div>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<dl class="docutils">
+<dt><a class="reference internal" href="modules/intro.html"><span class="doc">habanero modules</span></a></dt>
+<dd>Introduction to habanero modules.</dd>
+<dt><a class="reference internal" href="modules/crossref.html"><span class="doc">crossref module</span></a></dt>
+<dd>The crossref module: core Crossref APIs.</dd>
+<dt><a class="reference internal" href="modules/filters.html"><span class="doc">Crossref Search Filters</span></a></dt>
+<dd>The filters module: Filters details for use with Crossref module.</dd>
+<dt><a class="reference internal" href="modules/counts.html"><span class="doc">counts module</span></a></dt>
+<dd>The counts module: Crossref citation counts.</dd>
+<dt><a class="reference internal" href="modules/cn.html"><span class="doc">cn module</span></a></dt>
+<dd>The cn module: Crossref content negotation.</dd>
+</dl>
+</div>
+<div class="section" id="all-the-rest">
+<h2>All the rest<a class="headerlink" href="#all-the-rest" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+</div>
+<dl class="docutils">
+<dt><a class="reference internal" href="exceptions.html"><span class="doc">Exceptions</span></a></dt>
+<dd>Exceptions.</dd>
+<dt><a class="reference internal" href="changelog_link.html"><span class="doc">Changelog</span></a></dt>
+<dd>See what has changed in recent habanero versions.</dd>
+<dt><a class="reference internal" href="contributors.html"><span class="doc">Contributors</span></a></dt>
+<dd>habanero contributors.</dd>
+<dt><a class="reference internal" href="contributing.html"><span class="doc">Contributing</span></a></dt>
+<dd>Learn how to contribute to the habanero project.</dd>
+<dt><a class="reference internal" href="conduct.html"><span class="doc">Contributor Code of Conduct</span></a></dt>
+<dd>Expected behavior in this community. By participating in this project you agree to abide by its terms.</dd>
+<dt><a class="reference internal" href="license.html"><span class="doc">LICENSE</span></a></dt>
+<dd>The habanero license.</dd>
+</dl>
 <div class="section" id="indices-and-tables">
-<h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
+<h3>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
 <li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
@@ -266,15 +255,19 @@ import all):</p>
 </ul>
 </div>
 </div>
+</div>
 
 
+           </div>
+           <div class="articleComments">
+            
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="api.html" class="btn btn-neutral float-right" title="Crossref Search" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="intro/install.html" class="btn btn-neutral float-right" title="Installation guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -309,7 +302,8 @@ import all):</p>
             VERSION:'0.5.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

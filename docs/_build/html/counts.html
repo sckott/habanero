@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -28,16 +30,12 @@
   
 
   
-    <link rel="stylesheet" href="_static/issuetracker.css" type="text/css" />
-  
 
   
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="habanero 0.5.0.2 documentation" href="index.html"/>
-        <link rel="next" title="Content negotiation" href="cn.html"/>
-        <link rel="prev" title="Crossref Search Filters" href="filters.html"/> 
+    <link rel="top" title="habanero 0.5.0.2 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -46,6 +44,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -86,13 +85,21 @@
           
             
             
-                <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="api.html">Crossref Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Citation counts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/intro.html">habanero modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/crossref.html">crossref module</a></li>
+</ul>
+<p class="caption"><span class="caption-text">All the rest</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="changelog_link.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conduct.html">Contributor Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
 </ul>
 
             
@@ -105,8 +112,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">habanero</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">habanero</a>
+        
       </nav>
 
 
@@ -115,23 +124,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Citation counts</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Citation counts</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/counts.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/counts.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -172,17 +198,11 @@
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="cn.html" class="btn btn-neutral float-right" title="Content negotiation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="filters.html" class="btn btn-neutral" title="Crossref Search Filters" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -214,7 +234,8 @@
             VERSION:'0.5.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

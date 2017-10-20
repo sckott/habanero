@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -28,16 +30,12 @@
   
 
   
-    <link rel="stylesheet" href="_static/issuetracker.css" type="text/css" />
-  
 
   
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="habanero 0.5.0.2 documentation" href="index.html"/>
-        <link rel="next" title="Crossref Search Filters" href="filters.html"/>
-        <link rel="prev" title="habanero" href="index.html"/> 
+    <link rel="top" title="habanero 0.5.0.2 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -46,6 +44,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -86,13 +85,21 @@
           
             
             
-                <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Crossref Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="filters.html">Crossref Search Filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="counts.html">Citation counts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cn.html">Content negotiation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="exceptions.html">Exceptions</a></li>
+              
+            
+            
+              <p class="caption"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules/intro.html">habanero modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules/crossref.html">crossref module</a></li>
+</ul>
+<p class="caption"><span class="caption-text">All the rest</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="changelog_link.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conduct.html">Contributor Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">LICENSE</a></li>
 </ul>
 
             
@@ -105,8 +112,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">habanero</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">habanero</a>
+        
       </nav>
 
 
@@ -115,23 +124,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Crossref Search</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Crossref Search</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/api.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -150,18 +176,18 @@
 </div>
 <p><strong>Includes methods matching Crossref API routes</strong></p>
 <ul class="simple">
-<li>/works - <a class="reference internal" href="#habanero.Crossref.works" title="habanero.Crossref.works"><code class="xref py py-func docutils literal"><span class="pre">works()</span></code></a></li>
-<li>/members - <a class="reference internal" href="#habanero.Crossref.members" title="habanero.Crossref.members"><code class="xref py py-func docutils literal"><span class="pre">members()</span></code></a></li>
-<li>/prefixes - <a class="reference internal" href="#habanero.Crossref.prefixes" title="habanero.Crossref.prefixes"><code class="xref py py-func docutils literal"><span class="pre">prefixes()</span></code></a></li>
-<li>/funders - <a class="reference internal" href="#habanero.Crossref.funders" title="habanero.Crossref.funders"><code class="xref py py-func docutils literal"><span class="pre">funders()</span></code></a></li>
-<li>/journals - <a class="reference internal" href="#habanero.Crossref.journals" title="habanero.Crossref.journals"><code class="xref py py-func docutils literal"><span class="pre">journals()</span></code></a></li>
-<li>/types - <a class="reference internal" href="#habanero.Crossref.types" title="habanero.Crossref.types"><code class="xref py py-func docutils literal"><span class="pre">types()</span></code></a></li>
-<li>/licenses - <a class="reference internal" href="#habanero.Crossref.licenses" title="habanero.Crossref.licenses"><code class="xref py py-func docutils literal"><span class="pre">licenses()</span></code></a></li>
+<li>/works - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.works" title="habanero.Crossref.works"><code class="xref py py-func docutils literal"><span class="pre">works()</span></code></a></li>
+<li>/members - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.members" title="habanero.Crossref.members"><code class="xref py py-func docutils literal"><span class="pre">members()</span></code></a></li>
+<li>/prefixes - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.prefixes" title="habanero.Crossref.prefixes"><code class="xref py py-func docutils literal"><span class="pre">prefixes()</span></code></a></li>
+<li>/funders - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.funders" title="habanero.Crossref.funders"><code class="xref py py-func docutils literal"><span class="pre">funders()</span></code></a></li>
+<li>/journals - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.journals" title="habanero.Crossref.journals"><code class="xref py py-func docutils literal"><span class="pre">journals()</span></code></a></li>
+<li>/types - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.types" title="habanero.Crossref.types"><code class="xref py py-func docutils literal"><span class="pre">types()</span></code></a></li>
+<li>/licenses - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.licenses" title="habanero.Crossref.licenses"><code class="xref py py-func docutils literal"><span class="pre">licenses()</span></code></a></li>
 </ul>
 <p>Also:</p>
 <ul class="simple">
-<li>registration_agency - <a class="reference internal" href="#habanero.Crossref.registration_agency" title="habanero.Crossref.registration_agency"><code class="xref py py-func docutils literal"><span class="pre">registration_agency()</span></code></a></li>
-<li>random_dois - <a class="reference internal" href="#habanero.Crossref.random_dois" title="habanero.Crossref.random_dois"><code class="xref py py-func docutils literal"><span class="pre">random_dois()</span></code></a></li>
+<li>registration_agency - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.registration_agency" title="habanero.Crossref.registration_agency"><code class="xref py py-func docutils literal"><span class="pre">registration_agency()</span></code></a></li>
+<li>random_dois - <a class="reference internal" href="modules/crossref.html#habanero.Crossref.random_dois" title="habanero.Crossref.random_dois"><code class="xref py py-func docutils literal"><span class="pre">random_dois()</span></code></a></li>
 </ul>
 <p><strong>What am I actually searching when using the Crossref search API?</strong></p>
 <p>You are using the Crossref search API described at
@@ -284,8 +310,8 @@ Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
 See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
-for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
-and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
+for filter names and their descriptions and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -352,8 +378,8 @@ Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
 See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
-for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
-and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
+for filter names and their descriptions and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -470,8 +496,8 @@ Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
 See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
-for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
-and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
+for filter names and their descriptions and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -537,8 +563,8 @@ Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
 See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
-for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
-and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
+for filter names and their descriptions and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -671,8 +697,8 @@ Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
 See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
-for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
-and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
+for filter names and their descriptions and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> &#8211; [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -730,8 +756,8 @@ Accepts a dict, with filter names and their values. For repeating filter names
 pass in a list of the values to that filter name, e.g.,
 <cite>{&#8216;award_funder&#8217;: [&#8216;10.13039/100004440&#8217;, &#8216;10.13039/100000861&#8217;]}</cite>.
 See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc#filter-names">https://github.com/CrossRef/rest-api-doc#filter-names</a>
-for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
-and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
+for filter names and their descriptions and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal"><span class="pre">filter_names()</span></code></a>
+and <a class="reference internal" href="modules/crossref.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> &#8211; [Fixnum] Number of record to start at, from 1 to 10000</li>
 <li><strong>limit</strong> &#8211; [Fixnum] Number of results to return. Not relavant when searching with specific dois.
 Default: 20. Max: 1000</li>
@@ -847,17 +873,11 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="filters.html" class="btn btn-neutral float-right" title="Crossref Search Filters" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral" title="habanero" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -889,7 +909,8 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
             VERSION:'0.5.0.2',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
