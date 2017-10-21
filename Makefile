@@ -23,7 +23,8 @@ distclean:
 	rm dist/*
 
 dist:
-	python3 setup.py sdist bdist_wheel --universal
+	python3 setup.py sdist
+	python3 setup.py bdist_wheel --universal
 
 register:
 	python3 setup.py register
