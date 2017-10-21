@@ -5,12 +5,12 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.5.0.2]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.5.0.2]
+      User-Agent: [python-requests/2.11.1 habanero/0.6.0]
+      X-USER-AGENT: [python-requests/2.11.1 habanero/0.6.0]
     method: GET
-    uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
+    uri: https://api.crossref.org/works?select=DOI%2Ctitle&query=ecology
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":308472,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":309057,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
         Ecology"]},{"DOI":"10.1007\/springerreference_29611","title":["Human ecology
         (cultural ecology)"]},{"DOI":"10.2307\/1928969","title":["Ecology or Bio-Ecology"]},{"DOI":"10.2307\/1930158","title":["\"Ecology\"
         and \"Plant Ecology\""]},{"DOI":"10.2307\/1929908","title":["Scandinavian
@@ -27,16 +27,16 @@ interactions:
         of Estuarine Wildlife"]},{"DOI":"10.1155\/8641","title":["ISRN Ecology"]},{"DOI":"10.5402\/ecology","title":["ISRN
         Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1631']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Sun, 15 Oct 2017 20:33:13 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1631']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sat, 21 Oct 2017 00:05:52 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -44,12 +44,12 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.5.0.2]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.5.0.2]
+      User-Agent: [python-requests/2.11.1 habanero/0.6.0]
+      X-USER-AGENT: [python-requests/2.11.1 habanero/0.6.0]
     method: GET
-    uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
+    uri: https://api.crossref.org/works?select=DOI%2Ctitle&query=ecology
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":308472,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":309057,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
         Ecology"]},{"DOI":"10.1007\/springerreference_29611","title":["Human ecology
         (cultural ecology)"]},{"DOI":"10.2307\/1928969","title":["Ecology or Bio-Ecology"]},{"DOI":"10.2307\/1930158","title":["\"Ecology\"
         and \"Plant Ecology\""]},{"DOI":"10.2307\/1929908","title":["Scandinavian
@@ -66,15 +66,15 @@ interactions:
         of Estuarine Wildlife"]},{"DOI":"10.1155\/8641","title":["ISRN Ecology"]},{"DOI":"10.5402\/ecology","title":["ISRN
         Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1631']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Sun, 15 Oct 2017 20:33:14 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1631']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sat, 21 Oct 2017 00:05:56 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1
