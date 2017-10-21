@@ -85,6 +85,14 @@ class Crossref(object):
         requests_log = logging.getLogger("requests.packages.urllib3")
         requests_log.setLevel(logging.DEBUG)
         requests_log.propagate = True
+
+        import requests
+        import logging
+        logging.getLogger().setLevel(logging.DEBUG)
+        requests_log = logging.getLogger("requests.packages.urllib3")
+        requests_log.setLevel(logging.DEBUG)
+        requests_log.propagate = True
+
         from habanero import Crossref
         cr = Crossref()
         cr.works(query = "ecology")

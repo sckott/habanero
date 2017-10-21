@@ -185,7 +185,7 @@
 <span class="kn">from</span> <span class="nn">..habanero_utils</span> <span class="k">import</span> <span class="n">sub_str</span><span class="p">,</span><span class="n">check_kwargs</span>
 <span class="kn">from</span> <span class="nn">.filters</span> <span class="k">import</span> <span class="n">filter_details</span>
 
-<div class="viewcode-block" id="Crossref"><a class="viewcode-back" href="../../../api.html#habanero.Crossref">[docs]</a><span class="k">class</span> <span class="nc">Crossref</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">Crossref</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Crossref: Class for Crossref search API methods</span>
 
@@ -265,6 +265,14 @@
 <span class="sd">        requests_log = logging.getLogger(&quot;requests.packages.urllib3&quot;)</span>
 <span class="sd">        requests_log.setLevel(logging.DEBUG)</span>
 <span class="sd">        requests_log.propagate = True</span>
+
+<span class="sd">        import requests</span>
+<span class="sd">        import logging</span>
+<span class="sd">        logging.getLogger().setLevel(logging.DEBUG)</span>
+<span class="sd">        requests_log = logging.getLogger(&quot;requests.packages.urllib3&quot;)</span>
+<span class="sd">        requests_log.setLevel(logging.DEBUG)</span>
+<span class="sd">        requests_log.propagate = True</span>
+
 <span class="sd">        from habanero import Crossref</span>
 <span class="sd">        cr = Crossref()</span>
 <span class="sd">        cr.works(query = &quot;ecology&quot;)</span>
@@ -921,7 +929,7 @@
 <span class="sd">            x = cr.filter_details()</span>
 <span class="sd">            [ z[&#39;description&#39;] for z in x.values() ]</span>
 <span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="n">filter_details</span></div></div>
+        <span class="k">return</span> <span class="n">filter_details</span></div>
 </pre></div>
 
            </div>
