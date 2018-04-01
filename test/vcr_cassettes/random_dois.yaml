@@ -1,0 +1,111 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+    method: GET
+    uri: https://api.crossref.org/works?sample=10
+  response:
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95864685,"items":[{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T19:51:26Z","timestamp":1509133886970},"reference-count":0,"publisher":"Wiley-Blackwell","issue":"11","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Clin
+        Case Rep"],"published-print":{"date-parts":[[2015,11]]},"DOI":"10.1002\/ccr3.223","type":"journal-article","created":{"date-parts":[[2015,11,2]],"date-time":"2015-11-02T03:25:52Z","timestamp":1446434752000},"page":"i-iv","source":"Crossref","is-referenced-by-count":0,"title":["Issue
+        Information"],"prefix":"10.1002","volume":"3","member":"311","published-online":{"date-parts":[[2015,11,1]]},"container-title":["Clinical
+        Case Reports"],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fccr3.223","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,3,27]],"date-time":"2017-03-27T23:39:43Z","timestamp":1490657983000},"score":1.0,"issued":{"date-parts":[[2015,11]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1002\/ccr3.223","archive":["Portico"],"ISSN":["2050-0904"],"issn-type":[{"value":"2050-0904","type":"print"}]},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T19:52:57Z","timestamp":1509133977020},"publisher-location":"Cham","reference-count":0,"publisher":"Springer
+        International Publishing","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2016]]},"DOI":"10.1007\/978-3-319-26161-4_16","type":"book-chapter","created":{"date-parts":[[2016,4,25]],"date-time":"2016-04-25T11:19:34Z","timestamp":1461583174000},"page":"239-283","source":"Crossref","is-referenced-by-count":0,"title":["Economic
+        Growth, Sustainable Development and Ecological Conservation in the Asian Developing
+        Countries: The Way Forward"],"prefix":"10.1007","author":[{"given":"Choy Yee","family":"Keong","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2016,4,26]]},"container-title":["Topics
+        in Biodiversity and Conservation","Naturalists, Explorers and Field Scientists
+        in South-East Asia and Australasia"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-26161-4_16","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,4,25]],"date-time":"2016-04-25T11:19:42Z","timestamp":1461583182000},"score":1.0,"issued":{"date-parts":[[2016]]},"ISBN":["9783319261591","9783319261614"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-26161-4_16","ISSN":["1875-1288","1875-1296"],"issn-type":[{"value":"1875-1288","type":"print"},{"value":"1875-1296","type":"electronic"}]},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T19:31:08Z","timestamp":1509132668582},"reference-count":2,"publisher":"Elsevier
+        BV","issue":"6","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,6,1]],"date-time":"2017-06-01T00:00:00Z","timestamp":1496275200000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":["clinicalkey.es","elsevier.es","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Archivos
+        de Bronconeumolog\u00eda"],"published-print":{"date-parts":[[2017,6]]},"DOI":"10.1016\/j.arbres.2016.11.005","type":"journal-article","created":{"date-parts":[[2016,12,13]],"date-time":"2016-12-13T14:49:03Z","timestamp":1481640543000},"page":"342","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Carcinoma
+        broncog\u00e9nico en paciente con linfangioleiomiomatosis"],"prefix":"10.1016","volume":"53","author":[{"given":"Luis","family":"Gorospe
+        Saras\u00faa","affiliation":[]},{"given":"Edwin","family":"Mercedes-Noboa","affiliation":[]},{"given":"Mar\u00eda
+        Eugenia","family":"Olmedo-Garc\u00eda","affiliation":[]}],"member":"78","container-title":["Archivos
+        de Bronconeumolog\u00eda"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S030028961630326X?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S030028961630326X?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,7,15]],"date-time":"2017-07-15T08:41:00Z","timestamp":1500108060000},"score":1.0,"issued":{"date-parts":[[2017,6]]},"references-count":2,"alternative-id":["S030028961630326X"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.arbres.2016.11.005","ISSN":["0300-2896"],"issn-type":[{"value":"0300-2896","type":"print"}],"subject":["Pulmonary
+        and Respiratory Medicine"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Carcinoma broncog\u00e9nico en paciente
+        con linfangioleiomiomatosis","name":"articletitle","label":"Article Title"},{"value":"Archivos
+        de Bronconeumolog\u00eda","name":"journaltitle","label":"Journal Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.arbres.2016.11.005","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2016 SEPAR. Published by Elsevier Espa\u00f1a, S.L.U.
+        All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T17:40:45Z","timestamp":1509039645107},"reference-count":0,"publisher":"Edinburgh
+        University Press","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Scottish Historical Review"],"published-print":{"date-parts":[[2006,4]]},"DOI":"10.3366\/shr.2006.0027","type":"journal-article","created":{"date-parts":[[2011,2,22]],"date-time":"2011-02-22T08:26:26Z","timestamp":1298363186000},"page":"171-172","source":"Crossref","is-referenced-by-count":0,"title":["Moffatt
+        and Holmes McCormick,Moon Over MalayaMoon Over Malaya: A Tale of Argylls and
+        Marines. By Jonathan Moffatt and Audrey Holmes McCormick . Pp. 414. ISBN 0
+        7524 2114X. Stroud: Tempus Publishing. 2002. \u00a312.99."],"prefix":"10.3366","volume":"85","author":[{"given":"Nicholas
+        Evans","family":"Sarantakes","affiliation":[]}],"member":"1931","container-title":["Scottish
+        Historical Review"],"deposited":{"date-parts":[[2011,2,22]],"date-time":"2011-02-22T08:27:23Z","timestamp":1298363243000},"score":1.0,"issued":{"date-parts":[[2006,4]]},"references-count":0,"alternative-id":["10.3366\/shr.2006.0027"],"URL":"http:\/\/dx.doi.org\/10.3366\/shr.2006.0027","ISSN":["0036-9241","1750-0222"],"issn-type":[{"value":"0036-9241","type":"print"},{"value":"1750-0222","type":"electronic"}],"subject":["History"]},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T12:30:14Z","timestamp":1509021014874},"reference-count":0,"publisher":"Cambridge
+        University Press (CUP)","issue":"03","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Africa"],"published-print":{"date-parts":[[1971,7]]},"DOI":"10.1017\/s0001972000084448","type":"journal-article","created":{"date-parts":[[2012,1,24]],"date-time":"2012-01-24T09:24:31Z","timestamp":1327397071000},"page":"248","source":"Crossref","is-referenced-by-count":0,"title":["Course
+        on African Dance as Human Behaviour"],"prefix":"10.1017","volume":"41","member":"56","published-online":{"date-parts":[[2012,1,23]]},"container-title":["Africa"],"link":[{"URL":"https:\/\/www.cambridge.org\/core\/services\/aop-cambridge-core\/content\/view\/S0001972000084448","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,21]],"date-time":"2017-04-21T14:08:14Z","timestamp":1492783694000},"score":1.0,"issued":{"date-parts":[[1971,7]]},"references-count":0,"alternative-id":["S0001972000084448"],"URL":"http:\/\/dx.doi.org\/10.1017\/s0001972000084448","ISSN":["0001-9720","1750-0184"],"issn-type":[{"value":"0001-9720","type":"print"},{"value":"1750-0184","type":"electronic"}],"subject":["Geography,
+        Planning and Development","Arts and Humanities (miscellaneous)","Anthropology"]},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T04:06:57Z","timestamp":1509077217588},"reference-count":10,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014,9]]},"DOI":"10.1109\/mmsp.2014.6958808","type":"proceedings-article","created":{"date-parts":[[2014,11,26]],"date-time":"2014-11-26T15:16:23Z","timestamp":1417014983000},"source":"Crossref","is-referenced-by-count":1,"title":["NMF-based
+        multiple pitch estimation using sparseness and inter-frame continuity constraints"],"prefix":"10.1109","author":[{"given":"Takanori","family":"Fujisawa","affiliation":[]},{"given":"Ikuo","family":"Degawa","affiliation":[]},{"given":"Masaaki","family":"Ikehara","affiliation":[]}],"member":"263","event":{"name":"2014
+        IEEE 16th International Workshop on Multimedia Signal Processing (MMSP)","location":"Jakarta,
+        Indonesia","start":{"date-parts":[[2014,9,22]]},"end":{"date-parts":[[2014,9,24]]}},"container-title":["2014
+        IEEE 16th International Workshop on Multimedia Signal Processing (MMSP)"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx7\/6937466\/6958782\/06958808.pdf?arnumber=6958808","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,24]],"date-time":"2017-03-24T04:50:19Z","timestamp":1490331019000},"score":1.0,"issued":{"date-parts":[[2014,9]]},"ISBN":["9781479958962"],"references-count":10,"URL":"http:\/\/dx.doi.org\/10.1109\/mmsp.2014.6958808"},{"indexed":{"date-parts":[[2018,3,14]],"date-time":"2018-03-14T20:16:18Z","timestamp":1521058578394},"reference-count":54,"publisher":"American
+        Chemical Society (ACS)","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Anal.
+        Chem."],"published-print":{"date-parts":[[2014,3,18]]},"DOI":"10.1021\/ac401578p","type":"journal-article","created":{"date-parts":[[2013,12,7]],"date-time":"2013-12-07T15:44:09Z","timestamp":1386431049000},"page":"2917-2924","source":"Crossref","is-referenced-by-count":8,"title":["Gas-Phase
+        Ion Isomer Analysis Reveals the Mechanism of Peptide Sequence Scrambling"],"prefix":"10.1021","volume":"86","author":[{"given":"Chenxi","family":"Jia","affiliation":[{"name":"School
+        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
+        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Zhe","family":"Wu","affiliation":[{"name":"School
+        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
+        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Christopher
+        B.","family":"Lietz","affiliation":[{"name":"School of Pharmacy and \u2021Department
+        of Chemistry, University of Wisconsin\u2212Madison, 777 Highland Avenue, Madison,
+        Wisconsin 53705, United States"}]},{"given":"Zhidan","family":"Liang","affiliation":[{"name":"School
+        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
+        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Qiang","family":"Cui","affiliation":[{"name":"School
+        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
+        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Lingjun","family":"Li","affiliation":[{"name":"School
+        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
+        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]}],"member":"316","published-online":{"date-parts":[[2013,12,17]]},"container-title":["Analytical
+        Chemistry"],"link":[{"URL":"http:\/\/pubs.acs.org\/doi\/pdf\/10.1021\/ac401578p","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,11,1]],"date-time":"2017-11-01T13:31:37Z","timestamp":1509543097000},"score":1.0,"issued":{"date-parts":[[2013,12,17]]},"references-count":54,"alternative-id":["10.1021\/ac401578p"],"URL":"http:\/\/dx.doi.org\/10.1021\/ac401578p","ISSN":["0003-2700","1520-6882"],"issn-type":[{"value":"0003-2700","type":"print"},{"value":"1520-6882","type":"electronic"}],"subject":["Analytical
+        Chemistry"]},{"indexed":{"date-parts":[[2018,3,14]],"date-time":"2018-03-14T13:20:57Z","timestamp":1521033657881},"reference-count":3,"publisher":"Springer
+        Nature","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Forum
+        Psychoanal"],"published-print":{"date-parts":[[2013,6]]},"DOI":"10.1007\/s00451-013-0139-y","type":"journal-article","created":{"date-parts":[[2013,4,16]],"date-time":"2013-04-16T05:17:26Z","timestamp":1366089446000},"page":"133-137","source":"Crossref","is-referenced-by-count":1,"title":["Das
+        Sprachspiel Psychoanalyse und seine Regeln"],"prefix":"10.1007","volume":"29","author":[{"given":"Diana","family":"Pflichthofer","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2013,4,17]]},"reference":[{"key":"139_CR1","unstructured":"Freud
+        S (1913c) Zur Einleitung der Behandlung. Gesammelte Werke, Bd\u00a08. Fischer,
+        Frankfurt a.\u00a0M., S\u00a0454\u2013478"},{"key":"139_CR2","author":"H-J
+        Glock","year":"2000","unstructured":"Glock H-J (2000) Wittgenstein-Lexikon.
+        Wissenschaftliche Buchgesellschaft, Darmstadt (1996)","volume-title":"Wittgenstein-Lexikon"},{"key":"139_CR3","author":"KR
+        Popper","year":"2011","unstructured":"Popper KR (2011) Auf der Suche nach
+        der besseren Welt. Vortr\u00e4ge und Aufs\u00e4tze aus drei\u00dfig Jahren.
+        Piper, M\u00fcnchen (1987)","volume-title":"Auf der Suche nach der besseren
+        Welt. Vortr\u00e4ge und Aufs\u00e4tze aus drei\u00dfig Jahren"}],"container-title":["Forum
+        der Psychoanalyse"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00451-013-0139-y","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2013,6,25]],"date-time":"2013-06-25T09:00:41Z","timestamp":1372150841000},"score":1.0,"issued":{"date-parts":[[2013,4,17]]},"references-count":3,"alternative-id":["139"],"URL":"http:\/\/dx.doi.org\/10.1007\/s00451-013-0139-y","relation":{"cites":[]},"ISSN":["0178-7667","1437-0751"],"issn-type":[{"value":"0178-7667","type":"print"},{"value":"1437-0751","type":"electronic"}],"subject":["Clinical
+        Psychology","Psychiatry and Mental health"]},{"indexed":{"date-parts":[[2018,2,1]],"date-time":"2018-02-01T18:09:05Z","timestamp":1517508545994},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1988,2,1]],"date-time":"1988-02-01T00:00:00Z","timestamp":570672000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1988,2]]},"DOI":"10.1067\/mva.1988.avs0070275","type":"journal-article","created":{"date-parts":[[2002,7,25]],"date-time":"2002-07-25T04:20:13Z","timestamp":1027570813000},"page":"275-283","source":"Crossref","is-referenced-by-count":1,"title":["Early
+        healing after carotid endarterectomy: Effect of high- and low-dose aspirin
+        on thrombosis and early neointimal hyperplasia in a nonhuman primate model"],"prefix":"10.1067","volume":"7","author":[{"given":"Harry
+        L.","family":"Bush","affiliation":[]},{"given":"Joseph A.","family":"Jakubowski","affiliation":[]},{"given":"Joanna
+        M.","family":"Sentissi","affiliation":[]}],"member":"78","container-title":["Journal
+        of Vascular Surgery"],"deposited":{"date-parts":[[2015,6,26]],"date-time":"2015-06-26T01:41:46Z","timestamp":1435282906000},"score":1.0,"issued":{"date-parts":[[1988,2]]},"references-count":0,"alternative-id":["10.1067\/mva.1988.avs0070275"],"URL":"http:\/\/dx.doi.org\/10.1067\/mva.1988.avs0070275","ISSN":["0741-5214"],"issn-type":[{"value":"0741-5214","type":"print"}],"subject":["Surgery","Cardiology
+        and Cardiovascular Medicine"],"article-number":"avs0070275"},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T20:40:34Z","timestamp":1509136834834},"reference-count":36,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/501100001659","name":"Deutsche
+        Forschungsgemeinschaft","doi-asserted-by":"publisher","award":[]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Linear
+        Algebra and its Applications"],"published-print":{"date-parts":[[2016,1]]},"DOI":"10.1016\/j.laa.2015.09.026","type":"journal-article","created":{"date-parts":[[2015,11,17]],"date-time":"2015-11-17T18:45:41Z","timestamp":1447785941000},"page":"505-521","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Subspace
+        correction methods in algebraic multi-level frames"],"prefix":"10.1016","volume":"488","author":[{"given":"Peter","family":"Zaspel","affiliation":[]}],"member":"78","container-title":["Linear
+        Algebra and its Applications"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0024379515005418?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0024379515005418?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T23:50:30Z","timestamp":1498261830000},"score":1.0,"issued":{"date-parts":[[2016,1]]},"references-count":36,"alternative-id":["S0024379515005418"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.laa.2015.09.026","ISSN":["0024-3795"],"issn-type":[{"value":"0024-3795","type":"print"}],"subject":["Geometry
+        and Topology","Algebra and Number Theory","Numerical Analysis","Discrete Mathematics
+        and Combinatorics"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Subspace correction methods in algebraic
+        multi-level frames","name":"articletitle","label":"Article Title"},{"value":"Linear
+        Algebra and its Applications","name":"journaltitle","label":"Journal Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.laa.2015.09.026","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"Copyright \u00a9 2015 Elsevier Inc. All rights reserved.","name":"copyright","label":"Copyright"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    headers:
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['19507']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sun, 01 Apr 2018 15:51:02 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

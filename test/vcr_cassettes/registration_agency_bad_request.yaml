@@ -1,0 +1,25 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+    method: GET
+    uri: https://api.crossref.org/works/5/agency
+  response:
+    body: {string: Resource not found.}
+    headers:
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['19']
+      Content-Type: [text/plain]
+      Date: ['Sun, 01 Apr 2018 15:30:12 GMT']
+      Server: [http-kit]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
+    status: {code: 404, message: Not Found}
+version: 1

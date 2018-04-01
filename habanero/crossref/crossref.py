@@ -680,7 +680,7 @@ class Crossref(object):
             "order", "facet", "works"], kwargs)
         res = request(self.mailto, self.base_url, "/works/", ids,
             None, None, None, None, None, None,
-            None, None, None, None, None, True, **kwargs)
+            None, None, None, None, None, None, True, **kwargs)
         if res.__class__ != list:
             k = []
             k.append(res)
@@ -709,7 +709,7 @@ class Crossref(object):
         '''
         res = request(self.mailto, self.base_url, "/works/", None,
             None, None, None, None, sample, None,
-            None, None, True, **kwargs)
+            None, None, None, True, None, None, None, **kwargs)
         return [ z['DOI'] for z in res['message']['items'] ]
 
     @staticmethod

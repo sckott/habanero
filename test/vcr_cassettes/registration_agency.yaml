@@ -1,0 +1,26 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+    method: GET
+    uri: https://api.crossref.org/works/10.1126/science.169.3946.635/agency
+  response:
+    body: {string: '{"status":"ok","message-type":"work-agency","message-version":"1.0.0","message":{"DOI":"10.1126\/science.169.3946.635","agency":{"id":"crossref","label":"Crossref"}}}'}
+    headers:
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['166']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sun, 01 Apr 2018 15:30:10 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
+    status: {code: 200, message: OK}
+version: 1

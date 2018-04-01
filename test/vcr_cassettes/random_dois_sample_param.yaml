@@ -1,0 +1,387 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+    method: GET
+    uri: https://api.crossref.org/works?sample=3
+  response:
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95864685,"items":[{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T17:43:12Z","timestamp":1509126192579},"reference-count":0,"publisher":"Japan
+        Society of Mechanical Engineers","issue":"0","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["MPConf"],"published-print":{"date-parts":[[2005]]},"DOI":"10.1299\/jsmeintmp.2005.9_2","type":"journal-article","created":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T01:13:12Z","timestamp":1498180392000},"page":"9","source":"Crossref","is-referenced-by-count":0,"title":["MMC-07:
+        Effect of Oxide Film on the Reduction of Hydrogen Permeation Rate in Stainless
+        Steel(MMC-II: METALS AND METAL MATRIX COMPOSITES)"],"prefix":"10.1299","volume":"2005","author":[{"given":"T.","family":"YAMAZAKI","affiliation":[{"name":"Tokyo
+        Institute of Technology"}]},{"given":"T.","family":"IKESYOJI","affiliation":[{"name":"Tokyo
+        Institute of Technology"}]},{"given":"A.","family":"SUZUMURA","affiliation":[{"name":"Tokyo
+        Institute of Technology"}]},{"given":"T.","family":"NAITO","affiliation":[{"name":"Tokyo
+        Institute of Technology"}]}],"member":"124","container-title":["The Proceedings
+        of the JSME Materials and Processing Conference (M&P)"],"original-title":["MMC-07:
+        Effect of Oxide Film on the Reduction of Hydrogen Permeation Rate in Stainless
+        Steel(MMC-II: METALS AND METAL MATRIX COMPOSITES)"],"link":[{"URL":"https:\/\/www.jstage.jst.go.jp\/article\/jsmeintmp\/2005\/0\/2005_9_2\/_pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T01:13:13Z","timestamp":1498180393000},"score":1.0,"issued":{"date-parts":[[2005]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1299\/jsmeintmp.2005.9_2","ISSN":["2424-2861"],"issn-type":[{"value":"2424-2861","type":"electronic"}]},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T10:31:16Z","timestamp":1509100276058},"publisher-location":"Cham","reference-count":0,"publisher":"Springer
+        International Publishing","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2015]]},"DOI":"10.1007\/978-3-319-18687-0_168","type":"book-chapter","created":{"date-parts":[[2015,6,4]],"date-time":"2015-06-04T03:13:34Z","timestamp":1433387614000},"page":"455-459","source":"Crossref","is-referenced-by-count":0,"title":["Italian
+        Small and Medium Entreprises Abroad: Current Situation and Future Perspectives"],"prefix":"10.1007","author":[{"given":"Elena","family":"Cedrola","affiliation":[]},{"given":"Loretta","family":"Battaglia","affiliation":[]},{"given":"Alessandra","family":"Tzannis","affiliation":[]}],"member":"297","container-title":["Developments
+        in Marketing Science: Proceedings of the Academy of Marketing Science","Marketing
+        in Transition: Scarcity, Globalism, & Sustainability"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-18687-0_168","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2015,6,16]],"date-time":"2015-06-16T08:29:01Z","timestamp":1434443341000},"score":1.0,"issued":{"date-parts":[[2015]]},"ISBN":["9783319186863","9783319186870"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-18687-0_168","ISSN":["2363-6165","2363-6173"],"issn-type":[{"value":"2363-6165","type":"print"},{"value":"2363-6173","type":"electronic"}]},{"indexed":{"date-parts":[[2018,3,13]],"date-time":"2018-03-13T21:29:14Z","timestamp":1520976554451},"reference-count":47,"publisher":"Oxford
+        University Press (OUP)","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2012,6]]},"DOI":"10.1093\/humrep\/des072","type":"journal-article","created":{"date-parts":[[2012,3,20]],"date-time":"2012-03-20T03:43:04Z","timestamp":1332214984000},"page":"1745-1753","source":"Crossref","is-referenced-by-count":17,"title":["Patterns
+        of placental development evaluated by X chromosome inactivation profiling
+        provide a basis to evaluate the origin of epigenetic variation"],"prefix":"10.1093","volume":"27","author":[{"given":"M.S.","family":"Pe\u00f1aherrera","affiliation":[]},{"given":"R.","family":"Jiang","affiliation":[]},{"given":"L.","family":"Avila","affiliation":[]},{"given":"R.K.C.","family":"Yuen","affiliation":[]},{"given":"C.J.","family":"Brown","affiliation":[]},{"given":"W.P.","family":"Robinson","affiliation":[]}],"member":"286","published-online":{"date-parts":[[2012,3,19]]},"reference":[{"key":"\nkey\n\t\t\t\t20170522104118_DES072C1","first-page":"1229","article-title":"Methylation
+        of HpaII and HhaI sites near the polymorphic CAG repeat in the human androgen-receptor
+        gene correlates with X chromosome inactivation","volume":"51","author":"Allen","year":"1992","journal-title":"Am
+        J Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C2","doi-asserted-by":"crossref","first-page":"493","DOI":"10.1086\/507565","article-title":"X
+        chromosome-inactivation patterns of 1,005 phenotypically unaffected females","volume":"79","author":"Amos-Landgraf","year":"2006","journal-title":"Am
+        J Hum Genet"},{"issue":"Suppl A","key":"\nkey\n\t\t\t\t20170522104118_DES072C3","doi-asserted-by":"crossref","first-page":"S98","DOI":"10.1016\/j.placenta.2005.12.008","article-title":"Regulation
+        of placental efficiency for nutrient transport by imprinted genes","volume":"27","author":"Angiolini","year":"2006","journal-title":"Placenta"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C4","doi-asserted-by":"crossref","first-page":"1070","DOI":"10.1016\/j.placenta.2010.09.011","article-title":"Evaluating
+        DNA methylation and gene expression variability in the human term placenta","volume":"31","author":"Avila","year":"2010","journal-title":"Placenta"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C5","doi-asserted-by":"crossref","first-page":"330","DOI":"10.1007\/BF02185765","article-title":"X-chromosome
+        methylation ratios as indicators of chromosomal activity: evidence of intraindividual
+        divergencies among tissues of different embryonal origin","volume":"97","author":"Azofeifa","year":"1996","journal-title":"Hum
+        Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C6","doi-asserted-by":"crossref","first-page":"2","DOI":"10.1086\/346119","article-title":"Skewed
+        X-chromosome inactivation is associated with trisomy in women ascertained
+        on the basis of recurrent spontaneous abortion or chromosomally abnormal pregnancies","volume":"72","author":"Beever","year":"2003","journal-title":"Am
+        J Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C7","author":"Bernischke","year":"2000","volume-title":"Pathology
+        of the Human Placenta"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C8","doi-asserted-by":"crossref","first-page":"542","DOI":"10.1002\/ajmg.1320460517","article-title":"Origin
+        of extraembryonic mesoderm in experimental animals: relevance to chorionic
+        mosaicism in humans","volume":"46","author":"Bianchi","year":"1993","journal-title":"Am
+        J Med Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C9","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/j.placenta.2009.12.003","article-title":"Decreased
+        placental methylation at the H19\/IGF2 imprinting control region is associated
+        with normotensive intrauterine growth restriction but not preeclampsia","volume":"31","author":"Bourque","year":"2010","journal-title":"Placenta"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C10","doi-asserted-by":"crossref","first-page":"462","DOI":"10.1164\/rccm.200901-0135OC","article-title":"Prenatal
+        tobacco smoke exposure affects global and gene-specific DNA methylation","volume":"180","author":"Breton","year":"2009","journal-title":"Am
+        J Respir Crit Care Med"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C11","doi-asserted-by":"crossref","first-page":"485","DOI":"10.1093\/humupd\/6.5.485","article-title":"Villous
+        sprouting: fundamental mechanisms of human placental development","volume":"6","author":"Castellucci","year":"2000","journal-title":"Hum
+        Reprod Update"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C12","doi-asserted-by":"crossref","first-page":"120","DOI":"10.1016\/j.mce.2007.11.022","article-title":"Genetic
+        and epigenetic factors contribute to the onset of preeclampsia","volume":"282","author":"Chelbi","year":"2008","journal-title":"Mol
+        Cell Endocrinol"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C13","doi-asserted-by":"crossref","first-page":"3544","DOI":"10.1093\/hmg\/ddp299","article-title":"Inactive
+        X chromosome-specific reduction in placental DNA methylation","volume":"18","author":"Cotton","year":"2009","journal-title":"Hum
+        Mol Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C14","doi-asserted-by":"crossref","first-page":"123","DOI":"10.1053\/plac.2002.0887","article-title":"Genes,
+        development and evolution of the placenta","volume":"24","author":"Cross","year":"2003","journal-title":"Placenta"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C15","first-page":"427","article-title":"The
+        fine structure of normal and ectopic (tubal) human placental villi as revealed
+        by scanning and transmission electron microscopy","volume":"140","author":"Demir","year":"1995","journal-title":"Zentralbl
+        Pathol"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C16","doi-asserted-by":"crossref","first-page":"987","DOI":"10.1038\/embor.2011.186","article-title":"Lineage
+        commitments: emphasis on embryonic-extraembryonic interfaces","volume":"12","author":"Downs","year":"2011","journal-title":"EMBO
+        Rep"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C17","doi-asserted-by":"crossref","first-page":"161","DOI":"10.1002\/aja.1001770205","article-title":"Differentiation
+        of the embryonic disc, amnion, and yolk sac in the rhesus monkey","volume":"177","author":"Enders","year":"1986","journal-title":"Am
+        J Anat"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C18","doi-asserted-by":"crossref","first-page":"39","DOI":"10.1111\/j.1469-1809.1973.tb01813.x","article-title":"Primordial
+        cell pool size and lineage relationships of five human cell types","volume":"37","author":"Fialkow","year":"1973","journal-title":"Ann
+        Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C19","doi-asserted-by":"crossref","first-page":"86","DOI":"10.4161\/epi.6.1.13392","article-title":"Quantitative,
+        high-resolution epigenetic profiling of CpG loci identifies associations with
+        cord blood plasma homocysteine and birth weight in humans","volume":"6","author":"Fryer","year":"2011","journal-title":"Epigenetics"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C20","first-page":"1427","article-title":"Establishment
+        of human trophoblast progenitor cell lines from the chorion","volume":"29","author":"Genbacev","year":"2011","journal-title":"Stem
+        Cells"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C21","doi-asserted-by":"crossref","first-page":"53","DOI":"10.4161\/epi.6.3.14196","article-title":"Cell
+        specific patterns of methylation in the human placenta","volume":"6","author":"Grigoriu","year":"2011","journal-title":"Epigenetics"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C22","doi-asserted-by":"crossref","first-page":"650","DOI":"10.1007\/BF02281877","article-title":"Distribution
+        of mosaicism in human placentae","volume":"97","author":"Henderson","year":"1996","journal-title":"Hum
+        Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C23","doi-asserted-by":"crossref","first-page":"2415","DOI":"10.1002\/ajmg.a.33065","article-title":"Screening
+        of DNA methylation at the H19 promoter or the distal region of its ICR1 ensures
+        efficient detection of chromosome 11p15 epimutations in Russell-Silver syndrome","volume":"149A","author":"Horike","year":"2009","journal-title":"Am
+        J Med Genet A"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C24","doi-asserted-by":"crossref","first-page":"2","DOI":"10.1016\/j.placenta.2008.09.009","article-title":"Human
+        fetal membranes: a source of stem cells for tissue regeneration and repair?","volume":"30","author":"Ilancheran","year":"2009","journal-title":"Placenta"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C25","doi-asserted-by":"crossref","first-page":"3769","DOI":"10.1093\/hmg\/ddp319","article-title":"DNA
+        methylation and gene expression differences in children conceived in vitro
+        or in vivo","volume":"18","author":"Katari","year":"2009","journal-title":"Hum
+        Mol Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C26","doi-asserted-by":"crossref","first-page":"125","DOI":"10.1097\/GCO.0b013e3282f7320a","article-title":"Fetal
+        growth restriction: a modern approach","volume":"20","author":"Kinzler","year":"2008","journal-title":"Curr
+        Opin Obstet Gynecol"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C27","author":"Lawsen","first-page":"68","year":"1994","article-title":"Clonal
+        analysis of the origin of primordial germ cells in the mouse","volume-title":"Germline
+        Development"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C28","doi-asserted-by":"crossref","first-page":"1445","DOI":"10.1086\/302382","article-title":"Heterogeneous
+        X inactivation in trophoblastic cells of human full-term female placentas","volume":"64","author":"Looijenga","year":"1999","journal-title":"Am
+        J Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C29","doi-asserted-by":"crossref","first-page":"59","DOI":"10.1002\/aja.1001520106","article-title":"Origin
+        and differentiation of the yolk sac and extraembryonic mesoderm in presomite
+        human and rhesus monkey embryos","volume":"152","author":"Luckett","year":"1978","journal-title":"Am
+        J Anat"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C30","doi-asserted-by":"crossref","first-page":"372","DOI":"10.1038\/190372a0","article-title":"Gene
+        action in the X-chromosome of the mouse (Mus musculus L.)","volume":"190","author":"Lyon","year":"1961","journal-title":"Nature"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C31","first-page":"135","article-title":"Sex
+        chromatin and gene action in the mammalian X-chromosome","volume":"14","author":"Lyon","year":"1962","journal-title":"Am
+        J Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C32","first-page":"581","article-title":"In
+        search of non-random X inactivation: studies in the placenta from newborns
+        heterozygous for G6PD","volume":"31","author":"Migeon","year":"1979","journal-title":"Am
+        J Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C33","doi-asserted-by":"crossref","first-page":"20","DOI":"10.1172\/JCI34470","article-title":"A
+        skewed view of X chromosome inactivation","volume":"118","author":"Minks","year":"2008","journal-title":"J
+        Clin Invest"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C34","doi-asserted-by":"crossref","first-page":"e10947","DOI":"10.1371\/journal.pone.0010947","article-title":"Random
+        X inactivation and extensive mosaicism in human placenta revealed by analysis
+        of allele-specific gene expression along the X chromosome","volume":"5","author":"Moriera
+        de Mello","year":"2010","journal-title":"PLoS ONE"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C35","doi-asserted-by":"crossref","first-page":"370","DOI":"10.1038\/nature09872","article-title":"Eutherian
+        mammals use diverse strategies to initiate X-chromosome inactivation during
+        development","volume":"472","author":"Okamoto","year":"2011","journal-title":"Nature"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C36","doi-asserted-by":"crossref","first-page":"4176","DOI":"10.1093\/hmg\/ddq336","article-title":"DNA
+        methylation analysis of multiple tissues from newborn twins reveals both genetic
+        and intrauterine components to variation in the human neonatal epigenome","volume":"19","author":"Ollikainen","year":"2010","journal-title":"Hum
+        Mol Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C37","doi-asserted-by":"crossref","first-page":"1078","DOI":"10.1002\/pd.483","article-title":"Origin
+        of amnion and implications for evaluation of the fetal genotype in cases of
+        mosaicism","volume":"22","author":"Robinson","year":"2002","journal-title":"Prenat
+        Diagn"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C38","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1002\/pd.2409","article-title":"Assessing
+        the role of placental trisomy in preeclampsia and intrauterine growth restriction","volume":"30","author":"Robinson","year":"2010","journal-title":"Prenat
+        Diagn"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C39","doi-asserted-by":"crossref","first-page":"343","DOI":"10.1007\/s004390000382","article-title":"Age-
+        and tissue-specific variation of X chromosome inactivation ratios in normal
+        women","volume":"107","author":"Sharp","year":"2000","journal-title":"Hum
+        Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C40","doi-asserted-by":"crossref","first-page":"640","DOI":"10.1038\/256640a0","article-title":"Preferential
+        inactivation of the paternally derived X chromosome in the extraembryonic
+        membranes of the mouse","volume":"256","author":"Takagi","year":"1975","journal-title":"Nature"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C41","doi-asserted-by":"crossref","first-page":"996","DOI":"10.1046\/j.1365-2141.1998.00867.x","article-title":"Unbalanced
+        X-chromosome inactivation in haemopoietic cells from normal women","volume":"102","author":"Tonon","year":"1998","journal-title":"Br
+        J Haematol"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C42","doi-asserted-by":"crossref","first-page":"e1001033","DOI":"10.1371\/journal.pgen.1001033","article-title":"Inter-
+        and intra-individual variation in allele-specific DNA methylation and gene
+        expression in children conceived using assisted reproductive technology","volume":"6","author":"Turan","year":"2010","journal-title":"PLoS
+        Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C43","doi-asserted-by":"crossref","first-page":"119","DOI":"10.1007\/s100380050197","article-title":"X-chromosome
+        inactivation in the human trophoblast of early pregnancy","volume":"45","author":"Uehara","year":"2000","journal-title":"J
+        Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C44","doi-asserted-by":"crossref","first-page":"771","DOI":"10.1016\/j.ajhg.2009.05.003","article-title":"X
+        chromosome inactivation is initiated in human preimplantation embryos","volume":"84","author":"van
+        den Berg","year":"2009","journal-title":"Am J Hum Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C45","doi-asserted-by":"crossref","first-page":"601","DOI":"10.1007\/s00439-002-0723-5","article-title":"Timing
+        of the absence of FMR1 expression in full mutation chorionic villi","volume":"110","author":"Willemsen","year":"2002","journal-title":"Hum
+        Genet"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C46","doi-asserted-by":"crossref","first-page":"s136","DOI":"10.1016\/j.placenta.2011.01.003","article-title":"Review:
+        a high capacity of the human placenta for genetic and epigenetic variation:
+        implications for assessing pregnancy outcome","volume":"32","author":"Yuen","year":"2011","journal-title":"Placenta"},{"key":"\nkey\n\t\t\t\t20170522104118_DES072C47","doi-asserted-by":"crossref","first-page":"10","DOI":"10.1186\/1756-8935-4-10","article-title":"Genome-wide
+        mapping of imprinted genes by DNA methylation profiling of human placentas
+        from triploidies","volume":"4","author":"Yuen","year":"2011","journal-title":"Epigenetics
+        Chromatin"}],"container-title":["Human Reproduction"],"link":[{"URL":"http:\/\/academic.oup.com\/humrep\/article-pdf\/27\/6\/1745\/17370784\/des072.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,8,23]],"date-time":"2017-08-23T08:29:29Z","timestamp":1503476969000},"score":1.0,"issued":{"date-parts":[[2012,3,19]]},"references-count":47,"URL":"http:\/\/dx.doi.org\/10.1093\/humrep\/des072","relation":{"cites":[]},"ISSN":["1460-2350","0268-1161"],"issn-type":[{"value":"0268-1161","type":"print"},{"value":"1460-2350","type":"electronic"}],"subject":["Obstetrics
+        and Gynaecology","Rehabilitation","Reproductive Medicine"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    headers:
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['20038']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sun, 01 Apr 2018 15:49:38 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+    method: GET
+    uri: https://api.crossref.org/works?sample=5
+  response:
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95864685,"items":[{"indexed":{"date-parts":[[2018,2,13]],"date-time":"2018-02-13T11:42:20Z","timestamp":1518522140324},"reference-count":43,"publisher":"Wiley-Blackwell","issue":"5","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":630,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Equine
+        Vet J"],"published-print":{"date-parts":[[2014,9]]},"DOI":"10.1111\/evj.12182","type":"journal-article","created":{"date-parts":[[2013,9,6]],"date-time":"2013-09-06T12:45:06Z","timestamp":1378471506000},"page":"611-617","source":"Crossref","is-referenced-by-count":6,"title":["The
+        effects of three-month oral supplementation with a nutraceutical and exercise
+        on the locomotor pattern of aged horses"],"prefix":"10.1111","volume":"46","author":[{"given":"M.
+        H.","family":"Higler","affiliation":[{"name":"Department of Equine Sciences;
+        Faculty of Veterinary Medicine; Utrecht University; The Netherlands"}]},{"given":"H.","family":"Brommer","affiliation":[{"name":"Department
+        of Equine Sciences; Faculty of Veterinary Medicine; Utrecht University; The
+        Netherlands"}]},{"given":"J. J.","family":"L''Ami","affiliation":[{"name":"Department
+        of Equine Sciences; Faculty of Veterinary Medicine; Utrecht University; The
+        Netherlands"}]},{"given":"J. C.","family":"de Grauw","affiliation":[{"name":"Department
+        of Equine Sciences; Faculty of Veterinary Medicine; Utrecht University; The
+        Netherlands"}]},{"given":"M.","family":"Nielen","affiliation":[{"name":"Department
+        of Farm Animal Health; Faculty of Veterinary Medicine; Utrecht University;
+        The Netherlands"}]},{"given":"P. R.","family":"van Weeren","affiliation":[{"name":"Department
+        of Equine Sciences; Faculty of Veterinary Medicine; Utrecht University; The
+        Netherlands"}]},{"given":"S.","family":"Laverty","affiliation":[{"name":"Comparative
+        Orthopaedic Research Laboratory; Faculty of Veterinary Medicine; University
+        of Montreal; Saint-Hyacinthe Qu\u00e9bec Canada"}]},{"given":"A.","family":"Barneveld","affiliation":[{"name":"Department
+        of Equine Sciences; Faculty of Veterinary Medicine; Utrecht University; The
+        Netherlands"}]},{"given":"W.","family":"Back","affiliation":[{"name":"Department
+        of Equine Sciences; Faculty of Veterinary Medicine; Utrecht University; The
+        Netherlands"},{"name":"Department of Surgery and Anaesthesiology; Faculty
+        of Veterinary Medicine; Ghent University; Merelbeke Belgium"}]}],"member":"311","published-online":{"date-parts":[[2013,12,10]]},"reference":[{"key":"10.1111\/evj.12182-BIB0001|evj12182-cit-0001","doi-asserted-by":"crossref","first-page":"37","DOI":"10.1111\/j.2042-3306.2010.00142.x","article-title":"A
+        cross-sectional study of geriatric horses in the United Kingdom. Part 2: health
+        care and disease","volume":"43","author":"Ireland","year":"2011","journal-title":"Equine
+        Vet. J."},{"key":"10.1111\/evj.12182-BIB0002|evj12182-cit-0002","first-page":"575","article-title":"The
+        use of nutraceuticals for osteoarthritis in horses","volume":"21","author":"Trumble","year":"2005","journal-title":"Vet.
+        Clin. North Am.: Equine Pract."},{"key":"10.1111\/evj.12182-BIB0003|evj12182-cit-0003","doi-asserted-by":"crossref","first-page":"706","DOI":"10.2746\/042516409X424153","article-title":"Low
+        quality of evidence for glucosamine-based nutraceuticals in equine joint disease:
+        review of in vivo studies","volume":"41","author":"Pearson","year":"2009","journal-title":"Equine
+        Vet. J."},{"key":"10.1111\/evj.12182-BIB0004|evj12182-cit-0004","doi-asserted-by":"crossref","first-page":"1129","DOI":"10.2460\/ajvr.69.9.1129","article-title":"Effects
+        of clinically relevant concentrations of glucosamine on equine chondrocytes
+        and synoviocytes in vitro","volume":"69","author":"Byron","year":"2008","journal-title":"Am.
+        J. Vet. Res."},{"key":"10.1111\/evj.12182-BIB0005|evj12182-cit-0005","doi-asserted-by":"crossref","first-page":"227","DOI":"10.2746\/0425164054530687","article-title":"Effects
+        of glucosamine hydrochloride and chondroitin sulphate, alone and in combination,
+        on normal and interleukin-1 conditioned equine articular cartilage explant
+        metabolism","volume":"37","author":"Dechant","year":"2005","journal-title":"Equine
+        Vet. J."},{"key":"10.1111\/evj.12182-BIB0006|evj12182-cit-0006","doi-asserted-by":"crossref","first-page":"219","DOI":"10.1111\/j.2042-3306.2002.tb05422.x","article-title":"Effect
+        of glucosamine on interleukin-1-conditioned articular cartilage","volume":"34","author":"Fenton","year":"2002","journal-title":"Equine
+        Vet. J., Suppl."},{"key":"10.1111\/evj.12182-BIB0007|evj12182-cit-0007","first-page":"572","article-title":"Effect
+        of glucosamine and chondroitine sulphate on mediators of osteoarthritis","volume":"52","author":"Neil","year":"2006","journal-title":"Proc.
+        Am. Ass. Equine Practnrs."},{"key":"10.1111\/evj.12182-BIB0008|evj12182-cit-0008","doi-asserted-by":"crossref","first-page":"224","DOI":"10.1111\/j.2042-3306.2002.tb05423.x","article-title":"Inhibition
+        of articular cartilage degradation by glucosamine-HCl and chondroitin sulphate","volume":"34","author":"Orth","year":"2002","journal-title":"Equine
+        Vet. J., Suppl."},{"key":"10.1111\/evj.12182-BIB0009|evj12182-cit-0009","doi-asserted-by":"crossref","first-page":"268","DOI":"10.1111\/j.1365-2885.2008.00946.x","article-title":"Simulated
+        digest of a glucosamine-based equine nutraceutical modifies effect of IL-1
+        in a cartilage explant model of inflammation","volume":"31","author":"Pearson","year":"2008","journal-title":"J.
+        Vet. Pharmacol. Ther."},{"key":"10.1111\/evj.12182-BIB0010|evj12182-cit-0010","doi-asserted-by":"crossref","first-page":"634","DOI":"10.2746\/0425164044864471","article-title":"Further
+        studies on the ability of glucosamine and chondroitin sulphate to regulate
+        catabolic mediators in vitro","volume":"36","author":"Schlueter","year":"2004","journal-title":"Equine
+        Vet. J."},{"key":"10.1111\/evj.12182-BIB0011|evj12182-cit-0011","doi-asserted-by":"crossref","first-page":"181","DOI":"10.1002\/art.20762","article-title":"Synovial
+        fluid levels and serum pharmacokinetics in a large animal model following
+        treatment with oral glucosamine at clinically relevant doses","volume":"52","author":"Laverty","year":"2005","journal-title":"Arthritis
+        Rheum."},{"key":"10.1111\/evj.12182-BIB0012|evj12182-cit-0012","doi-asserted-by":"crossref","first-page":"109","DOI":"10.1002\/bdd.392","article-title":"The
+        bioavailability and pharmacokinetics of glucosamine hydrochloride and chondroitin
+        sulfate after oral and intravenous single dose administration in the horse","volume":"25","author":"Du","year":"2004","journal-title":"Biopharm.
+        Drug Dispos."},{"key":"10.1111\/evj.12182-BIB0013|evj12182-cit-0013","doi-asserted-by":"crossref","first-page":"228","DOI":"10.1016\/j.joca.2008.06.018","article-title":"Joint
+        inflammation increases glucosamine levels attained in synovial fluid following
+        oral administration of glucosamine hydrochloride","volume":"17","author":"Meulyzer","year":"2009","journal-title":"Osteoarthritis
+        Cartilage"},{"key":"10.1111\/evj.12182-BIB0014|evj12182-cit-0014","doi-asserted-by":"crossref","first-page":"424","DOI":"10.1016\/S1063-4584(03)00052-9","article-title":"Glucosamine
+        sulfate modulates the levels of aggrecan and matrix metalloproteinase-3 synthesized
+        by cultured human osteoarthritis articular chondrocytes","volume":"11","author":"Dodge","year":"2003","journal-title":"Osteoarthritis
+        Cartilage"},{"key":"10.1111\/evj.12182-BIB0015|evj12182-cit-0015","first-page":"1329","article-title":"Short-term
+        gene expression changes in cartilage explants stimulated with interleukin
+        beta plus glucosamine and chondroitin sulfate","volume":"33","author":"Chan","year":"2006","journal-title":"J.
+        Rheumatol."},{"key":"10.1111\/evj.12182-BIB0016|evj12182-cit-0016","doi-asserted-by":"crossref","first-page":"54","DOI":"10.1016\/j.tvjl.2006.02.015","article-title":"Randomised
+        double blind, positive-controlled trial to assess the efficacy of glucosamine\/chondroitin
+        sulfate for the treatment of dogs with osteoarthritis","volume":"174","author":"McCarthy","year":"2007","journal-title":"Vet.
+        J."},{"key":"10.1111\/evj.12182-BIB0017|evj12182-cit-0017","doi-asserted-by":"crossref","first-page":"109","DOI":"10.1007\/s10067-008-0988-8","article-title":"Combined
+        glucosamine and chondroitin sulfate provides functional and structural benefit
+        in the anterior cruciate ligament transection model","volume":"28","author":"Silva","year":"2009","journal-title":"Clin.
+        Rheumatol."},{"key":"10.1111\/evj.12182-BIB0018|evj12182-cit-0018","doi-asserted-by":"crossref","first-page":"1537","DOI":"10.1002\/art.22574","article-title":"The
+        effects of glucosamine hydrochloride on subchondral bone changes in an animal
+        model of osteoarthritis","volume":"56","author":"Wang","year":"2007","journal-title":"Arthritis
+        Rheum."},{"key":"10.1111\/evj.12182-BIB0019|evj12182-cit-0019","doi-asserted-by":"crossref","first-page":"538","DOI":"10.1016\/j.lfs.2010.02.015","article-title":"Evaluation
+        of the effect of glucosamine on an experimental rat osteoarthritis model","volume":"86","author":"Naito","year":"2010","journal-title":"Life
+        Sci."},{"key":"10.1111\/evj.12182-BIB0020|evj12182-cit-0020","doi-asserted-by":"crossref","first-page":"11","DOI":"10.1016\/j.abb.2011.03.014","article-title":"Oral
+        glucosamine increases expression of transforming growth factor \u03b21 (TGF\u03b21)
+        and connective tissue growth factor (CTGF) mRNA in rat cartilage and kidney:
+        implications for human efficacy and toxicity","volume":"510","author":"Ali","year":"2011","journal-title":"Arch.
+        Biochem. Biophys."},{"key":"10.1111\/evj.12182-BIB0021|evj12182-cit-0021","doi-asserted-by":"crossref","first-page":"297","DOI":"10.1016\/j.joca.2009.10.013","article-title":"The
+        human pharmacokinetics of oral ingestion of glucosamine and chondroitin sulfate
+        taken separately or in combination","volume":"18","author":"Jackson","year":"2010","journal-title":"Osteoarthritis
+        Cartilage"},{"key":"10.1111\/evj.12182-BIB0022|evj12182-cit-0022","doi-asserted-by":"crossref","first-page":"45","DOI":"10.1186\/1751-0147-50-45","article-title":"The
+        effect of methyl sulphonyl methane supplementation on biomarkers of oxidative
+        stress in sport horses following jumping exercise","volume":"50","author":"Mara\u00f1\u00f3n","year":"2008","journal-title":"Acta
+        Vet. Scand."},{"key":"10.1111\/evj.12182-BIB0023|evj12182-cit-0023","doi-asserted-by":"crossref","first-page":"1106","DOI":"10.2460\/ajvr.2002.63.1106","article-title":"Serum
+        concentrations of keratan sulfate, osteocalcin, and pyridinoline crosslinks
+        after oral administration of glucosamine to standardbred horses during race
+        training","volume":"63","author":"Caron","year":"2002","journal-title":"Am.
+        J. Vet. Res."},{"key":"10.1111\/evj.12182-BIB0024|evj12182-cit-0024","first-page":"288","article-title":"Causal
+        treatment of arthrosis deformans in horses with glucosamin sulfate","volume":"89","author":"Jaeschke","year":"1982","journal-title":"Dtsch
+        Tierarztl. Wochenschr."},{"key":"10.1111\/evj.12182-BIB0025|evj12182-cit-0025","first-page":"148","article-title":"Oral
+        treatment with a nutraceutical (Cosequin) for ameliorating signs of navicular
+        syndrome in horses","volume":"2","author":"Hanson","year":"2001","journal-title":"Vet.
+        Ther."},{"key":"10.1111\/evj.12182-BIB0026|evj12182-cit-0026","first-page":"314","article-title":"Double-blind
+        study of the effects of an oral supplement intended to support joint health
+        in horses with tarsal degenerative joint disease","volume":"52","author":"Clayton","year":"2002","journal-title":"Proc.
+        Am. Ass. Equine Practnrs."},{"key":"10.1111\/evj.12182-BIB0027|evj12182-cit-0027","doi-asserted-by":"crossref","first-page":"622","DOI":"10.1111\/j.2042-3306.2006.tb05615.x","article-title":"Double
+        blind investigation of the effects of oral supplementation of combined glucosamine
+        hydrochloride (GHCL) and chondroitin sulphate (CS) on stride characteristics
+        of veteran horses","volume":"36","author":"Forsyth","year":"2006","journal-title":"Equine
+        Vet. J., Suppl."},{"key":"10.1111\/evj.12182-BIB0028|evj12182-cit-0028","doi-asserted-by":"crossref","first-page":"393","DOI":"10.1111\/j.2042-3306.2011.00455.x","article-title":"A
+        randomised, double-blinded, placebo-controlled study on the efficacy of a
+        unique extract of green-lipped mussel (Perna canaliculus) in horses with chronic
+        fetlock lameness attributed to osteoarthritis","volume":"44","author":"Cayzer","year":"2012","journal-title":"Equine
+        Vet. J."},{"key":"10.1111\/evj.12182-BIB0029|evj12182-cit-0029","doi-asserted-by":"crossref","first-page":"92","DOI":"10.2746\/042516409X479568","article-title":"Repeatability
+        of subjective evaluation of lameness in horses","volume":"42","author":"Keegan","year":"2010","journal-title":"Equine
+        Vet. J."},{"key":"10.1111\/evj.12182-BIB0030|evj12182-cit-0030","doi-asserted-by":"crossref","first-page":"135","DOI":"10.1111\/j.2042-3292.2001.tb00078.x","article-title":"Oral
+        supplements in the treatment and prevention of joint diseases: a review of
+        their potential application in the horse","volume":"13","author":"Wright","year":"2001","journal-title":"Equine
+        Vet. Educ."},{"key":"10.1111\/evj.12182-BIB0031|evj12182-cit-0031","doi-asserted-by":"crossref","first-page":"577","DOI":"10.1111\/j.1365-2885.2009.01079.x","article-title":"Therapeutic
+        efficacy of undenatured type-II collagen (UC-II) in comparison to glucosamine
+        and chondroitin in arthritic horses","volume":"32","author":"Gupta","year":"2009","journal-title":"J.
+        Vet. Pharmacol. Ther."},{"key":"10.1111\/evj.12182-BIB0032|evj12182-cit-0032","unstructured":"1991
+        Definition and classification of lameness Guide for Veterinary Services and
+        Judging of Equestrian Events W.O. Kester 19"},{"key":"10.1111\/evj.12182-BIB0033|evj12182-cit-0033","doi-asserted-by":"crossref","first-page":"S91","DOI":"10.1080\/01652176.1994.9694510","article-title":"Kinematic
+        detection of superior gait quality in young trotting Warmbloods","volume":"16","author":"Back","year":"1994","journal-title":"Vet.
+        Quart."},{"key":"10.1111\/evj.12182-BIB0034|evj12182-cit-0034","doi-asserted-by":"crossref","first-page":"106","DOI":"10.1111\/j.2042-3306.1999.tb05322.x","article-title":"The
+        influence of different exercise regimes on the development of equine locomotion","volume":"31","author":"Back","year":"1999","journal-title":"Equine
+        Vet. J., Suppl."},{"key":"10.1111\/evj.12182-BIB0035|evj12182-cit-0035","first-page":"127","article-title":"Kinematic
+        response to a 70-day training period in trotting Dutch Warmbloods","volume":"18","author":"Back","year":"1995","journal-title":"Equine
+        Vet. J., Suppl."},{"key":"10.1111\/evj.12182-BIB0036|evj12182-cit-0036","doi-asserted-by":"crossref","first-page":"S97","DOI":"10.1080\/01652176.1994.9694511","article-title":"The
+        effect of toe weights on linear and temporal stride characteristics of Standardbred
+        trotters","volume":"16","author":"Willemen","year":"1994","journal-title":"Vet.
+        Quart."},{"key":"10.1111\/evj.12182-BIB0037|evj12182-cit-0037","doi-asserted-by":"crossref","first-page":"e41540","DOI":"10.1371\/journal.pone.0041540","article-title":"Who
+        uses glucosamine and why? A study of 266,848 Australians aged 45 years and
+        older","volume":"7","author":"Sibbritt","year":"2012","journal-title":"Plos
+        One"},{"key":"10.1111\/evj.12182-BIB0038|evj12182-cit-0038","doi-asserted-by":"crossref","first-page":"S87","DOI":"10.1080\/01652176.1994.9694509","article-title":"Kinematics
+        of treadmill versus overground locomotion in horses","volume":"16","author":"Buchner","year":"1994","journal-title":"Vet.
+        Quart."},{"key":"10.1111\/evj.12182-BIB0039|evj12182-cit-0039","doi-asserted-by":"crossref","first-page":"239","DOI":"10.1038\/292239a0","article-title":"Gait
+        and the energetics of locomotion in horses","volume":"292","author":"Hoyt","year":"1981","journal-title":"Nature"},{"key":"10.1111\/evj.12182-BIB0040|evj12182-cit-0040","first-page":"341","article-title":"Influence
+        of site and age on biochemical characteristics of the collagen network of
+        equine articular cartilage","volume":"60","author":"Brama","year":"1999","journal-title":"Am.
+        J. Vet. Res."},{"key":"10.1111\/evj.12182-BIB0041|evj12182-cit-0041","doi-asserted-by":"crossref","first-page":"114","DOI":"10.1002\/1529-0131(200201)46:1<114::AID-ART10025>3.0.CO;2-P","article-title":"Crosslinking
+        by advanced glycation end products increases the stiffness of the collagen
+        network in human articular cartilage: a possible mechanism through which age
+        is a risk factor for osteoarthritis","volume":"46","author":"Verzijl","year":"2002","journal-title":"Arthritis
+        Rheum."},{"key":"10.1111\/evj.12182-BIB0042|evj12182-cit-0042","first-page":"997","article-title":"Limited
+        joint mobility in diabetes and ageing: recent advances in pathogenesis and
+        therapy","volume":"23","author":"Abate","year":"2010","journal-title":"Int.
+        J. Immunopathol. Pharmacol."},{"key":"10.1111\/evj.12182-BIB0043|evj12182-cit-0043","doi-asserted-by":"crossref","first-page":"157","DOI":"10.1016\/j.joca.2012.10.002","article-title":"Osteoarthritis-related
+        fibrosis is associated with both elevated pyridinoline cross-link formation
+        and lysyl hydroxylase 2b expression","volume":"21","author":"Remst","year":"2013","journal-title":"Osteoarthritis
+        Cartilage"}],"container-title":["Equine Veterinary Journal"],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fevj.12182","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T21:26:43Z","timestamp":1498080403000},"score":1.0,"subtitle":["Effects
+        of a nutraceutical and exercise on the locomotor pattern of horses"],"issued":{"date-parts":[[2013,12,10]]},"references-count":43,"URL":"http:\/\/dx.doi.org\/10.1111\/evj.12182","relation":{"cites":[]},"ISSN":["0425-1644"],"issn-type":[{"value":"0425-1644","type":"print"}],"subject":["Equine","General
+        Medicine"]},{"indexed":{"date-parts":[[2017,10,24]],"date-time":"2017-10-24T07:07:59Z","timestamp":1508828879579},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"4","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1988,8,1]],"date-time":"1988-08-01T00:00:00Z","timestamp":586396800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["NDT
+        & E International"],"published-print":{"date-parts":[[1988,8]]},"DOI":"10.1016\/0963-8695(88)90153-3","type":"journal-article","created":{"date-parts":[[2003,3,15]],"date-time":"2003-03-15T07:20:15Z","timestamp":1047712815000},"page":"297-298","source":"Crossref","is-referenced-by-count":0,"title":["Elastic
+        waves in solids, with applications to NDT of pipelines A.H. Harker Adam Hilger,
+        UK, in association with British Gas plc 1988 (x + 230 pp, \u00a327.50)"],"prefix":"10.1016","volume":"21","author":[{"given":"L","family":"Bond","affiliation":[]}],"member":"78","container-title":["NDT
+        & E International"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0963-8695(88)90153-3?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0963-8695(88)90153-3?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,9,21]],"date-time":"2015-09-21T23:38:19Z","timestamp":1442878699000},"score":1.0,"issued":{"date-parts":[[1988,8]]},"references-count":0,"alternative-id":["0963-8695(88)90153-3"],"URL":"http:\/\/dx.doi.org\/10.1016\/0963-8695(88)90153-3","ISSN":["0963-8695"],"issn-type":[{"value":"0963-8695","type":"print"}],"subject":["Mechanical
+        Engineering","General Materials Science","Condensed Matter Physics"]},{"indexed":{"date-parts":[[2018,2,13]],"date-time":"2018-02-13T19:22:46Z","timestamp":1518549766379},"reference-count":39,"publisher":"Proceedings
+        of the National Academy of Sciences","issue":"10","content-domain":{"domain":["pnas.org"],"crossmark-restriction":true},"short-container-title":["Proceedings
+        of the National Academy of Sciences"],"published-print":{"date-parts":[[2007,3,6]]},"DOI":"10.1073\/pnas.0611585104","type":"journal-article","created":{"date-parts":[[2007,3,1]],"date-time":"2007-03-01T11:29:21Z","timestamp":1172748561000},"page":"3707-3712","update-policy":"http:\/\/dx.doi.org\/10.1073\/pnas.cm10313","source":"Crossref","is-referenced-by-count":43,"title":["Scanning
+        tunneling microscopy of the formation, transformation, and property of oligothiophene
+        self-organizations on graphite and gold surfaces"],"prefix":"10.1073","volume":"104","author":[{"given":"Z.-Y.","family":"Yang","affiliation":[]},{"given":"H.-M.","family":"Zhang","affiliation":[]},{"given":"C.-J.","family":"Yan","affiliation":[]},{"given":"S.-S.","family":"Li","affiliation":[]},{"given":"H.-J.","family":"Yan","affiliation":[]},{"given":"W.-G.","family":"Song","affiliation":[]},{"given":"L.-J.","family":"Wan","affiliation":[]}],"member":"341","published-online":{"date-parts":[[2007,2,28]]},"reference":[{"key":"1_27858576","volume":"6","first-page":"735","year":"2000","journal-title":"CHEM.
+        EUR. J.","DOI":"10.1002\/(SICI)1521-3765(20000218)6:4<735::AID-CHEM735>3.0.CO;2-A","doi-asserted-by":"crossref"},{"key":"2_27858577","volume":"4","first-page":"102","year":"1992","journal-title":"ADV
+        MATER","DOI":"10.1002\/adma.19920040209","doi-asserted-by":"crossref"},{"key":"3_27858578","volume":"34","first-page":"303","year":"1995","journal-title":"ANGEW
+        CHEM INT ED","DOI":"10.1002\/anie.199503031","doi-asserted-by":"crossref"},{"key":"4_27858579","ISSN":"http:\/\/id.crossref.org\/issn\/0897-4756","issn-type":"print","volume":"16","first-page":"4452","year":"2004","DOI":"10.1021\/cm049673x","doi-asserted-by":"crossref"},{"issue":"38","key":"5_22626202","doi-asserted-by":"publisher","first-page":"12384","DOI":"10.1021\/ja062533z","volume":"128","author":"Gong","year":"2006","journal-title":"Journal
+        of the American Chemical Society","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5126","issn-type":"print"},{"key":"6_27858581","volume":"39","first-page":"3481","year":"2000","journal-title":"ANGEW
+        CHEM INT ED","DOI":"10.1002\/1521-3773(20001002)39:19<3481::AID-ANIE3481>3.0.CO;2-O","doi-asserted-by":"crossref"},{"key":"7_27858582","volume":"18","first-page":"447","year":"2006","journal-title":"ADV
+        MATER","DOI":"10.1002\/adma.200501575","doi-asserted-by":"crossref"},{"key":"8_28409446","volume":"13","first-page":"243","year":"2001","journal-title":"ADV
+        MATER","DOI":"10.1002\/1521-4095(200102)13:4<243::AID-ADMA243>3.0.CO;2-X","doi-asserted-by":"crossref"},{"issue":"27","key":"9_22359685","doi-asserted-by":"publisher","first-page":"8744","DOI":"10.1021\/ja063040x","volume":"128","author":"Wakabayashi","year":"2006","journal-title":"Journal
+        of the American Chemical Society","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5126","issn-type":"print"},{"key":"10_27858585","volume":"67","first-page":"47","year":"1994","journal-title":"SYNTH
+        MET","DOI":"10.1016\/0379-6779(94)90010-8","doi-asserted-by":"crossref"},{"issue":"6","key":"11_18036922","doi-asserted-by":"crossref","first-page":"1596","DOI":"10.1021\/ja039529x","volume":"126","author":"Murphy","year":"2004","journal-title":"Journal
+        of the American Chemical Society","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5126","issn-type":"print"},{"key":"12_28409447","volume":"12","first-page":"379","year":"1999","journal-title":"OPT
+        MATER","DOI":"10.1016\/S0925-3467(99)00044-0","doi-asserted-by":"crossref"},{"key":"13_27858588","volume":"139","first-page":"671","year":"2003","journal-title":"SYNTH
+        MET","DOI":"10.1016\/S0379-6779(03)00304-7","doi-asserted-by":"crossref"},{"key":"14_28337983","ISSN":"http:\/\/id.crossref.org\/issn\/1476-4687","issn-type":"print","volume":"397","first-page":"121","year":"1999","journal-title":"Nature;
+        Physical Science (London)","DOI":"10.1038\/16393","doi-asserted-by":"crossref"},{"key":"15_27858589","volume":"15","first-page":"2002","year":"2002","journal-title":"ADV
+        MATER"},{"issue":"47","key":"16_19697256","doi-asserted-by":"publisher","first-page":"16346","DOI":"10.1021\/ja054358c","volume":"127","author":"Videlot-Ackermann","year":"2005","journal-title":"Journal
+        of the American Chemical Society","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5126","issn-type":"print"},{"key":"17_27858591","ISSN":"http:\/\/id.crossref.org\/issn\/0897-4756","issn-type":"print","volume":"17","first-page":"5032","year":"2005","DOI":"10.1021\/cm051163v","doi-asserted-by":"crossref"},{"key":"18_28409448","ISSN":"http:\/\/id.crossref.org\/issn\/1520-4898","issn-type":"print","volume":"32","first-page":"950","year":"1999","journal-title":"Accounts
+        of Chemical Research","DOI":"10.1021\/ar9900663","doi-asserted-by":"crossref"},{"key":"19_28409449","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5207","issn-type":"print","volume":"103","first-page":"7788","year":"1999","journal-title":"Journal
+        of Physical Chemistry. B, Condensed Matter, Materials, Surfaces, Interfaces
+        and Biophysical","DOI":"10.1021\/jp9905878","doi-asserted-by":"crossref"},{"key":"20_27858593","volume":"16","first-page":"221","year":"2006","journal-title":"ADV
+        FUNCT MATER","DOI":"10.1002\/adfm.200500264","doi-asserted-by":"crossref"},{"issue":"5","key":"21_22143616","doi-asserted-by":"publisher","first-page":"334","DOI":"10.1021\/ar0501929","volume":"39","author":"Wan","year":"2006","journal-title":"Accounts
+        of Chemical Research","ISSN":"http:\/\/id.crossref.org\/issn\/1520-4898","issn-type":"print"},{"key":"22_28409450","ISSN":"http:\/\/id.crossref.org\/issn\/0022-3654","issn-type":"print","volume":"100","first-page":"13103","year":"1996","journal-title":"Journal
+        of Physical Chemistry","DOI":"10.1021\/jp960054o","doi-asserted-by":"crossref"},{"key":"23_27858595","ISSN":"http:\/\/id.crossref.org\/issn\/1463-9076","issn-type":"print","volume":"3","first-page":"3336","year":"2001","DOI":"10.1039\/b101214m","doi-asserted-by":"crossref"},{"key":"24_28409451","ISSN":"http:\/\/id.crossref.org\/issn\/1530-6984","issn-type":"print","volume":"1","first-page":"201","year":"2001","DOI":"10.1021\/nl015511d","doi-asserted-by":"crossref"},{"key":"25_27858596","volume":"101","first-page":"569","year":"1999","journal-title":"SYNTH
+        MET","DOI":"10.1016\/S0379-6779(98)00308-7","doi-asserted-by":"crossref"},{"issue":"4","key":"26_21595651","doi-asserted-by":"publisher","first-page":"1443","DOI":"10.1021\/la052566c","volume":"22","author":"Abdel-Mottaleb","year":"2006","journal-title":"Langmuir","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5827","issn-type":"print"},{"key":"27_24026664","volume":"8","first-page":"733","year":"1996","journal-title":"ADV
+        MATER","DOI":"10.1002\/adma.19960080905","doi-asserted-by":"crossref"},{"issue":"34","key":"28_22541318","doi-asserted-by":"crossref","first-page":"17043","DOI":"10.1021\/jp063240v","volume":"110","author":"Xu","year":"2006","journal-title":"Journal
+        of Physical Chemistry. B, Condensed Matter, Materials, Surfaces, Interfaces
+        and Biophysical","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5207","issn-type":"print"},{"issue":"5","key":"29_21670457","doi-asserted-by":"publisher","first-page":"1761","DOI":"10.1021\/jo051821v","volume":"71","author":"Narutaki","year":"2006","journal-title":"The
+        Journal of organic chemistry","ISSN":"http:\/\/id.crossref.org\/issn\/0022-3263","issn-type":"print"},{"issue":"22","key":"30_18923079","doi-asserted-by":"publisher","first-page":"8082","DOI":"10.1021\/ja050783u","volume":"127","author":"Sakai","year":"2005","journal-title":"Journal
+        of the American Chemical Society","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5126","issn-type":"print"},{"key":"31_26058555","volume":"39","first-page":"2680","year":"2000","journal-title":"ANGEW
+        CHEM INT ED"},{"key":"32_27858601","volume":"14","first-page":"609","year":"2002","journal-title":"ADV
+        MATER","DOI":"10.1002\/1521-4095(20020418)14:8<609::AID-ADMA609>3.0.CO;2-7","doi-asserted-by":"crossref"},{"key":"33_27858602","volume":"45","first-page":"3996","year":"2006","journal-title":"ANGEW
+        CHEM INT ED","DOI":"10.1002\/anie.200600725","doi-asserted-by":"crossref"},{"issue":"5","key":"34_22405845","doi-asserted-by":"crossref","first-page":"1675","DOI":"10.1021\/jp046509o","volume":"109","author":"Gong","year":"2005","journal-title":"Journal
+        of Physical Chemistry. B, Condensed Matter, Materials, Surfaces, Interfaces
+        and Biophysical","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5207","issn-type":"print"},{"issue":"4","key":"35_19690869","doi-asserted-by":"publisher","first-page":"971","DOI":"10.1073\/pnas.0409145102","volume":"102","year":"2005","journal-title":"PNAS","ISSN":"http:\/\/id.crossref.org\/issn\/0027-8424","issn-type":"print"},{"key":"36_27858604","volume":"726","first-page":"271","year":"2005","journal-title":"J
+        MOL STRUCT THEOCHEM","DOI":"10.1016\/j.theochem.2005.04.023","doi-asserted-by":"crossref"},{"key":"37_27858605","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5827","issn-type":"print","volume":"16","first-page":"2164","year":"2000","journal-title":"Langmuir","DOI":"10.1021\/la991069r","doi-asserted-by":"crossref"},{"key":"38_28409452","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5207","issn-type":"print","volume":"104","first-page":"3563","year":"2000","journal-title":"Journal
+        of Physical Chemistry. B, Condensed Matter, Materials, Surfaces, Interfaces
+        and Biophysical","DOI":"10.1021\/jp993328r","doi-asserted-by":"crossref"},{"issue":"27","key":"39_18251511","doi-asserted-by":"publisher","first-page":"8540","DOI":"10.1021\/ja0485210","volume":"126","author":"Yoshimoto","year":"2004","journal-title":"Journal
+        of the American Chemical Society","ISSN":"http:\/\/id.crossref.org\/issn\/1520-5126","issn-type":"print"}],"container-title":["Proceedings
+        of the National Academy of Sciences"],"link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1073\/pnas.0611585104","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T14:39:12Z","timestamp":1497710352000},"score":1.0,"issued":{"date-parts":[[2007,2,28]]},"references-count":39,"URL":"http:\/\/dx.doi.org\/10.1073\/pnas.0611585104","relation":{"cites":[]},"ISSN":["0027-8424","1091-6490"],"issn-type":[{"value":"0027-8424","type":"print"},{"value":"1091-6490","type":"electronic"}],"subject":["Multidisciplinary"]},{"indexed":{"date-parts":[[2018,2,8]],"date-time":"2018-02-08T23:37:39Z","timestamp":1518133059396},"reference-count":23,"publisher":"Wilson
+        Ornithological Society","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Wilson Bulletin"],"published-print":{"date-parts":[[2005,12]]},"DOI":"10.1676\/03-101.1","type":"journal-article","created":{"date-parts":[[2006,8,28]],"date-time":"2006-08-28T20:50:21Z","timestamp":1156798221000},"page":"375-381","source":"Crossref","is-referenced-by-count":4,"title":["HOST
+        USE BY SYMPATRIC COWBIRDS IN SOUTHEASTERN ARIZONA"],"prefix":"10.1676","volume":"117","author":[{"given":"JAMESON
+        F.","family":"CHACE","affiliation":[]}],"member":"1251","container-title":["The
+        Wilson Bulletin"],"deposited":{"date-parts":[[2011,4,24]],"date-time":"2011-04-24T19:47:59Z","timestamp":1303674479000},"score":1.0,"issued":{"date-parts":[[2005,12]]},"references-count":23,"alternative-id":["10.1676\/03-101.1"],"URL":"http:\/\/dx.doi.org\/10.1676\/03-101.1","ISSN":["0043-5643"],"issn-type":[{"value":"0043-5643","type":"print"}],"subject":["Animal
+        Science and Zoology"]},{"indexed":{"date-parts":[[2018,2,9]],"date-time":"2018-02-09T02:58:37Z","timestamp":1518145117125},"reference-count":5,"publisher":"Springer
+        Nature","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Soc"],"published-print":{"date-parts":[[1977,9]]},"DOI":"10.1007\/bf02712519","type":"journal-article","created":{"date-parts":[[2007,10,1]],"date-time":"2007-10-01T04:00:19Z","timestamp":1191211219000},"page":"54-59","source":"Crossref","is-referenced-by-count":26,"title":["Koreans
+        in business"],"prefix":"10.1007","volume":"14","author":[{"given":"Edna","family":"Bonacich","affiliation":[]},{"given":"Ivan
+        H.","family":"Light","affiliation":[]},{"given":"Charles Choy","family":"Wong","affiliation":[]}],"member":"297","reference":[{"key":"BF02712519_CR1","first-page":"583","volume":"38","author":"Edna
+        Bonacich","year":"1973","unstructured":"Bonacich, Edna. \u201cMiddleman Minorities.\u201dAmerican
+        Sociological Review 38 (October 1973): 583\u201394.","journal-title":"American
+        Sociological Review"},{"key":"BF02712519_CR2","author":"Abner Cohen","year":"1969","unstructured":"Cohen,
+        Abner.Custom and Politics in Urban Africa. Berkeley: University of California
+        Press, 1969.","volume-title":"Custom and Politics in Urban Africa"},{"key":"BF02712519_CR3","year":"1976","unstructured":"Gee,
+        Emma, ed.Counterpoint: Perspectives on Asian America. Los Angeles: University
+        of California at Los Angeles, Asian-American Studies Center, 1976.","volume-title":"Counterpoint:
+        Perspectives on Asian America"},{"key":"BF02712519_CR4","author":"Ivan H.
+        Light","year":"1972","unstructured":"Light, Ivan H.Ethnic Enterprise in America:
+        Business and Welfare among Chinese, Japanese, and Blacks. Berkeley: University
+        of California Press, 1972.","volume-title":"Ethnic Enterprise in America:
+        Business and Welfare among Chinese, Japanese, and Blacks"},{"issue":"1","key":"BF02712519_CR5","doi-asserted-by":"crossref","first-page":"117","DOI":"10.17953\/amer.4.1.27100656003495x6","volume":"4","author":"Eui-Young
+        Yu","year":"1977","unstructured":"Yu, Eui-Young. \u201cKoreans in America:
+        An Emerging Ethnic Minority.\u201dAmerasia Journal 4, no. 1 (1977): 117\u201331.","journal-title":"Amerasia
+        Journal"}],"container-title":["Society"],"link":[{"URL":"http:\/\/www.springerlink.com\/index\/pdf\/10.1007\/BF02712519","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T23:29:17Z","timestamp":1497742157000},"score":1.0,"issued":{"date-parts":[[1977,9]]},"references-count":5,"alternative-id":["BF02712519"],"URL":"http:\/\/dx.doi.org\/10.1007\/bf02712519","relation":{"cites":[]},"ISSN":["0147-2011","1936-4725"],"issn-type":[{"value":"0147-2011","type":"print"},{"value":"1936-4725","type":"electronic"}],"subject":["Sociology
+        and Political Science","General Social Sciences"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    headers:
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['34819']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Sun, 01 Apr 2018 15:49:41 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
+    status: {code: 200, message: OK}
+version: 1
