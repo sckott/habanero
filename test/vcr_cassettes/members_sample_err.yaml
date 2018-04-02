@@ -8,17 +8,17 @@ interactions:
       User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
       X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
-    uri: https://api.crossref.org/funders?sort=things
+    uri: https://api.crossref.org/members?sample=2
   response:
-    body: {string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"parameter-not-allowed","value":"sort","message":"This
-        route does not support sort"}]}'}
+    body: {string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"parameter-not-allowed","value":"sample","message":"This
+        route does not support sample"}]}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['160']
+      Content-Length: ['164']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:21:50 GMT']
+      Date: ['Mon, 02 Apr 2018 16:26:18 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

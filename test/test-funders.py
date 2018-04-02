@@ -23,12 +23,11 @@ def test_funders_query():
     assert dict == res['message'].__class__
     assert 2 == res['message']['items-per-page']
 
-@vcr.use_cassette('test/vcr_cassettes/funders_sample.yaml')
-def test_funders_sample():
-    "funders - param: sample - ignored b/c works not requested"
-    res = cr.funders(sample = 2)
-    assert dict == res.__class__
-    assert 20 == res['message']['items-per-page']
+@raises(exceptions.RequestError)
+@vcr.use_cassette('test/vcr_cassettes/funders_sample_err.yaml')
+def test_funders_sample_err():
+    "funders - param: sample - error b/c sample not supported"
+    cr.funders(sample = 2)
 
 @raises(exceptions.RequestError)
 @vcr.use_cassette('test/vcr_cassettes/funders_filter_fails_noidsworks.yaml')

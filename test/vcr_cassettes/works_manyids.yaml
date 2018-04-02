@@ -5,16 +5,16 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/works/10.1016/j.neurobiolaging.2010.03.024
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T09:15:46Z","timestamp":1498209346155},"reference-count":57,"publisher":"Elsevier
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,3,22]],"date-time":"2018-03-22T11:02:30Z","timestamp":1521716550793},"reference-count":57,"publisher":"Elsevier
         BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2012,3,1]],"date-time":"2012-03-01T00:00:00Z","timestamp":1330560000000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/501100004085","name":"Ministry
         of Education, Science and Technology","doi-asserted-by":"crossref","award":["R32-10064"]},{"name":"Stem
         Cell Research Center","award":["SC4170"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Neurobiology
-        of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":74,"title":["Human
+        of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":87,"title":["Human
         umbilical cord blood-derived mesenchymal stem cells improve neuropathology
         and cognitive impairment in an Alzheimer''s disease mouse model through modulation
         of neuroinflammation"],"prefix":"10.1016","volume":"33","author":[{"given":"Hyun
@@ -23,19 +23,19 @@ interactions:
         Sun","family":"Yang","affiliation":[]},{"given":"Jun-Gyo","family":"Suh","affiliation":[]},{"given":"Byoung-Hee","family":"Lee","affiliation":[]},{"given":"Hee
         Kyung","family":"Jin","affiliation":[]},{"given":"Jae-sung","family":"Bae","affiliation":[]}],"member":"78","container-title":["Neurobiology
         of Aging"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,19]],"date-time":"2017-06-19T08:20:12Z","timestamp":1497860412000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"alternative-id":["S0197458010001570"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}],"subject":["Developmental
-        Biology","Ageing","Neuroscience(all)","Geriatrics and Gerontology","Clinical
+        Biology","Ageing","General Neuroscience","Geriatrics and Gerontology","Clinical
         Neurology"]}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['2838']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:06:05 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['2841']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:14 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -43,20 +43,20 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/works/10.1002/jor.1100150407
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T16:46:52Z","timestamp":1497631612853},"reference-count":36,"publisher":"Wiley-Blackwell","issue":"4","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":6636,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-        Orthop. Res."],"published-print":{"date-parts":[[1997,7]]},"DOI":"10.1002\/jor.1100150407","type":"journal-article","created":{"date-parts":[[2005,2,24]],"date-time":"2005-02-24T10:47:51Z","timestamp":1109242071000},"page":"519-527","source":"Crossref","is-referenced-by-count":0,"title":["Growth
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,5]],"date-time":"2018-02-05T08:47:28Z","timestamp":1517820448248},"reference-count":36,"publisher":"Wiley-Blackwell","issue":"4","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":6636,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+        Orthop. Res."],"published-print":{"date-parts":[[1997,7]]},"DOI":"10.1002\/jor.1100150407","type":"journal-article","created":{"date-parts":[[2005,2,24]],"date-time":"2005-02-24T10:47:51Z","timestamp":1109242071000},"page":"519-527","source":"Crossref","is-referenced-by-count":11,"title":["Growth
         hormone secretagogue increases muscle strength during remobilization after
         canine hindlimb immobilization"],"prefix":"10.1002","volume":"15","author":[{"given":"Richard
         L.","family":"Lieber","affiliation":[]},{"given":"Thomas M.","family":"Jacks","affiliation":[]},{"given":"Randall
         L.","family":"Mohler","affiliation":[]},{"given":"Klaus","family":"Schleim","affiliation":[]},{"given":"Michelle","family":"Haven","affiliation":[]},{"given":"Denise","family":"Cuizon","affiliation":[]},{"given":"David
         H.","family":"Gershuni","affiliation":[]},{"given":"Michael A.","family":"Lopez","affiliation":[]},{"given":"Donald","family":"Hora","affiliation":[]},{"given":"Ravi","family":"Nargund","affiliation":[]},{"given":"William","family":"Feeney","affiliation":[]},{"given":"Gerard
         J.","family":"Hickey","affiliation":[]}],"member":"311","reference":[{"key":"10.1002\/jor.1100150407-BIB1","author":"Abbasi","volume":"41","first-page":"975","year":"1993","journal-title":"J
-        Am Geriatr Soc","DOI":"10.1111\/j.1532-5415.1993.tb06764.x"},{"key":"10.1002\/jor.1100150407-BIB2","author":"Booth","volume":"342","first-page":"123","year":"1973","journal-title":"Pfluers
+        Am Geriatr Soc","DOI":"10.1111\/j.1532-5415.1993.tb06764.x","doi-asserted-by":"crossref"},{"key":"10.1002\/jor.1100150407-BIB2","author":"Booth","volume":"342","first-page":"123","year":"1973","journal-title":"Pfluers
         Arch"},{"key":"10.1002\/jor.1100150407-BIB3","author":"Booth","volume":"47","first-page":"435","year":"1979","journal-title":"J
         Appl Physiol"},{"key":"10.1002\/jor.1100150407-BIB4","author":"Borski","volume":"137","first-page":"3253","year":"1996","journal-title":"Endocrinology"},{"key":"10.1002\/jor.1100150407-BIB5","author":"Clarke","volume":"10","first-page":"502","year":"1996","journal-title":"FASEB
         J"},{"key":"10.1002\/jor.1100150407-BIB6","author":"Edgerton","volume":"46","first-page":"115","year":"1975","journal-title":"Exp
@@ -77,14 +77,14 @@ interactions:
         Biomech"},{"key":"10.1002\/jor.1100150407-BIB23","author":"Mauras","volume":"80","first-page":"869","year":"1995","journal-title":"J
         Clin Endocrinol Metab"},{"key":"10.1002\/jor.1100150407-BIB24","author":"McNeil","volume":"140","first-page":"1097","year":"1992","journal-title":"Am
         J Pathol"},{"key":"10.1002\/jor.1100150407-BIB25","author":"Morley","volume":"41","first-page":"149","year":"1993","journal-title":"J
-        Am Geriatr Soc","DOI":"10.1111\/j.1532-5415.1993.tb02049.x"},{"key":"10.1002\/jor.1100150407-BIB26","author":"Nachlas","year":"1957","unstructured":":
+        Am Geriatr Soc","DOI":"10.1111\/j.1532-5415.1993.tb02049.x","doi-asserted-by":"crossref"},{"key":"10.1002\/jor.1100150407-BIB26","author":"Nachlas","year":"1957","unstructured":":
         Cytochemical demonstration of succinic dehydrogenase by the use of a new p-nitrophenyl
         substituted ditetrazole. J Histochem Cytochem insert: 420-436, 1957"},{"key":"10.1002\/jor.1100150407-BIB27","author":"Patchett","volume":"92","first-page":"7001","year":"1995","journal-title":"Proc
         Natl Acad Sci U S A"},{"key":"10.1002\/jor.1100150407-BIB28","author":"Pearse","year":"1961","unstructured":":
         Histochemistry: Theoretical and Applied, 2nd ed. Boston, Little, Brown, 1961","volume-title":"Histochemistry:
         Theoretical and Applied"},{"key":"10.1002\/jor.1100150407-BIB29","author":"Sokal","year":"1981","unstructured":":
         Biometry, 2nd ed. San Francisco, Freeman, 1981","volume-title":"Biometry"},{"key":"10.1002\/jor.1100150407-BIB30","author":"Tabary","volume":"224","first-page":"231","year":"1972","journal-title":"J
-        Physiol (Lond)","DOI":"10.1113\/jphysiol.1972.sp009891"},{"key":"10.1002\/jor.1100150407-BIB31","author":"Tabary","volume":"72","first-page":"277","year":"1976","journal-title":"J
+        Physiol (Lond)","DOI":"10.1113\/jphysiol.1972.sp009891","doi-asserted-by":"crossref"},{"key":"10.1002\/jor.1100150407-BIB31","author":"Tabary","volume":"72","first-page":"277","year":"1976","journal-title":"J
         Physiol (Paris)"},{"key":"10.1002\/jor.1100150407-BIB32","author":"Tenover","volume":"75","first-page":"1092","year":"1992","journal-title":"J
         Clin Endocrinol Metab"},{"key":"10.1002\/jor.1100150407-BIB33","first-page":"101","volume-title":"Point
         Counting Methods: Practical Methods for Biological Morphometry","volume":"2","author":"Weibel","year":"1979","unstructured":":
@@ -93,18 +93,19 @@ interactions:
         Small Animal Clinical Diagnosis by Laboratory Methods. San Francisco, Saunders,
         1989","volume-title":"Small Animal Clinical Diagnosis by Laboratory Methods"},{"key":"10.1002\/jor.1100150407-BIB35","author":"Williams","volume":"127","first-page":"459","year":"1978","journal-title":"J
         Anat"},{"key":"10.1002\/jor.1100150407-BIB36","author":"Zajac","volume":"17","first-page":"359","year":"1989","journal-title":"Crit
-        Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T16:14:02Z","timestamp":1497629642000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"URL":"http:\/\/dx.doi.org\/10.1002\/jor.1100150407","relation":{"cites":[]},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":["Medicine(all)"]}}'}
+        Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T16:14:02Z","timestamp":1497629642000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"URL":"http:\/\/dx.doi.org\/10.1002\/jor.1100150407","relation":{"cites":[]},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":["Orthopedics
+        and Sports Medicine"]}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['7999']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:06:06 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['8104']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:14 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -112,109 +113,109 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/works/10.1038/srep16696
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T02:25:10Z","timestamp":1497666310147},"reference-count":62,"publisher":"Springer
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,3,5]],"date-time":"2018-03-05T05:02:34Z","timestamp":1520226154491},"reference-count":62,"publisher":"Springer
         Nature","issue":"1","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Sci
-        Rep"],"published-print":{"date-parts":[[2015,12]]},"DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":14,"title":["Single-molecule
+        Rep"],"published-print":{"date-parts":[[2015,12]]},"DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":23,"title":["Single-molecule
         FRET studies on alpha-synuclein oligomerization of Parkinson\u2019s disease
         genetically related mutants"],"prefix":"10.1038","volume":"5","author":[{"given":"Laura","family":"Tosatto","affiliation":[]},{"given":"Mathew
         H.","family":"Horrocks","affiliation":[]},{"given":"Alexander J.","family":"Dear","affiliation":[]},{"given":"Tuomas
         P. J.","family":"Knowles","affiliation":[]},{"given":"Mauro","family":"Dalla
         Serra","affiliation":[]},{"given":"Nunilo","family":"Cremades","affiliation":[]},{"given":"Christopher
-        M.","family":"Dobson","affiliation":[]},{"given":"David","family":"Klenerman","affiliation":[]}],"member":"339","published-online":{"date-parts":[[2015,11,19]]},"reference":[{"key":"BFsrep16696_CR1","first-page":"140","DOI":"10.3389\/fnana.2010.00140","volume":"4","author":"T
+        M.","family":"Dobson","affiliation":[]},{"given":"David","family":"Klenerman","affiliation":[]}],"member":"339","published-online":{"date-parts":[[2015,11,19]]},"reference":[{"key":"BFsrep16696_CR1","doi-asserted-by":"publisher","first-page":"140","DOI":"10.3389\/fnana.2010.00140","volume":"4","author":"T
         Gonz\u00e1lez-Hern\u00e1ndez","year":"2010","unstructured":"Gonz\u00e1lez-Hern\u00e1ndez,
         T., Cruz-Muros, I., Afonso-Oramas, D., Salas-Hernandez, J. & Castro-Hernandez,
         J. Vulnerability of mesostriatal dopaminergic neurons in Parkinson\u2019s
-        disease. Front. Neuroanat. 4, 140 (2010).","journal-title":"Front. Neuroanat"},{"key":"BFsrep16696_CR2","first-page":"839","DOI":"10.1038\/42166","volume":"388","author":"MG
+        disease. Front. Neuroanat. 4, 140 (2010).","journal-title":"Front. Neuroanat"},{"key":"BFsrep16696_CR2","doi-asserted-by":"publisher","first-page":"839","DOI":"10.1038\/42166","volume":"388","author":"MG
         Spillantini","year":"1997","unstructured":"Spillantini, M. G. et al. Alpha-synuclein
-        in Lewy bodies. Nature 388, 839\u2013840 (1997).","journal-title":"Nature"},{"key":"BFsrep16696_CR3","first-page":"13709","DOI":"10.1021\/bi961799n","volume":"35","author":"PH
+        in Lewy bodies. Nature 388, 839\u2013840 (1997).","journal-title":"Nature"},{"key":"BFsrep16696_CR3","doi-asserted-by":"publisher","first-page":"13709","DOI":"10.1021\/bi961799n","volume":"35","author":"PH
         Weinreb","year":"1996","unstructured":"Weinreb, P. H., Zhen, W., Poon, A.
         W., Conway, K. A. & Lansbury, P. T., Jr. NACP, a protein implicated in Alzheimer\u2019s
         disease and learning, is natively unfolded. Biochemistry (Mosc.) 35, 13709\u201313715
-        (1996).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR4","first-page":"2552","DOI":"10.1021\/bi991447r","volume":"39","author":"KA
+        (1996).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR4","doi-asserted-by":"publisher","first-page":"2552","DOI":"10.1021\/bi991447r","volume":"39","author":"KA
         Conway","year":"2000","unstructured":"Conway, K. A., Harper, J. D. & Lansbury,
         P. T., Jr . Fibrils formed in vitro from alpha-synuclein and two mutant forms
         linked to Parkinson\u2019s disease are typical amyloid. Biochemistry (Mosc.)
-        39, 2552\u20132563 (2000).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR5","first-page":"2045","DOI":"10.1126\/science.276.5321.2045","volume":"276","author":"MH
+        39, 2552\u20132563 (2000).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR5","doi-asserted-by":"publisher","first-page":"2045","DOI":"10.1126\/science.276.5321.2045","volume":"276","author":"MH
         Polymeropoulos","year":"1997","unstructured":"Polymeropoulos, M. H. et al.
         Mutation in the alpha-synuclein gene identified in families with Parkinson\u2019s
-        disease. Science 276, 2045\u20132047 (1997).","journal-title":"Science"},{"key":"BFsrep16696_CR6","first-page":"106","DOI":"10.1038\/ng0298-106","volume":"18","author":"R
+        disease. Science 276, 2045\u20132047 (1997).","journal-title":"Science"},{"key":"BFsrep16696_CR6","doi-asserted-by":"publisher","first-page":"106","DOI":"10.1038\/ng0298-106","volume":"18","author":"R
         Kr\u00fcger","year":"1998","unstructured":"Kr\u00fcger, R. et al. Ala30Pro
         mutation in the gene encoding alpha-synuclein in Parkinson\u2019s disease.
-        Nat. Genet. 18, 106\u2013108 (1998).","journal-title":"Nat. Genet."},{"key":"BFsrep16696_CR7","first-page":"164","DOI":"10.1002\/ana.10795","volume":"55","author":"JJ
+        Nat. Genet. 18, 106\u2013108 (1998).","journal-title":"Nat. Genet."},{"key":"BFsrep16696_CR7","doi-asserted-by":"publisher","first-page":"164","DOI":"10.1002\/ana.10795","volume":"55","author":"JJ
         Zarranz","year":"2004","unstructured":"Zarranz, J. J. et al. The new mutation,
         E46K, of alpha-synuclein causes Parkinson and Lewy body dementia. Ann. Neurol.
-        55, 164\u2013173 (2004).","journal-title":"Ann. Neurol."},{"key":"BFsrep16696_CR8","first-page":"841","DOI":"10.1126\/science.1090278","volume":"302","author":"AB
+        55, 164\u2013173 (2004).","journal-title":"Ann. Neurol."},{"key":"BFsrep16696_CR8","doi-asserted-by":"publisher","first-page":"841","DOI":"10.1126\/science.1090278","volume":"302","author":"AB
         Singleton","year":"2003","unstructured":"Singleton, A. B. et al. \u03b1-Synuclein
-        Locus Triplication Causes Parkinson\u2019s Disease. Science 302, 841 (2003).","journal-title":"Science"},{"key":"BFsrep16696_CR9","first-page":"1062","DOI":"10.1212\/WNL.0b013e31828727ba","volume":"80","author":"C
+        Locus Triplication Causes Parkinson\u2019s Disease. Science 302, 841 (2003).","journal-title":"Science"},{"key":"BFsrep16696_CR9","doi-asserted-by":"publisher","first-page":"1062","DOI":"10.1212\/WNL.0b013e31828727ba","volume":"80","author":"C
         Proukakis","year":"2013","unstructured":"Proukakis, C. et al. A novel \u03b1-synuclein
-        missense mutation in Parkinson disease. Neurology 80, 1062\u20131064 (2013).","journal-title":"Neurology"},{"key":"BFsrep16696_CR10","first-page":"753","DOI":"10.1007\/s00401-013-1096-7","volume":"125","author":"AP
+        missense mutation in Parkinson disease. Neurology 80, 1062\u20131064 (2013).","journal-title":"Neurology"},{"key":"BFsrep16696_CR10","doi-asserted-by":"publisher","first-page":"753","DOI":"10.1007\/s00401-013-1096-7","volume":"125","author":"AP
         Kiely","year":"2013","unstructured":"Kiely, A. P. et al. \u03b1-Synucleinopathy
         associated with G51D SNCA mutation: a link between Parkinson\u2019s disease
         and multiple system atrophy? Acta Neuropathol. (Berl.) 125, 753\u2013769 (2013).","journal-title":"Acta
-        Neuropathol. (Berl.)"},{"key":"BFsrep16696_CR11","first-page":"2180.e1","DOI":"10.1016\/j.neurobiolaging.2014.03.024","volume":"35","author":"P
+        Neuropathol. (Berl.)"},{"key":"BFsrep16696_CR11","doi-asserted-by":"publisher","first-page":"2180.e1","DOI":"10.1016\/j.neurobiolaging.2014.03.024","volume":"35","author":"P
         Pasanen","year":"2014","unstructured":"Pasanen, P. et al. A novel \u03b1-synuclein
         mutation A53E associated with atypical multiple system atrophy and Parkinson\u2019s
         disease-type pathology. Neurobiol. Aging 35, 2180.e1\u20135 (2014).","journal-title":"Neurobiol.
-        Aging"},{"key":"BFsrep16696_CR12","first-page":"1167","DOI":"10.1016\/S0140-6736(04)17103-1","volume":"364","author":"M-C
+        Aging"},{"key":"BFsrep16696_CR12","doi-asserted-by":"publisher","first-page":"1167","DOI":"10.1016\/S0140-6736(04)17103-1","volume":"364","author":"M-C
         Chartier-Harlin","year":"2004","unstructured":"Chartier-Harlin, M.-C. et al.
         Alpha-synuclein locus duplication as a cause of familial Parkinson\u2019s
-        disease. Lancet 364, 1167\u20131169 (2004).","journal-title":"Lancet"},{"key":"BFsrep16696_CR13","first-page":"2380","DOI":"10.1074\/jbc.M008919200","volume":"276","author":"BI
+        disease. Lancet 364, 1167\u20131169 (2004).","journal-title":"Lancet"},{"key":"BFsrep16696_CR13","doi-asserted-by":"publisher","first-page":"2380","DOI":"10.1074\/jbc.M008919200","volume":"276","author":"BI
         Giasson","year":"2001","unstructured":"Giasson, B. I., Murray, I. V., Trojanowski,
         J. Q. & Lee, V. M. A hydrophobic stretch of 12 amino acid residues in the
         middle of alpha-synuclein is essential for filament assembly. J. Biol. Chem.
-        276, 2380\u20132386 (2001).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR14","first-page":"4491","DOI":"10.1093\/hmg\/ddu165","volume":"23","author":"M-B
+        276, 2380\u20132386 (2001).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR14","doi-asserted-by":"publisher","first-page":"4491","DOI":"10.1093\/hmg\/ddu165","volume":"23","author":"M-B
         Fares","year":"2014","unstructured":"Fares, M.-B. et al. The novel Parkinson\u2019s
         disease linked mutation G51D attenuates in vitro aggregation and membrane
         binding of \u03b1-synuclein, and enhances its secretion and nuclear localization
         in cells. Hum. Mol. Genet. 23, 4491\u20134509 (2014).","journal-title":"Hum.
-        Mol. Genet."},{"key":"BFsrep16696_CR15","first-page":"7800","DOI":"10.1074\/jbc.M411638200","volume":"280","author":"EA
+        Mol. Genet."},{"key":"BFsrep16696_CR15","doi-asserted-by":"publisher","first-page":"7800","DOI":"10.1074\/jbc.M411638200","volume":"280","author":"EA
         Greenbaum","year":"2005","unstructured":"Greenbaum, E. A. et al. The E46K
         mutation in alpha-synuclein increases amyloid fibril formation. J. Biol. Chem.
-        280, 7800\u20137807 (2005).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR16","first-page":"11604","DOI":"10.1021\/bi010616g","volume":"40","author":"J
+        280, 7800\u20137807 (2005).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR16","doi-asserted-by":"publisher","first-page":"11604","DOI":"10.1021\/bi010616g","volume":"40","author":"J
         Li","year":"2001","unstructured":"Li, J., Uversky, V. N. & Fink, A. L. Effect
         of familial Parkinson\u2019s disease point mutations A30P and A53T on the
         structural properties, aggregation, and fibrillation of human alpha-synuclein.
         Biochemistry (Mosc.) 40, 11604\u201311613 (2001).","journal-title":"Biochemistry
-        (Mosc.)"},{"key":"BFsrep16696_CR17","first-page":"6419","DOI":"10.1021\/bi5010365","volume":"53","author":"D
+        (Mosc.)"},{"key":"BFsrep16696_CR17","doi-asserted-by":"publisher","first-page":"6419","DOI":"10.1021\/bi5010365","volume":"53","author":"D
         Ghosh","year":"2014","unstructured":"Ghosh, D. et al. The newly discovered
         parkinson\u2019s disease associated finnish mutation (A53E) attenuates \u03b1-synuclein
         aggregation and membrane binding. Biochemistry (Mosc.) 53, 6419\u20136421
-        (2014).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR18","first-page":"6925","DOI":"10.1021\/bi400999d","volume":"52","author":"D
+        (2014).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR18","doi-asserted-by":"publisher","first-page":"6925","DOI":"10.1021\/bi400999d","volume":"52","author":"D
         Ghosh","year":"2013","unstructured":"Ghosh, D. et al. The Parkinson\u2019s
         disease-associated H50Q mutation accelerates \u03b1-Synuclein aggregation
         in vitro. Biochemistry (Mosc.) 52, 6925\u20136927 (2013).","journal-title":"Biochemistry
-        (Mosc.)"},{"key":"BFsrep16696_CR19","first-page":"45996","DOI":"10.1074\/jbc.M106777200","volume":"276","author":"R
+        (Mosc.)"},{"key":"BFsrep16696_CR19","doi-asserted-by":"publisher","first-page":"45996","DOI":"10.1074\/jbc.M106777200","volume":"276","author":"R
         Bussell Jr","year":"2001","unstructured":"Bussell, R., Jr & Eliezer, D. Residual
         structure and dynamics in Parkinson\u2019s disease-associated mutants of alpha-synuclein.
-        J. Biol. Chem. 276, 45996\u201346003 (2001).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR20","first-page":"1037","DOI":"10.1016\/j.jmb.2005.11.035","volume":"355","author":"F
+        J. Biol. Chem. 276, 45996\u201346003 (2001).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR20","doi-asserted-by":"publisher","first-page":"1037","DOI":"10.1016\/j.jmb.2005.11.035","volume":"355","author":"F
         Rousseau","year":"2006","unstructured":"Rousseau, F., Serrano, L. & Schymkowitz,
         J. W. H. How evolutionary pressure against protein aggregation shaped chaperone
         specificity. J. Mol. Biol. 355, 1037\u20131047 (2006).","journal-title":"J.
-        Mol. Biol."},{"key":"BFsrep16696_CR21","first-page":"251","DOI":"10.1146\/annurev.bi.47.070178.001343","volume":"47","author":"PY
+        Mol. Biol."},{"key":"BFsrep16696_CR21","doi-asserted-by":"publisher","first-page":"251","DOI":"10.1146\/annurev.bi.47.070178.001343","volume":"47","author":"PY
         Chou","year":"1978","unstructured":"Chou, P. Y. & Fasman, G. D. Empirical
         predictions of protein conformation. Annu. Rev. Biochem. 47, 251\u2013276
-        (1978).","journal-title":"Annu. Rev. Biochem."},{"key":"BFsrep16696_CR22","first-page":"18850","DOI":"10.1073\/pnas.1012336107","volume":"107","author":"VL
+        (1978).","journal-title":"Annu. Rev. Biochem."},{"key":"BFsrep16696_CR22","doi-asserted-by":"publisher","first-page":"18850","DOI":"10.1073\/pnas.1012336107","volume":"107","author":"VL
         Anderson","year":"2010","unstructured":"Anderson, V. L., Ramlall, T. F., Rospigliosi,
         C. C., Webb, W. W. & Eliezer, D. Identification of a helical intermediate
         in trifluoroethanol-induced alpha-synuclein aggregation. Proc. Natl. Acad.
         Sci. USA 107, 18850\u201318855 (2010).","journal-title":"Proc. Natl. Acad.
-        Sci. USA"},{"key":"BFsrep16696_CR23","first-page":"715","DOI":"10.1016\/j.nbd.2011.05.025","volume":"43","author":"K
+        Sci. USA"},{"key":"BFsrep16696_CR23","doi-asserted-by":"publisher","first-page":"715","DOI":"10.1016\/j.nbd.2011.05.025","volume":"43","author":"K
         Ono","year":"2011","unstructured":"Ono, K., Ikeda, T., Takasaki, J. & Yamada,
         M. Familial Parkinson disease mutations influence \u03b1-synuclein assembly.
-        Neurobiol. Dis. 43, 715\u2013724 (2011).","journal-title":"Neurobiol. Dis."},{"key":"BFsrep16696_CR24","first-page":"30649","DOI":"10.1074\/jbc.C500288200","volume":"280","author":"CW
+        Neurobiol. Dis. 43, 715\u2013724 (2011).","journal-title":"Neurobiol. Dis."},{"key":"BFsrep16696_CR24","doi-asserted-by":"publisher","first-page":"30649","DOI":"10.1074\/jbc.C500288200","volume":"280","author":"CW
         Bertoncini","year":"2005","unstructured":"Bertoncini, C. W., Fernandez, C.
         O., Griesinger, C., Jovin, T. M. & Zweckstetter, M. Familial mutants of alpha-synuclein
         with increased neurotoxicity have a destabilized conformation. J. Biol. Chem.
-        280, 30649\u201330652 (2005).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR25","first-page":"1022","DOI":"10.1016\/j.jmb.2009.03.065","volume":"388","author":"CC
+        280, 30649\u201330652 (2005).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR25","doi-asserted-by":"publisher","first-page":"1022","DOI":"10.1016\/j.jmb.2009.03.065","volume":"388","author":"CC
         Rospigliosi","year":"2009","unstructured":"Rospigliosi, C. C. et al. E46K
         Parkinson\u2019s-linked mutation enhances C-terminal-to-N-terminal contacts
         in alpha-synuclein. J. Mol. Biol. 388, 1022\u20131032 (2009).","journal-title":"J.
-        Mol. Biol."},{"key":"BFsrep16696_CR26","first-page":"10737","DOI":"10.1021\/jp405614j","volume":"117","author":"C
+        Mol. Biol."},{"key":"BFsrep16696_CR26","doi-asserted-by":"publisher","first-page":"10737","DOI":"10.1021\/jp405614j","volume":"117","author":"C
         Camilloni","year":"2013","unstructured":"Camilloni, C. & Vendruscolo, M. A
         relationship between the aggregation rates of \u03b1-synuclein variants and
         the \u03b2-sheet populations in their monomeric forms. J. Phys. Chem. B 117,
@@ -222,152 +223,152 @@ interactions:
         O. & Wise-Scira, O. Structures and Free Energy Landscapes of the A53T Mutant-Type
         \u03b1-Synuclein Protein and Impact of A53T Mutation on the Structures of
         the Wild-Type \u03b1-Synuclein Protein with Dynamics. ACS Chem. Neurosci.
-        (2013). doi: 10.1021\/cn400041j.","DOI":"10.1021\/cn400041j"},{"key":"BFsrep16696_CR28","first-page":"571","DOI":"10.1073\/pnas.97.2.571","volume":"97","author":"KA
+        (2013). doi: 10.1021\/cn400041j.","DOI":"10.1021\/cn400041j","doi-asserted-by":"publisher"},{"key":"BFsrep16696_CR28","doi-asserted-by":"publisher","first-page":"571","DOI":"10.1073\/pnas.97.2.571","volume":"97","author":"KA
         Conway","year":"2000","unstructured":"Conway, K. A. et al. Acceleration of
         oligomerization, not fibrillization, is a shared property of both alpha-synuclein
         mutations linked to early-onset Parkinson\u2019s disease: implications for
         pathogenesis and therapy. Proc. Natl. Acad. Sci. USA 97, 571\u2013576 (2000).","journal-title":"Proc.
-        Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR29","first-page":"1089","DOI":"10.1016\/S0022-2836(02)00735-0","volume":"322","author":"HA
+        Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR29","doi-asserted-by":"publisher","first-page":"1089","DOI":"10.1016\/S0022-2836(02)00735-0","volume":"322","author":"HA
         Lashuel","year":"2002","unstructured":"Lashuel, H. A. et al. Alpha-synuclein,
         especially the Parkinson\u2019s disease-associated mutants, forms pore-like
         annular and tubular protofibrils. J. Mol. Biol. 322, 1089\u20131102 (2002).","journal-title":"J.
-        Mol. Biol."},{"key":"BFsrep16696_CR30","first-page":"7107","DOI":"10.1021\/bi7000246","volume":"46","author":"RA
+        Mol. Biol."},{"key":"BFsrep16696_CR30","doi-asserted-by":"publisher","first-page":"7107","DOI":"10.1021\/bi7000246","volume":"46","author":"RA
         Fredenburg","year":"2007","unstructured":"Fredenburg, R. A. et al. The impact
         of the E46K mutation on the properties of alpha-synuclein in its monomeric
         and oligomeric states. Biochemistry (Mosc.) 46, 7107\u20137118 (2007).","journal-title":"Biochemistry
-        (Mosc.)"},{"key":"BFsrep16696_CR31","first-page":"805","DOI":"10.1038\/nature01891","volume":"424","author":"F
+        (Mosc.)"},{"key":"BFsrep16696_CR31","doi-asserted-by":"publisher","first-page":"805","DOI":"10.1038\/nature01891","volume":"424","author":"F
         Chiti","year":"2003","unstructured":"Chiti, F., Stefani, M., Taddei, N., Ramponi,
         G. & Dobson, C. M. Rationalization of the effects of mutations on peptide
-        and protein aggregation rates. Nature 424, 805\u2013808 (2003).","journal-title":"Nature"},{"key":"BFsrep16696_CR32","first-page":"4194","DOI":"10.1073\/pnas.1100976108","volume":"108","author":"B
+        and protein aggregation rates. Nature 424, 805\u2013808 (2003).","journal-title":"Nature"},{"key":"BFsrep16696_CR32","doi-asserted-by":"publisher","first-page":"4194","DOI":"10.1073\/pnas.1100976108","volume":"108","author":"B
         Winner","year":"2011","unstructured":"Winner, B. et al. In vivo demonstration
         that alpha-synuclein oligomers are toxic. Proc. Natl. Acad. Sci. USA 108,
-        4194\u20134199 (2011).","journal-title":"Proc. Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR33","first-page":"1048","DOI":"10.1016\/j.cell.2012.03.037","volume":"149","author":"N
+        4194\u20134199 (2011).","journal-title":"Proc. Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR33","doi-asserted-by":"publisher","first-page":"1048","DOI":"10.1016\/j.cell.2012.03.037","volume":"149","author":"N
         Cremades","year":"2012","unstructured":"Cremades, N. et al. Direct Observation
         of the Interconversion of Normal and Toxic Forms of \u03b1-Synuclein. Cell
-        149, 1048\u20131059 (2012).","journal-title":"Cell"},{"key":"BFsrep16696_CR34","first-page":"3256","DOI":"10.1038\/emboj.2009.257","volume":"28","author":"DP
+        149, 1048\u20131059 (2012).","journal-title":"Cell"},{"key":"BFsrep16696_CR34","doi-asserted-by":"publisher","first-page":"3256","DOI":"10.1038\/emboj.2009.257","volume":"28","author":"DP
         Karpinar","year":"2009","unstructured":"Karpinar, D. P. et al. Pre-fibrillar
         alpha-synuclein variants with impaired beta-structure increase neurotoxicity
         in Parkinson\u2019s disease models. EMBO J. 28, 3256\u20133268 (2009).","journal-title":"EMBO
-        J."},{"key":"BFsrep16696_CR35","first-page":"19509","DOI":"10.1074\/jbc.274.28.19509","volume":"274","author":"SJ
+        J."},{"key":"BFsrep16696_CR35","doi-asserted-by":"publisher","first-page":"19509","DOI":"10.1074\/jbc.274.28.19509","volume":"274","author":"SJ
         Wood","year":"1999","unstructured":"Wood, S. J. et al. alpha-synuclein fibrillogenesis
         is nucleation-dependent. Implications for the pathogenesis of Parkinson\u2019s
         disease. J. Biol. Chem. 274, 19509\u201319512 (1999).","journal-title":"J.
-        Biol. Chem."},{"key":"BFsrep16696_CR36","first-page":"3246","DOI":"10.1073\/pnas.1013225108","volume":"108","author":"L
+        Biol. Chem."},{"key":"BFsrep16696_CR36","doi-asserted-by":"publisher","first-page":"3246","DOI":"10.1073\/pnas.1013225108","volume":"108","author":"L
         Giehm","year":"2011","unstructured":"Giehm, L., Svergun, D. I., Otzen, D.
         E. & Vestergaard, B. Low-resolution structure of a vesicle disrupting &alpha;-synuclein
         oligomer that accumulates during fibrillation. Proc. Natl. Acad. Sci. USA
-        108, 3246\u20133251 (2011).","journal-title":"Proc. Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR37","first-page":"7812","DOI":"10.1021\/bi0102398","volume":"40","author":"MJ
+        108, 3246\u20133251 (2011).","journal-title":"Proc. Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR37","doi-asserted-by":"publisher","first-page":"7812","DOI":"10.1021\/bi0102398","volume":"40","author":"MJ
         Volles","year":"2001","unstructured":"Volles, M. J. et al. Vesicle permeabilization
         by protofibrillar alpha-synuclein: implications for the pathogenesis and treatment
         of Parkinson\u2019s disease. Biochemistry (Mosc.) 40, 7812\u20137819 (2001).","journal-title":"Biochemistry
-        (Mosc.)"},{"key":"BFsrep16696_CR38","first-page":"7560","DOI":"10.1002\/anie.201400491","volume":"53","author":"W
+        (Mosc.)"},{"key":"BFsrep16696_CR38","doi-asserted-by":"publisher","first-page":"7560","DOI":"10.1002\/anie.201400491","volume":"53","author":"W
         Paslawski","year":"2014","unstructured":"Paslawski, W., Mysling, S., Thomsen,
         K., J\u00f8rgensen, T. J. D. & Otzen, D. E. Co-existence of two different
         \u03b1-synuclein oligomers with different core structures determined by hydrogen\/deuterium
         exchange mass spectrometry. Angew. Chem. Int. Ed Engl. 53, 7560\u20137563
-        (2014).","journal-title":"Angew. Chem. Int. Ed Engl."},{"key":"BFsrep16696_CR39","first-page":"239","DOI":"10.1021\/cn500168x","volume":"6","author":"S
+        (2014).","journal-title":"Angew. Chem. Int. Ed Engl."},{"key":"BFsrep16696_CR39","doi-asserted-by":"publisher","first-page":"239","DOI":"10.1021\/cn500168x","volume":"6","author":"S
         Basak","year":"2015","unstructured":"Basak, S., Prasad, G. V. R. K., Varkey,
         J. & Chattopadhyay, K. Early Sodium Dodecyl Sulfate Induced Collapse of \u03b1-Synuclein
         Correlates with Its Amyloid Formation. ACS Chem. Neurosci. 6, 239\u2013246
-        (2015).","journal-title":"ACS Chem. Neurosci."},{"key":"BFsrep16696_CR40","first-page":"1202","DOI":"10.1016\/j.bbrc.2005.06.025","volume":"333","author":"A
+        (2015).","journal-title":"ACS Chem. Neurosci."},{"key":"BFsrep16696_CR40","doi-asserted-by":"publisher","first-page":"1202","DOI":"10.1016\/j.bbrc.2005.06.025","volume":"333","author":"A
         Giese","year":"2005","unstructured":"Giese, A. et al. Single particle detection
         and characterization of synuclein co-aggregation. Biochem. Biophys. Res. Commun.
-        333, 1202\u20131210 (2005).","journal-title":"Biochem. Biophys. Res. Commun."},{"key":"BFsrep16696_CR41","first-page":"1302","DOI":"10.1016\/j.bpj.2009.12.4290","volume":"98","author":"S
+        333, 1202\u20131210 (2005).","journal-title":"Biochem. Biophys. Res. Commun."},{"key":"BFsrep16696_CR41","doi-asserted-by":"publisher","first-page":"1302","DOI":"10.1016\/j.bpj.2009.12.4290","volume":"98","author":"S
         Nath","year":"2010","unstructured":"Nath, S., Meuvis, J., Hendrix, J., Carl,
         S. A. & Engelborghs, Y. Early Aggregation Steps in \u03b1-Synuclein as Measured
         by FCS and FRET: Evidence for a Contagious Conformational Change. Biophys.
-        J. 98, 1302\u20131311 (2010).","journal-title":"Biophys. J."},{"key":"BFsrep16696_CR42","first-page":"1064","DOI":"10.1016\/j.jmb.2008.03.034","volume":"378","author":"S
+        J. 98, 1302\u20131311 (2010).","journal-title":"Biophys. J."},{"key":"BFsrep16696_CR42","doi-asserted-by":"publisher","first-page":"1064","DOI":"10.1016\/j.jmb.2008.03.034","volume":"378","author":"S
         Thirunavukkuarasu","year":"2008","unstructured":"Thirunavukkuarasu, S., Jares-Erijman,
         E. A. & Jovin, T. M. Multiparametric fluorescence detection of early stages
         in the amyloid protein aggregation of pyrene-labeled alpha-synuclein. J. Mol.
-        Biol. 378, 1064\u20131073 (2008).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR43","first-page":"E115","DOI":"10.1038\/35041081","volume":"2","author":"MS
+        Biol. 378, 1064\u20131073 (2008).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR43","doi-asserted-by":"publisher","first-page":"E115","DOI":"10.1038\/35041081","volume":"2","author":"MS
         Goldberg","year":"2000","unstructured":"Goldberg, M. S. & Lansbury Jr, P.
         T. Is there a cause-and-effect relationship between \u03b1-synuclein fibrillization
         and Parkinson\u2019s disease? Nat. Cell Biol. 2, E115\u2013E119 (2000).","journal-title":"Nat.
-        Cell Biol."},{"key":"BFsrep16696_CR44","first-page":"63","DOI":"10.1016\/j.jmb.2005.10.071","volume":"355","author":"MM
+        Cell Biol."},{"key":"BFsrep16696_CR44","doi-asserted-by":"publisher","first-page":"63","DOI":"10.1016\/j.jmb.2005.10.071","volume":"355","author":"MM
         Apetri","year":"2006","unstructured":"Apetri, M. M., Maiti, N. C., Zagorski,
         M. G., Carey, P. R. & Anderson, V. E. Secondary structure of alpha-synuclein
         oligomers: characterization by raman and atomic force microscopy. J. Mol.
-        Biol. 355, 63\u201371 (2006).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR45","first-page":"9228","DOI":"10.1038\/srep09228","volume":"5","author":"D
+        Biol. 355, 63\u201371 (2006).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR45","doi-asserted-by":"publisher","first-page":"9228","DOI":"10.1038\/srep09228","volume":"5","author":"D
         Ghosh","year":"2015","unstructured":"Ghosh, D. et al. Structure based aggregation
         studies reveal the presence of helix-rich intermediate during \u03b1-Synuclein
-        aggregation. Sci. Rep. 5, 9228 (2015).","journal-title":"Sci. Rep"},{"key":"BFsrep16696_CR46","first-page":"14424","DOI":"10.1073\/pnas.0803086105","volume":"105","author":"A
+        aggregation. Sci. Rep. 5, 9228 (2015).","journal-title":"Sci. Rep"},{"key":"BFsrep16696_CR46","doi-asserted-by":"publisher","first-page":"14424","DOI":"10.1073\/pnas.0803086105","volume":"105","author":"A
         Orte","year":"2008","unstructured":"Orte, A. et al. Direct characterization
         of amyloidogenic oligomers by single-molecule fluorescence. Proc. Natl. Acad.
         Sci. USA 105, 14424\u201314429 (2008).","journal-title":"Proc. Natl. Acad.
-        Sci. USA"},{"key":"BFsrep16696_CR47","first-page":"79","DOI":"10.1038\/nsmb.2191","volume":"19","author":"P
+        Sci. USA"},{"key":"BFsrep16696_CR47","doi-asserted-by":"publisher","first-page":"79","DOI":"10.1038\/nsmb.2191","volume":"19","author":"P
         Narayan","year":"2012","unstructured":"Narayan, P. et al. The extracellular
         chaperone clusterin sequesters oligomeric forms of the amyloid-\u03b2(1\u201340)
         peptide. Nat. Struct. Mol. Biol. 19, 79\u201383 (2012).","journal-title":"Nat.
-        Struct. Mol. Biol."},{"key":"BFsrep16696_CR48","first-page":"179","DOI":"10.1021\/ac202313d","volume":"84","author":"MH
+        Struct. Mol. Biol."},{"key":"BFsrep16696_CR48","doi-asserted-by":"publisher","first-page":"179","DOI":"10.1021\/ac202313d","volume":"84","author":"MH
         Horrocks","year":"2012","unstructured":"Horrocks, M. H. et al. Single molecule
         fluorescence under conditions of fast flow. Anal. Chem. 84, 179\u2013185 (2012).","journal-title":"Anal.
-        Chem."},{"key":"BFsrep16696_CR49","first-page":"8818","DOI":"10.1021\/acs.analchem.5b01811","volume":"87","author":"MH
+        Chem."},{"key":"BFsrep16696_CR49","doi-asserted-by":"publisher","first-page":"8818","DOI":"10.1021\/acs.analchem.5b01811","volume":"87","author":"MH
         Horrocks","year":"2015","unstructured":"Horrocks, M. H. et al. Fast Flow Microfluidics
         and Single-Molecule Fluorescence for the Rapid Characterization of \u03b1-Synuclein
         Oligomers. Anal. Chem. 87, 8818\u20138826 (2015).","journal-title":"Anal.
         Chem."},{"key":"BFsrep16696_CR50","unstructured":"Chen, S. W. et al. Structural
         characterization of toxic oligomers that are kinetically trapped during \u03b1-synuclein
-        fibril formation. Proc. Natl. Acad. Sci. USA (2015). doi: 10.1073\/pnas.1421204112.","DOI":"10.1073\/pnas.1421204112"},{"key":"BFsrep16696_CR51","first-page":"9758","DOI":"10.1073\/pnas.1218402110","volume":"110","author":"SIA
+        fibril formation. Proc. Natl. Acad. Sci. USA (2015). doi: 10.1073\/pnas.1421204112.","DOI":"10.1073\/pnas.1421204112","doi-asserted-by":"publisher"},{"key":"BFsrep16696_CR51","doi-asserted-by":"publisher","first-page":"9758","DOI":"10.1073\/pnas.1218402110","volume":"110","author":"SIA
         Cohen","year":"2013","unstructured":"Cohen, S. I. A. et al. Proliferation
         of amyloid-\u03b242 aggregates occurs through a secondary nucleation mechanism.
         Proc. Natl. Acad. Sci. USA 110, 9758\u20139763 (2013).","journal-title":"Proc.
-        Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR52","first-page":"032712","DOI":"10.1103\/PhysRevE.89.032712","volume":"89","author":"GA
+        Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR52","doi-asserted-by":"publisher","first-page":"032712","DOI":"10.1103\/PhysRevE.89.032712","volume":"89","author":"GA
         Garcia","year":"2014","unstructured":"Garcia, G. A., Cohen, S. I. A., Dobson,
         C. M. & Knowles, T. P. J. Nucleation-conversion-polymerization reactions of
         biological macromolecules with prenucleation clusters. Phys. Rev. E Stat.
         Nonlin. Soft Matter Phys. 89, 032712 (2014).","journal-title":"Phys. Rev.
-        E Stat. Nonlin. Soft Matter Phys."},{"key":"BFsrep16696_CR53","first-page":"454","DOI":"10.1016\/j.jmb.2007.09.039","volume":"374","author":"S
+        E Stat. Nonlin. Soft Matter Phys."},{"key":"BFsrep16696_CR53","doi-asserted-by":"publisher","first-page":"454","DOI":"10.1016\/j.jmb.2007.09.039","volume":"374","author":"S
         Zibaee","year":"2007","unstructured":"Zibaee, S. et al. Sequence Determinants
         for Amyloid Fibrillogenesis of Human alpha-Synuclein. J. Mol. Biol. 374, 454\u2013464
-        (2007).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR54","first-page":"772","DOI":"10.1016\/j.bbrc.2008.01.140","volume":"368","author":"H-J
+        (2007).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR54","doi-asserted-by":"publisher","first-page":"772","DOI":"10.1016\/j.bbrc.2008.01.140","volume":"368","author":"H-J
         Koo","year":"2008","unstructured":"Koo, H.-J., Lee, H.-J. & Im, H. Sequence
         determinants regulating fibrillation of human alpha-synuclein. Biochem. Biophys.
         Res. Commun. 368, 772\u2013778 (2008).","journal-title":"Biochem. Biophys.
-        Res. Commun."},{"key":"BFsrep16696_CR55","first-page":"18","DOI":"10.1186\/1472-6807-5-18","volume":"5","author":"N
+        Res. Commun."},{"key":"BFsrep16696_CR55","doi-asserted-by":"publisher","first-page":"18","DOI":"10.1186\/1472-6807-5-18","volume":"5","author":"N
         S\u00e1nchez de Groot","year":"2005","unstructured":"S\u00e1nchez de Groot,
         N., Pallar\u00e9s, I., Avil\u00e9s, F. X., Vendrell, J. & Ventura, S. Prediction
         of \u2018hot spots\u2019 of aggregation in disease-linked polypeptides. BMC
-        Struct. Biol. 5, 18 (2005).","journal-title":"BMC Struct. Biol."},{"key":"BFsrep16696_CR56","first-page":"498","DOI":"10.1021\/cn3002027","volume":"4","author":"O
+        Struct. Biol. 5, 18 (2005).","journal-title":"BMC Struct. Biol."},{"key":"BFsrep16696_CR56","doi-asserted-by":"publisher","first-page":"498","DOI":"10.1021\/cn3002027","volume":"4","author":"O
         Wise-Scira","year":"2013","unstructured":"Wise-Scira, O., Dunn, A., Aloglu,
         A. K., Sakallioglu, I. T. & Coskuner, O. Structures of the E46K mutant-type
         \u03b1-synuclein protein and impact of E46K mutation on the structures of
         the wild-type \u03b1-synuclein protein. ACS Chem. Neurosci. 4, 498\u2013508
-        (2013).","journal-title":"ACS Chem. Neurosci"},{"key":"BFsrep16696_CR57","first-page":"e49750","DOI":"10.1371\/journal.pone.0049750","volume":"8","author":"LR
+        (2013).","journal-title":"ACS Chem. Neurosci"},{"key":"BFsrep16696_CR57","doi-asserted-by":"publisher","first-page":"e49750","DOI":"10.1371\/journal.pone.0049750","volume":"8","author":"LR
         Lemkau","year":"2013","unstructured":"Lemkau, L. R. et al. Site-specific perturbations
         of alpha-synuclein fibril structure by the Parkinson\u2019s disease associated
         mutations A53T and E46K. PloS One 8, e49750 (2013).","journal-title":"PloS
-        One"},{"key":"BFsrep16696_CR58","first-page":"2575","DOI":"10.1038\/ncomms3575","volume":"4","author":"L
+        One"},{"key":"BFsrep16696_CR58","doi-asserted-by":"publisher","first-page":"2575","DOI":"10.1038\/ncomms3575","volume":"4","author":"L
         Bousset","year":"2013","unstructured":"Bousset, L. et al. Structural and functional
         characterization of two alpha-synuclein strains. Nat. Commun. 4, 2575 (2013).","journal-title":"Nat.
-        Commun."},{"key":"BFsrep16696_CR59","first-page":"444","DOI":"10.1016\/j.jmb.2008.05.026","volume":"380","author":"H
+        Commun."},{"key":"BFsrep16696_CR59","doi-asserted-by":"publisher","first-page":"444","DOI":"10.1016\/j.jmb.2008.05.026","volume":"380","author":"H
         Heise","year":"2008","unstructured":"Heise, H. et al. Solid-state NMR reveals
         structural differences between fibrils of wild-type and disease-related A53T
         mutant alpha-synuclein. J. Mol. Biol. 380, 444\u2013450 (2008).","journal-title":"J.
-        Mol. Biol."},{"key":"BFsrep16696_CR60","first-page":"387","DOI":"10.1002\/pro.570","volume":"20","author":"M-K
+        Mol. Biol."},{"key":"BFsrep16696_CR60","doi-asserted-by":"publisher","first-page":"387","DOI":"10.1002\/pro.570","volume":"20","author":"M-K
         Cho","year":"2011","unstructured":"Cho, M.-K., Kim, H.-Y., Fernandez, C. O.,
         Becker, S. & Zweckstetter, M. Conserved core of amyloid fibrils of wild type
         and A30P mutant \u03b1-synuclein. Protein Sci. Publ. Protein Soc. 20, 387\u2013395
-        (2011).","journal-title":"Protein Sci. Publ. Protein Soc"},{"key":"BFsrep16696_CR61","first-page":"11526","DOI":"10.1074\/jbc.M111.306902","volume":"287","author":"LR
+        (2011).","journal-title":"Protein Sci. Publ. Protein Soc"},{"key":"BFsrep16696_CR61","doi-asserted-by":"publisher","first-page":"11526","DOI":"10.1074\/jbc.M111.306902","volume":"287","author":"LR
         Lemkau","year":"2012","unstructured":"Lemkau, L. R. et al. Mutant protein
         A30P \u03b1-synuclein adopts wild-type fibril structure, despite slower fibrillation
         kinetics. J. Biol. Chem. 287, 11526\u201311532 (2012).","journal-title":"J.
-        Biol. Chem."},{"key":"BFsrep16696_CR62","first-page":"e67713","DOI":"10.1371\/journal.pone.0067713","volume":"8","author":"SB
+        Biol. Chem."},{"key":"BFsrep16696_CR62","doi-asserted-by":"publisher","first-page":"e67713","DOI":"10.1371\/journal.pone.0067713","volume":"8","author":"SB
         Nielsen","year":"2013","unstructured":"Nielsen, S. B. et al. Wildtype and
         A30P mutant alpha-synuclein form different fibril structures. PloS One 8,
         e67713 (2013).","journal-title":"PloS One"}],"container-title":["Scientific
-        Reports"],"original-title":[],"link":[{"URL":"http:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/srep16696","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,4,22]],"date-time":"2017-04-22T23:03:31Z","timestamp":1492902211000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,11,19]]},"references-count":62,"alternative-id":["BFsrep16696"],"URL":"http:\/\/dx.doi.org\/10.1038\/srep16696","relation":{"cites":[]},"ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"article-number":"16696"}}'}
+        Reports"],"original-title":[],"link":[{"URL":"http:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/srep16696","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,22]],"date-time":"2017-04-22T23:03:31Z","timestamp":1492902211000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,11,19]]},"references-count":62,"alternative-id":["BFsrep16696"],"URL":"http:\/\/dx.doi.org\/10.1038\/srep16696","relation":{"cites":[]},"ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"subject":["Multidisciplinary"],"article-number":"16696"}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['25015']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:06:06 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['27068']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:15 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -375,27 +376,27 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/works/10.1109/icdcsw.2003.1203662
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,5,26]],"date-time":"2017-05-26T19:39:27Z","timestamp":1495827567401},"reference-count":13,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1109\/icdcsw.2003.1203662","type":"proceedings-article","created":{"date-parts":[[2004,6,22]],"date-time":"2004-06-22T20:27:43Z","timestamp":1087936063000},"source":"Crossref","is-referenced-by-count":2,"title":["Accurate
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,4]],"date-time":"2018-02-04T22:22:49Z","timestamp":1517782969728},"reference-count":13,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1109\/icdcsw.2003.1203662","type":"proceedings-article","created":{"date-parts":[[2004,6,22]],"date-time":"2004-06-22T20:27:43Z","timestamp":1087936063000},"source":"Crossref","is-referenced-by-count":2,"title":["Accurate
         and explicit differentiation of wireless and congestion losses"],"prefix":"10.1109","author":[{"given":"V.","family":"Arya","affiliation":[]},{"given":"T.","family":"Turletti","affiliation":[]}],"member":"263","event":{"name":"23rd
         International Conference on Distributed Computing Systems Workshops, 2003.","location":"Providence,
         Rhode Island, USA"},"container-title":["23rd International Conference on Distributed
-        Computing Systems Workshops, 2003. Proceedings."],"original-title":[],"deposited":{"date-parts":[[2017,3,13]],"date-time":"2017-03-13T18:23:30Z","timestamp":1489429410000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"ISBN":["0-7695-1921-0"],"references-count":13,"URL":"http:\/\/dx.doi.org\/10.1109\/icdcsw.2003.1203662","relation":{}}}'}
+        Computing Systems Workshops, 2003. Proceedings."],"original-title":[],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/8560\/27094\/01203662.pdf?arnumber=1203662","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,13]],"date-time":"2017-03-13T18:23:30Z","timestamp":1489429410000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"ISBN":["0769519210"],"references-count":13,"URL":"http:\/\/dx.doi.org\/10.1109\/icdcsw.2003.1203662","relation":{}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1319']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:06:07 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1515']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:17 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -403,28 +404,28 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/works/10.3892/ijo_00000353
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2017,5,28]],"date-time":"2017-05-28T00:20:23Z","timestamp":1495930823242},"reference-count":0,"publisher":"Spandidos
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,10]],"date-time":"2018-02-10T00:59:29Z","timestamp":1518224369590},"reference-count":0,"publisher":"Spandidos
         Publications","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Int
         J Oncol"],"published-print":{"date-parts":[[2009,6,26]]},"DOI":"10.3892\/ijo_00000353","type":"journal-article","created":{"date-parts":[[2009,6,26]],"date-time":"2009-06-26T11:19:22Z","timestamp":1246015162000},"source":"Crossref","is-referenced-by-count":3,"title":["Human
         bladder cancer cells undergo cisplatin-induced apoptosis that is associated
         with p53-dependent and p53-independent responses"],"prefix":"10.3892","author":[{"family":"Stravopodis","affiliation":[]}],"member":"2249","container-title":["International
-        Journal of Oncology"],"original-title":[],"deposited":{"date-parts":[[2017,4,27]],"date-time":"2017-04-27T09:37:08Z","timestamp":1493285828000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009,6,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3892\/ijo_00000353","relation":{},"ISSN":["1019-6439"],"issn-type":[{"value":"1019-6439","type":"print"}],"subject":["Cancer
+        Journal of Oncology"],"original-title":[],"link":[{"URL":"https:\/\/spandidos-publications.com\/10.3892\/ijo_00000353\/download","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,27]],"date-time":"2017-04-27T09:37:08Z","timestamp":1493285828000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009,6,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3892\/ijo_00000353","relation":{},"ISSN":["1019-6439"],"issn-type":[{"value":"1019-6439","type":"print"}],"subject":["Cancer
         Research","Oncology"]}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1271']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:06:07 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1458']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:19 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

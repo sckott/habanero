@@ -5,77 +5,84 @@ interactions:
       Accept: [application/x-bibtex]
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://doi.org/10.1126/foo
   response:
-    body: {string: !!python/unicode "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0
-        Transitional//EN\"\n        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html>\n<head>\n<title>Error:
-        DOI Not Found</title>\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;
-        charset=UTF-8\" />\n\n<link rel=\"icon\" href=\"/static/img/favicon.png\"
-        />\n<link rel=\"shortcut icon\" href=\"/static/favicon.ico\" type=\"image/x-icon\"
-        /> \n<link href=\"/static/style/new-style2.css\" rel=\"stylesheet\" type=\"text/css\"
-        />\n</head>\n\n<body>\n\n\n<div style=\"background:#fcb426\">\n<img src=\"/static/img/banner-413.gif\"
-        alt=\"Logo\" width=\"620\" height=\"137\" border=\"0\" />\n</div>\n\n<div
-        style=\"height:1px;background:#000000\"></div>\n<div style=\"height:1px;background:#54524f\"></div>\n<div
-        style=\"height:1px;background:#f6911e\"></div>\n\n\n<!-- TABLE FOR NAVIGATION
-        BAR -->\n<table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"
-        id=\"navtable\" align=\"center\">\n<tr>\n    <td width=\"34\" height=\"26\"
-        bgcolor=\"#231f20\"><img src=\"/static/img/transparent.gif\" alt=\"\" width=\"1\"
-        height=\"1\" /></td>\n    \n    <td height=\"26\" bgcolor=\"#231f20\" class=\"navtext\">\n
-        \   <a href=\"http://www.doi.org/index.html\">HOME</a> &nbsp;|&nbsp;<a href=\"http://www.doi.org/hb.html\">HANDBOOK</a>
-        &nbsp;|&nbsp;<a href=\"http://www.doi.org/factsheets.html\">FACTSHEETS</a>
-        &nbsp;|&nbsp;<a href=\"http://www.doi.org/faq.html\">FAQs</a> &nbsp;|&nbsp;
-        <a href=\"http://www.doi.org/resources.html\">RESOURCES</a> &nbsp;|&nbsp;<a
-        href=\"http://www.doi.org/users.html\">USERS</a> &nbsp;|&nbsp;<a href=\"http://www.doi.org/announce.html\">NEWS</a>
-        &nbsp;|&nbsp;<a href=\"http://www.doi.org/idf-members/index.html\">MEMBERS
-        AREA</a>\n    </td>    \n  </tr>\n</table>\n<!-- END TABLE FOR NAVIGATION
-        BAR -->\n\n<div style=\"height:1px;background:#e3a44d\"></div>\n<div style=\"height:3px;background:#4d4942\"></div>\n\n\n\n<!--
-        TABLE FOR CONTENT -->      \n<table width=\"100%\" border=\"0\" cellpadding=\"0\"
-        cellspacing=\"0\" bgcolor=\"#ffffff\">\n<tr>\n<td colspan=\"6\">\n<img src=\"/static/img/transparent.gif\"
-        alt=\"\" width=\"100\" height=\"20\" border=\"0\" />\n</td>\n</tr>\n\n<tr>\n\n<td
-        valign=\"top\">\n\n<h2>DOI Not Found</h2>\n\n<div class=\"divider\">&nbsp;</div>\n\n\n\n<h3>10.1126/foo</h3>\n\n<div
-        class=\"divider\">&nbsp;</div>\n\n\n\n\n<p>This DOI cannot be found in the
-        DOI System.  Possible reasons are:</p>\n\n\n<ul>\n\n<li style=\"padding-bottom:
-        .5em;\">The DOI is incorrect in your source. Search for the item by name,
-        title, or other metadata using a search engine.</li>\n\n<li style=\"padding-bottom:
-        .5em;\">The DOI was copied incorrectly. Check to see that the string includes
-        all the characters before and after the slash and no sentence punctuation
-        marks.</li>\n\n<li style=\"padding-bottom: .5em;\">The DOI has not been activated
-        yet.  Please try again later, and report the problem if the error continues.</li>\n\n</ul>\n\n\n\n<div
-        class=\"divider\">&nbsp;</div>\n\n<p>You may report this error to the responsible
-        DOI Registration Agency using the form below.  Include your email address
-        to receive confirmation and feedback.</p>\n\n<div style=\"padding-left: 4em;\">\n\n<form
-        action=\"/notfound\" method=\"post\" enctype=\"application/x-www-form-urlencoded\"
-        name=\"notFoundForm\">\n\n\n<table border=\"0\" cellspacing=\"3\" cellpadding=\"3\">\n<tbody>\n<tr>\n<td>\n\n<table
-        border=\"0\" align=\"center\" cellpadding=\"3\" cellspacing=\"3\">\n<tbody><tr>\n<th
-        \ align=\"right\" scope=\"row\"><label>DOI:</label></th>\n<td><input name=\"missingHandle\"
-        type=\"text\" value=\"10.1126/foo\" size=\"42\" readonly=\"readonly\" /></td>\n</tr>\n<tr>\n<th
-        align=\"right\" scope=\"row\"><label>URL of Web Page Listing the DOI:</label></th>\n<td><input
-        name=\"referringPage\" type=\"text\" value=\"\" size=\"42\" readonly=\"readonly\"
-        /></td>\n</tr>\n<tr>\n<th align=\"right\" scope=\"row\">Your Email Address:</th>\n<td><input
-        name=\"userEmailAddress\" type=\"text\" value=\"Please enter your email address\"
-        size=\"42\" /></td>\n</tr>\n<tr>\n<th align=\"right\" scope=\"row\" valign=\"top\">Additional
-        Information About the Error:</th>\n<td><textarea name=\"comments\" cols=\"30\"
-        rows=\"6\"></textarea></td>\n</tr>\n</tbody>\n</table>\n\n</td>\n</tr>\n<tr>\n\n<td
-        align=\"right\"><p><input name=\"send\" type=\"submit\" value=\"Submit Error
-        Report\" /></p></td>\n</tr>\n</tbody>\n</table>\n\n</form>\n</div>\n\n\n\n\n</td>\n<td><img
-        src=\"/static/img/transparent.gif\" alt=\"\" width=\"20\" height=\"20\" border=\"0\"
-        /></td>\n</tr>\n</table>\n\n<div class=\"divider-full\">&nbsp;</div>\n\n<!--
-        TABLE FOR FOOTER -->\n\n<table  border=\"0\" cellpadding=\"0\" cellspacing=\"0\"
-        align=\"center\">\n\n<tr>\n<td align=\"center\" colspan=\"2\">\n<a href=\"/help.html\">DOI
-        System Proxy Server Documentation</a>\n</td>\n</tr>\n\n<tr>\n<td align=\"left\"
-        height=\"40\">\n<img src=\"/static/img/Logo_TM.png\" alt=\"DOI_disc_logo\"
-        width=\"24\" height=\"24\" />\n</td>\n\n<td align=\"left\">\n<span style=\"padding-left:
-        0px; font-size: 11px;\"><span style=\"vertical-align: super;\">&reg;</span>,
-        DOI<span style=\"vertical-align: super;\">&reg;</span>, DOI.ORG<span style=\"vertical-align:
-        super;\">&reg;</span>, and shortDOI<span style=\"vertical-align: super;\">&reg;</span>
-        are trademarks of the International DOI Foundation.</span>\n</td>       \n</tr>\n</table>\n</body>\n</html>\n"}
+    body: {string: "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"\
+        \n        \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html>\n\
+        <head>\n<title>Error: DOI Not Found</title>\n\n<meta http-equiv=\"Content-Type\"\
+        \ content=\"text/html; charset=UTF-8\" />\n\n<link rel=\"icon\" href=\"/static/img/favicon.png\"\
+        \ />\n<link rel=\"shortcut icon\" href=\"/static/favicon.ico\" type=\"image/x-icon\"\
+        \ /> \n<link href=\"/static/style/new-style2.css\" rel=\"stylesheet\" type=\"\
+        text/css\" />\n</head>\n\n<body>\n\n\n<div style=\"background:#fcb426\">\n\
+        <img src=\"/static/img/banner-413.gif\" alt=\"Logo\" width=\"620\" height=\"\
+        137\" border=\"0\" />\n</div>\n\n<div style=\"height:1px;background:#000000\"\
+        ></div>\n<div style=\"height:1px;background:#54524f\"></div>\n<div style=\"\
+        height:1px;background:#f6911e\"></div>\n\n\n<!-- TABLE FOR NAVIGATION BAR\
+        \ -->\n<table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"\
+        0\" id=\"navtable\" align=\"center\">\n<tr>\n    <td width=\"34\" height=\"\
+        26\" bgcolor=\"#231f20\"><img src=\"/static/img/transparent.gif\" alt=\"\"\
+        \ width=\"1\" height=\"1\" /></td>\n    \n    <td height=\"26\" bgcolor=\"\
+        #231f20\" class=\"navtext\">\n    <a href=\"http://www.doi.org/index.html\"\
+        >HOME</a> &nbsp;|&nbsp;<a href=\"http://www.doi.org/hb.html\">HANDBOOK</a>\
+        \ &nbsp;|&nbsp;<a href=\"http://www.doi.org/factsheets.html\">FACTSHEETS</a>\
+        \ &nbsp;|&nbsp;<a href=\"http://www.doi.org/faq.html\">FAQs</a> &nbsp;|&nbsp;\
+        \ <a href=\"http://www.doi.org/resources.html\">RESOURCES</a> &nbsp;|&nbsp;<a\
+        \ href=\"http://www.doi.org/users.html\">USERS</a> &nbsp;|&nbsp;<a href=\"\
+        http://www.doi.org/announce.html\">NEWS</a> &nbsp;|&nbsp;<a href=\"http://www.doi.org/idf-members/index.html\"\
+        >MEMBERS AREA</a>\n    </td>    \n  </tr>\n</table>\n<!-- END TABLE FOR NAVIGATION\
+        \ BAR -->\n\n<div style=\"height:1px;background:#e3a44d\"></div>\n<div style=\"\
+        height:3px;background:#4d4942\"></div>\n\n\n\n<!-- TABLE FOR CONTENT --> \
+        \     \n<table width=\"100%\" border=\"0\" cellpadding=\"0\" cellspacing=\"\
+        0\" bgcolor=\"#ffffff\">\n<tr>\n<td colspan=\"6\">\n<img src=\"/static/img/transparent.gif\"\
+        \ alt=\"\" width=\"100\" height=\"20\" border=\"0\" />\n</td>\n</tr>\n\n<tr>\n\
+        \n<td valign=\"top\">\n\n<h2>DOI Not Found</h2>\n\n<div class=\"divider\"\
+        >&nbsp;</div>\n\n\n\n<h3>10.1126/foo</h3>\n\n<div class=\"divider\">&nbsp;</div>\n\
+        \n\n\n\n<p>This DOI cannot be found in the DOI System.  Possible reasons are:</p>\n\
+        \n\n<ul>\n\n<li style=\"padding-bottom: .5em;\">The DOI is incorrect in your\
+        \ source. Search for the item by name, title, or other metadata using a search\
+        \ engine.</li>\n\n<li style=\"padding-bottom: .5em;\">The DOI was copied incorrectly.\
+        \ Check to see that the string includes all the characters before and after\
+        \ the slash and no sentence punctuation marks.</li>\n\n<li style=\"padding-bottom:\
+        \ .5em;\">The DOI has not been activated yet.  Please try again later, and\
+        \ report the problem if the error continues.</li>\n\n</ul>\n\n\n\n<div class=\"\
+        divider\">&nbsp;</div>\n\n<p>You may report this error to the responsible\
+        \ DOI Registration Agency using the form below.  Include your email address\
+        \ to receive confirmation and feedback.</p>\n\n<div style=\"padding-left:\
+        \ 4em;\">\n\n<form action=\"/notfound\" method=\"post\" enctype=\"application/x-www-form-urlencoded\"\
+        \ name=\"notFoundForm\">\n\n\n<table border=\"0\" cellspacing=\"3\" cellpadding=\"\
+        3\">\n<tbody>\n<tr>\n<td>\n\n<table border=\"0\" align=\"center\" cellpadding=\"\
+        3\" cellspacing=\"3\">\n<tbody><tr>\n<th  align=\"right\" scope=\"row\"><label>DOI:</label></th>\n\
+        <td><input name=\"missingHandle\" type=\"text\" value=\"10.1126/foo\" size=\"\
+        42\" readonly=\"readonly\" /></td>\n</tr>\n<tr>\n<th align=\"right\" scope=\"\
+        row\"><label>URL of Web Page Listing the DOI:</label></th>\n<td><input name=\"\
+        referringPage\" type=\"text\" value=\"\" size=\"42\" readonly=\"readonly\"\
+        \ /></td>\n</tr>\n<tr>\n<th align=\"right\" scope=\"row\">Your Email Address:</th>\n\
+        <td><input name=\"userEmailAddress\" type=\"text\" value=\"Please enter your\
+        \ email address\" size=\"42\" /></td>\n</tr>\n<tr>\n<th align=\"right\" scope=\"\
+        row\" valign=\"top\">Additional Information About the Error:</th>\n<td><textarea\
+        \ name=\"comments\" cols=\"30\" rows=\"6\"></textarea></td>\n</tr>\n</tbody>\n\
+        </table>\n\n</td>\n</tr>\n<tr>\n\n<td align=\"right\"><p><input name=\"send\"\
+        \ type=\"submit\" value=\"Submit Error Report\" /></p></td>\n</tr>\n</tbody>\n\
+        </table>\n\n</form>\n</div>\n\n\n\n\n</td>\n<td><img src=\"/static/img/transparent.gif\"\
+        \ alt=\"\" width=\"20\" height=\"20\" border=\"0\" /></td>\n</tr>\n</table>\n\
+        \n<div class=\"divider-full\">&nbsp;</div>\n\n<!-- TABLE FOR FOOTER -->\n\n\
+        <table  border=\"0\" cellpadding=\"0\" cellspacing=\"0\" align=\"center\"\
+        >\n\n<tr>\n<td align=\"center\" colspan=\"2\">\n<a href=\"/help.html\">DOI\
+        \ System Proxy Server Documentation</a>\n</td>\n</tr>\n\n<tr>\n<td align=\"\
+        left\" height=\"40\">\n<img src=\"/static/img/Logo_TM.png\" alt=\"DOI_disc_logo\"\
+        \ width=\"24\" height=\"24\" />\n</td>\n\n<td align=\"left\">\n<span style=\"\
+        padding-left: 0px; font-size: 11px;\"><span style=\"vertical-align: super;\"\
+        >&reg;</span>, DOI<span style=\"vertical-align: super;\">&reg;</span>, DOI.ORG<span\
+        \ style=\"vertical-align: super;\">&reg;</span>, and shortDOI<span style=\"\
+        vertical-align: super;\">&reg;</span> are trademarks of the International\
+        \ DOI Foundation.</span>\n</td>       \n</tr>\n</table>\n</body>\n</html>\n"}
     headers:
-      content-length: ['4970']
-      content-type: [text/html;charset=utf-8]
-      date: ['Fri, 21 Jul 2017 01:23:43 GMT']
-      server: [Apache-Coyote/1.1]
+      Content-Length: ['4970']
+      Content-Type: [text/html;charset=utf-8]
+      Date: ['Mon, 02 Apr 2018 16:21:29 GMT']
+      Server: [Apache-Coyote/1.1]
     status: {code: 404, message: Not Found}
 version: 1

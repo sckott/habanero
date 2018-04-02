@@ -5,34 +5,35 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.5.0.2]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.5.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":15211530,"items":[{"indexed":{"date-parts":[[2017,8,26]],"date-time":"2017-08-26T15:03:15Z","timestamp":1503759795364},"reference-count":3,"publisher":"Elsevier
-        BV","issue":"6","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1954,12,1]],"date-time":"1954-12-01T00:00:00Z","timestamp":-476064000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-        Journal of Urology"],"published-print":{"date-parts":[[1954,12]]},"DOI":"10.1016\/s0022-5347(17)67736-x","type":"journal-article","created":{"date-parts":[[2017,7,11]],"date-time":"2017-07-11T22:55:33Z","timestamp":1499813733000},"page":"1218-1221","source":"Crossref","is-referenced-by-count":9,"title":["Allergic
-        Granuloma of the Prostate"],"prefix":"10.1016","volume":"72","author":[{"given":"Francis
-        G.","family":"Harrison","affiliation":[]},{"given":"David G.","family":"Neander","affiliation":[]}],"member":"78","container-title":["The
-        Journal of Urology"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S002253471767736X?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S002253471767736X?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,7,11]],"date-time":"2017-07-11T22:55:35Z","timestamp":1499813735000},"score":1.0,"issued":{"date-parts":[[1954,12]]},"references-count":3,"alternative-id":["S002253471767736X"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0022-5347(17)67736-x","ISSN":["0022-5347"],"issn-type":[{"value":"0022-5347","type":"print"}],"subject":["Urology"]},{"indexed":{"date-parts":[[2017,8,7]],"date-time":"2017-08-07T20:03:35Z","timestamp":1502136215922},"reference-count":9,"publisher":"Elsevier
-        BV","issue":"2-3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1999,10,1]],"date-time":"1999-10-01T00:00:00Z","timestamp":938736000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-        of Affective Disorders"],"published-print":{"date-parts":[[1999,10]]},"DOI":"10.1016\/s0165-0327(98)00198-0","type":"journal-article","created":{"date-parts":[[2002,12,28]],"date-time":"2002-12-28T12:42:19Z","timestamp":1041079339000},"page":"237-240","source":"Crossref","is-referenced-by-count":20,"title":["Open
-        maintenance treatment of bipolar disorder spectrum patients who responded
-        to gabapentin augmentation in the acute phase of treatment"],"prefix":"10.1016","volume":"55","author":[{"given":"Charles
-        B","family":"Schaffer","affiliation":[]},{"given":"Linda C","family":"Schaffer","affiliation":[]}],"member":"78","container-title":["Journal
-        of Affective Disorders"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0165032798001980?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0165032798001980?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,14]],"date-time":"2017-06-14T20:26:09Z","timestamp":1497471969000},"score":1.0,"issued":{"date-parts":[[1999,10]]},"references-count":9,"alternative-id":["S0165032798001980"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0165-0327(98)00198-0","ISSN":["0165-0327"],"issn-type":[{"value":"0165-0327","type":"print"}],"subject":["Clinical
-        Psychology","Psychiatry and Mental health"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":15529582,"items":[{"indexed":{"date-parts":[[2018,2,5]],"date-time":"2018-02-05T23:19:17Z","timestamp":1517872757555},"reference-count":1,"publisher":"Elsevier
+        BV","issue":"6","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1982,12,1]],"date-time":"1982-12-01T00:00:00Z","timestamp":407548800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of Pediatrics"],"published-print":{"date-parts":[[1982,12]]},"DOI":"10.1016\/s0022-3476(82)80043-7","type":"journal-article","created":{"date-parts":[[2006,3,14]],"date-time":"2006-03-14T14:28:24Z","timestamp":1142346504000},"page":"1037","source":"Crossref","is-referenced-by-count":1,"title":["Oral
+        rehydration of diarrhea"],"prefix":"10.1016","volume":"101","author":[{"given":"Harold
+        E.","family":"Harrison","affiliation":[]},{"given":"Laurence","family":"Finberg","affiliation":[]},{"given":"Paul
+        A.","family":"Harper","affiliation":[]},{"given":"R. Brad","family":"Sack","affiliation":[]}],"member":"78","container-title":["The
+        Journal of Pediatrics"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0022347682800437?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0022347682800437?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T03:47:16Z","timestamp":1497671236000},"score":1.0,"issued":{"date-parts":[[1982,12]]},"references-count":1,"alternative-id":["S0022347682800437"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0022-3476(82)80043-7","ISSN":["0022-3476"],"issn-type":[{"value":"0022-3476","type":"print"}],"subject":["Pediatrics,
+        Perinatology, and Child Health"]},{"indexed":{"date-parts":[[2018,2,2]],"date-time":"2018-02-02T23:17:46Z","timestamp":1517613466035},"reference-count":10,"publisher":"Elsevier
+        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1973,1,1]],"date-time":"1973-01-01T00:00:00Z","timestamp":94694400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Tetrahedron
+        Letters"],"published-print":{"date-parts":[[1973,1]]},"DOI":"10.1016\/s0040-4039(01)95630-8","type":"journal-article","created":{"date-parts":[[2002,7,25]],"date-time":"2002-07-25T21:37:05Z","timestamp":1027633025000},"page":"241-243","source":"Crossref","is-referenced-by-count":1,"title":["Synthese
+        d\u2032imidates monofluores par action basocatalysee d\u2032un nitrile sur
+        certaines fluorhydrines."],"prefix":"10.1016","volume":"14","author":[{"given":"Ahmed","family":"Baklouti","affiliation":[]}],"member":"78","container-title":["Tetrahedron
+        Letters"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0040403901956308?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0040403901956308?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T01:01:37Z","timestamp":1497488497000},"score":1.0,"issued":{"date-parts":[[1973,1]]},"references-count":10,"alternative-id":["S0040403901956308"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0040-4039(01)95630-8","ISSN":["0040-4039"],"issn-type":[{"value":"0040-4039","type":"print"}],"subject":["Organic
+        Chemistry","Biochemistry","Drug Discovery"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['3906']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Sun, 15 Oct 2017 20:21:50 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['3923']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:22:43 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

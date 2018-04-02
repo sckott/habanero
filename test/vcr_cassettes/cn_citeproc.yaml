@@ -5,25 +5,26 @@ interactions:
       Accept: [transform/application/vnd.citationstyles.csl+json]
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: http://api.crossref.org/works/10.1126/science.169.3946.635/transform/application/vnd.citationstyles.csl+json
   response:
-    body: {string: !!python/unicode '{"indexed":{"date-parts":[[2017,5,26]],"date-time":"2017-05-26T23:30:06Z","timestamp":1495841406698},"reference-count":0,"publisher":"American
-        Association for the Advancement of Science (AAAS)","issue":"3946","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Science"],"published-print":{"date-parts":[[1970,8,14]]},"DOI":"10.1126\/science.169.3946.635","type":"journal-article","created":{"date-parts":[[2006,10,5]],"date-time":"2006-10-05T12:56:56Z","timestamp":1160053016000},"page":"635-641","source":"Crossref","is-referenced-by-count":55,"title":"The
+    body: {string: '{"indexed":{"date-parts":[[2018,2,8]],"date-time":"2018-02-08T17:45:51Z","timestamp":1518111951194},"reference-count":0,"publisher":"American
+        Association for the Advancement of Science (AAAS)","issue":"3946","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1970,8,14]]},"DOI":"10.1126\/science.169.3946.635","type":"article-journal","created":{"date-parts":[[2006,10,5]],"date-time":"2006-10-05T12:56:56Z","timestamp":1160053016000},"page":"635-641","source":"Crossref","is-referenced-by-count":56,"title":"The
         Structure of Ordinary Water: New data and interpretations are yielding new
         insights into this fascinating substance","prefix":"10.1126","volume":"169","author":[{"given":"H.
-        S.","family":"Frank","affiliation":[]}],"member":"221","container-title":"Science","original-title":[],"deposited":{"date-parts":[[2016,12,23]],"date-time":"2016-12-23T19:54:07Z","timestamp":1482522847000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1970,8,14]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1126\/science.169.3946.635","relation":{},"ISSN":["0036-8075","1095-9203"],"issn-type":[{"value":"0036-8075","type":"print"},{"value":"1095-9203","type":"electronic"}],"subject":["General"]}'}
+        S.","family":"Frank","affiliation":[]}],"member":"221","container-title":"Science","original-title":[],"link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1126\/science.169.3946.635","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,23]],"date-time":"2016-12-23T19:54:07Z","timestamp":1482522847000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1970,8,14]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1126\/science.169.3946.635","relation":{},"ISSN":["0036-8075","1095-9203"],"subject":["Multidisciplinary"],"container-title-short":"Science"}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1297']
-      date: ['Fri, 21 Jul 2017 01:23:40 GMT']
-      link: ['<http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical"']
-      server: [http-kit]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1408']
+      Date: ['Mon, 02 Apr 2018 16:21:24 GMT']
+      Link: ['<http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+          version="vor"; rel="item"']
+      Server: [http-kit]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

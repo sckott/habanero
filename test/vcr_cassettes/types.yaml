@@ -5,12 +5,12 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/types
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":26,"items":[{"id":"book-section","label":"Book
+    body: {string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":26,"items":[{"id":"book-section","label":"Book
         Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"book-track","label":"Book
         Track"},{"id":"journal-article","label":"Journal Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
         Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
@@ -21,15 +21,15 @@ interactions:
         Series"},{"id":"edited-book","label":"Edited Book"},{"id":"standard-series","label":"Standard
         Series"}]}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1216']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 01:58:25 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1216']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:08 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

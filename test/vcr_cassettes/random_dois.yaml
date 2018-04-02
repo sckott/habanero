@@ -10,99 +10,165 @@ interactions:
     method: GET
     uri: https://api.crossref.org/works?sample=10
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95864685,"items":[{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T19:51:26Z","timestamp":1509133886970},"reference-count":0,"publisher":"Wiley-Blackwell","issue":"11","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Clin
-        Case Rep"],"published-print":{"date-parts":[[2015,11]]},"DOI":"10.1002\/ccr3.223","type":"journal-article","created":{"date-parts":[[2015,11,2]],"date-time":"2015-11-02T03:25:52Z","timestamp":1446434752000},"page":"i-iv","source":"Crossref","is-referenced-by-count":0,"title":["Issue
-        Information"],"prefix":"10.1002","volume":"3","member":"311","published-online":{"date-parts":[[2015,11,1]]},"container-title":["Clinical
-        Case Reports"],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fccr3.223","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,3,27]],"date-time":"2017-03-27T23:39:43Z","timestamp":1490657983000},"score":1.0,"issued":{"date-parts":[[2015,11]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1002\/ccr3.223","archive":["Portico"],"ISSN":["2050-0904"],"issn-type":[{"value":"2050-0904","type":"print"}]},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T19:52:57Z","timestamp":1509133977020},"publisher-location":"Cham","reference-count":0,"publisher":"Springer
-        International Publishing","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2016]]},"DOI":"10.1007\/978-3-319-26161-4_16","type":"book-chapter","created":{"date-parts":[[2016,4,25]],"date-time":"2016-04-25T11:19:34Z","timestamp":1461583174000},"page":"239-283","source":"Crossref","is-referenced-by-count":0,"title":["Economic
-        Growth, Sustainable Development and Ecological Conservation in the Asian Developing
-        Countries: The Way Forward"],"prefix":"10.1007","author":[{"given":"Choy Yee","family":"Keong","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2016,4,26]]},"container-title":["Topics
-        in Biodiversity and Conservation","Naturalists, Explorers and Field Scientists
-        in South-East Asia and Australasia"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-26161-4_16","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,4,25]],"date-time":"2016-04-25T11:19:42Z","timestamp":1461583182000},"score":1.0,"issued":{"date-parts":[[2016]]},"ISBN":["9783319261591","9783319261614"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-26161-4_16","ISSN":["1875-1288","1875-1296"],"issn-type":[{"value":"1875-1288","type":"print"},{"value":"1875-1296","type":"electronic"}]},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T19:31:08Z","timestamp":1509132668582},"reference-count":2,"publisher":"Elsevier
-        BV","issue":"6","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2017,6,1]],"date-time":"2017-06-01T00:00:00Z","timestamp":1496275200000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":["clinicalkey.es","elsevier.es","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Archivos
-        de Bronconeumolog\u00eda"],"published-print":{"date-parts":[[2017,6]]},"DOI":"10.1016\/j.arbres.2016.11.005","type":"journal-article","created":{"date-parts":[[2016,12,13]],"date-time":"2016-12-13T14:49:03Z","timestamp":1481640543000},"page":"342","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Carcinoma
-        broncog\u00e9nico en paciente con linfangioleiomiomatosis"],"prefix":"10.1016","volume":"53","author":[{"given":"Luis","family":"Gorospe
-        Saras\u00faa","affiliation":[]},{"given":"Edwin","family":"Mercedes-Noboa","affiliation":[]},{"given":"Mar\u00eda
-        Eugenia","family":"Olmedo-Garc\u00eda","affiliation":[]}],"member":"78","container-title":["Archivos
-        de Bronconeumolog\u00eda"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S030028961630326X?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S030028961630326X?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,7,15]],"date-time":"2017-07-15T08:41:00Z","timestamp":1500108060000},"score":1.0,"issued":{"date-parts":[[2017,6]]},"references-count":2,"alternative-id":["S030028961630326X"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.arbres.2016.11.005","ISSN":["0300-2896"],"issn-type":[{"value":"0300-2896","type":"print"}],"subject":["Pulmonary
-        and Respiratory Medicine"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-        article is maintained by"},{"value":"Carcinoma broncog\u00e9nico en paciente
-        con linfangioleiomiomatosis","name":"articletitle","label":"Article Title"},{"value":"Archivos
-        de Bronconeumolog\u00eda","name":"journaltitle","label":"Journal Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.arbres.2016.11.005","name":"articlelink","label":"CrossRef
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95875008,"items":[{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T02:57:31Z","timestamp":1509073051075},"reference-count":0,"publisher":"Public
+        Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0109672.g001","type":"component","created":{"date-parts":[[2014,10,23]],"date-time":"2014-10-23T21:12:01Z","timestamp":1414098721000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2017,3,8]],"date-time":"2017-03-08T18:29:08Z","timestamp":1488997748000},"score":1.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0109672.g001"},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T02:24:39Z","timestamp":1509071079747},"reference-count":4,"publisher":"The
+        Institute of Webcasting, Internet and Telecommunication","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of the Institute of Webcasting, Internet and Telecommunication"],"published-print":{"date-parts":[[2012,6,30]]},"DOI":"10.7236\/jiwit.2012.12.3.15","type":"journal-article","created":{"date-parts":[[2012,8,20]],"date-time":"2012-08-20T08:36:29Z","timestamp":1345451789000},"page":"15-22","source":"Crossref","is-referenced-by-count":0,"title":["Volume
+        Calculation for Filling Up of Rubbish Using Stereo Camera and Uniform Mesh"],"prefix":"10.7236","volume":"12","author":[{"given":"Young-Dae","family":"Lee","affiliation":[]},{"given":"Sung-Youn","family":"Cho","affiliation":[]},{"given":"Kyung","family":"Kim","affiliation":[]},{"given":"Dong-Gyu","family":"Lee","affiliation":[]}],"member":"4240","container-title":["The
+        Journal of the Institute of Webcasting, Internet and Telecommunication"],"original-title":["\uc2a4\ud14c\ub808\uc624
+        \uce74\uba54\ub77c\uc640 \uade0\uc77c \ub9e4\uc2dc\ub97c \uc774\uc6a9\ud55c
+        \ub9e4\ub9bd\uc9c0\uc758 \ud658\uacbd\uac10\uc2dc\ub97c \uc704\ud55c \uccb4\uc801
+        \uacc4\uc0b0 \uc54c\uace0\ub9ac\uc998"],"link":[{"URL":"http:\/\/ocean.kisti.re.kr\/downfile\/crosscheck\/iwitt\/JAKO201222350108917.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,15]],"date-time":"2016-12-15T03:29:46Z","timestamp":1481772586000},"score":1.0,"issued":{"date-parts":[[2012,6,30]]},"references-count":4,"URL":"http:\/\/dx.doi.org\/10.7236\/jiwit.2012.12.3.15","ISSN":["1738-4281"],"issn-type":[{"value":"1738-4281","type":"print"}]},{"indexed":{"date-parts":[[2018,3,18]],"date-time":"2018-03-18T20:40:45Z","timestamp":1521405645637},"reference-count":23,"publisher":"Elsevier
+        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2018,3,1]],"date-time":"2018-03-01T00:00:00Z","timestamp":1519862400000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/https:\/\/doi.org\/10.13039\/501100003708","name":"Korea
+        Institute of Science and Technology Information","doi-asserted-by":"publisher","award":[]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["International
+        Communications in Heat and Mass Transfer"],"published-print":{"date-parts":[[2018,3]]},"DOI":"10.1016\/j.icheatmasstransfer.2018.02.010","type":"journal-article","created":{"date-parts":[[2018,2,22]],"date-time":"2018-02-22T11:22:28Z","timestamp":1519298548000},"page":"31-38","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["On
+        the three-dimensional effect for natural convection in horizontal enclosure
+        with an adiabatic body: Review from the 2D results and visualization of 3D
+        flow structure"],"prefix":"10.1016","volume":"92","author":[{"given":"Jae
+        Ryong","family":"Lee","affiliation":[]}],"member":"78","container-title":["International
+        Communications in Heat and Mass Transfer"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0735193318300186?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0735193318300186?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,3,18]],"date-time":"2018-03-18T20:01:39Z","timestamp":1521403299000},"score":1.0,"issued":{"date-parts":[[2018,3]]},"references-count":23,"alternative-id":["S0735193318300186"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.icheatmasstransfer.2018.02.010","ISSN":["0735-1933"],"issn-type":[{"value":"0735-1933","type":"print"}],"subject":["Atomic
+        and Molecular Physics, and Optics","General Chemical Engineering","Condensed
+        Matter Physics"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"On the three-dimensional effect for natural
+        convection in horizontal enclosure with an adiabatic body: Review from the
+        2D results and visualization of 3D flow structure","name":"articletitle","label":"Article
+        Title"},{"value":"International Communications in Heat and Mass Transfer","name":"journaltitle","label":"Journal
+        Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.icheatmasstransfer.2018.02.010","name":"articlelink","label":"CrossRef
         DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-        Type"},{"value":"\u00a9 2016 SEPAR. Published by Elsevier Espa\u00f1a, S.L.U.
-        All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T17:40:45Z","timestamp":1509039645107},"reference-count":0,"publisher":"Edinburgh
-        University Press","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-        Scottish Historical Review"],"published-print":{"date-parts":[[2006,4]]},"DOI":"10.3366\/shr.2006.0027","type":"journal-article","created":{"date-parts":[[2011,2,22]],"date-time":"2011-02-22T08:26:26Z","timestamp":1298363186000},"page":"171-172","source":"Crossref","is-referenced-by-count":0,"title":["Moffatt
-        and Holmes McCormick,Moon Over MalayaMoon Over Malaya: A Tale of Argylls and
-        Marines. By Jonathan Moffatt and Audrey Holmes McCormick . Pp. 414. ISBN 0
-        7524 2114X. Stroud: Tempus Publishing. 2002. \u00a312.99."],"prefix":"10.3366","volume":"85","author":[{"given":"Nicholas
-        Evans","family":"Sarantakes","affiliation":[]}],"member":"1931","container-title":["Scottish
-        Historical Review"],"deposited":{"date-parts":[[2011,2,22]],"date-time":"2011-02-22T08:27:23Z","timestamp":1298363243000},"score":1.0,"issued":{"date-parts":[[2006,4]]},"references-count":0,"alternative-id":["10.3366\/shr.2006.0027"],"URL":"http:\/\/dx.doi.org\/10.3366\/shr.2006.0027","ISSN":["0036-9241","1750-0222"],"issn-type":[{"value":"0036-9241","type":"print"},{"value":"1750-0222","type":"electronic"}],"subject":["History"]},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T12:30:14Z","timestamp":1509021014874},"reference-count":0,"publisher":"Cambridge
-        University Press (CUP)","issue":"03","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Africa"],"published-print":{"date-parts":[[1971,7]]},"DOI":"10.1017\/s0001972000084448","type":"journal-article","created":{"date-parts":[[2012,1,24]],"date-time":"2012-01-24T09:24:31Z","timestamp":1327397071000},"page":"248","source":"Crossref","is-referenced-by-count":0,"title":["Course
-        on African Dance as Human Behaviour"],"prefix":"10.1017","volume":"41","member":"56","published-online":{"date-parts":[[2012,1,23]]},"container-title":["Africa"],"link":[{"URL":"https:\/\/www.cambridge.org\/core\/services\/aop-cambridge-core\/content\/view\/S0001972000084448","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,21]],"date-time":"2017-04-21T14:08:14Z","timestamp":1492783694000},"score":1.0,"issued":{"date-parts":[[1971,7]]},"references-count":0,"alternative-id":["S0001972000084448"],"URL":"http:\/\/dx.doi.org\/10.1017\/s0001972000084448","ISSN":["0001-9720","1750-0184"],"issn-type":[{"value":"0001-9720","type":"print"},{"value":"1750-0184","type":"electronic"}],"subject":["Geography,
-        Planning and Development","Arts and Humanities (miscellaneous)","Anthropology"]},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T04:06:57Z","timestamp":1509077217588},"reference-count":10,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014,9]]},"DOI":"10.1109\/mmsp.2014.6958808","type":"proceedings-article","created":{"date-parts":[[2014,11,26]],"date-time":"2014-11-26T15:16:23Z","timestamp":1417014983000},"source":"Crossref","is-referenced-by-count":1,"title":["NMF-based
-        multiple pitch estimation using sparseness and inter-frame continuity constraints"],"prefix":"10.1109","author":[{"given":"Takanori","family":"Fujisawa","affiliation":[]},{"given":"Ikuo","family":"Degawa","affiliation":[]},{"given":"Masaaki","family":"Ikehara","affiliation":[]}],"member":"263","event":{"name":"2014
-        IEEE 16th International Workshop on Multimedia Signal Processing (MMSP)","location":"Jakarta,
-        Indonesia","start":{"date-parts":[[2014,9,22]]},"end":{"date-parts":[[2014,9,24]]}},"container-title":["2014
-        IEEE 16th International Workshop on Multimedia Signal Processing (MMSP)"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx7\/6937466\/6958782\/06958808.pdf?arnumber=6958808","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,24]],"date-time":"2017-03-24T04:50:19Z","timestamp":1490331019000},"score":1.0,"issued":{"date-parts":[[2014,9]]},"ISBN":["9781479958962"],"references-count":10,"URL":"http:\/\/dx.doi.org\/10.1109\/mmsp.2014.6958808"},{"indexed":{"date-parts":[[2018,3,14]],"date-time":"2018-03-14T20:16:18Z","timestamp":1521058578394},"reference-count":54,"publisher":"American
-        Chemical Society (ACS)","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Anal.
-        Chem."],"published-print":{"date-parts":[[2014,3,18]]},"DOI":"10.1021\/ac401578p","type":"journal-article","created":{"date-parts":[[2013,12,7]],"date-time":"2013-12-07T15:44:09Z","timestamp":1386431049000},"page":"2917-2924","source":"Crossref","is-referenced-by-count":8,"title":["Gas-Phase
-        Ion Isomer Analysis Reveals the Mechanism of Peptide Sequence Scrambling"],"prefix":"10.1021","volume":"86","author":[{"given":"Chenxi","family":"Jia","affiliation":[{"name":"School
-        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
-        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Zhe","family":"Wu","affiliation":[{"name":"School
-        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
-        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Christopher
-        B.","family":"Lietz","affiliation":[{"name":"School of Pharmacy and \u2021Department
-        of Chemistry, University of Wisconsin\u2212Madison, 777 Highland Avenue, Madison,
-        Wisconsin 53705, United States"}]},{"given":"Zhidan","family":"Liang","affiliation":[{"name":"School
-        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
-        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Qiang","family":"Cui","affiliation":[{"name":"School
-        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
-        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]},{"given":"Lingjun","family":"Li","affiliation":[{"name":"School
-        of Pharmacy and \u2021Department of Chemistry, University of Wisconsin\u2212Madison,
-        777 Highland Avenue, Madison, Wisconsin 53705, United States"}]}],"member":"316","published-online":{"date-parts":[[2013,12,17]]},"container-title":["Analytical
-        Chemistry"],"link":[{"URL":"http:\/\/pubs.acs.org\/doi\/pdf\/10.1021\/ac401578p","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,11,1]],"date-time":"2017-11-01T13:31:37Z","timestamp":1509543097000},"score":1.0,"issued":{"date-parts":[[2013,12,17]]},"references-count":54,"alternative-id":["10.1021\/ac401578p"],"URL":"http:\/\/dx.doi.org\/10.1021\/ac401578p","ISSN":["0003-2700","1520-6882"],"issn-type":[{"value":"0003-2700","type":"print"},{"value":"1520-6882","type":"electronic"}],"subject":["Analytical
-        Chemistry"]},{"indexed":{"date-parts":[[2018,3,14]],"date-time":"2018-03-14T13:20:57Z","timestamp":1521033657881},"reference-count":3,"publisher":"Springer
-        Nature","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Forum
-        Psychoanal"],"published-print":{"date-parts":[[2013,6]]},"DOI":"10.1007\/s00451-013-0139-y","type":"journal-article","created":{"date-parts":[[2013,4,16]],"date-time":"2013-04-16T05:17:26Z","timestamp":1366089446000},"page":"133-137","source":"Crossref","is-referenced-by-count":1,"title":["Das
-        Sprachspiel Psychoanalyse und seine Regeln"],"prefix":"10.1007","volume":"29","author":[{"given":"Diana","family":"Pflichthofer","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2013,4,17]]},"reference":[{"key":"139_CR1","unstructured":"Freud
-        S (1913c) Zur Einleitung der Behandlung. Gesammelte Werke, Bd\u00a08. Fischer,
-        Frankfurt a.\u00a0M., S\u00a0454\u2013478"},{"key":"139_CR2","author":"H-J
-        Glock","year":"2000","unstructured":"Glock H-J (2000) Wittgenstein-Lexikon.
-        Wissenschaftliche Buchgesellschaft, Darmstadt (1996)","volume-title":"Wittgenstein-Lexikon"},{"key":"139_CR3","author":"KR
-        Popper","year":"2011","unstructured":"Popper KR (2011) Auf der Suche nach
-        der besseren Welt. Vortr\u00e4ge und Aufs\u00e4tze aus drei\u00dfig Jahren.
-        Piper, M\u00fcnchen (1987)","volume-title":"Auf der Suche nach der besseren
-        Welt. Vortr\u00e4ge und Aufs\u00e4tze aus drei\u00dfig Jahren"}],"container-title":["Forum
-        der Psychoanalyse"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00451-013-0139-y","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2013,6,25]],"date-time":"2013-06-25T09:00:41Z","timestamp":1372150841000},"score":1.0,"issued":{"date-parts":[[2013,4,17]]},"references-count":3,"alternative-id":["139"],"URL":"http:\/\/dx.doi.org\/10.1007\/s00451-013-0139-y","relation":{"cites":[]},"ISSN":["0178-7667","1437-0751"],"issn-type":[{"value":"0178-7667","type":"print"},{"value":"1437-0751","type":"electronic"}],"subject":["Clinical
-        Psychology","Psychiatry and Mental health"]},{"indexed":{"date-parts":[[2018,2,1]],"date-time":"2018-02-01T18:09:05Z","timestamp":1517508545994},"reference-count":0,"publisher":"Elsevier
-        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1988,2,1]],"date-time":"1988-02-01T00:00:00Z","timestamp":570672000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1988,2]]},"DOI":"10.1067\/mva.1988.avs0070275","type":"journal-article","created":{"date-parts":[[2002,7,25]],"date-time":"2002-07-25T04:20:13Z","timestamp":1027570813000},"page":"275-283","source":"Crossref","is-referenced-by-count":1,"title":["Early
-        healing after carotid endarterectomy: Effect of high- and low-dose aspirin
-        on thrombosis and early neointimal hyperplasia in a nonhuman primate model"],"prefix":"10.1067","volume":"7","author":[{"given":"Harry
-        L.","family":"Bush","affiliation":[]},{"given":"Joseph A.","family":"Jakubowski","affiliation":[]},{"given":"Joanna
-        M.","family":"Sentissi","affiliation":[]}],"member":"78","container-title":["Journal
-        of Vascular Surgery"],"deposited":{"date-parts":[[2015,6,26]],"date-time":"2015-06-26T01:41:46Z","timestamp":1435282906000},"score":1.0,"issued":{"date-parts":[[1988,2]]},"references-count":0,"alternative-id":["10.1067\/mva.1988.avs0070275"],"URL":"http:\/\/dx.doi.org\/10.1067\/mva.1988.avs0070275","ISSN":["0741-5214"],"issn-type":[{"value":"0741-5214","type":"print"}],"subject":["Surgery","Cardiology
-        and Cardiovascular Medicine"],"article-number":"avs0070275"},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T20:40:34Z","timestamp":1509136834834},"reference-count":36,"publisher":"Elsevier
-        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/501100001659","name":"Deutsche
-        Forschungsgemeinschaft","doi-asserted-by":"publisher","award":[]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Linear
-        Algebra and its Applications"],"published-print":{"date-parts":[[2016,1]]},"DOI":"10.1016\/j.laa.2015.09.026","type":"journal-article","created":{"date-parts":[[2015,11,17]],"date-time":"2015-11-17T18:45:41Z","timestamp":1447785941000},"page":"505-521","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Subspace
-        correction methods in algebraic multi-level frames"],"prefix":"10.1016","volume":"488","author":[{"given":"Peter","family":"Zaspel","affiliation":[]}],"member":"78","container-title":["Linear
-        Algebra and its Applications"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0024379515005418?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0024379515005418?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,23]],"date-time":"2017-06-23T23:50:30Z","timestamp":1498261830000},"score":1.0,"issued":{"date-parts":[[2016,1]]},"references-count":36,"alternative-id":["S0024379515005418"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.laa.2015.09.026","ISSN":["0024-3795"],"issn-type":[{"value":"0024-3795","type":"print"}],"subject":["Geometry
-        and Topology","Algebra and Number Theory","Numerical Analysis","Discrete Mathematics
-        and Combinatorics"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-        article is maintained by"},{"value":"Subspace correction methods in algebraic
-        multi-level frames","name":"articletitle","label":"Article Title"},{"value":"Linear
-        Algebra and its Applications","name":"journaltitle","label":"Journal Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.laa.2015.09.026","name":"articlelink","label":"CrossRef
-        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-        Type"},{"value":"Copyright \u00a9 2015 Elsevier Inc. All rights reserved.","name":"copyright","label":"Copyright"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+        Type"},{"value":"\u00a9 2018 Elsevier Ltd. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T22:06:38Z","timestamp":1508969198147},"publisher-location":"Wiesbaden","reference-count":11,"publisher":"Vieweg+Teubner
+        Verlag","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2010,1,1]],"date-time":"2010-01-01T00:00:00Z","timestamp":1262304000000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2010]]},"DOI":"10.1007\/978-3-8348-9336-9_15","type":"book-chapter","created":{"date-parts":[[2010,2,16]],"date-time":"2010-02-16T15:21:44Z","timestamp":1266333704000},"page":"214-235","source":"Crossref","is-referenced-by-count":0,"title":["Kippschaltungen"],"prefix":"10.1007","author":[{"given":"Erwin","family":"B\u00f6hmer","affiliation":[]},{"given":"Dietmar","family":"Ehrhardt","affiliation":[]},{"given":"Wolfgang","family":"Oberschelp","affiliation":[]}],"member":"297","reference":[{"key":"15_CR1","author":"Bienert
+        H.","year":"1980","edition":"5","unstructured":"Bienert, H.: Einf\u00fchrung
+        in den Entwurf und die Berechnung von Kippschaltungen, 5. Auflage, H\u00fcthig-Verlag,
+        Heidelberg 1980.","volume-title":"Einf\u00fchrung in den Entwurf und die Berechnung
+        von Kippschaltungen"},{"key":"15_CR2","author":"G. Schaller","year":"1987","edition":"3","unstructured":"Schaller,
+        G. und N\u00fcchel, W.: Digitale Schaltkreise, 3. Auflage, B. G. Teubner,
+        Stuttgart 1987.","volume-title":"Digitale Schaltkreise"},{"key":"15_CR3","author":"U.
+        Tietze","year":"2002","edition":"12","unstructured":"Tietze, U. und Schenk,
+        Ch.: Halbleiter-Schaltungstechnik, 12. Auflage, Springer-Verlag, Berlin 2002.","volume-title":"Halbleiter-Schaltungstechnik"},{"key":"15_CR4","author":"W.
+        Hilberg","year":"1992","unstructured":"Hilberg, W.: Grundlagen elektronischer
+        Schaltungen, Oldenbourg-Verlag, M\u00fcnchen 1992.","volume-title":"Grundlagen
+        elektronischer Schaltungen"},{"key":"15_CR5","author":"M. Zirpel","year":"1986","edition":"4","unstructured":"Zirpel,
+        M.: Operationsverst\u00e4rker, 4. Auflage, Franzis-Verlag, M\u00fcnchen 1986.","volume-title":"Operationsverst\u00e4rker"},{"key":"15_CR6","author":"D.
+        Ehrhardt","year":"1992","unstructured":"Ehrhardt, D.: Verst\u00e4rkertechnik,
+        Vieweg-Verlag, Braunschweig\/Wiesbaaden 1992.","volume-title":"Verst\u00e4rkertechnik","DOI":"10.1007\/978-3-322-83026-5","doi-asserted-by":"publisher"},{"key":"15_CR7","author":"S.
+        Franco","year":"1988","unstructured":"Franco, S.: Design with Operational
+        Amplifiers and Analog Integrated Circuits, Mc Graw-Hill, Inc., New York 1988.","volume-title":"Design
+        with Operational Amplifiers and Analog Integrated Circuits"},{"key":"15_CR8","unstructured":"Jung,
+        W. G.: IC Timer Cookbook, Howard W. Sams & Co., Inc., Indianapolis 1981."},{"key":"15_CR9","unstructured":"Philips:
+        Integrierte Zeitgeberschaltungen der 555er Familie, Technische Informationen
+        f\u00fcr die Industrie, Nr. 770527, Hamburg 1977"},{"key":"15_CR10","unstructured":"Siemens:
+        Integrierte Schaltungen f\u00fcr Industrielle Anwendungen (Datenbuch)."},{"key":"15_CR11","author":"R.
+        Paul","year":"1992","edition":"3","unstructured":"Paul, R.: Elektronische
+        Halbleiterbauelemente, 3. Auflage, Teubner, Stuttgart 1992.","volume-title":"Elektronische
+        Halbleiterbauelemente","DOI":"10.1007\/978-3-322-89215-7","doi-asserted-by":"publisher"}],"container-title":["Elemente
+        der angewandten Elektronik"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-8348-9336-9_15","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,12]],"date-time":"2016-08-12T08:33:19Z","timestamp":1470990799000},"score":1.0,"issued":{"date-parts":[[2010]]},"ISBN":["9783834805430","9783834893369"],"references-count":11,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-8348-9336-9_15","relation":{"cites":[]}},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T20:12:49Z","timestamp":1509048769672},"reference-count":3,"publisher":"Mary
+        Ann Liebert Inc","issue":"12","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of Endourology"],"published-print":{"date-parts":[[2009,12]]},"DOI":"10.1089\/end.2009.0145","type":"journal-article","created":{"date-parts":[[2009,11,16]],"date-time":"2009-11-16T15:31:39Z","timestamp":1258385499000},"page":"1937-1939","source":"Crossref","is-referenced-by-count":1,"title":["Three-Dimensional
+        Synchronized Multidirectional Renal Pyelo-Angiography: A New Imaging Concept
+        to Facilitate Percutaneous Nephrolithotomy in Technically Challenging Cases"],"prefix":"10.1089","volume":"23","author":[{"given":"Diwakar","family":"Dalela","affiliation":[]},{"given":"Ankush","family":"Gupta","affiliation":[]},{"given":"Suhail","family":"Ahmed","affiliation":[]},{"given":"Apul","family":"Goel","affiliation":[]}],"member":"278","container-title":["Journal
+        of Endourology"],"deposited":{"date-parts":[[2011,3,9]],"date-time":"2011-03-09T23:20:28Z","timestamp":1299712828000},"score":1.0,"issued":{"date-parts":[[2009,12]]},"references-count":3,"alternative-id":["10.1089\/end.2009.0145"],"URL":"http:\/\/dx.doi.org\/10.1089\/end.2009.0145","ISSN":["0892-7790","1557-900X"],"issn-type":[{"value":"0892-7790","type":"print"},{"value":"1557-900X","type":"electronic"}],"subject":["Urology"]},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T21:54:11Z","timestamp":1509054851406},"reference-count":0,"publisher":"The
+        Japanese Society of Fish Pathology","issue":"2\/3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Fish
+        Pathol."],"published-print":{"date-parts":[[1985]]},"DOI":"10.3147\/jsfp.20.209","type":"journal-article","created":{"date-parts":[[2011,6,9]],"date-time":"2011-06-09T13:06:36Z","timestamp":1307624796000},"page":"209-217","source":"Crossref","is-referenced-by-count":26,"title":["Epidemiological
+        surveillance of drug-resistant strains of Pasteurella piscicida."],"prefix":"10.3147","volume":"20","author":[{"given":"Noriyuki","family":"TAKASHIMA","affiliation":[]},{"given":"Takashi","family":"AOKI","affiliation":[]},{"given":"Tadatoshi","family":"KITAO","affiliation":[]}],"member":"1713","container-title":["Fish
+        Pathology"],"deposited":{"date-parts":[[2011,8,3]],"date-time":"2011-08-03T03:15:50Z","timestamp":1312341350000},"score":1.0,"issued":{"date-parts":[[1985]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3147\/jsfp.20.209","ISSN":["0388-788X","1881-7335"],"issn-type":[{"value":"0388-788X","type":"print"},{"value":"1881-7335","type":"electronic"}],"subject":["Animal
+        Science and Zoology","Aquatic Science"]},{"indexed":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T08:10:21Z","timestamp":1510560621596},"reference-count":0,"publisher":"ICCE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2017]]},"DOI":"10.22631\/icceconf.2017.16416.1477","type":"proceedings-article","created":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T07:55:04Z","timestamp":1510559704000},"source":"Crossref","is-referenced-by-count":0,"title":["\u0627\u0648\u0644\u06cc\u0646
+        \u06a9\u0646\u0641\u0631\u0627\u0646\u0633 \u0628\u06cc\u0646 \u0627\u0644\u0645\u0644\u0644\u06cc
+        \u067e\u06cc\u0634\u0631\u0641\u062a \u0647\u0627\u06cc \u0646\u0648\u06cc\u0646
+        \u062f\u0631 \u0645\u0647\u0646\u062f\u0633\u06cc \u0639\u0645\u0631\u0627\u0646"],"prefix":"10.22631","author":[{"given":"\u0632\u0647\u0631\u0627","family":"\u0646\u06cc\u0627\u0632\u06cc","affiliation":[]},{"given":"\u0633\u06cc\u062f
+        \u0645\u062d\u0645\u062f","family":"\u0633\u06cc\u062f\u067e\u0648\u0631","affiliation":[]},{"given":"\u0641\u0627\u0637\u0645\u0647","family":"\u0632\u0627\u0647\u062f\u06cc
+        \u062a\u062c\u0631\u06cc\u0634\u06cc","affiliation":[]}],"member":"9921","event":{"name":"\u0627\u0648\u0644\u06cc\u0646
+        \u06a9\u0646\u0641\u0631\u0627\u0646\u0633 \u0628\u06cc\u0646 \u0627\u0644\u0645\u0644\u0644\u06cc
+        \u067e\u06cc\u0634\u0631\u0641\u062a \u0647\u0627\u06cc \u0646\u0648\u06cc\u0646
+        \u062f\u0631 \u0645\u0647\u0646\u062f\u0633\u06cc \u0639\u0645\u0631\u0627\u0646","start":{"date-parts":[[1997,1,15]]},"end":{"date-parts":[[1997,1,17]]}},"container-title":["Proceedings
+        of the \u0627\u0648\u0644\u06cc\u0646 \u06a9\u0646\u0641\u0631\u0627\u0646\u0633
+        \u0628\u06cc\u0646 \u0627\u0644\u0645\u0644\u0644\u06cc \u067e\u06cc\u0634\u0631\u0641\u062a
+        \u0647\u0627\u06cc \u0646\u0648\u06cc\u0646 \u062f\u0631 \u0645\u0647\u0646\u062f\u0633\u06cc
+        \u0639\u0645\u0631\u0627\u0646"],"deposited":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T07:55:47Z","timestamp":1510559747000},"score":1.0,"issued":{"date-parts":[[2017]]},"ISBN":["9789640370506"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.22631\/icceconf.2017.16416.1477"},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T11:26:46Z","timestamp":1509017206523},"reference-count":10,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2009,4]]},"DOI":"10.1109\/nswctc.2009.143","type":"proceedings-article","created":{"date-parts":[[2009,5,4]],"date-time":"2009-05-04T19:55:02Z","timestamp":1241466902000},"source":"Crossref","is-referenced-by-count":0,"title":["Detection
+        of Programs Behaviors on Context Dependency"],"prefix":"10.1109","author":[{"given":"Pang","family":"Jianjing","affiliation":[]},{"given":"Peng","family":"Xinguang","affiliation":[]}],"member":"263","event":{"name":"2009
+        International Conference on Networks Security, Wireless Communications and
+        Trusted Computing (NSWCTC)","location":"Wuhan, China","start":{"date-parts":[[2009,4,25]]},"end":{"date-parts":[[2009,4,26]]}},"container-title":["2009
+        International Conference on Networks Security, Wireless Communications and
+        Trusted Computing"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/4908190\/4908381\/04908485.pdf?arnumber=4908485","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,18]],"date-time":"2017-06-18T19:23:21Z","timestamp":1497813801000},"score":1.0,"issued":{"date-parts":[[2009,4]]},"ISBN":["9780769536101","9781424442232"],"references-count":10,"URL":"http:\/\/dx.doi.org\/10.1109\/nswctc.2009.143"},{"indexed":{"date-parts":[[2018,3,13]],"date-time":"2018-03-13T20:46:52Z","timestamp":1520974012175},"reference-count":35,"publisher":"Royal
+        Society of Chemistry (RSC)","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Phys.
+        Chem. Chem. Phys."],"DOI":"10.1039\/c2cp23142e","type":"journal-article","created":{"date-parts":[[2011,12,23]],"date-time":"2011-12-23T12:05:47Z","timestamp":1324641947000},"page":"1756-1767","source":"Crossref","is-referenced-by-count":5,"title":["Generalized
+        nonlocal kinetic energy density functionals based on the von Weizs\u00e4cker
+        functional"],"prefix":"10.1039","volume":"14","author":[{"given":"David","family":"Garc\u00eda-Aldea","affiliation":[]},{"given":"Jos\u00e9
+        E.","family":"Alvarellos","affiliation":[]}],"member":"292","published-online":{"date-parts":[[2012]]},"reference":[{"key":"C2CP23142E-(cit1)\/*[position()=1]","author":"Kohn","volume":"140","first-page":"1133","year":"1965","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRev.140.A1133","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit2)\/*[position()=1]","author":"Hohenberg","volume":"136","first-page":"864","year":"1964","journal-title":"Phys.
+        Rev. B: Solid State","DOI":"10.1103\/PhysRev.136.B864","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit3)\/*[position()=1]","author":"Thomas","volume":"23","first-page":"542","year":"1927","journal-title":"Proc.
+        Cambridge Philos. Soc.","DOI":"10.1017\/S0305004100011683","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit4)\/*[position()=1]","author":"Fermi","volume":"6","first-page":"602","year":"1927","journal-title":"Rend.
+        Accad. Lincei"},{"key":"C2CP23142E-(cit5)\/*[position()=1]","author":"Weizsacker","volume":"96","first-page":"431","year":"1935","journal-title":"Z.
+        Phys.","DOI":"10.1007\/BF01337700","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit6)\/*[position()=1]","author":"Kirzhnits","volume":"5","first-page":"64","year":"1957","journal-title":"Sov.
+        Phys. JETP (Engl. Transl.)"},{"key":"C2CP23142E-(cit7)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"127","first-page":"144109","year":"2007","journal-title":"J.
+        Chem. Phys.","DOI":"10.1063\/1.2774974","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit8)\/*[position()=1]","author":"Wang","year":"2000","unstructured":"Y.
+        A. Wang and E. A.Carter, Orbital-Free Kinetic Energy Density Functional Theory,
+        in Theoretical Methods in Condensed Phase Chemistry, ed. S. D. Schwartz, Kluwer,
+        within the series Progress in Theoretical Chemistry and Physics, 2000, pp.
+        117\u2013184","volume-title":"Orbital-Free Kinetic Energy Density Functional
+        Theory : Theoretical Methods in Condensed Phase Chemistry"},{"key":"C2CP23142E-(cit9)\/*[position()=1]","author":"Garc\u00eda-Aldea","year":"2011","unstructured":"D.
+        Garc\u00eda-Aldea and J. E.Alvarellos, The construction of Kinetic Energy
+        Functionals and the Linear Response Function, in Theoretical and Computational
+        Developments in Modern Density Functional Theory, ed. A. K. Roy, Nova Science
+        Publishers, Inc., NY, USA, 2011, in press","volume-title":"The construction
+        of Kinetic Energy Functionals and the Linear Response Function : Theoretical
+        and Computational Developments in Modern Density Functional Theory"},{"key":"C2CP23142E-(cit10)\/*[position()=1]","author":"Chac\u00f3n","volume":"32","first-page":"7868","year":"1985","journal-title":"Phys.
+        Rev. B: Condens. Matter","DOI":"10.1103\/PhysRevB.32.7868","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit11)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"76","first-page":"052504","year":"2007","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.76.052504","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit12)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"77","first-page":"022502","year":"2008","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.77.022502","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit13)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"129","first-page":"074103","year":"2008","journal-title":"J.
+        Chem. Phys.","DOI":"10.1063\/1.2968612","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit14)\/*[position()=1]","author":"Bader","year":"1990","unstructured":"R.
+        F. W. Bader , Atoms in Molecules. A Quantum Theory, Oxford University Press,
+        Oxford, 1990","volume-title":"Atoms in Molecules. A Quantum Theory"},{"key":"C2CP23142E-(cit15)\/*[position()=1]","author":"Bader","year":"2005","unstructured":"R.
+        F. W. Bader , Topology of the Positive Definite Kinetic Energy Density and
+        its Physical Consequences, in Advances in Computational Methods in Science
+        and Engineering 2005, ed. T. Simos and G. Maroulis, Koninklijke Brill NV,
+        Leiden, The Netherlands, 2005, pp. 1230\u20131233","volume-title":"Topology
+        of the Positive Definite Kinetic Energy Density and its Physical Consequences
+        : Advances in Computational Methods in Science and Engineering 2005"},{"key":"C2CP23142E-(cit16)\/*[position()=1]","author":"Anderson","volume":"114","first-page":"8884","year":"2010","journal-title":"J.
+        Phys. Chem. A","DOI":"10.1021\/jp1029745","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit17)\/*[position()=1]","author":"Yang","volume":"258","first-page":"30","year":"1996","journal-title":"Chem.
+        Phys. Lett.","DOI":"10.1016\/0009-2614(96)00624-0","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit18)\/*[position()=1]","author":"Ghosh","volume":"111","first-page":"79","year":"1984","journal-title":"Proc.
+        Natl. Acad. Sci. U. S. A."},{"key":"C2CP23142E-(cit19)\/*[position()=1]","author":"Lombard","volume":"17","first-page":"455","year":"1991","journal-title":"J.
+        Phys. G: Nucl. Part. Phys.","DOI":"10.1088\/0954-3899\/17\/4\/007","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit20)\/*[position()=1]","author":"Garc\u00eda-Aldea","unstructured":"D.
+        Garc\u00eda-Aldea , to be published"},{"key":"C2CP23142E-(cit21)\/*[position()=1]","author":"Liu","volume":"126","first-page":"191107","year":"2007","journal-title":"J.
+        Chem. Phys.","DOI":"10.1063\/1.2741244","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit22)\/*[position()=1]","author":"Nagy","volume":"372","first-page":"1654","year":"2008","journal-title":"Phys.
+        Lett. A","DOI":"10.1016\/j.physleta.2007.10.055","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit23)\/*[position()=1]","author":"Liu","volume":"126","first-page":"244103","year":"2007","journal-title":"J.
+        Chem. Phys.","DOI":"10.1063\/1.2747247","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit24)\/*[position()=1]","author":"Ayers","volume":"90","first-page":"309","year":"2001","journal-title":"Int.
+        J. Quantum Chem.","DOI":"10.1002\/qua.989","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit25)\/*[position()=1]","author":"Garc\u00eda-Gonz\u00e1lez","volume":"54","first-page":"1897","year":"1996","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.54.1897","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit26)\/*[position()=1]","author":"Atkins","year":"1997","unstructured":"P.
+        W. Atkins , Molecular Quantum Mechanics, Oxford University Press, Oxford,
+        3rd edn, 1997","volume-title":"Molecular Quantum Mechanics"},{"key":"C2CP23142E-(cit27)\/*[position()=1]","author":"Clementi","volume":"38","first-page":"2686","year":"1963","journal-title":"J.
+        Chem. Phys.","DOI":"10.1063\/1.1733573","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit28)\/*[position()=1]","author":"Frisch","year":"1998","unstructured":"M.
+        J. Frisch , G. W.Trucks, H. B.Schlegel, G. E.Scuseria, M. A.Robb, J. R.Cheeseman,
+        V. G.Zakrzewski, J. A.Montgomery, Jr., R. E.Stratmann, J. C.Burant, S.Dapprich,
+        J. M.Millam, A. D.Daniels, K. N.Kudin, M. C.Strain, O.Farkas, J.Tomasi, V.Barone,
+        M.Cossi, R.Cammi, B.Mennucci, C.Pomelli, C.Adamo, S.Clifford, J.Ochterski,
+        G. A.Petersson, P. Y.Ayala, Q.Cui, K.Morokuma, D. K.Malick, A. D.Rabuck, K.Raghavachari,
+        J. B.Foresman, J.Cioslowski, J. V.Ortiz, B. B.Stefanov, G.Liu, A.Liashenko,
+        P.Piskorz, I.Komaromi, R.Gomperts, R. L.Martin, D. J.Fox, T.Keith, M. A.Al-Laham,
+        C. Y.Peng, A.Nanayakkara, C.Gonzalez, M.Challacombe, P. M. W.Gill, B.Johnson,
+        W.Chen, M. W.Wong, J. L.Andres, C.Gonzalez, M.Head-Gordon, E. S.Replogle and
+        J. A.Pople, GAUSSIAN 98 (Revision A.6), Gaussian, Inc., Pittsburgh, PA, 1998","volume-title":"GAUSSIAN
+        98 (Revision A.6)"},{"key":"C2CP23142E-(cit29)\/*[position()=1]","author":"Mart\u00edn-Blas","volume":"131","first-page":"164117","year":"2009","journal-title":"J.
+        Chem. Phys.","DOI":"10.1063\/1.3246863","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit30)\/*[position()=1]","author":"Haq","volume":"111","first-page":"79","year":"1984","journal-title":"Chem.
+        Phys. Lett.","DOI":"10.1016\/0009-2614(84)80440-6","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit31)\/*[position()=1]","author":"Deb","volume":"37","first-page":"4030","year":"1988","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.37.4030","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit32)\/*[position()=1]","author":"Chattaraj","volume":"41","first-page":"6505","year":"1990","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.41.6505","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit33)\/*[position()=1]","author":"Deb","volume":"45","first-page":"1412","year":"1992","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.45.1412","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit34)\/*[position()=1]","author":"Navarrete-L\u00f3pez","volume":"128","first-page":"104110","year":"2008","journal-title":"J.
+        Chem. Phys.","DOI":"10.1063\/1.2837666","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit35)\/*[position()=1]","author":"Liu","volume":"70","first-page":"022501","year":"2004","journal-title":"Phys.
+        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.70.022501","doi-asserted-by":"crossref"}],"container-title":["Phys.
+        Chem. Chem. Phys."],"link":[{"URL":"http:\/\/pubs.rsc.org\/en\/content\/articlepdf\/2012\/CP\/C2CP23142E","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T11:46:33Z","timestamp":1497959193000},"score":1.0,"issued":{"date-parts":[[2012]]},"references-count":35,"URL":"http:\/\/dx.doi.org\/10.1039\/c2cp23142e","relation":{"cites":[]},"ISSN":["1463-9076","1463-9084"],"issn-type":[{"value":"1463-9076","type":"print"},{"value":"1463-9084","type":"electronic"}],"subject":["Physical
+        and Theoretical Chemistry","General Physics and Astronomy"]},{"indexed":{"date-parts":[[2017,11,15]],"date-time":"2017-11-15T19:53:42Z","timestamp":1510775622294},"reference-count":0,"publisher":"Wiley-Blackwell","issue":"1","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":10105,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Biology
+        of the Cell"],"published-print":{"date-parts":[[1988]]},"DOI":"10.1016\/0248-4900(88)90114-1","type":"journal-article","created":{"date-parts":[[2003,2,13]],"date-time":"2003-02-13T19:02:59Z","timestamp":1045162979000},"page":"105-108","source":"Crossref","is-referenced-by-count":0,"title":["Skin
+        cultured with or without an NaCl gradient and aldosterone influence epidermal
+        fibronectin localizations"],"prefix":"10.1111","volume":"63","author":[{"given":"J","family":"Denefle","affiliation":[]}],"member":"311","container-title":["Biology
+        of the Cell"],"link":[{"URL":"http:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1016%2F0248-4900(88)90114-1","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,2,27]],"date-time":"2016-02-27T03:43:13Z","timestamp":1456544593000},"score":1.0,"issued":{"date-parts":[[1988]]},"references-count":0,"alternative-id":["0248-4900(88)90114-1"],"URL":"http:\/\/dx.doi.org\/10.1016\/0248-4900(88)90114-1","ISSN":["0248-4900"],"issn-type":[{"value":"0248-4900","type":"print"}],"subject":["Cell
+        Biology","General Medicine"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['19507']
+      Content-Length: ['28330']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sun, 01 Apr 2018 15:51:02 GMT']
+      Date: ['Mon, 02 Apr 2018 16:22:58 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

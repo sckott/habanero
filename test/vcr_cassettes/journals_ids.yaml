@@ -5,24 +5,25 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/journals/1803-2427
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"title":"Journal
-        of Landscape Ecology","publisher":"De Gruyter Open Sp. z o.o. ","ISSN":["1803-2427"],"flags":{"deposits-orcids-current":false,"deposits":true,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-articles":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"coverage":{"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0,"orcids-current":0,"references-backfile":1.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0,"award-numbers-current":0,"resource-links-current":0,"references-current":0},"breakdowns":{"dois-by-issued-year":[[2011,15],[2010,10],[2008,10],[2009,9],[2012,5]]},"counts":{"total-dois":49,"current-dois":0,"backfile-dois":49},"last-status-check-time":1459490507212}}'}
+    body: {string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1522637659764,"counts":{"total-dois":148,"current-dois":38,"backfile-dois":110},"breakdowns":{"dois-by-issued-year":[[2017,38],[2015,20],[2016,15],[2013,15],[2011,15],[2014,11],[2010,10],[2008,10],[2009,9],[2012,5]]},"publisher":"De
+        Gruyter Open Sp. z o.o. ","coverage":{"affiliations-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.04545454680919647,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":1.0,"orcids-backfile":0.0,"update-policies-current":0.0,"orcids-current":0.0,"references-backfile":0.7181817889213562,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":1.0,"award-numbers-current":0.0,"abstracts-backfile":0.3636363744735718,"resource-links-current":1.0,"abstracts-current":1.0,"references-current":0.8684210777282715},"title":"Journal
+        of Landscape Ecology","subjects":[],"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":true,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":true},"ISSN":["1805-4196","1803-2427"],"issn-type":[{"value":"1805-4196","type":"electronic"},{"value":"1803-2427","type":"print"}]}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1298']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 01:51:41 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1790']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:22:01 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 - request:
     body: null
@@ -30,24 +31,24 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/journals/2326-4225
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"title":"Journal
-        of Nutritional Ecology and Food Research","publisher":"American Scientific
-        Publishers","ISSN":["2326-4225"],"flags":null,"coverage":null,"breakdowns":null,"counts":null,"last-status-check-time":null}}'}
+    body: {string: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1522639266505,"counts":{"total-dois":132,"current-dois":12,"backfile-dois":120},"breakdowns":{"dois-by-issued-year":[[2014,55],[2013,50],[2016,27]]},"publisher":"American
+        Scientific Publishers","coverage":{"affiliations-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.32499998807907104,"orcids-backfile":0.0,"update-policies-current":0.0,"orcids-current":0.0,"references-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":1.0,"abstracts-current":0.0,"references-current":0.0},"title":"Journal
+        of Nutritional Ecology and Food Research","subjects":[],"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":true,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-references-current":false,"deposits-resource-links-backfile":true,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-licenses-current":false},"ISSN":["2326-4225"],"issn-type":[{"value":"2326-4225","type":"print"}]}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['294']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 01:51:41 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1652']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:22:02 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

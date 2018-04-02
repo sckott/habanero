@@ -5,26 +5,31 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/works?rows=2
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":90216773,"items":[{"indexed":{"date-parts":[[2017,5,13]],"date-time":"2017-05-13T03:48:29Z","timestamp":1494647309655},"reference-count":0,"publisher":"IOSR
-        Journals","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IOSR-JCE"],"published-print":{"date-parts":[[2013]]},"DOI":"10.9790\/0661-141","type":"journal-issue","created":{"date-parts":[[2013,9,23]],"date-time":"2013-09-23T05:10:36Z","timestamp":1379913036000},"source":"Crossref","is-referenced-by-count":0,"title":[],"prefix":"10.9790","volume":"14","member":"4786","container-title":["IOSR
-        Journal of Computer Engineering"],"original-title":[],"deposited":{"date-parts":[[2013,9,23]],"date-time":"2013-09-23T05:10:36Z","timestamp":1379913036000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2013]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.9790\/0661-141","relation":{},"ISSN":["2278-8727","2278-0661"],"issn-type":[{"value":"2278-8727","type":"print"},{"value":"2278-0661","type":"electronic"}]},{"indexed":{"date-parts":[[2017,5,13]],"date-time":"2017-05-13T03:20:49Z","timestamp":1494645649221},"reference-count":0,"publisher":"Journals
-        of Biomedical Presentations Smart Sci Solutions, Inc.","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JAP"],"DOI":"10.15510\/jbmp_jap.2374-5258.2012.v1.p1","type":"journal-issue","created":{"date-parts":[[2015,3,7]],"date-time":"2015-03-07T01:51:56Z","timestamp":1425693116000},"source":"Crossref","is-referenced-by-count":0,"title":[],"prefix":"10.15510","volume":"1","member":"6172","published-online":{"date-parts":[[2012]]},"container-title":["Journal
-        of Anesthesiology Presentations"],"original-title":[],"deposited":{"date-parts":[[2015,3,7]],"date-time":"2015-03-07T01:51:56Z","timestamp":1425693116000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.15510\/jbmp_jap.2374-5258.2012.v1.p1","relation":{},"ISSN":["2374-5258"],"issn-type":[{"value":"2374-5258","type":"electronic"}]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95875008,"items":[{"indexed":{"date-parts":[[2017,10,23]],"date-time":"2017-10-23T19:27:25Z","timestamp":1508786845330},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1999,10,1]],"date-time":"1999-10-01T00:00:00Z","timestamp":938736000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Progress
+        in Planning"],"published-print":{"date-parts":[[1999,10]]},"DOI":"10.1016\/s0305-9006(99)00007-0","type":"journal-article","created":{"date-parts":[[2002,7,26]],"date-time":"2002-07-26T00:11:38Z","timestamp":1027642298000},"page":"vii","source":"Crossref","is-referenced-by-count":0,"title":["Editorial"],"prefix":"10.1016","volume":"52","member":"78","container-title":["Progress
+        in Planning"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0305900699000070?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0305900699000070?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,9,9]],"date-time":"2015-09-09T06:07:58Z","timestamp":1441778878000},"score":1.0,"issued":{"date-parts":[[1999,10]]},"references-count":0,"alternative-id":["S0305900699000070"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0305-9006(99)00007-0","ISSN":["0305-9006"],"issn-type":[{"value":"0305-9006","type":"print"}],"subject":["Geography,
+        Planning and Development"]},{"indexed":{"date-parts":[[2017,10,23]],"date-time":"2017-10-23T19:27:25Z","timestamp":1508786845331},"reference-count":7,"publisher":"Elsevier
+        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1999,3,1]],"date-time":"1999-03-01T00:00:00Z","timestamp":920246400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Powder
+        Technology"],"published-print":{"date-parts":[[1999,3]]},"DOI":"10.1016\/s0032-5910(98)00174-0","type":"journal-article","created":{"date-parts":[[2002,7,26]],"date-time":"2002-07-26T00:11:20Z","timestamp":1027642280000},"page":"249-256","source":"Crossref","is-referenced-by-count":19,"title":["A
+        visual kinematic model of flowing foams incorporating coalescence"],"prefix":"10.1016","volume":"101","author":[{"given":"S.J.","family":"Neethling","affiliation":[]},{"given":"J.J.","family":"Cilliers","affiliation":[]}],"member":"78","container-title":["Powder
+        Technology"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0032591098001740?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0032591098001740?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,10,17]],"date-time":"2017-10-17T01:33:05Z","timestamp":1508203985000},"score":1.0,"issued":{"date-parts":[[1999,3]]},"references-count":7,"alternative-id":["S0032591098001740"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0032-5910(98)00174-0","ISSN":["0032-5910"],"issn-type":[{"value":"0032-5910","type":"print"}],"subject":["General
+        Chemical Engineering"]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['2267']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:06:08 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['3642']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:21 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

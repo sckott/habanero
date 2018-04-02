@@ -5,22 +5,22 @@ interactions:
       Accept: [application/x-bibtex]
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: http://doi.org/10.1126/science.169.3946.635
   response:
-    body: {string: !!python/unicode '<html><head><title>Handle Redirect</title></head>
+    body: {string: '<html><head><title>Handle Redirect</title></head>
 
         <body><a href="https://data.crossref.org/10.1126%2Fscience.169.3946.635">https://data.crossref.org/10.1126%2Fscience.169.3946.635</a></body></html>'}
     headers:
-      content-length: ['197']
-      content-type: [text/html;charset=utf-8]
-      date: ['Fri, 21 Jul 2017 01:23:40 GMT']
-      expires: ['Fri, 21 Jul 2017 01:40:56 GMT']
-      location: ['https://data.crossref.org/10.1126%2Fscience.169.3946.635']
-      server: [Apache-Coyote/1.1]
-      vary: [Accept]
+      Content-Length: ['197']
+      Content-Type: [text/html;charset=utf-8]
+      Date: ['Mon, 02 Apr 2018 16:21:24 GMT']
+      Expires: ['Mon, 02 Apr 2018 16:50:47 GMT']
+      Location: ['https://data.crossref.org/10.1126%2Fscience.169.3946.635']
+      Server: [Apache-Coyote/1.1]
+      Vary: [Accept]
     status: {code: 303, message: See Other}
 - request:
     body: null
@@ -28,30 +28,31 @@ interactions:
       Accept: [application/x-bibtex]
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://data.crossref.org/10.1126%2Fscience.169.3946.635
   response:
-    body: {string: !!python/unicode "@article{Frank_1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl
-        = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\tyear = 1970,\n\tmonth
-        = {aug},\n\tpublisher = {American Association for the Advancement of Science
-        ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages = {635--641},\n\tauthor
-        = {H. S. Frank},\n\ttitle = {The Structure of Ordinary Water: New data and
-        interpretations are yielding new insights into this fascinating substance},\n\tjournal
-        = {Science}\n}"}
+    body: {string: "@article{Frank_1970,\n\tdoi = {10.1126/science.169.3946.635},\n\
+        \turl = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\tyear = 1970,\n\
+        \tmonth = {aug},\n\tpublisher = {American Association for the Advancement\
+        \ of Science ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages =\
+        \ {635--641},\n\tauthor = {H. S. Frank},\n\ttitle = {The Structure of Ordinary\
+        \ Water: New data and interpretations are yielding new insights into this\
+        \ fascinating substance},\n\tjournal = {Science}\n}"}
     headers:
-      access-control-allow-headers: ['X-Requested-With, Accept, Accept-Encoding, Accept-Charset,
+      Access-Control-Allow-Headers: ['X-Requested-With, Accept, Accept-Encoding, Accept-Charset,
           Accept-Language, Accept-Ranges, Cache-Control']
-      access-control-allow-origin: ['*']
-      access-control-expose-headers: [Link]
-      connection: [close]
-      content-length: ['459']
-      content-type: [application/x-bibtex]
-      date: ['Fri, 21 Jul 2017 01:23:41 GMT']
-      link: ['<http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical"']
-      server: [http-kit]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Origin: ['*']
+      Access-Control-Expose-Headers: [Link]
+      Connection: [close]
+      Content-Length: ['459']
+      Content-Type: [application/x-bibtex]
+      Date: ['Mon, 02 Apr 2018 16:21:25 GMT']
+      Link: ['<http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+          version="vor"; rel="item"']
+      Server: [http-kit]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

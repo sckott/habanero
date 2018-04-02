@@ -5,28 +5,35 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/works?sample=2
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":90216773,"items":[{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T22:04:34Z","timestamp":1495922674656},"reference-count":0,"publisher":"Portico","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"published-print":{"date-parts":[[2001]]},"DOI":"10.1093\/alrr\/2001.1.295","type":"journal-article","created":{"date-parts":[[2011,1,25]],"date-time":"2011-01-25T20:07:38Z","timestamp":1295986058000},"page":"295-302","source":"Crossref","is-referenced-by-count":0,"title":["Doherty
-        Contracts Ltd v Moon"],"prefix":"10.3730","volume":"2001","member":"1320","container-title":["Arbitration
-        Law Reports and Review"],"original-title":[],"deposited":{"date-parts":[[2017,2,7]],"date-time":"2017-02-07T20:56:36Z","timestamp":1486500996000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2001]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/alrr\/2001.1.295","relation":{},"ISSN":["2044-8651","2044-9887"],"issn-type":[{"value":"2044-8651","type":"print"},{"value":"2044-9887","type":"electronic"}]},{"indexed":{"date-parts":[[2017,5,27]],"date-time":"2017-05-27T18:10:35Z","timestamp":1495908635595},"reference-count":0,"publisher":"Ovid
-        Technologies (Wolters Kluwer Health)","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-        Journal of Nervous and Mental Disease"],"published-print":{"date-parts":[[1987,5]]},"DOI":"10.1097\/00005053-198705000-00006","type":"journal-article","created":{"date-parts":[[2006,10,17]],"date-time":"2006-10-17T00:57:54Z","timestamp":1161046674000},"page":"276","source":"Crossref","is-referenced-by-count":5,"title":["A
-        Reply from Naomi Breslau and Glenn C. Davis"],"prefix":"10.1097","volume":"175","author":[{"given":"&NA;","family":"&NA;","affiliation":[]}],"member":"276","container-title":["The
-        Journal of Nervous and Mental Disease"],"original-title":[],"deposited":{"date-parts":[[2012,11,9]],"date-time":"2012-11-09T13:32:02Z","timestamp":1352467922000},"score":1.0,"subtitle":[""],"short-title":[],"issued":{"date-parts":[[1987,5]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1097\/00005053-198705000-00006","relation":{},"ISSN":["0022-3018"],"issn-type":[{"value":"0022-3018","type":"print"}],"subject":["Medicine(all)"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95875008,"items":[{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T21:46:29Z","timestamp":1509054389741},"reference-count":2,"publisher":"Informa
+        UK Limited","issue":"3","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["International
+        Journal of Jungian Studies"],"published-print":{"date-parts":[[2014,9,2]]},"DOI":"10.1080\/19409052.2014.943002","type":"journal-article","created":{"date-parts":[[2014,8,4]],"date-time":"2014-08-04T11:50:12Z","timestamp":1407153012000},"page":"179-179","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Editorial"],"prefix":"10.1080","volume":"6","author":[{"given":"Luke","family":"Hockley","affiliation":[]},{"given":"Lucy","family":"Huskinson","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2014,8,4]]},"reference":[{"key":"cit0001","DOI":"10.1080\/19409052.2012.671182","doi-asserted-by":"publisher"},{"key":"cit0002","author":"Stern
+        K.","year":"1954","volume-title":"The Third Revolution: A Study of Psychiatry
+        and Religion"}],"container-title":["International Journal of Jungian Studies"],"link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/19409052.2014.943002","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,14]],"date-time":"2016-12-14T09:38:13Z","timestamp":1481708293000},"score":1.0,"issued":{"date-parts":[[2014,8,4]]},"references-count":2,"alternative-id":["10.1080\/19409052.2014.943002"],"URL":"http:\/\/dx.doi.org\/10.1080\/19409052.2014.943002","relation":{"cites":[]},"ISSN":["1940-9052","1940-9060"],"issn-type":[{"value":"1940-9052","type":"print"},{"value":"1940-9060","type":"electronic"}],"subject":["Applied
+        Psychology"],"assertion":[{"value":"The publishing and review policy for this
+        title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rijj20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rijj20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"}]},{"indexed":{"date-parts":[[2017,10,24]],"date-time":"2017-10-24T06:08:51Z","timestamp":1508825331967},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1994,6,1]],"date-time":"1994-06-01T00:00:00Z","timestamp":770428800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Clinical
+        Biochemistry"],"published-print":{"date-parts":[[1994,6]]},"DOI":"10.1016\/0009-9120(94)90150-3","type":"journal-article","created":{"date-parts":[[2003,2,11]],"date-time":"2003-02-11T22:19:26Z","timestamp":1045001966000},"page":"231","source":"Crossref","is-referenced-by-count":0,"title":["The
+        biochemical diagnosis of the porphyria cutanea tarda of chronic renal failure"],"prefix":"10.1016","volume":"27","author":[{"given":"J.T.","family":"Hindmarsh","affiliation":[]},{"given":"D.C.","family":"Greenway","affiliation":[]},{"given":"L.","family":"Oliveras","affiliation":[]},{"given":"R.A.","family":"Couture","affiliation":[]},{"given":"E.","family":"MacNamara","affiliation":[]}],"member":"78","container-title":["Clinical
+        Biochemistry"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0009912094901503?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0009912094901503?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,9,20]],"date-time":"2015-09-20T01:57:51Z","timestamp":1442714271000},"score":1.0,"issued":{"date-parts":[[1994,6]]},"references-count":0,"alternative-id":["0009912094901503"],"URL":"http:\/\/dx.doi.org\/10.1016\/0009-9120(94)90150-3","ISSN":["0009-9120"],"issn-type":[{"value":"0009-9120","type":"print"}],"subject":["Clinical
+        Biochemistry","General Medicine"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['2489']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:06:11 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['4459']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:26 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

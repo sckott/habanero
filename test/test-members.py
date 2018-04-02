@@ -25,12 +25,11 @@ def test_members_query():
     assert dict == res.__class__
     assert dict == res['message'].__class__
 
-@vcr.use_cassette('test/vcr_cassettes/members_sample.yaml')
-def test_members_sample():
-    "members - param: sample"
-    res = cr.members(sample = 2)
-    assert dict == res.__class__
-    assert dict == res['message'].__class__
+@raises(exceptions.RequestError)
+@vcr.use_cassette('test/vcr_cassettes/members_sample_err.yaml')
+def test_members_sample_err():
+    "members - param: sample - error b/c sample not supported"
+    cr.members(sample = 2)
 
 
 @raises(Exception)

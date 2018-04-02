@@ -5,34 +5,36 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.11.1 habanero/0.6.0]
-      X-USER-AGENT: [python-requests/2.11.1 habanero/0.6.0]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
-    uri: https://api.crossref.org/works?select=DOI%2Ctitle&query=ecology
+    uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":309057,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":321460,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
         Ecology"]},{"DOI":"10.1007\/springerreference_29611","title":["Human ecology
-        (cultural ecology)"]},{"DOI":"10.2307\/1928969","title":["Ecology or Bio-Ecology"]},{"DOI":"10.2307\/1930158","title":["\"Ecology\"
-        and \"Plant Ecology\""]},{"DOI":"10.2307\/1929908","title":["Scandinavian
-        Ecology"]},{"DOI":"10.1002\/ecy.1807","title":["The new ecology"]},{"DOI":"10.2307\/1935066","title":["Woodland
-        Ecology"]},{"DOI":"10.2307\/1934287","title":["Agricultural Ecology"]},{"DOI":"10.2307\/1931096","title":["Epidemiology--The
-        Ecology of Disease"]},{"DOI":"10.2307\/1943146","title":["Smut Ecology"]},{"DOI":"10.5040\/9781474274685.ch-009","title":["From
-        Natural Ecology to Cultural Ecology"]},{"DOI":"10.1002\/9781118015841.ch1","title":["Microbial
-        Ecology: Beginnings and the Road Forward"]},{"DOI":"10.1002\/9781118015841.ch5","title":["The
-        how of Microbial Ecology Studies"]},{"DOI":"10.4324\/9780203839263.ch3","title":["Urban
-        ecology and industrial ecology"]},{"DOI":"10.1002\/9780470979365.ch2","title":["Molecular
+        (cultural ecology)"]},{"DOI":"10.2307\/1929908","title":["Scandinavian Ecology"]},{"DOI":"10.2307\/1931096","title":["Epidemiology--The
+        Ecology of Disease"]},{"DOI":"10.2307\/1934287","title":["Agricultural Ecology"]},{"DOI":"10.2307\/1943146","title":["Smut
+        Ecology"]},{"DOI":"10.2307\/1935066","title":["Woodland Ecology"]},{"DOI":"10.2307\/1928969","title":["Ecology
+        or Bio-Ecology"]},{"DOI":"10.2307\/1930158","title":["\"Ecology\" and \"Plant
+        Ecology\""]},{"DOI":"10.1002\/9781118015841.ch1","title":["Microbial Ecology:
+        Beginnings and the Road Forward"]},{"DOI":"10.1002\/9781118015841.ch5","title":["The
+        how of Microbial Ecology Studies"]},{"DOI":"10.1002\/9781444341966.ch14","title":["Applied
+        Community Ecology"]},{"DOI":"10.1002\/9780470979365.ch2","title":["Molecular
         Markers in Ecology"]},{"DOI":"10.1002\/9780470979365.ch1","title":["Molecular
-        Genetics in Ecology"]},{"DOI":"10.1002\/9781444341966.ch14","title":["Applied
-        Community Ecology"]},{"DOI":"10.1002\/9781118412787.ch14","title":["The Ecology
-        of Estuarine Wildlife"]},{"DOI":"10.1155\/8641","title":["ISRN Ecology"]},{"DOI":"10.5402\/ecology","title":["ISRN
-        Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'}
+        Genetics in Ecology"]},{"DOI":"10.1002\/9781118412787.ch14","title":["The
+        Ecology of Estuarine Wildlife"]},{"DOI":"10.5040\/9781474274685.ch-009","title":["From
+        Natural Ecology to Cultural Ecology"]},{"DOI":"10.4324\/9780203839263.ch3","title":["Urban
+        ecology and industrial ecology"]},{"DOI":"10.1002\/ecy.2116","title":["Applied
+        ecology in the 21st century"]},{"DOI":"10.1002\/ecy.2150","title":["Evolutionary
+        community ecology: from coexistence to coevolution"]},{"DOI":"10.1002\/ecy.1807","title":["The
+        new ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['1631']
+      Content-Length: ['1710']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 21 Oct 2017 00:05:52 GMT']
+      Date: ['Mon, 02 Apr 2018 16:23:30 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]
@@ -44,34 +46,36 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.11.1 habanero/0.6.0]
-      X-USER-AGENT: [python-requests/2.11.1 habanero/0.6.0]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
-    uri: https://api.crossref.org/works?select=DOI%2Ctitle&query=ecology
+    uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":309057,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":321460,"items":[{"DOI":"10.1002\/9780470979365.ch7","title":["Behavioural
         Ecology"]},{"DOI":"10.1007\/springerreference_29611","title":["Human ecology
-        (cultural ecology)"]},{"DOI":"10.2307\/1928969","title":["Ecology or Bio-Ecology"]},{"DOI":"10.2307\/1930158","title":["\"Ecology\"
-        and \"Plant Ecology\""]},{"DOI":"10.2307\/1929908","title":["Scandinavian
-        Ecology"]},{"DOI":"10.1002\/ecy.1807","title":["The new ecology"]},{"DOI":"10.2307\/1935066","title":["Woodland
-        Ecology"]},{"DOI":"10.2307\/1934287","title":["Agricultural Ecology"]},{"DOI":"10.2307\/1931096","title":["Epidemiology--The
-        Ecology of Disease"]},{"DOI":"10.2307\/1943146","title":["Smut Ecology"]},{"DOI":"10.5040\/9781474274685.ch-009","title":["From
-        Natural Ecology to Cultural Ecology"]},{"DOI":"10.1002\/9781118015841.ch1","title":["Microbial
-        Ecology: Beginnings and the Road Forward"]},{"DOI":"10.1002\/9781118015841.ch5","title":["The
-        how of Microbial Ecology Studies"]},{"DOI":"10.4324\/9780203839263.ch3","title":["Urban
-        ecology and industrial ecology"]},{"DOI":"10.1002\/9780470979365.ch2","title":["Molecular
+        (cultural ecology)"]},{"DOI":"10.2307\/1929908","title":["Scandinavian Ecology"]},{"DOI":"10.2307\/1931096","title":["Epidemiology--The
+        Ecology of Disease"]},{"DOI":"10.2307\/1934287","title":["Agricultural Ecology"]},{"DOI":"10.2307\/1943146","title":["Smut
+        Ecology"]},{"DOI":"10.2307\/1935066","title":["Woodland Ecology"]},{"DOI":"10.2307\/1928969","title":["Ecology
+        or Bio-Ecology"]},{"DOI":"10.2307\/1930158","title":["\"Ecology\" and \"Plant
+        Ecology\""]},{"DOI":"10.1002\/9781118015841.ch1","title":["Microbial Ecology:
+        Beginnings and the Road Forward"]},{"DOI":"10.1002\/9781118015841.ch5","title":["The
+        how of Microbial Ecology Studies"]},{"DOI":"10.1002\/9781444341966.ch14","title":["Applied
+        Community Ecology"]},{"DOI":"10.1002\/9780470979365.ch2","title":["Molecular
         Markers in Ecology"]},{"DOI":"10.1002\/9780470979365.ch1","title":["Molecular
-        Genetics in Ecology"]},{"DOI":"10.1002\/9781444341966.ch14","title":["Applied
-        Community Ecology"]},{"DOI":"10.1002\/9781118412787.ch14","title":["The Ecology
-        of Estuarine Wildlife"]},{"DOI":"10.1155\/8641","title":["ISRN Ecology"]},{"DOI":"10.5402\/ecology","title":["ISRN
-        Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'}
+        Genetics in Ecology"]},{"DOI":"10.1002\/9781118412787.ch14","title":["The
+        Ecology of Estuarine Wildlife"]},{"DOI":"10.5040\/9781474274685.ch-009","title":["From
+        Natural Ecology to Cultural Ecology"]},{"DOI":"10.4324\/9780203839263.ch3","title":["Urban
+        ecology and industrial ecology"]},{"DOI":"10.1002\/ecy.2116","title":["Applied
+        ecology in the 21st century"]},{"DOI":"10.1002\/ecy.2150","title":["Evolutionary
+        community ecology: from coexistence to coevolution"]},{"DOI":"10.1002\/ecy.1807","title":["The
+        new ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['1631']
+      Content-Length: ['1710']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Sat, 21 Oct 2017 00:05:56 GMT']
+      Date: ['Mon, 02 Apr 2018 16:23:30 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

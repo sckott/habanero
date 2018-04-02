@@ -5,22 +5,22 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/licenses?query=aps
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":24,"items":[{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":8},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":15},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0\/uk\/legalcode","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","work-count":13},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","work-count":9},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","work-count":45},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","work-count":197},{"URL":"http:\/\/iopscience.iop.org\/info\/page\/text-and-data-mining","work-count":15},{"URL":"http:\/\/iopscience.iop.org\/page\/copyright","work-count":9},{"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html","work-count":29},{"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html#TDM","work-count":29},{"URL":"http:\/\/link.aps.org\/licenses\/aps-default-license","work-count":35},{"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions","work-count":20},{"URL":"http:\/\/royalsocietypublishing.org\/licence","work-count":1},{"URL":"http:\/\/www.acm.org\/publications\/policies\/copyright_policy#Background","work-count":2},{"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/","work-count":11},{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","work-count":713},{"URL":"http:\/\/www.emeraldinsight.com\/page\/tdm","work-count":14},{"URL":"http:\/\/www.springer.com\/tdm","work-count":35},{"URL":"https:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/","work-count":350}],"items-per-page":20,"query":{"start-index":0,"search-terms":"aps"}}}'}
+    body: {string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":31,"items":[{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":8},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":14},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0\/uk\/legalcode","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","work-count":14},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","work-count":16},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","work-count":39},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","work-count":206},{"URL":"http:\/\/iopscience.iop.org\/info\/page\/text-and-data-mining","work-count":17},{"URL":"http:\/\/iopscience.iop.org\/page\/copyright","work-count":10},{"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html","work-count":30},{"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html#TDM","work-count":30},{"URL":"http:\/\/journals.sagepub.com\/page\/policies\/text-and-data-mining-license","work-count":71},{"URL":"http:\/\/link.aps.org\/licenses\/aps-default-license","work-count":35},{"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions","work-count":15},{"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#am","work-count":2},{"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor","work-count":9},{"URL":"http:\/\/royalsocietypublishing.org\/licence","work-count":1},{"URL":"http:\/\/www.acm.org\/publications\/policies\/copyright_policy#Background","work-count":3},{"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/","work-count":25},{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","work-count":756},{"URL":"http:\/\/www.emeraldinsight.com\/page\/tdm","work-count":17},{"URL":"http:\/\/www.nrcresearchpress.com\/page\/about\/CorporateTextAndDataMining","work-count":3},{"URL":"http:\/\/www.springer.com\/tdm","work-count":71},{"URL":"https:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/","work-count":449},{"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/","work-count":6},{"URL":"https:\/\/www.karger.com\/Services\/SiteLicenses","work-count":1}],"items-per-page":20,"query":{"start-index":0,"search-terms":"aps"}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['2063']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 02:02:57 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['2653']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:22:33 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

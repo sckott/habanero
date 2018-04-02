@@ -5,26 +5,26 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.3.1]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.3.1]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/funders?query=NSF&rows=2
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"NSF"},"total-results":9,"items":[{"id":"100006445","location":"United
+    body: {string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"NSF"},"total-results":9,"items":[{"id":"100006445","location":"United
         States","name":"Center for Hierarchical Manufacturing, National Science Foundation","alt-names":["CHM,
         NSF","University of Massachusetts NSF Center for Hierarchical Manufacturing","Center
         for Hierarchical Manufacturing"],"uri":"http:\/\/dx.doi.org\/10.13039\/100006445","replaces":[],"replaced-by":[],"tokens":["center","for","hierarchical","manufacturing","national","science","foundation","chm","nsf","university","of","massachusetts","nsf","center","for","hierarchical","manufacturing","center","for","hierarchical","manufacturing"]},{"id":"100003187","location":"United
         States","name":"National Sleep Foundation","alt-names":["NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100003187","replaces":[],"replaced-by":[],"tokens":["national","sleep","foundation","nsf"]}]}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['980']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 21 Jul 2017 01:45:24 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['980']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:21:41 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1

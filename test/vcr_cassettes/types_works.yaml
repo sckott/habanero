@@ -5,29 +5,26 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.1 habanero/0.5.0.2]
-      X-USER-AGENT: [python-requests/2.18.1 habanero/0.5.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
     method: GET
     uri: https://api.crossref.org/types/journal/works?rows=2
   response:
-    body: {string: !!python/unicode '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":23919,"items":[{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T15:23:53Z","timestamp":1502205833635},"reference-count":0,"publisher":"Hindawi
-        Limited","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1155\/aess","type":"journal","created":{"date-parts":[[2009,4,9]],"date-time":"2009-04-09T07:35:25Z","timestamp":1239262525000},"source":"Crossref","is-referenced-by-count":0,"title":["Applied
-        and Environmental Soil Science"],"prefix":"10.1155","member":"98","deposited":{"date-parts":[[2009,4,9]],"date-time":"2009-04-09T07:35:25Z","timestamp":1239262525000},"score":1.0,"short-title":["Applied
-        and Environmental Soil Science"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1155\/aess","ISSN":["1687-7667","1687-7675"],"issn-type":[{"value":"1687-7667","type":"print"},{"value":"1687-7675","type":"electronic"}],"subject":["Earth-Surface
-        Processes","Soil Science"]},{"indexed":{"date-parts":[[2017,8,8]],"date-time":"2017-08-08T15:26:06Z","timestamp":1502205966594},"reference-count":0,"publisher":"Colegio
-        Brasileiro de Atividade Fisica Saude e Esporte (COBRASE)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.3900\/fpj.3.5.254.s","type":"journal","created":{"date-parts":[[2009,4,16]],"date-time":"2009-04-16T14:44:34Z","timestamp":1239893074000},"source":"Crossref","is-referenced-by-count":0,"title":["Fitness
-        & Performance Journal"],"prefix":"10.3900","member":"2264","deposited":{"date-parts":[[2009,4,16]],"date-time":"2009-04-16T16:18:51Z","timestamp":1239898731000},"score":1.0,"short-title":["Fit
-        Per J"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3900\/fpj.3.5.254.s","ISSN":["1676-5133"],"issn-type":[{"value":"1676-5133","type":"electronic"}]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":25634,"items":[{"indexed":{"date-parts":[[2018,1,30]],"date-time":"2018-01-30T17:41:20Z","timestamp":1517334080346},"reference-count":0,"publisher":"Universidad
+        Internacional de la Rioja","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.22550\/rep","type":"journal","created":{"date-parts":[[2018,1,30]],"date-time":"2018-01-30T17:25:34Z","timestamp":1517333134000},"source":"Crossref","is-referenced-by-count":0,"title":["Revista
+        Espa\u00f1ola de Pedagog\u00eda"],"prefix":"10.22550","member":"9839","deposited":{"date-parts":[[2018,1,30]],"date-time":"2018-01-30T17:25:34Z","timestamp":1517333134000},"score":1.0,"short-title":["REP"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.22550\/rep","ISSN":["0034-9461","2174-0909"],"issn-type":[{"value":"0034-9461","type":"print"},{"value":"2174-0909","type":"electronic"}],"subject":["Education"]},{"indexed":{"date-parts":[[2018,1,30]],"date-time":"2018-01-30T16:40:37Z","timestamp":1517330437237},"reference-count":0,"publisher":"Marshall
+        University Libraries","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.18590\/issn.2379-9536","type":"journal","created":{"date-parts":[[2015,10,8]],"date-time":"2015-10-08T18:45:25Z","timestamp":1444329925000},"source":"Crossref","is-referenced-by-count":0,"title":["Marshall
+        Journal of Medicine"],"prefix":"10.18590","member":"7915","deposited":{"date-parts":[[2018,1,30]],"date-time":"2018-01-30T16:05:45Z","timestamp":1517328345000},"score":1.0,"short-title":["MJM"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.18590\/issn.2379-9536","ISSN":["2379-9536"],"issn-type":[{"value":"2379-9536","type":"electronic"}]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
-      access-control-allow-headers: [X-Requested-With]
-      access-control-allow-origin: ['*']
-      connection: [close]
-      content-length: ['1974']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Sun, 15 Oct 2017 20:21:54 GMT']
-      server: [http-kit]
-      vary: [Accept]
-      x-rate-limit-interval: [1s]
-      x-rate-limit-limit: ['50']
+      Access-Control-Allow-Headers: [X-Requested-With]
+      Access-Control-Allow-Origin: ['*']
+      Connection: [close]
+      Content-Length: ['1903']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Mon, 02 Apr 2018 16:23:10 GMT']
+      Server: [http-kit]
+      Vary: [Accept]
+      X-Rate-Limit-Interval: [1s]
+      X-Rate-Limit-Limit: ['50']
     status: {code: 200, message: OK}
 version: 1
