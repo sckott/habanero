@@ -51,4 +51,6 @@ def make_request(url, ids, format, style, locale, **kwargs):
   # Raise an HTTPError if the status code of the response is 4XX or 5XX
   response.raise_for_status()
 
+  # set encoding
+  response.encoding = "UTF-8"
   return response.text

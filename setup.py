@@ -31,7 +31,7 @@ setup(
   packages         = find_packages(exclude=['test-*']),
   install_requires = ['requests>=2.7.0'],
   classifiers      = (
-    'Development Status :: 4 - Beta',
+    'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Science/Research',
     'Intended Audience :: Developers',
     'Topic :: Scientific/Engineering :: Bio-Informatics',
