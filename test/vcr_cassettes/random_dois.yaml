@@ -5,170 +5,533 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works?sample=10
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95875008,"items":[{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T02:57:31Z","timestamp":1509073051075},"reference-count":0,"publisher":"Public
-        Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0109672.g001","type":"component","created":{"date-parts":[[2014,10,23]],"date-time":"2014-10-23T21:12:01Z","timestamp":1414098721000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2017,3,8]],"date-time":"2017-03-08T18:29:08Z","timestamp":1488997748000},"score":1.0,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0109672.g001"},{"indexed":{"date-parts":[[2017,10,27]],"date-time":"2017-10-27T02:24:39Z","timestamp":1509071079747},"reference-count":4,"publisher":"The
-        Institute of Webcasting, Internet and Telecommunication","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-        Journal of the Institute of Webcasting, Internet and Telecommunication"],"published-print":{"date-parts":[[2012,6,30]]},"DOI":"10.7236\/jiwit.2012.12.3.15","type":"journal-article","created":{"date-parts":[[2012,8,20]],"date-time":"2012-08-20T08:36:29Z","timestamp":1345451789000},"page":"15-22","source":"Crossref","is-referenced-by-count":0,"title":["Volume
-        Calculation for Filling Up of Rubbish Using Stereo Camera and Uniform Mesh"],"prefix":"10.7236","volume":"12","author":[{"given":"Young-Dae","family":"Lee","affiliation":[]},{"given":"Sung-Youn","family":"Cho","affiliation":[]},{"given":"Kyung","family":"Kim","affiliation":[]},{"given":"Dong-Gyu","family":"Lee","affiliation":[]}],"member":"4240","container-title":["The
-        Journal of the Institute of Webcasting, Internet and Telecommunication"],"original-title":["\uc2a4\ud14c\ub808\uc624
-        \uce74\uba54\ub77c\uc640 \uade0\uc77c \ub9e4\uc2dc\ub97c \uc774\uc6a9\ud55c
-        \ub9e4\ub9bd\uc9c0\uc758 \ud658\uacbd\uac10\uc2dc\ub97c \uc704\ud55c \uccb4\uc801
-        \uacc4\uc0b0 \uc54c\uace0\ub9ac\uc998"],"link":[{"URL":"http:\/\/ocean.kisti.re.kr\/downfile\/crosscheck\/iwitt\/JAKO201222350108917.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,15]],"date-time":"2016-12-15T03:29:46Z","timestamp":1481772586000},"score":1.0,"issued":{"date-parts":[[2012,6,30]]},"references-count":4,"URL":"http:\/\/dx.doi.org\/10.7236\/jiwit.2012.12.3.15","ISSN":["1738-4281"],"issn-type":[{"value":"1738-4281","type":"print"}]},{"indexed":{"date-parts":[[2018,3,18]],"date-time":"2018-03-18T20:40:45Z","timestamp":1521405645637},"reference-count":23,"publisher":"Elsevier
-        BV","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2018,3,1]],"date-time":"2018-03-01T00:00:00Z","timestamp":1519862400000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/https:\/\/doi.org\/10.13039\/501100003708","name":"Korea
-        Institute of Science and Technology Information","doi-asserted-by":"publisher","award":[]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["International
-        Communications in Heat and Mass Transfer"],"published-print":{"date-parts":[[2018,3]]},"DOI":"10.1016\/j.icheatmasstransfer.2018.02.010","type":"journal-article","created":{"date-parts":[[2018,2,22]],"date-time":"2018-02-22T11:22:28Z","timestamp":1519298548000},"page":"31-38","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["On
-        the three-dimensional effect for natural convection in horizontal enclosure
-        with an adiabatic body: Review from the 2D results and visualization of 3D
-        flow structure"],"prefix":"10.1016","volume":"92","author":[{"given":"Jae
-        Ryong","family":"Lee","affiliation":[]}],"member":"78","container-title":["International
-        Communications in Heat and Mass Transfer"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0735193318300186?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0735193318300186?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,3,18]],"date-time":"2018-03-18T20:01:39Z","timestamp":1521403299000},"score":1.0,"issued":{"date-parts":[[2018,3]]},"references-count":23,"alternative-id":["S0735193318300186"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.icheatmasstransfer.2018.02.010","ISSN":["0735-1933"],"issn-type":[{"value":"0735-1933","type":"print"}],"subject":["Atomic
-        and Molecular Physics, and Optics","General Chemical Engineering","Condensed
-        Matter Physics"],"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-        article is maintained by"},{"value":"On the three-dimensional effect for natural
-        convection in horizontal enclosure with an adiabatic body: Review from the
-        2D results and visualization of 3D flow structure","name":"articletitle","label":"Article
-        Title"},{"value":"International Communications in Heat and Mass Transfer","name":"journaltitle","label":"Journal
-        Title"},{"value":"http:\/\/dx.doi.org\/10.1016\/j.icheatmasstransfer.2018.02.010","name":"articlelink","label":"CrossRef
-        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-        Type"},{"value":"\u00a9 2018 Elsevier Ltd. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T22:06:38Z","timestamp":1508969198147},"publisher-location":"Wiesbaden","reference-count":11,"publisher":"Vieweg+Teubner
-        Verlag","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2010,1,1]],"date-time":"2010-01-01T00:00:00Z","timestamp":1262304000000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2010]]},"DOI":"10.1007\/978-3-8348-9336-9_15","type":"book-chapter","created":{"date-parts":[[2010,2,16]],"date-time":"2010-02-16T15:21:44Z","timestamp":1266333704000},"page":"214-235","source":"Crossref","is-referenced-by-count":0,"title":["Kippschaltungen"],"prefix":"10.1007","author":[{"given":"Erwin","family":"B\u00f6hmer","affiliation":[]},{"given":"Dietmar","family":"Ehrhardt","affiliation":[]},{"given":"Wolfgang","family":"Oberschelp","affiliation":[]}],"member":"297","reference":[{"key":"15_CR1","author":"Bienert
-        H.","year":"1980","edition":"5","unstructured":"Bienert, H.: Einf\u00fchrung
-        in den Entwurf und die Berechnung von Kippschaltungen, 5. Auflage, H\u00fcthig-Verlag,
-        Heidelberg 1980.","volume-title":"Einf\u00fchrung in den Entwurf und die Berechnung
-        von Kippschaltungen"},{"key":"15_CR2","author":"G. Schaller","year":"1987","edition":"3","unstructured":"Schaller,
-        G. und N\u00fcchel, W.: Digitale Schaltkreise, 3. Auflage, B. G. Teubner,
-        Stuttgart 1987.","volume-title":"Digitale Schaltkreise"},{"key":"15_CR3","author":"U.
-        Tietze","year":"2002","edition":"12","unstructured":"Tietze, U. und Schenk,
-        Ch.: Halbleiter-Schaltungstechnik, 12. Auflage, Springer-Verlag, Berlin 2002.","volume-title":"Halbleiter-Schaltungstechnik"},{"key":"15_CR4","author":"W.
-        Hilberg","year":"1992","unstructured":"Hilberg, W.: Grundlagen elektronischer
-        Schaltungen, Oldenbourg-Verlag, M\u00fcnchen 1992.","volume-title":"Grundlagen
-        elektronischer Schaltungen"},{"key":"15_CR5","author":"M. Zirpel","year":"1986","edition":"4","unstructured":"Zirpel,
-        M.: Operationsverst\u00e4rker, 4. Auflage, Franzis-Verlag, M\u00fcnchen 1986.","volume-title":"Operationsverst\u00e4rker"},{"key":"15_CR6","author":"D.
-        Ehrhardt","year":"1992","unstructured":"Ehrhardt, D.: Verst\u00e4rkertechnik,
-        Vieweg-Verlag, Braunschweig\/Wiesbaaden 1992.","volume-title":"Verst\u00e4rkertechnik","DOI":"10.1007\/978-3-322-83026-5","doi-asserted-by":"publisher"},{"key":"15_CR7","author":"S.
-        Franco","year":"1988","unstructured":"Franco, S.: Design with Operational
-        Amplifiers and Analog Integrated Circuits, Mc Graw-Hill, Inc., New York 1988.","volume-title":"Design
-        with Operational Amplifiers and Analog Integrated Circuits"},{"key":"15_CR8","unstructured":"Jung,
-        W. G.: IC Timer Cookbook, Howard W. Sams & Co., Inc., Indianapolis 1981."},{"key":"15_CR9","unstructured":"Philips:
-        Integrierte Zeitgeberschaltungen der 555er Familie, Technische Informationen
-        f\u00fcr die Industrie, Nr. 770527, Hamburg 1977"},{"key":"15_CR10","unstructured":"Siemens:
-        Integrierte Schaltungen f\u00fcr Industrielle Anwendungen (Datenbuch)."},{"key":"15_CR11","author":"R.
-        Paul","year":"1992","edition":"3","unstructured":"Paul, R.: Elektronische
-        Halbleiterbauelemente, 3. Auflage, Teubner, Stuttgart 1992.","volume-title":"Elektronische
-        Halbleiterbauelemente","DOI":"10.1007\/978-3-322-89215-7","doi-asserted-by":"publisher"}],"container-title":["Elemente
-        der angewandten Elektronik"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-8348-9336-9_15","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,12]],"date-time":"2016-08-12T08:33:19Z","timestamp":1470990799000},"score":1.0,"issued":{"date-parts":[[2010]]},"ISBN":["9783834805430","9783834893369"],"references-count":11,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-8348-9336-9_15","relation":{"cites":[]}},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T20:12:49Z","timestamp":1509048769672},"reference-count":3,"publisher":"Mary
-        Ann Liebert Inc","issue":"12","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-        of Endourology"],"published-print":{"date-parts":[[2009,12]]},"DOI":"10.1089\/end.2009.0145","type":"journal-article","created":{"date-parts":[[2009,11,16]],"date-time":"2009-11-16T15:31:39Z","timestamp":1258385499000},"page":"1937-1939","source":"Crossref","is-referenced-by-count":1,"title":["Three-Dimensional
-        Synchronized Multidirectional Renal Pyelo-Angiography: A New Imaging Concept
-        to Facilitate Percutaneous Nephrolithotomy in Technically Challenging Cases"],"prefix":"10.1089","volume":"23","author":[{"given":"Diwakar","family":"Dalela","affiliation":[]},{"given":"Ankush","family":"Gupta","affiliation":[]},{"given":"Suhail","family":"Ahmed","affiliation":[]},{"given":"Apul","family":"Goel","affiliation":[]}],"member":"278","container-title":["Journal
-        of Endourology"],"deposited":{"date-parts":[[2011,3,9]],"date-time":"2011-03-09T23:20:28Z","timestamp":1299712828000},"score":1.0,"issued":{"date-parts":[[2009,12]]},"references-count":3,"alternative-id":["10.1089\/end.2009.0145"],"URL":"http:\/\/dx.doi.org\/10.1089\/end.2009.0145","ISSN":["0892-7790","1557-900X"],"issn-type":[{"value":"0892-7790","type":"print"},{"value":"1557-900X","type":"electronic"}],"subject":["Urology"]},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T21:54:11Z","timestamp":1509054851406},"reference-count":0,"publisher":"The
-        Japanese Society of Fish Pathology","issue":"2\/3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Fish
-        Pathol."],"published-print":{"date-parts":[[1985]]},"DOI":"10.3147\/jsfp.20.209","type":"journal-article","created":{"date-parts":[[2011,6,9]],"date-time":"2011-06-09T13:06:36Z","timestamp":1307624796000},"page":"209-217","source":"Crossref","is-referenced-by-count":26,"title":["Epidemiological
-        surveillance of drug-resistant strains of Pasteurella piscicida."],"prefix":"10.3147","volume":"20","author":[{"given":"Noriyuki","family":"TAKASHIMA","affiliation":[]},{"given":"Takashi","family":"AOKI","affiliation":[]},{"given":"Tadatoshi","family":"KITAO","affiliation":[]}],"member":"1713","container-title":["Fish
-        Pathology"],"deposited":{"date-parts":[[2011,8,3]],"date-time":"2011-08-03T03:15:50Z","timestamp":1312341350000},"score":1.0,"issued":{"date-parts":[[1985]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3147\/jsfp.20.209","ISSN":["0388-788X","1881-7335"],"issn-type":[{"value":"0388-788X","type":"print"},{"value":"1881-7335","type":"electronic"}],"subject":["Animal
-        Science and Zoology","Aquatic Science"]},{"indexed":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T08:10:21Z","timestamp":1510560621596},"reference-count":0,"publisher":"ICCE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2017]]},"DOI":"10.22631\/icceconf.2017.16416.1477","type":"proceedings-article","created":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T07:55:04Z","timestamp":1510559704000},"source":"Crossref","is-referenced-by-count":0,"title":["\u0627\u0648\u0644\u06cc\u0646
-        \u06a9\u0646\u0641\u0631\u0627\u0646\u0633 \u0628\u06cc\u0646 \u0627\u0644\u0645\u0644\u0644\u06cc
-        \u067e\u06cc\u0634\u0631\u0641\u062a \u0647\u0627\u06cc \u0646\u0648\u06cc\u0646
-        \u062f\u0631 \u0645\u0647\u0646\u062f\u0633\u06cc \u0639\u0645\u0631\u0627\u0646"],"prefix":"10.22631","author":[{"given":"\u0632\u0647\u0631\u0627","family":"\u0646\u06cc\u0627\u0632\u06cc","affiliation":[]},{"given":"\u0633\u06cc\u062f
-        \u0645\u062d\u0645\u062f","family":"\u0633\u06cc\u062f\u067e\u0648\u0631","affiliation":[]},{"given":"\u0641\u0627\u0637\u0645\u0647","family":"\u0632\u0627\u0647\u062f\u06cc
-        \u062a\u062c\u0631\u06cc\u0634\u06cc","affiliation":[]}],"member":"9921","event":{"name":"\u0627\u0648\u0644\u06cc\u0646
-        \u06a9\u0646\u0641\u0631\u0627\u0646\u0633 \u0628\u06cc\u0646 \u0627\u0644\u0645\u0644\u0644\u06cc
-        \u067e\u06cc\u0634\u0631\u0641\u062a \u0647\u0627\u06cc \u0646\u0648\u06cc\u0646
-        \u062f\u0631 \u0645\u0647\u0646\u062f\u0633\u06cc \u0639\u0645\u0631\u0627\u0646","start":{"date-parts":[[1997,1,15]]},"end":{"date-parts":[[1997,1,17]]}},"container-title":["Proceedings
-        of the \u0627\u0648\u0644\u06cc\u0646 \u06a9\u0646\u0641\u0631\u0627\u0646\u0633
-        \u0628\u06cc\u0646 \u0627\u0644\u0645\u0644\u0644\u06cc \u067e\u06cc\u0634\u0631\u0641\u062a
-        \u0647\u0627\u06cc \u0646\u0648\u06cc\u0646 \u062f\u0631 \u0645\u0647\u0646\u062f\u0633\u06cc
-        \u0639\u0645\u0631\u0627\u0646"],"deposited":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T07:55:47Z","timestamp":1510559747000},"score":1.0,"issued":{"date-parts":[[2017]]},"ISBN":["9789640370506"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.22631\/icceconf.2017.16416.1477"},{"indexed":{"date-parts":[[2017,10,26]],"date-time":"2017-10-26T11:26:46Z","timestamp":1509017206523},"reference-count":10,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2009,4]]},"DOI":"10.1109\/nswctc.2009.143","type":"proceedings-article","created":{"date-parts":[[2009,5,4]],"date-time":"2009-05-04T19:55:02Z","timestamp":1241466902000},"source":"Crossref","is-referenced-by-count":0,"title":["Detection
-        of Programs Behaviors on Context Dependency"],"prefix":"10.1109","author":[{"given":"Pang","family":"Jianjing","affiliation":[]},{"given":"Peng","family":"Xinguang","affiliation":[]}],"member":"263","event":{"name":"2009
-        International Conference on Networks Security, Wireless Communications and
-        Trusted Computing (NSWCTC)","location":"Wuhan, China","start":{"date-parts":[[2009,4,25]]},"end":{"date-parts":[[2009,4,26]]}},"container-title":["2009
-        International Conference on Networks Security, Wireless Communications and
-        Trusted Computing"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/4908190\/4908381\/04908485.pdf?arnumber=4908485","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,18]],"date-time":"2017-06-18T19:23:21Z","timestamp":1497813801000},"score":1.0,"issued":{"date-parts":[[2009,4]]},"ISBN":["9780769536101","9781424442232"],"references-count":10,"URL":"http:\/\/dx.doi.org\/10.1109\/nswctc.2009.143"},{"indexed":{"date-parts":[[2018,3,13]],"date-time":"2018-03-13T20:46:52Z","timestamp":1520974012175},"reference-count":35,"publisher":"Royal
-        Society of Chemistry (RSC)","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Phys.
-        Chem. Chem. Phys."],"DOI":"10.1039\/c2cp23142e","type":"journal-article","created":{"date-parts":[[2011,12,23]],"date-time":"2011-12-23T12:05:47Z","timestamp":1324641947000},"page":"1756-1767","source":"Crossref","is-referenced-by-count":5,"title":["Generalized
-        nonlocal kinetic energy density functionals based on the von Weizs\u00e4cker
-        functional"],"prefix":"10.1039","volume":"14","author":[{"given":"David","family":"Garc\u00eda-Aldea","affiliation":[]},{"given":"Jos\u00e9
-        E.","family":"Alvarellos","affiliation":[]}],"member":"292","published-online":{"date-parts":[[2012]]},"reference":[{"key":"C2CP23142E-(cit1)\/*[position()=1]","author":"Kohn","volume":"140","first-page":"1133","year":"1965","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRev.140.A1133","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit2)\/*[position()=1]","author":"Hohenberg","volume":"136","first-page":"864","year":"1964","journal-title":"Phys.
-        Rev. B: Solid State","DOI":"10.1103\/PhysRev.136.B864","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit3)\/*[position()=1]","author":"Thomas","volume":"23","first-page":"542","year":"1927","journal-title":"Proc.
-        Cambridge Philos. Soc.","DOI":"10.1017\/S0305004100011683","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit4)\/*[position()=1]","author":"Fermi","volume":"6","first-page":"602","year":"1927","journal-title":"Rend.
-        Accad. Lincei"},{"key":"C2CP23142E-(cit5)\/*[position()=1]","author":"Weizsacker","volume":"96","first-page":"431","year":"1935","journal-title":"Z.
-        Phys.","DOI":"10.1007\/BF01337700","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit6)\/*[position()=1]","author":"Kirzhnits","volume":"5","first-page":"64","year":"1957","journal-title":"Sov.
-        Phys. JETP (Engl. Transl.)"},{"key":"C2CP23142E-(cit7)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"127","first-page":"144109","year":"2007","journal-title":"J.
-        Chem. Phys.","DOI":"10.1063\/1.2774974","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit8)\/*[position()=1]","author":"Wang","year":"2000","unstructured":"Y.
-        A. Wang and E. A.Carter, Orbital-Free Kinetic Energy Density Functional Theory,
-        in Theoretical Methods in Condensed Phase Chemistry, ed. S. D. Schwartz, Kluwer,
-        within the series Progress in Theoretical Chemistry and Physics, 2000, pp.
-        117\u2013184","volume-title":"Orbital-Free Kinetic Energy Density Functional
-        Theory : Theoretical Methods in Condensed Phase Chemistry"},{"key":"C2CP23142E-(cit9)\/*[position()=1]","author":"Garc\u00eda-Aldea","year":"2011","unstructured":"D.
-        Garc\u00eda-Aldea and J. E.Alvarellos, The construction of Kinetic Energy
-        Functionals and the Linear Response Function, in Theoretical and Computational
-        Developments in Modern Density Functional Theory, ed. A. K. Roy, Nova Science
-        Publishers, Inc., NY, USA, 2011, in press","volume-title":"The construction
-        of Kinetic Energy Functionals and the Linear Response Function : Theoretical
-        and Computational Developments in Modern Density Functional Theory"},{"key":"C2CP23142E-(cit10)\/*[position()=1]","author":"Chac\u00f3n","volume":"32","first-page":"7868","year":"1985","journal-title":"Phys.
-        Rev. B: Condens. Matter","DOI":"10.1103\/PhysRevB.32.7868","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit11)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"76","first-page":"052504","year":"2007","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.76.052504","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit12)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"77","first-page":"022502","year":"2008","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.77.022502","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit13)\/*[position()=1]","author":"Garc\u00eda-Aldea","volume":"129","first-page":"074103","year":"2008","journal-title":"J.
-        Chem. Phys.","DOI":"10.1063\/1.2968612","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit14)\/*[position()=1]","author":"Bader","year":"1990","unstructured":"R.
-        F. W. Bader , Atoms in Molecules. A Quantum Theory, Oxford University Press,
-        Oxford, 1990","volume-title":"Atoms in Molecules. A Quantum Theory"},{"key":"C2CP23142E-(cit15)\/*[position()=1]","author":"Bader","year":"2005","unstructured":"R.
-        F. W. Bader , Topology of the Positive Definite Kinetic Energy Density and
-        its Physical Consequences, in Advances in Computational Methods in Science
-        and Engineering 2005, ed. T. Simos and G. Maroulis, Koninklijke Brill NV,
-        Leiden, The Netherlands, 2005, pp. 1230\u20131233","volume-title":"Topology
-        of the Positive Definite Kinetic Energy Density and its Physical Consequences
-        : Advances in Computational Methods in Science and Engineering 2005"},{"key":"C2CP23142E-(cit16)\/*[position()=1]","author":"Anderson","volume":"114","first-page":"8884","year":"2010","journal-title":"J.
-        Phys. Chem. A","DOI":"10.1021\/jp1029745","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit17)\/*[position()=1]","author":"Yang","volume":"258","first-page":"30","year":"1996","journal-title":"Chem.
-        Phys. Lett.","DOI":"10.1016\/0009-2614(96)00624-0","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit18)\/*[position()=1]","author":"Ghosh","volume":"111","first-page":"79","year":"1984","journal-title":"Proc.
-        Natl. Acad. Sci. U. S. A."},{"key":"C2CP23142E-(cit19)\/*[position()=1]","author":"Lombard","volume":"17","first-page":"455","year":"1991","journal-title":"J.
-        Phys. G: Nucl. Part. Phys.","DOI":"10.1088\/0954-3899\/17\/4\/007","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit20)\/*[position()=1]","author":"Garc\u00eda-Aldea","unstructured":"D.
-        Garc\u00eda-Aldea , to be published"},{"key":"C2CP23142E-(cit21)\/*[position()=1]","author":"Liu","volume":"126","first-page":"191107","year":"2007","journal-title":"J.
-        Chem. Phys.","DOI":"10.1063\/1.2741244","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit22)\/*[position()=1]","author":"Nagy","volume":"372","first-page":"1654","year":"2008","journal-title":"Phys.
-        Lett. A","DOI":"10.1016\/j.physleta.2007.10.055","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit23)\/*[position()=1]","author":"Liu","volume":"126","first-page":"244103","year":"2007","journal-title":"J.
-        Chem. Phys.","DOI":"10.1063\/1.2747247","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit24)\/*[position()=1]","author":"Ayers","volume":"90","first-page":"309","year":"2001","journal-title":"Int.
-        J. Quantum Chem.","DOI":"10.1002\/qua.989","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit25)\/*[position()=1]","author":"Garc\u00eda-Gonz\u00e1lez","volume":"54","first-page":"1897","year":"1996","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.54.1897","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit26)\/*[position()=1]","author":"Atkins","year":"1997","unstructured":"P.
-        W. Atkins , Molecular Quantum Mechanics, Oxford University Press, Oxford,
-        3rd edn, 1997","volume-title":"Molecular Quantum Mechanics"},{"key":"C2CP23142E-(cit27)\/*[position()=1]","author":"Clementi","volume":"38","first-page":"2686","year":"1963","journal-title":"J.
-        Chem. Phys.","DOI":"10.1063\/1.1733573","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit28)\/*[position()=1]","author":"Frisch","year":"1998","unstructured":"M.
-        J. Frisch , G. W.Trucks, H. B.Schlegel, G. E.Scuseria, M. A.Robb, J. R.Cheeseman,
-        V. G.Zakrzewski, J. A.Montgomery, Jr., R. E.Stratmann, J. C.Burant, S.Dapprich,
-        J. M.Millam, A. D.Daniels, K. N.Kudin, M. C.Strain, O.Farkas, J.Tomasi, V.Barone,
-        M.Cossi, R.Cammi, B.Mennucci, C.Pomelli, C.Adamo, S.Clifford, J.Ochterski,
-        G. A.Petersson, P. Y.Ayala, Q.Cui, K.Morokuma, D. K.Malick, A. D.Rabuck, K.Raghavachari,
-        J. B.Foresman, J.Cioslowski, J. V.Ortiz, B. B.Stefanov, G.Liu, A.Liashenko,
-        P.Piskorz, I.Komaromi, R.Gomperts, R. L.Martin, D. J.Fox, T.Keith, M. A.Al-Laham,
-        C. Y.Peng, A.Nanayakkara, C.Gonzalez, M.Challacombe, P. M. W.Gill, B.Johnson,
-        W.Chen, M. W.Wong, J. L.Andres, C.Gonzalez, M.Head-Gordon, E. S.Replogle and
-        J. A.Pople, GAUSSIAN 98 (Revision A.6), Gaussian, Inc., Pittsburgh, PA, 1998","volume-title":"GAUSSIAN
-        98 (Revision A.6)"},{"key":"C2CP23142E-(cit29)\/*[position()=1]","author":"Mart\u00edn-Blas","volume":"131","first-page":"164117","year":"2009","journal-title":"J.
-        Chem. Phys.","DOI":"10.1063\/1.3246863","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit30)\/*[position()=1]","author":"Haq","volume":"111","first-page":"79","year":"1984","journal-title":"Chem.
-        Phys. Lett.","DOI":"10.1016\/0009-2614(84)80440-6","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit31)\/*[position()=1]","author":"Deb","volume":"37","first-page":"4030","year":"1988","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.37.4030","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit32)\/*[position()=1]","author":"Chattaraj","volume":"41","first-page":"6505","year":"1990","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.41.6505","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit33)\/*[position()=1]","author":"Deb","volume":"45","first-page":"1412","year":"1992","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.45.1412","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit34)\/*[position()=1]","author":"Navarrete-L\u00f3pez","volume":"128","first-page":"104110","year":"2008","journal-title":"J.
-        Chem. Phys.","DOI":"10.1063\/1.2837666","doi-asserted-by":"crossref"},{"key":"C2CP23142E-(cit35)\/*[position()=1]","author":"Liu","volume":"70","first-page":"022501","year":"2004","journal-title":"Phys.
-        Rev. A: At., Mol., Opt. Phys.","DOI":"10.1103\/PhysRevA.70.022501","doi-asserted-by":"crossref"}],"container-title":["Phys.
-        Chem. Chem. Phys."],"link":[{"URL":"http:\/\/pubs.rsc.org\/en\/content\/articlepdf\/2012\/CP\/C2CP23142E","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T11:46:33Z","timestamp":1497959193000},"score":1.0,"issued":{"date-parts":[[2012]]},"references-count":35,"URL":"http:\/\/dx.doi.org\/10.1039\/c2cp23142e","relation":{"cites":[]},"ISSN":["1463-9076","1463-9084"],"issn-type":[{"value":"1463-9076","type":"print"},{"value":"1463-9084","type":"electronic"}],"subject":["Physical
-        and Theoretical Chemistry","General Physics and Astronomy"]},{"indexed":{"date-parts":[[2017,11,15]],"date-time":"2017-11-15T19:53:42Z","timestamp":1510775622294},"reference-count":0,"publisher":"Wiley-Blackwell","issue":"1","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":10105,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Biology
-        of the Cell"],"published-print":{"date-parts":[[1988]]},"DOI":"10.1016\/0248-4900(88)90114-1","type":"journal-article","created":{"date-parts":[[2003,2,13]],"date-time":"2003-02-13T19:02:59Z","timestamp":1045162979000},"page":"105-108","source":"Crossref","is-referenced-by-count":0,"title":["Skin
-        cultured with or without an NaCl gradient and aldosterone influence epidermal
-        fibronectin localizations"],"prefix":"10.1111","volume":"63","author":[{"given":"J","family":"Denefle","affiliation":[]}],"member":"311","container-title":["Biology
-        of the Cell"],"link":[{"URL":"http:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1016%2F0248-4900(88)90114-1","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2016,2,27]],"date-time":"2016-02-27T03:43:13Z","timestamp":1456544593000},"score":1.0,"issued":{"date-parts":[[1988]]},"references-count":0,"alternative-id":["0248-4900(88)90114-1"],"URL":"http:\/\/dx.doi.org\/10.1016\/0248-4900(88)90114-1","ISSN":["0248-4900"],"issn-type":[{"value":"0248-4900","type":"print"}],"subject":["Cell
-        Biology","General Medicine"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":96961333,"items":[{"indexed":{"date-parts":[[2018,4,18]],"date-time":"2018-04-18T02:12:55Z","timestamp":1524017575497},"reference-count":0,"publisher":"American
+        Chemical Society (ACS)","issue":"37","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["C&EN
+        Global Enterp"],"published-print":{"date-parts":[[2016,9,19]]},"DOI":"10.1021\/cen-09437-govcon003","type":"journal-article","created":{"date-parts":[[2017,1,11]],"date-time":"2017-01-11T14:33:04Z","timestamp":1484145184000},"page":"15-15","source":"Crossref","is-referenced-by-count":0,"title":["U.S.
+        destroys ISIS production plant"],"prefix":"10.1021","volume":"94","member":"316","published-online":{"date-parts":[[2016,9,19]]},"container-title":["C&EN
+        Global Enterprise"],"language":"en","link":[{"URL":"http:\/\/pubs.acs.org\/doi\/pdf\/10.1021\/cen-09437-govcon003","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,2,12]],"date-time":"2018-02-12T19:04:28Z","timestamp":1518462268000},"score":1.0,"issued":{"date-parts":[[2016,9,19]]},"references-count":0,"journal-issue":{"published-online":{"date-parts":[[2016,9,19]]},"published-print":{"date-parts":[[2016,9,19]]},"issue":"37"},"alternative-id":["10.1021\/cen-09437-govcon003"],"URL":"http:\/\/dx.doi.org\/10.1021\/cen-09437-govcon003","ISSN":["2474-7408"],"issn-type":[{"value":"2474-7408","type":"print"}]},{"indexed":{"date-parts":[[2018,5,4]],"date-time":"2018-05-04T07:54:51Z","timestamp":1525420491138},"publisher-location":"Hoboken,
+        NJ, USA","reference-count":0,"publisher":"John Wiley & Sons, Inc.","isbn-type":[{"value":"9780470374696","type":"print"},{"value":"9780470320365","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1002\/9780470320365.ch27","type":"book-chapter","created":{"date-parts":[[2008,3,26]],"date-time":"2008-03-26T15:51:05Z","timestamp":1206546665000},"page":"1364-1365","source":"Crossref","is-referenced-by-count":0,"title":["Beam
+        Liquor Decanters, A Decorating Challenge"],"prefix":"10.1002","author":[{"given":"Eric","family":"Whitten","sequence":"first","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2008,3,26]]},"container-title":["Materials
+        & Equipment\/Whitewares: Ceramic Engineering and Science Proceedings, Volume
+        7, Issue 11\/12","Ceramic Engineering and Science Proceedings"],"deposited":{"date-parts":[[2010,5,10]],"date-time":"2010-05-10T23:44:43Z","timestamp":1273535083000},"score":1.0,"issued":{"date-parts":[[2008,3,26]]},"ISBN":["9780470320365","9780470374696"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1002\/9780470320365.ch27","ISSN":["1940-6339"],"issn-type":[{"value":"1940-6339","type":"electronic"}]},{"indexed":{"date-parts":[[2018,5,4]],"date-time":"2018-05-04T09:17:19Z","timestamp":1525425439129},"reference-count":35,"publisher":"American
+        Geophysical Union (AGU)","issue":"3","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":8766,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Global
+        Biogeochem. Cycles"],"published-print":{"date-parts":[[1991,9]]},"DOI":"10.1029\/91gb01303","type":"journal-article","created":{"date-parts":[[2008,4,28]],"date-time":"2008-04-28T22:22:13Z","timestamp":1209421333000},"page":"261-273","source":"Crossref","is-referenced-by-count":85,"title":["Methane
+        consumption and emission by Taiga"],"prefix":"10.1029","volume":"5","author":[{"given":"S.
+        C.","family":"Whalen","sequence":"first","affiliation":[]},{"given":"W. S.","family":"Reeburgh","sequence":"additional","affiliation":[]},{"given":"K.
+        S.","family":"Kizer","sequence":"additional","affiliation":[]}],"member":"13","published-online":{"date-parts":[[2012,9,21]]},"reference":[{"key":"10.1029\/91GB01303-BIB0001|gbc138-cit-0001","doi-asserted-by":"crossref","first-page":"711","DOI":"10.1038\/348711a0","article-title":"Increases
+        in terrestrial carbon storage from the last glacial maximum to the present","volume":"348","author":"Adams","year":"1990","journal-title":"Nature"},{"key":"10.1029\/91GB01303-BIB0002|gbc138-cit-0002","first-page":"68","article-title":"Physiology,
+        biochemistry and specific inhibitors of CH4, NH4+ and CO oxidation by methylotrophs
+        and nitrifiers","volume":"53","author":"Bedard","year":"1989","journal-title":"Microbiol.
+        Rev."},{"key":"10.1029\/91GB01303-BIB0003|gbc138-cit-0003","doi-asserted-by":"crossref","first-page":"165","DOI":"10.1016\/0277-3791(87)90032-1","article-title":"Carbon
+        balance of Alaskan tundra and taiga ecosystems: past, present and future","volume":"6","author":"Billings","year":"1987","journal-title":"Quat.
+        Sci. Rev."},{"key":"10.1029\/91GB01303-BIB0004|gbc138-cit-0004","year":"1965","volume-title":"Methods
+        of Soil Analysis, parts 1 and 2"},{"key":"10.1029\/91GB01303-BIB0005|gbc138-cit-0005","doi-asserted-by":"crossref","first-page":"1129","DOI":"10.1126\/science.239.4844.1129","article-title":"Continuing
+        worldwide increase in tropospheric methane, 1978-1987","volume":"239","author":"Blake","year":"1989","journal-title":"Science"},{"key":"10.1029\/91GB01303-BIB0006|gbc138-cit-0006","doi-asserted-by":"crossref","first-page":"2","DOI":"10.1034\/j.1600-0889.1990.00002.x","article-title":"Methane
+        consumption in aerated soils of the temperate zone","volume":"42","author":"Born","year":"1990","journal-title":"Tellus,
+        Ser. B"},{"key":"10.1029\/91GB01303-BIB0007|gbc138-cit-0007","doi-asserted-by":"crossref","first-page":"299","DOI":"10.1029\/GB002i004p00299","article-title":"Biogeochemical
+        aspects of atmospheric methane","volume":"2","author":"Cicerone","year":"1988","journal-title":"Global
+        Biogeochem. Cycles"},{"key":"10.1029\/91GB01303-BIB0008|gbc138-cit-0008","author":"Conover","year":"1980","volume-title":"Practical
+        Nonparametric Statistics"},{"key":"10.1029\/91GB01303-BIB0009|gbc138-cit-0009","doi-asserted-by":"crossref","first-page":"371","DOI":"10.1029\/GB002i004p00371","article-title":"Methane
+        flux from Minnesota peatlands","volume":"2","author":"Crill","year":"1988","journal-title":"Global
+        Biogeochem. Cycles"},{"key":"10.1029\/91GB01303-BIB0010|gbc138-cit-0010","first-page":"275","article-title":"Tropical
+        deforestation: Some effects on atmospheric che Cmistry","volume":"17","author":"Goreau","year":"1988","journal-title":"Ambio"},{"key":"10.1029\/91GB01303-BIB0011|gbc138-cit-0011","doi-asserted-by":"crossref","first-page":"1766","DOI":"10.1021\/es00082a001","article-title":"Less
+        than obvious: Statistical treatment of data below the detection limit","volume":"24","author":"Helsel","year":"1990","journal-title":"Environ.
+        Sci. Technol."},{"key":"10.1029\/91GB01303-BIB0012|gbc138-cit-0012","unstructured":"Early
+        results of the Rosie Creek Fire Research Project 1984, Misc. Publ 85-2 G.
+        P. Juday C. T. Dymess Sch. of Agric. and Land Resour. Manage., Univ. of Alaska
+        Fairbanks 1985"},{"key":"10.1029\/91GB01303-BIB0013|gbc138-cit-0013","doi-asserted-by":"crossref","first-page":"1156","DOI":"10.1029\/GL010i012p01156","article-title":"Production
+        of nitrous oxide and consumption of methane by forest soils","volume":"10","author":"Keller","year":"1983","journal-title":"Geophys.
+        Res. Lett."},{"issue":"D 11","key":"10.1029\/91GB01303-BIB0014|gbc138-cit-0014","doi-asserted-by":"crossref","first-page":"11,791","DOI":"10.1029\/JD091iD11p11791","article-title":"Emissions
+        of N20, CH4, and CO2 from tropical forest soils","volume":"91","author":"Keller","year":"1986","journal-title":"J.
+        Geophys. Res."},{"key":"10.1029\/91GB01303-BIB0015|gbc138-cit-0015","doi-asserted-by":"crossref","first-page":"21","DOI":"10.1029\/GB004i001p00021","article-title":"Consumption
+        of atmospheric methane in soils of central Panama: Effects of agricultural
+        development","volume":"4","author":"Keller","year":"1990","journal-title":"Global
+        Biogeochem. Cycles"},{"key":"10.1029\/91GB01303-BIB0016|gbc138-cit-0016","doi-asserted-by":"crossref","first-page":"554","DOI":"10.1111\/j.1600-0889.1989.tb00141.x","article-title":"Climate-induced
+        feedbacks for global cycles of methane and nitrous oxide","volume":"41","author":"Khalil","year":"1989","journal-title":"Tellus,
+        Ser. B"},{"key":"10.1029\/91GB01303-BIB0017|gbc138-cit-0017","author":"Kimmins","first-page":"3","year":"1986","volume-title":"Forest
+        Ecosystems in the Alaska Taiga"},{"key":"10.1029\/91GB01303-BIB0018|gbc138-cit-0018","doi-asserted-by":"crossref","first-page":"652","DOI":"10.1038\/315652a0","article-title":"Methane
+        flux from northern peatlands","volume":"315","author":"Harriss","year":"1985","journal-title":"Nature"},{"key":"10.1029\/91GB01303-BIB0019|gbc138-cit-0019","doi-asserted-by":"crossref","first-page":"61","DOI":"10.1029\/GB001i001p00061","article-title":"Methane
+        emission from natural wetlands: Global distribution, area, and environmental
+        characteristics of sources","volume":"1","author":"Matthews","year":"1987","journal-title":"Global
+        Biogeochem. Cycles"},{"key":"10.1029\/91GB01303-BIB0020|gbc138-cit-0020","doi-asserted-by":"crossref","first-page":"45","DOI":"10.1007\/BF00000851","article-title":"Methane
+        exrdssions from fen, bog and swamp pearlands in Quebec","volume":"11","author":"Moore","year":"1990","journal-title":"Biogeochemistry"},{"key":"10.1029\/91GB01303-BIB0021|gbc138-cit-0021","doi-asserted-by":"crossref","first-page":"29","DOI":"10.1029\/GB004i001p00029","article-title":"Spatial
+        and temporal variations of methane flux from subarctic\/northern boreal fens","volume":"4","author":"Moore","year":"1990","journal-title":"Global
+        Biogeochem. Cycles"},{"key":"10.1029\/91GB01303-BIB0022|gbc138-cit-0022","doi-asserted-by":"crossref","first-page":"156","DOI":"10.1038\/298156a0","article-title":"Soil
+        carbon pools and world life zones","volume":"298","author":"Post","year":"1982","journal-title":"Nature"},{"issue":"D7","key":"10.1029\/91GB01303-BIB0023|gbc138-cit-0023","doi-asserted-by":"crossref","first-page":"11,599","DOI":"10.1029\/JD089iD07p11599","article-title":"Atmospheric
+        methane in the recent and ancient atmospheres: Concentrations, trends and
+        the interhemispheric gradient","volume":"89","author":"Rasmussen","year":"1984","journal-title":"J.
+        Geophys. Res."},{"key":"10.1029\/91GB01303-BIB0024|gbc138-cit-0024","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1111\/j.1600-0889.1986.tb00083.x","article-title":"Atmospheric
+        methane sources: Alaskan tundra, an alpine fen and a subarctic boreal marsh","volume":"38","author":"Sebacher","year":"1986","journal-title":"Tellus,
+        Ser. B"},{"key":"10.1029\/91GB01303-BIB0025|gbc138-cit-0025","author":"Smith","volume":"33","first-page":"247","year":"1985","volume-title":"Microbial
+        Communities in Soil, FEMS Symp"},{"key":"10.1029\/91GB01303-BIB0026|gbc138-cit-0026","doi-asserted-by":"crossref","first-page":"125","DOI":"10.1007\/BF00048857","article-title":"The
+        global distribution of methane in the troposphere","volume":"5","author":"Steele","year":"1987","journal-title":"J.
+        Atmos. Chem."},{"key":"10.1029\/91GB01303-BIB0027|gbc138-cit-0027","doi-asserted-by":"crossref","first-page":"314","DOI":"10.1038\/341314a0","article-title":"Influence
+        of nitrogen fertilization on methane uptake in temperate forest soils","volume":"341","author":"Steudler","year":"1990","journal-title":"Nature"},{"key":"10.1029\/91GB01303-BIB0028|gbc138-cit-0028","year":"1986","volume-title":"Forest
+        Ecosystems in the Alaskan Taiga: A Synthesis of Structure and Function"},{"issue":"2","key":"10.1029\/91GB01303-BIB0029|gbc138-cit-0029","doi-asserted-by":"crossref","first-page":"78","DOI":"10.2307\/1311560","article-title":"Element
+        cycling in tiaga forests: state-factor control","volume":"41","author":"Van
+        Cleve","year":"1991","journal-title":"BioScience"},{"key":"10.1029\/91GB01303-BIB0030|gbc138-cit-0030","doi-asserted-by":"crossref","first-page":"399","DOI":"10.1029\/GB002i004p00399","article-title":"A
+        methane flux time series for tundra environments","volume":"2","author":"Whalen","year":"1988","journal-title":"Global
+        Biogeochem. Cycles"},{"key":"10.1029\/91GB01303-BIB0031|gbc138-cit-0031","doi-asserted-by":"crossref","first-page":"237","DOI":"10.1034\/j.1600-0889.1990.t01-2-00002.x","article-title":"A
+        methane flux wansect along the wans-Alaska pipeline haul road","volume":"42","author":"Whalen","year":"1990","journal-title":"Tellus,
+        Ser. B"},{"key":"10.1029\/91GB01303-BIB0032|gbc138-cit-0032","doi-asserted-by":"crossref","first-page":"160","DOI":"10.1038\/346160a0","article-title":"Consumption
+        of atmospheric methane by tundra soils","volume":"346","author":"Whalen","year":"1990","journal-title":"Nature"},{"key":"10.1029\/91GB01303-BIB0033|gbc138-cit-0033","first-page":"3405","article-title":"Rapid
+        methane oxidation in a landfill cover soil","volume":"56","author":"Whalen","year":"1990","journal-title":"Appl.
+        Environ. Microbiol."},{"key":"10.1029\/91GB01303-BIB0034|gbc138-cit-0034","doi-asserted-by":"crossref","first-page":"39","DOI":"10.1007\/BF00002716","article-title":"Methane
+        consumption in two temperate forest soils","volume":"9","author":"Yavitt","year":"1990","journal-title":"Biogeochemistry"},{"key":"10.1029\/91GB01303-BIB0035|gbc138-cit-0035","author":"Zar","year":"1984","volume-title":"Biostatistical
+        Analysis"}],"container-title":["Global Biogeochemical Cycles"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1029%2F91GB01303","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.agu.org\/journals\/gb\/v005\/i003\/91GB01303\/91GB01303.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,4,3]],"date-time":"2018-04-03T13:43:22Z","timestamp":1522763002000},"score":1.0,"issued":{"date-parts":[[1991,9]]},"references-count":35,"journal-issue":{"published-print":{"date-parts":[[1991,9]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1029\/91gb01303","relation":{"cites":[]},"ISSN":["0886-6236"],"issn-type":[{"value":"0886-6236","type":"print"}]},{"indexed":{"date-parts":[[2018,5,7]],"date-time":"2018-05-07T12:33:26Z","timestamp":1525696406640},"reference-count":0,"publisher":"Springer
+        Nature","issue":"170supp","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Sci
+        Am"],"published-print":{"date-parts":[[1879,4,5]]},"DOI":"10.1038\/scientificamerican04051879-2711csupp","type":"journal-article","created":{"date-parts":[[2015,5,27]],"date-time":"2015-05-27T14:00:27Z","timestamp":1432735227000},"page":"2711-2711","source":"Crossref","is-referenced-by-count":0,"title":["Professor
+        Purser on \u201cTides and Tidal Currents\u201d"],"prefix":"10.1038","volume":"7","member":"297","container-title":["Scientific
+        American"],"deposited":{"date-parts":[[2015,6,15]],"date-time":"2015-06-15T12:28:34Z","timestamp":1434371314000},"score":1.0,"issued":{"date-parts":[[1879,4,5]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[1879,4,5]]},"issue":"170supp"},"alternative-id":["scientificamerican04051879-2711csupp"],"URL":"http:\/\/dx.doi.org\/10.1038\/scientificamerican04051879-2711csupp","ISSN":["0036-8733"],"issn-type":[{"value":"0036-8733","type":"print"}]},{"indexed":{"date-parts":[[2018,5,4]],"date-time":"2018-05-04T12:25:11Z","timestamp":1525436711974},"reference-count":67,"publisher":"Informa
+        UK Limited","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Mass
+        Communication and Society"],"published-print":{"date-parts":[[2011,9]]},"DOI":"10.1080\/15205436.2010.530381","type":"journal-article","created":{"date-parts":[[2011,9,9]],"date-time":"2011-09-09T15:38:42Z","timestamp":1315582722000},"page":"666-689","source":"Crossref","is-referenced-by-count":11,"title":["I
+        Approve This Message: Effects of Sponsorship, Ad Tone, and Reactance in 2008
+        Presidential Advertising"],"prefix":"10.1080","volume":"14","author":[{"given":"Patrick
+        C.","family":"Meirick","sequence":"first","affiliation":[]},{"given":"Gwendelyn
+        S.","family":"Nisbett","sequence":"additional","affiliation":[]}],"member":"301","reference":[{"key":"CIT0001","author":"Ansolabehere
+        S.","year":"1995","volume-title":"Going negative: How attack ads shrink and
+        polarize the electorate"},{"key":"CIT0002","DOI":"10.2307\/2586120","doi-asserted-by":"publisher"},{"key":"CIT0003","DOI":"10.2307\/2082710","doi-asserted-by":"publisher"},{"key":"CIT0004","author":"Belch
+        G. E.","volume":"18","first-page":"33","year":"1981","journal-title":"Journal
+        of Marketing Research"},{"key":"CIT0005","author":"Brehm J. W.","year":"1966","volume-title":"A
+        theory of psychological reactance"},{"key":"CIT0006","author":"Brehm S. S.","year":"1981","volume-title":"Psychological
+        reactance: A theory of freedom and control"},{"key":"CIT0007","DOI":"10.1111\/j.0092-5853.2005.00130.x","doi-asserted-by":"publisher"},{"key":"CIT0008","author":"Brooks
+        D. J.","volume":"68","first-page":"684","year":"2006","journal-title":"Journal
+        of Politics"},{"key":"CIT0009","author":"Burgoon M.","first-page":"213","year":"2002","volume-title":"The
+        persuasion handbook"},{"key":"CIT0010","author":"Carlin D. P.","volume":"30","first-page":"119","year":"1993","journal-title":"Argumentation
+        and Advocacy: Journal of the American Forensics Association"},{"key":"CIT0011","DOI":"10.1207\/S1532785XMEP0302_01","doi-asserted-by":"publisher"},{"key":"CIT0012","author":"Chang
+        C.","volume":"32","first-page":"55","year":"2003","journal-title":"Journal
+        of Advertising"},{"key":"CIT0013","author":"Delli Carpini M. X.","year":"1996","volume-title":"What
+        Americans know about politics and why it matters"},{"key":"CIT0014","DOI":"10.1080\/03637750500111815","doi-asserted-by":"publisher"},{"key":"CIT0015","author":"Faber
+        R. J.","first-page":"10","year":"1990","volume-title":"Proceedings of the
+        1990 conference of the american academy of advertising"},{"key":"CIT0016","DOI":"10.2307\/2991771","doi-asserted-by":"publisher"},{"key":"CIT0017","DOI":"10.2307\/2991823","doi-asserted-by":"publisher"},{"key":"CIT0018","DOI":"10.1177\/1532673X08316448","doi-asserted-by":"publisher"},{"key":"CIT0019","author":"Garramone
+        G. M.","volume":"61","first-page":"250","year":"1984","journal-title":"Journalism
+        Quarterly"},{"key":"CIT0020","author":"Garramone G. M.","volume":"29","first-page":"147","year":"1985","journal-title":"Journal
+        of Broadcasting and Electronic Media","DOI":"10.1080\/08838158509386573","doi-asserted-by":"crossref"},{"key":"CIT0021","author":"Garramone
+        G. M.","volume":"61","first-page":"771","year":"1984","journal-title":"Journalism
+        Quarterly","DOI":"10.1177\/107769908406100404","doi-asserted-by":"crossref"},{"key":"CIT0022","DOI":"10.1111\/0022-3816.00143","doi-asserted-by":"publisher"},{"key":"CIT0023","DOI":"10.1207\/S15327027HC1503_6","doi-asserted-by":"publisher"},{"key":"CIT0024","DOI":"10.1207\/s15506878jobem4401_3","doi-asserted-by":"publisher"},{"key":"CIT0025","DOI":"10.1207\/s15324834basp1902_4","doi-asserted-by":"publisher"},{"key":"CIT0026","author":"Hill
+        R. P.","volume":"18","first-page":"14","year":"1989","journal-title":"Journal
+        of Advertising"},{"key":"CIT0027","DOI":"10.1177\/009365095022004003","doi-asserted-by":"publisher"},{"key":"CIT0028","author":"Holman
+        C. B.","year":"2002","volume-title":"Buying time 2000: Television advertising
+        in the 2000 federal elections"},{"key":"CIT0029","DOI":"10.1177\/0013164496056001014","doi-asserted-by":"publisher"},{"key":"CIT0030","DOI":"10.1016\/j.electstud.2006.06.010","doi-asserted-by":"publisher"},{"key":"CIT0031","author":"Jasperson
+        A. E.","volume":"31","first-page":"1","year":"2002","journal-title":"Journal
+        of Advertising"},{"key":"CIT0032","unstructured":"Johnson , K. S. & Copeland
+        , G. A. ( 1987 ).Setting the parameters of good taste: Negative political
+        advertising. Paper presented at the International Communication Association
+        Convention, Montreal, Canada, May 1987 ."},{"key":"CIT0033","author":"Johnson-Cartee
+        K. S.","year":"1989","volume-title":"Negative political advertising: Coming
+        of age"},{"key":"CIT0034","author":"Johnson-Cartee K. S.","year":"1991","volume-title":"Negative
+        political advertising: Coming of age"},{"key":"CIT0035","DOI":"10.2307\/2586118","doi-asserted-by":"publisher"},{"key":"CIT0036","DOI":"10.1080\/01463378709369680","doi-asserted-by":"publisher"},{"key":"CIT0037","DOI":"10.1080\/14616700500057205","doi-asserted-by":"publisher"},{"key":"CIT0038","author":"Lariscy
+        R. W.","volume":"28","first-page":"13","year":"1999","journal-title":"Journal
+        of Advertising","DOI":"10.1080\/00913367.1999.10673593","doi-asserted-by":"crossref"},{"key":"CIT0039","DOI":"10.1111\/0022-3816.00088","doi-asserted-by":"publisher"},{"key":"CIT0040","DOI":"10.2307\/2586117","doi-asserted-by":"publisher"},{"key":"CIT0041","DOI":"10.1111\/j.1468-2508.2007.00618.x","doi-asserted-by":"publisher"},{"key":"CIT0042","DOI":"10.2307\/1251413","doi-asserted-by":"publisher"},{"key":"CIT0043","DOI":"10.1111\/j.1467-9221.2004.00386.x","doi-asserted-by":"publisher"},{"key":"CIT0044","DOI":"10.1111\/j.1559-1816.1998.tb01352.x","doi-asserted-by":"publisher"},{"key":"CIT0045","author":"McCroskey
+        J. C.","volume":"19","first-page":"169","year":"1973","journal-title":"Journal
+        of Broadcasting","DOI":"10.1080\/08838157509363777","doi-asserted-by":"crossref"},{"key":"CIT0046","author":"Meirick
+        P.","volume":"31","first-page":"49","year":"2002","journal-title":"Journal
+        of Advertising","DOI":"10.1080\/00913367.2002.10673660","doi-asserted-by":"crossref"},{"key":"CIT0047","DOI":"10.1080\/08934210500309967","doi-asserted-by":"publisher"},{"key":"CIT0048","author":"Meirick
+        P. C.","volume":"10","journal-title":"Journal of Political Marketing"},{"key":"CIT0049","author":"Merritt
+        S.","volume":"13","first-page":"27","year":"1984","journal-title":"Journal
+        of Advertising"},{"key":"CIT0050"},{"key":"CIT0051","DOI":"10.1177\/106591290605900203","doi-asserted-by":"publisher"},{"key":"CIT0052","DOI":"10.1080\/15205431003662119","doi-asserted-by":"publisher"},{"key":"CIT0053","author":"Petty
+        R. E.","year":"1981","volume-title":"Attitudes and persuasion: Classic and
+        contemporary approaches"},{"key":"CIT0054","DOI":"10.1111\/j.1460-2466.2002.tb02546.x","doi-asserted-by":"publisher"},{"key":"CIT0055","DOI":"10.1086\/269363","doi-asserted-by":"publisher"},{"key":"CIT0056"},{"key":"CIT0057","author":"Robinson
+        M. J.","first-page":"171","year":"1981","volume-title":"The American elections
+        of 1980"},{"key":"CIT0058","DOI":"10.1207\/S15327825MCS0504_02","doi-asserted-by":"publisher"},{"key":"CIT0059","DOI":"10.1207\/s15324834basp2703_9","doi-asserted-by":"publisher"},{"key":"CIT0060","author":"Sonner
+        B.","volume":"38","first-page":"37","year":"1998","journal-title":"Journal
+        of Advertising Research"},{"key":"CIT0061","author":"Stewart C. J.","volume":"26","first-page":"279","year":"1975","journal-title":"Central
+        States Speech Journal","DOI":"10.1080\/10510977509367854","doi-asserted-by":"crossref"},{"key":"CIT0062","author":"Thorson
+        E.","volume":"35","first-page":"465","year":"1991","journal-title":"Journal
+        of Broadcasting & Electronic Media","DOI":"10.1080\/08838159109364141","doi-asserted-by":"crossref"},{"key":"CIT0063","DOI":"10.2307\/2586119","doi-asserted-by":"publisher"},{"key":"CIT0064","author":"Weaver
+        Lariscy R. A.","volume":"28","first-page":"13","year":"1999","journal-title":"Journal
+        of Advertising"},{"key":"CIT0065","author":"West D. M.","volume":"120","first-page":"637","year":"2005","journal-title":"Political
+        Science Quarterly","DOI":"10.1002\/j.1538-165X.2005.tb00560.x","doi-asserted-by":"crossref"},{"key":"CIT0066","DOI":"10.1037\/h0031000","doi-asserted-by":"publisher"},{"key":"CIT0067","DOI":"10.2307\/3149409","doi-asserted-by":"publisher"}],"container-title":["Mass
+        Communication and Society"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/15205436.2010.530381","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T06:02:48Z","timestamp":1497938568000},"score":1.0,"issued":{"date-parts":[[2011,9]]},"references-count":67,"journal-issue":{"published-print":{"date-parts":[[2011,9]]},"issue":"5"},"alternative-id":["10.1080\/15205436.2010.530381"],"URL":"http:\/\/dx.doi.org\/10.1080\/15205436.2010.530381","relation":{"cites":[]},"ISSN":["1520-5436","1532-7825"],"issn-type":[{"value":"1520-5436","type":"print"},{"value":"1532-7825","type":"electronic"}]},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T05:56:36Z","timestamp":1523685396450},"reference-count":0,"publisher":"The
+        Korean Society of Cardiology (KAMJE)","issue":"6","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0","start":{"date-parts":[[2002,1,1]],"date-time":"2002-01-01T00:00:00Z","timestamp":1009843200000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":["synapse.koreamed.org"],"crossmark-restriction":false},"short-container-title":["Korean
+        Circ J"],"published-print":{"date-parts":[[2002]]},"DOI":"10.4070\/kcj.2002.32.6.479","type":"journal-article","created":{"date-parts":[[2014,10,11]],"date-time":"2014-10-11T04:27:20Z","timestamp":1413001640000},"page":"479","update-policy":"http:\/\/dx.doi.org\/10.4070\/crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["The
+        Effects of (66)Ho-Loaded Radioactive Stent in a Porcine Model"],"prefix":"10.4070","volume":"32","author":[{"given":"Dong
+        Chea","family":"Lee","sequence":"first","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Myung
+        Ho","family":"Jeong","sequence":"additional","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Kun
+        Hyung","family":"Kim","sequence":"additional","affiliation":[{"name":"The
+        Heart Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Han
+        Sle","family":"Lee","sequence":"additional","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Hee
+        Seung","family":"Bom","sequence":"additional","affiliation":[{"name":"The
+        Heart Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Young
+        Don","family":"Hong","sequence":"additional","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Sun
+        Ju","family":"Choi","sequence":"additional","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Kyung
+        Bae","family":"Park","sequence":"additional","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Eun
+        Hee","family":"Kim","sequence":"additional","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Jeong
+        Gwan","family":"Cho","sequence":"additional","affiliation":[{"name":"The Heart
+        Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Jong
+        Chun","family":"Park","sequence":"additional","affiliation":[{"name":"The
+        Heart Center, Chonnam National University Hospital, Gwangju, Korea."}]},{"given":"Jung
+        Chaee","family":"Kang","sequence":"additional","affiliation":[{"name":"The
+        Heart Center, Chonnam National University Hospital, Gwangju, Korea."}]}],"member":"2524","container-title":["Korean
+        Circulation Journal"],"language":"en","link":[{"URL":"http:\/\/synapse.koreamed.org\/DOIx.php?id=10.4070\/kcj.2002.32.6.479","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,19]],"date-time":"2016-12-19T23:55:57Z","timestamp":1482191757000},"score":1.0,"issued":{"date-parts":[[2002]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2002]]},"issue":"6"},"URL":"http:\/\/dx.doi.org\/10.4070\/kcj.2002.32.6.479","ISSN":["1225-164X"],"issn-type":[{"value":"1225-164X","type":"print"}],"assertion":[{"value":"https:\/\/synapse.koreamed.org\/DOIx.php?id=10.4070\/kcj.2002.32.6.479","URL":"https:\/\/synapse.koreamed.org\/DOIx.php?id=10.4070\/kcj.2002.32.6.479","name":"synapse","label":"Synapse","group":{"name":"multiple_resolution","label":"Full
+        text available at:"}},{"value":"http:\/\/koreancircj.kr\/DOIx.php?id=10.4070\/kcj.2002.32.6.479","URL":"http:\/\/koreancircj.kr\/DOIx.php?id=10.4070\/kcj.2002.32.6.479","name":"the_journal","label":"the
+        Journal","group":{"name":"multiple_resolution","label":"Full text available
+        at:"}},{"value":"2002-06-30","name":"published_online","label":"Published
+        online","group":{"name":"publication_history","label":"Publication History"}},{"value":"Copyright
+        \u00a9 2002 The Korean Society of Circulation","name":"copyright","label":"Copyright","group":{"name":"Copyright_and_licensing","label":"Copyright
+        and Licensing"}}]},{"indexed":{"date-parts":[[2018,5,3]],"date-time":"2018-05-03T10:50:35Z","timestamp":1525344635730},"reference-count":16,"publisher":"Elsevier
+        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1980,8,1]],"date-time":"1980-08-01T00:00:00Z","timestamp":333936000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Thin
+        Solid Films"],"published-print":{"date-parts":[[1980,8]]},"DOI":"10.1016\/0040-6090(80)90372-7","type":"journal-article","created":{"date-parts":[[2002,10,18]],"date-time":"2002-10-18T20:52:33Z","timestamp":1034974353000},"page":"319-324","source":"Crossref","is-referenced-by-count":18,"title":["Heteroepitaxy
+        of CuInSe2 on {111}-oriented germanium"],"prefix":"10.1016","volume":"70","author":[{"given":"B.","family":"Schurmann","sequence":"first","affiliation":[]},{"given":"A.","family":"Tempel","sequence":"additional","affiliation":[]},{"given":"C.","family":"Georgi","sequence":"additional","affiliation":[]},{"given":"G.","family":"K\u00fchn","sequence":"additional","affiliation":[]}],"member":"78","container-title":["Thin
+        Solid Films"],"language":"en","link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0040609080903727?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:0040609080903727?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T13:37:03Z","timestamp":1497533823000},"score":1.0,"issued":{"date-parts":[[1980,8]]},"references-count":16,"journal-issue":{"published-print":{"date-parts":[[1980,8]]},"issue":"2"},"alternative-id":["0040609080903727"],"URL":"http:\/\/dx.doi.org\/10.1016\/0040-6090(80)90372-7","ISSN":["0040-6090"],"issn-type":[{"value":"0040-6090","type":"print"}]},{"indexed":{"date-parts":[[2018,5,3]],"date-time":"2018-05-03T06:25:31Z","timestamp":1525328731144},"reference-count":0,"publisher":"Ovid
+        Technologies (Wolters Kluwer Health)","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Anesthesiology"],"published-print":{"date-parts":[[1968,5]]},"DOI":"10.1097\/00000542-196805000-00019","type":"journal-article","created":{"date-parts":[[2006,10,30]],"date-time":"2006-10-30T15:31:02Z","timestamp":1162222262000},"page":"478-482","source":"Crossref","is-referenced-by-count":1,"title":["Enhancement
+        by Cyclopropane and Halothane of Heart Rate Responses to Sympathetic Stimulation"],"prefix":"10.1097","volume":"29","author":[{"given":"Henry
+        L.","family":"Price","sequence":"first","affiliation":[]},{"given":"John C.","family":"Warden","sequence":"additional","affiliation":[]},{"given":"Lee
+        H.","family":"Cooperman","sequence":"additional","affiliation":[]},{"given":"Mary
+        L.","family":"Price","sequence":"additional","affiliation":[]}],"member":"276","container-title":["Anesthesiology"],"language":"en","deposited":{"date-parts":[[2018,2,8]],"date-time":"2018-02-08T19:01:34Z","timestamp":1518116494000},"score":1.0,"subtitle":[""],"issued":{"date-parts":[[1968,5]]},"references-count":0,"journal-issue":{"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1097\/00000542-196805000-00019","ISSN":["0003-3022"],"issn-type":[{"value":"0003-3022","type":"print"}]},{"indexed":{"date-parts":[[2018,5,5]],"date-time":"2018-05-05T09:28:51Z","timestamp":1525512531717},"reference-count":73,"publisher":"Springer
+        Nature","issue":"8","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Food
+        Bioprocess Technol"],"published-print":{"date-parts":[[2013,8]]},"DOI":"10.1007\/s11947-012-0871-0","type":"journal-article","created":{"date-parts":[[2012,5,7]],"date-time":"2012-05-07T09:15:50Z","timestamp":1336382150000},"page":"2135-2149","source":"Crossref","is-referenced-by-count":25,"title":["Innovative
+        Cooking Techniques for Improving the Overall Quality of a Kailan-Hybrid Broccoli"],"prefix":"10.1007","volume":"6","author":[{"given":"Gin\u00e9s
+        B.","family":"Mart\u00ednez-Hern\u00e1ndez","sequence":"first","affiliation":[]},{"given":"Francisco","family":"Art\u00e9s-Hern\u00e1ndez","sequence":"additional","affiliation":[]},{"given":"Franciane","family":"Colares-Souza","sequence":"additional","affiliation":[]},{"given":"Perla
+        A.","family":"G\u00f3mez","sequence":"additional","affiliation":[]},{"given":"Presentaci\u00f3n","family":"Garc\u00eda-G\u00f3mez","sequence":"additional","affiliation":[]},{"given":"Francisco","family":"Art\u00e9s","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2012,5,8]]},"reference":[{"issue":"4","key":"871_CR1","doi-asserted-by":"crossref","first-page":"589","DOI":"10.1016\/j.foodchem.2004.03.029","volume":"89","author":"HJ
+        Ahn","year":"2005","unstructured":"Ahn, H. J., Kim, J. H., Kim, J. K., Kim,
+        D. H., Yook, H. S., & Byun, M. W. (2005). Combined effects of irradiation
+        and modified atmosphere packaging on minimally processed Chinese cabbage (Brassica
+        rapa L.). Food Chemistry, 89(4), 589\u2013597.","journal-title":"Food Chemistry"},{"key":"871_CR2","author":"American
+        Society for Testing and Materials","year":"1986","unstructured":"American
+        Society for Testing and Materials. (1986). In Eggertj & Zook (Eds.), Physical
+        requirements guidelines for sensory evaluation. Philadelphia: ASTM Special
+        Technical Publication.","volume-title":"Physical requirements guidelines for
+        sensory evaluation"},{"issue":"3","key":"871_CR3","doi-asserted-by":"crossref","first-page":"544","DOI":"10.1046\/j.1365-2672.1999.00701.x","volume":"86","author":"G
+        Arroyo","year":"1999","unstructured":"Arroyo, G., Sanz, P. D., & Pr\u00e9stamo,
+        G. (1999). Response to high-pressure, low-temperature treatment in vegetables:
+        Determination of survival rates of microbial populations using flow cytometry
+        and detection of peroxidase activity using confocal microscopy. Journal of
+        Applied Microbiology, 86(3), 544\u2013556.","journal-title":"Journal of Applied
+        Microbiology"},{"issue":"6","key":"871_CR4","doi-asserted-by":"crossref","first-page":"480","DOI":"10.1007\/s002170100390","volume":"213","author":"F
+        Art\u00e9s","year":"2001","unstructured":"Art\u00e9s, F., Vallejo, F., & Mart\u00ednez,
+        J. A. (2001). Quality of broccoli as influenced by film wrapping during shipment.
+        European Food Research and Technology, 213(6), 480\u2013483.","journal-title":"European
+        Food Research and Technology"},{"issue":"3","key":"871_CR5","doi-asserted-by":"crossref","first-page":"287","DOI":"10.1016\/j.postharvbio.2008.10.003","volume":"51","author":"F
+        Art\u00e9s","year":"2009","unstructured":"Art\u00e9s, F., G\u00f3mez, P. A.,
+        Aguayo, A., Escalona, V. H., & Art\u00e9s-Hern\u00e1ndez, F. (2009). Sustainable
+        sanitation techniques for keeping quality and safety of fresh-cut plant commodities.
+        Postharvest Biology and Technology, 51(3), 287\u2013296.","journal-title":"Postharvest
+        Biology and Technology"},{"key":"871_CR6","author":"KL Bett","first-page":"427","year":"2002","unstructured":"Bett,
+        K. L. (2002). Evaluating sensory quality of fresh-cut fruits and vegetables.
+        In Lamikanra (Ed.), Fresh-cut fruits and vegetables science, technology, and
+        market (pp. 427\u2013438). Boca Raton: CRC.","volume-title":"Fresh-cut fruits
+        and vegetables science, technology, and market"},{"issue":"7","key":"871_CR7","doi-asserted-by":"crossref","first-page":"1137","DOI":"10.1007\/s11947-009-0196-9","volume":"4","author":"AM
+        Bidchol","year":"2011","unstructured":"Bidchol, A. M., Wilfred, A., Abhijna,
+        P., & Harish, R. (2011). Free radical scavenging activity of aqueous and ethanolic
+        extract of Brassica oleracea L. var. italica. Food and Bioprocess Technology,
+        4(7), 1137\u20131143.","journal-title":"Food and Bioprocess Technology"},{"issue":"5","key":"871_CR8","doi-asserted-by":"crossref","first-page":"833","DOI":"10.4315\/0362-028X-66.5.833","volume":"66","author":"A
+        Braconnier","year":"2003","unstructured":"Braconnier, A., Broussolle, V.,
+        Dargaignaratz, C., Nguyen-The, C., & Carlin, F. (2003). Growth and germination
+        of proteolytic Clostridium botulinum in vegetable-based media. Journal of
+        Food Protection, 66(5), 833\u2013839.","journal-title":"Journal of Food Protection"},{"issue":"1","key":"871_CR9","doi-asserted-by":"crossref","first-page":"25","DOI":"10.1016\/S0023-6438(95)80008-5","volume":"28","author":"W
+        Brand-Williams","year":"1995","unstructured":"Brand-Williams, W., Cuvelier,
+        M. E., & Berset, C. (1995). Use of the free radical method to evaluate antioxidant
+        activity. LWT- Food Science and Technology, 28(1), 25\u201330.","journal-title":"LWT-
+        Food Science and Technology"},{"issue":"2","key":"871_CR10","doi-asserted-by":"crossref","first-page":"649","DOI":"10.1016\/j.foodchem.2007.11.056","volume":"108","author":"A
+        Bunea","year":"2008","unstructured":"Bunea, A., Andjelkovic, M., Socaciu,
+        C., Bobis, O., Neacsu, M., Verh\u00e9, R., & Van Camp, J. (2008). Total and
+        individual carotenoids and phenolic acids content in fresh, refrigerated and
+        processed spinach (Spinacia oleracea L.). Food Chemistry, 108(2), 649\u2013656.","journal-title":"Food
+        Chemistry"},{"issue":"2\u20133","key":"871_CR11","doi-asserted-by":"crossref","first-page":"117","DOI":"10.1016\/S0168-1605(00)00304-4","volume":"60","author":"F
+        Carlin","year":"2000","unstructured":"Carlin, F., Girardin, H., Peck, M. W.,
+        Stringer, S. C., Barker, G. C., Mart\u00ednez, A., Fern\u00e1ndez, A., Fern\u00e1ndez,
+        P., Waites, W. M., Movahedi, S., van Leusden, F., Nauta, M., Moezelaar, R.,
+        Del Torre, M., & Litman, S. (2000). Research on factors allowing a risk assessment
+        of spore-forming pathogenic bacteria in cooked chilled foods containing vegetables:
+        A FAIR collaborative project. International Journal of Food Microbiology,
+        60(2\u20133), 117\u2013135.","journal-title":"International Journal of Food
+        Microbiology"},{"issue":"1","key":"871_CR12","doi-asserted-by":"crossref","first-page":"20","DOI":"10.1016\/j.foodchem.2008.03.022","volume":"111","author":"AM
+        Chuah","year":"2008","unstructured":"Chuah, A. M., Lee, Y. C., Yamaguchi,
+        T., Takamura, H., Yin, L. J., & Matoba, T. (2008). Effect of cooking on the
+        antioxidant properties of coloured peppers. Food Chemistry, 111(1), 20\u201328.","journal-title":"Food
+        Chemistry"},{"issue":"6","key":"871_CR13","doi-asserted-by":"crossref","first-page":"563","DOI":"10.1111\/j.1365-2621.1993.tb01307.x","volume":"28","author":"IJ
+        Church","year":"1993","unstructured":"Church, I. J., & Parsons, A. L. (1993).
+        Review: Sous vide cook-chill technology. International Journal of Food Science
+        and Technology, 28(6), 563\u2013574.","journal-title":"International Journal
+        of Food Science and Technology"},{"key":"871_CR14","doi-asserted-by":"crossref","first-page":"1197","DOI":"10.1007\/s11947-009-0220-0","volume":"4","author":"RMS
+        Cruz","year":"2011","unstructured":"Cruz, R. M. S., Vieira, M. C., Fonseca,
+        S. C., & Silva, C. L. M. (2011). Impact of thermal blanching and thermosonication
+        treatments on watercress (Nasturtium officinale) quality: Thermosonication
+        process optimisation and microstructure evaluation. Food and Bioprocess Technology,
+        4, 1197\u20131204.","journal-title":"Food and Bioprocess Technology"},{"issue":"10","key":"871_CR15","doi-asserted-by":"crossref","first-page":"1758","DOI":"10.1016\/j.lwt.2008.01.016","volume":"41","author":"P
+        Silva Da","year":"2008","unstructured":"Da Silva, P., & Moreira, R. G. (2008).
+        Vacuum frying of high-quality fruit and vegetable-based snacks. LWT- Food
+        Science and Technology, 41(10), 1758\u20131767.","journal-title":"LWT- Food
+        Science and Technology"},{"issue":"7","key":"871_CR16","doi-asserted-by":"crossref","first-page":"825","DOI":"10.1002\/(SICI)1097-0010(20000515)80:7<825::AID-JSFA598>3.0.CO;2-6","volume":"80","author":"MW
+        Davey","year":"2000","unstructured":"Davey, M. W., Montagu, M. V., Inz\u00e9,
+        D., Sanmartin, M., Kanellis, A., Smirnoff, N., Benzie, I. J. J., Strain, J.
+        J., Favell, D., & Fletcher, J. (2000). Plant L-ascorbic: chemistry, function,
+        metabolism, bioavailability and effects of processing. Journal of the Science
+        of Food and Agriculture, 80(7), 825\u2013860.","journal-title":"Journal of
+        the Science of Food and Agriculture"},{"issue":"17","key":"871_CR17","doi-asserted-by":"crossref","first-page":"4959","DOI":"10.1021\/jf0255937","volume":"50","author":"V
+        Dewanto","year":"2002","unstructured":"Dewanto, V., & Wu, X. (2002). Processed
+        sweet corn has higher antioxidant activity. Journal of Agricultural and Food
+        Chemistry, 50(17), 4959\u20134964.","journal-title":"Journal of Agricultural
+        and Food Chemistry"},{"issue":"10","key":"871_CR18","doi-asserted-by":"crossref","first-page":"3010","DOI":"10.1021\/jf0115589","volume":"50","author":"V
+        Dewanto","year":"2002","unstructured":"Dewanto, V., Wu, X., Adom, K. K., &
+        Liu, H. R. (2002). Thermal processing enhances the nutritional value of tomatoes
+        by increasing total antioxidant activity. Journal of Agricultural and Food
+        Chemistry, 50(10), 3010\u20133014.","journal-title":"Journal of Agricultural
+        and Food Chemistry"},{"issue":"3","key":"871_CR19","doi-asserted-by":"crossref","first-page":"447","DOI":"10.1016\/j.lwt.2009.09.010","volume":"43","author":"I
+        Dini","year":"2010","unstructured":"Dini, I., Tenore, G. C., & Dini, A. (2010).
+        Antioxidant compound contents and antioxidant activity before and after cooking
+        in sweet and bitter Chenopodium quinoa seeds. LWT- Food Science and Technology,
+        43(3), 447\u2013451.","journal-title":"LWT- Food Science and Technology"},{"issue":"2","key":"871_CR20","doi-asserted-by":"crossref","first-page":"130","DOI":"10.1111\/j.1750-3841.2006.00258.x","volume":"72","author":"F
+        Galgano","year":"2007","unstructured":"Galgano, F., Favati, F., Caruso, M.,
+        Pietrafesa, A., & Natella, S. (2007). The influence of processing and preservation
+        on the retention of health-promoting compounds in broccoli. Journal of Food
+        Science, 72(2), 130\u2013135.","journal-title":"Journal of Food Science"},{"key":"871_CR21","author":"R
+        Gormley","first-page":"477","year":"2012","unstructured":"Gormley, R., & Tansey,
+        F. (2012). Sous vide and cook-chill processing. In Sun (Ed.), Handbook of
+        food safety engineering (p. 477). New York: Wiley.","volume-title":"Handbook
+        of food safety engineering"},{"issue":"6","key":"871_CR22","doi-asserted-by":"crossref","first-page":"1764","DOI":"10.1111\/j.1365-2621.1985.tb10590.x","volume":"50","author":"MK
+        Harrison","year":"1985","unstructured":"Harrison, M. K., & Harris, N. D. (1985).
+        Effects of processing treatments on recovery of capsaicin in jalapeno peppers.
+        Journal of Food Science, 50(6), 1764\u20131765.","journal-title":"Journal
+        of Food Science"},{"key":"871_CR23","author":"ISO 8586\u20131","year":"1993","unstructured":"ISO
+        8586\u20131. (1993). Sensory analysis\u2014General guidance for selection,
+        training and monitoring of assessors. Geneva: ISO.","volume-title":"Sensory
+        analysis\u2014General guidance for selection, training and monitoring of assessors"},{"issue":"9","key":"871_CR24","doi-asserted-by":"crossref","first-page":"107","DOI":"10.1111\/j.1750-3841.2009.01352.x","volume":"74","author":"DA
+        Jacobo-Vel\u00e1zquez","year":"2009","unstructured":"Jacobo-Vel\u00e1zquez,
+        D. A., & Cisneros-Zevallos, L. (2009). Correlations of antioxidant activity
+        against phenolic content revisited: a new approach in data analysis for food
+        and medicinal plants. Journal of Food Science, 74(9), 107\u2013113.","journal-title":"Journal
+        of Food Science"},{"issue":"3","key":"871_CR25","doi-asserted-by":"crossref","first-page":"323","DOI":"10.1016\/S0889-1575(03)00045-0","volume":"16","author":"EH
+        Jeffery","year":"2003","unstructured":"Jeffery, E. H., Brown, A. F., Kurilich,
+        A. C., Keck, A. S., Matusheski, N., Klein, B. P., & Juvik, J. A. (2003). Variation
+        in content of bioactive components in broccoli. Journal of Food Composition
+        and Analysis, 16(3), 323\u2013330.","journal-title":"Journal of Food Composition
+        and Analysis"},{"issue":"3","key":"871_CR26","doi-asserted-by":"crossref","first-page":"97","DOI":"10.1111\/j.1750-3841.2009.01091.x","volume":"74","author":"AM
+        Jim\u00e9nez-Monreal","year":"2009","unstructured":"Jim\u00e9nez-Monreal,
+        A. M., Garc\u00eda-Diz, L., Mart\u00ednez-Tom\u00e9, M., Mariscal, M., & Murcia,
+        M. A. (2009). Influence of cooking methods on antioxidant activity of vegetables.
+        Journal of Food Science, 74(3), 97\u2013103.","journal-title":"Journal of
+        Food Science"},{"issue":"2","key":"871_CR27","doi-asserted-by":"crossref","first-page":"136","DOI":"10.1177\/1077727X8701600208","volume":"16","author":"JM
+        Johnson","year":"1987","unstructured":"Johnson, J. M., & Driskell, J. (1987).
+        Vitamin retention and sensory evaluation of selected foods prepared by boiling,
+        boiling-in-bag, and steaming methods. Home Economics Research Journal, 16(2),
+        136\u2013142.","journal-title":"Home Economics Research Journal"},{"issue":"3","key":"871_CR28","doi-asserted-by":"crossref","first-page":"659","DOI":"10.1081\/JFP-200033079","volume":"7","author":"A
+        Kala","year":"2004","unstructured":"Kala, A., & Prakash, J. (2004). Nutrient
+        composition and sensory profile of different cooked green leafy vegetables.
+        International Journal of Food Properties, 7(3), 659\u2013669.","journal-title":"International
+        Journal of Food Properties"},{"issue":"6","key":"871_CR29","doi-asserted-by":"crossref","first-page":"1008","DOI":"10.1016\/j.lwt.2006.07.003","volume":"40","author":"N
+        Kalogeropoulos","year":"2007","unstructured":"Kalogeropoulos, N., Mylona,
+        A., Chiou, A., Ioannou, M. S., & Andrikopoulos, N. K. (2007). Retention and
+        distribution of natural antioxidants (\u03b1-tocopherol, polyphenols and terpenic
+        acids) after shallow frying of vegetables in virgin olive oil. LWT- Food Science
+        and Technology, 40(6), 1008\u20131017.","journal-title":"LWT- Food Science
+        and Technology"},{"issue":"18","key":"871_CR30","doi-asserted-by":"crossref","first-page":"5053","DOI":"10.1021\/jf025535l","volume":"50","author":"AC
+        Kurilich","year":"2002","unstructured":"Kurilich, A. C., Jeffery, E. H., Juvik,
+        J. A., Wallig, M. A., & Klein, B. P. (2002). Antioxidant capacity of different
+        broccoli (Brassica oleracea) genotypes using the oxygen radical absorbance
+        capacity (ORAC) assay. Journal of Agricultural and Food Chemistry, 50(18),
+        5053\u20135057.","journal-title":"Journal of Agricultural and Food Chemistry"},{"issue":"3","key":"871_CR31","doi-asserted-by":"crossref","first-page":"207","DOI":"10.1016\/S0925-5214(00)00133-2","volume":"20","author":"SK
+        Lee","year":"2000","unstructured":"Lee, S. K., & Kader, A. A. (2000). Preharvest
+        and postharvest factors influencing vitamin C content of horticultural crops.
+        Postharvest Biology and Technology, 20(3), 207\u2013220.","journal-title":"Postharvest
+        Biology and Technology"},{"issue":"5","key":"871_CR32","doi-asserted-by":"crossref","first-page":"772","DOI":"10.1007\/s11947-009-0306-8","volume":"3","author":"J
+        L\u00f3pez","year":"2010","unstructured":"L\u00f3pez, J., Uribe, E., Vega-G\u00e1lvez,
+        A., Miranda, M., Vergara, J., Gonzalez, E., & Di Scala, K. (2010). Effect
+        of air temperature on drying kinetics, vitamin C, antioxidant activity, total
+        phenolic content, non-enzymatic browning and firmness of blueberries variety
+        O\u2019Neil. Food and Bioprocess Technology, 3(5), 772\u2013777.","journal-title":"Food
+        and Bioprocess Technology"},{"issue":"24","key":"871_CR33","doi-asserted-by":"crossref","first-page":"10001","DOI":"10.1021\/jf071680t","volume":"55","author":"C
+        L\u00f3pez-Berenguer","year":"2007","unstructured":"L\u00f3pez-Berenguer,
+        C., Carvajal, M., Moreno, D. A., & Garc\u00eda-Viguera, C. (2007). Effects
+        of microwave cooking conditions on bioactive compounds present in broccoli
+        inflorescences. Journal of Agriculture and Food Chemistry, 55(24), 10001\u201310007.","journal-title":"Journal
+        of Agriculture and Food Chemistry"},{"key":"871_CR34","doi-asserted-by":"crossref","first-page":"1355","DOI":"10.1007\/s11947-010-0403-8","volume":"4","author":"BS
+        Mamatha","year":"2012","unstructured":"Mamatha, B. S., Arunkumar, R., & Baskaran,
+        V. (2012). Effect of processing on major carotenoid levels in corn (Zea mays)
+        and selected vegetables: Bioavailability of lutein and zeaxanthin from processed
+        corn in mice. Food and Bioprocess Technology, 4, 1355\u20131363. doi: 10.1007\/s11947-010-0403-8
+        .","journal-title":"Food and Bioprocess Technology"},{"issue":"3","key":"871_CR35","doi-asserted-by":"crossref","first-page":"327","DOI":"10.1016\/j.postharvbio.2011.06.015","volume":"62","author":"GB
+        Mart\u00ednez-Hern\u00e1ndez","year":"2011","unstructured":"Mart\u00ednez-Hern\u00e1ndez,
+        G. B., G\u00f3mez, P. A., Art\u00e9s, F., & Art\u00e9s-Hern\u00e1ndez, F.
+        (2011). Moderate UV-C pretreatment as a quality enhancement tool in fresh-cut
+        Bimi\u00ae broccoli. Postharvest Biology and Technology, 62(3), 327\u2013337.","journal-title":"Postharvest
+        Biology and Technology"},{"issue":"1","key":"871_CR36","doi-asserted-by":"crossref","first-page":"139","DOI":"10.1021\/jf072304b","volume":"56","author":"C
+        Miglio","year":"2008","unstructured":"Miglio, C., Chiavaro, E., Visconti,
+        A., Fogliano, V., & Pellegrini, M. (2008). Effects of different cooking methods
+        on nutritional and physicochemical of selected vegetables. Journal of Agriculture
+        and Food Chemistry, 56(1), 139\u2013147.","journal-title":"Journal of Agriculture
+        and Food Chemistry"},{"issue":"5","key":"871_CR37","doi-asserted-by":"crossref","first-page":"1508","DOI":"10.1016\/j.jpba.2006.04.003","volume":"41","author":"DA
+        Moreno","year":"2006","unstructured":"Moreno, D. A., Carvajal, M., L\u00f3pez-Berenguer,
+        C., & Garc\u00eda-Viguera, C. (2006). Chemical and biological characterisation
+        of nutraceutical compounds of broccoli. Journal Pharmacology Biomedical Analytical,
+        41(5), 1508\u20131522.","journal-title":"Journal Pharmacology Biomedical Analytical"},{"issue":"1","key":"871_CR38","doi-asserted-by":"crossref","first-page":"64","DOI":"10.1111\/j.1750-3841.2006.00213.x","volume":"72","author":"DA
+        Moreno","year":"2007","unstructured":"Moreno, D. A., L\u00f3pez-Berenguer,
+        C., & Garc\u00eda-Viguera, C. (2007). Effects of stir-fry cooking with different
+        edible oils on the phytochemical composition of broccoli. Journal of Food
+        Science, 72(1), 64\u201368.","journal-title":"Journal of Food Science"},{"issue":"2","key":"871_CR39","doi-asserted-by":"crossref","first-page":"591","DOI":"10.1016\/j.foodchem.2009.10.029","volume":"120","author":"AW
+        Munyaka","year":"2010","unstructured":"Munyaka, A. W., Oey, I., Van Loey,
+        A., & Hendrickx, M. (2010). Application of thermal inactivation of enzymes
+        during vitamin C analysis to study the influence of acidification, crushing
+        and blanching on vitamin C stability in broccoli (Brassica oleracea L var.
+        italica). Food Chemistry, 120(2), 591\u2013598.","journal-title":"Food Chemistry"},{"issue":"7","key":"871_CR40","doi-asserted-by":"crossref","first-page":"355","DOI":"10.1111\/j.1750-3841.2009.01257.x","volume":"74","author":"Y
+        Nunes","year":"2009","unstructured":"Nunes, Y., & Moreira, R. G. (2009). Effect
+        of osmotic dehydration and vacuum-frying parameters to produce high-quality
+        mango chips. Journal of Food Science, 74(7), 355\u2013362.","journal-title":"Journal
+        of Food Science"},{"issue":"5","key":"871_CR41","doi-asserted-by":"crossref","first-page":"445","DOI":"10.1111\/j.1745-4557.2006.00071.x","volume":"29","author":"MD
+        Nunn","year":"2006","unstructured":"Nunn, M. D., Giraud, D. W., Parkhurst,
+        A. M., Hamouz, F. L., & Driskell, J. A. (2006). Effects of cooking methods
+        on sensory qualities and carotenoid retention in selected vegetables. Journal
+        of Food Quality, 29(5), 445\u2013457.","journal-title":"Journal of Food Quality"},{"issue":"4","key":"871_CR42","doi-asserted-by":"crossref","first-page":"1619","DOI":"10.1016\/j.foodchem.2009.09.054","volume":"119","author":"JJ
+        Ornelas-Paz","year":"2010","unstructured":"Ornelas-Paz, J. J., Mart\u00ednez-Burrola,
+        J. M., Ruiz-Cruz, S., Santana-Rodr\u00edguez, V., Ibarra-Junquera, V., Olivas,
+        G. I., & P\u00e9rez-Mart\u00ednez, J. D. (2010). Effect of cooking on the
+        capsaicinoids and phenolics contents of Mexican peppers. Food Chemistry, 119(4),
+        1619\u20131625.","journal-title":"Food Chemistry"},{"key":"871_CR43","unstructured":"Pellegrini,
+        N., Chiavaro, E., Gardana, C., Mazzeo, T., Contino, D., Gallo, M., Riso, P.,
+        Fogliano, V., & Porrini, M. (2010). Effect of different cooking methods on
+        color, phytochemical concentration, and antioxidant capacity of raw and frozen
+        brassica vegetables. Journal of Agricultural and Food Chemistry, 58, 4310\u20134321.","DOI":"10.1021\/jf904306r","doi-asserted-by":"crossref"},{"issue":"6","key":"871_CR44","doi-asserted-by":"crossref","first-page":"945","DOI":"10.1002\/jsfa.3171","volume":"88","author":"MR
+        P\u00e9rez-Tinoco","year":"2008","unstructured":"P\u00e9rez-Tinoco, M. R.,
+        P\u00e9rez, A., Salgado-Cervantes, M., Reynes, M., & Vaillant, F. (2008).
+        Effect of vacuum frying on main physicochemical and nutritional quality parameters
+        of pineapple chips. Journal of the Science of Food and Agriculture, 88(6),
+        945\u2013953.","journal-title":"Journal of the Science of Food and Agriculture"},{"issue":"4","key":"871_CR45","doi-asserted-by":"crossref","first-page":"375","DOI":"10.1007\/BF01242064","volume":"197","author":"MA
+        Petersen","year":"1993","unstructured":"Petersen, M. A. (1993). Influence
+        of sous vide processing, steaming and boiling on vitamin retention and sensory
+        quality in broccoli florets. Lebensmittel Untersuchung und Forschung, 197(4),
+        375\u2013380.","journal-title":"Lebensmittel Untersuchung und Forschung"},{"issue":"1","key":"871_CR46","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/j.lwt.2005.07.023","volume":"40","author":"A
+        Pods\u0119dek","year":"2007","unstructured":"Pods\u0119dek, A. (2007). Natural
+        antioxidants and antioxidant capacity of Brassica vegetables: A review. LWT-
+        Food Science and Technology, 40(1), 1\u201311.","journal-title":"LWT- Food
+        Science and Technology"},{"key":"871_CR47","first-page":"12","volume":"32","author":"Regulation
+        EC 1441\/2007","year":"2007","unstructured":"Regulation EC 1441\/2007. (2007).
+        Commission regulation on microbiological criteria for foodstuffs. Official
+        Journal of the European Union, 32, 12\u201329.","journal-title":"Official
+        Journal of the European Union"},{"issue":"2","key":"871_CR48","doi-asserted-by":"crossref","first-page":"180","DOI":"10.1111\/j.1745-4549.2006.00058.x","volume":"30","author":"K
+        Ren","year":"2006","unstructured":"Ren, K., Tu, K., Pan, L., & Chen, Y. (2006).
+        Kinetic modeling of broccoli color changes during chilled storage. Journal
+        of Food Processing and Preservation, 30(2), 180\u2013193.","journal-title":"Journal
+        of Food Processing and Preservation"},{"issue":"6","key":"871_CR49","doi-asserted-by":"crossref","first-page":"567","DOI":"10.1006\/fstl.1996.0225","volume":"30","author":"AM
+        Rojas","year":"1997","unstructured":"Rojas, A. M., & Gershenson, L. N. (1997).
+        Ascorbic acid destruction in sweet aqueous model systems. Lebensmittel-Wissenschaft
+        und Technologie, 30(6), 567\u2013572.","journal-title":"Lebensmittel-Wissenschaft
+        und Technologie"},{"issue":"1","key":"871_CR50","doi-asserted-by":"crossref","first-page":"263","DOI":"10.1016\/j.foodchem.2008.09.050","volume":"114","author":"MK
+        Roy","year":"2009","unstructured":"Roy, M. K., Juneja, L. R., Isobe, S., &
+        Tsushida, T. (2009). Steam processed broccoli (Brassica oleracea) has higher
+        antioxidant activity in chemical and cellular assay systems. Food Chemistry,
+        114(1), 263\u2013269.","journal-title":"Food Chemistry"},{"issue":"1","key":"871_CR51","doi-asserted-by":"crossref","first-page":"37","DOI":"10.1007\/s00217-007-0690-0","volume":"227","author":"V
+        Rungapamestry","year":"2008","unstructured":"Rungapamestry, V., Duncan, A.
+        J., Fuller, Z., & Ratcliffe, B. (2008). Influence of blanching and freezing
+        broccoli (Brassica oleracea var. italica) prior to storage and cooking on
+        glucosinolate concentrations and myrosinase activity. European Food Research
+        and Technology, 227(1), 37\u201344.","journal-title":"European Food Research
+        and Technology"},{"issue":"3","key":"871_CR52","doi-asserted-by":"crossref","first-page":"227","DOI":"10.1177\/108201320000600305","volume":"6","author":"N
+        Sanjuan","year":"2000","unstructured":"Sanjuan, N., Benedito, J., Clemente,
+        G., & Mulet, A. (2000). The influence of blanching pretreatments on the quality
+        of dehydrated broccoli stems. Food Science and Technology International, 6(3),
+        227\u2013234.","journal-title":"Food Science and Technology International"},{"issue":"2","key":"871_CR53","doi-asserted-by":"crossref","first-page":"87","DOI":"10.1111\/j.1745-4557.1994.tb00135.x","volume":"17","author":"M
+        Schnepf","year":"1994","unstructured":"Schnepf, M., & Driskell, J. (1994).
+        Sensory attributes and nutrient retention in selected vegetables prepared
+        by conventional and microwave methods. Journal of Food Quality, 17(2), 87\u201399.","journal-title":"Journal
+        of Food Quality"},{"issue":"3","key":"871_CR54","doi-asserted-by":"crossref","first-page":"217","DOI":"10.1016\/j.ifset.2006.03.003","volume":"7","author":"U
+        Schweiggert","year":"2006","unstructured":"Schweiggert, U., Schieber, A.,
+        & Carle, R. (2006). Effects of blanching and storage on capsaicinoid stability
+        and peroxidase activity of hot chili peppers (Capsicum frutescens L.). Innovative
+        Food Science & Emerging Technologies, 7(3), 217\u2013224.","journal-title":"Innovative
+        Food Science & Emerging Technologies"},{"issue":"6","key":"871_CR55","doi-asserted-by":"crossref","first-page":"964","DOI":"10.1111\/j.1745-4549.2009.00430.x","volume":"34","author":"C
+        Sebasti\u00e1","year":"2010","unstructured":"Sebasti\u00e1, C., Soriano, J.
+        M., Iranzo, M., & Rico, H. (2010). Microbiological quality of sous vide cook\u2013chill
+        preserved food at different shelf life. Journal of Food Processing Preservation,
+        34(6), 964\u2013974.","journal-title":"Journal of Food Processing Preservation"},{"issue":"10","key":"871_CR56","doi-asserted-by":"crossref","first-page":"1393","DOI":"10.1007\/s11746-998-0188-3","volume":"75","author":"S
+        Shyu","year":"1998","unstructured":"Shyu, S., Hau, L., & Hwang, S. (1998).
+        Effect of vacuum frying on the antioxidant stability of oils. Journal of the
+        American Oil Chemists'' Society, 75(10), 1393\u20131398.","journal-title":"Journal
+        of the American Oil Chemists'' Society"},{"issue":"3","key":"871_CR57","first-page":"144","volume":"16","author":"VL
+        Singleton","year":"1965","unstructured":"Singleton, V. L., & Rossi, J. A.
+        (1965). Colorimetry of total phenolics with phosphomolybdic-phosphotungstic
+        acid reagents. American Journal of Enology and Viticulture, 16(3), 144\u2013158.","journal-title":"American
+        Journal of Enology and Viticulture"},{"key":"871_CR58","author":"Sous Vide
+        Advisory Committee","year":"1991","unstructured":"Sous Vide Advisory Committee.
+        (1991). Code of practice for sous vide catering system. Tetbury: SVAC.","volume-title":"Code
+        of practice for sous vide catering system"},{"issue":"3","key":"871_CR59","doi-asserted-by":"crossref","first-page":"1095","DOI":"10.1016\/j.foodchem.2006.03.009","volume":"101","author":"TH
+        Stea","year":"2006","unstructured":"Stea, T. H., Johansson, M., J\u00e4gerstad,
+        M., & Fr\u00d8lich, W. (2006). Retention of folates in cooked, stored and
+        reheated peas, broccoli and potatoes for use in modern large-scale service
+        systems. Food Chemistry, 101(3), 1095\u20131107.","journal-title":"Food Chemistry"},{"issue":"1","key":"871_CR60","doi-asserted-by":"crossref","first-page":"101","DOI":"10.1016\/j.foodchem.2007.03.048","volume":"105","author":"T
+        Sun","year":"2007","unstructured":"Sun, T., Powers, J., & Tang, J. (2007).
+        Evaluation of the antioxidant activity of asparagus, broccoli and their juices.
+        Food Chemistry, 105(1), 101\u2013106.","journal-title":"Food Chemistry"},{"issue":"7","key":"871_CR61","doi-asserted-by":"crossref","first-page":"1164","DOI":"10.1007\/s11947-009-0246-3","volume":"4","author":"M
+        Szymanek","year":"2011","unstructured":"Szymanek, M. (2011). Effects of blanching
+        on some physical properties and processing recovery of sweet corn cobs. Food
+        and Bioprocess Technology, 4(7), 1164\u20131171.","journal-title":"Food and
+        Bioprocess Technology"},{"issue":"3","key":"871_CR62","doi-asserted-by":"crossref","first-page":"298","DOI":"10.1016\/j.postharvbio.2010.09.013","volume":"59","author":"A
+        Tom\u00e1s-Callejas","year":"2011","unstructured":"Tom\u00e1s-Callejas, A.,
+        Mart\u00ednez-Hern\u00e1ndez, G. B., Art\u00e9s, F., & Art\u00e9s-Hern\u00e1ndez,
+        F. (2011). Neutral and acidic electrolyzed water as emergent sanitizers for
+        fresh-cut mizuna baby leaves. Postharvest Biology and Technology, 59(3), 298\u2013306.","journal-title":"Postharvest
+        Biology and Technology"},{"issue":"4","key":"871_CR63","doi-asserted-by":"crossref","first-page":"713","DOI":"10.1016\/j.foodchem.2004.12.038","volume":"93","author":"N
+        Turkmen","year":"2005","unstructured":"Turkmen, N., Ferda, S., & Velioglu,
+        Y. S. (2005). The effect of cooking methods on total phenolics and antioxidant
+        activity of selected green vegetables. Food Chemistry, 93(4), 713\u2013718.","journal-title":"Food
+        Chemistry"},{"issue":"2","key":"871_CR64","doi-asserted-by":"crossref","first-page":"161","DOI":"10.1007\/s11947-008-0136-0","volume":"3","author":"R
+        Vadivambal","year":"2010","unstructured":"Vadivambal, R., & Jayas, D. S. (2010).
+        Non-uniform temperature distribution during microwave heating of food materials\u2014A
+        review. Food and Bioprocess Technology, 3(2), 161\u2013171.","journal-title":"Food
+        and Bioprocess Technology"},{"issue":"4","key":"871_CR65","doi-asserted-by":"crossref","first-page":"310","DOI":"10.1007\/s00217-002-0560-8","volume":"215","author":"F
+        Vallejo","year":"2002","unstructured":"Vallejo, F., Tom\u00e1s-Barber\u00e1n,
+        F. A., & Garc\u00eda-Viguera, C. (2002). Glucosinolates and vitamin C content
+        in edible parts of broccoli florets after domestic cooking. European Food
+        Research and Technology, 215(4), 310\u2013316.","journal-title":"European
+        Food Research and Technology"},{"key":"871_CR66","unstructured":"Vlok, N.
+        H. (1998). Effects of heat processing on product quality of sous-vide broccoli
+        packs. PhD Thesis. Department of Food Technology & Manufacture, Cape Peninsula
+        University of Technology, Cape Town, South Africa."},{"issue":"1","key":"871_CR67","doi-asserted-by":"crossref","first-page":"61","DOI":"10.1177\/1077727X8401300109","volume":"13","author":"JJ
+        Warthesen","year":"1984","unstructured":"Warthesen, J. J., Vickers, Z. M.,
+        Whitney-West, S., & Wolf, I. D. (1984). Cookery methods for vegetables: Influence
+        on sensory quality, nutrient retention, and energy consumption. Home Economics
+        Research Journal, 13(1), 61\u201379.","journal-title":"Home Economics Research
+        Journal"},{"issue":"4","key":"871_CR68","first-page":"311","volume":"207","author":"HD
+        Werlein","year":"1998","unstructured":"Werlein, H. D. (1998). Comparison of
+        the quality of sous-vide and conventionally processed carrots. European Food
+        Research and Technology, 207(4), 311\u2013315.","journal-title":"European
+        Food Research and Technology"},{"issue":"1","key":"871_CR69","doi-asserted-by":"crossref","first-page":"29","DOI":"10.1111\/j.1365-2621.2009.02099.x","volume":"45","author":"R
+        Wolosiak","year":"2010","unstructured":"Wolosiak, R., Worobiej, E., Piecyk,
+        M., Druzynska, B., Nowak, D., & Lewicki, P. P. (2010). Activities of amine
+        and phenolic antioxidants and their changes in broad beans (Vicia faba) after
+        freezing and steam cooking. International Journal of Food Science and Technology,
+        45(1), 29\u201337.","journal-title":"International Journal of Food Science
+        and Technology"},{"issue":"3","key":"871_CR70","doi-asserted-by":"crossref","first-page":"250","DOI":"10.3136\/fstr.7.250","volume":"7","author":"T
+        Yamaguchi","year":"2001","unstructured":"Yamaguchi, T., Mizobuchi, T., Kajikawa,
+        R., Kawashima, H., Miyabe, F., Terao, J., Takamura, H., & Matoba, T. (2001).
+        Radical-scavenging activity of vegetables and the effect of cooking on their
+        activity. Food Science and Technology Research, 7(3), 250\u2013257.","journal-title":"Food
+        Science and Technology Research"},{"issue":"1","key":"871_CR71","first-page":"59","volume":"12","author":"CT
+        Young","year":"1993","unstructured":"Young, C. T., & Schadel, W. E. (1993).
+        A comparison of the effects of oven roasting and oil cooking on the microstructure
+        of peanut (Arachis hypogaea L. cv. Florigiant) cotyledon. Food Structure,
+        12(1), 59\u201366.","journal-title":"Food Structure"},{"issue":"2","key":"871_CR72","doi-asserted-by":"crossref","first-page":"506","DOI":"10.1111\/j.1365-2621.1992.tb05527.x","volume":"57","author":"S
+        Zapata","year":"1992","unstructured":"Zapata, S., & Dufour, J. P. (1992).
+        Ascorbic, dehydroascorbic and isoascorbic and simultaneous determinations
+        by reverse phase ion interaction HPLC. Journal of Food Science, 57(2), 506\u2013511.","journal-title":"Journal
+        of Food Science"},{"issue":"4","key":"871_CR73","doi-asserted-by":"crossref","first-page":"503","DOI":"10.1016\/j.foodchem.2004.01.065","volume":"88","author":"DL
+        Zhang","year":"2004","unstructured":"Zhang, D. L., & Hamauzu, Y. (2004). Phenolics,
+        ascorbic acid, carotenoids and antioxidant activity of broccoli and their
+        changes during conventional and microwave cooking. Food Chemistry, 88(4),
+        503\u2013509.","journal-title":"Food Chemistry"}],"container-title":["Food
+        and Bioprocess Technology"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s11947-012-0871-0","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T18:24:32Z","timestamp":1497983072000},"score":1.0,"issued":{"date-parts":[[2012,5,8]]},"references-count":73,"journal-issue":{"published-print":{"date-parts":[[2013,8]]},"issue":"8"},"alternative-id":["871"],"URL":"http:\/\/dx.doi.org\/10.1007\/s11947-012-0871-0","relation":{"cites":[]},"ISSN":["1935-5130","1935-5149"],"issn-type":[{"value":"1935-5130","type":"print"},{"value":"1935-5149","type":"electronic"}]},{"indexed":{"date-parts":[[2018,4,18]],"date-time":"2018-04-18T10:13:29Z","timestamp":1524046409811},"publisher-location":"Washington,
+        DC","reference-count":0,"publisher":"American Chemical Society","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2017,1]]},"DOI":"10.1021\/acsreagents.4258","type":"other","created":{"date-parts":[[2017,3,6]],"date-time":"2017-03-06T13:40:15Z","timestamp":1488807615000},"source":"Crossref","is-referenced-by-count":0,"title":["Perchloric
+        Acid, Ultratrace"],"prefix":"10.1021","member":"316","published-online":{"date-parts":[[2017,2,28]]},"container-title":["ACS
+        Reagent Chemicals"],"link":[{"URL":"http:\/\/pubs.acs.org\/doi\/pdf\/10.1021\/acsreagents.4258","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,2,15]],"date-time":"2018-02-15T13:35:43Z","timestamp":1518701743000},"score":1.0,"issued":{"date-parts":[[2017,1]]},"ISBN":["0841230463"],"references-count":0,"alternative-id":["10.1021\/acsreagents.4258","10.1021\/acsreagents"],"URL":"http:\/\/dx.doi.org\/10.1021\/acsreagents.4258"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['28330']
+      Content-Length: ['68518']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:22:58 GMT']
+      Date: ['Thu, 24 May 2018 23:06:17 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

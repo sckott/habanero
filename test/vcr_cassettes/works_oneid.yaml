@@ -5,18 +5,19 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works/10.1371/journal.pone.0033693
   response:
-    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,14]],"date-time":"2018-02-14T18:48:50Z","timestamp":1518634130251},"reference-count":70,"publisher":"Public
-        Library of Science (PLoS)","issue":"3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":33,"title":["Methylphenidate
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,5,24]],"date-time":"2018-05-24T15:02:41Z","timestamp":1527174161049},"reference-count":70,"publisher":"Public
+        Library of Science (PLoS)","issue":"3","license":[{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"delay-in-days":0,"content-version":"unspecified"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
+        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":34,"title":["Methylphenidate
         Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
-        Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","affiliation":[]},{"given":"Brooks
-        B.","family":"Pond","affiliation":[]},{"given":"Amar K.","family":"Pani","affiliation":[]},{"given":"Chunxu","family":"Qu","affiliation":[]},{"given":"Yun","family":"Jiao","affiliation":[]},{"given":"Richard
-        J.","family":"Smeyne","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2012,3,21]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"2376","DOI":"10.1038\/sj.npp.1301164","article-title":"Stimulants:
+        Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
+        B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
+        K.","family":"Pani","sequence":"additional","affiliation":[]},{"given":"Chunxu","family":"Qu","sequence":"additional","affiliation":[]},{"given":"Yun","family":"Jiao","sequence":"additional","affiliation":[]},{"given":"Richard
+        J.","family":"Smeyne","sequence":"additional","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2012,3,21]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"2376","DOI":"10.1038\/sj.npp.1301164","article-title":"Stimulants:
         Therapeutic actions in ADHD.","volume":"31","author":"AF Arnsten","year":"2006","journal-title":"Neuropsychopharmacology"},{"key":"ref2","doi-asserted-by":"crossref","first-page":"325","DOI":"10.1586\/14737175.5.3.325","article-title":"Methylphenidate
         HCl: therapy for attention deficit hyperactivity disorder.","volume":"5","author":"PK
         Capp","year":"2005","journal-title":"Expert Rev Neurother"},{"key":"ref3","doi-asserted-by":"crossref","first-page":"437","DOI":"10.1007\/s11940-011-0137-6","article-title":"Recent
@@ -195,17 +196,15 @@ interactions:
         Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","first-page":"Article3","article-title":"Linear
         models and empirical bayes methods for assessing differential expression in
         microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
-        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T15:58:06Z","timestamp":1497974286000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
-        V.","family":"Borlongan","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{"cites":[]},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":["General
-        Biochemistry, Genetics and Molecular Biology","General Agricultural and Biological
-        Sciences","General Medicine"]}}'}
+        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T15:58:06Z","timestamp":1497974286000},"score":1.0,"subtitle":[],"editor":[{"given":"Cesario
+        V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"published-online":{"date-parts":[[2012,3,21]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{"cites":[]},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}]}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['22753']
+      Content-Length: ['22880']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:12 GMT']
+      Date: ['Thu, 24 May 2018 23:06:39 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

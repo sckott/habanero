@@ -5,28 +5,25 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works?rows=2
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":95875008,"items":[{"indexed":{"date-parts":[[2017,10,23]],"date-time":"2017-10-23T19:27:25Z","timestamp":1508786845330},"reference-count":0,"publisher":"Elsevier
-        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1999,10,1]],"date-time":"1999-10-01T00:00:00Z","timestamp":938736000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Progress
-        in Planning"],"published-print":{"date-parts":[[1999,10]]},"DOI":"10.1016\/s0305-9006(99)00007-0","type":"journal-article","created":{"date-parts":[[2002,7,26]],"date-time":"2002-07-26T00:11:38Z","timestamp":1027642298000},"page":"vii","source":"Crossref","is-referenced-by-count":0,"title":["Editorial"],"prefix":"10.1016","volume":"52","member":"78","container-title":["Progress
-        in Planning"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0305900699000070?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0305900699000070?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,9,9]],"date-time":"2015-09-09T06:07:58Z","timestamp":1441778878000},"score":1.0,"issued":{"date-parts":[[1999,10]]},"references-count":0,"alternative-id":["S0305900699000070"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0305-9006(99)00007-0","ISSN":["0305-9006"],"issn-type":[{"value":"0305-9006","type":"print"}],"subject":["Geography,
-        Planning and Development"]},{"indexed":{"date-parts":[[2017,10,23]],"date-time":"2017-10-23T19:27:25Z","timestamp":1508786845331},"reference-count":7,"publisher":"Elsevier
-        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1999,3,1]],"date-time":"1999-03-01T00:00:00Z","timestamp":920246400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Powder
-        Technology"],"published-print":{"date-parts":[[1999,3]]},"DOI":"10.1016\/s0032-5910(98)00174-0","type":"journal-article","created":{"date-parts":[[2002,7,26]],"date-time":"2002-07-26T00:11:20Z","timestamp":1027642280000},"page":"249-256","source":"Crossref","is-referenced-by-count":19,"title":["A
-        visual kinematic model of flowing foams incorporating coalescence"],"prefix":"10.1016","volume":"101","author":[{"given":"S.J.","family":"Neethling","affiliation":[]},{"given":"J.J.","family":"Cilliers","affiliation":[]}],"member":"78","container-title":["Powder
-        Technology"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0032591098001740?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0032591098001740?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,10,17]],"date-time":"2017-10-17T01:33:05Z","timestamp":1508203985000},"score":1.0,"issued":{"date-parts":[[1999,3]]},"references-count":7,"alternative-id":["S0032591098001740"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0032-5910(98)00174-0","ISSN":["0032-5910"],"issn-type":[{"value":"0032-5910","type":"print"}],"subject":["General
-        Chemical Engineering"]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":96961333,"items":[{"indexed":{"date-parts":[[2018,4,13]],"date-time":"2018-04-13T01:43:00Z","timestamp":1523583780228},"publisher-location":"Cambridge","reference-count":0,"publisher":"Cambridge
+        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1017\/cbo9781139058605.030","type":"book-chapter","created":{"date-parts":[[2012,3,5]],"date-time":"2012-03-05T20:39:56Z","timestamp":1330979996000},"source":"Crossref","is-referenced-by-count":0,"title":["Plate
+        section"],"prefix":"10.1017","author":[{"given":"Leonard","family":"Cockayne","sequence":"first","affiliation":[]}],"member":"56","container-title":["The
+        Vegetation of New Zealand"],"deposited":{"date-parts":[[2018,4,13]],"date-time":"2018-04-13T01:03:25Z","timestamp":1523581405000},"score":1.0,"issued":{"date-parts":[[null]]},"ISBN":["9781139058605"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1017\/cbo9781139058605.030"},{"indexed":{"date-parts":[[2018,4,13]],"date-time":"2018-04-13T01:45:10Z","timestamp":1523583910841},"publisher-location":"Cambridge","reference-count":0,"publisher":"Cambridge
+        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1017\/cbo9781139923651.027","type":"book-chapter","created":{"date-parts":[[2015,6,6]],"date-time":"2015-06-06T05:27:57Z","timestamp":1433568477000},"source":"Crossref","is-referenced-by-count":0,"title":["Plate
+        Section"],"prefix":"10.1017","author":[{"given":"Samuel","family":"Sharpe","sequence":"first","affiliation":[]},{"given":"Joseph","family":"Bonomi","sequence":"additional","affiliation":[]}],"member":"56","container-title":["The
+        Alabaster Sarcophagus of Oimenepthah I., King of Egypt"],"deposited":{"date-parts":[[2018,4,13]],"date-time":"2018-04-13T01:18:49Z","timestamp":1523582329000},"score":1.0,"issued":{"date-parts":[[null]]},"ISBN":["9781139923651"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1017\/cbo9781139923651.027"}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['3642']
+      Content-Length: ['2122']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:21 GMT']
+      Date: ['Thu, 24 May 2018 23:06:57 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

@@ -5,14 +5,15 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/types?query=journal
   response:
-    body: {string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":26,"items":[{"id":"book-section","label":"Book
-        Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"book-track","label":"Book
-        Track"},{"id":"journal-article","label":"Journal Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
+    body: {string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":27,"items":[{"id":"book-section","label":"Book
+        Section"},{"id":"monograph","label":"Monograph"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
+        Review"},{"id":"book-track","label":"Book Track"},{"id":"journal-article","label":"Journal
+        Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
         Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
         Entry"},{"id":"proceedings-article","label":"Proceedings Article"},{"id":"journal","label":"Journal"},{"id":"component","label":"Component"},{"id":"book-chapter","label":"Book
         Chapter"},{"id":"report-series","label":"Report Series"},{"id":"proceedings","label":"Proceedings"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
@@ -24,9 +25,9 @@ interactions:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['1216']
+      Content-Length: ['1259']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:08 GMT']
+      Date: ['Thu, 24 May 2018 23:11:00 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

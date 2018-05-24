@@ -5,8 +5,8 @@ interactions:
       Accept: [application/x-bibtex]
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://doi.org/10.1126/foo
   response:
@@ -82,7 +82,7 @@ interactions:
     headers:
       Content-Length: ['4970']
       Content-Type: [text/html;charset=utf-8]
-      Date: ['Mon, 02 Apr 2018 16:21:29 GMT']
+      Date: ['Thu, 24 May 2018 23:03:55 GMT']
       Server: [Apache-Coyote/1.1]
     status: {code: 404, message: Not Found}
 version: 1

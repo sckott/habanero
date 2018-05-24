@@ -5,8 +5,8 @@ interactions:
       Accept: [application/x-bibtex]
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -16,20 +16,20 @@ interactions:
     headers:
       Content-Length: ['197']
       Content-Type: [text/html;charset=utf-8]
-      Date: ['Mon, 02 Apr 2018 16:21:21 GMT']
-      Expires: ['Mon, 02 Apr 2018 16:34:21 GMT']
+      Date: ['Thu, 24 May 2018 23:03:40 GMT']
+      Expires: ['Thu, 24 May 2018 23:56:08 GMT']
       Location: ['https://data.crossref.org/10.1126%2Fscience.169.3946.635']
       Server: [Apache-Coyote/1.1]
       Vary: [Accept]
-    status: {code: 303, message: See Other}
+    status: {code: 302, message: Found}
 - request:
     body: null
     headers:
       Accept: [application/x-bibtex]
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://data.crossref.org/10.1126%2Fscience.169.3946.635
   response:
@@ -48,7 +48,7 @@ interactions:
       Connection: [close]
       Content-Length: ['459']
       Content-Type: [application/x-bibtex]
-      Date: ['Mon, 02 Apr 2018 16:21:22 GMT']
+      Date: ['Thu, 24 May 2018 23:03:42 GMT']
       Link: ['<http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
           version="vor"; rel="item"']
       Server: [http-kit]

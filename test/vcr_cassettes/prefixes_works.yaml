@@ -5,32 +5,27 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":15529582,"items":[{"indexed":{"date-parts":[[2018,2,5]],"date-time":"2018-02-05T23:19:17Z","timestamp":1517872757555},"reference-count":1,"publisher":"Elsevier
-        BV","issue":"6","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1982,12,1]],"date-time":"1982-12-01T00:00:00Z","timestamp":407548800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-        Journal of Pediatrics"],"published-print":{"date-parts":[[1982,12]]},"DOI":"10.1016\/s0022-3476(82)80043-7","type":"journal-article","created":{"date-parts":[[2006,3,14]],"date-time":"2006-03-14T14:28:24Z","timestamp":1142346504000},"page":"1037","source":"Crossref","is-referenced-by-count":1,"title":["Oral
-        rehydration of diarrhea"],"prefix":"10.1016","volume":"101","author":[{"given":"Harold
-        E.","family":"Harrison","affiliation":[]},{"given":"Laurence","family":"Finberg","affiliation":[]},{"given":"Paul
-        A.","family":"Harper","affiliation":[]},{"given":"R. Brad","family":"Sack","affiliation":[]}],"member":"78","container-title":["The
-        Journal of Pediatrics"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0022347682800437?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0022347682800437?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,17]],"date-time":"2017-06-17T03:47:16Z","timestamp":1497671236000},"score":1.0,"issued":{"date-parts":[[1982,12]]},"references-count":1,"alternative-id":["S0022347682800437"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0022-3476(82)80043-7","ISSN":["0022-3476"],"issn-type":[{"value":"0022-3476","type":"print"}],"subject":["Pediatrics,
-        Perinatology, and Child Health"]},{"indexed":{"date-parts":[[2018,2,2]],"date-time":"2018-02-02T23:17:46Z","timestamp":1517613466035},"reference-count":10,"publisher":"Elsevier
-        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1973,1,1]],"date-time":"1973-01-01T00:00:00Z","timestamp":94694400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Tetrahedron
-        Letters"],"published-print":{"date-parts":[[1973,1]]},"DOI":"10.1016\/s0040-4039(01)95630-8","type":"journal-article","created":{"date-parts":[[2002,7,25]],"date-time":"2002-07-25T21:37:05Z","timestamp":1027633025000},"page":"241-243","source":"Crossref","is-referenced-by-count":1,"title":["Synthese
-        d\u2032imidates monofluores par action basocatalysee d\u2032un nitrile sur
-        certaines fluorhydrines."],"prefix":"10.1016","volume":"14","author":[{"given":"Ahmed","family":"Baklouti","affiliation":[]}],"member":"78","container-title":["Tetrahedron
-        Letters"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0040403901956308?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0040403901956308?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,15]],"date-time":"2017-06-15T01:01:37Z","timestamp":1497488497000},"score":1.0,"issued":{"date-parts":[[1973,1]]},"references-count":10,"alternative-id":["S0040403901956308"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0040-4039(01)95630-8","ISSN":["0040-4039"],"issn-type":[{"value":"0040-4039","type":"print"}],"subject":["Organic
-        Chemistry","Biochemistry","Drug Discovery"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":15636293,"items":[{"indexed":{"date-parts":[[2018,5,5]],"date-time":"2018-05-05T16:34:34Z","timestamp":1525538074409},"reference-count":32,"publisher":"Elsevier
+        BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2012,11,1]],"date-time":"2012-11-01T00:00:00Z","timestamp":1351728000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of Cereal Science"],"published-print":{"date-parts":[[2012,11]]},"DOI":"10.1016\/j.jcs.2012.07.008","type":"journal-article","created":{"date-parts":[[2012,8,21]],"date-time":"2012-08-21T03:25:01Z","timestamp":1345519501000},"page":"576-580","source":"Crossref","is-referenced-by-count":9,"title":["Glycaemic
+        response to frozen stored wheat rolls enriched with inulin and oat fibre"],"prefix":"10.1016","volume":"56","author":[{"given":"B.","family":"Borczak","sequence":"first","affiliation":[]},{"given":"E.","family":"Sikora","sequence":"additional","affiliation":[]},{"given":"M.","family":"Sikora","sequence":"additional","affiliation":[]},{"given":"C.M.","family":"Rosell","sequence":"additional","affiliation":[]},{"given":"C.","family":"Collar","sequence":"additional","affiliation":[]}],"member":"78","container-title":["Journal
+        of Cereal Science"],"language":"en","link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0733521012001361?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0733521012001361?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T23:04:34Z","timestamp":1497999874000},"score":1.0,"issued":{"date-parts":[[2012,11]]},"references-count":32,"journal-issue":{"published-print":{"date-parts":[[2012,11]]},"issue":"3"},"alternative-id":["S0733521012001361"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.jcs.2012.07.008","ISSN":["0733-5210"],"issn-type":[{"value":"0733-5210","type":"print"}]},{"indexed":{"date-parts":[[2018,5,3]],"date-time":"2018-05-03T21:53:41Z","timestamp":1525384421356},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"6457","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1947,5,1]],"date-time":"1947-05-01T00:00:00Z","timestamp":-715478400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Lancet"],"published-print":{"date-parts":[[1947,5]]},"DOI":"10.1016\/s0140-6736(47)91529-8","type":"journal-article","created":{"date-parts":[[2003,10,9]],"date-time":"2003-10-09T16:39:27Z","timestamp":1065717567000},"page":"768","source":"Crossref","is-referenced-by-count":0,"title":["DIETARY
+        DEFICIENCIES IN HONG-KONG"],"prefix":"10.1016","volume":"249","author":[{"given":"P.S.","family":"Selwyn-Clarke","sequence":"first","affiliation":[]}],"member":"78","container-title":["The
+        Lancet"],"language":"en","link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0140673647915298?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0140673647915298?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,10,3]],"date-time":"2015-10-03T08:23:57Z","timestamp":1443860637000},"score":1.0,"issued":{"date-parts":[[1947,5]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[1947,5]]},"issue":"6457"},"alternative-id":["S0140673647915298"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0140-6736(47)91529-8","ISSN":["0140-6736"],"issn-type":[{"value":"0140-6736","type":"print"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['3923']
+      Content-Length: ['4111']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:22:43 GMT']
+      Date: ['Thu, 24 May 2018 23:05:54 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

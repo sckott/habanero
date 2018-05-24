@@ -5,33 +5,32 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works/10.1016/j.neurobiolaging.2010.03.024
   response:
-    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,3,22]],"date-time":"2018-03-22T11:02:30Z","timestamp":1521716550793},"reference-count":57,"publisher":"Elsevier
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,5,16]],"date-time":"2018-05-16T06:22:32Z","timestamp":1526451752513},"reference-count":57,"publisher":"Elsevier
         BV","issue":"3","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2012,3,1]],"date-time":"2012-03-01T00:00:00Z","timestamp":1330560000000},"delay-in-days":0,"content-version":"tdm"}],"funder":[{"DOI":"10.13039\/501100004085","name":"Ministry
         of Education, Science and Technology","doi-asserted-by":"crossref","award":["R32-10064"]},{"name":"Stem
         Cell Research Center","award":["SC4170"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Neurobiology
-        of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":87,"title":["Human
+        of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":90,"title":["Human
         umbilical cord blood-derived mesenchymal stem cells improve neuropathology
         and cognitive impairment in an Alzheimer''s disease mouse model through modulation
         of neuroinflammation"],"prefix":"10.1016","volume":"33","author":[{"given":"Hyun
-        Ju","family":"Lee","affiliation":[]},{"given":"Jong Kil","family":"Lee","affiliation":[]},{"given":"Hyun","family":"Lee","affiliation":[]},{"given":"Janet
-        E.","family":"Carter","affiliation":[]},{"given":"Jong Wook","family":"Chang","affiliation":[]},{"given":"Wonil","family":"Oh","affiliation":[]},{"given":"Yoon
-        Sun","family":"Yang","affiliation":[]},{"given":"Jun-Gyo","family":"Suh","affiliation":[]},{"given":"Byoung-Hee","family":"Lee","affiliation":[]},{"given":"Hee
-        Kyung","family":"Jin","affiliation":[]},{"given":"Jae-sung","family":"Bae","affiliation":[]}],"member":"78","container-title":["Neurobiology
-        of Aging"],"original-title":[],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,19]],"date-time":"2017-06-19T08:20:12Z","timestamp":1497860412000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"alternative-id":["S0197458010001570"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}],"subject":["Developmental
-        Biology","Ageing","General Neuroscience","Geriatrics and Gerontology","Clinical
-        Neurology"]}}'}
+        Ju","family":"Lee","sequence":"first","affiliation":[]},{"given":"Jong Kil","family":"Lee","sequence":"additional","affiliation":[]},{"given":"Hyun","family":"Lee","sequence":"additional","affiliation":[]},{"given":"Janet
+        E.","family":"Carter","sequence":"additional","affiliation":[]},{"given":"Jong
+        Wook","family":"Chang","sequence":"additional","affiliation":[]},{"given":"Wonil","family":"Oh","sequence":"additional","affiliation":[]},{"given":"Yoon
+        Sun","family":"Yang","sequence":"additional","affiliation":[]},{"given":"Jun-Gyo","family":"Suh","sequence":"additional","affiliation":[]},{"given":"Byoung-Hee","family":"Lee","sequence":"additional","affiliation":[]},{"given":"Hee
+        Kyung","family":"Jin","sequence":"additional","affiliation":[]},{"given":"Jae-sung","family":"Bae","sequence":"additional","affiliation":[]}],"member":"78","container-title":["Neurobiology
+        of Aging"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,19]],"date-time":"2017-06-19T08:20:12Z","timestamp":1497860412000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"journal-issue":{"published-print":{"date-parts":[[2012,3]]},"issue":"3"},"alternative-id":["S0197458010001570"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}]}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['2841']
+      Content-Length: ['3072']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:14 GMT']
+      Date: ['Thu, 24 May 2018 23:06:45 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]
@@ -43,19 +42,21 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works/10.1002/jor.1100150407
   response:
-    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,5]],"date-time":"2018-02-05T08:47:28Z","timestamp":1517820448248},"reference-count":36,"publisher":"Wiley-Blackwell","issue":"4","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":6636,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,5,4]],"date-time":"2018-05-04T14:29:35Z","timestamp":1525444175152},"reference-count":36,"publisher":"Wiley","issue":"4","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":6636,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
         Orthop. Res."],"published-print":{"date-parts":[[1997,7]]},"DOI":"10.1002\/jor.1100150407","type":"journal-article","created":{"date-parts":[[2005,2,24]],"date-time":"2005-02-24T10:47:51Z","timestamp":1109242071000},"page":"519-527","source":"Crossref","is-referenced-by-count":11,"title":["Growth
         hormone secretagogue increases muscle strength during remobilization after
         canine hindlimb immobilization"],"prefix":"10.1002","volume":"15","author":[{"given":"Richard
-        L.","family":"Lieber","affiliation":[]},{"given":"Thomas M.","family":"Jacks","affiliation":[]},{"given":"Randall
-        L.","family":"Mohler","affiliation":[]},{"given":"Klaus","family":"Schleim","affiliation":[]},{"given":"Michelle","family":"Haven","affiliation":[]},{"given":"Denise","family":"Cuizon","affiliation":[]},{"given":"David
-        H.","family":"Gershuni","affiliation":[]},{"given":"Michael A.","family":"Lopez","affiliation":[]},{"given":"Donald","family":"Hora","affiliation":[]},{"given":"Ravi","family":"Nargund","affiliation":[]},{"given":"William","family":"Feeney","affiliation":[]},{"given":"Gerard
-        J.","family":"Hickey","affiliation":[]}],"member":"311","reference":[{"key":"10.1002\/jor.1100150407-BIB1","author":"Abbasi","volume":"41","first-page":"975","year":"1993","journal-title":"J
+        L.","family":"Lieber","sequence":"first","affiliation":[]},{"given":"Thomas
+        M.","family":"Jacks","sequence":"additional","affiliation":[]},{"given":"Randall
+        L.","family":"Mohler","sequence":"additional","affiliation":[]},{"given":"Klaus","family":"Schleim","sequence":"additional","affiliation":[]},{"given":"Michelle","family":"Haven","sequence":"additional","affiliation":[]},{"given":"Denise","family":"Cuizon","sequence":"additional","affiliation":[]},{"given":"David
+        H.","family":"Gershuni","sequence":"additional","affiliation":[]},{"given":"Michael
+        A.","family":"Lopez","sequence":"additional","affiliation":[]},{"given":"Donald","family":"Hora","sequence":"additional","affiliation":[]},{"given":"Ravi","family":"Nargund","sequence":"additional","affiliation":[]},{"given":"William","family":"Feeney","sequence":"additional","affiliation":[]},{"given":"Gerard
+        J.","family":"Hickey","sequence":"additional","affiliation":[]}],"member":"311","reference":[{"key":"10.1002\/jor.1100150407-BIB1","author":"Abbasi","volume":"41","first-page":"975","year":"1993","journal-title":"J
         Am Geriatr Soc","DOI":"10.1111\/j.1532-5415.1993.tb06764.x","doi-asserted-by":"crossref"},{"key":"10.1002\/jor.1100150407-BIB2","author":"Booth","volume":"342","first-page":"123","year":"1973","journal-title":"Pfluers
         Arch"},{"key":"10.1002\/jor.1100150407-BIB3","author":"Booth","volume":"47","first-page":"435","year":"1979","journal-title":"J
         Appl Physiol"},{"key":"10.1002\/jor.1100150407-BIB4","author":"Borski","volume":"137","first-page":"3253","year":"1996","journal-title":"Endocrinology"},{"key":"10.1002\/jor.1100150407-BIB5","author":"Clarke","volume":"10","first-page":"502","year":"1996","journal-title":"FASEB
@@ -93,15 +94,14 @@ interactions:
         Small Animal Clinical Diagnosis by Laboratory Methods. San Francisco, Saunders,
         1989","volume-title":"Small Animal Clinical Diagnosis by Laboratory Methods"},{"key":"10.1002\/jor.1100150407-BIB35","author":"Williams","volume":"127","first-page":"459","year":"1978","journal-title":"J
         Anat"},{"key":"10.1002\/jor.1100150407-BIB36","author":"Zajac","volume":"17","first-page":"359","year":"1989","journal-title":"Crit
-        Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T16:14:02Z","timestamp":1497629642000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"URL":"http:\/\/dx.doi.org\/10.1002\/jor.1100150407","relation":{"cites":[]},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":["Orthopedics
-        and Sports Medicine"]}}'}
+        Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T16:14:02Z","timestamp":1497629642000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"journal-issue":{"published-print":{"date-parts":[[1997,7]]},"issue":"4"},"URL":"http:\/\/dx.doi.org\/10.1002\/jor.1100150407","relation":{"cites":[]},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}]}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['8104']
+      Content-Length: ['8421']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:14 GMT']
+      Date: ['Thu, 24 May 2018 23:06:48 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]
@@ -113,20 +113,21 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works/10.1038/srep16696
   response:
-    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,3,5]],"date-time":"2018-03-05T05:02:34Z","timestamp":1520226154491},"reference-count":62,"publisher":"Springer
-        Nature","issue":"1","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"delay-in-days":0,"content-version":"vor"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Sci
-        Rep"],"published-print":{"date-parts":[[2015,12]]},"DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":23,"title":["Single-molecule
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,5,7]],"date-time":"2018-05-07T22:57:04Z","timestamp":1525733824521},"reference-count":62,"publisher":"Springer
+        Nature","issue":"1","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"delay-in-days":0,"content-version":"unspecified"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Sci
+        Rep"],"published-print":{"date-parts":[[2015,12]]},"DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":24,"title":["Single-molecule
         FRET studies on alpha-synuclein oligomerization of Parkinson\u2019s disease
-        genetically related mutants"],"prefix":"10.1038","volume":"5","author":[{"given":"Laura","family":"Tosatto","affiliation":[]},{"given":"Mathew
-        H.","family":"Horrocks","affiliation":[]},{"given":"Alexander J.","family":"Dear","affiliation":[]},{"given":"Tuomas
-        P. J.","family":"Knowles","affiliation":[]},{"given":"Mauro","family":"Dalla
-        Serra","affiliation":[]},{"given":"Nunilo","family":"Cremades","affiliation":[]},{"given":"Christopher
-        M.","family":"Dobson","affiliation":[]},{"given":"David","family":"Klenerman","affiliation":[]}],"member":"339","published-online":{"date-parts":[[2015,11,19]]},"reference":[{"key":"BFsrep16696_CR1","doi-asserted-by":"publisher","first-page":"140","DOI":"10.3389\/fnana.2010.00140","volume":"4","author":"T
+        genetically related mutants"],"prefix":"10.1038","volume":"5","author":[{"given":"Laura","family":"Tosatto","sequence":"first","affiliation":[]},{"given":"Mathew
+        H.","family":"Horrocks","sequence":"additional","affiliation":[]},{"given":"Alexander
+        J.","family":"Dear","sequence":"additional","affiliation":[]},{"given":"Tuomas
+        P. J.","family":"Knowles","sequence":"additional","affiliation":[]},{"given":"Mauro","family":"Dalla
+        Serra","sequence":"additional","affiliation":[]},{"given":"Nunilo","family":"Cremades","sequence":"additional","affiliation":[]},{"given":"Christopher
+        M.","family":"Dobson","sequence":"additional","affiliation":[]},{"given":"David","family":"Klenerman","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2015,11,19]]},"reference":[{"key":"BFsrep16696_CR1","doi-asserted-by":"publisher","first-page":"140","DOI":"10.3389\/fnana.2010.00140","volume":"4","author":"T
         Gonz\u00e1lez-Hern\u00e1ndez","year":"2010","unstructured":"Gonz\u00e1lez-Hern\u00e1ndez,
         T., Cruz-Muros, I., Afonso-Oramas, D., Salas-Hernandez, J. & Castro-Hernandez,
         J. Vulnerability of mesostriatal dopaminergic neurons in Parkinson\u2019s
@@ -357,14 +358,14 @@ interactions:
         Nielsen","year":"2013","unstructured":"Nielsen, S. B. et al. Wildtype and
         A30P mutant alpha-synuclein form different fibril structures. PloS One 8,
         e67713 (2013).","journal-title":"PloS One"}],"container-title":["Scientific
-        Reports"],"original-title":[],"link":[{"URL":"http:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/srep16696","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,22]],"date-time":"2017-04-22T23:03:31Z","timestamp":1492902211000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,11,19]]},"references-count":62,"alternative-id":["BFsrep16696"],"URL":"http:\/\/dx.doi.org\/10.1038\/srep16696","relation":{"cites":[]},"ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"subject":["Multidisciplinary"],"article-number":"16696"}}'}
+        Reports"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/srep16696","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,22]],"date-time":"2017-04-22T23:03:31Z","timestamp":1492902211000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,11,19]]},"references-count":62,"journal-issue":{"published-print":{"date-parts":[[2015,12]]},"issue":"1"},"alternative-id":["BFsrep16696"],"URL":"http:\/\/dx.doi.org\/10.1038\/srep16696","relation":{"cites":[]},"ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"article-number":"16696"}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['27068']
+      Content-Length: ['27322']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:15 GMT']
+      Date: ['Thu, 24 May 2018 23:06:49 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]
@@ -376,13 +377,13 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works/10.1109/icdcsw.2003.1203662
   response:
-    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,4]],"date-time":"2018-02-04T22:22:49Z","timestamp":1517782969728},"reference-count":13,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1109\/icdcsw.2003.1203662","type":"proceedings-article","created":{"date-parts":[[2004,6,22]],"date-time":"2004-06-22T20:27:43Z","timestamp":1087936063000},"source":"Crossref","is-referenced-by-count":2,"title":["Accurate
-        and explicit differentiation of wireless and congestion losses"],"prefix":"10.1109","author":[{"given":"V.","family":"Arya","affiliation":[]},{"given":"T.","family":"Turletti","affiliation":[]}],"member":"263","event":{"name":"23rd
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,5,4]],"date-time":"2018-05-04T05:44:57Z","timestamp":1525412697027},"reference-count":13,"publisher":"IEEE","isbn-type":[{"value":"0769519210","type":"print"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1109\/icdcsw.2003.1203662","type":"proceedings-article","created":{"date-parts":[[2004,6,22]],"date-time":"2004-06-22T20:27:43Z","timestamp":1087936063000},"source":"Crossref","is-referenced-by-count":2,"title":["Accurate
+        and explicit differentiation of wireless and congestion losses"],"prefix":"10.1109","author":[{"given":"V.","family":"Arya","sequence":"first","affiliation":[]},{"given":"T.","family":"Turletti","sequence":"additional","affiliation":[]}],"member":"263","event":{"name":"23rd
         International Conference on Distributed Computing Systems Workshops, 2003.","location":"Providence,
         Rhode Island, USA"},"container-title":["23rd International Conference on Distributed
         Computing Systems Workshops, 2003. Proceedings."],"original-title":[],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/8560\/27094\/01203662.pdf?arnumber=1203662","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,13]],"date-time":"2017-03-13T18:23:30Z","timestamp":1489429410000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"ISBN":["0769519210"],"references-count":13,"URL":"http:\/\/dx.doi.org\/10.1109\/icdcsw.2003.1203662","relation":{}}}'}
@@ -390,9 +391,9 @@ interactions:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['1515']
+      Content-Length: ['1610']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:17 GMT']
+      Date: ['Thu, 24 May 2018 23:06:53 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]
@@ -404,25 +405,24 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works/10.3892/ijo_00000353
   response:
-    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,2,10]],"date-time":"2018-02-10T00:59:29Z","timestamp":1518224369590},"reference-count":0,"publisher":"Spandidos
+    body: {string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2018,5,5]],"date-time":"2018-05-05T01:50:27Z","timestamp":1525485027131},"reference-count":0,"publisher":"Spandidos
         Publications","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Int
         J Oncol"],"published-print":{"date-parts":[[2009,6,26]]},"DOI":"10.3892\/ijo_00000353","type":"journal-article","created":{"date-parts":[[2009,6,26]],"date-time":"2009-06-26T11:19:22Z","timestamp":1246015162000},"source":"Crossref","is-referenced-by-count":3,"title":["Human
         bladder cancer cells undergo cisplatin-induced apoptosis that is associated
-        with p53-dependent and p53-independent responses"],"prefix":"10.3892","author":[{"family":"Stravopodis","affiliation":[]}],"member":"2249","container-title":["International
-        Journal of Oncology"],"original-title":[],"link":[{"URL":"https:\/\/spandidos-publications.com\/10.3892\/ijo_00000353\/download","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,27]],"date-time":"2017-04-27T09:37:08Z","timestamp":1493285828000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009,6,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3892\/ijo_00000353","relation":{},"ISSN":["1019-6439"],"issn-type":[{"value":"1019-6439","type":"print"}],"subject":["Cancer
-        Research","Oncology"]}}'}
+        with p53-dependent and p53-independent responses"],"prefix":"10.3892","author":[{"family":"Stravopodis","sequence":"first","affiliation":[]}],"member":"2249","container-title":["International
+        Journal of Oncology"],"original-title":[],"link":[{"URL":"https:\/\/spandidos-publications.com\/10.3892\/ijo_00000353\/download","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,27]],"date-time":"2017-04-27T09:37:08Z","timestamp":1493285828000},"score":1.0,"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009,6,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3892\/ijo_00000353","relation":{},"ISSN":["1019-6439"],"issn-type":[{"value":"1019-6439","type":"print"}]}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['1458']
+      Content-Length: ['1435']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:23:19 GMT']
+      Date: ['Thu, 24 May 2018 23:06:55 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

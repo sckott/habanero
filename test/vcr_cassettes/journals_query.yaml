@@ -5,23 +5,23 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/journals?query=ecology&rows=2
   response:
-    body: {string: '{"status":"ok","message-type":"journal-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"},"total-results":192,"items":[{"last-status-check-time":null,"counts":null,"breakdowns":null,"publisher":"\"Clausius
-        Scientific Press, Inc.\"","coverage":null,"title":"Environment Resource and
-        Ecology Journal","subjects":[],"flags":null,"ISSN":[],"issn-type":[]},{"last-status-check-time":null,"counts":null,"breakdowns":null,"publisher":"New
+    body: {string: '{"status":"ok","message-type":"journal-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"},"total-results":193,"items":[{"last-status-check-time":null,"counts":null,"breakdowns":null,"publisher":"New
         Zealand Ecological Society","coverage":null,"title":"New Zealand Journal of
+        Ecology","subjects":[],"flags":null,"ISSN":[],"issn-type":[]},{"last-status-check-time":null,"counts":null,"breakdowns":null,"publisher":"Peertechz
+        Publications Private Limited ","coverage":null,"title":"Global Journal of
         Ecology","subjects":[],"flags":null,"ISSN":[],"issn-type":[]}]}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['634']
+      Content-Length: ['623']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:22:00 GMT']
+      Date: ['Thu, 24 May 2018 23:04:59 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

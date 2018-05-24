@@ -11,6 +11,7 @@ cr = Crossref()
 a = {u'items': [{u'id': u'book-section', u'label': u'Book Section'},
   {u'id': u'monograph', u'label': u'Monograph'},
   {u'id': u'report', u'label': u'Report'},
+  {u'id': u'peer-review', u'label': u'Peer Review'},
   {u'id': u'book-track', u'label': u'Book Track'},
   {u'id': u'journal-article', u'label': u'Journal Article'},
   {u'id': u'book-part', u'label': u'Part'},
@@ -34,7 +35,7 @@ a = {u'items': [{u'id': u'book-section', u'label': u'Book Section'},
   {u'id': u'book-series', u'label': u'Book Series'},
   {u'id': u'edited-book', u'label': u'Edited Book'},
   {u'id': u'standard-series', u'label': u'Standard Series'}],
- u'total-results': 26}
+ u'total-results': 27}
 
 @vcr.use_cassette('test/vcr_cassettes/types.yaml')
 def test_types():

@@ -5,124 +5,588 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/works?query=widget&cursor=%2A
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"next-cursor":"AoJ2ppnIqt8CPwZodHRwOi8vZHguZG9pLm9yZy8xMC4xMDQ5L21lOjIwMDMwNTAx","total-results":249,"items":[{"indexed":{"date-parts":[[2017,10,23]],"date-time":"2017-10-23T17:16:05Z","timestamp":1508778965599},"reference-count":19,"publisher":"Elsevier
-        BV","issue":"4","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[1995,7,1]],"date-time":"1995-07-01T00:00:00Z","timestamp":804556800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Computers
-        & Graphics"],"published-print":{"date-parts":[[1995,7]]},"DOI":"10.1016\/0097-8493(95)00035-b","type":"journal-article","created":{"date-parts":[[2002,7,25]],"date-time":"2002-07-25T14:55:29Z","timestamp":1027608929000},"page":"575-583","source":"Crossref","is-referenced-by-count":0,"title":["Object-oriented
-        implementation of the OSF\/MotifTM widget set in Eiffel"],"prefix":"10.1016","volume":"19","author":[{"given":"Fergal","family":"Somers","affiliation":[]},{"given":"Ghee
-        S.","family":"Teo","affiliation":[]},{"given":"Francis","family":"Neelamkavil","affiliation":[]}],"member":"78","container-title":["Computers
-        & Graphics"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:009784939500035B?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:009784939500035B?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,14]],"date-time":"2017-06-14T21:36:56Z","timestamp":1497476216000},"score":11.994173,"issued":{"date-parts":[[1995,7]]},"references-count":19,"alternative-id":["009784939500035B"],"URL":"http:\/\/dx.doi.org\/10.1016\/0097-8493(95)00035-b","ISSN":["0097-8493"],"issn-type":[{"value":"0097-8493","type":"print"}],"subject":["General
-        Engineering","Human-Computer Interaction","Computer Graphics and Computer-Aided
-        Design"]},{"indexed":{"date-parts":[[2017,10,24]],"date-time":"2017-10-24T04:27:37Z","timestamp":1508819257196},"reference-count":0,"publisher":"IEEE
-        Comput. Soc. Press","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1109\/hicss.1991.183968","type":"proceedings-article","created":{"date-parts":[[2002,12,9]],"date-time":"2002-12-09T23:40:41Z","timestamp":1039477241000},"source":"Crossref","is-referenced-by-count":0,"title":["Validation
-        of Motif graphical user interface widget set"],"prefix":"10.1109","author":[{"given":"A.","family":"Birjandi","affiliation":[]},{"given":"S.","family":"Sydorowicz","affiliation":[]}],"member":"263","event":{"name":"Twenty-Fourth
-        Annual Hawaii International Conference on System Sciences","location":"Kauai,
-        HI, USA"},"container-title":["Proceedings of the Twenty-Fourth Annual Hawaii
-        International Conference on System Sciences"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx2\/882\/4722\/00183968.pdf?arnumber=183968","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,9]],"date-time":"2017-03-09T02:31:32Z","timestamp":1489026692000},"score":13.90302,"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1109\/hicss.1991.183968"},{"indexed":{"date-parts":[[2017,10,24]],"date-time":"2017-10-24T05:24:08Z","timestamp":1508822648173},"reference-count":13,"publisher":"IEEE
-        Comput. Soc. Press","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1109\/case.1992.200152","type":"proceedings-article","created":{"date-parts":[[2003,1,2]],"date-time":"2003-01-02T14:33:59Z","timestamp":1041518039000},"source":"Crossref","is-referenced-by-count":0,"title":["Integrating
-        widget design knowledge with user interface toolkits"],"prefix":"10.1109","author":[{"given":"T.","family":"Carey","affiliation":[]},{"given":"J.","family":"Crentsil","affiliation":[]}],"member":"263","event":{"name":"[1992]
-        Fifth International Workshop on Computer-Aided Software Engineering","location":"Montreal,
-        Que., Canada"},"container-title":["[1992] Proceedings of the Fifth International
-        Workshop on Computer-Aided Software Engineering"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx2\/431\/5202\/00200152.pdf?arnumber=200152","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,9]],"date-time":"2017-03-09T05:22:54Z","timestamp":1489036974000},"score":13.90302,"issued":{"date-parts":[[null]]},"ISBN":["0818629606"],"references-count":13,"URL":"http:\/\/dx.doi.org\/10.1109\/case.1992.200152"},{"indexed":{"date-parts":[[2017,10,24]],"date-time":"2017-10-24T17:08:09Z","timestamp":1508864889169},"publisher-location":"New
-        York, New York, USA","reference-count":0,"publisher":"ACM Press","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2003]]},"DOI":"10.1145\/769953.769994","type":"proceedings-article","created":{"date-parts":[[2004,2,2]],"date-time":"2004-02-02T20:19:51Z","timestamp":1075753191000},"source":"Crossref","is-referenced-by-count":0,"title":["Gearbox
-        widget for fine adjustments by hand motion"],"prefix":"10.1145","author":[{"given":"Noritaka","family":"Osawa","affiliation":[]},{"given":"Xiangshi","family":"Ren","affiliation":[]}],"member":"320","event":{"name":"the
-        workshop","location":"Zurich, Switzerland","sponsor":["EUROGRAPH, Eurographics
-        Organization"],"acronym":"EGVE ''03","number":"9","start":{"date-parts":[[2003,5,22]]},"end":{"date-parts":[[2003,5,23]]}},"container-title":["Proceedings
-        of the workshop on Virtual environments 2003  - EGVE ''03"],"link":[{"URL":"http:\/\/dl.acm.org\/ft_gateway.cfm?id=769994&amp;ftid=152129&amp;dwn=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,16]],"date-time":"2016-12-16T05:49:59Z","timestamp":1481867399000},"score":13.90302,"issued":{"date-parts":[[2003]]},"ISBN":["3905673002"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1145\/769953.769994"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T04:25:02Z","timestamp":1508905502035},"reference-count":1,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2005]]},"DOI":"10.1109\/ismar.2005.25","type":"proceedings-article","created":{"date-parts":[[2006,10,11]],"date-time":"2006-10-11T15:41:15Z","timestamp":1160581275000},"source":"Crossref","is-referenced-by-count":0,"title":["Design
-        and implementation of a widget set for steerable projector-camera units"],"prefix":"10.1109","author":[{"given":"D.","family":"Reiter","affiliation":[]},{"given":"A.","family":"Butz","affiliation":[]}],"member":"263","event":{"name":"Fourth
-        IEEE and ACM International Symposium on Mixed and Augmented Reality (ISMAR''05)","location":"Vienna,
-        Austria","start":{"date-parts":[[2005,10,5]]},"end":{"date-parts":[[2005,10,8]]}},"container-title":["Fourth
-        IEEE and ACM International Symposium on Mixed and Augmented Reality (ISMAR''05)"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/10369\/32972\/01544701.pdf?arnumber=1544701","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,14]],"date-time":"2017-03-14T16:16:10Z","timestamp":1489508170000},"score":11.994173,"issued":{"date-parts":[[2005]]},"ISBN":["0769524591"],"references-count":1,"URL":"http:\/\/dx.doi.org\/10.1109\/ismar.2005.25"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T04:50:11Z","timestamp":1508907011268},"reference-count":0,"publisher":"SPIE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1992,6,1]]},"DOI":"10.1117\/12.60585","type":"proceedings-article","created":{"date-parts":[[2004,12,9]],"date-time":"2004-12-09T23:37:38Z","timestamp":1102635458000},"source":"Crossref","is-referenced-by-count":0,"title":["<title>WIDe-angle
-        GEocoronal Telescope (WIDGET)<\/title>"],"prefix":"10.1117","author":[{"given":"Daniel
-        M.","family":"Cotton","affiliation":[]},{"given":"Robert A.","family":"Conant","affiliation":[]},{"given":"Supriya","family":"Chakrabarti","affiliation":[]}],"member":"189","event":{"name":"San
-        Diego ''92","location":"San Diego, CA"},"container-title":["Instrumentation
-        for Magnetospheric Imagery"],"deposited":{"date-parts":[[2013,3,14]],"date-time":"2013-03-14T14:57:11Z","timestamp":1363273031000},"score":13.90302,"editor":[{"given":"Supriya","family":"Chakrabarti","affiliation":[]}],"issued":{"date-parts":[[1992,6,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1117\/12.60585"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T14:23:42Z","timestamp":1508941422575},"reference-count":8,"publisher":"Wiley-Blackwell","issue":"9","license":[{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"delay-in-days":3652,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2005,9]]},"DOI":"10.1111\/j.1360-0443.2005.01266.x","type":"journal-article","created":{"date-parts":[[2005,8,25]],"date-time":"2005-08-25T15:13:29Z","timestamp":1124982809000},"page":"1376-1377","source":"Crossref","is-referenced-by-count":0,"title":["LOOKING
-        FOR A BETTER WIDGET: RESPONSE TO CUIJPERS AND VAN STRATEN"],"prefix":"10.1111","volume":"100","member":"311","reference":[{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB5","first-page":"608","article-title":"Efficacy
-        of brief interventions for hazardous drinkers in primary care: systematic
-        review and meta-analyses","volume":"28","author":"Ballesteros","year":"2004","journal-title":"Alcoholism:
-        Clinical and Experimental Research"},{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB6","first-page":"536","article-title":"Screening
-        in brief intervention trials targeting excessive drinkers in general practice:
-        systematic review and meta-analysis","volume":"327","author":"Beich","year":"2003","journal-title":"BMJ"},{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB2","first-page":"742","article-title":"A
-        better widget? Three lessons for improving addiction treatment from a meta-analytical
-        study","volume":"100","author":"Berglund","year":"2005","journal-title":"Addiction"},{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB3","author":"Berglund","year":"2003","volume-title":"Treating
-        Alcohol and Drug Abuse: An Evidence Based Review","DOI":"10.1002\/3527601465","doi-asserted-by":"crossref"},{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB4","first-page":"1645","article-title":"Treatment
-        of alcohol abuse: An evidence-based review","volume":"27","author":"Berglund","year":"2003","journal-title":"Alcoholism:
-        Clinical and Experimental Research"},{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB1","author":"Cuijpers","first-page":"1375","year":"2005","article-title":"Widgets:
-        why are some interventions better than others?","journal-title":"Addiction"},{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB7","first-page":"1410","article-title":"Web-based
-        screening and brief intervention for hazardous drinking: a double-blind randomized
-        controlled trial","volume":"99","author":"Kypri","year":"2004","journal-title":"Addiction"},{"key":"10.1111\/j.1360-0443.2005.01266.x-BIB8","doi-asserted-by":"crossref","first-page":"519","DOI":"10.1016\/S0140-6736(05)17870-2","article-title":"Alcohol
-        and public health","volume":"365","author":"Room","year":"2005","journal-title":"Lancet"}],"container-title":["Addiction"],"link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1360-0443.2005.01266.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2017,6,16]],"date-time":"2017-06-16T22:57:56Z","timestamp":1497653876000},"score":13.90302,"issued":{"date-parts":[[2005,9]]},"references-count":8,"URL":"http:\/\/dx.doi.org\/10.1111\/j.1360-0443.2005.01266.x","relation":{"cites":[]},"ISSN":["0965-2140","1360-0443"],"issn-type":[{"value":"0965-2140","type":"print"},{"value":"1360-0443","type":"electronic"}],"subject":["Medicine
-        (miscellaneous)","Psychiatry and Mental health"]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T15:20:10Z","timestamp":1508944810561},"publisher-location":"Boston","reference-count":0,"publisher":"Kluwer
-        Academic Publishers","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1007\/0-306-46968-5_12","type":"book-chapter","created":{"date-parts":[[2005,12,8]],"date-time":"2005-12-08T23:19:53Z","timestamp":1134083993000},"page":"333-358","source":"Crossref","is-referenced-by-count":0,"title":["Examples
-        of Widget Implementation"],"prefix":"10.1007","member":"297","container-title":["Fundamentals
-        of X Programming","Series in Computer Science"],"link":[{"URL":"http:\/\/www.springerlink.com\/index\/pdf\/10.1007\/0-306-46968-5_12","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2014,1,3]],"date-time":"2014-01-03T15:09:24Z","timestamp":1388761764000},"score":16.516678,"issued":{"date-parts":[[null]]},"ISBN":["0306460653"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/0-306-46968-5_12"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T15:44:06Z","timestamp":1508946246665},"reference-count":0,"publisher":"Office
-        of Scientific and Technical Information  (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/7118251","type":"report","created":{"date-parts":[[2008,2,6]],"date-time":"2008-02-06T06:57:11Z","timestamp":1202281031000},"source":"Crossref","is-referenced-by-count":0,"title":["Motif,
-        the basics: an overview of the widget set"],"prefix":"10.2172","author":[{"given":"F.R.","family":"McClurg","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1992,10,1]]},"deposited":{"date-parts":[[2013,12,16]],"date-time":"2013-12-16T23:08:32Z","timestamp":1387235312000},"score":16.516678,"issued":{"date-parts":[[1992,10,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/7118251"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T15:44:18Z","timestamp":1508946258554},"reference-count":0,"publisher":"Office
-        of Scientific and Technical Information  (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/10115553","type":"report","created":{"date-parts":[[2008,2,6]],"date-time":"2008-02-06T08:20:08Z","timestamp":1202286008000},"source":"Crossref","is-referenced-by-count":0,"title":["Motif,
-        the basics: an overview of the widget set"],"prefix":"10.2172","author":[{"given":"F.R.","family":"McClurg","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1992,10,1]]},"deposited":{"date-parts":[[2013,12,16]],"date-time":"2013-12-16T23:08:32Z","timestamp":1387235312000},"score":16.516678,"issued":{"date-parts":[[1992,10,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/10115553"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T17:15:42Z","timestamp":1508951742456},"publisher-location":"New
-        York, New York, USA","reference-count":0,"publisher":"ACM Press","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2003]]},"DOI":"10.1145\/1063669.1063679","type":"proceedings-article","created":{"date-parts":[[2005,8,3]],"date-time":"2005-08-03T08:31:47Z","timestamp":1123057907000},"source":"Crossref","is-referenced-by-count":2,"title":["Comet"],"prefix":"10.1145","author":[{"given":"Olfa","family":"Da\u00e2ssi","affiliation":[]},{"given":"Ga\u00eblle","family":"Calvary","affiliation":[]},{"given":"Jo\u00eblle","family":"Coutaz","affiliation":[]},{"given":"Alexandre","family":"Demeure","affiliation":[]}],"member":"320","event":{"name":"the
-        15th French-speaking conference on human-computer interaction","location":"Caen,
-        France","sponsor":["Association Francophone d''Interaction Homme-Machine"],"acronym":"IHM
-        2003","number":"15","start":{"date-parts":[[2003,11,25]]},"end":{"date-parts":[[2003,11,28]]}},"container-title":["Proceedings
-        of the 15th French-speaking conference on human-computer interaction on 15eme
-        Conference Francophone sur l''Interaction Homme-Machine  - IHM 2003"],"link":[{"URL":"http:\/\/dl.acm.org\/ft_gateway.cfm?id=1063679&amp;ftid=314653&amp;dwn=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,16]],"date-time":"2016-12-16T06:36:43Z","timestamp":1481870203000},"score":9.57426,"subtitle":["a
-        new generation of widget for supporting user interface plasticity"],"issued":{"date-parts":[[2003]]},"ISBN":["1581138032"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1145\/1063669.1063679"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T17:49:48Z","timestamp":1508953788473},"publisher-location":"Berlin,
-        Heidelberg","reference-count":0,"publisher":"Springer Berlin Heidelberg","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2001]]},"DOI":"10.1007\/3-540-45348-2_6","type":"book-chapter","created":{"date-parts":[[2007,5,31]],"date-time":"2007-05-31T00:59:19Z","timestamp":1180573159000},"page":"35-36","source":"Crossref","is-referenced-by-count":0,"title":["From
-        Usage Scenarios to Widget Classes"],"prefix":"10.1007","author":[{"given":"Hermann","family":"Kaindl","affiliation":[]},{"given":"Rudolf","family":"Jezek","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2001,12,20]]},"container-title":["Engineering
-        for Human-Computer Interaction","Lecture Notes in Computer Science"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/3-540-45348-2_6","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2014,9,3]],"date-time":"2014-09-03T02:11:25Z","timestamp":1409710285000},"score":13.90302,"issued":{"date-parts":[[2001]]},"ISBN":["9783540430445","9783540453482"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/3-540-45348-2_6","ISSN":["0302-9743"],"issn-type":[{"value":"0302-9743","type":"print"}]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T18:18:25Z","timestamp":1508955505165},"reference-count":3,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2009,10]]},"DOI":"10.1109\/fie.2009.5350484","type":"proceedings-article","created":{"date-parts":[[2009,12,10]],"date-time":"2009-12-10T19:43:48Z","timestamp":1260474228000},"source":"Crossref","is-referenced-by-count":2,"title":["Work
-        in progress: iComb Project - a mathematical widget for teaching and learning
-        combinatorics through exercises"],"prefix":"10.1109","author":[{"given":"Leonidas
-        de Oliveira","family":"Brandao","affiliation":[]},{"given":"Alexandre Luis
-        Kundrat","family":"Eisenmann","affiliation":[]}],"member":"263","event":{"name":"2009
-        39th IEEE Frontiers in Education Conference. Imagining and Engineering Future
-        CSET Education (FIE 2009)","location":"San Antonio, TX","start":{"date-parts":[[2009,10,18]]},"end":{"date-parts":[[2009,10,21]]}},"container-title":["2009
-        39th IEEE Frontiers in Education Conference"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/5340191\/5350396\/05350484.pdf?arnumber=5350484","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,18]],"date-time":"2017-03-18T19:18:23Z","timestamp":1489864703000},"score":11.994173,"issued":{"date-parts":[[2009,10]]},"ISBN":["9781424447152"],"references-count":3,"URL":"http:\/\/dx.doi.org\/10.1109\/fie.2009.5350484"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T18:50:18Z","timestamp":1508957418617},"reference-count":0,"publisher":"Elsevier
-        BV","issue":"2","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2008,2,1]],"date-time":"2008-02-01T00:00:00Z","timestamp":1201824000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Computer
-        Fraud & Security"],"published-print":{"date-parts":[[2008,2]]},"DOI":"10.1016\/s1361-3723(08)70017-4","type":"journal-article","created":{"date-parts":[[2008,4,17]],"date-time":"2008-04-17T16:23:33Z","timestamp":1208449413000},"page":"3","source":"Crossref","is-referenced-by-count":0,"title":["Widget
-        targets Facebook"],"prefix":"10.1016","volume":"2008","member":"78","container-title":["Computer
-        Fraud & Security"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S1361372308700174?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S1361372308700174?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,12,7]],"date-time":"2015-12-07T08:49:56Z","timestamp":1449478196000},"score":15.378785,"issued":{"date-parts":[[2008,2]]},"references-count":0,"alternative-id":["S1361372308700174"],"URL":"http:\/\/dx.doi.org\/10.1016\/s1361-3723(08)70017-4","ISSN":["1361-3723"],"issn-type":[{"value":"1361-3723","type":"print"}],"subject":["General
-        Computer Science","Law"]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T19:12:51Z","timestamp":1508958771259},"publisher-location":"Berlin,
-        Heidelberg","reference-count":0,"publisher":"Springer Berlin Heidelberg","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2005]]},"DOI":"10.1007\/11551362_21","type":"book-chapter","created":{"date-parts":[[2005,9,27]],"date-time":"2005-09-27T14:53:55Z","timestamp":1127832835000},"page":"230-241","source":"Crossref","is-referenced-by-count":0,"title":["ReadUp:
-        A Widget for Reading"],"prefix":"10.1007","author":[{"given":"William C.","family":"Janssen","affiliation":[]}],"member":"297","container-title":["Research
-        and Advanced Technology for Digital Libraries","Lecture Notes in Computer
-        Science"],"link":[{"URL":"http:\/\/www.springerlink.com\/index\/pdf\/10.1007\/11551362_21","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2014,1,6]],"date-time":"2014-01-06T14:53:44Z","timestamp":1389020024000},"score":13.90302,"issued":{"date-parts":[[2005]]},"ISBN":["9783540287674","9783540319313"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/11551362_21","ISSN":["0302-9743","1611-3349"],"issn-type":[{"value":"0302-9743","type":"print"},{"value":"1611-3349","type":"electronic"}]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T19:31:13Z","timestamp":1508959873612},"publisher-location":"New
-        York, New York, USA","reference-count":0,"publisher":"ACM Press","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1992]]},"DOI":"10.1145\/133994.134091","type":"proceedings-article","created":{"date-parts":[[2005,10,12]],"date-time":"2005-10-12T13:24:07Z","timestamp":1129123447000},"source":"Crossref","is-referenced-by-count":2,"title":["Using
-        deformations to explore 3D widget design"],"prefix":"10.1145","author":[{"given":"Scott
-        S.","family":"Snibbe","affiliation":[]},{"given":"Kenneth P.","family":"Herndon","affiliation":[]},{"given":"Daniel
-        C.","family":"Robbins","affiliation":[]},{"given":"D. Brookshire","family":"Conner","affiliation":[]},{"given":"Andries","family":"van
-        Dam","affiliation":[]}],"member":"320","event":{"name":"the 19th annual conference","location":"Not
-        Known","sponsor":["SIGGRAPH, ACM Special Interest Group on Computer Graphics
-        and Interactive Techniques"],"acronym":"SIGGRAPH ''92","start":{"date-parts":[[1992]]}},"container-title":["Proceedings
-        of the 19th annual conference on Computer graphics and interactive techniques  -
-        SIGGRAPH ''92"],"link":[{"URL":"http:\/\/dl.acm.org\/ft_gateway.cfm?id=134091&amp;ftid=7839&amp;dwn=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,15]],"date-time":"2016-12-15T21:22:28Z","timestamp":1481836948000},"score":11.994173,"issued":{"date-parts":[[1992]]},"ISBN":["0897914791"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1145\/133994.134091"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T19:40:57Z","timestamp":1508960457280},"reference-count":0,"publisher":"Elsevier
-        BV","issue":"2655","license":[{"URL":"http:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/","start":{"date-parts":[[2008,5,1]],"date-time":"2008-05-01T00:00:00Z","timestamp":1209600000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["New
-        Scientist"],"published-print":{"date-parts":[[2008,5]]},"DOI":"10.1016\/s0262-4079(08)61153-7","type":"journal-article","created":{"date-parts":[[2008,5,10]],"date-time":"2008-05-10T09:20:06Z","timestamp":1210411206000},"page":"23","source":"Crossref","is-referenced-by-count":0,"title":["Genetic
-        widget-chucking"],"prefix":"10.1016","volume":"198","author":[{"given":"Gundula","family":"Azeez","affiliation":[]}],"member":"78","container-title":["New
-        Scientist"],"link":[{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0262407908611537?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/api.elsevier.com\/content\/article\/PII:S0262407908611537?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2015,12,8]],"date-time":"2015-12-08T02:26:28Z","timestamp":1449541588000},"score":15.378785,"issued":{"date-parts":[[2008,5]]},"references-count":0,"alternative-id":["S0262407908611537"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0262-4079(08)61153-7","ISSN":["0262-4079"],"issn-type":[{"value":"0262-4079","type":"print"}],"subject":["Multidisciplinary"]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T19:47:53Z","timestamp":1508960873537},"reference-count":26,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2009,10]]},"DOI":"10.1109\/icin.2009.5357068","type":"proceedings-article","created":{"date-parts":[[2010,1,5]],"date-time":"2010-01-05T21:44:44Z","timestamp":1262727884000},"source":"Crossref","is-referenced-by-count":0,"title":["Personalised
-        IMS client widget"],"prefix":"10.1109","author":[{"given":"Van Thanh","family":"Do","affiliation":[]},{"given":"Paal","family":"Engelstad","affiliation":[]},{"given":"Van
-        Thuan","family":"Do","affiliation":[]},{"given":"Ivar","family":"Jorstad","affiliation":[]},{"given":"Tore","family":"Jonvik","affiliation":[]}],"member":"263","event":{"name":"2009
-        13th International Conference on Intelligence in Next Generation Networks
-        (ICIN): \"Beyond the Bit Pipes\"","location":"Bordeaux","start":{"date-parts":[[2009,10,26]]},"end":{"date-parts":[[2009,10,29]]}},"container-title":["2009
-        13th International Conference on Intelligence in Next Generation Networks"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/5353035\/5357048\/05357068.pdf?arnumber=5357068","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,18]],"date-time":"2017-03-18T19:36:45Z","timestamp":1489865805000},"score":13.90302,"issued":{"date-parts":[[2009,10]]},"ISBN":["9781424446933"],"references-count":26,"URL":"http:\/\/dx.doi.org\/10.1109\/icin.2009.5357068"},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T19:53:41Z","timestamp":1508961221482},"publisher-location":"Berlin,
-        Heidelberg","reference-count":0,"publisher":"Springer Berlin Heidelberg","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2009]]},"DOI":"10.1007\/978-3-642-11245-4_6","type":"book-chapter","created":{"date-parts":[[2010,1,7]],"date-time":"2010-01-07T04:27:44Z","timestamp":1262838464000},"page":"59-69","source":"Crossref","is-referenced-by-count":0,"title":["Widget-Based
-        Simulator for Testing Smart Space"],"prefix":"10.1007","author":[{"given":"Changgu","family":"Kang","affiliation":[]},{"given":"Yoosoo","family":"Oh","affiliation":[]},{"given":"Woontack","family":"Woo","affiliation":[]}],"member":"297","container-title":["Transactions
-        on Edutainment III","Lecture Notes in Computer Science"],"link":[{"URL":"http:\/\/www.springerlink.com\/index\/pdf\/10.1007\/978-3-642-11245-4_6","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2014,1,22]],"date-time":"2014-01-22T04:18:24Z","timestamp":1390364304000},"score":11.994173,"issued":{"date-parts":[[2009]]},"ISBN":["9783642112447","9783642112454"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-642-11245-4_6","ISSN":["0302-9743","1611-3349"],"issn-type":[{"value":"0302-9743","type":"print"},{"value":"1611-3349","type":"electronic"}]},{"indexed":{"date-parts":[[2017,10,25]],"date-time":"2017-10-25T20:02:13Z","timestamp":1508961733222},"reference-count":0,"publisher":"Institution
-        of Engineering and Technology (IET)","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2003,10,1]]},"DOI":"10.1049\/me:20030501","type":"journal-article","created":{"date-parts":[[2005,11,3]],"date-time":"2005-11-03T21:06:20Z","timestamp":1131051980000},"page":"14-15","source":"Crossref","is-referenced-by-count":0,"title":["A
-        widget simulation [company transformation]"],"prefix":"10.1049","volume":"82","author":[{"given":"M.","family":"Deaves","affiliation":[]}],"member":"265","container-title":["Manufacturing
-        Engineer"],"deposited":{"date-parts":[[2013,7,24]],"date-time":"2013-07-24T11:55:52Z","timestamp":1374666952000},"score":15.378785,"issued":{"date-parts":[[2003,10,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1049\/me:20030501","ISSN":["0956-9944","1741-0509"],"issn-type":[{"value":"0956-9944","type":"print"},{"value":"1741-0509","type":"electronic"}],"subject":["Mechanical
-        Engineering","Electrical and Electronic Engineering","Industrial and Manufacturing
-        Engineering","Information Systems"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"widget"}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"next-cursor":"AoJ0l+bf6uICPwRodHRwOi8vZHguZG9pLm9yZy8xMC4xMTIxLzEuNDk2OTYyOQ==","total-results":251,"items":[{"indexed":{"date-parts":[[2018,4,13]],"date-time":"2018-04-13T21:59:33Z","timestamp":1523656773963},"reference-count":3,"publisher":"SAGE
+        Publications","issue":"1","license":[{"URL":"http:\/\/journals.sagepub.com\/page\/policies\/text-and-data-mining-license","start":{"date-parts":[[2014,6,1]],"date-time":"2014-06-01T00:00:00Z","timestamp":1401580800000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":["journals.sagepub.com"],"crossmark-restriction":true},"short-container-title":["Proceedings
+        of the International Symposium on Human Factors and Ergonomics in Health Care"],"published-print":{"date-parts":[[2014,6]]},"DOI":"10.1177\/2327857914031030","type":"journal-article","created":{"date-parts":[[2014,7,22]],"date-time":"2014-07-22T16:37:42Z","timestamp":1406047062000},"page":"186-190","update-policy":"http:\/\/dx.doi.org\/10.1177\/sage-journals-update-policy","source":"Crossref","is-referenced-by-count":0,"title":["Web
+        Application Dashboards"],"prefix":"10.1177","volume":"3","author":[{"given":"Todd
+        C.","family":"Hughes","sequence":"first","affiliation":[{"name":"Next Century
+        Corporation, 7075 Samuel Morse Drive, Columbia, MD"}]},{"given":"Tina","family":"Coleman","sequence":"additional","affiliation":[{"name":"Next
+        Century Corporation, 7075 Samuel Morse Drive, Columbia, MD"}]},{"given":"David","family":"Benjamin
+        Hellar","sequence":"additional","affiliation":[{"name":"Next Century Corporation"}]},{"given":"Laurian
+        C.","family":"Vega","sequence":"additional","affiliation":[{"name":"Next Century
+        Corporation"}]},{"given":"Emily S.","family":"Patterson","sequence":"additional","affiliation":[{"name":"School
+        of Health and Rehabilitation Sciences, College of Medicine, Ohio State University,
+        Columbus, OH"}]}],"member":"179","published-online":{"date-parts":[[2014,7,22]]},"reference":[{"key":"bibr1-2327857914031030","author":"Hall
+        D. L.","year":"2009","volume-title":"12th International Conference on Information
+        Fusion"},{"key":"bibr12-2327857914031030","unstructured":"Coast Guard WatchKeeper:
+        \u2018House panel probes gaps in maritime data sharing\u2019, by Adam Mazmanian,
+        FCW, July 2013"},{"key":"bibr14-2327857914031030","DOI":"10.1177\/154193120404801505","doi-asserted-by":"publisher"}],"container-title":["Proceedings
+        of the International Symposium on Human Factors and Ergonomics in Health Care"],"language":"en","link":[{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.1177\/2327857914031030","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.1177\/2327857914031030","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,12,15]],"date-time":"2017-12-15T22:36:04Z","timestamp":1513377364000},"score":7.9754186,"subtitle":["From
+        Intelligence Analysis to Health Care Applying the Open-Source OZONE Widget
+        Framework to Health IT"],"issued":{"date-parts":[[2014,6]]},"references-count":3,"journal-issue":{"published-online":{"date-parts":[[2014,7,22]]},"published-print":{"date-parts":[[2014,6]]},"issue":"1"},"alternative-id":["10.1177\/2327857914031030"],"URL":"http:\/\/dx.doi.org\/10.1177\/2327857914031030","relation":{"cites":[]},"ISSN":["2327-8595","2327-8595"],"issn-type":[{"value":"2327-8595","type":"print"},{"value":"2327-8595","type":"electronic"}]},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T03:21:39Z","timestamp":1523676099712},"publisher-location":"Cham","reference-count":0,"publisher":"Springer
+        International Publishing","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014]]},"DOI":"10.1007\/978-3-319-08245-5_38","type":"book-chapter","created":{"date-parts":[[2014,9,17]],"date-time":"2014-09-17T16:29:28Z","timestamp":1410971368000},"page":"507-510","source":"Crossref","is-referenced-by-count":0,"title":["DireWolf
+        Goes Pack Hunting: A Peer-to-Peer Approach for Secure Low Latency Widget Distribution
+        Using WebRTC"],"prefix":"10.1007","author":[{"given":"Istv\u00e1n","family":"Koren","sequence":"first","affiliation":[]},{"given":"Jens","family":"Bavendiek","sequence":"additional","affiliation":[]},{"given":"Ralf","family":"Klamma","sequence":"additional","affiliation":[]}],"member":"297","container-title":["Lecture
+        Notes in Computer Science","Web Engineering"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-08245-5_38","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2014,9,17]],"date-time":"2014-09-17T16:30:21Z","timestamp":1410971421000},"score":11.773849,"issued":{"date-parts":[[2014]]},"ISBN":["9783319082448","9783319082455"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-08245-5_38","ISSN":["0302-9743","1611-3349"],"issn-type":[{"value":"0302-9743","type":"print"},{"value":"1611-3349","type":"electronic"}]},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T06:00:46Z","timestamp":1523685646744},"reference-count":0,"publisher":"Korea
+        Multimedia Society","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of Korea Multimedia Society"],"published-print":{"date-parts":[[2011,2,28]]},"DOI":"10.9717\/kmms.2011.14.2.153","type":"journal-article","created":{"date-parts":[[2014,10,13]],"date-time":"2014-10-13T05:41:11Z","timestamp":1413178871000},"page":"153-170","source":"Crossref","is-referenced-by-count":0,"title":["An
+        Effective Employment and Execution Performance Improvement Method of Mobile
+        Web Widget Resources Based on the OMTP BONDI"],"prefix":"10.9717","volume":"14","author":[{"given":"Ji-Woong","family":"Bang","sequence":"first","affiliation":[]},{"given":"Dae-Won","family":"Kim","sequence":"additional","affiliation":[]}],"member":"4660","container-title":["Journal
+        of Korea Multimedia Society"],"original-title":["OMTP BONDI \uae30\ubc18 \ubaa8\ubc14\uc77c
+        \uc6f9 \uc704\uc82f \ub9ac\uc18c\uc2a4\uc758 \ud6a8\uc728\uc801 \uc6b4\uc6a9
+        \ubc0f \uad6c\ub3d9 \uc131\ub2a5 \uac1c\uc120 \uae30\ubc95 \uc5f0\uad6c"],"language":"en","link":[{"URL":"http:\/\/ocean.kisti.re.kr\/downfile\/crosscheck\/kmtd\/JAKO201118565336804.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,10,20]],"date-time":"2016-10-20T08:41:58Z","timestamp":1476952918000},"score":9.363688,"issued":{"date-parts":[[2011,2,28]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2011,2,28]]},"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.9717\/kmms.2011.14.2.153","ISSN":["1229-7771"],"issn-type":[{"value":"1229-7771","type":"print"}]},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T09:58:25Z","timestamp":1523699905183},"reference-count":0,"publisher":"Emerald","issue":"4","license":[{"URL":"http:\/\/www.emeraldinsight.com\/page\/tdm","start":{"date-parts":[[2006,7,1]],"date-time":"2006-07-01T00:00:00Z","timestamp":1151712000000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Industrial
+        Robot"],"published-print":{"date-parts":[[2006,7]]},"DOI":"10.1108\/ir.2006.04933daf.003","type":"journal-article","created":{"date-parts":[[2014,11,13]],"date-time":"2014-11-13T23:22:41Z","timestamp":1415920961000},"source":"Crossref","is-referenced-by-count":0,"title":["Top
+        widget manufacturer installs new equipment to streamline production"],"prefix":"10.1108","volume":"33","member":"140","container-title":["Industrial
+        Robot: An International Journal"],"language":"en","link":[{"URL":"http:\/\/www.emeraldinsight.com\/doi\/full-xml\/10.1108\/ir.2006.04933daf.003","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.emeraldinsight.com\/doi\/full\/10.1108\/ir.2006.04933daf.003","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,2,23]],"date-time":"2017-02-23T19:16:54Z","timestamp":1487877414000},"score":13.687645,"issued":{"date-parts":[[2006,7]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2006,7]]},"issue":"4"},"alternative-id":["10.1108\/ir.2006.04933daf.003"],"URL":"http:\/\/dx.doi.org\/10.1108\/ir.2006.04933daf.003","ISSN":["0143-991X"],"issn-type":[{"value":"0143-991X","type":"print"}],"article-number":"ir.2006.04933daf.003"},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T15:19:18Z","timestamp":1523719158824},"reference-count":1,"publisher":"Korea
+        Digital Design Council","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["journalofdigitaldesign"],"published-print":{"date-parts":[[2008,10]]},"DOI":"10.17280\/jdd.2008.8.4.026","type":"journal-article","created":{"date-parts":[[2014,12,30]],"date-time":"2014-12-30T06:11:23Z","timestamp":1419919883000},"page":"261-270","source":"Crossref","is-referenced-by-count":0,"title":["A
+        Study on the Direction of Development of Widget as the Tool of WOM Marketing"],"prefix":"10.17280","volume":"8","author":[{"family":"\uc774\uc601\uc8fc","sequence":"first","affiliation":[]}],"member":"6842","container-title":["Journal
+        of Digital Design"],"language":"en","deposited":{"date-parts":[[2017,6,5]],"date-time":"2017-06-05T07:19:06Z","timestamp":1496647146000},"score":11.773849,"issued":{"date-parts":[[2008,10]]},"references-count":1,"journal-issue":{"published-print":{"date-parts":[[2008,10]]},"issue":"4"},"URL":"http:\/\/dx.doi.org\/10.17280\/jdd.2008.8.4.026","ISSN":["1598-2319"],"issn-type":[{"value":"1598-2319","type":"print"}]},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T15:32:32Z","timestamp":1523719952625},"reference-count":0,"publisher":"Korea
+        Society of Color Studies","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["journalofkoreasocietyofcolorstudies"],"published-print":{"date-parts":[[2010,2]]},"DOI":"10.17289\/jkscs.24.1.201002.31","type":"journal-article","created":{"date-parts":[[2015,1,2]],"date-time":"2015-01-02T05:47:43Z","timestamp":1420177663000},"page":"31-44","source":"Crossref","is-referenced-by-count":0,"title":["A
+        Study of Visual Color Expression of Widget in a Digital Environment"],"prefix":"10.17289","volume":"24","author":[{"family":"Mi
+        gyung Lee","sequence":"first","affiliation":[]}],"member":"6874","container-title":["Journal
+        of Korea Society of Color Studies"],"language":"en","deposited":{"date-parts":[[2017,6,7]],"date-time":"2017-06-07T02:11:51Z","timestamp":1496801511000},"score":11.773849,"issued":{"date-parts":[[2010,2]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2010,2]]},"issue":"1"},"URL":"http:\/\/dx.doi.org\/10.17289\/jkscs.24.1.201002.31","ISSN":["1226-6450"],"issn-type":[{"value":"1226-6450","type":"print"}]},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T15:50:16Z","timestamp":1523721016173},"publisher-location":"Cham","reference-count":0,"publisher":"Springer
+        International Publishing","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2015]]},"DOI":"10.1007\/978-3-319-02399-1_4","type":"book-chapter","created":{"date-parts":[[2015,1,7]],"date-time":"2015-01-07T06:56:38Z","timestamp":1420613798000},"page":"79-113","source":"Crossref","is-referenced-by-count":0,"title":["Case
+        Study 1: Using Widget Bundles for Formal Learning in Higher Education"],"prefix":"10.1007","author":[{"given":"Helmut","family":"Vieritz","sequence":"first","affiliation":[]},{"given":"Carsten","family":"Ullrich","sequence":"additional","affiliation":[]},{"given":"Erik","family":"Isaksson","sequence":"additional","affiliation":[]},{"given":"Hans-Christian","family":"Schmitz","sequence":"additional","affiliation":[]},{"given":"Bodo","family":"von
+        der Heiden","sequence":"additional","affiliation":[]},{"given":"Kerstin","family":"Borau","sequence":"additional","affiliation":[]},{"given":"Ruimin","family":"Shen","sequence":"additional","affiliation":[]},{"given":"Matthias","family":"Palm\u00e9r","sequence":"additional","affiliation":[]},{"given":"Thomas","family":"Lind","sequence":"additional","affiliation":[]},{"given":"Mikael","family":"Laaksoharju","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2014,11,5]]},"container-title":["Responsive
+        Open Learning Environments"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-02399-1_4","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2015,1,7]],"date-time":"2015-01-07T06:56:43Z","timestamp":1420613803000},"score":9.363688,"issued":{"date-parts":[[2014,11,5]]},"ISBN":["9783319023984","9783319023991"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-02399-1_4"},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T16:05:13Z","timestamp":1523721913151},"publisher-location":"Netherlands","reference-count":0,"publisher":"EAGE
+        Publications BV","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1992,6,1]]},"DOI":"10.3997\/2214-4609.201410548","type":"proceedings-article","created":{"date-parts":[[2015,1,9]],"date-time":"2015-01-09T11:05:44Z","timestamp":1420801544000},"source":"Crossref","is-referenced-by-count":0,"title":["Widget
+        standards in the petroleum industry"],"prefix":"10.3997","author":[{"given":"B.","family":"Kamp","sequence":"first","affiliation":[]},{"given":"O.","family":"Lhemann","sequence":"additional","affiliation":[]}],"member":"2389","event":{"name":"54th
+        EAEG Meeting","location":"Paris, France","acronym":"Paris1992","start":{"date-parts":[[1992,6,1]]},"end":{"date-parts":[[1992,6,5]]}},"container-title":["54th
+        EAEG Meeting"],"deposited":{"date-parts":[[2015,1,9]],"date-time":"2015-01-09T11:11:41Z","timestamp":1420801901000},"score":16.326355,"issued":{"date-parts":[[1992,6,1]]},"ISBN":["9789073781047"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3997\/2214-4609.201410548"},{"indexed":{"date-parts":[[2018,4,14]],"date-time":"2018-04-14T19:11:57Z","timestamp":1523733117531},"reference-count":0,"publisher":"Springer
+        Nature","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Nature"],"published-print":{"date-parts":[[2015,2,12]]},"DOI":"10.1038\/nature.2015.16920","type":"journal-article","created":{"date-parts":[[2015,2,12]],"date-time":"2015-02-12T17:22:56Z","timestamp":1423761776000},"source":"Crossref","is-referenced-by-count":0,"title":["test
+        article broken widget"],"prefix":"10.1038","member":"297","container-title":["Nature"],"deposited":{"date-parts":[[2016,3,30]],"date-time":"2016-03-30T18:44:49Z","timestamp":1459363489000},"score":16.326355,"issued":{"date-parts":[[2015,2,12]]},"references-count":0,"alternative-id":["nature.2015.16920"],"URL":"http:\/\/dx.doi.org\/10.1038\/nature.2015.16920","ISSN":["1476-4687"],"issn-type":[{"value":"1476-4687","type":"electronic"}]},{"indexed":{"date-parts":[[2018,4,15]],"date-time":"2018-04-15T00:43:16Z","timestamp":1523752996546},"reference-count":0,"publisher":"Korea
+        Digital Design Council","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["journalofdigitaldesign"],"published-print":{"date-parts":[[2009,1]]},"DOI":"10.17280\/jdd.2009.9.1.017","type":"journal-article","created":{"date-parts":[[2015,4,7]],"date-time":"2015-04-07T10:01:17Z","timestamp":1428400877000},"page":"163-174","source":"Crossref","is-referenced-by-count":0,"title":["A
+        Study of Web-Based Widget Service - Focused on the strategic value as a development
+        course of Web -"],"prefix":"10.17280","volume":"9","author":[{"family":"Heungryel
+        Choi","sequence":"first","affiliation":[]}],"member":"6842","container-title":["Journal
+        of Digital Design"],"language":"en","deposited":{"date-parts":[[2017,6,5]],"date-time":"2017-06-05T07:18:56Z","timestamp":1496647136000},"score":11.773849,"issued":{"date-parts":[[2009,1]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2009,1]]},"issue":"1"},"URL":"http:\/\/dx.doi.org\/10.17280\/jdd.2009.9.1.017","ISSN":["1598-2319"],"issn-type":[{"value":"1598-2319","type":"print"}]},{"indexed":{"date-parts":[[2018,4,15]],"date-time":"2018-04-15T00:43:18Z","timestamp":1523752998375},"reference-count":1,"publisher":"Korea
+        Digital Design Council","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["journalofdigitaldesign"],"published-print":{"date-parts":[[2009,4]]},"DOI":"10.17280\/jdd.2009.9.2.042","type":"journal-article","created":{"date-parts":[[2015,4,7]],"date-time":"2015-04-07T10:01:28Z","timestamp":1428400888000},"page":"437-446","source":"Crossref","is-referenced-by-count":0,"title":["A
+        Study on Administrator Mode Widget of C2C based Internet Shopping Mall"],"prefix":"10.17280","volume":"9","author":[{"family":"\uc774\ub2e4\uc601","sequence":"first","affiliation":[]},{"family":"\uc870\ud604\uc7ac","sequence":"additional","affiliation":[]}],"member":"6842","container-title":["Journal
+        of Digital Design"],"language":"en","deposited":{"date-parts":[[2017,6,5]],"date-time":"2017-06-05T07:19:25Z","timestamp":1496647165000},"score":13.687645,"issued":{"date-parts":[[2009,4]]},"references-count":1,"journal-issue":{"published-print":{"date-parts":[[2009,4]]},"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.17280\/jdd.2009.9.2.042","ISSN":["1598-2319"],"issn-type":[{"value":"1598-2319","type":"print"}]},{"indexed":{"date-parts":[[2018,4,15]],"date-time":"2018-04-15T00:43:19Z","timestamp":1523752999673},"reference-count":0,"publisher":"Korea
+        Digital Design Council","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["journalofdigitaldesign"],"published-print":{"date-parts":[[2011,1]]},"DOI":"10.17280\/jdd.2011.11.1.025","type":"journal-article","created":{"date-parts":[[2015,4,7]],"date-time":"2015-04-07T10:02:17Z","timestamp":1428400937000},"page":"255-264","source":"Crossref","is-referenced-by-count":0,"title":["A
+        Study on Developing Next Generation Mobile Widget Based on Cybernetics"],"prefix":"10.17280","volume":"11","author":[{"family":"\ubc15\uc7ac\uc644","sequence":"first","affiliation":[]},{"family":"JuYeon
+        Kim","sequence":"additional","affiliation":[]}],"member":"6842","container-title":["Journal
+        of Digital Design"],"language":"en","deposited":{"date-parts":[[2017,6,5]],"date-time":"2017-06-05T07:19:42Z","timestamp":1496647182000},"score":13.687645,"issued":{"date-parts":[[2011,1]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2011,1]]},"issue":"1"},"URL":"http:\/\/dx.doi.org\/10.17280\/jdd.2011.11.1.025","ISSN":["1598-2319"],"issn-type":[{"value":"1598-2319","type":"print"}]},{"indexed":{"date-parts":[[2018,4,15]],"date-time":"2018-04-15T00:44:18Z","timestamp":1523753058740},"reference-count":0,"publisher":"Korea
+        Design Knowledge Society","issue":"7","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["journalofkoreadesignknowledge"],"published-print":{"date-parts":[[2008,9]]},"DOI":"10.17246\/jkdk.2008..7.002","type":"journal-article","created":{"date-parts":[[2015,4,7]],"date-time":"2015-04-07T10:25:30Z","timestamp":1428402330000},"page":"11-20","source":"Crossref","is-referenced-by-count":0,"title":["A
+        Study on service trend on widget"],"prefix":"10.17246","volume":"null","author":[{"family":"\uc774\uc601\uc8fc","sequence":"first","affiliation":[]}],"member":"6866","container-title":["Journal
+        of Korea Design Knowledge"],"language":"en","deposited":{"date-parts":[[2017,6,8]],"date-time":"2017-06-08T06:31:50Z","timestamp":1496903510000},"score":13.687645,"issued":{"date-parts":[[2008,9]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2008,9]]},"issue":"7"},"URL":"http:\/\/dx.doi.org\/10.17246\/jkdk.2008..7.002","ISSN":["2092-7045"],"issn-type":[{"value":"2092-7045","type":"print"}]},{"indexed":{"date-parts":[[2018,4,17]],"date-time":"2018-04-17T06:02:49Z","timestamp":1523944969255},"reference-count":0,"publisher":"Inderscience
+        Publishers","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IJCSE"],"published-print":{"date-parts":[[2016]]},"DOI":"10.1504\/ijcse.2016.10000104","type":"journal-article","created":{"date-parts":[[2016,7,29]],"date-time":"2016-07-29T13:00:07Z","timestamp":1469797207000},"page":"183","source":"Crossref","is-referenced-by-count":0,"title":["Implementation
+        of a social widget system for enhancing the interaction among social networking
+        websites"],"prefix":"10.1504","volume":"13","author":[{"given":"Kai Xiang","family":"Chang","sequence":"first","affiliation":[]},{"given":"Yi
+        Hsing","family":"Chang","sequence":"additional","affiliation":[]}],"member":"378","container-title":["International
+        Journal of Computational Science and Engineering"],"language":"en","deposited":{"date-parts":[[2016,7,29]],"date-time":"2016-07-29T13:00:07Z","timestamp":1469797207000},"score":11.773849,"issued":{"date-parts":[[2016]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2016]]},"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.1504\/ijcse.2016.10000104","ISSN":["1742-7185","1742-7193"],"issn-type":[{"value":"1742-7185","type":"print"},{"value":"1742-7193","type":"electronic"}]},{"indexed":{"date-parts":[[2018,4,17]],"date-time":"2018-04-17T07:56:43Z","timestamp":1523951803014},"publisher-location":"Cham","reference-count":20,"publisher":"Springer
+        International Publishing","license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"delay-in-days":0,"content-version":"unspecified"},{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"delay-in-days":0,"content-version":"unspecified"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2016]]},"DOI":"10.1007\/978-3-319-23841-8_13","type":"book-chapter","created":{"date-parts":[[2016,8,10]],"date-time":"2016-08-10T13:55:07Z","timestamp":1470837307000},"page":"175-187","source":"Crossref","is-referenced-by-count":0,"title":["Use
+        of Dynamic External Fixator (Digit Widget) in Dupuytren\u2019s Contracture"],"prefix":"10.1007","author":[{"given":"Atanu","family":"Biswas","sequence":"first","affiliation":[]},{"given":"Anthony","family":"Smith","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2016,8,11]]},"reference":[{"key":"13_CR1","doi-asserted-by":"crossref","first-page":"31","DOI":"10.1097\/00006534-197407000-00004","volume":"54","author":"R
+        McFarlane","year":"1974","unstructured":"McFarlane R. Patterns of the diseased
+        fascia in the fingers in Dupuytren\u2019s contracture. Plast Reconstr Surg.
+        1974;54:31\u201344.","journal-title":"Plast Reconstr Surg"},{"issue":"5","key":"13_CR2","doi-asserted-by":"crossref","first-page":"1107","DOI":"10.1097\/PRS.0b013e31822b67c9","volume":"128","author":"R
+        Craft","year":"2011","unstructured":"Craft R, Smith A, Coakley B, Casey III
+        W, Rebecca A, Duncan S. Preliminary soft-tissue distraction versus checkrein
+        ligament release after fasciectomy in the treatment of dupuytren proximal
+        interphalangeal joint contractures. Plast Reconstr Surg. 2011;128(5):1107\u201313.","journal-title":"Plast
+        Reconstr Surg"},{"issue":"7","key":"13_CR3","doi-asserted-by":"crossref","first-page":"1467","DOI":"10.1016\/j.jhsa.2012.04.023","volume":"37","author":"J
+        Agee","year":"2012","unstructured":"Agee J, Goss BC. The use of skeletal extension
+        torque in reversing Dupuytren contractures of the proximal interphalangeal
+        joint. J Hand Surg. 2012;37(7):1467\u201374.","journal-title":"J Hand Surg"},{"key":"13_CR4","first-page":"76","volume":"7","author":"C
+        Ball","year":"2002","unstructured":"Ball C, Nanchahal J. The use of splinting
+        as a non-surgical treatment for Dupuytren\u2019s Disease: a pilot study. Br
+        J Hand Ther. 2002;7:76\u20138.","journal-title":"Br J Hand Ther"},{"key":"13_CR5","doi-asserted-by":"crossref","first-page":"84","DOI":"10.1097\/00006534-199307000-00012","volume":"92","author":"A
+        Messina","year":"1993","unstructured":"Messina A, Messina J. The continuous
+        elongation treatment by the TEC device for severe Dupuytren\u2019s contracture
+        of the fingers. Plast Reconstr Surg. 1993;92:84\u201390.","journal-title":"Plast
+        Reconstr Surg"},{"key":"13_CR6","doi-asserted-by":"crossref","first-page":"1153","DOI":"10.1016\/S0363-5023(09)91084-X","volume":"17","author":"K
+        Rives","year":"1992","unstructured":"Rives K, Gelberman R, Smith B, Carney
+        K. Severe contractures of the proximal interphalangeal joint in Dupuytren\u2019s
+        disease: results of a prospective trial of operative correction and dynamic
+        extension splinting. J Hand Surg Am. 1992;17:1153\u20139.","journal-title":"J
+        Hand Surg Am"},{"key":"13_CR7","doi-asserted-by":"crossref","first-page":"126","DOI":"10.1302\/0301-620X.80B1.8019","volume":"80","author":"N
+        Citron","year":"1998","unstructured":"Citron N, Messina J. The use of skeletal
+        traction in the treatment of severe primary Dupuytren\u2019s disease. J Bone
+        Joint Surg Br. 1998;80:126\u20139.","journal-title":"J Bone Joint Surg Br"},{"issue":"8","key":"13_CR8","doi-asserted-by":"crossref","first-page":"722","DOI":"10.1177\/1753193411422680","volume":"37","author":"J
+        Larocerie-Salgado","year":"2012","unstructured":"Larocerie-Salgado J, Davidson
+        J. Nonoperative treatment of PIPJ flexion contractures associated with Dupuytren\u2019s
+        disease. J Hand Surg Eur Vol. 2012;37(8):722\u20137.","journal-title":"J Hand
+        Surg Eur Vol"},{"issue":"4","key":"13_CR9","doi-asserted-by":"crossref","first-page":"528","DOI":"10.1016\/0266-7681(94)90221-6","volume":"19","author":"G
+        Brandes","year":"1994","unstructured":"Brandes G, Messina A, Reale E. The
+        palmar fascia after treatment by the continuous extension technique for Dupuytren\u2019s
+        contracture. J Hand Surg Br. 1994;19(4):528\u201333.","journal-title":"J Hand
+        Surg Br"},{"issue":"4","key":"13_CR10","doi-asserted-by":"crossref","first-page":"522","DOI":"10.1016\/0266-7681(94)90220-8","volume":"19","author":"A
+        Bailey","year":"1994","unstructured":"Bailey A, Van der Stappen TJJ, Sims
+        T, Messina A. The continuous elongation technique for severe Dupuytren\u2019s
+        disease. A biochemical mechanism. J Hand Surg Br. 1994;19(4):522\u20137.","journal-title":"J
+        Hand Surg Br"},{"issue":"5","key":"13_CR11","doi-asserted-by":"crossref","first-page":"822","DOI":"10.1097\/PRS.0000000000000603","volume":"134","author":"A
+        Murphy","year":"2014","unstructured":"Murphy A, Lalonde D, Eaton C, Denkler
+        K, Hovius S, Smith A, Martin A, Biswas A, Van Nieuwenhoven C. Minimally invasive
+        options in Dupuytren\u2019s contracture: aponeurotomy, enzymes, stretching,
+        and fat grafting. Plast Reconstr Surg. 2014;134(5):822\u20139.","journal-title":"Plast
+        Reconstr Surg"},{"issue":"3","key":"13_CR12","doi-asserted-by":"crossref","first-page":"220","DOI":"10.1177\/1753193409353849","volume":"35","author":"O
+        Donaldson","year":"2010","unstructured":"Donaldson O, Pearson D, Reynolds
+        R, Bhatia R. The association between intraoperative correction of Dupuytren\u2019s
+        disease and residual postoperative contracture. J Hand Surg Eur. 2010;35(3):220\u20133.","journal-title":"J
+        Hand Surg Eur"},{"issue":"2","key":"13_CR13","doi-asserted-by":"crossref","first-page":"240","DOI":"10.1016\/j.jhsa.2006.11.015","volume":"32","author":"A
+        Misra","year":"2007","unstructured":"Misra A, Jain A, Ghazanfar R, Johnston
+        T, Nanchaha l J. Predicting the outcome of surgery for the proximal interphalangeal
+        joint in Dupuytren\u2019s disease. J Hand Surg Am. 2007;32(2):240\u20135.","journal-title":"J
+        Hand Surg Am"},{"issue":"6","key":"13_CR14","first-page":"671","volume":"72","author":"N
+        Giffen Van","year":"2006","unstructured":"Van Giffen N, Degreef I, De Smet
+        L. Dupuytren\u2019s disease: outcome of the proximal interphalangeal joint
+        in isolated fifth ray involvement. Acta Orthop Belg. 2006;72(6):671\u20137.","journal-title":"Acta
+        Orthop Belg"},{"issue":"4","key":"13_CR15","doi-asserted-by":"crossref","first-page":"378","DOI":"10.1097\/00000637-199804000-00010","volume":"40","author":"A
+        Kasabian","year":"1998","unstructured":"Kasabian A, McCarthy J, Karp N. Use
+        of a multiplanar distracter for the correction of a proximal interphalangeal
+        joint contracture. Ann Plast Surg. 1998;40(4):378\u201381.","journal-title":"Ann
+        Plast Surg"},{"issue":"4","key":"13_CR16","doi-asserted-by":"crossref","first-page":"356","DOI":"10.1054\/jhsb.2002.0796","volume":"27","author":"S
+        Houshian","year":"2002","unstructured":"Houshian S, Gynning B, Schr\u00f8der
+        H. Chronic flexion contracture of proximal interphalangeal joint treated with
+        the compass hinge external fixator. A consecutive series of 27 cases. J Hand
+        Surg Br. 2002;27(4):356\u20138.","journal-title":"J Hand Surg Br"},{"issue":"2","key":"13_CR17","doi-asserted-by":"crossref","first-page":"167","DOI":"10.1142\/S0218810499000307","volume":"4","author":"Y
+        Siow","year":"1999","unstructured":"Siow Y, Ahmad T, Goh S. Use of a new external
+        fixator for the correction of fixed flexion deformity of the fingers. Hand
+        Surg. 1999;4(2):167\u201374.","journal-title":"Hand Surg"},{"issue":"8","key":"13_CR18","doi-asserted-by":"crossref","first-page":"728","DOI":"10.1177\/1753193412439673","volume":"37","author":"J
+        White","year":"2012","unstructured":"White J, Kang S, Nancoo T, Floyd D, Kambhampat
+        IS, McGrouther D. Management of severe Dupuytren\u2019s contracture of the
+        proximal interphalangeal joint with use of a central slip facilitation device.
+        J Hand Surg Eur Vol. 2012;37(8):728\u201332.","journal-title":"J Hand Surg
+        Eur Vol"},{"issue":"6","key":"13_CR19","doi-asserted-by":"crossref","first-page":"795","DOI":"10.1016\/S0266-7681(96)80194-X","volume":"21","author":"A
+        Beard","year":"1996","unstructured":"Beard A, Trail I. The \u201cS\u201d Quattro
+        in severe Dupuytren\u2019s contracture. J Hand Surg Br. 1996;21(6):795\u20137966.","journal-title":"J
+        Hand Surg Br"},{"issue":"5","key":"13_CR20","doi-asserted-by":"crossref","first-page":"442","DOI":"10.1016\/S0266-7681(00)80008-X","volume":"25","author":"K
+        Rajesh","year":"2000","unstructured":"Rajesh K, Rex C, Mehdi H, Martin C,
+        Fahmy N. Severe Dupuytren\u2019s contracture of the proximal interphalangeal
+        joint: treatment by two-stage technique. J Hand Surg Br. 2000;25(5):442\u20134.","journal-title":"J
+        Hand Surg Br"}],"container-title":["Dupuytren\u2019s Contracture"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-23841-8_13","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T20:24:51Z","timestamp":1498335891000},"score":15.174948,"issued":{"date-parts":[[2016]]},"ISBN":["9783319238401","9783319238418"],"references-count":20,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-23841-8_13","relation":{"cites":[]}},{"indexed":{"date-parts":[[2018,4,17]],"date-time":"2018-04-17T09:09:53Z","timestamp":1523956193915},"reference-count":0,"publisher":"Inderscience
+        Publishers","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IJCSE"],"published-print":{"date-parts":[[2016]]},"DOI":"10.1504\/ijcse.2016.078438","type":"journal-article","created":{"date-parts":[[2016,8,20]],"date-time":"2016-08-20T11:30:04Z","timestamp":1471692604000},"page":"183","source":"Crossref","is-referenced-by-count":0,"title":["Implementation
+        of a social widget system for enhancing the interaction among social networking
+        websites"],"prefix":"10.1504","volume":"13","author":[{"given":"Yi Hsing","family":"Chang","sequence":"first","affiliation":[]},{"given":"Kai
+        Xiang","family":"Chang","sequence":"additional","affiliation":[]}],"member":"378","container-title":["International
+        Journal of Computational Science and Engineering"],"language":"en","deposited":{"date-parts":[[2016,8,20]],"date-time":"2016-08-20T11:30:04Z","timestamp":1471692604000},"score":11.773849,"issued":{"date-parts":[[2016]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2016]]},"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.1504\/ijcse.2016.078438","ISSN":["1742-7185","1742-7193"],"issn-type":[{"value":"1742-7185","type":"print"},{"value":"1742-7193","type":"electronic"}]},{"indexed":{"date-parts":[[2018,4,17]],"date-time":"2018-04-17T11:48:44Z","timestamp":1523965724780},"reference-count":27,"publisher":"Emerald","issue":"2","license":[{"URL":"http:\/\/www.emeraldinsight.com\/page\/tdm","start":{"date-parts":[[2017,11,6]],"date-time":"2017-11-06T00:00:00Z","timestamp":1509926400000},"delay-in-days":0,"content-version":"tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Asian
+        Assoc Open Uni Jrnl"],"published-print":{"date-parts":[[2017,11,6]]},"DOI":"10.1108\/aaouj-01-2017-0013","type":"journal-article","created":{"date-parts":[[2018,2,9]],"date-time":"2018-02-09T09:15:53Z","timestamp":1518167753000},"page":"137-153","source":"Crossref","is-referenced-by-count":0,"title":["Integration
+        of EBSCO Discovery Service widget into the learning spaces of LMS"],"prefix":"10.1108","volume":"12","author":[{"given":"Bee
+        Leng","family":"Chew","sequence":"first","affiliation":[{"name":"Tun Dr Lim
+        Chong Eu Library, Wawasan Open University, Penang, Malaysia"}]},{"given":"Marnisya
+        Abdul","family":"Rahim","sequence":"additional","affiliation":[{"name":"Department
+        of Educational Technology and Publishing Unit, Wawasan Open University, Penang,
+        Malaysia"}]}],"member":"140","reference":[{"key":"ref001","author":"Andrew
+        C.","issue":"170","first-page":"2","year":"2013","journal-title":"Catalogue
+        and Index"},{"key":"ref002","author":"Bazillion R.J.","issue":"1","first-page":"51","year":"2001","journal-title":"Educause
+        Quarterly"},{"key":"ref004","DOI":"10.1080\/01930826.2010.488587","doi-asserted-by":"publisher"},{"issue":"3","key":"ref005","first-page":"15","volume":"36","author":"Breeding
+        M.","year":"2016","journal-title":"Computers in Libraries"},{"issue":"5","key":"ref006","first-page":"22","volume":"48","author":"Breeding
+        M.","year":"2017","journal-title":"American Libraries"},{"key":"ref007","DOI":"10.1108\/LM-01-2016-0001","doi-asserted-by":"publisher"},{"key":"ref008","author":"Cooch
+        M.","year":"2010","volume-title":"Moodle 2.0 First Look: Discover What\u2019s
+        New in Moodle 2.0, How the New Features Work, and How it Will Impact You"},{"key":"ref009","DOI":"10.1108\/03074801111136266","doi-asserted-by":"publisher"},{"key":"ref010","author":"EBSCO","year":"2012","volume-title":"EBSCO\u2019s
+        Complete Discovery Solution: Proposal"},{"key":"ref012","author":"EBSCO","year":"2016","volume-title":"Import
+        Functionality for A Custom Discovery Experience: EBSCO Discovery Service"},{"key":"ref013","author":"Farkas
+        M.R.","year":"2015","volume-title":"Libraries in the Learning Management System:
+        Tips and Trends"},{"key":"ref014","DOI":"10.1108\/LM-01-2016-0001","doi-asserted-by":"publisher"},{"key":"ref015","DOI":"10.18438\/B8Q89F","doi-asserted-by":"publisher"},{"key":"ref016","DOI":"10.1108\/LHTN-11-2016-0055","doi-asserted-by":"publisher"},{"key":"ref017","DOI":"10.7551\/mitpress\/9780262113151.001.0001","doi-asserted-by":"publisher"},{"key":"ref019","DOI":"10.5860\/crl.75.5.641","doi-asserted-by":"publisher"},{"key":"ref020","author":"Norbury
+        K.","year":"2013","volume-title":"The Library has Left the Building, But \u2026"},{"key":"ref021","DOI":"10.6017\/ital.v34i2.5702","doi-asserted-by":"publisher"},{"issue":"1","key":"ref022","first-page":"13","volume":"7","author":"Pareek
+        N.","year":"2016","journal-title":"International Journal of Librarianship
+        and Administration"},{"key":"ref023","DOI":"10.1108\/EL-07-2013-0136","doi-asserted-by":"publisher"},{"key":"ref024","author":"Sarvi
+        J.","year":"2015","volume-title":"Learning Management Systems and Other E-Learning
+        Platform, in Integrated Information and Communication Technology Strategies
+        for Competitive Higher Education in Asia and the Pacific"},{"key":"ref025","DOI":"10.1080\/02763860802114272","doi-asserted-by":"publisher"},{"key":"ref026","DOI":"10.1108\/LM-11-2014-0136","doi-asserted-by":"publisher"},{"issue":"1","key":"ref027","first-page":"38","volume":"22","author":"Shank
+        J.D.","year":"2003","journal-title":"Information Technology and Libraries"},{"key":"ref028","unstructured":"Tumbleson,
+        B.E. and Burke, J.J. (2013), Embedding Librarianship in Learning Management
+        Systems: A How-to-do-it Manual for Librarians, Neal-Schuman, Chicago, IL,
+        p. 148, available at: http:\/\/eds.a.ebscohost.com\/eds\/ebookviewer\/ebook\/bmxlYmtfXzcwNTgyM19fQU41?sid=92874182-9a6a-47ba-a7d5-199bc8bbdd18@sessionmgr4007&vid=0&format=EB&rid=1
+        (accessed September 11, 2017)."},{"key":"ref030","unstructured":"Vighnarajah
+        and Santhiram, R. (2014), \u201cCharacterizing key features of student isolation
+        in distance education\u201d, unpublished IRI Research final report, Institute
+        for Research and Innovation, Wawasan Open University, Penang, p. 25."},{"key":"ref032","author":"Wikipedia","year":"2016","volume-title":"EZproxy"}],"container-title":["Asian
+        Association of Open Universities Journal"],"language":"en","link":[{"URL":"http:\/\/www.emeraldinsight.com\/doi\/full-xml\/10.1108\/AAOUJ-01-2017-0013","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.emeraldinsight.com\/doi\/full\/10.1108\/AAOUJ-01-2017-0013","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,2,9]],"date-time":"2018-02-09T09:16:14Z","timestamp":1518167774000},"score":9.363688,"subtitle":["A
+        case study of Wawasan Open University"],"issued":{"date-parts":[[2017,11,6]]},"references-count":27,"journal-issue":{"published-print":{"date-parts":[[2017,11,6]]},"issue":"2"},"alternative-id":["10.1108\/AAOUJ-01-2017-0013"],"URL":"http:\/\/dx.doi.org\/10.1108\/aaouj-01-2017-0013","relation":{"cites":[]},"ISSN":["2414-6994"],"issn-type":[{"value":"2414-6994","type":"print"}]},{"indexed":{"date-parts":[[2018,4,17]],"date-time":"2018-04-17T12:27:00Z","timestamp":1523968020927},"reference-count":95,"publisher":"Association
+        for Computing Machinery (ACM)","issue":"3","license":[{"URL":"http:\/\/www.acm.org\/publications\/policies\/copyright_policy#Background","start":{"date-parts":[[2016,9,20]],"date-time":"2016-09-20T00:00:00Z","timestamp":1474329600000},"delay-in-days":0,"content-version":"vor"}],"funder":[{"name":"Widget
+        Corporation","award":["#312-001"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+        Comput. Cult. Herit.","JOCCH"],"published-print":{"date-parts":[[2016,9,20]]},"DOI":"10.1145\/2872278","type":"journal-article","created":{"date-parts":[[2016,9,20]],"date-time":"2016-09-20T14:18:28Z","timestamp":1474381108000},"page":"1-28","source":"Crossref","is-referenced-by-count":0,"title":["The
+        MIT Museum Glassware Prototype"],"prefix":"10.1145","volume":"9","author":[{"given":"Marco","family":"Mason","sequence":"first","affiliation":[{"name":"Marie
+        Curie fellow at the: School of Museum Studies, University of Leicester, Leicester,
+        UK; Program in Science, Technology, and Society, Massachusetts Institute of
+        Technology, Cambridge, MA, USA"}]}],"member":"320","reference":[{"key":"key-10.1145\/2872278-1","unstructured":"A.
+        Adams, P. Lunt, and P. Cairns. 2008. A qualititative approach to HCI research.
+        In Research Methods for Human-Computer Interaction, P. Cairns and A. Cox (Eds.).
+        Cambridge University Press, 138--157.","DOI":"10.1017\/CBO9780511814570.008","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-2","unstructured":"L.
+        Ardissono, T. Kuflik, and D. Petrelli. 2012. Personalization in cultural heritage:
+        The road travelled and the one ahead. User Modeling and User-Adapted Interaction,
+        22, 1--2, 73--99.","DOI":"10.1007\/s11257-011-9104-x","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-3","unstructured":"ARtSENSE.
+        2012. Augumented RealiTy Supported adaptive and personalized Experience in
+        a museum based on processing real-time Sensor Events. Retrieved December 11,
+        2015 from http:\/\/cordis.europa.eu\/project\/rcn\/97475_en.html."},{"key":"key-10.1145\/2872278-4","unstructured":"R.
+        Azuma. 1997. A survey of augmented reality. Presence, 6, 4, 355--385.","DOI":"10.1162\/pres.1997.6.4.355","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-5","unstructured":"R.
+        Azuma. 2015. Location-Based Mixed and Augmented Reality Storytelling. B. Woodrow
+        (Ed.). Chapter 11 in the book Fundamentals of Wearable Computers and Augmented
+        Reality, 2ndEd., CRC Press, 259--276."},{"key":"key-10.1145\/2872278-6","unstructured":"A.
+        Barry, J. Trout, P. Debenham, and G. Thomas. 2012. Augmented reality in a
+        public space: The natural history museum, london. Computer, 7, 42--47.","DOI":"10.1109\/MC.2012.106","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-7","unstructured":"P.
+        Bazeley and K. Jackson. 2013. Qualitative Data Analysis with NVivo. Second
+        Edition. SAGE Publications, London."},{"key":"key-10.1145\/2872278-8","unstructured":"V.
+        Bettadapura, I. Essa, and C. Pantofaru. 2015. Egocentric field-of-view localization
+        using first-person point-of-view devices. In Applications of Computer Vision
+        (WACV), 2015 IEEE Winter Conference, 626--633.","DOI":"10.1109\/WACV.2015.89","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-9","unstructured":"BGC
+        Google Glass Team. 2014. BGC Gallery Google Glass Exhibition Interpretation
+        Pilot Project. Retrieved December 11, 2015 from http:\/\/www.bgc.bard.edu\/gallery\/glass.html."},{"key":"key-10.1145\/2872278-10","unstructured":"BGC.
+        2014. Bard Graduate Center Gallery: Google Glass Pilot Project. Retrieved
+        December 11, 2015 from http:\/\/www.bgc.bard.edu\/images\/content\/1\/6\/16042.pdf."},{"key":"key-10.1145\/2872278-11","unstructured":"F.
+        Biocca, C. Owen, A. Tang, and C. Bohil. 2007. Attention issues in spatial
+        information systems: Directing mobile users&#8217; visual attention using
+        augmented reality. Journal of Management Information Systems, 23, 4, 163--184.","DOI":"10.2753\/MIS0742-1222230408","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-12","unstructured":"M.
+        Birks, Y. Chapman, and K. Francis. 2008. Memoing in qualitative research probing
+        data and processes. Journal of Research in Nursing, 13, 1, 68--75.","DOI":"10.1177\/1744987107081254","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-13","unstructured":"D.
+        Boyer and J. Marcus. 2011. Implementing mobile augmented reality applications
+        for cultural institutions. In Museums and the Web 2011: Proceedings, J. Trant
+        and D. Bearman (Eds.). Archives & Museum Informatics, Toronto, 5--9."},{"key":"key-10.1145\/2872278-14","unstructured":"J.
+        Browne. 2014. Positioning Visitors with iBeacons (October 14, 2014). Retrieved
+        December 11, 2015 from https:\/\/www.brooklynmuseum.org\/community\/blogosphere\/2014\/10\/14\/positioning-visitors-with-ibeacons."},{"key":"key-10.1145\/2872278-15","unstructured":"G.
+        Cameron, W. Rogers, M. Apperley, and S. Jones. 2015. Reading text in an immersive
+        head-mounted display: An investigation into displaying desktop interfaces
+        in a 3D virtual environment. In Proceedings of the 15thNew Zealand Conference
+        on Human-Computer Interaction, ACM, 3--4 September, Hamilton NZ, 9--16."},{"key":"key-10.1145\/2872278-16","unstructured":"P.
+        Chamberlain, P. Gardner, and R. Lawton. 2007. Shape of things to come. In
+        Design Research Now, R. Michel (Ed.). Birkh&#228;user Base. 99--116.","DOI":"10.1007\/978-3-7643-8472-2_7","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-17","unstructured":"J.
+        Chauhan, A. Mahanti, and M. Kaafar. 2014. Towards the era of wearable computing?
+        In Proceedings of the 2014 CoNEXT on Student Workshop, ACM, December 2--5,
+        Sydney, 24--25.","DOI":"10.1145\/2680821.2680833","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-18","unstructured":"Cnet.
+        2013. Meta Glasses are the future of computing (August 9, 2013). Retrieved
+        December 14, 2015 from https:\/\/www.youtube.com\/watch?v&equals;b7I7JuQXttw."},{"key":"key-10.1145\/2872278-19","unstructured":"A.
+        Damala and N. Stojanovic. 2012. Tailoring the adaptive augmented reality (A2R)
+        museum visit: Identifying cultural heritage professionals&#8217; motivations
+        and needs. In 2012 IEEE International Symposium on Mixed and Augmented Reality-Arts,
+        Media, and Humanities (ISMAR-AMH), November 5--8, Atlanta, GA, 71--80."},{"key":"key-10.1145\/2872278-20","unstructured":"A.
+        Damala, I. Marchal, and P. Houlier. 2007. Merging augmented reality based
+        features in mobile multimedia museum guides. In Anticipating the Future of
+        the Cultural Past, CIPA Conference 2007, 1--6 October, Athens, Greece, 259--264."},{"key":"key-10.1145\/2872278-21","unstructured":"A.
+        Damala, N. Stojanovic, T. Schuchert, J. Moragues, A. Cabrera, and K. Gilleade.
+        2012. Adaptive augmented reality for cultural heritage: ARtSENSE project.
+        In Progress in Cultural Heritage Preservation. Springer Berlin Heidelberg,
+        746--755."},{"key":"key-10.1145\/2872278-22","unstructured":"A. Damala, P.
+        Cubaud, A. Bationo, P. Houlier, and I. Marchal. 2008. Bridging the gap between
+        the digital and the physical: Design and evaluation of a mobile augmented
+        reality guide for the museum visit. In Proceedings of the 3rdInternational
+        Conference on Digital Interactive Media in Entertainment and Arts, DIMEA&#8217;08,
+        ACM, September 10--12, Athens, Greece, 120--27."},{"key":"key-10.1145\/2872278-23","unstructured":"A.
+        Damala. 2013. An introduction to augmented reality and cultural heritage for
+        curators, art historians and museum educators. In La Cocina valenciana del
+        Museo Nacional de Artes Decorativas. Secretar&#237;a General T&#233;cnica,
+        Centro de Publicaciones Ministerio de Educaci&#243;n, Cultura y Deporte, 120--133."},{"key":"key-10.1145\/2872278-24","unstructured":"L.
+        de&#8217; Medici. 2015. Top 10 Implantable Wearables Soon To Be In Your Body
+        (October 27, 2015). Retrieved December 10, 2015 from https:\/\/wtvox.com\/3d-printing-in-wearable-tech\/top-10-implantable-wearables-soon-body."},{"key":"key-10.1145\/2872278-25","unstructured":"J.
+        H. Falk and L. D. Dierking. 2012. Museum Experience Revisited. Left Coast
+        Press, Walnut Creek, CA."},{"key":"key-10.1145\/2872278-26","unstructured":"N.
+        Fallah, I. Apostolopoulos, K. Bekris, and E. Folmer. 2013. Indoor human navigation
+        systems: A survey. Interacting with Computers, 25, 1, 21--33."},{"key":"key-10.1145\/2872278-27","unstructured":"A.
+        Fiannaca, I. Apostolopoulous, and E. Folmer. 2014. October. Headlock: A wearable
+        navigation aid that helps blind cane users traverse large open spaces. In
+        Proceedings of the 16thInternational ACM SIGACCESS Conference on Computers
+        & Accessibility. 20--22 October, Rochester, NY, USA. 19--26."},{"key":"key-10.1145\/2872278-28","unstructured":"S.
+        Filippini-Fantoni, S. McDaid, and M. Cock. 2011. Mobile devices for orientation
+        and way finding: The case of the British Museum multimedia guide. In Museums
+        and the Web 2011: Proceedings. Retrieved October 11, 2015 from http:\/\/conference.
+        archimuse. com\/mw2011\/papers\/mobile_devices_for_wayfinding."},{"key":"key-10.1145\/2872278-29","unstructured":"A.
+        Findeli, D. Brouillet, S. Martin, Ch. Moineau, and R. Tarrago. 2008. Research
+        through design and transdisciplinarity: A tentative contribution to the methodology
+        of design research. In Focused - Current Design Research Projects and Methods,
+        B. Minder (Ed.). 67--94."},{"key":"key-10.1145\/2872278-30","unstructured":"E.
+        Fiolet. 2014. GuidiGo powers first in-gallery tour on Google Glass at De Young
+        Museum (January 12, 2014). Retrieved December 11, 2015 from http:\/\/www.ubergizmo.com\/2014\/12\/guidigo-powers-first-in-gallery-tour-on-google-glass-at-de-young-museum."},{"key":"key-10.1145\/2872278-31","unstructured":"P.
+        Gallagher. 2014. How Google Glass could change the way we view art. The Independent
+        (June 1, 2014). Retrieved December 11, 2015 from http:\/\/www.independent.co.uk\/life-style\/gadgets-and-tech\/news\/how-google-glass-could-change-the-way-we-view-art-9468326.html."},{"key":"key-10.1145\/2872278-32","unstructured":"B.
+        Gammon and A. Burch. 2008. Designing mobile digital experiences. In Digital
+        Technologies and the Museum Experience: Handheld Guides and Other Media. L.
+        Tallon (Ed.). Rowman Altamira, Lanham, MD. 35--62."},{"key":"key-10.1145\/2872278-33","unstructured":"Google.
+        2015a. GDK Quick Start. Retrieved December 14, 2015 from https:\/\/developers.google.com\/glass\/develop\/gdk\/quick-start."},{"key":"key-10.1145\/2872278-34","unstructured":"Google.
+        2015b. GDK Quick Start. Retrieved December 14, 2015 from https:\/\/developers.google.com\/glass\/design\/principles."},{"key":"key-10.1145\/2872278-35","unstructured":"T.
+        Hall, L. Ciolfi, L. Bannon, M. Fraser, S. Benford, J. Bowers, C. Greenhalgh,
+        S. O. Hellstr&#246;m, S. Izadi, H. Schn&#228;delbach, and M. Flintham. 2001.
+        The visitor as virtual archaeologist: Explorations in mixed reality technology
+        to enhance educational and social interaction in the museum. In Proceedings
+        of the 2001 Conference on Virtual Reality, Archeology, and Cultural Heritage,
+        November 28--30, Athens, Greece, 91--96."},{"key":"key-10.1145\/2872278-36","unstructured":"B.
+        Hammersley. 2013. Wearables: The Third Wave of Computing. WIRED UK. January.
+        Retrieved November 14, 2015 from http:\/\/www.wired.co.uk\/magazine\/archive\/2014\/01\/features\/the-third-wave-of-computing."},{"key":"key-10.1145\/2872278-37","unstructured":"M.
+        Hassenzahl, S. Diefenbach, and A. G&#246;ritz. 2010. Needs, affect, and interactive
+        products--Facets of user experience. In Interacting with Computers 22, 5,
+        353--362.","DOI":"10.1016\/j.intcom.2010.04.002","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-38","unstructured":"Z.
+        He, B. Cui, W. Zhou, and S. Yokoi. 2015. July. A proposal of interaction system
+        between visitor and collection in museum hall by iBeacon. In 2015 10thInternational
+        Conference Computer Science & Education (ICCSE). IEEE. July 22--24, Cambridge
+        University, UK. 427--430."},{"key":"key-10.1145\/2872278-39","unstructured":"E.
+        Hooper-Greenhill, J. Dodd, T. Moussouri, C. Jones, C. Pickford, C. Herman,
+        M. Morrison, J. Vincent, and R. Toon. 2003. Measuring the outcomes and impact
+        of learning in museums, archives and libraries: The learning impact research
+        project end of project paper. Published by the Research Centre for Museums
+        and Galleries (RCMG), School of Museum Studies at the University of Leicester,
+        UK. Retrieved December 14, 2015 from https:\/\/lra.le.ac.uk\/handle\/2381\/65."},{"key":"key-10.1145\/2872278-40","unstructured":"F.
+        Joep. 2007. Research through design: A camera case study. In Design Research
+        Now, R. Michel (Ed.). Birkh&#228;user, Basel. 135--54."},{"key":"key-10.1145\/2872278-41","unstructured":"S.
+        Kasprzak, A. Komninos, and P. Barrie. 2013. Feature-based indoor navigation
+        using augmented reality. In 9thInternational Conference on Intelligent Environments
+        (IE), ACM. July 18--19, Athen, Greece, 100--107.","DOI":"10.1109\/IE.2013.51","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-42","unstructured":"J.
+        Keil, L. Pujol, M. Roussou, T. Engelke, M. Schmitt, U. Bockholt, and S. Eleftheratou.
+        2013. A digital look at physical museum exhibits: Designing personalized stories
+        with handheld augmented reality in museums. In Digital Heritage International
+        Congress (DigitalHeritage). IEEE, 2. 28 November -- October 1, Marseille,
+        France, 685--688.","DOI":"10.1109\/DigitalHeritage.2013.6744836","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-43","unstructured":"J.
+        Keil, T. Engelke, M. Schmitt, U. Bockholt, and L. Pujol. 2014. Lean in or
+        lean back? Aspects on interactivity and mediation in handheld augmented reality
+        in the museum. In 12thEurographics Workshops on Graphics and Cultural Heritage
+        (GCH), R. Klein and P. Santos (Eds.). 6--8 October, Darmstadt."},{"key":"key-10.1145\/2872278-44","unstructured":"J.
+        Kim and H. Jun. 2008. Vision-based location positioning using augmented reality
+        for indoor navigation. Consumer Electronics, IEEE Transactions on, 54, 3,
+        954--962."},{"key":"key-10.1145\/2872278-45","unstructured":"K. Kiyokawa.
+        2008. An introduction to head mounted displays for augmented reality. In Emerging
+        Technologies of Augmented Reality: Interfaces and Design. T. Haller, M. Billinghurst,
+        and B. Thomas (Eds.). Idea group Publishing, London. 43--63.","DOI":"10.4018\/978-1-59904-945-8.ch022","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-46","unstructured":"K.
+        Kiyokawa. 2012. Trends and vision of head mounted display in augmented reality.
+        In 2012 International Symposium on Ubiquitous Virtual Reality IEEE. 22--25
+        August, Adaejeon, Korea. 14--17.","DOI":"10.1109\/ISUVR.2012.11","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-47","unstructured":"E.
+        Klopfer. 2008. Augmented learning: Research and Design of Mobile Educational
+        Games. Mit Press. Cambridge, MA.","DOI":"10.7551\/mitpress\/9780262113151.001.0001","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-48","unstructured":"I.
+        Koskinen, J. Zimmerman, T. Binder, J. Redstrom, and S. Wensveen. 2011. Design
+        Research Through Practice: From the Lab, Field, and Showroom. 1sted. Morgan
+        Kaufmann. Waltham, MA."},{"key":"key-10.1145\/2872278-49","unstructured":"S.
+        Kvale. 2008. Doing Interviews. SAGE. London."},{"key":"key-10.1145\/2872278-50","unstructured":"C.
+        M. Leue, T. Jung, and D. Tom Dieck. 2015. Google glass augmented reality:
+        generic learning outcomes for art galleries. In Information and Communication
+        Technologies in Tourism 2015. Proceeding of the International Conference in
+        Lugano, February 2-6, 2015. Springer International Publishing, Switzerland.
+        463--476.","DOI":"10.1007\/978-3-319-14343-9_34","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-51","unstructured":"W.
+        Lu, L. Nguyen, T. Chuah, and E. Do. 2014. Effects of mobile AR-enabled interactions
+        on retention and transfer for learning in art museum contexts. In 2014 IEEE
+        International Symposium on Mixed and Augmented Reality-Media, Art, Social
+        Science, Humanities and Design (ISMAR-MASH&#8217;D). September 10--12, Munich,
+        Germany. 3--11."},{"key":"key-10.1145\/2872278-52","unstructured":"A. Lucero,
+        K. Lyons, A. Vetek, T. J&#228;rvenp&#228;&#228;, S. White, and M. Salmimaa.
+        2013. Exploring the interaction design space for interactive glasses. In CHI&#8217;13
+        Extended Abstracts on Human Factors in Computing Systems ACM. April 27 - May
+        02, Paris, France. 1341--1346.","DOI":"10.1145\/2468356.2468595","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-53","unstructured":"P.
+        Martin, B. Ho, N. Grupen, S. Mu&#241;oz, and M. Srivastava. 2014. An iBeacon
+        primer for indoor localization: Demo abstract. In Proceedings of the 1stACM
+        Conference on Embedded Systems for Energy-Efficient Buildings. November 5--6,
+        Memphis, USA. 190--191."},{"key":"key-10.1145\/2872278-54","unstructured":"M.
+        Mason. 2012. The dimensions of the mobile visitor experience: Thinking beyond
+        the technology design. International Journal of the Inclusive Museum, 5, 3,
+        51--72","DOI":"10.18848\/1835-2014\/CGP\/v05i03\/44404","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-55","unstructured":"P.
+        May. 2015. Museum 2.0: Google glass, apps and interactive exhibits change
+        the experience. San Jose Mercury News (February 1, 2015). Retrieved December
+        11, 2015 from http:\/\/www.mercurynews.com\/business\/ci_27234868\/museum-2-0-google-glass-apps-and-interactive."},{"key":"key-10.1145\/2872278-56","unstructured":"M.
+        McLuhan. 1994. Understanding Media: The Extensions of Man. MIT press. Cambridge,
+        MA."},{"key":"key-10.1145\/2872278-57","unstructured":"E. Merrit. 2015. Trendswatch
+        2015. In Center for the Future of Museums. Retrieved December 14, 2015 from
+        http:\/\/www.aam-us.org\/resources\/center-for-the-future-of-museums\/projects-and-reports\/trendswatch\/trendswatch2015."},{"key":"key-10.1145\/2872278-58","unstructured":"META.
+        2015. Retrieved December 14, 2015 from https:\/\/www.getameta.com."},{"key":"key-10.1145\/2872278-59","unstructured":"P.
+        Milgram and F. Kishino. 1994. A taxonomy of mixed reality visual displays.
+        IEICE TRANSACTIONS on Information and Systems, 77, 12, 1321--1329."},{"key":"key-10.1145\/2872278-60","unstructured":"O.
+        Muensterer, M. Lacher, C. Zoeller, M. Bronstein, and J. K&#252;bler. 2014.
+        Google Glass in pediatric surgery: An exploratory study. International Journal
+        of Surgery, 12, 4, 281--289.","DOI":"10.1016\/j.ijsu.2014.02.003","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-61","unstructured":"Museo
+        Egizio. 2013. Googleglass4Lis The Museum for Deaf-Mute People (February 6,
+        2014). Retrieved December 20, 2015 http:\/\/www.museoegizio.it\/en\/googleglass4lis-the-museum-for-deaf-mute-people."},{"key":"key-10.1145\/2872278-62","unstructured":"N.
+        Newman. 2014. Apple iBeacon technology briefing. In Journal of Direct, Data
+        and Digital Marketing Practice 15, 3, 222--25.","DOI":"10.1057\/dddmp.2014.7","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-63","unstructured":"NMC
+        Horizon Report. 2015 Museum Edition. Retrieved December 14, 2015 from http:\/\/www.nmc.org\/publication\/nmc-horizon-report-2015-museum-edition."},{"key":"key-10.1145\/2872278-64","unstructured":"D.
+        Novak, M. Wang, and V. Callaghan. 2012. Looking in, looking out: A discussion
+        of the educational. In Educational Stages and Interactive Learning: From Kindergarten
+        to Workplace Training: From Kindergarten to Workplace Training, IGI Global,
+        Hershey, PA. 92--106.","DOI":"10.4018\/978-1-4666-0137-6.ch006","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-65","unstructured":"Y.
+        Ohta and H. Tamura. 1999. Mixed Reality: Merging Real and Virtual Worlds.
+        Springer-Verlag New York, Inc. Secaucus, NJ.","DOI":"10.1007\/978-3-642-87512-0","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-66","unstructured":"N.
+        Osawa, K. Noda, S. Tsukagoshi, Y. Noma, A. Ando, T. Shibuya, and K. Kondo.
+        2007. Outdoor education support system with location awareness using RFID
+        and symbology tags. Journal of Educational Multimedia and Hypermedia, 16,
+        4, 411--428."},{"key":"key-10.1145\/2872278-67","unstructured":"F. Paas, A.
+        Renkl, and J. Sweller. 2003. Cognitive load theory and instructional design:
+        Recent developments. Educational Psychologist, 38, 1, 1--4.","DOI":"10.1207\/S15326985EP3801_1","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-68","unstructured":"M.
+        Q. Patton. 1990. Qualitative Evaluation and Research Methods (2nd Ed.). Sage
+        Publications, Inc. Thousand Oaks, CA."},{"key":"key-10.1145\/2872278-69","unstructured":"I.
+        Pedersen. 2013. Ready to Wear: A Rhetoric of Wearable Computers and Reality-Shifting
+        Media. Parlor Press. Anderson, SC."},{"key":"key-10.1145\/2872278-70","unstructured":"T.
+        Pederson, E. Janlert, and D. Surie. 2010. Towards a model for egocentric interaction
+        with physical and virtual objects. In Proceedings of the 6thNordic Conference
+        on Human-Computer Interaction: Extending Boundaries. October 16--20. Reykjavik,
+        Iceland. 755--758.","DOI":"10.1145\/1868914.1869022","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-71","unstructured":"N.
+        Proctor. 2010. Digital: Museum as platform, curator as champion, in the age
+        of social media. Curator: The Museum Journal, 53, 1, 35--43.","DOI":"10.1111\/j.2151-6952.2009.00006.x","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-72","unstructured":"D.
+        Raptis, N. Tselios, N. Avouris. 2005. Context-based design of mobile applications
+        for museums: A survey of existing practices. In Proceedings of the 7thInternational
+        Conference on Human Computer Interaction with Mobile Devices & Services ACM.
+        September 19--22, Salzburg, Austria. 153--160.","DOI":"10.1145\/1085777.1085803","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-73","unstructured":"S.
+        Rattanarungrot and M. White. 2014. A service-oriented mobile augmented reality
+        architecture for personalized museum environments. In 2014 International Conference
+        on Virtual Systems & Multimedia (VSMM). IEEE. December 9--12, Hong Kong. 277--284.","DOI":"10.1109\/VSMM.2014.7136695","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-74","unstructured":"S.
+        Rattanarungrot, M. White, Z. Patoli, and T. Pascu. 2014. The application of
+        augmented reality for reanimating cultural heritage. In Virtual, Augmented
+        and Mixed Reality. Applications of Virtual and Augmented Reality. Springer
+        International Publishing. Orlando, FL. 85--95.","DOI":"10.1007\/978-3-319-07464-1_8","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-75","unstructured":"T.
+        Rhodes and S. Allen. 2014. Through the looking glass: How Google Glass will
+        change the performing arts. In Arts Management and Technology Laboratory,
+        1--12."},{"key":"key-10.1145\/2872278-76","unstructured":"L. Richards. 2009.
+        Handling Qualitative Data: A Practical Guide (2nd Ed.). SAGE Publications
+        Ltd. London."},{"key":"key-10.1145\/2872278-77","unstructured":"H. Rubin and
+        I. Rubin. 2005. Qualitative Interviewing: The Art of Hearing Data. Sage. London.","DOI":"10.4135\/9781452226651","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-78","unstructured":"A.
+        Russo, J. Watkins, L. Kelly, and S. Chan. 2006. How will social media affect
+        museum communication? In Nordic Digital Excellence in Museums (NODEM), December
+        7--9, Oslo, Norway. 1--8."},{"key":"key-10.1145\/2872278-79","unstructured":"F.
+        Schumacher. 2014. Wearable implants for the daring and for those in need (July
+        22, 2014). Retrieved December 5, 2015 from http:\/\/libraryblogs.is.ed.ac.uk\/blog\/2014\/12\/16\/google-glass-gaming-and-gallimaufry."},{"key":"key-10.1145\/2872278-80","unstructured":"F.
+        Sparacino. 2002. The museum wearable: Real-time sensor-driven understanding
+        of visitors&#8217; interests for personalized visually-augmented museum experiences.
+        In Museums and the Web 2002. Retrieved October 2, 2015 from http:\/\/www.museumsandtheweb.com\/mw2002\/papers\/sparacino\/sparacino.html."},{"key":"key-10.1145\/2872278-81","unstructured":"J.
+        P. Stappers. 2007. Doing design as a part of doing research. In Design Research
+        Now, R. Michel (Ed.). Birkh&#228;user Basel. 81--91.","DOI":"10.1007\/978-3-7643-8472-2_6","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-82","unstructured":"N.
+        Stimler and R. Stein. 2014. Google Glass, wearable technology and the future
+        of museums. Presented at Museums and the Web 2014. Retrieved July 21, 2015
+        from http:\/\/mw2014.museumsandtheweb.com\/proposals\/google-glass-wearable-technology-and-the-future-of-museums."},{"key":"key-10.1145\/2872278-83","unstructured":"Dan
+        Sung. 2015. What is wearable tech? Everything you need to know explained.
+        Wearable tech, fitness trackers and smartwatches explained (August 3, 2015).
+        Retrieved December 8, 2015 from http:\/\/www.wareable.com\/wearable-tech\/what-is-wearable-tech-753."},{"key":"key-10.1145\/2872278-84","unstructured":"A.
+        Tillon, I. Marchal, and P. Houlier. 2011. Mobile augmented reality in the
+        museum: Can a lace-like technology take you closer to works of art? In 2011
+        IEEE International Symposium on Mixed and Augmented Reality-Arts, Media, and
+        Humanities (ISMAR-AMH), October 26--29, Basel, Switzerland, 41--47."},{"key":"key-10.1145\/2872278-85","unstructured":"A.
+        Tillon, I. Marchand, J. Laneurit, F. Servant, I. Marchal, and P. Houlier.
+        2010. A day at the museum: An augmented fine-art exhibit. In 2010 IEEE International
+        Symposium on Mixed and Augmented Reality-Arts, Media, and Humanities (ISMAR-AMH),
+        October 13--16, Seoul, South Korea. 69--70."},{"key":"key-10.1145\/2872278-86","unstructured":"D.
+        W. Turner III. 2010. Qualitative interview design: A practical guide for novice
+        investigators. The Qualitative Report, 15, 3, 754--760."},{"key":"key-10.1145\/2872278-87","unstructured":"D.
+        Van Krevelen and R. Poelman. 2010. A survey of augmented reality technologies,
+        applications and limitations. International Journal of Virtual Reality, 9,
+        2, 1--20."},{"key":"key-10.1145\/2872278-88","unstructured":"E. Ver&#243;n
+        and M. Levasseur. 1989. Ethnographie de l&#8217;exposition: L&#8217;espace,
+        Le Corps Et Le Sens. Centre Georges Pompidou, Biblioth&#232;que publique d&#8217;information."},{"key":"key-10.1145\/2872278-89","unstructured":"B.
+        Wasik. 2014. Why wearable tech will be as big as the smartphone. WIRED UK.
+        December 17. Retrieved December 10, 2015 from http:\/\/www.wired.com\/2013\/12\/wearable-computers."},{"key":"key-10.1145\/2872278-90","unstructured":"G.
+        Willshaw. 2014. Google Glass, gaming and Gallimaufry (December 16, 2014).
+        Retrieved December 10, 2015 from http:\/\/libraryblogs.is.ed.ac.uk\/blog\/2014\/12\/16\/google-glass-gaming-and-gallimaufry."},{"key":"key-10.1145\/2872278-91","unstructured":"M.
+        Wohlsen. 2014a. The only way to save Google Glass is to kill it. WIRED, November
+        25. Retrieved December 10, 2015 from http:\/\/www.wired.com\/2014\/11\/way-save-google-glass-kill."},{"key":"key-10.1145\/2872278-92","unstructured":"M.
+        Wohlsen. 2014b. Google could dominate wearables with glass OS. WIRED UK. November
+        27. Retrieved December 10, 2015 from http:\/\/www.wired.co.uk\/news\/archive\/2014-11\/26\/kill-google-glass."},{"key":"key-10.1145\/2872278-93","unstructured":"A.
+        Woodruff, P. Aoki, A. Hurst, and M. Szymanski. 2001. September. Electronic
+        guidebooks and visitor attention. In ICHIM, 1, 437--454."},{"key":"key-10.1145\/2872278-94","unstructured":"Q.
+        Xu, L. Li, J. Lim, C. Tan, M. Mukawa, and G. Wang. 2014. A wearable virtual
+        guide for context-aware cognitive indoor navigation. In Proceedings of the
+        16thInternational Conference on Human-Computer Interaction with Mobile Devices
+        & Services. ACM. September 23--26 Toronto, Canada, 111--120.","DOI":"10.1145\/2628363.2628390","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2872278-95","unstructured":"Z.
+        Yang, Z. Wang, J. Zhang, C. Huang, and Q. Zhang. 2015. Wearables can afford:
+        Light-weight indoor positioning with visible light. In Proceedings of the
+        13thAnnual International Conference on Mobile Systems, Applications, and Services.
+        ACM. May 19--22, Florence, Italy, 317--330."}],"container-title":["Journal
+        on Computing and Cultural Heritage"],"language":"en","link":[{"URL":"http:\/\/dl.acm.org\/ft_gateway.cfm?id=2872278&amp;ftid=1791114&amp;dwn=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T23:15:13Z","timestamp":1498346113000},"score":11.773849,"subtitle":["Visitor
+        Experience Exploration for Designing Smart Glasses"],"issued":{"date-parts":[[2016,9,20]]},"references-count":95,"journal-issue":{"published-print":{"date-parts":[[2016,11,3]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1145\/2872278","relation":{"cites":[]},"ISSN":["1556-4673"],"issn-type":[{"value":"1556-4673","type":"print"}]},{"indexed":{"date-parts":[[2018,4,17]],"date-time":"2018-04-17T19:32:17Z","timestamp":1523993537346},"reference-count":46,"publisher":"Association
+        for Computing Machinery (ACM)","issue":"3","license":[{"URL":"http:\/\/www.acm.org\/publications\/policies\/copyright_policy#Background","start":{"date-parts":[[2016,11,3]],"date-time":"2016-11-03T00:00:00Z","timestamp":1478131200000},"delay-in-days":0,"content-version":"vor"}],"funder":[{"name":"Widget
+        Corporation","award":["#312-001"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
+        Comput. Cult. Herit.","JOCCH"],"published-print":{"date-parts":[[2016,11,3]]},"DOI":"10.1145\/2940332","type":"journal-article","created":{"date-parts":[[2016,11,4]],"date-time":"2016-11-04T12:49:04Z","timestamp":1478263744000},"page":"1-19","source":"Crossref","is-referenced-by-count":0,"title":["Usingn-Grams
+        to Identify Time Periods of Cultural Influence"],"prefix":"10.1145","volume":"9","author":[{"given":"Gregory
+        P.","family":"Knight","sequence":"first","affiliation":[{"name":"East Carolina
+        University, Greenville, NC"}]},{"given":"Nasseh","family":"Tabrizi","sequence":"additional","affiliation":[{"name":"East
+        Carolina University, Greenville, NC"}]}],"member":"320","reference":[{"key":"key-10.1145\/2940332-1","unstructured":"Erez
+        Lieberman Aiden, Jean-Baptiste Michel, Joe Jackson, Tina Tang, and Martin
+        A. Nowak. 2007. Quantifying the evolutionary dynamics of language. Nature
+        449, 7163 (Oct. 11, 2007), 713--716. DOI: 10.1038\/nature06137","DOI":"10.1038\/nature06137","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-2","unstructured":"Don
+        Anderson. 2011. Ern, it turns out, has a French cousin. The Australian (October
+        1, 2011)."},{"key":"key-10.1145\/2940332-3","unstructured":"Jane Austen. 1813.
+        Pride and Prejudice: A Novel. T. Egerton, Military Library, Whitehall, London."},{"key":"key-10.1145\/2940332-4","unstructured":"Jane
+        Austen. 2010. Pride and Prejudice: An Annotated Edition, Patricia Meyer Spacks,
+        (Ed.). Harvard, 3--4."},{"key":"key-10.1145\/2940332-5","unstructured":"John
+        Bohannon. 2011. Google Books, Wikipedia, and the Future of Culturomics. Science
+        331, 6014 (Jan. 14, 2011), 135. DOI: 10.1126\/science.331.6014.135","DOI":"10.1126\/science.331.6014.135","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-6","unstructured":"Fawn
+        M. Brodie. 1945. No Man Knows My History: The Life of Joseph Smith. Vintage
+        Books, New York, NY, 50."},{"key":"key-10.1145\/2940332-7","unstructured":"David
+        Brooks. 2011. The Sons of Clovis: Ern Malley, Adore Floupette and a Secret
+        History of Australian Poetry. University of Queensland Press, Brisbane, Australia."},{"key":"key-10.1145\/2940332-8","unstructured":"Oscar
+        James Campbell and Edward G. Quinn, eds. 1966. The Reader''s Encyclopedia
+        of Shakespeare. Thomas Y. Crowell Company, New York, NY, 386--387."},{"key":"key-10.1145\/2940332-9","unstructured":"Ron
+        Chernow. 2004. Alexander Hamilton. The Penguin Press, New York, NY, 70."},{"key":"key-10.1145\/2940332-10","unstructured":"Patricia
+        Cohen. 2010. In 500 Billion Words, New Window on Culture. New York Times,
+        A3 (Dec. 17, 2010)."},{"key":"key-10.1145\/2940332-11","unstructured":"Deirdre
+        Le Faye. 2002. Jane Austen: The World of Her Novels: Frances Lincoln Limited,
+        London, 178."},{"key":"key-10.1145\/2940332-12","unstructured":"W. J. Fitzpatrick
+        and Sidney Lee, ed. 1895. Dictionary of National Biography, Volume 41. MacMillan
+        and Company, New York, NY, 407--408."},{"key":"key-10.1145\/2940332-13","unstructured":"Google.
+        2015. About Google Books. Retrieved November 7, 2015, from https:\/\/www.google.com\/intl\/en\/googlebooks\/about\/index.html."},{"key":"key-10.1145\/2940332-14","unstructured":"Bernard
+        D. N. Grebanier. 1965. The Great Shakespeare Forgery. W. W. Norton, New York,
+        NY."},{"key":"key-10.1145\/2940332-15","unstructured":"Jack Grieve. 2007.
+        Quantitative authorship attribution: An evaluation of techniques. Lit. Ling.
+        Comput. 22, 3.","DOI":"10.1093\/llc\/fqm020","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-16","unstructured":"Nicholas
+        Hagger. 2007. The Secret Founding of America. Watkins Publishing, London,
+        149."},{"key":"key-10.1145\/2940332-17","unstructured":"Eric Hand. 2011. Word
+        Play. Nature 474 (Jun. 17, 2011), 436--440. DOI: 10.1038\/474436a","DOI":"10.1038\/474436a","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-18","unstructured":"Brian
+        Hayes. 2007. Bit lit. Am. Sci. 99, 3 (May-June 2011), 190. DOI: 10.1511\/2011.90.190","DOI":"10.1511\/2011.90.190","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-19","unstructured":"Donna
+        Hill. 1977. Joseph Smith: The First Mormon. Signature Books, Salt Lake City,
+        UT, 35, 410--416."},{"key":"key-10.1145\/2940332-20","unstructured":"William
+        Henry Ireland. 1799. Vortigern, an Historical Tragedy, in Five Acts; Represented
+        at the Theatre Royal, Drury Lane. J. Barker, London."},{"key":"key-10.1145\/2940332-21","unstructured":"William
+        Henry Ireland and Richard Grant White. 1874. The Confessions of William Henry
+        Ireland, Containing the Particulars of his Fabrication of the Shakespeare
+        Manuscripts; Together with Anecdotes and Opinions of Many Distinguished Persons
+        in the Literary, Political, and Theatrical World. James W. Bouton, New York,
+        vii--xxxi, 135."},{"key":"key-10.1145\/2940332-22","unstructured":"Alexander
+        Jessup, ed., and George Burnham Ives, trans. 1903. Little French Masterpieces.
+        The Knickerbocker Press, New York and London, ix--xxv."},{"key":"key-10.1145\/2940332-23","unstructured":"Franz
+        Kafka. 2009. The Metamorphosis and Other Stories (Oxford World''s Classics),
+        Joyce Crick, trans. Oxford University Press, vii--xxxiii."},{"key":"key-10.1145\/2940332-24","unstructured":"Franz
+        Kafka. 2011. The Metamorphosis. CSF Publishing, New Mexico."},{"key":"key-10.1145\/2940332-25","unstructured":"Jeffrey
+        Kahan. 1998. Reforging Shakespeare: The Story of a Theatrical Scandal. Associated
+        University Presses, Inc., Cranbury, NJ, 11."},{"key":"key-10.1145\/2940332-26","unstructured":"Jeffrey
+        Kahan. 2001. Shakespeare and the forging of belief. Crit. Quart. 32, 2 (July
+        2001), 1. DOI:10.1111\/1467-8705.00352","DOI":"10.1111\/1467-8705.00352","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-27","unstructured":"R.
+        A. S. Macalister. 1941. Irish Hist. Stud. 2, 7 (March 1941), 335."},{"key":"key-10.1145\/2940332-28","unstructured":"John
+        Mair. 1938. The Fourth Forger: William Ireland and the Shakespeare Papers.
+        Ayer Publishing."},{"key":"key-10.1145\/2940332-29","unstructured":"David
+        McCullough. 2001. John Adams. Simon &#x38; Schuster, New York, NY. 96--97."},{"key":"key-10.1145\/2940332-30","unstructured":"David
+        McCullough. 2005. 1776. Simon &#x38; Schuster, New York, NY. 250--251."},{"key":"key-10.1145\/2940332-31","unstructured":"Robert
+        McKee. 1997. Story: Substance, Structure, Style, and the Principles of Screenwriting
+        (2nd. ed.). HarperCollins, New York, NY."},{"key":"key-10.1145\/2940332-32","unstructured":"Philip
+        Mead. 2008. Networked Language: Culture &#x38; History in Australian Poetry.
+        Australian Scholarly Publishing, 89."},{"key":"key-10.1145\/2940332-33","unstructured":"Jean-Baptiste
+        Michel, Yuan Kui Shen, Aviva P. Aiden, Adrian Veres, Matthew K. Gray, The
+        Google Books Team, Joseph P. Pickett, Dale Hoiberg, Dan Clancy, Peter Norvig,
+        Jon Orwant, Steven Pinker, Martin A. Nowak, Aiden, and Erez Lieberman Aiden.
+        2011. Quantitative analysis of culture using millions of digitized books.
+        Science 331, 6014 (Jan. 14, 2011), 176--182. DOI: 10.1126\/science.1199644","DOI":"10.1126\/science.1199644","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-34","unstructured":"David
+        Nokes. 1997. Jane Austen: A Life. University of California Press, Berkeley
+        and Los Angeles, 2, 51."},{"key":"key-10.1145\/2940332-35","unstructured":"Roger
+        O&#8217;Connor. 1822. Chronicles of Eri; Being the History of the Gaal Sciot
+        Bier: or, the Irish People; Translated from the Original Manuscripts in the
+        Ph&oelig;nician Dialect of the Scythian Language, Volume 1, 2 vols. Sir Richard
+        Phillips and Co., London, iii-xi."},{"key":"key-10.1145\/2940332-36","unstructured":"Thomas
+        Paine. 1995. Common Sense. Fall River Press, New York, NY."},{"key":"key-10.1145\/2940332-37","unstructured":"LeGrand
+        Richards. 1976. A Marvelous Work and a Wonder. Deseret Books, Salt Lake City,
+        UT, 72--73."},{"key":"key-10.1145\/2940332-38","unstructured":"John Rickard.
+        1997. Australia: A Cultural History (The Present and the Past). Longman Group,
+        United Kingdom, 245."},{"key":"key-10.1145\/2940332-39","unstructured":"S.
+        Schoenbaum. 1991. Shakespeare''s Lives. Oxford University Press."},{"key":"key-10.1145\/2940332-40","unstructured":"Gregory
+        Shalhoub, Robin Simon, Ramesh Iyer, Jayendra Tailor, and Dr. Sandra Westcott.
+        2010. Stylometry System&#8212;Use Cases and Feasibility Study. In Proceedings
+        of Student-Faculty Research Day, CSIS. Pace University, May 7, 2010."},{"key":"key-10.1145\/2940332-41","unstructured":"Mary
+        Shelley. 1891. Frankenstein; or, the Modern Prometheus. George Routledge and
+        Sons, Limited, London, v--xii."},{"key":"key-10.1145\/2940332-42","unstructured":"Joseph
+        Smith Jr. 1830. Book of Mormon. E. B. Grandin, Palmyra, New York, title page."},{"key":"key-10.1145\/2940332-43","unstructured":"Joseph
+        Smith. 1980. History of the Church, Volume I. Deseret Book Company, Salt Lake
+        City, UT, 15--18."},{"key":"key-10.1145\/2940332-44","unstructured":"Efstathios
+        Stamatatos. 2009. A Survey of Modern Authorship Attribution Methods. JASIST
+        60, (Jan. 2009), 538--556.","DOI":"10.1002\/asi.21001","doi-asserted-by":"crossref"},{"key":"key-10.1145\/2940332-45","unstructured":"Henry
+        Weinfield, trans. 1994. Collected Poems \/ St&#233;phane Mallarm&#233;. University
+        of California Press, Berkeley and Los Angeles, 179."},{"key":"key-10.1145\/2940332-46","unstructured":"William
+        Henry Wilde, Joy W. Hooton, and B. G. Andrews, eds. 1994. The Oxford Companion
+        to Australian Literature. Oxford University Press, 257."}],"container-title":["Journal
+        on Computing and Cultural Heritage"],"language":"en","link":[{"URL":"http:\/\/dl.acm.org\/ft_gateway.cfm?id=2940332&amp;ftid=1809362&amp;dwn=1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,25]],"date-time":"2017-06-25T02:48:54Z","timestamp":1498358934000},"score":11.773849,"issued":{"date-parts":[[2016,11,3]]},"references-count":46,"journal-issue":{"published-print":{"date-parts":[[2016,11,3]]},"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1145\/2940332","relation":{"cites":[]},"ISSN":["1556-4673"],"issn-type":[{"value":"1556-4673","type":"print"}]},{"indexed":{"date-parts":[[2018,4,17]],"date-time":"2018-04-17T21:25:05Z","timestamp":1524000305524},"reference-count":0,"publisher":"Acoustical
+        Society of America (ASA)","issue":"4","content-domain":{"domain":["asa.scitation.org"],"crossmark-restriction":true},"short-container-title":["The
+        Journal of the Acoustical Society of America"],"published-print":{"date-parts":[[2016,10]]},"DOI":"10.1121\/1.4969629","type":"journal-article","created":{"date-parts":[[2016,11,18]],"date-time":"2016-11-18T18:02:34Z","timestamp":1479492154000},"page":"3090-3090","update-policy":"http:\/\/dx.doi.org\/10.1063\/aip-crossmark-policy-page","source":"Crossref","is-referenced-by-count":0,"title":["Songle
+        Widget: A web-based development framework for making animation and physical
+        devices synchronized with music"],"prefix":"10.1121","volume":"140","author":[{"given":"Masataka","family":"Goto","sequence":"first","affiliation":[]},{"given":"Kazuyoshi","family":"Yoshii","sequence":"additional","affiliation":[]},{"given":"Tomoyasu","family":"Nakano","sequence":"additional","affiliation":[]}],"member":"231","container-title":["The
+        Journal of the Acoustical Society of America"],"language":"en","deposited":{"date-parts":[[2016,12,28]],"date-time":"2016-12-28T14:13:20Z","timestamp":1482934400000},"score":9.363688,"issued":{"date-parts":[[2016,10]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2016,10]]},"issue":"4"},"alternative-id":["10.1121\/1.4969629"],"URL":"http:\/\/dx.doi.org\/10.1121\/1.4969629","ISSN":["0001-4966"],"issn-type":[{"value":"0001-4966","type":"print"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"widget"}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['30787']
+      Content-Length: ['79715']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:21:31 GMT']
+      Date: ['Thu, 24 May 2018 23:03:58 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

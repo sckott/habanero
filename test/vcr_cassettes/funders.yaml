@@ -5,12 +5,12 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.2]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.2]
+      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
+      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
     method: GET
     uri: https://api.crossref.org/funders?rows=2
   response:
-    body: {string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":16196,"items":[{"id":"100002569","location":"United
+    body: {string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":17549,"items":[{"id":"100002569","location":"United
         States","name":"American Association of Endodontists Foundation","alt-names":["AAE
         Foundation for Endodontics","AAE Foundation","Foundation for Endodontics","AAEF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100002569","replaces":[],"replaced-by":[],"tokens":["american","association","of","endodontists","foundation","aae","foundation","for","endodontics","aae","foundation","foundation","for","endodontics","aaef"]},{"id":"501100009402","location":"Ethiopia","name":"Mekelle
         University","alt-names":["MU"],"uri":"http:\/\/dx.doi.org\/10.13039\/501100009402","replaces":[],"replaced-by":[],"tokens":["mekelle","university","mu"]}]}}'}
@@ -20,7 +20,7 @@ interactions:
       Connection: [close]
       Content-Length: ['842']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 02 Apr 2018 16:21:40 GMT']
+      Date: ['Thu, 24 May 2018 23:04:27 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]
