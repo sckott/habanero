@@ -118,7 +118,7 @@ Content negotiation - get citations in many formats
 Meta
 ====
 
-* Please note that this project is released with a `Contributor Code of Conduct <https://github.com/sckott/habanero/blob/master/CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
+* Please note that this project is released with a `Contributor Code of Conduct <https://github.com/sckott/habanero/blob/master/CODE_OF_CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
 * License: MIT; see `LICENSE file <https://github.com/sckott/habanero/blob/master/LICENSE>`__
 
 .. |pypi| image:: https://img.shields.io/pypi/v/habanero.svg
