@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Usecases &mdash; habanero 0.6.0 documentation</title>
+  <title>Usecases &mdash; habanero 0.6.2 documentation</title>
   
 
   
@@ -24,27 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="habanero 0.6.0 documentation" href="../index.html"/>
-        <link rel="next" title="habanero modules" href="../modules/intro.html"/>
-        <link rel="prev" title="Frequently Asked Questions" href="faq.html"/> 
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="habanero modules" href="../modules/intro.html" />
+    <link rel="prev" title="Frequently Asked Questions" href="faq.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -66,7 +58,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.6.2
               </div>
             
           
@@ -129,7 +121,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">habanero</a>
@@ -137,9 +129,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -186,38 +179,36 @@
 <div class="section" id="use-case-1-faceted-search-to-get-number-of-works-per-license-type">
 <h2>Use case 1: Faceted search to get number of works per license type<a class="headerlink" href="#use-case-1-faceted-search-to-get-number-of-works-per-license-type" title="Permalink to this headline">¶</a></h2>
 <p>Load library</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">Crossref</span>
 <span class="n">cr</span> <span class="o">=</span> <span class="n">Crossref</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>First, do a search like</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">facet</span> <span class="o">=</span> <span class="s2">&quot;license:*&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">res</span> <span class="o">=</span> <span class="n">cr</span><span class="o">.</span><span class="n">works</span><span class="p">(</span><span class="n">facet</span> <span class="o">=</span> <span class="s2">&quot;license:*&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Count number of unique licenses</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;facets&#39;</span><span class="p">][</span><span class="s1">&#39;license&#39;</span><span class="p">][</span><span class="s1">&#39;value-count&#39;</span><span class="p">]</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;facets&#39;</span><span class="p">][</span><span class="s1">&#39;license&#39;</span><span class="p">][</span><span class="s1">&#39;value-count&#39;</span><span class="p">]</span>
 </pre></div>
 </div>
-<p>That&#8217;s a lot of licenses!</p>
+<p>That’s a lot of licenses!</p>
 <p>Get licenses with &gt; 1000 works</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">gt1000</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;facets&#39;</span><span class="p">][</span><span class="s1">&#39;license&#39;</span><span class="p">][</span><span class="s1">&#39;values&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">}</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">gt1000</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span><span class="n">v</span> <span class="k">for</span> <span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">v</span><span class="p">)</span> <span class="ow">in</span> <span class="n">res</span><span class="p">[</span><span class="s1">&#39;message&#39;</span><span class="p">][</span><span class="s1">&#39;facets&#39;</span><span class="p">][</span><span class="s1">&#39;license&#39;</span><span class="p">][</span><span class="s1">&#39;values&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">}</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">gt1000</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Ah, that&#8217;s only 63</p>
+<p>Ah, that’s only 63</p>
 <p>Find the license with the most works</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="n">gt1000</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">gt1000</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span><span class="p">(</span><span class="n">gt1000</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">k</span><span class="p">:</span> <span class="n">gt1000</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
 </pre></div>
 </div>
-<p>That&#8217;s a license &#8220;<a class="reference external" href="http://www.elsevier.com/tdm/userlicense/1.0/">http://www.elsevier.com/tdm/userlicense/1.0/</a>&#8221; from Elsevier</p>
+<p>That’s a license “<a class="reference external" href="http://www.elsevier.com/tdm/userlicense/1.0/">http://www.elsevier.com/tdm/userlicense/1.0/</a>” from Elsevier</p>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -239,7 +230,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -257,7 +248,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.6.0',
+            VERSION:'0.6.2',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -270,19 +262,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

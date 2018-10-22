@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contributing &mdash; habanero 0.6.0 documentation</title>
+  <title>Contributing &mdash; habanero 0.6.2 documentation</title>
   
 
   
@@ -24,27 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="habanero 0.6.0 documentation" href="index.html"/>
-        <link rel="next" title="Contributor Code of Conduct" href="conduct.html"/>
-        <link rel="prev" title="Contributors" href="contributors.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributor Code of Conduct" href="conduct.html" />
+    <link rel="prev" title="Contributors" href="contributors.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -66,7 +58,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.6.2
               </div>
             
           
@@ -132,7 +124,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">habanero</a>
@@ -140,9 +132,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -201,7 +194,7 @@
 </div>
 <div class="section" id="pull-requests">
 <h2>Pull requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h2>
-<p>When you submit a PR you&#8217;ll see a template that pops up - it&#8217;s reproduced
+<p>When you submit a PR you’ll see a template that pops up - it’s reproduced
 here.</p>
 <ul class="simple">
 <li>Provide a general summary of your changes in the Title</li>
@@ -210,16 +203,16 @@ here.</p>
 or if just relates to an issue make sure to mention it like <cite>#4</cite></li>
 <li>If introducing a new feature or changing behavior of existing
 methods/functions, include an example if possible to do in brief form</li>
-<li>Did you remember to include tests? Unless you&#8217;re changing docs/grammar,
+<li>Did you remember to include tests? Unless you’re changing docs/grammar,
 please include new tests for your change</li>
 </ul>
 </div>
 <div class="section" id="writing-tests">
 <h2>Writing tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline">¶</a></h2>
-<p>We&#8217;re using <cite>nosetests</cite> for testing. See the <a class="reference external" href="http://nose.readthedocs.io/en/latest/">nosetests docs</a> for
+<p>We’re using <cite>nosetests</cite> for testing. See the <a class="reference external" href="http://nose.readthedocs.io/en/latest/">nosetests docs</a> for
 help on contributing to or writing tests.</p>
 <p>The Makefile has tasks for testing under python 2 and 3</p>
-<div class="highlight-shell"><div class="highlight"><pre><span></span>make <span class="nb">test</span>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>make <span class="nb">test</span>
 make test3
 </pre></div>
 </div>
@@ -228,9 +221,7 @@ make test3
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -252,7 +243,7 @@ make test3
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -270,7 +261,8 @@ make test3
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.6.0',
+            VERSION:'0.6.2',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -283,19 +275,13 @@ make test3
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>counts module &mdash; habanero 0.6.0 documentation</title>
+  <title>counts module &mdash; habanero 0.6.2 documentation</title>
   
 
   
@@ -24,27 +24,19 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="habanero 0.6.0 documentation" href="../index.html"/>
-        <link rel="next" title="cn module" href="cn.html"/>
-        <link rel="prev" title="Crossref Search Filters" href="filters.html"/> 
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="cn module" href="cn.html" />
+    <link rel="prev" title="Crossref Search Filters" href="filters.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -66,7 +58,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.6.2
               </div>
             
           
@@ -129,7 +121,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">habanero</a>
@@ -137,9 +129,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -188,7 +181,7 @@
 <li><cite>citation_count</cite></li>
 </ul>
 <p>Example usage:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="kn">import</span> <span class="n">counts</span>
 <span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.1371/journal.pone.0042793&quot;</span><span class="p">)</span>
 <span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
 </pre></div>
@@ -197,16 +190,16 @@
 <span id="counts-api"></span><h2>counts API<a class="headerlink" href="#module-habanero" title="Permalink to this headline">¶</a></h2>
 <dl class="method">
 <dt id="habanero.counts.citation_count">
-<code class="descclassname">counts.</code><code class="descname">citation_count</code><span class="sig-paren">(</span><em>doi</em>, <em>url='http://www.crossref.org/openurl/'</em>, <em>key='cboettig&#64;ropensci.org'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#habanero.counts.citation_count" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">counts.</code><code class="descname">citation_count</code><span class="sig-paren">(</span><em>url='http://www.crossref.org/openurl/'</em>, <em>key='cboettig&#64;ropensci.org'</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#habanero.counts.citation_count" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a citation count with a DOI</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>doi</strong> &#8211; [String] DOI, digital object identifier</li>
-<li><strong>url</strong> &#8211; [String] the API url for the function (should be left to default)</li>
-<li><strong>keyc</strong> &#8211; [String] your API key</li>
+<li><strong>doi</strong> – [String] DOI, digital object identifier</li>
+<li><strong>url</strong> – [String] the API url for the function (should be left to default)</li>
+<li><strong>keyc</strong> – [String] your API key</li>
 </ul>
 </td>
 </tr>
@@ -214,7 +207,7 @@
 </table>
 <p>See <a class="reference external" href="http://labs.crossref.org/openurl/">http://labs.crossref.org/openurl/</a> for more info on this Crossref API service.</p>
 <p>Usage:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="k">import</span> <span class="n">counts</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">habanero</span> <span class="k">import</span> <span class="n">counts</span>
 <span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.1371/journal.pone.0042793&quot;</span><span class="p">)</span>
 <span class="n">counts</span><span class="o">.</span><span class="n">citation_count</span><span class="p">(</span><span class="n">doi</span> <span class="o">=</span> <span class="s2">&quot;10.1016/j.fbr.2012.01.001&quot;</span><span class="p">)</span>
 <span class="c1"># DOI not found</span>
@@ -229,9 +222,7 @@
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -253,7 +244,7 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -271,7 +262,8 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'0.6.0',
+            VERSION:'0.6.2',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
@@ -284,19 +276,13 @@
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
