@@ -1,6 +1,13 @@
 Changelog
 =========
 
+0.6.2 (2018-10-22)
+--------------------
+* changelog was missing from the pypi distribution, fixed now (#71)
+* fixed `Crossref.registration_agency()` method, borked it up on a previous change (#72)
+* set encoding on response text for `content_negotiation()` method to UTF-8 to fix encoding issues (#73)
+* fix `Crossref.filter_names()` method; no sort on `dict_keys` (#76)
+
 0.6.0 (2017-10-20)
 --------------------
 * Added verification and docs for additional Crossref search filters (#62)
