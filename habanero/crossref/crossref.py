@@ -11,7 +11,6 @@ class Crossref(object):
 
     |
     |
-    |
 
     **Includes methods matching Crossref API routes**
 
@@ -211,7 +210,7 @@ class Crossref(object):
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+            queries (see examples and FieldQueries_) 
 
         :return: A dict
 
@@ -727,7 +726,7 @@ class Crossref(object):
             cr = Crossref()
             cr.filter_names()
         '''
-        nms = filter_details.keys()
+        nms = list(filter_details.keys())
         nms.sort()
         return nms
 
