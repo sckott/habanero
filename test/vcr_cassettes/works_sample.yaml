@@ -5,124 +5,26 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
+      User-Agent: [python-requests/2.19.1 habanero/0.6.2.1]
+      X-USER-AGENT: [python-requests/2.19.1 habanero/0.6.2.1]
     method: GET
     uri: https://api.crossref.org/works?sample=2
   response:
-    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":96961333,"items":[{"indexed":{"date-parts":[[2018,5,3]],"date-time":"2018-05-03T21:34:28Z","timestamp":1525383268653},"reference-count":0,"publisher":"Informa
-        UK Limited","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["British
-        Phycological Journal"],"published-print":{"date-parts":[[1984,3]]},"DOI":"10.1080\/00071618400650091","type":"journal-article","created":{"date-parts":[[2007,7,26]],"date-time":"2007-07-26T06:37:40Z","timestamp":1185431860000},"page":"89-93","source":"Crossref","is-referenced-by-count":0,"title":["Book
-        reviews"],"prefix":"10.1080","volume":"19","member":"301","published-online":{"date-parts":[[2007,2,24]]},"container-title":["British
-        Phycological Journal"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/00071618400650091","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,12]],"date-time":"2016-12-12T03:08:05Z","timestamp":1481512085000},"score":1.0,"issued":{"date-parts":[[1984,3]]},"references-count":0,"journal-issue":{"published-online":{"date-parts":[[2007,2,24]]},"published-print":{"date-parts":[[1984,3]]},"issue":"1"},"alternative-id":["10.1080\/00071618400650091"],"URL":"http:\/\/dx.doi.org\/10.1080\/00071618400650091","ISSN":["0007-1617"],"issn-type":[{"value":"0007-1617","type":"print"}]},{"indexed":{"date-parts":[[2018,5,8]],"date-time":"2018-05-08T12:28:42Z","timestamp":1525782522146},"publisher-location":"London","reference-count":26,"publisher":"Palgrave
-        Macmillan UK","isbn-type":[{"value":"9781349445431","type":"print"},{"value":"9781137273819","type":"electronic"}],"license":[{"URL":"http:\/\/www.springer.com\/tdm","start":{"date-parts":[[2014,1,1]],"date-time":"2014-01-01T00:00:00Z","timestamp":1388534400000},"delay-in-days":0,"content-version":"unspecified"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014]]},"DOI":"10.1057\/9781137273819_10","type":"book-chapter","created":{"date-parts":[[2016,5,21]],"date-time":"2016-05-21T14:23:59Z","timestamp":1463840639000},"page":"199-228","source":"Crossref","is-referenced-by-count":0,"title":["Social
-        Inclusion in Rural Brazil under Lula"],"prefix":"10.1057","author":[{"given":"Ant\u00f4nio
-        Marcio","family":"Buainain","sequence":"first","affiliation":[]},{"given":"Henrique
-        Dantas","family":"Neder","sequence":"additional","affiliation":[]},{"given":"Junior
-        Ruiz","family":"Garcia","sequence":"additional","affiliation":[]}],"member":"297","reference":[{"key":"10_CR1","author":"RP
-        Barros","year":"2004","unstructured":"Barros, R.P. and Carvalho, M. (2004)
-        \u2018Desafios para a Pol\u00edtica Social Brasileira\u2019, in F. Giambiagi,
-        J.G. Reis and A. Urani (eds), Reformas no Brasil: Balan\u00e7o e Agenda (Rio
-        de Janeiro: Nova Fronteira).","volume-title":"Sistema pol\u00edtico brasileiro:
-        Uma introdu\u00e7\u00e3o"},{"key":"10_CR2","author":"Brasil sem Mis\u00e9ria","year":"2012","unstructured":"Brasil
-        sem Mis\u00e9ria. (2012) Plano Brasil sem Mis\u00e9ria. www.brasilsemmiseria.gov.br
-        date accessed 14 August 2012.","volume-title":"Plano Brasil sem Mis\u00e9ria"},{"key":"10_CR3","author":"AM
-        Buainain","year":"2009","unstructured":"Buainain, A.M. Braga, B. Garcia, J.R.
-        and Buainain, V.P. (2009) \u2018Di\u00e1logo de Pol\u00edticas para Inclus\u00e3o
-        Social e Produtiva em Alagoas: Pontos para Reflex\u00e3o e Debate\u2019, paper
-        prepared for the Inter American Development Bank (IDB).","volume-title":"Di\u00e1logo
-        de Pol\u00edticas para Inclus\u00e3o Social e Produtiva em Alagoas: Pontos
-        para Reflex\u00e3o e Debate"},{"key":"10_CR4","author":"CEPEA\/USP\/CNA","year":"2012","unstructured":"CEPEA\/USP\/CNA.
-        (2012) Agribusiness GDP \u20131994 to 2011. www.cepea.esalq.usp.br \/pib date
-        accessed 5 January 2012.","volume-title":"Agribusiness GDP \u20131994 to 2011"},{"key":"10_CR5","author":"DIEESE","year":"2011","unstructured":"DIEESE.
-        (2011) Pol\u00edtica de Valoriza\u00e7\u00e3o do Sal\u00e1rio M\u00ednimo,
-        nota t\u00e9cnica 93. portal. mte.gov.br date accessed 14 August 2012.","volume-title":"Pol\u00edtica
-        de Valoriza\u00e7\u00e3o do Sal\u00e1rio M\u00ednimo"},{"issue":"2","key":"10_CR6","doi-asserted-by":"crossref","first-page":"63","DOI":"10.1590\/S0103-20702003000200004","volume":"15","author":"S
-        Draibe","year":"2003","unstructured":"Draibe, S. (2003) \u2018A Pol\u00edtica
-        Social no Per\u00edodo FHC e o Sistema de Prote\u00e7\u00e3o Social\u2019,
-        Tempo Social 15(2): 63\u2013101.","journal-title":"Tempo Social"},{"key":"10_CR7","author":"PHG
-        Ferreira Souza de","year":"2012","unstructured":"Ferreira de Souza, P.H.G.
-        (2012) \u2018Poverty, Inequality and Social Policies in Brazil, 1995\u20132009\u2019,
-        Working Paper 87, International Policy Centre for Inclusive Growth. http:\/\/www.ipc-undp.org
-        \/pub\/IPCWorkingPaper87.pdf date accessed 14 December 2012.","series-title":"Working
-        Paper","volume-title":"Poverty, Inequality and Social Policies in Brazil,
-        1995\u20132009"},{"key":"10_CR8","author":"V Ferreira","year":"2013","unstructured":"Ferreira,
-        V. Sielawa, H. and Helfand, S. (2013) \u2018A Matter of Time: An Impact Evaluation
-        of the Programa Nacional de Cr\u00e9dito Fundi\u00e1rio\u2019, Working Paper,
-        University of California Riverside.","series-title":"Working Paper","volume-title":"A
-        Matter of Time: An Impact Evaluation of the Programa Nacional de Cr\u00e9dito
-        Fundi\u00e1rio"},{"key":"10_CR9","year":"2004","unstructured":"Giambiagi,
-        F. Reis, J.G. and Urani, A. (eds) (2004) Reformas no Brasil: Balan\u00e7o
-        e Agenda (Rio de Janeiro: Nova Fronteira).","volume-title":"Reformas no Brasil:
-        Balan\u00e7o e Agenda"},{"issue":"2","key":"10_CR10","doi-asserted-by":"crossref","first-page":"301","DOI":"10.1590\/S0103-20032007000200004","volume":"45","author":"CE
-        Guanziroli","year":"2007","unstructured":"Guanziroli, C.E. (2007) \u2018Pronaf
-        Dez Anos Depois: Resultados e Perspectivas para o Desenvolvimento Rural\u2019,
-        Revista de Economia e Sociologia Rural 45(2): 301\u2013328.","journal-title":"Revista
-        de Economia e Sociologia Rural"},{"issue":"2","key":"10_CR11","doi-asserted-by":"crossref","first-page":"351","DOI":"10.1590\/S0103-20032012000200009","volume":"50","author":"CE
-        Guanziroli","year":"2012","unstructured":"Guanziroli, C.E. Buainain, A.M.
-        and Di Sabbato, A. (2012) \u2018Dez Anos de Evolu\u00e7\u00e3o da Agricultura
-        Familiar no Brasil: (1996 e 2006), Revista de Economia e Sociologia Rural
-        50(2): 351\u2013370.","journal-title":"Revista de Economia e Sociologia Rural"},{"key":"10_CR12","author":"R
-        Hoffmann","year":"2010","unstructured":"Hoffmann, R. and Ney, M.G. (2010)
-        \u2018Evolu\u00e7\u00e3o Recente da Estrutura Fundi\u00e1ria e Propriedade
-        Rural no Brasil\u2019, in J.G. Gasques, J.E. Vieira Filho and Z. Navarro (eds),
-        A Agricultura Brasileira: Desempenho, Desafios e Perspectivas (Bras\u00edlia:
-        IPEA).","volume-title":"A Agricultura Brasileira: Desempenho, Desafios e Perspectivas"},{"key":"10_CR13","author":"IBASE","year":"2008","unstructured":"IBASE.
-        (2008) Repercuss\u00f5es do Programa Bolsa Fam\u00edlia na Seguran\u00e7a
-        Alimentar e Nutricional das Fam\u00edlias Beneficiadas. www.ibase.br (home
-        page) date accessed 14 February 2011.","volume-title":"Repercuss\u00f5es do
-        Programa Bolsa Fam\u00edlia na Seguran\u00e7a Alimentar e Nutricional das
-        Fam\u00edlias Beneficiadas"},{"key":"10_CR14","author":"IBGE","year":"2006","unstructured":"IBGE.
-        (2006) Censo Agropecu\u00e1rio \u20132006. www.ibge.gov.br (home page) date
-        accessed 14 July 2012.","volume-title":"Censo Agropecu\u00e1rio \u20132006"},{"key":"10_CR15","author":"IBGE","year":"2012","unstructured":"IBGE.
-        (2012) Sistema IBGE de Recupera\u00e7\u00e3o Autom\u00e1tica \u2013Sidra.
-        www.ibge.gov.br (home page) date accessed 14 July 2012.","volume-title":"Sistema
-        IBGE de Recupera\u00e7\u00e3o Autom\u00e1tica \u2013Sidra"},{"key":"10_CR16","author":"INCRA","year":"2012","unstructured":"INCRA.
-        (2012) Fam\u00edlias Assentadas: 1994\u20132011. www.incra.gov.br (home page)
-        date accessed 14 August 2012.","volume-title":"Fam\u00edlias Assentadas: 1994\u20132011"},{"key":"10_CR17","unstructured":"Ipeadata.
-        (2012) Ipeadata Social. www.ipeadata.gov.br (home page), date accessed 14
-        July 2012."},{"key":"10_CR18","author":"MDA","year":"2012","unstructured":"MDA.
-        (2012) Programas. www.mda.gov.br (home page), date accessed 14 August 2012.","volume-title":"Programas"},{"key":"10_CR19","author":"MDS","year":"2012","unstructured":"MDS.
-        (2012) Bolsa Fam\u00edlia. Minist\u00e9rio do Desenvolvimento Social e Combate
-        \u00e0 Fome. www.mds.gov.br (home page) date accessed 12 August 2012.","volume-title":"Bolsa
-        Fam\u00edlia"},{"key":"10_CR20","author":"H Neder","year":"2008","unstructured":"Neder,
-        H. (2008) \u2018Estrutura do Mercado de Trabalho Agr\u00edcola no Brasil:
-        Uma An\u00e1lise Descritiva da Evolu\u00e7\u00e3o de Suas Categorias entre
-        1995 e 2006\u2019, in A.M. Buainain and C. Dedecca (eds), Emprego e Trabalho
-        na Agricultura Brasileira, S\u00e9rie Desenvolvimento Rural Sustent\u00e1vel
-        9 (Bras\u00edlia: IICA).","series-title":"S\u00e9rie Desenvolvimento Rural
-        Sustent\u00e1vel","volume-title":"Emprego e Trabalho na Agricultura Brasileira"},{"key":"10_CR21","author":"H
-        Neder","year":"2012","unstructured":"Neder, H. and Buainain, A.M. (2012) \u2018Pronaf
-        Impacts on Social Indicators of Agricultures in Brazil in the Period 2000\u20132010\u2019,
-        VI World Conference SEA (Salvador, Brazil.)","volume-title":"\u2018Pronaf
-        Impacts on Social Indicators of Agricultures in Brazil in the Period 2000\u20132010\u2019"},{"key":"10_CR22","author":"PAN-
-        Brasil","year":"2004","unstructured":"PAN- Brasil. (2004) Programa de A\u00e7\u00e3o
-        Nacional de Combate \u00e0 Desertifica\u00e7\u00e3o e Mitiga\u00e7\u00e3o
-        dos Efeitos da Seca PAN- Brasil. www.ibama.gov.br \/rn\/wp-content\/files\/2009\/05\/PAN_BRASIL.pdf.","volume-title":"Programa
-        de A\u00e7\u00e3o Nacional de Combate \u00e0 Desertifica\u00e7\u00e3o e Mitiga\u00e7\u00e3o
-        dos Efeitos da Seca PAN- Brasil"},{"key":"10_CR23","unstructured":"PNRA II.
-        (2004) II Plano Nacional de Reforma Agr\u00e1ria: Paz, Produ\u00e7\u00e3o
-        e Qualidade de Vida no Meio Rural. sistemas.mda.gov.br\/arquivos\/PNRA_2004.pdf
-        date accessed 14 August 2012."},{"key":"10_CR24","author":"Portal da Cidadania","year":"2011","unstructured":"Portal
-        da Cidadania. (2011). Territ\u00f3rios da Cidadania. http:\/\/comunidades.mda.gov.br
-        \/principal\/ date accessed 08 January 2014.","volume-title":"Territ\u00f3rios
-        da Cidadania"},{"key":"10_CR25","author":"Presid\u00eancia da Rep\u00fablica","year":"2012","unstructured":"Presid\u00eancia
-        da Rep\u00fablica. (2012) Mensagem ao Congresso Nacional 2012 \u2014 Cap\u00edtulo
-        II: Desenvolvimento Inclusivo e Erradica\u00e7\u00e3o da Pobreza Extrema.
-        http:\/\/www.secom.gov.br \/sobre-a-secom\/acoes-e-programas\/publicacoes\/mensagem-ao-congresso-nacional\/mensagem-ao-congresso-nacional-2012
-        date accessed 14 December 2012.","volume-title":"Mensagem ao Congresso Nacional
-        2012 \u2014 Cap\u00edtulo II: Desenvolvimento Inclusivo e Erradica\u00e7\u00e3o
-        da Pobreza Extrema"},{"key":"10_CR26","year":"2012","unstructured":"Schwartzman,
-        S. and Bacha, E. (eds) (2012) Brasil: A Nova Agenda Social (Rio de Janeiro:
-        Editora LTC).","volume-title":"Brasil: A Nova Agenda Social"}],"container-title":["Brazil
-        Under the Workers\u2019 Party"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1057\/9781137273819_10","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,24]],"date-time":"2017-06-24T14:19:16Z","timestamp":1498313956000},"score":1.0,"issued":{"date-parts":[[2014]]},"ISBN":["9781349445431","9781137273819"],"references-count":26,"URL":"http:\/\/dx.doi.org\/10.1057\/9781137273819_10","relation":{"cites":[]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
+    body: {string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":101776867,"items":[{"indexed":{"date-parts":[[2018,5,14]],"date-time":"2018-05-14T07:40:10Z","timestamp":1526283610575},"reference-count":0,"publisher":"The
+        Institute of the History of Christianity in Korea","issue":"47","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["christianityandhistoryinkorea"],"published-print":{"date-parts":[[2017,9]]},"DOI":"10.18021\/chk..47.201709.69","type":"journal-article","created":{"date-parts":[[2017,9,26]],"date-time":"2017-09-26T04:16:20Z","timestamp":1506399380000},"page":"69-106","source":"Crossref","is-referenced-by-count":0,"title":["The
+        March First Independent Movement and Buddhism"],"prefix":"10.18021","volume":"null","author":[{"family":"kwang
+        sik kim","sequence":"first","affiliation":[]}],"member":"7382","container-title":["Christianity
+        and History in Korea"],"language":"en","deposited":{"date-parts":[[2018,5,14]],"date-time":"2018-05-14T07:11:56Z","timestamp":1526281916000},"score":1.0,"issued":{"date-parts":[[2017,9]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[2017,9]]},"issue":"47"},"URL":"http:\/\/dx.doi.org\/10.18021\/chk..47.201709.69","ISSN":["1598-7256"],"issn-type":[{"value":"1598-7256","type":"print"}]},{"indexed":{"date-parts":[[2018,5,8]],"date-time":"2018-05-08T10:33:57Z","timestamp":1525775637232},"reference-count":0,"publisher":"Oxford
+        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2011,10,31]]},"DOI":"10.1093\/benz\/9780199773787.article.b00052483","type":"reference-book","created":{"date-parts":[[2017,12,16]],"date-time":"2017-12-16T13:43:35Z","timestamp":1513431815000},"source":"Crossref","is-referenced-by-count":0,"title":["Domenico
+        da Leonessa"],"prefix":"10.1093","member":"286","container-title":["Benezit
+        Dictionary of Artists"],"original-title":["Domenico da Leonessa"],"deposited":{"date-parts":[[2017,12,16]],"date-time":"2017-12-16T13:43:35Z","timestamp":1513431815000},"score":1.0,"issued":{"date-parts":[[2011,10,31]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/benz\/9780199773787.article.b00052483"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'}
     headers:
       Access-Control-Allow-Headers: [X-Requested-With]
       Access-Control-Allow-Origin: ['*']
       Connection: [close]
-      Content-Length: ['12033']
+      Content-Length: ['2325']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Thu, 24 May 2018 23:07:01 GMT']
+      Date: ['Fri, 14 Dec 2018 20:32:17 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

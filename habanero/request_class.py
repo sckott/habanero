@@ -1,6 +1,8 @@
 import requests
 import json
 import re
+import math
+from tqdm import tqdm
 
 from .filterhandler import filter_handler
 from .habanero_utils import switch_classes,check_json,is_json,parse_json_err,make_ua,filter_dict,rename_query_filters
@@ -15,7 +17,8 @@ class Request(object):
   def __init__(self, mailto, url, path, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, select = None, cursor = None,
-        cursor_max = None, agency = False, **kwargs):
+        cursor_max = None, agency = False, progress_bar = False, 
+        **kwargs):
     self.mailto = mailto
     self.url = url
     self.path = path
@@ -31,6 +34,7 @@ class Request(object):
     self.cursor = cursor
     self.cursor_max = cursor_max
     self.agency = agency
+    self.progress_bar = progress_bar
     self.kwargs = kwargs
 
   def _url(self):
@@ -65,12 +69,25 @@ class Request(object):
     if(cu.__class__.__name__ != 'NoneType' and self.cursor_max > len(js['message']['items'])):
       res = [js]
       total = len(js['message']['items'])
+      
+      # progress bar setup
+      if self.progress_bar:
+        actual_max = self.cursor_max if self.cursor_max is not None else max_avail
+        if max_avail < actual_max:
+          actual_max = max_avail
+        runs = math.ceil(actual_max / (self.limit or 20))
+        pbar = tqdm(total = runs - 1)
+
       while(cu.__class__.__name__ != 'NoneType' and self.cursor_max > total and total < max_avail):
         payload['cursor'] = cu
         out = self._req(payload = payload)
         cu = out['message'].get('next-cursor')
         res.append(out)
         total = sum([ len(z['message']['items']) for z in res ])
+        if self.progress_bar:
+          pbar.update(1)
+      if self.progress_bar:
+        pbar.close()
       return res
     else:
       return js
