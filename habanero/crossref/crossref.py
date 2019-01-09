@@ -42,7 +42,7 @@ class Crossref(object):
     As of September 18th 2017 any API queries that use HTTPS and have
     appropriate contact information will be directed to a special pool
     of API machines that are reserved for polite users. If you connect
-    to the Crossreef API using HTTPS and provide contact
+    to the Crossref API using HTTPS and provide contact
     information, then they will send you to a separate pool of machines,
     with better control the performance of these machines because they can
     block abusive users.
@@ -68,7 +68,7 @@ class Crossref(object):
 
     See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current
     rate limits. As of this writing the limit is 50 requests per second,
-    but that could change. In addiiton, it's not clear what the time is to reset.
+    but that could change. In addition, it's not clear what the time is to reset.
     See below for getting header info for your requests.
 
     .. _CurlOpts:
@@ -107,12 +107,12 @@ class Crossref(object):
 
     * `query_title` - Query title and subtitle
     * `query_container_title` - Query container-title aka. publication name
-    * `query_author` - Query author first and given names
-    * `query_editor` - Query editor first and given names
-    * `query_chair` - Query chair first and given names
-    * `query_translator` - Query translator first and given names
-    * `query_contributor` - Query author, editor, chair and translator first and given names
-    * `query_bibliographic` - Query bibliographic infomration, useful for citation look up. Includes titles, authors, ISSNs and publication years
+    * `query_author` - Query author given and family names
+    * `query_editor` - Query editor given and family names
+    * `query_chair` - Query chair given and family names
+    * `query_translator` - Query translator given and family names
+    * `query_contributor` - Query author, editor, chair and translator given and family names
+    * `query_bibliographic` - Query bibliographic information, useful for citation look up. Includes titles, authors, ISSNs and publication years
     * `query_affiliation` - Query contributor affiliations
 
     .. _sorting:
@@ -374,7 +374,7 @@ class Crossref(object):
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
         :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
@@ -512,7 +512,7 @@ class Crossref(object):
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
         :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
@@ -587,7 +587,7 @@ class Crossref(object):
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
         :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
@@ -632,7 +632,7 @@ class Crossref(object):
 
         :param query: [String] A query string
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
         :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
