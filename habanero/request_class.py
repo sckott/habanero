@@ -1,10 +1,12 @@
 import requests
 import json
 import re
+from typing import Dict, Any
 
 from .filterhandler import filter_handler
 from .habanero_utils import switch_classes,check_json,is_json,parse_json_err,make_ua,filter_dict,rename_query_filters
 from .exceptions import *
+
 
 class Request(object):
   '''
@@ -37,7 +39,7 @@ class Request(object):
     tmpurl = self.url + self.path
     return tmpurl.strip("/")
 
-  def do_request(self):
+  def do_request(self) -> Dict[Any, Any]:
     filt = filter_handler(self.filter)
     if self.select.__class__ is list:
       self.select = ','.join(self.select)

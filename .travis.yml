@@ -13,9 +13,11 @@ install:
   - pip install 'requests>=2.7'
   - pip install coveralls
   - pip install vcrpy
+  - pip install mypy mypy-extensions
 
 script:
   - nosetests -v --cover-package=habanero
+  - mypy habanero
 
 after_success:
   - coveralls --verbose

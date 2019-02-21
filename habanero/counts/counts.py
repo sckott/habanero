@@ -1,5 +1,5 @@
 import requests
-from xml.dom import minidom
+from xml.dom import minidom # type: ignore
 from ..habanero_utils import make_ua
 
 def citation_count(doi, url = "http://www.crossref.org/openurl/",

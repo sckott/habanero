@@ -4,6 +4,7 @@ from ..request import request
 from ..request_class import Request
 from ..habanero_utils import sub_str,check_kwargs
 from .filters import filter_details
+from typing import List, Dict, Any, Union
 
 class Crossref(object):
     '''
@@ -168,10 +169,10 @@ class Crossref(object):
       return """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\n>""" % (type(self).__name__,
         self.base_url, sub_str(self.api_key), self.mailto)
 
-    def works(self, ids = None, query = None, filter = None, offset = None,
+    def works(self, ids: List[str] = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
               order = None, facet = None, select = None, cursor = None,
-              cursor_max = 5000, **kwargs):
+              cursor_max = 5000, **kwargs) -> Union[List[Dict],Dict]:
         '''
         Search Crossref works
 

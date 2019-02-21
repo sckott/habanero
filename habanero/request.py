@@ -1,6 +1,7 @@
 import requests
 import json
 import re
+from typing import Dict, Any, Union, List
 
 from .filterhandler import filter_handler
 from .habanero_utils import switch_classes,check_json,is_json,parse_json_err,make_ua,filter_dict,rename_query_filters
@@ -10,7 +11,7 @@ from .request_class import Request
 def request(mailto, url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, select = None, works = None,
-        cursor = None, cursor_max = None, agency = False, **kwargs):
+        cursor = None, cursor_max = None, agency = False, **kwargs) -> Union[List[Dict],Dict]:
 
   url = url + path
 
