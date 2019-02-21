@@ -4,8 +4,8 @@ sudo: false
 
 matrix:
   include:
-    - name: "python 3.3"
-      python: "3.3"
+    - name: "python 3.5"
+      python: "3.5"
       install:
         - pip install 'requests>=2.7'
         - pip install vcrpy
