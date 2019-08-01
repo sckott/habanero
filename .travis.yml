@@ -1,6 +1,7 @@
 language: python
 cache: pip
 sudo: false
+dist: xenial
 
 # FIXME - ideally need to test on python 2
 python:
