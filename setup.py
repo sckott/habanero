@@ -30,7 +30,7 @@ setup(
   license          = 'MIT',
   packages         = find_packages(exclude=['test-*']),
   install_requires = ['requests>=2.7.0','tqdm'],
-  classifiers      = (
+  classifiers      = [
     'Development Status :: 5 - Production/Stable',
     'Intended Audience :: Science/Research',
     'Intended Audience :: Developers',
@@ -44,5 +44,5 @@ setup(
     'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',
     'Programming Language :: Python :: 3.7'
-	)
+	]
 )

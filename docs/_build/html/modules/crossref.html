@@ -208,7 +208,7 @@ article titles, authors, etc. For some discussion on this, see
 <p>As of September 18th 2017 any API queries that use HTTPS and have
 appropriate contact information will be directed to a special pool
 of API machines that are reserved for polite users. If you connect
-to the Crossreef API using HTTPS and provide contact
+to the Crossref API using HTTPS and provide contact
 information, then they will send you to a separate pool of machines,
 with better control the performance of these machines because they can
 block abusive users.</p>
@@ -229,7 +229,7 @@ when you instantiate the <cite>Crossref</cite> object. See examples below.</p>
 <p id="ratelimits"><strong>Rate limits</strong></p>
 <p>See the headers <cite>X-Rate-Limit-Limit</cite> and <cite>X-Rate-Limit-Interval</cite> for current
 rate limits. As of this writing the limit is 50 requests per second,
-but that could change. In addiiton, it’s not clear what the time is to reset.
+but that could change. In addition, it’s not clear what the time is to reset.
 See below for getting header info for your requests.</p>
 <p id="curlopts"><strong>Verbose curl output</strong>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
@@ -262,12 +262,12 @@ query parameters are:</p>
 <ul class="simple">
 <li><cite>query_title</cite> - Query title and subtitle</li>
 <li><cite>query_container_title</cite> - Query container-title aka. publication name</li>
-<li><cite>query_author</cite> - Query author first and given names</li>
-<li><cite>query_editor</cite> - Query editor first and given names</li>
-<li><cite>query_chair</cite> - Query chair first and given names</li>
-<li><cite>query_translator</cite> - Query translator first and given names</li>
-<li><cite>query_contributor</cite> - Query author, editor, chair and translator first and given names</li>
-<li><cite>query_bibliographic</cite> - Query bibliographic infomration, useful for citation look up. Includes titles, authors, ISSNs and publication years</li>
+<li><cite>query_author</cite> - Query author given and family names</li>
+<li><cite>query_editor</cite> - Query editor given and family names</li>
+<li><cite>query_chair</cite> - Query chair given and family names</li>
+<li><cite>query_translator</cite> - Query translator given and family names</li>
+<li><cite>query_contributor</cite> - Query author, editor, chair and translator given and family names</li>
+<li><cite>query_bibliographic</cite> - Query bibliographic information, useful for citation look up. Includes titles, authors, ISSNs and publication years</li>
 <li><cite>query_affiliation</cite> - Query contributor affiliations</li>
 </ul>
 <p id="sorting"><strong>Sort options</strong></p>
@@ -409,7 +409,7 @@ See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> – [Fixnum] Number of record to start at, from 1 to 10000</li>
-<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
+<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> – [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
 <li><strong>sort</strong> – [String] Field to sort on. Note: If the API call includes a query, then the sort
@@ -494,7 +494,7 @@ queries (see examples and <a class="reference internal" href="#fieldqueries">Fie
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>query</strong> – [String] A query string</li>
 <li><strong>offset</strong> – [Fixnum] Number of record to start at, from 1 to 10000</li>
-<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
+<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sort</strong> – [String] Field to sort on. Note: If the API call includes a query, then the sort
 order will be by the relevance score. If no query is included, then the sort order
 will be by DOI update date. See <a class="reference internal" href="#sorting">sorting</a> for possible values.</li>
@@ -620,7 +620,7 @@ See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> – [Fixnum] Number of record to start at, from 1 to 10000</li>
-<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
+<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> – [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
 <li><strong>sort</strong> – [String] Field to sort on. Note: If the API call includes a query, then the sort
@@ -767,7 +767,7 @@ See <a class="reference external" href="https://github.com/CrossRef/rest-api-doc
 for filter names and their descriptions and <a class="reference internal" href="filters.html#habanero.Crossref.filter_names" title="habanero.Crossref.filter_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_names()</span></code></a>
 and <a class="reference internal" href="filters.html#habanero.Crossref.filter_details" title="habanero.Crossref.filter_details"><code class="xref py py-func docutils literal notranslate"><span class="pre">filter_details()</span></code></a></li>
 <li><strong>offset</strong> – [Fixnum] Number of record to start at, from 1 to 10000</li>
-<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</li>
+<li><strong>limit</strong> – [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</li>
 <li><strong>sample</strong> – [Fixnum] Number of random results to return. when you use the sample parameter,
 the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</li>
 <li><strong>sort</strong> – [String] Field to sort on. Note: If the API call includes a query, then the sort

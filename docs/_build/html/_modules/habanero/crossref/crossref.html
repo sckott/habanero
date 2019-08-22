@@ -212,7 +212,7 @@
 <span class="sd">    As of September 18th 2017 any API queries that use HTTPS and have</span>
 <span class="sd">    appropriate contact information will be directed to a special pool</span>
 <span class="sd">    of API machines that are reserved for polite users. If you connect</span>
-<span class="sd">    to the Crossreef API using HTTPS and provide contact</span>
+<span class="sd">    to the Crossref API using HTTPS and provide contact</span>
 <span class="sd">    information, then they will send you to a separate pool of machines,</span>
 <span class="sd">    with better control the performance of these machines because they can</span>
 <span class="sd">    block abusive users.</span>
@@ -238,7 +238,7 @@
 
 <span class="sd">    See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current</span>
 <span class="sd">    rate limits. As of this writing the limit is 50 requests per second,</span>
-<span class="sd">    but that could change. In addiiton, it&#39;s not clear what the time is to reset.</span>
+<span class="sd">    but that could change. In addition, it&#39;s not clear what the time is to reset.</span>
 <span class="sd">    See below for getting header info for your requests.</span>
 
 <span class="sd">    .. _CurlOpts:</span>
@@ -277,12 +277,12 @@
 
 <span class="sd">    * `query_title` - Query title and subtitle</span>
 <span class="sd">    * `query_container_title` - Query container-title aka. publication name</span>
-<span class="sd">    * `query_author` - Query author first and given names</span>
-<span class="sd">    * `query_editor` - Query editor first and given names</span>
-<span class="sd">    * `query_chair` - Query chair first and given names</span>
-<span class="sd">    * `query_translator` - Query translator first and given names</span>
-<span class="sd">    * `query_contributor` - Query author, editor, chair and translator first and given names</span>
-<span class="sd">    * `query_bibliographic` - Query bibliographic infomration, useful for citation look up. Includes titles, authors, ISSNs and publication years</span>
+<span class="sd">    * `query_author` - Query author given and family names</span>
+<span class="sd">    * `query_editor` - Query editor given and family names</span>
+<span class="sd">    * `query_chair` - Query chair given and family names</span>
+<span class="sd">    * `query_translator` - Query translator given and family names</span>
+<span class="sd">    * `query_contributor` - Query author, editor, chair and translator given and family names</span>
+<span class="sd">    * `query_bibliographic` - Query bibliographic information, useful for citation look up. Includes titles, authors, ISSNs and publication years</span>
 <span class="sd">    * `query_affiliation` - Query contributor affiliations</span>
 
 <span class="sd">    .. _sorting:</span>
@@ -564,7 +564,7 @@
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
-<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
+<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
@@ -729,7 +729,7 @@
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
-<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
+<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
@@ -818,7 +818,7 @@
 <span class="sd">            for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`</span>
 <span class="sd">            and :func:`~habanero.Crossref.filter_details`</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
-<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
+<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,</span>
 <span class="sd">            the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100</span>
 <span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
@@ -880,7 +880,7 @@
 
 <span class="sd">        :param query: [String] A query string</span>
 <span class="sd">        :param offset: [Fixnum] Number of record to start at, from 1 to 10000</span>
-<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000</span>
+<span class="sd">        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000</span>
 <span class="sd">        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort</span>
 <span class="sd">            order will be by the relevance score. If no query is included, then the sort order</span>
 <span class="sd">            will be by DOI update date. See sorting_ for possible values.</span>
