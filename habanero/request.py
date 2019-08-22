@@ -10,7 +10,8 @@ from .request_class import Request
 def request(mailto, url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, select = None, works = None,
-        cursor = None, cursor_max = None, agency = False, **kwargs):
+        cursor = None, cursor_max = None, agency = False, 
+        progress_bar = False, **kwargs):
 
   url = url + path
 
@@ -46,7 +47,6 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
       raise e
     check_json(r)
     coll = r.json()
-    # coll = switch_classes(js, path, works)
   else:
     if(ids.__class__.__name__ == "str"):
       ids = ids.split()
@@ -57,7 +57,8 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
       if works:
         res = Request(mailto, url, str(ids[i]) + "/works",
           query, filter, offset, limit, sample, sort,
-          order, facet, select, cursor, cursor_max, **kwargs).do_request()
+          order, facet, select, cursor, cursor_max, None, 
+          progress_bar, **kwargs).do_request()
         coll.append(res)
       else:
         if agency:
@@ -79,7 +80,6 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
           raise e
         check_json(r)
         js = r.json()
-        #tt_out = switch_classes(js, path, works)
         coll.append(js)
 
     if len(coll) == 1:
