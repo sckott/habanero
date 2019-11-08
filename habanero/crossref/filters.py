@@ -1,4 +1,4 @@
-filter_details = {
+works_filter_details = {
   "has_funder": { "possible_values": None, "description": "metadata which includes one or more funder entry" },
   "funder": { "possible_values": "{funder_id}", "description": "metadata which include the {funder_id} in FundRef data" },
   "location":  { "possible_values": "{country_name}", "description": "funder records where location = {country name}. Only works on /funders route" },
@@ -67,4 +67,15 @@ filter_details = {
   "public_references": { "possible_values": None, "description": "metadata where publishers allow references to be distributed publically" },
   "publisher_name": { "possible_values": None, "description": "metadata for records with an exact matching publisher name" },
   "affiliation": { "possible_values": None, "description": "metadata for records with at least one contributor with the given affiliation" }
+}
+
+members_filter_details = {
+  "has_public_references": { "possible_values": None , "description": "member has made their references public for one or more of their prefixes" },
+  "reference_visibility": { "possible_values": ["open", "limited", "closed"] , "description": "members who have made their references either open, limited (to Metadata Plus subscribers) or closed" },
+  "backfile_doi_count": { "possible_values": "{integer}" , "description": "count of DOIs for material published more than two years ago" },
+  "current_doi_count": { "possible_values": "{integer}" , "description": "count of DOIs for material published within last two years" }
+}
+
+funders_filter_details = {
+  "location": { "possible_values": None , "description": "funders located in specified country" }
 }

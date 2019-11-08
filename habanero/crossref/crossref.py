@@ -3,7 +3,7 @@ import requests
 from ..request import request
 from ..request_class import Request
 from ..habanero_utils import sub_str,check_kwargs
-from .filters import filter_details
+from .filters import works_filter_details,members_filter_details,funders_filter_details
 
 class Crossref(object):
     '''
@@ -212,7 +212,7 @@ class Crossref(object):
         :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
             when using cursor parameter). default: False
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_) 
+            queries (see examples and FieldQueries_)
 
         :return: A dict
 
@@ -293,12 +293,12 @@ class Crossref(object):
         if ids.__class__.__name__ != 'NoneType':
             return request(self.mailto, self.base_url, "/works/", ids,
                 query, filter, offset, limit, sample, sort,
-                order, facet, select, None, None, None, None, 
+                order, facet, select, None, None, None, None,
                 progress_bar, **kwargs)
         else:
             return Request(self.mailto, self.base_url, "/works/",
               query, filter, offset, limit, sample, sort,
-              order, facet, select, cursor, cursor_max, None, 
+              order, facet, select, cursor, cursor_max, None,
               progress_bar, **kwargs).do_request()
 
     def members(self, ids = None, query = None, filter = None, offset = None,
@@ -317,6 +317,8 @@ class Crossref(object):
             See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
+            IMPORTANT: when `works=False` the filters that will work are the members
+            filters; when `works=True` the filters that will work are the works filters
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -372,10 +374,13 @@ class Crossref(object):
             # field queries
             res = cr.members(ids = 98, works = True, query_author = 'carl boettiger', limit = 7)
             [ x['author'][0]['family'] for x in res['message']['items'] ]
+
+            # filters (as of this writing, 4 filters are avail., see filter_names())
+            res = cr.members(filter = {'has_public_references': True})
         '''
         return request(self.mailto, self.base_url, "/members/", ids,
             query, filter, offset, limit, sample, sort,
-            order, facet, select, works, cursor, cursor_max, 
+            order, facet, select, works, cursor, cursor_max,
             None, progress_bar, **kwargs)
 
     def prefixes(self, ids = None, filter = None, offset = None,
@@ -481,6 +486,8 @@ class Crossref(object):
             See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
+            IMPORTANT: when `works=False` the filters that will work are the funders
+            filters; when `works=True` the filters that will work are the works filters
         :param offset: [Fixnum] Number of record to start at, from 1 to 10000
         :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
         :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
@@ -536,10 +543,13 @@ class Crossref(object):
             res = cr.funders(ids = "10.13039/100000001", works = True, query_container_title = 'engineering', filter = {'type': 'journal-article'})
             eds = [ x.get('editor') for x in res['message']['items'] ]
             [ z for z in eds if z is not None ]
+
+            # filters (as of this writing, only 1 filter is avail., "location")
+            cr.funders(filter = {'location': "Sweden"})
         '''
         return request(self.mailto, self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, select, works, cursor, cursor_max, None, 
+          order, facet, select, works, cursor, cursor_max, None,
           progress_bar, **kwargs)
 
     def journals(self, ids = None, query = None, filter = None, offset = None,
@@ -628,7 +638,7 @@ class Crossref(object):
         '''
         return request(self.mailto, self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
-          order, facet, select, works, cursor, cursor_max, None, 
+          order, facet, select, works, cursor, cursor_max, None,
           progress_bar, **kwargs)
 
     def types(self, ids = None, query = None, filter = None, offset = None,
@@ -699,7 +709,7 @@ class Crossref(object):
         '''
         return request(self.mailto, self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,
-            order, facet, select, works, cursor, cursor_max, 
+            order, facet, select, works, cursor, cursor_max,
             None, progress_bar, **kwargs)
 
     def licenses(self, query = None, offset = None,
@@ -789,31 +799,42 @@ class Crossref(object):
             None, None, None, True, None, None, None, **kwargs)
         return [ z['DOI'] for z in res['message']['items'] ]
 
-    @staticmethod
-    def filter_names():
+    def filter_names(self, type = "works"):
         '''
         Filter names - just the names of each filter
 
-        Filters are used in the Crossref search API to modify searches
+        Filters are used in the Crossref search API to modify searches. 
+        As filters are introduced or taken away, we may get out of sync; check
+        the docs for the latest https://github.com/CrossRef/rest-api-doc
 
-        :return: dict
+        :param type: [str] what type of filters, i.e., what API route, matches
+            methods here. one of "works", "members", or "funders". Default: "works"
+
+        :return: list
 
         Usage::
 
             from habanero import Crossref
             cr = Crossref()
             cr.filter_names()
+            cr.filter_names("members")
+            cr.filter_names("funders")
         '''
-        nms = list(filter_details.keys())
+        nms = list(self.filter_details(type).keys())
         nms.sort()
         return nms
 
-    @staticmethod
-    def filter_details():
+    def filter_details(self, type = "works"):
         '''
         Filter details - filter names, possible values, and description
 
-        Filters are used in the Crossref search API to modify searches
+        Filters are used in the Crossref search API to modify searches.
+        As filters are introduced or taken away, we may get out of sync; check
+        the docs for the latest https://github.com/CrossRef/rest-api-doc
+
+        :param type: [str] what type of filters, i.e., what API route,
+            matches methods here. one of "works", "members", or "funders".
+            Default: "works"
 
         :return: dict
 
@@ -822,8 +843,17 @@ class Crossref(object):
             from habanero import Crossref
             cr = Crossref()
             cr.filter_details()
+            cr.filter_details("members")
+            cr.filter_details("funders")
             # Get descriptions for each filter
             x = cr.filter_details()
             [ z['description'] for z in x.values() ]
         '''
-        return filter_details
+        types = ["works", "members", "funders"]
+        if type not in types:
+            raise ValueError("'type' must be one of " + "', '".join(types))
+        return {
+            'works': works_filter_details,
+            'members': members_filter_details,
+            'funders': funders_filter_details
+        }[type]
