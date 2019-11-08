@@ -1,6 +1,14 @@
 Changelog
 =========
 
+0.7.0 (2019-11-08)
+--------------------
+* `filter_names()` and `filter_details()` altered to get metadata for works, members and funders filters; and added egs to members and funders methods for using filters (#67)
+* many typos fixed (#80) thanks @Radcliffe !
+* use of a progress bar is now possible when fetching works route data, only when doing deep paging, see `progress_bar` parameter (#77) (#82)
+* `content_negotiation` fixes: `ids` parameter is now required (has no default), and must be a str or list of str (#83)
+* no longer testing under Python 2
+
 0.6.2 (2018-10-22)
 --------------------
 * changelog was missing from the pypi distribution, fixed now (#71)

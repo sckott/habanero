@@ -26,5 +26,8 @@ dist:
 register:
 	python3 setup.py register
 
+upload_test:
+	python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
 upload:
 	twine upload dist/*
