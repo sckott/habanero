@@ -4,9 +4,12 @@ import json
 from .habanero_utils import switch_classes,make_ua
 from .cn_formats import *
 
-def CNRequest(url, ids = None, format = None, style = None,
-        locale = None, **kwargs):
-
+def CNRequest(url, ids, format = None, style = None, locale = None, **kwargs):
+  if not isinstance(ids, (str, list)):
+    raise TypeError("'ids' must be a str or list of str's")
+  if isinstance(ids, list):
+    if not all([isinstance(z, str) for z in ids]):
+      raise TypeError("'ids' must be a str or list of all str's")
   should_split = False
   try:
     # Python 2
@@ -19,10 +22,7 @@ def CNRequest(url, ids = None, format = None, style = None,
   if should_split:
     ids = ids.split()
 
-  if isinstance(ids, int):
-    ids = [ids]
-
-  if(len(ids) == 1):
+  if len(ids) == 1:
     return make_request(url, ids[0], format, style, locale, **kwargs)
   else:
     coll = []

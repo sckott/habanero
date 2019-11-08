@@ -40,6 +40,17 @@ def test_content_negotiation_style():
     res_ieee = cn.content_negotiation(ids = u'10.1126/science.169.3946.635', format = "text", style = "ieee")
     assert res_apa != res_ieee
 
+# errors
+@raises(TypeError)
+def test_content_negotiation_ids_missing():
+    "content negotiation - ids missing raises a TypeError"
+    cn.content_negotiation()
+
+@raises(TypeError)
+def test_content_negotiation_ids_none():
+    "content negotiation - ids as None raises a TypeError"
+    cn.content_negotiation(ids = None)
+
 @raises(HTTPError)
 @vcr.use_cassette('test/vcr_cassettes/cn_badrequest.yaml')
 def test_content_negotiation_raises_an_http_error_with_bad_requests():
