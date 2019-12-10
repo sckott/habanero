@@ -7,7 +7,7 @@ from .habanero_utils import switch_classes,check_json,is_json,parse_json_err,mak
 from .exceptions import *
 from .request_class import Request
 
-def request(mailto, url, path, ids = None, query = None, filter = None,
+def request(mailto, ua_string, url, path, ids = None, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, select = None, works = None,
         cursor = None, cursor_max = None, agency = False, 
@@ -36,7 +36,7 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
   if(ids.__class__.__name__ == 'NoneType'):
     url = url.strip("/")
     try:
-      r = requests.get(url, params = payload, headers = make_ua(mailto))
+      r = requests.get(url, params = payload, headers = make_ua(mailto, ua_string))
       r.raise_for_status()
     except requests.exceptions.HTTPError:
       if is_json(r):
@@ -55,7 +55,7 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
     coll = []
     for i in range(len(ids)):
       if works:
-        res = Request(mailto, url, str(ids[i]) + "/works",
+        res = Request(mailto, ua_string, url, str(ids[i]) + "/works",
           query, filter, offset, limit, sample, sort,
           order, facet, select, cursor, cursor_max, None, 
           progress_bar, **kwargs).do_request()
@@ -69,7 +69,7 @@ def request(mailto, url, path, ids = None, query = None, filter = None,
         endpt = endpt.strip("/")
 
         try:
-          r = requests.get(endpt, params = payload, headers = make_ua(mailto))
+          r = requests.get(endpt, params = payload, headers = make_ua(mailto, ua_string))
           r.raise_for_status()
         except requests.exceptions.HTTPError:
           if is_json(r):

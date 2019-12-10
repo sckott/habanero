@@ -59,8 +59,10 @@ class Crossref(object):
         Crossref(base_url = "http://some.other.url")
         # set an api key
         Crossref(api_key = "123456")
-        # set a mailto address
+        # set a mailto address to get into the "polite pool"
         Crossref(mailto = "foo@bar.com")
+        # set an additional user-agent string
+        Crossref(ua_string = "foo bar")
 
     .. _RateLimits:
 
@@ -80,13 +82,6 @@ class Crossref(object):
         import httplib as http_client
         http_client.HTTPConnection.debuglevel = 1
         logging.basicConfig()
-        logging.getLogger().setLevel(logging.DEBUG)
-        requests_log = logging.getLogger("requests.packages.urllib3")
-        requests_log.setLevel(logging.DEBUG)
-        requests_log.propagate = True
-
-        import requests
-        import logging
         logging.getLogger().setLevel(logging.DEBUG)
         requests_log = logging.getLogger("requests.packages.urllib3")
         requests_log.setLevel(logging.DEBUG)
@@ -158,15 +153,17 @@ class Crossref(object):
     |
     '''
     def __init__(self, base_url = "https://api.crossref.org",
-        api_key = None, mailto = None):
+        api_key = None, mailto = None, ua_string = None):
 
         self.base_url = base_url
         self.api_key = api_key
         self.mailto = mailto
+        self.ua_string = ua_string
 
     def __repr__(self):
-      return """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\n>""" % (type(self).__name__,
-        self.base_url, sub_str(self.api_key), self.mailto)
+      return """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\nADDITIONAL UA STRING: %s\n>""" % (
+        type(self).__name__, self.base_url, sub_str(self.api_key),
+        self.mailto, self.ua_string)
 
     def works(self, ids = None, query = None, filter = None, offset = None,
               limit = None, sample = None, sort = None,
@@ -289,14 +286,22 @@ class Crossref(object):
             cr.works(query = "ecology", select = "DOI,title")
             ## or as a list
             cr.works(query = "ecology", select = ["DOI","title"])
+
+            # set an additional user-agent string
+            x = Crossref(ua_string = "foo bar")
+            x
+            x.works(ids = '10.1371/journal.pone.0033693')
+            ## unset the additional user-agent string
+            x = Crossref()
+            x.works(ids = '10.1371/journal.pone.0033693')
         '''
         if ids.__class__.__name__ != 'NoneType':
-            return request(self.mailto, self.base_url, "/works/", ids,
+            return request(self.mailto, self.ua_string, self.base_url, "/works/", ids,
                 query, filter, offset, limit, sample, sort,
                 order, facet, select, None, None, None, None,
                 progress_bar, **kwargs)
         else:
-            return Request(self.mailto, self.base_url, "/works/",
+            return Request(self.mailto, self.ua_string, self.base_url, "/works/",
               query, filter, offset, limit, sample, sort,
               order, facet, select, cursor, cursor_max, None,
               progress_bar, **kwargs).do_request()
@@ -378,7 +383,7 @@ class Crossref(object):
             # filters (as of this writing, 4 filters are avail., see filter_names())
             res = cr.members(filter = {'has_public_references': True})
         '''
-        return request(self.mailto, self.base_url, "/members/", ids,
+        return request(self.mailto, self.ua_string, self.base_url, "/members/", ids,
             query, filter, offset, limit, sample, sort,
             order, facet, select, works, cursor, cursor_max,
             None, progress_bar, **kwargs)
@@ -461,7 +466,7 @@ class Crossref(object):
             [ z for z in eds if z is not None ]
         '''
         check_kwargs(["query"], kwargs)
-        return request(self.mailto, self.base_url, "/prefixes/", ids,
+        return request(self.mailto, self.ua_string, self.base_url, "/prefixes/", ids,
           query = None, filter = filter, offset = offset, limit = limit,
           sample = sample, sort = sort, order = order, facet = facet,
           select = select, works = works, cursor = cursor, cursor_max = cursor_max,
@@ -547,7 +552,7 @@ class Crossref(object):
             # filters (as of this writing, only 1 filter is avail., "location")
             cr.funders(filter = {'location': "Sweden"})
         '''
-        return request(self.mailto, self.base_url, "/funders/", ids,
+        return request(self.mailto, self.ua_string, self.base_url, "/funders/", ids,
           query, filter, offset, limit, sample, sort,
           order, facet, select, works, cursor, cursor_max, None,
           progress_bar, **kwargs)
@@ -636,7 +641,7 @@ class Crossref(object):
             res = cr.journals(ids = "2167-8359", works = True, query_title = 'fish', filter = {'type': 'journal-article'})
             [ x.get('title') for x in res['message']['items'] ]
         '''
-        return request(self.mailto, self.base_url, "/journals/", ids,
+        return request(self.mailto, self.ua_string, self.base_url, "/journals/", ids,
           query, filter, offset, limit, sample, sort,
           order, facet, select, works, cursor, cursor_max, None,
           progress_bar, **kwargs)
@@ -707,7 +712,7 @@ class Crossref(object):
             res = cr.types(ids = "journal-article", works = True, query_title = 'gender', rows = 100)
             [ x.get('title') for x in res['message']['items'] ]
         '''
-        return request(self.mailto, self.base_url, "/types/", ids,
+        return request(self.mailto, self.ua_string, self.base_url, "/types/", ids,
             query, filter, offset, limit, sample, sort,
             order, facet, select, works, cursor, cursor_max,
             None, progress_bar, **kwargs)
@@ -741,7 +746,7 @@ class Crossref(object):
             cr.licenses(query = "creative")
         '''
         check_kwargs(["ids", "filter", "works"], kwargs)
-        res = request(self.mailto, self.base_url, "/licenses/", None,
+        res = request(self.mailto, self.ua_string, self.base_url, "/licenses/", None,
             query, None, offset, limit, None, sort,
             order, facet, None, None, None, None, **kwargs)
         return res
@@ -765,7 +770,7 @@ class Crossref(object):
         '''
         check_kwargs(["query", "filter", "offset", "limit", "sample", "sort",
             "order", "facet", "works"], kwargs)
-        res = request(self.mailto, self.base_url, "/works/", ids,
+        res = request(self.mailto, self.ua_string, self.base_url, "/works/", ids,
             None, None, None, None, None, None,
             None, None, None, None, None, None, True, **kwargs)
         if res.__class__ != list:
@@ -794,7 +799,7 @@ class Crossref(object):
             cr.random_dois(50)
             cr.random_dois(100)
         '''
-        res = request(self.mailto, self.base_url, "/works/", None,
+        res = request(self.mailto, self.ua_string, self.base_url, "/works/", None,
             None, None, None, None, sample, None,
             None, None, None, True, None, None, None, **kwargs)
         return [ z['DOI'] for z in res['message']['items'] ]
@@ -803,7 +808,7 @@ class Crossref(object):
         '''
         Filter names - just the names of each filter
 
-        Filters are used in the Crossref search API to modify searches. 
+        Filters are used in the Crossref search API to modify searches.
         As filters are introduced or taken away, we may get out of sync; check
         the docs for the latest https://github.com/CrossRef/rest-api-doc
 

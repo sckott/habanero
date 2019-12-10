@@ -12,6 +12,7 @@ install:
   - pip install tqdm
   - pip install coveralls
   - pip install vcrpy
+  - pip install PyYAML
 
 script:
   - nosetests -v --cover-package=habanero

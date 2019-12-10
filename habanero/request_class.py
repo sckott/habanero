@@ -14,12 +14,13 @@ class Request(object):
 
   This is the request class for all requests
   '''
-  def __init__(self, mailto, url, path, query = None, filter = None,
+  def __init__(self, mailto, ua_string, url, path, query = None, filter = None,
         offset = None, limit = None, sample = None, sort = None,
         order = None, facet = None, select = None, cursor = None,
         cursor_max = None, agency = False, progress_bar = False, 
         **kwargs):
     self.mailto = mailto
+    self.ua_string = ua_string
     self.url = url
     self.path = path
     self.query = query
@@ -94,7 +95,7 @@ class Request(object):
 
   def _req(self, payload):
     try:
-      r = requests.get(self._url(), params = payload, headers = make_ua(self.mailto))
+      r = requests.get(self._url(), params = payload, headers = make_ua(self.mailto, self.ua_string))
       r.raise_for_status()
     except requests.exceptions.HTTPError:
       try:
