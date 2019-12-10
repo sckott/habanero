@@ -15,7 +15,7 @@ def test_ua_string():
     "settings (ua_string) - with ua string"
     res = cr_with_ua.works(ids = '10.1371/journal.pone.0033693')
     x = open(vcr_path, "r").read()
-    xy = yaml.load(x)
+    xy = yaml.safe_load(x)
     heads = xy['interactions'][0]['request']['headers']
     
     assert 'foo bar' in heads['User-Agent'][0]
@@ -27,7 +27,7 @@ def test_no_ua_string():
     "settings (ua_string) - without ua string"
     res = cr_without_ua.works(ids = '10.1371/journal.pone.0033693')
     x = open(vcr_noua_path, "r").read()
-    xy = yaml.load(x)
+    xy = yaml.safe_load(x)
     heads = xy['interactions'][0]['request']['headers']
     
     assert 'foo bar' not in heads['User-Agent'][0]
