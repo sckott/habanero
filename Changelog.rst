@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.7.2 (2019-12-12)
+--------------------
+* `Crossref()` class gains `ua_string` option to add an additional string to the user-agent sent with every request (#84)
+
 0.7.0 (2019-11-08)
 --------------------
 * `filter_names()` and `filter_details()` altered to get metadata for works, members and funders filters; and added egs to members and funders methods for using filters (#67)
