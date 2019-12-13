@@ -51,6 +51,15 @@ class Crossref(object):
     to go. To get into the Polite Pool, also set your mailto email address
     when you instantiate the `Crossref` object. See examples below.
 
+    **Setting a custom user-agent string**
+
+    Using `ua_string` you can set an additional string that will be added
+    to the UA string we send in every request, which looks like:
+    `python-requests/2.22.0 habanero/0.7.0`. We send that string with
+    the headers: `User-Agent` and `X-USER-AGENT`. Turn on verbose curl
+    output to see the request headers sent. To unset the `ua_string`
+    you set, just initialize a new Crossref class
+
     **Doing setup**::
 
         from habanero import Crossref
@@ -288,6 +297,8 @@ class Crossref(object):
             cr.works(query = "ecology", select = ["DOI","title"])
 
             # set an additional user-agent string
+            ## the string is additional because it's added to the UA string we send in every request
+            ## turn on verbose curl output to see the request headers sent
             x = Crossref(ua_string = "foo bar")
             x
             x.works(ids = '10.1371/journal.pone.0033693')
