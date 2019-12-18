@@ -45,3 +45,9 @@ def test_prefixes_query_filters_not_allowed_with_dois():
     "prefixes - param: kwargs - query filters not allowed on prefixes/prefix/ route"
     cr.prefixes(ids = "10.1371", query_editor = 'cooper')
 
+@raises(exceptions.RequestError)
+@vcr.use_cassette('test/vcr_cassettes/prefixes_query_title_not_allowed_anymore.yaml')
+def test_prefixes_query_title_not_allowed_anymore():
+    "prefixes - param: kwargs - query_title query not allowed anymore"
+    res = cr.prefixes(works = True, query_title = 'cellular')
+

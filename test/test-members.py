@@ -1,10 +1,9 @@
 """Tests for Crossref.members"""
 import os
 import vcr
+import requests
 from nose.tools import *
-
 from habanero import exceptions
-
 from habanero import Crossref
 cr = Crossref()
 
@@ -53,3 +52,9 @@ def test_members_field_queries():
 def test_members_query_filters_not_allowed_with_dois():
     "members - param: kwargs - query filters not allowed on works/memberid/ route"
     cr.members(ids = 98, query_author = 'carl boettiger')
+
+@raises(requests.exceptions.HTTPError)
+@vcr.use_cassette('test/vcr_cassettes/members_query_title_not_allowed_anymore.yaml')
+def test_members_query_title_not_allowed_anymore():
+    "members - param: kwargs - query_title query not allowed anymore"
+    res = cr.members(ids = 98, works = True, query_title = 'cellular')

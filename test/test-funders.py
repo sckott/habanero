@@ -1,6 +1,7 @@
 """Tests for Crossref.funders"""
 import os
 import vcr
+import requests
 from nose.tools import *
 from habanero import exceptions
 
@@ -81,3 +82,9 @@ def test_funders_field_queries():
 def test_funders_query_filters_not_allowed_with_dois():
     "funders - param: kwargs - query filters not allowed on works/funderid/ route"
     cr.funders(ids = "10.13039/100000001", query_container_title = 'engineering')
+
+@raises(requests.exceptions.HTTPError)
+@vcr.use_cassette('test/vcr_cassettes/funders_query_title_not_allowed_anymore.yaml')
+def test_funders_query_title_not_allowed_anymore():
+    "funders - param: kwargs - query_title query not allowed anymore"
+    res = cr.funders(ids = '10.13039/100000001', works = True, query_title = 'cellular')

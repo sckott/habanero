@@ -105,18 +105,17 @@ class Crossref(object):
     **Field queries**
 
     One or more field queries. Field queries are searches on specific fields.
-    For example, using `query_title` searches titles instead of full search
+    For example, using `query_author` searches author names instead of full search
     across all fields as would happen by default. Acceptable set of field
     query parameters are:
 
-    * `query_title` - Query title and subtitle
     * `query_container_title` - Query container-title aka. publication name
     * `query_author` - Query author given and family names
     * `query_editor` - Query editor given and family names
     * `query_chair` - Query chair given and family names
     * `query_translator` - Query translator given and family names
     * `query_contributor` - Query author, editor, chair and translator given and family names
-    * `query_bibliographic` - Query bibliographic information, useful for citation look up. Includes titles, authors, ISSNs and publication years
+    * `query_bibliographic` - Query bibliographic information, useful for citation look up. Includes titles, authors, ISSNs and publication years. Crossref retired `query_title`; use this field query instead
     * `query_affiliation` - Query contributor affiliations
 
     .. _sorting:
@@ -649,7 +648,7 @@ class Crossref(object):
             res = cr.journals(ids = "2167-8359", works = True, cursor = "*", cursor_max = 200, progress_bar = True)
 
             # field queries
-            res = cr.journals(ids = "2167-8359", works = True, query_title = 'fish', filter = {'type': 'journal-article'})
+            res = cr.journals(ids = "2167-8359", works = True, query_bibliographic = 'fish', filter = {'type': 'journal-article'})
             [ x.get('title') for x in res['message']['items'] ]
         '''
         return request(self.mailto, self.ua_string, self.base_url, "/journals/", ids,
@@ -720,7 +719,7 @@ class Crossref(object):
             res = cr.types(ids = "journal-article", works = True, cursor = "*", cursor_max = 120, progress_bar = True)
 
             # field queries
-            res = cr.types(ids = "journal-article", works = True, query_title = 'gender', rows = 100)
+            res = cr.types(ids = "journal-article", works = True, query_bibliographic = 'gender', rows = 100)
             [ x.get('title') for x in res['message']['items'] ]
         '''
         return request(self.mailto, self.ua_string, self.base_url, "/types/", ids,

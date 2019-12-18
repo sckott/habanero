@@ -69,7 +69,7 @@ def test_types_works():
 #   UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 109: ordinal not in range(128)
 # def test_types_field_queries():
 #     "types - param: kwargs - field queries work as expected"
-#     res = cr.types(ids = "journal-article", works = True, query_title = 'gender', rows = 20)
+#     res = cr.types(ids = "journal-article", works = True, query_bibliographic = 'gender', rows = 20)
 #     titles = [ str(x.get('title')[0]) for x in res['message']['items'] ]
 #     assert dict == res.__class__
 #     assert 5 == len(res['message'])
@@ -80,5 +80,11 @@ def test_types_works():
 @vcr.use_cassette('test/vcr_cassettes/types_filters_not_allowed_with_typeid.yaml')
 def test_types_query_filters_not_allowed_with_typeid():
     "types - param: kwargs - query filters not allowed on types/type/ route"
-    cr.types(ids = "journal-article", query_title = 'gender')
+    cr.types(ids = "journal-article", query_bibliographic = 'gender')
+
+@raises(exceptions.RequestError)
+@vcr.use_cassette('test/vcr_cassettes/types_query_title_not_allowed_anymore.yaml')
+def test_types_query_title_not_allowed_anymore():
+    "types - param: kwargs - query_title query not allowed anymore"
+    res = cr.types(works = True, query_title = 'cellular')
 

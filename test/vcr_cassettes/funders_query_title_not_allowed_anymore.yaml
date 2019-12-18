@@ -1,0 +1,23 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.22.0 habanero/0.7.2.1]
+      X-USER-AGENT: [python-requests/2.22.0 habanero/0.7.2.1]
+    method: GET
+    uri: https://api.crossref.org/funders/10.13039/100000001/works?query.title=cellular
+  response:
+    body: {string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"unknown-parameter","value":"query.title","message":"Parameter
+        query.title has been deprecated. Please use query.bibliographic instead. See
+        https://status.crossref.org/incidents/4y45gj63jsp4 "}]}
+
+        '}
+    headers:
+      Cache-Control: [no-cache]
+      Connection: [close]
+      Content-Type: [application/json]
+    status: {code: 400, message: Bad Request}
+version: 1

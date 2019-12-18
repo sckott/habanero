@@ -5,10 +5,10 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      User-Agent: [python-requests/2.18.4 habanero/0.6.0.3]
-      X-USER-AGENT: [python-requests/2.18.4 habanero/0.6.0.3]
+      User-Agent: [python-requests/2.22.0 habanero/0.7.2.1]
+      X-USER-AGENT: [python-requests/2.22.0 habanero/0.7.2.1]
     method: GET
-    uri: https://api.crossref.org/journals/2167-8359?query.title=fish
+    uri: https://api.crossref.org/journals/2167-8359?query.bibliographic=fish
   response:
     body: {string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"parameter-not-allowed","value":"query.*","message":"This
         route does not support field query parameters"}]}'}
@@ -18,7 +18,7 @@ interactions:
       Connection: [close]
       Content-Length: ['181']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Thu, 24 May 2018 23:05:33 GMT']
+      Date: ['Wed, 18 Dec 2019 00:10:03 GMT']
       Server: [http-kit]
       Vary: [Accept]
       X-Rate-Limit-Interval: [1s]

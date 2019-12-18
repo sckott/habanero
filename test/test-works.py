@@ -1,7 +1,9 @@
 """Tests for Crossref.works"""
 import os
 import vcr
+import requests
 from nose.tools import *
+from habanero import exceptions
 from habanero import Crossref
 from habanero import RequestError
 cr = Crossref()
@@ -85,3 +87,9 @@ def test_works_with_select_param():
     res2 = cr.works(query = "ecology", select = ["DOI","title"])
     assert res1 == res2
     assert list(res2['message']['items'][0].keys()) == ['DOI', 'title']
+
+@raises(requests.exceptions.HTTPError)
+@vcr.use_cassette('test/vcr_cassettes/works_query_title_not_allowed_anymore.yaml')
+def test_works_query_title_not_allowed_anymore():
+    "works - param: kwargs - query_title query not allowed anymore"
+    cr.works(query_title = 'cellular')

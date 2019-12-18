@@ -82,7 +82,7 @@ def test_journals_fail_sort():
 @vcr.use_cassette('test/vcr_cassettes/journals_field_queries.yaml')
 def test_journals_field_queries():
     "journals - param: kwargs - field queries work as expected"
-    res = cr.journals(ids = "2167-8359", works = True, query_title = 'fish', filter = {'type': 'journal-article'})
+    res = cr.journals(ids = "2167-8359", works = True, query_bibliographic = 'fish', filter = {'type': 'journal-article'})
     titles = [ x.get('title')[0] for x in res['message']['items'] ]
     assert dict == res.__class__
     assert 5 == len(res['message'])
@@ -90,7 +90,13 @@ def test_journals_field_queries():
     assert str == str(titles[0]).__class__
 
 @raises(exceptions.RequestError)
-@vcr.use_cassette('test/vcr_cassettes/journals_filters_not_allowed_with_dois.yaml')
-def test_journals_query_filters_not_allowed_with_dois():
+@vcr.use_cassette('test/vcr_cassettes/journals_field_queries_not_allowed_with_dois.yaml')
+def test_journals_field_queries_not_allowed_with_dois():
     "journals - param: kwargs - query filters not allowed on works/journalid/ route"
-    res = cr.journals(ids = "2167-8359", query_title = 'fish')
+    res = cr.journals(ids = "2167-8359", query_bibliographic = 'fish')
+
+@raises(exceptions.RequestError)
+@vcr.use_cassette('test/vcr_cassettes/journals_query_title_not_allowed_anymore.yaml')
+def test_journals_query_title_not_allowed_anymore():
+    "journals - param: kwargs - query_title query not allowed anymore"
+    res = cr.journals(query_title = 'cellular')
