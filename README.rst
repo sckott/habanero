@@ -1,7 +1,7 @@
 habanero
 ========
 
-|pypi| |docs| |travis| |coverage|
+|pypi| |docs| |travis| |coverage| |black|
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to interact with all from one client.
 
@@ -135,3 +135,5 @@ Meta
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
    :target: https://coveralls.io/github/sckott/habanero?branch=master
 
+.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black

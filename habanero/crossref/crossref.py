@@ -2,11 +2,16 @@ import sys
 import requests
 from ..request import request
 from ..request_class import Request
-from ..habanero_utils import sub_str,check_kwargs
-from .filters import works_filter_details,members_filter_details,funders_filter_details
+from ..habanero_utils import sub_str, check_kwargs
+from .filters import (
+    works_filter_details,
+    members_filter_details,
+    funders_filter_details,
+)
+
 
 class Crossref(object):
-    '''
+    """
     Crossref: Class for Crossref search API methods
 
     |
@@ -159,9 +164,15 @@ class Crossref(object):
     |
     |
     |
-    '''
-    def __init__(self, base_url = "https://api.crossref.org",
-        api_key = None, mailto = None, ua_string = None):
+    """
+
+    def __init__(
+        self,
+        base_url="https://api.crossref.org",
+        api_key=None,
+        mailto=None,
+        ua_string=None,
+    ):
 
         self.base_url = base_url
         self.api_key = api_key
@@ -169,15 +180,35 @@ class Crossref(object):
         self.ua_string = ua_string
 
     def __repr__(self):
-      return """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\nADDITIONAL UA STRING: %s\n>""" % (
-        type(self).__name__, self.base_url, sub_str(self.api_key),
-        self.mailto, self.ua_string)
+        return (
+            """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\nADDITIONAL UA STRING: %s\n>"""
+            % (
+                type(self).__name__,
+                self.base_url,
+                sub_str(self.api_key),
+                self.mailto,
+                self.ua_string,
+            )
+        )
 
-    def works(self, ids = None, query = None, filter = None, offset = None,
-              limit = None, sample = None, sort = None,
-              order = None, facet = None, select = None, cursor = None,
-              cursor_max = 5000, progress_bar = False, **kwargs):
-        '''
+    def works(
+        self,
+        ids=None,
+        query=None,
+        filter=None,
+        offset=None,
+        limit=None,
+        sample=None,
+        sort=None,
+        order=None,
+        facet=None,
+        select=None,
+        cursor=None,
+        cursor_max=5000,
+        progress_bar=False,
+        **kwargs
+    ):
+        """
         Search Crossref works
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
@@ -304,23 +335,71 @@ class Crossref(object):
             ## unset the additional user-agent string
             x = Crossref()
             x.works(ids = '10.1371/journal.pone.0033693')
-        '''
-        if ids.__class__.__name__ != 'NoneType':
-            return request(self.mailto, self.ua_string, self.base_url, "/works/", ids,
-                query, filter, offset, limit, sample, sort,
-                order, facet, select, None, None, None, None,
-                progress_bar, **kwargs)
+        """
+        if ids.__class__.__name__ != "NoneType":
+            return request(
+                self.mailto,
+                self.ua_string,
+                self.base_url,
+                "/works/",
+                ids,
+                query,
+                filter,
+                offset,
+                limit,
+                sample,
+                sort,
+                order,
+                facet,
+                select,
+                None,
+                None,
+                None,
+                None,
+                progress_bar,
+                **kwargs
+            )
         else:
-            return Request(self.mailto, self.ua_string, self.base_url, "/works/",
-              query, filter, offset, limit, sample, sort,
-              order, facet, select, cursor, cursor_max, None,
-              progress_bar, **kwargs).do_request()
+            return Request(
+                self.mailto,
+                self.ua_string,
+                self.base_url,
+                "/works/",
+                query,
+                filter,
+                offset,
+                limit,
+                sample,
+                sort,
+                order,
+                facet,
+                select,
+                cursor,
+                cursor_max,
+                None,
+                progress_bar,
+                **kwargs
+            ).do_request()
 
-    def members(self, ids = None, query = None, filter = None, offset = None,
-              limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, select = None,
-              cursor = None, cursor_max = 5000, progress_bar = False, **kwargs):
-        '''
+    def members(
+        self,
+        ids=None,
+        query=None,
+        filter=None,
+        offset=None,
+        limit=None,
+        sample=None,
+        sort=None,
+        order=None,
+        facet=None,
+        works=False,
+        select=None,
+        cursor=None,
+        cursor_max=5000,
+        progress_bar=False,
+        **kwargs
+    ):
+        """
         Search Crossref members
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
@@ -392,17 +471,48 @@ class Crossref(object):
 
             # filters (as of this writing, 4 filters are avail., see filter_names())
             res = cr.members(filter = {'has_public_references': True})
-        '''
-        return request(self.mailto, self.ua_string, self.base_url, "/members/", ids,
-            query, filter, offset, limit, sample, sort,
-            order, facet, select, works, cursor, cursor_max,
-            None, progress_bar, **kwargs)
+        """
+        return request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/members/",
+            ids,
+            query,
+            filter,
+            offset,
+            limit,
+            sample,
+            sort,
+            order,
+            facet,
+            select,
+            works,
+            cursor,
+            cursor_max,
+            None,
+            progress_bar,
+            **kwargs
+        )
 
-    def prefixes(self, ids = None, filter = None, offset = None,
-              limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, select = None,
-              cursor = None, cursor_max = 5000, progress_bar = False, **kwargs):
-        '''
+    def prefixes(
+        self,
+        ids=None,
+        filter=None,
+        offset=None,
+        limit=None,
+        sample=None,
+        sort=None,
+        order=None,
+        facet=None,
+        works=False,
+        select=None,
+        cursor=None,
+        cursor_max=5000,
+        progress_bar=False,
+        **kwargs
+    ):
+        """
         Search Crossref prefixes
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
@@ -474,19 +584,49 @@ class Crossref(object):
             res = cr.prefixes(ids = "10.1371", works = True, query_editor = 'cooper', filter = {'type': 'journal-article'})
             eds = [ x.get('editor') for x in res['message']['items'] ]
             [ z for z in eds if z is not None ]
-        '''
+        """
         check_kwargs(["query"], kwargs)
-        return request(self.mailto, self.ua_string, self.base_url, "/prefixes/", ids,
-          query = None, filter = filter, offset = offset, limit = limit,
-          sample = sample, sort = sort, order = order, facet = facet,
-          select = select, works = works, cursor = cursor, cursor_max = cursor_max,
-          progress_bar = progress_bar, **kwargs)
+        return request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/prefixes/",
+            ids,
+            query=None,
+            filter=filter,
+            offset=offset,
+            limit=limit,
+            sample=sample,
+            sort=sort,
+            order=order,
+            facet=facet,
+            select=select,
+            works=works,
+            cursor=cursor,
+            cursor_max=cursor_max,
+            progress_bar=progress_bar,
+            **kwargs
+        )
 
-    def funders(self, ids = None, query = None, filter = None, offset = None,
-              limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, select = None,
-              cursor = None, cursor_max = 5000, progress_bar = False, **kwargs):
-        '''
+    def funders(
+        self,
+        ids=None,
+        query=None,
+        filter=None,
+        offset=None,
+        limit=None,
+        sample=None,
+        sort=None,
+        order=None,
+        facet=None,
+        works=False,
+        select=None,
+        cursor=None,
+        cursor_max=5000,
+        progress_bar=False,
+        **kwargs
+    ):
+        """
         Search Crossref funders
 
         Note that funders without IDs don't show up on the `/funders` route,
@@ -561,17 +701,49 @@ class Crossref(object):
 
             # filters (as of this writing, only 1 filter is avail., "location")
             cr.funders(filter = {'location': "Sweden"})
-        '''
-        return request(self.mailto, self.ua_string, self.base_url, "/funders/", ids,
-          query, filter, offset, limit, sample, sort,
-          order, facet, select, works, cursor, cursor_max, None,
-          progress_bar, **kwargs)
+        """
+        return request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/funders/",
+            ids,
+            query,
+            filter,
+            offset,
+            limit,
+            sample,
+            sort,
+            order,
+            facet,
+            select,
+            works,
+            cursor,
+            cursor_max,
+            None,
+            progress_bar,
+            **kwargs
+        )
 
-    def journals(self, ids = None, query = None, filter = None, offset = None,
-              limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, select = None,
-              cursor = None, cursor_max = 5000, progress_bar = False, **kwargs):
-        '''
+    def journals(
+        self,
+        ids=None,
+        query=None,
+        filter=None,
+        offset=None,
+        limit=None,
+        sample=None,
+        sort=None,
+        order=None,
+        facet=None,
+        works=False,
+        select=None,
+        cursor=None,
+        cursor_max=5000,
+        progress_bar=False,
+        **kwargs
+    ):
+        """
         Search Crossref journals
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
@@ -650,17 +822,49 @@ class Crossref(object):
             # field queries
             res = cr.journals(ids = "2167-8359", works = True, query_bibliographic = 'fish', filter = {'type': 'journal-article'})
             [ x.get('title') for x in res['message']['items'] ]
-        '''
-        return request(self.mailto, self.ua_string, self.base_url, "/journals/", ids,
-          query, filter, offset, limit, sample, sort,
-          order, facet, select, works, cursor, cursor_max, None,
-          progress_bar, **kwargs)
+        """
+        return request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/journals/",
+            ids,
+            query,
+            filter,
+            offset,
+            limit,
+            sample,
+            sort,
+            order,
+            facet,
+            select,
+            works,
+            cursor,
+            cursor_max,
+            None,
+            progress_bar,
+            **kwargs
+        )
 
-    def types(self, ids = None, query = None, filter = None, offset = None,
-              limit = None, sample = None, sort = None,
-              order = None, facet = None, works = False, select = None,
-              cursor = None, cursor_max = 5000, progress_bar = False, **kwargs):
-        '''
+    def types(
+        self,
+        ids=None,
+        query=None,
+        filter=None,
+        offset=None,
+        limit=None,
+        sample=None,
+        sort=None,
+        order=None,
+        facet=None,
+        works=False,
+        select=None,
+        cursor=None,
+        cursor_max=5000,
+        progress_bar=False,
+        **kwargs
+    ):
+        """
         Search Crossref types
 
         :param ids: [Array] Type identifier, e.g., journal
@@ -721,16 +925,42 @@ class Crossref(object):
             # field queries
             res = cr.types(ids = "journal-article", works = True, query_bibliographic = 'gender', rows = 100)
             [ x.get('title') for x in res['message']['items'] ]
-        '''
-        return request(self.mailto, self.ua_string, self.base_url, "/types/", ids,
-            query, filter, offset, limit, sample, sort,
-            order, facet, select, works, cursor, cursor_max,
-            None, progress_bar, **kwargs)
+        """
+        return request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/types/",
+            ids,
+            query,
+            filter,
+            offset,
+            limit,
+            sample,
+            sort,
+            order,
+            facet,
+            select,
+            works,
+            cursor,
+            cursor_max,
+            None,
+            progress_bar,
+            **kwargs
+        )
 
-    def licenses(self, query = None, offset = None,
-              limit = None, sample = None, sort = None,
-              order = None, facet = None, **kwargs):
-        '''
+    def licenses(
+        self,
+        query=None,
+        offset=None,
+        limit=None,
+        sample=None,
+        sort=None,
+        order=None,
+        facet=None,
+        **kwargs
+    ):
+        """
         Search Crossref licenses
 
         :param query: [String] A query string
@@ -754,15 +984,32 @@ class Crossref(object):
             cr = Crossref()
             cr.licenses()
             cr.licenses(query = "creative")
-        '''
+        """
         check_kwargs(["ids", "filter", "works"], kwargs)
-        res = request(self.mailto, self.ua_string, self.base_url, "/licenses/", None,
-            query, None, offset, limit, None, sort,
-            order, facet, None, None, None, None, **kwargs)
+        res = request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/licenses/",
+            None,
+            query,
+            None,
+            offset,
+            limit,
+            None,
+            sort,
+            order,
+            facet,
+            None,
+            None,
+            None,
+            None,
+            **kwargs
+        )
         return res
 
     def registration_agency(self, ids, **kwargs):
-        '''
+        """
         Determine registration agency for DOIs
 
         :param ids: [Array] DOIs (digital object identifier) or other identifiers
@@ -777,21 +1024,51 @@ class Crossref(object):
             cr = Crossref()
             cr.registration_agency('10.1371/journal.pone.0033693')
             cr.registration_agency(ids = ['10.1007/12080.1874-1746','10.1007/10452.1573-5125', '10.1111/(issn)1442-9993'])
-        '''
-        check_kwargs(["query", "filter", "offset", "limit", "sample", "sort",
-            "order", "facet", "works"], kwargs)
-        res = request(self.mailto, self.ua_string, self.base_url, "/works/", ids,
-            None, None, None, None, None, None,
-            None, None, None, None, None, None, True, **kwargs)
+        """
+        check_kwargs(
+            [
+                "query",
+                "filter",
+                "offset",
+                "limit",
+                "sample",
+                "sort",
+                "order",
+                "facet",
+                "works",
+            ],
+            kwargs,
+        )
+        res = request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/works/",
+            ids,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            None,
+            True,
+            **kwargs
+        )
         if res.__class__ != list:
             k = []
             k.append(res)
         else:
             k = res
-        return [ z['message']['agency']['label'] for z in k ]
+        return [z["message"]["agency"]["label"] for z in k]
 
-    def random_dois(self, sample = 10, **kwargs):
-        '''
+    def random_dois(self, sample=10, **kwargs):
+        """
         Get a random set of DOIs
 
         :param sample: [Fixnum] Number of random DOIs to return. Default: 10. Max: 100
@@ -808,14 +1085,32 @@ class Crossref(object):
             cr.random_dois(10)
             cr.random_dois(50)
             cr.random_dois(100)
-        '''
-        res = request(self.mailto, self.ua_string, self.base_url, "/works/", None,
-            None, None, None, None, sample, None,
-            None, None, None, True, None, None, None, **kwargs)
-        return [ z['DOI'] for z in res['message']['items'] ]
+        """
+        res = request(
+            self.mailto,
+            self.ua_string,
+            self.base_url,
+            "/works/",
+            None,
+            None,
+            None,
+            None,
+            None,
+            sample,
+            None,
+            None,
+            None,
+            None,
+            True,
+            None,
+            None,
+            None,
+            **kwargs
+        )
+        return [z["DOI"] for z in res["message"]["items"]]
 
-    def filter_names(self, type = "works"):
-        '''
+    def filter_names(self, type="works"):
+        """
         Filter names - just the names of each filter
 
         Filters are used in the Crossref search API to modify searches.
@@ -834,13 +1129,13 @@ class Crossref(object):
             cr.filter_names()
             cr.filter_names("members")
             cr.filter_names("funders")
-        '''
+        """
         nms = list(self.filter_details(type).keys())
         nms.sort()
         return nms
 
-    def filter_details(self, type = "works"):
-        '''
+    def filter_details(self, type="works"):
+        """
         Filter details - filter names, possible values, and description
 
         Filters are used in the Crossref search API to modify searches.
@@ -863,12 +1158,12 @@ class Crossref(object):
             # Get descriptions for each filter
             x = cr.filter_details()
             [ z['description'] for z in x.values() ]
-        '''
+        """
         types = ["works", "members", "funders"]
         if type not in types:
             raise ValueError("'type' must be one of " + "', '".join(types))
         return {
-            'works': works_filter_details,
-            'members': members_filter_details,
-            'funders': funders_filter_details
+            "works": works_filter_details,
+            "members": members_filter_details,
+            "funders": funders_filter_details,
         }[type]

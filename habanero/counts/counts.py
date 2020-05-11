@@ -2,9 +2,11 @@ import requests
 from xml.dom import minidom
 from ..habanero_utils import make_ua
 
-def citation_count(doi, url = "http://www.crossref.org/openurl/",
-    key = "cboettig@ropensci.org", **kwargs):
-    '''
+
+def citation_count(
+    doi, url="http://www.crossref.org/openurl/", key="cboettig@ropensci.org", **kwargs
+):
+    """
     Get a citation count with a DOI
 
     :param doi: [String] DOI, digital object identifier
@@ -21,10 +23,10 @@ def citation_count(doi, url = "http://www.crossref.org/openurl/",
         # DOI not found
         ## FIXME
         counts.citation_count(doi = "10.1016/j.fbr.2012")
-    '''
+    """
     args = {"id": "doi:" + doi, "pid": key, "noredirect": True}
     args = dict((k, v) for k, v in args.items() if v)
-    res = requests.get(url, params = args, headers = make_ua(), **kwargs)
+    res = requests.get(url, params=args, headers=make_ua(), **kwargs)
     xmldoc = minidom.parseString(res.content)
-    val = xmldoc.getElementsByTagName('query')[0].attributes['fl_count'].value
+    val = xmldoc.getElementsByTagName("query")[0].attributes["fl_count"].value
     return int(str(val))

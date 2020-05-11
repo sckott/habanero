@@ -2,7 +2,7 @@
 
 # habanero
 
-'''
+"""
 habanero library
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -36,12 +36,12 @@ Usage::
    requests_log.propagate = True
    ### then make request
    cr.works(query = "ecology")
-'''
+"""
 
-__title__ = 'habanero'
-__version__ = '0.7.2.1'
-__author__ = 'Scott Chamberlain'
-__license__ = 'MIT'
+__title__ = "habanero"
+__version__ = "0.7.2.1"
+__author__ = "Scott Chamberlain"
+__license__ = "MIT"
 
 from .crossref import Crossref
 from .cn import content_negotiation, csl_styles

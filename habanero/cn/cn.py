@@ -1,9 +1,11 @@
 from ..cnrequest import CNRequest
 from .constants import *
 
-def content_negotiation(ids, format = "bibtex", style = 'apa',
-    locale = "en-US", url = None, **kwargs):
-    '''
+
+def content_negotiation(
+    ids, format="bibtex", style="apa", locale="en-US", url=None, **kwargs
+):
+    """
     Get citations in various formats from CrossRef
 
     Supports DOIs from Crossref, Datacite and Medra
@@ -74,7 +76,7 @@ def content_negotiation(ids, format = "bibtex", style = 'apa',
         # Use a different base url
         url = "http://dx.doi.org"
         cn.content_negotiation(ids = "10.1126/science.169.3946.635", url = url)
-    '''
+    """
     if url is None:
         url = cn_base_url
     return CNRequest(url, ids, format, style, locale, **kwargs)

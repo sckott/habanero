@@ -1,6 +1,8 @@
 class Error(Exception):
     """Base class for exceptions in this module."""
+
     pass
+
 
 class RequestError(Error):
     """
@@ -22,8 +24,8 @@ class RequestError(Error):
         return self.args[1]
 
     def __str__(self):
-      return '(%s) caused by "%s"' % (
-        self.status_code, self.error)
+        return '(%s) caused by "%s"' % (self.status_code, self.error)
+
 
 # url = "http://api.crossref.org/works?rows=fart"
 # url = "http://api.crossref.org/funders?filter=from-pub-date%3A2014-03-03"

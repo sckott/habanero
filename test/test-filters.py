@@ -3,7 +3,9 @@ import os
 from nose.tools import *
 from habanero import Crossref
 from habanero import RequestError
+
 cr = Crossref()
+
 
 def test_filter_names():
     "filter_names"
@@ -18,6 +20,7 @@ def test_filter_names():
     assert list == res_funders.__class__
     assert str == res_funders[0].__class__
     assert 1 == len(res_funders)
+
 
 @raises(ValueError)
 def test_filter_names_errors():
@@ -34,6 +37,7 @@ def test_filter_details():
     assert dict == res_works.__class__
     assert dict == res_members.__class__
     assert dict == res_funders.__class__
+
 
 @raises(ValueError)
 def test_filter_details_errors():

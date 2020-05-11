@@ -7,7 +7,8 @@ from requests.exceptions import HTTPError
 
 cr = Crossref()
 
-@vcr.use_cassette('test/vcr_cassettes/random_dois.yaml')
+
+@vcr.use_cassette("test/vcr_cassettes/random_dois.yaml")
 def test_random_dois():
     "random dois"
     res = cr.random_dois()
@@ -15,7 +16,8 @@ def test_random_dois():
     assert str == res[0].__class__
     assert 10 == len(res)
 
-@vcr.use_cassette('test/vcr_cassettes/random_dois_sample_param.yaml')
+
+@vcr.use_cassette("test/vcr_cassettes/random_dois_sample_param.yaml")
 def test_random_dois_sample_param():
     "random dois - sample parameter"
     res = cr.random_dois(3)
