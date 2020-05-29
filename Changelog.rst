@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.7.4 (2020-05-29)
+--------------------
+* `query.title` filter is deprecated, use `query.bibliographic` instead (#85)
+
 0.7.2 (2019-12-12)
 --------------------
 * `Crossref()` class gains `ua_string` option to add an additional string to the user-agent sent with every request (#84)
