@@ -36,20 +36,20 @@ class Crossref(object):
 
     You are using the Crossref search API described at
     https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md.
-    When you search with query terms, on Crossref servers they are not
+    When you search with query terms on Crossref servers, they are not
     searching full text, or even abstracts of articles, but only what is
     available in the data that is returned to you. That is, they search
     article titles, authors, etc. For some discussion on this, see
-    https://github.com/CrossRef/rest-api-doc/issues/101
+    https://github.com/CrossRef/rest-api-doc/issues/101.
 
     **The Polite Pool**
 
-    As of September 18th 2017 any API queries that use HTTPS and have
+    As of September 18th 2017, any API queries that use HTTPS and have
     appropriate contact information will be directed to a special pool
     of API machines that are reserved for polite users. If you connect
     to the Crossref API using HTTPS and provide contact
     information, then they will send you to a separate pool of machines,
-    with better control the performance of these machines because they can
+    with better control of the performance of these machines because they can
     block abusive users.
 
     We have been using `https` in `habanero` for a while now, so that's good
@@ -63,7 +63,7 @@ class Crossref(object):
     `python-requests/2.22.0 habanero/0.7.0`. We send that string with
     the headers: `User-Agent` and `X-USER-AGENT`. Turn on verbose curl
     output to see the request headers sent. To unset the `ua_string`
-    you set, just initialize a new Crossref class
+    you set, just initialize a new Crossref class.
 
     **Doing setup**::
 
@@ -83,7 +83,7 @@ class Crossref(object):
     **Rate limits**
 
     See the headers `X-Rate-Limit-Limit` and `X-Rate-Limit-Interval` for current
-    rate limits. As of this writing the limit is 50 requests per second,
+    rate limits. As of this writing, the limit is 50 requests per second,
     but that could change. In addition, it's not clear what the time is to reset.
     See below for getting header info for your requests.
 
@@ -111,7 +111,7 @@ class Crossref(object):
 
     One or more field queries. Field queries are searches on specific fields.
     For example, using `query_author` searches author names instead of full search
-    across all fields as would happen by default. Acceptable set of field
+    across all fields as would happen by default. Acceptable field
     query parameters are:
 
     * `query_container_title` - Query container-title aka. publication name
