@@ -1,9 +1,8 @@
 """Tests for Crossref.journals"""
+import pytest
 import os
 import vcr
-from nose.tools import *
 from habanero import exceptions
-
 from habanero import Crossref
 
 cr = Crossref()
@@ -53,46 +52,40 @@ def test_journals_works():
     assert min(scores2) == scores2[-1]
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/journals_filter_fails_noidsworks.yaml")
 def test_journals_filter_fails_noidsworks():
-    "journals - filter fails, no ids or works"
-    cr.journals(filter={"from_pub_date": "2014-03-03"})
+    with pytest.raises(exceptions.RequestError):
+        cr.journals(filter={"from_pub_date": "2014-03-03"})
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/journals_filter_fails_noidsworks.yaml")
 def test_journals_filter_fails_noidsworks():
-    "journals - filter fails, no ids or works"
-    cr.journals(filter={"from_pub_date": "2014-03-03"})
+    with pytest.raises(exceptions.RequestError):
+        cr.journals(filter={"from_pub_date": "2014-03-03"})
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/journals_filter_fails_noids.yaml")
 def test_journals_filter_fails_noids():
-    "journals - filter fails, no ids"
-    cr.journals(works=True, filter={"has_assertion": True})
+    with pytest.raises(exceptions.RequestError):
+        cr.journals(works=True, filter={"has_assertion": True})
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/journals_fail_limit.yaml")
 def test_journals_fail_limit():
-    "journals - fails on wrong input type to limit"
-    cr.journals(limit="things")
+    with pytest.raises(exceptions.RequestError):
+        cr.journals(limit="things")
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/journals_fail_offset.yaml")
 def test_journals_fail_offset():
-    "journals - fails on wrong input type to offset"
-    cr.journals(offset="things")
+    with pytest.raises(exceptions.RequestError):
+        cr.journals(offset="things")
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/journals_fail_sort.yaml")
 def test_journals_fail_sort():
-    "journals - fails on wrong input type to offset"
-    cr.journals(sort="things")
+    with pytest.raises(exceptions.RequestError):
+        cr.journals(sort="things")
 
 
 @vcr.use_cassette("test/vcr_cassettes/journals_field_queries.yaml")
@@ -111,17 +104,15 @@ def test_journals_field_queries():
     assert str == str(titles[0]).__class__
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette(
     "test/vcr_cassettes/journals_field_queries_not_allowed_with_dois.yaml"
 )
 def test_journals_field_queries_not_allowed_with_dois():
-    "journals - param: kwargs - query filters not allowed on works/journalid/ route"
-    res = cr.journals(ids="2167-8359", query_bibliographic="fish")
+    with pytest.raises(exceptions.RequestError):
+        res = cr.journals(ids="2167-8359", query_bibliographic="fish")
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/journals_query_title_not_allowed_anymore.yaml")
 def test_journals_query_title_not_allowed_anymore():
-    "journals - param: kwargs - query_title query not allowed anymore"
-    res = cr.journals(query_title="cellular")
+    with pytest.raises(exceptions.RequestError):
+        res = cr.journals(query_title="cellular")

@@ -1,8 +1,8 @@
 """Tests for Crossref.funders"""
+import pytest
 import os
 import vcr
 import requests
-from nose.tools import *
 from habanero import exceptions
 
 from habanero import Crossref
@@ -28,25 +28,22 @@ def test_funders_query():
     assert 2 == res["message"]["items-per-page"]
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/funders_sample_err.yaml")
 def test_funders_sample_err():
-    "funders - param: sample - error b/c sample not supported"
-    cr.funders(sample=2)
+    with pytest.raises(exceptions.RequestError):
+        cr.funders(sample=2)
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/funders_filter_fails_noidsworks.yaml")
 def test_funders_filter_fails_noidsworks():
-    "funders - filter fails, no ids or works"
-    cr.funders(filter={"from_pub_date": "2014-03-03"})
+    with pytest.raises(exceptions.RequestError):
+        cr.funders(filter={"from_pub_date": "2014-03-03"})
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/funders_filter_fails_noids.yaml")
 def test_funders_filter_fails_noids():
-    "funders - filter fails, no ids"
-    cr.funders(works=True, filter={"has_assertion": True})
+    with pytest.raises(exceptions.RequestError):
+        cr.funders(works=True, filter={"has_assertion": True})
 
 
 @vcr.use_cassette("test/vcr_cassettes/funders_filter_works.yaml")
@@ -59,25 +56,22 @@ def test_funders_filter_works():
     assert 20 == res["message"]["items-per-page"]
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/funders_err_fail_limit.yaml")
 def test_funders_fail_limit():
-    "funders - fails on wrong input type to limit"
-    cr.funders(limit="things")
+    with pytest.raises(exceptions.RequestError):
+        cr.funders(limit="things")
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/funders_err_fail_offset.yaml")
 def test_funders_fail_offset():
-    "funders - fails on wrong input type to offset"
-    cr.funders(offset="things")
+    with pytest.raises(exceptions.RequestError):
+        cr.funders(offset="things")
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/funders_err_fail_sort.yaml")
 def test_funders_fail_sort():
-    "funders - fails on wrong input type to offset"
-    cr.funders(sort="things")
+    with pytest.raises(exceptions.RequestError):
+        cr.funders(sort="things")
 
 
 @vcr.use_cassette("test/vcr_cassettes/funders_field_queries.yaml")
@@ -97,15 +91,13 @@ def test_funders_field_queries():
     assert 100 == len(titles)
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/funders_filters_not_allowed_with_dois.yaml")
 def test_funders_query_filters_not_allowed_with_dois():
-    "funders - param: kwargs - query filters not allowed on works/funderid/ route"
-    cr.funders(ids="10.13039/100000001", query_container_title="engineering")
+    with pytest.raises(exceptions.RequestError):
+        cr.funders(ids="10.13039/100000001", query_container_title="engineering")
 
 
-@raises(requests.exceptions.HTTPError)
 @vcr.use_cassette("test/vcr_cassettes/funders_query_title_not_allowed_anymore.yaml")
 def test_funders_query_title_not_allowed_anymore():
-    "funders - param: kwargs - query_title query not allowed anymore"
-    res = cr.funders(ids="10.13039/100000001", works=True, query_title="cellular")
+    with pytest.raises(requests.exceptions.HTTPError):
+        res = cr.funders(ids="10.13039/100000001", works=True, query_title="cellular")

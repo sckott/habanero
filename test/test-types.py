@@ -1,7 +1,7 @@
 """Tests for Crossref.types"""
 import os
 import vcr
-from nose.tools import *
+import pytest
 
 from habanero import exceptions
 
@@ -87,15 +87,15 @@ def test_types_works():
 #     assert str == titles[0].__class__
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/types_filters_not_allowed_with_typeid.yaml")
 def test_types_query_filters_not_allowed_with_typeid():
     "types - param: kwargs - query filters not allowed on types/type/ route"
-    cr.types(ids="journal-article", query_bibliographic="gender")
+    with pytest.raises(exceptions.RequestError):
+        cr.types(ids="journal-article", query_bibliographic="gender")
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/types_query_title_not_allowed_anymore.yaml")
 def test_types_query_title_not_allowed_anymore():
     "types - param: kwargs - query_title query not allowed anymore"
-    res = cr.types(works=True, query_title="cellular")
+    with pytest.raises(exceptions.RequestError):
+        cr.types(works=True, query_title="cellular")

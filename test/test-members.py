@@ -2,7 +2,7 @@
 import os
 import vcr
 import requests
-from nose.tools import *
+import pytest
 from habanero import exceptions
 from habanero import Crossref
 
@@ -27,18 +27,16 @@ def test_members_query():
     assert dict == res["message"].__class__
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/members_sample_err.yaml")
 def test_members_sample_err():
-    "members - param: sample - error b/c sample not supported"
-    cr.members(sample=2)
+    with pytest.raises(exceptions.RequestError):
+        cr.members(sample=2)
 
 
-@raises(Exception)
 @vcr.use_cassette("test/vcr_cassettes/members_filter.yaml")
 def test_members_filter():
-    "members - param: filter"
-    cr.members(filter={"has_full_text": True})
+    with pytest.raises(Exception):
+        cr.members(filter={"has_full_text": True})
 
 
 @vcr.use_cassette("test/vcr_cassettes/members_field_queries.yaml")
@@ -52,15 +50,15 @@ def test_members_field_queries():
     assert str == str(auths[0]).__class__
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/members_filters_not_allowed_with_dois.yaml")
 def test_members_query_filters_not_allowed_with_dois():
     "members - param: kwargs - query filters not allowed on works/memberid/ route"
-    cr.members(ids=98, query_author="carl boettiger")
+    with pytest.raises(exceptions.RequestError):
+        cr.members(ids=98, query_author="carl boettiger")
 
 
-@raises(requests.exceptions.HTTPError)
 @vcr.use_cassette("test/vcr_cassettes/members_query_title_not_allowed_anymore.yaml")
 def test_members_query_title_not_allowed_anymore():
     "members - param: kwargs - query_title query not allowed anymore"
-    res = cr.members(ids=98, works=True, query_title="cellular")
+    with pytest.raises(requests.exceptions.HTTPError):
+        res = cr.members(ids=98, works=True, query_title="cellular")

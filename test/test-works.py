@@ -2,7 +2,7 @@
 import os
 import vcr
 import requests
-from nose.tools import *
+import pytest
 from habanero import exceptions
 from habanero import Crossref
 from habanero import RequestError
@@ -89,11 +89,11 @@ def test_works_field_queries():
     assert "Boettiger" in auths
 
 
-@raises(RequestError)
 @vcr.use_cassette("test/vcr_cassettes/works_query_filters_not_allowed_with_dois.yaml")
 def test_works_query_filters_not_allowed_with_dois():
     "works - param: kwargs - query filters not allowed on works/DOI/ route"
-    cr.works(ids="10.1371/journal.pone.0033693", query_author="carl boettiger")
+    with pytest.raises(RequestError):
+        cr.works(ids="10.1371/journal.pone.0033693", query_author="carl boettiger")
 
 
 @vcr.use_cassette("test/vcr_cassettes/works_with_select_param.yaml")
@@ -105,8 +105,8 @@ def test_works_with_select_param():
     assert list(res2["message"]["items"][0].keys()) == ["DOI", "title"]
 
 
-@raises(requests.exceptions.HTTPError)
 @vcr.use_cassette("test/vcr_cassettes/works_query_title_not_allowed_anymore.yaml")
 def test_works_query_title_not_allowed_anymore():
     "works - param: kwargs - query_title query not allowed anymore"
-    cr.works(query_title="cellular")
+    with pytest.raises(requests.exceptions.HTTPError):
+        cr.works(query_title="cellular")

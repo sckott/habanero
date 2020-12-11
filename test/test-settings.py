@@ -2,7 +2,7 @@
 import os
 import vcr
 import yaml
-from nose.tools import *
+import pytest
 from habanero import Crossref
 
 cr_with_ua = Crossref(ua_string="foo bar")
@@ -86,10 +86,10 @@ def test_ua_string_registration_agency():
     assert "foo bar" in heads["X-USER-AGENT"][0]
 
 
-@raises(TypeError)
 def test_ua_string_errors():
     "settings (ua_string) - fails well"
-    cr_with_bad_ua.works(ids="10.1371/journal.pone.0033693")
+    with pytest.raises(TypeError):
+        cr_with_bad_ua.works(ids="10.1371/journal.pone.0033693")
 
 
 # NOTE: the two test blocks above using cassettes is super hacky

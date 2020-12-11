@@ -9,7 +9,7 @@ install:
 	python3 setup.py install
 
 test:
-	python3 -m "nose" -v --with-coverage --cover-package=habanero
+	python3 -m "pytest" --cov-report term --cov=habanero
 
 docs:
 	cd docs;\

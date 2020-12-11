@@ -2,7 +2,7 @@
 import os
 import vcr
 from habanero import Crossref
-from nose.tools import raises
+import pytest
 from requests.exceptions import HTTPError
 
 cr = Crossref()

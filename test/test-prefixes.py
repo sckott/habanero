@@ -1,7 +1,7 @@
 """Tests for Crossref.prefixes"""
 import os
 import vcr
-from nose.tools import *
+import pytest
 
 from habanero import exceptions
 
@@ -27,11 +27,11 @@ def test_prefixes_works():
     assert dict == res.__class__
 
 
-@raises(Exception)
 @vcr.use_cassette("test/vcr_cassettes/prefixes_filter.yaml")
 def test_prefixes_filter():
     "prefixes - param: filter"
-    cr.prefixes(filter={"has_full_text": True})
+    with pytest.raises(Exception):
+        cr.prefixes(filter={"has_full_text": True})
 
 
 @vcr.use_cassette("test/vcr_cassettes/prefixes_queries.yaml")
@@ -50,15 +50,15 @@ def test_prefixes_field_queries():
     assert dict == eds[0].__class__
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/prefixes_filters_not_allowed_with_dois.yaml")
 def test_prefixes_query_filters_not_allowed_with_dois():
     "prefixes - param: kwargs - query filters not allowed on prefixes/prefix/ route"
-    cr.prefixes(ids="10.1371", query_editor="cooper")
+    with pytest.raises(exceptions.RequestError):
+        cr.prefixes(ids="10.1371", query_editor="cooper")
 
 
-@raises(exceptions.RequestError)
 @vcr.use_cassette("test/vcr_cassettes/prefixes_query_title_not_allowed_anymore.yaml")
 def test_prefixes_query_title_not_allowed_anymore():
     "prefixes - param: kwargs - query_title query not allowed anymore"
-    res = cr.prefixes(works=True, query_title="cellular")
+    with pytest.raises(exceptions.RequestError):
+        cr.prefixes(works=True, query_title="cellular")

@@ -1,8 +1,6 @@
 """Tests for Crossref.licenses"""
 import os
 import vcr
-from nose.tools import *
-
 from habanero import Crossref
 
 cr = Crossref()

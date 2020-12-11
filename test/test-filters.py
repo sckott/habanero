@@ -1,11 +1,10 @@
 """Tests for filters"""
 import os
-from nose.tools import *
+import pytest
 from habanero import Crossref
 from habanero import RequestError
 
 cr = Crossref()
-
 
 def test_filter_names():
     "filter_names"
@@ -21,13 +20,10 @@ def test_filter_names():
     assert str == res_funders[0].__class__
     assert 1 == len(res_funders)
 
-
-@raises(ValueError)
 def test_filter_names_errors():
-    "filter_names - errors"
-    cr.filter_names("adf")
-    cr.filter_names(5)
-
+    with pytest.raises(ValueError):
+        cr.filter_names("adf")
+        cr.filter_names(5)
 
 def test_filter_details():
     "filter_details"
@@ -38,9 +34,7 @@ def test_filter_details():
     assert dict == res_members.__class__
     assert dict == res_funders.__class__
 
-
-@raises(ValueError)
 def test_filter_details_errors():
-    "filter_details - errors"
-    cr.filter_details("adf")
-    cr.filter_details(5)
+    with pytest.raises(ValueError):
+        cr.filter_details("adf")
+        cr.filter_details(5)

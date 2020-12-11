@@ -42,7 +42,7 @@ here.
 Writing tests
 -------------
 
-We're using `nosetests` for testing. See the `nosetests docs`_ for
+We're using `pytest` for testing. See the `pytest docs`_ for
 help on contributing to or writing tests.
 
 The Makefile has tasks for testing under python 2 and 3
@@ -52,4 +52,4 @@ The Makefile has tasks for testing under python 2 and 3
     make test
     make test3
 
-.. _nosetests docs: http://nose.readthedocs.io/en/latest/
+.. _pytest docs: https://docs.pytest.org/en/stable/
