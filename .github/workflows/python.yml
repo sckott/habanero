@@ -27,5 +27,5 @@ jobs:
     - name: Test coverage
       if: matrix.python-version == '3.8'
       run: |
-        py.test --cov-report=xml --cov=habanero test/
+        python3 -m "pytest" --cov-report=xml --cov=habanero test/
         codecov
