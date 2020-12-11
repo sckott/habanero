@@ -129,5 +129,5 @@ Indices and tables
 .. |ghactions| image:: https://github.com/sckott/habanero/workflows/Python/badge.svg
    :target: https://github.com/sckott/habanero/actions?query=workflow%3APython
 
-.. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
-   :target: https://coveralls.io/github/sckott/habanero?branch=master
+.. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/master/graph/badge.svg?token=6RrgNAuQmR
+   :target: https://codecov.io/gh/sckott/habanero

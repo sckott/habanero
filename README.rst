@@ -132,8 +132,8 @@ Meta
 .. |ghactions| image:: https://github.com/sckott/habanero/workflows/Python/badge.svg
    :target: https://github.com/sckott/habanero/actions?query=workflow%3APython
 
-.. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
-   :target: https://coveralls.io/github/sckott/habanero?branch=master
+.. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/master/graph/badge.svg?token=6RrgNAuQmR
+   :target: https://codecov.io/gh/sckott/habanero
 
 .. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
    :target: https://github.com/psf/black
