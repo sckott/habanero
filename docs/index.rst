@@ -2,7 +2,7 @@
 habanero |version| documentation
 ================================
 
-|pypi| |docs| |travis| |coverage|
+|pypi| |docs| |ghactions| |coverage|
 
 Python client for the `Crossref API
 <http://www.gbif.org/developer/summary>`_
@@ -126,8 +126,8 @@ Indices and tables
 .. |docs| image:: https://readthedocs.org/projects/habanero/badge/?version=latest
    :target: http://habanero.rtfd.org/
 
-.. |travis| image:: https://travis-ci.org/sckott/habanero.svg
-   :target: https://travis-ci.org/sckott/habanero
+.. |ghactions| image:: https://github.com/sckott/habanero/workflows/Python/badge.svg
+   :target: https://github.com/sckott/habanero/actions?query=workflow%3APython
 
 .. |coverage| image:: https://coveralls.io/repos/sckott/habanero/badge.svg?branch=master&service=github
    :target: https://coveralls.io/github/sckott/habanero?branch=master
