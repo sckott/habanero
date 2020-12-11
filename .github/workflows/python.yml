@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+        python-version: [3.5, 3.6, 3.7, 3.8]
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -23,7 +23,9 @@ jobs:
     - name: Install habanero
       run: make
     - name: Tests
-      run: pytest --cov-report term --cov=habanero
+      run: pytest
     - name: Test coverage
       if: matrix.python-version == '3.8'
-      run: codecov
+      run: |
+        py.test --cov-report=xml --cov=habanero test/
+        codecov
