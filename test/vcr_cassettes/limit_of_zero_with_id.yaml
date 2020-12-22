@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.0 habanero/0.7.5
+      X-USER-AGENT:
+      - python-requests/2.25.0 habanero/0.7.5
+    method: GET
+    uri: https://api.crossref.org/members/2984/works?rows=0&facet=issn%3A%2A
+  response:
+    body:
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{"issn":{"value-count":9,"values":{"http:\/\/id.crossref.org\/issn\/1091-3297":270,"http:\/\/id.crossref.org\/issn\/2193-5505":86,"http:\/\/id.crossref.org\/issn\/2191-7442":86,"http:\/\/id.crossref.org\/issn\/1360-466X":63,"http:\/\/id.crossref.org\/issn\/1354-3628":20,"http:\/\/id.crossref.org\/issn\/0849-6757":7,"http:\/\/id.crossref.org\/issn\/2048-7347":2,"http:\/\/id.crossref.org\/issn\/2048-2604":2,"http:\/\/id.crossref.org\/issn\/2045-225X":1}}},"total-results":238819,"items":[],"items-per-page":0,"query":{"start-index":0,"search-terms":null}}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - close
+      Content-Length:
+      - '646'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Dec 2020 01:44:18 GMT
+      Server:
+      - http-kit
+      Vary:
+      - Accept
+      X-Rate-Limit-Interval:
+      - 1s
+      X-Rate-Limit-Limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

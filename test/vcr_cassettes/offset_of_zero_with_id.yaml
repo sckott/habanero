@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.0 habanero/0.7.5
+      X-USER-AGENT:
+      - python-requests/2.25.0 habanero/0.7.5
+    method: GET
+    uri: https://api.crossref.org/members/2984/works?offset=0&rows=1
+  response:
+    body:
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":238819,"items":[{"indexed":{"date-parts":[[2020,4,7]],"date-time":"2020-04-07T17:45:50Z","timestamp":1586281550928},"reference-count":0,"publisher":"Bloomsbury
+        Academic","issue":"7","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["euro
+        law rep"],"published-print":{"date-parts":[[1999,12,1]]},"DOI":"10.5235\/elr.v3n6.992","type":"journal-article","created":{"date-parts":[[2011,9,26]],"date-time":"2011-09-26T17:50:51Z","timestamp":1317059451000},"page":"992-1006","source":"Crossref","is-referenced-by-count":0,"title":["MANN
+        AND OTHERS v SECRETARY OF STATE FOR EMPLOYMENT"],"prefix":"10.5235","volume":"3","author":[{"name":"Hadley","sequence":"first","affiliation":[]},{"name":"Tullichettle","sequence":"additional","affiliation":[]},{"name":"Hoffmann","sequence":"additional","affiliation":[]},{"name":"Craighead","sequence":"additional","affiliation":[]},{"name":"Woodborough","sequence":"additional","affiliation":[]}],"member":"2984","container-title":["European
+        Law Reports"],"language":"en","deposited":{"date-parts":[[2011,9,26]],"date-time":"2011-09-26T17:51:53Z","timestamp":1317059513000},"score":1.0,"issued":{"date-parts":[[1999,12,1]]},"references-count":0,"journal-issue":{"published-print":{"date-parts":[[1999,12,1]]},"issue":"7"},"alternative-id":["1091-3297(19991201)3:7L.992;1-"],"URL":"http:\/\/dx.doi.org\/10.5235\/elr.v3n6.992","ISSN":["1091-3297"],"issn-type":[{"value":"1091-3297","type":"print"}]}],"items-per-page":1,"query":{"start-index":0,"search-terms":null}}}'
+    headers:
+      Access-Control-Allow-Headers:
+      - X-Requested-With
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - close
+      Content-Length:
+      - '1639'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Dec 2020 01:44:18 GMT
+      Server:
+      - http-kit
+      Vary:
+      - Accept
+      X-Rate-Limit-Interval:
+      - 1s
+      X-Rate-Limit-Limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

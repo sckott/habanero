@@ -11,6 +11,7 @@ from .habanero_utils import (
     make_ua,
     filter_dict,
     rename_query_filters,
+    ifelsestr,
 )
 from .exceptions import *
 from .request_class import Request
@@ -61,6 +62,11 @@ def request(
         "select": select,
         "cursor": cursor,
     }
+    # convert limit/offset to str before removing None
+    # b/c 0 (zero) is falsey, so that param gets dropped
+    payload['offset'] = ifelsestr(payload['offset'])
+    payload['rows'] = ifelsestr(payload['rows'])
+    # remove params with value None
     payload = dict((k, v) for k, v in payload.items() if v)
     # add query filters
     payload.update(filter_dict(kwargs))
