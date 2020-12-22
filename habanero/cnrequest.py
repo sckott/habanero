@@ -1,5 +1,6 @@
 import requests
 import json
+import warnings
 
 from .habanero_utils import switch_classes, make_ua
 from .cn_formats import *
@@ -24,11 +25,13 @@ def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
         ids = ids.split()
 
     if len(ids) == 1:
-        return make_request(url, ids[0], format, style, locale, **kwargs)
+        return make_request(url, ids[0], format, style, locale,
+            fail=True, **kwargs)
     else:
         coll = []
         for i in range(len(ids)):
-            tt = make_request(url, ids[i], format, style, locale, **kwargs)
+            tt = make_request(url, ids[i], format, style, locale,
+                fail=False, **kwargs)
             coll.append(tt)
 
         if len(coll) == 1:
@@ -36,7 +39,7 @@ def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
         return coll
 
 
-def make_request(url, ids, format, style, locale, **kwargs):
+def make_request(url, ids, format, style, locale, fail, **kwargs):
     type = cn_format_headers[format]
 
     if format == "citeproc-json":
@@ -48,11 +51,18 @@ def make_request(url, ids, format, style, locale, **kwargs):
 
     htype = {"Accept": type}
     head = dict(make_ua(), **htype)
-    response = requests.get(url, headers=head, allow_redirects=True, **kwargs)
+    r = requests.get(url, headers=head, allow_redirects=True, **kwargs)
 
     # Raise an HTTPError if the status code of the response is 4XX or 5XX
-    response.raise_for_status()
+    # or warn if fail=False
+    if not r.ok:
+        if fail:
+            r.raise_for_status()
+        else:
+            mssg = '%s: %s' % (r.status_code, r.url)
+            warnings.warn(mssg)
+            return None
 
     # set encoding
-    response.encoding = "UTF-8"
-    return response.text
+    r.encoding = "UTF-8"
+    return r.text

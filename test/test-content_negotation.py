@@ -2,6 +2,7 @@
 import pytest
 import os
 import vcr
+import warnings
 from habanero import cn
 from requests.exceptions import HTTPError
 
@@ -60,3 +61,14 @@ def test_content_negotiation_ids_none():
 def test_content_negotiation_raises_an_http_error_with_bad_requests():
     with pytest.raises(HTTPError):
         res = cn.content_negotiation(ids="10.1126/foo")
+
+# warnings
+def test_content_negotiation_throws_warnings():
+    with pytest.warns(UserWarning):
+        cn.content_negotiation(ids=['10.1126/science.169.3946.635','foo'])
+
+def test_content_negotiation_throws_warnings_can_be_suppressed():
+    warnings.filterwarnings('ignore')
+    x = cn.content_negotiation(ids=['10.1126/science.169.3946.635','foo'])
+    assert isinstance(x, list)
+    warnings.filterwarnings('default')
