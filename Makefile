@@ -9,7 +9,7 @@ install:
 	python3 setup.py install
 
 test:
-	python3 -m "pytest" --cov-report term --cov=habanero
+	pytest --cov-report term --cov=habanero test/
 
 docs:
 	cd docs;\
