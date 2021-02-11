@@ -86,16 +86,21 @@ Initialize a client
 Works route
 
 .. code-block:: python
-
+  
+  # query
   x = cr.works(query = "ecology")
   x['message']
   x['message']['total-results']
   x['message']['items']
 
+  # fetch data by DOI
+  cr.works(ids = '10.1371/journal.pone.0033693')
+
 Members route
 
 .. code-block:: python
-
+  
+  # ids here is the Crossref Member ID; 98 = Hindawi
   cr.members(ids = 98, works = True)
 
 Citation counts
