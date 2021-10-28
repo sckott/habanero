@@ -26,12 +26,12 @@ def content_negotiation(
         format you request (e.g., JSON vs. XML vs. bibtex)
 
     See https://citation.crosscite.org/docs.html for details
-    
+
     To make for a nicer user experience, when more than one DOI is passed to
     `ids` we'll throw a warning instead of stopping with an error to be able
     to try to fetch data for all DOIs given. When only one DOI is passed to
     `ids` we will fail with error message. A UserWarning is thrown when a DOI
-    is not found or there's a problem with fetching the citation for a DOI. 
+    is not found or there's a problem with fetching the citation for a DOI.
     You can suppress these warnings with :code:`warnings.filterwarnings('ignore')`.
 
     Usage::

@@ -7,17 +7,17 @@ from ..habanero_utils import check_json
 
 def csl_styles(**kwargs):
     """
-  Get list of styles from https://github.com/citation-style-language/styles
+    Get list of styles from https://github.com/citation-style-language/styles
 
-  :param kwargs: any additional arguments will be passed on to `requests.get`
+    :param kwargs: any additional arguments will be passed on to `requests.get`
 
-  :return: list, of CSL styles
+    :return: list, of CSL styles
 
-  Usage::
+    Usage::
 
-      from habanero import cn
-      cn.csl_styles()
-  """
+        from habanero import cn
+        cn.csl_styles()
+    """
     base = "https://api.github.com/repos/citation-style-language/styles"
     tt = requests.get(base + "/commits?per_page=1", **kwargs)
     tt.raise_for_status()
