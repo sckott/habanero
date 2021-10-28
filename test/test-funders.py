@@ -5,6 +5,7 @@ from habanero import exceptions, Crossref
 
 cr = Crossref()
 
+
 @pytest.mark.vcr
 def test_funders():
     "funders - basic test"
@@ -12,6 +13,7 @@ def test_funders():
     assert dict == res.__class__
     assert dict == res["message"].__class__
     assert 2 == res["message"]["items-per-page"]
+
 
 @pytest.mark.vcr
 def test_funders_query():
@@ -21,20 +23,24 @@ def test_funders_query():
     assert dict == res["message"].__class__
     assert 2 == res["message"]["items-per-page"]
 
+
 @pytest.mark.vcr
 def test_funders_sample_err():
     with pytest.raises(exceptions.RequestError):
         cr.funders(sample=2)
+
 
 @pytest.mark.vcr
 def test_funders_filter_fails_noidsworks():
     with pytest.raises(exceptions.RequestError):
         cr.funders(filter={"from_pub_date": "2014-03-03"})
 
+
 @pytest.mark.vcr
 def test_funders_filter_fails_noids():
     with pytest.raises(exceptions.RequestError):
         cr.funders(works=True, filter={"has_assertion": True})
+
 
 @pytest.mark.vcr
 def test_funders_filter_works():
@@ -45,20 +51,24 @@ def test_funders_filter_works():
     assert dict == res.__class__
     assert 20 == res["message"]["items-per-page"]
 
+
 @pytest.mark.vcr
 def test_funders_fail_limit():
     with pytest.raises(KeyError):
         cr.funders(limit="things")
+
 
 @pytest.mark.vcr
 def test_funders_fail_offset():
     with pytest.raises(KeyError):
         cr.funders(offset="things")
 
+
 @pytest.mark.vcr
 def test_funders_fail_sort():
     with pytest.raises(exceptions.RequestError):
         cr.funders(sort="things")
+
 
 @pytest.mark.vcr
 def test_funders_field_queries():
@@ -75,6 +85,7 @@ def test_funders_field_queries():
     assert 5 == len(res["message"])
     assert list == titles.__class__
     assert 100 == len(titles)
+
 
 @pytest.mark.vcr
 def test_funders_query_filters_not_allowed_with_dois():

@@ -5,12 +5,14 @@ from habanero import Crossref
 
 cr = Crossref()
 
+
 @pytest.mark.vcr
 def test_licenses():
     "licenses - basic test"
-    res = cr.licenses(limit = 2)
+    res = cr.licenses(limit=2)
     assert dict == res.__class__
     assert 2 == len(res["message"]["items"])
+
 
 @pytest.mark.vcr
 def test_licenses_query():

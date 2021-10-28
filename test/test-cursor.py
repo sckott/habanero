@@ -6,6 +6,7 @@ from requests import exceptions as ex
 
 cr = Crossref()
 
+
 @pytest.mark.vcr
 def test_cursor():
     "cursor works - basic test"
@@ -14,6 +15,7 @@ def test_cursor():
     assert dict == res["message"].__class__
     assert 4 == len(res)
     assert 6 == len(res["message"])
+
 
 @pytest.mark.vcr
 def test_cursor_max():
@@ -29,10 +31,12 @@ def test_cursor_max():
     assert 60 == len(items1)
     assert 40 == len(items2)
 
+
 @pytest.mark.vcr
 def test_cursor_fails_cursor_value():
     with pytest.raises(ex.HTTPError):
         cr.works(query="widget", cursor="thing")
+
 
 @pytest.mark.vcr
 def test_cursor_fails_cursor_max():

@@ -23,7 +23,7 @@ a = {
         {"id": "journal", "label": "Journal"},
         {"id": "component", "label": "Component"},
         {"id": "book-chapter", "label": "Book Chapter"},
-        {'id': 'proceedings-series', 'label': 'Proceedings Series'},
+        {"id": "proceedings-series", "label": "Proceedings Series"},
         {"id": "report-series", "label": "Report Series"},
         {"id": "proceedings", "label": "Proceedings"},
         {"id": "standard", "label": "Standard"},
