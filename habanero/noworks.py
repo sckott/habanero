@@ -1,7 +1,7 @@
 class NoWorks(object):
     """
-  Habanero: agency class
-  """
+    Habanero: agency class
+    """
 
     def __init__(self, result):
         self.result = result

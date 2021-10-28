@@ -25,13 +25,11 @@ def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
         ids = ids.split()
 
     if len(ids) == 1:
-        return make_request(url, ids[0], format, style, locale,
-            fail=True, **kwargs)
+        return make_request(url, ids[0], format, style, locale, fail=True, **kwargs)
     else:
         coll = []
         for i in range(len(ids)):
-            tt = make_request(url, ids[i], format, style, locale,
-                fail=False, **kwargs)
+            tt = make_request(url, ids[i], format, style, locale, fail=False, **kwargs)
             coll.append(tt)
 
         if len(coll) == 1:
@@ -59,7 +57,7 @@ def make_request(url, ids, format, style, locale, fail, **kwargs):
         if fail:
             r.raise_for_status()
         else:
-            mssg = '%s: %s' % (r.status_code, r.url)
+            mssg = "%s: %s" % (r.status_code, r.url)
             warnings.warn(mssg)
             return None
 

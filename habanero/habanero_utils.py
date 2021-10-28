@@ -86,6 +86,7 @@ def rename_query_filters(x):
     mapping = dict(zip(x.keys(), newkeys))
     return {mapping[k]: v for k, v in x.items()}
 
+
 def ifelsestr(x):
     z = str(x) if x is not None else x
     return z
