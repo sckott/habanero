@@ -8,7 +8,7 @@ cr_with_ua = Crossref(ua_string="foo bar")
 cr_without_ua = Crossref()
 cr_with_bad_ua = Crossref(ua_string=5)
 
-vcr_path = "test/vcr_cassettes/setting_ua_string.yaml"
+vcr_path = "test/cassettes/test-settings/test_ua_string.yaml"
 
 
 @pytest.mark.vcr(vcr_path)
@@ -23,7 +23,7 @@ def test_ua_string():
     assert "foo bar" in heads["X-USER-AGENT"][0]
 
 
-vcr_noua_path = "test/vcr_cassettes/setting_no_ua_string.yaml"
+vcr_noua_path = "test/cassettes/test-settings/test_no_ua_string.yaml"
 
 
 @pytest.mark.vcr(vcr_noua_path)
@@ -38,7 +38,7 @@ def test_no_ua_string():
     assert "foo bar" not in heads["X-USER-AGENT"][0]
 
 
-vcr_path_members = "test/vcr_cassettes/setting_ua_string_members.yaml"
+vcr_path_members = "test/cassettes/test-settings/test_ua_string_members.yaml"
 
 
 @pytest.mark.vcr(vcr_path_members)
@@ -53,7 +53,7 @@ def test_ua_string_members():
     assert "foo bar" in heads["X-USER-AGENT"][0]
 
 
-vcr_path_prefixes = "test/vcr_cassettes/setting_ua_string_prefixes.yaml"
+vcr_path_prefixes = "test/cassettes/test-settings/test_ua_string_prefixes.yaml"
 
 
 @pytest.mark.vcr(vcr_path_prefixes)
@@ -69,7 +69,7 @@ def test_ua_string_prefixes():
 
 
 vcr_path_registration_agency = (
-    "test/vcr_cassettes/setting_ua_string_registration_agency.yaml"
+    "test/cassettes/test-settings/test_ua_string_registration_agency.yaml"
 )
 
 
