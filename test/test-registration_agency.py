@@ -1,14 +1,13 @@
-"""Tests for registration_agency"""
+import pytest
 import os
 import vcr
 from habanero import Crossref
-import pytest
-from requests.exceptions import HTTPError
+from simplejson import JSONDecodeError
 
 cr = Crossref()
 
 
-@vcr.use_cassette("test/vcr_cassettes/registration_agency.yaml")
+@pytest.mark.vcr
 def test_registration_agency():
     "registration agency"
     res = cr.registration_agency("10.1126/science.169.3946.635")
@@ -16,7 +15,7 @@ def test_registration_agency():
     assert str == res[0].__class__
 
 
-@vcr.use_cassette("test/vcr_cassettes/registration_agency_unicode.yaml")
+@pytest.mark.vcr
 def test_registration_agency_unicode():
     "registration agency- unicode"
     res = cr.registration_agency(u"10.1126/science.169.3946.635")
@@ -24,8 +23,8 @@ def test_registration_agency_unicode():
     assert str == res[0].__class__
 
 
-@vcr.use_cassette("test/vcr_cassettes/registration_agency_bad_request.yaml")
+@pytest.mark.vcr
 def test_registration_agency_bad_request():
     "registration agency - bad request"
-    with pytest.raises(HTTPError):
+    with pytest.raises(JSONDecodeError):
         cr.registration_agency(5)

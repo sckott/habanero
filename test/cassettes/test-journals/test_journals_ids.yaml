@@ -1,0 +1,142 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/journals/1803-2427
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAKVXS4/bOAz+K4bOcmBJfs6t6BbFFm2xwBwHc1AcZarGsQJJnkF2kP++9COxLcvT
+        6famUCRNfSQ/Mq/IWG4bg+6QOiCMjsIY/iRCez4JkP1Uja55Nbl4FtpIVcMd2USbaLxBd6+o4saG
+        vcOw/CHKQ2jlEW5IyhKWk6KIsjjGqFRNbU1rUDZai9qGOyXhd5JjtOXlYS8rMYhIRjGyyvJqEFAW
+        XUBLC37YqZe689LehNtzKI1pxC48C67R3cMDjUiGWfKI21OOKetONMKU9rIC06g/JdcTJZikvSzF
+        ZLBltxO5nWJMSH+KMOlto/x6IhQXvaiAwyMEfGq2lTQ/BASG/hLBZ92crdDBP6ri9S64P22CfwO1
+        URvUogMYD4DyPWAhuQXEAdEeLHQXbYqcZkme0ijNizRJACMjj7LiWtpzj7ysn0YDSBVG+6beQfLC
+        K8KtHxBXshS1EXN5yoqExXnOMhoVLCKj9SQIMJ7F97YDLQwUUynCStaHuTJURpZCZZA8jeI0AWWl
+        S7lbhNqcdtyK8KQgZincWNRJ1KEWewGycvae7vmDy6nNCCCUWQwp9aI4DWIeJ5QI8n4Q3h9Pn08Z
+        QPXC9S6sm+PWkwT3ZWs5mmd07tLJzNZYzUv7K6SdtEyctJCwrGAkYnGc03zq881SdBMxD9p3sfQC
+        LWOlbYNGX3oOCtQ++ArNYkp+EsGnUlXq6QztYprtT1G2dPLwij7cf/nYcQREW/OWetA3XkMzHeE7
+        OPimammVhqzitvVkeQ7a9vvKX9AFT6yLm/V34DItBq3rxz9CtQv93JX93JDdDK8BXh7Hjh5YFdq6
+        qn6DLqdN1icmhdItkjShJGPFJC9dimeXwF1D5Xd1MciimMVZTlMyllbn+HbRucimyfLfD6ww1Jyn
+        e4bcugFPC9ffAoN0Xp5dEJO3QTjJot66OruMk+QPkF6y2BzqFd5yunaND6fQLvnifdAu+OhPoPW8
+        xw/trXH/N7JL1pgh6yGVEdklbY9IOxTj9/UOaJf8+rtlumBPL5YA5r7iT/0aI07KSGBXD89a3Qg8
+        arjDbH69UF8Z047W+hDa88pMNd8ek+7H/VPK9bk2iFxv2sqyEr9445r1YotZRuEZ5+6XPKPVUfEs
+        VW+isg71+lbjlsTa1HX03qWysqr5q3A9+OXK6WqsrnTvKbm1+JfrUqsArfb3/f132BMQySMW0phm
+        sD/AOQljUqQIJjX8g6iHKQ3bxPAn6AQLgwXNZ1417e/Rup39g5KoYAnRsF+Uc83B9+XxcvkPI+JP
+        xmwNAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '974'
+      content-type:
+      - application/json
+      date:
+      - Thu, 28 Oct 2021 15:54:12 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/journals/2326-4225
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAO1WS4/aMBD+K5HPMQoJ4XXroZXaw6rqHhEH40xYL8aObGdXCPHfO2mgECeGrdRD
+        D705M+PPM9+8ciTWMVdbsiR6R2KyB2vZFqg7VICyV10bxeSN4g2MFVqhbjxKRslVQ5ZHIpl1tAWk
+        /AX4jjqxR814muXZPE0XyWI2jwnXtXK2ucBrY0A5WmiB30lMNozvSiHhLBnPFjFx2jF5FZzQygDb
+        Ffpd/QJpNHRzoMLaGgp6AGbIcrVKk/EkzvN13JyyOE/a0yzOsvY0jdNZe5rH48l6jcBVvZHCvgAC
+        kE97MIIzFT1zgT6KUvDo+0VvSRMGknGOnJXotWAOqcHQ26gwoBGGZMVeSGaEO7ScCLX1LMpaFQhJ
+        L8GfxVJwUBZ68ot5F6TjgXfDgMVEcqBSqF1Pqw0XRU9aVwVzQCuNbgjwX9MVKGqgBJTxvotnyMdE
+        3N7LJ7PJfJpkWT5e5HnWuB3CZ+/MFFTV+80Ab77nIVo9/jqQnm5jnWHcPSI2dOs+d11tQIHF6YRr
+        Hibf2qaMdBk91Q75xJTj52eupd4eIqaK6IvWRfQDLLYCf8FStfXmFXjTc6v1tXDPXY7VK+UftO9t
+        pfmhdvLvEd4LsFvP4SoZLI5OvoYzP5ik4SRcOL7m9z8dSMfvCvy32fDb9y/FjwSUkm3bJQOVtgJ7
+        eaCrSyYtxFcTf/p5erJ0pr61D4xuHzY813zL+5PWf3148PmYoVHn2zHjBJfwIMrg9d5y6/sxsBR6
+        TgwMbN9mYL32YAJrppfw4DZ8ZPmRMD+akjuv+hs+xPrHiy/o1N3fnWAOuhbYeF+fn59wW5E0S6d0
+        kqY5wcWFf3jqvLRWR/LGZN3sw6sJ7sj2v7UyAsFO69PpJ8Z5iIfhCgAA
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '669'
+      content-type:
+      - application/json
+      date:
+      - Thu, 28 Oct 2021 15:54:13 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

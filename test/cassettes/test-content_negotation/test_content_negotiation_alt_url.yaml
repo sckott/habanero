@@ -1,0 +1,164 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/x-bibtex
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: http://doi.org/10.1126/science.169.3946.635
+  response:
+    body:
+      string: ''
+    headers:
+      CF-RAY:
+      - 6a5556ea6bb8399b-SEA
+      Cache-Control:
+      - max-age=3600
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 28 Oct 2021 15:53:53 GMT
+      Expires:
+      - Thu, 28 Oct 2021 16:53:53 GMT
+      Location:
+      - https://doi.org/10.1126/science.169.3946.635
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=S7jeu1Yolld2sMTTl3rM7bS1d7pnFPqLNjRi3Z4Jgk4Ce%2Bp9Mb3qtWqR4UvZBy%2FwHqLnCRus2vJ5zN%2BpAlf3BrscVnLIoH4y7gkeKvUR0YP2RegZhZAYN%2FM%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    status:
+      code: 301
+      message: Moved Permanently
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/x-bibtex
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://doi.org/10.1126/science.169.3946.635
+  response:
+    body:
+      string: '<html><head><title>Handle Redirect</title></head>
+
+        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 6a5556eafddc30d7-SEA
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '233'
+      Content-Type:
+      - text/html;charset=utf-8
+      Date:
+      - Thu, 28 Oct 2021 15:53:53 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Expires:
+      - Thu, 28 Oct 2021 16:15:40 GMT
+      Location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=elirtOCS%2FPDPyEM8V0TZrqYETusQiZ3b8sw0bqMuy4YKjpEyHtvreL1RpXu3LbqstCGCZKewvJJPzLi1Epxsi%2BDo2gtWzCO9ZFL2J%2BCi1CYtM3L2W1L9tQk%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    status:
+      code: 302
+      message: ''
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/x-bibtex
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+  response:
+    body:
+      string: "@article{1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\
+        \tyear = 1970,\n\tmonth = {aug},\n\tpublisher = {American Association for\
+        \ the Advancement of Science ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\
+        \tpages = {635--641},\n\tauthor = {Henry S. Frank},\n\ttitle = {The Structure\
+        \ of Ordinary Water}\n}"
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-length:
+      - '346'
+      content-type:
+      - application/x-bibtex
+      date:
+      - Thu, 28 Oct 2021 15:53:53 GMT
+      link:
+      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+        version="vor"; rel="item"
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

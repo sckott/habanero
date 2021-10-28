@@ -1,0 +1,73 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/members?offset=0&rows=1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAM1WS3ObMBD+Kx6dUQYBxo5vvfTS9tTpKeODDEuiGiQqiSSejP97V4BfAmwf2k4v
+        yXrf7H67qw9iLLeNISuitiQgFRjDn4HaXQ3Iq6DagKalMPZM+AraCCVRzh7Ch/AkIasPIixUhtZo
+        VbccFpBfDeidk2EsbamQObyTVRgQA1xnL9SCrjAD2ZTlPiBWWV5SDaYpLXKjMEnQR+uWrJ4+SMmN
+        pV3WNHuBbEutqFygNJ7Hi8U8XbL5MiC1FhXXOyq5E5JPUvLSzFQx+8wrUe5m3yAXmZCA2WeqkS7U
+        B8karUFamiuBv5MwCsiGZ9tClNDzonA5P+TYc5LlAtPeaODbXL3J1pET0c2OCmMayOkOPxSTf4pC
+        tgxYGq0DJMN5wOZJSzJHhh35GLBk0ZELJNNONzmSUYhk54HFSHZmIfqNezNUiDu/YYpkr4seYtZx
+        MUT02HFRIerNGJJxp4CBoz6dKGBs2QVGBdYrxEGcrtd7V2YoxDu41hAWPmAODg8Hau2Ki3DpscEL
+        rKTgFsGDvetqjUB4cFAQ2BWuhd11TRXy+aTBnEbRIG40VrVvSG9YigykgQH/oH4Z5iIDzwIhpxqd
+        AcJdbgdSpTORD7hNnXMLtFaYhgA/mqpBIpILQF42TLF3ebsQ53YI7mgRx0vsYPKYJi7tKf/8jeuc
+        ysbN8M3Mp8rq1e/CpSfbGKt5Zm8Vdsrqeu0upROCIyDbTXFUoq/CiA023uIawk+rcJvkCNM7dsMr
+        Lxunc8J23WywOGepkVWB5rAP/nlEHC+RtyvWqi3Idgh56xqtVIF/itZ9u6H7AOvDvut3PE5lWbp/
+        P7FHaEpxRYvM9e6w2I7NHNPBdYg6xx6MqOAW3e9Pe+Bm2Ls3/Pks+2C6mDAP0gMIXW6M6Tl0Epy6
+        OA7nbJk+LqJonnojMT5co3MwjvMOxrfK/n/XaLCi/lKJrqHuf64QG2zSP1UTLEpR8ufuCQK1MgLn
+        fGTDtusjOKn4l8iTk5XVzbn+xBn13U7fGF/z+tXzo48fId/n1Nnx9XrM3PjKSfPBQ2OYx8iBHiQx
+        cjx9nZGnzsDNxMkfNHzyZXJL857PvLclV6L6r62pqt8Pvsmkrj49PUgMn0X97Selylqk4OX+CvxN
+        qTyYffkezH5Id/pn33ERgelfAO2hnn4DrPfr/f435EEvZpoNAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '893'
+      content-type:
+      - application/json
+      date:
+      - Thu, 28 Oct 2021 15:54:40 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

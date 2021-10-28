@@ -1,14 +1,13 @@
-"""Tests for random_dois"""
+import pytest
 import os
 import vcr
 from habanero import Crossref
-import pytest
 from requests.exceptions import HTTPError
 
 cr = Crossref()
 
 
-@vcr.use_cassette("test/vcr_cassettes/random_dois.yaml")
+@pytest.mark.vcr
 def test_random_dois():
     "random dois"
     res = cr.random_dois()
@@ -17,7 +16,7 @@ def test_random_dois():
     assert 10 == len(res)
 
 
-@vcr.use_cassette("test/vcr_cassettes/random_dois_sample_param.yaml")
+@pytest.mark.vcr
 def test_random_dois_sample_param():
     "random dois - sample parameter"
     res = cr.random_dois(3)

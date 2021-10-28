@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/funders?rows=things
+  response:
+    body:
+      string: '{"status":"error","message-type":"exception","message-version":"1.0.0","message":{"name":"class
+        java.lang.NullPointerException","description":"java.lang.NullPointerException","message":null,"stack":["clojure.lang.RT.intCast(RT.java:1177)","cayenne.api.v1.query$parse_rows_val.invokeStatic(query.clj:109)","cayenne.api.v1.query$parse_rows_val.invoke(query.clj:108)","cayenne.api.v1.validate$validate_offsets.invokeStatic(validate.clj:109)","cayenne.api.v1.validate$validate_offsets.doInvoke(validate.clj:108)","clojure.lang.RestFn.applyTo(RestFn.java:146)","clojure.core$apply.invokeStatic(core.clj:654)","clojure.core$partial$fn__4761.doInvoke(core.clj:2520)","clojure.lang.RestFn.invoke(RestFn.java:494)","cayenne.api.v1.validate$validate_paging_params.invokeStatic(validate.clj:418)","cayenne.api.v1.validate$validate_paging_params.invoke(validate.clj:381)","cayenne.api.v1.validate$validate_resource_context.invokeStatic(validate.clj:590)","cayenne.api.v1.validate$validate_resource_context.invoke(validate.clj:582)","cayenne.api.v1.validate$malformed_QMARK_$fn__25222.invoke(validate.clj:619)","liberator.core$decide.invokeStatic(core.clj:82)","liberator.core$decide.invoke(core.clj:74)","liberator.core$malformed_QMARK_.invokeStatic(core.clj:490)","liberator.core$malformed_QMARK_.invoke(core.clj:490)","liberator.core$decide.invokeStatic(core.clj:87)","liberator.core$decide.invoke(core.clj:74)","liberator.core$method_allowed_QMARK_.invokeStatic(core.clj:493)","liberator.core$method_allowed_QMARK_.invoke(core.clj:493)","liberator.core$decide.invokeStatic(core.clj:87)","liberator.core$decide.invoke(core.clj:74)","liberator.core$uri_too_long_QMARK_.invokeStatic(core.clj:496)","liberator.core$uri_too_long_QMARK_.invoke(core.clj:496)","liberator.core$decide.invokeStatic(core.clj:87)","liberator.core$decide.invoke(core.clj:74)","liberator.core$known_method_QMARK_.invokeStatic(core.clj:499)","liberator.core$known_method_QMARK_.invoke(core.clj:499)","liberator.core$decide.invokeStatic(core.clj:87)","liberator.core$decide.invoke(core.clj:74)","liberator.core$service_available_QMARK_.invokeStatic(core.clj:502)","liberator.core$service_available_QMARK_.invoke(core.clj:502)","liberator.core$decide.invokeStatic(core.clj:87)","liberator.core$decide.invoke(core.clj:74)","liberator.core$initialize_context.invokeStatic(core.clj:504)","liberator.core$initialize_context.invoke(core.clj:504)","liberator.core$run_resource.invokeStatic(core.clj:595)","liberator.core$run_resource.invoke(core.clj:593)","cayenne.api.v1.routes$funders_resource.invokeStatic(routes.clj:273)","cayenne.api.v1.routes$funders_resource.invoke(routes.clj:273)","compojure.response$eval27463$fn__27464.invoke(response.clj:47)","compojure.response$eval27385$fn__27386$G__27376__27393.invoke(response.clj:7)","compojure.core$wrap_response$fn__27935.invoke(core.clj:158)","compojure.core$pre_init$fn__28032.invoke(core.clj:328)","cayenne.api.auth.token$wrap_auth_when_enabled$fn__32880.invoke(token.clj:42)","compojure.core$pre_init$fn__28034$fn__28037.invoke(core.clj:335)","compojure.core$wrap_route_middleware$fn__27919.invoke(core.clj:127)","compojure.core$wrap_route_info$fn__27924.invoke(core.clj:137)","compojure.core$wrap_route_matches$fn__27928.invoke(core.clj:146)","compojure.core$routing$fn__27943.invoke(core.clj:185)","clojure.core$some.invokeStatic(core.clj:2592)","clojure.core$some.invoke(core.clj:2583)","compojure.core$routing.invokeStatic(core.clj:185)","compojure.core$routing.doInvoke(core.clj:182)","clojure.lang.RestFn.applyTo(RestFn.java:139)","clojure.core$apply.invokeStatic(core.clj:648)","clojure.core$apply.invoke(core.clj:641)","compojure.core$routes$fn__27947.invoke(core.clj:192)","compojure.core$routing$fn__27943.invoke(core.clj:185)","clojure.core$some.invokeStatic(core.clj:2592)","clojure.core$some.invoke(core.clj:2583)","compojure.core$routing.invokeStatic(core.clj:185)","compojure.core$routing.doInvoke(core.clj:182)","clojure.lang.RestFn.applyTo(RestFn.java:139)","clojure.core$apply.invokeStatic(core.clj:648)","clojure.core$apply.invoke(core.clj:641)","compojure.core$routes$fn__27947.invoke(core.clj:192)","compojure.core$wrap_routes$fn__28044.invoke(core.clj:348)","compojure.core$routing$fn__27943.invoke(core.clj:185)","clojure.core$some.invokeStatic(core.clj:2592)","clojure.core$some.invoke(core.clj:2583)","compojure.core$routing.invokeStatic(core.clj:185)","compojure.core$routing.doInvoke(core.clj:182)","clojure.lang.RestFn.applyTo(RestFn.java:139)","clojure.core$apply.invokeStatic(core.clj:648)","clojure.core$apply.invoke(core.clj:641)","compojure.core$routes$fn__27947.invoke(core.clj:192)","cayenne.api.route$wrap_async$fn__34002.invoke(route.clj:251)","ring.middleware.keyword_params$wrap_keyword_params$fn__33522.invoke(keyword_params.clj:38)","ring.middleware.nested_params$wrap_nested_params$fn__33570.invoke(nested_params.clj:91)","ring.middleware.params$wrap_params$fn__33486.invoke(params.clj:69)","cayenne.api.route$wrap_cors$fn__33966.invoke(route.clj:162)","cayenne.api.route$wrap_heartbeat$fn__34008.invoke(route.clj:276)","cayenne.api.conneg$wrap_accept$fn__27173.invoke(conneg.clj:53)","cayenne.api.route$wrap_exception_handler$fn__33981.invoke(route.clj:212)","cayenne.api.route$wrap_ignore_trailing_slash$fn__33984.invoke(route.clj:220)","ring.middleware.gzip$wrap_gzip$fn__33050.invoke(gzip.clj:102)","ring.logger$wrap_log_request_start$fn__32981.invoke(logger.clj:100)","ring.logger$wrap_log_response$fn__32994.invoke(logger.clj:168)","cayenne.api.route$wrap_raise$fn__34013.invoke(route.clj:281)","ring.adapter.jetty$async_proxy_handler$fn__33230.invoke(jetty.clj:59)","ring.adapter.jetty.proxy$org.eclipse.jetty.server.handler.AbstractHandler$ff19274a.handle(Unknown
+        Source)","org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)","org.eclipse.jetty.server.Server.handle(Server.java:516)","org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:388)","org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:633)","org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:380)","org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)","org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)","org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)","org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)","org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:882)","org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1036)","java.base\/java.lang.Thread.run(Thread.java:829)"],"cause":null}}'
+    headers:
+      connection:
+      - close
+      content-length:
+      - '6635'
+      content-type:
+      - application/json
+      date:
+      - Thu, 28 Oct 2021 15:54:06 GMT
+      exception-name:
+      - class java.lang.NullPointerException
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 500
+      message: Server Error
+version: 1

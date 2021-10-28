@@ -9,7 +9,10 @@ install:
 	python3 setup.py install
 
 test:
-	pytest --cov-report term --cov=habanero test/
+	pytest --record-mode=once --cov-report term --cov=habanero test/
+
+test_no_vcr:
+	pytest --disable-vcr --cov-report term --cov=habanero test/
 
 docs:
 	cd docs;\

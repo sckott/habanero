@@ -1,0 +1,226 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - text/x-bibliography; style = apa; locale = en-US
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://doi.org/10.1126/science.169.3946.635
+  response:
+    body:
+      string: '<html><head><title>Handle Redirect</title></head>
+
+        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 6a5556ee6df6f5a5-SEA
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '233'
+      Content-Type:
+      - text/html;charset=utf-8
+      Date:
+      - Thu, 28 Oct 2021 15:53:53 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Expires:
+      - Thu, 28 Oct 2021 16:15:40 GMT
+      Location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TkKfhyfonWVPv3Pu%2BAeIiQFXZKPC1pLBr0JLEJ65qFvRFFxcphRN%2FmkYKl9qL6SNhnKt0CuLXezOmDJVJQYWy%2B4Gr2pmoRlyY4fdC5tPwUjmwpiQ%2BScytRc%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    status:
+      code: 302
+      message: ''
+- request:
+    body: null
+    headers:
+      Accept:
+      - text/x-bibliography; style = apa; locale = en-US
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+  response:
+    body:
+      string: "Frank, H. S. (1970). The Structure of Ordinary Water. Science, 169(3946),\
+        \ 635\u2013641. doi:10.1126/science.169.3946.635\n"
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-length:
+      - '118'
+      content-type:
+      - text/x-bibliography
+      date:
+      - Thu, 28 Oct 2021 15:53:54 GMT
+      link:
+      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+        version="vor"; rel="item"
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - text/x-bibliography; style = ieee; locale = en-US
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://doi.org/10.1126/science.169.3946.635
+  response:
+    body:
+      string: '<html><head><title>Handle Redirect</title></head>
+
+        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 6a5556f20cd539e3-SEA
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '233'
+      Content-Type:
+      - text/html;charset=utf-8
+      Date:
+      - Thu, 28 Oct 2021 15:53:54 GMT
+      Expect-CT:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Expires:
+      - Thu, 28 Oct 2021 16:21:39 GMT
+      Location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=56FRn31I8k%2FKEFBZxjtwY5p9X%2FGEPU4QLnryqyHjmYzopMv68kNkRww09JzMFSyL5YC8bne6zoouTvS3CFMGpZX%2F8rK9iqkl31MW5jXW8Mwe0Bid5CshZkg%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Vary:
+      - Accept
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
+        ma=86400
+    status:
+      code: 302
+      message: ''
+- request:
+    body: null
+    headers:
+      Accept:
+      - text/x-bibliography; style = ieee; locale = en-US
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+  response:
+    body:
+      string: "[1]H. S. Frank, \u201CThe Structure of Ordinary Water,\u201D Science,\
+        \ vol. 169, no. 3946, pp. 635\u2013641, Aug. 1970.\n"
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-length:
+      - '110'
+      content-type:
+      - text/x-bibliography
+      date:
+      - Thu, 28 Oct 2021 15:53:54 GMT
+      link:
+      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+        version="vor"; rel="item"
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

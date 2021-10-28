@@ -1,14 +1,12 @@
-"""Tests for cursor"""
 import pytest
 import os
 import vcr
-from habanero import exceptions
-from habanero import Crossref
+from habanero import exceptions, Crossref
 from requests import exceptions as ex
 
 cr = Crossref()
 
-@vcr.use_cassette("test/vcr_cassettes/cursor.yaml")
+@pytest.mark.vcr
 def test_cursor():
     "cursor works - basic test"
     res = cr.works(query="widget", cursor="*", cursor_max=10)
@@ -17,7 +15,7 @@ def test_cursor():
     assert 4 == len(res)
     assert 6 == len(res["message"])
 
-@vcr.use_cassette("test/vcr_cassettes/cursor_cursormax.yaml")
+@pytest.mark.vcr
 def test_cursor_max():
     "cursor works - cursor_max works"
     res1 = cr.works(query="widget", cursor="*", cursor_max=60)
@@ -31,12 +29,12 @@ def test_cursor_max():
     assert 60 == len(items1)
     assert 40 == len(items2)
 
-@vcr.use_cassette("test/vcr_cassettes/cursor_err1.yaml")
+@pytest.mark.vcr
 def test_cursor_fails_cursor_value():
     with pytest.raises(ex.HTTPError):
         cr.works(query="widget", cursor="thing")
 
-@vcr.use_cassette("test/vcr_cassettes/cursor_err2.yaml")
+@pytest.mark.vcr
 def test_cursor_fails_cursor_max():
     with pytest.raises(ValueError):
         cr.works(query="widget", cursor="*", cursor_max="thing")

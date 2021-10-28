@@ -1,4 +1,3 @@
-"""Tests for filters"""
 import os
 import pytest
 from habanero import Crossref

@@ -1,0 +1,71 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/members/2984/works?offset=0&rows=1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAJ1UW2/aMBT+K5FfRqWY2glJIHvq2j1UQ5vUiyaN5sEkBrwmcWY7tAjx33dOoEBX
+        tml7QcGXc77zXbwm1gnXWpIS/Uh8UklrxVxSt2okrD1p80hLZd3R1lIaq3QNu7zP+uywQ9I1mYlc
+        Oqi23vjEaSdKaqRtS1wKhmEQJT5RTlbwd7Imqi7ksyzwXiGcpI0weHAyCVjA/cgfZpm/3XGqQji4
+        TllE2fCOhWkQp2H8DfrjLoxRNSTlccAGg0E4iuEHMBg5k0bWuaS5bmtHUuaTpp3CSAtpoOKHUuvK
+        Tluz8i5yUchK5VBQWdtivxi+c107WTta6EqousO6+5oAutxoaysBLMGczqjcddTMRGkltLcLbRzF
+        EnBDGpjDlVB4Qj62Rntj8eTdyIZkB0wFbYxCnG8p4YHPuR+yLIPCV1+uUQDWj4IwejjnbMTDYMSD
+        IYvYaBQOBkjLVsPvujU1CAGVVA7dEbSE2id556EPbcK3xPOQsoDy8C7gaRClLPqV+DBmyYgl0J8x
+        ANh0hiDJIKFJFMFZCzByXLpEykCXjme6F6ig09WRSHumevzMuzLAU1Gs3lngbKqNcNooab3e/acz
+        b6wqsFTh9YLfH3w5s/S+CoNCjEU1lcZ5l7pqRL3yxuPLTgaAo54PzALGpS7bjgOObhCtA0k7987V
+        UmIKLurCyCfYm4lKlStYuVV1XgplcGr5o8XpYHWmTJcjMZupUomtUSbZJsMAIRrkeTQc7Dx3wjCN
+        FPWLaTRKBldLUc/bLdeABlSDLav+X12WRnHKklPqDoejONmqa3Nt4CbEfxeW0+2OHbsX2h6p/OLN
+        XeDWr5L3b5mAFqJ0Eso5EIaqAlnDXFAIRtLDs5yH7IzHaTzugy/fc4oE3t+Mod/CuSZ9OH84L577
+        hVZ9beaYqj/F6/r29vOrHlgN8Ne7xxMsshRlN83hyD6V25E2x9H/24DZ7u2kDRhjmy/uE/CXWeFV
+        kAremu5N7bi1Uph8QYESfG7rtiw3m81P4P/NhvAFAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '773'
+      content-type:
+      - application/json
+      date:
+      - Thu, 28 Oct 2021 15:54:39 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

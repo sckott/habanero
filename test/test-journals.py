@@ -1,14 +1,12 @@
-"""Tests for Crossref.journals"""
 import pytest
 import os
 import vcr
-from habanero import exceptions
-from habanero import Crossref
+from habanero import exceptions, Crossref
 
 cr = Crossref()
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals.yaml")
+@pytest.mark.vcr
 def test_journals():
     "journals - basic test"
     res = cr.journals(limit=1)
@@ -17,7 +15,7 @@ def test_journals():
     assert 1 == res["message"]["items-per-page"]
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_query.yaml")
+@pytest.mark.vcr
 def test_journals_query():
     "journals - param: query"
     res = cr.journals(query="ecology", limit=2)
@@ -26,7 +24,7 @@ def test_journals_query():
     assert "journal-list" == res["message-type"]
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_ids.yaml")
+@pytest.mark.vcr
 def test_journals_ids():
     "journals - param: ids"
     res = cr.journals(ids=["1803-2427", "2326-4225"])
@@ -35,7 +33,7 @@ def test_journals_ids():
     assert "journal" == res[0]["message-type"]
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_works.yaml")
+@pytest.mark.vcr
 def test_journals_works():
     "journals - param: works"
     res1 = cr.journals(
@@ -52,43 +50,43 @@ def test_journals_works():
     assert min(scores2) == scores2[-1]
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_filter_fails_noidsworks.yaml")
+@pytest.mark.vcr
 def test_journals_filter_fails_noidsworks():
     with pytest.raises(exceptions.RequestError):
         cr.journals(filter={"from_pub_date": "2014-03-03"})
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_filter_fails_noidsworks.yaml")
+@pytest.mark.vcr
 def test_journals_filter_fails_noidsworks():
     with pytest.raises(exceptions.RequestError):
         cr.journals(filter={"from_pub_date": "2014-03-03"})
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_filter_fails_noids.yaml")
+@pytest.mark.vcr
 def test_journals_filter_fails_noids():
     with pytest.raises(exceptions.RequestError):
         cr.journals(works=True, filter={"has_assertion": True})
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_fail_limit.yaml")
+@pytest.mark.vcr
 def test_journals_fail_limit():
-    with pytest.raises(exceptions.RequestError):
+    with pytest.raises(KeyError):
         cr.journals(limit="things")
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_fail_offset.yaml")
+@pytest.mark.vcr
 def test_journals_fail_offset():
-    with pytest.raises(exceptions.RequestError):
+    with pytest.raises(KeyError):
         cr.journals(offset="things")
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_fail_sort.yaml")
+@pytest.mark.vcr
 def test_journals_fail_sort():
     with pytest.raises(exceptions.RequestError):
         cr.journals(sort="things")
 
 
-@vcr.use_cassette("test/vcr_cassettes/journals_field_queries.yaml")
+@pytest.mark.vcr
 def test_journals_field_queries():
     "journals - param: kwargs - field queries work as expected"
     res = cr.journals(
@@ -104,15 +102,7 @@ def test_journals_field_queries():
     assert str == str(titles[0]).__class__
 
 
-@vcr.use_cassette(
-    "test/vcr_cassettes/journals_field_queries_not_allowed_with_dois.yaml"
-)
+@pytest.mark.vcr
 def test_journals_field_queries_not_allowed_with_dois():
     with pytest.raises(exceptions.RequestError):
         res = cr.journals(ids="2167-8359", query_bibliographic="fish")
-
-
-@vcr.use_cassette("test/vcr_cassettes/journals_query_title_not_allowed_anymore.yaml")
-def test_journals_query_title_not_allowed_anymore():
-    with pytest.raises(exceptions.RequestError):
-        res = cr.journals(query_title="cellular")

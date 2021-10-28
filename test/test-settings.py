@@ -1,8 +1,7 @@
-"""Tests for user agent strings via the ua_string setting"""
-import os
-import vcr
-import yaml
 import pytest
+import vcr
+import os
+import yaml
 from habanero import Crossref
 
 cr_with_ua = Crossref(ua_string="foo bar")
@@ -12,7 +11,7 @@ cr_with_bad_ua = Crossref(ua_string=5)
 vcr_path = "test/vcr_cassettes/setting_ua_string.yaml"
 
 
-@vcr.use_cassette(vcr_path)
+@pytest.mark.vcr(vcr_path)
 def test_ua_string():
     "settings (ua_string) - with ua string, works"
     res = cr_with_ua.works(ids="10.1371/journal.pone.0033693")
@@ -27,7 +26,7 @@ def test_ua_string():
 vcr_noua_path = "test/vcr_cassettes/setting_no_ua_string.yaml"
 
 
-@vcr.use_cassette(vcr_noua_path)
+@pytest.mark.vcr(vcr_noua_path)
 def test_no_ua_string():
     "settings (ua_string) - without ua string, works"
     res = cr_without_ua.works(ids="10.1371/journal.pone.0033693")
@@ -42,7 +41,7 @@ def test_no_ua_string():
 vcr_path_members = "test/vcr_cassettes/setting_ua_string_members.yaml"
 
 
-@vcr.use_cassette(vcr_path_members)
+@pytest.mark.vcr(vcr_path_members)
 def test_ua_string_members():
     "settings (ua_string) - with ua string, members"
     res = cr_with_ua.members(query="ecology", limit=2)
@@ -57,7 +56,7 @@ def test_ua_string_members():
 vcr_path_prefixes = "test/vcr_cassettes/setting_ua_string_prefixes.yaml"
 
 
-@vcr.use_cassette(vcr_path_prefixes)
+@pytest.mark.vcr(vcr_path_prefixes)
 def test_ua_string_prefixes():
     "settings (ua_string) - with ua string, prefixes"
     res = cr_with_ua.prefixes(ids="10.1016", works=True, sample=2)
@@ -74,7 +73,7 @@ vcr_path_registration_agency = (
 )
 
 
-@vcr.use_cassette(vcr_path_registration_agency)
+@pytest.mark.vcr(vcr_path_registration_agency)
 def test_ua_string_registration_agency():
     "settings (ua_string) - with ua string, registration_agency"
     res = cr_with_ua.registration_agency(u"10.1126/science.169.3946.635")

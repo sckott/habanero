@@ -1,18 +1,15 @@
-"""Tests for Crossref.works"""
+import pytest
 import os
 import vcr
 import requests
-import pytest
-from habanero import exceptions
-from habanero import Crossref
-from habanero import RequestError
+from habanero import exceptions, Crossref, RequestError
 
 cr = Crossref()
 
 a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2015,6,9]],"timestamp":1433817308344},"reference-count":0,"publisher":"Public Library of Science (PLoS)","issue":"3","DOI":"10.1371\\/journal.pone.0033693","type":"journal-article","page":"e33693","update-policy":"http:\\/\\/dx.doi.org\\/10.1371\\/journal.pone.corrections_policy","source":"CrossRef","title":["Methylphenidate Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal Ganglia of Mice"],"prefix":"http:\\/\\/id.crossref.org\\/prefix\\/10.1371","volume":"7","author":[{"affiliation":[],"family":"Sadasivan","given":"Shankar"},{"affiliation":[],"family":"Pond","given":"Brooks B."},{"affiliation":[],"family":"Pani","given":"Amar K."},{"affiliation":[],"family":"Qu","given":"Chunxu"},{"affiliation":[],"family":"Jiao","given":"Yun"},{"affiliation":[],"family":"Smeyne","given":"Richard J."}],"member":"http:\\/\\/id.crossref.org\\/member\\/340","container-title":["PLoS ONE"],"deposited":{"date-parts":[[2014,3,5]],"timestamp":1393977600000},"score":1.0,"subtitle":[],"editor":[{"affiliation":[],"family":"Borlongan","given":"Cesario V."}],"issued":{"date-parts":[[2012,3,21]]},"URL":"http:\\/\\/dx.doi.org\\/10.1371\\/journal.pone.0033693","ISSN":["1932-6203"],"subject":["Agricultural and Biological Sciences(all)","Medicine(all)","Biochemistry, Genetics and Molecular Biology(all)"]}}'
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_oneid.yaml")
+@pytest.mark.vcr
 def test_works_with_one_id():
     "works - param: ids, one DOI"
     res = cr.works(ids="10.1371/journal.pone.0033693")
@@ -21,7 +18,7 @@ def test_works_with_one_id():
     assert "work" == res["message-type"]
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_manyids.yaml")
+@pytest.mark.vcr
 def test_works_with_many_ids():
     "works - param: ids, many DOIs"
     dois = [
@@ -46,7 +43,7 @@ def test_works_with_many_ids():
 #     assert res1 == res2
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_no_id_withlimit.yaml")
+@pytest.mark.vcr
 def test_works_no_id_withlimit():
     "works - param: limit, no other inputs"
     res = cr.works(limit=2)
@@ -55,7 +52,7 @@ def test_works_no_id_withlimit():
     assert 2 == len(res["message"]["items"])
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_query.yaml")
+@pytest.mark.vcr
 def test_works_query():
     "works - param: query"
     res = cr.works(query="ecology", limit=2)
@@ -63,7 +60,7 @@ def test_works_query():
     assert 5 == len(res["message"])
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_sample.yaml")
+@pytest.mark.vcr
 def test_works_sample():
     "works - param: sample"
     res = cr.works(sample=2)
@@ -79,7 +76,7 @@ def test_works_sample():
 #     assert 5 == len(res['message'])
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_field_queries.yaml")
+@pytest.mark.vcr
 def test_works_field_queries():
     "works - param: kwargs - field queries work as expected"
     res = cr.works(query="ecology", query_author="carl boettiger")
@@ -89,24 +86,15 @@ def test_works_field_queries():
     assert "Boettiger" in auths
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_query_filters_not_allowed_with_dois.yaml")
+@pytest.mark.vcr
 def test_works_query_filters_not_allowed_with_dois():
     "works - param: kwargs - query filters not allowed on works/DOI/ route"
     with pytest.raises(RequestError):
         cr.works(ids="10.1371/journal.pone.0033693", query_author="carl boettiger")
 
 
-@vcr.use_cassette("test/vcr_cassettes/works_with_select_param.yaml")
+@pytest.mark.vcr
 def test_works_with_select_param():
     "works - param: select"
     res1 = cr.works(query="ecology", select="DOI,title")
-    res2 = cr.works(query="ecology", select=["DOI", "title"])
-    assert res1 == res2
-    assert list(res2["message"]["items"][0].keys()) == ["DOI", "title"]
-
-
-@vcr.use_cassette("test/vcr_cassettes/works_query_title_not_allowed_anymore.yaml")
-def test_works_query_title_not_allowed_anymore():
-    "works - param: kwargs - query_title query not allowed anymore"
-    with pytest.raises(requests.exceptions.HTTPError):
-        cr.works(query_title="cellular")
+    assert list(res1["message"]["items"][0].keys()) == ["DOI", "title"]

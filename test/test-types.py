@@ -1,73 +1,70 @@
-"""Tests for Crossref.types"""
+import pytest
 import os
 import vcr
-import pytest
-
-from habanero import exceptions
-
-from habanero import Crossref
+from habanero import exceptions, Crossref
 
 cr = Crossref()
 
 a = {
-    u"items": [
-        {u"id": u"book-section", u"label": u"Book Section"},
-        {u"id": u"monograph", u"label": u"Monograph"},
-        {u"id": u"report", u"label": u"Report"},
-        {u"id": u"peer-review", u"label": u"Peer Review"},
-        {u"id": u"book-track", u"label": u"Book Track"},
-        {u"id": u"journal-article", u"label": u"Journal Article"},
-        {u"id": u"book-part", u"label": u"Part"},
-        {u"id": u"other", u"label": u"Other"},
-        {u"id": u"book", u"label": u"Book"},
-        {u"id": u"journal-volume", u"label": u"Journal Volume"},
-        {u"id": u"book-set", u"label": u"Book Set"},
-        {u"id": u"reference-entry", u"label": u"Reference Entry"},
-        {u"id": u"proceedings-article", u"label": u"Proceedings Article"},
-        {u"id": u"journal", u"label": u"Journal"},
-        {u"id": u"component", u"label": u"Component"},
-        {u"id": u"book-chapter", u"label": u"Book Chapter"},
-        {u"id": u"report-series", u"label": u"Report Series"},
-        {u"id": u"proceedings", u"label": u"Proceedings"},
-        {u"id": u"standard", u"label": u"Standard"},
-        {u"id": u"reference-book", u"label": u"Reference Book"},
-        {u"id": u"posted-content", u"label": u"Posted Content"},
-        {u"id": u"journal-issue", u"label": u"Journal Issue"},
-        {u"id": u"dissertation", u"label": u"Dissertation"},
-        {u"id": u"dataset", u"label": u"Dataset"},
-        {u"id": u"book-series", u"label": u"Book Series"},
-        {u"id": u"edited-book", u"label": u"Edited Book"},
-        {u"id": u"standard-series", u"label": u"Standard Series"},
+    "items": [
+        {"id": "book-section", "label": "Book Section"},
+        {"id": "monograph", "label": "Monograph"},
+        {"id": "report", "label": "Report"},
+        {"id": "peer-review", "label": "Peer Review"},
+        {"id": "book-track", "label": "Book Track"},
+        {"id": "journal-article", "label": "Journal Article"},
+        {"id": "book-part", "label": "Part"},
+        {"id": "other", "label": "Other"},
+        {"id": "book", "label": "Book"},
+        {"id": "journal-volume", "label": "Journal Volume"},
+        {"id": "book-set", "label": "Book Set"},
+        {"id": "reference-entry", "label": "Reference Entry"},
+        {"id": "proceedings-article", "label": "Proceedings Article"},
+        {"id": "journal", "label": "Journal"},
+        {"id": "component", "label": "Component"},
+        {"id": "book-chapter", "label": "Book Chapter"},
+        {'id': 'proceedings-series', 'label': 'Proceedings Series'},
+        {"id": "report-series", "label": "Report Series"},
+        {"id": "proceedings", "label": "Proceedings"},
+        {"id": "standard", "label": "Standard"},
+        {"id": "reference-book", "label": "Reference Book"},
+        {"id": "posted-content", "label": "Posted Content"},
+        {"id": "journal-issue", "label": "Journal Issue"},
+        {"id": "dissertation", "label": "Dissertation"},
+        {"id": "dataset", "label": "Dataset"},
+        {"id": "book-series", "label": "Book Series"},
+        {"id": "edited-book", "label": "Edited Book"},
+        {"id": "standard-series", "label": "Standard Series"},
     ],
-    u"total-results": 27,
+    "total-results": 28,
 }
 
 
-@vcr.use_cassette("test/vcr_cassettes/types.yaml")
+@pytest.mark.vcr
 def test_types():
     "types - basic test"
     res = cr.types()
-    assert dict == res.__class__
-    assert dict == res["message"].__class__
+    assert isinstance(res, dict)
+    assert isinstance(res["message"], dict)
     assert a == res["message"]
 
 
-@vcr.use_cassette("test/vcr_cassettes/types_query.yaml")
+@pytest.mark.vcr
 def test_types_query():
     "types - param: query - doesn't do anything without works"
     res = cr.types(query="journal")
     assert a == res["message"]
 
 
-@vcr.use_cassette("test/vcr_cassettes/types_ids.yaml")
+@pytest.mark.vcr
 def test_types_ids():
     "types - param: ids"
     res = cr.types(ids="journal")
     assert dict == res.__class__
-    assert {u"id": u"journal", u"label": u"Journal"} == res["message"]
+    assert {"id": "journal", "label": "Journal"} == res["message"]
 
 
-@vcr.use_cassette("test/vcr_cassettes/types_works.yaml")
+@pytest.mark.vcr
 def test_types_works():
     "types - param: works"
     res = cr.types(ids="journal", works=True, limit=2)
@@ -87,15 +84,8 @@ def test_types_works():
 #     assert str == titles[0].__class__
 
 
-@vcr.use_cassette("test/vcr_cassettes/types_filters_not_allowed_with_typeid.yaml")
+@pytest.mark.vcr
 def test_types_query_filters_not_allowed_with_typeid():
     "types - param: kwargs - query filters not allowed on types/type/ route"
     with pytest.raises(exceptions.RequestError):
         cr.types(ids="journal-article", query_bibliographic="gender")
-
-
-@vcr.use_cassette("test/vcr_cassettes/types_query_title_not_allowed_anymore.yaml")
-def test_types_query_title_not_allowed_anymore():
-    "types - param: kwargs - query_title query not allowed anymore"
-    with pytest.raises(exceptions.RequestError):
-        cr.types(works=True, query_title="cellular")
