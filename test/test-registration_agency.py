@@ -1,8 +1,8 @@
 import pytest
 import os
 import vcr
+from requests import HTTPError
 from habanero import Crossref
-from simplejson import JSONDecodeError
 
 cr = Crossref()
 
@@ -26,5 +26,5 @@ def test_registration_agency_unicode():
 @pytest.mark.vcr
 def test_registration_agency_bad_request():
     "registration agency - bad request"
-    with pytest.raises(JSONDecodeError):
+    with pytest.raises(HTTPError):
         cr.registration_agency(5)
