@@ -1,4 +1,5 @@
 import re
+import json
 import requests
 from . import __version__
 
@@ -49,14 +50,11 @@ def check_json(x):
 
 
 def is_json(x):
-    if (
-        re.search("json", x.headers.get("Content-Type")).__class__.__name__
-        == "NoneType"
-    ):
+    try:
+        json.loads(x.content)
+    except ValueError as e: # JSONDecodeError is a subclass of ValueError
         return False
-    else:
-        return True
-
+    return True
 
 def parse_json_err(x):
     return x.json()["message"][0]["message"]
