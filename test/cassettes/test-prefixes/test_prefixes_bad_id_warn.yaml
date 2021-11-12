@@ -13,11 +13,10 @@ interactions:
       X-USER-AGENT:
       - python-requests/2.25.1 habanero/0.7.6
     method: GET
-    uri: https://api.crossref.org/types/journal-article?query.bibliographic=gender
+    uri: https://api.crossref.org/prefixes/10.9999
   response:
     body:
-      string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"parameter-not-allowed","value":"query.*","message":"This
-        route does not support field query parameters"}]}'
+      string: Resource not found.
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -29,11 +28,11 @@ interactions:
       connection:
       - close
       content-length:
-      - '181'
+      - '19'
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 12 Nov 2021 04:16:49 GMT
+      - Fri, 12 Nov 2021 00:34:04 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -51,6 +50,6 @@ interactions:
       x-ratelimit-limit:
       - '50'
     status:
-      code: 400
-      message: Bad Request
+      code: 404
+      message: Not Found
 version: 1

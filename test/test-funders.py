@@ -2,6 +2,7 @@ import pytest
 import os
 import requests
 from habanero import exceptions, Crossref
+from requests.exceptions import HTTPError
 
 cr = Crossref()
 
@@ -89,5 +90,37 @@ def test_funders_field_queries():
 
 @pytest.mark.vcr
 def test_funders_query_filters_not_allowed_with_dois():
-    with pytest.raises(exceptions.RequestError):
+    with pytest.raises(HTTPError):
         cr.funders(ids="10.13039/100000001", query_container_title="engineering")
+
+@pytest.mark.vcr
+def test_funders_bad_id_warn():
+    "funders - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.funders(ids = '10.13039/notarealdoi', warn=True)
+    assert out is None
+
+@pytest.mark.vcr
+def test_funders_mixed_ids_warn():
+    "funders - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.funders(ids = ['10.13039/100000001','10.13039/notarealdoi'], warn=True)
+    assert len(out) == 2
+    assert isinstance(out[0], dict)
+    assert out[1] is None
+
+@pytest.mark.vcr
+def test_funders_bad_id_works_warn():
+    "funders - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.funders(ids = '10.13039/notarealdoi', works=True, warn=True)
+    assert out is None
+
+@pytest.mark.vcr
+def test_funders_mixed_ids_works_warn():
+    "funders - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.funders(ids = ['10.13039/100000001','10.13039/notarealdoi'], works=True, warn=True)
+    assert len(out) == 2
+    assert isinstance(out[0], dict)
+    assert out[1] is None

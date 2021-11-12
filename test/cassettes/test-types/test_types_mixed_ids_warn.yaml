@@ -1,0 +1,109 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/types/journal-article
+  response:
+    body:
+      string: '{"status":"ok","message-type":"type","message-version":"1.0.0","message":{"id":"journal-article","label":"Journal
+        Article"}}'
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-length:
+      - '124'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 12 Nov 2021 04:16:49 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/types/tape
+  response:
+    body:
+      string: Resource not found.
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-length:
+      - '19'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 12 Nov 2021 04:16:50 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 404
+      message: Not Found
+version: 1

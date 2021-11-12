@@ -1,0 +1,125 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/funders/10.13039/100000001
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAIVW32/aMBD+V6I8A3V+OA68tVu7Tdq6aazSpLYPXmLAKtjIcdYhxP++c0Liyxo0
+        HtDH4fvu/Pnsu2NYWW7rKlyE+iWchDtRVXwtpvawF2Bb1aoUBtl/C1NJreCvaEZmxP8TLo7hRgrD
+        TbE5TBUHszNFhJCIZCQHj6+rlSxEoFfBJ1XtRWG1CT4IBT5b4HErYS2bD1bajQjeS9MsPi+K0jSK
+        YNE7oawwwQpYHtSOKyXK4FqawvCVDZaHyopd1fFSFmXgcs8tJM+3wbKQQkGEG81N2QcnuePtwnEr
+        GvLbsi4av4CrMvhYQ6jgu6h0bQpRId9kxPed3u1rl6Vz/aTAtGupugSc/VatpRLCSLXutkjziALd
+        N/0Kvue94HUuAeGkDloV+n2CNgP9bupyLewkuJOKd/GuX2HTwReu4Nh24O73QKIxke40VEFj9CtZ
+        NrLbG6m3ei0L74v1Sce0fbv1lLAEZ3HPlbai2CjHfQBFtSlhM9ap0O6z96Rzlz9k8fPu9vNA4h+I
+        YCAY5JWP5LXUheTbSXAjNvy3BPu2PalCK72TxZvtge7snwr3Z+08u4IZlT0fE/MLh9p3DMU5+LfN
+        obqkLR0h+CB0NVzptI2xtl5MSPMs5mkSGrHf8kKU01+HcPH4PAlftXmZFlAGNlzENEvjeBK6K/7f
+        ailFVQj4qSy8Bo+oeHwhMYTzwVX0OB5cM1xSWAKsp8dscNQez/2bQyjC3jeKfQ5RinGCcIow4kkR
+        T8oQzhFGOVCCMIpFY4RRXIriUhSXorgU8WeIP0OcGeLMEGeGODPEmSFOhjgZypkhfob4GeJniB/V
+        Q4TqIUL14PoCfuM8jhFOEE4RpghnCDOEc4RRLH8ulHr9AXt+FmGcIdzzZ2Te55xlpOdhiT9fRn29
+        Acb2bn3bSf1ljhCOEU4QTnvs2iZ+KnGvecZ3dYrvexKTLKaTUJau6ZP245ytfhGqudbq/AaA8fzi
+        AFrhd6CuOHyratV/19UZPvfvTdU+NrWREGlj7X7xdPV0Vf6ZlVrOtFk/XUVkFiUkmTvkE+nHjm7g
+        aP8YTh/H02DEOIY7beD9sqYWp8Fc0S9sZwbv10wHI36k7f1jjG0b94xNdx6ncA31Anl6Id2mUR5P
+        +EgH6ebjjG2vuhDrchb0YhaxC3sCA9/abvJ7DB+W18H98g7Op/1+WDY/4YC3up2n4JQflLQwti1h
+        BgWv0+kvRPwPXo8KAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '926'
+      content-type:
+      - application/json
+      date:
+      - Sun, 07 Nov 2021 15:36:55 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/funders/10.13039/notarealdoi
+  response:
+    body:
+      string: Resource not found.
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-length:
+      - '19'
+      content-type:
+      - application/json
+      date:
+      - Sun, 07 Nov 2021 15:36:55 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -3,6 +3,7 @@ import os
 import vcr
 import requests
 from habanero import exceptions, Crossref
+from requests.exceptions import HTTPError
 
 cr = Crossref()
 
@@ -51,5 +52,37 @@ def test_members_field_queries():
 @pytest.mark.vcr
 def test_members_query_filters_not_allowed_with_dois():
     "members - param: kwargs - query filters not allowed on works/memberid/ route"
-    with pytest.raises(exceptions.RequestError):
+    with pytest.raises(HTTPError):
         cr.members(ids=98, query_author="carl boettiger")
+
+@pytest.mark.vcr
+def test_members_bad_id_warn():
+    "members - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.members(ids = 121212121212, warn=True)
+    assert out is None
+
+@pytest.mark.vcr
+def test_members_mixed_ids_warn():
+    "members - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.members(ids = [98,121212121212], warn=True)
+    assert len(out) == 2
+    assert isinstance(out[0], dict)
+    assert out[1] is None
+
+@pytest.mark.vcr
+def test_members_bad_id_works_warn():
+    "members - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.members(ids = 121212121212, works=True, warn=True)
+    assert out is None
+
+@pytest.mark.vcr
+def test_members_mixed_ids_works_warn():
+    "members - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.members(ids = [98,121212121212], works=True, warn=True)
+    assert len(out) == 2
+    assert isinstance(out[0], dict)
+    assert out[1] is None

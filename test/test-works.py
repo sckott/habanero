@@ -2,7 +2,8 @@ import pytest
 import os
 import vcr
 import requests
-from habanero import exceptions, Crossref, RequestError
+from habanero import exceptions, Crossref
+from requests.exceptions import HTTPError
 
 cr = Crossref()
 
@@ -89,7 +90,7 @@ def test_works_field_queries():
 @pytest.mark.vcr
 def test_works_query_filters_not_allowed_with_dois():
     "works - param: kwargs - query filters not allowed on works/DOI/ route"
-    with pytest.raises(RequestError):
+    with pytest.raises(HTTPError):
         cr.works(ids="10.1371/journal.pone.0033693", query_author="carl boettiger")
 
 
@@ -98,3 +99,19 @@ def test_works_with_select_param():
     "works - param: select"
     res1 = cr.works(query="ecology", select="DOI,title")
     assert list(res1["message"]["items"][0].keys()) == ["DOI", "title"]
+
+@pytest.mark.vcr
+def test_works_bad_id_warn():
+    "works - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.works(ids="10.1371/notarealdoi", warn=True)
+    assert out is None
+
+@pytest.mark.vcr
+def test_works_mixed_ids_warn():
+    "works - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.works(ids = ['10.1371/journal.pone.0033693','10.1371/notarealdoi'], warn=True)
+    assert len(out) == 2
+    assert isinstance(out[0], dict)
+    assert out[1] is None

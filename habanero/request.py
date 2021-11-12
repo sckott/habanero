@@ -1,6 +1,7 @@
 import requests
 import json
 import re
+import warnings
 
 from .filterhandler import filter_handler
 from .habanero_utils import (
@@ -37,9 +38,10 @@ def request(
     cursor_max=None,
     agency=False,
     progress_bar=False,
+    should_warn=False,
     **kwargs
 ):
-
+    warning_thrown = False
     url = url + path
 
     if cursor_max.__class__.__name__ != "NoneType":
@@ -92,6 +94,7 @@ def request(
             ids = ids.split()
         if ids.__class__.__name__ == "int":
             ids = [ids]
+        # should_warn = len(ids) > 1
         coll = []
         for i in range(len(ids)):
             if works:
@@ -114,7 +117,7 @@ def request(
                     None,
                     progress_bar,
                     **kwargs
-                ).do_request()
+                ).do_request(should_warn = should_warn)
                 coll.append(res)
             else:
                 if agency:
@@ -124,21 +127,40 @@ def request(
 
                 endpt = endpt.strip("/")
 
-                try:
-                    r = requests.get(
-                        endpt, params=payload, headers=make_ua(mailto, ua_string)
-                    )
+                r = requests.get(
+                    endpt, params=payload, headers=make_ua(mailto, ua_string)
+                )
+                if r.status_code > 201 and should_warn:
+                    warning_thrown = True
+                    mssg = '%s on %s: %s' % (r.status_code, ids[i], r.reason)
+                    warnings.warn(mssg)
+                else:
                     r.raise_for_status()
-                except requests.exceptions.HTTPError:
-                    if is_json(r):
-                        raise RequestError(r.status_code, parse_json_err(r))
-                    else:
-                        r.raise_for_status()
-                except requests.exceptions.RequestException as e:
-                    raise e
-                check_json(r)
-                js = r.json()
-                coll.append(js)
+
+                # try:
+                #     r = requests.get(
+                #         endpt, params=payload, headers=make_ua(mailto, ua_string)
+                #     )
+                #     if r.status_code > 201 and should_warn:
+                #         warning_thrown = True
+                #         mssg = '%s on %s: %s' % (r.status_code, ids[i], r.reason)
+                #         warnings.warn(mssg)
+                #     else:
+                #         r.raise_for_status()
+                # except requests.exceptions.HTTPError:
+                #     if is_json(r):
+                #         raise RequestError(r.status_code, parse_json_err(r))
+                #     else:
+                #         r.raise_for_status()
+                # except requests.exceptions.RequestException as e:
+                #     raise e
+
+                if warning_thrown:
+                    coll.append(None)
+                else:
+                    check_json(r)
+                    js = r.json()
+                    coll.append(js)
 
         if len(coll) == 1:
             coll = coll[0]

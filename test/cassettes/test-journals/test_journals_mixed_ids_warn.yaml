@@ -1,0 +1,126 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/journals/1803-2427
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAAK1XTY/bNhD9KwLPlCFS33sLkqJokAQF9rjYAy3TG8ayKJDULtyF/3tHH7ZESnLc
+        JjeaMxwN38w8Pr8jbZhpNHpA8oAwOnKt2Qv3zanmsPdDNqpi5cTwypUWsgIb2QSbYLSgh3dUMm38
+        PqBffOfFwTfiCBaShEmckzRNSJ5jVMimMro9UDRK8cr4Oyngd5xhtGXFYS9KPmyRlGJkpGHlsEHD
+        4AxeirPDTr5VXZTW4m9PvtC64Tv/xJlCD09PNCApDuNn3K4yTMNuRQNMab+XYxr0q/iyogSTpN9L
+        MBnOhtcVua4iTEi/CjDpzwbZZUUozvutHBbPkHDdbEuhv3NIDH3i3p+qORmuvL9lyaqd91hvvH88
+        uZEb1KIDGA+Asj1gIZgBxAHRHiz0EGzyjKZxltAgyfIkjgEjLY6iZEqYU4+8qF7GA1AqjHZcF0rU
+        s1hgUlL5Yufu7ptqB9X2LyUZtktR8Epzez8J8ziMsixMaZCHARlP2zGtC90OoLiG7iu4X4rqYDtn
+        JE+TNIpIlgRREoOzVEV7ASfVpt4xw/1aQs6Cu7nImle+4nsOe4V1HzIFxYk5fGkaaiwEtGsErbFY
+        jWkcO31oNbSYB8ASTVGhoVNGJzf2xtTOr5rjdqFuLhhrZbW7xg7pFHOrjWKF+VlxnEpOgrRwhWke
+        kiCMooxm05g3292tnZ30kmEeBcbSCNMmjT73POfJvfcFBlIXrObeH4Us5csJRlI32x+8aCnr6R19
+        ePz8seMhyLZiLb2hr6yCgT3Cd7D3VVbCSAUVx+14i+LktSP+hb2hM56czq+nvwFfKj54XT7+EcrL
+        1Ws3KfbB8HrwkuD5eWSNgbmBOsryP1DydC77wiTQ1nmcxJSkYT6pS1diywj8OExF1xfDXhCFUZrR
+        hIyt1QW+GroQ6bRYy/aBSIaeW5isobZuwtPGtXlueSAuPlazdilNbgrJxfYMLpNJ14jn8Tn7hVLM
+        mdGuxQoXOmO9xrFT7Odkcx/2MzL7fdjPb3c/9tfR/9/Qz3nHgn6Blkbo54/CWAqHpJZj3YH9nKF/
+        rdFnbHwv2ID2vmQvvRrjtdQCCHyByo1qOB493LfUNs/cV8SD47X+zu1Zqaeet19p9+PLD6Ebc+2t
+        c6LNFJcbhykjipL/BIS18DPxNU9zQW6s5LgO4JIAcIIsqMWbwK5/bF2uuV21pg0cv2VBfAOp1WKu
+        KdVbH7xxUVfLug5zYe56rArfe0Zg7Zpzhdg6wOj/9fj4DaQRIlkQ+jSiKUgmWMd+RPIEgTiBP2bV
+        IExAQA3/LWvQSAY8X1nZtL/H063cGZx4CbpLgaQqbM8h9vn5fP4XATkcMMMOAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '1016'
+      content-type:
+      - application/json
+      date:
+      - Fri, 12 Nov 2021 00:30:47 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/0.7.6
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/0.7.6
+    method: GET
+    uri: https://api.crossref.org/journals/4444-4444
+  response:
+    body:
+      string: Resource not found.
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-length:
+      - '19'
+      content-type:
+      - application/json
+      date:
+      - Fri, 12 Nov 2021 00:30:48 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 404
+      message: Not Found
+version: 1

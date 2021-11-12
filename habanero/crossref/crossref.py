@@ -206,6 +206,7 @@ class Crossref(object):
         cursor=None,
         cursor_max=5000,
         progress_bar=False,
+        warn=False,
         **kwargs
     ):
         """
@@ -247,6 +248,9 @@ class Crossref(object):
             found than this value, you will get only those found.
         :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
             when using cursor parameter). default: False
+        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+            Especially helpful when passing in many DOIs where some may lead to request failures.
+            Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
 
@@ -357,6 +361,7 @@ class Crossref(object):
                 None,
                 None,
                 progress_bar,
+                warn,
                 **kwargs
             )
         else:
@@ -379,7 +384,7 @@ class Crossref(object):
                 None,
                 progress_bar,
                 **kwargs
-            ).do_request()
+            ).do_request(should_warn=warn)
 
     def members(
         self,
@@ -397,6 +402,7 @@ class Crossref(object):
         cursor=None,
         cursor_max=5000,
         progress_bar=False,
+        warn=False,
         **kwargs
     ):
         """
@@ -440,6 +446,9 @@ class Crossref(object):
             found than this value, you will get only those found. Only used if `works=True`
         :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
+        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+            Especially helpful when passing in many DOIs where some may lead to request failures.
+            Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
 
@@ -492,6 +501,7 @@ class Crossref(object):
             cursor_max,
             None,
             progress_bar,
+            warn,
             **kwargs
         )
 
@@ -510,6 +520,7 @@ class Crossref(object):
         cursor=None,
         cursor_max=5000,
         progress_bar=False,
+        warn=False,
         **kwargs
     ):
         """
@@ -550,6 +561,9 @@ class Crossref(object):
             found than this value, you will get only those found. Only used if `works=True`
         :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
+        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+            Especially helpful when passing in many DOIs where some may lead to request failures.
+            Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
 
@@ -605,6 +619,7 @@ class Crossref(object):
             cursor=cursor,
             cursor_max=cursor_max,
             progress_bar=progress_bar,
+            should_warn=warn,
             **kwargs
         )
 
@@ -624,6 +639,7 @@ class Crossref(object):
         cursor=None,
         cursor_max=5000,
         progress_bar=False,
+        warn=False,
         **kwargs
     ):
         """
@@ -670,6 +686,9 @@ class Crossref(object):
             found than this value, you will get only those found. Only used if `works=True`
         :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
+        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+            Especially helpful when passing in many DOIs where some may lead to request failures.
+            Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
 
@@ -701,6 +720,15 @@ class Crossref(object):
 
             # filters (as of this writing, only 1 filter is avail., "location")
             cr.funders(filter = {'location': "Sweden"})
+
+            # warn
+            cr.funders(ids = '10.13039/notarealdoi')
+            cr.funders(ids = '10.13039/notarealdoi', warn=True)
+            cr.funders(ids = '10.13039/notarealdoi', works=True, warn=True)
+            cr.funders(ids = ['10.13039/100000001','10.13039/notarealdoi'], works=True, warn=True)
+            x = cr.funders(ids = ['10.13039/100000001','10.13039/notarealdoi'], warn=True)
+            len(x) # 2
+            [type(w) for w in x] # [dict, NoneType]
         """
         return request(
             self.mailto,
@@ -722,6 +750,7 @@ class Crossref(object):
             cursor_max,
             None,
             progress_bar,
+            warn,
             **kwargs
         )
 
@@ -741,6 +770,7 @@ class Crossref(object):
         cursor=None,
         cursor_max=5000,
         progress_bar=False,
+        warn=False,
         **kwargs
     ):
         """
@@ -782,6 +812,9 @@ class Crossref(object):
             found than this value, you will get only those found. Only used if `works=True`
         :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
+        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+            Especially helpful when passing in many DOIs where some may lead to request failures.
+            Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
 
@@ -843,6 +876,7 @@ class Crossref(object):
             cursor_max,
             None,
             progress_bar,
+            warn,
             **kwargs
         )
 
@@ -862,6 +896,7 @@ class Crossref(object):
         cursor=None,
         cursor_max=5000,
         progress_bar=False,
+        warn=False,
         **kwargs
     ):
         """
@@ -946,6 +981,7 @@ class Crossref(object):
             cursor_max,
             None,
             progress_bar,
+            warn,
             **kwargs
         )
 

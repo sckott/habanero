@@ -1,7 +1,8 @@
 import pytest
 import os
 import vcr
-from habanero import exceptions, Crossref
+from habanero import Crossref
+from requests.exceptions import HTTPError
 
 cr = Crossref()
 
@@ -31,12 +32,13 @@ a = {
         {"id": "posted-content", "label": "Posted Content"},
         {"id": "journal-issue", "label": "Journal Issue"},
         {"id": "dissertation", "label": "Dissertation"},
+        {"id": "grant", "label": "Grant"},
         {"id": "dataset", "label": "Dataset"},
         {"id": "book-series", "label": "Book Series"},
         {"id": "edited-book", "label": "Edited Book"},
         {"id": "standard-series", "label": "Standard Series"},
     ],
-    "total-results": 28,
+    "total-results": 29,
 }
 
 
@@ -87,5 +89,37 @@ def test_types_works():
 @pytest.mark.vcr
 def test_types_query_filters_not_allowed_with_typeid():
     "types - param: kwargs - query filters not allowed on types/type/ route"
-    with pytest.raises(exceptions.RequestError):
+    with pytest.raises(HTTPError):
         cr.types(ids="journal-article", query_bibliographic="gender")
+
+@pytest.mark.vcr
+def test_types_bad_id_warn():
+    "prefixes - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.types(ids = "tape", warn=True)
+    assert out is None
+
+@pytest.mark.vcr
+def test_types_mixed_ids_warn():
+    "prefixes - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.types(ids = ["journal-article","tape"], warn=True)
+    assert len(out) == 2
+    assert isinstance(out[0], dict)
+    assert out[1] is None
+
+@pytest.mark.vcr
+def test_types_bad_id_works_warn():
+    "prefixes - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.types(ids = "tape", works=True, warn=True)
+    assert out is None
+
+@pytest.mark.vcr
+def test_types_mixed_ids_works_warn():
+    "prefixes - param: warn"
+    with pytest.warns(UserWarning):
+        out = cr.types(ids = ["journal-article","tape"], works=True, warn=True)
+    assert len(out) == 2
+    assert isinstance(out[0], dict)
+    assert out[1] is None

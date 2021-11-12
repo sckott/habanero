@@ -3,6 +3,7 @@ import json
 import re
 import math
 from tqdm import tqdm
+import warnings
 
 from .filterhandler import filter_handler
 from .habanero_utils import (
@@ -69,7 +70,7 @@ class Request(object):
         tmpurl = self.url + self.path
         return tmpurl.strip("/")
 
-    def do_request(self):
+    def do_request(self, should_warn = False):
         filt = filter_handler(self.filter)
         if self.select.__class__ is list:
             self.select = ",".join(self.select)
@@ -100,13 +101,15 @@ class Request(object):
         # rename query filters
         payload = rename_query_filters(payload)
 
-        js = self._req(payload=payload)
+        js = self._req(payload=payload, should_warn = should_warn)
+        if js is None:
+            return js
         cu = js["message"].get("next-cursor")
         max_avail = js["message"]["total-results"]
-        res = self._redo_req(js, payload, cu, max_avail)
+        res = self._redo_req(js, payload, cu, max_avail, should_warn)
         return res
 
-    def _redo_req(self, js, payload, cu, max_avail):
+    def _redo_req(self, js, payload, cu, max_avail, should_warn):
         if cu.__class__.__name__ != "NoneType" and self.cursor_max > len(
             js["message"]["items"]
         ):
@@ -129,7 +132,7 @@ class Request(object):
                 and total < max_avail
             ):
                 payload["cursor"] = cu
-                out = self._req(payload=payload)
+                out = self._req(payload=payload, should_warn = should_warn)
                 cu = out["message"].get("next-cursor")
                 res.append(out)
                 total = sum([len(z["message"]["items"]) for z in res])
@@ -141,7 +144,7 @@ class Request(object):
         else:
             return js
 
-    def _req(self, payload):
+    def _req(self, payload, should_warn):
         try:
             r = requests.get(
                 self._url(),
@@ -154,7 +157,12 @@ class Request(object):
                 f = r.json()
                 raise RequestError(r.status_code, f["message"][0]["message"])
             except:
-                r.raise_for_status()
+                if should_warn:
+                    mssg = '%s: %s' % (r.status_code, r.reason)
+                    warnings.warn(mssg)
+                    return None
+                else:
+                    r.raise_for_status()
         except requests.exceptions.RequestException as e:
             print(e)
         check_json(r)
