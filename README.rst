@@ -10,7 +10,6 @@ This is a low level client for working with Crossref's search API. It's been nam
 Other Crossref API clients:
 
 - Ruby: `serrano`, `<https://github.com/sckott/serrano>`__
-- R: `rcrossref`, `<https://github.com/ropensci/rcrossref>`__
 
 Crossref's API issue tracker: https://gitlab.com/crossref/issues
 
@@ -38,7 +37,7 @@ import all):
 
 Note about searching:
 
-You are using the Crossref search API described at https://github.com/CrossRef/rest-api-doc. When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://gitlab.com/crossref/issues/issues/101
+You are using the Crossref search API described at https://api.crossref.org/swagger-ui/index.html. When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://gitlab.com/crossref/issues/-/issues/101
 
 Rate limits
 -----------
