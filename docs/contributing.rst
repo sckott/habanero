@@ -45,11 +45,6 @@ Writing tests
 We're using `pytest` for testing. See the `pytest docs`_ for
 help on contributing to or writing tests.
 
-The Makefile has tasks for testing under python 2 and 3
-
-.. code-block:: shell
-
-    make test
-    make test3
+The Makefile has a task for testing with vcr (using fixtures: `make test`) and without (`make test_no_vcr`)
 
 .. _pytest docs: https://docs.pytest.org/en/stable/

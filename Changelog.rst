@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.0 (2021-11-12)
+--------------------
+* fixes to docs/contributing.rst and package level docs for habanero (#89) (#90) thanks @Daniel-Mietchen !
+* fix limit and offset internal handling for `request` and `Request` (#91) thanks @Bubblbu !
+* `content_negotation` throws warning now on 4xx/5xx status code to allow for bad DOIs alongside good DOIS (#92)
+* add example to README for querying `works` by DOI (#93)
+* fail better when json is not returned; try json.loads and catch ValueError (JSONDecodeError is a subclass of ValueError) (#97)
+* funders, journals, members, prefixes, types and works gain `warn` parameter to optionally throw a warning instead of error if a DOI is not found - not found DOI with `warn=True` returns `None` (#69)
+
 0.7.4 (2020-05-29)
 --------------------
 * `query.title` filter is deprecated, use `query.bibliographic` instead (#85)

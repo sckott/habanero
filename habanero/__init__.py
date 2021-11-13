@@ -39,7 +39,7 @@ Usage::
 """
 
 __title__ = "habanero"
-__version__ = "0.7.6"
+__version__ = "1.0.0"
 __author__ = "Scott Chamberlain"
 __license__ = "MIT"
 
