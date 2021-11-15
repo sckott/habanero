@@ -100,6 +100,7 @@ def test_works_with_select_param():
     res1 = cr.works(query="ecology", select="DOI,title")
     assert list(res1["message"]["items"][0].keys()) == ["DOI", "title"]
 
+
 @pytest.mark.vcr
 def test_works_bad_id_warn():
     "works - param: warn"
@@ -107,11 +108,14 @@ def test_works_bad_id_warn():
         out = cr.works(ids="10.1371/notarealdoi", warn=True)
     assert out is None
 
+
 @pytest.mark.vcr
 def test_works_mixed_ids_warn():
     "works - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.works(ids = ['10.1371/journal.pone.0033693','10.1371/notarealdoi'], warn=True)
+        out = cr.works(
+            ids=["10.1371/journal.pone.0033693", "10.1371/notarealdoi"], warn=True
+        )
     assert len(out) == 2
     assert isinstance(out[0], dict)
     assert out[1] is None

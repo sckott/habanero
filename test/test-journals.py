@@ -108,6 +108,7 @@ def test_journals_field_queries_not_allowed_with_dois():
     with pytest.raises(HTTPError):
         res = cr.journals(ids="2167-8359", query_bibliographic="fish")
 
+
 @pytest.mark.vcr
 def test_journals_bad_id_warn():
     "journals - param: warn"
@@ -115,27 +116,30 @@ def test_journals_bad_id_warn():
         out = cr.journals(ids="4444-4444", warn=True)
     assert out is None
 
+
 @pytest.mark.vcr
 def test_journals_mixed_ids_warn():
     "journals - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.journals(ids = ["1803-2427","4444-4444"], warn=True)
+        out = cr.journals(ids=["1803-2427", "4444-4444"], warn=True)
     assert len(out) == 2
     assert isinstance(out[0], dict)
     assert out[1] is None
+
 
 @pytest.mark.vcr
 def test_journals_bad_id_works_warn():
     "journals - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.journals(ids = "4444-4444", works=True, warn=True)
+        out = cr.journals(ids="4444-4444", works=True, warn=True)
     assert out is None
+
 
 @pytest.mark.vcr
 def test_journals_mixed_ids_works_warn():
     "journals - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.journals(ids = ["1803-2427","4444-4444"], works=True, warn=True)
+        out = cr.journals(ids=["1803-2427", "4444-4444"], works=True, warn=True)
     assert len(out) == 2
     assert isinstance(out[0], dict)
     assert out[1] is None

@@ -53,34 +53,38 @@ def test_prefixes_query_filters_not_allowed_with_dois():
     with pytest.raises(HTTPError):
         cr.prefixes(ids="10.1371", query_editor="cooper")
 
+
 @pytest.mark.vcr
 def test_prefixes_bad_id_warn():
     "prefixes - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.prefixes(ids = "10.9999", warn=True)
+        out = cr.prefixes(ids="10.9999", warn=True)
     assert out is None
+
 
 @pytest.mark.vcr
 def test_prefixes_mixed_ids_warn():
     "prefixes - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.prefixes(ids = ["10.1371","10.9999"], warn=True)
+        out = cr.prefixes(ids=["10.1371", "10.9999"], warn=True)
     assert len(out) == 2
     assert isinstance(out[0], dict)
     assert out[1] is None
+
 
 @pytest.mark.vcr
 def test_prefixes_bad_id_works_warn():
     "prefixes - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.prefixes(ids = "10.9999", works=True, warn=True)
+        out = cr.prefixes(ids="10.9999", works=True, warn=True)
     assert out is None
+
 
 @pytest.mark.vcr
 def test_prefixes_mixed_ids_works_warn():
     "prefixes - param: warn"
     with pytest.warns(UserWarning):
-        out = cr.prefixes(ids = ["10.1371","10.9999"], works=True, warn=True)
+        out = cr.prefixes(ids=["10.1371", "10.9999"], works=True, warn=True)
     assert len(out) == 2
     assert isinstance(out[0], dict)
     assert out[1] is None
