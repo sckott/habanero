@@ -4,7 +4,7 @@ Contributor Code of Conduct
 ===========================
 
 Our Pledge
-==========
+----------
 
 We as members, contributors, and leaders pledge to make participation in our
 community a harassment-free experience for everyone, regardless of age, body
@@ -17,7 +17,7 @@ We pledge to act and interact in ways that contribute to an open, welcoming,
 diverse, inclusive, and healthy community.
 
 Our Standards
-=============
+-------------
 
 Examples of behavior that contributes to a positive environment for our
 community include:
@@ -42,7 +42,7 @@ Examples of unacceptable behavior include:
   professional setting
 
 Enforcement Responsibilities
-============================
+----------------------------
 
 Community leaders are responsible for clarifying and enforcing our standards of
 acceptable behavior and will take appropriate and fair corrective action in
@@ -55,7 +55,7 @@ not aligned to this Code of Conduct, and will communicate reasons for moderation
 decisions when appropriate.
 
 Scope
-=====
+-----
 
 This Code of Conduct applies within all community spaces, and also applies when
 an individual is officially representing the community in public spaces.
@@ -64,7 +64,7 @@ posting via an official social media account, or acting as an appointed
 representative at an online or offline event.
 
 Enforcement
-===========
+-----------
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at myrmecocystus@gmail.com.
@@ -74,7 +74,7 @@ All community leaders are obligated to respect the privacy and security of the
 reporter of any incident.
 
 Enforcement Guidelines
-======================
+----------------------
 
 Community leaders will follow these Community Impact Guidelines in determining
 the consequences for any action they deem in violation of this Code of Conduct:
@@ -121,7 +121,7 @@ individual, or aggression toward or disparagement of classes of individuals.
 community.
 
 Attribution
-===========
+-----------
 
 This Code of Conduct is adapted from the `Contributor Covenant <https://www.contributor-covenant.org>`_,
 version 2.1, available at `<https://www.contributor-covenant.org/version/2/1/code_of_conduct.html>`__.
