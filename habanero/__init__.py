@@ -39,11 +39,11 @@ Usage::
 """
 
 __title__ = "habanero"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Scott Chamberlain"
 __license__ = "MIT"
 
-from .crossref import Crossref
+from .crossref import Crossref, CrossrefWorks
 from .cn import content_negotiation, csl_styles
 from .counts import citation_count
 from .exceptions import *
