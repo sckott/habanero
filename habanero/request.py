@@ -117,7 +117,7 @@ def request(
                     None,
                     progress_bar,
                     **kwargs
-                ).do_request(should_warn = should_warn)
+                ).do_request(should_warn=should_warn)
                 coll.append(res)
             else:
                 if agency:
@@ -132,7 +132,7 @@ def request(
                 )
                 if r.status_code > 201 and should_warn:
                     warning_thrown = True
-                    mssg = '%s on %s: %s' % (r.status_code, ids[i], r.reason)
+                    mssg = "%s on %s: %s" % (r.status_code, ids[i], r.reason)
                     warnings.warn(mssg)
                 else:
                     r.raise_for_status()

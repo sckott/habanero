@@ -70,7 +70,7 @@ class Request(object):
         tmpurl = self.url + self.path
         return tmpurl.strip("/")
 
-    def do_request(self, should_warn = False):
+    def do_request(self, should_warn=False):
         filt = filter_handler(self.filter)
         if self.select.__class__ is list:
             self.select = ",".join(self.select)
@@ -101,7 +101,7 @@ class Request(object):
         # rename query filters
         payload = rename_query_filters(payload)
 
-        js = self._req(payload=payload, should_warn = should_warn)
+        js = self._req(payload=payload, should_warn=should_warn)
         if js is None:
             return js
         cu = js["message"].get("next-cursor")
@@ -132,7 +132,7 @@ class Request(object):
                 and total < max_avail
             ):
                 payload["cursor"] = cu
-                out = self._req(payload=payload, should_warn = should_warn)
+                out = self._req(payload=payload, should_warn=should_warn)
                 cu = out["message"].get("next-cursor")
                 res.append(out)
                 total = sum([len(z["message"]["items"]) for z in res])
@@ -158,7 +158,7 @@ class Request(object):
                 raise RequestError(r.status_code, f["message"][0]["message"])
             except:
                 if should_warn:
-                    mssg = '%s: %s' % (r.status_code, r.reason)
+                    mssg = "%s: %s" % (r.status_code, r.reason)
                     warnings.warn(mssg)
                     return None
                 else:

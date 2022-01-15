@@ -52,9 +52,10 @@ def check_json(x):
 def is_json(x):
     try:
         json.loads(x.content)
-    except ValueError as e: # JSONDecodeError is a subclass of ValueError
+    except ValueError as e:  # JSONDecodeError is a subclass of ValueError
         return False
     return True
+
 
 def parse_json_err(x):
     return x.json()["message"][0]["message"]
