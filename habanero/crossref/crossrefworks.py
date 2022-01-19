@@ -36,8 +36,8 @@ class CrossrefWorks(object):
 
     def __init__(self, input):
         super(CrossrefWorks, self).__init__()
-        self._input = input
-        self.works = self.works_handler(self._input)
+        self.__input = input
+        self.works = self.works_handler(self.__input)
         keys = list(self.works[0].keys())
         for key in keys:
             values = [work.get(key, None) for work in self.works]
