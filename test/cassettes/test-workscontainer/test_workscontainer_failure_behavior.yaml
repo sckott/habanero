@@ -1,0 +1,151 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/1.0.1
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/1.0.1
+    method: GET
+    uri: https://api.crossref.org/prefixes/10.1016
+  response:
+    body:
+      string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
+        BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Thu, 27 Jan 2022 21:41:17 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.25.1 habanero/1.0.1
+      X-USER-AGENT:
+      - python-requests/2.25.1 habanero/1.0.1
+    method: GET
+    uri: https://api.crossref.org/members/98
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/+1aTW/jyBH9KwJPCdAy+rubugWbQ4IsgkU+kMPAB1qix4xlUiCpmTUG/u95zWqK
+        IinamoEXOayBGUyJLFZXv6quV90935Kmzdpjk2yS6jFhyVPeNNnnfN0+H3I8e8qf7vL67PmXvG6K
+        qsQrccNv+PAm2XxL9lnTrsneevuQbx/XbfGEN8JqJVUqjdHSseRQF09Z/bwus/Ay+UtR7rKvxern
+        4qlo8x1Mbqtj2TbB4vZY13nZrndVgd8mVYKz5C7bPt4X+zw+lVopBbNt1Wb7+ExxabV7gW6dZ4+7
+        6mvZmQsv13fP66Jpjvlu/ZxndbL59ElyKZgSqbS3DD+EZjKVUtMPxWBKqO6H5EwaLlJ6I5lUKjX0
+        wzAphYg/PJOi/0akTKRcxR+WCe+9oB+OCcdlfCOYkI7HN5xZz2Un85Rp4cgw90xJT15yDG9V1BFM
+        ak5uyeCWjfouuBj1LeQ4KY4Zckv63MA/7UhWwb2owyF3iIg09UxozUnGfLRKScZ0pJEkw46UUQcz
+        AwIka8hckQz73DqSJUs7NyEKlvL4JWdOk3GfMsvJtvfM+PjUMe3IgrdMa7LgFdOKxvCGqZTc9hpi
+        tBACHD/jEKMusPJkwaWA0JMYwkcWHCYS/XWYqyVjTg8iZq2jLgCLeDkZ5t+JFhYEuW6BnKDRLACN
+        +FjYFZ2uBw5CEA4OIo+eBdA0KSiWxq8U81EyzEX7mhEyHvg7S5JkLjoimY1vDbPkpwTEZBkI22hP
+        MKtIz58ky2y0gszk9CztJaBIUoolYcgXPkgiSh7AG0JYIp7kAbIsSsh5QxNGdpLkkTuGvML6MuQL
+        0oIyDonKTPSFs5g0UrMYRTFIopcU9CiaWIgUNt+lDn0LiaIqeglLtX8mDdYhvXW9xAfJniR1krBy
+        CRdUvbhipD1JyEjyKqzq6J9kimKEvCIpRc1RhJBCOkc00ih5ZGV8hnUfVwBWtCKfDaToM8YgXwwK
+        GnlgUM08zdJECYWASRrXoF7QuFr0kjpJBiuHomVEL2nfS0pFyXfLiiQdpdSEqkRfpL2kQv2kZ/iW
+        fFbpSbK9pLFayHuto+TDIqVnCssqeh+WKOnxXlIuSh4rPC5EHdYvSbKXDNZpxM8H6fYlcFZ+X/ya
+        g0U+JYLfOFQFEBUkLFjeS8aQZDSXJDkpop7lVpOkuRUkKS90chv4DrQaOTS7B7UVWQuSBYkS/SUb
+        foNaazhKntISECFgSQO+3Gd10T4T2Rbl5+EDsDNLdnmzrYvDzBZe1VW9LnbTp/fHcgeCX/cMGx5r
+        kDYGNSIwKhI+2RfbvGzysRZquPKgeSEsCMcOps4GsAbFBdUHPCdRIjGF0WRH5kDgBmRvnDNChNnW
+        eVMd622+3hfl40TZCoPFa5CyTnhkSFLV2zC50TS0M4GulfZwEgsoOR52WZuvDxUmVORjKMDNHrFD
+        yQZVBB9g85CXa2RBDqXtaPbiHNDzMfnJk1EgnUbKOstRSKRYCOQY20DujistEAsfsLjgBb/x0lgL
+        RkL/EWCwkwSYeJZ9zerdujyGBm/8UmmLdQbu9+g1FKhqBtXIlEBaaofgekTVo0gNGTJOx/GIZ5AY
+        B0JExNEzSVR6CdW7pq2zbTsJNJoVp7HgsNAlnyfFCGWvFPdcg9S9DeEeTJ6reWONsJbDf8zazsM8
+        nsKlF11IUTQ8ks8gr7k41QtUi2/DN+svRVPcIeHb59BuYyCUgUkT/Ic/Z23W5G2z+mvZ5nXZrY1s
+        /0dofsn2x6A6lJ/D8Q5Qn3mbbNr6mL+w7x30Xw/56p+IbNkW98V29Z+q3u8mQ8Y6915DDs3+aIyu
+        gr7btEYQYoIPFZbZ/nn1j7xB5799WP09b79W9eNkqrF8v5sbP1VlVF/9kh2Q+6uiJLi3+TSwxBfv
+        NvQQ1GwyUuSj9xrpl2CneUDpWv1U1Yeq7lCHA2HT2Cv9aYsBmlVbnSIwcSpS42/u1HOd/zqFviPj
+        5bFB08Uu2aAnxkbzMS+7TuCBBkpCyaN8vu13r3EHDULf78M/T1VZfa6zw0OyQZX5L8oWcnKd1W2x
+        DcUN1Y+Hin1XYRu+QR+NClJt83wH55tBzaA77z+GGjaPYbynQ1V2pUih+TzZ7ja52B6/DDvmKxyR
+        2KKb73PkfKRTVfw2N91t319ehn7nFYyuPkw4byF6Zusr/YiD44+em/o+6CzO5y1Q/HWBmi/R57ip
+        ir8mpHka8Jyy4sNznu6dHvNQxz8vF+L1w0Ch9eVGOK2s8dZh/zLGLQ07N8Gd4xpsa+05jMaEtgAN
+        lbMKhOzHqGLHj4bAKGy0MTa2ohOQQcccBnWKhlwrbJLOMdfo3BU2+Oj+FNhgMQIpenMOZpfYCTup
+        5IWAoNdDp6ewCZLSq65vejM+6MlSsLkFdgKuGHcpYGjFLEANe3vMAjuI74gfLauP7L6MzsVS8wHW
+        q6XgA6AlgM6I8fcNkedGnv1Vb7JLJPTfN2pLibXcT33g9Zs3LUpq7LUlmBckHc6Fxk0LD0dL2odz
+        G2X0qGnRGrtzrZ3SVoG/Z02LciYV4HUfGh85a1okuB6NkrVoS0Roec6bFmOURKcBt7SQr3Yt2vlw
+        IOG9VOEy6ELXgubHuXDEKyT6MnlNgNCn4U9oylJlfFjfF5oWqzzm6NGxKUxVfzQtH03L/7EUfDDM
+        6wzz2j76x6vn7A5hXD3nh6EnSOen1gPCYo7w9ER0BPj8HuAi/vMz4/Dx/Kz4il3d/DT/QoGcnRhf
+        HS7E636ffW66/2KQH6qmaFEK5ufN4SCJDRrTu4Hx65n6wmXJRGv5qH6i+Pqtw3Tsy0f3E62l4/ip
+        2vTu6T7bN6PRKNPfgGDJ/OzmaeblhduTBRcHhZmPF24oJkYuXJS9Cuui2vLV0xuKSxBcvhicTvEK
+        Q4u3cq8NuAzq7N5uIbRXZ/+S36/enS6FcaSANb+vtl0qJpvk56rcVSVb/bsMp8Crv8HernqKJ9JN
+        OCqeX3xcceXz5gXND111XH0xsXSN8A6H/tce0d++vPwPf28atqMmAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '2264'
+      content-type:
+      - application/json
+      date:
+      - Thu, 27 Jan 2022 21:41:18 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

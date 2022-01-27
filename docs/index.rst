@@ -60,6 +60,7 @@ Modules
 
    modules/intro
    modules/crossref
+   modules/workscontainer
    modules/filters
    modules/counts
    modules/cn
@@ -69,6 +70,9 @@ Modules
 
 :doc:`modules/crossref`
     The crossref module: core Crossref APIs.
+
+:doc:`modules/workscontainer`
+    The WorksContainer class: working with works :p
 
 :doc:`modules/filters`
     The filters module: Filters details for use with Crossref module.
