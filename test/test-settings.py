@@ -76,7 +76,7 @@ vcr_path_registration_agency = (
 @pytest.mark.vcr(vcr_path_registration_agency)
 def test_ua_string_registration_agency():
     "settings (ua_string) - with ua string, registration_agency"
-    res = cr_with_ua.registration_agency(u"10.1126/science.169.3946.635")
+    res = cr_with_ua.registration_agency("10.1126/science.169.3946.635")
     x = open(vcr_path_registration_agency, "r").read()
     xy = yaml.safe_load(x)
     heads = xy["interactions"][0]["request"]["headers"]
