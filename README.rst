@@ -127,8 +127,8 @@ Meta
 * Please note that this project is released with a `Contributor Code of Conduct <https://github.com/sckott/habanero/blob/main/CODE_OF_CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
 * License: MIT; see `LICENSE file <https://github.com/sckott/habanero/blob/main/LICENSE>`__
 
-.. |pypi| image:: https://img.shields.io/pypi/v/habanero.svg
-   :target: https://pypi.python.org/pypi/habanero
+.. |pypi| image:: https://badge.fury.io/py/habanero.svg
+    :target: https://badge.fury.io/py/habanero
 
 .. |docs| image:: https://readthedocs.org/projects/habanero/badge/?version=latest
    :target: http://habanero.rtfd.org/
