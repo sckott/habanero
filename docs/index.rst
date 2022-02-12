@@ -133,5 +133,5 @@ Indices and tables
 .. |ghactions| image:: https://github.com/sckott/habanero/workflows/Python/badge.svg
    :target: https://github.com/sckott/habanero/actions?query=workflow%3APython
 
-.. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/master/graph/badge.svg?token=6RrgNAuQmR
+.. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/main/graph/badge.svg?token=6RrgNAuQmR
    :target: https://codecov.io/gh/sckott/habanero

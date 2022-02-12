@@ -124,8 +124,8 @@ Content negotiation - get citations in many formats
 Meta
 ====
 
-* Please note that this project is released with a `Contributor Code of Conduct <https://github.com/sckott/habanero/blob/master/CODE_OF_CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
-* License: MIT; see `LICENSE file <https://github.com/sckott/habanero/blob/master/LICENSE>`__
+* Please note that this project is released with a `Contributor Code of Conduct <https://github.com/sckott/habanero/blob/main/CODE_OF_CONDUCT.md>`__. By participating in this project you agree to abide by its terms.
+* License: MIT; see `LICENSE file <https://github.com/sckott/habanero/blob/main/LICENSE>`__
 
 .. |pypi| image:: https://img.shields.io/pypi/v/habanero.svg
    :target: https://pypi.python.org/pypi/habanero
@@ -136,7 +136,7 @@ Meta
 .. |ghactions| image:: https://github.com/sckott/habanero/workflows/Python/badge.svg
    :target: https://github.com/sckott/habanero/actions?query=workflow%3APython
 
-.. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/master/graph/badge.svg?token=6RrgNAuQmR
+.. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/main/graph/badge.svg?token=6RrgNAuQmR
    :target: https://codecov.io/gh/sckott/habanero
 
 .. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
