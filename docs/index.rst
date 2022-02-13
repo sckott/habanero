@@ -124,8 +124,8 @@ Indices and tables
 * :ref:`search`
 
 
-.. |pypi| image:: https://img.shields.io/pypi/v/habanero.svg
-   :target: https://pypi.python.org/pypi/habanero
+.. |pypi| image:: https://badge.fury.io/py/habanero.svg
+    :target: https://badge.fury.io/py/habanero
 
 .. |docs| image:: https://readthedocs.org/projects/habanero/badge/?version=latest
    :target: http://habanero.rtfd.org/

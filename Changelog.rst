@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.1 (2022-02-12)
+--------------------
+* Added class `WorksContainer` to make handling works data easier (#101)
+* changed master branch to main in github development repository  (#103)
+
 1.0 (2021-11-12)
 --------------------
 * fixes to docs/contributing.rst and package level docs for habanero (#89) (#90) thanks @Daniel-Mietchen !
