@@ -29,7 +29,7 @@ setup(
     author_email="myrmecocystus@gmail.com",
     url="https://github.com/sckott/habanero",
     license="MIT",
-    packages=find_packages(exclude=["test-*"]),
+    packages=find_packages(exclude=["test*"]),
     install_requires=["requests>=2.7.0", "tqdm"],
     classifiers=[
         "Development Status :: 5 - Production/Stable",
