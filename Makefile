@@ -2,11 +2,8 @@ all: build install
 
 .PHONY: build install test docs distclean dist upload
 
-build:
-	python3 setup.py build
-
 install:
-	python3 setup.py install
+	pip install .
 
 test:
 	pytest --record-mode=once --cov-report term --cov=habanero test/
@@ -17,14 +14,15 @@ test_no_vcr:
 docs:
 	cd docs;\
 	make html
-	# open _build/html/index.html
 
-distclean:
-	rm dist/*
+opendocs:
+	open docs/_build/html/index.html
+
+clean:
+	rm -rf dist/* build/*
 
 dist:
-	python3 setup.py sdist
-	python3 setup.py bdist_wheel --universal
+	python3 -m build --sdist --wheel
 
 register:
 	python3 setup.py register
