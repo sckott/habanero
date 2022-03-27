@@ -1,10 +1,11 @@
 Changelog
 =========
 
-1.1 (2022-02-12)
+1.2 (2022-03-27)
 --------------------
 * Added class `WorksContainer` to make handling works data easier (#101)
-* changed master branch to main in github development repository  (#103)
+* changed master branch to main in github development repository (#103)
+* exclude tests from install (#105)
 
 1.0 (2021-11-12)
 --------------------
