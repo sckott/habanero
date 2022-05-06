@@ -51,6 +51,20 @@ def test_workscontainer_with_many():
             assert isinstance(getattr(x, w), list)
             # print(isinstance(getattr(x, w), list))
 
+@pytest.mark.vcr
+def test_workscontainer_with_cursor():
+    "WorksContainer: with cursor"
+    res = cr.members(ids=98, works=True, limit=5, cursor='*', cursor_max=20)
+    x = WorksContainer(res)
+    assert isinstance(x, WorksContainer)
+    assert isinstance(x.works, list)
+    assert len(x.works) == 20
+    for w in dir(x):
+        # print(f"{w} {not w.startswith('__')}")
+        if not w.startswith("_") and w != "works_handler":
+            assert isinstance(getattr(x, w), list)
+            # print(isinstance(getattr(x, w), list))
+
 
 @pytest.mark.vcr
 def test_workscontainer_failure_behavior():

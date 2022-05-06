@@ -53,19 +53,29 @@ class WorksContainer(object):
         )
 
     def works_handler(self, x):
+        message_type = (
+            [w["message-type"] for w in x][0]
+            if isinstance(x, list)
+            else x["message-type"]
+        )
+
         if isinstance(x, list):
-            x = list(filter(lambda w: w["message-type"] == "work", x))
-            return [w["message"] for w in x]
+            if x[0]["message-type"] == "work":
+                x = list(filter(lambda w: w["message-type"] == "work", x))
+                return [w["message"] for w in x]
+            elif x[0]["message-type"] == "work-list":
+                x = list(filter(lambda w: w["message-type"] == "work-list", x))
+                items = [w["message"]["items"] for w in x]
+                return [z for sublist in items for z in sublist]
+            else:
+                raise TypeError(
+                    f"can only handle Crossref message-type 'work' & 'work-list', got: '{message_type}'"
+                )
         elif isinstance(x, dict) and x["message-type"] == "work-list":
             return x["message"]["items"]
         elif isinstance(x, dict) and x["message-type"] == "work":
             return [x["message"]]
         else:
-            message_type = (
-                [w["message-type"] for w in x][0]
-                if isinstance(x, list)
-                else x["message-type"]
-            )
             raise TypeError(
                 f"can only handle Crossref message-type 'work' & 'work-list', got: '{message_type}'"
             )
