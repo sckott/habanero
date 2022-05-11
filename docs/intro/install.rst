@@ -11,10 +11,10 @@ Stable from pypi
 
 .. code-block:: console
 
-    pip (or pip3) install habanero
+    pip install habanero
 
 Development version
 
 .. code-block:: console
 
-    pip (or pip3) install git+git://github.com/sckott/habanero.git#egg=habanero
+    pip install git+https://github.com/sckott/habanero.git#egg=habanero

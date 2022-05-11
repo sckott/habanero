@@ -66,11 +66,14 @@ Dev version
 
 .. code-block:: console
 
-    pip (or pip3) install git+git://github.com/sckott/habanero.git#egg=habanero
+    pip install git+https://github.com/sckott/habanero.git#egg=habanero
 
-    # OR
 
-    git clone git@github.com:sckott/habanero.git
+Or build it yourself locally
+
+.. code-block:: console
+
+    git clone https://github.com/sckott/habanero.git
     cd habanero
     make install
 
