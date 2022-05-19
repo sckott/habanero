@@ -1,4 +1,5 @@
 import sys
+from typing import Union
 import requests
 from ..request import request
 from ..request_class import Request
@@ -193,8 +194,8 @@ class Crossref(object):
 
     def works(
         self,
-        ids=None,
-        query=None,
+        ids: Union[list[str], str] = None,
+        query: str = None,
         filter=None,
         offset=None,
         limit=None,
