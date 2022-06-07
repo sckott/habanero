@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.2 (2022-05-19)
+--------------------
+* Fixed class `WorksContainer` to work with cursor output of works results (e.g., `cr.works(query, cursor="*")`) (#106) thanks @IvanSterligov
+
 1.2 (2022-03-27)
 --------------------
 * Added class `WorksContainer` to make handling works data easier (#101)
