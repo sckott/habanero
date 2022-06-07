@@ -38,6 +38,7 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.doctest",
     "sphinx.ext.inheritance_diagram",
+    "sphinx_autodoc_typehints",
 ]
 
 issuetracker = "github"
@@ -45,6 +46,8 @@ issuetracker_project = "sckott/habanero"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
+
+typehints_use_rtype = True
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -76,7 +79,7 @@ release = version
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "en"
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:

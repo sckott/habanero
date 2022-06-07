@@ -1,6 +1,10 @@
-class WorksContainer(object):
+from typing import Union
+
+class WorksContainer:
     """
     WorksContainer: Class for working with works results
+
+    :rtype: list
 
     Usage::
 
@@ -35,7 +39,7 @@ class WorksContainer(object):
             x.abstract
     """
 
-    def __init__(self, input):
+    def __init__(self, input) -> None:
         super(WorksContainer, self).__init__()
         if not input:
             raise ValueError("input len must be > zero")
@@ -46,13 +50,13 @@ class WorksContainer(object):
             values = [work.get(key, None) for work in self.works]
             setattr(self, key.lower().replace("-", "_"), values)
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return """<%s: No. works: %s>""" % (
             type(self).__name__,
             len(self.works),
         )
 
-    def works_handler(self, x):
+    def works_handler(self, x: Union[list, dict]) -> list:
         message_type = (
             [w["message-type"] for w in x][0]
             if isinstance(x, list)

@@ -1,17 +1,21 @@
+from typing import Any
 import requests
 from xml.dom import minidom
 from ..habanero_utils import make_ua
 
 
 def citation_count(
-    doi, url="http://www.crossref.org/openurl/", key="cboettig@ropensci.org", **kwargs
-):
+    doi: str,
+    url: str = "http://www.crossref.org/openurl/",
+    key: str = "cboettig@ropensci.org",
+    **kwargs
+) -> int:
     """
     Get a citation count with a DOI
 
-    :param doi: [String] DOI, digital object identifier
-    :param url: [String] the API url for the function (should be left to default)
-    :param keyc: [String] your API key
+    :param doi: DOI, digital object identifier
+    :param url: the API url for the function (should be left to default)
+    :param key: your API key
 
     See http://labs.crossref.org/openurl/ for more info on this Crossref API service.
 
@@ -25,8 +29,8 @@ def citation_count(
         counts.citation_count(doi = "10.1016/j.fbr.2012")
     """
     args = {"id": "doi:" + doi, "pid": key, "noredirect": True}
-    args = dict((k, v) for k, v in args.items() if v)
-    res = requests.get(url, params=args, headers=make_ua(), **kwargs)
+    new_args: dict[str, Any] = dict((k, v) for k, v in args.items() if v)
+    res = requests.get(url, params=new_args, headers=make_ua(), **kwargs)
     xmldoc = minidom.parseString(res.content)
     val = xmldoc.getElementsByTagName("query")[0].attributes["fl_count"].value
     return int(str(val))

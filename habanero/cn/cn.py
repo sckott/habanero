@@ -3,26 +3,30 @@ from .constants import *
 
 
 def content_negotiation(
-    ids, format="bibtex", style="apa", locale="en-US", url=None, **kwargs
-):
+    ids: str,
+    format: str = "bibtex",
+    style: str = "apa",
+    locale: str = "en-US",
+    url: str = None,
+    **kwargs
+) -> str:
     """
     Get citations in various formats from CrossRef
 
     Supports DOIs from Crossref, Datacite and Medra
 
-    :param ids: [str] required. a single DOI or many DOIs, each a string. If many
+    :param ids: required. a single DOI or many DOIs, each a string. If many
         passed in, do so in a list
-    :param format: [str] Name of the format. One of "rdf-xml", "turtle", "citeproc-json",
+    :param format: Name of the format. One of "rdf-xml", "turtle", "citeproc-json",
         "citeproc-json-ish", "text", "ris", "bibtex" (Default), "crossref-xml",
         "datacite-xml","bibentry", or "crossref-tdm"
-    :param style: [str] A CSL style (for text format only). See :func:`~habanero.cn.csl_styles`
+    :param style: A CSL style (for text format only). See :func:`~habanero.cn.csl_styles`
         for options. Default: "apa". If there's a style that CrossRef doesn't support
         you'll get a `(500) Internal Server Error`
-    :param locale: [str] Language locale. See `locale.locale_alias`
-    :param url: [str] Base URL for the content negotiation request. Default: `https://doi.org`
+    :param locale: Language locale. See `locale.locale_alias`
+    :param url: Base URL for the content negotiation request. Default: `https://doi.org`
     :param kwargs: any additional arguments will be passed on to `requests.get`
-
-    :return: string, which can be parsed to various formats depending on what
+    :rtype: str, which can be parsed to various formats depending on what
         format you request (e.g., JSON vs. XML vs. bibtex)
 
     See https://citation.crosscite.org/docs.html for details

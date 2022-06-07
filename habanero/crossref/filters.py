@@ -1,4 +1,4 @@
-works_filter_details = {
+works_filter_details: dict[str, dict] = {
     "has_funder": {
         "possible_values": None,
         "description": "metadata which includes one or more funder entry",
@@ -273,7 +273,7 @@ works_filter_details = {
     },
 }
 
-members_filter_details = {
+members_filter_details: dict[str, dict] = {
     "has_public_references": {
         "possible_values": None,
         "description": "member has made their references public for one or more of their prefixes",
@@ -292,7 +292,7 @@ members_filter_details = {
     },
 }
 
-funders_filter_details = {
+funders_filter_details: dict[str, dict] = {
     "location": {
         "possible_values": None,
         "description": "funders located in specified country",

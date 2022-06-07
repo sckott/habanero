@@ -11,9 +11,14 @@ from .filters import (
 )
 
 
-class Crossref(object):
+class Crossref:
     """
     Crossref: Class for Crossref search API methods
+
+    :param base_url: Base URL to use for http requests
+    :param api_key: An API key to send with each http request
+    :param mailto: A mailto string, see section below
+    :param ua_string: A user agent string, see section below
 
     |
     |
@@ -169,11 +174,11 @@ class Crossref(object):
 
     def __init__(
         self,
-        base_url="https://api.crossref.org",
-        api_key=None,
-        mailto=None,
-        ua_string=None,
-    ):
+        base_url: str = "https://api.crossref.org",
+        api_key: str = None,
+        mailto: str = None,
+        ua_string: str = None,
+    ) -> None:
 
         self.base_url = base_url
         self.api_key = api_key
@@ -196,66 +201,65 @@ class Crossref(object):
         self,
         ids: Union[list[str], str] = None,
         query: str = None,
-        filter=None,
-        offset=None,
-        limit=None,
-        sample=None,
-        sort=None,
-        order=None,
-        facet=None,
-        select=None,
-        cursor=None,
-        cursor_max=5000,
-        progress_bar=False,
-        warn=False,
+        filter: dict = None,
+        offset: float = None,
+        limit: float = None,
+        sample: float = None,
+        sort: str = None,
+        order: str = None,
+        facet: Union[str, bool] = None,
+        select: Union[list[str], str] = None,
+        cursor: str = None,
+        cursor_max: float = 5000,
+        progress_bar: bool = False,
+        warn: bool = False,
         **kwargs
-    ):
+    ) -> dict:
         """
         Search Crossref works
 
-        :param ids: [Array] DOIs (digital object identifier) or other identifiers
-        :param query: [String] A query string
-        :param filter: [Hash] Filter options. See examples for usage.
+        :param ids: DOIs (digital object identifier) or other identifiers
+        :param query: A query string
+        :param filter: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
             See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
-        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois.
+        :param offset: Number of record to start at, from 1 to 10000
+        :param limit: Number of results to return. Not relavant when searching with specific dois.
             Default: 20. Max: 1000
-        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        :param sample: Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. Max: 100
-        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
+        :param sort: Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
-        :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+        :param order: Sort order, one of 'asc' or 'desc'
+        :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.
             See Facets_ for options.
-        :param select: [String/list(Strings)] Crossref metadata records can be
+        :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
             a subset of elements to return. This can make your API calls much more efficient. Not
             clear yet which fields are allowed here.
-        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+        :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used.
             See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
-        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+        :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found.
-        :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
+        :param progress_bar: print progress bar. only used when doing deep paging (
             when using cursor parameter). default: False
-        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+        :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-
-        :return: A dict
+        :rtype: dict
 
         Usage::
 
@@ -389,29 +393,29 @@ class Crossref(object):
 
     def members(
         self,
-        ids=None,
-        query=None,
-        filter=None,
-        offset=None,
-        limit=None,
-        sample=None,
-        sort=None,
-        order=None,
-        facet=None,
-        works=False,
-        select=None,
-        cursor=None,
-        cursor_max=5000,
-        progress_bar=False,
-        warn=False,
+        ids: Union[list[str], str] = None,
+        query: str = None,
+        filter: dict = None,
+        offset: float = None,
+        limit: float = None,
+        sample: float = None,
+        sort: str = None,
+        order: str = None,
+        facet: Union[str, bool] = None,
+        works: bool = False,
+        select: Union[list[str], str] = None,
+        cursor: str = None,
+        cursor_max: float = 5000,
+        progress_bar: bool = False,
+        warn: bool = False,
         **kwargs
-    ):
+    ) -> dict:
         """
         Search Crossref members
 
-        :param ids: [Array] DOIs (digital object identifier) or other identifiers
-        :param query: [String] A query string
-        :param filter: [Hash] Filter options. See examples for usage.
+        :param ids: DOIs (digital object identifier) or other identifiers
+        :param query: A query string
+        :param filter: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -420,40 +424,39 @@ class Crossref(object):
             and :func:`~habanero.Crossref.filter_details`
             IMPORTANT: when `works=False` the filters that will work are the members
             filters; when `works=True` the filters that will work are the works filters
-        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
-        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        :param offset: Number of record to start at, from 1 to 10000
+        :param limit: Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
+        :param sort: Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
-        :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+        :param order: Sort order, one of 'asc' or 'desc'
+        :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
-        :param select: [String/list(Strings)] Crossref metadata records can be
+        :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
             a subset of elements to return. This can make your API calls much more efficient. Not
             clear yet which fields are allowed here.
-        :param works: [Boolean] If true, works returned as well. Default: false
-        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+        :param works: If true, works returned as well. Default: false
+        :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
             See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
-        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+        :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found. Only used if `works=True`
-        :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
+        :param progress_bar: print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
-        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+        :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-
-        :return: A dict
+        :rtype: dict
 
         Usage::
 
@@ -508,67 +511,66 @@ class Crossref(object):
 
     def prefixes(
         self,
-        ids=None,
-        filter=None,
-        offset=None,
-        limit=None,
-        sample=None,
-        sort=None,
-        order=None,
-        facet=None,
-        works=False,
-        select=None,
-        cursor=None,
-        cursor_max=5000,
-        progress_bar=False,
-        warn=False,
+        ids: Union[list[str], str] = None,
+        filter: dict = None,
+        offset: float = None,
+        limit: float = None,
+        sample: float = None,
+        sort: str = None,
+        order: str = None,
+        facet: Union[str, bool] = None,
+        works: bool = False,
+        select: Union[list[str], str] = None,
+        cursor: str = None,
+        cursor_max: float = 5000,
+        progress_bar: bool = False,
+        warn: bool = False,
         **kwargs
-    ):
+    ) -> dict:
         """
         Search Crossref prefixes
 
-        :param ids: [Array] DOIs (digital object identifier) or other identifiers
-        :param filter: [Hash] Filter options. See examples for usage.
+        :param ids: DOIs (digital object identifier) or other identifiers
+        :param filter: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
             See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
-        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
-        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        :param offset: Number of record to start at, from 1 to 10000
+        :param limit: Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
+        :param sort: Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
-        :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+        :param order: Sort order, one of 'asc' or 'desc'
+        :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
-        :param select: [String/list(Strings)] Crossref metadata records can be
+        :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
             a subset of elements to return. This can make your API calls much more efficient. Not
             clear yet which fields are allowed here.
-        :param works: [Boolean] If true, works returned as well. Default: false
-        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+        :param works: If true, works returned as well. Default: false
+        :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
             See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
-        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+        :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found. Only used if `works=True`
-        :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
+        :param progress_bar: print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
-        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+        :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-
-        :return: A dict
+        :rtype: dict
 
         Usage::
 
@@ -626,32 +628,32 @@ class Crossref(object):
 
     def funders(
         self,
-        ids=None,
-        query=None,
-        filter=None,
-        offset=None,
-        limit=None,
-        sample=None,
-        sort=None,
-        order=None,
-        facet=None,
-        works=False,
-        select=None,
-        cursor=None,
-        cursor_max=5000,
-        progress_bar=False,
-        warn=False,
+        ids: Union[list[str], str] = None,
+        query: str = None,
+        filter: dict = None,
+        offset: float = None,
+        limit: float = None,
+        sample: float = None,
+        sort: str = None,
+        order: str = None,
+        facet: Union[str, bool] = None,
+        works: bool = False,
+        select: Union[list[str], str] = None,
+        cursor: str = None,
+        cursor_max: float = 5000,
+        progress_bar: bool = False,
+        warn: bool = False,
         **kwargs
-    ):
+    ) -> dict:
         """
         Search Crossref funders
 
         Note that funders without IDs don't show up on the `/funders` route,
         that is, won't show up in searches via this method
 
-        :param ids: [Array] DOIs (digital object identifier) or other identifiers
-        :param query: [String] A query string
-        :param filter: [Hash] Filter options. See examples for usage.
+        :param ids: DOIs (digital object identifier) or other identifiers
+        :param query: A query string
+        :param filter: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -660,40 +662,39 @@ class Crossref(object):
             and :func:`~habanero.Crossref.filter_details`
             IMPORTANT: when `works=False` the filters that will work are the funders
             filters; when `works=True` the filters that will work are the works filters
-        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
-        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        :param offset: Number of record to start at, from 1 to 10000
+        :param limit: Number of results to return. Not relavant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
+        :param sort: Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
-        :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+        :param order: Sort order, one of 'asc' or 'desc'
+        :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
-        :param select: [String/list(Strings)] Crossref metadata records can be
+        :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
             a subset of elements to return. This can make your API calls much more efficient. Not
             clear yet which fields are allowed here.
-        :param works: [Boolean] If true, works returned as well. Default: false
-        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+        :param works: If true, works returned as well. Default: false
+        :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
             See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
-        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+        :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found. Only used if `works=True`
-        :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
+        :param progress_bar: print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
-        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+        :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-
-        :return: A dict
+        :rtype: dict
 
         Usage::
 
@@ -757,69 +758,68 @@ class Crossref(object):
 
     def journals(
         self,
-        ids=None,
-        query=None,
-        filter=None,
-        offset=None,
-        limit=None,
-        sample=None,
-        sort=None,
-        order=None,
-        facet=None,
-        works=False,
-        select=None,
-        cursor=None,
-        cursor_max=5000,
-        progress_bar=False,
-        warn=False,
+        ids: Union[list[str], str] = None,
+        query: str = None,
+        filter: dict = None,
+        offset: float = None,
+        limit: float = None,
+        sample: float = None,
+        sort: str = None,
+        order: str = None,
+        facet: Union[str, bool] = None,
+        works: bool = False,
+        select: Union[list[str], str] = None,
+        cursor: str = None,
+        cursor_max: float = 5000,
+        progress_bar: bool = False,
+        warn: bool = False,
         **kwargs
-    ):
+    ) -> dict:
         """
         Search Crossref journals
 
-        :param ids: [Array] DOIs (digital object identifier) or other identifiers
-        :param query: [String] A query string
-        :param filter: [Hash] Filter options. See examples for usage.
+        :param ids: DOIs (digital object identifier) or other identifiers
+        :param query: A query string
+        :param filter: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
             See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
-        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
-        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        :param offset: Number of record to start at, from 1 to 10000
+        :param limit: Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
+        :param sort:  Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
-        :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+        :param order:  Sort order, one of 'asc' or 'desc'
+        :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`.
             See Facets_ for options.
-        :param select: [String/list(Strings)] Crossref metadata records can be
+        :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
             a subset of elements to return. This can make your API calls much more efficient. Not
             clear yet which fields are allowed here.
-        :param works: [Boolean] If true, works returned as well. Default: false
-        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+        :param works: If true, works returned as well. Default: false
+        :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
             See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
-        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+        :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found. Only used if `works=True`
-        :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
+        :param progress_bar: print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
-        :param warn: [Boolean] warn instead of raise error upon HTTP request error. default: False
+        :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-
-        :return: A dict
+        :rtype: dict
 
         Usage::
 
@@ -883,66 +883,65 @@ class Crossref(object):
 
     def types(
         self,
-        ids=None,
-        query=None,
-        filter=None,
-        offset=None,
-        limit=None,
-        sample=None,
-        sort=None,
-        order=None,
-        facet=None,
-        works=False,
-        select=None,
-        cursor=None,
-        cursor_max=5000,
-        progress_bar=False,
-        warn=False,
+        ids: Union[list[str], str] = None,
+        query: str = None,
+        filter: dict = None,
+        offset: float = None,
+        limit: float = None,
+        sample: float = None,
+        sort: str = None,
+        order: str = None,
+        facet: Union[str, bool] = None,
+        works: bool = False,
+        select: Union[list[str], str] = None,
+        cursor: str = None,
+        cursor_max: float = 5000,
+        progress_bar: bool = False,
+        warn: bool = False,
         **kwargs
-    ):
+    ) -> dict:
         """
         Search Crossref types
 
-        :param ids: [Array] Type identifier, e.g., journal
-        :param query: [String] A query string
-        :param filter: [Hash] Filter options. See examples for usage.
+        :param ids: Type identifier, e.g., journal
+        :param query: A query string
+        :param filter: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
             See https://github.com/CrossRef/rest-api-doc#filter-names
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
-        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
-        :param sample: [Fixnum] Number of random results to return. when you use the sample parameter,
+        :param offset: Number of record to start at, from 1 to 10000
+        :param limit: Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
+        :param sample: Number of random results to return. when you use the sample parameter,
             the limit and offset parameters are ignored. This parameter only used when works requested. Max: 100
-        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
+        :param sort:  Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
-        :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+        :param order:  Sort order, one of 'asc' or 'desc'
+        :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
-        :param select: [String/list(Strings)] Crossref metadata records can be
+        :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
             a subset of elements to return. This can make your API calls much more efficient. Not
             clear yet which fields are allowed here.
-        :param works: [Boolean] If true, works returned as well. Default: false
-        :param cursor: [String] Cursor character string to do deep paging. Default is None.
+        :param works: If true, works returned as well. Default: false
+        :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
             See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
-        :param cursor_max: [Fixnum] Max records to retrieve. Only used when cursor param used. Because
+        :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
             found than this value, you will get only those found. Only used if `works=True`
-        :param progress_bar: [Boolean] print progress bar. only used when doing deep paging (
+        :param progress_bar: print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-
-        :return: A dict
+        :rtype: dict
 
         Usage::
 
@@ -988,32 +987,30 @@ class Crossref(object):
 
     def licenses(
         self,
-        query=None,
-        offset=None,
-        limit=None,
-        sample=None,
-        sort=None,
-        order=None,
-        facet=None,
+        query: str = None,
+        offset: float = None,
+        limit: float = None,
+        sort: str = None,
+        order: str = None,
+        facet: Union[str, bool] = None,
         **kwargs
-    ):
+    ) -> dict:
         """
         Search Crossref licenses
 
-        :param query: [String] A query string
-        :param offset: [Fixnum] Number of record to start at, from 1 to 10000
-        :param limit: [Fixnum] Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
-        :param sort: [String] Field to sort on. Note: If the API call includes a query, then the sort
+        :param query: A query string
+        :param offset: Number of record to start at, from 1 to 10000
+        :param limit: Number of results to return. Not relevant when searching with specific dois. Default: 20. Max: 1000
+        :param sort: Field to sort on. Note: If the API call includes a query, then the sort
             order will be by the relevance score. If no query is included, then the sort order
             will be by DOI update date. See sorting_ for possible values.
-        :param order: [String] Sort order, one of 'asc' or 'desc'
-        :param facet: [Boolean/String] Set to `true` to include facet results (default: false).
+        :param order: Sort order, one of 'asc' or 'desc'
+        :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-
-        :return: A dict
+        :rtype: dict
 
         Usage::
 
@@ -1045,15 +1042,14 @@ class Crossref(object):
         )
         return res
 
-    def registration_agency(self, ids, **kwargs):
+    def registration_agency(self, ids: Union[list[str], str], **kwargs) -> list:
         """
         Determine registration agency for DOIs
 
-        :param ids: [Array] DOIs (digital object identifier) or other identifiers
+        :param ids: DOIs (digital object identifier) or other identifiers
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
-
-        :return: list of DOI minting agencies
+        :rtype: list
 
         Usage::
 
@@ -1104,15 +1100,14 @@ class Crossref(object):
             k = res
         return [z["message"]["agency"]["label"] for z in k]
 
-    def random_dois(self, sample=10, **kwargs):
+    def random_dois(self, sample: int = 10, **kwargs) -> list:
         """
         Get a random set of DOIs
 
-        :param sample: [Fixnum] Number of random DOIs to return. Default: 10. Max: 100
+        :param sample: Number of random DOIs to return. Default: 10. Max: 100
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples)
-
-        :return: [Array] of DOIs
+        :rtype: list
 
         Usage::
 
@@ -1146,7 +1141,7 @@ class Crossref(object):
         )
         return [z["DOI"] for z in res["message"]["items"]]
 
-    def filter_names(self, type="works"):
+    def filter_names(self, type: str = "works") -> list:
         """
         Filter names - just the names of each filter
 
@@ -1154,10 +1149,9 @@ class Crossref(object):
         As filters are introduced or taken away, we may get out of sync; check
         the docs for the latest https://github.com/CrossRef/rest-api-doc
 
-        :param type: [str] what type of filters, i.e., what API route, matches
+        :param type: what type of filters, i.e., what API route, matches
             methods here. one of "works", "members", or "funders". Default: "works"
-
-        :return: list
+        :rtype: list
 
         Usage::
 
@@ -1171,7 +1165,7 @@ class Crossref(object):
         nms.sort()
         return nms
 
-    def filter_details(self, type="works"):
+    def filter_details(self, type: str = "works") -> dict:
         """
         Filter details - filter names, possible values, and description
 
@@ -1179,11 +1173,10 @@ class Crossref(object):
         As filters are introduced or taken away, we may get out of sync; check
         the docs for the latest https://github.com/CrossRef/rest-api-doc
 
-        :param type: [str] what type of filters, i.e., what API route,
+        :param type: what type of filters, i.e., what API route,
             matches methods here. one of "works", "members", or "funders".
             Default: "works"
-
-        :return: dict
+        :rtype: dict
 
         Usage::
 
@@ -1199,8 +1192,9 @@ class Crossref(object):
         types = ["works", "members", "funders"]
         if type not in types:
             raise ValueError("'type' must be one of " + "', '".join(types))
-        return {
+        output: dict[str, dict] = {
             "works": works_filter_details,
             "members": members_filter_details,
             "funders": funders_filter_details,
         }[type]
+        return output

@@ -5,13 +5,12 @@ import re
 from ..habanero_utils import check_json
 
 
-def csl_styles(**kwargs):
+def csl_styles(**kwargs) -> list:
     """
     Get list of styles from https://github.com/citation-style-language/styles
 
     :param kwargs: any additional arguments will be passed on to `requests.get`
-
-    :return: list, of CSL styles
+    :rtype: list, of CSL styles
 
     Usage::
 
