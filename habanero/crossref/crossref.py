@@ -1,5 +1,5 @@
 import sys
-from typing import Union
+from typing import Union, List
 import requests
 from ..request import request
 from ..request_class import Request
@@ -199,7 +199,7 @@ class Crossref:
 
     def works(
         self,
-        ids: Union[list[str], str] = None,
+        ids: Union[List[str], str] = None,
         query: str = None,
         filter: dict = None,
         offset: float = None,
@@ -208,7 +208,7 @@ class Crossref:
         sort: str = None,
         order: str = None,
         facet: Union[str, bool] = None,
-        select: Union[list[str], str] = None,
+        select: Union[List[str], str] = None,
         cursor: str = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
@@ -393,7 +393,7 @@ class Crossref:
 
     def members(
         self,
-        ids: Union[list[str], str] = None,
+        ids: Union[List[str], str] = None,
         query: str = None,
         filter: dict = None,
         offset: float = None,
@@ -403,7 +403,7 @@ class Crossref:
         order: str = None,
         facet: Union[str, bool] = None,
         works: bool = False,
-        select: Union[list[str], str] = None,
+        select: Union[List[str], str] = None,
         cursor: str = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
@@ -511,7 +511,7 @@ class Crossref:
 
     def prefixes(
         self,
-        ids: Union[list[str], str] = None,
+        ids: Union[List[str], str] = None,
         filter: dict = None,
         offset: float = None,
         limit: float = None,
@@ -520,7 +520,7 @@ class Crossref:
         order: str = None,
         facet: Union[str, bool] = None,
         works: bool = False,
-        select: Union[list[str], str] = None,
+        select: Union[List[str], str] = None,
         cursor: str = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
@@ -628,7 +628,7 @@ class Crossref:
 
     def funders(
         self,
-        ids: Union[list[str], str] = None,
+        ids: Union[List[str], str] = None,
         query: str = None,
         filter: dict = None,
         offset: float = None,
@@ -638,7 +638,7 @@ class Crossref:
         order: str = None,
         facet: Union[str, bool] = None,
         works: bool = False,
-        select: Union[list[str], str] = None,
+        select: Union[List[str], str] = None,
         cursor: str = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
@@ -758,7 +758,7 @@ class Crossref:
 
     def journals(
         self,
-        ids: Union[list[str], str] = None,
+        ids: Union[List[str], str] = None,
         query: str = None,
         filter: dict = None,
         offset: float = None,
@@ -768,7 +768,7 @@ class Crossref:
         order: str = None,
         facet: Union[str, bool] = None,
         works: bool = False,
-        select: Union[list[str], str] = None,
+        select: Union[List[str], str] = None,
         cursor: str = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
@@ -883,7 +883,7 @@ class Crossref:
 
     def types(
         self,
-        ids: Union[list[str], str] = None,
+        ids: Union[List[str], str] = None,
         query: str = None,
         filter: dict = None,
         offset: float = None,
@@ -893,7 +893,7 @@ class Crossref:
         order: str = None,
         facet: Union[str, bool] = None,
         works: bool = False,
-        select: Union[list[str], str] = None,
+        select: Union[List[str], str] = None,
         cursor: str = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
@@ -1042,7 +1042,7 @@ class Crossref:
         )
         return res
 
-    def registration_agency(self, ids: Union[list[str], str], **kwargs) -> list:
+    def registration_agency(self, ids: Union[List[str], str], **kwargs) -> list:
         """
         Determine registration agency for DOIs
 
