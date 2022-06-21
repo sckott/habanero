@@ -1,5 +1,6 @@
 from typing import Union
 
+
 class WorksContainer:
     """
     WorksContainer: Class for working with works results

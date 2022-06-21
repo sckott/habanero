@@ -2,7 +2,7 @@ import requests
 import json
 import re
 import math
-from tqdm import tqdm # type: ignore
+from tqdm import tqdm  # type: ignore
 import warnings
 
 from .filterhandler import filter_handler

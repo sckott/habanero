@@ -51,10 +51,11 @@ def test_workscontainer_with_many():
             assert isinstance(getattr(x, w), list)
             # print(isinstance(getattr(x, w), list))
 
+
 @pytest.mark.vcr
 def test_workscontainer_with_cursor():
     "WorksContainer: with cursor"
-    res = cr.members(ids=98, works=True, limit=5, cursor='*', cursor_max=20)
+    res = cr.members(ids=98, works=True, limit=5, cursor="*", cursor_max=20)
     x = WorksContainer(res)
     assert isinstance(x, WorksContainer)
     assert isinstance(x.works, list)
