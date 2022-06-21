@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.3 (2022-06-20)
+--------------------
+* now using typehints, tested on Python back to 3.6; though could work with older Python 3 versions. See the new docs for better information on types (#70)
+
 1.2.2 (2022-05-19)
 --------------------
 * Fixed class `WorksContainer` to work with cursor output of works results (e.g., `cr.works(query, cursor="*")`) (#106) thanks @IvanSterligov
