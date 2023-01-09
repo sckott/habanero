@@ -61,9 +61,9 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = u"habanero"
-copyright = u"2017, Scott Chamberlain"
-author = u"Scott Chamberlain"
+project = "habanero"
+copyright = "2017, Scott Chamberlain"
+author = "Scott Chamberlain"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -237,8 +237,8 @@ latex_documents = [
     (
         master_doc,
         "habanero.tex",
-        u"habanero Documentation",
-        u"Scott Chamberlain",
+        "habanero Documentation",
+        "Scott Chamberlain",
         "manual",
     ),
 ]
@@ -268,7 +268,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, "habanero", u"habanero Documentation", [author], 1)]
+man_pages = [(master_doc, "habanero", "habanero Documentation", [author], 1)]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False
@@ -283,7 +283,7 @@ texinfo_documents = [
     (
         master_doc,
         "habanero",
-        u"habanero Documentation",
+        "habanero Documentation",
         author,
         "habanero",
         "One line description of project.",
