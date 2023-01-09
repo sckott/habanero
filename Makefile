@@ -1,6 +1,6 @@
-all: build install
+all: install
 
-.PHONY: build install test docs distclean dist upload
+.PHONY: install test docs distclean dist upload
 
 install:
 	python3.10 -m pip install .
