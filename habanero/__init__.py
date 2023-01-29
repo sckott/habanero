@@ -43,7 +43,7 @@ __version__ = "1.2.3"
 __author__ = "Scott Chamberlain"
 __license__ = "MIT"
 
-from .crossref import Crossref, WorksContainer
 from .cn import content_negotiation, csl_styles
 from .counts import citation_count
+from .crossref import Crossref, WorksContainer
 from .exceptions import *
