@@ -1,20 +1,11 @@
-import requests
-import json
-import re
 import warnings
 
+import requests
+
+from .exceptions import RequestError
 from .filterhandler import filter_handler
-from .habanero_utils import (
-    switch_classes,
-    check_json,
-    is_json,
-    parse_json_err,
-    make_ua,
-    filter_dict,
-    rename_query_filters,
-    ifelsestr,
-)
-from .exceptions import *
+from .habanero_utils import (check_json, filter_dict, ifelsestr, is_json,
+                             make_ua, parse_json_err, rename_query_filters)
 from .request_class import Request
 
 
@@ -41,6 +32,7 @@ def request(
     should_warn=False,
     **kwargs
 ):
+    """HTTP request helper."""
     warning_thrown = False
     url = url + path
 
@@ -136,24 +128,6 @@ def request(
                     warnings.warn(mssg)
                 else:
                     r.raise_for_status()
-
-                # try:
-                #     r = requests.get(
-                #         endpt, params=payload, headers=make_ua(mailto, ua_string)
-                #     )
-                #     if r.status_code > 201 and should_warn:
-                #         warning_thrown = True
-                #         mssg = '%s on %s: %s' % (r.status_code, ids[i], r.reason)
-                #         warnings.warn(mssg)
-                #     else:
-                #         r.raise_for_status()
-                # except requests.exceptions.HTTPError:
-                #     if is_json(r):
-                #         raise RequestError(r.status_code, parse_json_err(r))
-                #     else:
-                #         r.raise_for_status()
-                # except requests.exceptions.RequestException as e:
-                #     raise e
 
                 if warning_thrown:
                     coll.append(None)
