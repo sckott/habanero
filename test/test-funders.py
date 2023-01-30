@@ -126,7 +126,9 @@ def test_funders_mixed_ids_works_warn():
     """funders - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.funders(
-            ids=["10.13039/100000001", "10.13039/notarealdoi", "10.13039/100000005"], works=True, warn=True
+            ids=["10.13039/100000001", "10.13039/notarealdoi", "10.13039/100000005"],
+            works=True,
+            warn=True,
         )
     assert len(out) == 3
     assert len([x for x in out if x]) == 2

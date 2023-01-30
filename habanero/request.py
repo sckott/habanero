@@ -4,8 +4,15 @@ import requests
 
 from .exceptions import RequestError
 from .filterhandler import filter_handler
-from .habanero_utils import (check_json, filter_dict, ifelsestr, is_json,
-                             make_ua, parse_json_err, rename_query_filters)
+from .habanero_utils import (
+    check_json,
+    filter_dict,
+    ifelsestr,
+    is_json,
+    make_ua,
+    parse_json_err,
+    rename_query_filters,
+)
 from .request_class import Request
 
 
