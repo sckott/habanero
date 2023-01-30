@@ -115,7 +115,12 @@ def test_works_mixed_ids_warn():
     """works - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.works(
-            ids=["10.1371/journal.pone.0033693", "10.1371/notarealdoi", "10.1371/journal.pone.0020476", ], warn=True
+            ids=[
+                "10.1371/journal.pone.0033693",
+                "10.1371/notarealdoi",
+                "10.1371/journal.pone.0020476",
+            ],
+            warn=True,
         )
     assert len(out) == 3
     assert len([x for x in out if x]) == 2
