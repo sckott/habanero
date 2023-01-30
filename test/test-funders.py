@@ -1,7 +1,8 @@
-import pytest
 import os
+
+import pytest
 import requests
-from habanero import exceptions, Crossref
+from habanero import Crossref, exceptions
 from requests.exceptions import HTTPError
 
 cr = Crossref()
@@ -122,11 +123,13 @@ def test_funders_bad_id_works_warn():
 
 @pytest.mark.vcr
 def test_funders_mixed_ids_works_warn():
-    "funders - param: warn"
+    """funders - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.funders(
-            ids=["10.13039/100000001", "10.13039/notarealdoi"], works=True, warn=True
+            ids=["10.13039/100000001", "10.13039/notarealdoi", "10.13039/100000005"], works=True, warn=True
         )
-    assert len(out) == 2
+    assert len(out) == 3
+    assert len([x for x in out if x]) == 2
     assert isinstance(out[0], dict)
+    assert isinstance(out[2], dict)
     assert out[1] is None

@@ -136,6 +136,8 @@ def request(
                     js = r.json()
                     coll.append(js)
 
+                warning_thrown = False
+
         if len(coll) == 1:
             coll = coll[0]
 
