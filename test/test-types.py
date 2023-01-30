@@ -1,5 +1,6 @@
-import pytest
 import os
+
+import pytest
 import vcr
 from habanero import Crossref
 from requests.exceptions import HTTPError
@@ -121,9 +122,11 @@ def test_types_bad_id_works_warn():
 
 @pytest.mark.vcr
 def test_types_mixed_ids_works_warn():
-    "prefixes - param: warn"
+    """prefixes - param: warn"""
     with pytest.warns(UserWarning):
-        out = cr.types(ids=["journal-article", "tape"], works=True, warn=True)
-    assert len(out) == 2
+        out = cr.types(ids=["journal-article", "tape", "report"], works=True, warn=True)
+    assert len(out) == 3
+    assert len([x for x in out if x]) == 2
     assert isinstance(out[0], dict)
+    assert isinstance(out[2], dict)
     assert out[1] is None

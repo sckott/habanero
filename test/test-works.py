@@ -1,8 +1,9 @@
-import pytest
 import os
-import vcr
+
+import pytest
 import requests
-from habanero import exceptions, Crossref
+import vcr
+from habanero import Crossref, exceptions
 from requests.exceptions import HTTPError
 
 cr = Crossref()
@@ -111,11 +112,13 @@ def test_works_bad_id_warn():
 
 @pytest.mark.vcr
 def test_works_mixed_ids_warn():
-    "works - param: warn"
+    """works - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.works(
-            ids=["10.1371/journal.pone.0033693", "10.1371/notarealdoi"], warn=True
+            ids=["10.1371/journal.pone.0033693", "10.1371/notarealdoi", "10.1371/journal.pone.0020476", ], warn=True
         )
-    assert len(out) == 2
+    assert len(out) == 3
+    assert len([x for x in out if x]) == 2
     assert isinstance(out[0], dict)
+    assert isinstance(out[2], dict)
     assert out[1] is None
