@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+
+exclude = [
+	"build",
+	"dist"
+]
+
+ignore = [
+    "D102",
+]
+
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402", "F401", "F403"]
+"habanero/request_class.py" = ["E722"]
