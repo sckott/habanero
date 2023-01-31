@@ -6,8 +6,13 @@ from tqdm import tqdm  # type: ignore
 
 from .exceptions import RequestError
 from .filterhandler import filter_handler
-from .habanero_utils import (check_json, filter_dict, ifelsestr, make_ua,
-                             rename_query_filters)
+from .habanero_utils import (
+    check_json,
+    filter_dict,
+    ifelsestr,
+    make_ua,
+    rename_query_filters,
+)
 
 
 class Request(object):

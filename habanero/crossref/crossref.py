@@ -3,8 +3,11 @@ from typing import List, Union
 from ..habanero_utils import check_kwargs, sub_str
 from ..request import request
 from ..request_class import Request
-from .filters import (funders_filter_details, members_filter_details,
-                      works_filter_details)
+from .filters import (
+    funders_filter_details,
+    members_filter_details,
+    works_filter_details,
+)
 
 
 class Crossref:
