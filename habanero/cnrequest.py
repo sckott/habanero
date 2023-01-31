@@ -1,9 +1,9 @@
-import requests
-import json
 import warnings
 
-from .habanero_utils import switch_classes, make_ua
-from .cn_formats import *
+import requests
+
+from .cn_formats import cn_format_headers
+from .habanero_utils import make_ua
 
 
 def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):

@@ -1,5 +1,5 @@
 from ..cnrequest import CNRequest
-from .constants import *
+from .constants import cn_base_url
 
 
 def content_negotiation(

@@ -1,22 +1,13 @@
-import requests
-import json
-import re
 import math
-from tqdm import tqdm  # type: ignore
 import warnings
 
+import requests
+from tqdm import tqdm  # type: ignore
+
+from .exceptions import RequestError
 from .filterhandler import filter_handler
-from .habanero_utils import (
-    switch_classes,
-    check_json,
-    is_json,
-    parse_json_err,
-    make_ua,
-    filter_dict,
-    rename_query_filters,
-    ifelsestr,
-)
-from .exceptions import *
+from .habanero_utils import (check_json, filter_dict, ifelsestr, make_ua,
+                             rename_query_filters)
 
 
 class Request(object):

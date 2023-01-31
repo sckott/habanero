@@ -1,5 +1,4 @@
 import requests
-import json
 import re
 
 from ..habanero_utils import check_json

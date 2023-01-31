@@ -1,10 +1,13 @@
-import re
 import json
-import requests
-from . import __version__
+import re
 
-from .response import Works
+import requests
+
+from . import __version__
+from .exceptions import RequestError
 from .noworks import NoWorks
+from .response import Works
+
 
 # helpers ----------
 def converter(x):
@@ -52,7 +55,7 @@ def check_json(x):
 def is_json(x):
     try:
         json.loads(x.content)
-    except ValueError as e:  # JSONDecodeError is a subclass of ValueError
+    except ValueError:  # JSONDecodeError is a subclass of ValueError
         return False
     return True
 

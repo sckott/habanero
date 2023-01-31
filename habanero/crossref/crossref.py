@@ -1,14 +1,10 @@
-import sys
-from typing import Union, List
-import requests
+from typing import List, Union
+
+from ..habanero_utils import check_kwargs, sub_str
 from ..request import request
 from ..request_class import Request
-from ..habanero_utils import sub_str, check_kwargs
-from .filters import (
-    works_filter_details,
-    members_filter_details,
-    funders_filter_details,
-)
+from .filters import (funders_filter_details, members_filter_details,
+                      works_filter_details)
 
 
 class Crossref:
@@ -125,8 +121,11 @@ class Crossref:
     * `query_editor` - Query editor given and family names
     * `query_chair` - Query chair given and family names
     * `query_translator` - Query translator given and family names
-    * `query_contributor` - Query author, editor, chair and translator given and family names
-    * `query_bibliographic` - Query bibliographic information, useful for citation look up. Includes titles, authors, ISSNs and publication years. Crossref retired `query_title`; use this field query instead
+    * `query_contributor` - Query author, editor, chair and translator given and
+        family names
+    * `query_bibliographic` - Query bibliographic information, useful for citation
+        look up. Includes titles, authors, ISSNs and publication years. Crossref
+        retired `query_title`; use this field query instead
     * `query_affiliation` - Query contributor affiliations
 
     .. _sorting:

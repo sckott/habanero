@@ -185,10 +185,6 @@ works_filter_details: Dict[str, dict] = {
         "possible_values": None,
         "description": "metadata for records with an exact matching category label",
     },
-    "type": {
-        "possible_values": None,
-        "description": "metadata for records with type matching a type identifier (e.g. journal-article)",
-    },
     "type_name": {
         "possible_values": None,
         "description": "metadata for records with an exacty matching type label",
