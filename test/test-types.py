@@ -1,4 +1,3 @@
-
 import pytest
 from habanero import Crossref
 from requests.exceptions import HTTPError
