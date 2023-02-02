@@ -22,10 +22,7 @@ clean:
 	rm -rf dist/* build/*
 
 dist:
-	python3.11 -m build --sdist --wheel
-
-register:
-	python3.11 setup.py register
+	python3.11 -m build
 
 upload_test:
 	python3.11 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
