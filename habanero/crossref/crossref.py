@@ -181,7 +181,6 @@ class Crossref:
         mailto: str = None,
         ua_string: str = None,
     ) -> None:
-
         self.base_url = base_url
         self.api_key = api_key
         self.mailto = mailto
