@@ -1,9 +1,10 @@
 Changelog
 =========
 
-1.2.3 (2022-06-20)
+1.2.3 (2023-02-02)
 --------------------
 * now using typehints, tested on Python back to 3.6; though could work with older Python 3 versions. See the new docs for better information on types (#70)
+* fixed problem with usage of `warn=True`; in a for loop, an internal variable `warning_thrown` wasn't being reset after each loop iteration, with the result that all objects returned after a warning was thrown were `None` regardless of the actual result. sorry about that!  (#112) (#113)
 
 1.2.2 (2022-05-19)
 --------------------
