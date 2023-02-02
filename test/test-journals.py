@@ -1,7 +1,4 @@
-import os
-
 import pytest
-import vcr
 from habanero import Crossref, exceptions
 from requests.exceptions import HTTPError
 
@@ -59,12 +56,6 @@ def test_journals_filter_fails_noidsworks():
 
 
 @pytest.mark.vcr
-def test_journals_filter_fails_noidsworks():
-    with pytest.raises(exceptions.RequestError):
-        cr.journals(filter={"from_pub_date": "2014-03-03"})
-
-
-@pytest.mark.vcr
 def test_journals_filter_fails_noids():
     with pytest.raises(exceptions.RequestError):
         cr.journals(works=True, filter={"has_assertion": True})
@@ -107,7 +98,7 @@ def test_journals_field_queries():
 @pytest.mark.vcr
 def test_journals_field_queries_not_allowed_with_dois():
     with pytest.raises(HTTPError):
-        res = cr.journals(ids="2167-8359", query_bibliographic="fish")
+        cr.journals(ids="2167-8359", query_bibliographic="fish")
 
 
 @pytest.mark.vcr

@@ -1,5 +1,4 @@
 import pytest
-import vcr
 import yaml
 from habanero import Crossref
 

@@ -1,7 +1,5 @@
 import pytest
-import os
-import vcr
-from habanero import exceptions, Crossref
+from habanero import Crossref
 from requests import exceptions as ex
 
 cr = Crossref()

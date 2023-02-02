@@ -1,5 +1,4 @@
 import pytest
-import vcr
 from habanero import Crossref, WorksContainer
 
 cr = Crossref()

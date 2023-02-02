@@ -1,7 +1,5 @@
-import os
 
 import pytest
-import requests
 from habanero import Crossref, exceptions
 from requests.exceptions import HTTPError
 

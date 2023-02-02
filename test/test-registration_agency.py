@@ -1,6 +1,4 @@
 import pytest
-import os
-import vcr
 from requests import HTTPError
 from habanero import Crossref
 

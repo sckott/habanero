@@ -1,9 +1,6 @@
-import os
 
 import pytest
-import requests
-import vcr
-from habanero import Crossref, exceptions
+from habanero import Crossref
 from requests.exceptions import HTTPError
 
 cr = Crossref()
