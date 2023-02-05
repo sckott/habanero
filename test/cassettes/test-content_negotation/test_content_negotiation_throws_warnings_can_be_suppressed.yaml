@@ -1,0 +1,205 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/x-bibtex
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1 habanero/1.2.3
+      X-USER-AGENT:
+      - python-requests/2.28.1 habanero/1.2.3
+    method: GET
+    uri: https://doi.org/10.1126/science.169.3946.635
+  response:
+    body:
+      string: '<html><head><title>Handle Redirect</title></head>
+
+        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 794e6135bc406808-SEA
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '233'
+      Content-Type:
+      - text/html;charset=utf-8
+      Date:
+      - Sun, 05 Feb 2023 20:26:12 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Iukqd8%2BhClmbuTQmdaY2ZRwEZlnTGjxh3vHqM86Sfek8l9HWMg1BLepvFd2NDi6vVYpkckBsLmt5YzLRkNWY7sahKDmvaYEo9%2Fi2BBzpC7%2FG1atBVcb8aNU%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      expires:
+      - Sun, 05 Feb 2023 21:05:25 GMT
+      location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      permissions-policy:
+      - interest-cohort=(),browsing-topics=()
+      vary:
+      - Accept
+    status:
+      code: 302
+      message: Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/x-bibtex
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1 habanero/1.2.3
+      X-USER-AGENT:
+      - python-requests/2.28.1 habanero/1.2.3
+    method: GET
+    uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+  response:
+    body:
+      string: "@article{Frank_1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl
+        = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\tyear = 1970,\n\tmonth
+        = {aug},\n\tpublisher = {American Association for the Advancement of Science
+        ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages = {635--641},\n\tauthor
+        = {Henry S. Frank},\n\ttitle = {The Structure of Ordinary Water},\n\tjournal
+        = {Science}\n}"
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-type:
+      - application/x-bibtex
+      date:
+      - Sun, 05 Feb 2023 20:26:13 GMT
+      link:
+      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+        version="vor"; rel="item"
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/x-bibtex
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.28.1 habanero/1.2.3
+      X-USER-AGENT:
+      - python-requests/2.28.1 habanero/1.2.3
+    method: GET
+    uri: https://doi.org/foo
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      CF-Cache-Status:
+      - DYNAMIC
+      CF-RAY:
+      - 794e6138ed53c389-SEA
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - text/html;charset=utf-8
+      Date:
+      - Sun, 05 Feb 2023 20:26:13 GMT
+      NEL:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=mUd0hHNY%2BgJCZs8swTIVrg%2BG1C1yyaduCP5%2B7slK1c5NyjRlR7NfocLG%2FrOxleqIVuRL8lcL1ItjpUGUCT8%2FMWm%2FLBbA2Vwpm3SCMWXFAZtK0Pf7yNqx1ak%3D"}],"group":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
+      alt-svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    status:
+      code: 404
+      message: Not Found
+version: 1
