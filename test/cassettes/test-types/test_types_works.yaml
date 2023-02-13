@@ -9,27 +9,27 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/types/journal/works?rows=2
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAM1VXW/aMBT9K8jPMdj5JHmbOqmrVG3V1mnTgAfjGOI2iTN/dEWI/77rQAG1sD1U
-        nfYW+177nnPuPfEaGcusM6hA6h4FqBHGsKXAdtUJ2Pul9D2upbFHoQehjVQtROmQDMkhgoo1WjAu
-        LNy23gTIKstqrIVxtd+K4zSOAyStaGA1WSPZluJRlP5YyazAHdM+bzIJSUiDJEhns2AbsbLxaPw+
-        Jgkm6W1IiogUcfYDyvsosGg6VNA0JFEUkTjL4xwgaLEQWrRcYK5ca1FBAtS5OTCqhIYbv7HaCj0o
-        xeBSu5X/vGzmH+BOrlorWotL1TDZ9hB3XxMAxbUypmGgDbCzWnLbC7JgtRFQ9f2nK68OGdKEJtMR
-        W3aVh7mV9E453bLa19ACyJ3kT9IgDsLspQAkxSTGYXZLs4JEBaXPBaBxSpMsyikhBKAYqMb90QsP
-        GeSAdGnwXpcSz1dH2lhpa8ieoHeaV/JhsJg6QhYcZBEGNnhlBYilBzeVrJVRXSUFAowd3CcfD5z7
-        mWjmvcRRFsOyFJ0y8gxb6HYUJKe7HUHDb+m4oHGRhC+6TeM8HZM83JHlSsNJGEr4rpS2eM+n78HM
-        czfuFIjW1fVsdjwx5kiWr5+vAVBlbVdMR9NR+TgslRwqvZyOnnf56suXj74gIIowdIHuqrY7S8Hc
-        P7DaeYKHlP1wdFpCyQ0cMW5+J7j1V+3FXiFA+HrfUJicM75Jozwc/y++kZ1evoVvaFSQM77Jx6/0
-        zRXQ1xx+eE6zenCj2bJhVnLzr1ySnKC2dQnM2V9d0iv+pi7Z9fTJJYAtxGGefD/vkkPKn11yLdul
-        g5cKxB6wthxcM1j7VylAF6ppXCs568ctQE+hbd7hHNhrtnugcCc08PaPWhign07olZcDJAW9egP2
-        lI1g8KPE0HP/pnl5NpvNb0iQbG9UBwAA
+        H4sIAAAAAAAA/7VVy1LbMBT9FY/WliP5he0dQxcNtJShYdEmWQhbYCW25UoyIZPJv/fKCSGF0Bew
+        s3Sf5+ge3xXShplOowzJOXJRzbVmtxybZcvhbiHVHFdCmz3THVdayAas1CMeebSgbIVuWM4NZFut
+        XWSkYRVWXHeVvYqon1IXCcNrOI1XSDQFv+eFDSuY4bhlyvqNxz7xfTd0g+nU3ViMqG039h6TEJNg
+        RGgWhllIv0N5awUUdYsyGodJGhE/oelRDC0ofsMVb3KOc9k1BmXERW13DYhKriDjcVUJXjjHOSt4
+        LbiGbLlsDG8MLmTNRNM3t/0aQzu5klrXDFgBXEaJ3PRU3LBKc6j34cvQ8kK8IEpCOhmIuu4aWcnb
+        Jc6Z5hDUSgsSmt4QPJOdalhl6yoOUA+yQVM3cWn8nA6aYpJgGo8oyWiQRdFTOqI4AjrCICKEQHsa
+        quU29MTCAHLAXWi8Y6nA18s9powwFXiP0XAHwzkBGM7lFgY01EKwuN8D3c9Dfd3T61MoDhcF+Gvx
+        7uhyqSASZtI+/APWFbQo4MWW9vPq8hOkLo1ps8lgMlgsFh7rR4A9TIAn1e2L7zYZoLUtVMIB79h5
+        wdmz9Aitu0Owm66qptP9CdV7xD9ps7j3Cik2nf15ttbu66V1lNHwsLTCIAwT/y+kdXp1PnTOPn47
+        Hr2ZqMI48pPJYDb/R/34xI3d6ABkgkmMSTSiaUbiLAieDVhKgyRI0+B18jntGuGclUtmnNNtv0+U
+        0yP7RTlbKf1WOW+G67+EMwNUcwvKy2V9WBmPwN9LC/sjMfz69dxW9f2jBIdx4G+LNtttBivnjlVd
+        z9HOZTdJABYqriFEd9cznhub6kIv81Iwo5YOawrnM8wwq5ySs8qUEHrOOyVb67P5OVqfi3IJ6xGO
+        IgfXi50RTW3ufvvhliuAbzem76IfHd9wDK8D5PXS7ZFrzlReYsOVXZiWpfV6/RM01DobsQcAAA==
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -43,11 +43,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '708'
+      - '739'
       content-type:
       - application/json
       date:
-      - Fri, 12 Nov 2021 04:16:48 GMT
+      - Mon, 13 Feb 2023 21:19:19 GMT
       permissions-policy:
       - interest-cohort=()
       server:

@@ -9,32 +9,32 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.3
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.3
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/journals/1803-2427
   response:
     body:
       string: !!binary |
-        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
+        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
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -48,11 +48,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '1003'
+      - '1004'
       content-type:
       - application/json
       date:
-      - Mon, 30 Jan 2023 05:09:09 GMT
+      - Mon, 13 Feb 2023 15:00:43 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -82,9 +82,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.3
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.3
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/journals/4444-4444
   response:
@@ -103,7 +103,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 30 Jan 2023 05:09:09 GMT
+      - Mon, 13 Feb 2023 15:00:44 GMT
       permissions-policy:
       - interest-cohort=()
       server:

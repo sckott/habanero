@@ -9,9 +9,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -23,7 +23,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 6a5556ee6df6f5a5-SEA
+      - 798e705bce4dc60a-SEA
       Connection:
       - keep-alive
       Content-Length:
@@ -31,29 +31,28 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Thu, 28 Oct 2021 15:53:53 GMT
-      Expect-CT:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Expires:
-      - Thu, 28 Oct 2021 16:15:40 GMT
-      Location:
-      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      - Mon, 13 Feb 2023 15:01:21 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TkKfhyfonWVPv3Pu%2BAeIiQFXZKPC1pLBr0JLEJ65qFvRFFxcphRN%2FmkYKl9qL6SNhnKt0CuLXezOmDJVJQYWy%2B4Gr2pmoRlyY4fdC5tPwUjmwpiQ%2BScytRc%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FR%2FBFqVkbrAvNQZubsSGsZNqYXpXo5iREpTVmIceYzTBbc7dKg%2FjzDhItGgWZ%2FKBxiXYQ9avLKbB6lm3Ov3xVXyTJtUI3a2E3CZ2A%2FmREtqqxnPOuZvSd04%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      expires:
+      - Mon, 13 Feb 2023 15:59:03 GMT
+      location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      permissions-policy:
+      - interest-cohort=(),browsing-topics=()
+      vary:
+      - Accept
     status:
       code: 302
-      message: ''
+      message: Found
 - request:
     body: null
     headers:
@@ -64,15 +63,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
     body:
-      string: "Frank, H. S. (1970). The Structure of Ordinary Water. Science, 169(3946),\
-        \ 635\u2013641. doi:10.1126/science.169.3946.635\n"
+      string: "Frank, H. S. (1970). The Structure of Ordinary Water. Science, 169(3946),
+        635\u2013641. https://doi.org/10.1126/science.169.3946.635\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -83,12 +82,10 @@ interactions:
       - Link
       connection:
       - close
-      content-length:
-      - '118'
       content-type:
       - text/x-bibliography
       date:
-      - Thu, 28 Oct 2021 15:53:54 GMT
+      - Mon, 13 Feb 2023 15:01:24 GMT
       link:
       - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
         version="vor"; rel="item"
@@ -96,6 +93,8 @@ interactions:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:
@@ -121,9 +120,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -135,7 +134,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 6a5556f20cd539e3-SEA
+      - 798e70706f51c37f-SEA
       Connection:
       - keep-alive
       Content-Length:
@@ -143,29 +142,28 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Thu, 28 Oct 2021 15:53:54 GMT
-      Expect-CT:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Expires:
-      - Thu, 28 Oct 2021 16:21:39 GMT
-      Location:
-      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      - Mon, 13 Feb 2023 15:01:25 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=56FRn31I8k%2FKEFBZxjtwY5p9X%2FGEPU4QLnryqyHjmYzopMv68kNkRww09JzMFSyL5YC8bne6zoouTvS3CFMGpZX%2F8rK9iqkl31MW5jXW8Mwe0Bid5CshZkg%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=W40r%2FpME0sVKfvcSLzSMcAh9Q3HSHtSA28OV2e%2FdtBYQ7em2pzIj%2Bwf3I8vRdSJQcU7uj4Jj96psIGE7vpN4A3QlevzJC6VBSAL5T0hn4PViggiwU8xd8lA%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      expires:
+      - Mon, 13 Feb 2023 15:59:03 GMT
+      location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      permissions-policy:
+      - interest-cohort=(),browsing-topics=()
+      vary:
+      - Accept
     status:
       code: 302
-      message: ''
+      message: Found
 - request:
     body: null
     headers:
@@ -176,15 +174,15 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
     body:
-      string: "[1]H. S. Frank, \u201CThe Structure of Ordinary Water,\u201D Science,\
-        \ vol. 169, no. 3946, pp. 635\u2013641, Aug. 1970.\n"
+      string: "[1]H. S. Frank, \u201CThe Structure of Ordinary Water,\u201D Science,
+        vol. 169, no. 3946, pp. 635\u2013641, Aug. 1970, doi: 10.1126/science.169.3946.635.\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -195,12 +193,10 @@ interactions:
       - Link
       connection:
       - close
-      content-length:
-      - '110'
       content-type:
       - text/x-bibliography
       date:
-      - Thu, 28 Oct 2021 15:53:54 GMT
+      - Mon, 13 Feb 2023 15:01:25 GMT
       link:
       - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
         version="vor"; rel="item"
@@ -208,6 +204,8 @@ interactions:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:

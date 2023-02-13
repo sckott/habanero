@@ -9,9 +9,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: http://doi.org/10.1126/science.169.3946.635
   response:
@@ -19,21 +19,21 @@ interactions:
       string: ''
     headers:
       CF-RAY:
-      - 6a5556ea6bb8399b-SEA
+      - 798e70576b02c551-SEA
       Cache-Control:
       - max-age=3600
       Connection:
       - keep-alive
       Date:
-      - Thu, 28 Oct 2021 15:53:53 GMT
+      - Mon, 13 Feb 2023 15:01:21 GMT
       Expires:
-      - Thu, 28 Oct 2021 16:53:53 GMT
+      - Mon, 13 Feb 2023 16:01:21 GMT
       Location:
       - https://doi.org/10.1126/science.169.3946.635
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=S7jeu1Yolld2sMTTl3rM7bS1d7pnFPqLNjRi3Z4Jgk4Ce%2Bp9Mb3qtWqR4UvZBy%2FwHqLnCRus2vJ5zN%2BpAlf3BrscVnLIoH4y7gkeKvUR0YP2RegZhZAYN%2FM%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=UxmIKBswc4geiiem81T4SJnSz38EuemQiovkm3BvVBExXu43s%2F3YyN1WrOpWESTVYGnuh4C8Wl4LL32gZ8D3rCOlsduGTzENmuxyiH3TVfD6PQOkonFc4B8%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Transfer-Encoding:
@@ -41,8 +41,7 @@ interactions:
       Vary:
       - Accept-Encoding
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     status:
       code: 301
       message: Moved Permanently
@@ -56,9 +55,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -70,7 +69,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 6a5556eafddc30d7-SEA
+      - 798e70580a5dc4e3-SEA
       Connection:
       - keep-alive
       Content-Length:
@@ -78,29 +77,28 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Thu, 28 Oct 2021 15:53:53 GMT
-      Expect-CT:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Expires:
-      - Thu, 28 Oct 2021 16:15:40 GMT
-      Location:
-      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      - Mon, 13 Feb 2023 15:01:21 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=elirtOCS%2FPDPyEM8V0TZrqYETusQiZ3b8sw0bqMuy4YKjpEyHtvreL1RpXu3LbqstCGCZKewvJJPzLi1Epxsi%2BDo2gtWzCO9ZFL2J%2BCi1CYtM3L2W1L9tQk%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pJmOOnIQAz5cd6vKBkqj%2Fo9c4tgNPMoWAAiBDL41FB2h4ocC4tgx%2F1geVmQA8mlyWMUopX%2FcoYiOaleBS6x%2BmllbOvCOdoK7p2Dxz2NvvYHawo96%2Fy0ilkA%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      expires:
+      - Mon, 13 Feb 2023 15:11:49 GMT
+      location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      permissions-policy:
+      - interest-cohort=(),browsing-topics=()
+      vary:
+      - Accept
     status:
       code: 302
-      message: ''
+      message: Found
 - request:
     body: null
     headers:
@@ -111,18 +109,19 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
     body:
-      string: "@article{1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\
-        \tyear = 1970,\n\tmonth = {aug},\n\tpublisher = {American Association for\
-        \ the Advancement of Science ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\
-        \tpages = {635--641},\n\tauthor = {Henry S. Frank},\n\ttitle = {The Structure\
-        \ of Ordinary Water}\n}"
+      string: "@article{Frank_1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl
+        = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\tyear = 1970,\n\tmonth
+        = {aug},\n\tpublisher = {American Association for the Advancement of Science
+        ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages = {635--641},\n\tauthor
+        = {Henry S. Frank},\n\ttitle = {The Structure of Ordinary Water},\n\tjournal
+        = {Science}\n}"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -133,12 +132,10 @@ interactions:
       - Link
       connection:
       - close
-      content-length:
-      - '346'
       content-type:
       - application/x-bibtex
       date:
-      - Thu, 28 Oct 2021 15:53:53 GMT
+      - Mon, 13 Feb 2023 15:01:21 GMT
       link:
       - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
         version="vor"; rel="item"
@@ -146,6 +143,8 @@ interactions:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:

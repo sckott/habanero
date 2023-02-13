@@ -9,30 +9,30 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/members?query=ecology&rows=2
   response:
     body:
       string: !!binary |
-        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
+        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
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -46,11 +46,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '911'
+      - '889'
       content-type:
       - application/json
       date:
-      - Thu, 28 Oct 2021 15:54:35 GMT
+      - Mon, 13 Feb 2023 14:49:57 GMT
       permissions-policy:
       - interest-cohort=()
       server:

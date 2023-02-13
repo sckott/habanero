@@ -9,17 +9,21 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/funders?rows=2
   response:
     body:
-      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":29743,"items":[{"id":"100000001","location":"United
-        States","name":"National Science Foundation","alt-names":["USA NSF","NSF","US
-        NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","usa","nsf","nsf","us","nsf"]},{"id":"100000003","location":"United
-        States","name":"Boeing","alt-names":["Boeing Company"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000003","replaces":[],"replaced-by":[],"tokens":["boeing","boeing","company"]}]}}'
+      string: !!binary |
+        H4sIAAAAAAAA/5VRwW6DMAz9FZQzSaFMmsZtm9RjL6ynlUMKbkENCUvCVFTx7zOk0HaT1jaX2O89
+        28/JkRjLbWNITNSe+KQCY/gOqG1rQGzbyBw0FaWxF+Q3aFMqiXzIAhacGRIfSWmhMrTGqnpA5j75
+        akC3PYeztKUl9jyQOPCJAa6zglrQFTqQjRCdT6yyXFANphEW0Wj+FD37ri2JP3FA3g8O3AlxuFAZ
+        t87PSqIu9xLcCQxSklf9GsuB58JLshJkBt5C4WKuyCdcWNoL+/ZkxRLm/a9fJa/eMlkMkbvH7Gbh
+        UJf6pNEl2iqsreP1bD3LDyxXJVN6t56FAQujIHrpo/OOGmrBs8FiOmU53bQOsGoPcvAvTw6wxjgP
+        GG0vXTTuYW7LeK8z2yF295jd2eBUkXb+r1+L7vq1NwWl3P3+IId674oh81GANwFVzWWL4ARcxo58
+        9OmjR55+M/qdgqy3YAu4xkaf17I/grRLu+4HrFoHg6ADAAA=
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -30,16 +34,20 @@ interactions:
       - Link
       connection:
       - close
+      content-encoding:
+      - gzip
       content-length:
-      - '667'
+      - '377'
       content-type:
       - application/json
       date:
-      - Thu, 28 Oct 2021 15:54:01 GMT
+      - Mon, 13 Feb 2023 14:50:32 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
       x-api-pool:
       - public
       x-rate-limit-interval:

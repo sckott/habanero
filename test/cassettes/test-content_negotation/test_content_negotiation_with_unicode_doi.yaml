@@ -9,9 +9,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -23,7 +23,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 6a5556e50c7439cc-SEA
+      - 798e7052bfd2ebee-SEA
       Connection:
       - keep-alive
       Content-Length:
@@ -31,29 +31,28 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Thu, 28 Oct 2021 15:53:52 GMT
-      Expect-CT:
-      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-      Expires:
-      - Thu, 28 Oct 2021 16:15:40 GMT
-      Location:
-      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      - Mon, 13 Feb 2023 15:01:20 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=uQUTLVaoYvdk8hSmA%2BmibZ5qbv5H1QSkL68wdIengL1JMjrvVOLZDSBQZuLPyy7b5EdtlVyxajgyLLJFAa77CCy1mbvoIlqrRQcS0CZ671ZJISw02Sboqi8%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bLrmkAMiIEOSD74T6kQezup783QGOLNc3hJvsZsnJfMylJaZqgfqvG6Mv8oju%2FLYQzelaHUfA60%2F2SYBJZMXqV7YOzzIAkJzvWlnDyqx43A%2FtDMcPmb7OIk%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
-      Vary:
-      - Accept
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400, h3-28=":443"; ma=86400, h3-27=":443";
-        ma=86400
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      expires:
+      - Mon, 13 Feb 2023 15:59:03 GMT
+      location:
+      - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
+      permissions-policy:
+      - interest-cohort=(),browsing-topics=()
+      vary:
+      - Accept
     status:
       code: 302
-      message: ''
+      message: Found
 - request:
     body: null
     headers:
@@ -64,18 +63,19 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
     body:
-      string: "@article{1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\
-        \tyear = 1970,\n\tmonth = {aug},\n\tpublisher = {American Association for\
-        \ the Advancement of Science ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\
-        \tpages = {635--641},\n\tauthor = {Henry S. Frank},\n\ttitle = {The Structure\
-        \ of Ordinary Water}\n}"
+      string: "@article{Frank_1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl
+        = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\tyear = 1970,\n\tmonth
+        = {aug},\n\tpublisher = {American Association for the Advancement of Science
+        ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages = {635--641},\n\tauthor
+        = {Henry S. Frank},\n\ttitle = {The Structure of Ordinary Water},\n\tjournal
+        = {Science}\n}"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -86,12 +86,10 @@ interactions:
       - Link
       connection:
       - close
-      content-length:
-      - '346'
       content-type:
       - application/x-bibtex
       date:
-      - Thu, 28 Oct 2021 15:53:52 GMT
+      - Mon, 13 Feb 2023 15:01:20 GMT
       link:
       - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
         version="vor"; rel="item"
@@ -99,6 +97,8 @@ interactions:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:

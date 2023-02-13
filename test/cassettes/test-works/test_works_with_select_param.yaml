@@ -9,24 +9,24 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAJ2VS3ObMBDHvwqjs8ESYB6+uXm0OXTamU4nhzgHGdZGEyFRSbglHn/3Sq7tQtOm
-        MQcOaEe/fei/uzukDTWtRnMkn9AE1aA13YBvugbs2XepnnzOtOmZtqA0k8JaSYAD/NuC5ju0pgUY
-        S9vtJ8hIQ7mvQLfcHcUkTNN8gpiB2v4+7ND1pztHwQHBebScypVcTvM0wyTPswjjBPsYh5F1YJjh
-        Fv+AriqoWUG5d1NILjcdetxP3sQJcdjn2Ou60zaQi0EkzPqga6aBargYg8Okj7llagQjHuR0Jeu6
-        Fcx0lxcnHIC+qhUVIypM+pD3ij6DujynKO9TFk3DGZQjMsJ9zD0YTsUIDB5g7kTZaqPYCP3hJO2T
-        vkg2gkHiPuNjV0ilKvY8IhwyLPPxuifXnqnA+8BqymlH347LBwJaCAfwPsum5dTYWfF6fPoMzLIw
-        D7M0sDKw34uWPcTo3vGe8ZKz9bllPKo924mGicJ4i4KWbkq4k4JZ/QjQfziOoiRZTqFkYtWqTXVw
-        T+I0jmc4nZGT+9ngxQpbaUkF5Z2x7IuVFEWvFHzh5Omwt9KOS/OCisNfwDjFeZpHySwoqoGe3kFF
-        t0y26n9a6Nc6mmXnZMlgHN1sJW/dw1HVecV5rsA/yMfwSBzHUUzyJLHhDbV66uO/zajH40rwG1B+
-        c9gjIZ6gby2ozq0Uu6CU8Zko4QeaW4MduKqofAPKrRF0Cmq/3/8E5QIV3c0GAAA=
+        H4sIAAAAAAAA/52VQW/bIBiG/wriHCeAndjOLVrbrYdplaqph6YHgkmMisED3M2N8t8HUeva27TW
+        PvhgPvHA9+rl/Y7QOuoaC9dQP8IZrLi19MAj19bcr/3U5jGSwrpe6YkbK7TyVTxHc/RWgesj3FPG
+        nacdTzPotKMyMtw2MiwlyzxLkxkUjlf+9/4IL75dBwqaY5TH24Xe6e0iTzOE8zyLEVqhCJE48wc4
+        4aTH38NPuqoaJRh1Qh3AJdNSH1r4cJp9COZpA1jJK4+SozkEkT7Hb7et9V2Nv1BC/tGda0eDMBnI
+        dCEsp5ZPEGjVx1wJM55BEO4zPhv6zM14Chko893sqJoAQX3IHXeSqmK8KnHex2zqWgo+AYOTPuZr
+        y7QxpXieZMBBY9eqaKwzYgIJD3t72Q70HriSgy+iopK29OM9rtI+7laLCc2RgU63TrOSWicYuDGa
+        +ajhFojxZsD5wFEbFXoDN7pupE8T/Q7QdsAsIznJ0rm3hf/+SoKzfMFld0IWUuy7BwSoBf5d+uBi
+        DmwYLUL4hBUmvJ8Ut38cHMer1XbBC6F2jTmU5+NxkibJEqVL/Hr8ciAV83bSVFHZBrlGCx/H//HC
+        JjyegL3SPtLd+zLFy6y7Jx7kyuWTlk3QnJoWsC70eHffh5cpEdXcRPV5tBA0gz8abtowZfzMMi4S
+        quC/4NoXfNoZVkaOmzBZ4CvodDr9BkPV1oXgBgAA
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -40,11 +40,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '560'
+      - '543'
       content-type:
       - application/json
       date:
-      - Thu, 28 Oct 2021 15:55:42 GMT
+      - Mon, 13 Feb 2023 21:19:57 GMT
       permissions-policy:
       - interest-cohort=()
       server:

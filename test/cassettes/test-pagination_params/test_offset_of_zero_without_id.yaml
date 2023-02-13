@@ -9,30 +9,31 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/members?offset=0&rows=1
   response:
     body:
       string: !!binary |
-        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
+        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
+        NOdX1c1pczr9AtzgAGLjDwAA
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -46,11 +47,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '893'
+      - '930'
       content-type:
       - application/json
       date:
-      - Thu, 28 Oct 2021 15:54:40 GMT
+      - Mon, 13 Feb 2023 15:05:30 GMT
       permissions-policy:
       - interest-cohort=()
       server:

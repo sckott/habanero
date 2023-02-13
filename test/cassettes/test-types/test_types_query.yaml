@@ -9,22 +9,22 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
       X-USER-AGENT:
-      - python-requests/2.25.1 habanero/0.7.6
+      - python-requests/2.28.1 habanero/1.2.4
     method: GET
     uri: https://api.crossref.org/types?query=journal
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAAHVU0U7DIBT9lYbndZm+uTfdjNHE2GzGF+MDa68brgUCtzPLsn+XUUaB1qe25xwu
-        5x4uPRGNFFtN5kTsyYQ0oDXdQo5HCQa7PPKaaQyoAyjNBDfszXQ2nfUMmZ8ICqR1rkC3NZqit3cT
-        whAa8/p5IqwyizZC7HMNJV5qTEhNN1Ab+MHA2drB54kTN4KLraJyFyhfPeZlCqRQGGhWHeAFEkAZ
-        VwcGv4GqMGi26lAvtf5Q0XKfunu3oBf+iFZx0yxVyMoaAvVLx2T3jolrSxpZLWhoVOAOVMC+2e+o
-        QGJraOgg6rYZ8/PREbEdDTg8Bgyz/QYFvIQcOKpjFLJjskfL9GkrUQJUjG/1SDpFzw4Tcj0MzfeS
-        UjRScGMmEC08FjdX7qjEKFDb4MLBo441KAb6H8Prjkwmb7imG8CBPNhnfINeau4lr6iqAt36Co0c
-        TjIZ/dnEMyKFRqjyUnCMEywskS0cMRgqpnU7NlPPFvfyyuhAmV9KfLuXIezF5hZHHp7sd1+LIo2n
-        c+mQdIKT8N0Qx9GbfC+dJzk9WjQJ6Rr9sPL1BHz1r/P5D4JF8NBDBQAA
+        H4sIAAAAAAAA/3VUQW7CMBD8SuQzQVS9cWsBVa1UNYKql6oHk2zBJbEje0OFEH/v4pjEdtJTkpmx
+        szs79pkZ5NgYNmfqwCasAmP4DlI81UDY9ZGWwqBHHUEboSSxd9PZdNYzbH5mqJCXqQbTlEib3s8m
+        TCBU9Pp5ZqKgRVulDqmBHK97TFjJt1AS/EhwsnHwZeLElZJqp3m995SvHdbJNNRKY5qrqlYSJHrq
+        taWSRUdFiwbSXlADaGrlKODXU2WEJusW7aS2KdQ8P8QtvVuwE/6oRktyiGsUeQme+qVlkgfHhHvX
+        PCg1436hCvegPfbNfgcbRGUNCzqqsqnG6vloibAcAzicXeDtN2iQOaRkuT4FJjsmWVmmd1urHKAQ
+        cmdG3Ml6duiQ62FYfC8Zi8ZIJmxz+Z7XGBhqG1w4eLRiA1qA+afgTUvGcR2scVmN5d5/xn/QSwuO
+        fMuN79zyBnUiOvGy4LrwRJsbNDLBKD79AMMg1cogFHQGJYY2Z5agE9gSg+QJY5qx4D1bvG+NdKDp
+        sgrvjaUPd2K6H4Ianux3YFMY4aVD4phHE3JJD+dDQ7h2Hvm0sqgz6ety+QOxpNa4agUAAA==
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -38,11 +38,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '441'
+      - '451'
       content-type:
       - application/json;charset=utf-8
       date:
-      - Fri, 12 Nov 2021 04:16:48 GMT
+      - Mon, 13 Feb 2023 21:19:18 GMT
       permissions-policy:
       - interest-cohort=()
       server:
