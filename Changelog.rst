@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.2.4 (2023-02-13)
+--------------------
+* mark two more tests for vcr to create cassettes for (both content_negotation tests) - no user facing changes (#114)
+
 1.2.3 (2023-02-02)
 --------------------
 * now using typehints, tested on Python back to 3.6; though could work with older Python 3 versions. See the new docs for better information on types (#70)
