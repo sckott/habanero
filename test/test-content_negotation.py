@@ -9,21 +9,21 @@ cjson = '{"indexed":{"date-parts":[[2015,9,18]],"date-time":"2015-09-18T16:11:22
 
 @pytest.mark.vcr
 def test_content_negotiation():
-    "content negotiation - default - bibtex"
+    """content negotiation - default - bibtex"""
     res = cn.content_negotiation(ids="10.1126/science.169.3946.635")
     assert str == str(res).__class__
 
 
 @pytest.mark.vcr
 def test_content_negotiation_with_unicode_doi():
-    "content negotiation - unicode"
+    """content negotiation - unicode"""
     res = cn.content_negotiation(ids="10.1126/science.169.3946.635")
     assert str == str(res).__class__
 
 
 @pytest.mark.vcr
 def test_content_negotiation_citeproc_json():
-    "content negotiation - citeproc-json"
+    """content negotiation - citeproc-json"""
     res = cn.content_negotiation(
         ids="10.1126/science.169.3946.635", format="citeproc-json"
     )
@@ -32,7 +32,7 @@ def test_content_negotiation_citeproc_json():
 
 @pytest.mark.vcr
 def test_content_negotiation_alt_url():
-    "content negotiation - alternative url"
+    """content negotiation - alternative url"""
     res = cn.content_negotiation(
         ids="10.1126/science.169.3946.635", url="http://doi.org"
     )
@@ -41,7 +41,7 @@ def test_content_negotiation_alt_url():
 
 @pytest.mark.vcr
 def test_content_negotiation_style():
-    "content negotiation - style"
+    """content negotiation - style"""
     res_apa = cn.content_negotiation(
         ids="10.1126/science.169.3946.635", format="text", style="apa"
     )

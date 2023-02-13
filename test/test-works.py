@@ -9,7 +9,7 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 
 @pytest.mark.vcr
 def test_works_with_one_id():
-    "works - param: ids, one DOI"
+    """works - param: ids, one DOI"""
     res = cr.works(ids="10.1371/journal.pone.0033693")
     assert dict == res.__class__
     assert 4 == len(res)
@@ -18,7 +18,7 @@ def test_works_with_one_id():
 
 @pytest.mark.vcr
 def test_works_with_many_ids():
-    "works - param: ids, many DOIs"
+    """works - param: ids, many DOIs"""
     dois = [
         "10.1016/j.neurobiolaging.2010.03.024",
         "10.1002/jor.1100150407",
@@ -35,7 +35,7 @@ def test_works_with_many_ids():
 
 
 # def test_works_doesnt_allow_cursor_with_ids_input():
-#     "works - param: ids, cursor not supported with DOIs"
+#     """works - param: ids, cursor not supported with DOIs"""
 #     res1 = cr.works(ids = '10.1016/j.neurobiolaging.2010.03.024', cursor = "*")
 #     res2 = cr.works(ids = '10.1016/j.neurobiolaging.2010.03.024')
 #     assert res1 == res2
@@ -43,7 +43,7 @@ def test_works_with_many_ids():
 
 @pytest.mark.vcr
 def test_works_no_id_withlimit():
-    "works - param: limit, no other inputs"
+    """works - param: limit, no other inputs"""
     res = cr.works(limit=2)
     assert dict == res.__class__
     assert 5 == len(res["message"])
@@ -52,7 +52,7 @@ def test_works_no_id_withlimit():
 
 @pytest.mark.vcr
 def test_works_query():
-    "works - param: query"
+    """works - param: query"""
     res = cr.works(query="ecology", limit=2)
     assert dict == res.__class__
     assert 5 == len(res["message"])
@@ -60,7 +60,7 @@ def test_works_query():
 
 @pytest.mark.vcr
 def test_works_sample():
-    "works - param: sample"
+    """works - param: sample"""
     res = cr.works(sample=2)
     assert dict == res.__class__
     assert 5 == len(res["message"])
@@ -68,7 +68,7 @@ def test_works_sample():
 
 # FIXME: this is constantly failing for unknown reason
 # def test_works_filter():
-#     "works - param: filter"
+#     """works - param: filter"""
 #     res = cr.works(filter = {'has_full_text': True}, limit = 3)
 #     assert dict == res.__class__
 #     assert 5 == len(res['message'])
@@ -76,7 +76,7 @@ def test_works_sample():
 
 @pytest.mark.vcr
 def test_works_field_queries():
-    "works - param: kwargs - field queries work as expected"
+    """works - param: kwargs - field queries work as expected"""
     res = cr.works(query="ecology", query_author="carl boettiger")
     auths = [x["author"][0]["family"] for x in res["message"]["items"]]
     assert dict == res.__class__
@@ -86,21 +86,21 @@ def test_works_field_queries():
 
 @pytest.mark.vcr
 def test_works_query_filters_not_allowed_with_dois():
-    "works - param: kwargs - query filters not allowed on works/DOI/ route"
+    """works - param: kwargs - query filters not allowed on works/DOI/ route"""
     with pytest.raises(HTTPError):
         cr.works(ids="10.1371/journal.pone.0033693", query_author="carl boettiger")
 
 
 @pytest.mark.vcr
 def test_works_with_select_param():
-    "works - param: select"
+    """works - param: select"""
     res1 = cr.works(query="ecology", select="DOI,title")
     assert list(res1["message"]["items"][0].keys()) == ["DOI", "title"]
 
 
 @pytest.mark.vcr
 def test_works_bad_id_warn():
-    "works - param: warn"
+    """works - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.works(ids="10.1371/notarealdoi", warn=True)
     assert out is None

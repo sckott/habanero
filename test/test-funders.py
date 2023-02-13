@@ -7,7 +7,7 @@ cr = Crossref()
 
 @pytest.mark.vcr
 def test_funders():
-    "funders - basic test"
+    """funders - basic test"""
     res = cr.funders(limit=2)
     assert dict == res.__class__
     assert dict == res["message"].__class__
@@ -16,7 +16,7 @@ def test_funders():
 
 @pytest.mark.vcr
 def test_funders_query():
-    "funders - param: query"
+    """funders - param: query"""
     res = cr.funders(query="NSF", limit=2)
     assert dict == res.__class__
     assert dict == res["message"].__class__
@@ -43,7 +43,7 @@ def test_funders_filter_fails_noids():
 
 @pytest.mark.vcr
 def test_funders_filter_works():
-    "funders - filter works when used with id and works=True"
+    """funders - filter works when used with id and works=True"""
     res = cr.funders(
         ids="10.13039/100000001", works=True, filter={"has_assertion": True}
     )
@@ -71,7 +71,7 @@ def test_funders_fail_sort():
 
 @pytest.mark.vcr
 def test_funders_field_queries():
-    "funders - param: kwargs - field queries work as expected"
+    """funders - param: kwargs - field queries work as expected"""
     res = cr.funders(
         ids="10.13039/100000001",
         works=True,
@@ -94,7 +94,7 @@ def test_funders_query_filters_not_allowed_with_dois():
 
 @pytest.mark.vcr
 def test_funders_bad_id_warn():
-    "funders - param: warn"
+    """funders - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.funders(ids="10.13039/notarealdoi", warn=True)
     assert out is None
@@ -102,7 +102,7 @@ def test_funders_bad_id_warn():
 
 @pytest.mark.vcr
 def test_funders_mixed_ids_warn():
-    "funders - param: warn"
+    """funders - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.funders(ids=["10.13039/100000001", "10.13039/notarealdoi"], warn=True)
     assert len(out) == 2
@@ -112,7 +112,7 @@ def test_funders_mixed_ids_warn():
 
 @pytest.mark.vcr
 def test_funders_bad_id_works_warn():
-    "funders - param: warn"
+    """funders - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.funders(ids="10.13039/notarealdoi", works=True, warn=True)
     assert out is None
@@ -120,7 +120,7 @@ def test_funders_bad_id_works_warn():
 
 @pytest.mark.vcr
 def test_funders_mixed_ids_works_warn():
-    """funders - param: warn"""
+    """""funders - param: warn""" ""
     with pytest.warns(UserWarning):
         out = cr.funders(
             ids=["10.13039/100000001", "10.13039/notarealdoi", "10.13039/100000005"],

@@ -7,7 +7,7 @@ cr = Crossref()
 
 @pytest.mark.vcr
 def test_cursor():
-    "cursor works - basic test"
+    """cursor works - basic test"""
     res = cr.works(query="widget", cursor="*", cursor_max=10)
     assert dict == res.__class__
     assert dict == res["message"].__class__
@@ -17,7 +17,7 @@ def test_cursor():
 
 @pytest.mark.vcr
 def test_cursor_max():
-    "cursor works - cursor_max works"
+    """cursor works - cursor_max works"""
     res1 = cr.works(query="widget", cursor="*", cursor_max=60)
     items1 = [z["message"]["items"] for z in res1]
     items1 = [item for sublist in items1 for item in sublist]

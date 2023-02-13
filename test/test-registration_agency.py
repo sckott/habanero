@@ -7,7 +7,7 @@ cr = Crossref()
 
 @pytest.mark.vcr
 def test_registration_agency():
-    "registration agency"
+    """registration agency"""
     res = cr.registration_agency("10.1126/science.169.3946.635")
     assert list == res.__class__
     assert str == res[0].__class__
@@ -15,7 +15,7 @@ def test_registration_agency():
 
 @pytest.mark.vcr
 def test_registration_agency_unicode():
-    "registration agency- unicode"
+    """registration agency- unicode"""
     res = cr.registration_agency("10.1126/science.169.3946.635")
     assert list == res.__class__
     assert str == res[0].__class__
@@ -23,6 +23,6 @@ def test_registration_agency_unicode():
 
 @pytest.mark.vcr
 def test_registration_agency_bad_request():
-    "registration agency - bad request"
+    """registration agency - bad request"""
     with pytest.raises(HTTPError):
         cr.registration_agency(5)

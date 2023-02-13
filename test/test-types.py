@@ -43,7 +43,7 @@ a = {
 
 @pytest.mark.vcr
 def test_types():
-    "types - basic test"
+    """types - basic test"""
     res = cr.types()
     assert isinstance(res, dict)
     assert isinstance(res["message"], dict)
@@ -52,14 +52,14 @@ def test_types():
 
 @pytest.mark.vcr
 def test_types_query():
-    "types - param: query - doesn't do anything without works"
+    """types - param: query - doesn't do anything without works"""
     res = cr.types(query="journal")
     assert a == res["message"]
 
 
 @pytest.mark.vcr
 def test_types_ids():
-    "types - param: ids"
+    """types - param: ids"""
     res = cr.types(ids="journal")
     assert dict == res.__class__
     assert {"id": "journal", "label": "Journal"} == res["message"]
@@ -67,7 +67,7 @@ def test_types_ids():
 
 @pytest.mark.vcr
 def test_types_works():
-    "types - param: works"
+    """types - param: works"""
     res = cr.types(ids="journal", works=True, limit=2)
     assert dict == res.__class__
     assert "work-list" == res["message-type"]
@@ -76,7 +76,7 @@ def test_types_works():
 # FIXME: not sure why, but the line where we get titles obj is failing with
 #   UnicodeEncodeError: 'ascii' codec can't encode character u'\u2019' in position 109: ordinal not in range(128)
 # def test_types_field_queries():
-#     "types - param: kwargs - field queries work as expected"
+#     """types - param: kwargs - field queries work as expected"""
 #     res = cr.types(ids = "journal-article", works = True, query_bibliographic = 'gender', rows = 20)
 #     titles = [ str(x.get('title')[0]) for x in res['message']['items'] ]
 #     assert dict == res.__class__
@@ -87,14 +87,14 @@ def test_types_works():
 
 @pytest.mark.vcr
 def test_types_query_filters_not_allowed_with_typeid():
-    "types - param: kwargs - query filters not allowed on types/type/ route"
+    """types - param: kwargs - query filters not allowed on types/type/ route"""
     with pytest.raises(HTTPError):
         cr.types(ids="journal-article", query_bibliographic="gender")
 
 
 @pytest.mark.vcr
 def test_types_bad_id_warn():
-    "prefixes - param: warn"
+    """prefixes - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.types(ids="tape", warn=True)
     assert out is None
@@ -102,7 +102,7 @@ def test_types_bad_id_warn():
 
 @pytest.mark.vcr
 def test_types_mixed_ids_warn():
-    "prefixes - param: warn"
+    """prefixes - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.types(ids=["journal-article", "tape"], warn=True)
     assert len(out) == 2
@@ -112,7 +112,7 @@ def test_types_mixed_ids_warn():
 
 @pytest.mark.vcr
 def test_types_bad_id_works_warn():
-    "prefixes - param: warn"
+    """prefixes - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.types(ids="tape", works=True, warn=True)
     assert out is None

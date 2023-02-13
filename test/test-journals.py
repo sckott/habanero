@@ -7,7 +7,7 @@ cr = Crossref()
 
 @pytest.mark.vcr
 def test_journals():
-    "journals - basic test"
+    """journals - basic test"""
     res = cr.journals(limit=1)
     assert dict == res.__class__
     assert dict == res["message"].__class__
@@ -16,7 +16,7 @@ def test_journals():
 
 @pytest.mark.vcr
 def test_journals_query():
-    "journals - param: query"
+    """journals - param: query"""
     res = cr.journals(query="ecology", limit=2)
     assert dict == res.__class__
     assert 2 == res["message"]["items-per-page"]
@@ -25,7 +25,7 @@ def test_journals_query():
 
 @pytest.mark.vcr
 def test_journals_ids():
-    "journals - param: ids"
+    """journals - param: ids"""
     res = cr.journals(ids=["1803-2427", "2326-4225"])
     assert list == res.__class__
     assert dict == res[0].__class__
@@ -34,7 +34,7 @@ def test_journals_ids():
 
 @pytest.mark.vcr
 def test_journals_works():
-    "journals - param: works"
+    """journals - param: works"""
     res1 = cr.journals(
         ids="2167-8359", query="ecology", works=True, sort="score", order="asc"
     )
@@ -81,7 +81,7 @@ def test_journals_fail_sort():
 
 @pytest.mark.vcr
 def test_journals_field_queries():
-    "journals - param: kwargs - field queries work as expected"
+    """journals - param: kwargs - field queries work as expected"""
     res = cr.journals(
         ids="2167-8359",
         works=True,
@@ -103,7 +103,7 @@ def test_journals_field_queries_not_allowed_with_dois():
 
 @pytest.mark.vcr
 def test_journals_bad_id_warn():
-    "journals - param: warn"
+    """journals - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.journals(ids="4444-4444", warn=True)
     assert out is None
@@ -111,7 +111,7 @@ def test_journals_bad_id_warn():
 
 @pytest.mark.vcr
 def test_journals_mixed_ids_warn():
-    "journals - param: warn"
+    """journals - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.journals(ids=["1803-2427", "4444-4444"], warn=True)
     assert len(out) == 2
@@ -121,7 +121,7 @@ def test_journals_mixed_ids_warn():
 
 @pytest.mark.vcr
 def test_journals_bad_id_works_warn():
-    "journals - param: warn"
+    """journals - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.journals(ids="4444-4444", works=True, warn=True)
     assert out is None
@@ -129,7 +129,7 @@ def test_journals_bad_id_works_warn():
 
 @pytest.mark.vcr
 def test_journals_mixed_ids_works_warn():
-    """journals - param: warn"""
+    """""journals - param: warn""" ""
     with pytest.warns(UserWarning):
         out = cr.journals(
             ids=["1803-2427", "4444-4444", "2167-8359"], works=True, warn=True

@@ -6,7 +6,7 @@ cr = Crossref()
 
 @pytest.mark.vcr
 def test_random_dois():
-    "random dois"
+    """random dois"""
     res = cr.random_dois()
     assert list == res.__class__
     assert str == res[0].__class__
@@ -15,7 +15,7 @@ def test_random_dois():
 
 @pytest.mark.vcr
 def test_random_dois_sample_param():
-    "random dois - sample parameter"
+    """random dois - sample parameter"""
     res = cr.random_dois(3)
     assert 3 == len(res)
 

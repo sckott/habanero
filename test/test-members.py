@@ -9,7 +9,7 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 
 @pytest.mark.vcr
 def test_members():
-    "members - basic test"
+    """members - basic test"""
     res = cr.members(limit=2)
     assert dict == res.__class__
     assert dict == res["message"].__class__
@@ -17,7 +17,7 @@ def test_members():
 
 @pytest.mark.vcr
 def test_members_query():
-    "members - param: query"
+    """members - param: query"""
     res = cr.members(query="ecology", limit=2)
     assert dict == res.__class__
     assert dict == res["message"].__class__
@@ -37,7 +37,7 @@ def test_members_filter():
 
 @pytest.mark.vcr
 def test_members_field_queries():
-    "members - param: kwargs - field queries work as expected"
+    """members - param: kwargs - field queries work as expected"""
     res = cr.members(ids=98, works=True, query_author="carl boettiger", limit=7)
     auths = [x["author"][0]["family"] for x in res["message"]["items"]]
     assert dict == res.__class__
@@ -48,14 +48,14 @@ def test_members_field_queries():
 
 @pytest.mark.vcr
 def test_members_query_filters_not_allowed_with_dois():
-    "members - param: kwargs - query filters not allowed on works/memberid/ route"
+    """members - param: kwargs - query filters not allowed on works/memberid/ route"""
     with pytest.raises(HTTPError):
         cr.members(ids=98, query_author="carl boettiger")
 
 
 @pytest.mark.vcr
 def test_members_bad_id_warn():
-    "members - param: warn"
+    """members - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.members(ids=121212121212, warn=True)
     assert out is None
@@ -63,7 +63,7 @@ def test_members_bad_id_warn():
 
 @pytest.mark.vcr
 def test_members_mixed_ids_warn():
-    "members - param: warn"
+    """members - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.members(ids=[98, 121212121212], warn=True)
     assert len(out) == 2
@@ -73,7 +73,7 @@ def test_members_mixed_ids_warn():
 
 @pytest.mark.vcr
 def test_members_bad_id_works_warn():
-    "members - param: warn"
+    """members - param: warn"""
     with pytest.warns(UserWarning):
         out = cr.members(ids=121212121212, works=True, warn=True)
     assert out is None
@@ -81,7 +81,7 @@ def test_members_bad_id_works_warn():
 
 @pytest.mark.vcr
 def test_members_mixed_ids_works_warn():
-    """members - param: warn"""
+    """""members - param: warn""" ""
     with pytest.warns(UserWarning):
         out = cr.members(ids=[98, 121212121212, 340], works=True, warn=True)
     assert len(out) == 3

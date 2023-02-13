@@ -5,7 +5,7 @@ cr = Crossref()
 
 
 def test_filter_names():
-    "filter_names"
+    """filter_names"""
     res_works = cr.filter_names()
     res_members = cr.filter_names("members")
     res_funders = cr.filter_names("funders")
@@ -26,7 +26,7 @@ def test_filter_names_errors():
 
 
 def test_filter_details():
-    "filter_details"
+    """filter_details"""
     res_works = cr.filter_details()
     res_members = cr.filter_details("members")
     res_funders = cr.filter_details("funders")

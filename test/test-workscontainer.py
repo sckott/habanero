@@ -6,7 +6,7 @@ cr = Crossref()
 
 @pytest.mark.vcr
 def test_workscontainer_with_one_id():
-    "WorksContainer: one DOI"
+    """WorksContainer: one DOI"""
     res = cr.works(ids="10.1371/journal.pone.0033693")
     x = WorksContainer(res)
     assert isinstance(x, WorksContainer)
@@ -21,7 +21,7 @@ def test_workscontainer_with_one_id():
 
 @pytest.mark.vcr
 def test_workscontainer_with_two_ids():
-    "WorksContainer: two DOIs"
+    """WorksContainer: two DOIs"""
     res = cr.works(
         ids=["10.1136/jclinpath-2020-206745", "10.1136/esmoopen-2020-000776"]
     )
@@ -38,7 +38,7 @@ def test_workscontainer_with_two_ids():
 
 @pytest.mark.vcr
 def test_workscontainer_with_many():
-    "WorksContainer: many DOIs"
+    """WorksContainer: many DOIs"""
     res = cr.members(ids=98, works=True, limit=5)
     x = WorksContainer(res)
     assert isinstance(x, WorksContainer)
@@ -53,7 +53,7 @@ def test_workscontainer_with_many():
 
 @pytest.mark.vcr
 def test_workscontainer_with_cursor():
-    "WorksContainer: with cursor"
+    """WorksContainer: with cursor"""
     res = cr.members(ids=98, works=True, limit=5, cursor="*", cursor_max=20)
     x = WorksContainer(res)
     assert isinstance(x, WorksContainer)
@@ -68,7 +68,7 @@ def test_workscontainer_with_cursor():
 
 @pytest.mark.vcr
 def test_workscontainer_failure_behavior():
-    "WorksContainer: failure behavior"
+    """WorksContainer: failure behavior"""
     # bad types
     with pytest.raises(TypeError):
         WorksContainer(5)
