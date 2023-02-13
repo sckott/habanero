@@ -8,6 +8,7 @@ a = {
     "items": [
         {"id": "book-section", "label": "Book Section"},
         {"id": "monograph", "label": "Monograph"},
+        {"id": "report-component", "label": "Report Component"},
         {"id": "report", "label": "Report"},
         {"id": "peer-review", "label": "Peer Review"},
         {"id": "book-track", "label": "Book Track"},
@@ -25,6 +26,7 @@ a = {
         {"id": "proceedings-series", "label": "Proceedings Series"},
         {"id": "report-series", "label": "Report Series"},
         {"id": "proceedings", "label": "Proceedings"},
+        {"id": "database", "label": "Database"},
         {"id": "standard", "label": "Standard"},
         {"id": "reference-book", "label": "Reference Book"},
         {"id": "posted-content", "label": "Posted Content"},
@@ -34,9 +36,8 @@ a = {
         {"id": "dataset", "label": "Dataset"},
         {"id": "book-series", "label": "Book Series"},
         {"id": "edited-book", "label": "Edited Book"},
-        {"id": "standard-series", "label": "Standard Series"},
     ],
-    "total-results": 29,
+    "total-results": 30,
 }
 
 
