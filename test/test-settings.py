@@ -20,7 +20,7 @@ def test_ua_string():
 
         assert "foo bar" in heads["User-Agent"][0]
         assert "foo bar" in heads["X-USER-AGENT"][0]
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         pytest.skip(f"{vcr_path} not found")
 
 
@@ -38,7 +38,7 @@ def test_no_ua_string():
 
         assert "foo bar" not in heads["User-Agent"][0]
         assert "foo bar" not in heads["X-USER-AGENT"][0]
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         pytest.skip(f"{vcr_noua_path} not found")
 
 
@@ -56,7 +56,7 @@ def test_ua_string_members():
 
         assert "foo bar" in heads["User-Agent"][0]
         assert "foo bar" in heads["X-USER-AGENT"][0]
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         pytest.skip(f"{vcr_path_members} not found")
 
 
@@ -74,7 +74,7 @@ def test_ua_string_prefixes():
 
         assert "foo bar" in heads["User-Agent"][0]
         assert "foo bar" in heads["X-USER-AGENT"][0]
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         pytest.skip(f"{vcr_path_prefixes} not found")
 
 
@@ -94,7 +94,7 @@ def test_ua_string_registration_agency():
 
         assert "foo bar" in heads["User-Agent"][0]
         assert "foo bar" in heads["X-USER-AGENT"][0]
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         pytest.skip(f"{vcr_path_registration_agency} not found")
 
 
