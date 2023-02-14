@@ -3,13 +3,13 @@ all: install
 .PHONY: install test docs distclean dist upload
 
 install:
-	python3.11 -m pip install .
+	python3 -m pip install .
 
 test:
-	python3.11 -m pytest --record-mode=once --cov-report term --cov=habanero test/
+	python3 -m pytest --record-mode=once --cov-report term --cov=habanero test/
 
 test_no_vcr:
-	python3.11 -m pytest --disable-recording --cov-report term --cov=habanero test/
+	python3 -m pytest --disable-recording --cov-report term --cov=habanero test/
 
 docs:
 	cd docs;\
@@ -22,10 +22,10 @@ clean:
 	rm -rf dist/* build/*
 
 dist:
-	python3.11 -m build
+	python3 -m build
 
 upload_test:
-	python3.11 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 
 upload:
-	python3.11 -m twine upload dist/*
+	python3 -m twine upload dist/*
