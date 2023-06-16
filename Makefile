@@ -29,3 +29,17 @@ upload_test:
 
 upload:
 	python3 -m twine upload dist/*
+
+.PHONY: lint-fix
+lint-fix:
+	pip3 install -q -r requirements-dev.txt
+	isort .
+	black .
+	flake8
+
+.PHONY: lint-check
+lint-check:
+	pip3 install -q -r requirements-dev.txt
+	isort . --check-only
+	black . --check
+	flake8 --count
