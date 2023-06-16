@@ -61,7 +61,19 @@ def is_json(x):
 
 
 def parse_json_err(x):
-    return x.json()["message"][0]["message"]
+    msg = x.json()["message"]
+    if isinstance(msg, str):
+        return msg
+    else:
+        failed_parse_msg = "failed to parse error message"
+        try:
+            msg = msg[0]["message"]
+        except TypeError:
+            msg = failed_parse_msg
+        else:
+            msg = failed_parse_msg
+
+        return msg
 
 
 def make_ua(mailto=None, ua_string=None):
