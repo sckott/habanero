@@ -25,7 +25,7 @@ def test_prefixes_works():
 
 def test_prefixes_filter():
     """prefixes - param: filter"""
-    with pytest.raises(TypeError, match="missing 1 required positional") as ex:
+    with pytest.raises(TypeError, match="missing 1 required positional"):
         cr.prefixes(filter={"has_full_text": True})
 
 
