@@ -23,10 +23,9 @@ def test_prefixes_works():
     assert dict == res.__class__
 
 
-@pytest.mark.vcr
 def test_prefixes_filter():
     """prefixes - param: filter"""
-    with pytest.raises(Exception):
+    with pytest.raises(TypeError, match="missing 1 required positional") as ex:
         cr.prefixes(filter={"has_full_text": True})
 
 

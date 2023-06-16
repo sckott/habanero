@@ -512,7 +512,7 @@ class Crossref:
 
     def prefixes(
         self,
-        ids: Union[List[str], str] = None,
+        ids: Union[List[str], str],
         filter: dict = None,
         offset: float = None,
         limit: float = None,
@@ -531,7 +531,7 @@ class Crossref:
         """
         Search Crossref prefixes
 
-        :param ids: DOIs (digital object identifier) or other identifiers
+        :param ids: DOIs (digital object identifier) or other identifiers. required
         :param filter: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
