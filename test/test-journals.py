@@ -1,6 +1,7 @@
 import pytest
-from habanero import Crossref, exceptions
 from requests.exceptions import HTTPError
+
+from habanero import Crossref, exceptions
 
 cr = Crossref()
 

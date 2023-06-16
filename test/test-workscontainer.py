@@ -1,4 +1,5 @@
 import pytest
+
 from habanero import Crossref, WorksContainer
 
 cr = Crossref()

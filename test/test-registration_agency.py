@@ -1,5 +1,6 @@
 import pytest
 from requests import HTTPError
+
 from habanero import Crossref
 
 cr = Crossref()

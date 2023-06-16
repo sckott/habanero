@@ -1,6 +1,8 @@
 from typing import Any
-import requests
 from xml.dom import minidom
+
+import requests
+
 from ..habanero_utils import make_ua
 
 

@@ -1,5 +1,6 @@
 import pytest
 import yaml
+
 from habanero import Crossref
 
 cr_with_ua = Crossref(ua_string="foo bar")
