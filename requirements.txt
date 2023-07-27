@@ -5,7 +5,7 @@ tqdm
 requests
 pytest
 pytest-cov
-pytest-recording
+-e git+https://github.com/kiwicom/pytest-recording.git@128d134c77837d9f4eccbc0f2c08f50882af7e6a#egg=pytest_recording
 codecov
 vcrpy
 PyYAML
