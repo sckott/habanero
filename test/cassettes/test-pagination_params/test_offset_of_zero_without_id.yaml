@@ -9,31 +9,17 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/members?offset=0&rows=1
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAA/+1XwXLbOAz9FQ/PYkYkZSn2rZe97O6p01PHB1qCUtay6CWppp6M/72gqMQ2JcU+
-        dHdy2EsCAw8gCD7A8AuxTrrOkjXRO5KQPVgrn4C64wFQt4f9FgxtlHUXxh9grNIt2tlD+pCeLWT9
-        QpSDvaUH9Dr0GpaQfzowR2/Ds4yjqq3gJ1mnCbEgTfmNOjB7zKDtmuaUEKedbKgB2zUOtVwss1US
-        wpL11xfSSOtoyJqW36DcUaf2/qC8yHmWMZaLNEvIwai9NEfaSm8kn9pWNnah68Ufcq+a4+JvqFSp
-        WsDsS921/qgXUnbGQOtopRV+ZinDk7ey3NWqgUHJRZG9Jhk0QqwE5r01IHeVfm77SN5Et0eqrO2g
-        oke8KWb/ladcJNky3SRe5Ekmsl5kjwnLeS+my4QtB60XAxYzYVkRxALFPGCzN5GnKIYITKAY3FKM
-        K4IbZyguAwCxw8FpjuLghsEEC1o8ja+CFgF8OBgjcBEAmAMfMuMJY49BKxKRbzYnX32o1U/wL0ZY
-        +oA5pGTjK43cGYgia6yqkg6ZhA8ZCo+sePC8UPhE0ih3DC+s2qczgnlEBbY06jDlbLShqoq1dYes
-        M/gkw2sO6kaV0FoY6V/h10GuUo48kLC6MyVgs7S7kVWb0ucUabtDJR3Qg8Y0FMxdZDrU7Ypd+vE8
-        LTIm8qx4XLKCFz7fGjBAOb77VW0jm3yWpqJt58fCzevM1Toq6lXIyLa1zsjS3ar2nFdU0POVLw1v
-        dO3Hyx3z4odsOo95JfYJma2qftQ5vYO2Z73sAyBa1/in7oP0k3IIs3mdO8OsxYZoGv/vO14MXSmO
-        SlX6C/O8WPkUdQno3D7Zs6lg2ek8oaa9cV4h5u3CExCBI2c+/unctjdTvXs6X3ZS/GpXPI+4M3rJ
-        636d7wZvEVm2SrNHtuR8tcyFiLh33XbTnJ6k30TfnIk1UdWPXCU2asnfX5ZblP3I9Zkapf9+ud7r
-        3o9crf+CTf832TRrsDB1I5/CNgoHbRV+10x8Ndb4NQXJGRLvF5GdrJ3pLvEzS1Ecdn45iJHv7zLx
-        6dPbQxxzbl8Y4eLlMQYM/LpRhln30V45TnRiLZvLch4xtTjFmInddxRmZt2LcdPr+Dt3u/eh7jxy
-        HjZavOde5H7mzub+7s+WiC7jZbiPhk3b6LJnES6Yf4F81rpKFn9+ThZfWvwNXC0+40ADv1f6RbXf
-        NOdX1c1pczr9AtzgAGLjDwAA
+      string: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":1,"query":{"start-index":0,"search-terms":null},"total-results":28204,"items":[{"last-status-check-time":1695597844548,"primary-name":"Annals
+        of Family Medicine","counts":{"current-dois":1107,"backfile-dois":2374,"total-dois":3481},"breakdowns":{"dois-by-issued-year":[[2023,538],[2022,434],[2018,162],[2005,154],[2015,150],[2019,147],[2017,146],[2004,146],[2020,142],[2013,140],[2008,137],[2021,135],[2010,134],[2006,132],[2014,131],[2009,129],[2016,127],[2011,123],[2007,120],[2012,118],[2003,36]]},"prefixes":["10.1370"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.2607413647851727,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"Annals
+        of Family Medicine","value":"10.1370"}],"id":1,"tokens":["annals","of","family","medicine"],"counts-type":{"all":{"journal-article":2767,"proceedings-article":714},"backfile":{"journal-article":2374},"current":{"journal-article":393,"proceedings-article":714}},"coverage-type":{"all":{"journal-article":{"last-status-check-time":1695597844548,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.365739067582219,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1695597844548,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"journal-article":{"last-status-check-time":1695597844548,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.2607413647851727,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"journal-article":{"last-status-check-time":1695597844548,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1695597844548,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":false},"location":"Leawood,
+        KS, United States","names":["Annals of Family Medicine"]}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -51,7 +37,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 15:05:30 GMT
+      - Mon, 25 Sep 2023 04:27:52 GMT
       permissions-policy:
       - interest-cohort=()
       server:

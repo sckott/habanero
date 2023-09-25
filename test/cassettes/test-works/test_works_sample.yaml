@@ -9,55 +9,105 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/works?sample=2
   response:
     body:
-      string: !!binary |
-        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
-        BxlNV1X39/f/AX54VSENIgAA
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2022,7,7]],"date-time":"2022-07-07T11:26:58Z","timestamp":1657193218533},"reference-count":23,"publisher":"Springer
+        Science and Business Media LLC","issue":"3","license":[{"start":{"date-parts":[[1985,1,1]],"date-time":"1985-01-01T00:00:00Z","timestamp":473385600000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Plant
+        Food Hum Nutr"],"published-print":{"date-parts":[[1985]]},"DOI":"10.1007\/bf01092201","type":"journal-article","created":{"date-parts":[[2005,2,5]],"date-time":"2005-02-05T08:15:26Z","timestamp":1107591326000},"page":"323-329","source":"Crossref","is-referenced-by-count":6,"title":["Interaction
+        of Dietary Fat and Soybean Isolate (SBI) on Azaserine-induced Pancreatic Carcinogenesis"],"prefix":"10.1007","volume":"35","author":[{"given":"B.
+        D.","family":"Roebuck","sequence":"first","affiliation":[]},{"given":"Paul
+        V.","family":"Kaplita","sequence":"additional","affiliation":[]},{"given":"Denise
+        L.","family":"Macmillan","sequence":"additional","affiliation":[]}],"member":"297","reference":[{"key":"CR1","first-page":"33","volume-title":"Morphometry","author":"WA
+        Aherne","year":"1982","unstructured":"Aherne WA, Dunnill MS (1982) Morphometry,
+        London: Edward Arnold, pp 33?45"},{"key":"CR2","doi-asserted-by":"crossref","first-page":"1726","DOI":"10.1093\/jn\/110.8.1726","volume":"110","author":"JG
+        Bieri","year":"1980","unstructured":"Bieri JG (1980) Second report of the
+        ad hoc committee on standards for nutritional studies. J Nutr 110:1726","journal-title":"J
+        Nutr"},{"key":"CR3","first-page":"1327","volume":"67","author":"DR Birt","year":"1981","unstructured":"Birt
+        DR, Salmasi S, Pour PM (1981) Enhancement of experimental pancreatic cancer
+        in Syrian Golden hamsters by dietary fat. J Natl Cancer Inst 67:1327?1332","journal-title":"J
+        Natl Cancer Inst"},{"key":"CR4","doi-asserted-by":"crossref","first-page":"681","DOI":"10.3181\/00379727-104-25950","volume":"104","author":"AN
+        Booth","year":"1960","unstructured":"Booth AN, Robbins DJ, Ribelin WE, DeEds
+        F (1960) Effects of raw soyabean meal and amino acids on pancreatic hypertrophy
+        in rats. Proc Soc Exp Biol Med 104:681?683","journal-title":"Proc Soc Exp
+        Biol Med"},{"key":"CR5","doi-asserted-by":"crossref","first-page":"33","DOI":"10.1152\/ajplegacy.1948.155.1.33","volume":"155","author":"SS
+        Chernick","year":"1948","unstructured":"Chernick SS, Lepkovsky S, Chaikoff
+        IL (1948) A dietary factor regulating the enzyme content of the pancreas:
+        Changes induced in size and proteolytic activity of the chick pancreas by
+        the ingestion of raw soy-bean meal. Am J Physiol 155:33?41","journal-title":"Am
+        J Physiol"},{"key":"CR6","first-page":"85","volume":"51","author":"RA Crass","year":"1981","unstructured":"Crass
+        RA, Morgan RGH (1981) Rapid changes in pancreatic DNA, RNA and protein in
+        the rat during pancreatic enlargement and involution. Int J Vitam Nutr Res
+        51:85?91","journal-title":"Int J Vitam Nutr Res"},{"key":"CR7","doi-asserted-by":"crossref","first-page":"161","DOI":"10.1159\/000197580","volume":"11","author":"UR
+        Folsch","year":"1974","unstructured":"Folsch UR, Winckler K, Wormsley KG (1974)
+        Effect of a soybean diet on enzyme content and ultrastructure of the rat exocrine
+        pancreas. Digestion 11:161?171","journal-title":"Digestion"},{"key":"CR8","doi-asserted-by":"crossref","first-page":"679","DOI":"10.1080\/00365521.1974.12096895","volume":"9","author":"UR
+        Folsch","year":"1974","unstructured":"Folsch UR, Wormsley KG (1974) The pancreatic
+        secretion of enzymes in rats treated with soybean diet. Scand J Gastroentol
+        9:679?683","journal-title":"Scand J Gastroentol"},{"key":"CR9","doi-asserted-by":"crossref","first-page":"217","DOI":"10.3109\/00365527909179873","volume":"14","author":"DA
+        Levison","year":"1979","unstructured":"Levison DA, Morgan RGH, Brimacombe
+        JS, Hopwood D, Coghill G, Wormsley KG (1979) Carcinogenic effects of di(2hydroxpropyl)-nitrosamine
+        (DHPN) in male Wistar rats: promotion of pancreatic cancer by a raw soya flour
+        diet. Scand J Gastroentol 14:217?224","journal-title":"Scand J Gastroentol"},{"key":"CR10","doi-asserted-by":"crossref","first-page":"573","DOI":"10.1093\/jnci\/53.2.573","volume":"53","author":"DS
+        Longnecker","year":"1974","unstructured":"Longnecker DS, Crawford TJ (1974)
+        Hyperplastic nodules and adenomas of exocrine pancreas in azaserine-treated
+        rats. J Natl Cancer Inst 53:573?577","journal-title":"J Natl Cancer Inst"},{"key":"CR11","doi-asserted-by":"crossref","first-page":"1562","DOI":"10.1002\/1097-0142(19810315)47:6+<1562::AID-CNCR2820471419>3.0.CO;2-Z","volume":"47","author":"DS
+        Longnecker","year":"1981","unstructured":"Longnecker DS, Roebuck BD, Yager
+        JD Jr, Lilja HS, Siegmund B (1981) Pancreatic carcinoma in azaserine-treated
+        rats: Induction, classification and dietary modulation of incidence. Cancer
+        47:1562?1572","journal-title":"Cancer"},{"key":"CR12","doi-asserted-by":"crossref","first-page":"273","DOI":"10.3109\/00365528209182052","volume":"17","author":"EE
+        McGuinness","year":"1982","unstructured":"McGuinness EE, Hopwood D, Wormsley
+        KG (1982) Further studies on the effects of raw soya flour on rat pancreas.
+        Scand J Gastroenterol 17:273?277","journal-title":"Scand J Gastroenterol"},{"key":"CR13","first-page":"49","volume":"16","author":"EE
+        McGuinness","year":"1981","unstructured":"McGuinness EE, Morgan RGH, Levison
+        DA, Hopwood D, Wormsley KG (1981) Interaction of azaserine and raw soya flour
+        on the rat pancreas. Scand J Gastroentol 16:49?56","journal-title":"Scand
+        J Gastroentol"},{"key":"CR14","doi-asserted-by":"crossref","first-page":"280","DOI":"10.1016\/0304-4165(76)90294-4","volume":"421","author":"RN
+        Melmed","year":"1976","unstructured":"Melmed RN, El-Aaser AAA, Holt SJ (1976)
+        Hypertrophy and hyperplasia of the neonatal rat exocrine pancreas induced
+        by orally administered soybean trypsin inhibitor. Biochem Biophys Acta 421:280?288","journal-title":"Biochem
+        Biophys Acta"},{"key":"CR15","doi-asserted-by":"crossref","first-page":"87","DOI":"10.1016\/S0304-3835(77)94455-X","volume":"3","author":"RGH
+        Morgan","year":"1977","unstructured":"Morgan RGH, Levinson DA, Hopwood D,
+        Saunders JHB, Wormsley KG (1977) Potentiation of the action of azaserine on
+        the rat pancreas by raw soya bean flour. Cancer Letters 3:87?90","journal-title":"Cancer
+        Letters"},{"key":"CR16","first-page":"1488","volume":"24","author":"JJ Rackis","year":"1965","unstructured":"Rackis
+        JJ (1965) Physiological properties of soybean trypsin inhibitors and their
+        relationship to pancreatic hypertrophy and growth inhibition of rats. Fed
+        Proc 24:1488?1493","journal-title":"Fed Proc"},{"key":"CR17","first-page":"527","volume":"46","author":"MS
+        Rao","year":"1982","unstructured":"Rao MS, Upton MP, Subbarao V, Scarpelli
+        DG (1982) Two populations of cells with differing proliferative capacities
+        in atypical acinar cell foci induced by 4-hydroxyaminoquinoline-l-oxide in
+        the rat pancreas. Lab Invest 46:527?534","journal-title":"Lab Invest"},{"key":"CR18","first-page":"141","volume":"50","author":"BD
+        Roebuck","year":"1984","unstructured":"Roebuck BD, Baumgartner KJ, Thron CD
+        (1984) Characterization of two populations of pancreatic atypical acinar cell
+        foci induced by azaserine in the rat. Lab Invest 50:141?146","journal-title":"Lab
+        Invest"},{"key":"CR19","first-page":"684","volume":"61","author":"BD Roebuck","year":"1984","unstructured":"Roebuck
+        BD, Kaplita PV (1984) Interaction of dietary fat and soybean isolate (SBI)
+        on azaserine-induced pancreatic carcinogenesis. J Am Oil Chem Soc 61:684","journal-title":"J
+        Am Oil Chem Soc"},{"key":"CR20","doi-asserted-by":"crossref","first-page":"1273","DOI":"10.1093\/jnci\/59.4.1273","volume":"59","author":"BD
+        Roebuck","year":"1977","unstructured":"Roebuck BD, Longnecker DS (1977) Species
+        and rat strain variation in pancreatic nodule induction by azaserine. J Natl
+        Cancer Inst 59:1273?1277","journal-title":"J Natl Cancer Inst"},{"key":"CR21","first-page":"888","volume":"41","author":"BD
+        Roebuck","year":"1981","unstructured":"Roebuck BD, Yager JD Jr, Longnecker
+        DS (1981) Dietary modulation of azaserine-induced pancreatic carcinogenesis
+        in the rat. Cancer Res 41:888?893","journal-title":"Cancer Res"},{"key":"CR22","first-page":"3961","volume":"41","author":"BD
+        Roebuck","year":"1981","unstructured":"Roebuck BD, Yager JD Jr, Longnecker
+        DS, Wilpone SA (1981) Promotion by unsaturated fat of azaserine-induced pancreatic
+        carcinogenesis in the rat. Cancer Res 41:3961?3966","journal-title":"Cancer
+        Res"},{"key":"CR23","first-page":"D190","volume-title":"Handbook of chemistry
+        and physics","year":"1968","unstructured":"Weast RC (ed) (1968) Handbook of
+        chemistry and physics, Cleveland, Ohio: The Chemical Rubber Company, pp D190-D191"}],"container-title":["Qualitas
+        Plantarum Plant Foods for Human Nutrition"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01092201.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/BF01092201\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01092201","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,4]],"date-time":"2021-07-04T17:28:10Z","timestamp":1625419690000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/BF01092201"}},"issued":{"date-parts":[[1985]]},"references-count":23,"journal-issue":{"issue":"3","published-print":{"date-parts":[[1985]]}},"alternative-id":["BF01092201"],"URL":"http:\/\/dx.doi.org\/10.1007\/bf01092201","ISSN":["0377-3205","1573-9104"],"issn-type":[{"value":"0377-3205","type":"print"},{"value":"1573-9104","type":"electronic"}],"subject":["Chemistry
+        (miscellaneous)","Food Science","Plant Science","Food Science","Chemistry
+        (miscellaneous)","Medicine (miscellaneous)"],"published":{"date-parts":[[1985]]}},{"indexed":{"date-parts":[[2023,9,17]],"date-time":"2023-09-17T00:34:16Z","timestamp":1694910856085},"reference-count":0,"publisher":"Oxford
+        University Press (OUP)","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1978,1]]},"DOI":"10.1093\/oxfordjournals.jbchem.a131913","type":"journal-article","created":{"date-parts":[[2017,2,1]],"date-time":"2017-02-01T15:17:56Z","timestamp":1485962276000},"page":"61-77","source":"Crossref","is-referenced-by-count":92,"title":["Immunochemical
+        Study on the Electron Pathway from NADH to Cytochrome P-450 of Liver Microsomes"],"prefix":"10.1093","volume":"83","author":[{"given":"Mitsuhide","family":"NOSHIRO","sequence":"first","affiliation":[]},{"given":"Tsuneo","family":"OMURA","sequence":"additional","affiliation":[]}],"member":"286","published-online":{"date-parts":[[1978,1]]},"container-title":["The
+        Journal of Biochemistry"],"language":"en","link":[{"URL":"http:\/\/academic.oup.com\/jb\/article-pdf\/83\/1\/61\/6451243\/83-1-61.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,8,24]],"date-time":"2017-08-24T09:51:06Z","timestamp":1503568266000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/academic.oup.com\/jb\/article\/2186122\/Immunochemical"}},"issued":{"date-parts":[[1978,1]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[1978,1]]},"published-print":{"date-parts":[[1978,1]]}},"URL":"http:\/\/dx.doi.org\/10.1093\/oxfordjournals.jbchem.a131913","ISSN":["1756-2651","0021-924X"],"issn-type":[{"value":"1756-2651","type":"electronic"},{"value":"0021-924X","type":"print"}],"subject":["Molecular
+        Biology","Biochemistry","General Medicine"],"published":{"date-parts":[[1978,1]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -71,11 +121,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '2298'
+      - '4097'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 21:19:55 GMT
+      - Mon, 25 Sep 2023 04:31:48 GMT
       permissions-policy:
       - interest-cohort=()
       server:

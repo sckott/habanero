@@ -9,36 +9,265 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAA/91X227jNhD9FUFPu4Aoi5RkOQKKwt20QNrF7mKTFkVjP9ASHTPRbUXKiWH43ztD
-        KbbjS2JsGhSt4QeZFA9nzpy5eGkrzXWj7Ngu72zHzoVS/EYQvagErN2X9R3JpNJbW3NRK1kWsEtd
-        z/U2O3a8tKc8ERrQlivH1qXmGamFajJcYo4ttcjh6XppyyIVDyLFIynXglS8xneur5nHmBM4wXjs
-        tDta5mgJrhMvgO+VR2PGYkb/gqtxFzzIKzum/eDM80M/oGdhBNfXYipqUSSCJGVTaDv2HLtqJuDN
-        TNSA+HOmxFyK2vrpDwCSSjV4D4XnTCaiUMIYCuC13jeTnkWBEzl010xcJ15EPHrlebH57poZ0EF/
-        MPDwA1YmZaFFobdY1WkOJ1KR8QWRBUn5Qhnbf//6EXZnWlcqHvVGvfv7e1d0PrhJmY96cHLUa5So
-        OwdGPYjQqGevxpt70jLnsjAOdU/XuFuXSuUcgg3h0rVMtLFlygEfjFSzstYEIeCEqMFZnSE99q9l
-        Uxc8s8qppWfCGuYCzvLCOpdCCy0Ta6hUmUhu4MYb/lNS1bI4yut4DJeef75AQj2XerQ/6ingi5EB
-        Y/47Rt9TGg4GxEdqW6XetpYQAJIJGIc+CYA+LDHqUOowdkBklFBKGLvyIhSZ7++JzI/CfhiFfhu+
-        yuje7mMaKDAhwV8fkE2Qn5EVWeswJZPFlhbXJA7dc3foWmVhVQLkWGNE7613Xy6/fn5vSAME+bDh
-        AmDnZdYYi/uhyb98YiQdDew20q8MU8aLm6b1TBQmIYo7kw27GuSV3NFgpzPYagMx6n25uIgvMXgY
-        O0ZN5PwfEWOYJKLSP2jxAO8/5Jm9kWkX1UNbm0yZlzVSjMspsMurCoTfOtEeJbksZHFjr5w3Nb3K
-        MJGOGL+7+T3mo0xFVSr5Wj0Hx/Tc7/SskrKGk1DXsYA+KnoJGpRQHhb4uEskigOsnDWTHT5rAZVE
-        zIHHSspRb49Ie7Xq6u4Bp7YKwTqB1Fb2POZ7V7eXTwr46WUG4HmmBUBpORdEppgu+5aOt8uv8Tp9
-        cNNSumV9A1X2pRp1cXn5CYHX2wgIBhedVCCz5jwz5m9eWZe21gcUgWomtyLRCPWpAXJRKxYv0nUi
-        Kzj1S1mm1mUikbEnNfdZGl5qyaFDvcM9OSTUu2I0DmjsRXvyChmjg0E/Ahbfuid3o8NeT16PDsd7
-        cj8YRBFl/4+mPCwgVzOLWKoVgVXVZSJECkmqTmrCLZGHmvCtywtArVx8xfV816Pe9/bgUzQFJSvc
-        n/NQUxHE60kLDkj4ih585loXOfA0B5JMj1SNQl75RGZSL7BzKpnhTS80ZIqJyxsNwTFavYGyggI6
-        d2F9ynOZLfAXB4FgsirxrTGJGttTWZs5m0+ncGfXB67HmJqPIL+5H5/AfCiTb09BeJqaqsCzA0jj
-        E0aFl8Tzz48GLIoYG/h/Mkw/3w/+Q6PBy6b/+6PBqWnGjqUZe/vJYJfHZyeDrer0BpPBGv3wZLBn
-        6YmTwZHC+TgYICxB3OODweaVA4PBMz1+49C4+wNOKkj4tmoy4AtqRxs+01aJGQMMkUrwOpkR4AD/
-        tBdNlq1Wq78BiBxGSDEQAAA=
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2023,9,9]],"date-time":"2023-09-09T17:43:18Z","timestamp":1694281398228},"reference-count":68,"publisher":"Elsevier
+        BV","license":[{"start":{"date-parts":[[2020,5,1]],"date-time":"2020-05-01T00:00:00Z","timestamp":1588291200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/501100012166","name":"National
+        Key Research and Development Program","doi-asserted-by":"publisher","award":["2016YFC0600105"]},{"DOI":"10.13039\/501100001809","name":"National
+        Natural Science Foundation of China","doi-asserted-by":"publisher","award":["41672094"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Ore
+        Geology Reviews"],"published-print":{"date-parts":[[2020,5]]},"DOI":"10.1016\/j.oregeorev.2020.103450","type":"journal-article","created":{"date-parts":[[2020,3,7]],"date-time":"2020-03-07T06:57:06Z","timestamp":1583564226000},"page":"103450","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":19,"title":["Two-stage
+        gold deposition in response to H2S loss from a single fluid in the Sizhuang
+        deposit (Jiaodong, China)"],"prefix":"10.1016","volume":"120","author":[{"given":"Huan-Long","family":"Hu","sequence":"first","affiliation":[]},{"given":"Hong-Rui","family":"Fan","sequence":"additional","affiliation":[]},{"given":"Xuan","family":"Liu","sequence":"additional","affiliation":[]},{"given":"Ya-Chun","family":"Cai","sequence":"additional","affiliation":[]},{"given":"Kui-Feng","family":"Yang","sequence":"additional","affiliation":[]},{"given":"Wei-Dong","family":"Ma","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.oregeorev.2020.103450_b0005","doi-asserted-by":"crossref","first-page":"897","DOI":"10.2113\/econgeo.104.7.897","article-title":"Uncloaking
+        invisible gold: use of NanoSIMS to evaluate gold, trace elements, and sulfur
+        isotopes in pyrite from Carlin-type gold deposits","volume":"104","author":"Barker","year":"2009","journal-title":"Econ.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0010","doi-asserted-by":"crossref","first-page":"48","DOI":"10.1111\/j.1468-8123.2010.00305.x","article-title":"Oscillatory
+        zoning and trace element incorporation in hydrothermal minerals: insights
+        from calcite growth experiments","volume":"11","author":"Barker","year":"2011","journal-title":"Geofluids"},{"key":"10.1016\/j.oregeorev.2020.103450_b0015","doi-asserted-by":"crossref","first-page":"2665","DOI":"10.1016\/S0016-7037(00)00387-2","article-title":"Framboidal
+        pyrite formation via the oxidation of iron (II) monosulfide by hydrogen sulphide","volume":"64","author":"Butler","year":"2000","journal-title":"Geochim.
+        Cosmochim. Acta."},{"key":"10.1016\/j.oregeorev.2020.103450_b0020","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/j.gr.2017.09.009","article-title":"Decratonic
+        gold mineralization: evidence from the Shangzhuang gold deposit, eastern North
+        China Craton","volume":"54","author":"Cai","year":"2018","journal-title":"Gondwana
+        Res."},{"key":"10.1016\/j.oregeorev.2020.103450_b0025","doi-asserted-by":"crossref","first-page":"261","DOI":"10.1016\/j.jseaes.2010.07.006","article-title":"Metamorphic
+        Core Complexes vs. synkinematic plutons in continental extension setting:
+        Insights from key structures (Shandong Province, eastern China)","volume":"40","author":"Charles","year":"2011","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0030","first-page":"1","article-title":"Concentrations
+        of invisible gold in the common sulfides","volume":"28","author":"Cook","year":"1990","journal-title":"Can.
+        Miner."},{"key":"10.1016\/j.oregeorev.2020.103450_b0035","unstructured":"Cui,
+        S.X., Yuan, W.H., Yang, Z.L., 2008. Geological Characteristics in the Deep
+        of Sizhuang Gold Deposit in Laizhou City. Northwest. Geol. (Xi''an, China).
+        41, 82-92 (In Chinese with English abstract)."},{"key":"10.1016\/j.oregeorev.2020.103450_b0040","first-page":"51","article-title":"Routine
+        quantitative multi-element analysis of sulphide minerals by laser ablation
+        ICP-MS: standard development and consideration of matrix effects","volume":"11","author":"Danyushevsky","year":"2011","journal-title":"Geochem.:
+        Explor., Environ Anal."},{"key":"10.1016\/j.oregeorev.2020.103450_b0045","doi-asserted-by":"crossref","first-page":"2919","DOI":"10.1016\/j.gca.2008.03.014","article-title":"A
+        proposed new type of arsenian pyrite: composition, nanostructure and geological
+        significance","volume":"72","author":"Deditius","year":"2008","journal-title":"Geochim.
+        Cosmochim. Acta."},{"key":"10.1016\/j.oregeorev.2020.103450_b0050","doi-asserted-by":"crossref","first-page":"674","DOI":"10.1016\/j.oregeorev.2014.04.018","article-title":"Origin
+        of the Jiaodong-type Xinli gold deposit, Jiaodong Peninsula, China: constraints
+        from fluid inclusion and C-D\u2013O\u2013S\u2013Sr isotope compositions","volume":"65","author":"Deng","year":"2015","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0055","first-page":"1","article-title":"Remobilization
+        of metasomatized mantle lithosphere: a new model for the Jiaodong gold province,
+        eastern China","author":"Deng","year":"2019","journal-title":"Miner. Deposita"},{"key":"10.1016\/j.oregeorev.2020.103450_b0060","doi-asserted-by":"crossref","first-page":"71","DOI":"10.1016\/0009-2541(91)90034-O","article-title":"Cation
+        ratios of fluid inclusions in a gold-quartz vein at Brusson, Val d''Ayas,
+        northwestern Italian Alps: comparison of bulk crush-leach results with SIMS
+        analyses of individual inclusions","volume":"90","author":"Diamond","year":"1991","journal-title":"Chem.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0065","doi-asserted-by":"crossref","first-page":"69","DOI":"10.1016\/S0024-4937(00)00039-6","article-title":"Review
+        of the systematics of CO2 \u2013 H2O fluid inclusions","volume":"55","author":"Diamond","year":"2001","journal-title":"Lithos"},{"key":"10.1016\/j.oregeorev.2020.103450_b0070","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/j.chemgeo.2013.11.026","article-title":"Insights
+        into subduction zone sulfur recycling from isotopic analysis of eclogite-hosted
+        sulfides","volume":"365","author":"Evans","year":"2014","journal-title":"Chem.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0075","doi-asserted-by":"crossref","first-page":"739","DOI":"10.1007\/s00126-003-0368-x","article-title":"Ore-forming
+        fluids associated with granite-hosted gold mineralization at the Sanshandao
+        deposit, Jiaodong gold province, China","volume":"38","author":"Fan","year":"2003","journal-title":"Miner.
+        Deposita."},{"key":"10.1016\/j.oregeorev.2020.103450_b0080","first-page":"1317","article-title":"Fluid
+        evolution and Large-scale gold metallogeny during Mesozoic tectonic transition
+        in the eastern Shandong province","volume":"21","author":"Fan","year":"2005","journal-title":"Acta
+        Petrol. Sin."},{"key":"10.1016\/j.oregeorev.2020.103450_b0085","first-page":"3225","article-title":"Mesozoic
+        gold mineralization in the Jiaodong and Korean peninsulas","volume":"32","author":"Fan","year":"2016","journal-title":"Acta
+        Geol. Sin."},{"key":"10.1016\/j.oregeorev.2020.103450_b0090","doi-asserted-by":"crossref","first-page":"304","DOI":"10.1016\/j.jseaes.2017.12.023","article-title":"Involvement
+        of anomalously As-Au-rich fluids in the mineralization of the Heilan\u2019gou
+        gold deposit, Jiaodong, China: evidence from trace element mapping and in-situ
+        sulfur isotope composition","volume":"160","author":"Feng","year":"2018","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0095","first-page":"1","article-title":"Geochronological
+        and sulfur isotopic evidence for the genesis of the post-magmatic, deeply
+        sourced, and anomalously gold-rich Daliuhang orogenic deposit, Jiaodong, China","author":"Feng","year":"2019","journal-title":"Miner.
+        Deposita"},{"key":"10.1016\/j.oregeorev.2020.103450_b0100","doi-asserted-by":"crossref","first-page":"143","DOI":"10.1016\/j.gca.2016.01.040","article-title":"Gold
+        remobilisation and formation of high grade ore shoots driven by dissolution-reprecipitation
+        replacement and Ni substitution into auriferous arsenopyrite","volume":"178","author":"Fougerouse","year":"2016","journal-title":"Geochim.
+        Cosmochim. Acta."},{"key":"10.1016\/j.oregeorev.2020.103450_b0105","doi-asserted-by":"crossref","first-page":"139","DOI":"10.1016\/j.gsf.2013.11.001","article-title":"The
+        dilemma of the Jiaodong gold deposits: Are they unique?","volume":"5","author":"Goldfarb","year":"2014","journal-title":"Geosci.
+        Front."},{"key":"10.1016\/j.oregeorev.2020.103450_b0110","first-page":"1281","article-title":"Evolution
+        of syn- to post-collisional magmatism from north Sulu UHP belt, eastern China:
+        Zircon U-Pb geochronology","volume":"21","author":"Guo","year":"2005","journal-title":"Acta
+        Petrol. Sin."},{"key":"10.1016\/j.oregeorev.2020.103450_b0115","doi-asserted-by":"crossref","first-page":"761","DOI":"10.1130\/G20629.1","article-title":"Magmatic
+        vapor contraction and the transport of gold from porphyry to epithermal ore
+        deposits","volume":"32","author":"Heinrich","year":"2004","journal-title":"Geology"},{"key":"10.1016\/j.oregeorev.2020.103450_b0120","doi-asserted-by":"crossref","first-page":"84","DOI":"10.1016\/j.lithos.2012.02.018","article-title":"In
+        situ zircon U-Pb, oxygen and hafnium isotopic compositions of Jurassic granites
+        from the North China craton: evidence for Triassic subduction of continental
+        crust and subsequent metamorphism-related 18 O depletion","volume":"142\u2013143","author":"Jiang","year":"2012","journal-title":"Lithos"},{"key":"10.1016\/j.oregeorev.2020.103450_b0125","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/j.lithos.2016.04.028","article-title":"Titanite-scale
+        insights into multi-stage magma mixing in early cretaceous of NW Jiaodong
+        terrane, North China Craton","volume":"258","author":"Jiang","year":"2016","journal-title":"Lithos"},{"key":"10.1016\/j.oregeorev.2020.103450_b0130","doi-asserted-by":"crossref","first-page":"899","DOI":"10.1016\/0098-3004(92)90029-Q","article-title":"SUPCRT92:
+        A software package for calculating the standard molal thermodynamic properties
+        of minerals, gases, aqueous species, and reactions from 1 to 5000 bar and
+        0 to 1000 \u00b0C \u2606","volume":"18","author":"Johnson","year":"1992","journal-title":"Comput.
+        Geosci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0135","doi-asserted-by":"crossref","first-page":"433","DOI":"10.1016\/j.gca.2016.11.007","article-title":"The
+        role of carbon dioxide in the transport and fractionation of metals by geological
+        fluids","volume":"197","author":"Kokh","year":"2017","journal-title":"Geochim.
+        Cosmochim. Acta."},{"key":"10.1016\/j.oregeorev.2020.103450_b0140","doi-asserted-by":"crossref","first-page":"1233","DOI":"10.2113\/gsecongeo.102.7.1233","article-title":"Multistage
+        sedimentary and metamorphic origin of pyrite and gold in the giant Sukhoi
+        log deposit, Lena Gold Province, Russia","volume":"102","author":"Large","year":"2007","journal-title":"Econ.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0145","doi-asserted-by":"crossref","first-page":"635","DOI":"10.2113\/gsecongeo.104.5.635","article-title":"Gold
+        and trace element zonation in pyrite using a laser imaging technique: implications
+        for the timing of gold in orogenic and carlin-style sediment-hosted deposits","volume":"104","author":"Large","year":"2009","journal-title":"Econ.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0150","doi-asserted-by":"crossref","first-page":"403","DOI":"10.1016\/j.oregeorev.2013.01.020","article-title":"Hydrothermal
+        alteration associated with Mesozoic granite-hosted gold mineralization at
+        the Sanshandao deposit, Jiaodong Gold Province, China","volume":"53","author":"Li","year":"2013","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0160","doi-asserted-by":"crossref","first-page":"73","DOI":"10.1007\/s00410-018-1501-2","article-title":"Pyrite
+        textures and compositions from the Zhuangzi Au deposit, southeastern North
+        China Craton: implication for ore-forming processes","volume":"173","author":"Li","year":"2018","journal-title":"Contrib.
+        Miner. Petrol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0165","doi-asserted-by":"crossref","first-page":"365","DOI":"10.1016\/j.jseaes.2017.10.001","article-title":"Rapid
+        exhumation of the northern Jiaobei Terrane, North China Craton in the Early
+        Cretaceous: insights from Al-in-hornblende barometry and U-Pb geochronology","volume":"160","author":"Li","year":"2018","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0155","doi-asserted-by":"crossref","first-page":"589","DOI":"10.1016\/j.oregeorev.2014.06.021","article-title":"The
+        \u2018Jiaodong type\u2019 gold deposits: characteristics, origin and prospecting","volume":"65","author":"Li","year":"2015","journal-title":"Ore
+        Geol. Rev."},{"issue":"1","key":"10.1016\/j.oregeorev.2020.103450_b0170","first-page":"1","article-title":"Exhumation
+        history of the Sanshandao Au deposit, Jiaodong: constraints from structural
+        analysis and (U-Th)\/He thermochronology","volume":"7","author":"Liu","year":"2017","journal-title":"Sci.
+        Rep."},{"key":"10.1016\/j.oregeorev.2020.103450_b0175","doi-asserted-by":"crossref","first-page":"196","DOI":"10.1016\/j.oregeorev.2017.02.016","article-title":"Geochronological
+        framework of the Xiadian gold deposit in the Jiaodong province, China: implications
+        for the timing of gold mineralization","volume":"86","author":"Ma","year":"2017","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0180","doi-asserted-by":"crossref","first-page":"287","DOI":"10.1016\/j.jseaes.2017.12.033","article-title":"Hydrothermal
+        fluid evolution of the Jintingling gold deposit in the Jiaodong peninsula,
+        China: constraints from U-Pb age, CL imaging, fluid inclusion and stable isotope","volume":"160","author":"Ma","year":"2018","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0185","doi-asserted-by":"crossref","first-page":"361","DOI":"10.1016\/j.oregeorev.2007.01.003","article-title":"The
+        relationship of mantle-derived fluids to gold metallogenesis in the Jiaodong
+        Peninsula: evidence from D-O\u2013C\u2013S isotope systematics","volume":"33","author":"Mao","year":"2008","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0190","doi-asserted-by":"crossref","first-page":"361","DOI":"10.1007\/BF02877567","article-title":"Zircon
+        senstive high resolution ion microprobe (SHRIMP) study of granitoid intrusions
+        in Zhaoye gold belt of Shandong Province and its implication","volume":"40","author":"Miao","year":"1997","journal-title":"Sci.
+        China, Ser. D: Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0195","doi-asserted-by":"crossref","first-page":"127","DOI":"10.1016\/j.oregeorev.2014.12.014","article-title":"Anomalously
+        silver-rich vein-hosted mineralisation in disseminated-style gold deposits,
+        Jiaodong gold district","volume":"68","author":"Mills","year":"2015","journal-title":"China.
+        Ore Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0200","doi-asserted-by":"crossref","first-page":"150","DOI":"10.1016\/j.oregeorev.2015.04.022","article-title":"Implications
+        of pyrite geochemistry for gold mineralisation and remobilisation in the Jiaodong
+        gold district, northeast China","volume":"71","author":"Mills","year":"2015","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0205","doi-asserted-by":"crossref","first-page":"793","DOI":"10.1038\/342793a0","article-title":"Role
+        of methane and carbon dioxide in gold deposition","volume":"342","author":"Naden","year":"1989","journal-title":"Nature"},{"key":"10.1016\/j.oregeorev.2020.103450_b0210","doi-asserted-by":"crossref","first-page":"551","DOI":"10.2113\/gsecongeo.67.5.551","article-title":"Systematics
+        of sulfur and carbon isotopes in hydrothermal ore deposits","volume":"67","author":"Ohmoto","year":"1972","journal-title":"Econ.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0215","doi-asserted-by":"crossref","first-page":"383","DOI":"10.1130\/G35286.1","article-title":"Linking
+        high-grade gold mineralization to earthquake-induced fault-valve processes
+        in the Porgera gold deposit, Papua New Guinea","volume":"42","author":"Peterson","year":"2014","journal-title":"Geology"},{"key":"10.1016\/j.oregeorev.2020.103450_b0220","doi-asserted-by":"crossref","first-page":"860","DOI":"10.1038\/nature02644","article-title":"Role
+        of CO2 in the formation of gold deposits","volume":"429","author":"Phillips","year":"2004","journal-title":"Nature"},{"key":"10.1016\/j.oregeorev.2020.103450_b0225","doi-asserted-by":"crossref","first-page":"609","DOI":"10.2138\/rmg.2006.61.11","article-title":"Sulfide
+        mineral precipitation from hydrothermal fluids","volume":"61","author":"Reed","year":"2006","journal-title":"Rev.
+        Miner. Geochem."},{"key":"10.1016\/j.oregeorev.2020.103450_b0230","doi-asserted-by":"crossref","first-page":"2781","DOI":"10.1016\/j.gca.2005.01.011","article-title":"Solubility
+        of gold in arsenian pyrite","volume":"69","author":"Reich","year":"2005","journal-title":"Geochim.
+        Cosmochim. Acta."},{"key":"10.1016\/j.oregeorev.2020.103450_b0235","doi-asserted-by":"crossref","first-page":"42","DOI":"10.1016\/j.gca.2012.11.006","article-title":"Pyrite
+        as a record of hydrothermal fluid evolution in a porphyry copper system: A
+        SIMS\/EMPA trace element study","volume":"104","author":"Reich","year":"2013","journal-title":"Geochim.
+        Cosmochim. Acta."},{"key":"10.1016\/j.oregeorev.2020.103450_b0240","doi-asserted-by":"crossref","first-page":"633","DOI":"10.2138\/rmg.2006.61.12","article-title":"Sulfur
+        Isotope Geochemistry of Sulfide Minerals","volume":"61","author":"Seal","year":"2006","journal-title":"Rev.
+        Mineral. Geochem."},{"key":"10.1016\/j.oregeorev.2020.103450_b0245","first-page":"923","article-title":"Characteristic
+        comparison between shallow and deep-seated gold ore bodies in Jiaojia superlarge
+        gold deposit, northwestern Shandong peninsula","volume":"30","author":"Song","year":"2011","journal-title":"Miner.
+        Deposits (Beijing, China)."},{"key":"10.1016\/j.oregeorev.2020.103450_b0250","doi-asserted-by":"crossref","first-page":"612","DOI":"10.1016\/j.oregeorev.2014.06.019","article-title":"Types,
+        characteristics and metallogenesis of gold deposits in the Jiaodong Peninsula,
+        Eastern North China Craton","volume":"65","author":"Song","year":"2015","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0255","doi-asserted-by":"crossref","first-page":"4121","DOI":"10.1016\/j.gca.2004.04.006","article-title":"Gold(I)
+        complexing in aqueous sulphide solutions to 500\u00b0C at 500 bar","volume":"68","author":"Stef\u00e1nsson","year":"2004","journal-title":"Geochim.
+        Cosmochim. Acta."},{"key":"10.1016\/j.oregeorev.2020.103450_b0260","doi-asserted-by":"crossref","first-page":"667","DOI":"10.2113\/econgeo.106.4.667","article-title":"In
+        situ trace element and sulfur isotope analysis of pyrite in a paleoproterozoic
+        gold placer deposit, pardo and clement townships, Ontario, Canada","volume":"106","author":"Ulrich","year":"2011","journal-title":"Econ.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0265","doi-asserted-by":"crossref","first-page":"457","DOI":"10.2113\/econgeo.109.2.457","article-title":"Formation
+        and deformation of pyrite and implications for gold mineralization in the
+        El Callao District, Venezuela","volume":"109","author":"Vel\u00e1squez","year":"2014","journal-title":"Econ.
+        Geol."},{"key":"10.1016\/j.oregeorev.2020.103450_b0270","doi-asserted-by":"crossref","first-page":"701","DOI":"10.1016\/j.oregeorev.2014.06.006","article-title":"Fluid
+        immiscibility and gold deposition in the Xincheng deposit, Jiaodong Peninsula,
+        China: a fluid inclusion study","volume":"65","author":"Wang","year":"2015","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0275","doi-asserted-by":"crossref","first-page":"190","DOI":"10.3390\/min9030190","article-title":"Ore-fluid
+        evolution of the Sizhuang orogenic Gold Deposit, Jiaodong Peninsula, China","volume":"9","author":"Wei","year":"2019","journal-title":"Minerals"},{"key":"10.1016\/j.oregeorev.2020.103450_b0280","first-page":"1049","article-title":"Genesis
+        of Sizhuang gold deposit, Jiaodong Peninsula: evidences from fluid inclusion
+        and quartz solubility modeling","volume":"31","author":"Wei","year":"2015","journal-title":"Acta
+        Petrol. Sin."},{"key":"10.1016\/j.oregeorev.2020.103450_b0285","doi-asserted-by":"crossref","first-page":"643","DOI":"10.1016\/j.oregeorev.2014.03.018","article-title":"Genesis
+        of two different types of gold mineralization in the Linglong gold field,
+        China: constrains from geology, fluid inclusions and stable isotope","volume":"65","author":"Wen","year":"2015","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0290","doi-asserted-by":"crossref","first-page":"96","DOI":"10.1016\/j.gexplo.2016.01.007","article-title":"Fluid
+        evolution and ore genesis of the giant Sanshandao gold deposit, Jiaodong gold
+        province, China: Constrains from geology, fluid inclusions and H-O\u2013S\u2013He\u2013Ar
+        isotopic compositions","volume":"171","author":"Wen","year":"2016","journal-title":"J.
+        Geochem. Explor."},{"key":"10.1016\/j.oregeorev.2020.103450_b0295","doi-asserted-by":"crossref","first-page":"152","DOI":"10.1016\/j.jseaes.2016.08.008","article-title":"Exhaustive
+        gold mineralizing processes of the Sanshandao gold deposit, Jiaodong Peninsula,
+        eastern China: Displayed by hydrothermal alteration modeling","volume":"129","author":"Xu","year":"2016","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0300","doi-asserted-by":"crossref","first-page":"112","DOI":"10.1016\/j.lithos.2012.04.035","article-title":"Reactivation
+        of the Archean lower crust: Implications for zircon geochronology, elemental
+        and Sr\u2013Nd\u2013Hf isotopic geochemistry of late Mesozoic granitoids from
+        northwestern Jiaodong Terrane, the North China Craton","volume":"146\u2013147","author":"Yang","year":"2012","journal-title":"Lithos"},{"key":"10.1016\/j.oregeorev.2020.103450_b0305","doi-asserted-by":"crossref","first-page":"408","DOI":"10.1016\/j.jseaes.2017.08.014","article-title":"Tectonic
+        transition from a compressional to extensional metallogenic environment at
+        ~120 Ma revealed in the Hushan gold deposit, Jiaodong, North China Craton","volume":"160","author":"Yang","year":"2018","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0310","doi-asserted-by":"crossref","first-page":"491","DOI":"10.1016\/j.oregeorev.2016.06.027","article-title":"Timing
+        and mechanism of gold mineralization at the Wang''ershan gold deposit, Jiaodong
+        Peninsula, eastern China","volume":"88","author":"Yang","year":"2017","journal-title":"Ore
+        Geol. Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0315","doi-asserted-by":"crossref","first-page":"275","DOI":"10.1016\/j.gr.2013.02.007","article-title":"Metallogeny
+        of the North China Craton: Link with secular changes in the evolving Earth","volume":"24","author":"Zhai","year":"2013","journal-title":"Gondwana
+        Res."},{"key":"10.1016\/j.oregeorev.2020.103450_b0320","first-page":"85","article-title":"Large-scale
+        cluster of gold deposits in east Shandong: anorogenic metallogenesis","volume":"11","author":"Zhai","year":"2004","journal-title":"Earth
+        Science Front."},{"key":"10.1016\/j.oregeorev.2020.103450_b0325","doi-asserted-by":"crossref","first-page":"1934","DOI":"10.1039\/C4JA00140K","article-title":"Improved
+        precision and spatial resolution of sulfur isotope analysis using NanoSIMS","volume":"29","author":"Zhang","year":"2014","journal-title":"J.
+        Anal. At. Spectrom."},{"key":"10.1016\/j.oregeorev.2020.103450_b0330","doi-asserted-by":"crossref","first-page":"105","DOI":"10.1016\/S0012-8252(02)00133-2","article-title":"Stable
+        isotope geochemistry of ultrahigh pressure metamorphic rocks from the Dabie-Sulu
+        orogen in China: implications for geodynamics and fluid regime","volume":"62","author":"Zheng","year":"2003","journal-title":"Earth
+        Sci Rev."},{"key":"10.1016\/j.oregeorev.2020.103450_b0335","doi-asserted-by":"crossref","first-page":"1523","DOI":"10.1007\/s11430-015-5139-x","article-title":"Decratonic
+        gold deposits","volume":"58","author":"Zhu","year":"2015","journal-title":"Sci.
+        China: Earth Sci."},{"key":"10.1016\/j.oregeorev.2020.103450_b0340","doi-asserted-by":"crossref","first-page":"367","DOI":"10.1016\/j.gsf.2011.05.006","article-title":"Geochemistry
+        of hydrothermal gold deposits: a review","volume":"2","author":"Zhu","year":"2011","journal-title":"Geosci.
+        Front."}],"container-title":["Ore Geology Reviews"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0169136819308492?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0169136819308492?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,4,30]],"date-time":"2020-04-30T12:47:02Z","timestamp":1588250822000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0169136819308492"}},"issued":{"date-parts":[[2020,5]]},"references-count":68,"alternative-id":["S0169136819308492"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.oregeorev.2020.103450","ISSN":["0169-1368"],"issn-type":[{"value":"0169-1368","type":"print"}],"subject":["Economic
+        Geology","Geochemistry and Petrology","Geology"],"published":{"date-parts":[[2020,5]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Two-stage gold deposition in response
+        to H2S loss from a single fluid in the Sizhuang deposit (Jiaodong, China)","name":"articletitle","label":"Article
+        Title"},{"value":"Ore Geology Reviews","name":"journaltitle","label":"Journal
+        Title"},{"value":"https:\/\/doi.org\/10.1016\/j.oregeorev.2020.103450","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2020 Elsevier B.V. All rights reserved.","name":"copyright","label":"Copyright"}],"article-number":"103450"},{"indexed":{"date-parts":[[2023,9,10]],"date-time":"2023-09-10T21:24:58Z","timestamp":1694381098348},"reference-count":55,"publisher":"Elsevier
+        BV","license":[{"start":{"date-parts":[[2018,1,1]],"date-time":"2018-01-01T00:00:00Z","timestamp":1514764800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"name":"Inter
+        University Accelerator Centre (IUAC)"}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Materials
+        Research Bulletin"],"published-print":{"date-parts":[[2018,1]]},"DOI":"10.1016\/j.materresbull.2017.09.010","type":"journal-article","created":{"date-parts":[[2017,9,6]],"date-time":"2017-09-06T17:38:50Z","timestamp":1504719530000},"page":"207-214","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":18,"title":["Structural,
+        thermal and dielectric properties of  in-situ  reduced graphene oxide \u2212
+        polypyrrole nanotubes nanocomposites"],"prefix":"10.1016","volume":"97","author":[{"given":"Madhabi","family":"Devi","sequence":"first","affiliation":[]},{"given":"A.","family":"Kumar","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.materresbull.2017.09.010_bib0005","doi-asserted-by":"crossref","first-page":"367","author":"Huang","year":"2006","journal-title":"Chem.
+        Commun.","DOI":"10.1039\/B510956F"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0010","doi-asserted-by":"crossref","first-page":"275","DOI":"10.1016\/j.synthmet.2010.11.034","volume":"161","author":"Chatterjee","year":"2011","journal-title":"Synth.
+        Met."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0015","doi-asserted-by":"crossref","first-page":"404","DOI":"10.1039\/b008026h","volume":"11","author":"Liu","year":"2001","journal-title":"J.
+        Mater. Chem."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0020","doi-asserted-by":"crossref","first-page":"1237","DOI":"10.1021\/nl049477p","volume":"4","author":"Ramanathan","year":"2004","journal-title":"Nano
+        Lett."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0025","doi-asserted-by":"crossref","first-page":"314","DOI":"10.1021\/ja028371y","volume":"125","author":"Huang","year":"2003","journal-title":"J.
+        Am. Chem. Soc."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0030","doi-asserted-by":"crossref","first-page":"205","DOI":"10.1039\/b809074m","volume":"1","author":"Thavasi","year":"2008","journal-title":"Energy
+        Environ. Sci."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0035","doi-asserted-by":"crossref","first-page":"13706","DOI":"10.1002\/ange.201406719","volume":"126","author":"Tang","year":"2014","journal-title":"Angew.
+        Chem."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0040","doi-asserted-by":"crossref","first-page":"5","DOI":"10.1016\/j.polymer.2010.11.042","volume":"52","author":"Potts","year":"2011","journal-title":"Polym."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0045","doi-asserted-by":"crossref","first-page":"1805","DOI":"10.1002\/smll.201102635","volume":"8","author":"Huang","year":"2012","journal-title":"Small"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0050","doi-asserted-by":"crossref","first-page":"3639","DOI":"10.1039\/C4CS00316K","volume":"44","author":"Shao","year":"2015","journal-title":"Chem.
+        Soc. Rev."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0055","doi-asserted-by":"crossref","first-page":"1060","DOI":"10.1002\/macp.201200029","volume":"213","author":"Du","year":"2012","journal-title":"Macromol.
+        Chem. Phys."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0060","doi-asserted-by":"crossref","first-page":"666","DOI":"10.1039\/C1CS15078B","volume":"41","author":"Huang","year":"2012","journal-title":"Chem.
+        Soc. Rev."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0065","doi-asserted-by":"crossref","first-page":"671","DOI":"10.1016\/j.progpolymsci.2010.07.010","volume":"36","author":"Lu","year":"2011","journal-title":"Prog.
+        Polym. Sci."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0070","doi-asserted-by":"crossref","first-page":"3052","DOI":"10.1039\/c3nr33641g","volume":"5","author":"Zhang","year":"2013","journal-title":"Nanoscale"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0075","doi-asserted-by":"crossref","first-page":"323","DOI":"10.1016\/j.materresbull.2014.07.051","volume":"59","author":"Agharkar","year":"2014","journal-title":"Mater.
+        Res. Bull."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0080","doi-asserted-by":"crossref","first-page":"262","DOI":"10.1016\/j.jpowsour.2014.11.130","volume":"276","author":"Kalambate","year":"2015","journal-title":"J.
+        Power Sources"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0085","doi-asserted-by":"crossref","first-page":"200","DOI":"10.1016\/j.materresbull.2015.02.040","volume":"66","author":"Bhattacharya","year":"2015","journal-title":"Mater.
+        Res. Bull."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0090","doi-asserted-by":"crossref","first-page":"23501","DOI":"10.1021\/jp208661n","volume":"115","author":"Zhang","year":"2011","journal-title":"J.
+        Phys. Chem. C"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0095","first-page":"614","article-title":"Colloids
+        Surf","volume":"441","author":"Manivel","year":"2014","journal-title":"A:
+        Physicochem. Eng. Asp."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0100","doi-asserted-by":"crossref","first-page":"10246","DOI":"10.1021\/la302031f","volume":"28","author":"Zhu","year":"2012","journal-title":"Langmuir"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0105","doi-asserted-by":"crossref","first-page":"214","DOI":"10.1016\/j.synthmet.2014.11.028","volume":"199","author":"Mitchell","year":"2015","journal-title":"Synth.
+        Met."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0110","doi-asserted-by":"crossref","first-page":"5480","DOI":"10.1002\/adma.201305293","volume":"26","author":"Yousefi","year":"2014","journal-title":"Adv.
+        Mater."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0115","doi-asserted-by":"crossref","first-page":"7468","DOI":"10.1039\/c3sm51128f","volume":"9","author":"Yin","year":"2013","journal-title":"Soft
+        Matter"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0120","doi-asserted-by":"crossref","first-page":"151","DOI":"10.1016\/j.jallcom.2013.03.280","volume":"573","author":"Liu","year":"2013","journal-title":"J.
+        Alloys Compd."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0125","doi-asserted-by":"crossref","first-page":"177","DOI":"10.1016\/j.snb.2012.06.065","volume":"173","author":"Ameen","year":"2012","journal-title":"Sens.
+        Actuators B"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0130","doi-asserted-by":"crossref","first-page":"74","DOI":"10.1016\/j.diamond.2013.05.003","volume":"37","author":"Mitra","year":"2013","journal-title":"Diamond
+        Relat. Mater."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0135","doi-asserted-by":"crossref","first-page":"1736","DOI":"10.1002\/marc.200500514","volume":"26","author":"Yang","year":"2005","journal-title":"Macromol.
+        Rapid Commun."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0140","doi-asserted-by":"crossref","first-page":"5667","DOI":"10.1021\/cm101132g","volume":"22","author":"Biswas","year":"2010","journal-title":"Chem.
+        Mater."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0145","doi-asserted-by":"crossref","first-page":"6985","DOI":"10.1002\/adma.201303529","volume":"25","author":"Meng","year":"2013","journal-title":"Adv.
+        Mater."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0150","doi-asserted-by":"crossref","first-page":"4528","DOI":"10.1016\/j.matlet.2007.02.045","volume":"61","author":"Jing","year":"2007","journal-title":"Mater.
+        Lett."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0155","doi-asserted-by":"crossref","first-page":"2489","DOI":"10.1002\/adfm.201303282","volume":"24","author":"Kim","year":"2014","journal-title":"Adv.
+        Funct. Mater."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0160","doi-asserted-by":"crossref","first-page":"14623","DOI":"10.1021\/jp062339z","volume":"110","author":"Li","year":"2006","journal-title":"J.
+        Phys. Chem. B"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0165","doi-asserted-by":"crossref","first-page":"5990","DOI":"10.1016\/j.jpowsour.2011.02.090","volume":"196","author":"Zhang","year":"2011","journal-title":"J.
+        Power Sources"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0170","doi-asserted-by":"crossref","first-page":"3277","DOI":"10.1039\/c1nr10371g","volume":"3","author":"Yang","year":"2011","journal-title":"Nanoscale"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0175","doi-asserted-by":"crossref","first-page":"14390","DOI":"10.1021\/ie301734f","volume":"51","author":"Xu","year":"2012","journal-title":"Ind.
+        Eng. Chem. Res."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0180","doi-asserted-by":"crossref","first-page":"519","DOI":"10.1016\/j.electacta.2012.10.082","volume":"88","author":"Liu","year":"2013","journal-title":"Electrochim.
+        Acta"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0185","doi-asserted-by":"crossref","first-page":"79","DOI":"10.1016\/j.colsurfb.2011.08.026","volume":"89","author":"Wojtoniszak","year":"2012","journal-title":"Colloids
+        Surf. B Biointerfaces"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0190","doi-asserted-by":"crossref","first-page":"5861","DOI":"10.1021\/nn101844t","volume":"4","author":"Acik","year":"2010","journal-title":"ACS
+        Nano"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0195","doi-asserted-by":"crossref","first-page":"230","DOI":"10.1016\/j.apcata.2011.11.013","volume":"413-414","author":"Qiu","year":"2012","journal-title":"Appl.
+        Catal. A"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0200","doi-asserted-by":"crossref","first-page":"79","DOI":"10.1016\/j.carbon.2014.11.026","volume":"83","author":"Liu","year":"2015","journal-title":"Carbon"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0205","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/j.synthmet.2014.06.025","volume":"196","author":"Yan","year":"2014","journal-title":"Synth.
+        Met."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0210","doi-asserted-by":"crossref","first-page":"283","DOI":"10.3144\/expresspolymlett.2012.31","volume":"6","author":"Tantis","year":"2012","journal-title":"Express
+        Polym. Lett."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0215","doi-asserted-by":"crossref","first-page":"5480","DOI":"10.1002\/adma.201305293","volume":"26","author":"Yousefi","year":"2014","journal-title":"Adv.
+        Mater."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0220","doi-asserted-by":"crossref","first-page":"13157","DOI":"10.3390\/molecules171113157","volume":"17","author":"Vil\u010d\u00e1kov\u00e1","year":"2012","journal-title":"Molecules"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0225","doi-asserted-by":"crossref","first-page":"10246","DOI":"10.1021\/la302031f","volume":"28","author":"Zhu","year":"2012","journal-title":"Langmuir"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0230","doi-asserted-by":"crossref","first-page":"025005","DOI":"10.1088\/2043-6262\/4\/2\/025005","volume":"4","author":"Chakraborty","year":"2013","journal-title":"Adv.
+        Nat. Sci. Nanosci. Nanotechnol."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0235","doi-asserted-by":"crossref","first-page":"1121","DOI":"10.1016\/j.jpcs.2003.11.039","volume":"65","author":"Migahed","year":"2004","journal-title":"J.
+        Phys. Chem. Solids"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0240","doi-asserted-by":"crossref","first-page":"1311","DOI":"10.1016\/j.carbon.2009.01.014","volume":"47","author":"Zhang","year":"2009","journal-title":"Carbon"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0245","doi-asserted-by":"crossref","first-page":"1545","DOI":"10.1016\/j.compositesa.2005.11.004","volume":"37","author":"Psarras","year":"2006","journal-title":"Composites
+        Part A"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0250","doi-asserted-by":"crossref","first-page":"1277","DOI":"10.1088\/0957-4484\/15\/9\/028","volume":"15","author":"Dey","year":"2004","journal-title":"Nanotechnology"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0255","doi-asserted-by":"crossref","first-page":"5187","DOI":"10.1021\/ma021263b","volume":"36","author":"Barrau","year":"2003","journal-title":"Macromolecules"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0260","doi-asserted-by":"crossref","first-page":"024304","DOI":"10.1063\/1.1836855","volume":"97","author":"Guskos","year":"2005","journal-title":"J.
+        Appl. Phys."},{"key":"10.1016\/j.materresbull.2017.09.010_bib0265","doi-asserted-by":"crossref","first-page":"1187","DOI":"10.1016\/j.compositesa.2003.08.002","volume":"34","author":"Psarras","year":"2003","journal-title":"Composites
+        Part A"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0270","doi-asserted-by":"crossref","first-page":"9","DOI":"10.1080\/13642818508243162","volume":"52","author":"Summerfield","year":"1985","journal-title":"Philos.
+        Mag. B"},{"key":"10.1016\/j.materresbull.2017.09.010_bib0275","doi-asserted-by":"crossref","first-page":"2160","DOI":"10.1103\/PhysRevLett.78.2160","volume":"78","author":"Roling","year":"1997","journal-title":"Phys.
+        Rev. Lett."}],"container-title":["Materials Research Bulletin"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0025540816322322?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0025540816322322?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,7,3]],"date-time":"2018-07-03T13:23:29Z","timestamp":1530624209000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0025540816322322"}},"issued":{"date-parts":[[2018,1]]},"references-count":55,"alternative-id":["S0025540816322322"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.materresbull.2017.09.010","ISSN":["0025-5408"],"issn-type":[{"value":"0025-5408","type":"print"}],"subject":["Mechanical
+        Engineering","Mechanics of Materials","Condensed Matter Physics","General
+        Materials Science"],"published":{"date-parts":[[2018,1]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Structural, thermal and dielectric properties
+        of in-situ reduced graphene oxide \u2212 polypyrrole nanotubes nanocomposites","name":"articletitle","label":"Article
+        Title"},{"value":"Materials Research Bulletin","name":"journaltitle","label":"Journal
+        Title"},{"value":"https:\/\/doi.org\/10.1016\/j.materresbull.2017.09.010","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2017 Elsevier Ltd. All rights reserved.","name":"copyright","label":"Copyright"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -52,11 +281,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '1214'
+      - '9317'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 15:33:10 GMT
+      - Mon, 25 Sep 2023 04:21:54 GMT
       permissions-policy:
       - interest-cohort=()
       server:

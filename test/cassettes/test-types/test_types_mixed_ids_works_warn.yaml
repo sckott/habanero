@@ -9,326 +9,377 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/types/journal-article/works
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":102195749,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:59Z","timestamp":1648950359167},"reference-count":0,"publisher":"American
+        Society of Clinical Oncology (ASCO)","issue":"18_suppl","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JCO"],"published-print":{"date-parts":[[2007,6,20]]},"abstract":"<jats:p>
+        3507 <\/jats:p><jats:p> Purpose: To detect IGF-1R on circulating tumor cells
+        (CTCs) as a biomarker in the clinical development of a monoclonal human antibody,
+        CP-751,871, targeting IGF-1R. Experimental Design: An automated sample preparation
+        and analysis system for enumerating CTCs (Celltracks) was adapted for detecting
+        IGF-1R positive CTCs with a diagnostic antibody targeting a different IGF-1R
+        epitope to CP-751,871. This assay was utilized in three phase I trials of
+        CP-751,871 as a single agent or with chemotherapy and was validated using
+        cell lines and blood samples from healthy volunteers and patients with metastatic
+        carcinoma. Results: There was no interference between the analytical and therapeutic
+        antibodies. CP-751,871 was well tolerated as a single agent, and in combination
+        with docetaxel or carboplatin and paclitaxel, at doses ranging from 0.05 mg\/kg
+        to 20 mg\/kg. Eighty patients were enrolled on phase 1 studies of CP-751,871,
+        with 47 (59%) patients having CTCs detected during the study. Prior to treatment
+        26 patients (33%) had CTCs, with 23 having detectable IGF-1R positive CTCs.
+        CP-751,871 alone, and CP-751,871 with cytotoxic chemotherapy, decreased CTCs
+        and IGF-1R positive CTCs; these increased towards the end of the 21-day cycle
+        in some patients, falling again with retreatment. CTCs were commonest in advanced
+        hormone refractory prostate cancer (11\/20). Detectable IGF-1R expression
+        on CTCs before treatment with CP-751,871 and docetaxel was associated with
+        a higher frequency of PSA decline by more than 50% (6\/10 vs 2\/8 patients).
+        A relationship was observed between sustained falls in CTCs counts and PSA
+        declines by more than 50%. Conclusions: IGF-1R expression is detectable by
+        immunofluorescence on CTCs. These data support the further evaluation of CTCs
+        in pharmacodynamic studies and patient selection, particularly in advanced
+        prostate cancer. <\/jats:p><jats:p> No significant financial relationships
+        to disclose. <\/jats:p>","DOI":"10.1200\/jco.2007.25.18_suppl.3507","type":"journal-article","created":{"date-parts":[[2020,3,6]],"date-time":"2020-03-06T20:50:42Z","timestamp":1583527842000},"page":"3507-3507","source":"Crossref","is-referenced-by-count":0,"title":["Circulating
+        tumor cells expressing the insulin growth factor-1 receptor (IGF-1R): Method
+        of detection, incidence and potential applications"],"prefix":"10.1200","volume":"25","author":[{"given":"J.
+        S.","family":"de Bono","sequence":"first","affiliation":[{"name":"Royal Marsden
+        Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill University
+        & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global Research
+        & Development, New London, CT; Immunicon Corporation, Huntingdon Valley, PA"}]},{"given":"A.","family":"Adjei","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"G.","family":"Attard","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"M.","family":"Pollak","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"P.","family":"Fong","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"P.","family":"Haluska","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"L.","family":"Roberts","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"D.","family":"Chainese","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"L.","family":"Terstappen","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]},{"given":"A.","family":"Gualberto","sequence":"additional","affiliation":[{"name":"Royal
+        Marsden Hospital, Surrey, United Kingdom; Mayo Clinic, Rochester, MN; McGill
+        University & Lady Davis Research Institute, Montreal, PQ, Canada; Pfizer Global
+        Research & Development, New London, CT; Immunicon Corporation, Huntingdon
+        Valley, PA"}]}],"member":"233","container-title":["Journal of Clinical Oncology"],"language":"en","deposited":{"date-parts":[[2020,3,6]],"date-time":"2020-03-06T20:51:03Z","timestamp":1583527863000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/ascopubs.org\/doi\/10.1200\/jco.2007.25.18_suppl.3507"}},"issued":{"date-parts":[[2007,6,20]]},"references-count":0,"journal-issue":{"issue":"18_suppl","published-print":{"date-parts":[[2007,6,20]]}},"alternative-id":["10.1200\/jco.2007.25.18_suppl.3507"],"URL":"http:\/\/dx.doi.org\/10.1200\/jco.2007.25.18_suppl.3507","ISSN":["0732-183X","1527-7755"],"issn-type":[{"value":"0732-183X","type":"print"},{"value":"1527-7755","type":"electronic"}],"subject":["Cancer
+        Research","Oncology"],"published":{"date-parts":[[2007,6,20]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361495},"reference-count":0,"publisher":"SynthesisHub
+        Advance Scientific Research","issue":"05","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["SRP"],"published-print":{"date-parts":[[2020,6,1]]},"DOI":"10.31838\/srp.2020.5.28","type":"journal-article","created":{"date-parts":[[2020,6,11]],"date-time":"2020-06-11T04:57:32Z","timestamp":1591851452000},"source":"Crossref","is-referenced-by-count":0,"title":["The
+        Mechanism of Endoplasmic Reticulum Stress and the Cyclin D2 Expression on
+        Ovarian Granulosa Cell Cycle in Infertile Women with Endometriosis"],"prefix":"10.31838","volume":"11","member":"17074","published-online":{"date-parts":[[2020,6,1]]},"container-title":["Systematic
+        Reviews in Pharmacy"],"deposited":{"date-parts":[[2020,6,11]],"date-time":"2020-06-11T04:57:35Z","timestamp":1591851455000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.sysrevpharm.org\/\/index.php?fulltxt=108406&fulltxtj=196&fulltxtp=196-1589880106.pdf"}},"issued":{"date-parts":[[2020,6,1]]},"references-count":0,"journal-issue":{"issue":"05","published-online":{"date-parts":[[2020,6,1]]},"published-print":{"date-parts":[[2020,6,1]]}},"URL":"http:\/\/dx.doi.org\/10.31838\/srp.2020.5.28","ISSN":["0976-2779","0975-8453"],"issn-type":[{"value":"0976-2779","type":"print"},{"value":"0975-8453","type":"electronic"}],"subject":["Pharmaceutical
+        Science"],"published":{"date-parts":[[2020,6,1]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:52Z","timestamp":1648950352883},"reference-count":6,"publisher":"Elsevier
+        BV","issue":"1","license":[{"start":{"date-parts":[[2018,1,1]],"date-time":"2018-01-01T00:00:00Z","timestamp":1514764800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2019,1,2]],"date-time":"2019-01-02T00:00:00Z","timestamp":1546387200000},"content-version":"vor","delay-in-days":366,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"content-domain":{"domain":["clinicalkey.jp","onlinejacc.org","clinicalkey.com","clinicalkey.es","clinicalkey.com.au","clinicalkey.fr","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Journal
+        of the American College of Cardiology"],"published-print":{"date-parts":[[2018,1]]},"DOI":"10.1016\/j.jacc.2017.11.012","type":"journal-article","created":{"date-parts":[[2018,1,1]],"date-time":"2018-01-01T19:03:22Z","timestamp":1514833402000},"page":"37-39","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":2,"title":["TMVR
+        With Artificial Cords in the Treatment of Mitral Regurgitation"],"prefix":"10.1016","volume":"71","author":[{"given":"Michael","family":"Mack","sequence":"first","affiliation":[]},{"given":"Robert","family":"Smith","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.jacc.2017.11.012_bib1","doi-asserted-by":"crossref","first-page":"2315","DOI":"10.1016\/j.jacc.2017.09.015","article-title":"Outcomes
+        with transcatheter mitral valve repair in the United States","volume":"70","author":"Sorajja","year":"2017","journal-title":"J\u00a0Am
+        Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib2","doi-asserted-by":"crossref","first-page":"914","DOI":"10.1016\/j.jacc.2013.07.090","article-title":"Off-pump
+        transapical implantation of artificial neo-chordae to correct mitral regurgitation:
+        the TACT Trial (Transapical Artificial Chordae Tendinae) proof of concept","volume":"63","author":"Seeburger","year":"2014","journal-title":"J\u00a0Am
+        Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib3","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1016\/j.ijcard.2015.11.131","article-title":"Transapical
+        off-pump mitral valve repair with Neochord implantation: early clinical results","volume":"204","author":"Colli","year":"2016","journal-title":"Int
+        J Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib4","doi-asserted-by":"crossref","first-page":"25","DOI":"10.1016\/j.jacc.2017.10.062","article-title":"Beating-heart
+        mitral valve repair using a novel ePTFE cordal implantation device: a prospective
+        trial","volume":"71","author":"Gammie","year":"2018","journal-title":"J\u00a0Am
+        Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib5","doi-asserted-by":"crossref","first-page":"189","DOI":"10.1161\/CIRCULATIONAHA.116.022010","article-title":"Transapical
+        beating-heart mitral valve repair with an expanded polytetrafluoroethylene
+        cordal implantation device: initial clinical experience","volume":"134","author":"Gammie","year":"2016","journal-title":"Circulation"},{"key":"10.1016\/j.jacc.2017.11.012_bib6","doi-asserted-by":"crossref","first-page":"499","DOI":"10.1016\/j.jacc.2015.12.007","article-title":"The
+        time has come to define centers of excellence in mitral valve repair","volume":"67","author":"Bonow","year":"2016","journal-title":"J\u00a0Am
+        Coll Cardiol"}],"container-title":["Journal of the American College of Cardiology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0735109717415853?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0735109717415853?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,8,19]],"date-time":"2020-08-19T17:08:29Z","timestamp":1597856909000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0735109717415853"}},"issued":{"date-parts":[[2018,1]]},"references-count":6,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2018,1]]}},"alternative-id":["S0735109717415853"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.jacc.2017.11.012","ISSN":["0735-1097"],"issn-type":[{"value":"0735-1097","type":"print"}],"subject":["Cardiology
+        and Cardiovascular Medicine"],"published":{"date-parts":[[2018,1]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"TMVR With Artificial Cords in the Treatment
+        of Mitral Regurgitation","name":"articletitle","label":"Article Title"},{"value":"Journal
+        of the American College of Cardiology","name":"journaltitle","label":"Journal
+        Title"},{"value":"https:\/\/doi.org\/10.1016\/j.jacc.2017.11.012","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"https:\/\/doi.org\/10.1016\/j.jacc.2017.10.062","name":"associatedlink","label":"CrossRef
+        DOI link to the associated document"},{"value":"simple-article","name":"content_type","label":"Content
+        Type"},{"value":"\u00a9 2018 by the American College of Cardiology Foundation.
+        Published by Elsevier.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:58Z","timestamp":1648950358727},"reference-count":19,"publisher":"Wiley","issue":"1","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":8462,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J
+        Neurochem"],"published-print":{"date-parts":[[1992,7]]},"DOI":"10.1111\/j.1471-4159.1992.tb08891.x","type":"journal-article","created":{"date-parts":[[2006,10,6]],"date-time":"2006-10-06T03:06:56Z","timestamp":1160104016000},"page":"200-205","source":"Crossref","is-referenced-by-count":49,"title":["In
+        Vivo Evidence that Lithium Inactivates G<sub>i<\/sub>Modulation of Adenylate
+        Cyclase in Brain"],"prefix":"10.1111","volume":"59","author":[{"given":"Monica
+        I.","family":"Masana","sequence":"first","affiliation":[]},{"given":"Jose
+        A.","family":"Bitran","sequence":"additional","affiliation":[]},{"given":"John
+        K.","family":"Hsiao","sequence":"additional","affiliation":[]},{"given":"William
+        Z.","family":"Potter","sequence":"additional","affiliation":[]}],"member":"311","reference":[{"key":"b1_1259","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1159\/000118100","volume":"12","author":"Andersen
+        P. H.","year":"1984","journal-title":"Neuropsychobiology"},{"key":"b2_1260","doi-asserted-by":"publisher","DOI":"10.1038\/331440a0"},{"key":"b3_1261","doi-asserted-by":"crossref","first-page":"21","DOI":"10.1111\/j.1471-4159.1990.tb08815.x","volume":"55","author":"Bidaut-Russell
+        M.","year":"1990","journal-title":"J. Neurochem"},{"key":"b4_1262","first-page":"161","volume":"213","author":"Ebstein
+        R. P.","year":"1980","journal-title":"J. Pharmacol. Exp. Ther"},{"key":"b5_1263","doi-asserted-by":"publisher","DOI":"10.1016\/0006-8993(88)90472-6"},{"key":"b6_1264","doi-asserted-by":"publisher","DOI":"10.1016\/0006-291X(84)90883-0"},{"key":"b7_1265","doi-asserted-by":"publisher","DOI":"10.1016\/0024-3205(92)90276-U"},{"key":"b8_1266","doi-asserted-by":"crossref","first-page":"8182","DOI":"10.1016\/S0021-9258(19)83894-2","volume":"261","author":"Katada
+        T.","year":"1986","journal-title":"J. Biol. Chem"},{"key":"b9_1267","doi-asserted-by":"crossref","first-page":"4870","DOI":"10.1016\/S0021-9258(18)32507-9","volume":"258","author":"Kurose
+        H.","year":"1983","journal-title":"J. Biol. Chem"},{"key":"b10_1268","doi-asserted-by":"publisher","DOI":"10.1016\/0006-8993(91)90450-A"},{"key":"b11_1269","doi-asserted-by":"publisher","DOI":"10.1016\/0006-3223(89)90040-1"},{"key":"b12_1270","doi-asserted-by":"publisher","DOI":"10.1016\/0028-3908(89)90108-1"},{"key":"b13_1271","doi-asserted-by":"publisher","DOI":"10.1016\/0028-3908(87)90211-5"},{"key":"b14_1272","doi-asserted-by":"crossref","first-page":"194","DOI":"10.1111\/j.1471-4159.1988.tb04855.x","volume":"51","author":"Okada
+        F.","year":"1988","journal-title":"J. Neurochem"},{"key":"b15_1273","first-page":"37","volume":"34","author":"Parsons
+        W. J.","year":"1988","journal-title":"Mol. Pharmacol"},{"key":"b16_1274","volume-title":"The
+        Rat Brain in Stereotaxic Coordinates","author":"Paxinos G.","year":"1986"},{"key":"b17_1275","doi-asserted-by":"crossref","first-page":"513","DOI":"10.1001\/archpsyc.1991.01810300025004","volume":"48","author":"Risby
+        E. D.","year":"1991","journal-title":"Arch. Gen. Psychiatry"},{"key":"b18_1276","first-page":"201","volume":"7","author":"Seamon
+        K. B.","year":"1981","journal-title":"J. Cyclic Nucleo-tide Res"},{"key":"b19_1277","doi-asserted-by":"crossref","first-page":"864","DOI":"10.1111\/j.1471-4159.1989.tb11784.x","volume":"53","author":"Woods
+        M. D.","year":"1989","journal-title":"J. Neurochem"}],"container-title":["Journal
+        of Neurochemistry"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1471-4159.1992.tb08891.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1471-4159.1992.tb08891.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,8,1]],"date-time":"2021-08-01T22:37:25Z","timestamp":1627857445000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1471-4159.1992.tb08891.x"}},"issued":{"date-parts":[[1992,7]]},"references-count":19,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1992,7]]}},"alternative-id":["10.1111\/j.1471-4159.1992.tb08891.x"],"URL":"http:\/\/dx.doi.org\/10.1111\/j.1471-4159.1992.tb08891.x","ISSN":["0022-3042","1471-4159"],"issn-type":[{"value":"0022-3042","type":"print"},{"value":"1471-4159","type":"electronic"}],"subject":["Cellular
+        and Molecular Neuroscience","Biochemistry"],"published":{"date-parts":[[1992,7]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:59Z","timestamp":1648950359572},"reference-count":0,"publisher":"Japanese
+        Society of Medical Instrumentation","issue":"4","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1985,4,1]]},"DOI":"10.4286\/ikakikaigaku.55.4_197_1","type":"journal-article","created":{"date-parts":[[2021,5,16]],"date-time":"2021-05-16T22:08:43Z","timestamp":1621202923000},"page":"197","source":"Crossref","is-referenced-by-count":0,"title":["27.\u65b0\u3057\u3044\u624b\u8853\u91ce\u5c55\u958b\u6a5f\u69cb"],"prefix":"10.4286","volume":"55","member":"2823","container-title":["JAPANES
+        JOURNAL OF MEDICAL INSTRUMENTATION"],"language":"en","link":[{"URL":"https:\/\/www.jstage.jst.go.jp\/article\/ikakikaigaku\/55\/4\/55_KJ00001642467\/_pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,5,16]],"date-time":"2021-05-16T22:08:43Z","timestamp":1621202923000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.jstage.jst.go.jp\/article\/ikakikaigaku\/55\/4\/55_KJ00001642467\/_article\/-char\/ja\/"}},"issued":{"date-parts":[[1985,4,1]]},"references-count":0,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1985]]}},"URL":"http:\/\/dx.doi.org\/10.4286\/ikakikaigaku.55.4_197_1","ISSN":["0385-440X","1881-4875"],"issn-type":[{"value":"0385-440X","type":"print"},{"value":"1881-4875","type":"electronic"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[1985,4,1]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361671},"reference-count":2,"publisher":"GRAPHIMEDIC
+        SA DE CV","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2020]]},"DOI":"10.35366\/99957","type":"journal-article","created":{"date-parts":[[2021,6,15]],"date-time":"2021-06-15T21:27:05Z","timestamp":1623792425000},"page":"189-190","source":"Crossref","is-referenced-by-count":0,"title":["Qu\u00e9
+        debe llevar un resumen"],"prefix":"10.35366","volume":"42","author":[{"given":"Abilene
+        Cirenia","family":"Escamilla Ortiz","sequence":"first","affiliation":[]}],"member":"18774","reference":[{"key":"ref=1","doi-asserted-by":"crossref","unstructured":"Andrade
+        C. How to write a good abstract for a scientific paper or conference presentation.
+        Indian J Psychiatry. 2011; 53 (2): 172-175.","DOI":"10.4103\/0019-5545.82558"},{"key":"ref=2","unstructured":"Diez
+        MB. El resumen de un art\u00edculo cient\u00edfico: qu\u00e9 es y qu\u00e9
+        no es. Invest Educ Enferm. 2007; 25 (1): 14-17."}],"container-title":["Cirujano
+        General"],"language":"es","deposited":{"date-parts":[[2021,6,15]],"date-time":"2021-06-15T21:27:12Z","timestamp":1623792432000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.medigraphic.com\/cgi-bin\/new\/resumen.cgi?IDARTICULO=99957"}},"issued":{"date-parts":[[2020]]},"references-count":2,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2020]]}},"alternative-id":["99957"],"URL":"http:\/\/dx.doi.org\/10.35366\/99957","ISSN":["2594-1518"],"issn-type":[{"value":"2594-1518","type":"electronic"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2020]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:02Z","timestamp":1648950362561},"reference-count":0,"publisher":"Springer
+        Science and Business Media LLC","issue":"1158","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Reactions
+        Weekly"],"published-print":{"date-parts":[[2007,6]]},"DOI":"10.2165\/00128415-200711580-00046","type":"journal-article","created":{"date-parts":[[2007,7,2]],"date-time":"2007-07-02T04:05:35Z","timestamp":1183349135000},"page":"17","source":"Crossref","is-referenced-by-count":0,"title":["Isoniazid
+        interaction"],"prefix":"10.1007","volume":"&NA;","author":[{"family":"&NA;","sequence":"first","affiliation":[]}],"member":"297","container-title":["Reactions
+        Weekly"],"language":"en","deposited":{"date-parts":[[2013,3,2]],"date-time":"2013-03-02T10:47:15Z","timestamp":1362221235000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.2165\/00128415-200711580-00046"}},"subtitle":["Interaction
+        with concomitant ground saury paste leading to allergy-like symptoms: 8 case
+        reports"],"issued":{"date-parts":[[2007,6]]},"references-count":0,"journal-issue":{"issue":"1158"},"URL":"http:\/\/dx.doi.org\/10.2165\/00128415-200711580-00046","ISSN":["0114-9954"],"issn-type":[{"value":"0114-9954","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2007,6]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:04Z","timestamp":1648950364846},"reference-count":0,"publisher":"Oxford
+        University Press (OUP)","issue":"3","license":[{"start":{"date-parts":[[1968,5,1]],"date-time":"1968-05-01T00:00:00Z","timestamp":-52704000000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/academic.oup.com\/journals\/pages\/open_access\/funder_policies\/chorus\/standard_publication_model"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1968,5,1]]},"abstract":"<jats:title>Abstract<\/jats:title>\n               <jats:p>Six
+        laboratories collaboratively studied three different gas chromatographic dual
+        detection systems. The potassium chloride thermionic and electron capture
+        detectors were arranged: (1) in parallel; (2) in series with a stream splitter
+        between the detectors; and (3) in series. Systems 1 and 2 use the same type
+        of thermionic detector, whereas a modification of this detector is used for
+        System 3. Collaborative results show these systems to be equivalent for the
+        quantitative measurement of multiple organophosphorus pesticides at 0.5 and
+        2.0 ppm. The pesticides studied were ronnel, ethion, Diazinon, malathion,
+        methyl parathion, parathion, and carbophenothion. Operational and performance
+        characteristics of dual detection and of thermionic gas chromatography are
+        also discussed. It is recommended that all three systems studied be listed
+        as official, first action for analysis of multiple pesticide residues<\/jats:p>","DOI":"10.1093\/jaoac\/51.3.666","type":"journal-article","created":{"date-parts":[[2020,2,24]],"date-time":"2020-02-24T08:09:14Z","timestamp":1582531754000},"page":"666-675","source":"Crossref","is-referenced-by-count":0,"title":["Collaborative
+        Study of Three Gas Chromatographic Dual Detection Systems for Analysis of
+        Multiple Chlorinated and Organophosphorus Pesticides"],"prefix":"10.1093","volume":"51","author":[{"given":"John
+        R","family":"Wessel","sequence":"first","affiliation":[{"name":"Food and Drug
+        Administration, 900 Madison Ave., Baltimore, Md. 21201"}]}],"member":"286","published-online":{"date-parts":[[2020,2,1]]},"container-title":["Journal
+        of AOAC INTERNATIONAL"],"language":"en","link":[{"URL":"http:\/\/academic.oup.com\/jaoac\/article-pdf\/51\/3\/666\/32611682\/jaoac0666.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"http:\/\/academic.oup.com\/jaoac\/article-pdf\/51\/3\/666\/32611682\/jaoac0666.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,3,19]],"date-time":"2020-03-19T18:17:57Z","timestamp":1584641877000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/academic.oup.com\/jaoac\/article\/51\/3\/666-675\/5720835"}},"issued":{"date-parts":[[1968,5,1]]},"references-count":0,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2020,2,1]]},"published-print":{"date-parts":[[1968,5,1]]}},"URL":"http:\/\/dx.doi.org\/10.1093\/jaoac\/51.3.666","ISSN":["0004-5756"],"issn-type":[{"value":"0004-5756","type":"print"}],"subject":["General
+        Chemistry"],"published-other":{"date-parts":[[1968,5,1]]},"published":{"date-parts":[[1968,5,1]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:54Z","timestamp":1648950354968},"reference-count":0,"publisher":"Institute
+        of Image Information and Television Engineers","issue":"7","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Journal of the Institute of Television Engineers of Japan"],"published-print":{"date-parts":[[1986]]},"DOI":"10.3169\/itej1978.40.586","type":"journal-article","created":{"date-parts":[[2011,10,14]],"date-time":"2011-10-14T07:12:37Z","timestamp":1318576357000},"page":"586-588","source":"Crossref","is-referenced-by-count":0,"title":["The
+        recent progress of broadcast engineering and image electronics. 2. Television
+        broadcasting techniques. 2-3. Domestic and international transmission."],"prefix":"10.3169","volume":"40","author":[{"given":"Seiichiro","family":"Nakatani","sequence":"first","affiliation":[]},{"given":"Kazunori","family":"Inagaki","sequence":"additional","affiliation":[]}],"member":"2180","container-title":["The
+        Journal of the Institute of Television Engineers of Japan"],"original-title":["\u30c6\u30ec\u30d3\u30b8\u30e7\u30f3\u5e74\u5831\u3000\uff29\uff29\u3000\u3000\u30c6\u30ec\u30d3\u30b8\u30e7\u30f3\u653e\u9001\u6280\u8853\u3000\uff29\uff29\u2010\uff13\u3000\u3000\u4f1d\u9001\u4e2d\u7d99"],"link":[{"URL":"http:\/\/www.jstage.jst.go.jp\/article\/itej1978\/40\/7\/40_7_586\/_pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,5,19]],"date-time":"2021-05-19T17:58:47Z","timestamp":1621447127000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.jstage.jst.go.jp\/article\/itej1978\/40\/7\/40_7_586\/_article\/-char\/ja\/"}},"issued":{"date-parts":[[1986]]},"references-count":0,"journal-issue":{"issue":"7","published-print":{"date-parts":[[1986]]}},"URL":"http:\/\/dx.doi.org\/10.3169\/itej1978.40.586","ISSN":["0386-6831","1884-9652"],"issn-type":[{"value":"0386-6831","type":"print"},{"value":"1884-9652","type":"electronic"}],"subject":["General
+        Engineering"],"published":{"date-parts":[[1986]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:55Z","timestamp":1648950355033},"reference-count":5,"publisher":"Springer
+        Science and Business Media LLC","issue":"5","license":[{"start":{"date-parts":[[1969,5,1]],"date-time":"1969-05-01T00:00:00Z","timestamp":-21168000000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Soviet
+        Physics Journal"],"published-print":{"date-parts":[[1969,5]]},"DOI":"10.1007\/bf00814856","type":"journal-article","created":{"date-parts":[[2004,12,14]],"date-time":"2004-12-14T07:23:26Z","timestamp":1103009006000},"page":"638-640","source":"Crossref","is-referenced-by-count":1,"title":["Magnetic
+        susceptibility of solid solutions based on the higher silicide of nickel"],"prefix":"10.1007","volume":"12","author":[{"given":"F.
+        A.","family":"Sidorenko","sequence":"first","affiliation":[]},{"given":"L.
+        A.","family":"Miroshnikov","sequence":"additional","affiliation":[]},{"given":"P.
+        V.","family":"Gel''d","sequence":"additional","affiliation":[]}],"member":"297","reference":[{"key":"CR1","first-page":"137","volume":"No.
+        2","author":"L. A. Miroshnikov","year":"1967","unstructured":"L. A. Miroshnikov,
+        F. A. Sidorenko, and P. V. Gel''d, Izvestiya VUZ. Tsvetnaya Metallurgiya,
+        No. 2, 137 (1967).","journal-title":"Izvestiya VUZ. Tsvetnaya Metallurgiya"},{"issue":"No.
+        6","key":"CR2","first-page":"1475","volume":"13","author":"F. A. Sidorenko","year":"1968","unstructured":"F.
+        A. Sidorenko, L. A. Miroshnikov, and P. V. Gel''d, Zh. Neorg. Khim.,13, No.
+        6, 1475 (1968).","journal-title":"Zh. Neorg. Khim."},{"key":"CR3","first-page":"53","volume":"No.
+        4","author":"F. A. Sidorenko","year":"1968","unstructured":"F. A. Sidorenko,
+        L. A. Miroshnikov, and P. V. Gel''d, Poroshkovaya Metallurgiya, No. 4, 53
+        (1968).","journal-title":"Poroshkovaya Metallurgiya"},{"key":"CR4","unstructured":"F.
+        A. Sidorenko, L. A. Miroshnikov, and P. V. Gel''d, Izvestiya VUZ. Fizika,
+        No. 5 (1968)."},{"key":"CR5","first-page":"62","volume":"No. 144","author":"L.
+        B. Dubrovskaya","year":"1965","unstructured":"L. B. Dubrovskaya, I. I. Matveenko,
+        and R. A. Klimov, Trudy Ural''skogo Politekhnicheskogo Instituta, No. 144,
+        62 (1965).","journal-title":"Trudy Ural''skogo Politekhnicheskogo Instituta"}],"container-title":["Soviet
+        Physics Journal"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF00814856.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/BF00814856\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF00814856","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,4,26]],"date-time":"2019-04-26T19:31:26Z","timestamp":1556307086000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/BF00814856"}},"issued":{"date-parts":[[1969,5]]},"references-count":5,"journal-issue":{"issue":"5","published-print":{"date-parts":[[1969,5]]}},"alternative-id":["BF00814856"],"URL":"http:\/\/dx.doi.org\/10.1007\/bf00814856","ISSN":["0038-5697","1573-9228"],"issn-type":[{"value":"0038-5697","type":"print"},{"value":"1573-9228","type":"electronic"}],"subject":["General
+        Physics and Astronomy","General Physics and Astronomy"],"published":{"date-parts":[[1969,5]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:00Z","timestamp":1648950360813},"reference-count":1,"publisher":"Wiley","issue":"17","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2688,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["ChemInform"],"published-print":{"date-parts":[[2008,4,22]]},"DOI":"10.1002\/chin.200817147","type":"journal-article","created":{"date-parts":[[2008,4,2]],"date-time":"2008-04-02T15:53:38Z","timestamp":1207151618000},"source":"Crossref","is-referenced-by-count":0,"title":["ChemInform
+        Abstract: Palladium-Catalyzed Heteroaromatic Couplings Mediated by Microwave
+        Irradiation."],"prefix":"10.1002","volume":"39","author":[{"given":"Mauro","family":"Panunzio","sequence":"first","affiliation":[]},{"given":"Emiliano","family":"Tamanini","sequence":"additional","affiliation":[]},{"given":"Yves","family":"St-Denis","sequence":"additional","affiliation":[]},{"given":"Fabio
+        Maria","family":"Sabbatini","sequence":"additional","affiliation":[]},{"given":"Romano","family":"Di
+        Fabio","sequence":"additional","affiliation":[]},{"given":"Zhining","family":"Xia","sequence":"additional","affiliation":[]}],"member":"311","reference":[{"key":"10.1002\/chin.200817147-BIB1","doi-asserted-by":"crossref","first-page":"4239","DOI":"10.1080\/00397910701575442","volume":"37","author":"Panunzio","year":"2007","journal-title":"Synth.
+        Commun."}],"container-title":["ChemInform"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fchin.200817147","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/chin.200817147","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,7,2]],"date-time":"2021-07-02T09:46:27Z","timestamp":1625219187000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/chin.200817147"}},"issued":{"date-parts":[[2008,4,22]]},"references-count":1,"journal-issue":{"issue":"17","published-print":{"date-parts":[[2008,4,22]]}},"URL":"http:\/\/dx.doi.org\/10.1002\/chin.200817147","ISSN":["0931-7597","1522-2667"],"issn-type":[{"value":"0931-7597","type":"print"},{"value":"1522-2667","type":"electronic"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2008,4,22]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361188},"reference-count":46,"publisher":"Elsevier
+        BV","issue":"10","license":[{"start":{"date-parts":[[1976,5,1]],"date-time":"1976-05-01T00:00:00Z","timestamp":199756800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Biochemical
+        Pharmacology"],"published-print":{"date-parts":[[1976,5]]},"DOI":"10.1016\/0006-2952(76)90360-9","type":"journal-article","created":{"date-parts":[[2002,12,14]],"date-time":"2002-12-14T00:31:08Z","timestamp":1039825868000},"page":"1139-1144","source":"Crossref","is-referenced-by-count":10,"title":["Enzyme
+        activated anti-tumour agents\u2014 II. The role of alkaline phosphatase in
+        the release of p-hydroxyaniline mustard from its phosphate conjugate in cells
+        in culture"],"prefix":"10.1016","volume":"25","author":[{"given":"P.","family":"Workman","sequence":"first","affiliation":[]},{"given":"C.R.","family":"Ball","sequence":"additional","affiliation":[]},{"given":"J.A.","family":"Double","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/0006-2952(76)90360-9_BIB1","doi-asserted-by":"crossref","first-page":"406","DOI":"10.1038\/205406a0","volume":"205","author":"Connors","year":"1965","journal-title":"Nature,
+        Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB2","doi-asserted-by":"crossref","first-page":"689","DOI":"10.1038\/206689a0","volume":"206","author":"Connors","year":"1965","journal-title":"Nature,
+        Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB3","doi-asserted-by":"crossref","first-page":"866","DOI":"10.1038\/210866b0","volume":"210","author":"Connors","year":"1966","journal-title":"Nature,
+        Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB4","first-page":"825","volume":"14","author":"Whisson","year":"1966","journal-title":"Archs
+        immunologiae ther. experimentalis"},{"key":"10.1016\/0006-2952(76)90360-9_BIB5","doi-asserted-by":"crossref","first-page":"1373","DOI":"10.1016\/0006-2952(72)90300-0","volume":"21","author":"Connors","year":"1972","journal-title":"Biochem.
+        Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB6","series-title":"Abstracts
+        of the Seventh Annual Meeting of the Am. Ass. of Clinical Oncologists","author":"Young","year":"1971"},{"key":"10.1016\/0006-2952(76)90360-9_BIB7","doi-asserted-by":"crossref","first-page":"963","DOI":"10.1016\/0006-2952(72)90400-5","volume":"21","author":"Bukhari","year":"1972","journal-title":"Biochem.
+        Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB8","doi-asserted-by":"crossref","first-page":"81","DOI":"10.1038\/bjc.1973.92","volume":"28","author":"Ball","year":"1973","journal-title":"Br.
+        J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB9","doi-asserted-by":"crossref","first-page":"3173","DOI":"10.1016\/0006-2952(74)90603-0","volume":"23","author":"Ball","year":"1974","journal-title":"Biochem.
+        Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB10","series-title":"Biological
+        Alkylating Agents","author":"Ross","year":"1962"},{"key":"10.1016\/0006-2952(76)90360-9_BIB11","doi-asserted-by":"crossref","first-page":"246","DOI":"10.1038\/bjc.1975.175","volume":"32","author":"Workman","year":"1975","journal-title":"Br.
+        J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB12","doi-asserted-by":"crossref","first-page":"549","DOI":"10.1007\/BF00485476","volume":"3","author":"Elson","year":"1969","journal-title":"Biochem.
+        Gen."},{"key":"10.1016\/0006-2952(76)90360-9_BIB13","doi-asserted-by":"crossref","first-page":"697","DOI":"10.1038\/219697a0","volume":"219","author":"Fishman","year":"1968","journal-title":"Nature"},{"key":"10.1016\/0006-2952(76)90360-9_BIB14","doi-asserted-by":"crossref","first-page":"595","DOI":"10.1042\/bj0570595","volume":"57","author":"Morton","year":"1954","journal-title":"Biochem.
+        J."},{"key":"10.1016\/0006-2952(76)90360-9_BIB15","doi-asserted-by":"crossref","first-page":"375","DOI":"10.1016\/S0021-9258(18)84756-1","volume":"66","author":"Fiske","year":"1925","journal-title":"J.
+        biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB16","doi-asserted-by":"crossref","first-page":"658","DOI":"10.1021\/ja01318a036","volume":"56","author":"Lineweaver","year":"1934","journal-title":"J.
+        Am. chem. Soc."},{"key":"10.1016\/0006-2952(76)90360-9_BIB17","first-page":"240","volume":"651","author":"Taketa","year":"1965","journal-title":"J.
+        biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB18","first-page":"286","volume":"175","author":"Ghosh","year":"1972","journal-title":"Biochim.
+        biophys. Acta"},{"key":"10.1016\/0006-2952(76)90360-9_BIB19","doi-asserted-by":"crossref","first-page":"262","DOI":"10.1016\/S0021-9258(19)52451-6","volume":"193","author":"Lowry","year":"1951","journal-title":"J.
+        biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB20","doi-asserted-by":"crossref","first-page":"404","DOI":"10.1111\/j.1749-6632.1964.tb14213.x","volume":"121","author":"Davis","year":"1964","journal-title":"Ann.
+        N.Y. Acad. Sci."},{"key":"10.1016\/0006-2952(76)90360-9_BIB21","doi-asserted-by":"crossref","first-page":"985","DOI":"10.1038\/215985a0","volume":"215","author":"Spencer","year":"1967","journal-title":"Nature,
+        Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB22","doi-asserted-by":"crossref","first-page":"927","DOI":"10.1042\/bj1160927","volume":"116","author":"Spencer","year":"1970","journal-title":"Biochem.
+        J."},{"key":"10.1016\/0006-2952(76)90360-9_BIB23","first-page":"329","volume":"42","author":"Spencer","year":"1971","journal-title":"Enzymologia"},{"key":"10.1016\/0006-2952(76)90360-9_BIB24","series-title":"Microscopic
+        Histochemistry","author":"Gomori","year":"1952"},{"key":"10.1016\/0006-2952(76)90360-9_BIB25","doi-asserted-by":"crossref","first-page":"169","DOI":"10.1177\/11.2.169","volume":"1","author":"Allen","year":"1963","journal-title":"J.
+        Histochem. Cytochem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB26","doi-asserted-by":"crossref","first-page":"255","DOI":"10.1016\/S0065-2423(08)60115-8","volume":"10","author":"Fishman","year":"1967","journal-title":"Adv.
+        clin. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB27","doi-asserted-by":"crossref","first-page":"1257","DOI":"10.1038\/2071257a0","volume":"207","author":"Robson","year":"1965","journal-title":"Nature,
+        Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB28","doi-asserted-by":"crossref","first-page":"641","DOI":"10.1111\/j.1749-6632.1969.tb46424.x","volume":"166","author":"Moss","year":"1969","journal-title":"Ann.
+        N.Y. Acad. Sci."},{"key":"10.1016\/0006-2952(76)90360-9_BIB29","volume":"Vol.
+        16","author":"Morton","year":"1965"},{"key":"10.1016\/0006-2952(76)90360-9_BIB30","series-title":"Lysosomes","author":"Barret","year":"1972"},{"key":"10.1016\/0006-2952(76)90360-9_BIB31","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1016\/0003-9861(68)90008-8","volume":"128","author":"Bosmann","year":"1968","journal-title":"Archs
+        Biochem. Biophys."},{"key":"10.1016\/0006-2952(76)90360-9_BIB32","doi-asserted-by":"crossref","first-page":"817","DOI":"10.1038\/bjc.1970.96","volume":"24","author":"Dendy","year":"1970","journal-title":"Br.
+        J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB33","doi-asserted-by":"crossref","first-page":"55","DOI":"10.1038\/bjc.1973.70","volume":"28","author":"Morley","year":"1973","journal-title":"Br.
+        J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB34","first-page":"150","volume":"28","author":"Fishman","year":"1968","journal-title":"Cancer
+        Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB35","doi-asserted-by":"crossref","first-page":"1388","DOI":"10.1002\/1097-0142(197106)27:6<1388::AID-CNCR2820270619>3.0.CO;2-0","volume":"27","author":"Nathanson","year":"1971","journal-title":"Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB36","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/0304-4165(66)90064-X","volume":"115","author":"Barban","year":"1965","journal-title":"Biochem.
+        biophys. Acta"},{"key":"10.1016\/0006-2952(76)90360-9_BIB37","first-page":"1210","volume":"24","author":"Bieber","year":"1964","journal-title":"Cancer
+        Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB38","first-page":"2034","volume":"32","author":"Nelson","year":"1972","journal-title":"Cancer
+        Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB39","first-page":"1620","volume":"31","author":"Wolpert","year":"1971","journal-title":"Cancer
+        Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB40","first-page":"1013","volume":"42","author":"Rosman","year":"1973","journal-title":"Blood"},{"key":"10.1016\/0006-2952(76)90360-9_BIB41","first-page":"1773","volume":"27","author":"Henderson","year":"1967","journal-title":"Cancer
+        Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB42","doi-asserted-by":"crossref","first-page":"725","DOI":"10.1016\/0006-2952(69)90043-4","volume":"18","author":"Bennett","year":"1969","journal-title":"Biochem.
+        Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB43","series-title":"Cancer
+        of the Prostate","author":"Balogh","year":"1968"},{"key":"10.1016\/0006-2952(76)90360-9_BIB44","doi-asserted-by":"crossref","first-page":"882","DOI":"10.1007\/BF01471475","volume":"30","author":"Druckery","year":"1952","journal-title":"Klin.
+        Wschr."},{"key":"10.1016\/0006-2952(76)90360-9_BIB45","first-page":"38","volume":"12","author":"Tritsch","year":"1974","journal-title":"Investig.
+        Urol."},{"key":"10.1016\/0006-2952(76)90360-9_BIB46","doi-asserted-by":"crossref","first-page":"10","DOI":"10.1093\/clinchem\/19.1.10","volume":"19","author":"Schwartz","year":"1973","journal-title":"Clin.
+        Chem."}],"container-title":["Biochemical Pharmacology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0006295276903609?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0006295276903609?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2021,6,1]],"date-time":"2021-06-01T15:39:06Z","timestamp":1622561946000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0006295276903609"}},"issued":{"date-parts":[[1976,5]]},"references-count":46,"journal-issue":{"issue":"10","published-print":{"date-parts":[[1976,5]]}},"alternative-id":["0006295276903609"],"URL":"http:\/\/dx.doi.org\/10.1016\/0006-2952(76)90360-9","ISSN":["0006-2952"],"issn-type":[{"value":"0006-2952","type":"print"}],"subject":["Pharmacology","Biochemistry"],"published":{"date-parts":[[1976,5]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:03Z","timestamp":1648950363264},"reference-count":5,"publisher":"Vandenhoeck
+        & Ruprecht GmbH & Co, KG","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["G\u00f6ttinger
+        Predigtmeditationen"],"published-print":{"date-parts":[[2007,12,1]]},"DOI":"10.13109\/gpre.2007.62.2.155","type":"journal-article","created":{"date-parts":[[2015,10,13]],"date-time":"2015-10-13T21:06:26Z","timestamp":1444770386000},"page":"155-161","source":"Crossref","is-referenced-by-count":0,"title":["Jes
+        54, 7\u201310 2.3.2008 L\u00e4tare"],"prefix":"10.13109","volume":"62","author":[{"given":"Barbara","family":"Hauck","sequence":"first","affiliation":[{"name":"Brunneng\u00e4\u00dfchen
+        7, 90403 N\u00fcrnberg"}]}],"member":"5267","reference":[{"key":"p_2","first-page":"7","volume":"54","author":"J\u00f6rns
+        Klaus Peter","year":"1990","journal-title":"Jes"},{"key":"p_3","first-page":"7","volume":"54","author":"Gr\u00f6zinger
+        Albrecht","year":"1996","journal-title":"Jes"},{"key":"p_4","volume-title":"Stuttgart","author":"Steffensky
+        Fulbert","year":"1989"},{"key":"p_15","volume-title":"The More Loving One,
+        in: ders","author":"Auden Wystan Hugh","year":"1991"},{"key":"p_16","volume-title":"Ungrund
+        Liebe. Klagen, W\u00fcnsche","author":"Marti Kurt","year":"1989"}],"container-title":["G\u00f6ttinger
+        Predigtmeditationen"],"language":"de","link":[{"URL":"https:\/\/www.vr-elibrary.de\/doi\/pdf\/10.13109\/gpre.2007.62.2.155","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2021,2,4]],"date-time":"2021-02-04T10:02:50Z","timestamp":1612432970000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.vr-elibrary.de\/doi\/10.13109\/gpre.2007.62.2.155"}},"subtitle":["Szene
+        einer Liebe"],"issued":{"date-parts":[[2007,12,1]]},"references-count":5,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2007,12,1]]}},"alternative-id":["10.13109\/gpre.2007.62.2.155"],"URL":"http:\/\/dx.doi.org\/10.13109\/gpre.2007.62.2.155","ISSN":["0340-6083","2197-0815"],"issn-type":[{"value":"0340-6083","type":"print"},{"value":"2197-0815","type":"electronic"}],"published":{"date-parts":[[2007,12,1]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361127},"reference-count":0,"publisher":"American
+        Society of Clinical Oncology (ASCO)","issue":"15_suppl","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JCO"],"published-print":{"date-parts":[[2010,5,20]]},"DOI":"10.1200\/jco.2010.28.15_suppl.7062","type":"journal-article","created":{"date-parts":[[2017,2,24]],"date-time":"2017-02-24T02:41:10Z","timestamp":1487904070000},"page":"7062-7062","source":"Crossref","is-referenced-by-count":1,"title":["Multicenter
+        phase II study evaluating docetaxel, CDDP, and cetuximab as induction regimen
+        prior to surgery in chemotherapy-naive patients with NSCLC stage IB-IIIA (INN06-study):
+        Preliminary results."],"prefix":"10.1200","volume":"28","author":[{"given":"W.","family":"Hilbe","sequence":"first","affiliation":[]},{"given":"G.","family":"Pall","sequence":"additional","affiliation":[]},{"given":"T.","family":"Schmid","sequence":"additional","affiliation":[]},{"given":"B.","family":"Forstner","sequence":"additional","affiliation":[]},{"given":"A.","family":"Zabernigg","sequence":"additional","affiliation":[]},{"given":"H.","family":"Jamnig","sequence":"additional","affiliation":[]},{"given":"A.","family":"Gaechter","sequence":"additional","affiliation":[]},{"given":"M.","family":"Freund","sequence":"additional","affiliation":[]},{"given":"D.","family":"Kendler","sequence":"additional","affiliation":[]},{"given":"E.","family":"Woell","sequence":"additional","affiliation":[]},{"name":"Tyrolean
+        Lung Cancer Study Group","sequence":"additional","affiliation":[]}],"member":"233","container-title":["Journal
+        of Clinical Oncology"],"language":"en","link":[{"URL":"http:\/\/ascopubs.org\/doi\/pdfdirect\/10.1200\/jco.2010.28.15_suppl.7062","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,11,27]],"date-time":"2019-11-27T21:21:25Z","timestamp":1574889685000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/ascopubs.org\/doi\/10.1200\/jco.2010.28.15_suppl.7062"}},"issued":{"date-parts":[[2010,5,20]]},"references-count":0,"journal-issue":{"issue":"15_suppl","published-print":{"date-parts":[[2010,5,20]]}},"alternative-id":["10.1200\/jco.2010.28.15_suppl.7062"],"URL":"http:\/\/dx.doi.org\/10.1200\/jco.2010.28.15_suppl.7062","ISSN":["0732-183X","1527-7755"],"issn-type":[{"value":"0732-183X","type":"print"},{"value":"1527-7755","type":"electronic"}],"subject":["Cancer
+        Research","Oncology"],"published":{"date-parts":[[2010,5,20]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361248},"reference-count":19,"publisher":"Japanese
+        Society for Complementary & Alternative Medicine","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JJCAM"],"published-print":{"date-parts":[[2019,3,31]]},"DOI":"10.1625\/jcam.16.27","type":"journal-article","created":{"date-parts":[[2019,4,9]],"date-time":"2019-04-09T18:10:10Z","timestamp":1554833410000},"page":"27-32","source":"Crossref","is-referenced-by-count":0,"title":["Effects
+        of Capsaicin on Fat Accumulation in Rats with High Fat Diet and Alcohol"],"prefix":"10.1625","volume":"16","author":[{"given":"Yasue","family":"HOSOYAMADA","sequence":"first","affiliation":[{"name":"Department
+        of Nutrition, Faculty of Health Care Sciences, Chiba Prefectural University
+        of Health Sciences"}]},{"given":"Masako","family":"YAMADA","sequence":"additional","affiliation":[{"name":"Department
+        of Food and Nutrition, Faculty of Contemporary Human Life Sciences, Tokyo
+        Kasei Gakuin University"}]}],"member":"631","reference":[{"key":"1","doi-asserted-by":"crossref","unstructured":"2)
+        Kopelman PG. Obesity as a medical problem. Nature. 2005; 404: 635-643.","DOI":"10.1038\/35007508"},{"key":"2","doi-asserted-by":"crossref","unstructured":"3)
+        Eckek RH, Grundry SM, Zimmet PZ. Themetabolic syndrome. Lancet. 2005; 365:
+        1415-1428.","DOI":"10.1016\/S0140-6736(05)66378-7"},{"key":"3","doi-asserted-by":"crossref","unstructured":"4)
+        Jay D, Hitomi H, Gliendling KK. Oxidative stress and diabetic cardiovascular
+        complications. Free radic Biol Med. 2006; 40: 183-192.","DOI":"10.1016\/j.freeradbiomed.2005.06.018"},{"key":"4","doi-asserted-by":"crossref","unstructured":"5)
+        Furukawa S, Fujita T, Shimabukuro M, et al. Increased oxidative stress in
+        obesity and its impact on metabolic syndrome. J Clin Invest. 2004; 114: 1752-1761.","DOI":"10.1172\/JCI21625"},{"key":"5","doi-asserted-by":"crossref","unstructured":"6)
+        Shen XH, Tang QY, Huang J, et sl. Vitamin E regulation in a rat model of dietary-induced
+        obesity. Exp Biol Med. 2010; 235: 47-51.","DOI":"10.1258\/ebm.2009.009122"},{"key":"6","doi-asserted-by":"crossref","unstructured":"7)
+        Suter PM, Hasler E, Vetter W. Effects of alcohol on energy metabolism and
+        body weight regulation: is alcohol a risk factor for obesity? Nutrition Review.
+        1997; 55: 157-171.","DOI":"10.1111\/j.1753-4887.1997.tb06470.x"},{"key":"7","unstructured":"8)
+        Kobayashi A, Osaka T, Namba Y, et al. Capsaicin activates heat loss and heat
+        production simultaneously and independently in rats. Am J. Physiol. 1998;
+        275: 92-98."},{"key":"8","unstructured":"9) Monsereenusorn Y. Subchronic toxicity
+        studies of capsaicin and capsicum in rats. Res Commun Chem Pathol Pharmacol.
+        1983; 41: 95-110."},{"key":"9","doi-asserted-by":"crossref","unstructured":"10)
+        Kawada T, Hagihara K, Iwai K. Effects of capsaicin on lipid metabolism in
+        rats fed a high fat diet. Journal of Nutrition. 1986; 116: 1272-1278.","DOI":"10.1093\/jn\/116.7.1272"},{"key":"10","unstructured":"11)
+        Srinvasan MR, Satyanarayana MN. Effect of capsaicin on skeletal muscle lipoprotein
+        lipase in rats fed high fat diet. Indian journal of experimental biology.
+        1989; 27: 910-912."},{"key":"11","doi-asserted-by":"crossref","unstructured":"12)
+        Nakazono K, Watanabe N, Matsuno K, et al. Dose superoxide underlie the pathogenesis
+        of hypertension? Proc Natl Acad Sci USA. 1991; 88: 10045-10048.","DOI":"10.1073\/pnas.88.22.10045"},{"key":"12","doi-asserted-by":"crossref","unstructured":"13)
+        Ohara Y, Peterson TE, Harrison DG. Hypercholesterolemia increase endothelial
+        superoxide anion production. J Clin Invest. 1993; 91: 2546-2551.","DOI":"10.1172\/JCI116491"},{"key":"13","unstructured":"14)
+        Iwama M, Tojima T, litoi Y, et al. Effects of capsaicin and ethanol on hepatic
+        drugmetabolizing enzymes in rat. Int J vitam Nutr Res. 1990; 60: 100-103."},{"key":"14","unstructured":"15)
+        Sambaiah K, Sayanarayana MN. Effect of capsaicin on triglyceride accumulation
+        & secretion in ethanol fed rats. Indian J Med Res. 1989; 90: 154-158."},{"key":"15","doi-asserted-by":"crossref","unstructured":"16)
+        Ohyama k, Nogusa Y, Suzuki K. A combination of exercise and capsinoid supplementation
+        additively suppresses diet-induced obesity by increasing energy expenditure
+        in mice. Am J Physiol Endocrinol Metab. 2015; 308: E315-323.","DOI":"10.1152\/ajpendo.00354.2014"},{"key":"16","doi-asserted-by":"crossref","unstructured":"17)
+        Watanabe T, Kawada T, Yamamoto M. Capsaicin, a pungent principle of hot red
+        pepper, evokes catecholamine secretion from the adrenal medulla of anaesthetized
+        rats. Biochem Biophys Res Commun. 1987; 142: 259-264.","DOI":"10.1016\/0006-291X(87)90479-7"},{"key":"17","doi-asserted-by":"crossref","unstructured":"18)
+        Tani Y. Effects of Capsinoid on Serum and Liver Lipids in Hyperlipidemic Rats.
+        JNSV. 2004; 50: 351-355.","DOI":"10.3177\/jnsv.50.351"},{"key":"18","doi-asserted-by":"crossref","unstructured":"19)
+        Murdolo G, Bartoloni D, Tortoioli C, et al. Lipokines and oxysterols: novel
+        adipose-derived lipid hormones linking adipose dysfunction and insulin resistance.
+        Free Radic Biol Med. 2013; 65: 811-820.","DOI":"10.1016\/j.freeradbiomed.2013.08.007"},{"key":"19","doi-asserted-by":"crossref","unstructured":"20)
+        Colell A, Garcia-Ruiz C, Miranda M, et al. Selective gulutathione depletion
+        of mitochondoria by ethanol sensitizes hepatocytes to tumor necrosis factor.
+        Gastroenterology. 1998; 115: 1541-1551.","DOI":"10.1016\/S0016-5085(98)70034-4"}],"container-title":["Japanese
+        Journal of Complementary and Alternative Medicine"],"language":"en","link":[{"URL":"https:\/\/www.jstage.jst.go.jp\/article\/jcam\/16\/1\/16_27\/_pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,4,12]],"date-time":"2019-04-12T23:46:19Z","timestamp":1555112779000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.jstage.jst.go.jp\/article\/jcam\/16\/1\/16_27\/_article\/-char\/ja\/"}},"issued":{"date-parts":[[2019,3,31]]},"references-count":19,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2019]]}},"URL":"http:\/\/dx.doi.org\/10.1625\/jcam.16.27","ISSN":["1348-7922","1348-7930"],"issn-type":[{"value":"1348-7922","type":"print"},{"value":"1348-7930","type":"electronic"}],"subject":["General
+        Earth and Planetary Sciences","General Environmental Science"],"published":{"date-parts":[[2019,3,31]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361140},"reference-count":15,"publisher":"Elsevier
+        BV","issue":"2","license":[{"start":{"date-parts":[[1976,3,1]],"date-time":"1976-03-01T00:00:00Z","timestamp":194486400000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Physics
+        Letters B"],"published-print":{"date-parts":[[1976,3]]},"DOI":"10.1016\/0370-2693(76)90615-8","type":"journal-article","created":{"date-parts":[[2002,11,12]],"date-time":"2002-11-12T09:35:02Z","timestamp":1037093702000},"page":"161-163","source":"Crossref","is-referenced-by-count":7,"title":["Neutron
+        capture mechanism in 45Sc and 139La"],"prefix":"10.1016","volume":"61","author":[{"given":"B.J.","family":"Allen","sequence":"first","affiliation":[]},{"given":"M.J.","family":"Kenny","sequence":"additional","affiliation":[]},{"given":"R.F.","family":"Barrett","sequence":"additional","affiliation":[]},{"given":"K.H.","family":"Bray","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/0370-2693(76)90615-8_BIB1","unstructured":"R.F.
+        Barrett, K.H. Bray, B.J, Allen and M.J. Kenny, to be published."},{"key":"10.1016\/0370-2693(76)90615-8_BIB2","doi-asserted-by":"crossref","first-page":"212","DOI":"10.1103\/PhysRev.122.212","volume":"122","author":"Troubetzkoy","year":"1961","journal-title":"Phys.
+        Rev."},{"key":"10.1016\/0370-2693(76)90615-8_BIB3","series-title":"Theory
+        of neutron resonance reactions","author":"Lynn","year":"1968"},{"key":"10.1016\/0370-2693(76)90615-8_BIB4","doi-asserted-by":"crossref","first-page":"434","DOI":"10.1016\/S0092-640X(73)80029-4","volume":"11","author":"Bird","year":"1973","journal-title":"Nuclear
+        Data Tables"},{"key":"10.1016\/0370-2693(76)90615-8_BIB5","doi-asserted-by":"crossref","first-page":"510","DOI":"10.1016\/0375-9474(73)90749-5","volume":"A213","author":"Clement","year":"1973","journal-title":"Nucl.
+        Phys."},{"key":"10.1016\/0370-2693(76)90615-8_BIB6","first-page":"513","volume":"14","author":"Wasson","year":"1969","journal-title":"Bull.
+        Am. Phys. Soc."},{"key":"10.1016\/0370-2693(76)90615-8_BIB7","doi-asserted-by":"crossref","first-page":"B976","DOI":"10.1103\/PhysRev.134.B976","volume":"134","author":"Yntema","year":"1969","journal-title":"Phys.
+        Rev."},{"key":"10.1016\/0370-2693(76)90615-8_BIB8","doi-asserted-by":"crossref","first-page":"1041","DOI":"10.1103\/PhysRevLett.23.1041","volume":"23","author":"Rimawi","year":"1969","journal-title":"Phys.
+        Rev. Lett."},{"key":"10.1016\/0370-2693(76)90615-8_BIB9","doi-asserted-by":"crossref","first-page":"47","DOI":"10.1016\/0370-2693(67)90335-8","volume":"24B","author":"Bartholomew","year":"1967","journal-title":"Phys.
+        Lett."},{"key":"10.1016\/0370-2693(76)90615-8_BIB10","doi-asserted-by":"crossref","first-page":"939","DOI":"10.1103\/PhysRev.151.939","volume":"151","author":"Rapaport","year":"1966","journal-title":"Phys.
+        Rev."},{"key":"10.1016\/0370-2693(76)90615-8_BIB11","first-page":"2323","volume":"C2","author":"Jurney","year":"1970","journal-title":"Phys.
+        Rev."},{"key":"10.1016\/0370-2693(76)90615-8_BIB12","series-title":"Int. Conf.
+        Nuclear Structure Study with Neutrons","author":"Feshbach","year":"1965"},{"key":"10.1016\/0370-2693(76)90615-8_BIB13","doi-asserted-by":"crossref","first-page":"59","DOI":"10.1016\/0375-9474(73)90051-1","volume":"A209","author":"Millener","year":"1973","journal-title":"Nucl.
+        Phys."},{"key":"10.1016\/0370-2693(76)90615-8_BIB14_1","doi-asserted-by":"crossref","first-page":"1302","DOI":"10.1103\/PhysRev.128.1302","volume":"128","author":"Fulmer","year":"1962","journal-title":"Phys.
+        Rev."},{"key":"10.1016\/0370-2693(76)90615-8_BIB14_2","doi-asserted-by":"crossref","first-page":"225","DOI":"10.1016\/0375-9474(73)90063-8","volume":"A201","author":"Helton","year":"1973","journal-title":"Nucl.
+        Phys."}],"container-title":["Physics Letters B"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0370269376906158?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0370269376906158?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,4,2]],"date-time":"2019-04-02T19:22:06Z","timestamp":1554232926000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0370269376906158"}},"issued":{"date-parts":[[1976,3]]},"references-count":15,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1976,3]]}},"alternative-id":["0370269376906158"],"URL":"http:\/\/dx.doi.org\/10.1016\/0370-2693(76)90615-8","ISSN":["0370-2693"],"issn-type":[{"value":"0370-2693","type":"print"}],"subject":["Nuclear
+        and High Energy Physics"],"published":{"date-parts":[[1976,3]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361988},"reference-count":1,"publisher":"Elsevier
+        BV","issue":"2","license":[{"start":{"date-parts":[[1987,12,1]],"date-time":"1987-12-01T00:00:00Z","timestamp":565315200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of Electrostatics"],"published-print":{"date-parts":[[1987,12]]},"DOI":"10.1016\/0304-3886(87)90062-3","type":"journal-article","created":{"date-parts":[[2003,3,15]],"date-time":"2003-03-15T02:10:20Z","timestamp":1047694220000},"page":"239-242","source":"Crossref","is-referenced-by-count":1,"title":["Surface
+        charge density of a dielectric particle near a plane"],"prefix":"10.1016","volume":"20","author":[{"given":"Cai","family":"Xiaoping","sequence":"first","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/0304-3886(87)90062-3_BIB1","doi-asserted-by":"crossref","first-page":"201","DOI":"10.1016\/0304-3886(87)90007-6","article-title":"The
+        electrostatic problem of a dielectric sphere near a plane","volume":"19","author":"Cai
+        Xiaoping","year":"1987","journal-title":"J. Electrostatics"}],"container-title":["Journal
+        of Electrostatics"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0304388687900623?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0304388687900623?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,3,25]],"date-time":"2019-03-25T18:57:21Z","timestamp":1553540241000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0304388687900623"}},"issued":{"date-parts":[[1987,12]]},"references-count":1,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1987,12]]}},"alternative-id":["0304388687900623"],"URL":"http:\/\/dx.doi.org\/10.1016\/0304-3886(87)90062-3","ISSN":["0304-3886"],"issn-type":[{"value":"0304-3886","type":"print"}],"subject":["Electrical
+        and Electronic Engineering","Surfaces, Coatings and Films","Condensed Matter
+        Physics","Biotechnology","Electronic, Optical and Magnetic Materials"],"published":{"date-parts":[[1987,12]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:02Z","timestamp":1648950362074},"reference-count":0,"publisher":"International
+        Journal Of Advanced Research","issue":"10","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IJAR"],"DOI":"10.21474\/ijar01\/1812","type":"journal-article","created":{"date-parts":[[2016,10,21]],"date-time":"2016-10-21T09:03:44Z","timestamp":1477040624000},"page":"443-446","source":"Crossref","is-referenced-by-count":1,"title":["PRIMARY
+        CUTANEOUS ASPERGILLOSIS- TINEA PEDIS CAUSED BY ASPERGILLUS NIGER IN AN IMMUNOCOMPETENT
+        ADULT INDIVIDUAL RESIDING IN SILK CITY OF KANCHEEPURAM DISTRICT."],"prefix":"10.21474","volume":"4","author":[{"given":"Prasanna","family":"S","sequence":"first","affiliation":[]},{"name":"Assistant
+        Professor, Department of Microbiology, Shri Sathya Sai Medical College and
+        Research Institute, Kancheepuram, Tamil Nadu, India.","sequence":"first","affiliation":[]},{"given":"Jayashree","family":"V","sequence":"additional","affiliation":[]},{"given":"Karthika","family":"Jayakumar","sequence":"additional","affiliation":[]},{"name":"Assistant
+        Professor, Department of Microbiology, Shri Sathya Sai Medical College and
+        Research Institute, Kancheepuram, Tamil Nadu, India.","sequence":"additional","affiliation":[]},{"name":"Professor,
+        Department of Microbiology, Shri Sathya Sai Medical College and Research Institute,
+        Kancheepuram, Tamil Nadu, India.","sequence":"additional","affiliation":[]}],"member":"8913","published-online":{"date-parts":[[2016,10,31]]},"container-title":["International
+        Journal of Advanced Research"],"deposited":{"date-parts":[[2016,10,21]],"date-time":"2016-10-21T09:03:45Z","timestamp":1477040625000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.journalijar.com\/article\/12566\/primary-cutaneous-aspergillosis--tinea-pedis-caused-by-aspergillus-niger-in-an-immunocompetent-adult-individual-residing-in-silk-city-of-kancheepuram-district.\/"}},"issued":{"date-parts":[[2016,10,31]]},"references-count":0,"journal-issue":{"issue":"10","published-online":{"date-parts":[[2016,10,31]]}},"URL":"http:\/\/dx.doi.org\/10.21474\/ijar01\/1812","ISSN":["2320-5407"],"issn-type":[{"value":"2320-5407","type":"electronic"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2016,10,31]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:02Z","timestamp":1648950362722},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"4","license":[{"start":{"date-parts":[[2005,5,1]],"date-time":"2005-05-01T00:00:00Z","timestamp":1114905600000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["European
+        Journal of Agronomy"],"published-print":{"date-parts":[[2005,5]]},"DOI":"10.1016\/s1161-0301(05)00035-3","type":"journal-article","created":{"date-parts":[[2005,4,14]],"date-time":"2005-04-14T13:54:58Z","timestamp":1113486898000},"page":"461-465","source":"Crossref","is-referenced-by-count":0,"title":["Author
+        index volume 20 and 21"],"prefix":"10.1016","volume":"22","member":"78","container-title":["European
+        Journal of Agronomy"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1161030105000353?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1161030105000353?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,1,27]],"date-time":"2019-01-27T10:22:21Z","timestamp":1548584541000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S1161030105000353"}},"issued":{"date-parts":[[2005,5]]},"references-count":0,"journal-issue":{"issue":"4","published-print":{"date-parts":[[2005,5]]}},"alternative-id":["S1161030105000353"],"URL":"http:\/\/dx.doi.org\/10.1016\/s1161-0301(05)00035-3","ISSN":["1161-0301"],"issn-type":[{"value":"1161-0301","type":"print"}],"subject":["Plant
+        Science","Soil Science","Agronomy and Crop Science"],"published":{"date-parts":[[2005,5]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:02Z","timestamp":1648950362676},"reference-count":0,"publisher":"BMJ","issue":"Suppl
+        2","content-domain":{"domain":["bmj.com"],"crossmark-restriction":true},"short-container-title":["Ann
+        Rheum Dis"],"published-print":{"date-parts":[[2015,6]]},"DOI":"10.1136\/annrheumdis-2015-eular.4118","type":"journal-article","created":{"date-parts":[[2015,6,30]],"date-time":"2015-06-30T22:38:22Z","timestamp":1435703902000},"page":"1271.1-1271","update-policy":"http:\/\/dx.doi.org\/10.1136\/crossmarkpolicy","source":"Crossref","is-referenced-by-count":0,"title":["AB1107\u2005Epidemiological
+        Comparative Analysis in a Large Cohort of Systemic Lupus Erithematosus Patients:
+        Results of the Spanish IMID Consortium"],"prefix":"10.1136","volume":"74","author":[{"given":"A.","family":"Fern\u00e1ndez
+        Nebro","sequence":"first","affiliation":[]},{"given":"P.","family":"Carreira","sequence":"additional","affiliation":[]},{"given":"R.","family":"Blanco","sequence":"additional","affiliation":[]},{"given":"J.","family":"P\u00e9rez
+        Venegas","sequence":"additional","affiliation":[]},{"given":"A.","family":"Olive","sequence":"additional","affiliation":[]},{"given":"J.L.","family":"Andreu","sequence":"additional","affiliation":[]},{"given":"A.","family":"Aguirre","sequence":"additional","affiliation":[]},{"given":"P.","family":"Vela","sequence":"additional","affiliation":[]},{"given":"J.L.","family":"Marenco","sequence":"additional","affiliation":[]},{"given":"J.M.","family":"Nolla","sequence":"additional","affiliation":[]},{"given":"A.","family":"Zea","sequence":"additional","affiliation":[]},{"given":"J.M.","family":"Pego","sequence":"additional","affiliation":[]},{"given":"A.","family":"Julia","sequence":"additional","affiliation":[]},{"given":"A.","family":"Pluma","sequence":"additional","affiliation":[]},{"given":"A.","family":"Alonso","sequence":"additional","affiliation":[]},{"given":"M.","family":"Lopez
+        Lasanta","sequence":"additional","affiliation":[]},{"given":"S.","family":"Marsal","sequence":"additional","affiliation":[]}],"member":"239","published-online":{"date-parts":[[2015,6,9]]},"container-title":["Annals
+        of the Rheumatic Diseases"],"language":"en","link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1136\/annrheumdis-2015-eular.4118","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,9,26]],"date-time":"2020-09-26T10:09:56Z","timestamp":1601114996000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/ard.bmj.com\/lookup\/doi\/10.1136\/annrheumdis-2015-eular.4118"}},"issued":{"date-parts":[[2015,6]]},"references-count":0,"journal-issue":{"issue":"Suppl
+        2","published-online":{"date-parts":[[2015,6,9]]},"published-print":{"date-parts":[[2015,6]]}},"alternative-id":["10.1136\/annrheumdis-2015-eular.4118"],"URL":"http:\/\/dx.doi.org\/10.1136\/annrheumdis-2015-eular.4118","ISSN":["0003-4967","1468-2060"],"issn-type":[{"value":"0003-4967","type":"print"},{"value":"1468-2060","type":"electronic"}],"subject":["General
+        Biochemistry, Genetics and Molecular Biology","Immunology","Immunology and
+        Allergy","Rheumatology"],"published":{"date-parts":[[2015,6]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -342,11 +393,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '17760'
+      - '16672'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 21:19:22 GMT
+      - Mon, 25 Sep 2023 04:31:18 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -376,9 +427,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/types/tape/works
   response:
@@ -397,7 +448,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 13 Feb 2023 21:19:22 GMT
+      - Mon, 25 Sep 2023 04:31:18 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -429,114 +480,154 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/types/report/works
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":744463,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:06Z","timestamp":1648950366257},"publisher-location":"St.
+        Paul, MN","reference-count":0,"publisher":"U.S. Department of Agriculture,
+        Forest Service, North Central Research Station","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1993]]},"DOI":"10.2737\/ne-rn-353","type":"report","created":{"date-parts":[[2017,6,26]],"date-time":"2017-06-26T18:28:26Z","timestamp":1498501706000},"source":"Crossref","is-referenced-by-count":0,"title":["Bulletin
+        of Hardwood Market Statistics: Winter 1992"],"prefix":"10.2737","author":[{"given":"Jean
+        W.","family":"Nolley","sequence":"first","affiliation":[]},{"given":"Jean
+        W.","family":"Nolley","sequence":"additional","affiliation":[]}],"member":"1450","deposited":{"date-parts":[[2017,9,27]],"date-time":"2017-09-27T19:28:05Z","timestamp":1506540485000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.fs.usda.gov\/treesearch\/pubs\/21571"}},"issued":{"date-parts":[[1993]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2737\/ne-rn-353","published":{"date-parts":[[1993]]}},{"institution":[{"name":"USDOE
+        Office of Energy Efficiency and Renewable Energy Geothermal Tech Pgm","acronym":["DOEEEGTP"]},{"name":"JM
+        Energy Consultants, Inc., Los Angeles, CA (USA)"},{"name":"Not Available"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:09Z","timestamp":1648950369201},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/6334163","type":"report","created":{"date-parts":[[2007,5,9]],"date-time":"2007-05-09T10:10:57Z","timestamp":1178705457000},"approved":{"date-parts":[[2006,1,10]]},"source":"Crossref","is-referenced-by-count":0,"title":["Study
+        and analysis of selected legal, institutional, and public-policy problems
+        effecting hydrothermal geothermal commercialization in the five Pacific Rim
+        States. Final technical report"],"prefix":"10.2172","author":[{"name":"JM
+        Energy Consultants, Inc., Los Angeles, CA (USA)","sequence":"first","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1981,7,9]]},"deposited":{"date-parts":[[2013,12,16]],"date-time":"2013-12-16T18:08:32Z","timestamp":1387217312000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/6334163-9c9tdP\/"}},"issued":{"date-parts":[[1981,7,9]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/6334163","published":{"date-parts":[[1981,7,9]]}},{"institution":[{"name":"OSD
+        or Non-Service DoD Agency","acronym":["PERS*"],"department":["Funding"]},{"name":"DEFENSE
+        PERSONNEL SECURITY RESEARCH CENTER MONTEREY CA","department":["Performing"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:07Z","timestamp":1648950367957},"publisher-location":"Fort
+        Belvoir, VA","reference-count":0,"publisher":"Defense Technical Information
+        Center","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1994,5,1]]},"DOI":"10.21236\/ada283179","type":"report","created":{"date-parts":[[2017,9,5]],"date-time":"2017-09-05T11:54:42Z","timestamp":1504612482000},"source":"Crossref","is-referenced-by-count":0,"title":["Drug
+        Use and Abuse: Background Information for Security Personnel"],"prefix":"10.21236","author":[{"given":"Jr","family":"Heuer","sequence":"first","affiliation":[]},{"family":"Richards
+        J.","sequence":"first","affiliation":[]}],"member":"9879","original-title":[""],"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T10:57:21Z","timestamp":1614941841000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.dtic.mil\/docs\/citations\/ADA283179"}},"subtitle":[""],"issued":{"date-parts":[[1994,5,1]]},"references-count":0,"alternative-id":["PERS-TR-94-003"],"URL":"http:\/\/dx.doi.org\/10.21236\/ada283179","published":{"date-parts":[[1994,5,1]]}},{"institution":[{"name":"National
+        Energy Technology Laboratory","acronym":["NETL"],"place":["Pittsburgh, PA,
+        and Morgantown, WV"]},{"name":"Colorado Univ., Boulder, CO (United States).
+        Dept. of Chemical Engineering"},{"name":"USDOE, Washington, DC (United States)"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:20Z","timestamp":1648950380547},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/10131699","type":"report","created":{"date-parts":[[2007,5,4]],"date-time":"2007-05-04T10:32:49Z","timestamp":1178274769000},"approved":{"date-parts":[[2005,5,27]]},"source":"Crossref","is-referenced-by-count":0,"title":["Chemically
+        assisted in situ recovery of oil shale"],"prefix":"10.2172","author":[{"given":"W.F.","family":"Ramierz","sequence":"first","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1993,12,31]]},"deposited":{"date-parts":[[2013,12,16]],"date-time":"2013-12-16T18:08:32Z","timestamp":1387217312000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/10131699-JHSFxD\/native\/"}},"issued":{"date-parts":[[1993,12,31]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/10131699","published":{"date-parts":[[1993,12,31]]}},{"institution":[{"name":"OSD
+        or Non-Service DoD Agency","acronym":["DARPA"],"department":["Funding"]},{"name":"UNIVERSITY
+        OF SOUTHERN CALIFORNIA MARINA DEL REY  INFORMATION SCIENCES INST","department":["Performing"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:19Z","timestamp":1648950379794},"publisher-location":"Fort
+        Belvoir, VA","reference-count":0,"publisher":"Defense Technical Information
+        Center","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2003,1,31]]},"DOI":"10.21236\/ada411010","type":"report","created":{"date-parts":[[2017,8,17]],"date-time":"2017-08-17T14:45:49Z","timestamp":1502981149000},"source":"Crossref","is-referenced-by-count":0,"title":["Next
+        Generation Internet (NGI) Multicast Applications and Architecture (NMAA)"],"prefix":"10.21236","author":[{"given":"Colin","family":"Perkins","sequence":"first","affiliation":[]},{"given":"Aaron","family":"Griggs","sequence":"first","affiliation":[]},{"given":"Jaroslav","family":"Flidr","sequence":"first","affiliation":[]},{"given":"Ron","family":"Riley","sequence":"first","affiliation":[]},{"given":"Maryann","family":"Perez","sequence":"first","affiliation":[]}],"member":"9879","original-title":[""],"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T06:51:50Z","timestamp":1614927110000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.dtic.mil\/docs\/citations\/ADA411010"}},"subtitle":[""],"issued":{"date-parts":[[2003,1,31]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.21236\/ada411010","published":{"date-parts":[[2003,1,31]]}},{"institution":[{"name":"Historical
+        Energy Database (United States)","acronym":["HEDB"]},{"name":"Lehigh Univ.,
+        Bethlehem, PA (USA)"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:42:26Z","timestamp":1648950146569},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1978,7,1]]},"DOI":"10.2172\/6570056","type":"report","created":{"date-parts":[[2020,9,1]],"date-time":"2020-09-01T19:29:15Z","timestamp":1598988555000},"source":"Crossref","is-referenced-by-count":0,"title":["Centrifugal
+        fluidized combustion of coal. Quarterly report, April--June 1978"],"prefix":"10.2172","author":[{"given":"E.","family":"Levy","sequence":"first","affiliation":[]},{"given":"J.","family":"Chen","sequence":"additional","affiliation":[]}],"member":"960","deposited":{"date-parts":[[2020,9,3]],"date-time":"2020-09-03T05:41:32Z","timestamp":1599111692000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/6570056\/"}},"issued":{"date-parts":[[1978,7,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/6570056","published":{"date-parts":[[1978,7,1]]}},{"institution":[{"name":"National
+        Energy Technology Laboratory","acronym":["NETL"],"place":["Pittsburgh, PA,
+        and Morgantown, WV"]},{"name":"Manufacturing and Technology Conversion International,
+        Inc., Columbia, MD (United States)"},{"name":"USDOE, Washington, DC (United
+        States)"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:42:33Z","timestamp":1648950153638},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/10139611","type":"report","created":{"date-parts":[[2008,2,8]],"date-time":"2008-02-08T08:28:47Z","timestamp":1202459327000},"approved":{"date-parts":[[2008,2,8]]},"source":"Crossref","is-referenced-by-count":0,"title":["Development
+        of a retrofit coal combustor for industrial applications, (Phase 2). Technical
+        progress report, April--June 1989"],"prefix":"10.2172","author":[{"name":"Manufacturing
+        and Technology Conversion International, Inc., Columbia, MD (United States)","sequence":"first","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1989,7,1]]},"deposited":{"date-parts":[[2013,12,16]],"date-time":"2013-12-16T23:08:32Z","timestamp":1387235312000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/10139611-iM7a5N\/"}},"issued":{"date-parts":[[1989,7,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/10139611","published":{"date-parts":[[1989,7,1]]}},{"institution":[{"name":"US
+        Dept of the Air Force","acronym":["TR-05-0263"],"department":["Funding"]},{"name":"STANFORD
+        UNIV  CA DEPT OF MECHANICAL ENGINEERING","department":["Performing"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:42:43Z","timestamp":1648950163831},"publisher-location":"Fort
+        Belvoir, VA","reference-count":0,"publisher":"Defense Technical Information
+        Center","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2005,5,17]]},"DOI":"10.21236\/ada435404","type":"report","created":{"date-parts":[[2017,8,11]],"date-time":"2017-08-11T18:44:43Z","timestamp":1502477083000},"source":"Crossref","is-referenced-by-count":2,"title":["Transonic
+        Cascade Measurements to Support Analytical Modeling"],"prefix":"10.21236","author":[{"given":"Paul
+        A.","family":"Durbin","sequence":"first","affiliation":[]},{"given":"John
+        K.","family":"Eaton","sequence":"first","affiliation":[]},{"given":"Greg","family":"Laskowski","sequence":"first","affiliation":[]},{"given":"Amanda","family":"Vicharelli","sequence":"first","affiliation":[]}],"member":"9879","original-title":[""],"deposited":{"date-parts":[[2021,3,6]],"date-time":"2021-03-06T01:23:17Z","timestamp":1614993797000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.dtic.mil\/docs\/citations\/ADA435404"}},"subtitle":[""],"issued":{"date-parts":[[2005,5,17]]},"references-count":0,"alternative-id":["AFRL-SR-AR-TR-05-0263"],"URL":"http:\/\/dx.doi.org\/10.21236\/ada435404","published":{"date-parts":[[2005,5,17]]}},{"institution":[{"name":"National
+        Bureau of Economic Research","acronym":["NBER"],"place":["Cambridge, MA"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:42:44Z","timestamp":1648950164639},"publisher-location":"Cambridge,
+        MA","reference-count":0,"publisher":"National Bureau of Economic Research","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.3386\/w1325","type":"report","created":{"date-parts":[[2007,10,23]],"date-time":"2007-10-23T16:59:49Z","timestamp":1193158789000},"source":"Crossref","is-referenced-by-count":0,"title":["Cyclical
+        Behavior of Prices and Quantities in the Automobile Market"],"prefix":"10.3386","author":[{"given":"Olivier","family":"Blanchard","sequence":"first","affiliation":[]},{"given":"Angelo","family":"Melino","sequence":"additional","affiliation":[]}],"member":"1960","published-online":{"date-parts":[[1984,4]]},"deposited":{"date-parts":[[2020,9,27]],"date-time":"2020-09-27T02:05:59Z","timestamp":1601172359000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.nber.org\/papers\/w1325.pdf"}},"issued":{"date-parts":[[1984,4]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3386\/w1325","published":{"date-parts":[[1984,4]]}},{"institution":[{"name":"Savannah
+        River Site (SRS)","acronym":["SRS"],"place":["Aiken, SC"]},{"name":"USDOE"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:42:45Z","timestamp":1648950165499},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/881440","type":"report","created":{"date-parts":[[2007,4,26]],"date-time":"2007-04-26T14:32:31Z","timestamp":1177597951000},"approved":{"date-parts":[[2006,8,11]]},"source":"Crossref","is-referenced-by-count":0,"title":["Technical
+        Review of SRS Dose Reconstrruction Methods Used By CDC"],"prefix":"10.2172","author":[{"given":"Ali,
+        A","family":"Simpkins","sequence":"first","affiliation":[]}],"member":"960","published-online":{"date-parts":[[2005,7,20]]},"deposited":{"date-parts":[[2013,12,16]],"date-time":"2013-12-16T23:08:32Z","timestamp":1387235312000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/881440-8NheB5\/"}},"issued":{"date-parts":[[2005,7,20]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/881440","published":{"date-parts":[[2005,7,20]]}},{"institution":[{"name":"US
+        Dept of the Navy","acronym":["ONR"],"department":["Funding"]},{"name":"EXXON
+        RESEARCH AND ENGINEERING CO LINDEN NJ GOVERNMENT RESEARCH LAB","department":["Performing"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:42:55Z","timestamp":1648950175825},"publisher-location":"Fort
+        Belvoir, VA","reference-count":0,"publisher":"Defense Technical Information
+        Center","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1976,4,1]]},"DOI":"10.21236\/ada023959","type":"report","created":{"date-parts":[[2017,10,3]],"date-time":"2017-10-03T18:39:30Z","timestamp":1507055970000},"source":"Crossref","is-referenced-by-count":1,"title":["Photodissociation
+        Dye Laser"],"prefix":"10.21236","author":[{"given":"Abraham","family":"Kasdan","sequence":"first","affiliation":[]}],"member":"9879","original-title":[""],"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T19:53:06Z","timestamp":1614973986000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.dtic.mil\/docs\/citations\/ADA023959"}},"subtitle":[""],"issued":{"date-parts":[[1976,4,1]]},"references-count":0,"alternative-id":["EXXON\/GRUS.3BEOB.76"],"URL":"http:\/\/dx.doi.org\/10.21236\/ada023959","published":{"date-parts":[[1976,4,1]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:41Z","timestamp":1648950401267},"reference-count":0,"publisher":"INPLASY
+        - International Platform of Registered Systematic Review and Meta-analysis
+        Protocols","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.37766\/inplasy2020.10.0062","type":"report","created":{"date-parts":[[2020,10,17]],"date-time":"2020-10-17T14:06:11Z","timestamp":1602943571000},"source":"Crossref","is-referenced-by-count":0,"title":["The
+        effectiveness and safety of thyroxin in the treatment of patients with subclinical
+        hypothyroidism and heart failure: a meta-analysis"],"prefix":"10.37766","author":[{"given":"Hongshuo","family":"Shi","sequence":"first","affiliation":[]},{"given":"Zunqi","family":"Kan","sequence":"additional","affiliation":[]},{"given":"Yufan","family":"Liu","sequence":"additional","affiliation":[]},{"given":"Wenwen","family":"Li","sequence":"additional","affiliation":[]},{"given":"Min","family":"Peng","sequence":"additional","affiliation":[]},{"given":"Tiantian","family":"Yang","sequence":"additional","affiliation":[]}],"member":"24498","published-online":{"date-parts":[[2020,10,17]]},"deposited":{"date-parts":[[2020,10,17]],"date-time":"2020-10-17T14:06:11Z","timestamp":1602943571000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/inplasy.com\/inplasy-2020-10-0062\/"}},"issued":{"date-parts":[[2020,10,17]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.37766\/inplasy2020.10.0062","published":{"date-parts":[[2020,10,17]]}},{"institution":[{"name":"Lawrence
+        Livermore National Laboratory (LLNL)","acronym":["LLNL"],"place":["Livermore,
+        CA (United States)"]},{"name":"Northern Arizona Univ., Flagstaff (USA)"},{"name":"Not
+        Available"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:46Z","timestamp":1648950406607},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/5277790","type":"report","created":{"date-parts":[[2009,12,12]],"date-time":"2009-12-12T05:00:15Z","timestamp":1260594015000},"approved":{"date-parts":[[2009,12,12]]},"source":"Crossref","is-referenced-by-count":2,"title":["Effects
+        of annular air gaps surrounding an emplaced nuclear waste canister in deep
+        geologic storage"],"prefix":"10.2172","author":[{"given":"W.E.","family":"Lowry","sequence":"first","affiliation":[]},{"given":"B.W.","family":"Davis","sequence":"additional","affiliation":[]},{"given":"H.","family":"Cheung","sequence":"additional","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1980,6,5]]},"deposited":{"date-parts":[[2009,12,12]],"date-time":"2009-12-12T05:00:18Z","timestamp":1260594018000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/5277790-Ff0ytx\/"}},"issued":{"date-parts":[[1980,6,5]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/5277790","published":{"date-parts":[[1980,6,5]]}},{"institution":[{"name":"National
+        Institute of Standards and Technology","acronym":["NIST"],"place":["Gaithersburg,
+        MD"],"department":["Engineering Laboratory"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:49Z","timestamp":1648950409901},"reference-count":0,"publisher":"National
+        Institute of Standards and Technology","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.6028\/nist.tn.1807","type":"report","created":{"date-parts":[[2013,9,13]],"date-time":"2013-09-13T13:37:44Z","timestamp":1379079464000},"source":"Crossref","is-referenced-by-count":1,"title":["Horizontal
+        Convective Boiling of R134a, R1234yf\/R134a, and R1234ze(E) within a Micro-Fin
+        Tube with Extensive Measurement and Analysis Details"],"prefix":"10.6028","author":[{"given":"Mark
+        A.","family":"Kedzierski","sequence":"first","affiliation":[]},{"given":"Ki-Jung","family":"Park","sequence":"additional","affiliation":[]}],"member":"4068","published-online":{"date-parts":[[2013,8]]},"deposited":{"date-parts":[[2018,3,6]],"date-time":"2018-03-06T09:32:08Z","timestamp":1520328728000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/nvlpubs.nist.gov\/nistpubs\/TechnicalNotes\/NIST.TN.1807.pdf"}},"issued":{"date-parts":[[2013,8]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.6028\/nist.tn.1807","published":{"date-parts":[[2013,8]]}},{"institution":[{"name":"Division
+        of Technical Information Extension","acronym":["DTIE"],"place":["U.S. Atomic
+        Energy Commission"]},{"name":"comps."},{"name":"Ames Lab., Iowa"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:53Z","timestamp":1648950413265},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1969,1,1]]},"DOI":"10.2172\/4170787","type":"report","created":{"date-parts":[[2020,10,31]],"date-time":"2020-10-31T09:50:14Z","timestamp":1604137814000},"source":"Crossref","is-referenced-by-count":0,"title":["REVIEWS
+        ON RARE EARTHS.   A COMPILATION OF BOOKS, CHAPTERS OF BOOKS, JOURNAL ARTICLES,
+        REPORTS, CONFERENCE PROCEEDINGS AND BIBLIOGRAPHIES PUBLISHED FROM 1946 TO
+        1968."],"prefix":"10.2172","author":[{"given":"C.","family":"Bertrand","sequence":"first","affiliation":[]},{"given":"K.","family":"Gschneidner,
+        Jr.","sequence":"additional","affiliation":[]}],"member":"960","deposited":{"date-parts":[[2020,11,3]],"date-time":"2020-11-03T07:42:37Z","timestamp":1604389357000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/4170787\/"}},"issued":{"date-parts":[[1969,1,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/4170787","published":{"date-parts":[[1969,1,1]]}},{"institution":[{"name":"Lawrence
+        Livermore National Laboratory (LLNL)","acronym":["LLNL"],"place":["Livermore,
+        CA (United States)"]},{"name":"California Univ., Berkeley, CA (US). Lawrence
+        Radiation Lab."}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:56Z","timestamp":1648950416158},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/4215589","type":"report","created":{"date-parts":[[2015,3,4]],"date-time":"2015-03-04T22:31:54Z","timestamp":1425508314000},"source":"Crossref","is-referenced-by-count":0,"title":["BEVATRON
+        OPERATION AND DEVELOPMENT. XX. Period covered November, December 1958, January
+        1959"],"prefix":"10.2172","author":[{"given":"W. D.","family":"Hartsough","sequence":"first","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1959,9,1]]},"deposited":{"date-parts":[[2016,6,25]],"date-time":"2016-06-25T00:02:36Z","timestamp":1466812956000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/4215589\/"}},"issued":{"date-parts":[[1959,9,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/4215589","published":{"date-parts":[[1959,9,1]]}},{"institution":[{"name":"US
+        Dept of the Air Force","acronym":["ESD"],"department":["Funding"]},{"name":"MASSACHUSETTS
+        INST OF TECH LEXINGTON LINCOLN LAB","department":["Performing"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:59Z","timestamp":1648950419815},"publisher-location":"Fort
+        Belvoir, VA","reference-count":0,"publisher":"Defense Technical Information
+        Center","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1961,10,17]]},"DOI":"10.21236\/ad0265867","type":"report","created":{"date-parts":[[2017,9,15]],"date-time":"2017-09-15T11:30:49Z","timestamp":1505475049000},"source":"Crossref","is-referenced-by-count":1,"title":["Application
+        of the Resonant Cavity Method to the Measurement of Electron Densities in
+        the Wakes of Hypervelocity Pellets"],"prefix":"10.21236","author":[{"given":"M.","family":"Labitt","sequence":"first","affiliation":[]},{"given":"M.
+        A.","family":"Herlin","sequence":"first","affiliation":[]}],"member":"9879","original-title":[""],"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T16:05:55Z","timestamp":1614960355000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.dtic.mil\/docs\/citations\/AD0265867"}},"subtitle":[""],"issued":{"date-parts":[[1961,10,17]]},"references-count":0,"alternative-id":["TR-248"],"URL":"http:\/\/dx.doi.org\/10.21236\/ad0265867","published":{"date-parts":[[1961,10,17]]}},{"institution":[{"name":"US
+        Dept of the Air Force ; US Dept of the Army","acronym":["16997.4-M"],"department":["Funding"]},{"name":"STANFORD
+        UNIV  CA","department":["Performing"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:27Z","timestamp":1648950267854},"publisher-location":"Fort
+        Belvoir, VA","reference-count":0,"publisher":"Defense Technical Information
+        Center","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1980,1,1]]},"DOI":"10.21236\/ada095627","type":"report","created":{"date-parts":[[2017,9,15]],"date-time":"2017-09-15T19:07:16Z","timestamp":1505502436000},"source":"Crossref","is-referenced-by-count":0,"title":["Liesegang
+        Rings and a Theory of Fast Reaction and Slow Diffusion,"],"prefix":"10.21236","author":[{"given":"Joseph
+        B.","family":"Keller","sequence":"first","affiliation":[]}],"member":"9879","original-title":[""],"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T15:38:03Z","timestamp":1614958683000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.dtic.mil\/docs\/citations\/ADA095627"}},"subtitle":[""],"issued":{"date-parts":[[1980,1,1]]},"references-count":0,"alternative-id":["ARO-16997.4-M"],"URL":"http:\/\/dx.doi.org\/10.21236\/ada095627","published":{"date-parts":[[1980,1,1]]}},{"institution":[{"name":"Argonne
+        National Laboratory (ANL)","acronym":["ANL"],"place":["Argonne, IL (United
+        States)"]},{"name":"Not Available"}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:28Z","timestamp":1648950268714},"reference-count":0,"publisher":"Office
+        of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/5147250","type":"report","created":{"date-parts":[[2016,6,22]],"date-time":"2016-06-22T15:41:36Z","timestamp":1466610096000},"source":"Crossref","is-referenced-by-count":0,"title":["Study
+        on the use of collocation with B-splines for heat conduction in a plane slab
+        with a change in phase"],"prefix":"10.2172","author":[{"given":"G. K.","family":"Leaf","sequence":"first","affiliation":[]},{"given":"C.","family":"Amick","sequence":"additional","affiliation":[]},{"given":"M.","family":"Minkoff","sequence":"additional","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1975,2,1]]},"deposited":{"date-parts":[[2016,6,23]],"date-time":"2016-06-23T23:43:33Z","timestamp":1466725413000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/5147250\/"}},"issued":{"date-parts":[[1975,2,1]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.2172\/5147250","published":{"date-parts":[[1975,2,1]]}},{"institution":[{"name":"Iscte
+        - Instituto Universit\u00e1rio de Lisboa","acronym":["iscte"],"place":["Lisbon"],"department":["Cis-iscte"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:36Z","timestamp":1648950276596},"reference-count":0,"publisher":"OST
+        Action CA 18213: Rural NEET Youth Network: Modeling the risks underlying rural
+        NEETs social exclusion","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2020,12]]},"abstract":"<jats:p>This
+        report outlines in detail the situation of rural Youths Neither in Employment,
+        nor in Education or Training (NEET) aged between 15 and 34 years old, over
+        the last decade (2009-2019) in Bosnia and Herzegovina. To do this, the report
+        utilised indicators of: you-th population; youth employment and unemployment;
+        education; and, NEETs distribution. The characterisation of all indicators
+        adopted the degree of urbanisation as a central cri-terion, enabling proportional
+        comparisons between rural areas, towns and suburbs, cities and the whole country.
+        These analyses are further divided into age subgroups and, where possible,
+        into sex groups for greater detail. The statistical procedures adopted across
+        the different selected dimensions involve: des-criptive longitudinal analysis;
+        using graphical displays (e.g., overlay line charts); and, the calculation
+        of proportional absolute and relative changes between 2009 and 2013, 2013
+        and 2019, and finally 2009 and 2019. These time ranges were chosen to capture
+        the in-dicators evolution before and after the economic crisis which hit European
+        countries. All data was extracted from ILOSTAT explorer public datasets.The
+        analyses show that between 2009 and 2019 youth population in both rural and
+        urban areas decreased. In general, a strong decline in youth population was
+        observed within all categories, with the most significant decrease within
+        the age group 25-29 (21.57%) and 15-19 (20.35%). Youth employment has tended
+        to decrease overall, and the decrease is stron-ger within rural regions. Interestingly,
+        youth unemployment has also tended to decrease, and a significantly higher
+        share of unemployed youth is from rural regions. A somewhat similar trend
+        is observed in the field of education where the number of those enrolled significantly
+        decreased during the observed period for all education levels in Bosnia and
+        Herzegovina. The ESLET rate tended to decrease, while the proportion of the
+        female po-pulation tends to have higher ESLET levels compared to the male
+        population. However, the ESLET rate is still below the 10% target defined
+        by the Europe 2020 strategy. Finally, the proportion of NEETs in Bosnia and
+        Herzegovina is higher in rural areas, while in general the tendency has been
+        for it to decrease during the observed period.<\/jats:p>","DOI":"10.15847\/cisrnyn.nr14.2020.12","type":"report","created":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T09:35:31Z","timestamp":1614936931000},"source":"Crossref","is-referenced-by-count":0,"title":["National
+        reports 2009-2019 - Rural NEET across Europe (14 countries reports)"],"prefix":"10.15847","member":"6592","published-online":{"date-parts":[[2020,12]]},"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T09:35:32Z","timestamp":1614936932000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/rnyobservatory.eu\/web\/National-Reports\/14-NATIONAL-REPORTS-09-19.pdf"}},"issued":{"date-parts":[[2020,12]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.15847\/cisrnyn.nr14.2020.12","published":{"date-parts":[[2020,12]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -550,11 +641,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '5673'
+      - '6912'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 21:19:23 GMT
+      - Mon, 25 Sep 2023 04:31:19 GMT
       permissions-policy:
       - interest-cohort=()
       server:

@@ -9,234 +9,323 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/works?sample=10
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":10,"items":[{"indexed":{"date-parts":[[2023,9,2]],"date-time":"2023-09-02T12:40:48Z","timestamp":1693658448723},"reference-count":10,"publisher":"Wiley","issue":"2","license":[{"start":{"date-parts":[[2020,9,30]],"date-time":"2020-09-30T00:00:00Z","timestamp":1601424000000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":["onlinelibrary.wiley.com"],"crossmark-restriction":true},"short-container-title":["Journal
+        of Medical Virology"],"published-print":{"date-parts":[[2021,2]]},"DOI":"10.1002\/jmv.26532","type":"journal-article","created":{"date-parts":[[2020,9,19]],"date-time":"2020-09-19T12:00:45Z","timestamp":1600516845000},"page":"712-713","update-policy":"http:\/\/dx.doi.org\/10.1002\/crossmark_policy","source":"Crossref","is-referenced-by-count":3,"title":["SARS\u2010CoV\u20102
+        molecular testing for the diagnosis of COVID\u201019: One test does not fit
+        all"],"prefix":"10.1002","volume":"93","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-1945-1173","authenticated-orcid":false,"given":"Lynne","family":"Li","sequence":"first","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"}]},{"ORCID":"http:\/\/orcid.org\/0000-0001-9320-4499","authenticated-orcid":false,"given":"Christopher
+        F.","family":"Lowe","sequence":"additional","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
+        Hospital  Vancouver Canada"}]},{"given":"Gordon","family":"Ritchie","sequence":"additional","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
+        Hospital  Vancouver Canada"}]},{"given":"Aleksandra","family":"Stefanovic","sequence":"additional","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
+        Hospital  Vancouver Canada"}]},{"given":"Sylvie","family":"Champagne","sequence":"additional","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
+        Hospital  Vancouver Canada"}]},{"given":"Marc G.","family":"Romney","sequence":"additional","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
+        Hospital  Vancouver Canada"}]},{"given":"Victor","family":"Leung","sequence":"additional","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
+        Hospital  Vancouver Canada"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-4158-6955","authenticated-orcid":false,"given":"Nancy","family":"Matic","sequence":"additional","affiliation":[{"name":"Department
+        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
+        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
+        Hospital  Vancouver Canada"}]}],"member":"311","published-online":{"date-parts":[[2020,9,30]]},"reference":[{"key":"e_1_2_2_2_1","doi-asserted-by":"publisher","DOI":"10.1002\/jmv.25793"},{"key":"e_1_2_2_3_1","doi-asserted-by":"publisher","DOI":"10.2807\/1560-7917.ES.2020.25.3.2000045"},{"key":"e_1_2_2_4_1","doi-asserted-by":"publisher","DOI":"10.7326\/M20-1495"},{"key":"e_1_2_2_5_1","doi-asserted-by":"publisher","DOI":"10.1093\/infdis\/jiaa370"},{"key":"e_1_2_2_6_1","doi-asserted-by":"publisher","DOI":"10.1177\/0194599820931793"},{"key":"e_1_2_2_7_1","doi-asserted-by":"publisher","DOI":"10.1093\/cid\/ciaa848"},{"key":"e_1_2_2_8_1","doi-asserted-by":"publisher","DOI":"10.1093\/cid\/ciaa1156"},{"issue":"6","key":"e_1_2_2_9_1","first-page":"Cd013652","article-title":"Antibody
+        tests for identification of current and past infection with SARS\u2010CoV\u20102","volume":"6","author":"Deeks
+        JJ","year":"2020","journal-title":"Cochrane Database Syst Rev"},{"key":"e_1_2_2_10_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.jviromet.2020.113919"},{"key":"e_1_2_2_11_1","doi-asserted-by":"publisher","DOI":"10.1136\/gutjnl-2020-320926"}],"container-title":["Journal
+        of Medical Virology"],"language":"en","link":[{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jmv.26532","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full-xml\/10.1002\/jmv.26532","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jmv.26532","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,1]],"date-time":"2023-09-01T14:29:08Z","timestamp":1693578548000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/jmv.26532"}},"issued":{"date-parts":[[2020,9,30]]},"references-count":10,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2021,2]]}},"alternative-id":["10.1002\/jmv.26532"],"URL":"http:\/\/dx.doi.org\/10.1002\/jmv.26532","archive":["Portico"],"ISSN":["0146-6615","1096-9071"],"issn-type":[{"value":"0146-6615","type":"print"},{"value":"1096-9071","type":"electronic"}],"subject":["Infectious
+        Diseases","Virology"],"published":{"date-parts":[[2020,9,30]]},"assertion":[{"value":"2020-08-17","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2020-09-16","order":1,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2020-09-30","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]},{"indexed":{"date-parts":[[2023,9,12]],"date-time":"2023-09-12T08:11:17Z","timestamp":1694506277456},"reference-count":0,"publisher":"Bloomsbury
+        Publishing","isbn-type":[{"value":"9780715628522","type":"print"},{"value":"9781472551894","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.5040\/9781472551894.0007","type":"book-chapter","created":{"date-parts":[[2014,9,12]],"date-time":"2014-09-12T15:40:31Z","timestamp":1410536431000},"source":"Crossref","is-referenced-by-count":0,"title":["Notes"],"prefix":"10.5040","member":"2984","container-title":["Philoponus
+        : On Aristotle On Coming-to-Be and Perishing 1.1-5"],"deposited":{"date-parts":[[2023,9,11]],"date-time":"2023-09-11T21:50:28Z","timestamp":1694469028000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9781472551894&tocid=b-9781472551894-b-0063"}},"issued":{"date-parts":[[null]]},"ISBN":["9780715628522","9781472551894"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781472551894.0007"},{"indexed":{"date-parts":[[2023,9,7]],"date-time":"2023-09-07T19:53:31Z","timestamp":1694116411929},"reference-count":35,"publisher":"Association
+        for Computing Machinery (ACM)","issue":"1","funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["0963839, 1302557,
+        1213052, 1017882, 1205618"]}],"content-domain":{"domain":["dl.acm.org"],"crossmark-restriction":true},"short-container-title":["SIGMETRICS
+        Perform. Eval. Rev."],"published-print":{"date-parts":[[2014,6,20]]},"abstract":"<jats:p>Caches
+        play a critical role in today''s computer systems and optimizing their performance
+        has been a critical objective in the last couple of decades. Unfortunately,
+        compared to a plethora of work in software and hardware directed code\/data
+        optimizations, much less effort has been spent in understanding the fundamental
+        characteristics of data access patterns exhibited by application programs
+        and their interaction with the underlying cache hardware. Therefore, in general
+        it is hard to reason about cache behavior of a program running on a target
+        system. Motivated by this observation, we first set up a \"locality model\"
+        that can help us determine the theoretical bounds of the cache misses caused
+        by irregular data accesses. We then explain how this locality model can be
+        used for different data locality optimization purposes. After that, based
+        on our model, we propose a data reordering (data layout reorganization) scheme
+        that can be applied after any existing data reordering schemes for irregular
+        applications to improve cache performance by further reducing the cache misses.
+        We evaluate the effectiveness of our scheme using a set of 8 programs with
+        irregular data accesses, and show that it brings significant improvements
+        over the state-of-the-art on two commercial multicore machines.<\/jats:p>","DOI":"10.1145\/2637364.2591992","type":"journal-article","created":{"date-parts":[[2014,7,1]],"date-time":"2014-07-01T14:23:02Z","timestamp":1404224582000},"page":"477-489","update-policy":"http:\/\/dx.doi.org\/10.1145\/crossmark-policy","source":"Crossref","is-referenced-by-count":3,"title":["CApRI"],"prefix":"10.1145","volume":"42","author":[{"given":"Wei","family":"Ding","sequence":"first","affiliation":[{"name":"The
+        Pennsylvania State University, University Park, PA, USA"}]},{"given":"Mahmut","family":"Kandemir","sequence":"additional","affiliation":[{"name":"The
+        Pennsylvania State University, University Park, PA, USA"}]}],"member":"320","published-online":{"date-parts":[[2014,6,16]]},"reference":[{"key":"e_1_2_1_1_1","unstructured":"Intel
+        pentium 4 and intel xeon processor optimization reference manual. http:\/\/developer.intel.com.  Intel
+        pentium 4 and intel xeon processor optimization reference manual. http:\/\/developer.intel.com."},{"key":"e_1_2_1_2_1","unstructured":"Intel
+        Xscale core developer''s manual. http:\/\/developer.intel.com.  Intel Xscale
+        core developer''s manual. http:\/\/developer.intel.com."},{"key":"e_1_2_1_3_1","unstructured":"SUIF2.
+        http:\/\/suif.stanford.edu.  SUIF2. http:\/\/suif.stanford.edu."},{"key":"e_1_2_1_4_1","doi-asserted-by":"publisher","DOI":"10.1145\/209936.209954"},{"key":"e_1_2_1_5_1","doi-asserted-by":"publisher","DOI":"10.1109\/TC.1987.1676942"},{"key":"e_1_2_1_6_1","doi-asserted-by":"publisher","DOI":"10.1109\/ICPADS.2012.125"},{"key":"e_1_2_1_7_1","doi-asserted-by":"publisher","DOI":"10.1145\/378795.378840"},{"key":"e_1_2_1_8_1","doi-asserted-by":"publisher","DOI":"10.1145\/301618.301635"},{"key":"e_1_2_1_9_1","doi-asserted-by":"publisher","DOI":"10.1006\/jpdc.1994.1104"},{"key":"e_1_2_1_10_1","doi-asserted-by":"publisher","DOI":"10.1145\/301618.301670"},{"key":"e_1_2_1_11_1","doi-asserted-by":"publisher","DOI":"10.1145\/1274971.1274987"},{"key":"e_1_2_1_12_1","volume-title":"The
+        Grid 2: Blueprint for a New Computing Infrastructure","author":"Foster I.","year":"2003","unstructured":"I.
+        Foster and C. Kesselman . The Grid 2: Blueprint for a New Computing Infrastructure
+        . Morgan Kaufmann Publishers Inc ., San Francisco, CA, USA, 2003 . I. Foster
+        and C. Kesselman. The Grid 2: Blueprint for a New Computing Infrastructure.
+        Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2003."},{"key":"e_1_2_1_13_1","doi-asserted-by":"publisher","DOI":"10.1145\/330249.330254"},{"key":"e_1_2_1_14_1","doi-asserted-by":"publisher","DOI":"10.5555\/648049.746020"},{"key":"e_1_2_1_15_1","doi-asserted-by":"publisher","DOI":"10.1109\/TPDS.2006.88"},{"key":"e_1_2_1_16_1","volume-title":"Morgan
+        Kaufmann","author":"Hennessy J. L.","year":"2003","unstructured":"J. L. Hennessy
+        and D. Patterson . Computer Architecture: A Quantitative Approach . Morgan
+        Kaufmann , 2003 . J. L. Hennessy and D. Patterson. Computer Architecture:
+        A Quantitative Approach. Morgan Kaufmann, 2003."},{"key":"e_1_2_1_17_1","doi-asserted-by":"publisher","DOI":"10.5555\/1987237.1987255"},{"key":"e_1_2_1_18_1","doi-asserted-by":"publisher","DOI":"10.1145\/1254882.1254915"},{"key":"e_1_2_1_19_1","doi-asserted-by":"publisher","DOI":"10.1137\/S1064827595287997"},{"key":"e_1_2_1_20_1","volume-title":"Computer
+        Architecture","author":"Kroft D.","year":"1981","unstructured":"D. Kroft .
+        Lockup-free instruction fetch\/prefetch cache organization . Computer Architecture
+        , 1981 . D. Kroft. Lockup-free instruction fetch\/prefetch cache organization.
+        Computer Architecture, 1981."},{"key":"e_1_2_1_21_1","doi-asserted-by":"publisher","DOI":"10.1145\/1504176.1504181"},{"key":"e_1_2_1_23_1","author":"Liu
+        W.","year":"1976","unstructured":"W. Liu and A. Sherman . Comparative analysis
+        of the cuthill-mckee and the reverse cuthill-mckee ordering algorithms for
+        sparse matrices. SIAM Journal on Numerical Analysis , 1976 . W. Liu and A.
+        Sherman. Comparative analysis of the cuthill-mckee and the reverse cuthill-mckee
+        ordering algorithms for sparse matrices. SIAM Journal on Numerical Analysis,
+        1976.","journal-title":"SIAM Journal on Numerical Analysis"},{"key":"e_1_2_1_24_1","doi-asserted-by":"publisher","DOI":"10.1145\/305138.305228"},{"key":"e_1_2_1_25_1","doi-asserted-by":"publisher","DOI":"10.5555\/520793.825758"},{"key":"e_1_2_1_26_1","doi-asserted-by":"publisher","DOI":"10.1145\/263580.263655"},{"key":"e_1_2_1_27_1","doi-asserted-by":"publisher","DOI":"10.1145\/503272.503283"},{"key":"e_1_2_1_28_1","volume-title":"Proceedings
+        of the International Conference on Machine Learning","author":"Sakr M. F.","year":"1997","unstructured":"M.
+        F. Sakr , S. P. Levitan , D. M. Chiarulli , B. G. Horne , and C. L. Giles
+        . Predicting multiprocessor memory access patterns with learning models .
+        In Proceedings of the International Conference on Machine Learning , 1997
+        . M. F. Sakr, S. P. Levitan, D. M. Chiarulli, B. G. Horne, and C. L. Giles.
+        Predicting multiprocessor memory access patterns with learning models. In
+        Proceedings of the International Conference on Machine Learning, 1997."},{"key":"e_1_2_1_29_1","volume-title":"Proceedings
+        of the International Symposium on Code Generation and Optimization","author":"So
+        B.","year":"2004","unstructured":"B. So , M. W. Hall , and H. E. Ziegler .
+        Custom data layout for memory parallelism . In Proceedings of the International
+        Symposium on Code Generation and Optimization , 2004 . B. So, M. W. Hall,
+        and H. E. Ziegler. Custom data layout for memory parallelism. In Proceedings
+        of the International Symposium on Code Generation and Optimization, 2004."},{"key":"e_1_2_1_30_1","doi-asserted-by":"publisher","DOI":"10.1145\/781131.781142"},{"key":"e_1_2_1_31_1","doi-asserted-by":"publisher","DOI":"10.1145\/1854273.1854336"},{"key":"e_1_2_1_33_1","doi-asserted-by":"publisher","DOI":"10.1109\/PACT.2011.56"},{"key":"e_1_2_1_34_1","doi-asserted-by":"publisher","DOI":"10.1145\/1111037.1111040"},{"key":"e_1_2_1_35_1","doi-asserted-by":"publisher","DOI":"10.1145\/2155620.2155677"},{"key":"e_1_2_1_36_1","doi-asserted-by":"publisher","DOI":"10.1145\/1993744.1993748"},{"key":"e_1_2_1_37_1","doi-asserted-by":"publisher","DOI":"10.1145\/996841.996872"}],"container-title":["ACM
+        SIGMETRICS Performance Evaluation Review"],"language":"en","link":[{"URL":"https:\/\/dl.acm.org\/doi\/pdf\/10.1145\/2637364.2591992","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,4]],"date-time":"2023-09-04T17:57:12Z","timestamp":1693850232000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dl.acm.org\/doi\/10.1145\/2637364.2591992"}},"subtitle":["CAche-conscious
+        data reordering for irregular codes"],"issued":{"date-parts":[[2014,6,16]]},"references-count":35,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2014,6,20]]}},"alternative-id":["10.1145\/2637364.2591992"],"URL":"http:\/\/dx.doi.org\/10.1145\/2637364.2591992","relation":{"is-identical-to":[{"id-type":"doi","id":"10.1145\/2591971.2591992","asserted-by":"subject"}]},"ISSN":["0163-5999"],"issn-type":[{"value":"0163-5999","type":"print"}],"subject":["Computer
+        Networks and Communications","Hardware and Architecture","Software"],"published":{"date-parts":[[2014,6,16]]},"assertion":[{"value":"2014-06-16","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T11:01:44Z","timestamp":1649156504203},"reference-count":0,"publisher":"Ovid
+        Technologies (Wolters Kluwer Health)","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Transplantation
+        Journal"],"published-print":{"date-parts":[[2010,7]]},"DOI":"10.1097\/00007890-201007272-00364","type":"journal-article","created":{"date-parts":[[2010,8,10]],"date-time":"2010-08-10T12:21:11Z","timestamp":1281442871000},"page":"190","source":"Crossref","is-referenced-by-count":0,"title":["A
+        NOVEL PAN-TLR INHIBITOR PROMOTES PERMANENT ACCEPTANCE OF SKIN ALLOGRAFTS IN
+        MICE"],"prefix":"10.1097","volume":"90","author":[{"given":"T. W.","family":"He","sequence":"first","affiliation":[]},{"given":"P.","family":"Zhou","sequence":"additional","affiliation":[]},{"given":"B.
+        C.","family":"Xue","sequence":"additional","affiliation":[]},{"given":"Y.","family":"Liu","sequence":"additional","affiliation":[]},{"given":"C.","family":"Li","sequence":"additional","affiliation":[]},{"given":"Z.
+        K.","family":"Chen","sequence":"additional","affiliation":[]}],"member":"276","container-title":["Transplantation
+        Journal"],"language":"en","link":[{"URL":"https:\/\/journals.lww.com\/00007890-201007272-00364","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,16]],"date-time":"2021-06-16T01:29:04Z","timestamp":1623806944000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/journals.lww.com\/00007890-201007272-00364"}},"subtitle":["1525"],"issued":{"date-parts":[[2010,7]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1097\/00007890-201007272-00364","ISSN":["0041-1337"],"issn-type":[{"value":"0041-1337","type":"print"}],"subject":["Transplantation"],"published":{"date-parts":[[2010,7]]}},{"indexed":{"date-parts":[[2023,8,9]],"date-time":"2023-08-09T04:30:39Z","timestamp":1691555439933},"reference-count":0,"publisher":"Mary
+        Ann Liebert Inc","issue":"6","license":[{"start":{"date-parts":[[2023,8,1]],"date-time":"2023-08-01T00:00:00Z","timestamp":1690848000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.liebertpub.com\/nv\/resources-tools\/text-and-data-mining-policy\/121\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Brain
+        Connectivity"],"published-print":{"date-parts":[[2023,8,1]]},"DOI":"10.1089\/brain.2023.29052.editorial","type":"journal-article","created":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T20:01:06Z","timestamp":1691524866000},"page":"316-318","source":"Crossref","is-referenced-by-count":0,"title":["Brain
+        Connectivity: <i>A Journal of Clinical Neurology, Neuroscience, &amp; Neuroimaging
+        Advancing the Field of Neurology<\/i> Advances in Alzheimer''s Disease"],"prefix":"10.1089","volume":"13","author":[{"given":"Paul","family":"Edison","sequence":"first","affiliation":[]}],"member":"278","container-title":["Brain
+        Connectivity"],"language":"en","link":[{"URL":"https:\/\/www.liebertpub.com\/doi\/full-xml\/10.1089\/brain.2023.29052.editorial","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.liebertpub.com\/doi\/pdf\/10.1089\/brain.2023.29052.editorial","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T20:01:34Z","timestamp":1691524894000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.liebertpub.com\/doi\/10.1089\/brain.2023.29052.editorial"}},"issued":{"date-parts":[[2023,8,1]]},"references-count":0,"journal-issue":{"issue":"6","published-print":{"date-parts":[[2023,8,1]]}},"alternative-id":["10.1089\/brain.2023.29052.editorial"],"URL":"http:\/\/dx.doi.org\/10.1089\/brain.2023.29052.editorial","ISSN":["2158-0014","2158-0022"],"issn-type":[{"value":"2158-0014","type":"print"},{"value":"2158-0022","type":"electronic"}],"subject":["General
+        Neuroscience"],"published":{"date-parts":[[2023,8,1]]}},{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T18:21:20Z","timestamp":1648664480791},"reference-count":0,"publisher":"Elsevier
+        BV","license":[{"start":{"date-parts":[[2020,10,1]],"date-time":"2020-10-01T00:00:00Z","timestamp":1601510400000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Neuromuscular
+        Disorders"],"published-print":{"date-parts":[[2020,10]]},"DOI":"10.1016\/j.nmd.2020.08.193","type":"journal-article","created":{"date-parts":[[2020,9,28]],"date-time":"2020-09-28T13:23:17Z","timestamp":1601299397000},"page":"S103","source":"Crossref","is-referenced-by-count":0,"title":["SMA:
+        REGISTRIES, BIOMARKERS &amp; OUTCOME MEASURES"],"prefix":"10.1016","volume":"30","author":[{"given":"T.","family":"Dangouloff","sequence":"first","affiliation":[]},{"given":"L.","family":"Servais","sequence":"additional","affiliation":[]},{"given":"M.","family":"Hiligsmann","sequence":"additional","affiliation":[]}],"member":"78","container-title":["Neuromuscular
+        Disorders"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0960896620303904?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0960896620303904?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,9,28]],"date-time":"2020-09-28T13:23:17Z","timestamp":1601299397000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0960896620303904"}},"issued":{"date-parts":[[2020,10]]},"references-count":0,"alternative-id":["S0960896620303904"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.nmd.2020.08.193","ISSN":["0960-8966"],"issn-type":[{"value":"0960-8966","type":"print"}],"subject":["Genetics
+        (clinical)","Neurology (clinical)","Neurology","Pediatrics, Perinatology and
+        Child Health"],"published":{"date-parts":[[2020,10]]}},{"indexed":{"date-parts":[[2023,6,14]],"date-time":"2023-06-14T22:06:46Z","timestamp":1686780406497},"publisher-location":"Cham","reference-count":9,"publisher":"Springer
+        International Publishing","isbn-type":[{"value":"9783319561530","type":"print"},{"value":"9783319561547","type":"electronic"}],"license":[{"start":{"date-parts":[[2017,1,1]],"date-time":"2017-01-01T00:00:00Z","timestamp":1483228800000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2017,1,1]],"date-time":"2017-01-01T00:00:00Z","timestamp":1483228800000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2017]]},"DOI":"10.1007\/978-3-319-56154-7_43","type":"book-chapter","created":{"date-parts":[[2017,3,31]],"date-time":"2017-03-31T16:21:08Z","timestamp":1490977268000},"page":"480-488","source":"Crossref","is-referenced-by-count":2,"title":["A
+        High Performance Storage Appliance for Genomic Data"],"prefix":"10.1007","author":[{"given":"Gaurav","family":"Kaul","sequence":"first","affiliation":[]},{"given":"Zeeshan
+        Ali","family":"Shah","sequence":"additional","affiliation":[]},{"given":"Mohamed","family":"Abouelhoda","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2017,4,1]]},"reference":[{"issue":"5","key":"43_CR1","doi-asserted-by":"crossref","first-page":"523","DOI":"10.2217\/pme.14.34","volume":"11","author":"M
+        Gonzalez-Garay","year":"2014","unstructured":"Gonzalez-Garay, M.: The road
+        from next-generation sequencing to personalized medicine. Pers. Med. 11(5),
+        523\u2013544 (2014)","journal-title":"Pers. Med."},{"issue":"5","key":"43_CR2","doi-asserted-by":"crossref","first-page":"491","DOI":"10.1038\/ng.806","volume":"43","author":"M
+        DePristo","year":"2011","unstructured":"DePristo, M., Banks, E., et al.: A
+        framework for variation discovery and genotyping using next-generation DNA
+        sequencing data. Nat. Genet. 43(5), 491\u2013498 (2011)","journal-title":"Nat.
+        Genet."},{"key":"43_CR3","doi-asserted-by":"crossref","unstructured":"Stephens,
+        Z., Lee, S., Faghri, F., Campbell, R., Zhai, C., Efron, M., et al.: Big data:
+        Astronomical or genomical? PLoS Biol. 13(7) (2015)","DOI":"10.1371\/journal.pbio.1002195"},{"key":"43_CR4","unstructured":"Supermicro
+        (2016). \nwww.supermicro.com"},{"key":"43_CR5","unstructured":"IOzone: File
+        system benchmarking (2016). \nwww.iozone.org"},{"key":"43_CR6","unstructured":"PetaGene
+        (2016). \nwww.petagene.com\/"},{"issue":"20","key":"43_CR7","doi-asserted-by":"crossref","first-page":"3124","DOI":"10.1093\/bioinformatics\/btw385","volume":"32","author":"D
+        Greenfield","year":"2016","unstructured":"Greenfield, D., Stegle, O., Rrustemi,
+        A.: GeneCodeq: quality score compression and improved genotyping using a bayesian
+        framework. Bioinformatics 32(20), 3124\u20133132 (2016)","journal-title":"Bioinformatics"},{"key":"43_CR8","series-title":"Lecture
+        Notes in Computer Science","doi-asserted-by":"publisher","first-page":"415","DOI":"10.1007\/978-3-319-16483-0_41","volume-title":"Bioinformatics
+        and Biomedical Engineering","author":"AA Ali","year":"2015","unstructured":"Ali,
+        A.A., El-Kalioby, M., Abouelhoda, M.: Supporting bioinformatics applications
+        with hybrid multi-cloud services. In: Ortu\u00f1o, F., Rojas, I. (eds.) IWBBIO
+        2015. LNCS, vol. 9043, pp. 415\u2013425. Springer, Heidelberg (2015). doi:\n10.1007\/978-3-319-16483-0_41"},{"key":"43_CR9","series-title":"Lecture
+        Notes in Computer Science","doi-asserted-by":"publisher","first-page":"587","DOI":"10.1007\/978-3-319-31744-1_52","volume-title":"Bioinformatics
+        and Biomedical Engineering","author":"AA Ali","year":"2016","unstructured":"Ali,
+        A.A., El-Kalioby, M., Abouelhoda, M.: The case for docker in multicloud enabled
+        bioinformatics applications. In: Ortu\u00f1o, F., Rojas, I. (eds.) IWBBIO
+        2016. LNCS, vol. 9656, pp. 587\u2013601. Springer, Heidelberg (2016). doi:\n10.1007\/978-3-319-31744-1_52"}],"container-title":["Bioinformatics
+        and Biomedical Engineering","Lecture Notes in Computer Science"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-56154-7_43","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T10:30:38Z","timestamp":1510569038000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-3-319-56154-7_43"}},"issued":{"date-parts":[[2017]]},"ISBN":["9783319561530","9783319561547"],"references-count":9,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-56154-7_43","ISSN":["0302-9743","1611-3349"],"issn-type":[{"value":"0302-9743","type":"print"},{"value":"1611-3349","type":"electronic"}],"published":{"date-parts":[[2017]]}},{"indexed":{"date-parts":[[2023,9,9]],"date-time":"2023-09-09T00:23:58Z","timestamp":1694219038958},"reference-count":62,"publisher":"American
+        Geophysical Union (AGU)","issue":"2","license":[{"start":{"date-parts":[[2017,1,21]],"date-time":"2017-01-21T00:00:00Z","timestamp":1484956800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Geophysical
+        Research Letters"],"published-print":{"date-parts":[[2017,1,28]]},"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Glacial
+        lake outburst floods (GLOFs) are a prominent but poorly understood cryospheric
+        hazard in a warming climate. We quantify the hydrologic and geomorphic response
+        to 21 episodic GLOFs that began in April 2008 using multitemporal satellite
+        imagery and field observations. Peak discharge exiting the source lake became
+        progressively muted downstream. At ~40\u201360\u2009km downstream, where the
+        floods entered and traveled down the main stem Rio Baker, peak discharges
+        were generally\u2009&lt;\u20092000\u2009m<jats:sup>3<\/jats:sup>\u2009s<jats:sup>\u22121<\/jats:sup>,
+        although these flows were still &gt;1\u20132 times the peak annual discharge
+        of this system, Chile''s largest river by volume. As such, caution must be
+        applied to empirical relationships relating lake volume to peak discharge,
+        as the latter is dependent on where this observation is made along the flood
+        path. The GLOFs and subsequent periods of free drainage resulted in\u2009&gt;\u200940\u2009m
+        of incision, the net removal of ~25\u2009\u00d7\u200910<jats:sup>6<\/jats:sup>\u2009m<jats:sup>3<\/jats:sup>
+        of sediment from the source lake basin, and a nonsteady channel configuration
+        downstream. These results demonstrate that GLOFs sourced from low\u2010order
+        tributaries can produce significant floods on major main stem rivers, in addition
+        to significantly altering sediment dynamics.<\/jats:p>","DOI":"10.1002\/2016gl071374","type":"journal-article","created":{"date-parts":[[2016,12,21]],"date-time":"2016-12-21T23:00:15Z","timestamp":1482361215000},"page":"854-864","source":"Crossref","is-referenced-by-count":36,"title":["Hydrologic
+        and geomorphic changes resulting from episodic glacial lake outburst floods:
+        Rio Colonia, Patagonia, Chile"],"prefix":"10.1029","volume":"44","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-0273-2462","authenticated-orcid":false,"given":"J.","family":"Jacquet","sequence":"first","affiliation":[{"name":"Department
+        of Geological Sciences and Engineering, Global Water Center University of
+        Nevada  Reno Nevada USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1217-787X","authenticated-orcid":false,"given":"S.
+        W.","family":"McCoy","sequence":"additional","affiliation":[{"name":"Department
+        of Geological Sciences and Engineering, Global Water Center University of
+        Nevada  Reno Nevada USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-9462-6842","authenticated-orcid":false,"given":"D.","family":"McGrath","sequence":"additional","affiliation":[{"name":"Geosciences
+        Department Colorado State University  Fort Collins Colorado USA"},{"name":"U.S.
+        Geological Survey  Anchorage Alaska USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-8532-9192","authenticated-orcid":false,"given":"D.
+        A.","family":"Nimick","sequence":"additional","affiliation":[{"name":"U.S.
+        Geological Survey  Helena Montana USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1853-6992","authenticated-orcid":false,"given":"M.","family":"Fahey","sequence":"additional","affiliation":[{"name":"U.S.
+        Geological Survey  Lakewood Colorado USA"}]},{"given":"J.","family":"O''kuinghttons","sequence":"additional","affiliation":[{"name":"Ministry
+        of Public Works  Coyhaique Chile"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-7652-9053","authenticated-orcid":false,"given":"B.
+        A.","family":"Friesen","sequence":"additional","affiliation":[{"name":"Unaffiliated"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-7461-3008","authenticated-orcid":false,"given":"J.","family":"Leidich","sequence":"additional","affiliation":[{"name":"Patagonia
+        Adventure Expeditions  Cochrane Chile"}]}],"member":"13","published-online":{"date-parts":[[2017,1,21]]},"reference":[{"key":"e_1_2_7_2_1","doi-asserted-by":"publisher","DOI":"10.1002\/2013JF002933"},{"key":"e_1_2_7_3_1","doi-asserted-by":"publisher","DOI":"10.1659\/mrd.0783"},{"key":"e_1_2_7_4_1","doi-asserted-by":"publisher","DOI":"10.1016\/0277-3791(85)90027-7"},{"key":"e_1_2_7_5_1","doi-asserted-by":"publisher","DOI":"10.1657\/1938-4246-41.2.174"},{"key":"e_1_2_7_6_1","first-page":"573","volume-title":"River
+        Flow 2012","author":"Bastianon E.","year":"2012"},{"key":"e_1_2_7_7_1","doi-asserted-by":"publisher","DOI":"10.1017\/S0260305500004882"},{"key":"e_1_2_7_8_1","doi-asserted-by":"publisher","DOI":"10.3189\/172756407782282480"},{"key":"e_1_2_7_9_1","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-2451.2011.00800.x"},{"key":"e_1_2_7_10_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.quascirev.2013.07.028"},{"key":"e_1_2_7_11_1","unstructured":"Casassa
+        G. J.Wendt A.Wendt F.Escobar P.Lopez J.Carrasco A.Rivera andJ.Leidich(2009)
+        Recent drainage events of glacial Lake Cachet 2 Patagonia EGU General Assembly
+        Conf. Abstracts 13147 p."},{"key":"e_1_2_7_12_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(01)00037-X"},{"key":"e_1_2_7_13_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.448"},{"key":"e_1_2_7_14_1","doi-asserted-by":"publisher","DOI":"10.1017\/S0022143000031907"},{"key":"e_1_2_7_15_1","doi-asserted-by":"publisher","DOI":"10.1017\/S0022143000011746"},{"key":"e_1_2_7_16_1","doi-asserted-by":"publisher","DOI":"10.3189\/2012JoG12J026"},{"key":"e_1_2_7_17_1","doi-asserted-by":"publisher","DOI":"10.1139\/e92-048"},{"key":"e_1_2_7_18_1","doi-asserted-by":"publisher","DOI":"10.1002\/2014GL060090"},{"key":"e_1_2_7_19_1","doi-asserted-by":"publisher","DOI":"10.1007\/s11069-009-9479-8"},{"key":"e_1_2_7_20_1","doi-asserted-by":"publisher","DOI":"10.1029\/2005RG000183"},{"key":"e_1_2_7_21_1","doi-asserted-by":"crossref","unstructured":"Friesen
+        B. A. C. J.Cole D. A.Nimick E. M.Wilson M. J.Fahey D.McGrath andJ.Leidich(2015)
+        Using satellite images to monitor glacial\u2010lake outburst floods\u2014Lago
+        Cachet Dos drainage Chile U.S. Geol. Surv. Sci. Invest. Map 3322 scale 1:15
+        000 doi:10.3133\/sim3322.","DOI":"10.3133\/sim3322"},{"key":"e_1_2_7_22_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.1234532"},{"key":"e_1_2_7_23_1","doi-asserted-by":"publisher","DOI":"10.1038\/ngeo1122"},{"key":"e_1_2_7_24_1","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-3121.2000.123277"},{"key":"e_1_2_7_25_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.jhydrol.2016.04.004"},{"key":"e_1_2_7_26_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(98)00089-0"},{"key":"e_1_2_7_27_1","doi-asserted-by":"publisher","DOI":"10.2307\/1552410"},{"key":"e_1_2_7_28_1","doi-asserted-by":"publisher","DOI":"10.1139\/t04-053"},{"key":"e_1_2_7_29_1","doi-asserted-by":"publisher","DOI":"10.3389\/feart.2015.00054"},{"key":"e_1_2_7_30_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.3524"},{"key":"e_1_2_7_31_1","doi-asserted-by":"publisher","DOI":"10.1029\/2012EO220011"},{"key":"e_1_2_7_32_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.1122"},{"key":"e_1_2_7_33_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.gloplacha.2012.12.012"},{"key":"e_1_2_7_34_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(01)00147-7"},{"key":"e_1_2_7_35_1","first-page":"64","article-title":"Geomorphic
+        response of the Sandy River, Oregon, to removal of Marmot Dam","volume":"1792","author":"Major
+        J. J.","year":"2012","journal-title":"U.S. Geol. Surv. Prof. Pap."},{"key":"e_1_2_7_36_1","unstructured":"Nash
+        J. E.(1957) The form of the instantaneous unit hydrograph Comptes Rendus et
+        Rapports Assemblee Generale de Toronto paper presented at the International
+        Association of Hydrological Sciences General Assembly pp. 114\u2013121 Toronto."},{"key":"e_1_2_7_37_1","doi-asserted-by":"publisher","DOI":"10.3189\/172756503781830836"},{"key":"e_1_2_7_38_1","doi-asserted-by":"publisher","DOI":"10.1029\/2007GL031426"},{"key":"e_1_2_7_39_1","doi-asserted-by":"publisher","DOI":"10.1002\/jqs.2847"},{"key":"e_1_2_7_40_1","doi-asserted-by":"publisher","DOI":"10.1017\/S002214300001354X"},{"key":"e_1_2_7_41_1","doi-asserted-by":"publisher","DOI":"10.1130\/0016-7606(1992)104<0267:MAIOPD>2.3.CO;2"},{"key":"e_1_2_7_42_1","doi-asserted-by":"publisher","DOI":"10.1029\/2010WR009733"},{"key":"e_1_2_7_43_1","unstructured":"Post
+        A. andL. R.Mayo(1971) Glacier dammed lakes and outburst floods in Alaska USGS
+        Hydrologic Atlas HA\u2013455."},{"key":"e_1_2_7_44_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.geomorph.2014.12.045"},{"key":"e_1_2_7_45_1","doi-asserted-by":"publisher","DOI":"10.1016\/S1040-6182(99)00035-X"},{"key":"e_1_2_7_46_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.1087393"},{"key":"e_1_2_7_47_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.gloplacha.2006.11.037"},{"key":"e_1_2_7_48_1","doi-asserted-by":"publisher","DOI":"10.1029\/2003RG000147"},{"key":"e_1_2_7_49_1","doi-asserted-by":"publisher","DOI":"10.1029\/WR015i006p01409"},{"key":"e_1_2_7_50_1","doi-asserted-by":"publisher","DOI":"10.3189\/002214311796405997"},{"key":"e_1_2_7_51_1","doi-asserted-by":"publisher","DOI":"10.1002\/2014GL062482"},{"key":"e_1_2_7_52_1","doi-asserted-by":"publisher","DOI":"10.1029\/95WR00145"},{"key":"e_1_2_7_53_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.geomorph.2004.01.012"},{"key":"e_1_2_7_54_1","doi-asserted-by":"publisher","DOI":"10.1016\/0165-232X(81)90006-9"},{"key":"e_1_2_7_55_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.3750"},{"key":"e_1_2_7_56_1","volume-title":"Geographical
+        Contribution to a Periglacial Study of the Hielo Patag\u00f3nicao Norte With
+        Special Reference to the Glacial Outburst Originated From Glacier\u2010Dammed
+        Lago Arco","author":"Tanaka K.","year":"1980"},{"key":"e_1_2_7_57_1","doi-asserted-by":"publisher","DOI":"10.1177\/030913339902300104"},{"key":"e_1_2_7_58_1","doi-asserted-by":"publisher","DOI":"10.1002\/(SICI)1096-9837(199608)21:8<701::AID-ESP615>3.0.CO;2-2"},{"key":"e_1_2_7_59_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.1886"},{"key":"e_1_2_7_60_1","doi-asserted-by":"publisher","DOI":"10.1002\/2013JF003073"},{"key":"e_1_2_7_61_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.rse.2011.09.017"},{"key":"e_1_2_7_62_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(00)00006-4"},{"key":"e_1_2_7_63_1","doi-asserted-by":"publisher","DOI":"10.1007\/978-3-540-79818-7_12"}],"container-title":["Geophysical
+        Research Letters"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F2016GL071374","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/2016GL071374","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full-xml\/10.1002\/2016GL071374","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/agupubs.onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/2016GL071374","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,8]],"date-time":"2023-09-08T01:09:41Z","timestamp":1694135381000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/agupubs.onlinelibrary.wiley.com\/doi\/10.1002\/2016GL071374"}},"issued":{"date-parts":[[2017,1,21]]},"references-count":62,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2017,1,28]]}},"alternative-id":["10.1002\/2016GL071374"],"URL":"http:\/\/dx.doi.org\/10.1002\/2016gl071374","archive":["Portico"],"ISSN":["0094-8276","1944-8007"],"issn-type":[{"value":"0094-8276","type":"print"},{"value":"1944-8007","type":"electronic"}],"subject":["General
+        Earth and Planetary Sciences","Geophysics"],"published":{"date-parts":[[2017,1,21]]}},{"indexed":{"date-parts":[[2023,8,3]],"date-time":"2023-08-03T10:35:42Z","timestamp":1691058942078},"reference-count":16,"publisher":"Springer
+        Science and Business Media LLC","issue":"2","license":[{"start":{"date-parts":[[2021,4,27]],"date-time":"2021-04-27T00:00:00Z","timestamp":1619481600000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2021,4,27]],"date-time":"2021-04-27T00:00:00Z","timestamp":1619481600000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Optim
+        Eng"],"published-print":{"date-parts":[[2022,6]]},"DOI":"10.1007\/s11081-021-09629-9","type":"journal-article","created":{"date-parts":[[2021,4,27]],"date-time":"2021-04-27T04:07:32Z","timestamp":1619496452000},"page":"1139-1164","update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":6,"title":["A
+        matheuristic approach for optimizing mineral value chains under uncertainty"],"prefix":"10.1007","volume":"23","author":[{"given":"Amina","family":"Lamghari","sequence":"first","affiliation":[]},{"given":"Roussos","family":"Dimitrakopoulos","sequence":"additional","affiliation":[]},{"given":"Renaud","family":"Sen\u00e9cal","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2021,4,27]]},"reference":[{"key":"9629_CR1","doi-asserted-by":"publisher","first-page":"337","DOI":"10.1007\/BF01099647","volume":"7","author":"I
+        Androulakis","year":"1995","unstructured":"Androulakis I, Maranas C, Floudas
+        C (1995) \u03b1 bb: a global optimization method for general constrained nonconvex
+        problems. J Glob Optim 7:337\u2013363","journal-title":"J Glob Optim"},{"issue":"1","key":"9629_CR2","doi-asserted-by":"publisher","first-page":"238","DOI":"10.1007\/BF01386316","volume":"4","author":"JF
+        Benders","year":"1962","unstructured":"Benders JF (1962) Partitioning procedures
+        for solving mixed variables programming problems. Numer Math 4(1):238\u2013252","journal-title":"Numer
+        Math"},{"key":"9629_CR3","doi-asserted-by":"publisher","DOI":"10.1007\/978-1-4614-0237-4","volume-title":"Introduction
+        to stochastic programming","author":"J Birge","year":"2011","unstructured":"Birge
+        J, Louveaux F (2011) Introduction to stochastic programming, 2nd edn. Springer,
+        New York","edition":"2"},{"key":"9629_CR4","doi-asserted-by":"publisher","first-page":"83","DOI":"10.1016\/j.resourpol.2018.11.019","volume":"60","author":"MF
+        Del Castillo","year":"2019","unstructured":"Del Castillo MF, Dimitrakopoulos
+        R (2019) Dynamically optimizing the strategic plan of mining complexes under
+        supply uncertainty. Resour Policy 60:83\u201393","journal-title":"Resour Policy"},{"key":"9629_CR6","doi-asserted-by":"publisher","first-page":"292","DOI":"10.1016\/j.asoc.2015.11.038","volume":"40","author":"R
+        Goodfellow","year":"2016","unstructured":"Goodfellow R, Dimitrakopoulos R
+        (2016) Global optimization of open pit mining complexes with uncertainty.
+        Appl Soft Comput 40:292\u2013304","journal-title":"Appl Soft Comput"},{"key":"9629_CR7","first-page":"337","volume":"7","author":"A
+        Gupte","year":"2017","unstructured":"Gupte A, Ahmed S, Dey S, Cheon M (2017)
+        Relaxations and discretizations for the pooling problem. J Glob Optim 7:337\u2013363","journal-title":"J
+        Glob Optim"},{"key":"9629_CR8","doi-asserted-by":"publisher","first-page":"19","DOI":"10.1145\/1111237.1111238","volume":"25","author":"C
+        Haverly","year":"1978","unstructured":"Haverly C (1978) Studies of the behavior
+        of recursion for the pooling problem. ACM SIGMAP Bull 25:19\u201328","journal-title":"ACM
+        SIGMAP Bull"},{"key":"9629_CR9","unstructured":"Kingma DP, Ba JL (2014) ADAM:
+        a method for stochastic optimization. arXiv:1412.6980"},{"key":"9629_CR10","doi-asserted-by":"publisher","first-page":"133","DOI":"10.1016\/0167-6377(93)90002-X","volume":"13","author":"G
+        Laporte","year":"1993","unstructured":"Laporte G, Louveaux FV (1993) The integer
+        L-shaped method for stochastic integer programs with complete recourse. Oper
+        Res Lett 13:133\u2013142","journal-title":"Oper Res Lett"},{"key":"9629_CR11","doi-asserted-by":"publisher","first-page":"642","DOI":"10.1016\/j.ejor.2012.05.029","volume":"222","author":"A
+        Lamghari","year":"2012","unstructured":"Lamghari A, Dimitrakopoulos R (2012)
+        A diversified tabu search approach for the open-pit mine production scheduling
+        problem with metal uncertainty. Eur J Oper Res 222:642\u2013652","journal-title":"Eur
+        J Oper Res"},{"key":"9629_CR12","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1016\/j.cor.2018.11.010","volume":"115","author":"A
+        Lamghari","year":"2020","unstructured":"Lamghari A, Dimitrakopoulos R (2020)
+        Hyper-heuristic approaches for strategic mine planning under uncertainty.
+        Comput Oper Res 115:1\u201318. https:\/\/doi.org\/10.1016\/j.cor.2018.11.010","journal-title":"Comput
+        Oper Res"},{"key":"9629_CR13","doi-asserted-by":"publisher","first-page":"147","DOI":"10.1007\/BF01580665","volume":"10","author":"G
+        McCormick","year":"1976","unstructured":"McCormick G (1976) Computability
+        of global solutions to factorable nonconvex programs: part I\u2014convex underestimating
+        problems. Math Program 10:147\u2013175","journal-title":"Math Program"},{"issue":"1","key":"9629_CR14","doi-asserted-by":"publisher","first-page":"166","DOI":"10.1016\/j.ejor.2015.05.002","volume":"247","author":"L
+        Montiel","year":"2015","unstructured":"Montiel L, Dimitrakopoulos R (2015)
+        Optimizing mining complexes with multiple processing and transportation alternatives:
+        an uncertainty-based approach. Eur J Oper Res 247(1):166\u2013178","journal-title":"Eur
+        J Oper Res"},{"issue":"12","key":"9629_CR15","doi-asserted-by":"publisher","first-page":"48","DOI":"10.19150\/me.8645","volume":"70","author":"L
+        Montiel","year":"2018","unstructured":"Montiel L, Dimitrakopoulos R (2018)
+        Simultaneous stochastic optimization of production scheduling at Twin Creeks
+        mining complex. Nevada Min Eng 70(12):48\u201356","journal-title":"Nevada
+        Min Eng"},{"issue":"1","key":"9629_CR16","doi-asserted-by":"publisher","first-page":"2","DOI":"10.1179\/1743286315Y.0000000027","volume":"125","author":"L
+        Montiel","year":"2016","unstructured":"Montiel L, Dimitrakopoulos R, Kawahata
+        K (2016) Globally optimising open-pit and underground mining operations under
+        geological uncertainty. Min Technol 125(1):2\u201314","journal-title":"Min
+        Technol"},{"issue":"1","key":"9629_CR17","doi-asserted-by":"publisher","first-page":"227","DOI":"10.1016\/j.ejor.2018.09.047","volume":"274","author":"J
+        Zhang","year":"2019","unstructured":"Zhang J, Nault BR, Dimitrakopoulos R
+        (2019) Optimizing a mineral value chain with market uncertainty using benders
+        decomposition. Eur J Oper Res 274(1):227\u2013239","journal-title":"Eur J
+        Oper Res"}],"container-title":["Optimization and Engineering"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s11081-021-09629-9.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/article\/10.1007\/s11081-021-09629-9\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s11081-021-09629-9.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,5,11]],"date-time":"2022-05-11T10:43:06Z","timestamp":1652265786000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/s11081-021-09629-9"}},"issued":{"date-parts":[[2021,4,27]]},"references-count":16,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2022,6]]}},"alternative-id":["9629"],"URL":"http:\/\/dx.doi.org\/10.1007\/s11081-021-09629-9","ISSN":["1389-4420","1573-2924"],"issn-type":[{"value":"1389-4420","type":"print"},{"value":"1573-2924","type":"electronic"}],"subject":["Electrical
+        and Electronic Engineering","Control and Optimization","Mechanical Engineering","Aerospace
+        Engineering","Civil and Structural Engineering","Software"],"published":{"date-parts":[[2021,4,27]]},"assertion":[{"value":"28
+        July 2020","order":1,"name":"received","label":"Received","group":{"name":"ArticleHistory","label":"Article
+        History"}},{"value":"5 April 2021","order":2,"name":"revised","label":"Revised","group":{"name":"ArticleHistory","label":"Article
+        History"}},{"value":"5 April 2021","order":3,"name":"accepted","label":"Accepted","group":{"name":"ArticleHistory","label":"Article
+        History"}},{"value":"27 April 2021","order":4,"name":"first_online","label":"First
+        Online","group":{"name":"ArticleHistory","label":"Article History"}}]},{"indexed":{"date-parts":[[2022,4,1]],"date-time":"2022-04-01T17:48:15Z","timestamp":1648835295452},"reference-count":36,"publisher":"Physical
+        Society of Japan","issue":"9","content-domain":{"domain":["journals.jps.jp"],"crossmark-restriction":true},"short-container-title":["J.
+        Phys. Soc. Jpn."],"published-print":{"date-parts":[[2001,9,15]]},"DOI":"10.1143\/jpsj.70.2682","type":"journal-article","created":{"date-parts":[[2005,2,18]],"date-time":"2005-02-18T12:23:07Z","timestamp":1108729387000},"page":"2682-2688","update-policy":"http:\/\/dx.doi.org\/10.7566\/jps_crossmarkpolicy","source":"Crossref","is-referenced-by-count":1,"title":["Quantum-Interference
+        Effect on AC Transport of Electrons subject to Long-Range Random Magnetic
+        Fields"],"prefix":"10.7566","volume":"70","author":[{"given":"Hiroyuki","family":"Shima","sequence":"first","affiliation":[{"name":"Department
+        of Applied Physics, Hokkaido University, Sapporo 060-8628"}]},{"given":"Kousuke","family":"Yakubo","sequence":"additional","affiliation":[{"name":"Department
+        of Applied Physics, Hokkaido University, Sapporo 060-8628"}]},{"given":"Tsuneyoshi","family":"Nakayama","sequence":"additional","affiliation":[{"name":"Department
+        of Applied Physics, Hokkaido University, Sapporo 060-8628"}]}],"member":"4365","reference":[{"key":"ref1\/ref1_1","doi-asserted-by":"crossref","first-page":"7312","DOI":"10.1103\/PhysRevB.47.7312","volume":"47","author":"Halperin
+        B. I.","year":"1993","journal-title":"Phys. Rev. B"},{"key":"ref2\/ref2_1","doi-asserted-by":"crossref","first-page":"2450","DOI":"10.1103\/PhysRevLett.64.2450","volume":"64","author":"Nagaosa
+        N.","year":"1990","journal-title":"Phys. Rev. Lett."},{"key":"ref3\/ref3_1","doi-asserted-by":"crossref","first-page":"5749","DOI":"10.1103\/PhysRevB.49.5749","volume":"49","author":"Geim
+        A. K.","year":"1994","journal-title":"Phys. Rev. B"},{"key":"ref4\/ref4_1","doi-asserted-by":"crossref","first-page":"13269","DOI":"10.1103\/PhysRevB.51.13269","volume":"51","author":"Mancoff
+        F. B.","year":"1995","journal-title":"Phys. Rev. B"},{"key":"ref5\/ref5_1","doi-asserted-by":"crossref","first-page":"1900","DOI":"10.1016\/S0921-4526(99)02989-0","volume":"284","author":"Ando
+        M.","year":"2000","journal-title":"Physica B"},{"key":"ref6\/ref6_1","doi-asserted-by":"crossref","first-page":"2979","DOI":"10.1103\/PhysRevLett.69.2979","volume":"69","author":"Altshuler
+        B. L.","year":"1992","journal-title":"Phys. Rev. Lett."},{"key":"ref7\/ref7_1","doi-asserted-by":"crossref","first-page":"16609","DOI":"10.1103\/PhysRevB.49.16609","volume":"49","author":"Aronov
+        A. G.","year":"1994","journal-title":"Phys. Rev. B"},{"key":"ref8\/ref8_1","doi-asserted-by":"crossref","first-page":"1886","DOI":"10.1103\/PhysRevLett.72.1886","volume":"72","author":"Zhang
+        S. C.","year":"1994","journal-title":"Phys. Rev. Lett."},{"key":"ref9\/ref9_1","doi-asserted-by":"crossref","first-page":"1060","DOI":"10.1103\/PhysRevLett.85.1060","volume":"85","author":"Taras-Semchuk
+        D.","year":"2000","journal-title":"Phys. Rev. Lett."},{"key":"ref10\/ref10_1","doi-asserted-by":"crossref","first-page":"1980","DOI":"10.1103\/PhysRevLett.70.1980","volume":"70","author":"Sugiyama
+        T.","year":"1993","journal-title":"Phys. Rev. Lett."},{"key":"ref11\/ref11_1","doi-asserted-by":"crossref","first-page":"9561","DOI":"10.1103\/PhysRevB.47.9561","volume":"47","author":"Avishai
+        Y.","year":"1993","journal-title":"Phys. Rev. B"},{"key":"ref12\/ref12_1","doi-asserted-by":"crossref","first-page":"5272","DOI":"10.1103\/PhysRevB.50.5272","volume":"50","author":"Lee
+        D. K. K.","year":"1994","journal-title":"Phys. Rev. B"},{"key":"ref13\/ref13_1","doi-asserted-by":"crossref","first-page":"10897","DOI":"10.1103\/PhysRevB.51.10897","volume":"51","author":"Kawarabayashi
+        T.","year":"1995","journal-title":"Phys. Rev. B"},{"key":"ref14\/ref14_1","doi-asserted-by":"crossref","first-page":"13432","DOI":"10.1103\/PhysRevB.54.13432","volume":"54","author":"Yakubo
+        K.","year":"1996","journal-title":"Phys. Rev. B"},{"key":"ref15\/ref15_1","doi-asserted-by":"crossref","first-page":"604","DOI":"10.1103\/PhysRevLett.82.604","volume":"82","author":"Furusaki
+        A.","year":"1999","journal-title":"Phys. Rev. Lett."},{"key":"ref16\/ref16_1","doi-asserted-by":"crossref","first-page":"16756","DOI":"10.1103\/PhysRevB.62.16756","volume":"62","author":"Yakubo
+        K.","year":"2000","journal-title":"Phys. Rev. B"},{"key":"ref17\/ref17_1","doi-asserted-by":"crossref","first-page":"1817","DOI":"10.1103\/PhysRevLett.77.1817","volume":"77","author":"Khveshchenko
+        D. V.","year":"1996","journal-title":"Phys. Rev. Lett."},{"key":"ref18\/ref18_1","doi-asserted-by":"crossref","first-page":"R4241","DOI":"10.1103\/PhysRevB.57.R4241","volume":"57","author":"Calvo
+        M.","year":"1998","journal-title":"Phys. Rev. B"},{"key":"ref19\/ref19_1","doi-asserted-by":"crossref","first-page":"2616","DOI":"10.1103\/PhysRevLett.83.2616","volume":"83","author":"Zwerschke
+        S. D. M.","year":"1999","journal-title":"Phys. Rev. Lett."},{"key":"ref20\/ref20_1","doi-asserted-by":"crossref","first-page":"8951","DOI":"10.1103\/PhysRevB.60.8951","volume":"60","author":"Evers
+        F.","year":"1999","journal-title":"Phys. Rev. B"},{"key":"ref21\/ref21_1","doi-asserted-by":"crossref","first-page":"13774","DOI":"10.1103\/PhysRevB.61.13774","volume":"61","author":"Wilke
+        J.","year":"2000","journal-title":"Phys. Rev. B"},{"key":"ref22\/ref22_1","doi-asserted-by":"crossref","first-page":"385","DOI":"10.1103\/PhysRevLett.68.385","volume":"68","author":"M\u00fcller
+        J. E.","year":"1992","journal-title":"Phys. Rev. Lett."},{"key":"ref23\/ref23_1","doi-asserted-by":"crossref","first-page":"16646","DOI":"10.1103\/PhysRevB.52.16646","volume":"52","author":"Kim
+        Y. B.","year":"1995","journal-title":"Phys. Rev. B"},{"key":"ref24\/ref24_1","doi-asserted-by":"crossref","first-page":"3984","DOI":"10.1103\/PhysRevE.58.3984","volume":"58","author":"Nakayama
+        T.","year":"1998","journal-title":"Phys. Rev. E"},{"key":"ref25\/ref25_1","doi-asserted-by":"crossref","first-page":"239","DOI":"10.1016\/S0370-1573(00)00115-0","volume":"349","author":"Nakayama
+        T.","year":"2001","journal-title":"Phys. Rep."},{"key":"ref26\/ref26_1","doi-asserted-by":"crossref","first-page":"776","DOI":"10.1209\/epl\/i2000-00548-y","volume":"50","author":"Sheng
+        D. N.","year":"2000","journal-title":"Europhys. Lett."},{"key":"ref27\/ref27_1","doi-asserted-by":"crossref","first-page":"2189","DOI":"10.1143\/JPSJ.67.2189","volume":"67","author":"Shima
+        H.","year":"1998","journal-title":"J. Phys. Soc. Jpn."},{"key":"ref28\/ref28_1","doi-asserted-by":"crossref","first-page":"14066","DOI":"10.1103\/PhysRevB.60.14066","volume":"60","author":"Shima
+        H.","year":"1999","journal-title":"Phys. Rev. B"},{"key":"ref29\/ref29_1","doi-asserted-by":"crossref","first-page":"3967","DOI":"10.1063\/1.448136","volume":"81","author":"Tal-ezer
+        H.","year":"1984","journal-title":"J. Chem. Phys."},{"key":"ref30\/ref30_1","doi-asserted-by":"crossref","first-page":"2290","DOI":"10.1103\/PhysRevLett.84.2290","volume":"84","author":"Loh
+        Y. L.","year":"2000","journal-title":"Phys. Rev. Lett."},{"key":"ref33\/ref33_1","doi-asserted-by":"crossref","first-page":"R13279","DOI":"10.1103\/PhysRevB.53.R13279","volume":"53","author":"Gammel
+        B. M.","year":"1996","journal-title":"Phys. Rev. B"},{"key":"ref34\/ref34_1","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1007\/BF01307666","volume":"94","author":"Kratzer
+        P.","year":"1994","journal-title":"Z. Phys. B"},{"key":"ref35\/ref35_1","doi-asserted-by":"crossref","first-page":"155","DOI":"10.1007\/BF01307667","volume":"94","author":"Evers
+        F.","year":"1994","journal-title":"Z. Phys. B"},{"key":"ref36\/ref36_1","doi-asserted-by":"crossref","first-page":"593","DOI":"10.1103\/PhysRevLett.61.593","volume":"61","author":"Chalker
+        J. T.","year":"1988","journal-title":"Phys. Rev. Lett."},{"key":"ref37\/ref37_1","doi-asserted-by":"crossref","first-page":"253","DOI":"10.1016\/0378-4371(90)90056-X","volume":"167","author":"Chalker
+        J. T.","year":"1990","journal-title":"Physica A"},{"key":"ref38\/ref38_1","doi-asserted-by":"crossref","first-page":"295","DOI":"10.1007\/BF01324339","volume":"82","author":"Pook
+        W.","year":"1991","journal-title":"Z. Phys. B"}],"container-title":["Journal
+        of the Physical Society of Japan"],"language":"en","link":[{"URL":"http:\/\/journals.jps.jp\/doi\/pdf\/10.1143\/JPSJ.70.2682","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,1]],"date-time":"2021-06-01T03:12:22Z","timestamp":1622517142000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/journals.jps.jp\/doi\/10.1143\/JPSJ.70.2682"}},"issued":{"date-parts":[[2001,9,15]]},"references-count":36,"journal-issue":{"issue":"9","published-print":{"date-parts":[[2001,9,15]]}},"alternative-id":["10.1143\/JPSJ.70.2682"],"URL":"http:\/\/dx.doi.org\/10.1143\/jpsj.70.2682","ISSN":["0031-9015","1347-4073"],"issn-type":[{"value":"0031-9015","type":"print"},{"value":"1347-4073","type":"electronic"}],"subject":["General
+        Physics and Astronomy"],"published":{"date-parts":[[2001,9,15]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -250,11 +339,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '12514'
+      - '14071'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 15:41:15 GMT
+      - Mon, 25 Sep 2023 04:28:40 GMT
       permissions-policy:
       - interest-cohort=()
       server:

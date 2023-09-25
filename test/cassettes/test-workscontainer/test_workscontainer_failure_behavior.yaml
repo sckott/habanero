@@ -9,14 +9,14 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016
   response:
     body:
-      string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
+      string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/41918","name":"Elsevier
         BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
     headers:
       access-control-allow-headers:
@@ -31,7 +31,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 13 Feb 2023 21:20:20 GMT
+      - Mon, 25 Sep 2023 04:32:24 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -63,57 +63,27 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/members/98
   response:
     body:
-      string: !!binary |
-        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
-        dfbS+7Hb4/F/nnPMCHwoAAA=
+      string: '{"status":"ok","message-type":"member","message-version":"1.0.0","message":{"last-status-check-time":1695598063122,"primary-name":"Hindawi
+        Limited","counts":{"current-dois":116894,"backfile-dois":398015,"total-dois":514909},"breakdowns":{"dois-by-issued-year":[[2022,54629],[2021,47850],[2020,43079],[2014,33557],[2013,30785],[2019,28163],[2018,27799],[2012,27711],[2015,26751],[2016,23959],[2017,22581],[2011,17395],[2009,15869],[2023,14415],[2010,11371],[2008,6828],[2007,6239],[2006,5523],[2005,4750],[2004,4733],[2002,4642],[2001,4472],[2003,4248],[2000,4066],[1998,3520],[1999,3467],[1997,2937],[1996,2881],[1995,2468],[1994,2370],[1992,2136],[1993,2102],[1991,1815],[1989,1418],[1990,1344],[1988,1297],[1987,1064],[1986,984],[1983,818],[1984,749],[1985,714],[1981,705],[1980,692],[1978,607],[1982,594],[1979,563],[1977,481],[1976,404],[1970,355],[1975,353],[1972,345],[1967,339],[1971,297],[1974,284],[1968,279],[1969,261],[1964,258],[1966,255],[1965,239],[1963,230],[1973,209],[1962,202],[1891,110],[1893,94],[1961,93],[1897,76],[1892,71],[1895,66],[1929,64],[1888,64],[1898,63],[1896,61],[1960,60],[1899,60],[1882,60],[1912,59],[1902,59],[1901,59],[1880,58],[1928,56],[1900,56],[1910,55],[1904,55],[1894,54],[1915,53],[1889,52],[1884,50],[1890,49],[1924,48],[1914,48],[1911,48],[1930,47],[1916,46],[1883,43],[1923,42],[1913,42],[1881,42],[1925,41],[1917,41],[1907,41],[1906,41],[1903,41],[1909,40],[1927,39],[1926,39],[1921,38],[1908,38],[1932,37],[1875,37],[1920,36],[1934,34],[1919,34],[1876,34],[1922,33],[1905,32],[1955,31],[1918,30],[1953,29],[1950,28],[1885,28],[1947,27],[1956,26],[1941,26],[1931,26],[1952,25],[1951,25],[1948,25],[1933,25],[1879,24],[1874,24],[1957,23],[1949,23],[1935,22],[1943,21],[1939,21],[1936,21],[1946,19],[1944,19],[1877,19],[1938,17],[1954,16],[1940,16],[1937,16],[1878,15],[1945,14],[1942,14],[1959,12],[1958,12]]},"prefixes":["10.7167","10.1100","10.1155","10.5402","10.7217","10.4061","10.6064","10.3814"],"coverage":{"affiliations-current":0.8987886461238387,"similarity-checking-current":0.9543774701866647,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.3749079808549929,"licenses-backfile":0.9748501940881625,"funders-current":0.4952948825431588,"affiliations-backfile":0.7557805610341319,"resource-links-backfile":0.9561348190394834,"orcids-backfile":0.4075147921560745,"update-policies-current":0.1752527931288176,"ror-ids-backfile":0.0,"orcids-current":0.8835098465276233,"similarity-checking-backfile":0.9572578922904916,"references-backfile":0.8177807369069005,"descriptions-backfile":0.0,"award-numbers-backfile":0.2896247628858209,"update-policies-backfile":0.06161074331369421,"licenses-current":0.9543945797046897,"award-numbers-current":0.4250346467740004,"abstracts-backfile":0.6126477645314875,"resource-links-current":0.9543774701866647,"abstracts-current":0.7632128252947114,"references-current":0.9457457183431143},"prefix":[{"name":"Hindawi
+        (Datasets International)","value":"10.7167"},{"name":"Hindawi (The Scientific
+        World)","value":"10.1100"},{"name":"Hindawi Limited","value":"10.1155"},{"name":"Hindawi
+        (International Scholarly Research Network)","value":"10.5402"},{"name":"Hindawi
+        (Conference Papers in Science)","value":"10.7217"},{"name":"Hindawi Publishing
+        Corporation (Sage-Hindawi Access to Research)","value":"10.4061"},{"name":"Hindawi
+        (Scientifica)","value":"10.6064"},{"name":"Hindawi Publishing Corporation
+        (Syrexe)","value":"10.3814"}],"id":98,"tokens":["hindawi","limited"],"counts-type":{"all":{"monograph":6,"peer-review":10621,"journal-article":496545,"book":12,"proceedings-article":561,"journal":1117,"component":303,"journal-issue":7164},"backfile":{"monograph":6,"peer-review":5885,"journal-article":384982,"book":12,"proceedings-article":561,"journal-issue":6569},"current":{"peer-review":4736,"journal-article":111563,"journal-issue":595}},"coverage-type":{"all":{"monograph":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"peer-review":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1695598063122,"affiliations":0.8173982217120301,"abstracts":0.6707508886405059,"orcids":0.534642378837769,"licenses":0.9966609270056088,"references":0.8781500166148083,"funders":0.4171142595333756,"similarity-checking":0.9900975742379845,"award-numbers":0.3322135959480007,"ror-ids":0.0,"update-policies":0.09064233855944577,"resource-links":0.9816552376924549,"descriptions":0.0},"book":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.01074306177260519,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"component":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.8052805280528053},"journal-issue":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.6534059184812954,"references":0.0,"funders":0.0,"similarity-checking":0.1306532663316583,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.6534059184812954,"descriptions":0.0}},"backfile":{"monograph":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"peer-review":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1695598063122,"affiliations":0.7813664015460463,"abstracts":0.6333880545064445,"orcids":0.4213106067296653,"licenses":0.9956933051415391,"references":0.8454655022832236,"funders":0.3875999397374423,"similarity-checking":0.9872331693429823,"award-numbers":0.2994295837207973,"ror-ids":0.0,"update-policies":0.06369648451096414,"resource-links":0.976344348566946,"descriptions":0.0},"book":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-issue":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.7125894352260618,"references":0.0,"funders":0.0,"similarity-checking":0.1424874410108083,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.7125894352260618,"descriptions":0.0}},"current":{"peer-review":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1695598063122,"affiliations":0.9417369558007583,"abstracts":0.7996826904977457,"orcids":0.925728063963859,"licenses":1.0,"references":0.9909378557407026,"funders":0.5189623800005378,"similarity-checking":0.9999820729094772,"award-numbers":0.4453447827684806,"ror-ids":0.0,"update-policies":0.1836271882254869,"resource-links":0.9999820729094772,"descriptions":0.0},"journal-issue":{"last-status-check-time":1695598063122,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":true,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":true,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"location":"London,
+        United Kingdom","names":["Hindawi Limited","Hindawi (Datasets International)","Hindawi
+        (The Scientific World)","Hindawi (International Scholarly Research Network)","Hindawi
+        (Conference Papers in Science)","Hindawi Publishing Corporation (Sage-Hindawi
+        Access to Research)","Hindawi (Scientifica)","Hindawi Publishing Corporation
+        (Syrexe)"]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -127,11 +97,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '2411'
+      - '2425'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 21:20:21 GMT
+      - Mon, 25 Sep 2023 04:32:24 GMT
       permissions-policy:
       - interest-cohort=()
       server:

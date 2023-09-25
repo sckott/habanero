@@ -9,138 +9,202 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4 foo bar
+      - python-requests/2.31.0 habanero/1.2.5 foo bar
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4 foo bar
+      - python-requests/2.31.0 habanero/1.2.5 foo bar
     method: GET
     uri: https://api.crossref.org/works/10.1371/journal.pone.0033693
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2023,9,6]],"date-time":"2023-09-06T17:01:14Z","timestamp":1694019674307},"reference-count":70,"publisher":"Public
+        Library of Science (PLoS)","issue":"3","license":[{"start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
+        ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":63,"title":["Methylphenidate
+        Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
+        Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
+        B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
+        K.","family":"Pani","sequence":"additional","affiliation":[]},{"given":"Chunxu","family":"Qu","sequence":"additional","affiliation":[]},{"given":"Yun","family":"Jiao","sequence":"additional","affiliation":[]},{"given":"Richard
+        J.","family":"Smeyne","sequence":"additional","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2012,3,21]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"2376","DOI":"10.1038\/sj.npp.1301164","article-title":"Stimulants:
+        Therapeutic actions in ADHD.","volume":"31","author":"AF Arnsten","year":"2006","journal-title":"Neuropsychopharmacology"},{"key":"ref2","doi-asserted-by":"crossref","first-page":"325","DOI":"10.1586\/14737175.5.3.325","article-title":"Methylphenidate
+        HCl: therapy for attention deficit hyperactivity disorder.","volume":"5","author":"PK
+        Capp","year":"2005","journal-title":"Expert Rev Neurother"},{"key":"ref3","doi-asserted-by":"crossref","first-page":"437","DOI":"10.1007\/s11940-011-0137-6","article-title":"Recent
+        advances in the treatment of narcolepsy.","volume":"13","author":"N Hirai","year":"2011","journal-title":"Curr
+        Treat Options Neurol"},{"key":"ref4","doi-asserted-by":"crossref","first-page":"L7","DOI":"10.1016\/S0024-3205(99)00225-8","article-title":"Methylphenidate
+        and cocaine have a similar in vivo potency to block dopamine transporters
+        in the human brain.","volume":"65","author":"ND Volkow","year":"1999","journal-title":"Life
+        Sci"},{"key":"ref5","first-page":"1","article-title":"Monitoring the Future
+        national survey results on drug use, 1975\u20132010.","author":"LD Johnston","year":"2011"},{"key":"ref6","first-page":"1","article-title":"Monitoring
+        the Future national survey results on drug use, 1975\u20132010.","author":"LD
+        Johnston","year":"2011"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"511","DOI":"10.1007\/s00213-010-1853-4","article-title":"Non-specific
+        effects of methylphenidate (Ritalin) on cognitive ability and decision-making
+        of ADHD and healthy adults.","volume":"210","author":"N Agay","year":"2010","journal-title":"Psychopharmacology
+        (Berl)"},{"key":"ref8","doi-asserted-by":"crossref","first-page":"46","DOI":"10.1007\/BF02244750","article-title":"Cognitive
+        effects of milacemide and methylphenidate in healthy young adults.","volume":"115","author":"JA
+        Camp-Bruno","year":"1994","journal-title":"Psychopharmacology (Berl)"},{"key":"ref9","doi-asserted-by":"crossref","first-page":"187","DOI":"10.1016\/j.phrs.2010.04.002","article-title":"Modafinil
+        and methylphenidate for neuroenhancement in healthy individuals: A systematic
+        review.","volume":"62","author":"D Repantis","year":"2010","journal-title":"Pharmacol
+        Res"},{"key":"ref10","doi-asserted-by":"crossref","first-page":"702","DOI":"10.1038\/456702a","article-title":"Towards
+        responsible use of cognitive-enhancing drugs by the healthy.","volume":"456","author":"H
+        Greely","year":"2008","journal-title":"Nature"},{"key":"ref11","doi-asserted-by":"crossref","first-page":"457","DOI":"10.2165\/00003088-199937060-00002","article-title":"Pharmacokinetics
+        and clinical effectiveness of methylphenidate.","volume":"37","author":"HC
+        Kimko","year":"1999","journal-title":"Clin Pharmacokinet"},{"key":"ref12","doi-asserted-by":"crossref","first-page":"2032","DOI":"10.1046\/j.1471-4159.1997.68052032.x","article-title":"Effects
+        of methylphenidate on extracellular dopamine, serotonin, and norepinephrine:
+        comparison with amphetamine.","volume":"68","author":"R Kuczenski","year":"1997","journal-title":"J
+        Neurochem"},{"key":"ref13","doi-asserted-by":"crossref","first-page":"243","DOI":"10.1002\/syn.20235","article-title":"Therapeutic
+        doses of amphetamine or methylphenidate differentially increase synaptic and
+        extracellular dopamine.","volume":"59","author":"WK Schiffer","year":"2006","journal-title":"Synapse"},{"key":"ref14","doi-asserted-by":"crossref","first-page":"439","DOI":"10.1002\/(SICI)1097-4547(19960215)43:4<439::AID-JNR5>3.0.CO;2-G","article-title":"Dopamine
+        receptors mediate differential morphological effects on cerebral cortical
+        neurons in vitro.","volume":"43","author":"BS Reinoso","year":"1996","journal-title":"J
+        Neurosci Res"},{"key":"ref15","doi-asserted-by":"crossref","first-page":"794","DOI":"10.1016\/0006-3223(92)90311-M","article-title":"Neural
+        development is regulated by classical neurotransmitters: dopamine D2 receptor
+        stimulation enhances neurite outgrowth.","volume":"31","author":"RD Todd","year":"1992","journal-title":"Biol
+        Psychiatry"},{"key":"ref16","doi-asserted-by":"crossref","first-page":"79","DOI":"10.1006\/exnr.1993.1008","article-title":"Pre-
+        and postsynaptic neurotoxic effects of dopamine demonstrated by intrastriatal
+        injection.","volume":"119","author":"F Filloux","year":"1993","journal-title":"Experimental
+        Neurology"},{"key":"ref17","first-page":"633","article-title":"Oxidative pathways
+        for catecholamines in the genesis of neuromelanin and cytotoxic quinones.","volume":"14","author":"DG
+        Graham","year":"1978","journal-title":"Mol Pharmacol"},{"key":"ref18","doi-asserted-by":"crossref","first-page":"428","DOI":"10.1002\/jnr.490260405","article-title":"Toxicity
+        of 6-hydroxydopamine and dopamine for dopaminergic neurons in culture.","volume":"26","author":"PP
+        Michel","year":"1990","journal-title":"Journal Of Neuroscience Research"},{"key":"ref19","doi-asserted-by":"crossref","first-page":"165","DOI":"10.1007\/BF03033137","article-title":"Dopamine-
+        or L-DOPA-induced neurotoxicity: the role of dopamine quinone formation and
+        tyrosinase in a model of Parkinson&apos;s disease.","volume":"5","author":"M
+        Asanuma","year":"2003","journal-title":"Neurotox Res"},{"key":"ref20","doi-asserted-by":"crossref","first-page":"590","DOI":"10.1111\/j.1476-5381.1993.tb12847.x","article-title":"Striatal
+        dopamine release in vivo following neurotoxic doses of methamphetamine and
+        effect of the neuroprotective drugs, chlormethiazole and dizocilpine.","volume":"108","author":"HA
+        Baldwin","year":"1993","journal-title":"Br J Pharmacol"},{"key":"ref21","doi-asserted-by":"crossref","first-page":"95","DOI":"10.1016\/j.neulet.2009.08.060","article-title":"Superoxide
+        production after acute and chronic treatment with methylphenidate in young
+        and adult rats.","volume":"465","author":"KM Gomes","year":"2009","journal-title":"Neurosci
+        Lett"},{"key":"ref22","doi-asserted-by":"crossref","first-page":"5003","DOI":"10.1016\/j.febslet.2007.09.046","article-title":"Protective
+        effects of metallothionein against dopamine quinone-induced dopaminergic neurotoxicity.","volume":"581","author":"I
+        Miyazaki","year":"2007","journal-title":"FEBS Lett"},{"key":"ref23","first-page":"141","article-title":"Dopaminergic
+        neuron-specific oxidative stress caused by dopamine itself.","volume":"62","author":"I
+        Miyazaki","year":"2008","journal-title":"Acta Med Okayama"},{"key":"ref24","article-title":"Inflammatory
+        effects of highly pathogenic H5N1 influenza virus infection in the CNS of
+        mice.","author":"H Jang","year":"2012","journal-title":"J Neurosci"},{"key":"ref25","first-page":"382","article-title":"Pharmacokinetics
+        of methylphenidate in man, rat and monkey.","volume":"226","author":"W Wargin","year":"1983","journal-title":"J
+        Pharmacol Exp Ther"},{"key":"ref26","doi-asserted-by":"crossref","first-page":"432","DOI":"10.1002\/1098-2396(20001215)38:4<432::AID-SYN8>3.0.CO;2-Q","article-title":"Synergistic
+        interactions between nicotine and cocaine or methylphenidate depend on the
+        dose of dopamine transporter inhibitor.","volume":"38","author":"MR Gerasimov","year":"2000","journal-title":"Synapse"},{"key":"ref27","doi-asserted-by":"crossref","first-page":"205","DOI":"10.1097\/FBP.0b013e328153daf5","article-title":"Sensitization
+        and cross-sensitization after chronic treatment with methylphenidate in adolescent
+        Wistar rats.","volume":"18","author":"SS Valvassori","year":"2007","journal-title":"Behav
+        Pharmacol"},{"key":"ref28","doi-asserted-by":"crossref","first-page":"91","DOI":"10.1016\/S0006-8993(99)01273-1","article-title":"Differential
+        strain susceptibility following 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine
+        (MPTP) administration acts in an autosomal dominant fashion: quantitative
+        analysis in seven strains of Mus musculus.","volume":"828","author":"K Hamre","year":"1999","journal-title":"Brain
+        Res"},{"key":"ref29","doi-asserted-by":"crossref","first-page":"107","DOI":"10.1016\/j.brainres.2007.07.067","article-title":"Response
+        to 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) differs in mouse strains
+        and reveals a divergence in JNK signaling and COX-2 induction prior to loss
+        of neurons in the substantia nigra pars compacta.","volume":"1175","author":"JD
+        Boyd","year":"2007","journal-title":"Brain Res"},{"key":"ref30","doi-asserted-by":"crossref","first-page":"151","DOI":"10.1002\/hup.579","article-title":"Methylphenidate:
+        a review of its neuropharmacological, neuropsychological and adverse clinical
+        effects.","volume":"19","author":"BE Leonard","year":"2004","journal-title":"Hum
+        Psychopharmacol"},{"key":"ref31","doi-asserted-by":"crossref","first-page":"45","DOI":"10.1097\/00005053-199501000-00009","article-title":"Psychiatric
+        morbidity in narcoleptics on chronic high dose methylphenidate therapy.","volume":"183","author":"LK
+        Pawluk","year":"1995","journal-title":"J Nerv Ment Dis"},{"key":"ref32","doi-asserted-by":"crossref","first-page":"657","DOI":"10.1016\/j.jhealeco.2010.07.005","article-title":"Measuring
+        inappropriate medical diagnosis and treatment in survey data: The case of
+        ADHD among school-age children.","volume":"29","author":"WN Evans","year":"2010","journal-title":"J
+        Health Econ"},{"key":"ref33","doi-asserted-by":"crossref","first-page":"21","DOI":"10.1097\/chi.0b013e31815a56f1","article-title":"Misuse
+        and diversion of stimulants prescribed for ADHD: a systematic review of the
+        literature.","volume":"47","author":"TE Wilens","year":"2008","journal-title":"J
+        Am Acad Child Adolesc Psychiatry"},{"key":"ref34","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/S0166-4328(01)00417-X","article-title":"Changes
+        in the second messenger cyclic AMP during development may underlie motoric
+        symptoms in attention deficit\/hyperactivity disorder (ADHD).","volume":"130","author":"SL
+        Andersen","year":"2002","journal-title":"Behav Brain Res"},{"key":"ref35","doi-asserted-by":"crossref","first-page":"93","DOI":"10.1007\/s002130051093","article-title":"Dopamine-transporter
+        occupancy after intravenous doses of cocaine and methylphenidate in mice and
+        humans.","volume":"146","author":"SJ Gatley","year":"1999","journal-title":"Psychopharmacology
+        (Berl)"},{"key":"ref36","doi-asserted-by":"crossref","first-page":"181","DOI":"10.1002\/syn.10038","article-title":"Relationship
+        between blockade of dopamine transporters by oral methylphenidate and the
+        increases in extracellular dopamine: therapeutic implications.","volume":"43","author":"ND
+        Volkow","year":"2002","journal-title":"Synapse"},{"key":"ref37","first-page":"259","article-title":"Effects
+        of acute and chronic administration of atomoxetine and methylphenidate on
+        extracellular levels of noradrenaline, dopamine and serotonin in the prefrontal
+        cortex and striatum of mice.","volume":"114","author":"K Koda","year":"2010","journal-title":"J
+        Neurochem"},{"key":"ref38","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1021\/tx960145c","article-title":"Oxidation
+        of dopamine in the presence of cysteine: characterization of new toxic products.","volume":"10","author":"XM
+        Shen","year":"1997","journal-title":"Chem Res Toxicol"},{"key":"ref39","doi-asserted-by":"crossref","first-page":"143","DOI":"10.1046\/j.1471-4159.2003.01808.x","article-title":"Dopamine-dependent
+        cytotoxicity of tetrahydrobiopterin: a possible mechanism for selective neurodegeneration
+        in Parkinson&apos;s disease.","volume":"86","author":"HJ Choi","year":"2003","journal-title":"J
+        Neurochem"},{"key":"ref40","doi-asserted-by":"crossref","first-page":"329","DOI":"10.1016\/j.neuint.2004.10.009","article-title":"Inhibition
+        of vesicular monoamine transporter enhances vulnerability of dopaminergic
+        cells: relevance to Parkinson&apos;s disease.","volume":"46","author":"HJ
+        Choi","year":"2005","journal-title":"Neurochem Int"},{"key":"ref41","doi-asserted-by":"crossref","first-page":"1242","DOI":"10.1046\/j.1471-4159.2001.00125.x","article-title":"Reaction
+        of oxidized dopamine with endogenous cysteine residues in the human dopamine
+        transporter.","volume":"76","author":"RE Whitehead","year":"2001","journal-title":"J
+        Neurochem"},{"key":"ref42","doi-asserted-by":"crossref","first-page":"905","DOI":"10.1016\/j.neuroscience.2005.09.035","article-title":"Adult
+        and in utero exposure to cocaine alters sensitivity to the Parkinsonian toxin
+        1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine.","volume":"137","author":"SA
+        Lloyd","year":"2006","journal-title":"Neuroscience"},{"key":"ref43","doi-asserted-by":"crossref","first-page":"1024","DOI":"10.1007\/s11064-007-9544-1","article-title":"Antioxidant
+        enzyme activities following acute or chronic methylphenidate treatment in
+        young rats.","volume":"33","author":"KM Gomes","year":"2008","journal-title":"Neurochem
+        Res"},{"key":"ref44","doi-asserted-by":"crossref","first-page":"189","DOI":"10.1016\/j.brainres.2006.01.004","article-title":"Methylphenidate
+        treatment induces oxidative stress in young rat brain.","volume":"1078","author":"MR
+        Martins","year":"2006","journal-title":"Brain Res"},{"key":"ref45","doi-asserted-by":"crossref","first-page":"239","DOI":"10.3727\/000000006783981990","article-title":"Progressive
+        dopamine neuron loss in Parkinson&apos;s disease: the multiple hit hypothesis.","volume":"15","author":"PM
+        Carvey","year":"2006","journal-title":"Cell Transplant"},{"key":"ref46","doi-asserted-by":"crossref","first-page":"1263","DOI":"10.1289\/ehp.7570","article-title":"Developmental
+        pesticide models of the Parkinson disease phenotype.","volume":"113","author":"DA
+        Cory-Slechta","year":"2005","journal-title":"Environ Health Perspect"},{"key":"ref47","doi-asserted-by":"crossref","first-page":"28","DOI":"10.1177\/1073858408319974","article-title":"Etiopathogenesis
+        of Parkinson disease: a new beginning?","volume":"15","author":"L Weidong","year":"2009","journal-title":"Neuroscientist"},{"key":"ref48","doi-asserted-by":"crossref","first-page":"193","DOI":"10.1007\/BF03036449","article-title":"MPTP
+        and SNpc DA neuronal vulnerability: role of dopamine, superoxide and nitric
+        oxide in neurotoxicity. Minireview.","volume":"7","author":"V Jackson-Lewis","year":"2005","journal-title":"Neurotox
+        Res"},{"key":"ref49","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1007\/s10072-008-0986-2","article-title":"Targeting
+        reactive oxygen species, reactive nitrogen species and inflammation in MPTP
+        neurotoxicity and Parkinson&apos;s disease.","volume":"29","author":"H Yokoyama","year":"2008","journal-title":"Neurol
+        Sci"},{"key":"ref50","doi-asserted-by":"crossref","first-page":"685","DOI":"10.1089\/ars.2005.7.685","article-title":"Reactive
+        oxygen and nitrogen species: weapons of neuronal destruction in models of
+        Parkinson&apos;s disease.","volume":"7","author":"S Przedborski","year":"2005","journal-title":"Antioxid
+        Redox Signal"},{"key":"ref51","doi-asserted-by":"crossref","first-page":"35","DOI":"10.1016\/j.drugalcdep.2011.06.013","article-title":"Increased
+        risk of Parkinson&apos;s disease in individuals hospitalized with conditions
+        related to the use of methamphetamine or other amphetamine-type drugs.","volume":"120","author":"RC
+        Callaghan","year":"2012","journal-title":"Drug Alcohol Depend"},{"key":"ref52","doi-asserted-by":"crossref","first-page":"2424","DOI":"10.1523\/JNEUROSCI.19-07-02424.1999","article-title":"Increased
+        methamphetamine neurotoxicity in heterozygous vesicular monoamine transporter
+        2 knock-out mice.","volume":"19","author":"F Fumagalli","year":"1999","journal-title":"J
+        Neurosci"},{"key":"ref53","doi-asserted-by":"crossref","first-page":"2459","DOI":"10.1096\/fj.00-0205rev","article-title":"The
+        VMAT2 gene in mice and humans: amphetamine responses, locomotion, cardiac
+        arrhythmias, aging, and vulnerability to dopaminergic toxins.","volume":"14","author":"GR
+        Uhl","year":"2000","journal-title":"Faseb J"},{"key":"ref54","doi-asserted-by":"crossref","first-page":"10289","DOI":"10.1523\/JNEUROSCI.19-23-10289.1999","article-title":"Peroxynitrite
+        inactivation of tyrosine hydroxylase: mediation by sulfhydryl oxidation, not
+        tyrosine nitration.","volume":"19","author":"DM Kuhn","year":"1999","journal-title":"J
+        Neurosci"},{"key":"ref55","doi-asserted-by":"crossref","first-page":"691","DOI":"10.1002\/(SICI)1097-4547(19981201)54:5<691::AID-JNR14>3.0.CO;2-F","article-title":"Dopamine,
+        in the presence of tyrosinase, covalently modifies and inactivates tyrosine
+        hydroxylase.","volume":"54","author":"Y Xu","year":"1998","journal-title":"J
+        Neurosci Res"},{"key":"ref56","doi-asserted-by":"crossref","first-page":"598","DOI":"10.1002\/1531-8249(199910)46:4<598::AID-ANA7>3.0.CO;2-F","article-title":"Evidence
+        of active nerve cell degeneration in the substantia nigra of humans years
+        after 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine exposure.","volume":"46","author":"JW
+        Langston","year":"1999","journal-title":"Ann Neurol"},{"key":"ref57","doi-asserted-by":"crossref","first-page":"457","DOI":"10.1016\/j.reprotox.2007.01.007","article-title":"The
+        gestational environment and Parkinson&apos;s disease: evidence for neurodevelopmental
+        origins of a neurodegenerative disorder.","volume":"23","author":"BK Barlow","year":"2007","journal-title":"Reprod
+        Toxicol"},{"key":"ref58","doi-asserted-by":"crossref","first-page":"2333","DOI":"10.1002\/mds.23263","article-title":"Incidence
+        of Parkinson&apos;s disease among hospital patients with methamphetamine-use
+        disorders.","volume":"25","author":"RC Callaghan","year":"2010","journal-title":"Mov
+        Disord"},{"key":"ref59","doi-asserted-by":"crossref","first-page":"311","DOI":"10.1007\/978-3-211-73574-9_38","article-title":"Association
+        of Parkinson&apos;s disease with symptoms of attention deficit hyperactivity
+        disorder in childhood.","author":"S Walitza","year":"2007","journal-title":"J
+        Neural Transm Suppl"},{"key":"ref60","doi-asserted-by":"crossref","first-page":"847","DOI":"10.1542\/peds.63.6.847","article-title":"The
+        effects of stimulant medication on the growth of hyperkinetic children.","volume":"63","author":"AF
+        Croche","year":"1979","journal-title":"Pediatrics"},{"key":"ref61","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1089\/1044546041649066","article-title":"Weekend
+        holidays during methylphenidate use in ADHD children: a randomized clinical
+        trial.","volume":"14","author":"S Martins","year":"2004","journal-title":"J
+        Child Adolesc Psychopharmacol"},{"key":"ref62","doi-asserted-by":"crossref","first-page":"73","DOI":"10.1016\/S0166-4328(01)00433-8","article-title":"Pharmacokinetic
+        and pharmacodynamic properties of stimulants: implications for the design
+        of new treatments for ADHD.","volume":"130","author":"JM Swanson","year":"2002","journal-title":"Behav
+        Brain Res"},{"key":"ref63","article-title":"The Mouse Brain in Stereotaxic
+        Coordinates","author":"G Paxinos","year":"2001"},{"key":"ref64","doi-asserted-by":"crossref","first-page":"1082","DOI":"10.1016\/j.neuroscience.2009.04.031","article-title":"A
+        comparison of model-based (2D) and design-based (3D) stereological methods
+        for estimating cell number in the substantia nigra pars compacta (SNpc) of
+        the C57BL\/6J Mouse.","volume":"161","author":"ZC Baquet","year":"2009","journal-title":"Neuroscience"},{"key":"ref65","doi-asserted-by":"crossref","first-page":"482","DOI":"10.1002\/ar.1092310411","article-title":"Unbiased
+        stereological estimation of the total number of neurons in thesubdivisions
+        of the rat hippocampus using the optical fractionator.","volume":"231","author":"MJ
+        West","year":"1991","journal-title":"Anat Rec"},{"key":"ref66","doi-asserted-by":"crossref","first-page":"89","DOI":"10.1007\/s00401-009-0622-0","article-title":"Microglia:
+        biology and pathology.","volume":"119","author":"MB Graeber","year":"2010","journal-title":"Acta
+        Neuropathol"},{"key":"ref67","doi-asserted-by":"crossref","first-page":"783","DOI":"10.1126\/science.1190929","article-title":"Changing
+        face of microglia.","volume":"330","author":"MB Graeber","year":"2010","journal-title":"Science"},{"key":"ref68","doi-asserted-by":"crossref","first-page":"e15","DOI":"10.1093\/nar\/gng015","article-title":"Summaries
+        of Affymetrix GeneChip probe level data.","volume":"31","author":"RA Irizarry","year":"2003","journal-title":"Nucleic
+        Acids Res"},{"key":"ref69","doi-asserted-by":"crossref","first-page":"118","DOI":"10.1093\/biostatistics\/kxj037","article-title":"Adjusting
+        batch effects in microarray expression data using empirical Bayes methods.","volume":"8","author":"WE
+        Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","doi-asserted-by":"crossref","first-page":"Article3","DOI":"10.2202\/1544-6115.1027","article-title":"Linear
+        models and empirical bayes methods for assessing differential expression in
+        microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
+        Appl Genet Mol Biol"}],"container-title":["PLoS ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,6]],"date-time":"2022-01-06T08:12:10Z","timestamp":1641456730000},"score":1,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0033693"}},"subtitle":[],"editor":[{"given":"Cesario
+        V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2012,3,21]]}},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":["Multidisciplinary"],"published":{"date-parts":[[2012,3,21]]}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -154,11 +218,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '7048'
+      - '7047'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 21:11:55 GMT
+      - Mon, 25 Sep 2023 04:29:19 GMT
       permissions-policy:
       - interest-cohort=()
       server:

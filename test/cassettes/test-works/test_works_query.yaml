@@ -9,76 +9,85 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/works?query=ecology&rows=2
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":487599,"items":[{"indexed":{"date-parts":[[2022,4,2]],"date-time":"2022-04-02T08:06:04Z","timestamp":1648886764924},"reference-count":0,"publisher":"Oxford
+        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"abstract":"<p>Ecosystem
+        ecology is a branch of study and thinking within the ecological sciences that
+        focuses on the ecosystem\u2014a dynamic network of interactions of organisms
+        and their environment\u2014and the importance of these interactions to the
+        organisms and earth system processes. The discipline represents one of two
+        different epistemological approaches within ecology that emerged in the 20th
+        century: a species-centric community-based approach, and a process-centric
+        ecosystem-based approach. Both approaches study the ways in which species
+        interact among themselves and their environment, share a common language,
+        and share a common set of principles. The community-based approach focuses
+        on how species\u2019 distributions and abundances are shaped by their resource
+        needs and tolerances to environmental conditions, and by their interactions
+        with other species. The ecosystem-based approach represents a significant
+        departure in that it considers both the resource needs and tolerances of species
+        and their interactions with other species, but also factors in the contributions
+        that species make to earth system processes (e.g., biogeochemical cycles,
+        climate). The two perspectives are not as mutually exclusive as the phrasing
+        of the approaches suggests, but rather offer different approaches to how we
+        view the environment and communities and the factors that regulate them. In
+        the 21st century, modern ecosystem science includes the influences that humans
+        have as part of ecological communities and as drivers of change in ecological
+        communities. This linkage within the ecosystem perspective of biology affecting
+        the physical environment, and the recent developments that include the social
+        and human dimensions, has positioned the approach as a critical one in understanding
+        the relationship among global processes and the services that ecosystems provide
+        to human well-being that is embodied in the emerging science of sustainability.<\/p>","DOI":"10.1093\/obo\/9780199830060-0202","type":"reference-entry","created":{"date-parts":[[2018,8,28]],"date-time":"2018-08-28T09:14:08Z","timestamp":1535447648000},"source":"Crossref","is-referenced-by-count":0,"title":["Ecosystem
+        Ecology"],"prefix":"10.1093","author":[{"given":"J.C.","family":"Moore","sequence":"first","affiliation":[]}],"member":"286","published-online":{"date-parts":[[2018,8,28]]},"container-title":["Ecology"],"original-title":["Ecosystem
+        Ecology"],"deposited":{"date-parts":[[2021,9,23]],"date-time":"2021-09-23T19:22:29Z","timestamp":1632424949000},"score":10.52109,"resource":{"primary":{"URL":"https:\/\/oxfordbibliographies.com\/view\/document\/obo-9780199830060\/obo-9780199830060-0202.xml"}},"issued":{"date-parts":[[2018,8,28]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/obo\/9780199830060-0202","published":{"date-parts":[[2018,8,28]]}},{"indexed":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T15:11:58Z","timestamp":1658761918700},"reference-count":0,"publisher":"Oxford
+        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"abstract":"<p>Communication
+        is perhaps the most important, but least formally discussed, aspect of current
+        ecological research and teaching. The last twenty years has demonstrated that
+        this is no longer a viable approach and the rise of climate change research,
+        and its concomitant denial, has brought disagreement and outright refusal
+        to accept facts to the research community and the wider world. This has, in
+        turn, produced a vigorous research community aimed specifically at challenging
+        false ideas and getting accurate science fully embedded into the public sphere.
+        What is less common is an exploration of the parameters surrounding communication
+        and the outputs of discourse. Ecology suffers from exactly the same problems
+        as climate science but without the mass of research exploring the issues and
+        potential solutions. The aim of this article is to propose a model of communication
+        and outline the key factors involved as well as point toward some solutions.
+        As far as can be ascertained, there is no model of ecological communication
+        extant. Some research has put forward some elements but it is far from comprehensive.
+        It became obvious that using a systems model would provide the base needed.
+        Research starts with gathering data (input), working on that data (processing),
+        and producing an end product that people can see\/use (output). At this stage,
+        the model can be left as it is because it follows the usual route of current
+        research (as exemplified by academia, for example). However, it was proposed,
+        early on, to broaden this remit. The original goal was to explore how information
+        can be distorted between production and (often multiple chains of) users and
+        how such distortion might be ameliorated. This started in climate science
+        but has recently moved to ecology. Thus, the final iteration of the proposed
+        model consists of four parts. The first is the creation of a product\u2014usually
+        research project and associated data. This aspect is subject to a range of
+        political and logistical biases thus ensuring that the aim of studying all
+        aspects of ecology is unlikely to be achieved. From here, data go into the
+        process of being prepared for publication. Again, a series of forces control
+        and constrain what is able to be later communicated. This ranges from philosophical
+        and ideological limitations through to political and sociological filters.
+        Cognition plays a key part not only in interpreting data but also introducing
+        bias (deliberate or otherwise) into the results. From there, the move is to
+        publish. Consumers take material from a range of media who may, or may not,
+        have allowed publication. It is also the place where research output gets
+        a wider airing and where further misinterpretation can be found. Normally,
+        this would feed back into initial product stage but here the aim is to create
+        a fourth division, a precursor, that argues that by studying issues in ecological
+        communication, adaptations can be made to make it more effective and less
+        prone to mis\/disinformation. The aim here is to provide a practical element
+        to assist improvement of ecological communication.<\/p>","DOI":"10.1093\/obo\/9780199830060-0238","type":"reference-entry","created":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T14:38:07Z","timestamp":1658759887000},"source":"Crossref","is-referenced-by-count":0,"title":["Communicating
+        Ecology"],"prefix":"10.1093","member":"286","published-online":{"date-parts":[[2022,7,26]]},"container-title":["Ecology"],"original-title":["Communicating
+        Ecology"],"deposited":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T14:38:08Z","timestamp":1658759888000},"score":10.475145,"resource":{"primary":{"URL":"https:\/\/oxfordbibliographies.com\/view\/document\/obo-9780199830060\/obo-9780199830060-0238.xml"}},"issued":{"date-parts":[[2022,7,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/obo\/9780199830060-0238","published":{"date-parts":[[2022,7,26]]}}],"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -92,11 +101,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '3514'
+      - '3008'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 21:19:55 GMT
+      - Mon, 25 Sep 2023 04:31:47 GMT
       permissions-policy:
       - interest-cohort=()
       server:

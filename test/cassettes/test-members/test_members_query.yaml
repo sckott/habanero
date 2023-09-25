@@ -9,30 +9,20 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/members?query=ecology&rows=2
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAA/+1Wz2/aMBT+V5DPcUUSoBrXbodq0nboph0qDiZ5UI/EZrbTFiH+9z0npCROTKg0
-        TdPEqdTv+eV7n9+Pb0+0YabQZE7khgQkB63ZGqjZbQHPcsiXoGjGtWkYn0FpLgXaw5vxzfhkIfM9
-        4QZyTbd4a1ueRAH5VYDaWRt+SxnKRQqvZD4OiAamkidqQOUWASQyk+sdOQTESMMyqkAXmUFTjFHK
-        wGT+uCcZ04ZWuGnyBMmGGp7jp8LZ7SyaTKMP4yicBGSreM7UjgpmjeQ+zyHlzMDoIeEgEhh9On4v
-        IIkshP3OniSFUiAMTSXXJcYlSzYrnsHxZFZjO/6LWJcK2CaVL6IMYM/pcke51gWkdIcpIujHaBxG
-        QbwI7I84iKof0yBcLA4WKaz4K9jsSDi+uY3jiCwsKmT6SCtbIQhEj7xj0hVIxHdjWeQ5z5jiZlex
-        wcXa8UhBJ4pv+y4rqShP3dNVgW+kMI9j8sfjjCcgNHTOa/d2kBZk5wa+rCxUAlhaYtOxSpVYTM5p
-        sU3x9ehWIgwOvkT6Qw0z1gG4AmWrpBOxRaZjYy9MpVQUtmsG8fvIdVhshXRsS20US8wQvb5bDoOn
-        lJuGt/ose++CZnpmWWF96ko+YCnzlMwn8Tiy3bMBUVY6r2PgHV1FwV/1EFjUXXmcRdgCWWb//MTM
-        BDYgjhKe2IzLHnzL3+PwltH+cDh11mDsi4dNs9hdnlul6Lx2h/t2S/kLtq882q3QX3a9FdJT2tXb
-        D1F75ceprFXG1tUegK3UHMu3p91WLNMQnFzcIeXYydyoounvmaxuWP/AcT3PD0TX2zOSXDffEOr4
-        uSuo872q2gZ48F7vbKcu0J5Z70N5hpaeaez69GzQ8+z6/fqX+pncLn2oCz/pd+usb9+LXF66Xuxn
-        xY+X/bYHtm0mk7KMcG19k0oKI4PR1y/B6I4JljJcS3bvlVvLv/lQyQ2Nw1k4ncymYUebfhbyJYN0
-        /RZsdC9QFYsSE8vepVDDtkIN36FQZ/16NLydxpOrIL0K0n9YkA53UEOWVgVd69LZhzhu6tJNHaqh
-        RtGzFc6rThXOGmWObddQTs3zy7RofePimfL/Sqw+Iq+0XJXnX1SeHctVel6l55+Wnj+YfsIoRopg
-        9PEuGH0X3EA6esAZhzXYEKFD225xWBwOvwGew8d93BUAAA==
+      string: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"},"total-results":38,"items":[{"last-status-check-time":1695601955315,"primary-name":"Immediate
+        Science Ecology","counts":{"current-dois":0,"backfile-dois":6,"total-dois":6},"breakdowns":{"dois-by-issued-year":[[2012,3],[2013,2],[2015,1]]},"prefixes":["10.7332"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":0.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.0,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"Immediate
+        Science Ecology","value":"10.7332"}],"id":4302,"tokens":["immediate","science","ecology"],"counts-type":{"all":{"journal-article":6},"backfile":{"journal-article":6},"current":{}},"coverage-type":{"all":{"journal-article":{"last-status-check-time":1695601955315,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"journal-article":{"last-status-check-time":1695601955315,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":false,"deposits-licenses-current":false},"location":"Toronto,
+        ON, Canada","names":["Immediate Science Ecology"]},{"last-status-check-time":1695608368024,"primary-name":"Knowledge
+        Ecology International","counts":{"current-dois":0,"backfile-dois":1,"total-dois":1},"breakdowns":{"dois-by-issued-year":[[2016,1]]},"prefixes":["10.17534"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":0.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.0,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"Knowledge
+        Ecology International","value":"10.17534"}],"id":6933,"tokens":["knowledge","ecology","international"],"counts-type":{"all":{"report":1},"backfile":{"report":1},"current":{}},"coverage-type":{"all":{"report":{"last-status-check-time":1695608368024,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"report":{"last-status-check-time":1695608368024,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":false,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":false,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":false,"deposits-licenses-current":false},"location":"Washington,
+        DC, United States","names":["Knowledge Ecology International"]}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -50,7 +40,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 14:49:57 GMT
+      - Mon, 25 Sep 2023 04:26:59 GMT
       permissions-policy:
       - interest-cohort=()
       server:

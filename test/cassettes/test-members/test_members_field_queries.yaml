@@ -9,82 +9,71 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/members/98/works?rows=7&query.author=carl+boettiger
   response:
     body:
-      string: !!binary |
-        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
-        AA==
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":501,"items":[{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T05:55:30Z","timestamp":1649138130734},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"3-4","license":[{"start":{"date-parts":[[1997,1,1]],"date-time":"1997-01-01T00:00:00Z","timestamp":852076800000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Abstract
+        and Applied Analysis"],"published-print":{"date-parts":[[1997]]},"abstract":"<jats:p>In
+        this paper we consider a quasilinear parabolic equation in a bounded domain
+        under periodic Dirichlet boundary conditions. Our main goal is to prove the
+        existence of extremal solutions among all solutions lying in a sector formed
+        by appropriately defined upper and lower solutions. The main tools used in
+        the proof of our result are recently obtained abstract results on nonlinear
+        evolution equations, comparison and truncation techniques and suitably constructed
+        special testfunction.<\/jats:p>","DOI":"10.1155\/s1085337597000389","type":"journal-article","created":{"date-parts":[[2002,9,16]],"date-time":"2002-09-16T08:00:16Z","timestamp":1032163216000},"page":"257-270","source":"Crossref","is-referenced-by-count":4,"title":["Existence
+        of extremal periodic solutions for quasilinear parabolic equations"],"prefix":"10.1155","volume":"2","author":[{"given":"Siegfried","family":"Carl","sequence":"first","affiliation":[{"name":"Martin-Luther-Universit\u00e4t
+        Halle-Wittenberg, Fachbereich Mathematik und Informatik, Institut f\u00fcr
+        Analysis, Halle D-06099, Germany"}]}],"member":"98","container-title":["Abstract
+        and Applied Analysis"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/aaa\/1997\/743028.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/aaa\/1997\/743028.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T10:37:29Z","timestamp":1471948649000},"score":9.227192,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/aaa\/1997\/743028\/abs\/"}},"issued":{"date-parts":[[1997]]},"references-count":0,"journal-issue":{"issue":"3-4","published-print":{"date-parts":[[1997]]}},"alternative-id":["743028"],"URL":"http:\/\/dx.doi.org\/10.1155\/s1085337597000389","ISSN":["1085-3375"],"issn-type":[{"value":"1085-3375","type":"print"}],"subject":["Applied
+        Mathematics","Analysis"],"published":{"date-parts":[[1997]]}},{"indexed":{"date-parts":[[2022,12,21]],"date-time":"2022-12-21T05:54:51Z","timestamp":1671602091162},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"4","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2321,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1969.tb00552.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T05:48:46Z","timestamp":1279950526000},"page":"143-144","source":"Crossref","is-referenced-by-count":1,"title":["Die
+        Andrologie als neues Spezialgebiet der Medizin*"],"prefix":"10.1155","volume":"1","author":[{"given":"Carl","family":"Schirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,24]]},"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1969.tb00552.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1969.tb00552.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:33:41Z","timestamp":1671539621000},"score":9.216269,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1969.tb00552.x"}},"issued":{"date-parts":[[2009,4,24]]},"references-count":0,"journal-issue":{"issue":"4"},"URL":"http:\/\/dx.doi.org\/10.1111\/j.1439-0272.1969.tb00552.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"subject":["Urology","Endocrinology","General
+        Medicine"],"published":{"date-parts":[[2009,4,24]]}},{"indexed":{"date-parts":[[2022,12,21]],"date-time":"2022-12-21T05:55:19Z","timestamp":1671602119087},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"1","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2149,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1999.tb02844.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T09:46:25Z","timestamp":1279964785000},"page":"57-57","source":"Crossref","is-referenced-by-count":0,"title":["Congratulatory
+        message"],"prefix":"10.1155","volume":"31","author":[{"given":"Carl","family":"Sshirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,10,13]]},"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1999.tb02844.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1999.tb02844.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:32:37Z","timestamp":1671539557000},"score":9.216197,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1999.tb02844.x"}},"subtitle":["Emil
+        Steinberger"],"issued":{"date-parts":[[2009,10,13]]},"references-count":0,"journal-issue":{"issue":"1"},"URL":"http:\/\/dx.doi.org\/10.1111\/j.1439-0272.1999.tb02844.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"subject":["Urology","Endocrinology","General
+        Medicine"],"published":{"date-parts":[[2009,10,13]]}},{"indexed":{"date-parts":[[2023,7,31]],"date-time":"2023-07-31T04:58:57Z","timestamp":1690779537703},"reference-count":2,"publisher":"Hindawi
+        Limited","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2318,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1996.tb02771.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T10:25:23Z","timestamp":1279967123000},"page":"137-140","source":"Crossref","is-referenced-by-count":1,"title":["Andrology-development
+        and future* Critical remarks after 45 years of medical practice"],"prefix":"10.1155","volume":"28","author":[{"given":"Carl","family":"Schirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,27]]},"reference":[{"key":"10.1111\/j.1439-0272.1996.tb02771.x-BIB1|cit1","doi-asserted-by":"crossref","first-page":"201","DOI":"10.1002\/j.1939-4640.1987.tb03302.x","article-title":"Andrology
+        as a speciality-its origin","volume":"8","author":"Niemi","year":"1987","journal-title":"J
+        Androl"},{"key":"10.1111\/j.1439-0272.1996.tb02771.x-BIB2|cit2","first-page":"633","article-title":"Gyn\u00e4kologe
+        und Androloge bei der Sterilit\u00e4tsberatung","volume":"73","author":"Siebke","year":"1951","journal-title":"Zbl
+        Gyn\u00e4kol"}],"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1996.tb02771.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1996.tb02771.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:35:15Z","timestamp":1671539715000},"score":9.212125,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1996.tb02771.x"}},"issued":{"date-parts":[[2009,4,27]]},"references-count":2,"journal-issue":{"issue":"3"},"URL":"http:\/\/dx.doi.org\/10.1111\/j.1439-0272.1996.tb02771.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"subject":["Urology","Endocrinology","General
+        Medicine"],"published":{"date-parts":[[2009,4,27]]}},{"indexed":{"date-parts":[[2022,12,21]],"date-time":"2022-12-21T05:54:51Z","timestamp":1671602091415},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"4","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2321,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1969.tb00562.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T04:53:48Z","timestamp":1279947228000},"page":"167-168","source":"Crossref","is-referenced-by-count":0,"title":["II.
+        ESCO-Kongre\u00df in Dubrovnik"],"prefix":"10.1155","volume":"1","author":[{"given":"Carl","family":"Schirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,24]]},"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1969.tb00562.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1969.tb00562.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:33:44Z","timestamp":1671539624000},"score":9.212125,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1969.tb00562.x"}},"issued":{"date-parts":[[2009,4,24]]},"references-count":0,"journal-issue":{"issue":"4"},"URL":"http:\/\/dx.doi.org\/10.1111\/j.1439-0272.1969.tb00562.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"subject":["Urology","Endocrinology","General
+        Medicine"],"published":{"date-parts":[[2009,4,24]]}},{"indexed":{"date-parts":[[2022,12,21]],"date-time":"2022-12-21T05:55:10Z","timestamp":1671602110040},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"S1","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2318,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1989.tb01354.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T08:38:50Z","timestamp":1279960730000},"page":"7-7","source":"Crossref","is-referenced-by-count":0,"title":["Vorwort"],"prefix":"10.1155","volume":"21","author":[{"given":"Carl","family":"Schirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,27]]},"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1989.tb01354.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1989.tb01354.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:32:29Z","timestamp":1671539549000},"score":9.212125,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1989.tb01354.x"}},"issued":{"date-parts":[[2009,4,27]]},"references-count":0,"journal-issue":{"issue":"S1"},"URL":"http:\/\/dx.doi.org\/10.1111\/j.1439-0272.1989.tb01354.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"subject":["Urology","Endocrinology","General
+        Medicine"],"published":{"date-parts":[[2009,4,27]]}},{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T10:57:00Z","timestamp":1648637820696},"reference-count":0,"publisher":"Hindawi
+        Limited","issue":"8","license":[{"start":{"date-parts":[[2001,1,1]],"date-time":"2001-01-01T00:00:00Z","timestamp":978307200000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["International
+        Journal of Mathematics and Mathematical Sciences"],"published-print":{"date-parts":[[2001]]},"abstract":"<jats:p>Let<mml:math
+        xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$L = (1 -
+        z^2)D^2 - 2zD$\"><mml:mi>L<\/mml:mi><mml:mo>=<\/mml:mo><mml:mrow><mml:mo>(<\/mml:mo><mml:mrow><mml:mn>1<\/mml:mn><mml:mo>\u2212<\/mml:mo><mml:msup><mml:mi>z<\/mml:mi><mml:mn>2<\/mml:mn><\/mml:msup><\/mml:mrow><mml:mo>)<\/mml:mo><\/mml:mrow><mml:msup><mml:mi>D<\/mml:mi><mml:mn>2<\/mml:mn><\/mml:msup><mml:mo>\u2212<\/mml:mo><mml:mn>2<\/mml:mn><mml:mi>z<\/mml:mi><mml:mi>D<\/mml:mi><\/mml:math>,<mml:math
+        xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$D = d\/dz$\"><mml:mi>D<\/mml:mi><mml:mo>=<\/mml:mo><mml:mrow><mml:mi>d<\/mml:mi><mml:mo>\/<\/mml:mo><mml:mrow><mml:mi>d<\/mml:mi><mml:mi>z<\/mml:mi><\/mml:mrow><\/mml:mrow><\/mml:math>and<mml:math
+        xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$f(z) = \\sum_{n
+        = 0}^\\infty c_nP_n(z)$\"><mml:mi>f<\/mml:mi><mml:mrow><mml:mo>(<\/mml:mo><mml:mi>z<\/mml:mi><mml:mo>)<\/mml:mo><\/mml:mrow><mml:mo>=<\/mml:mo><mml:msubsup><mml:mo>\u2211<\/mml:mo><mml:mrow><mml:mi>n<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn>0<\/mml:mn><\/mml:mrow><mml:mi>\u221e<\/mml:mi><\/mml:msubsup><mml:mrow><mml:msub><mml:mi>c<\/mml:mi><mml:mi>n<\/mml:mi><\/mml:msub><mml:msub><mml:mi>p<\/mml:mi><mml:mi>n<\/mml:mi><\/mml:msub><mml:mrow><mml:mo>(<\/mml:mo><mml:mi>z<\/mml:mi><mml:mo>)<\/mml:mo><\/mml:mrow><\/mml:mrow><\/mml:math>,
+        with<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$P_n$\"><mml:msub><mml:mi>P<\/mml:mi><mml:mi>n<\/mml:mi><\/mml:msub><\/mml:math>being
+        the<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$n$\"><mml:mi>n<\/mml:mi><\/mml:math>th
+        Legendre polynomial and<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
+        alttext=\"$f$\"><mml:mi>f<\/mml:mi><\/mml:math>analytic in an ellipse with
+        foci<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$\\pm
+        1$\"><mml:mo>\u00b1<\/mml:mo><mml:mn>1<\/mml:mn><\/mml:math>. Set<mml:math
+        xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$L^k = L(L^{k
+        - 1})$\"><mml:msup><mml:mi>L<\/mml:mi><mml:mi>k<\/mml:mi><\/mml:msup><mml:mo>=<\/mml:mo><mml:mi>L<\/mml:mi><mml:mrow><mml:mo>(<\/mml:mo><mml:mrow><mml:msup><mml:mi>L<\/mml:mi><mml:mrow><mml:mi>k<\/mml:mi><mml:mo>\u2212<\/mml:mo><mml:mn>1<\/mml:mn><\/mml:mrow><\/mml:msup><\/mml:mrow><mml:mo>)<\/mml:mo><\/mml:mrow><\/mml:math>,<mml:math
+        xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" alttext=\"$k\\ge2$\"><mml:mi>k<\/mml:mi><mml:mo>\u2265<\/mml:mo><mml:mn>2<\/mml:mn><\/mml:math>.
+        Then the number of zeros of<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
+        alttext=\"$L^kf(z)$\"><mml:msup><mml:mi>L<\/mml:mi><mml:mi>k<\/mml:mi><\/mml:msup><mml:mi>f<\/mml:mi><mml:mrow><mml:mo>(<\/mml:mo><mml:mi>z<\/mml:mi><mml:mo>)<\/mml:mo><\/mml:mrow><\/mml:math>in
+        this ellipse is<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
+        alttext=\"$O(k \\ln k)$\"><mml:mi>O<\/mml:mi><mml:mrow><mml:mo>(<\/mml:mo><mml:mrow><mml:mi>k<\/mml:mi><mml:mo>ln<\/mml:mo><mml:mi>k<\/mml:mi><\/mml:mrow><mml:mo>)<\/mml:mo><\/mml:mrow><\/mml:math>.<\/jats:p>","DOI":"10.1155\/s0161171201006056","type":"journal-article","created":{"date-parts":[[2002,9,16]],"date-time":"2002-09-16T12:00:16Z","timestamp":1032177616000},"page":"461-467","source":"Crossref","is-referenced-by-count":1,"title":["On
+        the number of zeros of iterated operators on analytic Legendre expansions"],"prefix":"10.1155","volume":"28","author":[{"given":"Carl","family":"Prather","sequence":"first","affiliation":[{"name":"Department
+        of Mathematics, Virginia Tech, Blacksburg 24061-0123, VA, USA"}]}],"member":"98","container-title":["International
+        Journal of Mathematics and Mathematical Sciences"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/ijmms\/2001\/386745.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ijmms\/2001\/386745.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T08:57:38Z","timestamp":1471942658000},"score":9.212125,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/ijmms\/2001\/386745\/abs\/"}},"issued":{"date-parts":[[2001]]},"references-count":0,"journal-issue":{"issue":"8","published-print":{"date-parts":[[2001]]}},"alternative-id":["386745"],"URL":"http:\/\/dx.doi.org\/10.1155\/s0161171201006056","ISSN":["0161-1712","1687-0425"],"issn-type":[{"value":"0161-1712","type":"print"},{"value":"1687-0425","type":"electronic"}],"subject":["Mathematics
+        (miscellaneous)"],"published":{"date-parts":[[2001]]}}],"items-per-page":7,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -98,11 +87,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '3820'
+      - '3439'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 14:49:59 GMT
+      - Mon, 25 Sep 2023 04:27:02 GMT
       permissions-policy:
       - interest-cohort=()
       server:

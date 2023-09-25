@@ -9,55 +9,333 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4 foo bar
+      - python-requests/2.31.0 habanero/1.2.5 foo bar
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4 foo bar
+      - python-requests/2.31.0 habanero/1.2.5 foo bar
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
   response:
     body:
-      string: !!binary |
-        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
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2023,8,26]],"date-time":"2023-08-26T14:16:44Z","timestamp":1693059404797},"reference-count":76,"publisher":"Elsevier
+        BV","issue":"4","license":[{"start":{"date-parts":[[1987,4,1]],"date-time":"1987-04-01T00:00:00Z","timestamp":544233600000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+        of the American Academy of Dermatology"],"published-print":{"date-parts":[[1987,4]]},"DOI":"10.1016\/s0190-9622(87)70111-x","type":"journal-article","created":{"date-parts":[[2008,6,28]],"date-time":"2008-06-28T05:10:22Z","timestamp":1214629822000},"page":"845-854","source":"Crossref","is-referenced-by-count":33,"title":["Gold
+        therapy and its indications in dermatology"],"prefix":"10.1016","volume":"16","author":[{"given":"Isabelle","family":"Thomas","sequence":"first","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/S0190-9622(87)70111-X_bib1","doi-asserted-by":"crossref","first-page":"884","DOI":"10.1136\/thx.35.12.884","article-title":"The
+        gold rush 1925-1935","volume":"35","author":"Keers","year":"1980","journal-title":"Thorax"},{"key":"10.1016\/S0190-9622(87)70111-X_bib2","first-page":"323","article-title":"L''
+        auroth\u00e9rapie dans les rhumatismes chroniques","volume":"53","author":"Forestier","year":"1929","journal-title":"Bull
+        Soc Med Hop (Paris)"},{"key":"10.1016\/S0190-9622(87)70111-X_bib3","doi-asserted-by":"crossref","first-page":"95","DOI":"10.1136\/ard.19.2.95","article-title":"Gold
+        therapy in rheumatoid arthritis: Report of a multi-center controlled trial","volume":"19","author":"Empire
+        Rheumatism Council","year":"1960","journal-title":"Ann Rheum Dis"},{"key":"10.1016\/S0190-9622(87)70111-X_bib4","doi-asserted-by":"crossref","first-page":"315","DOI":"10.1136\/ard.20.4.315","article-title":"Gold
+        therapy in rheumatoid arthritis. Final report of a multicenter controlled
+        trial","volume":"20","author":"Research Subcommittee of the Empire Rheumatism
+        Council","year":"1961","journal-title":"Ann Rheum Dis"},{"key":"10.1016\/S0190-9622(87)70111-X_bib5","doi-asserted-by":"crossref","first-page":"353","DOI":"10.1002\/art.1780160309","article-title":"A
+        controlled trial of gold salt therapy in rheumatoid arthritis","volume":"16","year":"1973","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib6","doi-asserted-by":"crossref","first-page":"77","DOI":"10.1001\/archderm.1930.01440130087005","article-title":"Treatment
+        of lupus erythematosus by intravenous injections of gold chloride","volume":"22","author":"Haxthausen","year":"1930","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib7","doi-asserted-by":"crossref","first-page":"56","DOI":"10.1001\/archderm.1973.01620220028007","article-title":"Gold
+        thiomalate therapy in pemphigus","volume":"108","author":"Penneys","year":"1973","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib8","series-title":"Arthritis
+        and allied conditions","first-page":"455","article-title":"Gold therapy for
+        rheumatoid arthritis","author":"Freyberg","year":"1972"},{"key":"10.1016\/S0190-9622(87)70111-X_bib9","first-page":"323","article-title":"The
+        use of gold in the treatment of juvenile rheumatoid arthritis","volume":"13","author":"Hicks","year":"1970","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib10","doi-asserted-by":"crossref","first-page":"128","DOI":"10.1016\/0002-9343(83)90485-0","article-title":"Auranofn.
+        Dose-related risk to benefit","volume":"75","author":"Weiss","year":"1983","journal-title":"Am
+        J Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib11","first-page":"128","article-title":"Serum
+        gold, II","volume":"32","author":"Rubinstein","year":"1973","journal-title":"Levels
+        in rheumatoid arthritis, Ann Rheum Dis"},{"key":"10.1016\/S0190-9622(87)70111-X_bib12","first-page":"277","article-title":"Auranofin:
+        Modes d''action, pharmacocin\u00e9tique et utilisation clinique: Comparaison
+        avec les sets d''or injectables","volume":"52","author":"Chamouard","year":"1985","journal-title":"Rev
+        Rhum Mal Osteoartic"},{"issue":"suppl 8","key":"10.1016\/S0190-9622(87)70111-X_bib13","first-page":"99","article-title":"Comparative
+        pharmacokinetics of parenteral and oral gold compounds","volume":"9","author":"Gottlieb","year":"1982","journal-title":"J
+        Rheumatol"},{"issue":"suppl 8","key":"10.1016\/S0190-9622(87)70111-X_bib14","first-page":"81","article-title":"Distribution
+        of gold in serum erythrocytes and white blood cells after in vitro incubation
+        and during chrysotherapy with dif ferent gold compounds","volume":"9","author":"Herrlinger","year":"1982","journal-title":"J
+        Rheumatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib15","doi-asserted-by":"crossref","first-page":"625","DOI":"10.1002\/art.1780150609","article-title":"Kinetics
+        of aurothiomalate in serum and synovial fluid","volume":"15","author":"Gerber","year":"1972","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib16","doi-asserted-by":"crossref","first-page":"56","DOI":"10.1002\/art.1780170109","article-title":"Gold
+        concentrations in hair, skin and nail during chrysotherapy","volume":"17","author":"Gottlieb","year":"1974","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib17","doi-asserted-by":"crossref","first-page":"331","DOI":"10.1111\/1523-1747.ep12598396","article-title":"The
+        quantitative distribution of gold in skin during chrysotherapy","volume":"65","author":"Penneys","year":"1975","journal-title":"J
+        Invest Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib18","series-title":"Arthritis
+        and allied conditions","first-page":"487","article-title":"Gold compounds","author":"Skosey","year":"1985"},{"key":"10.1016\/S0190-9622(87)70111-X_bib19","doi-asserted-by":"crossref","first-page":"57","DOI":"10.1002\/art.1780090107","article-title":"The
+        effect of gold salt on lysosomal enzymes of the peritoneal macrophage","volume":"9","author":"Persellin","year":"1966","journal-title":"Arthritis
+        Rheum"},{"issue":"suppl 8","key":"10.1016\/S0190-9622(87)70111-X_bib20","first-page":"46","article-title":"Auranofin
+        and lysosomal enzymes in rheumatoid arthritis","volume":"9","author":"Finkelstein","year":"1982","journal-title":"J
+        Rheumatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib21","doi-asserted-by":"crossref","first-page":"356","DOI":"10.1111\/1523-1747.ep12680840","article-title":"Inhibition
+        of prostaglandin and human epidermal enzymes by aurothiomalate in vitro: Possible
+        actions of gold in pemphigus","volume":"63","author":"Penneys","year":"1974","journal-title":"J
+        Invest Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib22","first-page":"395406","article-title":"Inactivation
+        of C1 in rheumatoid synovial fluid, purified CI and C1 esterase, by gold compounds","volume":"17","author":"Schultz","year":"1974","journal-title":"Clin
+        Exp Immunol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib23","first-page":"37","article-title":"Correlation
+        of in vitro and in vivo effects of gold compounds on leucocyte function: Possible
+        mechanisms of action","volume":"100","author":"Wolach","year":"1982","journal-title":"J
+        Lab Clin Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib24","doi-asserted-by":"crossref","first-page":"785","DOI":"10.1002\/art.1780210708","article-title":"Chrysotherapy:
+        Suppression of immunoglobulin synthesis","volume":"21","author":"Lorber","year":"1978","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib25","doi-asserted-by":"crossref","first-page":"391396","DOI":"10.1002\/art.1780170408","article-title":"Lack
+        of effect of gold therapy on abnormal IgG and IgM metabolism in rheumatoid
+        arthritis","volume":"17","author":"Mouridsen","year":"1974","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib26","first-page":"962","article-title":"The
+        influence of chrysotherapy on serum protein and immunoglobulin levels, rheumatoid
+        factor, and antiepithelial antibody titers","volume":"86","author":"Gottlieb","year":"1975","journal-title":"J
+        Lab Clin Med"},{"issue":"suppl 8","key":"10.1016\/S0190-9622(87)70111-X_bib27","first-page":"32","article-title":"Mechanisms
+        of action of auranofin: Effects on humoral immune response","volume":"9","author":"Walz","year":"1982","journal-title":"J
+        Rheumatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib28","doi-asserted-by":"crossref","first-page":"216218","DOI":"10.1136\/ard.36.3.216","article-title":"Inhibition
+        by gold of human lymphocyte stimulation","volume":"36","author":"Lies","year":"1977","journal-title":"Ann
+        Rheum Dis"},{"key":"10.1016\/S0190-9622(87)70111-X_bib29","first-page":"273","article-title":"Effets
+        de la chrysoth\u00e9rapie sur diff\u00e9rents param\u00e8res immunologiques
+        au cours de la polyarthrite rhumatoide","volume":"50","author":"Carcassi","year":"1983","journal-title":"Rev
+        Rhum Mal Osteoartic"},{"issue":"suppl 8","key":"10.1016\/S0190-9622(87)70111-X_bib30","first-page":"91","article-title":"Cellular
+        antiproliferative action exerted by auranofin","volume":"9","author":"Simon","year":"1982","journal-title":"J
+        Rheumatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib31","doi-asserted-by":"crossref","first-page":"343","DOI":"10.1001\/archinte.1979.03630400059022","article-title":"Complications
+        of chrysotherapy: A review of recent studies","volume":"139","author":"Gibbons","year":"1979","journal-title":"Arch
+        Intern Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib32","doi-asserted-by":"crossref","first-page":"86","DOI":"10.3109\/rhe1.1958.4.issue-1-4.11","article-title":"Skin
+        complications of gold","volume":"4","author":"Bogg","year":"1958","journal-title":"Aeta
+        Rheum Scand"},{"key":"10.1016\/S0190-9622(87)70111-X_bib33","doi-asserted-by":"crossref","first-page":"372","DOI":"10.1001\/archderm.1974.01630030032006","article-title":"Gold
+        dermatitis: A clinical and histopathological study","volume":"109","author":"Penneys","year":"1974","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib34","first-page":"773","article-title":"Chrysiasis
+        resulting from gold therapy in rheumatoid arthritis: Identification of gold
+        by x-ray microanalysis","volume":"57","author":"Beckett","year":"1982","journal-title":"Mayo
+        Clin Proc"},{"issue":"suppl 8","key":"10.1016\/S0190-9622(87)70111-X_bib35","first-page":"184","article-title":"Auranofin
+        and sodium aurothiomalate in the treatment of rheumatoid arthritis: A double-blind,
+        compara tive multicenter study","volume":"9","author":"Schattenkirchner","year":"1982","journal-title":"J
+        Rheumatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib36","first-page":"769","article-title":"Gold-induced
+        diarrhea and the role of prostaglandins","volume":"78","author":"Backon","year":"1983","journal-title":"Am
+        J Gastroenterol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib37","first-page":"12","article-title":"Nonexudative
+        diarrhea after gold salt therapy: Case report and review of the literature","volume":"78","author":"Nagler","year":"1983","journal-title":"Am
+        J Gastroenterol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib38","doi-asserted-by":"crossref","first-page":"717719","DOI":"10.7326\/0003-4819-87-6-717","article-title":"Hepatic
+        toxicity associated with gold therapy","volume":"87","author":"Favreau","year":"1977","journal-title":"Ann
+        Intern Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib39","doi-asserted-by":"crossref","first-page":"812","DOI":"10.1002\/art.1780130611","article-title":"Gold
+        nephropathy: A clinical and pathologic study","volume":"13","author":"Silverberg","year":"1970","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib40","first-page":"133","article-title":"Gold
+        nephropathy: An immunopathologic study","volume":"96","author":"Katz","year":"1973","journal-title":"Arch
+        Pathol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib41","doi-asserted-by":"crossref","first-page":"178","DOI":"10.7326\/0003-4819-95-2-178","article-title":"Goldinduced
+        thrombocytopenia: A clinical and immunogenetic study of twenty-three patients","volume":"95","author":"Coblyn","year":"1981","journal-title":"Ann
+        Intern Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib42","doi-asserted-by":"crossref","first-page":"964","DOI":"10.1002\/art.1780170607","article-title":"Significance
+        of eosinophilia during gold therapy","volume":"17","author":"Davis","year":"1974","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib43","doi-asserted-by":"crossref","first-page":"1266","DOI":"10.1136\/bmj.1.6020.1266","article-title":"Myelotoxicity
+        of gold","volume":"11","author":"Kay","year":"1976","journal-title":"Br Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib44","doi-asserted-by":"crossref","first-page":"1791","DOI":"10.1001\/archopht.1982.01030040771012","article-title":"Ocular
+        chrysiasis","volume":"100","author":"Kincaid","year":"1982","journal-title":"Arch
+        Ophthalmol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib45","doi-asserted-by":"crossref","first-page":"564","DOI":"10.1136\/ard.40.6.564","article-title":"Corneal
+        chrysiasis and clinical improvement with chrysotherapy in rheumatoid arthritis","volume":"40","author":"Prouse","year":"1981","journal-title":"Ann
+        Rheum Dis"},{"key":"10.1016\/S0190-9622(87)70111-X_bib46","first-page":"627","article-title":"Pulmonary
+        gold toxicity","volume":"65","author":"Morley","year":"1984","journal-title":"Eur
+        J Respir Dis"},{"key":"10.1016\/S0190-9622(87)70111-X_bib47","doi-asserted-by":"crossref","first-page":"671","DOI":"10.1093\/brain\/103.3.671","article-title":"Clinical
+        and morphological features of gold neuropathy","volume":"103","author":"Katrak","year":"1980","journal-title":"Brain"},{"key":"10.1016\/S0190-9622(87)70111-X_bib48","doi-asserted-by":"crossref","first-page":"1026","DOI":"10.1002\/art.1780200418","article-title":"Acute
+        myocardial infarction following gold sodium thiomalate induced vasomotor (nitritoid)
+        reaction","volume":"20","author":"Gottlieb","year":"1977","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib49","doi-asserted-by":"crossref","first-page":"1188","DOI":"10.1002\/art.1780200605","article-title":"Postinjection
+        nonvasomotor reactions during chrysotherapy: Constitutional and rheumatic
+        symptoms following injection of gold salts","volume":"20","author":"Halla","year":"1977","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib50","doi-asserted-by":"crossref","first-page":"171","DOI":"10.1002\/art.1780170211","article-title":"Pharmacodynamics
+        of \"Au and 195Au labeled aurothiomalate in blood: Correlation with course
+        of rheumatoid arthritis, gold toxicity and gold excretion","volume":"17","author":"Gottlieb","year":"1974","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib51","doi-asserted-by":"crossref","first-page":"1211","DOI":"10.1002\/art.1780281104","article-title":"Lack
+        of correlation between blood gold concentrations and clinical response in
+        patients with definite or classic rheumatoid arthritis receiving auranofin
+        or gold sodium thiomalate","volume":"28","author":"Dahl","year":"1985","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib52","doi-asserted-by":"crossref","first-page":"676","DOI":"10.1136\/bmj.3.5882.676","article-title":"Immunological
+        studies on the mechanism of gold hypersensitivity reactions","volume":"13","author":"Davis","year":"1973","journal-title":"Br
+        Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib53","doi-asserted-by":"crossref","first-page":"599","DOI":"10.1136\/ard.41.6.599","article-title":"HLA
+        system and side effects of gold salts and D-penicillamine treatment of rheumatoid
+        arthritis","volume":"41","author":"Bardin","year":"1982","journal-title":"Ann
+        Rheum Dis"},{"key":"10.1016\/S0190-9622(87)70111-X_bib54","doi-asserted-by":"crossref","first-page":"300","DOI":"10.1056\/NEJM198008073030602","article-title":"HLA-DR
+        antigens and toxic reactions to sodium-aurothiomalate and D-penicillamine
+        in patients with rheumatoid arthritis","volume":"303","author":"Wooley","year":"1980","journal-title":"N
+        Engl J Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib55","doi-asserted-by":"crossref","first-page":"833","DOI":"10.1002\/art.1780270718","article-title":"Association
+        of HLA-Bw35 with mucocutaneous lesions in rheumatoid arthritis patients undergoing
+        sodium aurothiomalate therapy","volume":"27","author":"Nusslein","year":"1984","journal-title":"Arthritis
+        Rheum"},{"issue":"suppl 8","key":"10.1016\/S0190-9622(87)70111-X_bib56","first-page":"79","article-title":"The
+        comparative toxicity of gold salts","volume":"9","author":"Payne","year":"1982","journal-title":"J
+        Rheumatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib57","doi-asserted-by":"crossref","first-page":"104","DOI":"10.1002\/art.1780240120","article-title":"Infants
+        of mothers receiving gold therapy","volume":"24","author":"Cohen","year":"1981","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib58","doi-asserted-by":"crossref","first-page":"1246","DOI":"10.1016\/S0140-6736(76)91172-7","article-title":"Transfer
+        of gold from mother to fetus","volume":"2","author":"Rocker","year":"1976","journal-title":"Lancet"},{"key":"10.1016\/S0190-9622(87)70111-X_bib59","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1111\/j.1365-2133.1984.tb04634.x","article-title":"The
+        effect of corticosteroids, dapsone and gold upon plasminogen activator synthesis
+        and secretion by human epidermal cells cultured with pemphigus antibody","volume":"110","author":"Hashimoto","year":"1984","journal-title":"Br
+        J Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib60","doi-asserted-by":"crossref","first-page":"962","DOI":"10.1001\/archderm.1976.01630310024005","article-title":"Pemphigus:
+        A 20-year review of 107 patients treated with corticosteroids","volume":"112","author":"Rosenberg","year":"1976","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib61","doi-asserted-by":"crossref","first-page":"657","DOI":"10.1001\/archderm.1972.01620140005001","article-title":"Cyclophosphamide
+        in the treatment of pemphigus vulgaris and bullous pemphigoid","volume":"106","author":"Krain","year":"1972","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib62","doi-asserted-by":"crossref","first-page":"353","DOI":"10.1001\/archderm.1973.01620180007002","article-title":"Pemphigus
+        treatment with azathioprine: Clinical and immunological correlation","volume":"107","author":"Roenigk","year":"1973","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib63","doi-asserted-by":"crossref","first-page":"681","DOI":"10.1111\/j.1365-2133.1976.tb05168.x","article-title":"Pemphigus
+        controlled by dapsone","volume":"94","author":"Piamphongsant","year":"1976","journal-title":"Br
+        J Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib64","doi-asserted-by":"crossref","first-page":"103","DOI":"10.1111\/j.1365-4362.1981.tb00414.x","article-title":"When
+        and how to use sulfones in bullous diseases","volume":"20","author":"Jablouskas","year":"1981","journal-title":"Int
+        J Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib65","doi-asserted-by":"crossref","first-page":"185","DOI":"10.1001\/archderm.1976.01630260013004","article-title":"Management
+        of pemphigus with gold compounds","volume":"112","author":"Penneys","year":"1976","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib66","doi-asserted-by":"crossref","first-page":"315","DOI":"10.1016\/S0190-9622(79)80020-1","article-title":"Gold
+        therapy: Dermatologic uses and toxicities","volume":"1","author":"Penneys","year":"1979","journal-title":"J
+        Am Acad Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib67","first-page":"1030","article-title":"Pemphigus:
+        A review","volume":"33","author":"Lynch","year":"1976","journal-title":"Ariz
+        Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib68","first-page":"781","article-title":"Chrysoth\u00e9rapie
+        du pemphigus","volume":"104","author":"Barri''\u00e8re","year":"1977","journal-title":"Ann
+        Dermatol Venereol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib69","doi-asserted-by":"crossref","first-page":"119","DOI":"10.1111\/j.1440-0960.1977.tb00022.x","article-title":"Gold
+        therapy for pemphigus vulgaris","volume":"18","author":"Rotstein","year":"1977","journal-title":"Australas
+        J Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib70","doi-asserted-by":"crossref","first-page":"851","DOI":"10.1016\/S0190-9622(84)80463-6","article-title":"Pemphigus
+        vulgaris: Results of treatment with gold as a steroid-sparing agent in a series
+        of thirteen patients","volume":"11","author":"Poulin","year":"1984","journal-title":"J
+        Am Acad Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib71","doi-asserted-by":"crossref","first-page":"941","DOI":"10.1001\/archderm.1984.01650430127024","article-title":"Adjuvant
+        therapy of pemphigus","volume":"120","author":"Bystryn","year":"1984","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib72","doi-asserted-by":"crossref","first-page":"1466","DOI":"10.1001\/archderm.1976.01630340078025","article-title":"Gold
+        compounds versus corticosteroids in the treatment of pemphigus vulgaris","volume":"112","author":"Krain","year":"1976","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib73","doi-asserted-by":"crossref","first-page":"768","DOI":"10.1001\/archderm.1978.01640170068014","article-title":"Childhood
+        pemphigus treated with gold","volume":"114","author":"Paltzik","year":"1978","journal-title":"Arch
+        Dermatol"},{"key":"10.1016\/S0190-9622(87)70111-X_bib74","doi-asserted-by":"crossref","first-page":"513515","DOI":"10.1002\/art.1780210504","article-title":"Chrysotherapy
+        in psoriatic arthritis: Efficacy and toxicity compared to rheumatoid arthritis","volume":"21","author":"Dorwart","year":"1978","journal-title":"Arthritis
+        Rheum"},{"key":"10.1016\/S0190-9622(87)70111-X_bib75","doi-asserted-by":"crossref","first-page":"157","DOI":"10.1016\/0002-9343(83)90491-6","article-title":"Gold
+        therapy in patients with systemic lupus erythematosus","volume":"75","author":"Weisman","year":"1983","journal-title":"Am
+        J Med"},{"key":"10.1016\/S0190-9622(87)70111-X_bib76","first-page":"378","article-title":"Acquired
+        epidermolysis bullosa treated with a gold compound","volume":"59","author":"Livden","year":"1979","journal-title":"Acta
+        Derm Venereol (Stockh)"}],"container-title":["Journal of the American Academy
+        of Dermatology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S019096228770111X?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S019096228770111X?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,12,27]],"date-time":"2018-12-27T09:51:42Z","timestamp":1545904302000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S019096228770111X"}},"issued":{"date-parts":[[1987,4]]},"references-count":76,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1987,4]]}},"alternative-id":["S019096228770111X"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0190-9622(87)70111-x","ISSN":["0190-9622"],"issn-type":[{"value":"0190-9622","type":"print"}],"subject":["Dermatology"],"published":{"date-parts":[[1987,4]]}},{"indexed":{"date-parts":[[2023,9,16]],"date-time":"2023-09-16T18:09:11Z","timestamp":1694887751305},"reference-count":61,"publisher":"Elsevier
+        BV","license":[{"start":{"date-parts":[[2015,8,1]],"date-time":"2015-08-01T00:00:00Z","timestamp":1438387200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/501100001809","name":"National
+        Natural Science Foundation of China","doi-asserted-by":"publisher"}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Physics
+        of the Earth and Planetary Interiors"],"published-print":{"date-parts":[[2015,8]]},"DOI":"10.1016\/j.pepi.2015.05.008","type":"journal-article","created":{"date-parts":[[2015,6,6]],"date-time":"2015-06-06T21:23:18Z","timestamp":1433625798000},"page":"76-87","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":24,"title":["A
+        review of retrospective stress-forecasts of earthquakes and eruptions"],"prefix":"10.1016","volume":"245","author":[{"given":"Stuart","family":"Crampin","sequence":"first","affiliation":[]},{"given":"Yuan","family":"Gao","sequence":"additional","affiliation":[]},{"given":"Julian","family":"Bukits","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.pepi.2015.05.008_b0005","doi-asserted-by":"crossref","first-page":"43","DOI":"10.1038\/286043a0","article-title":"S-wave
+        anisotropy in the upper mantle under a volcanic area in Japan","volume":"286","author":"Ando","year":"1980","journal-title":"Nature"},{"key":"10.1016\/j.pepi.2015.05.008_b0010","doi-asserted-by":"crossref","first-page":"267","DOI":"10.1046\/j.1365-246X.2002.01607.x","article-title":"Processing,
+        modelling, and predicting time-lapse effects of overpressured fluid-injection
+        in a fractured reservoir","volume":"149","author":"Angerer","year":"2002","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0015","doi-asserted-by":"crossref","first-page":"15635","DOI":"10.1029\/JB094iB11p15635","article-title":"Earthquakes
+        a self organized critical phenomenon","volume":"94","author":"Bak","year":"1989","journal-title":"J.
+        Geophys. Res."},{"key":"10.1016\/j.pepi.2015.05.008_b0020","doi-asserted-by":"crossref","first-page":"959","DOI":"10.1111\/j.1365-246X.2006.03152.x","article-title":"Shear
+        wave splitting changes associated with the 2001 volcanic eruption on Mt Etna","volume":"167","author":"Bianco","year":"2006","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0025","doi-asserted-by":"crossref","first-page":"31","DOI":"10.1111\/j.1365-246X.1985.tb05154.x","article-title":"Shear-wave
+        polarizations on a curved wavefront at an isotropic free-surface","volume":"83","author":"Booth","year":"1985","journal-title":"Geophys.
+        J. R. Astron. Soc."},{"key":"10.1016\/j.pepi.2015.05.008_b0030","doi-asserted-by":"crossref","first-page":"11151","DOI":"10.1029\/JB095iB07p11151","article-title":"Temporal
+        changes in shear wave splitting during an earthquake swarm in Arkansas","volume":"95","author":"Booth","year":"1990","journal-title":"J.
+        Geophys. Res."},{"key":"10.1016\/j.pepi.2015.05.008_b0035","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1016\/0040-1951(89)90054-1","article-title":"Azimuthal
+        variations in P-wave travel times and shear-wave splitting in the Charlevoix
+        Seismic Zone","volume":"165","author":"Buchbinder","year":"1989","journal-title":"Tectonophysics"},{"key":"10.1016\/j.pepi.2015.05.008_b0040","first-page":"341","article-title":"Interpretation
+        of shear-wave splitting in Datong Area, Northern China","volume":"29","author":"Chen","year":"1993","journal-title":"Can.
+        J. Explor. Geophys."},{"key":"10.1016\/j.pepi.2015.05.008_b0045","doi-asserted-by":"crossref","first-page":"428","DOI":"10.1111\/j.1365-246X.1994.tb03974.x","article-title":"The
+        fracture criticality of crustal rocks","volume":"118","author":"Crampin","year":"1994","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0050","doi-asserted-by":"crossref","first-page":"501","DOI":"10.1144\/gsjgs.156.3.0501","article-title":"Calculable
+        fluid-rock interactions","volume":"156","author":"Crampin","year":"1999","journal-title":"J.
+        Geol. Soc."},{"key":"10.1016\/j.pepi.2015.05.008_b0055","unstructured":"*Crampin,
+        S., 2003. Aligned cracks not LPO as the cause of mantle anisotropy. EGS-AGU-EUG
+        Joint Ass, Nice, 2003. Geophys. Res. Abstr. 5, 00205; with up-dated notes
+        in online version."},{"key":"10.1016\/j.pepi.2015.05.008_b0060","doi-asserted-by":"crossref","first-page":"73","DOI":"10.3997\/1365-2397.2004010","article-title":"The
+        New Geophysics: implications for hydrocarbon recovery and possible contamination
+        of time-lapse seismic","volume":"22","author":"Crampin","year":"2004","journal-title":"First
+        Break"},{"key":"10.1016\/j.pepi.2015.05.008_b0065","series-title":"Eurock
+        2006: Multiphysics coupling and long term behaviour in rock mechanics","first-page":"539","article-title":"The
+        New Geophysics: a new understanding of fluid-rock deformation","author":"Crampin","year":"2006"},{"key":"10.1016\/j.pepi.2015.05.008_b0070","doi-asserted-by":"crossref","first-page":"354","DOI":"10.1785\/0120040092","article-title":"Comment
+        on \u201cSystematic Analysis of Shear-Wave Splitting in the Aftershock Zone
+        of the 1999 Chi-Chi, Taiwan, Earthquake: Shallow Crustal Anisotropy and Lack
+        of Precursory Changes\u201d. by Liu, Teng, Ben-Zion: Temporal Variations Confirmed","volume":"95","author":"Crampin","year":"2005","journal-title":"Bull.
+        Seism. Soc. Am."},{"key":"10.1016\/j.pepi.2015.05.008_b0075","doi-asserted-by":"crossref","first-page":"61","DOI":"10.1016\/j.jseaes.2011.10.015","article-title":"Plate-wide
+        deformation before the Sumatra-Andaman Earthquake","volume":"46","author":"Crampin","year":"2012","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.pepi.2015.05.008_b0080","doi-asserted-by":"crossref","first-page":"173","DOI":"10.1111\/ter.12030","article-title":"The
+        New Geophysics","volume":"25","author":"Crampin","year":"2013","journal-title":"Terra
+        Nova"},{"key":"10.1016\/j.pepi.2015.05.008_b0085","doi-asserted-by":"crossref","first-page":"134","DOI":"10.1007\/s12583-015-0513-3","article-title":"The
+        physics underlying Gutenberg-Richter in the Earth and in the Moon","volume":"26","author":"Crampin","year":"2015","journal-title":"J.
+        Earthq. Sci."},{"key":"10.1016\/j.pepi.2015.05.008_b0090","doi-asserted-by":"crossref","first-page":"59","DOI":"10.1016\/j.wavemoti.2004.05.006","article-title":"A
+        review of shear-wave splitting in the compliant crack-critical anisotropic
+        Earth","volume":"41","author":"Crampin","year":"2005","journal-title":"Wave
+        Motion"},{"key":"10.1016\/j.pepi.2015.05.008_b0095","doi-asserted-by":"crossref","first-page":"675","DOI":"10.1016\/j.wavemoti.2008.01.003","article-title":"A
+        review of the current understanding of shear-wave splitting and common fallacies
+        in interpretation","volume":"45","author":"Crampin","year":"2008","journal-title":"Wave
+        Motion"},{"key":"10.1016\/j.pepi.2015.05.008_b0100","doi-asserted-by":"crossref","first-page":"495","DOI":"10.1111\/j.1365-246X.1997.tb04489.x","article-title":"Modelling
+        the compliance of crustal rock: II \u2013 response to temporal changes before
+        earthquakes","volume":"129","author":"Crampin","year":"1997","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0105","doi-asserted-by":"crossref","first-page":"874","DOI":"10.1038\/286874a0","article-title":"Observations
+        of dilatancy-induced polarization anomalies and earthquake prediction","volume":"286","author":"Crampin","year":"1980","journal-title":"Nature"},{"key":"10.1016\/j.pepi.2015.05.008_b0110","doi-asserted-by":"crossref","first-page":"11197","DOI":"10.1029\/JB095iB07p11197","article-title":"Changes
+        in shear wave splitting at Anza near the time of the North Palm Springs Earthquake","volume":"95","author":"Crampin","year":"1990","journal-title":"J.
+        Geophys. Res."},{"key":"10.1016\/j.pepi.2015.05.008_b0115","doi-asserted-by":"crossref","first-page":"6403","DOI":"10.1029\/90JB02453","article-title":"Comment
+        on \u201cQuantitative Measurements of Shear Wave Polarizations at the Anza
+        Seismic Network, Southern California: implications for Shear Wave Splitting
+        and Earthquake Prediction\u201d by Aster, R.C., Shearer, P.M., Berger, J","volume":"96","author":"Crampin","year":"1991","journal-title":"J.
+        Geophys. Res."},{"key":"10.1016\/j.pepi.2015.05.008_b0120","doi-asserted-by":"crossref","first-page":"F1","DOI":"10.1046\/j.1365-246x.1999.00891.x","article-title":"A
+        successfully stress-forecast earthquake","volume":"138","author":"Crampin","year":"1999","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0125","doi-asserted-by":"crossref","first-page":"F1","DOI":"10.1046\/j.1365-246X.2002.01830.x","article-title":"Indication
+        of high pore-fluid pressures in a seismically-active fault zone","volume":"151","author":"Crampin","year":"2002","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0130","doi-asserted-by":"crossref","first-page":"194","DOI":"10.1111\/j.1365-246X.2004.02187.x","article-title":"Response
+        to \u201cA statistical evaluation of a \u2018stress-forecast\u2019 earthquake\u201d
+        by Seher, T., Main, I.G","volume":"157","author":"Crampin","year":"2004","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0135","doi-asserted-by":"crossref","first-page":"39","DOI":"10.1111\/j.1365-246X.2004.02040.x","article-title":"The
+        scatter of time-delays in shear-wave splitting above small earthquakes","volume":"156","author":"Crampin","year":"2004","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0140","doi-asserted-by":"crossref","first-page":"427","DOI":"10.1130\/G24643A.1","article-title":"Stress-forecasting
+        (not predicting) earthquakes: A paradigm shift?","volume":"36","author":"Crampin","year":"2008","journal-title":"Geology"},{"key":"10.1016\/j.pepi.2015.05.008_b9000","doi-asserted-by":"crossref","first-page":"501","DOI":"10.1016\/j.jseaes.2012.10.036","article-title":"A
+        few earthquake conundrums resolved","volume":"62","author":"Crampin","year":"2013","journal-title":"J.
+        Asian Earth Sci."},{"key":"10.1016\/j.pepi.2015.05.008_b0145","series-title":"The
+        New Physics","first-page":"1","article-title":"The New Physics: a synthesis","author":"Davies","year":"1989"},{"key":"10.1016\/j.pepi.2015.05.008_b0150","doi-asserted-by":"crossref","first-page":"165","DOI":"10.1111\/j.1365-246X.1984.tb05032.x","article-title":"Effects
+        of the free surface on shear wavetrains","volume":"76","author":"Evans","year":"1984","journal-title":"Geophys.
+        J. R. Astron. Soc."},{"key":"10.1016\/j.pepi.2015.05.008_b0155","doi-asserted-by":"crossref","first-page":"578","DOI":"10.1111\/j.1365-246X.2004.02207.x","article-title":"Observations
+        of stress relaxation before earthquakes","volume":"157","author":"Gao","year":"2004","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0160","doi-asserted-by":"crossref","first-page":"253","DOI":"10.1016\/j.tecto.2006.07.013","article-title":"A
+        stress-forecast earthquake (with hindsight), where migration of source earthquakes
+        causes anomalies in shear-wave polarisations","volume":"426","author":"Gao","year":"2006","journal-title":"Tectonophysics"},{"key":"10.1016\/j.pepi.2015.05.008_b0165","doi-asserted-by":"crossref","first-page":"102","DOI":"10.1046\/j.1365-246X.1998.00606.x","article-title":"Temporal
+        changes in shear-wave splitting at an isolated swarm of small earthquakes
+        in 1992 near Dongfang, Hainan Island, Southern China","volume":"135","author":"Gao","year":"1998","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0170","doi-asserted-by":"crossref","first-page":"635","DOI":"10.1007\/s11589-004-0002-8","article-title":"Changes
+        in characteristics of shear-wave splitting of earthquakes in Shidian, Yunnan","volume":"17","author":"Gao","year":"2004","journal-title":"China.
+        ACTA Seism. Sinica."},{"key":"10.1016\/j.pepi.2015.05.008_b0175","doi-asserted-by":"crossref","first-page":"1543","DOI":"10.1126\/science.1103445","article-title":"Seismic
+        anisotropy beneath Ruapehu volcano: a possible eruption forecasting tool","volume":"306","author":"Gerst","year":"2004","journal-title":"Science"},{"key":"10.1016\/j.pepi.2015.05.008_b0180","doi-asserted-by":"crossref","first-page":"1436","DOI":"10.1093\/gji\/ggu467","article-title":"Shear
+        wave splitting and VPVS variations before and after the Efpalio earthquake
+        sequence, western Gulf of Corinth","volume":"200","author":"Giannopoulos","year":"2015","journal-title":"Greece.
+        Geophys. J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0185","unstructured":"Gudmundsson,
+        M.T. et al., 2011. Eyjafjallaj\u00f6kull April-June 2010: An explosive-mixed
+        eruption of unusually long duration. EGU Gen. Assemb., Geophys. Res. Abstr.
+        13, EGU2011-12542."},{"key":"10.1016\/j.pepi.2015.05.008_b0190","first-page":"1","article-title":"Magnitude
+        and energy of earthquakes","volume":"9","author":"Gutenberg","year":"1956","journal-title":"Ann.
+        Geofis."},{"key":"10.1016\/j.pepi.2015.05.008_b0195","doi-asserted-by":"crossref","first-page":"9ND","DOI":"10.1190\/1.2122407","article-title":"75-plus
+        years of anisotropy in exploration and reservoir seismics: A historical review
+        of concepts and methods","volume":"70","author":"Helbig","year":"2005","journal-title":"Geophysics"},{"key":"10.1016\/j.pepi.2015.05.008_b0200","doi-asserted-by":"crossref","article-title":"Seismic
+        detection of increased degassing before K\u0131lauea\u2019s 2008 summit explosion","author":"Johnson","year":"2013","journal-title":"Nat.
+        Commun.","DOI":"10.1038\/ncomms2703"},{"key":"10.1016\/j.pepi.2015.05.008_b0205","article-title":"The
+        Erua earthquake cluster and seismic anisotropy in the Ruapehu region","volume":"38L16315","author":"Keats","year":"2011","journal-title":"New
+        Zealand. Geophys. Res. Lett."},{"key":"10.1016\/j.pepi.2015.05.008_b0210","first-page":"1157","article-title":"Earthquake
+        prediction: 20 years of global experiment","volume":"69","author":"Kossobokov","year":"2007","journal-title":"Nat.
+        Hazard."},{"key":"10.1016\/j.pepi.2015.05.008_b0215","doi-asserted-by":"crossref","first-page":"605","DOI":"10.1111\/j.1365-246X.1991.tb01420.x","article-title":"Complex
+        component analysis of shear-wave splitting: case studies","volume":"107","author":"Li","year":"1991","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0220","doi-asserted-by":"crossref","first-page":"771","DOI":"10.1111\/j.1365-246X.1997.tb01872.x","article-title":"Shear-wave
+        anisotropy: spatial and temporal variations in time delays at Parkfield, Central
+        California","volume":"130","author":"Liu","year":"1997","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0225","doi-asserted-by":"crossref","first-page":"102","DOI":"10.1093\/gji\/ggu202","article-title":"Changes
+        in shear-wave splitting before the 2010 eruption of Iceland","volume":"199","author":"Liu","year":"2014","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0230","series-title":"Predictability:
+        does the flap of a butterfly\u2019s wings in Brazil set off a tornado in Texas?
+        139th Ann","author":"Lorenz","year":"1972"},{"key":"10.1016\/j.pepi.2015.05.008_b0235","doi-asserted-by":"crossref","first-page":"1299","DOI":"10.1785\/BSSA0850051299","article-title":"Earthquakes
+        as critical phenomena \u2013 implications of probablistic seismic hazard analysis","volume":"85","author":"Main","year":"1995","journal-title":"Bull.
+        Seism. Soc. Am."},{"key":"10.1016\/j.pepi.2015.05.008_b0240","doi-asserted-by":"crossref","first-page":"131","DOI":"10.1111\/j.1365-246X.1989.tb05255.x","article-title":"A
+        reinterpretation of the precursory b-value anomaly from fracture mechanics","volume":"96","author":"Main","year":"1989","journal-title":"Geophys.
+        J"},{"key":"10.1016\/j.pepi.2015.05.008_b0245","doi-asserted-by":"crossref","first-page":"2231","DOI":"10.1126\/science.1063463","article-title":"Changes
+        in seismic anisotropy after volcanic eruptions: evidence from Mount Ruapehu","volume":"293","author":"Miller","year":"2001","journal-title":"Science"},{"key":"10.1016\/j.pepi.2015.05.008_b0250","doi-asserted-by":"crossref","first-page":"3339","DOI":"10.1029\/JB093iB04p03339","article-title":"Shear-wave
+        splitting in the Anza seismic gap, Southern California: temporal variations
+        as possible precursors","volume":"93","author":"Peacock","year":"1988","journal-title":"J.
+        Geophys. Res."},{"key":"10.1016\/j.pepi.2015.05.008_b0255","doi-asserted-by":"crossref","first-page":"65","DOI":"10.1029\/98RG02075","article-title":"Seismic
+        anisotropy and mantle deformation: What have we learned from shear wave splitting?","volume":"3","author":"Savage","year":"1999","journal-title":"Rev.
+        Geophys."},{"key":"10.1016\/j.pepi.2015.05.008_b0260","doi-asserted-by":"crossref","first-page":"803","DOI":"10.1126\/science.181.4102.803","article-title":"Earthquake
+        prediction: a physical basis","volume":"181","author":"Scholz","year":"1973","journal-title":"Science"},{"key":"10.1016\/j.pepi.2015.05.008_b0265","doi-asserted-by":"crossref","first-page":"426","DOI":"10.1038\/nature09558","article-title":"Intrusion
+        triggering of the Eyjafjallaj\u00f6kull explosive eruption","volume":"468","author":"Sigmundsson","year":"2010","journal-title":"Nature"},{"key":"10.1016\/j.pepi.2015.05.008_b0270","doi-asserted-by":"crossref","first-page":"1682","DOI":"10.1093\/gji\/ggu332","article-title":"Determination
+        of elastic anisotropy of rocks from P- and S-wave velocities: numerical modelling
+        and lab measurements","volume":"199","author":"Svitek","year":"2014","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0275","doi-asserted-by":"crossref","first-page":"344","DOI":"10.1007\/s11589-008-0344-8","article-title":"Shear-wave
+        splitting before and after the 1999 Xiuyan earthquake in Liaoning","volume":"21","author":"Tai","year":"2008","journal-title":"China.
+        Act. Seism. Sinica"},{"key":"10.1016\/j.pepi.2015.05.008_b0280","doi-asserted-by":"crossref","unstructured":"*Volti,
+        T., Crampin, S., 2003a. A four-year study of shear-wave splitting in Iceland:
+        1. Background and preliminary analysis. In New insights into structural interpretation
+        and modelling. (ed) Nieuwland, D.A. Geol. Soc. Lond., Spec. Publ. 212, 117\u2013133.","DOI":"10.1144\/GSL.SP.2003.212.01.08"},{"key":"10.1016\/j.pepi.2015.05.008_b0285","doi-asserted-by":"crossref","unstructured":"*Volti,
+        T., Crampin, S., 2003b. A four-year study of shear-wave splitting in Iceland:
+        2. Temporal changes before earthquakes and volcanic eruptions. In: Nieuwland,
+        D.A. (Ed.), New insights into structural interpretation and modelling. Geol.
+        Soc. Lond., Spec. Pub. 212, pp. 135\u2013149.","DOI":"10.1144\/GSL.SP.2003.212.01.09"},{"key":"10.1016\/j.pepi.2015.05.008_b0290","doi-asserted-by":"crossref","first-page":"1293","DOI":"10.1111\/j.1365-246X.2006.03054.x","article-title":"Smaller
+        source earthquakes and improved measuring techniques allow the largest earthquakes
+        in Iceland to be stress-forecast (with hindsight)","volume":"166","author":"Wu","year":"2006","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0295","doi-asserted-by":"crossref","first-page":"996","DOI":"10.1093\/gji\/ggv054","article-title":"Inferring
+        the oriented elastic tensor from surface wave observations: preliminary application
+        across the western United States","volume":"201","author":"Xie","year":"2015","journal-title":"Geophys.
+        J. Int."},{"key":"10.1016\/j.pepi.2015.05.008_b0300","unstructured":"*Available
+        at www.geos.ed.ac.uk\/homes\/scrampin\/opinion."}],"container-title":["Physics
+        of the Earth and Planetary Interiors"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0031920115000886?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0031920115000886?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2022,5,11]],"date-time":"2022-05-11T18:40:27Z","timestamp":1652294427000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0031920115000886"}},"issued":{"date-parts":[[2015,8]]},"references-count":61,"alternative-id":["S0031920115000886"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.pepi.2015.05.008","ISSN":["0031-9201"],"issn-type":[{"value":"0031-9201","type":"print"}],"subject":["Space
+        and Planetary Science","Physics and Astronomy (miscellaneous)","Geophysics","Astronomy
+        and Astrophysics"],"published":{"date-parts":[[2015,8]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"A review of retrospective stress-forecasts
+        of earthquakes and eruptions","name":"articletitle","label":"Article Title"},{"value":"Physics
+        of the Earth and Planetary Interiors","name":"journaltitle","label":"Journal
+        Title"},{"value":"https:\/\/doi.org\/10.1016\/j.pepi.2015.05.008","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"Copyright \u00a9 2015 Elsevier B.V. All rights reserved.","name":"copyright","label":"Copyright"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -71,11 +349,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '2329'
+      - '10726'
       content-type:
       - application/json
       date:
-      - Mon, 13 Feb 2023 21:12:00 GMT
+      - Mon, 25 Sep 2023 04:29:22 GMT
       permissions-policy:
       - interest-cohort=()
       server:
