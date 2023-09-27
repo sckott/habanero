@@ -138,8 +138,8 @@ Meta
 .. |docs| image:: https://readthedocs.org/projects/habanero/badge/?version=latest
    :target: http://habanero.rtfd.org/
 
-.. |ghactions| image:: https://github.com/sckott/habanero/workflows/Python/badge.svg
-   :target: https://github.com/sckott/habanero/actions?query=workflow%3APython
+.. |ghactions| image:: https://github.com/sckott/habanero/actions/workflows/python.yml/badge.svg?branch=main
+   :target: https://github.com/sckott/habanero/actions/workflows/python.yml
 
 .. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/main/graph/badge.svg?token=6RrgNAuQmR
    :target: https://codecov.io/gh/sckott/habanero
