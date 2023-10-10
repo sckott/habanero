@@ -3,6 +3,7 @@ import warnings
 
 import requests
 from tqdm import tqdm  # type: ignore
+from urllib3.exceptions import ConnectTimeoutError
 
 from .exceptions import RequestError
 from .filterhandler import filter_handler
@@ -141,6 +142,7 @@ class Request(object):
             return js
 
     def _req(self, payload, should_warn):
+        r = None
         try:
             r = requests.get(
                 self._url(),
@@ -159,7 +161,14 @@ class Request(object):
                     return None
                 else:
                     r.raise_for_status()
+        except ConnectTimeoutError as e:
+            raise requests.exceptions.ConnectTimeout(e, r)
         except requests.exceptions.RequestException as e:
-            print(e)
-        check_json(r)
-        return r.json()
+            # print(e)
+            raise RuntimeError(e)
+        else:
+            if not r:
+                raise RuntimeError("An unknown problem occurred with an HTTP request")
+
+            check_json(r)
+            return r.json()

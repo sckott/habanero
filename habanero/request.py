@@ -85,9 +85,13 @@ def request(
             else:
                 r.raise_for_status()
         except requests.exceptions.RequestException as e:
-            raise e
-        check_json(r)
-        coll = r.json()
+            raise RuntimeError(e)
+        else:
+            if not r:
+                raise RuntimeError("An unknown problem occurred with an HTTP request")
+
+            check_json(r)
+            coll = r.json()
     else:
         if ids.__class__.__name__ == "str":
             ids = ids.split()
