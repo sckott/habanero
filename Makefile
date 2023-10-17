@@ -35,11 +35,11 @@ lint-fix:
 	pip3 install -q -r requirements-dev.txt
 	isort .
 	black .
-	ruff --fix habanero
+	ruff check --fix habanero
 
 .PHONY: lint-check
 lint-check:
 	pip3 install -q -r requirements-dev.txt
 	isort . --check-only
 	black . --check
-	ruff --check habanero
+	ruff check habanero
