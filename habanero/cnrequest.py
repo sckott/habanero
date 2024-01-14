@@ -1,6 +1,7 @@
 import warnings
 
 import requests
+import bibtexparser
 
 from .cn_formats import cn_format_headers
 from .habanero_utils import make_ua
@@ -63,4 +64,12 @@ def make_request(url, ids, format, style, locale, fail, **kwargs):
 
     # set encoding
     r.encoding = "UTF-8"
-    return r.text
+    text = r.text
+    if format == "bibtex":
+        text = fix_bibtex(text)
+    return text
+
+
+def fix_bibtex(x):
+    parsed = bibtexparser.parse_string(x)
+    return bibtexparser.write_string(parsed)
