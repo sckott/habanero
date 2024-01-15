@@ -16,7 +16,7 @@ interactions:
     uri: https://api.crossref.org/licenses?rows=2
   response:
     body:
-      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":14302,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":100},{"URL":"Http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":1}]}}'
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":15241,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":100},{"URL":"Http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":1}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -30,7 +30,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 25 Sep 2023 04:26:24 GMT
+      - Mon, 15 Jan 2024 17:48:26 GMT
       permissions-policy:
       - interest-cohort=()
       server:

@@ -16,7 +16,7 @@ interactions:
     uri: https://api.crossref.org/members?rows=0
   response:
     body:
-      string: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":0,"query":{"start-index":0,"search-terms":null},"total-results":28204,"items":[]}}'
+      string: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":0,"query":{"start-index":0,"search-terms":null},"total-results":25826,"items":[]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -30,7 +30,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:27:52 GMT
+      - Mon, 15 Jan 2024 19:55:15 GMT
       permissions-policy:
       - interest-cohort=()
       server:

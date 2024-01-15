@@ -16,10 +16,18 @@ interactions:
     uri: https://api.crossref.org/members/2984/works?offset=0&rows=1
   response:
     body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":385084,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:28Z","timestamp":1648950388348},"reference-count":0,"publisher":"Fairchild
-        Books","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2021]]},"DOI":"10.5040\/9781501365072.388","type":"book-chapter","created":{"date-parts":[[2022,3,28]],"date-time":"2022-03-28T13:39:01Z","timestamp":1648474741000},"source":"Crossref","is-referenced-by-count":0,"title":["alternating
-        twist texturing"],"prefix":"10.5040","member":"2984","container-title":["The
-        Fairchild Books Dictionary of Textiles"],"deposited":{"date-parts":[[2022,3,28]],"date-time":"2022-03-28T13:48:03Z","timestamp":1648475283000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.bloomsburycollections.com\/book\/the-fairchild-books-dictionary-of-textiles\/"}},"issued":{"date-parts":[[2021]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781501365072.388","published":{"date-parts":[[2021]]}}],"items-per-page":1,"query":{"start-index":0,"search-terms":null}}}'
+      string: !!binary |
+        H4sIAAAAAAAA/6WUTY+bMBCG/wryGYP5yIZwbFeVKlWqVKWXhhwcmCTWGkztoUkU8d87JtlstMr2
+        UnEBjz3zvs8MPjOHEgfHSmZeWMhacE7ugOOpB1o7GPvCtXJ4F/oD1inTUTSJRCTeIqw8s62sASnb
+        eQwZGpSaW3CD9kt5MpunRcgUQkufqzNTXQNHaPy5RiLwXlq/cbVKRZqGeZit1+Elgqr1cvw6FzkX
+        2VIkZf5UpsUvqu+jZKPtWZk85cViJrKiyPKCNFjYgoWuBl6boUNWipD1w4Ys7cFSxi9S2XqvdBN8
+        MubFUbLadAgd8sa0UnWTtuvbitTU1jjXSqJCvtCqGicUW6kdjG+pG95b5cs9cJas17Tz+ftXT1BE
+        M5GLKl7Mi2QmkuxpJuZpRPK9rUsPNiSM13vZIyn2CoAyfgQtC9PiMbWMp8UyycpsUYrkAbV8Tk8i
+        hCBxzgy29kc/e7vEkLYrx28wG7453QFFhZp2r5jUpLGTqLpdgAcamwDhiAOh2DES1VMCdXyzPY1O
+        u5kakS6K/EqfYIPlt6TLPQTv2hQ8X8BLewrMNlhSEaXB+RoN9Map/wGUF6XIHgKapUV2BVQbSydp
+        /P2IveI6k0NFw3Hyrz9/fKPUe8S+rOIqPhwO0UYb07rNYE+10RomCy6qTVvFvslVjHvg21er3K85
+        3tyscrPleLVaxWwcfVPc8IHVy5jdWubu+vVOWnOMGqMiY3dV/M+BvE33hwXH9fX/5j21sJ8uhSRk
+        vwe4QCGcFvn0309KHEgyS66svxK6QetxHP8Cd066yJQEAAA=
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -33,11 +41,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '604'
+      - '605'
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:27:51 GMT
+      - Mon, 15 Jan 2024 19:54:53 GMT
       permissions-policy:
       - interest-cohort=()
       server:

@@ -16,21 +16,16 @@ interactions:
     uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
   response:
     body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":487599,"items":[{"DOI":"10.1093\/obo\/9780199830060-0202","title":["Ecosystem
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0238","title":["Communicating
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0042","title":["Community Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0023","title":["Chemical
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0128","title":["Disease Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0026","title":["Fire
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0222","title":["Urban Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0244","title":["Flood
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0200","title":["Industrial
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0201","title":["Grazer Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0139","title":["Ecology
-        of the Himalaya"]},{"DOI":"10.1093\/obo\/9780199830060-0220","title":["Wetland
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0039","title":["Applied Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0014","title":["Mycorrhizal
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0067","title":["Soil Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0224","title":["Stochastic
-        Processes in Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0036","title":["Global
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0192","title":["Animal Population
-        Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0014","title":["Behavioral
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0243","title":["Urban Forest
-        Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'
+      string: !!binary |
+        H4sIAAAAAAAA/52VwW7cIBCGX8XibG8Au7vrvaVNk+ZQdaWo6iHJgWUnaxTscQGndVZ+9+IqVU2V
+        JsEHH2DE5/n/gZkjsU64zpINwXuSkhqsFQfIXN+C3/uB5j7TyrpJ6AGMVdj4KFvQBf0bIZsjuRMS
+        nKcdh5Q4dEJnBmynx613lBaMp0Q5qP3y+kjOvlyOFLpgtMxvTnCHNyflak1ZWa5zSpc0ozxf+x84
+        5bTHX5MPWNddo6RwqjkkHyVqPPTkdkjfBqN8CvPHbW99NtEgypdT0LkyMIORB8oqqL0uHc8p+DMO
+        uT4axHhg9ZmyIGy8Ls6DfL6anWjiRbFiCvncSzSmUo8z/OGUTVEXRjyCiacU5T9XZzyeiGafbKve
+        KmkjUIG2c424n6GKTiGXzb6zzqg5/vCA9A2cHlVFVywPDDptW60gHsPyZ33Gu8RVkHxStdCiF2/P
+        arma4q5QzTEoqNeVQ1kJ65RMtgalb31gExV/xVkZvJPTZtSWbLHttO9u+DKwAiv/EFdLVtCiWPgS
+        jF/QmS407l65E/9HhW/wPVTiQaEJcLdP7TxrwWTt7xnAaUq+d2D6cRz44WJcppo9/CQbH/Atxcgq
+        c2DGEUDgCTQMwy+rf5QwiQYAAA==
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -44,11 +39,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '470'
+      - '475'
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:31:53 GMT
+      - Mon, 15 Jan 2024 19:59:34 GMT
       permissions-policy:
       - interest-cohort=()
       server:
