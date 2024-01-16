@@ -9,9 +9,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -23,7 +23,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 798e705bce4dc60a-SEA
+      - 84623784983ceb87-SEA
       Connection:
       - keep-alive
       Content-Length:
@@ -31,19 +31,19 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Mon, 13 Feb 2023 15:01:21 GMT
+      - Tue, 16 Jan 2024 00:24:40 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FR%2FBFqVkbrAvNQZubsSGsZNqYXpXo5iREpTVmIceYzTBbc7dKg%2FjzDhItGgWZ%2FKBxiXYQ9avLKbB6lm3Ov3xVXyTJtUI3a2E3CZ2A%2FmREtqqxnPOuZvSd04%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gJ%2BHRugHRDQEI3%2BwNSni1Cv4yHfNbMjC9v%2BZsSkJEDdQh7jGAhxfeETwpe8N7SZE5TqvVfpolf9XTz7KbuFX%2BdFmr%2FRSiTb1sc9qPLgIyjz6xtpUlfqg27A%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      - h3=":443"; ma=86400
       expires:
-      - Mon, 13 Feb 2023 15:59:03 GMT
+      - Tue, 16 Jan 2024 00:47:38 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
@@ -63,9 +63,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
@@ -85,9 +85,9 @@ interactions:
       content-type:
       - text/x-bibliography
       date:
-      - Mon, 13 Feb 2023 15:01:24 GMT
+      - Tue, 16 Jan 2024 00:24:43 GMT
       link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://www.science.org/doi/pdf/10.1126/science.169.3946.635>;
         version="vor"; rel="item"
       permissions-policy:
       - interest-cohort=()
@@ -120,9 +120,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -134,7 +134,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 798e70706f51c37f-SEA
+      - 84623799de383096-SEA
       Connection:
       - keep-alive
       Content-Length:
@@ -142,19 +142,19 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Mon, 13 Feb 2023 15:01:25 GMT
+      - Tue, 16 Jan 2024 00:24:43 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=W40r%2FpME0sVKfvcSLzSMcAh9Q3HSHtSA28OV2e%2FdtBYQ7em2pzIj%2Bwf3I8vRdSJQcU7uj4Jj96psIGE7vpN4A3QlevzJC6VBSAL5T0hn4PViggiwU8xd8lA%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8YILgBOoep379YE0d2jtYJrQp2Yy3giZxCa2uDVx1y1uOD8LJCvB4hIW19Pfl7f7R4gQwJ1EqBpn4218FGNWaHcskiv5CHCEZN1tlHNnxiOuKQqZwEaLQsk%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      - h3=":443"; ma=86400
       expires:
-      - Mon, 13 Feb 2023 15:59:03 GMT
+      - Tue, 16 Jan 2024 00:43:42 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
@@ -174,9 +174,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
@@ -196,9 +196,9 @@ interactions:
       content-type:
       - text/x-bibliography
       date:
-      - Mon, 13 Feb 2023 15:01:25 GMT
+      - Tue, 16 Jan 2024 00:24:44 GMT
       link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://www.science.org/doi/pdf/10.1126/science.169.3946.635>;
         version="vor"; rel="item"
       permissions-policy:
       - interest-cohort=()

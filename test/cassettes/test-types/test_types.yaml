@@ -16,15 +16,18 @@ interactions:
     uri: https://api.crossref.org/types
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAA/3VUQW7CMBD8SuQzQVS9cWsBVa1UNYKql6oHk2zBJbEje0OFEH/v4pjEdtJTkpmx
-        szs79pkZ5NgYNmfqwCasAmP4DlI81UDY9ZGWwqBHHUEboSSxd9PZdNYzbH5mqJCXqQbTlEib3s8m
-        TCBU9Pp5ZqKgRVulDqmBHK97TFjJt1AS/EhwsnHwZeLElZJqp3m995SvHdbJNNRKY5qrqlYSJHrq
-        taWSRUdFiwbSXlADaGrlKODXU2WEJusW7aS2KdQ8P8QtvVuwE/6oRktyiGsUeQme+qVlkgfHhHvX
-        PCg1436hCvegPfbNfgcbRGUNCzqqsqnG6vloibAcAzicXeDtN2iQOaRkuT4FJjsmWVmmd1urHKAQ
-        cmdG3Ml6duiQ62FYfC8Zi8ZIJmxz+Z7XGBhqG1w4eLRiA1qA+afgTUvGcR2scVmN5d5/xn/QSwuO
-        fMuN79zyBnUiOvGy4LrwRJsbNDLBKD79AMMg1cogFHQGJYY2Z5agE9gSg+QJY5qx4D1bvG+NdKDp
-        sgrvjaUPd2K6H4Ianux3YFMY4aVD4phHE3JJD+dDQ7h2Hvm0sqgz6ety+QOxpNa4agUAAA==
+      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":30,"items":[{"id":"book-section","label":"Book
+        Section"},{"id":"monograph","label":"Monograph"},{"id":"report-component","label":"Report
+        Component"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
+        Review"},{"id":"book-track","label":"Book Track"},{"id":"journal-article","label":"Journal
+        Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
+        Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
+        Entry"},{"id":"proceedings-article","label":"Proceedings Article"},{"id":"journal","label":"Journal"},{"id":"component","label":"Component"},{"id":"book-chapter","label":"Book
+        Chapter"},{"id":"proceedings-series","label":"Proceedings Series"},{"id":"report-series","label":"Report
+        Series"},{"id":"proceedings","label":"Proceedings"},{"id":"database","label":"Database"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
+        Book"},{"id":"posted-content","label":"Posted Content"},{"id":"journal-issue","label":"Journal
+        Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"grant","label":"Grant"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
+        Series"},{"id":"edited-book","label":"Edited Book"}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -42,7 +45,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 15 Jan 2024 19:58:22 GMT
+      - Tue, 16 Jan 2024 06:49:52 GMT
       permissions-policy:
       - interest-cohort=()
       server:

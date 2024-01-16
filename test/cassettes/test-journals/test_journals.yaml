@@ -16,32 +16,10 @@ interactions:
     uri: https://api.crossref.org/journals?rows=1
   response:
     body:
-      string: !!binary |
-        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
-        F7+afw3VEAAA
+      string: '{"status":"ok","message-type":"journal-list","message-version":"1.0.0","message":{"items-per-page":1,"query":{"start-index":0,"search-terms":null},"total-results":126554,"items":[{"last-status-check-time":1705363587724,"counts":{"current-dois":315,"backfile-dois":12233,"total-dois":12548},"breakdowns":{"dois-by-issued-year":[[1999,598],[2000,524],[1996,504],[1997,484],[1998,482],[2001,462],[2002,446],[2007,443],[2006,407],[2008,404],[2004,396],[2003,371],[2009,367],[2005,362],[1995,337],[2016,299],[1993,298],[1994,297],[1992,266],[2011,263],[1990,263],[1991,253],[2010,247],[1989,228],[1988,227],[2021,225],[2014,222],[2020,212],[2017,207],[2012,207],[2019,205],[1987,186],[2018,178],[2013,165],[2022,161],[2015,155],[1986,150],[2023,147],[1984,139],[1982,133],[1985,128],[1983,115],[1981,92],[1980,78],[1979,54],[1976,53],[1975,47],[1977,39],[1978,15],[2024,7]]},"publisher":"Wiley
+        (John Wiley & Sons)","coverage":{"affiliations-current":0.7555555555555556,"similarity-checking-current":0.9206349206349206,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.1050437341616938,"licenses-backfile":0.9790729992642851,"funders-current":0.4698412698412698,"affiliations-backfile":0.1337366140766778,"resource-links-backfile":0.9752309327229625,"orcids-backfile":0.06564211558898063,"update-policies-current":0.9206349206349206,"ror-ids-backfile":0.0,"orcids-current":0.5174603174603175,"similarity-checking-backfile":0.8845745115670727,"references-backfile":0.7768331562167906,"descriptions-backfile":0.0,"award-numbers-backfile":0.08248181149350119,"update-policies-backfile":0.06090084198479523,"licenses-current":0.9206349206349206,"award-numbers-current":0.2888888888888889,"abstracts-backfile":0.6384370146325513,"resource-links-current":0.5650793650793651,"abstracts-current":0.7301587301587302,"references-current":0.7587301587301587},"title":"Journal
+        of Neuroscience Research","subjects":[{"ASJC":2804,"name":"Cellular and Molecular
+        Neuroscience"}],"coverage-type":{"all":{"last-status-check-time":1705363587724,"affiliations":0.1493346083353255,"abstracts":0.6406885010757829,"orcids":0.07697824527850824,"licenses":0.9775280898876404,"references":0.7763168379950594,"funders":0.1141923659255718,"similarity-checking":0.8854888835763806,"award-numbers":0.08765638696310463,"ror-ids":0.0,"update-policies":0.08247669136983027,"resource-links":0.9648577575902462,"descriptions":0.0},"backfile":{"last-status-check-time":1705363587724,"affiliations":0.1337366140766778,"abstracts":0.6384370146325513,"orcids":0.06564211558898063,"licenses":0.9790729992642851,"references":0.7768331562167906,"funders":0.1050437341616938,"similarity-checking":0.8845745115670727,"award-numbers":0.08248181149350119,"ror-ids":0.0,"update-policies":0.06090084198479523,"resource-links":0.9752309327229625,"descriptions":0.0},"current":{"last-status-check-time":1705363587724,"affiliations":0.7555555555555556,"abstracts":0.7301587301587302,"orcids":0.5174603174603175,"licenses":0.9206349206349206,"references":0.7587301587301587,"funders":0.4698412698412698,"similarity-checking":0.9206349206349206,"award-numbers":0.2888888888888889,"ror-ids":0.0,"update-policies":0.9206349206349206,"resource-links":0.5650793650793651,"descriptions":0.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":true,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":true,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["0360-4012","1097-4547"],"issn-type":[{"value":"0360-4012","type":"print"},{"value":"1097-4547","type":"electronic"}]}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -55,11 +33,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '1377'
+      - '1379'
       content-type:
       - application/json
       date:
-      - Mon, 15 Jan 2024 17:47:53 GMT
+      - Tue, 16 Jan 2024 06:46:26 GMT
       permissions-policy:
       - interest-cohort=()
       server:

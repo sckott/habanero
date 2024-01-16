@@ -16,34 +16,209 @@ interactions:
     uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
   response:
     body:
-      string: !!binary |
-        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
-        IQ+VBxQAAA==
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2022,4,6]],"date-time":"2022-04-06T01:04:50Z","timestamp":1649207090358},"reference-count":0,"publisher":"Elsevier
+        BV","issue":"2","license":[{"start":{"date-parts":[[1980,2,1]],"date-time":"1980-02-01T00:00:00Z","timestamp":318211200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        American Journal of Cardiology"],"published-print":{"date-parts":[[1980,2]]},"DOI":"10.1016\/0002-9149(80)91066-8","type":"journal-article","created":{"date-parts":[[2004,4,20]],"date-time":"2004-04-20T01:42:57Z","timestamp":1082425377000},"page":"489","source":"Crossref","is-referenced-by-count":7,"title":["Beneficial
+        effects of endurance exercise training in adolescent hypertension"],"prefix":"10.1016","volume":"45","author":[{"given":"James
+        M.","family":"Hagberg","sequence":"first","affiliation":[]},{"given":"Ali
+        A.","family":"Ehsani","sequence":"additional","affiliation":[]},{"given":"Gregory
+        W.","family":"Heath","sequence":"additional","affiliation":[]},{"given":"David","family":"Goldring","sequence":"additional","affiliation":[]},{"given":"Tony","family":"Hernandez","sequence":"additional","affiliation":[]},{"given":"John
+        O.","family":"Holloszy","sequence":"additional","affiliation":[]}],"member":"78","container-title":["The
+        American Journal of Cardiology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0002914980910668?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0002914980910668?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,2,11]],"date-time":"2019-02-11T12:51:58Z","timestamp":1549889518000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0002914980910668"}},"issued":{"date-parts":[[1980,2]]},"references-count":0,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1980,2]]}},"alternative-id":["0002914980910668"],"URL":"http:\/\/dx.doi.org\/10.1016\/0002-9149(80)91066-8","ISSN":["0002-9149"],"issn-type":[{"value":"0002-9149","type":"print"}],"subject":["Cardiology
+        and Cardiovascular Medicine"],"published":{"date-parts":[[1980,2]]}},{"indexed":{"date-parts":[[2023,12,18]],"date-time":"2023-12-18T15:36:08Z","timestamp":1702913768025},"reference-count":87,"publisher":"Elsevier
+        BV","issue":"5","license":[{"start":{"date-parts":[[2008,9,1]],"date-time":"2008-09-01T00:00:00Z","timestamp":1220227200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2008,9,1]],"date-time":"2008-09-01T00:00:00Z","timestamp":1220227200000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-017"},{"start":{"date-parts":[[2008,9,1]],"date-time":"2008-09-01T00:00:00Z","timestamp":1220227200000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-037"},{"start":{"date-parts":[[2008,9,1]],"date-time":"2008-09-01T00:00:00Z","timestamp":1220227200000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-012"},{"start":{"date-parts":[[2008,9,1]],"date-time":"2008-09-01T00:00:00Z","timestamp":1220227200000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-029"},{"start":{"date-parts":[[2008,9,1]],"date-time":"2008-09-01T00:00:00Z","timestamp":1220227200000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-004"}],"content-domain":{"domain":["clinicalkey.fr","radiologic.theclinics.com","clinicalkey.jp","theclinics.com","clinicalkey.com.au","clinicalkey.es","clinicalkey.com","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Radiologic
+        Clinics of North America"],"published-print":{"date-parts":[[2008,9]]},"DOI":"10.1016\/j.rcl.2008.05.004","type":"journal-article","created":{"date-parts":[[2008,10,22]],"date-time":"2008-10-22T09:00:03Z","timestamp":1224666003000},"page":"845-875","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":46,"title":["Imaging
+        in Intestinal Ischemic Disorders"],"prefix":"10.1016","volume":"46","author":[{"given":"Richard
+        M.","family":"Gore","sequence":"first","affiliation":[]},{"given":"Vahid","family":"Yaghmai","sequence":"additional","affiliation":[]},{"given":"Kiran
+        H.","family":"Thakrar","sequence":"additional","affiliation":[]},{"given":"Jonathan
+        W.","family":"Berlin","sequence":"additional","affiliation":[]},{"given":"Uday
+        K.","family":"Mehta","sequence":"additional","affiliation":[]},{"given":"Geraldine
+        M.","family":"Newmark","sequence":"additional","affiliation":[]},{"given":"Frank
+        H.","family":"Miller","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.rcl.2008.05.004_bib1","series-title":"Gastrointestinal
+        and liver disease","first-page":"2563","article-title":"Intestinal ischemia","author":"Brandt","year":"2006"},{"key":"10.1016\/j.rcl.2008.05.004_bib2","doi-asserted-by":"crossref","first-page":"1127","DOI":"10.1016\/S0889-8553(03)00093-1","article-title":"Intestinal
+        ischemia","volume":"32","author":"Burns","year":"2003","journal-title":"Gastroenterol
+        Clin North Am"},{"key":"10.1016\/j.rcl.2008.05.004_bib3","doi-asserted-by":"crossref","first-page":"185","DOI":"10.1007\/s00595-004-2924-0","article-title":"Acute
+        mesenteric ischemia: the challenge of gastroenterology","volume":"35","author":"Yasuhara","year":"2005","journal-title":"Surg
+        Today"},{"key":"10.1016\/j.rcl.2008.05.004_bib4","doi-asserted-by":"crossref","first-page":"323","DOI":"10.1007\/s10016-001-0249-7","article-title":"Mesenteric
+        ischemia: acute and chronic","volume":"17","author":"Chang","year":"2003","journal-title":"Ann
+        Vasc Surg"},{"key":"10.1016\/j.rcl.2008.05.004_bib5","doi-asserted-by":"crossref","first-page":"233","DOI":"10.1007\/s004230050197","article-title":"Intestinal
+        ischemia\u2014the basics","volume":"384","author":"Haglund","year":"1999","journal-title":"Langenbecks
+        Arch Surg"},{"key":"10.1016\/j.rcl.2008.05.004_bib6","doi-asserted-by":"crossref","first-page":"909","DOI":"10.1016\/j.emc.2004.05.002","article-title":"Mesenteric
+        ischemia","volume":"22","author":"Martinez","year":"2004","journal-title":"Emerg
+        Med Clin North Am"},{"issue":"Suppl","key":"10.1016\/j.rcl.2008.05.004_bib7","doi-asserted-by":"crossref","first-page":"9","DOI":"10.1080\/00855920410010933","article-title":"Clinical
+        approach to chronic gastrointestinal ischaemia: from \u201cintestinal angina\u201d
+        to the spectrum of chronic splanchnic disease","volume":"241","author":"Kolkman","year":"2004","journal-title":"Scand
+        J Gastroenterol Suppl"},{"key":"10.1016\/j.rcl.2008.05.004_bib8","doi-asserted-by":"crossref","first-page":"252","DOI":"10.1002\/bjs.1800750322","article-title":"Venous
+        mesenteric infarction: a particular entity","volume":"75","author":"Clavien","year":"1988","journal-title":"Br
+        J Surg"},{"key":"10.1016\/j.rcl.2008.05.004_bib9","doi-asserted-by":"crossref","first-page":"10","DOI":"10.1093\/ageing\/afh226","article-title":"Chronic
+        ischaemic bowel diseases in the aged\u2014go with the flow","volume":"34","author":"Korotinski","year":"2005","journal-title":"Age
+        Ageing"},{"key":"10.1016\/j.rcl.2008.05.004_bib10","doi-asserted-by":"crossref","first-page":"17","DOI":"10.1002\/bjs.4459","article-title":"Systemic
+        review of survival after acute mesenteric ischemia according to disease aetiology","volume":"91","author":"Schoots","year":"2004","journal-title":"Br
+        J Surg"},{"issue":"1","key":"10.1016\/j.rcl.2008.05.004_bib11","doi-asserted-by":"crossref","first-page":"99","DOI":"10.1053\/bega.2001.0158","article-title":"Chronic
+        splanchnic ischaemia","volume":"15","author":"Van Bockel","year":"2001","journal-title":"Best
+        Pract Res Clin Gastroenterol."},{"key":"10.1016\/j.rcl.2008.05.004_bib12","series-title":"Surgery
+        of the alimentary tract","first-page":"1247","article-title":"Mesenteric ischemia","author":"Comerota","year":"2005"},{"key":"10.1016\/j.rcl.2008.05.004_bib13","first-page":"66","article-title":"Acute
+        intestinal ischemia and infarction","volume":"14","author":"Tendler","year":"2003","journal-title":"Semin
+        Gastrointest Dis"},{"key":"10.1016\/j.rcl.2008.05.004_bib14","series-title":"Surgical
+        pathology and cytopathology","first-page":"467","article-title":"Non-neoplastic
+        diseases of the small and large intestine","author":"Hart","year":"2006"},{"key":"10.1016\/j.rcl.2008.05.004_bib15","series-title":"Surgical
+        pathology","first-page":"615","article-title":"Gastrointestinal tract","author":"Rosai","year":"2004"},{"key":"10.1016\/j.rcl.2008.05.004_bib16","series-title":"Surgery
+        of the alimentary tract","first-page":"1235","article-title":"Anatomy and
+        physiology of the mesenteric circulation","author":"Goldin","year":"2005"},{"key":"10.1016\/j.rcl.2008.05.004_bib17","doi-asserted-by":"crossref","first-page":"309","DOI":"10.1177\/153100350501700405","article-title":"Mesenteric
+        ischemia","volume":"17","author":"Ujiki","year":"2005","journal-title":"Perspect
+        Vasc Surg Endovasc Ther"},{"key":"10.1016\/j.rcl.2008.05.004_bib18","doi-asserted-by":"crossref","first-page":"1372","DOI":"10.1136\/bmj.326.7403.1372","article-title":"Diagnosis
+        and management of intestinal ischaemic disorders","volume":"326","author":"Sreenarasimhaiah","year":"2003","journal-title":"BMJ"},{"key":"10.1016\/j.rcl.2008.05.004_bib19","doi-asserted-by":"crossref","first-page":"1179","DOI":"10.1007\/s00330-001-1220-2","article-title":"Non-occlusive
+        mesenteric ischemia: etiology, diagnosis, and interventional therapy","volume":"12","author":"Trompeter","year":"2002","journal-title":"Eur
+        Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib20","doi-asserted-by":"crossref","first-page":"3243","DOI":"10.3748\/wjg.v12.i20.3243","article-title":"Update
+        in management of mesenteric ischemia","volume":"12","author":"Chang","year":"2006","journal-title":"World
+        J Gastroenterol"},{"issue":"2","key":"10.1016\/j.rcl.2008.05.004_bib21","doi-asserted-by":"crossref","first-page":"283","DOI":"10.1016\/j.bpg.2004.11.002","article-title":"Chronic
+        mesenteric ischaemia","volume":"19","author":"Sreenarasimhaiah","year":"2005","journal-title":"Best
+        Pract Res Clin Gastroenterol"},{"key":"10.1016\/j.rcl.2008.05.004_bib22","doi-asserted-by":"crossref","first-page":"527","DOI":"10.1016\/S0749-0690(18)30047-8","article-title":"Mesenteric
+        ischemia in the elderly","volume":"15","author":"Ruotolo","year":"1999","journal-title":"Clin
+        Geriatr Med"},{"key":"10.1016\/j.rcl.2008.05.004_bib23","doi-asserted-by":"crossref","first-page":"125","DOI":"10.1016\/S0039-6109(16)45631-8","article-title":"Radiology
+        in intestinal ischemia: angiographic diagnosis and management","volume":"72","author":"Bakal","year":"1992","journal-title":"Surg
+        Clin North Am"},{"key":"10.1016\/j.rcl.2008.05.004_bib24","doi-asserted-by":"crossref","first-page":"445","DOI":"10.1016\/S0889-8553(05)70190-4","article-title":"Ischemic
+        bowel disease in the elderly","volume":"30","author":"Greenwald","year":"2001","journal-title":"Gastroenterol
+        Clin North Am"},{"key":"10.1016\/j.rcl.2008.05.004_bib25","doi-asserted-by":"crossref","first-page":"329","DOI":"10.1016\/S0272-5231(05)70145-3","article-title":"Gastrointestinal
+        complications in the intensive care unit","volume":"20","author":"Liolios","year":"1999","journal-title":"Clin
+        Chest Med"},{"issue":"1","key":"10.1016\/j.rcl.2008.05.004_bib26","doi-asserted-by":"crossref","first-page":"83","DOI":"10.1053\/bega.2000.0157","article-title":"Acute
+        intestinal ischaemia","volume":"15","author":"Lock","year":"2001","journal-title":"Best
+        Pract Res Clin Gastroenterol"},{"key":"10.1016\/j.rcl.2008.05.004_bib27","doi-asserted-by":"crossref","first-page":"277","DOI":"10.1007\/s00261-005-0376-7","article-title":"Ischemia
+        and infarction of the small bowel and colon: spectrum of imaging findings","volume":"31","author":"Romano","year":"2006","journal-title":"Abdom
+        Imaging"},{"key":"10.1016\/j.rcl.2008.05.004_bib28","doi-asserted-by":"crossref","first-page":"433","DOI":"10.1016\/j.ejrad.2006.11.002","article-title":"Multidetector
+        row computed tomography findings from ischemia to infarction of the large
+        bowel","volume":"61","author":"Romano","year":"2007","journal-title":"Eur
+        J Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib29","doi-asserted-by":"crossref","unstructured":"Mirvis
+        SE, Shanmuganathan K, Erb R. Diffuse small-bowel ischemia in hypotensive adults
+        after blunt trauma (shock bowel): CT findings and clinical significance. AJR
+        Am J Roentgenol 194;163:1375\u20131379.","DOI":"10.2214\/ajr.163.6.7992732"},{"key":"10.1016\/j.rcl.2008.05.004_bib30","doi-asserted-by":"crossref","first-page":"327","DOI":"10.1016\/S0033-8389(02)00075-1","article-title":"Evaluation
+        of suspected mesenteric ischemia: efficacy of radiologic studies","volume":"41","author":"Kim","year":"2003","journal-title":"Radiol
+        Clin North Am"},{"key":"10.1016\/j.rcl.2008.05.004_bib31","doi-asserted-by":"crossref","first-page":"279","DOI":"10.2214\/ajr.160.2.8424335","article-title":"Periportal
+        low density on CT in patients with blunt trauma: association with elevated
+        venous pressure","volume":"160","author":"Shanmuganathan","year":"1993","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib32","doi-asserted-by":"crossref","first-page":"29","DOI":"10.1148\/radiographics.20.1.g00ja0629","article-title":"CT
+        and MR imaging findings of bowel ischemia from various primary causes","volume":"20","author":"Rha","year":"2000","journal-title":"Radiographics"},{"key":"10.1016\/j.rcl.2008.05.004_bib33","doi-asserted-by":"crossref","first-page":"40","DOI":"10.1016\/S0887-2171(00)90012-X","article-title":"CT
+        and MR diagnoses of intestinal ischemia","volume":"21","author":"Ha","year":"2000","journal-title":"Semin
+        Ultrasound CT MR"},{"key":"10.1016\/j.rcl.2008.05.004_bib34","series-title":"Textbook
+        of gastrointestinal radiology","first-page":"2417","article-title":"Abdominal
+        trauma","author":"Halvorsen","year":"2008"},{"key":"10.1016\/j.rcl.2008.05.004_bib35","series-title":"Textbook
+        of gastrointestinal radiology","first-page":"1203","article-title":"Miscellaneous
+        abnormalities of the colon","author":"Gore","year":"2008"},{"key":"10.1016\/j.rcl.2008.05.004_bib36","series-title":"Textbook
+        of gastrointestinal radiology","first-page":"2385","article-title":"The acute
+        abdomen","author":"Gore","year":"2008"},{"key":"10.1016\/j.rcl.2008.05.004_bib37","series-title":"The
+        abdominal plain film with correlative imaging","author":"Baker","year":"1999"},{"key":"10.1016\/j.rcl.2008.05.004_bib38","series-title":"Textbook
+        of gastrointestinal radiology","first-page":"205","article-title":"Gas and
+        soft tissue abnormalities","author":"Messmer","year":"2008"},{"key":"10.1016\/j.rcl.2008.05.004_bib39","doi-asserted-by":"crossref","first-page":"99","DOI":"10.2214\/ajr.154.1.2104734","article-title":"Diagnosis
+        of bowel infarction: a comparison of plain films and CT scans in 23 cases","volume":"154","author":"Smerud","year":"1990","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib40","doi-asserted-by":"crossref","first-page":"107","DOI":"10.1016\/S0039-6109(16)45630-6","article-title":"Radiology
+        in intestinal ischemia. Plain film, contrast, and other imaging studies","volume":"72","author":"Wolf","year":"1992","journal-title":"Surg
+        Clin North Am"},{"key":"10.1016\/j.rcl.2008.05.004_bib41","series-title":"Textbook
+        of gastrointestinal radiology","first-page":"933","article-title":"Miscellaneous
+        abnormalities of the small bowel","author":"Rubesin","year":"2008"},{"key":"10.1016\/j.rcl.2008.05.004_bib42","series-title":"Textbook
+        of gastrointestinal radiology","first-page":"117","article-title":"Angiography
+        and interventional radiology of the hollow viscera","author":"Kim","year":"2008"},{"key":"10.1016\/j.rcl.2008.05.004_bib43","doi-asserted-by":"crossref","first-page":"79","DOI":"10.1148\/radiology.197.1.7568858","article-title":"Diagnostic
+        imaging of mesenteric infarction","volume":"197","author":"Klein","year":"1995","journal-title":"Radiology"},{"key":"10.1016\/j.rcl.2008.05.004_bib44","doi-asserted-by":"crossref","first-page":"2416","DOI":"10.1007\/s00268-007-9272-3","article-title":"Endovascular
+        therapy for chronic mesenteric ischemia","volume":"31","author":"Piffaretti","year":"2007","journal-title":"World
+        J\u00a0Surg."},{"key":"10.1016\/j.rcl.2008.05.004_bib45","doi-asserted-by":"crossref","first-page":"485","DOI":"10.1016\/j.jvs.2007.11.046","article-title":"Endovascular
+        treatment of stenotic and occluded visceral arteries for chronic mesenteric
+        ischemia","volume":"47","author":"Sarac","year":"2008","journal-title":"J
+        Vasc Surg."},{"key":"10.1016\/j.rcl.2008.05.004_bib46","doi-asserted-by":"crossref","first-page":"202","DOI":"10.1016\/j.ejrad.2007.06.034","article-title":"Sonographic
+        assessment of the splanchnic arteries and the bowel wall","volume":"64","author":"Dietrich","year":"2007","journal-title":"Eur
+        J Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib47","doi-asserted-by":"crossref","first-page":"1078","DOI":"10.1016\/S0741-5214(98)60010-0","article-title":"Mesenteric
+        and celiac duplex scanning: a validation study","volume":"27","author":"Zwolak","year":"1998","journal-title":"J\u00a0Vasc
+        Surg"},{"key":"10.1016\/j.rcl.2008.05.004_bib48","doi-asserted-by":"crossref","first-page":"603","DOI":"10.1259\/bjr\/59793102","article-title":"Prospective
+        evaluation of contrast-enhanced ultrasonography with advanced dynamic flow
+        for the diagnosis of intestinal ischaemia","volume":"80","author":"Hamada","year":"2007","journal-title":"Br
+        J Radiol."},{"key":"10.1016\/j.rcl.2008.05.004_bib49","doi-asserted-by":"crossref","first-page":"386","DOI":"10.1177\/1531003507311802","article-title":"Visceral
+        duplex scanning: evaluation before and after artery intervention for chronic
+        mesenteric ischemia","volume":"19","author":"Armstrong","year":"2007","journal-title":"Perspect
+        Vasc Surg Endovasc Ther."},{"key":"10.1016\/j.rcl.2008.05.004_bib50","doi-asserted-by":"crossref","first-page":"175","DOI":"10.1177\/1531003506291885","article-title":"Moneta
+        GL. Mesenteric duplex scanning","volume":"18","author":"Mitchell","year":"2006","journal-title":"Perspect
+        Vasc Surg Endovasc Ther."},{"key":"10.1016\/j.rcl.2008.05.004_bib51","doi-asserted-by":"crossref","first-page":"1267","DOI":"10.1007\/s003300050833","article-title":"Non-invasive
+        evaluation of the visceral arteries with magnetic resonance angiography","volume":"9","author":"Meany","year":"1999","journal-title":"Eur
+        Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib52","doi-asserted-by":"crossref","first-page":"111","DOI":"10.1097\/00004424-200002000-00004","article-title":"First
+        clinical results of ultrafast, contrast-enhanced 2-phase 3D magnetic resonance
+        angiography technique for imaging visceral abdominal arteries and veins","volume":"35","author":"Gaa","year":"2000","journal-title":"Invest
+        Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib53","doi-asserted-by":"crossref","first-page":"257","DOI":"10.1148\/radiology.202.1.8988220","article-title":"Mesenteric
+        circulation: three-dimensional MR angiography with a gadolinium-enhanced multiecho
+        gradient-echo technique","volume":"202","author":"Shirkoda","year":"1997","journal-title":"Radiology"},{"key":"10.1016\/j.rcl.2008.05.004_bib54","doi-asserted-by":"crossref","first-page":"301","DOI":"10.1016\/j.mric.2007.06.001","article-title":"Abdominal
+        and pelvic MR angiography","volume":"15","author":"Michaely","year":"2007","journal-title":"Magn
+        Reson Imaging Clin N Am"},{"issue":"8","key":"10.1016\/j.rcl.2008.05.004_bib55","doi-asserted-by":"crossref","first-page":"1637","DOI":"10.1007\/s00330-006-0240-3","article-title":"MRA
+        of abdominal vessels: technical advances","volume":"16","author":"Michaely","year":"2006","journal-title":"Eur
+        Radiol."},{"issue":"2","key":"10.1016\/j.rcl.2008.05.004_bib56","doi-asserted-by":"crossref","first-page":"452","DOI":"10.2214\/AJR.05.1167","article-title":"CTA
+        and MRA in mesenteric ischemia: part 1. Role in diagnosis and differential
+        diagnosis","volume":"188","author":"Shih","year":"2007","journal-title":"AJR
+        Am J Roentgenol"},{"issue":"2","key":"10.1016\/j.rcl.2008.05.004_bib57","doi-asserted-by":"crossref","first-page":"462","DOI":"10.2214\/AJR.05.1168","article-title":"CTA
+        and MRA in mesenteric ischemia: part 2. Normal findings and complications
+        after surgical and endovascular treatment","volume":"188","author":"Shih","year":"2007","journal-title":"AJR
+        Am J Roentgenol."},{"key":"10.1016\/j.rcl.2008.05.004_bib58","doi-asserted-by":"crossref","first-page":"533","DOI":"10.1016\/S0221-0363(04)97626-3","article-title":"Imaging
+        of intestinal ischemia","volume":"85","author":"Van Beers","year":"2004","journal-title":"J
+        Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib59","doi-asserted-by":"crossref","first-page":"364","DOI":"10.1016\/S0887-2171(03)00074-X","article-title":"Acute
+        bowel ischemia: CT imaging findings","volume":"24","author":"Segatto","year":"2003","journal-title":"Semin
+        Ultrasound CT MR"},{"key":"10.1016\/j.rcl.2008.05.004_bib60","doi-asserted-by":"crossref","first-page":"635","DOI":"10.1148\/radiol.2263011540","article-title":"CT
+        of bowel ischemia","volume":"226","author":"Wiesner","year":"2003","journal-title":"Radiology"},{"key":"10.1016\/j.rcl.2008.05.004_bib61","doi-asserted-by":"crossref","first-page":"1463","DOI":"10.1148\/radiographics.21.6.g01nv091463","article-title":"Multi-detector
+        row CT of mesenteric ischemia: can it be done?","volume":"21","author":"Horton","year":"2001","journal-title":"Radiographics"},{"key":"10.1016\/j.rcl.2008.05.004_bib62","doi-asserted-by":"crossref","first-page":"491","DOI":"10.2214\/AJR.04.1362","article-title":"Clinical
+        significance of poor CT enhancement of the thickened small-bowel wall in patients
+        with acute abdominal pain","volume":"186","author":"Chou","year":"2006","journal-title":"AJR
+        Am J Roentgenol"},{"issue":"6","key":"10.1016\/j.rcl.2008.05.004_bib63","doi-asserted-by":"crossref","first-page":"1203","DOI":"10.1007\/s00330-005-2654-8","article-title":"Multislice
+        CT in the pre- and postinterventional evaluation of mesenteric perfusion","volume":"15","author":"Wildermuth","year":"2005","journal-title":"Eur
+        Radiol."},{"key":"10.1016\/j.rcl.2008.05.004_bib64","doi-asserted-by":"crossref","first-page":"118","DOI":"10.1053\/sroe.2001.22828","article-title":"Computed
+        tomography evaluation of intestinal ischemia","volume":"36","author":"Horton","year":"2001","journal-title":"Semin
+        Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib65","doi-asserted-by":"crossref","first-page":"18","DOI":"10.1007\/s00261-003-0073-3","article-title":"CT
+        of small bowel ischemia","volume":"29","author":"Chou","year":"2004","journal-title":"Abdom
+        Imaging"},{"key":"10.1016\/j.rcl.2008.05.004_bib66","series-title":"Textbook
+        of gastrointestinal radiology","first-page":"901","article-title":"Vascular
+        disorders of the small intestine","author":"Horton","year":"2008"},{"issue":"1","key":"10.1016\/j.rcl.2008.05.004_bib67","doi-asserted-by":"crossref","first-page":"91","DOI":"10.1148\/radiol.2291020991","article-title":"Biphasic
+        CT with mesenteric CT angiography in the evaluation of acute mesenteric ischemia:
+        initial experience","volume":"229","author":"Kirkpatrick","year":"2003","journal-title":"Radiology"},{"key":"10.1016\/j.rcl.2008.05.004_bib68","doi-asserted-by":"crossref","first-page":"161","DOI":"10.1148\/radiographics.22.1.g02ja30161","article-title":"Volume-rendered
+        3D CT of\u00a0the mesenteric vasculature: normal anatomy, anatomic variants,
+        and pathologic conditions","volume":"22","author":"Horton","year":"2002","journal-title":"Radiographics"},{"key":"10.1016\/j.rcl.2008.05.004_bib69","doi-asserted-by":"crossref","first-page":"1105","DOI":"10.2214\/ajr.176.5.1761105","article-title":"CT
+        of bowel wall thickening: significance and pitfalls of interpretation","volume":"176","author":"Macari","year":"2001","journal-title":"AJR
+        Am J\u00a0Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib70","doi-asserted-by":"crossref","first-page":"969","DOI":"10.1148\/rg.244035166","article-title":"Multi-detector
+        row CT angiography in patients with abdominal angina","volume":"24","author":"Cademartiri","year":"2004","journal-title":"Radiographics"},{"key":"10.1016\/j.rcl.2008.05.004_bib71","doi-asserted-by":"crossref","first-page":"275","DOI":"10.1016\/j.rcl.2007.03.010","article-title":"Multidetector
+        CT angiography in the diagnosis of mesenteric ischemia","volume":"45","author":"Horton","year":"2007","journal-title":"Radiol
+        Clin North Am"},{"key":"10.1016\/j.rcl.2008.05.004_bib72","doi-asserted-by":"crossref","first-page":"523","DOI":"10.1007\/s002610000050","article-title":"3D
+        CT angiography of the celiac and superior mesenteric arteries with multidetector
+        CT data sheets: preliminary observations","volume":"25","author":"Horton","year":"2000","journal-title":"Abdom
+        Imaging"},{"key":"10.1016\/j.rcl.2008.05.004_bib73","doi-asserted-by":"crossref","first-page":"87","DOI":"10.2214\/ajr.178.1.1780087","article-title":"CT
+        manifestations of bowel ischemia","volume":"178","author":"Chou","year":"2002","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib74","doi-asserted-by":"crossref","first-page":"37","DOI":"10.1016\/j.ejrad.2003.11.013","article-title":"Acute
+        bowel ischemia: CT findings","volume":"50","author":"Angelelli","year":"2004","journal-title":"Eur
+        J Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib75","doi-asserted-by":"crossref","first-page":"177","DOI":"10.2214\/ajr.180.1.1800177","article-title":"Intestinal
+        ischemia versus intramural hemorrhage: CT evaluation","volume":"180","author":"Macari","year":"2003","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib76","doi-asserted-by":"crossref","first-page":"1319","DOI":"10.2214\/ajr.177.6.1771319","article-title":"Pneumatosis
+        intestinalis and portomesenteric venous gas in intestinal ischemia: correlation
+        of CT findings with severity of ischemia and clinical outcomes","volume":"177","author":"Wiesner","year":"2001","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib77","doi-asserted-by":"crossref","first-page":"1213","DOI":"10.1148\/radiographics.20.5.g00se011213","article-title":"Portomesenteric
+        vein gas: pathologic mechanisms, CT findings, and prognosis","volume":"20","author":"Sebastia","year":"2000","journal-title":"Radiographics"},{"key":"10.1016\/j.rcl.2008.05.004_bib78","doi-asserted-by":"crossref","first-page":"1604","DOI":"10.2214\/AJR.06.1309","article-title":"Pneumatosis
+        in the adult: benign to life-threatening causes","volume":"188","author":"Ho","year":"2007","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib79","doi-asserted-by":"crossref","first-page":"279","DOI":"10.1016\/S0009-9260(02)00536-6","article-title":"CT
+        in acute mesenteric ischaemia","volume":"58","author":"Lee","year":"2003","journal-title":"Clin
+        Radiol"},{"key":"10.1016\/j.rcl.2008.05.004_bib80","doi-asserted-by":"crossref","first-page":"604","DOI":"10.1097\/00004728-200107000-00016","article-title":"CT
+        differentiation of mesenteric ischemia due to vasculitis and thromboembolic
+        disease","volume":"25","author":"Kim","year":"2001","journal-title":"J Comput
+        Assist Tomogr"},{"key":"10.1016\/j.rcl.2008.05.004_bib81","doi-asserted-by":"crossref","first-page":"1439","DOI":"10.2214\/ajr.175.5.1751439","article-title":"CT
+        of patients with right-sided colon cancer and distal ileal thickening","volume":"175","author":"Kim","year":"2000","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib82","doi-asserted-by":"crossref","first-page":"1604","DOI":"10.2214\/AJR.06.1309","article-title":"Pneumatosis
+        intestinalis in the adult: benign to life-threatening causes","volume":"188","author":"Ho","year":"2007","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib83","doi-asserted-by":"crossref","first-page":"13","DOI":"10.1148\/radiology.207.1.9530294","article-title":"Pneumatosis
+        intestinalis: a review","volume":"207","author":"Pear","year":"1998","journal-title":"Radiology"},{"key":"10.1016\/j.rcl.2008.05.004_bib84","doi-asserted-by":"crossref","first-page":"19","DOI":"10.1177\/000313480407000104","article-title":"Serum
+        lactic acid determines outcomes of CT diagnosis of pneumatosis of the gastrointestinal
+        tract","volume":"70","author":"Hawn","year":"2004","journal-title":"Am Surg"},{"key":"10.1016\/j.rcl.2008.05.004_bib85","doi-asserted-by":"crossref","first-page":"733","DOI":"10.2214\/ajr.180.3.1800733","article-title":"Pneumatosis
+        intestinalis in patients with ischemia: correlation of CT findings with viability
+        of the bowel","volume":"180","author":"Kernagis","year":"2003","journal-title":"AJR
+        Am J\u00a0Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib86","doi-asserted-by":"crossref","first-page":"951","DOI":"10.2214\/ajr.168.4.9124147","article-title":"Usefulness
+        of CT in patients with ischemic colitis proximal to colonic cancer","volume":"168","author":"Ko","year":"1997","journal-title":"AJR
+        Am J Roentgenol"},{"key":"10.1016\/j.rcl.2008.05.004_bib87","doi-asserted-by":"crossref","first-page":"729","DOI":"10.1148\/radiol.2413050965","article-title":"CT
+        of small-bowel ischemia associated with obstruction in emergency department
+        patients: diagnostic performance evaluation","volume":"241","author":"Sheedy","year":"2006","journal-title":"Radiology"}],"container-title":["Radiologic
+        Clinics of North America"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S003383890800064X?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S003383890800064X?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2023,2,11]],"date-time":"2023-02-11T07:48:16Z","timestamp":1676101696000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S003383890800064X"}},"issued":{"date-parts":[[2008,9]]},"references-count":87,"journal-issue":{"issue":"5","published-print":{"date-parts":[[2008,9]]}},"alternative-id":["S003383890800064X"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.rcl.2008.05.004","ISSN":["0033-8389"],"issn-type":[{"value":"0033-8389","type":"print"}],"subject":["Radiology,
+        Nuclear Medicine and imaging","General Medicine"],"published":{"date-parts":[[2008,9]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"Imaging in Intestinal Ischemic Disorders","name":"articletitle","label":"Article
+        Title"},{"value":"Radiologic Clinics of North America","name":"journaltitle","label":"Journal
+        Title"},{"value":"https:\/\/doi.org\/10.1016\/j.rcl.2008.05.004","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"Copyright \u00a9 2008 Elsevier Inc. All rights reserved.","name":"copyright","label":"Copyright"}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -57,11 +232,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '1489'
+      - '6990'
       content-type:
       - application/json
       date:
-      - Mon, 15 Jan 2024 19:55:58 GMT
+      - Tue, 16 Jan 2024 06:48:40 GMT
       permissions-policy:
       - interest-cohort=()
       server:

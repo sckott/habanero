@@ -16,20 +16,13 @@ interactions:
     uri: https://api.crossref.org/types/journal/works?rows=2
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAA/7VVy1LbMBT9FY/WliP5he0dQxcNtJShYdEmWQhbYCW25UoyIZPJv/fKCSGF0Bew
-        s3Sf5+ge3xXShplOowzJOXJRzbVmtxybZcvhbiHVHFdCmz3THVdayAas1CMeebSgbIVuWM4NZFut
-        XWSkYRVWXHeVvYoJjUIXCcNrOI1XSDQFv+eFDSuY4bhlyvqNxz7xfTd0g+nU3ViMqG039h6TEJNg
-        RGgWhllIv0N5awUUdYsyGodJGhE/oelRDC0ofsMVb3KOc9k1BmXERW13DYhKriDjcVUJXjjHOSt4
-        LbiGbLlsDG8MLmTNRNM3t/0aQzu5klrXDFgBXEaJ3PRU3LBKc6j34cvQ8kK8IEpCOhmIuu4aWcnb
-        Jc6Z5hDUSgsSmt4QPJOdalhl6yoOUA+yQVM3cWn8nA6aYpJgGo8oyWiQRdFTOqI4AjrCICKEQHsa
-        quU29MTCAHLAXWi8Y6nA18s9powwFXiP0XAHwzkBGM7lFgY01EKwuN8D3c9Dfd3T61MoDhcF+Gvx
-        7uhyqSASZtI+/APWFbQo4MWW9vPq8hOkLo1ps8lgMlgsFh7rR4A9TIAn1e2L7zYZoLUtVMIB79h5
-        wdmz9Aitu0Owm66qptP9CdV7xD9ps7j3Cik2nf15ttbu66V1lNHwsLTCIAwT/y+kdXp1PnTOPn47
-        Hr2ZqMI48pPJYDb/R/34xI3d6ABkgkmMSTSiaUbiLAieDVhKgyRI0+B18jntGuGclUtmnNNtv0+U
-        0yP7RTlbKf1WOW+G67+EMwNUcwvKy2V9WBmPwN9LC/sjMfz69dxW9f2jBIdx4G+LNtttBivnjlVd
-        z9HOZTdJABYqriFEd9cznhub6kIv81Iwo5YOawrnM8wwq5ySs8qUEHrOOyVb67P5OVqfi3IJ6xGO
-        IgfXi50RTW3ufvvhliuAbzem76IfHd9wDK8D5PXS7ZFrzlReYsOVXZiWpfV6/RPdZlQVsQcAAA==
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":60172,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:41Z","timestamp":1648950281976},"reference-count":0,"publisher":"Allied
+        Academies","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.35841\/immunology-case-reports","type":"journal","created":{"date-parts":[[2019,8,16]],"date-time":"2019-08-16T10:13:55Z","timestamp":1565950435000},"source":"Crossref","is-referenced-by-count":0,"title":["Immunology
+        Case Reports"],"prefix":"10.35841","member":"21504","deposited":{"date-parts":[[2019,8,16]],"date-time":"2019-08-16T10:13:55Z","timestamp":1565950435000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.alliedacademies.org\/immunology-case-reports\/"}},"short-title":["immunology-case-reports."],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.35841\/immunology-case-reports"},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:47:14Z","timestamp":1648950434482},"reference-count":0,"publisher":"JUNI
+        KHYAT","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.46528\/jk","type":"journal","created":{"date-parts":[[2020,6,5]],"date-time":"2020-06-05T19:06:33Z","timestamp":1591383993000},"source":"Crossref","is-referenced-by-count":0,"title":["Juni
+        Khyat Journal"],"prefix":"10.46528","member":"25841","deposited":{"date-parts":[[2020,6,5]],"date-time":"2020-06-05T19:06:33Z","timestamp":1591383993000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.junikhyat.com\/"}},"short-title":["Juni
+        Khyat"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.46528\/jk","ISSN":["2278-4632"],"issn-type":[{"value":"2278-4632","type":"print"}],"subject":["Psychiatry
+        and Mental health","Neuropsychology and Physiological Psychology"]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -43,11 +36,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '739'
+      - '740'
       content-type:
       - application/json
       date:
-      - Mon, 15 Jan 2024 19:58:23 GMT
+      - Tue, 16 Jan 2024 06:49:54 GMT
       permissions-policy:
       - interest-cohort=()
       server:
