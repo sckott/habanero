@@ -9,9 +9,9 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -23,7 +23,7 @@ interactions:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 798e707bdafcc535-SEA
+      - 846237a9ce66c729-SEA
       Connection:
       - keep-alive
       Content-Length:
@@ -31,19 +31,19 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Mon, 13 Feb 2023 15:01:27 GMT
+      - Tue, 16 Jan 2024 00:24:46 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Lp0f2s0BCWjyJnrfOCI2IF9JWrgZtwP76yMzIqNDKfgB6RyOPvecm0LM6V5ZEM0T1VSSx4NPCvcwESpCi%2F%2FDwIpHv7ciXZiOYedovJGroeqeJYKedg3q%2Bo4%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=O%2Brl6%2BdCOaweh84H8VONAC5%2BZ8D1qZRORyOkxXK9kaPPFqfUHZYXEttYD89kfK5V5gncbnNvQHUuSKHK2X1dvgGftRCvfnjRdCXyBuDoV7dbNmlBfNvIWW8%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      - h3=":443"; ma=86400
       expires:
-      - Mon, 13 Feb 2023 15:11:49 GMT
+      - Tue, 16 Jan 2024 01:00:47 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
@@ -63,19 +63,19 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
     body:
-      string: "@article{Frank_1970,\n\tdoi = {10.1126/science.169.3946.635},\n\turl
-        = {https://doi.org/10.1126%2Fscience.169.3946.635},\n\tyear = 1970,\n\tmonth
-        = {aug},\n\tpublisher = {American Association for the Advancement of Science
-        ({AAAS})},\n\tvolume = {169},\n\tnumber = {3946},\n\tpages = {635--641},\n\tauthor
-        = {Henry S. Frank},\n\ttitle = {The Structure of Ordinary Water},\n\tjournal
-        = {Science}\n}"
+      string: " @article{Frank_1970, title={The Structure of Ordinary Water: New data
+        and interpretations are yielding new insights into this fascinating substance.},
+        volume={169}, ISSN={1095-9203}, url={http://dx.doi.org/10.1126/science.169.3946.635},
+        DOI={10.1126/science.169.3946.635}, number={3946}, journal={Science}, publisher={American
+        Association for the Advancement of Science (AAAS)}, author={Frank, Henry S.},
+        year={1970}, month=aug, pages={635\u2013641} }\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -89,9 +89,9 @@ interactions:
       content-type:
       - application/x-bibtex
       date:
-      - Mon, 13 Feb 2023 15:01:27 GMT
+      - Tue, 16 Jan 2024 00:24:46 GMT
       link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://syndication.highwire.org/content/doi/10.1126/science.169.3946.635>;
+      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://www.science.org/doi/pdf/10.1126/science.169.3946.635>;
         version="vor"; rel="item"
       permissions-policy:
       - interest-cohort=()
@@ -124,61 +124,138 @@ interactions:
       Connection:
       - keep-alive
       User-Agent:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
       X-USER-AGENT:
-      - python-requests/2.28.1 habanero/1.2.4
+      - python-requests/2.31.0 habanero/1.2.5
     method: GET
     uri: https://doi.org/foo
   response:
     body:
-      string: !!binary |
-        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
+      string: "<!DOCTYPE html>\n<html lang=\"en-us\">\n<head>\n\n    <meta charset=\"UTF-8\">\n
+        \   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n
+        \   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>Error:
+        DOI Not Found</title>\n\n\n\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\"\n
+        \         rel=\"stylesheet\"\n          integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\"\n
+        \         crossorigin=\"anonymous\">\n    <script\n            src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\"\n
+        \           integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\"\n
+        \           crossorigin=\"anonymous\">\n    </script>\n\n    <script src=\"https://kit.fontawesome.com/731b8140c4.js\"
+        crossorigin=\"anonymous\"></script>\n\n    <link rel=\"stylesheet\" href=\"/static/css/style.css\"
+        integrity=\"\">\n\n    <style>\n        @import url(\"https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100&display=swap\");\n
+        \   </style>\n\n    <link rel=\"icon\" sizes=\"48x48\" href=\"/static/images/favicons/favicon.ico\">\n
+        \   <link rel=\"icon\" sizes=\"32x32\" href=\"/static/images/favicons/favicon-32x32.png\">\n
+        \   <link rel=\"icon\" sizes=\"16x16\" href=\"/static/images/favicons/favicon-16x16.png\">\n
+        \   <link rel=\"apple-touch-icon-precomposed\" href=\"/static/images/favicons/apple-touch-icon.png\">\n
+        \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"192x192\" href=\"/static/images/favicons/android-chrome-192x192.png\">\n
+        \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"512x512\" href=\"/static/images/favicons/android-chrome-512x512.png\">\n\n</head>\n<body
+        class=\"generic-page\">\n<header>\n    <div class=\"row\">\n        <div class=\"col
+        logo\">\n            <a href=\"https://www.doi.org\"><img class=\"header-logo\"
+        src=\"/static/images/logos/header_logo_cropped.svg\" /></a>\n        </div>\n
+        \       <div class=\"col home-link\">\n            <div class=\"link-alt\">\n
+        \               <a href=\"https://www.doi.org\">\n                    <span>VISIT
+        DOI.ORG</span>\n                    <i class=\"fa-solid fa-arrow-right-long
+        hover-move-right\"></i>\n                </a>\n            </div>\n        </div>\n
+        \   </div>\n\n</header>\n\n\n<main aria-role=\"main\">\n    <header class=\"homepage-header\">\n
+        \   </header>\n    <div class=\"homepage-content\">\n\n        <section class=\"single-top\">\n
+        \           <div class=\"row short\"></div>\n        </section>\n\n        <div
+        class=\"page-content\">\n            <article>\n                <div>\n                    <h2>DOI
+        Not Found</h2>\n\n                    \n\n                    <h3>10/foo</h3>\n\n
+        \                   \n                    \n                    \n                    <p>This
+        DOI cannot be found in the DOI System.  Possible reasons are:</p>\n                    \n\n
+        \                   <ul>\n                        <li style=\"padding-bottom:
+        .5em;\">The DOI is incorrect in your source. Search for the item by name,
+        title, or other metadata using a search engine.</li>\n                        <li
+        style=\"padding-bottom: .5em;\">The DOI was copied incorrectly. Check to see
+        that the string includes all the characters before and after the slash and
+        no sentence punctuation marks.</li>\n                        <li style=\"padding-bottom:
+        .5em;\">The DOI has not been activated yet. Please try again later, and report
+        the problem if the error continues.</li>\n                    </ul>\n                    \n
+        \                   \n                </div>\n            </article>\n        </div>\n\n
+        \       <section class=\"home-infos\">\n            <div class=\"row\">\n
+        \               <div class=\"col \">\n                    <h2 class=\"title\">WHAT
+        CAN I DO NEXT?</h2>\n                    <ul>\n                        <li>If
+        you believe this DOI is valid, you may <strong>report this error</strong>
+        to the responsible DOI Registration Agency using the form here.</li>\n                        <li>You
+        can try to search again from <a href=\"https://www.doi.org\">DOI.ORG homepage</a></li>\n
+        \                   </ul>\n                </div>\n                <div class=\"col
+        form\">\n                    <h2 class=\"title\"><img src=\"/static/images/exclamation.svg\">REPORT
+        AN ERROR</h2>\n                    <form action=\"/notfound\" method=\"post\"
+        enctype=\"application/x-www-form-urlencoded\" name=\"notFoundForm\" onsubmit=\"return
+        submitDoiNotFound(event);\">\n                        <div class=\"row\">\n
+        \                           <div class=\"col\"><label for=\"missingHandle\">DOI:</label></div>\n
+        \                           <div class=\"col\"><input id=\"missingHandle\"
+        name=\"missingHandle\" value=\"10/foo\" type=\"text\" readonly=\"readonly\"></div>\n
+        \                       </div>\n                        <div class=\"row\">\n
+        \                           <div class=\"col\"><label for=\"referringPage\">URL
+        of Web Page Listing the DOI:</label></div>\n                            <div
+        class=\"col\"><input id=\"referringPage\" name=\"referringPage\" type=\"text\"
+        ></div>\n                        </div>\n                        <div class=\"row\">\n
+        \                           <div class=\"col\"><label for=\"userEmailAddress\">Your
+        Email Address:</label></div>\n                            <div class=\"col\"><input
+        id=\"userEmailAddress\" name=\"userEmailAddress\" type=\"text\" /></div>\n
+        \                       </div>\n                        <div class=\"row\">\n
+        \                           <div class=\"col\"><label for=\"comments\">Additional
+        Information About the Error:</label></div>\n                            <div
+        class=\"col\"><textarea id=\"comments\" name=\"comments\"></textarea></div>\n
+        \                       </div>\n                        <div class=\"row\">\n
+        \                           <div class=\"col\"></div>\n                            <div
+        class=\"col\"><input class=\"submit\" type=\"submit\" value=\"Submit Error
+        Report\"></div>\n                        </div>\n                        <div
+        class=\"row\">\n                            <p id=\"invalidDoi\" style=\"display:
+        none; background:#F5B7B1; border-radius: 5px;\">The DOI entered is not a valid
+        DOI: it should start with 10 followed by a dot, and contain a slash with no
+        preceding whitespace.</p>\n                            <p id=\"invalidEmail\"
+        style=\"display: none; background:#F5B7B1; border-radius: 5px;\">The email
+        address entered is invalid.</p>\n                            <p id=\"fallback\"
+        style=\"display: none;\">Please <a href=\"mailto:doi-help@doi.org?subject=DOI%20Not%20Found\">contact
+        us</a> if you wish to report this anyway.</p>\n                        </div>\n
+        \                   </form>\n                </div>\n            </div>\n\n
+        \       </section>\n    </div>\n    \n    \n</main>\n\n<footer>\n    <div
+        class=\"row\">\n        <div class=\"col footer-left\">\n            <a href=\"https://www.doi.org\"><img
+        class=\"footer-logo\" src=\"/static/images/logos/footer_logo_cropped.svg\"
+        /></a>\n        </div>\n        <div class=\"col footer-right\">\n            <div
+        class=\"row more-info-heading\">\n                <div class=\"col\">\n                    <h2>More
+        information on DOI resolution:</h2>\n                </div>\n            </div>\n
+        \           <div class=\"row\">\n                <div class=\"col\">\n                    <ul>\n
+        \                       <li><a href=\"https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation\">DOI
+        Resolution Factsheet</a></li>\n                    </ul>\n                </div>\n
+        \               <div class=\"col\">\n                    <ul>\n                        <li><a
+        href=\"https://www.doi.org/the-identifier/resources/handbook\">The DOI Handbook</a></li>\n
+        \                   </ul>\n                </div>\n                <div class=\"col\">\n
+        \                   <ul>\n                        <li><a href=\"https://www.doi.org/privacy-policy/\">Privacy
+        Policy</a></li>\n                    </ul>\n                </div>\n            </div>\n
+        \       </div>\n\n    </div>\n    <div class=\"row\">\n        <div class=\"col
+        copyright\">\n            <p>Copyright \xA9 2023 DOI Foundation. <i class=\"fa-brands
+        fa-fw fa-creative-commons\"></i><i class=\"fa-brands fa-fw fa-creative-commons-by\"></i>
+        The content of this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\"
+        title=\"Creative Commons\" target=\"_blank\">Creative Commons Attribution
+        4.0 International License</a>.</p><p>DOI&reg;, DOI.ORG&reg;, and shortDOI&reg;
+        are trademarks of the DOI Foundation.</p>\n        </div>\n        <div class=\"col
+        socials\">\n            <ul class=\"socials-footer\">\n\n                <li><a
+        href=\"https://twitter.com/DOI_Foundation\"><i class=\"fa-brands fa-fw fa-twitter\"></i></a></li>\n\n
+        \               <li><a href=\"https://www.linkedin.com/company/doi-foundation-inc/\"><i
+        class=\"fa-brands fa-fw fa-linkedin\"></i></a></li>\n\n                <li><a
+        href=\"mailto:info@doi.org\"><i class=\"fa-solid fa-fw fa-envelope\"></i></a></li>\n\n
+        \           </ul>\n        </div>\n    </div>\n</footer>\n\n<script type=\"text/javascript\">\n
+        \   function submitDoiNotFound(event) {\n        try {\n            document.getElementById(\"invalidEmail\").style.display
+        = \"none\";\n            document.getElementById(\"invalidDoi\").style.display
+        = \"none\";\n            document.getElementById(\"fallback\").style.display
+        = \"none\";\n\n            const missingHandle = document.getElementById('missingHandle').value.trim();\n
+        \           const userEmailAddress = document.getElementById('userEmailAddress').value.trim();\n\n
+        \           if (!validateDoi(missingHandle)) {\n                event.preventDefault();\n
+        \               document.getElementById(\"invalidDoi\").style.display = \"block\";\n
+        \               document.getElementById(\"fallback\").style.display = \"block\";\n
+        \               return false;\n            }\n            if (!validateEmail(userEmailAddress))
+        {\n                event.preventDefault();\n                document.getElementById(\"invalidEmail\").style.display
+        = \"block\";\n                return false;\n            }\n        } catch
+        (error) {\n            // ignore\n        }\n    }\n\n    function validateEmail(email)
+        {\n        const regEx = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n        return
+        regEx.test(email);\n    }\n\n    function validateDoi(doi) {\n        const
+        regEx = /^10(?:\\.[^\\s\\/]+)?\\//;\n        return regEx.test(doi);\n    }\n</script>\n\n</body>\n</html>\n"
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 798e707f3aba6811-SEA
+      - 846237ae5d0ec4bb-SEA
       Connection:
       - keep-alive
       Content-Encoding:
@@ -186,11 +263,11 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Mon, 13 Feb 2023 15:01:27 GMT
+      - Tue, 16 Jan 2024 00:24:47 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9aqOR6lE2PNWDzYqn2daq5ZtD3V8vdMfxRBKGapoNqbqeq4Ye31fLAtTg4Q8D2%2Fd4ZyZsBN35hbY3rKMltp8oFK7er7QBmfOgmC1bwLk7GH58vuXLc9TDoA%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=G4LxdVjwxXeG4Rvo0WxHz5dabBb9ItTrhnQ28RqMPBPG3BTXEKf1RzoahiaYsiwm887AaCer%2BC4IT9bFIDkSsrINDmMd238Lpt%2B5iQikGu%2F9469zODYjVOs%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -198,7 +275,7 @@ interactions:
       Transfer-Encoding:
       - chunked
       alt-svc:
-      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+      - h3=":443"; ma=86400
     status:
       code: 404
       message: Not Found

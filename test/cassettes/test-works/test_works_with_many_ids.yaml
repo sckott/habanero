@@ -16,11 +16,11 @@ interactions:
     uri: https://api.crossref.org/works/10.1016/j.neurobiolaging.2010.03.024
   response:
     body:
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2023,9,18]],"date-time":"2023-09-18T01:50:46Z","timestamp":1695001846717},"reference-count":57,"publisher":"Elsevier
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,1,15]],"date-time":"2024-01-15T03:38:06Z","timestamp":1705289886457},"reference-count":57,"publisher":"Elsevier
         BV","issue":"3","license":[{"start":{"date-parts":[[2012,3,1]],"date-time":"2012-03-01T00:00:00Z","timestamp":1330560000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/501100004085","name":"Ministry
         of Education, Science and Technology","doi-asserted-by":"crossref","award":["R32-10064"]},{"name":"Stem
         Cell Research Center","award":["SC4170"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Neurobiology
-        of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":207,"title":["Human
+        of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":210,"title":["Human
         umbilical cord blood-derived mesenchymal stem cells improve neuropathology
         and cognitive impairment in an Alzheimer''s disease mouse model through modulation
         of neuroinflammation"],"prefix":"10.1016","volume":"33","author":[{"given":"Hyun
@@ -171,7 +171,7 @@ interactions:
         and amyloid-beta peptide neurotoxicity in Alzheimer''s disease","volume":"382","author":"Yan","year":"1996","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib57","doi-asserted-by":"crossref","first-page":"1176","DOI":"10.1111\/j.1471-4159.2006.04172.x","article-title":"Protective
         effects of an anti- inflammatory cytokine, interleukin-4, on motoneuron toxicity
         induced by activated microglia","volume":"99","author":"Zhao","year":"2006","journal-title":"J.
-        Neurochem"}],"container-title":["Neurobiology of Aging"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2023,6,1]],"date-time":"2023-06-01T06:17:39Z","timestamp":1685600259000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0197458010001570"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2012,3]]}},"alternative-id":["S0197458010001570"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}],"subject":["Geriatrics
+        Neurochem"}],"container-title":["Neurobiology of Aging"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2023,6,1]],"date-time":"2023-06-01T06:17:39Z","timestamp":1685600259000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0197458010001570"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2012,3]]}},"alternative-id":["S0197458010001570"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{"has-review":[{"id-type":"doi","id":"10.3410\/f.3904957.3650055","asserted-by":"object"}]},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}],"subject":["Geriatrics
         and Gerontology","Developmental Biology","Neurology (clinical)","Aging","General
         Neuroscience"],"published":{"date-parts":[[2012,3]]}}}'
     headers:
@@ -187,11 +187,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '6251'
+      - '6303'
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:31:39 GMT
+      - Tue, 16 Jan 2024 06:50:36 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -228,56 +228,72 @@ interactions:
     uri: https://api.crossref.org/works/10.1002/jor.1100150407
   response:
     body:
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2023,7,26]],"date-time":"2023-07-26T08:43:59Z","timestamp":1690361039948},"reference-count":36,"publisher":"Wiley","issue":"4","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":6636,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-        Orthop. Res."],"published-print":{"date-parts":[[1997,7]]},"DOI":"10.1002\/jor.1100150407","type":"journal-article","created":{"date-parts":[[2005,2,24]],"date-time":"2005-02-24T10:47:51Z","timestamp":1109242071000},"page":"519-527","source":"Crossref","is-referenced-by-count":19,"title":["Growth
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2023,10,28]],"date-time":"2023-10-28T09:44:50Z","timestamp":1698486290217},"reference-count":36,"publisher":"Wiley","issue":"4","license":[{"start":{"date-parts":[[2005,2,18]],"date-time":"2005-02-18T00:00:00Z","timestamp":1108684800000},"content-version":"vor","delay-in-days":2789,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":["onlinelibrary.wiley.com"],"crossmark-restriction":true},"short-container-title":["Journal
+        Orthopaedic Research"],"published-print":{"date-parts":[[1997,7]]},"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Twenty\u2010two
+        beagles were divided into two equal groups, and the right hindlimb of each
+        animal was immobilized at 105\u00b0 of knee flexion by external fixation.
+        After 10 weeks of fixation, the device was removed, allowing free mobility
+        for the following 5 weeks. Each day throughout the 15 weeks, one group received
+        a growth hormone secretagogue (treatment) at a dose of 5 mg\/kg, and the other
+        received a lactose placebo (control). At weeks 0, 10, and 15, strength as
+        indicated by maximum isometric extension torque was measuredin the right hindlimb,
+        biopsies of the vastus lateralis muscle were taken, and the dogs were weighed.
+        Weekly blood samples were analyzed for insulin\u2010like growth factor\u2010I,
+        blood urea nitrogen, and creatine phosphokaase. Between weeks 0 and 10, tetanic
+        torque declined by about 60% (p &lt; 0.001) in both groups, with no significant
+        difference between the groups (p &gt; 0.7). Between weeks 10 and 15, tetanic
+        torque in the treated group increased by 0.81 Nm; this was significantly greater
+        than the increase of 0.25 Nm in the placebo group (p &lt; 0.05). The diameters
+        of slow (type\u20101) and fast (type\u20102) fibers measured from the vastus
+        lateralis muscle followed the same trend. At all time points, fiber diameter
+        correlated strongly with torque; this argues against nonmuscular causes such
+        as nerve injury for strength loss. The mean levels of insulin\u2010like growth
+        factor\u20101 increased 100% by week 4 in the treated group and remained elevated
+        by about 60% throughout the experiment. Levels of insulin\u2010like growth
+        factor\u20101 in the placebo group decreased 30% within week 1 and remained
+        depressed throughout the experiment. Our interpretation of these data suggests
+        that the growth hormone secretagogue elevated levels of serum insulin\u2010like
+        growth factor\u20101, which in turn increased the size and strength of the
+        quadriceos muscle during remobilization. These data may ultimately have therapeutic
+        application to humans during rehabilitation after prolonged inactivity.<\/jats:p>","DOI":"10.1002\/jor.1100150407","type":"journal-article","created":{"date-parts":[[2005,2,24]],"date-time":"2005-02-24T10:47:51Z","timestamp":1109242071000},"page":"519-527","update-policy":"http:\/\/dx.doi.org\/10.1002\/crossmark_policy","source":"Crossref","is-referenced-by-count":19,"title":["Growth
         hormone secretagogue increases muscle strength during remobilization after
         canine hindlimb immobilization"],"prefix":"10.1002","volume":"15","author":[{"given":"Richard
         L.","family":"Lieber","sequence":"first","affiliation":[]},{"given":"Thomas
         M.","family":"Jacks","sequence":"additional","affiliation":[]},{"given":"Randall
         L.","family":"Mohler","sequence":"additional","affiliation":[]},{"given":"Klaus","family":"Schleim","sequence":"additional","affiliation":[]},{"given":"Michelle","family":"Haven","sequence":"additional","affiliation":[]},{"given":"Denise","family":"Cuizon","sequence":"additional","affiliation":[]},{"given":"David
         H.","family":"Gershuni","sequence":"additional","affiliation":[]},{"given":"Michael
-        A.","family":"Lopez","sequence":"additional","affiliation":[]},{"given":"Donald","family":"Hora","sequence":"additional","affiliation":[]},{"given":"Ravi","family":"Nargund","sequence":"additional","affiliation":[]},{"given":"William","family":"Feeney","sequence":"additional","affiliation":[]},{"given":"Gerard
-        J.","family":"Hickey","sequence":"additional","affiliation":[]}],"member":"311","reference":[{"key":"10.1002\/jor.1100150407-BIB1","doi-asserted-by":"crossref","first-page":"975","DOI":"10.1111\/j.1532-5415.1993.tb06764.x","volume":"41","author":"Abbasi","year":"1993","journal-title":"J
-        Am Geriatr Soc"},{"key":"10.1002\/jor.1100150407-BIB2","first-page":"123","volume":"342","author":"Booth","year":"1973","journal-title":"Pfluers
-        Arch"},{"key":"10.1002\/jor.1100150407-BIB3","doi-asserted-by":"crossref","first-page":"435","DOI":"10.1152\/jappl.1979.47.2.435","volume":"47","author":"Booth","year":"1979","journal-title":"J
-        Appl Physiol"},{"key":"10.1002\/jor.1100150407-BIB4","doi-asserted-by":"crossref","first-page":"3253","DOI":"10.1210\/endo.137.8.8754747","volume":"137","author":"Borski","year":"1996","journal-title":"Endocrinology"},{"key":"10.1002\/jor.1100150407-BIB5","doi-asserted-by":"crossref","first-page":"502","DOI":"10.1096\/fasebj.10.4.8647349","volume":"10","author":"Clarke","year":"1996","journal-title":"FASEB
-        J"},{"key":"10.1002\/jor.1100150407-BIB6","doi-asserted-by":"crossref","first-page":"115","DOI":"10.1016\/0014-4886(75)90036-9","volume":"46","author":"Edgerton","year":"1975","journal-title":"Exp
-        Neurol"},{"key":"10.1002\/jor.1100150407-BIB7","doi-asserted-by":"crossref","first-page":"63","DOI":"10.1016\/S0363-5023(09)91107-8","volume":"15","author":"Feehan","year":"1990","journal-title":"J
-        Hand Surg [Am]"},{"key":"10.1002\/jor.1100150407-BIB8","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1016\/0014-4886(83)90011-0","volume":"80","author":"Fournier","year":"1983","journal-title":"Exp
-        Neurol"},{"key":"10.1002\/jor.1100150407-BIB9","first-page":"e331","volume":"267","author":"Fryburg","year":"1994","journal-title":"Am
-        J Physiol"},{"key":"10.1002\/jor.1100150407-BIB10","doi-asserted-by":"crossref","first-page":"215","DOI":"10.1097\/00003086-198204000-00037","volume":"164","author":"Gould","year":"1982","journal-title":"Clin
-        Orthop"},{"key":"10.1002\/jor.1100150407-BIB11","doi-asserted-by":"crossref","first-page":"695","DOI":"10.1210\/endo.134.2.8299565","volume":"134","author":"Hickey","year":"1994","journal-title":"Endocrinology"},{"key":"10.1002\/jor.1100150407-BIB12","doi-asserted-by":"crossref","first-page":"183","DOI":"10.1677\/joe.0.1520183","volume":"152","author":"Hickey","year":"1997","journal-title":"J
-        Endocrinol"},{"key":"10.1002\/jor.1100150407-BIB13","doi-asserted-by":"crossref","first-page":"399","DOI":"10.1677\/joe.0.1430399","volume":"143","author":"Jacks","year":"1994","journal-title":"J
-        Endocrinol"},{"key":"10.1002\/jor.1100150407-BIB14","doi-asserted-by":"crossref","first-page":"5284","DOI":"10.1210\/endo.137.12.8940347","volume":"137","author":"Jacks","year":"1996","journal-title":"Endocrinology"},{"key":"10.1002\/jor.1100150407-BIB15","doi-asserted-by":"crossref","first-page":"494","DOI":"10.1093\/ptj\/63.4.494","volume":"63","author":"Laughman","year":"1983","journal-title":"Phys
-        Ther"},{"key":"10.1002\/jor.1100150407-BIB16","doi-asserted-by":"crossref","first-page":"27","DOI":"10.1016\/0010-468X(81)90081-7","volume":"13","author":"Lieber","year":"1981","journal-title":"Comp
-        Prog Biomed"},{"key":"10.1002\/jor.1100150407-BIB17","doi-asserted-by":"crossref","first-page":"c759","DOI":"10.1152\/ajpcell.1988.254.6.C759","volume":"254","author":"Lieber","year":"1988","journal-title":"Am
-        J Physiol"},{"key":"10.1002\/jor.1100150407-BIB18","doi-asserted-by":"crossref","first-page":"c769","DOI":"10.1152\/ajpcell.1988.254.6.C769","volume":"254","author":"Lieber","year":"1988","journal-title":"Am
-        J Physiol"},{"key":"10.1002\/jor.1100150407-BIB19","doi-asserted-by":"crossref","first-page":"408","DOI":"10.1002\/jor.1100070313","volume":"7","author":"Lieber","year":"1989","journal-title":"J
-        Orthop Res"},{"key":"10.1002\/jor.1100150407-BIB20","doi-asserted-by":"crossref","first-page":"874","DOI":"10.1152\/jn.1994.71.3.874","volume":"71","author":"Lieber","year":"1994","journal-title":"J.
-        Neurophysiol"},{"key":"10.1002\/jor.1100150407-BIB21","doi-asserted-by":"crossref","first-page":"331","DOI":"10.1016\/0021-9290(95)00055-0","volume":"29","author":"Loren","year":"1996","journal-title":"J
-        Biomech"},{"key":"10.1002\/jor.1100150407-BIB22","doi-asserted-by":"crossref","first-page":"271","DOI":"10.1016\/0021-9290(90)90017-W","volume":"23","author":"Mai","year":"1990","journal-title":"J
-        Biomech"},{"key":"10.1002\/jor.1100150407-BIB23","first-page":"869","volume":"80","author":"Mauras","year":"1995","journal-title":"J
-        Clin Endocrinol Metab"},{"key":"10.1002\/jor.1100150407-BIB24","first-page":"1097","volume":"140","author":"McNeil","year":"1992","journal-title":"Am
-        J Pathol"},{"key":"10.1002\/jor.1100150407-BIB25","doi-asserted-by":"crossref","first-page":"149","DOI":"10.1111\/j.1532-5415.1993.tb02049.x","volume":"41","author":"Morley","year":"1993","journal-title":"J
-        Am Geriatr Soc"},{"key":"10.1002\/jor.1100150407-BIB26","author":"Nachlas","year":"1957","unstructured":":
-        Cytochemical demonstration of succinic dehydrogenase by the use of a new p-nitrophenyl
-        substituted ditetrazole. J Histochem Cytochem insert: 420-436, 1957"},{"key":"10.1002\/jor.1100150407-BIB27","doi-asserted-by":"crossref","first-page":"7001","DOI":"10.1073\/pnas.92.15.7001","volume":"92","author":"Patchett","year":"1995","journal-title":"Proc
-        Natl Acad Sci U S A"},{"key":"10.1002\/jor.1100150407-BIB28","volume-title":"Histochemistry:
-        Theoretical and Applied","author":"Pearse","year":"1961","unstructured":":
-        Histochemistry: Theoretical and Applied, 2nd ed. Boston, Little, Brown, 1961"},{"key":"10.1002\/jor.1100150407-BIB29","volume-title":"Biometry","author":"Sokal","year":"1981","unstructured":":
-        Biometry, 2nd ed. San Francisco, Freeman, 1981"},{"key":"10.1002\/jor.1100150407-BIB30","doi-asserted-by":"crossref","first-page":"231","DOI":"10.1113\/jphysiol.1972.sp009891","volume":"224","author":"Tabary","year":"1972","journal-title":"J
-        Physiol (Lond)"},{"key":"10.1002\/jor.1100150407-BIB31","first-page":"277","volume":"72","author":"Tabary","year":"1976","journal-title":"J
-        Physiol (Paris)"},{"key":"10.1002\/jor.1100150407-BIB32","first-page":"1092","volume":"75","author":"Tenover","year":"1992","journal-title":"J
-        Clin Endocrinol Metab"},{"key":"10.1002\/jor.1100150407-BIB33","first-page":"101","volume-title":"Point
-        Counting Methods: Practical Methods for Biological Morphometry","volume":"2","author":"Weibel","year":"1979","unstructured":":
-        Point Counting Methods: Practical Methods for Biological Morphometry, vol
-        2, pp 101-161. London, Academic Press, 1979"},{"key":"10.1002\/jor.1100150407-BIB34","volume-title":"Small
-        Animal Clinical Diagnosis by Laboratory Methods","author":"Willard","year":"1989","unstructured":":
-        Small Animal Clinical Diagnosis by Laboratory Methods. San Francisco, Saunders,
-        1989"},{"key":"10.1002\/jor.1100150407-BIB35","first-page":"459","volume":"127","author":"Williams","year":"1978","journal-title":"J
-        Anat"},{"key":"10.1002\/jor.1100150407-BIB36","first-page":"359","volume":"17","author":"Zajac","year":"1989","journal-title":"Crit
-        Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/jor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,5,2]],"date-time":"2023-05-02T09:16:32Z","timestamp":1683018992000},"score":1,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/jor.1100150407"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1997,7]]}},"URL":"http:\/\/dx.doi.org\/10.1002\/jor.1100150407","relation":{},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":["Orthopedics
-        and Sports Medicine"],"published":{"date-parts":[[1997,7]]}}}'
+        A.","family":"Lopez","sequence":"additional","affiliation":[]},{"suffix":"Jr.","given":"Donald","family":"Hora","sequence":"additional","affiliation":[]},{"given":"Ravi","family":"Nargund","sequence":"additional","affiliation":[]},{"given":"William","family":"Feeney","sequence":"additional","affiliation":[]},{"given":"Gerard
+        J.","family":"Hickey","sequence":"additional","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2005,2,18]]},"reference":[{"key":"e_1_2_1_2_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1532-5415.1993.tb06764.x"},{"key":"e_1_2_1_3_2","doi-asserted-by":"publisher","DOI":"10.1007\/BF00591371"},{"key":"e_1_2_1_4_2","doi-asserted-by":"crossref","first-page":"435","DOI":"10.1152\/jappl.1979.47.2.435","article-title":"Recovery
+        of skeletal muscle after 3 mo of hindlimb immobilization in rats","volume":"47","author":"Booth
+        FW","year":"1979","journal-title":"J Appl Physiol"},{"key":"e_1_2_1_5_2","doi-asserted-by":"publisher","DOI":"10.1210\/en.137.8.3253"},{"key":"e_1_2_1_6_2","doi-asserted-by":"publisher","DOI":"10.1096\/fasebj.10.4.8647349"},{"key":"e_1_2_1_7_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(75)90036-9"},{"key":"e_1_2_1_8_2","doi-asserted-by":"publisher","DOI":"10.1016\/S0363-5023(09)91107-8"},{"key":"e_1_2_1_9_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(83)90011-0"},{"key":"e_1_2_1_10_2","first-page":"E331","article-title":"Insulin\u2010like
+        growth factor I exerts growth hormone\u2010 and insulin\u2010like actions
+        on human muscle protein metabolism","volume":"267","author":"Fryburg DA","year":"1994","journal-title":"Am
+        J Physiol"},{"key":"e_1_2_1_11_2","doi-asserted-by":"crossref","first-page":"215","DOI":"10.1097\/00003086-198204000-00037","article-title":"Transcutaneous
+        muscle stimulation as a method to retard disuse atrophy","volume":"164","author":"Gould
+        N","year":"1982","journal-title":"Clin Orthop"},{"key":"e_1_2_1_12_2","doi-asserted-by":"publisher","DOI":"10.1210\/en.134.2.695"},{"key":"e_1_2_1_13_2","doi-asserted-by":"publisher","DOI":"10.1677\/joe.0.1520183"},{"key":"e_1_2_1_14_2","doi-asserted-by":"publisher","DOI":"10.1677\/joe.0.1430399"},{"key":"e_1_2_1_15_2","doi-asserted-by":"crossref","first-page":"5284","DOI":"10.1210\/endo.137.12.8940347","article-title":"MK\u20100677,
+        a potent, novel, orally active growth hormone (GH) secretagogue: GH, insulin\u2010like
+        growth factor I, and hormonal responses An beagles","volume":"137","author":"Jacks
+        T","year":"1996","journal-title":"Endocrinology"},{"key":"e_1_2_1_16_2","doi-asserted-by":"publisher","DOI":"10.1093\/ptj\/63.4.494"},{"key":"e_1_2_1_17_2","doi-asserted-by":"publisher","DOI":"10.1016\/0010-468X(81)90081-7"},{"key":"e_1_2_1_18_2","doi-asserted-by":"publisher","DOI":"10.1152\/ajpcell.1988.254.6.C759"},{"key":"e_1_2_1_19_2","doi-asserted-by":"publisher","DOI":"10.1152\/ajpcell.1988.254.6.C769"},{"key":"e_1_2_1_20_2","doi-asserted-by":"publisher","DOI":"10.1002\/jor.1100070313"},{"key":"e_1_2_1_21_2","doi-asserted-by":"publisher","DOI":"10.1152\/jn.1994.71.3.874"},{"key":"e_1_2_1_22_2","doi-asserted-by":"publisher","DOI":"10.1016\/0021-9290(95)00055-0"},{"key":"e_1_2_1_23_2","doi-asserted-by":"publisher","DOI":"10.1016\/0021-9290(90)90017-W"},{"key":"e_1_2_1_24_2","doi-asserted-by":"publisher","DOI":"10.1210\/jc.80.3.869"},{"key":"e_1_2_1_25_2","first-page":"1097","article-title":"Disruptions
+        of muscle fiber plasma membranes: role in exercise\u2010induced damage","volume":"140","author":"McNeil
+        PL","year":"1992","journal-title":"Am J Pathol"},{"key":"e_1_2_1_26_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1532-5415.1993.tb02049.x"},{"key":"e_1_2_1_27_2","doi-asserted-by":"crossref","unstructured":"NachlasMM
+        TsouKC DeSE ChengCS SeligmanAM: Cytochemical demonstration of succinic dehydrogenase
+        by the use of a new p\u2010nitrophenyl substituted ditetrazole.J Histochem
+        Cytochem insert:420\u2013436 1957","DOI":"10.1177\/5.4.420"},{"key":"e_1_2_1_28_2","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.92.15.7001"},{"key":"e_1_2_1_29_2","doi-asserted-by":"publisher","DOI":"10.1097\/00000441-196101000-00035"},{"key":"e_1_2_1_30_2","volume-title":"Biometry","author":"Sokal
+        RR","year":"1981"},{"key":"e_1_2_1_31_2","doi-asserted-by":"publisher","DOI":"10.1113\/jphysiol.1972.sp009891"},{"key":"e_1_2_1_32_2","first-page":"277","article-title":"Functional
+        adaptation of sarcomere number of normal cat muscle","volume":"72","author":"Tabary
+        JC","year":"1976","journal-title":"J Physiol (Paris)"},{"key":"e_1_2_1_33_2","doi-asserted-by":"publisher","DOI":"10.1210\/jc.75.4.1092"},{"key":"e_1_2_1_34_2","first-page":"101","volume-title":"Point
+        Counting Methods: Practical Methods for Biological Morphometry","author":"Weibel
+        ER","year":"1979"},{"key":"e_1_2_1_35_2","volume-title":"Small Animal Clinical
+        Diagnosis by Laboratory Methods","author":"Willard MD","year":"1989"},{"key":"e_1_2_1_36_2","first-page":"459","article-title":"Changes
+        in sarcomere length and physiological properties in immobilized muscle","volume":"127","author":"Williams
+        PE","year":"1978","journal-title":"J Anat"},{"key":"e_1_2_1_37_2","first-page":"359","article-title":"Muscle
+        and tendon: properties, models, scaling and application to biomechanics and
+        motor control","volume":"17","author":"Zajac FE","year":"1989","journal-title":"Crit
+        Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,27]],"date-time":"2023-10-27T22:42:30Z","timestamp":1698446550000},"score":1,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/jor.1100150407"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1997,7]]}},"alternative-id":["10.1002\/jor.1100150407"],"URL":"http:\/\/dx.doi.org\/10.1002\/jor.1100150407","archive":["Portico"],"relation":{},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":["Orthopedics
+        and Sports Medicine"],"published":{"date-parts":[[1997,7]]},"assertion":[{"value":"1996-11-25","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"1997-06-18","order":1,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2005-02-18","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -291,11 +307,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '2724'
+      - '3709'
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:31:39 GMT
+      - Tue, 16 Jan 2024 06:50:37 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -332,7 +348,7 @@ interactions:
     uri: https://api.crossref.org/works/10.1038/srep16696
   response:
     body:
-      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2023,9,16]],"date-time":"2023-09-16T16:21:49Z","timestamp":1694881309841},"reference-count":62,"publisher":"Springer
+      string: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,1,9]],"date-time":"2024-01-09T22:42:56Z","timestamp":1704840176928},"reference-count":62,"publisher":"Springer
         Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"},{"start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Sci
         Rep"],"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Oligomers of alpha-synuclein
         are toxic to cells and have been proposed to play a key role in the etiopathogenesis
@@ -352,7 +368,7 @@ interactions:
         concentrations of oligomers during the lag-phase of the aggregation of wild-type
         and mutated alpha-synuclein, suggesting that the properties of the ensemble
         of oligomers generated during self-assembly might be more relevant than their
-        absolute concentration for triggering neurodegeneration.<\/jats:p>","DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":88,"title":["Single-molecule
+        absolute concentration for triggering neurodegeneration.<\/jats:p>","DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":90,"title":["Single-molecule
         FRET studies on alpha-synuclein oligomerization of Parkinson\u2019s disease
         genetically related mutants"],"prefix":"10.1038","volume":"5","author":[{"given":"Laura","family":"Tosatto","sequence":"first","affiliation":[]},{"given":"Mathew
         H.","family":"Horrocks","sequence":"additional","affiliation":[]},{"given":"Alexander
@@ -611,11 +627,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '8655'
+      - '8653'
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:31:40 GMT
+      - Tue, 16 Jan 2024 06:50:38 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -690,7 +706,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:31:40 GMT
+      - Tue, 16 Jan 2024 06:50:38 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -751,7 +767,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:31:40 GMT
+      - Tue, 16 Jan 2024 06:50:38 GMT
       permissions-policy:
       - interest-cohort=()
       server:

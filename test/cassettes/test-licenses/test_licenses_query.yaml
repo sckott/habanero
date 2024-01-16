@@ -16,7 +16,7 @@ interactions:
     uri: https://api.crossref.org/licenses?query=aps
   response:
     body:
-      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":100,"items":[{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/es\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":13},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":9},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":67},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":8},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","work-count":9},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":105},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/","work-count":26},{"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/2.5\/ar\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/4.0","work-count":5},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0\/uk\/legalcode","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","work-count":37},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0","work-count":20},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","work-count":95},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","work-count":32},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","work-count":195}]}}'
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":100,"items":[{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/es\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":13},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":9},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":78},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":9},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","work-count":9},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":105},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/","work-count":27},{"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/2.5\/ar\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/4.0","work-count":6},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0\/uk\/legalcode","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","work-count":37},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0","work-count":21},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","work-count":104},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","work-count":20},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1","work-count":67}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -30,11 +30,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '327'
+      - '323'
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 25 Sep 2023 04:26:27 GMT
+      - Tue, 16 Jan 2024 06:47:17 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -71,8 +71,8 @@ interactions:
     uri: https://api.crossref.org/licenses?query=cellular+oncology
   response:
     body:
-      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":404,"items":[{"URL":"http:\/\/academic.oup.com\/journals\/pages\/about_us\/legal\/notices","work-count":19},{"URL":"http:\/\/aspb.org\/publications\/aspb-journals\/open-articles","work-count":124},{"URL":"http:\/\/auo.asmepress.com\/list-9-6.html","work-count":1},{"URL":"http:\/\/creativecommons.org\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/Licenses\/by\/4.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-NC-ND\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-SA\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by-n\/4.0\/","work-count":6},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/es\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/in","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":351},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":1821},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/es\/","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/igo\/","work-count":11},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":1038},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":34255},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/
-        http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":99},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/deed.en_GB","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/deed.pt_BR","work-count":1}]}}'
+      string: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":415,"items":[{"URL":"http:\/\/academic.oup.com\/journals\/pages\/about_us\/legal\/notices","work-count":19},{"URL":"http:\/\/aspb.org\/publications\/aspb-journals\/open-articles","work-count":124},{"URL":"http:\/\/auo.asmepress.com\/list-9-6.html","work-count":1},{"URL":"http:\/\/creativecommons.org\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/Licenses\/by\/4.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-NC-ND\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-SA\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by-n\/4.0\/","work-count":6},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/es\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/in","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":351},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":1823},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/es\/","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/igo\/","work-count":11},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":1095},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":36609},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/
+        http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":121},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/deed.en_GB","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/deed.pt_BR","work-count":1}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -86,11 +86,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '389'
+      - '394'
       content-type:
       - application/json;charset=utf-8
       date:
-      - Mon, 25 Sep 2023 04:26:31 GMT
+      - Tue, 16 Jan 2024 06:47:19 GMT
       permissions-policy:
       - interest-cohort=()
       server:

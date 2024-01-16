@@ -16,151 +16,7 @@ interactions:
     uri: https://api.crossref.org/funders/10.13039/100000001/works?filter=has-assertion%3Atrue
   response:
     body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":193496,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:37Z","timestamp":1648950277736},"reference-count":67,"publisher":"Elsevier
-        BV","license":[{"start":{"date-parts":[[2017,7,1]],"date-time":"2017-07-01T00:00:00Z","timestamp":1498867200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2018,3,10]],"date-time":"2018-03-10T00:00:00Z","timestamp":1520640000000},"content-version":"am","delay-in-days":252,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/100000001","name":"NSF","doi-asserted-by":"publisher","award":["1008788"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Icarus"],"published-print":{"date-parts":[[2017,7]]},"DOI":"10.1016\/j.icarus.2017.02.015","type":"journal-article","created":{"date-parts":[[2017,3,6]],"date-time":"2017-03-06T21:03:14Z","timestamp":1488834194000},"page":"134-149","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":2,"title":["Observations
-        of the global haze redistribution on Titan from 2006 to 2015 with OSIRIS at
-        Keck"],"prefix":"10.1016","volume":"290","author":[{"given":"M\u00e1t\u00e9","family":"\u00c1d\u00e1mkovics","sequence":"first","affiliation":[]},{"given":"Imke","family":"de
-        Pater","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.icarus.2017.02.015_bib0001","doi-asserted-by":"crossref","first-page":"868","DOI":"10.1016\/j.icarus.2010.03.006","article-title":"Observations
-        of a stationary mid-latitude cloud system on titan","volume":"208","author":"\u00c1d\u00e1mkovics","year":"2010","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0002","doi-asserted-by":"crossref","first-page":"1586","DOI":"10.1016\/j.pss.2009.07.001","article-title":"Evidence
-        for condensed-phase methane enhancement over xanadu on titan","volume":"57","author":"\u00c1d\u00e1mkovics","year":"2009","journal-title":"Planet.
-        Space Sci."},{"issue":"E7","key":"10.1016\/j.icarus.2017.02.015_bib0003","doi-asserted-by":"crossref","first-page":"E07S06","DOI":"10.1029\/2005JE002610","article-title":"Titan\u2019S
-        bright spots: multiband spectroscopic measurement of surface diversity and
-        hazes","volume":"111","author":"\u00c1d\u00e1mkovics","year":"2006","journal-title":"J.
-        Geophys. Res. (Planets)"},{"issue":"17","key":"10.1016\/j.icarus.2017.02.015_bib0004","doi-asserted-by":"crossref","first-page":"L17S05","DOI":"10.1029\/2004GL019929","article-title":"Spatially-resolved
-        spectroscopy at 1.6 \u00b5m of Titan\u2019s atmosphere and surface","volume":"31","author":"\u00c1d\u00e1mkovics","year":"2004","journal-title":"Geophys.
-        Res. Lett."},{"key":"10.1016\/j.icarus.2017.02.015_bib0005","doi-asserted-by":"crossref","first-page":"376","DOI":"10.1016\/j.icarus.2015.05.023","article-title":"Meridional
-        variation in tropospheric methane on titan observed with AO spectroscopy at
-        keck and VLT","volume":"270","author":"\u00c1d\u00e1mkovics","year":"2016","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0006","doi-asserted-by":"crossref","first-page":"962","DOI":"10.1126\/science.1146244","article-title":"Widespread
-        morning drizzle on titan","volume":"318","author":"\u00c1d\u00e1mkovics","year":"2007","journal-title":"Science"},{"key":"10.1016\/j.icarus.2017.02.015_bib0007","doi-asserted-by":"crossref","first-page":"L125","DOI":"10.1086\/183416","article-title":"Titan
-        - Aerosol photochemistry and variations related to the sunspot cycle","volume":"242","author":"Allen","year":"1980","journal-title":"ApJ"},{"key":"10.1016\/j.icarus.2017.02.015_bib0008","doi-asserted-by":"crossref","first-page":"721","DOI":"10.1016\/j.icarus.2007.11.008","article-title":"HST
-        Spectral imaging of Titan\u2019s haze and methane profile between 0.6 and
-        1 \u00b5m during the 2000 opposition","volume":"194","author":"Anderson","year":"2008","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0009","doi-asserted-by":"crossref","first-page":"242","DOI":"10.1016\/j.icarus.2006.08.021","article-title":"Global-scale
-        surface spectral variations on titan seen from cassini\/VIMS","volume":"186","author":"Barnes","year":"2007","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0010","doi-asserted-by":"crossref","first-page":"795","DOI":"10.1038\/nature01302","article-title":"Direct
-        detection of variable tropospheric clouds near Titan\u2019s south pole","volume":"420","author":"Brown","year":"2002","journal-title":"Nature"},{"key":"10.1016\/j.icarus.2017.02.015_bib0011","doi-asserted-by":"crossref","first-page":"111","DOI":"10.1007\/s11214-004-1453-x","article-title":"The
-        cassini visual and infrared mapping spectrometer (vims) investigation","volume":"115","author":"Brown","year":"2004","journal-title":"Space
-        Sci. Rev."},{"key":"10.1016\/j.icarus.2017.02.015_bib0012","doi-asserted-by":"crossref","first-page":"126","DOI":"10.1006\/icar.1995.1084","article-title":"Titan\u2019S
-        atmosphere from voyager infrared observations. 4: latitudinal variations of
-        temperature and composition","volume":"115","author":"Coustenis","year":"1995","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0013","doi-asserted-by":"crossref","first-page":"485","DOI":"10.1016\/j.icarus.2009.10.021","article-title":"A
-        tropical haze band in Titan\u2019s stratosphere","volume":"207","author":"de
-        Kok","year":"2010","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0014","doi-asserted-by":"crossref","first-page":"7","DOI":"10.1029\/2005JE002620","article-title":"Titan
-        imagery with keck adaptive optics during and after probe entry","volume":"111","author":"de
-        Pater","year":"2006","journal-title":"J. Geophys. Res. (Planets)"},{"key":"10.1016\/j.icarus.2017.02.015_bib0015","doi-asserted-by":"crossref","first-page":"355","DOI":"10.1016\/j.icarus.2015.09.039","article-title":"Vertical
-        structure and optical properties of Titan\u2019s aerosols from radiance measurements
-        made inside and outside the atmosphere","volume":"270","author":"Doose","year":"2016","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0016","doi-asserted-by":"crossref","first-page":"17","DOI":"10.1029\/2004GL019803","article-title":"Titan\u2019S
-        2 \u00b5m surface albedo and haze optical depth in 1996\u20132004","volume":"31","author":"Gibbard","year":"2004","journal-title":"Geophys.
-        Res. Lett."},{"key":"10.1016\/j.icarus.2017.02.015_bib0017","doi-asserted-by":"crossref","first-page":"189","DOI":"10.1006\/icar.1999.6095","article-title":"Titan:
-        high-resolution speckle images from the keck telescope","volume":"139","author":"Gibbard","year":"1999","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0018","doi-asserted-by":"crossref","first-page":"539","DOI":"10.1016\/0022-4073(89)90044-7","article-title":"The
-        correlated-k method for radiation calculations in nonhomogeneous atmospheres","volume":"42","author":"Goody","year":"1989","journal-title":"J.\u00a0Quant.\u00a0Spec.\u00a0Radiat.\u00a0Transf."},{"key":"10.1016\/j.icarus.2017.02.015_bib0019","doi-asserted-by":"crossref","first-page":"L105","DOI":"10.1088\/0004-637X\/702\/2\/L105","article-title":"Characterization
-        of clouds in Titan\u2019s tropical atmosphere","volume":"702","author":"Griffith","year":"2009","journal-title":"ApJ"},{"key":"10.1016\/j.icarus.2017.02.015_bib0020","doi-asserted-by":"crossref","first-page":"162","DOI":"10.1006\/icar.1993.1116","article-title":"Effects
-        of time-varying haze production on Titan\u2019s geometric albedo","volume":"105","author":"Hutzell","year":"1993","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0021","doi-asserted-by":"crossref","first-page":"112","DOI":"10.1006\/icar.1996.0005","article-title":"Simulations
-        of Titan\u2019s brightness by a two-Dimensional haze model","volume":"119","author":"Hutzell","year":"1996","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0022","doi-asserted-by":"crossref","first-page":"A136","DOI":"10.1051\/0004-6361\/201219998","article-title":"Near-infrared
-        imaging spectroscopy of the inner few arcseconds of NGC 4151 with OSIRIS at
-        keck","volume":"556","author":"Iserlohe","year":"2013","journal-title":"A&A"},{"key":"10.1016\/j.icarus.2017.02.015_bib0023","doi-asserted-by":"crossref","first-page":"339","DOI":"10.1016\/j.icarus.2015.07.007","article-title":"Seasonal
-        variation of Titan\u2019s haze at low and high altitudes from HST-STIS spectroscopy","volume":"270","author":"Karkoschka","year":"2016","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0024","doi-asserted-by":"crossref","first-page":"369","DOI":"10.1006\/icar.1996.5621","article-title":"Latitudinal
-        variation of aerosol sizes inferred from Titan\u2019s shadow","volume":"125","author":"Karkoschka","year":"1997","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0025","doi-asserted-by":"crossref","first-page":"311","DOI":"10.1016\/0019-1035(73)90008-0","article-title":"Red
-        clouds in reducing atmospheres","volume":"20","author":"Khare","year":"1973","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0026","doi-asserted-by":"crossref","first-page":"226","DOI":"10.1016\/j.icarus.2008.12.038","article-title":"A
-        photochemical model of Titan\u2019s atmosphere and ionosphere","volume":"201","author":"Krasnopolsky","year":"2009","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0027","doi-asserted-by":"crossref","first-page":"362","DOI":"10.1016\/j.newar.2006.02.005","article-title":"OSIRIS:
-        a diffraction limited integral field spectrograph for keck","volume":"50","author":"Larkin","year":"2006","journal-title":"New
-        A Rev."},{"key":"10.1016\/j.icarus.2017.02.015_bib0028","doi-asserted-by":"crossref","first-page":"122","DOI":"10.1016\/j.icarus.2015.03.010","article-title":"Microphysical
-        modeling of Titan\u2019s detached haze layer in a 3D GCM","volume":"254","author":"Larson","year":"2015","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0029","doi-asserted-by":"crossref","first-page":"749","DOI":"10.1016\/j.icarus.2007.06.022","article-title":"Tvashtar
-        awakening detected in april 2006 with OSIRIS at the w.m. keck observatory","volume":"191","author":"Laver","year":"2007","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0030","doi-asserted-by":"crossref","first-page":"732","DOI":"10.1016\/j.icarus.2011.06.040","article-title":"Condensation
-        in Titan\u2019s atmosphere at the huygens landing site","volume":"215","author":"Lavvas","year":"2011","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0031","doi-asserted-by":"crossref","first-page":"27","DOI":"10.1016\/j.pss.2007.05.026","article-title":"Coupling
-        photochemistry with haze formation in Titan\u2019s atmosphere, part i: model
-        description","volume":"56","author":"Lavvas","year":"2008","journal-title":"Planet.
-        Space Sci."},{"key":"10.1016\/j.icarus.2017.02.015_bib0032","doi-asserted-by":"crossref","first-page":"67","DOI":"10.1016\/j.pss.2007.05.027","article-title":"Coupling
-        photochemistry with haze formation in Titan\u2019s atmosphere, part II: results
-        and validation with cassini\/huygens data","volume":"56","author":"Lavvas","year":"2008","journal-title":"Planet.
-        Space Sci."},{"key":"10.1016\/j.icarus.2017.02.015_bib0033","series-title":"Seasonal
-        Change on Titan","first-page":"353","author":"Lorenz","year":"2010"},{"key":"10.1016\/j.icarus.2017.02.015_bib0034","doi-asserted-by":"crossref","first-page":"391","DOI":"10.1006\/icar.1999.6225","article-title":"Seasonal
-        change on titan observed with the hubble space telescope WFPC-2","volume":"142","author":"Lorenz","year":"1999","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0035","doi-asserted-by":"crossref","first-page":"10702","DOI":"10.1029\/2004GL019864","article-title":"Seasonal
-        change in Titan\u2019s haze 1992\u20132002 from hubble space telescope observations","volume":"31","author":"Lorenz","year":"2004","journal-title":"Geophys.
-        Res. Lett."},{"key":"10.1016\/j.icarus.2017.02.015_bib0036","doi-asserted-by":"crossref","first-page":"367","DOI":"10.1016\/j.icarus.2013.04.002","article-title":"A
-        global topographic map of titan","volume":"225","author":"Lorenz","year":"2013","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0037","doi-asserted-by":"crossref","first-page":"4453","DOI":"10.1029\/2001GL013728","article-title":"Titan\u2019S
-        smile and collar: HST observations of seasonal change 1994\u20132000","volume":"28","author":"Lorenz","year":"2001","journal-title":"Geophys.
-        Res. Lett."},{"key":"10.1016\/j.icarus.2017.02.015_bib0038","doi-asserted-by":"crossref","first-page":"1855","DOI":"10.5194\/acp-5-1855-2005","article-title":"Technical
-        note: the libradtran software package for radiative transfer calculations
-        - description and examples of use","volume":"5","author":"Mayer","year":"2005","journal-title":"Atmos.
-        Chem. Phys."},{"key":"10.1016\/j.icarus.2017.02.015_bib0039","doi-asserted-by":"crossref","first-page":"79","DOI":"10.1016\/S0032-0633(00)00051-9","article-title":"Physical
-        properties of the organic aerosols and clouds on titan","volume":"49","author":"McKay","year":"2001","journal-title":"Planet.
-        Space. Sci"},{"key":"10.1016\/j.icarus.2017.02.015_bib0040","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1016\/0019-1035(89)90160-7","article-title":"The
-        thermal structure of Titan\u2019s atmosphere","volume":"80","author":"McKay","year":"1989","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0041","doi-asserted-by":"crossref","first-page":"462","DOI":"10.1006\/icar.2000.6360","article-title":"The
-        surface of titan from NICMOS observations with the hubble space telescope","volume":"145","author":"Meier","year":"2000","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0042","first-page":"1","article-title":"First-principles
-        modeling of electromagnetic scattering by discrete and discretely heterogeneous
-        random media","volume":"632","author":"Mishchenko","year":"2016","journal-title":"Phys.\u00a0Rep."},{"key":"10.1016\/j.icarus.2017.02.015_bib0043","doi-asserted-by":"crossref","first-page":"352","DOI":"10.1016\/j.icarus.2009.11.003","article-title":"Latitudinal
-        variations in Titan\u2019s methane and haze from cassini VIMS observations","volume":"206","author":"Penteado","year":"2010","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0044","doi-asserted-by":"crossref","first-page":"193","DOI":"10.1016\/0019-1035(79)90065-4","article-title":"Photochemical
-        aerosols in Titan\u2019s atmosphere","volume":"40","author":"Podolak","year":"1979","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0045","doi-asserted-by":"crossref","first-page":"119","DOI":"10.1016\/0019-1035(80)90164-5","article-title":"Titan
-        aerosols - Optical properties and vertical distribution","volume":"41","author":"Rages","year":"1980","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0046","doi-asserted-by":"crossref","first-page":"50","DOI":"10.1016\/0019-1035(83)90049-0","article-title":"Vertical
-        distribution of scattering hazes in Titan\u2019s upper atmosphere","volume":"55","author":"Rages","year":"1983","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0047","doi-asserted-by":"crossref","first-page":"8721","DOI":"10.1029\/JA088iA11p08721","article-title":"Size
-        estimates of Titan\u2019s aerosols based on voyager high-phase-angle images","volume":"88","author":"Rages","year":"1983","journal-title":"J.\u00a0Geophys.\u00a0Res."},{"key":"10.1016\/j.icarus.2017.02.015_bib0048","doi-asserted-by":"crossref","first-page":"850","DOI":"10.1016\/j.icarus.2010.03.016","article-title":"Titan
-        haze distribution and optical properties retrieved from recent observations","volume":"208","author":"Rannou","year":"2010","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0049","doi-asserted-by":"crossref","first-page":"267","DOI":"10.1006\/icar.2000.6416","article-title":"Characterization
-        of aerosols in the detached haze layer of titan","volume":"147","author":"Rannou","year":"2000","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0050","doi-asserted-by":"crossref","first-page":"853","DOI":"10.1038\/nature00961","article-title":"A
-        wind origin for Titan\u2019s haze structure","volume":"418","author":"Rannou","year":"2002","journal-title":"Nature"},{"key":"10.1016\/j.icarus.2017.02.015_bib0051","doi-asserted-by":"crossref","first-page":"443","DOI":"10.1016\/j.icarus.2004.03.007","article-title":"A
-        coupled dynamics-microphysics model of Titan\u2019s atmosphere","volume":"170","author":"Rannou","year":"2004","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0052","doi-asserted-by":"crossref","first-page":"4","DOI":"10.1088\/0004-637X\/748\/1\/4","article-title":"Cloud
-        and haze in the winter polar region of titan observed with visual and infrared
-        mapping spectrometer on board cassini","volume":"748","author":"Rannou","year":"2012","journal-title":"ApJ"},{"key":"10.1016\/j.icarus.2017.02.015_bib0053","doi-asserted-by":"crossref","first-page":"254","DOI":"10.1006\/icar.2002.6831","article-title":"NOTE:
-        Titan\u2019S atmosphere in late southern spring observed with adaptive optics
-        on the w. m. keck II 10-Meter telescope","volume":"157","author":"Roe","year":"2002","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0054","doi-asserted-by":"crossref","first-page":"4","DOI":"10.1016\/j.jqsrt.2013.07.002","article-title":"The
-        HITRAN2012 molecular spectroscopic database","volume":"130","author":"Rothman","year":"2013","journal-title":"J.\u00a0Quant.\u00a0Spec.\u00a0Radiat.\u00a0Transf."},{"key":"10.1016\/j.icarus.2017.02.015_bib0055","doi-asserted-by":"crossref","first-page":"504","DOI":"10.1126\/science.215.4532.504","article-title":"A
-        new look at the saturn system - the voyager 2 images","volume":"215","author":"Smith","year":"1982","journal-title":"Science"},{"key":"10.1016\/j.icarus.2017.02.015_bib0056","doi-asserted-by":"crossref","first-page":"163","DOI":"10.1126\/science.212.4491.163","article-title":"Encounter
-        with saturn - voyager 1 imaging science results","volume":"212","author":"Smith","year":"1981","journal-title":"Science"},{"key":"10.1016\/j.icarus.2017.02.015_bib0057","doi-asserted-by":"crossref","first-page":"2502","DOI":"10.1364\/AO.27.002502","article-title":"Numerically
-        stable algorithm for discrete-ordinate-method radiative transfer in multiple
-        scattering and emitting layered media","volume":"27","author":"Stamnes","year":"1988","journal-title":"Appl.
-        Opt."},{"key":"10.1016\/j.icarus.2017.02.015_bib0058","doi-asserted-by":"crossref","first-page":"466","DOI":"10.1016\/0019-1035(74)90149-3","article-title":"The
-        photochemistry of hydrocarbons in the atmosphere of titan","volume":"21","author":"Strobel","year":"1974","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0059","doi-asserted-by":"crossref","first-page":"765","DOI":"10.1038\/nature04126","article-title":"Rain,
-        winds and haze during the huygens probe\u2019s descent to Titan\u2019s surface","volume":"438","author":"Tomasko","year":"2005","journal-title":"Nature"},{"key":"10.1016\/j.icarus.2017.02.015_bib0060","doi-asserted-by":"crossref","first-page":"669","DOI":"10.1016\/j.pss.2007.11.019","article-title":"A
-        model of Titan\u2019s aerosols based on measurements made inside the atmosphere","volume":"56","author":"Tomasko","year":"2008","journal-title":"Planet.
-        Space Sci."},{"key":"10.1016\/j.icarus.2017.02.015_bib0061","doi-asserted-by":"crossref","first-page":"24","DOI":"10.1016\/0019-1035(92)90188-D","article-title":"A
-        physical model of Titan\u2019s aerosols","volume":"95","author":"Toon","year":"1992","journal-title":"Icarus"},{"key":"10.1016\/j.icarus.2017.02.015_bib0062","doi-asserted-by":"crossref","first-page":"6204","DOI":"10.1029\/2011GL046843","article-title":"The
-        evolution of Titan\u2019s detached haze layer near equinox in 2009","volume":"38","author":"West","year":"2011","journal-title":"Geophys.\u00a0Res.\u00a0Lett."},{"key":"10.1016\/j.icarus.2017.02.015_bib0063","doi-asserted-by":"crossref","first-page":"79","DOI":"10.3847\/0004-637X\/829\/2\/79","article-title":"A
-        new astrobiological model of the atmosphere of titan","volume":"829","author":"Willacy","year":"2016","journal-title":"ApJ"},{"key":"10.1016\/j.icarus.2017.02.015_bib0064","doi-asserted-by":"crossref","first-page":"E06002","DOI":"10.1029\/2003JE002181","article-title":"Current
-        state of modeling the photochemistry of Titan\u2019s mutually dependent atmosphere
-        and ionosphere","volume":"109","author":"Wilson","year":"2004","journal-title":"J.
-        Geophys. Res. (Planets)"},{"key":"10.1016\/j.icarus.2017.02.015_bib0065","doi-asserted-by":"crossref","first-page":"315","DOI":"10.1086\/316543","article-title":"First
-        light adaptive optics images from the keck II telescope: A New era of high
-        angular resolution imagery","volume":"112","author":"Wizinowich","year":"2000","journal-title":"Pub.
-        Astron. Sci. Pac."},{"key":"10.1016\/j.icarus.2017.02.015_bib0066","doi-asserted-by":"crossref","first-page":"3473","DOI":"10.1086\/339826","article-title":"A
-        three-dimensional map of Titan\u2019s tropospheric haze distribution based
-        on hubble space telescope imaging","volume":"123","author":"Young","year":"2002","journal-title":"Astron.
-        J."},{"key":"10.1016\/j.icarus.2017.02.015_bib0067","doi-asserted-by":"crossref","first-page":"465","DOI":"10.1086\/190963","article-title":"Photochemistry
-        of the atmosphere of titan - comparison between model and observations","volume":"55","author":"Yung","year":"1984","journal-title":"Astrophys.
-        J. Supp. Ser."}],"container-title":["Icarus"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0019103516305103?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0019103516305103?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2021,4,11]],"date-time":"2021-04-11T02:45:03Z","timestamp":1618109103000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0019103516305103"}},"issued":{"date-parts":[[2017,7]]},"references-count":67,"alternative-id":["S0019103516305103"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.icarus.2017.02.015","ISSN":["0019-1035"],"issn-type":[{"value":"0019-1035","type":"print"}],"subject":["Space
-        and Planetary Science","Astronomy and Astrophysics"],"published":{"date-parts":[[2017,7]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-        article is maintained by"},{"value":"Observations of the global haze redistribution
-        on Titan from 2006 to 2015 with OSIRIS at Keck","name":"articletitle","label":"Article
-        Title"},{"value":"Icarus","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1016\/j.icarus.2017.02.015","name":"articlelink","label":"CrossRef
-        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-        Type"},{"value":"\u00a9 2017 Elsevier Inc. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:24Z","timestamp":1648950264274},"reference-count":29,"publisher":"Informa
-        UK Limited","issue":"14","funder":[{"DOI":"10.13039\/100000001","name":"National
-        Science Foundation","doi-asserted-by":"publisher","award":["GM108337"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Journal
-        of Applied Statistics"],"published-print":{"date-parts":[[2018,10,26]]},"DOI":"10.1080\/02664763.2018.1426739","type":"journal-article","created":{"date-parts":[[2018,1,31]],"date-time":"2018-01-31T05:02:48Z","timestamp":1517374968000},"page":"2548-2562","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Modern
-        variable selection for longitudinal semi-parametric models with missing data"],"prefix":"10.1080","volume":"45","author":[{"given":"J.","family":"Kowalski","sequence":"first","affiliation":[{"name":"Department
-        of Biostatistics and Bioinformatics, Emory University, GA, USA"}]},{"given":"S.","family":"Hao","sequence":"additional","affiliation":[{"name":"Department
-        of Biostatistics and Computational Biology, University of Rochester, NY, USA"}]},{"given":"T.","family":"Chen","sequence":"additional","affiliation":[{"name":"Department
-        of Mathematics and Statistics, University of Toledo, OH, USA"}]},{"given":"Y.","family":"Liang","sequence":"additional","affiliation":[{"name":"Department
-        of Statistics, University of California, Davis, CA, USA"}]},{"given":"J.","family":"Liu","sequence":"additional","affiliation":[{"name":"Department
-        of Family Medicine and Public Health, University of California, San Diego,
-        CA, USA"}]},{"given":"L.","family":"Ge","sequence":"additional","affiliation":[{"name":"Department
-        of Biostatistics and Computational Biology, University of Rochester, NY, USA"}]},{"given":"C.","family":"Feng","sequence":"additional","affiliation":[{"name":"Department
-        of Biostatistics and Computational Biology, University of Rochester, NY, USA"}]},{"given":"X.
-        M.","family":"Tu","sequence":"additional","affiliation":[{"name":"Department
-        of Family Medicine and Public Health, University of California, San Diego,
-        CA, USA"}]}],"member":"301","published-online":{"date-parts":[[2018,1,30]]},"reference":[{"key":"CIT0001","doi-asserted-by":"publisher","DOI":"10.1002\/9781118619179"},{"key":"CIT0002","doi-asserted-by":"publisher","DOI":"10.1080\/00401706.1995.10484371"},{"key":"CIT0003","doi-asserted-by":"publisher","DOI":"10.1023\/A:1026218005943"},{"key":"CIT0004","first-page":"975","volume":"43","author":"Chen
-        T.","year":"2015","journal-title":"J. Appl. Stat."},{"key":"CIT0005","doi-asserted-by":"publisher","DOI":"10.1080\/02664763.2015.1092109"},{"key":"CIT0006","doi-asserted-by":"publisher","DOI":"10.1002\/sim.6892"},{"key":"CIT0007","doi-asserted-by":"crossref","unstructured":"J.J.
-        Dziak and R. Li, Quantitative medical data analysis using mathematical tools
-        and statistical techniques, Quantitative Medical Data Analysis Using Mathematical
-        Tools and Statistical Techniques, 2007, pp. 3\u201313.","DOI":"10.1142\/9789812772121_0001"},{"key":"CIT0008","doi-asserted-by":"publisher","DOI":"10.1198\/016214501753382273"},{"key":"CIT0009","doi-asserted-by":"publisher","DOI":"10.1198\/016214504000001060"},{"key":"CIT0010","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-9868.2008.00674.x"},{"key":"CIT0011","doi-asserted-by":"publisher","DOI":"10.1080\/10920277.1998.10595667"},{"key":"CIT0012","doi-asserted-by":"publisher","DOI":"10.1007\/s11336-013-9355-z"},{"key":"CIT0013","doi-asserted-by":"publisher","DOI":"10.1080\/00949655.2015.1111376"},{"key":"CIT0014","doi-asserted-by":"publisher","DOI":"10.1198\/016214508000000184"},{"key":"CIT0015","volume-title":"Modern
-        Applied U-statistics","volume":"714","author":"Kowalski J.","year":"2008"},{"key":"CIT0016","doi-asserted-by":"publisher","DOI":"10.1016\/j.jadohealth.2012.07.005"},{"key":"CIT0017","volume-title":"An
-        Introduction to Copulas","author":"Nelsen R.B","year":"2007"},{"key":"CIT0018","doi-asserted-by":"publisher","DOI":"10.1093\/biomet\/85.1.13"},{"key":"CIT0019","doi-asserted-by":"publisher","DOI":"10.1007\/BF02294773"},{"key":"CIT0020","doi-asserted-by":"publisher","DOI":"10.1080\/01621459.1995.10476493"},{"key":"CIT0021","volume-title":"Manual
-        for the State-trait Anxiety Inventory","author":"Spielberger C.","year":"1983"},{"key":"CIT0022","first-page":"267","volume":"53","author":"Stein
-        D.J.","year":"1992","journal-title":"J. Clin. Psychiatry"},{"key":"CIT0023","doi-asserted-by":"publisher","DOI":"10.1037\/1040-3590.6.4.352"},{"key":"CIT0024","doi-asserted-by":"publisher","DOI":"10.1201\/b12123"},{"key":"CIT0025","doi-asserted-by":"publisher","DOI":"10.1111\/j.2517-6161.1996.tb02080.x"},{"key":"CIT0026","doi-asserted-by":"publisher","DOI":"10.1093\/biomet\/asm053"},{"key":"CIT0027","doi-asserted-by":"publisher","DOI":"10.1111\/j.1541-0420.2011.01678.x"},{"key":"CIT0028","doi-asserted-by":"publisher","DOI":"10.1002\/sim.4265"},{"key":"CIT0029","doi-asserted-by":"publisher","DOI":"10.1198\/016214506000000735"}],"container-title":["Journal
-        of Applied Statistics"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/02664763.2018.1426739","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,9,6]],"date-time":"2020-09-06T18:01:41Z","timestamp":1599415301000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/02664763.2018.1426739"}},"issued":{"date-parts":[[2018,1,30]]},"references-count":29,"journal-issue":{"issue":"14","published-print":{"date-parts":[[2018,10,26]]}},"alternative-id":["10.1080\/02664763.2018.1426739"],"URL":"http:\/\/dx.doi.org\/10.1080\/02664763.2018.1426739","ISSN":["0266-4763","1360-0532"],"issn-type":[{"value":"0266-4763","type":"print"},{"value":"1360-0532","type":"electronic"}],"subject":["Statistics,
-        Probability and Uncertainty","Statistics and Probability"],"published":{"date-parts":[[2018,1,30]]},"assertion":[{"value":"The
-        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
-        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=cjas20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=cjas20","order":2,"name":"aims_and_scope_url","label":"Aim
-        & Scope"},{"value":"2016-09-29","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
-        History"}},{"value":"2018-01-06","order":2,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
-        History"}},{"value":"2018-01-30","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-        History"}}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:53:52Z","timestamp":1648950832569},"reference-count":20,"publisher":"IOP
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":203396,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:53:52Z","timestamp":1648950832569},"reference-count":20,"publisher":"IOP
         Publishing","issue":"5","license":[{"start":{"date-parts":[[2016,7,20]],"date-time":"2016-07-20T00:00:00Z","timestamp":1468972800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/iopscience.iop.org\/info\/page\/text-and-data-mining"},{"start":{"date-parts":[[2016,7,20]],"date-time":"2016-07-20T00:00:00Z","timestamp":1468972800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"},{"start":{"date-parts":[[2016,7,20]],"date-time":"2016-07-20T00:00:00Z","timestamp":1468972800000},"content-version":"am","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
         Science Foundation","doi-asserted-by":"publisher","award":["PHY-1205736"]}],"content-domain":{"domain":["iopscience.iop.org"],"crossmark-restriction":true},"short-container-title":["Eur.
         J. Phys."],"published-print":{"date-parts":[[2016,9,1]]},"DOI":"10.1088\/0143-0807\/37\/5\/055409","type":"journal-article","created":{"date-parts":[[2016,7,20]],"date-time":"2016-07-20T10:13:30Z","timestamp":1469009610000},"page":"055409","update-policy":"http:\/\/dx.doi.org\/10.1088\/crossmark-policy","source":"Crossref","is-referenced-by-count":1,"title":["Applying
@@ -443,276 +299,7 @@ interactions:
         publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
         Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ghan20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ghan20","order":2,"name":"aims_and_scope_url","label":"Aim
         & Scope"},{"value":"2020-07-21","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-        History"}}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T05:56:36Z","timestamp":1648965396775},"reference-count":72,"publisher":"Springer
-        Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2021,6,29]],"date-time":"2021-06-29T00:00:00Z","timestamp":1624924800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"},{"start":{"date-parts":[[2021,6,29]],"date-time":"2021-06-29T00:00:00Z","timestamp":1624924800000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
-        Science Foundation","doi-asserted-by":"publisher","award":["1759838","1759846"]}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["BMC
-        Bioinformatics"],"published-print":{"date-parts":[[2021,12]]},"abstract":"<jats:title>Abstract<\/jats:title><jats:sec>\n                <jats:title>Background<\/jats:title>\n                <jats:p>Phylogenies
-        are a key part of research in many areas of biology. Tools that automate some
-        parts of the process of phylogenetic reconstruction, mainly molecular character
-        matrix assembly, have been developed for the advantage of both specialists
-        in the field of phylogenetics and non-specialists. However, interpretation
-        of results, comparison with previously available phylogenetic hypotheses,
-        and selection of one phylogeny for downstream analyses and discussion still
-        impose difficulties to one that is not a specialist either on phylogenetic
-        methods or on a particular group of study.<\/jats:p>\n              <\/jats:sec><jats:sec>\n                <jats:title>Results<\/jats:title>\n                <jats:p>Physcraper
-        is a command-line Python program that automates the update of published phylogenies
-        by adding public DNA sequences to underlying alignments of previously published
-        phylogenies. It also provides a framework for straightforward comparison of
-        published phylogenies with their updated versions, by leveraging upon tools
-        from the Open Tree of Life project to link taxonomic information across databases.
-        The program can be used by the nonspecialist, as a tool to generate phylogenetic
-        hypotheses based on publicly available expert phylogenetic knowledge. Phylogeneticists
-        and taxonomic group specialists will find it useful as a tool to facilitate
-        molecular dataset gathering and comparison of alternative phylogenetic hypotheses
-        (topologies).<\/jats:p>\n              <\/jats:sec><jats:sec>\n                <jats:title>Conclusion<\/jats:title>\n                <jats:p>The
-        Physcraper workflow showcases the benefits of doing open science for phylogenetics,
-        encouraging researchers to strive for better scientific\u00a0sharing practices.
-        Physcraper can be used with any OS and is released under an open-source license.
-        Detailed instructions for installation and usage are available at https:\/\/physcraper.readthedocs.io.<\/jats:p>\n              <\/jats:sec>","DOI":"10.1186\/s12859-021-04274-6","type":"journal-article","created":{"date-parts":[[2021,6,29]],"date-time":"2021-06-29T19:02:36Z","timestamp":1624993356000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":1,"title":["Physcraper:
-        a Python package for continually updated phylogenetic trees using the Open
-        Tree of Life"],"prefix":"10.1186","volume":"22","author":[{"ORCID":"http:\/\/orcid.org\/0000-0001-7668-2528","authenticated-orcid":false,"given":"Luna
-        L.","family":"S\u00e1nchez-Reyes","sequence":"first","affiliation":[]},{"given":"Martha","family":"Kandziora","sequence":"additional","affiliation":[]},{"given":"Emily
-        Jane","family":"McTavish","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2021,6,29]]},"reference":[{"issue":"3","key":"4274_CR1","doi-asserted-by":"publisher","first-page":"125","DOI":"10.2307\/4444260","volume":"35","author":"T
-        Dobzhansky","year":"1973","unstructured":"Dobzhansky T. Nothing in biology
-        makes sense except in the light of evolution. Am Biol Teach. 1973;35(3):125\u20139.","journal-title":"Am
-        Biol Teach"},{"issue":"6596","key":"4274_CR2","doi-asserted-by":"publisher","first-page":"130","DOI":"10.1038\/383130a0","volume":"383","author":"DM
-        Hillis","year":"1996","unstructured":"Hillis DM. Inferring complex phylogenies.
-        Nature. 1996;383(6596):130\u20131.","journal-title":"Nature"},{"issue":"1","key":"4274_CR3","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1038\/s42003-019-0654-5","volume":"2","author":"P
-        Natsidis","year":"2019","unstructured":"Natsidis P, Tsakogiannis A, Pavlidis
-        P, Tsigenopoulos CS, Manousaki T. Phylogenomics investigation of sparids (Teleostei:
-        Spariformes) using high-quality proteomes highlights the importance of taxon
-        sampling. Commun Biol. 2019;2(1):1\u201310.","journal-title":"Commun Biol"},{"key":"4274_CR4","doi-asserted-by":"crossref","unstructured":"Schulte
-        JA. Undersampling taxa will underestimate molecular divergence dates: an example
-        from the South American lizard clade Liolaemini. Int J Evol Biol. 2013.","DOI":"10.1155\/2013\/628467"},{"key":"4274_CR5","doi-asserted-by":"publisher","first-page":"31","DOI":"10.1016\/j.jtbi.2014.09.004","volume":"364","author":"AE
-        Soares","year":"2015","unstructured":"Soares AE, Schrago CG. The influence
-        of taxon sampling on Bayesian divergence time inference under scenarios of
-        rate heterogeneity among lineages. J Theor Biol. 2015;364:31\u20139.","journal-title":"J
-        Theor Biol"},{"issue":"4","key":"4274_CR6","doi-asserted-by":"publisher","first-page":"724","DOI":"10.1111\/syen.12241","volume":"42","author":"P
-        Kayaalp","year":"2017","unstructured":"Kayaalp P, Stevens MI, Schwarz MP.
-        Back to Africa: increased taxon sampling confirms a problematic Australia-to-Africa
-        bee dispersal event in the Eocene. Syst Entomol. 2017;42(4):724\u201333.","journal-title":"Syst
-        Entomol"},{"issue":"3","key":"4274_CR7","doi-asserted-by":"publisher","first-page":"522","DOI":"10.1080\/10635150600697358","volume":"55","author":"SM
-        Hedtke","year":"2006","unstructured":"Hedtke SM, Townsend TM, Hillis DM. Resolution
-        of phylogenetic conflict in large data sets by increased taxon sampling. Syst
-        Biol. 2006;55(3):522\u20139.","journal-title":"Syst Biol"},{"issue":"4","key":"4274_CR8","doi-asserted-by":"publisher","first-page":"446","DOI":"10.1093\/sysbio\/syq025","volume":"59","author":"JP
-        Townsend","year":"2010","unstructured":"Townsend JP, Lopez-Giraldez F. Optimal
-        selection of gene and ingroup taxon sampling for resolving phylogenetic relationships.
-        Syst Biol. 2010;59(4):446\u201357.","journal-title":"Syst Biol"},{"key":"4274_CR9","doi-asserted-by":"publisher","author":"JA
-        Rees","year":"2017","unstructured":"Rees JA, Cranston K. Automated assembly
-        of a reference taxonomy for phylogenetic data synthesis. Biodiversi Data J.
-        2017. https:\/\/doi.org\/10.3897\/BDJ.5.e12581.","journal-title":"Biodiversi
-        Data J","DOI":"10.3897\/BDJ.5.e12581"},{"issue":"1","key":"4274_CR10","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1002\/0471250953.bi0101s50","volume":"50","author":"AD
-        Baxevanis","year":"2015","unstructured":"Baxevanis AD, Bateman A. The importance
-        of biological databases in biological discovery. Curr Protoc Bioinform. 2015;50(1):1.","journal-title":"Curr
-        Protoc Bioinform"},{"issue":"D1","key":"4274_CR11","doi-asserted-by":"publisher","first-page":"136","DOI":"10.1093\/nar\/gkr1178","volume":"40","author":"S
-        Federhen","year":"2012","unstructured":"Federhen S. The NCBI taxonomy database.
-        Nucl Acids Res. 2012;40(D1):136\u201343. https:\/\/doi.org\/10.1093\/nar\/gkr1178.","journal-title":"Nucl
-        Acids Res"},{"key":"4274_CR12","doi-asserted-by":"crossref","unstructured":"Schoch
-        CL, Ciufo S, Domrachev M, Hotton CL, Kannan S, Khovanskaya R, Leipe D, Mcveigh
-        R, O\u2019Neill K, Robbertse B, Sharma S, Soussov V, Sullivan JP, Sun L, Turner
-        S, Karsch-Mizrachi I. NCBI taxonomy: a comprehensive update on curation, resources
-        and tools. Database. 2020.","DOI":"10.1093\/database\/baaa062"},{"key":"4274_CR13","doi-asserted-by":"publisher","unstructured":"GBIF
-        Secretariat: GBIF Backbone Taxonomy. Checklist dataset. https:\/\/doi.org\/10.15468\/39omei.
-        Accessed via GBIF.org on April 2021. https:\/\/www.gbif.org\/dataset\/d7dddbf4-2cf0-4f39-9b2a-bb099caae36c.","DOI":"10.15468\/39omei"},{"key":"4274_CR14","unstructured":"OpenTreeOfLife,
-        Redelings B, Cranston KA, Allman J, Holder MT, McTavish EJ. Open tree of life
-        APIs V. 3.0. https:\/\/github.com\/OpenTreeOfLife\/germinator\/wiki\/Open-Tree-of-Life-Web-APIs."},{"issue":"3","key":"4274_CR15","doi-asserted-by":"publisher","first-page":"335","DOI":"10.1080\/10635150802158688","volume":"57","author":"MJ
-        Sanderson","year":"2008","unstructured":"Sanderson MJ, Boss D, Chen D, Cranston
-        KA, Wehe A. The PhyLoTA browser: processing genbank for molecular phylogenetics
-        research. Syst Biol. 2008;57(3):335\u201346. https:\/\/doi.org\/10.1080\/10635150802158688.","journal-title":"Syst
-        Biol"},{"key":"4274_CR16","doi-asserted-by":"publisher","author":"EJ McTavish","year":"2017","unstructured":"McTavish
-        EJ, Drew BT, Redelings B, Cranston KA. How and why to build a unified tree
-        of life. BioEssays. 2017. https:\/\/doi.org\/10.1002\/bies.201700114.","journal-title":"BioEssays","DOI":"10.1002\/bies.201700114"},{"issue":"17","key":"4274_CR17","doi-asserted-by":"publisher","first-page":"2794","DOI":"10.1093\/bioinformatics\/btv276","volume":"31","author":"EJ
-        McTavish","year":"2015","unstructured":"McTavish EJ, Hinchliff CE, Allman
-        JF, Brown JW, Cranston KA, Holder MT, Rees JA, Smith SA. Phylesystem: a git-based
-        data store for community-curated phylogenetic estimates. Bioinformatics. 2015;31(17):2794\u2013800.
-        https:\/\/doi.org\/10.1093\/bioinformatics\/btv276.","journal-title":"Bioinformatics"},{"issue":"1","key":"4274_CR18","doi-asserted-by":"publisher","first-page":"37","DOI":"10.1186\/1471-2148-9-37","volume":"9","author":"SA
-        Smith","year":"2009","unstructured":"Smith SA, Beaulieu JM, Donoghue MJ. Mega-phylogeny
-        approach for comparative biology: an alternative to supertree and supermatrix
-        approaches. BMC Evol Biol. 2009;9(1):37. https:\/\/doi.org\/10.1186\/1471-2148-9-37.","journal-title":"BMC
-        Evol Biol"},{"issue":"2","key":"4274_CR19","doi-asserted-by":"publisher","first-page":"152","DOI":"10.1093\/sysbio\/syw066","volume":"66","author":"A
-        Antonelli","year":"2017","unstructured":"Antonelli A, Hettling H, Condamine
-        FL, Vos K, Nilsson RH, Sanderson MJ, Sauquet H, Scharn R, Silvestro D, T\u00f6pel
-        M, et al. Toward a self-updating platform for estimating rates of speciation
-        and migration, ages, and relationships of taxa. Syst Biol. 2017;66(2):152\u201366.
-        https:\/\/doi.org\/10.1093\/sysbio\/syw066.","journal-title":"Syst Biol"},{"issue":"10","key":"4274_CR20","doi-asserted-by":"publisher","first-page":"1476","DOI":"10.1093\/bioinformatics\/btu053","volume":"30","author":"F
-        Izquierdo-Carrasco","year":"2014","unstructured":"Izquierdo-Carrasco F, Cazes
-        J, Smith SA, Stamatakis A. Pumper: phylogenies updated perpetually. Bioinformatics.
-        2014;30(10):1476\u20137. https:\/\/doi.org\/10.1093\/bioinformatics\/btu053.","journal-title":"Bioinformatics"},{"issue":"7","key":"4274_CR21","doi-asserted-by":"publisher","first-page":"692","DOI":"10.1111\/2041-210X.12055","volume":"4","author":"WD
-        Pearse","year":"2013","unstructured":"Pearse WD, Purvis A. phylogenerator:
-        an automated phylogeny generation tool for ecologists. Methods Ecol Evol.
-        2013;4(7):692\u20138.","journal-title":"Methods Ecol Evol"},{"issue":"1","key":"4274_CR22","doi-asserted-by":"publisher","first-page":"185","DOI":"10.1111\/mec.13304","volume":"25","author":"MR
-        Jones","year":"2016","unstructured":"Jones MR, Good JM. Targeted capture in
-        evolutionary and ecological genomics. Mol Ecol. 2016;25(1):185\u2013202. https:\/\/doi.org\/10.1111\/mec.13304.","journal-title":"Mol
-        Ecol"},{"issue":"1407","key":"4274_CR23","doi-asserted-by":"publisher","first-page":"1","DOI":"10.3389\/fgene.2019.01407","volume":"10","author":"T
-        Andermann","year":"2020","unstructured":"Andermann T, Torres Jim\u00e9nez
-        MF, Matos-Mart\u00ednez P, Batista R, Blanco-Pastor JL, Gustafsson ALS, Kistler
-        L, Liberal IM, Oxelman B, Bacon CD, Antonelli A. A guide to carrying out a
-        phylogenomic target sequence capture project. Front Genetics. 2020;10(1407):1\u201320.
-        https:\/\/doi.org\/10.3389\/fgene.2019.01407.","journal-title":"Front Genetics"},{"key":"4274_CR24","doi-asserted-by":"publisher","first-page":"124","DOI":"10.1016\/j.ympev.2017.02.006","volume":"117","author":"I
-        Fragoso-Mart\u00ednez","year":"2017","unstructured":"Fragoso-Mart\u00ednez
-        I, Salazar GA, Mart\u00ednez-Gordillo M, Magall\u00f3n S, S\u00e1nchez-Reyes
-        L, Lemmon EM, Lemmon AR, Sazatornil F, Mendoza CG. A pilot study applying
-        the plant Anchored Hybrid Enrichment method to New World sages (Salvia subgenus
-        Calosphace, Lamiaceae). Mol Phylogenetics Evol. 2017;117:124\u201334. https:\/\/doi.org\/10.1016\/j.ympev.2017.02.006.","journal-title":"Mol
-        Phylogenetics Evol"},{"key":"4274_CR25","unstructured":"Piel W, Chan L, Dominus
-        M, Ruan J, Vos R, Tannen V. Treebase v. 2: a database of phylogenetic knowledge.
-        e-Biosphere. London. 2009."},{"issue":"4","key":"4274_CR26","doi-asserted-by":"publisher","first-page":"675","DOI":"10.1093\/sysbio\/sys025","volume":"61","author":"RA
-        Vos","year":"2012","unstructured":"Vos RA, Balhoff JP, Caravas JA, Holder
-        MT, Lapp H, Maddison WP, Midford PE, Priyam A, Sukumaran J, Xia X, et al.
-        NeXML: rich, extensible, and verifiable representation of comparative data
-        and metadata. Syst Biol. 2012;61(4):675\u201389. https:\/\/doi.org\/10.1093\/sysbio\/sys025.","journal-title":"Syst
-        Biol"},{"key":"4274_CR27","doi-asserted-by":"crossref","unstructured":"Piel
-        WH, Vos RA. Treebasedmp: a toolkit for phyloinformatic research. bioRxiv,
-        399030. 2018.","DOI":"10.1101\/399030"},{"issue":"6","key":"4274_CR28","doi-asserted-by":"publisher","first-page":"479","DOI":"10.1071\/SB06020","volume":"19","author":"DA
-        Morrison","year":"2006","unstructured":"Morrison DA. Multiple sequence alignment
-        for phylogenetic purposes. Aust Syst Bot. 2006;19(6):479\u2013539. https:\/\/doi.org\/10.1071\/SB06020.","journal-title":"Aust
-        Syst Bot"},{"key":"4274_CR29","unstructured":"Th\u00e9nault, Sylvain (Logilab
-        S.A.): Pylint. Accessed March 2021. https:\/\/www.pylint.org\/."},{"key":"4274_CR30","unstructured":"Th\u00e9nault,
-        Sylvain (Logilab S.A.), PyCQA, and contributors: Pylint User Manual. Accessed
-        March 2021. http:\/\/pylint.pycqa.org\/en\/latest\/."},{"key":"4274_CR31","unstructured":"OpenTreeOfLife,
-        Redelings B, Cranston KA, Allman J, Holder MT, McTavish EJ. Open tree of life
-        taxonomy V. 3.2. https:\/\/tree.opentreeoflife.org\/about\/taxonomy-version\/ott3.2."},{"key":"4274_CR32","unstructured":"OpenTreeOfLife:
-        Name Resolution (TNRS) bulk mapping tool. https:\/\/tree.opentreeoflife.org\/curator\/tnrs\/."},{"key":"4274_CR33","unstructured":"OpenTreeOfLife,
-        McTavish EJ, Hinchliff CE, Allman JF, Brown JW, Cranston KA, Holder MT, Rees
-        JA, Smith SA. Phylesystem\u2019s top-level repository in the Open Tree of
-        Life phylogenetic study document store. https:\/\/github.com\/opentreeoflife\/phylesystem"},{"key":"4274_CR34","unstructured":"Piel
-        W, Chan L, Dominus M, Ruan,J. Vos R, Tannen V. TreeBASE: a database of phylogenetic
-        knowledge. https:\/\/treebase.org\/treebase-web\/home.html."},{"key":"4274_CR35","unstructured":"Vos,
-        R.: SuperTreeBASE: data dump and code to summarize TreeBASE. https:\/\/github.com\/TreeBASE\/supertreebase."},{"issue":"3","key":"4274_CR36","doi-asserted-by":"publisher","first-page":"403","DOI":"10.1016\/S0022-2836(05)80360-2","volume":"215","author":"SF
-        Altschul","year":"1990","unstructured":"Altschul SF, Gish W, Miller W, Myers
-        EW, Lipman DJ. Basic local alignment search tool. J Mol Biol. 1990;215(3):403\u201310.
-        https:\/\/doi.org\/10.1016\/S0022-2836(05)80360-2.","journal-title":"J Mol
-        Biol"},{"key":"4274_CR37","unstructured":"OpenTreeOfLife, Rees JA, Cranston
-        K. OpenTree\u2019s taxonomic MRCA API. https:\/\/github.com\/OpenTreeOfLife\/germinator\/wiki\/Taxonomy-API-v3#mrca."},{"issue":"1","key":"4274_CR38","doi-asserted-by":"publisher","first-page":"421","DOI":"10.1186\/1471-2105-10-421","volume":"10","author":"C
-        Camacho","year":"2009","unstructured":"Camacho C, George C, Vahram A, Ning
-        M, Jason P, Kevin B, Thomas L. BLAST+: architecture and applications. BMC
-        Bioinform. 2009;10(1):421. https:\/\/doi.org\/10.1186\/1471-2105-10-421.","journal-title":"BMC
-        Bioinform"},{"issue":"11","key":"4274_CR39","doi-asserted-by":"publisher","first-page":"1422","DOI":"10.1093\/bioinformatics\/btp163","volume":"25","author":"PJ
-        Cock","year":"2009","unstructured":"Cock PJ, Antao T, Chang JT, Chapman BA,
-        Cox CJ, Dalke A, Friedberg I, Hamelryck T, Kauff F, Wilczynski B, et al. Biopython:
-        freely available Python tools for computational molecular biology and bioinformatics.
-        Bioinformatics. 2009;25(11):1422\u20133. https:\/\/doi.org\/10.1093\/bioinformatics\/btp163.","journal-title":"Bioinformatics"},{"key":"4274_CR40","unstructured":"The
-        BioPython Contributors (1999\u20132018): BioPython 1.71, Module Bio.Blast.NCBIWWW.
-        Accessed April 19, 2018. https:\/\/biopython.org\/DIST\/docs\/api\/Bio.Blast.NCBIWWW-module.html."},{"issue":"5","key":"4274_CR41","doi-asserted-by":"publisher","first-page":"1792","DOI":"10.1093\/nar\/gkh340","volume":"32","author":"RC
-        Edgar","year":"2004","unstructured":"Edgar RC. Muscle: multiple sequence alignment
-        with high accuracy and high throughput. Nucl Acids Res. 2004;32(5):1792\u20137.
-        https:\/\/doi.org\/10.1093\/nar\/gkh340.","journal-title":"Nucl Acids Res"},{"issue":"9","key":"4274_CR42","doi-asserted-by":"publisher","first-page":"1312","DOI":"10.1093\/bioinformatics\/btu033","volume":"30","author":"A
-        Stamatakis","year":"2014","unstructured":"Stamatakis A. Raxml version 8: a
-        tool for phylogenetic analysis and post-analysis of large phylogenies. Bioinformatics.
-        2014;30(9):1312\u20133. https:\/\/doi.org\/10.1093\/bioinformatics\/btu033.","journal-title":"Bioinformatics"},{"issue":"12","key":"4274_CR43","doi-asserted-by":"publisher","first-page":"1569","DOI":"10.1093\/bioinformatics\/btq228","volume":"26","author":"J
-        Sukumaran","year":"2010","unstructured":"Sukumaran J, Holder MT. DendroPy:
-        a Python library for phylogenetic computing. Bioinformatics. 2010;26(12):1569\u201371.
-        https:\/\/doi.org\/10.1093\/bioinformatics\/btq228.","journal-title":"Bioinformatics"},{"key":"4274_CR44","doi-asserted-by":"publisher","first-page":"3058","DOI":"10.7717\/peerj.3058","volume":"5","author":"BD
-        Redelings","year":"2017","unstructured":"Redelings BD, Holder MT. A supertree
-        pipeline for summarizing phylogenetic and taxonomic information for millions
-        of species. PeerJ. 2017;5:3058. https:\/\/doi.org\/10.7717\/peerj.3058.","journal-title":"PeerJ"},{"issue":"2","key":"4274_CR45","doi-asserted-by":"publisher","first-page":"352","DOI":"10.3732\/ajb.92.2.352","volume":"92","author":"AM
-        Gottlieb","year":"2005","unstructured":"Gottlieb AM, Giberti GC, Poggio L.
-        Molecular analyses of the genus ilex (aquifoliaceae) in southern south america,
-        evidence from aflp and its sequence data. Am Jo Bot. 2005;92(2):352\u201369.
-        https:\/\/doi.org\/10.3732\/ajb.92.2.352.","journal-title":"Am Jo Bot"},{"key":"4274_CR46","unstructured":"The
-        Plant List 2013. Version 1.1: list of name records for the generic epithet
-        Ilex. http:\/\/www.theplantlist.org\/tpl1.1\/search?q=ilex."},{"issue":"1","key":"4274_CR47","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1111\/boj.12385","volume":"181","author":"MW
-        Chase","year":"2016","unstructured":"Chase MW, Christenhusz M, Fay M, Byng
-        J, Judd WS, Soltis D, Mabberley D, Sennikov A, Soltis PS, Stevens PF. An update
-        of the Angiosperm Phylogeny Group classification for the orders and families
-        of flowering plants: APG IV. Bot J Linn Soc. 2016;181(1):1\u201320.","journal-title":"Bot
-        J Linn Soc"},{"issue":"1","key":"4274_CR48","doi-asserted-by":"publisher","first-page":"111","DOI":"10.1006\/anbo.1999.1003","volume":"85","author":"P
-        Cu\u00e9noud","year":"2000","unstructured":"Cu\u00e9noud P, Martinez M.A.d.P,
-        Loizeay P.-A, Spichiger R, Andrews S, Manen J.-F. Molecular phylogeny and
-        biogeography of the genus Ilex L.(Aquifoliaceae). Ann Bot. 2000;85(1):111\u201322.
-        https:\/\/doi.org\/10.1006\/anbo.1999.1003.","journal-title":"Ann Bot"},{"issue":"3","key":"4274_CR49","doi-asserted-by":"publisher","first-page":"961","DOI":"10.1016\/j.ympev.2010.09.006","volume":"57","author":"J-F
-        Manen","year":"2010","unstructured":"Manen J-F, Barriera G, Loizeau P-A, Naciri
-        Y. The history of extant Ilex species (Aquifoliaceae): evidence of hybridization
-        within a Miocene radiation. Mol Phylogenetics Evol. 2010;57(3):961\u201377.
-        https:\/\/doi.org\/10.1016\/j.ympev.2010.09.006.","journal-title":"Mol Phylogenetics
-        Evol"},{"issue":"6","key":"4274_CR50","doi-asserted-by":"publisher","first-page":"793","DOI":"10.2307\/2656887","volume":"87","author":"H
-        Setoguchi","year":"2000","unstructured":"Setoguchi H, Watanabe I. Intersectional
-        gene flow between insular endemics of Ilex (Aquifoliaceae) on the Bonin Islands
-        and the Ryukyu Islands. Am J Bot. 2000;87(6):793\u2013810. https:\/\/doi.org\/10.2307\/2656887.","journal-title":"Am
-        J Bot"},{"issue":"1","key":"4274_CR51","doi-asserted-by":"publisher","first-page":"182","DOI":"10.1111\/j.1095-8339.2008.00898.x","volume":"159","author":"A
-        Selbach-Schnadelbach","year":"2009","unstructured":"Selbach-Schnadelbach A,
-        Cavalli SS, Manen J-F, Coelho GC, De Souza-Chies TT. New information for Ilex
-        phylogenetics based on the plastid psbA-trnH intergenic spacer (Aquifoliaceae).
-        Bot J Linn Soc. 2009;159(1):182\u201393. https:\/\/doi.org\/10.1111\/j.1095-8339.2008.00898.x.","journal-title":"Bot
-        J Linn Soc"},{"issue":"5","key":"4274_CR52","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1111\/jse.12567","volume":"58","author":"X
-        Yao","year":"2020","unstructured":"Yao X, Song Y, Yang J-B, Tan Y-H, Corlett
-        RT. Phylogeny and biogeography of the hollies (Ilex L., Aquifoliaceae). J
-        Syst Evol. 2020;58(5):1\u201310. https:\/\/doi.org\/10.1111\/jse.12567.","journal-title":"J
-        Syst Evol"},{"key":"4274_CR53","unstructured":"Gottlieb AM, Giberti GC, Poggio
-        L. TreeBASE study 1091. https:\/\/treebase.org\/treebase-web\/search\/study\/summary.html?id=1091."},{"key":"4274_CR54","unstructured":"Gottlieb
-        AM, Giberti GC, Poggio L. Phylesystem study pg\\_2827. https:\/\/tree.opentreeoflife.org\/curator\/study\/edit\/pg_2827\/?tab=home."},{"key":"4274_CR55","unstructured":"OpenTreeOfLife,
-        Redelings B, Reyes LLS, Cranston KA, Allman J, Holder MT, McTavish EJ. Open
-        Tree of Life Synthetic subtree, node id mrcaott68451ott89474. https:\/\/tree.opentreeoflife.org\/opentree\/opentree12.3@mrcaott68451ott89474\/Ilex-theizans--Ilex-dumosa."},{"key":"4274_CR56","unstructured":"Yao
-        X, Song Y, Yang J-B, Tan Y-H, Corlett RT. Phylesystem study ot\\_1984. https:\/\/tree.opentreeoflife.org\/curator\/study\/view\/ot_1984."},{"key":"4274_CR57","doi-asserted-by":"publisher","unstructured":"Yao
-        X, Song Y, Yang J-B, Tan Y-H, Corlett RT. Phylogeny and biogeography of the
-        hollies (Ilex L., Aquifoliaceae), Dryad, Dataset. https:\/\/datadryad.org\/stash\/dataset\/https:\/\/doi.org\/10.5061\/dryad.k0p2ngf4x.Accessed:
-        April 2020.","DOI":"10.5061\/dryad.k0p2ngf4x"},{"key":"4274_CR58","doi-asserted-by":"publisher","author":"SA
-        Berger","year":"2011","unstructured":"Berger SA, Krompass D, Stamatakis A.
-        Performance, accuracy, and web server for evolutionary placement of short
-        sequence reads under maximum likelihood. Syst Biol. 2011. https:\/\/doi.org\/10.1093\/sysbio\/syr010.","journal-title":"Syst
-        Biol","DOI":"10.1093\/sysbio\/syr010"},{"issue":"1","key":"4274_CR59","doi-asserted-by":"publisher","first-page":"538","DOI":"10.1186\/1471-2105-11-538","volume":"11","author":"F
-        Matsen","year":"2010","unstructured":"Matsen F, Kodner R, Armbrust EV. pplacer:
-        linear time maximum-likelihood and Bayesian phylogenetic placement of sequences
-        onto a fixed reference tree. BMC Bioinform. 2010;11(1):538.","journal-title":"BMC
-        Bioinform"},{"issue":"1","key":"4274_CR60","doi-asserted-by":"publisher","first-page":"104","DOI":"10.1111\/2041-210X.13096","volume":"10","author":"SA
-        Smith","year":"2019","unstructured":"Smith SA, Walker JF. Pyphlawd: a python
-        tool for phylogenetic dataset construction. Methods Ecol Evol. 2019;10(1):104\u20138.
-        https:\/\/doi.org\/10.1111\/2041-210X.13096.","journal-title":"Methods Ecol
-        Evol"},{"issue":"2","key":"4274_CR61","doi-asserted-by":"publisher","first-page":"20","DOI":"10.3390\/life8020020","volume":"8","author":"DJ
-        Bennett","year":"2018","unstructured":"Bennett DJ, Hettling H, Silvestro D,
-        Zizka A, Bacon CD, Faurby S, Vos RA, Antonelli A. phylotar: an automated pipeline
-        for retrieving orthologous dna sequences from genbank in r. Life. 2018;8(2):20.
-        https:\/\/doi.org\/10.3390\/life8020020.","journal-title":"Life"},{"key":"4274_CR62","doi-asserted-by":"publisher","author":"H
-        Huang","year":"2009","unstructured":"Huang H, Knowles LL. What is the danger
-        of the anomaly zone for empirical phylogenetics? Syst Biol. 2009. https:\/\/doi.org\/10.1093\/sysbio\/syp047.","journal-title":"Syst
-        Biol","DOI":"10.1093\/sysbio\/syp047"},{"issue":"37","key":"4274_CR63","doi-asserted-by":"publisher","first-page":"14942","DOI":"10.1073\/pnas.1211733109","volume":"109","author":"S
-        Song","year":"2012","unstructured":"Song S, Liu L, Edwards SV, Wu S. Resolving
-        conflict in eutherian mammal phylogeny using phylogenomics and the multispecies
-        coalescent model. Proc Natl Acad Sci. 2012;109(37):14942\u20137. https:\/\/doi.org\/10.1073\/pnas.1211733109.","journal-title":"Proc
-        Natl Acad Sci"},{"key":"4274_CR64","doi-asserted-by":"publisher","author":"B
-        Morel","year":"2020","unstructured":"Morel B, Barbera P, Czech L, Bettisworth
-        B, H\u00f6bner L, Lutteropp S, Serdari D, Kostaki E-G, Mamais I, Kozlov AM,
-        Pavlidis P, Paraskevis D, Stamatakis A. Phylogenetic analysis of SARS-CoV-2
-        data is difficult. Mol Biol Evol. 2020. https:\/\/doi.org\/10.1093\/molbev\/msaa314.","journal-title":"Mol
-        Biol Evol","DOI":"10.1093\/molbev\/msaa314"},{"key":"4274_CR65","doi-asserted-by":"publisher","author":"T
-        Zhu","year":"2021","unstructured":"Zhu T, Yang Z. Complexity of the simplest
-        species tree problem. Mol Biol Evol. 2021. https:\/\/doi.org\/10.1093\/molbev\/msab009.","journal-title":"Mol
-        Biol Evol","DOI":"10.1093\/molbev\/msab009"},{"issue":"17","key":"4274_CR66","doi-asserted-by":"publisher","first-page":"541","DOI":"10.1093\/bioinformatics\/btu462","volume":"30","author":"S
-        Mirarab","year":"2014","unstructured":"Mirarab S, Reaz R, Bayzid MS, Zimmermann
-        T, Swenson MS, Warnow T. ASTRAL: genome-scale coalescent-based species tree
-        estimation. Bioinformatics. 2014;30(17):541\u20138. https:\/\/doi.org\/10.1093\/bioinformatics\/btu462.","journal-title":"Bioinformatics"},{"issue":"23","key":"4274_CR67","doi-asserted-by":"publisher","first-page":"3317","DOI":"10.1093\/bioinformatics\/btu530","volume":"30","author":"J
-        Chifman","year":"2014","unstructured":"Chifman J, Kubatko L. Quartet inference
-        from SNP data under the coalescent model. Bioinformatics. 2014;30(23):3317\u201324.
-        https:\/\/doi.org\/10.1093\/bioinformatics\/btu530.","journal-title":"Bioinformatics"},{"issue":"4","key":"4274_CR68","doi-asserted-by":"publisher","first-page":"955","DOI":"10.1007\/s10531-010-9817-x","volume":"19","author":"CO
-        Webb","year":"2010","unstructured":"Webb CO, Slik JF, Triono T. Biodiversity
-        inventory and informatics in Southeast Asia. Biodiver Conserv. 2010;19(4):955\u201372.
-        https:\/\/doi.org\/10.1007\/s10531-010-9817-x.","journal-title":"Biodiver
-        Conserv"},{"issue":"2","key":"4274_CR69","doi-asserted-by":"publisher","first-page":"311","DOI":"10.2478\/s11658-010-0010-8","volume":"15","author":"D
-        San Mauro","year":"2010","unstructured":"San Mauro D, Agorreta A. Molecular
-        systematics: a synthesis of the common methods and the state of knowledge.
-        Cell Mol Biol Lett. 2010;15(2):311. https:\/\/doi.org\/10.2478\/s11658-010-0010-8.","journal-title":"Cell
-        Mol Biol Lett"},{"issue":"sp8","key":"4274_CR70","doi-asserted-by":"publisher","first-page":"31","DOI":"10.1890\/11-0435.1","volume":"93","author":"MR
-        Helmus","year":"2012","unstructured":"Helmus MR, Ives AR. Phylogenetic diversity-area
-        curves. Ecology. 2012;93(sp8):31\u201343. https:\/\/doi.org\/10.1890\/11-0435.1.","journal-title":"Ecology"},{"issue":"1","key":"4274_CR71","doi-asserted-by":"publisher","first-page":"158","DOI":"10.1186\/1471-2105-14-158","volume":"14","author":"A
-        Stoltzfus","year":"2013","unstructured":"Stoltzfus A, Lapp H, Matasci N, Deus
-        H, Sidlauskas B, Zmasek CM, Vaidya G, Pontelli E, Cranston K, Vos R, et al.
-        Phylotastic! making tree-of-life knowledge accessible, reusable and convenient.
-        BMC Bioinform. 2013;14(1):158. https:\/\/doi.org\/10.1186\/1471-2105-14-158.","journal-title":"BMC
-        Bioinform"},{"key":"4274_CR72","unstructured":"OpenTreeOfLife, Redelings B,
-        Reyes LLS, Cranston KA, Allman J, Holder MT, McTavish EJ. Open tree of life
-        synthetic subtree of the genus Ilex, Node Id Ott727571. https:\/\/tree.opentreeoflife.org\/opentree\/opentree12.3@ott727571\/Ilex."}],"container-title":["BMC
-        Bioinformatics"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1186\/s12859-021-04274-6.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/article\/10.1186\/s12859-021-04274-6\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1186\/s12859-021-04274-6.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,29]],"date-time":"2021-06-29T19:03:21Z","timestamp":1624993401000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/bmcbioinformatics.biomedcentral.com\/articles\/10.1186\/s12859-021-04274-6"}},"issued":{"date-parts":[[2021,6,29]]},"references-count":72,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2021,12]]}},"alternative-id":["4274"],"URL":"http:\/\/dx.doi.org\/10.1186\/s12859-021-04274-6","ISSN":["1471-2105"],"issn-type":[{"value":"1471-2105","type":"electronic"}],"subject":["Applied
-        Mathematics","Computer Science Applications","Molecular Biology","Biochemistry","Structural
-        Biology"],"published":{"date-parts":[[2021,6,29]]},"assertion":[{"value":"8
-        January 2021","order":1,"name":"received","label":"Received","group":{"name":"ArticleHistory","label":"Article
-        History"}},{"value":"16 June 2021","order":2,"name":"accepted","label":"Accepted","group":{"name":"ArticleHistory","label":"Article
-        History"}},{"value":"29 June 2021","order":3,"name":"first_online","label":"First
-        Online","group":{"name":"ArticleHistory","label":"Article History"}},{"order":1,"name":"Ethics","group":{"name":"EthicsHeading","label":"Declarations"}},{"value":"Not
-        applicable.","order":2,"name":"Ethics","group":{"name":"EthicsHeading","label":"Ethics
-        approval and consent to participate"}},{"value":"Not applicable.","order":3,"name":"Ethics","group":{"name":"EthicsHeading","label":"Consent
-        for publication"}},{"value":"The authors declare that they have no competing
-        interests.","order":4,"name":"Ethics","group":{"name":"EthicsHeading","label":"Competing
-        interests"}}],"article-number":"355"},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T05:07:55Z","timestamp":1648962475444},"reference-count":36,"publisher":"Royal
+        History"}}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T05:07:55Z","timestamp":1648962475444},"reference-count":36,"publisher":"Royal
         Society of Chemistry (RSC)","issue":"10","funder":[{"DOI":"10.13039\/100000001","name":"National
         Science Foundation","doi-asserted-by":"publisher","award":["11402086","11502223"]}],"content-domain":{"domain":["rsc.org"],"crossmark-restriction":true},"short-container-title":["RSC
         Adv."],"abstract":"<p>Monatomic alloying of atomic clusters emerges as a promising
@@ -1202,50 +789,7 @@ interactions:
         History"}},{"value":"28 February 2021","order":2,"name":"revised","label":"Revised","group":{"name":"ArticleHistory","label":"Article
         History"}},{"value":"15 March 2021","order":3,"name":"accepted","label":"Accepted","group":{"name":"ArticleHistory","label":"Article
         History"}},{"value":"6 June 2021","order":4,"name":"first_online","label":"First
-        Online","group":{"name":"ArticleHistory","label":"Article History"}}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T02:36:31Z","timestamp":1648953391882},"reference-count":18,"publisher":"Elsevier
-        BV","license":[{"start":{"date-parts":[[2019,10,1]],"date-time":"2019-10-01T00:00:00Z","timestamp":1569888000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2020,8,22]],"date-time":"2020-08-22T00:00:00Z","timestamp":1598054400000},"content-version":"am","delay-in-days":326,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
-        Science Foundation","doi-asserted-by":"publisher"},{"DOI":"10.13039\/100000893","name":"Simons
-        Foundation","doi-asserted-by":"publisher"}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Advances
-        in Mathematics"],"published-print":{"date-parts":[[2019,10]]},"DOI":"10.1016\/j.aim.2019.106773","type":"journal-article","created":{"date-parts":[[2019,8,23]],"date-time":"2019-08-23T17:20:53Z","timestamp":1566580853000},"page":"106773","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":1,"title":["Inhomogeneous
-        Diophantine approximation in the coprime setting"],"prefix":"10.1016","volume":"355","author":[{"given":"Svetlana","family":"Jitomirskaya","sequence":"first","affiliation":[]},{"given":"Wencai","family":"Liu","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"issue":"1","key":"10.1016\/j.aim.2019.106773_br0010","doi-asserted-by":"crossref","first-page":"303","DOI":"10.4007\/annals.2009.170.303","article-title":"The
-        Ten Martini Problem","volume":"170","author":"Avila","year":"2009","journal-title":"Ann.
-        of Math. (2)"},{"issue":"1","key":"10.1016\/j.aim.2019.106773_br0020","doi-asserted-by":"crossref","first-page":"283","DOI":"10.1007\/s00222-017-0729-1","article-title":"Spectral
-        theory of extended Harper''s model and a question by Erd\u0151s and Szekeres","volume":"210","author":"Avila","year":"2017","journal-title":"Invent.
-        Math."},{"key":"10.1016\/j.aim.2019.106773_br0030","article-title":"Sums of
-        reciprocals of fractional parts and multiplicative Diophantine approximation","author":"Beresnevich","year":"2019","journal-title":"Mem.
-        Amer. Math. Soc."},{"issue":"2","key":"10.1016\/j.aim.2019.106773_br0040","doi-asserted-by":"crossref","first-page":"193","DOI":"10.1112\/S0025579310001130","article-title":"On
-        shrinking targets for Zm actions on tori","volume":"56","author":"Bugeaud","year":"2010","journal-title":"Mathematika"},{"key":"10.1016\/j.aim.2019.106773_br0050","doi-asserted-by":"crossref","first-page":"91","DOI":"10.4153\/CMB-1959-014-7","article-title":"On
-        the distribution of primitive lattice points in the plane","volume":"2","author":"Chalk","year":"1959","journal-title":"Canad.
-        Math. Bull."},{"issue":"3","key":"10.1016\/j.aim.2019.106773_br0060","doi-asserted-by":"crossref","first-page":"259","DOI":"10.1006\/jnth.1994.1067","article-title":"On
-        inhomogeneous Diophantine approximation","volume":"48","author":"Cusick","year":"1994","journal-title":"J.
-        Number Theory"},{"key":"10.1016\/j.aim.2019.106773_br0070","series-title":"Dynamical
-        Systems and Diophantine Approximation","first-page":"1","article-title":"Diophantine
-        approximation, Khintchine''s theorem, torus geometry and Hausdorff dimension","volume":"vol.
-        19","author":"Dodson","year":"2009"},{"key":"10.1016\/j.aim.2019.106773_br0080","series-title":"Ergodic
-        Theory","author":"Einsiedler","year":"2013"},{"issue":"1","key":"10.1016\/j.aim.2019.106773_br0090","first-page":"41","article-title":"On
-        Kurzweil''s 0-1 law in inhomogeneous Diophantine approximation","volume":"173","author":"Fuchs","year":"2016","journal-title":"Acta
-        Arith."},{"issue":"1","key":"10.1016\/j.aim.2019.106773_br0100","doi-asserted-by":"crossref","first-page":"316","DOI":"10.1112\/plms\/s2-17.1.316","article-title":"Note
-        on a Diophantine approximation","volume":"2","author":"Grace","year":"1918","journal-title":"Proc.
-        Lond. Math. Soc."},{"key":"10.1016\/j.aim.2019.106773_br0110","first-page":"249","article-title":"Inhomogeneous
-        approximation by coprime integers","volume":"18","author":"Haynes","year":"2012","journal-title":"New
-        York J. Math."},{"issue":"3","key":"10.1016\/j.aim.2019.106773_br0120","doi-asserted-by":"crossref","first-page":"721","DOI":"10.4007\/annals.2018.187.3.3","article-title":"Universal
-        hierarchical structure of quasiperiodic eigenfunctions","volume":"187","author":"Jitomirskaya","year":"2018","journal-title":"Ann.
-        of Math. (2)"},{"key":"10.1016\/j.aim.2019.106773_br0130","author":"Jitomirskaya"},{"issue":"7","key":"10.1016\/j.aim.2019.106773_br0140","doi-asserted-by":"crossref","first-page":"1637","DOI":"10.1088\/0951-7715\/20\/7\/006","article-title":"The
-        shrinking target property of irrational rotations","volume":"20","author":"Kim","year":"2007","journal-title":"Nonlinearity"},{"issue":"4","key":"10.1016\/j.aim.2019.106773_br0150","doi-asserted-by":"crossref","first-page":"413","DOI":"10.4064\/aa154-4-5","article-title":"Inhomogeneous
-        approximation with coprime integers and lattice orbits","volume":"154","author":"Laurent","year":"2012","journal-title":"Acta
-        Arith."},{"issue":"1","key":"10.1016\/j.aim.2019.106773_br0160","doi-asserted-by":"crossref","first-page":"21","DOI":"10.1112\/plms\/s2-45.1.21","article-title":"The
-        n-th prime is greater than nlog\u2061n","volume":"45","author":"Rosser","year":"1939","journal-title":"Proc.
-        Lond. Math. Soc. (2)"},{"key":"10.1016\/j.aim.2019.106773_br0170","doi-asserted-by":"crossref","first-page":"211","DOI":"10.2307\/2371291","article-title":"Explicit
-        bounds for some functions of prime numbers","volume":"63","author":"Rosser","year":"1941","journal-title":"Amer.
-        J. Math."},{"key":"10.1016\/j.aim.2019.106773_br0180","series-title":"Metric
-        Theory of Diophantine Approximations","author":"Sprindzhuk","year":"1979"}],"container-title":["Advances
-        in Mathematics"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0001870819303913?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0001870819303913?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2021,4,10]],"date-time":"2021-04-10T09:29:01Z","timestamp":1618046941000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0001870819303913"}},"issued":{"date-parts":[[2019,10]]},"references-count":18,"alternative-id":["S0001870819303913"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.aim.2019.106773","ISSN":["0001-8708"],"issn-type":[{"value":"0001-8708","type":"print"}],"subject":["General
-        Mathematics"],"published":{"date-parts":[[2019,10]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-        article is maintained by"},{"value":"Inhomogeneous Diophantine approximation
-        in the coprime setting","name":"articletitle","label":"Article Title"},{"value":"Advances
-        in Mathematics","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1016\/j.aim.2019.106773","name":"articlelink","label":"CrossRef
-        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-        Type"},{"value":"\u00a9 2019 Elsevier Inc. All rights reserved.","name":"copyright","label":"Copyright"}],"article-number":"106773"},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T02:44:59Z","timestamp":1648953899822},"reference-count":28,"publisher":"Elsevier
+        Online","group":{"name":"ArticleHistory","label":"Article History"}}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T02:44:59Z","timestamp":1648953899822},"reference-count":28,"publisher":"Elsevier
         BV","license":[{"start":{"date-parts":[[2016,6,1]],"date-time":"2016-06-01T00:00:00Z","timestamp":1464739200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2017,4,6]],"date-time":"2017-04-06T00:00:00Z","timestamp":1491436800000},"content-version":"am","delay-in-days":309,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/100000057","name":"National
         Institute of General Medical Sciences","doi-asserted-by":"publisher","award":["8
         P20 GM103499","5 P20 RR016461"]},{"DOI":"10.13039\/100000097","name":"National
@@ -1561,7 +1105,161 @@ interactions:
         Title"},{"value":"Journal of Electron Spectroscopy and Related Phenomena","name":"journaltitle","label":"Journal
         Title"},{"value":"https:\/\/doi.org\/10.1016\/j.elspec.2020.146994","name":"articlelink","label":"CrossRef
         DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-        Type"},{"value":"\u00a9 2020 Published by Elsevier B.V.","name":"copyright","label":"Copyright"}],"article-number":"146994"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+        Type"},{"value":"\u00a9 2020 Published by Elsevier B.V.","name":"copyright","label":"Copyright"}],"article-number":"146994"},{"indexed":{"date-parts":[[2022,3,29]],"date-time":"2022-03-29T12:04:24Z","timestamp":1648555464096},"reference-count":46,"publisher":"The
+        Royal Society","issue":"1836","license":[{"start":{"date-parts":[[2016,8,17]],"date-time":"2016-08-17T00:00:00Z","timestamp":1471392000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/royalsociety.org\/journals\/ethics-policies\/data-sharing-mining\/"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["DGE 1106400"]},{"name":"UC
+        Mexus Research Fellowship"},{"DOI":"10.13039\/100000002","name":"National
+        Institutes of Health","doi-asserted-by":"publisher","award":["K12GM000708"]},{"name":"Robert
+        Van den Bosch Fellowship"},{"name":"the Edna & Yoshinori Tanada Fellowship"},{"name":"Margaret
+        C. Walker fund"},{"DOI":"10.13039\/100000199","name":"U.S. Department of Agriculture","doi-asserted-by":"publisher","award":["CA-B-INS-0087-H"]}],"content-domain":{"domain":["royalsocietypublishing.org"],"crossmark-restriction":true},"short-container-title":["Proc.
+        R. Soc. B."],"published-print":{"date-parts":[[2016,8,17]]},"abstract":"<jats:p>\n            Myrmecophiles
+        (i.e. organisms that associate with ants) use a variety of ecological niches
+        and employ different strategies to survive encounters with ants. Because ants
+        are typically excellent defenders, myrmecophiles may choose moments of weakness
+        to take advantage of their ant associates. This hypothesis was studied in
+        the rove beetle,\n            <jats:italic>Myrmedonota xipe<\/jats:italic>\n            ,
+        which associates with\n            <jats:italic>Azteca sericeasur<\/jats:italic>\n            ants
+        in the presence of parasitoid flies. A combination of laboratory and field
+        experiments show that\n            <jats:italic>M. xipe<\/jats:italic>\n            beetles
+        selectively locate and prey upon parasitized ants. These parasitized ants
+        are less aggressive towards beetles than healthy ants, allowing beetles to
+        eat the parasitized ants alive without interruption. Moreover, behavioural
+        assays and chemical analysis reveal that\n            <jats:italic>M. xipe<\/jats:italic>\n            are
+        attracted to the ant''s alarm pheromone, the same secretion used by the phorid
+        fly parasitoids in host location. This strategy allows beetles access to an
+        abundant but otherwise inaccessible resource, as\n            <jats:italic>A.
+        sericeasur<\/jats:italic>\n            ants are typically highly aggressive.
+        These results are the first, to our knowledge, to demonstrate a predator sharing
+        cues with a parasitoid to gain access to an otherwise unavailable prey item.
+        Furthermore, this work highlights the importance of studying ant\u2013myrmecophile
+        interactions beyond just their pairwise context.\n          <\/jats:p>","DOI":"10.1098\/rspb.2016.1281","type":"journal-article","created":{"date-parts":[[2016,8,10]],"date-time":"2016-08-10T09:08:00Z","timestamp":1470820080000},"page":"20161281","update-policy":"http:\/\/dx.doi.org\/10.1098\/crossmark-policy","source":"Crossref","is-referenced-by-count":5,"title":["Dead
+        ant walking: a myrmecophilous beetle predator uses parasitoid host location
+        cues to selectively prey on parasitized ants"],"prefix":"10.1098","volume":"283","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-3809-9128","authenticated-orcid":false,"given":"Kaitlyn
+        A.","family":"Mathis","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1868-3941","authenticated-orcid":false,"given":"Neil
+        D.","family":"Tsutsui","sequence":"additional","affiliation":[]}],"member":"175","published-online":{"date-parts":[[2016,8,17]]},"reference":[{"key":"e_1_3_6_2_2","doi-asserted-by":"crossref","first-page":"339","DOI":"10.1016\/B978-0-12-342201-9.50015-X","article-title":"Social
+        and evolutionary significance of social insect symbionts","volume":"1","author":"Kistner
+        DH","year":"1979","journal-title":"Social Insects"},{"key":"e_1_3_6_3_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00265-011-1171-9"},{"key":"e_1_3_6_4_2","doi-asserted-by":"publisher","DOI":"10.1007\/978-3-662-10306-7"},{"key":"e_1_3_6_5_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.tree.2008.07.011"},{"key":"e_1_3_6_6_2","doi-asserted-by":"publisher","DOI":"10.1111\/fwb.12329"},{"key":"e_1_3_6_7_2","doi-asserted-by":"publisher","DOI":"10.1890\/070136"},{"key":"e_1_3_6_8_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1600-0706.2010.17985.x"},{"key":"e_1_3_6_9_2","doi-asserted-by":"publisher","DOI":"10.1146\/annurev-ecolsys-120213-091923"},{"key":"e_1_3_6_10_2","doi-asserted-by":"publisher","DOI":"10.1890\/0012-9658(2003)084[1083:AROTII]2.0.CO;2"},{"key":"e_1_3_6_11_2","doi-asserted-by":"publisher","DOI":"10.1098\/rsbl.2013.0879"},{"key":"e_1_3_6_12_2","doi-asserted-by":"publisher","DOI":"10.1016\/S0003-3472(05)80769-9"},{"key":"e_1_3_6_13_2","doi-asserted-by":"publisher","DOI":"10.2307\/3545788"},{"key":"e_1_3_6_14_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00040-011-0210-x"},{"key":"e_1_3_6_15_2","doi-asserted-by":"publisher","DOI":"10.1146\/annurev.en.38.010193.001343"},{"key":"e_1_3_6_16_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00114-004-0561-5"},{"key":"e_1_3_6_17_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.0030-1299.2004.12889.x"},{"key":"e_1_3_6_18_2","doi-asserted-by":"publisher","DOI":"10.1007\/978-1-4615-7299-2_6"},{"key":"e_1_3_6_19_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1558-5646.1982.tb05043.x"},{"key":"e_1_3_6_20_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00040-007-0924-y"},{"key":"e_1_3_6_21_2","doi-asserted-by":"publisher","DOI":"10.1086\/283612"},{"key":"e_1_3_6_22_2","doi-asserted-by":"publisher","DOI":"10.1016\/B978-0-08-091649-1.50010-4"},{"key":"e_1_3_6_23_2","doi-asserted-by":"publisher","DOI":"10.1603\/EN12202"},{"key":"e_1_3_6_24_2","doi-asserted-by":"publisher","DOI":"10.1007\/s10905-010-9247-3"},{"key":"e_1_3_6_25_2","doi-asserted-by":"publisher","DOI":"10.1603\/EN12014"},{"key":"e_1_3_6_26_2","doi-asserted-by":"publisher","DOI":"10.1093\/ee\/34.5.1089"},{"key":"e_1_3_6_27_2","doi-asserted-by":"publisher","DOI":"10.11646\/zootaxa.3768.1.7"},{"key":"e_1_3_6_28_2","doi-asserted-by":"publisher","DOI":"10.1038\/nature06477"},{"key":"e_1_3_6_29_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00040-007-0954-5"},{"key":"e_1_3_6_30_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.cub.2009.12.031"},{"key":"e_1_3_6_31_2","volume-title":"R:
+        a language and environment for statistical computing","author":"R Development
+        Core Team","year":"2015"},{"key":"e_1_3_6_32_2","doi-asserted-by":"publisher","DOI":"10.1007\/978-0-387-21706-2"},{"key":"e_1_3_6_33_2","first-page":"1","article-title":"Current
+        understanding and future prospects of host selection, acceptance, discrimination,
+        and regulation of phorid fly parasitoids that attack ants","volume":"2002","author":"Mathis
+        KA","year":"2012","journal-title":"Psyche"},{"key":"e_1_3_6_34_2","doi-asserted-by":"publisher","DOI":"10.1126\/science.1111099"},{"key":"e_1_3_6_35_2","doi-asserted-by":"publisher","DOI":"10.1006\/bcon.1995.1038"},{"key":"e_1_3_6_36_2","doi-asserted-by":"publisher","DOI":"10.1086\/591688"},{"key":"e_1_3_6_37_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.cub.2009.12.037"},{"key":"e_1_3_6_38_2","doi-asserted-by":"publisher","DOI":"10.1038\/330701a0"},{"key":"e_1_3_6_39_2","doi-asserted-by":"publisher","DOI":"10.1086\/283863"},{"key":"e_1_3_6_40_2","doi-asserted-by":"publisher","DOI":"10.1038\/328797b0"},{"key":"e_1_3_6_41_2","unstructured":"Remfert
+        J. 2012 Genetic variation and cluster formation in the ant Azteca in coffee
+        agroecosystems. Master''s thesis. (http:\/\/www.snre.umich.edu\/current_students\/forms_policies\/theses)"},{"key":"e_1_3_6_42_2","doi-asserted-by":"publisher","DOI":"10.1603\/022.038.0331"},{"key":"e_1_3_6_43_2","doi-asserted-by":"publisher","DOI":"10.1155\/2013\/696401"},{"key":"e_1_3_6_44_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00040-010-0128-8"},{"key":"e_1_3_6_45_2","doi-asserted-by":"publisher","DOI":"10.1664\/0028-7199(2000)108[0273:ALSBAA]2.0.CO;2"},{"key":"e_1_3_6_46_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00040-014-0357-3"},{"key":"e_1_3_6_47_2","doi-asserted-by":"publisher","DOI":"10.1002\/ece3.322"}],"container-title":["Proceedings
+        of the Royal Society B: Biological Sciences"],"language":"en","link":[{"URL":"https:\/\/royalsocietypublishing.org\/doi\/pdf\/10.1098\/rspb.2016.1281","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/royalsocietypublishing.org\/doi\/full-xml\/10.1098\/rspb.2016.1281","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/royalsocietypublishing.org\/doi\/pdf\/10.1098\/rspb.2016.1281","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,2,20]],"date-time":"2021-02-20T20:35:59Z","timestamp":1613853359000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/royalsocietypublishing.org\/doi\/10.1098\/rspb.2016.1281"}},"issued":{"date-parts":[[2016,8,17]]},"references-count":46,"journal-issue":{"issue":"1836","published-print":{"date-parts":[[2016,8,17]]}},"alternative-id":["10.1098\/rspb.2016.1281"],"URL":"http:\/\/dx.doi.org\/10.1098\/rspb.2016.1281","ISSN":["0962-8452","1471-2954"],"issn-type":[{"value":"0962-8452","type":"print"},{"value":"1471-2954","type":"electronic"}],"subject":["General
+        Agricultural and Biological Sciences","General Environmental Science","General
+        Immunology and Microbiology","General Biochemistry, Genetics and Molecular
+        Biology","General Medicine"],"published":{"date-parts":[[2016,8,17]]},"assertion":[{"value":"2016-06-08","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2016-07-20","order":1,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2016-08-17","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]},{"indexed":{"date-parts":[[2022,3,29]],"date-time":"2022-03-29T11:51:14Z","timestamp":1648554674356},"reference-count":17,"publisher":"Elsevier
+        BV","license":[{"start":{"date-parts":[[2015,11,1]],"date-time":"2015-11-01T00:00:00Z","timestamp":1446336000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2016,11,11]],"date-time":"2016-11-11T00:00:00Z","timestamp":1478822400000},"content-version":"am","delay-in-days":376,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"funder":[{"name":"Simons
+        Fellowship","award":["H98230-15-1-0002"]},{"DOI":"10.13039\/100000001","name":"NSF","doi-asserted-by":"publisher","award":["DMS-0745185"]},{"DOI":"10.13039\/100005302","name":"UIUC","doi-asserted-by":"publisher","award":["15006"]},{"DOI":"10.13039\/501100004963","name":"FP7","doi-asserted-by":"publisher","award":["PEOPLE-2012-IIF
+        327763"]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Electronic
+        Notes in Discrete Mathematics"],"published-print":{"date-parts":[[2015,11]]},"DOI":"10.1016\/j.endm.2015.06.010","type":"journal-article","created":{"date-parts":[[2015,11,12]],"date-time":"2015-11-12T21:35:20Z","timestamp":1447364120000},"page":"57-64","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["A
+        sharp bound on the number of maximal sum-free sets"],"prefix":"10.1016","volume":"49","author":[{"given":"J\u00f3zsef","family":"Balogh","sequence":"first","affiliation":[]},{"given":"Hong","family":"Liu","sequence":"additional","affiliation":[]},{"given":"Maryam","family":"Sharifzadeh","sequence":"additional","affiliation":[]},{"given":"Andrew","family":"Treglown","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.endm.2015.06.010_br0010","unstructured":"J.
+        Balogh, H. Liu, S. Pet\u0159\u00ed\u010dkov\u00e1, M. Sharifzadeh, The typical
+        structure of maximal triangle-free graphs, submitted for publication."},{"key":"10.1016\/j.endm.2015.06.010_br0020","doi-asserted-by":"crossref","article-title":"The
+        number of maximal sum-free subsets of integers","author":"Balogh","year":"2015","journal-title":"Proc.
+        Amer. Math. Soc.","DOI":"10.1090\/S0002-9939-2015-12615-9"},{"key":"10.1016\/j.endm.2015.06.010_br0030","unstructured":"J.
+        Balogh, H. Liu, M. Sharifzadeh, A. Treglown, Sharp bound on the number of
+        maximal sum-free subsets of integers, submitted for publication."},{"key":"10.1016\/j.endm.2015.06.010_br0040","doi-asserted-by":"crossref","first-page":"669","DOI":"10.1090\/S0894-0347-2014-00816-X","article-title":"Independent
+        sets in hypergraphs","volume":"28","author":"Balogh","year":"2015","journal-title":"J.
+        Amer. Math. Soc."},{"key":"10.1016\/j.endm.2015.06.010_br0050","doi-asserted-by":"crossref","first-page":"1003","DOI":"10.1112\/blms\/bdu059","article-title":"The
+        number of the maximal triangle-free graphs","volume":"46","author":"Balogh","year":"2014","journal-title":"Bull.
+        London Math. Soc."},{"key":"10.1016\/j.endm.2015.06.010_br0060","series-title":"Number
+        Theory","first-page":"61","article-title":"On the number of sets of integers
+        with various properties","author":"Cameron","year":"1990"},{"key":"10.1016\/j.endm.2015.06.010_br0070","doi-asserted-by":"crossref","first-page":"95","DOI":"10.1017\/S0963548398003435","article-title":"Notes
+        on sum-free and related sets","volume":"8","author":"Cameron","year":"1999","journal-title":"Combin.
+        Probab. Comput."},{"key":"10.1016\/j.endm.2015.06.010_br0080","first-page":"149","article-title":"On
+        the structure of sum-free sets II","volume":"258","author":"Deshouillers","year":"1999","journal-title":"Ast\u00e9risque"},{"key":"10.1016\/j.endm.2015.06.010_br0090","doi-asserted-by":"crossref","first-page":"769","DOI":"10.1112\/S0024609304003650","article-title":"The
+        Cameron-Erd\u0151s conjecture","volume":"36","author":"Green","year":"2004","journal-title":"Bull.
+        London Math. Soc."},{"key":"10.1016\/j.endm.2015.06.010_br0100","doi-asserted-by":"crossref","first-page":"340","DOI":"10.1007\/s00039-005-0509-8","article-title":"A
+        Szemer\u00e9di-type regularity lemma in abelian groups, with applications","volume":"15","author":"Green","year":"2005","journal-title":"Geom.
+        Funct. Anal."},{"key":"10.1016\/j.endm.2015.06.010_br0110","article-title":"Counting
+        sets with small sumset and applications","author":"Green","year":"2015","journal-title":"Combinatorica"},{"key":"10.1016\/j.endm.2015.06.010_br0120","doi-asserted-by":"crossref","first-page":"284","DOI":"10.1137\/0406022","article-title":"The
+        number of maximal independent sets in triangle-free graphs","volume":"6","author":"Hujter","year":"1993","journal-title":"SIAM
+        J. Discrete Math."},{"key":"10.1016\/j.endm.2015.06.010_br0130","doi-asserted-by":"crossref","first-page":"2205","DOI":"10.1090\/S0002-9939-00-05815-9","article-title":"On
+        the number of maximal sum-free sets","volume":"129","author":"\u0141uczak","year":"2001","journal-title":"Proc.
+        Amer. Math. Soc."},{"key":"10.1016\/j.endm.2015.06.010_br0140","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1007\/BF02760024","article-title":"On
+        cliques in graphs","volume":"3","author":"Moon","year":"1965","journal-title":"Israel
+        J. Math."},{"key":"10.1016\/j.endm.2015.06.010_br0150","first-page":"749","article-title":"The
+        Cameron-Erd\u0151s conjecture (Russian)","volume":"393","author":"Sapozhenko","year":"2003","journal-title":"Dokl.
+        Akad. Nauk."},{"key":"10.1016\/j.endm.2015.06.010_br0160","doi-asserted-by":"crossref","article-title":"Hypergraph
+        containers","author":"Saxton","year":"2015","journal-title":"Invent. Math.","DOI":"10.1007\/s00222-014-0562-8"},{"key":"10.1016\/j.endm.2015.06.010_br0170","doi-asserted-by":"crossref","first-page":"1718","DOI":"10.1016\/j.ejc.2009.03.015","article-title":"Bounds
+        on the number of maximal sum-free sets","volume":"30","author":"Wolfovitz","year":"2009","journal-title":"European
+        J. Combin."}],"container-title":["Electronic Notes in Discrete Mathematics"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1571065315000566?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1571065315000566?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2021,4,25]],"date-time":"2021-04-25T20:02:08Z","timestamp":1619380928000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S1571065315000566"}},"issued":{"date-parts":[[2015,11]]},"references-count":17,"alternative-id":["S1571065315000566"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.endm.2015.06.010","ISSN":["1571-0653"],"issn-type":[{"value":"1571-0653","type":"print"}],"subject":["Applied
+        Mathematics","Discrete Mathematics and Combinatorics"],"published":{"date-parts":[[2015,11]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+        article is maintained by"},{"value":"A sharp bound on the number of maximal
+        sum-free sets","name":"articletitle","label":"Article Title"},{"value":"Electronic
+        Notes in Discrete Mathematics","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1016\/j.endm.2015.06.010","name":"articlelink","label":"CrossRef
+        DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+        Type"},{"value":"Copyright \u00a9 2015 Elsevier B.V. All rights reserved.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2022,3,29]],"date-time":"2022-03-29T12:00:35Z","timestamp":1648555235524},"reference-count":24,"publisher":"The
+        Optical Society","issue":"7","license":[{"start":{"date-parts":[[2018,6,27]],"date-time":"2018-06-27T00:00:00Z","timestamp":1530057600000},"content-version":"am","delay-in-days":365,"URL":"https:\/\/www.osapublishing.org\/submit\/licenses\/license_v1.cfm#am"}],"funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation (NSF)","doi-asserted-by":"publisher","award":["CBET-1554516"]}],"content-domain":{"domain":["www.osapublishing.org"],"crossmark-restriction":true},"short-container-title":["J.
+        Opt. Soc. Am. A"],"published-print":{"date-parts":[[2017,7,1]]},"DOI":"10.1364\/josaa.34.001217","type":"journal-article","created":{"date-parts":[[2017,6,26]],"date-time":"2017-06-26T15:44:23Z","timestamp":1498491863000},"page":"1217","update-policy":"http:\/\/dx.doi.org\/10.1364\/osa_crossmark_policy","source":"Crossref","is-referenced-by-count":1,"title":["Description
+        of deep saturated excitation multiphoton microscopy for super-resolution imaging"],"prefix":"10.1364","volume":"34","author":[{"given":"Genevieve","family":"Vigil","sequence":"first","affiliation":[]},{"given":"Yide","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Aamir","family":"Khan","sequence":"additional","affiliation":[]},{"given":"Scott","family":"Howard","sequence":"additional","affiliation":[]}],"member":"285","published-online":{"date-parts":[[2017,6,27]]},"reference":[{"key":"josaa-34-7-1217-R1","doi-asserted-by":"crossref","first-page":"443001","DOI":"10.1088\/0022-3727\/48\/44\/443001","volume":"48","author":"Hell","year":"2015","journal-title":"J.
+        Phys. D"},{"key":"josaa-34-7-1217-R2","doi-asserted-by":"crossref","first-page":"967","DOI":"10.1366\/11-06398","volume":"65","author":"Leung","year":"2011","journal-title":"Appl.
+        Spectrosc."},{"key":"josaa-34-7-1217-R3","doi-asserted-by":"crossref","first-page":"362","DOI":"10.1038\/nphoton.2009.102","volume":"3","author":"Heintzmann","year":"2009","journal-title":"Nat.
+        Photonics"},{"key":"josaa-34-7-1217-R4","doi-asserted-by":"crossref","first-page":"993","DOI":"10.1146\/annurev.biochem.77.061906.092014","volume":"78","author":"Huang","year":"2010","journal-title":"Annu.
+        Rev. Biochem."},{"key":"josaa-34-7-1217-R5","doi-asserted-by":"crossref","first-page":"237","DOI":"10.1364\/OL.20.000237","volume":"20","author":"Betzig","year":"1995","journal-title":"Opt.
+        Lett."},{"key":"josaa-34-7-1217-R6","doi-asserted-by":"crossref","first-page":"1642","DOI":"10.1126\/science.1127344","volume":"313","author":"Betzig","year":"2006","journal-title":"Science"},{"key":"josaa-34-7-1217-R7","doi-asserted-by":"crossref","first-page":"810","DOI":"10.1126\/science.1153529","volume":"319","author":"Huang","year":"2008","journal-title":"Science"},{"key":"josaa-34-7-1217-R8","doi-asserted-by":"crossref","first-page":"780","DOI":"10.1364\/OL.19.000780","volume":"19","author":"Hell","year":"1994","journal-title":"Opt.
+        Lett."},{"key":"josaa-34-7-1217-R9","doi-asserted-by":"crossref","first-page":"2995","DOI":"10.1073\/pnas.0900245106","volume":"106","author":"Pavani","year":"2009","journal-title":"Proc.
+        Natl. Acad. Sci. USA"},{"key":"josaa-34-7-1217-R10","doi-asserted-by":"crossref","first-page":"3125","DOI":"10.1073\/pnas.0813131106","volume":"106","author":"Shtengel","year":"2009","journal-title":"Proc.
+        Natl. Acad. Sci. USA"},{"key":"josaa-34-7-1217-R11","doi-asserted-by":"crossref","first-page":"205","DOI":"10.1038\/nphoton.2012.336","volume":"7","author":"Horton","year":"2013","journal-title":"Nat.
+        Photonics"},{"key":"josaa-34-7-1217-R12","doi-asserted-by":"crossref","first-page":"13354","DOI":"10.1364\/OE.17.013354","volume":"17","author":"Kobat","year":"2009","journal-title":"Opt.
+        Express"},{"key":"josaa-34-7-1217-R13","doi-asserted-by":"crossref","first-page":"3139","DOI":"10.1364\/JOSAA.23.003139","volume":"23","author":"Theer","year":"2006","journal-title":"J.
+        Opt. Soc. Am. A"},{"key":"josaa-34-7-1217-R14","doi-asserted-by":"crossref","first-page":"135","DOI":"10.1002\/jemt.20071","volume":"64","author":"Cianci","year":"2004","journal-title":"Microsc.
+        Res. Tech."},{"key":"josaa-34-7-1217-R15","doi-asserted-by":"crossref","first-page":"22667","DOI":"10.1364\/OE.23.022667","volume":"23","author":"Nguyen","year":"2015","journal-title":"Opt.
+        Express"},{"key":"josaa-34-7-1217-R16","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1103\/PhysRevLett.99.228105","volume":"99","author":"Fujita","year":"2007","journal-title":"Phys.
+        Rev. Lett."},{"key":"josaa-34-7-1217-R17","doi-asserted-by":"crossref","first-page":"050507","DOI":"10.1117\/1.2992595","volume":"13","author":"Yamanaka","year":"2015","journal-title":"J.
+        Biomed. Opt."},{"key":"josaa-34-7-1217-R18","doi-asserted-by":"crossref","first-page":"26016","DOI":"10.1364\/OE.22.026016","volume":"22","author":"Lee","year":"2014","journal-title":"Opt.
+        Express"},{"key":"josaa-34-7-1217-R19","doi-asserted-by":"crossref","first-page":"B1","DOI":"10.1364\/JOSAA.33.0000B1","volume":"33","author":"Zhang","year":"2016","journal-title":"J.
+        Opt. Soc. Am. A"},{"key":"josaa-34-7-1217-R20","doi-asserted-by":"crossref","first-page":"2157","DOI":"10.1364\/AO.33.002157","volume":"33","author":"Yaroslavsky","year":"1994","journal-title":"Appl.
+        Opt."},{"key":"josaa-34-7-1217-R21","doi-asserted-by":"crossref","first-page":"4957","DOI":"10.1529\/biophysj.107.120345","volume":"94","author":"Gustafsson","year":"2008","journal-title":"Biophys.
+        J."},{"key":"josaa-34-7-1217-R22","first-page":"1435","volume":"101","author":"Andresen","year":"2012","journal-title":"PLoS
+        One"},{"key":"josaa-34-7-1217-R23","doi-asserted-by":"crossref","first-page":"181","DOI":"10.1364\/OPTICA.1.000181","volume":"1","author":"Winter","year":"2014","journal-title":"Optica"},{"key":"josaa-34-7-1217-R24","doi-asserted-by":"crossref","first-page":"33","DOI":"10.1038\/nphoton.2012.307","volume":"7","author":"Howard","year":"2012","journal-title":"Nat.
+        Photon. Lett."}],"container-title":["Journal of the Optical Society of America
+        A"],"language":"en","link":[{"URL":"https:\/\/www.osapublishing.org\/viewmedia.cfm?URI=josaa-34-7-1217&am=y","content-type":"application\/pdf","content-version":"am","intended-application":"syndication"},{"URL":"https:\/\/www.osapublishing.org\/viewmedia.cfm?URI=josaa-34-7-1217&seq=0","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,27]],"date-time":"2022-01-27T00:07:01Z","timestamp":1643242021000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/opg.optica.org\/abstract.cfm?URI=josaa-34-7-1217"}},"issued":{"date-parts":[[2017,6,27]]},"references-count":24,"journal-issue":{"issue":"7","published-online":{"date-parts":[[2017]]},"published-print":{"date-parts":[[2017]]}},"URL":"http:\/\/dx.doi.org\/10.1364\/josaa.34.001217","ISSN":["1084-7529","1520-8532"],"issn-type":[{"value":"1084-7529","type":"print"},{"value":"1520-8532","type":"electronic"}],"subject":["Computer
+        Vision and Pattern Recognition","Atomic and Molecular Physics, and Optics","Electronic,
+        Optical and Magnetic Materials"],"published":{"date-parts":[[2017,6,27]]},"assertion":[{"value":"OSA
+        - The Optical Society","name":"publisher","label":"This article is maintained
+        by"},{"value":"https:\/\/doi.org\/10.1364\/JOSAA.34.001217","name":"articlelink","label":"Crossref
+        DOI link to publisher maintained version"},{"value":"research-article","name":"content_type","label":"Article
+        type"},{"value":"Screened by Similarity Check","name":"cross_check","label":"Similarity
+        check"},{"value":"Yes","order":0,"name":"peer_reviewed","label":"Peer reviewed","group":{"name":"peer_review","label":"Peer
+        review"}},{"value":"Single blind","order":1,"name":"review_process","label":"Review
+        process","group":{"name":"peer_review","label":"Peer review"}},{"value":"21
+        November 2016","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"30 May 2017","order":1,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"27 June 2017","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"\u00a9 2017 Optical Society of\n\t\t\t\t\tAmerica","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2022,3,29]],"date-time":"2022-03-29T15:50:28Z","timestamp":1648569028529},"reference-count":19,"publisher":"Informa
+        UK Limited","issue":"2","funder":[{"DOI":"10.13039\/100000001","name":"National
+        Science Foundation","doi-asserted-by":"publisher","award":["OIA-1301789"]}],"content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Journal
+        of Nonparametric Statistics"],"published-print":{"date-parts":[[2019,4,3]]},"DOI":"10.1080\/10485252.2019.1585539","type":"journal-article","created":{"date-parts":[[2019,3,1]],"date-time":"2019-03-01T12:17:08Z","timestamp":1551442628000},"page":"469-481","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Orthogonal
+        series density estimation for complex surveys"],"prefix":"10.1080","volume":"31","author":[{"given":"Shangyuan","family":"Ye","sequence":"first","affiliation":[{"name":"Department
+        of Statistics, Oklahoma State University, Stillwater, OK, USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-6513-8962","authenticated-orcid":false,"given":"Ye","family":"Liang","sequence":"additional","affiliation":[{"name":"Department
+        of Statistics, Oklahoma State University, Stillwater, OK, USA"}]},{"given":"Ibrahim
+        A.","family":"Ahmad","sequence":"additional","affiliation":[{"name":"Department
+        of Statistics, Oklahoma State University, Stillwater, OK, USA"}]}],"member":"301","published-online":{"date-parts":[[2019,3,1]]},"reference":[{"key":"CIT0001","first-page":"407","volume":"9","author":"Bellhouse
+        D.","year":"1999","journal-title":"Statistica Sinica"},{"key":"CIT0002","doi-asserted-by":"publisher","DOI":"10.1214\/009053605000000651"},{"key":"CIT0003","doi-asserted-by":"publisher","DOI":"10.1081\/ETC-100104939"},{"key":"CIT0004","doi-asserted-by":"publisher","DOI":"10.1016\/j.spl.2008.01.099"},{"key":"CIT0005","unstructured":"Buskirk,
+        T. (1999), \u2018Using Nonparametric Methods for Density Estimation with Complex
+        Survey Data\u2019, Technical report, PhD thesis, Department of Mathematics,
+        Arizona State University."},{"key":"CIT0006","doi-asserted-by":"publisher","DOI":"10.1016\/j.jspi.2003.09.036"},{"key":"CIT0007","doi-asserted-by":"publisher","DOI":"10.1214\/aos\/1032894451"},{"key":"CIT0008","doi-asserted-by":"publisher","DOI":"10.1016\/0167-9473(96)00012-6"},{"key":"CIT0009","volume-title":"Nonparametric
+        Curve Estimation: Methods, Theorey and Applications","author":"Efromovich
+        S.","year":"1999"},{"key":"CIT0010","doi-asserted-by":"publisher","DOI":"10.1002\/wics.97"},{"key":"CIT0011","first-page":"19","volume":"18","author":"Efromovich
+        S.","year":"1982","journal-title":"Problems of Information Transmission"},{"key":"CIT0012","doi-asserted-by":"publisher","DOI":"10.1111\/1467-9469.00339"},{"key":"CIT0013","doi-asserted-by":"publisher","DOI":"10.1214\/aoms\/1177700375"},{"key":"CIT0014","doi-asserted-by":"publisher","DOI":"10.2307\/2529429"},{"key":"CIT0015","doi-asserted-by":"publisher","DOI":"10.1080\/01621459.1952.10483446"},{"key":"CIT0016","first-page":"53","volume":"16","author":"Pinsker
+        M.","year":"1980","journal-title":"Problems of Information Transmission"},{"key":"CIT0017","volume-title":"Model-Free
+        Curve Estimation","author":"Tarter M.","year":"1993"},{"key":"CIT0018","doi-asserted-by":"publisher","DOI":"10.1214\/aos\/1176345341"},{"key":"CIT0019","volume-title":"Wavelets
+        and Other Orthogonal Systems with Applications","author":"Walter G.","year":"1994"}],"container-title":["Journal
+        of Nonparametric Statistics"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/10485252.2019.1585539","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,9,5]],"date-time":"2020-09-05T06:34:12Z","timestamp":1599287652000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/10485252.2019.1585539"}},"issued":{"date-parts":[[2019,3,1]]},"references-count":19,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2019,4,3]]}},"alternative-id":["10.1080\/10485252.2019.1585539"],"URL":"http:\/\/dx.doi.org\/10.1080\/10485252.2019.1585539","ISSN":["1048-5252","1029-0311"],"issn-type":[{"value":"1048-5252","type":"print"},{"value":"1029-0311","type":"electronic"}],"subject":["Statistics,
+        Probability and Uncertainty","Statistics and Probability"],"published":{"date-parts":[[2019,3,1]]},"assertion":[{"value":"The
+        publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
+        Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gnst20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=gnst20","order":2,"name":"aims_and_scope_url","label":"Aim
+        & Scope"},{"value":"2017-09-28","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2019-02-17","order":2,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
+        History"}},{"value":"2019-03-01","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+        History"}}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -1577,7 +1275,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:23:58 GMT
+      - Tue, 16 Jan 2024 00:23:50 GMT
       permissions-policy:
       - interest-cohort=()
       server:

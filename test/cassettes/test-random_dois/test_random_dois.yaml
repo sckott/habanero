@@ -16,316 +16,250 @@ interactions:
     uri: https://api.crossref.org/works?sample=10
   response:
     body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":10,"items":[{"indexed":{"date-parts":[[2023,9,2]],"date-time":"2023-09-02T12:40:48Z","timestamp":1693658448723},"reference-count":10,"publisher":"Wiley","issue":"2","license":[{"start":{"date-parts":[[2020,9,30]],"date-time":"2020-09-30T00:00:00Z","timestamp":1601424000000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":["onlinelibrary.wiley.com"],"crossmark-restriction":true},"short-container-title":["Journal
-        of Medical Virology"],"published-print":{"date-parts":[[2021,2]]},"DOI":"10.1002\/jmv.26532","type":"journal-article","created":{"date-parts":[[2020,9,19]],"date-time":"2020-09-19T12:00:45Z","timestamp":1600516845000},"page":"712-713","update-policy":"http:\/\/dx.doi.org\/10.1002\/crossmark_policy","source":"Crossref","is-referenced-by-count":3,"title":["SARS\u2010CoV\u20102
-        molecular testing for the diagnosis of COVID\u201019: One test does not fit
-        all"],"prefix":"10.1002","volume":"93","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-1945-1173","authenticated-orcid":false,"given":"Lynne","family":"Li","sequence":"first","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"}]},{"ORCID":"http:\/\/orcid.org\/0000-0001-9320-4499","authenticated-orcid":false,"given":"Christopher
-        F.","family":"Lowe","sequence":"additional","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
-        Hospital  Vancouver Canada"}]},{"given":"Gordon","family":"Ritchie","sequence":"additional","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
-        Hospital  Vancouver Canada"}]},{"given":"Aleksandra","family":"Stefanovic","sequence":"additional","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
-        Hospital  Vancouver Canada"}]},{"given":"Sylvie","family":"Champagne","sequence":"additional","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
-        Hospital  Vancouver Canada"}]},{"given":"Marc G.","family":"Romney","sequence":"additional","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
-        Hospital  Vancouver Canada"}]},{"given":"Victor","family":"Leung","sequence":"additional","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
-        Hospital  Vancouver Canada"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-4158-6955","authenticated-orcid":false,"given":"Nancy","family":"Matic","sequence":"additional","affiliation":[{"name":"Department
-        of Pathology and Laboratory Medicine University of British Columbia  Vancouver
-        Canada"},{"name":"Division of Medical Microbiology and Virology St. Paul''s
-        Hospital  Vancouver Canada"}]}],"member":"311","published-online":{"date-parts":[[2020,9,30]]},"reference":[{"key":"e_1_2_2_2_1","doi-asserted-by":"publisher","DOI":"10.1002\/jmv.25793"},{"key":"e_1_2_2_3_1","doi-asserted-by":"publisher","DOI":"10.2807\/1560-7917.ES.2020.25.3.2000045"},{"key":"e_1_2_2_4_1","doi-asserted-by":"publisher","DOI":"10.7326\/M20-1495"},{"key":"e_1_2_2_5_1","doi-asserted-by":"publisher","DOI":"10.1093\/infdis\/jiaa370"},{"key":"e_1_2_2_6_1","doi-asserted-by":"publisher","DOI":"10.1177\/0194599820931793"},{"key":"e_1_2_2_7_1","doi-asserted-by":"publisher","DOI":"10.1093\/cid\/ciaa848"},{"key":"e_1_2_2_8_1","doi-asserted-by":"publisher","DOI":"10.1093\/cid\/ciaa1156"},{"issue":"6","key":"e_1_2_2_9_1","first-page":"Cd013652","article-title":"Antibody
-        tests for identification of current and past infection with SARS\u2010CoV\u20102","volume":"6","author":"Deeks
-        JJ","year":"2020","journal-title":"Cochrane Database Syst Rev"},{"key":"e_1_2_2_10_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.jviromet.2020.113919"},{"key":"e_1_2_2_11_1","doi-asserted-by":"publisher","DOI":"10.1136\/gutjnl-2020-320926"}],"container-title":["Journal
-        of Medical Virology"],"language":"en","link":[{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jmv.26532","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full-xml\/10.1002\/jmv.26532","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jmv.26532","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,1]],"date-time":"2023-09-01T14:29:08Z","timestamp":1693578548000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/jmv.26532"}},"issued":{"date-parts":[[2020,9,30]]},"references-count":10,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2021,2]]}},"alternative-id":["10.1002\/jmv.26532"],"URL":"http:\/\/dx.doi.org\/10.1002\/jmv.26532","archive":["Portico"],"ISSN":["0146-6615","1096-9071"],"issn-type":[{"value":"0146-6615","type":"print"},{"value":"1096-9071","type":"electronic"}],"subject":["Infectious
-        Diseases","Virology"],"published":{"date-parts":[[2020,9,30]]},"assertion":[{"value":"2020-08-17","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
-        History"}},{"value":"2020-09-16","order":1,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
-        History"}},{"value":"2020-09-30","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-        History"}}]},{"indexed":{"date-parts":[[2023,9,12]],"date-time":"2023-09-12T08:11:17Z","timestamp":1694506277456},"reference-count":0,"publisher":"Bloomsbury
-        Publishing","isbn-type":[{"value":"9780715628522","type":"print"},{"value":"9781472551894","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.5040\/9781472551894.0007","type":"book-chapter","created":{"date-parts":[[2014,9,12]],"date-time":"2014-09-12T15:40:31Z","timestamp":1410536431000},"source":"Crossref","is-referenced-by-count":0,"title":["Notes"],"prefix":"10.5040","member":"2984","container-title":["Philoponus
-        : On Aristotle On Coming-to-Be and Perishing 1.1-5"],"deposited":{"date-parts":[[2023,9,11]],"date-time":"2023-09-11T21:50:28Z","timestamp":1694469028000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9781472551894&tocid=b-9781472551894-b-0063"}},"issued":{"date-parts":[[null]]},"ISBN":["9780715628522","9781472551894"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781472551894.0007"},{"indexed":{"date-parts":[[2023,9,7]],"date-time":"2023-09-07T19:53:31Z","timestamp":1694116411929},"reference-count":35,"publisher":"Association
-        for Computing Machinery (ACM)","issue":"1","funder":[{"DOI":"10.13039\/100000001","name":"National
-        Science Foundation","doi-asserted-by":"publisher","award":["0963839, 1302557,
-        1213052, 1017882, 1205618"]}],"content-domain":{"domain":["dl.acm.org"],"crossmark-restriction":true},"short-container-title":["SIGMETRICS
-        Perform. Eval. Rev."],"published-print":{"date-parts":[[2014,6,20]]},"abstract":"<jats:p>Caches
-        play a critical role in today''s computer systems and optimizing their performance
-        has been a critical objective in the last couple of decades. Unfortunately,
-        compared to a plethora of work in software and hardware directed code\/data
-        optimizations, much less effort has been spent in understanding the fundamental
-        characteristics of data access patterns exhibited by application programs
-        and their interaction with the underlying cache hardware. Therefore, in general
-        it is hard to reason about cache behavior of a program running on a target
-        system. Motivated by this observation, we first set up a \"locality model\"
-        that can help us determine the theoretical bounds of the cache misses caused
-        by irregular data accesses. We then explain how this locality model can be
-        used for different data locality optimization purposes. After that, based
-        on our model, we propose a data reordering (data layout reorganization) scheme
-        that can be applied after any existing data reordering schemes for irregular
-        applications to improve cache performance by further reducing the cache misses.
-        We evaluate the effectiveness of our scheme using a set of 8 programs with
-        irregular data accesses, and show that it brings significant improvements
-        over the state-of-the-art on two commercial multicore machines.<\/jats:p>","DOI":"10.1145\/2637364.2591992","type":"journal-article","created":{"date-parts":[[2014,7,1]],"date-time":"2014-07-01T14:23:02Z","timestamp":1404224582000},"page":"477-489","update-policy":"http:\/\/dx.doi.org\/10.1145\/crossmark-policy","source":"Crossref","is-referenced-by-count":3,"title":["CApRI"],"prefix":"10.1145","volume":"42","author":[{"given":"Wei","family":"Ding","sequence":"first","affiliation":[{"name":"The
-        Pennsylvania State University, University Park, PA, USA"}]},{"given":"Mahmut","family":"Kandemir","sequence":"additional","affiliation":[{"name":"The
-        Pennsylvania State University, University Park, PA, USA"}]}],"member":"320","published-online":{"date-parts":[[2014,6,16]]},"reference":[{"key":"e_1_2_1_1_1","unstructured":"Intel
-        pentium 4 and intel xeon processor optimization reference manual. http:\/\/developer.intel.com.  Intel
-        pentium 4 and intel xeon processor optimization reference manual. http:\/\/developer.intel.com."},{"key":"e_1_2_1_2_1","unstructured":"Intel
-        Xscale core developer''s manual. http:\/\/developer.intel.com.  Intel Xscale
-        core developer''s manual. http:\/\/developer.intel.com."},{"key":"e_1_2_1_3_1","unstructured":"SUIF2.
-        http:\/\/suif.stanford.edu.  SUIF2. http:\/\/suif.stanford.edu."},{"key":"e_1_2_1_4_1","doi-asserted-by":"publisher","DOI":"10.1145\/209936.209954"},{"key":"e_1_2_1_5_1","doi-asserted-by":"publisher","DOI":"10.1109\/TC.1987.1676942"},{"key":"e_1_2_1_6_1","doi-asserted-by":"publisher","DOI":"10.1109\/ICPADS.2012.125"},{"key":"e_1_2_1_7_1","doi-asserted-by":"publisher","DOI":"10.1145\/378795.378840"},{"key":"e_1_2_1_8_1","doi-asserted-by":"publisher","DOI":"10.1145\/301618.301635"},{"key":"e_1_2_1_9_1","doi-asserted-by":"publisher","DOI":"10.1006\/jpdc.1994.1104"},{"key":"e_1_2_1_10_1","doi-asserted-by":"publisher","DOI":"10.1145\/301618.301670"},{"key":"e_1_2_1_11_1","doi-asserted-by":"publisher","DOI":"10.1145\/1274971.1274987"},{"key":"e_1_2_1_12_1","volume-title":"The
-        Grid 2: Blueprint for a New Computing Infrastructure","author":"Foster I.","year":"2003","unstructured":"I.
-        Foster and C. Kesselman . The Grid 2: Blueprint for a New Computing Infrastructure
-        . Morgan Kaufmann Publishers Inc ., San Francisco, CA, USA, 2003 . I. Foster
-        and C. Kesselman. The Grid 2: Blueprint for a New Computing Infrastructure.
-        Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 2003."},{"key":"e_1_2_1_13_1","doi-asserted-by":"publisher","DOI":"10.1145\/330249.330254"},{"key":"e_1_2_1_14_1","doi-asserted-by":"publisher","DOI":"10.5555\/648049.746020"},{"key":"e_1_2_1_15_1","doi-asserted-by":"publisher","DOI":"10.1109\/TPDS.2006.88"},{"key":"e_1_2_1_16_1","volume-title":"Morgan
-        Kaufmann","author":"Hennessy J. L.","year":"2003","unstructured":"J. L. Hennessy
-        and D. Patterson . Computer Architecture: A Quantitative Approach . Morgan
-        Kaufmann , 2003 . J. L. Hennessy and D. Patterson. Computer Architecture:
-        A Quantitative Approach. Morgan Kaufmann, 2003."},{"key":"e_1_2_1_17_1","doi-asserted-by":"publisher","DOI":"10.5555\/1987237.1987255"},{"key":"e_1_2_1_18_1","doi-asserted-by":"publisher","DOI":"10.1145\/1254882.1254915"},{"key":"e_1_2_1_19_1","doi-asserted-by":"publisher","DOI":"10.1137\/S1064827595287997"},{"key":"e_1_2_1_20_1","volume-title":"Computer
-        Architecture","author":"Kroft D.","year":"1981","unstructured":"D. Kroft .
-        Lockup-free instruction fetch\/prefetch cache organization . Computer Architecture
-        , 1981 . D. Kroft. Lockup-free instruction fetch\/prefetch cache organization.
-        Computer Architecture, 1981."},{"key":"e_1_2_1_21_1","doi-asserted-by":"publisher","DOI":"10.1145\/1504176.1504181"},{"key":"e_1_2_1_23_1","author":"Liu
-        W.","year":"1976","unstructured":"W. Liu and A. Sherman . Comparative analysis
-        of the cuthill-mckee and the reverse cuthill-mckee ordering algorithms for
-        sparse matrices. SIAM Journal on Numerical Analysis , 1976 . W. Liu and A.
-        Sherman. Comparative analysis of the cuthill-mckee and the reverse cuthill-mckee
-        ordering algorithms for sparse matrices. SIAM Journal on Numerical Analysis,
-        1976.","journal-title":"SIAM Journal on Numerical Analysis"},{"key":"e_1_2_1_24_1","doi-asserted-by":"publisher","DOI":"10.1145\/305138.305228"},{"key":"e_1_2_1_25_1","doi-asserted-by":"publisher","DOI":"10.5555\/520793.825758"},{"key":"e_1_2_1_26_1","doi-asserted-by":"publisher","DOI":"10.1145\/263580.263655"},{"key":"e_1_2_1_27_1","doi-asserted-by":"publisher","DOI":"10.1145\/503272.503283"},{"key":"e_1_2_1_28_1","volume-title":"Proceedings
-        of the International Conference on Machine Learning","author":"Sakr M. F.","year":"1997","unstructured":"M.
-        F. Sakr , S. P. Levitan , D. M. Chiarulli , B. G. Horne , and C. L. Giles
-        . Predicting multiprocessor memory access patterns with learning models .
-        In Proceedings of the International Conference on Machine Learning , 1997
-        . M. F. Sakr, S. P. Levitan, D. M. Chiarulli, B. G. Horne, and C. L. Giles.
-        Predicting multiprocessor memory access patterns with learning models. In
-        Proceedings of the International Conference on Machine Learning, 1997."},{"key":"e_1_2_1_29_1","volume-title":"Proceedings
-        of the International Symposium on Code Generation and Optimization","author":"So
-        B.","year":"2004","unstructured":"B. So , M. W. Hall , and H. E. Ziegler .
-        Custom data layout for memory parallelism . In Proceedings of the International
-        Symposium on Code Generation and Optimization , 2004 . B. So, M. W. Hall,
-        and H. E. Ziegler. Custom data layout for memory parallelism. In Proceedings
-        of the International Symposium on Code Generation and Optimization, 2004."},{"key":"e_1_2_1_30_1","doi-asserted-by":"publisher","DOI":"10.1145\/781131.781142"},{"key":"e_1_2_1_31_1","doi-asserted-by":"publisher","DOI":"10.1145\/1854273.1854336"},{"key":"e_1_2_1_33_1","doi-asserted-by":"publisher","DOI":"10.1109\/PACT.2011.56"},{"key":"e_1_2_1_34_1","doi-asserted-by":"publisher","DOI":"10.1145\/1111037.1111040"},{"key":"e_1_2_1_35_1","doi-asserted-by":"publisher","DOI":"10.1145\/2155620.2155677"},{"key":"e_1_2_1_36_1","doi-asserted-by":"publisher","DOI":"10.1145\/1993744.1993748"},{"key":"e_1_2_1_37_1","doi-asserted-by":"publisher","DOI":"10.1145\/996841.996872"}],"container-title":["ACM
-        SIGMETRICS Performance Evaluation Review"],"language":"en","link":[{"URL":"https:\/\/dl.acm.org\/doi\/pdf\/10.1145\/2637364.2591992","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,4]],"date-time":"2023-09-04T17:57:12Z","timestamp":1693850232000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dl.acm.org\/doi\/10.1145\/2637364.2591992"}},"subtitle":["CAche-conscious
-        data reordering for irregular codes"],"issued":{"date-parts":[[2014,6,16]]},"references-count":35,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2014,6,20]]}},"alternative-id":["10.1145\/2637364.2591992"],"URL":"http:\/\/dx.doi.org\/10.1145\/2637364.2591992","relation":{"is-identical-to":[{"id-type":"doi","id":"10.1145\/2591971.2591992","asserted-by":"subject"}]},"ISSN":["0163-5999"],"issn-type":[{"value":"0163-5999","type":"print"}],"subject":["Computer
-        Networks and Communications","Hardware and Architecture","Software"],"published":{"date-parts":[[2014,6,16]]},"assertion":[{"value":"2014-06-16","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-        History"}}]},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T11:01:44Z","timestamp":1649156504203},"reference-count":0,"publisher":"Ovid
-        Technologies (Wolters Kluwer Health)","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Transplantation
-        Journal"],"published-print":{"date-parts":[[2010,7]]},"DOI":"10.1097\/00007890-201007272-00364","type":"journal-article","created":{"date-parts":[[2010,8,10]],"date-time":"2010-08-10T12:21:11Z","timestamp":1281442871000},"page":"190","source":"Crossref","is-referenced-by-count":0,"title":["A
-        NOVEL PAN-TLR INHIBITOR PROMOTES PERMANENT ACCEPTANCE OF SKIN ALLOGRAFTS IN
-        MICE"],"prefix":"10.1097","volume":"90","author":[{"given":"T. W.","family":"He","sequence":"first","affiliation":[]},{"given":"P.","family":"Zhou","sequence":"additional","affiliation":[]},{"given":"B.
-        C.","family":"Xue","sequence":"additional","affiliation":[]},{"given":"Y.","family":"Liu","sequence":"additional","affiliation":[]},{"given":"C.","family":"Li","sequence":"additional","affiliation":[]},{"given":"Z.
-        K.","family":"Chen","sequence":"additional","affiliation":[]}],"member":"276","container-title":["Transplantation
-        Journal"],"language":"en","link":[{"URL":"https:\/\/journals.lww.com\/00007890-201007272-00364","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,16]],"date-time":"2021-06-16T01:29:04Z","timestamp":1623806944000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/journals.lww.com\/00007890-201007272-00364"}},"subtitle":["1525"],"issued":{"date-parts":[[2010,7]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1097\/00007890-201007272-00364","ISSN":["0041-1337"],"issn-type":[{"value":"0041-1337","type":"print"}],"subject":["Transplantation"],"published":{"date-parts":[[2010,7]]}},{"indexed":{"date-parts":[[2023,8,9]],"date-time":"2023-08-09T04:30:39Z","timestamp":1691555439933},"reference-count":0,"publisher":"Mary
-        Ann Liebert Inc","issue":"6","license":[{"start":{"date-parts":[[2023,8,1]],"date-time":"2023-08-01T00:00:00Z","timestamp":1690848000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.liebertpub.com\/nv\/resources-tools\/text-and-data-mining-policy\/121\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Brain
-        Connectivity"],"published-print":{"date-parts":[[2023,8,1]]},"DOI":"10.1089\/brain.2023.29052.editorial","type":"journal-article","created":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T20:01:06Z","timestamp":1691524866000},"page":"316-318","source":"Crossref","is-referenced-by-count":0,"title":["Brain
-        Connectivity: <i>A Journal of Clinical Neurology, Neuroscience, &amp; Neuroimaging
-        Advancing the Field of Neurology<\/i> Advances in Alzheimer''s Disease"],"prefix":"10.1089","volume":"13","author":[{"given":"Paul","family":"Edison","sequence":"first","affiliation":[]}],"member":"278","container-title":["Brain
-        Connectivity"],"language":"en","link":[{"URL":"https:\/\/www.liebertpub.com\/doi\/full-xml\/10.1089\/brain.2023.29052.editorial","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.liebertpub.com\/doi\/pdf\/10.1089\/brain.2023.29052.editorial","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T20:01:34Z","timestamp":1691524894000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.liebertpub.com\/doi\/10.1089\/brain.2023.29052.editorial"}},"issued":{"date-parts":[[2023,8,1]]},"references-count":0,"journal-issue":{"issue":"6","published-print":{"date-parts":[[2023,8,1]]}},"alternative-id":["10.1089\/brain.2023.29052.editorial"],"URL":"http:\/\/dx.doi.org\/10.1089\/brain.2023.29052.editorial","ISSN":["2158-0014","2158-0022"],"issn-type":[{"value":"2158-0014","type":"print"},{"value":"2158-0022","type":"electronic"}],"subject":["General
-        Neuroscience"],"published":{"date-parts":[[2023,8,1]]}},{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T18:21:20Z","timestamp":1648664480791},"reference-count":0,"publisher":"Elsevier
-        BV","license":[{"start":{"date-parts":[[2020,10,1]],"date-time":"2020-10-01T00:00:00Z","timestamp":1601510400000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Neuromuscular
-        Disorders"],"published-print":{"date-parts":[[2020,10]]},"DOI":"10.1016\/j.nmd.2020.08.193","type":"journal-article","created":{"date-parts":[[2020,9,28]],"date-time":"2020-09-28T13:23:17Z","timestamp":1601299397000},"page":"S103","source":"Crossref","is-referenced-by-count":0,"title":["SMA:
-        REGISTRIES, BIOMARKERS &amp; OUTCOME MEASURES"],"prefix":"10.1016","volume":"30","author":[{"given":"T.","family":"Dangouloff","sequence":"first","affiliation":[]},{"given":"L.","family":"Servais","sequence":"additional","affiliation":[]},{"given":"M.","family":"Hiligsmann","sequence":"additional","affiliation":[]}],"member":"78","container-title":["Neuromuscular
-        Disorders"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0960896620303904?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0960896620303904?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,9,28]],"date-time":"2020-09-28T13:23:17Z","timestamp":1601299397000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0960896620303904"}},"issued":{"date-parts":[[2020,10]]},"references-count":0,"alternative-id":["S0960896620303904"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.nmd.2020.08.193","ISSN":["0960-8966"],"issn-type":[{"value":"0960-8966","type":"print"}],"subject":["Genetics
-        (clinical)","Neurology (clinical)","Neurology","Pediatrics, Perinatology and
-        Child Health"],"published":{"date-parts":[[2020,10]]}},{"indexed":{"date-parts":[[2023,6,14]],"date-time":"2023-06-14T22:06:46Z","timestamp":1686780406497},"publisher-location":"Cham","reference-count":9,"publisher":"Springer
-        International Publishing","isbn-type":[{"value":"9783319561530","type":"print"},{"value":"9783319561547","type":"electronic"}],"license":[{"start":{"date-parts":[[2017,1,1]],"date-time":"2017-01-01T00:00:00Z","timestamp":1483228800000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2017,1,1]],"date-time":"2017-01-01T00:00:00Z","timestamp":1483228800000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2017]]},"DOI":"10.1007\/978-3-319-56154-7_43","type":"book-chapter","created":{"date-parts":[[2017,3,31]],"date-time":"2017-03-31T16:21:08Z","timestamp":1490977268000},"page":"480-488","source":"Crossref","is-referenced-by-count":2,"title":["A
-        High Performance Storage Appliance for Genomic Data"],"prefix":"10.1007","author":[{"given":"Gaurav","family":"Kaul","sequence":"first","affiliation":[]},{"given":"Zeeshan
-        Ali","family":"Shah","sequence":"additional","affiliation":[]},{"given":"Mohamed","family":"Abouelhoda","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2017,4,1]]},"reference":[{"issue":"5","key":"43_CR1","doi-asserted-by":"crossref","first-page":"523","DOI":"10.2217\/pme.14.34","volume":"11","author":"M
-        Gonzalez-Garay","year":"2014","unstructured":"Gonzalez-Garay, M.: The road
-        from next-generation sequencing to personalized medicine. Pers. Med. 11(5),
-        523\u2013544 (2014)","journal-title":"Pers. Med."},{"issue":"5","key":"43_CR2","doi-asserted-by":"crossref","first-page":"491","DOI":"10.1038\/ng.806","volume":"43","author":"M
-        DePristo","year":"2011","unstructured":"DePristo, M., Banks, E., et al.: A
-        framework for variation discovery and genotyping using next-generation DNA
-        sequencing data. Nat. Genet. 43(5), 491\u2013498 (2011)","journal-title":"Nat.
-        Genet."},{"key":"43_CR3","doi-asserted-by":"crossref","unstructured":"Stephens,
-        Z., Lee, S., Faghri, F., Campbell, R., Zhai, C., Efron, M., et al.: Big data:
-        Astronomical or genomical? PLoS Biol. 13(7) (2015)","DOI":"10.1371\/journal.pbio.1002195"},{"key":"43_CR4","unstructured":"Supermicro
-        (2016). \nwww.supermicro.com"},{"key":"43_CR5","unstructured":"IOzone: File
-        system benchmarking (2016). \nwww.iozone.org"},{"key":"43_CR6","unstructured":"PetaGene
-        (2016). \nwww.petagene.com\/"},{"issue":"20","key":"43_CR7","doi-asserted-by":"crossref","first-page":"3124","DOI":"10.1093\/bioinformatics\/btw385","volume":"32","author":"D
-        Greenfield","year":"2016","unstructured":"Greenfield, D., Stegle, O., Rrustemi,
-        A.: GeneCodeq: quality score compression and improved genotyping using a bayesian
-        framework. Bioinformatics 32(20), 3124\u20133132 (2016)","journal-title":"Bioinformatics"},{"key":"43_CR8","series-title":"Lecture
-        Notes in Computer Science","doi-asserted-by":"publisher","first-page":"415","DOI":"10.1007\/978-3-319-16483-0_41","volume-title":"Bioinformatics
-        and Biomedical Engineering","author":"AA Ali","year":"2015","unstructured":"Ali,
-        A.A., El-Kalioby, M., Abouelhoda, M.: Supporting bioinformatics applications
-        with hybrid multi-cloud services. In: Ortu\u00f1o, F., Rojas, I. (eds.) IWBBIO
-        2015. LNCS, vol. 9043, pp. 415\u2013425. Springer, Heidelberg (2015). doi:\n10.1007\/978-3-319-16483-0_41"},{"key":"43_CR9","series-title":"Lecture
-        Notes in Computer Science","doi-asserted-by":"publisher","first-page":"587","DOI":"10.1007\/978-3-319-31744-1_52","volume-title":"Bioinformatics
-        and Biomedical Engineering","author":"AA Ali","year":"2016","unstructured":"Ali,
-        A.A., El-Kalioby, M., Abouelhoda, M.: The case for docker in multicloud enabled
-        bioinformatics applications. In: Ortu\u00f1o, F., Rojas, I. (eds.) IWBBIO
-        2016. LNCS, vol. 9656, pp. 587\u2013601. Springer, Heidelberg (2016). doi:\n10.1007\/978-3-319-31744-1_52"}],"container-title":["Bioinformatics
-        and Biomedical Engineering","Lecture Notes in Computer Science"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-56154-7_43","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,11,13]],"date-time":"2017-11-13T10:30:38Z","timestamp":1510569038000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-3-319-56154-7_43"}},"issued":{"date-parts":[[2017]]},"ISBN":["9783319561530","9783319561547"],"references-count":9,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-319-56154-7_43","ISSN":["0302-9743","1611-3349"],"issn-type":[{"value":"0302-9743","type":"print"},{"value":"1611-3349","type":"electronic"}],"published":{"date-parts":[[2017]]}},{"indexed":{"date-parts":[[2023,9,9]],"date-time":"2023-09-09T00:23:58Z","timestamp":1694219038958},"reference-count":62,"publisher":"American
-        Geophysical Union (AGU)","issue":"2","license":[{"start":{"date-parts":[[2017,1,21]],"date-time":"2017-01-21T00:00:00Z","timestamp":1484956800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Geophysical
-        Research Letters"],"published-print":{"date-parts":[[2017,1,28]]},"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Glacial
-        lake outburst floods (GLOFs) are a prominent but poorly understood cryospheric
-        hazard in a warming climate. We quantify the hydrologic and geomorphic response
-        to 21 episodic GLOFs that began in April 2008 using multitemporal satellite
-        imagery and field observations. Peak discharge exiting the source lake became
-        progressively muted downstream. At ~40\u201360\u2009km downstream, where the
-        floods entered and traveled down the main stem Rio Baker, peak discharges
-        were generally\u2009&lt;\u20092000\u2009m<jats:sup>3<\/jats:sup>\u2009s<jats:sup>\u22121<\/jats:sup>,
-        although these flows were still &gt;1\u20132 times the peak annual discharge
-        of this system, Chile''s largest river by volume. As such, caution must be
-        applied to empirical relationships relating lake volume to peak discharge,
-        as the latter is dependent on where this observation is made along the flood
-        path. The GLOFs and subsequent periods of free drainage resulted in\u2009&gt;\u200940\u2009m
-        of incision, the net removal of ~25\u2009\u00d7\u200910<jats:sup>6<\/jats:sup>\u2009m<jats:sup>3<\/jats:sup>
-        of sediment from the source lake basin, and a nonsteady channel configuration
-        downstream. These results demonstrate that GLOFs sourced from low\u2010order
-        tributaries can produce significant floods on major main stem rivers, in addition
-        to significantly altering sediment dynamics.<\/jats:p>","DOI":"10.1002\/2016gl071374","type":"journal-article","created":{"date-parts":[[2016,12,21]],"date-time":"2016-12-21T23:00:15Z","timestamp":1482361215000},"page":"854-864","source":"Crossref","is-referenced-by-count":36,"title":["Hydrologic
-        and geomorphic changes resulting from episodic glacial lake outburst floods:
-        Rio Colonia, Patagonia, Chile"],"prefix":"10.1029","volume":"44","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-0273-2462","authenticated-orcid":false,"given":"J.","family":"Jacquet","sequence":"first","affiliation":[{"name":"Department
-        of Geological Sciences and Engineering, Global Water Center University of
-        Nevada  Reno Nevada USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1217-787X","authenticated-orcid":false,"given":"S.
-        W.","family":"McCoy","sequence":"additional","affiliation":[{"name":"Department
-        of Geological Sciences and Engineering, Global Water Center University of
-        Nevada  Reno Nevada USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-9462-6842","authenticated-orcid":false,"given":"D.","family":"McGrath","sequence":"additional","affiliation":[{"name":"Geosciences
-        Department Colorado State University  Fort Collins Colorado USA"},{"name":"U.S.
-        Geological Survey  Anchorage Alaska USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-8532-9192","authenticated-orcid":false,"given":"D.
-        A.","family":"Nimick","sequence":"additional","affiliation":[{"name":"U.S.
-        Geological Survey  Helena Montana USA"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1853-6992","authenticated-orcid":false,"given":"M.","family":"Fahey","sequence":"additional","affiliation":[{"name":"U.S.
-        Geological Survey  Lakewood Colorado USA"}]},{"given":"J.","family":"O''kuinghttons","sequence":"additional","affiliation":[{"name":"Ministry
-        of Public Works  Coyhaique Chile"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-7652-9053","authenticated-orcid":false,"given":"B.
-        A.","family":"Friesen","sequence":"additional","affiliation":[{"name":"Unaffiliated"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-7461-3008","authenticated-orcid":false,"given":"J.","family":"Leidich","sequence":"additional","affiliation":[{"name":"Patagonia
-        Adventure Expeditions  Cochrane Chile"}]}],"member":"13","published-online":{"date-parts":[[2017,1,21]]},"reference":[{"key":"e_1_2_7_2_1","doi-asserted-by":"publisher","DOI":"10.1002\/2013JF002933"},{"key":"e_1_2_7_3_1","doi-asserted-by":"publisher","DOI":"10.1659\/mrd.0783"},{"key":"e_1_2_7_4_1","doi-asserted-by":"publisher","DOI":"10.1016\/0277-3791(85)90027-7"},{"key":"e_1_2_7_5_1","doi-asserted-by":"publisher","DOI":"10.1657\/1938-4246-41.2.174"},{"key":"e_1_2_7_6_1","first-page":"573","volume-title":"River
-        Flow 2012","author":"Bastianon E.","year":"2012"},{"key":"e_1_2_7_7_1","doi-asserted-by":"publisher","DOI":"10.1017\/S0260305500004882"},{"key":"e_1_2_7_8_1","doi-asserted-by":"publisher","DOI":"10.3189\/172756407782282480"},{"key":"e_1_2_7_9_1","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-2451.2011.00800.x"},{"key":"e_1_2_7_10_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.quascirev.2013.07.028"},{"key":"e_1_2_7_11_1","unstructured":"Casassa
-        G. J.Wendt A.Wendt F.Escobar P.Lopez J.Carrasco A.Rivera andJ.Leidich(2009)
-        Recent drainage events of glacial Lake Cachet 2 Patagonia EGU General Assembly
-        Conf. Abstracts 13147 p."},{"key":"e_1_2_7_12_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(01)00037-X"},{"key":"e_1_2_7_13_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.448"},{"key":"e_1_2_7_14_1","doi-asserted-by":"publisher","DOI":"10.1017\/S0022143000031907"},{"key":"e_1_2_7_15_1","doi-asserted-by":"publisher","DOI":"10.1017\/S0022143000011746"},{"key":"e_1_2_7_16_1","doi-asserted-by":"publisher","DOI":"10.3189\/2012JoG12J026"},{"key":"e_1_2_7_17_1","doi-asserted-by":"publisher","DOI":"10.1139\/e92-048"},{"key":"e_1_2_7_18_1","doi-asserted-by":"publisher","DOI":"10.1002\/2014GL060090"},{"key":"e_1_2_7_19_1","doi-asserted-by":"publisher","DOI":"10.1007\/s11069-009-9479-8"},{"key":"e_1_2_7_20_1","doi-asserted-by":"publisher","DOI":"10.1029\/2005RG000183"},{"key":"e_1_2_7_21_1","doi-asserted-by":"crossref","unstructured":"Friesen
-        B. A. C. J.Cole D. A.Nimick E. M.Wilson M. J.Fahey D.McGrath andJ.Leidich(2015)
-        Using satellite images to monitor glacial\u2010lake outburst floods\u2014Lago
-        Cachet Dos drainage Chile U.S. Geol. Surv. Sci. Invest. Map 3322 scale 1:15
-        000 doi:10.3133\/sim3322.","DOI":"10.3133\/sim3322"},{"key":"e_1_2_7_22_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.1234532"},{"key":"e_1_2_7_23_1","doi-asserted-by":"publisher","DOI":"10.1038\/ngeo1122"},{"key":"e_1_2_7_24_1","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-3121.2000.123277"},{"key":"e_1_2_7_25_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.jhydrol.2016.04.004"},{"key":"e_1_2_7_26_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(98)00089-0"},{"key":"e_1_2_7_27_1","doi-asserted-by":"publisher","DOI":"10.2307\/1552410"},{"key":"e_1_2_7_28_1","doi-asserted-by":"publisher","DOI":"10.1139\/t04-053"},{"key":"e_1_2_7_29_1","doi-asserted-by":"publisher","DOI":"10.3389\/feart.2015.00054"},{"key":"e_1_2_7_30_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.3524"},{"key":"e_1_2_7_31_1","doi-asserted-by":"publisher","DOI":"10.1029\/2012EO220011"},{"key":"e_1_2_7_32_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.1122"},{"key":"e_1_2_7_33_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.gloplacha.2012.12.012"},{"key":"e_1_2_7_34_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(01)00147-7"},{"key":"e_1_2_7_35_1","first-page":"64","article-title":"Geomorphic
-        response of the Sandy River, Oregon, to removal of Marmot Dam","volume":"1792","author":"Major
-        J. J.","year":"2012","journal-title":"U.S. Geol. Surv. Prof. Pap."},{"key":"e_1_2_7_36_1","unstructured":"Nash
-        J. E.(1957) The form of the instantaneous unit hydrograph Comptes Rendus et
-        Rapports Assemblee Generale de Toronto paper presented at the International
-        Association of Hydrological Sciences General Assembly pp. 114\u2013121 Toronto."},{"key":"e_1_2_7_37_1","doi-asserted-by":"publisher","DOI":"10.3189\/172756503781830836"},{"key":"e_1_2_7_38_1","doi-asserted-by":"publisher","DOI":"10.1029\/2007GL031426"},{"key":"e_1_2_7_39_1","doi-asserted-by":"publisher","DOI":"10.1002\/jqs.2847"},{"key":"e_1_2_7_40_1","doi-asserted-by":"publisher","DOI":"10.1017\/S002214300001354X"},{"key":"e_1_2_7_41_1","doi-asserted-by":"publisher","DOI":"10.1130\/0016-7606(1992)104<0267:MAIOPD>2.3.CO;2"},{"key":"e_1_2_7_42_1","doi-asserted-by":"publisher","DOI":"10.1029\/2010WR009733"},{"key":"e_1_2_7_43_1","unstructured":"Post
-        A. andL. R.Mayo(1971) Glacier dammed lakes and outburst floods in Alaska USGS
-        Hydrologic Atlas HA\u2013455."},{"key":"e_1_2_7_44_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.geomorph.2014.12.045"},{"key":"e_1_2_7_45_1","doi-asserted-by":"publisher","DOI":"10.1016\/S1040-6182(99)00035-X"},{"key":"e_1_2_7_46_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.1087393"},{"key":"e_1_2_7_47_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.gloplacha.2006.11.037"},{"key":"e_1_2_7_48_1","doi-asserted-by":"publisher","DOI":"10.1029\/2003RG000147"},{"key":"e_1_2_7_49_1","doi-asserted-by":"publisher","DOI":"10.1029\/WR015i006p01409"},{"key":"e_1_2_7_50_1","doi-asserted-by":"publisher","DOI":"10.3189\/002214311796405997"},{"key":"e_1_2_7_51_1","doi-asserted-by":"publisher","DOI":"10.1002\/2014GL062482"},{"key":"e_1_2_7_52_1","doi-asserted-by":"publisher","DOI":"10.1029\/95WR00145"},{"key":"e_1_2_7_53_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.geomorph.2004.01.012"},{"key":"e_1_2_7_54_1","doi-asserted-by":"publisher","DOI":"10.1016\/0165-232X(81)90006-9"},{"key":"e_1_2_7_55_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.3750"},{"key":"e_1_2_7_56_1","volume-title":"Geographical
-        Contribution to a Periglacial Study of the Hielo Patag\u00f3nicao Norte With
-        Special Reference to the Glacial Outburst Originated From Glacier\u2010Dammed
-        Lago Arco","author":"Tanaka K.","year":"1980"},{"key":"e_1_2_7_57_1","doi-asserted-by":"publisher","DOI":"10.1177\/030913339902300104"},{"key":"e_1_2_7_58_1","doi-asserted-by":"publisher","DOI":"10.1002\/(SICI)1096-9837(199608)21:8<701::AID-ESP615>3.0.CO;2-2"},{"key":"e_1_2_7_59_1","doi-asserted-by":"publisher","DOI":"10.1002\/esp.1886"},{"key":"e_1_2_7_60_1","doi-asserted-by":"publisher","DOI":"10.1002\/2013JF003073"},{"key":"e_1_2_7_61_1","doi-asserted-by":"publisher","DOI":"10.1016\/j.rse.2011.09.017"},{"key":"e_1_2_7_62_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0169-555X(00)00006-4"},{"key":"e_1_2_7_63_1","doi-asserted-by":"publisher","DOI":"10.1007\/978-3-540-79818-7_12"}],"container-title":["Geophysical
-        Research Letters"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F2016GL071374","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/2016GL071374","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full-xml\/10.1002\/2016GL071374","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/agupubs.onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/2016GL071374","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,8]],"date-time":"2023-09-08T01:09:41Z","timestamp":1694135381000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/agupubs.onlinelibrary.wiley.com\/doi\/10.1002\/2016GL071374"}},"issued":{"date-parts":[[2017,1,21]]},"references-count":62,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2017,1,28]]}},"alternative-id":["10.1002\/2016GL071374"],"URL":"http:\/\/dx.doi.org\/10.1002\/2016gl071374","archive":["Portico"],"ISSN":["0094-8276","1944-8007"],"issn-type":[{"value":"0094-8276","type":"print"},{"value":"1944-8007","type":"electronic"}],"subject":["General
-        Earth and Planetary Sciences","Geophysics"],"published":{"date-parts":[[2017,1,21]]}},{"indexed":{"date-parts":[[2023,8,3]],"date-time":"2023-08-03T10:35:42Z","timestamp":1691058942078},"reference-count":16,"publisher":"Springer
-        Science and Business Media LLC","issue":"2","license":[{"start":{"date-parts":[[2021,4,27]],"date-time":"2021-04-27T00:00:00Z","timestamp":1619481600000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2021,4,27]],"date-time":"2021-04-27T00:00:00Z","timestamp":1619481600000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Optim
-        Eng"],"published-print":{"date-parts":[[2022,6]]},"DOI":"10.1007\/s11081-021-09629-9","type":"journal-article","created":{"date-parts":[[2021,4,27]],"date-time":"2021-04-27T04:07:32Z","timestamp":1619496452000},"page":"1139-1164","update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":6,"title":["A
-        matheuristic approach for optimizing mineral value chains under uncertainty"],"prefix":"10.1007","volume":"23","author":[{"given":"Amina","family":"Lamghari","sequence":"first","affiliation":[]},{"given":"Roussos","family":"Dimitrakopoulos","sequence":"additional","affiliation":[]},{"given":"Renaud","family":"Sen\u00e9cal","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2021,4,27]]},"reference":[{"key":"9629_CR1","doi-asserted-by":"publisher","first-page":"337","DOI":"10.1007\/BF01099647","volume":"7","author":"I
-        Androulakis","year":"1995","unstructured":"Androulakis I, Maranas C, Floudas
-        C (1995) \u03b1 bb: a global optimization method for general constrained nonconvex
-        problems. J Glob Optim 7:337\u2013363","journal-title":"J Glob Optim"},{"issue":"1","key":"9629_CR2","doi-asserted-by":"publisher","first-page":"238","DOI":"10.1007\/BF01386316","volume":"4","author":"JF
-        Benders","year":"1962","unstructured":"Benders JF (1962) Partitioning procedures
-        for solving mixed variables programming problems. Numer Math 4(1):238\u2013252","journal-title":"Numer
-        Math"},{"key":"9629_CR3","doi-asserted-by":"publisher","DOI":"10.1007\/978-1-4614-0237-4","volume-title":"Introduction
-        to stochastic programming","author":"J Birge","year":"2011","unstructured":"Birge
-        J, Louveaux F (2011) Introduction to stochastic programming, 2nd edn. Springer,
-        New York","edition":"2"},{"key":"9629_CR4","doi-asserted-by":"publisher","first-page":"83","DOI":"10.1016\/j.resourpol.2018.11.019","volume":"60","author":"MF
-        Del Castillo","year":"2019","unstructured":"Del Castillo MF, Dimitrakopoulos
-        R (2019) Dynamically optimizing the strategic plan of mining complexes under
-        supply uncertainty. Resour Policy 60:83\u201393","journal-title":"Resour Policy"},{"key":"9629_CR6","doi-asserted-by":"publisher","first-page":"292","DOI":"10.1016\/j.asoc.2015.11.038","volume":"40","author":"R
-        Goodfellow","year":"2016","unstructured":"Goodfellow R, Dimitrakopoulos R
-        (2016) Global optimization of open pit mining complexes with uncertainty.
-        Appl Soft Comput 40:292\u2013304","journal-title":"Appl Soft Comput"},{"key":"9629_CR7","first-page":"337","volume":"7","author":"A
-        Gupte","year":"2017","unstructured":"Gupte A, Ahmed S, Dey S, Cheon M (2017)
-        Relaxations and discretizations for the pooling problem. J Glob Optim 7:337\u2013363","journal-title":"J
-        Glob Optim"},{"key":"9629_CR8","doi-asserted-by":"publisher","first-page":"19","DOI":"10.1145\/1111237.1111238","volume":"25","author":"C
-        Haverly","year":"1978","unstructured":"Haverly C (1978) Studies of the behavior
-        of recursion for the pooling problem. ACM SIGMAP Bull 25:19\u201328","journal-title":"ACM
-        SIGMAP Bull"},{"key":"9629_CR9","unstructured":"Kingma DP, Ba JL (2014) ADAM:
-        a method for stochastic optimization. arXiv:1412.6980"},{"key":"9629_CR10","doi-asserted-by":"publisher","first-page":"133","DOI":"10.1016\/0167-6377(93)90002-X","volume":"13","author":"G
-        Laporte","year":"1993","unstructured":"Laporte G, Louveaux FV (1993) The integer
-        L-shaped method for stochastic integer programs with complete recourse. Oper
-        Res Lett 13:133\u2013142","journal-title":"Oper Res Lett"},{"key":"9629_CR11","doi-asserted-by":"publisher","first-page":"642","DOI":"10.1016\/j.ejor.2012.05.029","volume":"222","author":"A
-        Lamghari","year":"2012","unstructured":"Lamghari A, Dimitrakopoulos R (2012)
-        A diversified tabu search approach for the open-pit mine production scheduling
-        problem with metal uncertainty. Eur J Oper Res 222:642\u2013652","journal-title":"Eur
-        J Oper Res"},{"key":"9629_CR12","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1016\/j.cor.2018.11.010","volume":"115","author":"A
-        Lamghari","year":"2020","unstructured":"Lamghari A, Dimitrakopoulos R (2020)
-        Hyper-heuristic approaches for strategic mine planning under uncertainty.
-        Comput Oper Res 115:1\u201318. https:\/\/doi.org\/10.1016\/j.cor.2018.11.010","journal-title":"Comput
-        Oper Res"},{"key":"9629_CR13","doi-asserted-by":"publisher","first-page":"147","DOI":"10.1007\/BF01580665","volume":"10","author":"G
-        McCormick","year":"1976","unstructured":"McCormick G (1976) Computability
-        of global solutions to factorable nonconvex programs: part I\u2014convex underestimating
-        problems. Math Program 10:147\u2013175","journal-title":"Math Program"},{"issue":"1","key":"9629_CR14","doi-asserted-by":"publisher","first-page":"166","DOI":"10.1016\/j.ejor.2015.05.002","volume":"247","author":"L
-        Montiel","year":"2015","unstructured":"Montiel L, Dimitrakopoulos R (2015)
-        Optimizing mining complexes with multiple processing and transportation alternatives:
-        an uncertainty-based approach. Eur J Oper Res 247(1):166\u2013178","journal-title":"Eur
-        J Oper Res"},{"issue":"12","key":"9629_CR15","doi-asserted-by":"publisher","first-page":"48","DOI":"10.19150\/me.8645","volume":"70","author":"L
-        Montiel","year":"2018","unstructured":"Montiel L, Dimitrakopoulos R (2018)
-        Simultaneous stochastic optimization of production scheduling at Twin Creeks
-        mining complex. Nevada Min Eng 70(12):48\u201356","journal-title":"Nevada
-        Min Eng"},{"issue":"1","key":"9629_CR16","doi-asserted-by":"publisher","first-page":"2","DOI":"10.1179\/1743286315Y.0000000027","volume":"125","author":"L
-        Montiel","year":"2016","unstructured":"Montiel L, Dimitrakopoulos R, Kawahata
-        K (2016) Globally optimising open-pit and underground mining operations under
-        geological uncertainty. Min Technol 125(1):2\u201314","journal-title":"Min
-        Technol"},{"issue":"1","key":"9629_CR17","doi-asserted-by":"publisher","first-page":"227","DOI":"10.1016\/j.ejor.2018.09.047","volume":"274","author":"J
-        Zhang","year":"2019","unstructured":"Zhang J, Nault BR, Dimitrakopoulos R
-        (2019) Optimizing a mineral value chain with market uncertainty using benders
-        decomposition. Eur J Oper Res 274(1):227\u2013239","journal-title":"Eur J
-        Oper Res"}],"container-title":["Optimization and Engineering"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s11081-021-09629-9.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/article\/10.1007\/s11081-021-09629-9\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s11081-021-09629-9.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,5,11]],"date-time":"2022-05-11T10:43:06Z","timestamp":1652265786000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/s11081-021-09629-9"}},"issued":{"date-parts":[[2021,4,27]]},"references-count":16,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2022,6]]}},"alternative-id":["9629"],"URL":"http:\/\/dx.doi.org\/10.1007\/s11081-021-09629-9","ISSN":["1389-4420","1573-2924"],"issn-type":[{"value":"1389-4420","type":"print"},{"value":"1573-2924","type":"electronic"}],"subject":["Electrical
-        and Electronic Engineering","Control and Optimization","Mechanical Engineering","Aerospace
-        Engineering","Civil and Structural Engineering","Software"],"published":{"date-parts":[[2021,4,27]]},"assertion":[{"value":"28
-        July 2020","order":1,"name":"received","label":"Received","group":{"name":"ArticleHistory","label":"Article
-        History"}},{"value":"5 April 2021","order":2,"name":"revised","label":"Revised","group":{"name":"ArticleHistory","label":"Article
-        History"}},{"value":"5 April 2021","order":3,"name":"accepted","label":"Accepted","group":{"name":"ArticleHistory","label":"Article
-        History"}},{"value":"27 April 2021","order":4,"name":"first_online","label":"First
-        Online","group":{"name":"ArticleHistory","label":"Article History"}}]},{"indexed":{"date-parts":[[2022,4,1]],"date-time":"2022-04-01T17:48:15Z","timestamp":1648835295452},"reference-count":36,"publisher":"Physical
-        Society of Japan","issue":"9","content-domain":{"domain":["journals.jps.jp"],"crossmark-restriction":true},"short-container-title":["J.
-        Phys. Soc. Jpn."],"published-print":{"date-parts":[[2001,9,15]]},"DOI":"10.1143\/jpsj.70.2682","type":"journal-article","created":{"date-parts":[[2005,2,18]],"date-time":"2005-02-18T12:23:07Z","timestamp":1108729387000},"page":"2682-2688","update-policy":"http:\/\/dx.doi.org\/10.7566\/jps_crossmarkpolicy","source":"Crossref","is-referenced-by-count":1,"title":["Quantum-Interference
-        Effect on AC Transport of Electrons subject to Long-Range Random Magnetic
-        Fields"],"prefix":"10.7566","volume":"70","author":[{"given":"Hiroyuki","family":"Shima","sequence":"first","affiliation":[{"name":"Department
-        of Applied Physics, Hokkaido University, Sapporo 060-8628"}]},{"given":"Kousuke","family":"Yakubo","sequence":"additional","affiliation":[{"name":"Department
-        of Applied Physics, Hokkaido University, Sapporo 060-8628"}]},{"given":"Tsuneyoshi","family":"Nakayama","sequence":"additional","affiliation":[{"name":"Department
-        of Applied Physics, Hokkaido University, Sapporo 060-8628"}]}],"member":"4365","reference":[{"key":"ref1\/ref1_1","doi-asserted-by":"crossref","first-page":"7312","DOI":"10.1103\/PhysRevB.47.7312","volume":"47","author":"Halperin
-        B. I.","year":"1993","journal-title":"Phys. Rev. B"},{"key":"ref2\/ref2_1","doi-asserted-by":"crossref","first-page":"2450","DOI":"10.1103\/PhysRevLett.64.2450","volume":"64","author":"Nagaosa
-        N.","year":"1990","journal-title":"Phys. Rev. Lett."},{"key":"ref3\/ref3_1","doi-asserted-by":"crossref","first-page":"5749","DOI":"10.1103\/PhysRevB.49.5749","volume":"49","author":"Geim
-        A. K.","year":"1994","journal-title":"Phys. Rev. B"},{"key":"ref4\/ref4_1","doi-asserted-by":"crossref","first-page":"13269","DOI":"10.1103\/PhysRevB.51.13269","volume":"51","author":"Mancoff
-        F. B.","year":"1995","journal-title":"Phys. Rev. B"},{"key":"ref5\/ref5_1","doi-asserted-by":"crossref","first-page":"1900","DOI":"10.1016\/S0921-4526(99)02989-0","volume":"284","author":"Ando
-        M.","year":"2000","journal-title":"Physica B"},{"key":"ref6\/ref6_1","doi-asserted-by":"crossref","first-page":"2979","DOI":"10.1103\/PhysRevLett.69.2979","volume":"69","author":"Altshuler
-        B. L.","year":"1992","journal-title":"Phys. Rev. Lett."},{"key":"ref7\/ref7_1","doi-asserted-by":"crossref","first-page":"16609","DOI":"10.1103\/PhysRevB.49.16609","volume":"49","author":"Aronov
-        A. G.","year":"1994","journal-title":"Phys. Rev. B"},{"key":"ref8\/ref8_1","doi-asserted-by":"crossref","first-page":"1886","DOI":"10.1103\/PhysRevLett.72.1886","volume":"72","author":"Zhang
-        S. C.","year":"1994","journal-title":"Phys. Rev. Lett."},{"key":"ref9\/ref9_1","doi-asserted-by":"crossref","first-page":"1060","DOI":"10.1103\/PhysRevLett.85.1060","volume":"85","author":"Taras-Semchuk
-        D.","year":"2000","journal-title":"Phys. Rev. Lett."},{"key":"ref10\/ref10_1","doi-asserted-by":"crossref","first-page":"1980","DOI":"10.1103\/PhysRevLett.70.1980","volume":"70","author":"Sugiyama
-        T.","year":"1993","journal-title":"Phys. Rev. Lett."},{"key":"ref11\/ref11_1","doi-asserted-by":"crossref","first-page":"9561","DOI":"10.1103\/PhysRevB.47.9561","volume":"47","author":"Avishai
-        Y.","year":"1993","journal-title":"Phys. Rev. B"},{"key":"ref12\/ref12_1","doi-asserted-by":"crossref","first-page":"5272","DOI":"10.1103\/PhysRevB.50.5272","volume":"50","author":"Lee
-        D. K. K.","year":"1994","journal-title":"Phys. Rev. B"},{"key":"ref13\/ref13_1","doi-asserted-by":"crossref","first-page":"10897","DOI":"10.1103\/PhysRevB.51.10897","volume":"51","author":"Kawarabayashi
-        T.","year":"1995","journal-title":"Phys. Rev. B"},{"key":"ref14\/ref14_1","doi-asserted-by":"crossref","first-page":"13432","DOI":"10.1103\/PhysRevB.54.13432","volume":"54","author":"Yakubo
-        K.","year":"1996","journal-title":"Phys. Rev. B"},{"key":"ref15\/ref15_1","doi-asserted-by":"crossref","first-page":"604","DOI":"10.1103\/PhysRevLett.82.604","volume":"82","author":"Furusaki
-        A.","year":"1999","journal-title":"Phys. Rev. Lett."},{"key":"ref16\/ref16_1","doi-asserted-by":"crossref","first-page":"16756","DOI":"10.1103\/PhysRevB.62.16756","volume":"62","author":"Yakubo
-        K.","year":"2000","journal-title":"Phys. Rev. B"},{"key":"ref17\/ref17_1","doi-asserted-by":"crossref","first-page":"1817","DOI":"10.1103\/PhysRevLett.77.1817","volume":"77","author":"Khveshchenko
-        D. V.","year":"1996","journal-title":"Phys. Rev. Lett."},{"key":"ref18\/ref18_1","doi-asserted-by":"crossref","first-page":"R4241","DOI":"10.1103\/PhysRevB.57.R4241","volume":"57","author":"Calvo
-        M.","year":"1998","journal-title":"Phys. Rev. B"},{"key":"ref19\/ref19_1","doi-asserted-by":"crossref","first-page":"2616","DOI":"10.1103\/PhysRevLett.83.2616","volume":"83","author":"Zwerschke
-        S. D. M.","year":"1999","journal-title":"Phys. Rev. Lett."},{"key":"ref20\/ref20_1","doi-asserted-by":"crossref","first-page":"8951","DOI":"10.1103\/PhysRevB.60.8951","volume":"60","author":"Evers
-        F.","year":"1999","journal-title":"Phys. Rev. B"},{"key":"ref21\/ref21_1","doi-asserted-by":"crossref","first-page":"13774","DOI":"10.1103\/PhysRevB.61.13774","volume":"61","author":"Wilke
-        J.","year":"2000","journal-title":"Phys. Rev. B"},{"key":"ref22\/ref22_1","doi-asserted-by":"crossref","first-page":"385","DOI":"10.1103\/PhysRevLett.68.385","volume":"68","author":"M\u00fcller
-        J. E.","year":"1992","journal-title":"Phys. Rev. Lett."},{"key":"ref23\/ref23_1","doi-asserted-by":"crossref","first-page":"16646","DOI":"10.1103\/PhysRevB.52.16646","volume":"52","author":"Kim
-        Y. B.","year":"1995","journal-title":"Phys. Rev. B"},{"key":"ref24\/ref24_1","doi-asserted-by":"crossref","first-page":"3984","DOI":"10.1103\/PhysRevE.58.3984","volume":"58","author":"Nakayama
-        T.","year":"1998","journal-title":"Phys. Rev. E"},{"key":"ref25\/ref25_1","doi-asserted-by":"crossref","first-page":"239","DOI":"10.1016\/S0370-1573(00)00115-0","volume":"349","author":"Nakayama
-        T.","year":"2001","journal-title":"Phys. Rep."},{"key":"ref26\/ref26_1","doi-asserted-by":"crossref","first-page":"776","DOI":"10.1209\/epl\/i2000-00548-y","volume":"50","author":"Sheng
-        D. N.","year":"2000","journal-title":"Europhys. Lett."},{"key":"ref27\/ref27_1","doi-asserted-by":"crossref","first-page":"2189","DOI":"10.1143\/JPSJ.67.2189","volume":"67","author":"Shima
-        H.","year":"1998","journal-title":"J. Phys. Soc. Jpn."},{"key":"ref28\/ref28_1","doi-asserted-by":"crossref","first-page":"14066","DOI":"10.1103\/PhysRevB.60.14066","volume":"60","author":"Shima
-        H.","year":"1999","journal-title":"Phys. Rev. B"},{"key":"ref29\/ref29_1","doi-asserted-by":"crossref","first-page":"3967","DOI":"10.1063\/1.448136","volume":"81","author":"Tal-ezer
-        H.","year":"1984","journal-title":"J. Chem. Phys."},{"key":"ref30\/ref30_1","doi-asserted-by":"crossref","first-page":"2290","DOI":"10.1103\/PhysRevLett.84.2290","volume":"84","author":"Loh
-        Y. L.","year":"2000","journal-title":"Phys. Rev. Lett."},{"key":"ref33\/ref33_1","doi-asserted-by":"crossref","first-page":"R13279","DOI":"10.1103\/PhysRevB.53.R13279","volume":"53","author":"Gammel
-        B. M.","year":"1996","journal-title":"Phys. Rev. B"},{"key":"ref34\/ref34_1","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1007\/BF01307666","volume":"94","author":"Kratzer
-        P.","year":"1994","journal-title":"Z. Phys. B"},{"key":"ref35\/ref35_1","doi-asserted-by":"crossref","first-page":"155","DOI":"10.1007\/BF01307667","volume":"94","author":"Evers
-        F.","year":"1994","journal-title":"Z. Phys. B"},{"key":"ref36\/ref36_1","doi-asserted-by":"crossref","first-page":"593","DOI":"10.1103\/PhysRevLett.61.593","volume":"61","author":"Chalker
-        J. T.","year":"1988","journal-title":"Phys. Rev. Lett."},{"key":"ref37\/ref37_1","doi-asserted-by":"crossref","first-page":"253","DOI":"10.1016\/0378-4371(90)90056-X","volume":"167","author":"Chalker
-        J. T.","year":"1990","journal-title":"Physica A"},{"key":"ref38\/ref38_1","doi-asserted-by":"crossref","first-page":"295","DOI":"10.1007\/BF01324339","volume":"82","author":"Pook
-        W.","year":"1991","journal-title":"Z. Phys. B"}],"container-title":["Journal
-        of the Physical Society of Japan"],"language":"en","link":[{"URL":"http:\/\/journals.jps.jp\/doi\/pdf\/10.1143\/JPSJ.70.2682","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,1]],"date-time":"2021-06-01T03:12:22Z","timestamp":1622517142000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/journals.jps.jp\/doi\/10.1143\/JPSJ.70.2682"}},"issued":{"date-parts":[[2001,9,15]]},"references-count":36,"journal-issue":{"issue":"9","published-print":{"date-parts":[[2001,9,15]]}},"alternative-id":["10.1143\/JPSJ.70.2682"],"URL":"http:\/\/dx.doi.org\/10.1143\/jpsj.70.2682","ISSN":["0031-9015","1347-4073"],"issn-type":[{"value":"0031-9015","type":"print"},{"value":"1347-4073","type":"electronic"}],"subject":["General
-        Physics and Astronomy"],"published":{"date-parts":[[2001,9,15]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":10,"items":[{"indexed":{"date-parts":[[2023,9,12]],"date-time":"2023-09-12T02:04:33Z","timestamp":1694484273492},"reference-count":23,"publisher":"Springer
+        Science and Business Media LLC","issue":"3","license":[{"start":{"date-parts":[[2004,9,1]],"date-time":"2004-09-01T00:00:00Z","timestamp":1093996800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+        Urban Review"],"published-print":{"date-parts":[[2004,9]]},"DOI":"10.1007\/s11256-004-0686-z","type":"journal-article","created":{"date-parts":[[2004,11,24]],"date-time":"2004-11-24T06:41:19Z","timestamp":1101278479000},"page":"169-187","source":"Crossref","is-referenced-by-count":2,"title":["The
+        Hidden Curriculum of Domestication"],"prefix":"10.1007","volume":"36","author":[{"given":"Juan
+        S.","family":"Mu\ufffdoz","sequence":"first","affiliation":[]},{"given":"Rosario
+        Ordo\ufffdez","family":"Jasis","sequence":"additional","affiliation":[]},{"given":"Patricia
+        A.","family":"Young","sequence":"additional","affiliation":[]},{"given":"Peter","family":"McLaren","sequence":"additional","affiliation":[]}],"member":"297","reference":[{"key":"CR1","unstructured":"Baez,
+        B. (2002a). Race Work and the Faculty of Color: Changing the Academy From
+        Within. Paper presented at the keeping out faculties: Addressing the recruitment
+        and retention of faculty of color conference, Minnesota."},{"key":"CR2","volume-title":"Affirmative
+        Action, Hate Speech, and Tenure","author":"B. Baez","year":"2002","unstructured":"Baez,
+        B. (2002b). Affirmative Action, Hate Speech, and Tenure. New York: Routledge
+        Falmer Press."},{"key":"CR3","volume-title":"The Location of Culture","author":"H.
+        Bhabha","year":"1997","unstructured":"Bhabha, H. (1997). The Location of Culture.
+        New York, NY: Routledge."},{"key":"CR4","volume-title":"Professional Development
+        Schools: Schools for Developing the Profession","author":"L Darling-Hammond","year":"1994","unstructured":"Darling-Hammond,
+        L(1994). Professional Development Schools: Schools for Developing the Profession.
+        New York: Teachers College Press."},{"key":"CR5","first-page":"390","volume-title":"Acts
+        of Inquiry in Qualitative Research","author":"C. Delgado-Gaitan","year":"2000","unstructured":"Delgado-Gaitan,
+        C. (2000). Researching change and the changing researcher. In B. M. Brizuela,
+        J. P. Stewart, R. G. Carillo, and J. G. Berger (Eds. ), Acts of Inquiry in
+        Qualitative Research (pp. 390?410). Cambridge, MA: Harvard Educational Review."},{"key":"CR6","volume-title":"Diversity
+        in Teacher Education: New Expectations","author":"M. E. Dilorth","year":"1992","unstructured":"Dilorth,
+        M. E. (1992). Diversity in Teacher Education: New Expectations. San Francisco:
+        Jossey-Bass."},{"key":"CR7","first-page":"37","volume-title":"Handbook of
+        research in teaching","author":"G. D. Fenstermacher","year":"1986","unstructured":"Fenstermacher,
+        G. D. (1986). Philosophy of research on teaching: Three aspects. In M. Wittrock,
+        (Ed. ), Handbook of research in teaching (pp. 37?49). New York: Macmillian."},{"key":"CR8","volume-title":"Pedagogy
+        of the Oppressed","author":"P. Freire","year":"1970","unstructured":"Freire,
+        P. (1970). Pedagogy of the Oppressed. New York: Continuum Press."},{"key":"CR9","volume-title":"Pedagogy
+        of Hope: Reliving Pedagogy of the Oppressed","author":"P. Freire","year":"1995","unstructured":"Freire,
+        P., and Freire, A. M. (1995). Pedagogy of Hope: Reliving Pedagogy of the Oppressed.
+        New York, NY: Continuum Press."},{"issue":"4","key":"CR10","doi-asserted-by":"crossref","first-page":"2","DOI":"10.1177\/002248718303400402","volume":"34","author":"J.
+        D. Greensburg","year":"1983","unstructured":"Greensburg, J. D. (1983). The
+        case for teacher education: Open and Shut. Journal of Teacher Education 34(4):
+        2?5.","journal-title":"Journal of Teacher Education"},{"key":"CR11","volume-title":"El
+        Dario de Che Guevara","author":"E. Guevara","year":"1978","unstructured":"Guevara,
+        E. (1978). El Dario de Che Guevara. Mexico: Siglo Vientiuno."},{"key":"CR12","volume-title":"Che
+        Guevara and the Cuban Revolution: Selected Writings and Speeches","author":"E.
+        Guevara","year":"1987","unstructured":"Guevara, E. (1987). Che Guevara and
+        the Cuban Revolution: Selected Writings and Speeches. Sydney: Pathfinder Press."},{"key":"CR13","volume-title":"Collected
+        Works","author":"V. I. Lenin","year":"1961","unstructured":"Lenin, V. I. (1961).
+        Collected Works (Vol. VI. ) London: Lawrence & Wishartand, Moscow: Progress
+        Publishers."},{"key":"CR14","volume-title":"By Any Means Necessary: Speeches,
+        Interviews and A Letter by Malcolm X","author":"X. Malcolm","year":"1970","unstructured":"Malcolm,
+        X. (1970). By Any Means Necessary: Speeches, Interviews and A Letter by Malcolm
+        X. New York: Pathfinder Press."},{"key":"CR15","volume-title":"The America
+        of Jos& #x00F6;Mart\u00fd \u00b4: Selected Writings","author":"J. Marti","year":"1968","unstructured":"Marti,
+        J. (1968). The America of Jos& #x00F6;Mart\u00fd \u00b4: Selected Writings.
+        Translated from the Spanish by Juan de On\u00fd \u00b4s. With an introduction
+        by Federico de On\u00fd \u00b4s. New York; Funk & Wagnalls."},{"key":"CR16","volume-title":"Inside
+        the Monster","author":"J. Marti","year":"1975","unstructured":"Marti, J. (1975).
+        Inside the Monster. Translated by Elinor Randall with additional translation
+        by Luis A. Baralt, Juan De Onis, and Roslyn Held Forner. New York: Month Review
+        press."},{"key":"CR17","volume-title":"The Holy Family: Or Critique of Critical
+        Critique","author":"K. Marx","year":"1956","unstructured":"Marx, K., and Engels,
+        F. (1956). The Holy Family: Or Critique of Critical Critique. Moscow: Foreign
+        Language Publishing House."},{"key":"CR18","volume-title":"Capital","author":"K.
+        Marx","year":"1959","unstructured":"Marx, K. (1959). Capital, (Vol. I). Moscow:
+        Foreign Languages Publishing House."},{"key":"CR19","volume-title":"The Revolution
+        Betrayed","author":"L. Trotsky","year":"1972","unstructured":"Trotsky, L.
+        (1972). The Revolution Betrayed. New York: Path nder Press."},{"key":"CR20","volume-title":"History
+        of the Russian Revolution","author":"L. Trotsky","year":"1980","unstructured":"Trotsky,
+        L. (1980). History of the Russian Revolution. New York: Path nder Press."},{"key":"CR21","unstructured":"Trowers,
+        A., and Chiat, R. P. (2002). Faculty Diversity: Too Little Too Long. Paper
+        presented at the keeping out faculties: Addressing the recruitment and retention
+        of faculty of color conference. Minnesota."},{"key":"CR22","unstructured":"Turner,
+        C. S., and Smith, D. G. (2002). Hiring Faculty of Color. Paper presented at
+        the keeping out faculties: Addressing the recruitment and retention of faculty
+        of color conference. Minnesota."},{"key":"CR23","volume-title":"Faculty of
+        Color in Academe: Bittersweet Success","author":"C. S. Turner","year":"2000","unstructured":"Turner,
+        C. S., and Myers, Jr. S. L. (2000). Faculty of Color in Academe: Bittersweet
+        Success. Needham Heights, MA: Allyn and Bacon."}],"container-title":["The
+        Urban Review"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s11256-004-0686-z.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/s11256-004-0686-z\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s11256-004-0686-z","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,6,1]],"date-time":"2019-06-01T12:02:11Z","timestamp":1559390531000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/s11256-004-0686-z"}},"issued":{"date-parts":[[2004,9]]},"references-count":23,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2004,9]]}},"alternative-id":["NY00000686"],"URL":"http:\/\/dx.doi.org\/10.1007\/s11256-004-0686-z","ISSN":["0042-0972","1573-1960"],"issn-type":[{"value":"0042-0972","type":"print"},{"value":"1573-1960","type":"electronic"}],"subject":["Education","Sociology
+        and Political Science"],"published":{"date-parts":[[2004,9]]}},{"indexed":{"date-parts":[[2023,5,18]],"date-time":"2023-05-18T04:13:51Z","timestamp":1684383231922},"reference-count":0,"publisher":"Springer
+        Science and Business Media LLC","issue":"7169","license":[{"start":{"date-parts":[[2007,11,1]],"date-time":"2007-11-01T00:00:00Z","timestamp":1193875200000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Nature"],"published-print":{"date-parts":[[2007,11]]},"DOI":"10.1038\/450470e","type":"journal-article","created":{"date-parts":[[2007,11,21]],"date-time":"2007-11-21T18:27:13Z","timestamp":1195669633000},"page":"470-470","source":"Crossref","is-referenced-by-count":0,"title":["Midwest
+        coalition joins fight against emissions"],"prefix":"10.1038","volume":"450","member":"297","published-online":{"date-parts":[[2007,11,21]]},"container-title":["Nature"],"language":"en","link":[{"URL":"http:\/\/www.nature.com\/articles\/450470e.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/450470e","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/www.nature.com\/articles\/450470e.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,5,18]],"date-time":"2023-05-18T00:16:55Z","timestamp":1684369015000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.nature.com\/articles\/450470e"}},"issued":{"date-parts":[[2007,11]]},"references-count":0,"journal-issue":{"issue":"7169","published-print":{"date-parts":[[2007,11]]}},"alternative-id":["BF450470e"],"URL":"http:\/\/dx.doi.org\/10.1038\/450470e","ISSN":["0028-0836","1476-4687"],"issn-type":[{"value":"0028-0836","type":"print"},{"value":"1476-4687","type":"electronic"}],"subject":["Multidisciplinary"],"published":{"date-parts":[[2007,11]]}},{"indexed":{"date-parts":[[2022,4,28]],"date-time":"2022-04-28T08:25:01Z","timestamp":1651134301726},"publisher-location":"Berlin,
+        Heidelberg","reference-count":0,"publisher":"Springer Berlin Heidelberg","isbn-type":[{"value":"9783642746819","type":"print"},{"value":"9783642746796","type":"electronic"}],"license":[{"start":{"date-parts":[[1989,1,1]],"date-time":"1989-01-01T00:00:00Z","timestamp":599616000000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1989]]},"DOI":"10.1007\/978-3-642-74679-6","type":"book","created":{"date-parts":[[2011,12,29]],"date-time":"2011-12-29T17:28:20Z","timestamp":1325179700000},"source":"Crossref","is-referenced-by-count":7,"title":["Percutaneous
+        Lumbar Discectomy"],"prefix":"10.1007","member":"297","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-642-74679-6.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-642-74679-6","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,4,4]],"date-time":"2019-04-04T10:22:50Z","timestamp":1554373370000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-3-642-74679-6"}},"editor":[{"given":"H.
+        Michael","family":"Mayer","sequence":"first","affiliation":[]},{"given":"Mario","family":"Brock","sequence":"additional","affiliation":[]}],"issued":{"date-parts":[[1989]]},"ISBN":["9783642746819","9783642746796"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-3-642-74679-6","published":{"date-parts":[[1989]]}},{"indexed":{"date-parts":[[2023,7,21]],"date-time":"2023-07-21T05:31:51Z","timestamp":1689917511025},"reference-count":0,"publisher":"Oxford
+        University Press (OUP)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2023,3,2]]},"DOI":"10.1093\/oed\/7183054216","type":"component","created":{"date-parts":[[2023,7,21]],"date-time":"2023-07-21T00:47:23Z","timestamp":1689900443000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1093","member":"286","deposited":{"date-parts":[[2023,7,21]],"date-time":"2023-07-21T00:48:49Z","timestamp":1689900529000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/oed.com\/dictionary\/book-building_n?tab=meaning_and_use#316635786"}},"issued":{"date-parts":[[2023,3,2]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/oed\/7183054216","published":{"date-parts":[[2023,3,2]]}},{"indexed":{"date-parts":[[2023,8,9]],"date-time":"2023-08-09T23:34:31Z","timestamp":1691624071379},"reference-count":21,"publisher":"AIP
+        Publishing","issue":"10","funder":[{"name":"CINVESTAV Unidad M\u00c3\u00a9rida","award":["UFI
+        11\/55"]}],"content-domain":{"domain":["pubs.aip.org"],"crossmark-restriction":true},"published-print":{"date-parts":[[2014,10,1]]},"abstract":"<jats:p>In
+        this work, we have extended the front-face flash method to retrieve simultaneously
+        the thermal diffusivity and the optical absorption coefficient of semitransparent
+        plates. A complete theoretical model that allows calculating the front surface
+        temperature rise of the sample has been developed. It takes into consideration
+        additional effects, such as multiple reflections of the heating light beam
+        inside the sample, heat losses by convection and radiation, transparency of
+        the sample to infrared wavelengths, and heating pulse duration. Measurements
+        performed on calibrated solids, covering a wide range of absorption coefficients
+        (from transparent to opaque) and thermal diffusivities, validate the proposed
+        method.<\/jats:p>","DOI":"10.1063\/1.4897619","type":"journal-article","created":{"date-parts":[[2014,10,17]],"date-time":"2014-10-17T00:30:52Z","timestamp":1413505852000},"update-policy":"http:\/\/dx.doi.org\/10.1063\/aip-crossmark-policy-page","source":"Crossref","is-referenced-by-count":19,"title":["Generalizing
+        the flash technique in the front-face configuration to measure the thermal
+        diffusivity of semitransparent solids"],"prefix":"10.1063","volume":"85","author":[{"given":"Nelson
+        Wilbur","family":"Pech-May","sequence":"first","affiliation":[{"name":"Universidad
+        del Pa\u00eds Vasco UPV\/EHU 1 Departamento de F\u00edsica Aplicada I, Escuela
+        T\u00e9cnica Superior de Ingenier\u00eda, , Alameda Urquijo s\/n, 48013 Bilbao,
+        Spain"},{"name":"CINVESTAV Unidad M\u00e9rida 2 Department of Applied Physics,
+        , carretera Antigua a Progreso km6, A.P. 73 Cordemex, M\u00e9rida Yucat\u00e1n
+        97310, M\u00e9xico"}]},{"given":"Arantza","family":"Mendioroz","sequence":"additional","affiliation":[{"name":"Universidad
+        del Pa\u00eds Vasco UPV\/EHU 1 Departamento de F\u00edsica Aplicada I, Escuela
+        T\u00e9cnica Superior de Ingenier\u00eda, , Alameda Urquijo s\/n, 48013 Bilbao,
+        Spain"}]},{"given":"Agust\u00edn","family":"Salazar","sequence":"additional","affiliation":[{"name":"Universidad
+        del Pa\u00eds Vasco UPV\/EHU 1 Departamento de F\u00edsica Aplicada I, Escuela
+        T\u00e9cnica Superior de Ingenier\u00eda, , Alameda Urquijo s\/n, 48013 Bilbao,
+        Spain"}]}],"member":"317","published-online":{"date-parts":[[2014,10,15]]},"reference":[{"key":"2023070415573835400_c1","doi-asserted-by":"publisher","first-page":"1679","volume":"32","year":"1961","journal-title":"J.
+        Appl. Phys.","DOI":"10.1063\/1.1728417"},{"key":"2023070415573835400_c2","first-page":"85","volume":"21","year":"1989","journal-title":"High
+        Temp. - High Pressures"},{"key":"2023070415573835400_c3","doi-asserted-by":"publisher","first-page":"169","volume":"3","year":"2006","journal-title":"QIRT
+        J.","DOI":"10.3166\/qirt.3.169-182"},{"key":"2023070415573835400_c4","doi-asserted-by":"publisher","first-page":"286","volume":"49","year":"2007","journal-title":"Infrared
+        Phys. Technol.","DOI":"10.1016\/j.infrared.2006.06.019"},{"key":"2023070415573835400_c5","doi-asserted-by":"publisher","first-page":"035604","volume":"25","year":"2014","journal-title":"Meas.
+        Sci. Technol.","DOI":"10.1088\/0957-0233\/25\/3\/035604"},{"key":"2023070415573835400_c6","doi-asserted-by":"publisher","first-page":"521","volume":"17","year":"1984","journal-title":"J.
+        Phys. E: Sci. Instrum.","DOI":"10.1088\/0022-3735\/17\/6\/020"},{"key":"2023070415573835400_c7","doi-asserted-by":"publisher","first-page":"1829","volume":"19","year":"1986","journal-title":"J.
+        Phys. D: Appl. Phys.","DOI":"10.1088\/0022-3727\/19\/10\/007"},{"key":"2023070415573835400_c8","doi-asserted-by":"publisher","first-page":"5479","volume":"63","year":"1992","journal-title":"Rev.
+        Sci. Instrum.","DOI":"10.1063\/1.1143372"},{"key":"2023070415573835400_c9","doi-asserted-by":"publisher","first-page":"015403","volume":"41","year":"2008","journal-title":"J.
+        Phys. D: Appl. Phys.","DOI":"10.1088\/0022-3727\/41\/1\/015403"},{"key":"2023070415573835400_c10","doi-asserted-by":"publisher","first-page":"47","volume":"13","year":"1970","journal-title":"Commun.
+        ACM","DOI":"10.1145\/361953.361969"},{"key":"2023070415573835400_c11","doi-asserted-by":"publisher","first-page":"4514","volume":"87","year":"2000","journal-title":"J.
+        Appl. Phys.","DOI":"10.1063\/1.373098"},{"key":"2023070415573835400_c12","first-page":"101","volume-title":"Theory
+        and Practice of Infrared Technology for Nondestructive Testing","year":"2001"},{"key":"2023070415573835400_c13","doi-asserted-by":"publisher","first-page":"431","volume":"11","year":"1963","journal-title":"SIAM
+        J. Appl. Math.","DOI":"10.1137\/0111030"},{"key":"2023070415573835400_c14","doi-asserted-by":"publisher","first-page":"1203","volume":"37","year":"1992","journal-title":"Phys.
+        Med. Biol.","DOI":"10.1088\/0031-9155\/37\/6\/001"},{"key":"2023070415573835400_c15","doi-asserted-by":"publisher","first-page":"102022","volume":"105","year":"2009","journal-title":"J.
+        Appl. Phys.","DOI":"10.1063\/1.3116128"},{"key":"2023070415573835400_c16","doi-asserted-by":"publisher","first-page":"9523","volume":"49","year":"1994","journal-title":"Phys.
+        Rev. B","DOI":"10.1103\/PhysRevB.49.9523"},{"key":"2023070415573835400_c17","doi-asserted-by":"publisher","first-page":"1876","volume":"33","year":"2012","journal-title":"Int.
+        J. Thermophys.","DOI":"10.1007\/s10765-012-1264-3"},{"key":"2023070415573835400_c18","doi-asserted-by":"publisher","first-page":"365","volume":"218","year":"1993","journal-title":"Thermochim.
+        Acta","DOI":"10.1016\/0040-6031(93)80436-E"},{"key":"2023070415573835400_c19","doi-asserted-by":"publisher","first-page":"033515","volume":"110","year":"2011","journal-title":"J.
+        Appl. Phys.","DOI":"10.1063\/1.3614524"},{"key":"2023070415573835400_c20","volume-title":"Thermal
+        Diffusivity","year":"1973"},{"key":"2023070415573835400_c21","volume-title":"Heat
+        Transfer: A Practical Approach","year":"2003"}],"container-title":["Review
+        of Scientific Instruments"],"language":"en","link":[{"URL":"https:\/\/pubs.aip.org\/aip\/rsi\/article-pdf\/doi\/10.1063\/1.4897619\/13630509\/104902_1_online.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"https:\/\/pubs.aip.org\/aip\/rsi\/article-pdf\/doi\/10.1063\/1.4897619\/13630509\/104902_1_online.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,7,4]],"date-time":"2023-07-04T19:58:33Z","timestamp":1688500713000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/pubs.aip.org\/rsi\/article\/85\/10\/104902\/361978\/Generalizing-the-flash-technique-in-the-front-face"}},"issued":{"date-parts":[[2014,10,1]]},"references-count":21,"journal-issue":{"issue":"10","published-print":{"date-parts":[[2014,10,1]]}},"URL":"http:\/\/dx.doi.org\/10.1063\/1.4897619","ISSN":["0034-6748","1089-7623"],"issn-type":[{"value":"0034-6748","type":"print"},{"value":"1089-7623","type":"electronic"}],"subject":["Instrumentation"],"published-other":{"date-parts":[[2014,10]]},"published":{"date-parts":[[2014,10,1]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T19:10:22Z","timestamp":1649185822424},"reference-count":0,"publisher":"Medical
+        University Prof. Dr. Paraskev Stoyanov - Varna","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.14748\/bro.v64i2.7145","type":"journal-article","created":{"date-parts":[[2020,11,6]],"date-time":"2020-11-06T09:00:53Z","timestamp":1604653253000},"page":"46","source":"Crossref","is-referenced-by-count":0,"title":["Congenital
+        Glaucoma \u2013 Case Reports"],"prefix":"10.14748","volume":"64","author":[{"given":"R.","family":"Bratovanova","sequence":"first","affiliation":[]},{"given":"St.","family":"Kostova","sequence":"additional","affiliation":[]},{"given":"A.","family":"Toshev","sequence":"additional","affiliation":[]},{"given":"G.","family":"Dimitrova","sequence":"additional","affiliation":[]},{"given":"A.","family":"Oscar","sequence":"additional","affiliation":[]}],"member":"5815","published-online":{"date-parts":[[2021,9,28]]},"container-title":["Bulgarian
+        Review of Ophthalmology"],"deposited":{"date-parts":[[2020,11,6]],"date-time":"2020-11-06T09:00:58Z","timestamp":1604653258000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/journals.mu-varna.bg\/index.php\/bro\/article\/view\/7145"}},"issued":{"date-parts":[[2021,9,28]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2020,9,28]]}},"URL":"http:\/\/dx.doi.org\/10.14748\/bro.v64i2.7145","ISSN":["1311-0624"],"issn-type":[{"value":"1311-0624","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2021,9,28]]}},{"institution":[{"name":"Research
+        Square"}],"indexed":{"date-parts":[[2022,7,28]],"date-time":"2022-07-28T23:42:45Z","timestamp":1659051765224},"posted":{"date-parts":[[2020,8,27]]},"group-title":"In
+        Review","reference-count":0,"publisher":"Research Square Platform LLC","license":[{"start":{"date-parts":[[2020,8,27]],"date-time":"2020-08-27T00:00:00Z","timestamp":1598486400000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"accepted":{"date-parts":[[2020,7,31]]},"abstract":"<jats:title>Abstract<\/jats:title>\n        <jats:p><jats:italic>Background:<\/jats:italic>
+        Cancer treatment is increasingly dependent on biomarkers for prognostication
+        and treatment selection. Potential biomarkers are frequently evaluated in
+        prospective-retrospective studies in which biomarkers are measured retrospectively
+        on archived specimens after completion of prospective clinical trials. In
+        light of the high costs of some assays, random sampling designs have been
+        proposed that measure biomarkers for a random sub-sample of subjects selected
+        on the basis of observed outcome and possibly other variables. Compared with
+        a standard design that measures biomarkers on all subjects, a random sampling
+        design can be cost-efficient in the sense of reducing the cost of the study
+        substantially while achieving a reasonable level of precision.<jats:italic>Methods:<\/jats:italic>
+        For a biomarker that indicates the presence of some molecular alteration (e.g.,
+        mutation in a gene), we explore the use of a group testing strategy, which
+        involves physically pooling specimens across subjects and assaying pooled
+        samples for the presence of the molecular alteration of interest, for further
+        improvement in cost-efficiency beyond random sampling. We propose simple and
+        general approaches to estimating the prognostic and predictive values of biomarkers
+        with group testing, and conduct simulation studies to validate the proposed
+        estimation procedures and to assess the cost-efficiency of the group testing
+        design in comparison to the standard and random sampling designs.<jats:italic>Results:<\/jats:italic><jats:bold>
+        <\/jats:bold>Simulation results show that the proposed estimation procedures
+        perform well in realistic settings and that a group testing design can have
+        considerably higher cost-efficiency than a random sampling design. <jats:italic>Conclusions:
+        <\/jats:italic>Group testing can be used to improve the cost-efficiency of
+        biomarker studies.<\/jats:p>","DOI":"10.21203\/rs.3.rs-51687\/v1","type":"posted-content","created":{"date-parts":[[2020,8,27]],"date-time":"2020-08-27T15:09:04Z","timestamp":1598540944000},"source":"Crossref","is-referenced-by-count":0,"title":["Group
+        Testing Can Improve the Cost-Efficiency of Prospective-Retrospective Biomarker
+        Studies"],"prefix":"10.21203","author":[{"given":"Wei","family":"Zhang","sequence":"first","affiliation":[{"name":"University
+        of the Chinese Academy of Sciences"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-3187-9180","authenticated-orcid":false,"given":"Zhiwei","family":"Zhang","sequence":"additional","affiliation":[{"name":"National
+        Cancer Institute"}]},{"given":"Julia","family":"Krushkal","sequence":"additional","affiliation":[{"name":"National
+        Cancer Institute"}]},{"given":"Aiyi","family":"Liu","sequence":"additional","affiliation":[{"name":"National
+        Institutes of Health"}]}],"member":"8761","link":[{"URL":"https:\/\/www.researchsquare.com\/article\/rs-51687\/v1","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.researchsquare.com\/article\/rs-51687\/v1.html","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,7,28]],"date-time":"2022-07-28T23:10:29Z","timestamp":1659049829000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.researchsquare.com\/article\/rs-51687\/v1"}},"issued":{"date-parts":[[2020,8,27]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.21203\/rs.3.rs-51687\/v1","relation":{"is-preprint-of":[{"id-type":"doi","id":"10.1186\/s12874-021-01239-4","asserted-by":"subject"}]},"published":{"date-parts":[[2020,8,27]]},"subtype":"preprint"},{"indexed":{"date-parts":[[2023,10,22]],"date-time":"2023-10-22T21:13:30Z","timestamp":1698009210040},"reference-count":35,"publisher":"Wiley","issue":"3","license":[{"start":{"date-parts":[[2008,11,12]],"date-time":"2008-11-12T00:00:00Z","timestamp":1226448000000},"content-version":"vor","delay-in-days":7104,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Artificial
+        Organs"],"published-print":{"date-parts":[[1989,6]]},"abstract":"<jats:p><jats:bold>Abstract:
+        <\/jats:bold> Effect of hemodialysis (HD) on some indices of immune response
+        was studied in nine chronic uremics. Total lymphocyte, OKT4 +, and OKT8+ cell
+        numbers significantly decreased during the first 20 min of HD, and they were
+        decreased till the third hour of the procedure, whereas the OKT4 +\/OKT8 +
+        cell number ratio did not change significantly. Before HD, Con\u2010A\u2010activated
+        suppressor cells exerted a stimulatory action on autologous responder cells
+        measured in two\u2010step culture. During HD, Con\u2010A\u2010activated suppressor
+        cell activity transiently appeared, with its peak at 60 min after the start
+        of HD. It was accompanied by a transient rise in lymphocyte count with spontaneous
+        interleukin\u20102 (IL\u20102) receptor expression, whereas the number of
+        cells expressing IL\u20102 receptor following phytohemaglutinin (PHA) stimulation
+        was progressively decreased during HD. A significant correlation was found
+        between the increment of Con\u2010A\u2010activated suppressor cell activity
+        and the increment of spontaneous IL\u20102 receptor expression on lymphocytes
+        during one single blood flow through the dialyzer. The results supply further
+        evidence that HD may impose additional disturbances on immune regulation in
+        chronic uremics.<\/jats:p>","DOI":"10.1111\/j.1525-1594.1989.tb02861.x","type":"journal-article","created":{"date-parts":[[2008,11,12]],"date-time":"2008-11-12T18:31:53Z","timestamp":1226514713000},"page":"185-189","source":"Crossref","is-referenced-by-count":8,"title":["Effect
+        of Hemodialysis on T Lymphocyte Subsets, Con\u2010A\u2010Activated Suppressor
+        Cell Activity, and Interleukin\u20102 Receptor Expression on Lymphocytes in
+        Chronic Uremic Patients"],"prefix":"10.1111","volume":"13","author":[{"given":"Henryk","family":"Tch\u00f3rzewski","sequence":"first","affiliation":[]},{"given":"Marek","family":"Luciak","sequence":"additional","affiliation":[]},{"given":"Kazimierz","family":"Trznadel","sequence":"additional","affiliation":[]},{"given":"Ewa","family":"Majewska","sequence":"additional","affiliation":[]},{"given":"Lech","family":"Pokoca","sequence":"additional","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2008,11,12]]},"reference":[{"key":"e_1_2_1_2_2","doi-asserted-by":"publisher","DOI":"10.1159\/000169435"},{"key":"e_1_2_1_3_2","doi-asserted-by":"publisher","DOI":"10.1001\/jama.203.13.1135"},{"key":"e_1_2_1_4_2","doi-asserted-by":"publisher","DOI":"10.1159\/000183203"},{"key":"e_1_2_1_5_2","first-page":"62","volume-title":"Immune
+        and metabolic aspects of therapeutic blood purification systems","author":"Trznadel
+        K.","year":"1986"},{"key":"e_1_2_1_6_2","doi-asserted-by":"publisher","DOI":"10.1159\/000182728"},{"key":"e_1_2_1_7_2","first-page":"711","article-title":"Mitogeninduced
+        lymphocyte transformation during hemodialysis","volume":"16","author":"Ludwig
+        H.","year":"1979","journal-title":"Proc Eur Dial Transplant Assoc"},{"key":"e_1_2_1_8_2","first-page":"514","article-title":"Impaired
+        lymphocyte function and neutrophil damage during the first hours of hemodialysis","volume":"8","author":"Gast
+        CG","year":"1977","journal-title":"Clin Nephrol"},{"issue":"97","key":"e_1_2_1_9_2","first-page":"77","article-title":"Isolation
+        of mononuclear cells and granulocytes from human blood","volume":"21","author":"B\u00f6yum
+        A.","year":"1968","journal-title":"Scand J Clin Lab Invest"},{"key":"e_1_2_1_10_2","first-page":"201","volume-title":"Techniques
+        in clinical immunology","author":"Wilkinson PC.","year":"1977"},{"key":"e_1_2_1_11_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.143.5.1100"},{"key":"e_1_2_1_12_2","doi-asserted-by":"crossref","first-page":"690","DOI":"10.4049\/jimmunol.131.2.690","article-title":"Blockade
+        of the interleukin\u20102 receptor expression by anti\u2010Tac antibody:inhibition
+        of human lymphocyte activation","volume":"131","author":"Depper JM","year":"1983","journal-title":"J
+        Immunol"},{"key":"e_1_2_1_13_2","first-page":"196","article-title":"Haemodialysis\u2010induced
+        acute changes in T lymphocytre subsets","volume":"22","author":"Dratwa M.","year":"1985","journal-title":"Proc
+        Eur Dial Transplant Assoc"},{"key":"e_1_2_1_14_2","doi-asserted-by":"publisher","DOI":"10.1159\/000208470"},{"key":"e_1_2_1_15_2","doi-asserted-by":"publisher","DOI":"10.1182\/blood.V38.5.623.623"},{"key":"e_1_2_1_16_2","first-page":"186","article-title":"A
+        demonstration of neutrophil accumulation in the pulmonary vasculature during
+        haemodialy sis","volume":"20","author":"Dodd NJ","year":"1983","journal-title":"Proc
+        Eur Dial Transplant Assoc"},{"key":"e_1_2_1_17_2","doi-asserted-by":"publisher","DOI":"10.1038\/ki.1985.136"},{"key":"e_1_2_1_18_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-3083.1987.tb02233.x"},{"key":"e_1_2_1_19_2","first-page":"146","article-title":"Normal
+        values of peripheral lymphocyte populations and T cell subsets at a fixed
+        time of day:a flow cytometric analysis with monoclonal antibodies in 210 healthy
+        adults","volume":"64","author":"Ohta Y.","year":"1986","journal-title":"Clin
+        Exp Immunol"},{"key":"e_1_2_1_20_2","first-page":"281","article-title":"Autoimmunity
+        and suppressor T lymphocytes","volume":"27","author":"Miller KB","year":"1982","journal-title":"Adv
+        Intern Med"},{"key":"e_1_2_1_21_2","first-page":"S49","article-title":"Immunological
+        aspects of chronic uremia","volume":"13","author":"Casciani CU","year":"1978","journal-title":"Kidney
+        Int"},{"key":"e_1_2_1_22_2","doi-asserted-by":"publisher","DOI":"10.1172\/JCI111171"},{"key":"e_1_2_1_23_2","doi-asserted-by":"publisher","DOI":"10.1172\/JCI111571"},{"key":"e_1_2_1_24_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-3083.1986.tb01939.x"},{"key":"e_1_2_1_25_2","doi-asserted-by":"publisher","DOI":"10.1016\/0008-8749(79)90123-0"},{"key":"e_1_2_1_26_2","doi-asserted-by":"publisher","DOI":"10.1016\/0165-2478(80)90027-9"},{"key":"e_1_2_1_27_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.153.5.1360"},{"key":"e_1_2_1_28_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.160.4.1126"},{"key":"e_1_2_1_29_2","first-page":"579","article-title":"Binding
+        of interleukin 2 to target cells:determination of high and low affinity binding
+        sites on T lymphoblasts by differential dissociation","volume":"62","author":"Horst
+        HJ","year":"1985","journal-title":"Clin Exp Immunol"},{"key":"e_1_2_1_30_2","first-page":"321","article-title":"The
+        effect of granulocyte factor (GF) on the production of interleukins and Tac
+        antigen expression","volume":"35","author":"Tch\u00f3rzewski H.","year":"1987","journal-title":"Arch
+        Immunol Ther Exp"},{"key":"e_1_2_1_31_2","doi-asserted-by":"publisher","DOI":"10.1159\/000166438"},{"key":"e_1_2_1_32_2","first-page":"63","article-title":"Plasma
+        interleukin\u20101 activity in humans undergoing hemodialysis with regenerated
+        cellulosic membranes","volume":"6","author":"Lonnemann G.","year":"1987","journal-title":"Lym-phokine
+        Res"},{"key":"e_1_2_1_33_2","doi-asserted-by":"publisher","DOI":"10.1038\/ki.1987.175"},{"key":"e_1_2_1_34_2","doi-asserted-by":"publisher","DOI":"10.1172\/JCI110637"},{"key":"e_1_2_1_35_2","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.83.19.7457"},{"key":"e_1_2_1_36_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-3083.1985.tb01399.x"}],"container-title":["Artificial
+        Organs"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1525-1594.1989.tb02861.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1111\/j.1525-1594.1989.tb02861.x","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,22]],"date-time":"2023-10-22T01:03:34Z","timestamp":1697936614000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1525-1594.1989.tb02861.x"}},"issued":{"date-parts":[[1989,6]]},"references-count":35,"journal-issue":{"issue":"3","published-print":{"date-parts":[[1989,6]]}},"alternative-id":["10.1111\/j.1525-1594.1989.tb02861.x"],"URL":"http:\/\/dx.doi.org\/10.1111\/j.1525-1594.1989.tb02861.x","archive":["Portico"],"ISSN":["0160-564X","1525-1594"],"issn-type":[{"value":"0160-564X","type":"print"},{"value":"1525-1594","type":"electronic"}],"subject":["Biomedical
+        Engineering","General Medicine","Biomaterials","Medicine (miscellaneous)","Bioengineering"],"published":{"date-parts":[[1989,6]]}},{"indexed":{"date-parts":[[2023,9,26]],"date-time":"2023-09-26T06:41:19Z","timestamp":1695710479555},"reference-count":30,"publisher":"Wiley","issue":"1","license":[{"start":{"date-parts":[[2007,3,14]],"date-time":"2007-03-14T00:00:00Z","timestamp":1173830400000},"content-version":"vor","delay-in-days":10268,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Annals
+        of the New York Academy of Sciences"],"published-print":{"date-parts":[[1979,2]]},"DOI":"10.1111\/j.1749-6632.1979.tb56505.x","type":"journal-article","created":{"date-parts":[[2007,3,14]],"date-time":"2007-03-14T14:05:22Z","timestamp":1173881122000},"page":"18-29","source":"Crossref","is-referenced-by-count":4,"title":["MYOPATHY
+        OF HAMSTER DYSTROPHY: PHYSIOLOGIC ASPECTS *"],"prefix":"10.1111","volume":"317","author":[{"given":"M.
+        R.","family":"Ward","sequence":"first","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2007,3,14]]},"reference":[{"key":"e_1_2_1_2_2","first-page":"339","article-title":"Primary
+        generalised polymyopathy and cardiac necrosis in inbred line of Syrian hamsters","volume":"6","author":"Homburger
+        F.","year":"1962","journal-title":"Med. Exp."},{"key":"e_1_2_1_3_2","doi-asserted-by":"publisher","DOI":"10.1002\/path.1700890114"},{"key":"e_1_2_1_4_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1749-6632.1966.tb41167.x"},{"key":"e_1_2_1_5_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1749-6632.1966.tb41151.x"},{"key":"e_1_2_1_6_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1749-6632.1966.tb41163.x"},{"key":"e_1_2_1_7_2","doi-asserted-by":"publisher","DOI":"10.1016\/0022-2828(72)90058-2"},{"key":"e_1_2_1_8_2","doi-asserted-by":"publisher","DOI":"10.1016\/0006-291X(70)90966-6"},{"key":"e_1_2_1_9_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(75)90034-5"},{"key":"e_1_2_1_10_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(75)90035-7"},{"key":"e_1_2_1_11_2","doi-asserted-by":"publisher","DOI":"10.1113\/jphysiol.1956.sp005555"},{"key":"e_1_2_1_12_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1748-1716.1971.tb04932.x"},{"key":"e_1_2_1_13_2","doi-asserted-by":"publisher","DOI":"10.1113\/jphysiol.1959.sp006233"},{"key":"e_1_2_1_14_2","first-page":"373","article-title":"Transversely
+        cut diaphragm preparation","volume":"175","author":"Barstad J. A. B.","year":"1968","journal-title":"Arch.
+        Int. Pharmacodyn."},{"key":"e_1_2_1_15_2","doi-asserted-by":"publisher","DOI":"10.1113\/jphysiol.1975.sp010800"},{"key":"e_1_2_1_16_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(74)90015-6"},{"key":"e_1_2_1_17_2","first-page":"443","article-title":"Changes
+        in electrolyte and lipid contents of the myopathie hamster (UM\u2010X7.1)
+        skeletal and cardiac muscles","volume":"7","author":"Borowski I. F. M.","year":"1974","journal-title":"Res.
+        Commun. Chem. Pathol. Pharmacol."},{"key":"e_1_2_1_18_2","doi-asserted-by":"publisher","DOI":"10.1016\/0006-291X(71)90499-2"},{"key":"e_1_2_1_19_2","doi-asserted-by":"publisher","DOI":"10.1016\/0022-510X(71)90112-2"},{"key":"e_1_2_1_20_2","first-page":"997","article-title":"Tetrodotoxin,
+        saxitoxin and their significance in the study of excitation phenomena","volume":"18","author":"Kao
+        G. Y.","year":"1966","journal-title":"Pharmacol. Rev."},{"key":"e_1_2_1_21_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1748-1716.1971.tb04943.x"},{"key":"e_1_2_1_22_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1748-1716.1974.tb05676.x"},{"key":"e_1_2_1_23_2","doi-asserted-by":"publisher","DOI":"10.1007\/BF00307202"},{"key":"e_1_2_1_24_2","doi-asserted-by":"publisher","DOI":"10.1113\/jphysiol.1952.sp004719"},{"key":"e_1_2_1_25_2","doi-asserted-by":"publisher","DOI":"10.1113\/jphysiol.1970.sp009187"},{"key":"e_1_2_1_26_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(75)90048-5"},{"key":"e_1_2_1_27_2","unstructured":"Fisher
+        C.&M. R.Ward.1975.Unpublished observations."},{"key":"e_1_2_1_28_2","doi-asserted-by":"publisher","DOI":"10.1038\/224081a0"},{"key":"e_1_2_1_29_2","unstructured":"Ward
+        M. R.1974.Unpublished observations."},{"key":"e_1_2_1_30_2","unstructured":"Ward
+        M. R.1973.Ph.D. Thesis. University of Newcastle upon Tyne England."},{"key":"e_1_2_1_31_2","doi-asserted-by":"publisher","DOI":"10.1085\/jgp.61.1.1"}],"container-title":["Annals
+        of the New York Academy of Sciences"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1749-6632.1979.tb56505.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/nyaspubs.onlinelibrary.wiley.com\/doi\/pdf\/10.1111\/j.1749-6632.1979.tb56505.x","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,25]],"date-time":"2023-09-25T19:53:35Z","timestamp":1695671615000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/nyaspubs.onlinelibrary.wiley.com\/doi\/10.1111\/j.1749-6632.1979.tb56505.x"}},"issued":{"date-parts":[[1979,2]]},"references-count":30,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1979,2]]}},"alternative-id":["10.1111\/j.1749-6632.1979.tb56505.x"],"URL":"http:\/\/dx.doi.org\/10.1111\/j.1749-6632.1979.tb56505.x","archive":["Portico"],"ISSN":["0077-8923","1749-6632"],"issn-type":[{"value":"0077-8923","type":"print"},{"value":"1749-6632","type":"electronic"}],"subject":["History
+        and Philosophy of Science","General Biochemistry, Genetics and Molecular Biology","General
+        Neuroscience"],"published":{"date-parts":[[1979,2]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T10:04:37Z","timestamp":1649153077947},"reference-count":0,"publisher":"IEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1998]]},"DOI":"10.1049\/cp:19980709","type":"proceedings-article","created":{"date-parts":[[2005,11,14]],"date-time":"2005-11-14T20:23:18Z","timestamp":1131999798000},"source":"Crossref","is-referenced-by-count":2,"title":["Detection\/identification
+        of land mines by lateral migration radiography"],"prefix":"10.1049","author":[{"given":"A.M.","family":"Jacobs","sequence":"first","affiliation":[]}],"member":"265","event":{"name":"Second
+        International Conference on Detection of Abandoned Land Mines","location":"Edinburgh,
+        UK"},"container-title":["Second International Conference on Detection of Abandoned
+        Land Mines"],"deposited":{"date-parts":[[2018,12,6]],"date-time":"2018-12-06T22:14:50Z","timestamp":1544134490000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/digital-library.theiet.org\/content\/conferences\/10.1049\/cp_19980709"},"secondary":[{"URL":"http:\/\/ieeexplore.ieee.org\/lpdocs\/epic03\/wrapper.htm?arnumber=731290"}]},"issued":{"date-parts":[[1998]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1049\/cp:19980709","published":{"date-parts":[[1998]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -339,11 +273,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '14071'
+      - '11253'
       content-type:
       - application/json
       date:
-      - Mon, 25 Sep 2023 04:28:40 GMT
+      - Tue, 16 Jan 2024 06:49:02 GMT
       permissions-policy:
       - interest-cohort=()
       server:
