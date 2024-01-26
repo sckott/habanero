@@ -38,6 +38,7 @@ extensions = [
     "sphinx.ext.doctest",
     "sphinx.ext.inheritance_diagram",
     "sphinx_autodoc_typehints",
+    "sphinx_rtd_theme",
 ]
 
 issuetracker = "github"
