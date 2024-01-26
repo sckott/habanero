@@ -92,6 +92,18 @@ def test_works_query_filters_not_allowed_with_dois():
         cr.works(ids="10.1371/journal.pone.0033693", query_author="carl boettiger")
 
 
+# specifically test bug report https://github.com/sckott/habanero/issues/150
+@pytest.mark.vcr
+def test_works_field_query_publisher_name():
+    """works - param: kwargs - field query query_publisher_name works as expected"""
+    publisher_name = "Universidade Federal de Santa Maria"
+    res = cr.works(query_publisher_name=publisher_name)
+    publishers = [x["publisher"] for x in res["message"]["items"]]
+    assert dict == res.__class__
+    for pub in publishers:
+        assert publisher_name == pub
+
+
 @pytest.mark.vcr
 def test_works_with_select_param():
     """works - param: select"""
