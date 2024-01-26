@@ -117,19 +117,10 @@ class Crossref:
     One or more field queries. Field queries are searches on specific fields.
     For example, using `query_author` searches author names instead of full search
     across all fields as would happen by default. Acceptable field
-    query parameters are:
-
-    * `query_container_title` - Query container-title aka. publication name
-    * `query_author` - Query author given and family names
-    * `query_editor` - Query editor given and family names
-    * `query_chair` - Query chair given and family names
-    * `query_translator` - Query translator given and family names
-    * `query_contributor` - Query author, editor, chair and translator given and
-        family names
-    * `query_bibliographic` - Query bibliographic information, useful for citation
-        look up. Includes titles, authors, ISSNs and publication years. Crossref
-        retired `query_title`; use this field query instead
-    * `query_affiliation` - Query contributor affiliations
+    query parameters have all underscores where Crossref API documentation
+    has `.` or `-`. For example, `query.funder-name` using the Crossref API
+    should be `query_funder_name`. See "Field queries" under the Crossref API
+    documentation for the supported field queries.
 
     .. _sorting:
 

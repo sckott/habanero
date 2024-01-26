@@ -1,0 +1,683 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0 habanero/1.2.5
+      X-USER-AGENT:
+      - python-requests/2.31.0 habanero/1.2.5
+    method: GET
+    uri: https://api.crossref.org/works?query.publisher-name=Universidade+Federal+de+Santa+Maria
+  response:
+    body:
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":4836761,"items":[{"indexed":{"date-parts":[[2023,3,23]],"date-time":"2023-03-23T05:05:37Z","timestamp":1679547937975},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","license":[{"start":{"date-parts":[[2023,3,22]],"date-time":"2023-03-22T00:00:00Z","timestamp":1679443200000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by-nc\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Educa\u00e7\u00e3o"],"abstract":"<jats:p>Desde
+        o per\u00edodo de atua\u00e7\u00e3o dos Jesu\u00edtas at\u00e9 os dias atuais,
+        a m\u00fasica tem se mostrado presente nos mais diversos aspectos da vida
+        social do Brasil, seja na educa\u00e7\u00e3o, na religi\u00e3o ou entretenimento.
+        Diante disso, esta pesquisa documental visa compreender a fun\u00e7\u00e3o
+        social da educa\u00e7\u00e3o musical desde o Brasil Imp\u00e9rio (1847), at\u00e9
+        a homologa\u00e7\u00e3o da vers\u00e3o final da BNCC (2018). Foram coletados
+        26 documentos oficiais dispon\u00edveis em reposit\u00f3rios governamentais.
+        A metodologia foi baseada nos pressupostos da an\u00e1lise documental, complementados
+        por procedimentos da biblioteconomia e aplicados ao Software ATLAS.ti. O resultado
+        dessa an\u00e1lise permitiu caracterizar cinco per\u00edodos com categorias
+        tem\u00e1ticas distintas. O primeiro per\u00edodo (1847-1930), cuja forma\u00e7\u00e3o
+        apresentou um car\u00e1ter Instrumental\/Art\u00edstico; o segundo per\u00edodo
+        (1931-1960), com uma forma\u00e7\u00e3o Patri\u00f3tica\/ Disciplinar; o terceiro
+        per\u00edodo (1961-1971), apresentou ind\u00edcios de uma educa\u00e7\u00e3o
+        musical Humana\/Social; o per\u00edodo da ditadura militar (1971-1995), foi
+        transit\u00f3rio com a promo\u00e7\u00e3o do professor polivalente; j\u00e1
+        o quinto per\u00edodo (1997-2018, e atual), apresenta fortes caracter\u00edsticas
+        de uma forma\u00e7\u00e3o Humana\/Social. Verifica-se que a inten\u00e7\u00e3o
+        com uma Forma\u00e7\u00e3o Humana\/Social, em especial na BNCC, \u00e9 de
+        aproximar o educando da sua realidade e fazer com que a sua atua\u00e7\u00e3o
+        seja cidad\u00e3. Al\u00e9m disso, se mostra necess\u00e1rio, a discuss\u00e3o
+        desses documentos oficiais por toda a comunidade escolar, pois muitos deles
+        n\u00e3o inferem interpreta\u00e7\u00f5es claras e objetivas.<\/jats:p>","DOI":"10.5902\/1984644467345","type":"journal-article","created":{"date-parts":[[2023,3,23]],"date-time":"2023-03-23T01:42:56Z","timestamp":1679535776000},"source":"Crossref","is-referenced-by-count":0,"title":["Educa\u00e7\u00e3o
+        Musical no Brasil: percurso hist\u00f3rico por meio dos documentos oficiais
+        (1847-2018)"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-8360-4074","authenticated-orcid":false,"given":"Roque","family":"Correa
+        J\u00fanior","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-9508-0888","authenticated-orcid":false,"given":"Dilmeire
+        Sant\u2019Anna Ramos","family":"Vosgerau","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1603-9378","authenticated-orcid":false,"given":"Carlos
+        Nascimento","family":"Silla J\u00fanior","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-5246-0805","authenticated-orcid":false,"given":"Beatriz
+        Maria","family":"Zoppo","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2023,3,22]]},"container-title":["Educa\u00e7\u00e3o"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/download\/67345\/51779","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/download\/67345\/51780","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/download\/67345\/51779","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,3,23]],"date-time":"2023-03-23T01:42:56Z","timestamp":1679535776000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/view\/67345"}},"issued":{"date-parts":[[2023,3,22]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5902\/1984644467345","ISSN":["1984-6444"],"issn-type":[{"value":"1984-6444","type":"electronic"}],"subject":["General
+        Earth and Planetary Sciences","General Environmental Science"],"published":{"date-parts":[[2023,3,22]]}},{"indexed":{"date-parts":[[2023,7,31]],"date-time":"2023-07-31T16:16:36Z","timestamp":1690820196779},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"1","license":[{"start":{"date-parts":[[2022,12,2]],"date-time":"2022-12-02T00:00:00Z","timestamp":1669939200000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Ci\u00eanc.
+        Florest."],"abstract":"<jats:p>The number of chromosomes and the meiotic characterization
+        are important to studies involving genetic variability, germplasm and biodiversity.
+        However, native forest species have not been sufficiently analyzed from a
+        cytotaxonomic point of view. Therefore, the number of chromosomes, the meiotic
+        behavior and the pollen viability of the Diatenopteryx sorbifolia Radlk were
+        determined from five different accessions located in the southern region of
+        Brazil. The species was considered diploid, 2n = 30 (x = 15), with regular
+        meiotic behavior in phase I and absent in phase II, suggesting the presence
+        of a genetic abnormality. Pollen grains infertility was between 57 and 67%.
+        which may be associated to the formation of a low number of seeds in Diatenopteryx
+        sorbifolia, probably due to the irregular behavior of the microsporogenesis.<\/jats:p>","DOI":"10.5902\/1980509848072","type":"journal-article","created":{"date-parts":[[2022,3,26]],"date-time":"2022-03-26T12:41:00Z","timestamp":1648298460000},"page":"233-246","source":"Crossref","is-referenced-by-count":1,"title":["Cytogenetic
+        study and pollen viability of &lt;i&gt;Diatenopteryx sorbifolia&lt;\/i&gt;
+        Radlk."],"prefix":"10.5902","volume":"32","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-3904-9149","authenticated-orcid":false,"given":"Marciele","family":"Filippi","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0001-5776-3621","authenticated-orcid":false,"given":"Kellen
+        Regina","family":"Boldrini","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-1998-3417","authenticated-orcid":false,"given":"Karoline
+        Fontana","family":"Agostinho","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-3528-4042","authenticated-orcid":false,"given":"Bruno
+        Jan Schramm","family":"Corr\u00eaa","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-6331-0378","authenticated-orcid":false,"given":"Joel","family":"Donazzolo","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2022,12,2]]},"container-title":["Ci\u00eancia
+        Florestal"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaflorestal\/article\/download\/48072\/47518","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaflorestal\/article\/download\/48072\/50573","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaflorestal\/article\/download\/48072\/47518","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,7]],"date-time":"2022-12-07T19:05:44Z","timestamp":1670439944000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaflorestal\/article\/view\/48072"}},"issued":{"date-parts":[[2022,12,2]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2022,3,25]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1980509848072","ISSN":["1980-5098","0103-9954"],"issn-type":[{"value":"1980-5098","type":"electronic"},{"value":"0103-9954","type":"print"}],"subject":["Forestry"],"published":{"date-parts":[[2022,12,2]]}},{"indexed":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T09:28:24Z","timestamp":1691486904956},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"4","license":[{"start":{"date-parts":[[2022,11,23]],"date-time":"2022-11-23T00:00:00Z","timestamp":1669161600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Ci\u00eanc.
+        Florest."],"abstract":"<jats:p>Os res\u00edduos de p\u00f3 das madeiras tropicais
+        Angelim rajado (AR) (Pithecelobium racemosum Ducke) e Sucupira vermelha (SV)
+        (Andira parviflora Ducke) gerados na ind\u00fastria madeireira em Itacoatiara
+        \u2013 AM quando n\u00e3o s\u00e3o utilizados pela pr\u00f3pria empresa para
+        gera\u00e7\u00e3o de energia s\u00e3o depositados em locais inadequados. Em
+        vista disso, neste trabalho, a argila foi parcialmente substitu\u00edda pelos
+        referidos res\u00edduos na fabrica\u00e7\u00e3o de materiais cer\u00e2micos
+        para o desenvolvimento de um novo material para aplica\u00e7\u00e3o em revestimento
+        de parede (azulejo) poroso (tipo BIII). Este novo produto pode ser uma alternativa
+        sustent\u00e1vel para o Polo Cer\u00e2mico do munic\u00edpio de Iranduba,
+        estado do Amazonas, Brasil. Corpos de prova (60mm x 20mm x 8mm) foram conformados
+        por prensagem uniaxial (20 MPa) secos a 110 \u00baC por 24h e queimados entre
+        750 e 850 \u00b0C. Os efeitos do processo de sinteriza\u00e7\u00e3o nas massas
+        cer\u00e2micas com os res\u00edduos de madeiras SV e AR foram estudados por
+        TGA-DSC, FRX e DRX. Ap\u00f3s a queima, as amostras foram submetidas \u00e0s
+        seguintes caracteriza\u00e7\u00f5es tecnol\u00f3gicas: absor\u00e7\u00e3o
+        de \u00e1gua, retra\u00e7\u00e3o linear, densidade aparente, porosidade aparente
+        e m\u00f3dulo de ruptura \u00e0 flex\u00e3o. As caracter\u00edsticas mineral\u00f3gicas
+        e microestruturais tamb\u00e9m foram analisadas. Os resultados evidenciam
+        que at\u00e9 10% dos res\u00edduos das madeiras AR e SV em forma de p\u00f3
+        podem ser incorporados em massas cer\u00e2micas estruturais para produ\u00e7\u00e3o
+        de materiais cer\u00e2micos. Entretanto, formula\u00e7\u00f5es com 5 e 10%
+        do res\u00edduo de SV apresentam resultados superiores \u00e0s mesmas propor\u00e7\u00f5es
+        com AR, atendendo aos par\u00e2metros da NBR 13818 da ABNT (Associa\u00e7\u00e3o
+        Brasileira de Normas T\u00e9cnicas).<\/jats:p>","DOI":"10.5902\/1980509870383","type":"journal-article","created":{"date-parts":[[2022,12,7]],"date-time":"2022-12-07T19:05:05Z","timestamp":1670439905000},"page":"2348-2371","source":"Crossref","is-referenced-by-count":1,"title":["Formula\u00e7\u00e3o
+        de massa cer\u00e2mica para revestimento poroso utilizando res\u00edduos de
+        madeiras tropicais"],"prefix":"10.5902","volume":"32","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-1116-4727","authenticated-orcid":false,"given":"Germana","family":"Costa","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-0254-7651","authenticated-orcid":false,"given":"Paulo
+        de Tarso Barbosa","family":"Sampaio","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-6705-886X","authenticated-orcid":false,"given":"Ruy
+        Alexandre de S\u00e1","family":"Ribeiro","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-2214-078X","authenticated-orcid":false,"given":"Jose  Josimar","family":"Soares","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-8611-7861","authenticated-orcid":false,"given":"Rannier
+        Marques","family":"Mendon\u00e7a","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2022,11,23]]},"container-title":["Ci\u00eancia
+        Florestal"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaflorestal\/article\/download\/70383\/49484","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaflorestal\/article\/download\/70383\/49484","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,7]],"date-time":"2022-12-07T19:05:52Z","timestamp":1670439952000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaflorestal\/article\/view\/70383"}},"issued":{"date-parts":[[2022,11,23]]},"references-count":0,"journal-issue":{"issue":"4","published-online":{"date-parts":[[2022,11,23]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1980509870383","ISSN":["1980-5098","0103-9954"],"issn-type":[{"value":"1980-5098","type":"electronic"},{"value":"0103-9954","type":"print"}],"subject":["Forestry"],"published":{"date-parts":[[2022,11,23]]}},{"indexed":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T02:10:30Z","timestamp":1691460630937},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"2","license":[{"start":{"date-parts":[[2023,8,7]],"date-time":"2023-08-07T00:00:00Z","timestamp":1691366400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CadCom"],"abstract":"<jats:p>O
+        objetivo deste trabalho \u00e9 problematizar o compartilhamento do cuidado
+        de crian\u00e7as e adolescentes em acolhimento institucional por meio da intera\u00e7\u00e3o
+        entre profissionais da rede de atendimento, envolvendo as \u00e1reas da Psicologia,
+        Educa\u00e7\u00e3o, Servi\u00e7o Social, Sa\u00fade e Direito. Conclui-se
+        que, apesar de desafiador, o compartilhamento do cuidado oportuniza a atua\u00e7\u00e3o
+        multidisciplinar e \u00e9 fundamental para a garantia de direitos.<\/jats:p>","DOI":"10.5902\/2316882x76667","type":"journal-article","created":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T01:47:58Z","timestamp":1691459278000},"source":"Crossref","is-referenced-by-count":0,"title":["O
+        psic\u00f3logo em institui\u00e7\u00f5es de acolhimento de crian\u00e7as e
+        adolescentes: possibilidades cotidianas de atua\u00e7\u00e3o multidisciplinar"],"prefix":"10.5902","volume":"27","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-5213-2211","authenticated-orcid":false,"given":"K\u00e9len","family":"Medianeira
+        Pozzobon","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0001-7251-1449","authenticated-orcid":false,"given":"Renata","family":"Petry
+        Brondani","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-4452-643X","authenticated-orcid":false,"given":"Jana","family":"Gon\u00e7alves
+        Zappe","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2023,8,7]]},"container-title":["Cadernos
+        de Comunica\u00e7\u00e3o"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/ccomunicacao\/article\/download\/76667\/61459","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/ccomunicacao\/article\/download\/76667\/61459","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T01:47:59Z","timestamp":1691459279000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/ccomunicacao\/article\/view\/76667"}},"issued":{"date-parts":[[2023,8,7]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2023,8,7]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/2316882x76667","ISSN":["2316-882X","1677-9061"],"issn-type":[{"value":"2316-882X","type":"electronic"},{"value":"1677-9061","type":"print"}],"subject":["Pulmonary
+        and Respiratory Medicine","Pediatrics, Perinatology, and Child Health"],"published":{"date-parts":[[2023,8,7]]}},{"indexed":{"date-parts":[[2023,8,9]],"date-time":"2023-08-09T04:35:11Z","timestamp":1691555711311},"reference-count":81,"publisher":"Universidade
+        Federal de Santa Maria","issue":"3","license":[{"start":{"date-parts":[[2023,7,28]],"date-time":"2023-07-28T00:00:00Z","timestamp":1690502400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["InterA\u00e7\u00e3o"],"abstract":"<jats:p>O
+        presente artigo possui como objetivo investigar as poss\u00edveis rela\u00e7\u00f5es
+        entre a trajet\u00f3ria do desenvolvimento de pol\u00edticas urbanas no Brasil
+        e a concretiza\u00e7\u00e3o de um novo modelo de governan\u00e7a de pol\u00edticas
+        urbanas, baseada na atua\u00e7\u00e3o dos conselhos participativos. A t\u00e9cnica
+        de pesquisa escolhida foi a documenta\u00e7\u00e3o indireta que envolve a
+        realiza\u00e7\u00e3o de pesquisas documentais e bibliogr\u00e1ficas. A pesquisa
+        documental concentrou-se em documentos oficiais e jur\u00eddicos. As fontes
+        bibliogr\u00e1ficas inclu\u00edram pesquisas acad\u00eamicas realizadas nas
+        \u00e1reas de pol\u00edticas urbanas, governan\u00e7a e conselhos participativos.
+        Como conclus\u00f5es parciais, verificou-se a difus\u00e3o do modelo de governan\u00e7a
+        de pol\u00edticas p\u00fablicas no Brasil, na forma dos conselhos participativos.
+        No entanto, a inser\u00e7\u00e3o da pol\u00edtica urbana neste cen\u00e1rio
+        \u00e9 desafiadora, devido a trajet\u00f3ria tortuosa que esta pol\u00edtica
+        enfrenta na sua implementa\u00e7\u00e3o. A cria\u00e7\u00e3o de um sistema
+        nacional de conselhos de pol\u00edticas urbanas, dotado de um fundo espec\u00edfico,
+        pode ser uma alternativa interessante para incrementar a governan\u00e7a na
+        \u00e1rea.<\/jats:p>","DOI":"10.5902\/2357797583862","type":"journal-article","created":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T12:57:35Z","timestamp":1691499455000},"page":"e83862","source":"Crossref","is-referenced-by-count":0,"title":["Conselhos
+        participativos como espa\u00e7os de governan\u00e7a de pol\u00edticas urbanas"],"prefix":"10.5902","volume":"14","author":[{"ORCID":"http:\/\/orcid.org\/0000-0001-8010-3330","authenticated-orcid":false,"given":"Carla","family":"Froener","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-8761-4114","authenticated-orcid":false,"given":"Luciana
+        Leite","family":"Lima","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2023,7,28]]},"reference":[{"key":"1213519","doi-asserted-by":"crossref","unstructured":"ABERS,
+        Rebecca Neaera; KECK, Margaret. Representando a diversidade: Estado, sociedade
+        e rela\u00e7\u00f5es fecundas nos conselhos gestores. Cadernos do CRH, Salvador,
+        v. 21, p. 99-112, 2008.","DOI":"10.1590\/S0103-49792008000100008"},{"key":"1213520","unstructured":"ARANTES,
+        Ot\u00edlia. Uma estrat\u00e9gia fatal. A cultura nas novas gest\u00f5es urbanas.
+        In: ARANTES, Ot\u00edlia; VAINER, Carlos; MARICATO, Erm\u00ednia (Org.). A
+        cidade do pensamento \u00fanico: desmanchando consensos. Petr\u00f3polis:
+        Vozes, 2002, p. 11-74."},{"key":"1213521","doi-asserted-by":"crossref","unstructured":"AROUCA,
+        S\u00e9rgio. O dilema preventista: contribui\u00e7\u00f5es e cr\u00edtica
+        da medicina preventiva. S\u00e3o Paulo: UNESP, 2003.","DOI":"10.7476\/9788575416105"},{"key":"1213522","unstructured":"AVRITZER,
+        Leonardo. Modelos de delibera\u00e7\u00e3o democr\u00e1tica: uma an\u00e1lise
+        do or\u00e7amento participativo no Brasil. In: SANTOS, Boaventura de Sousa
+        (Org.). Democratizar a democracia: os caminhos da democracia participativa.
+        Rio de Janeiro: Civiliza\u00e7\u00e3o Brasileira, 2002, p. 561-598."},{"key":"1213523","unstructured":"BASSUL,
+        Jos\u00e9 Roberto. Estatuto da cidade: a constru\u00e7\u00e3o de uma lei.
+        In: CARVALHO, Celso Santos; ROSSBACH, Anaclaudia (Org.). O estatuto da cidade:
+        comentado. S\u00e3o Paulo: Minist\u00e9rio das Cidades - Alian\u00e7a das
+        Cidades, 2010, p.71-90."},{"key":"1213524","doi-asserted-by":"crossref","unstructured":"BEVIR,
+        Mark. Governance: A very short introduction. Oxford: Oxford University Press,
+        2012.","DOI":"10.1093\/actrade\/9780199606412.001.0001"},{"key":"1213525","doi-asserted-by":"crossref","unstructured":"BEVIR,
+        Mark. Governance. In: BEVIR, Mark (Org.). Encyclopedia of Governance. London:
+        Sage Publications, 2007, p. 364-380.","DOI":"10.4135\/9781412952613"},{"key":"1213526","unstructured":"BRASIL.
+        Constitui\u00e7\u00e3o da Rep\u00fablica Federativa do Brasil. Bras\u00edlia.
+        1988. Available at: <http:\/\/www.planalto.gov.br\/ccivil_03\/constituicao\/constituicao.htm>.
+        Accessed on: 18 may 2023."},{"key":"1213527","unstructured":"BRASIL. Decreto
+        n\u00ba 5.031, de 02 de abril de 2004. Available at: < http:\/\/www.planalto.gov.br\/ccivil_03\/_ato2004-2006\/2004\/decreto\/d5031.htm>.
+        Accessed on: 18 may 2023."},{"key":"1213528","unstructured":"BRASIL. Decreto
+        n\u00ba 5.790, de 25 de maio de 2006. Available at: < https:\/\/www.planalto.gov.br\/ccivil_03\/_ato2004-2006\/2006\/decreto\/D5790.htm>.
+        Accessed on: 18 may 2023."},{"key":"1213529","unstructured":"BRASIL. Decreto
+        n\u00ba 9.759, de 11 de abril de 2019. Available at: < https:\/\/www.planalto.gov.br\/ccivil_03\/_ato2019-2022\/2019\/decreto\/d9759.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213530","unstructured":"BRASIL. Decreto
+        n\u00ba 10.733, de 23 de agosto de 2021. Available at: <http:\/\/www.planalto.gov.br\/ccivil_03\/_ato2019-2022\/2021\/Decreto\/D10773.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213531","unstructured":"BRASIL. Decreto
+        n\u00ba 11.065, de 06 de maio de 2022. Available at: <http:\/\/www.planalto.gov.br\/ccivil_03\/_ato2019-2022\/2022\/decreto\/D11065.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213532","unstructured":"BRASIL. Lei n\u00ba
+        8.069, de 13 de julho de 1990. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/leis\/l8069.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213533","unstructured":"BRASIL. Lei n\u00ba
+        8.078, de 11 de setembro de 1990. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/leis\/l8078compilado.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213534","unstructured":"BRASIL. Lei n\u00ba
+        8.080, de 19 de setembro de 1990. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/leis\/l8080.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213535","unstructured":"BRASIL. Lei n\u00ba
+        8.142, de 28 de dezembro de 1990. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/leis\/l8142.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213536","unstructured":"BRASIL. Lei n\u00ba
+        8.742, de 7 de dezembro de 1993. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/leis\/l8742.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213537","unstructured":"BRASIL. Lei n\u00ba
+        8.842, 04 de janeiro de 1994. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/leis\/l8842.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213538","unstructured":"BRASIL. Lei n\u00ba
+        10.257, de 10 de julho de 2001. Available at: <http:\/\/www.planalto.gov.br\/ccivil_03\/leis\/leis_2001\/l10257.htm>.
+        Accessed on: 30 jun. 2022."},{"key":"1213539","unstructured":"BRASIL. Lei
+        n\u00ba 10.683, de 28 de maio de 2003. Available at: <http:\/\/www.planalto.gov.br\/ccivil_03\/leis\/2003\/l10.683impressao.htm>.
+        Accessed on: 19 nov. 2022."},{"key":"1213540","unstructured":"BRASIL. Lei
+        n\u00ba 11.124, de 16 de junho de 2005. Available at: <http:\/\/www.planalto.gov.br\/ccivil_03\/_ato2004-2006\/2005\/lei\/l11124.htm>
+        Accessed on: 20 may 2023."},{"key":"1213541","unstructured":"BRASIL. Lei n\u00ba
+        11.445, de 5 de janeiro de 2007. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/_ato2007-2010\/2007\/lei\/l11445.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213542","unstructured":"BRASIL. Lei n\u00ba
+        12.587, de 3 de janeiro de 2012. Available at: <http:\/\/www.planalto.gov.br\/ccivil_03\/_ato2011-2014\/2012\/lei\/l12587.htm>.
+        Accessed on: 20 may 2023."},{"key":"1213543","unstructured":"BRASIL. Lei n\u00ba
+        13.874, de 20 de setembro de 2019. Available at: <https:\/\/www.planalto.gov.br\/ccivil_03\/_ato2019-2022\/2019\/lei\/L13874.htm>.
+        Accessed on: 19 nov. 2022."},{"key":"1213544","unstructured":"BRASIL. MINIST\u00c9RIO
+        DO DESENVOLVIMENTO REGIONAL. Conselho Nacional de Desenvolvimento Urbano.
+        2021. Available at: <https:\/\/www.gov.br\/mdr\/pt-br\/composicao\/orgaos-colegiados\/conselho-nacional-de-desenvolvimento-urbano>.
+        Accessed on: 19 nov. 2022."},{"key":"1213545","unstructured":"BREMAEKER, F.
+        E. J. As Finan\u00e7as municipais em 2017. Observat\u00f3rio de Informa\u00e7\u00f5es
+        Municipais. Available at: http:\/\/ www.oim.tmunicipal.org.br\/abre_documento.cfm?arquivo=_repositorio\/_oim\/_documentos\/5692940D-FC44-AF79
+        776F3A069819DBC718102018043020.pdf&i=3126. Accessed on: 14 may 2023."},{"key":"1213546","unstructured":"BRUNO,
+        Ana Paula. Desenvolvimento Urbano: o Contexto de Formula\u00e7\u00e3o da Pol\u00edtica
+        Nacional de Desenvolvimento Urbano. Bras\u00edlia: Minist\u00e9rio do Desenvolvimento
+        Regional, 2020."},{"key":"1213547","unstructured":"CABRAL, Luc\u00edola Maria
+        de Aquino. Conselho Municipal de Desenvolvimento Urbano \u2013 CMDU e o Direito
+        de Participa\u00e7\u00e3o. Revista da Procuradoria-Geral do Munic\u00edpio
+        de Fortaleza, Fortaleza, v. 26, n. 1, 2018."},{"key":"1213548","unstructured":"CAFRUNE,
+        Marcelo Eibs. O direito \u00e0 cidade no Brasil: constru\u00e7\u00e3o te\u00f3rica,
+        reivindica\u00e7\u00e3o e exerc\u00edcio de direitos. Revista Interdisciplinar
+        de Direitos Humanos \u2013 Unesp. Bauru, v. 4, n. 1, p. 185-206, jan\/jun,
+        2016."},{"key":"1213549","unstructured":"CARTY, Carolina Gabriel; COSTA, Luiz
+        Augusto Maia. Dos Movimentos Sociais ao Estatuto da Cidade: breve hist\u00f3rico
+        do processo de fomenta\u00e7\u00e3o de uma nova concep\u00e7\u00e3o de planejamento
+        urbano no Brasil. III Encontro da Associa\u00e7\u00e3o Nacional de Pesquisa
+        e P\u00f3s-gradua\u00e7\u00e3o em Arquitetura e Urbanismo arquitetura, cidade
+        e projeto: uma constru\u00e7\u00e3o coletiva, S\u00e3o Paulo, p. 01-11, 2014."},{"key":"1213550","unstructured":"CARVALHO
+        FILHO, Jos\u00e9 dos Santos. Coment\u00e1rios ao Estatuto da Cidade. S\u00e3o
+        Paulo: Atlas, 2009."},{"key":"1213551","doi-asserted-by":"crossref","unstructured":"CASULA,
+        Mattia. Quem governa na governan\u00e7a (local)? Reflex\u00f5es te\u00f3ricas
+        e evid\u00eancias emp\u00edricas. Revista de Administra\u00e7\u00e3o P\u00fablica,
+        Rio de Janeiro, v. 51, n. 6, p. 1122\u20131138, 2017.","DOI":"10.1590\/0034-7612161618"},{"key":"1213552","doi-asserted-by":"crossref","unstructured":"C\u00d4RTES,
+        Soraya M. Vargas. Arcabou\u00e7o hist\u00f3rico-institucional e a conforma\u00e7\u00e3o
+        de conselhos municipais de pol\u00edticas p\u00fablicas. Educar, n. 25, Curitiba,
+        p. 143-174, 2005.","DOI":"10.1590\/0104-4060.371"},{"key":"1213553","doi-asserted-by":"crossref","unstructured":"COSTA,
+        Marco Aur\u00e9lio et al. Contextualiza\u00e7\u00e3o e Diretrizes Gerais para
+        a Pol\u00edtica Nacional de Desenvolvimento Urbano. Bras\u00edlia: IPEA, 2020.","DOI":"10.38116\/brua24art19"},{"key":"1213554","unstructured":"DAGNINO,
+        Evelina. Sociedade civil, participa\u00e7\u00e3o e cidadania: de que estamos
+        falando? In: MATO, Daniel (Org.). Pol\u00edticas de ciudadan\u00eda y sociedade
+        civil em tiempos de globalizaci\u00f3n. Caracas: Faces, 2004, p. 95-110."},{"key":"1213555","doi-asserted-by":"crossref","unstructured":"DENTERS,
+        Bas. Local Governance. In: BEVIR, Mark (Org.). The Sage Handbook of Governance.
+        London: Sage Publications, 2011, p. 313-329.","DOI":"10.4135\/9781446200964.n20"},{"key":"1213556","doi-asserted-by":"crossref","unstructured":"DENTERS,
+        Bas; ROSE, L.E. Towards Local Governance?. In: DENTERS, Bas; ROSE, L.E (Org.).
+        Comparing Local Governance: Trends and Developments. Houndmills: Palgrave,
+        2005, p. 46-62.","DOI":"10.1007\/978-0-230-21242-8"},{"key":"1213557","unstructured":"FRANCISCONI,
+        Jos\u00e9 Guilherme. Quando e Como Nascem as Pol\u00edticas Urbanas. 2021.
+        Available at: <https:\/\/www.insper.edu.br\/wp-content\/uploads\/2021\/03\/ensaio_
+        jorge_guilherme_francisconi__032021.pdf>. Accessed on: 17 nov. 2022."},{"key":"1213558","unstructured":"F\u00d3RUM
+        NACIONAL DE REFORMA URBANA (FNRU). Dossi\u00ea do Desmonte da Pol\u00edtica
+        Urbana Federal nos Governos Temer e Bolsonaro e seus Impactos nas Cidades:
+        Viola\u00e7\u00f5es de Direitos Humanos e os Riscos da Constru\u00e7\u00e3o
+        de Cidades Intolerantes, Excludentes, Injustas e Antidemocr\u00e1ticas. Rio
+        de Janeiro: IPPUR\/UFRJ, 2020."},{"key":"1213559","unstructured":"GRAZIA,
+        Grazia de. Reforma Urbana e Estatuto da Cidade. In: RIBEIRO, Lu\u00eds Cesar
+        de Queiroz; CARDOSO, Adauto L\u00facio (Org.). Reforma Urbana e Gest\u00e3o
+        Democr\u00e1tica: Promessas e Desafios do Estatuto da Cidade. Rio de Janeiro:
+        REVAN, 2013, p. 53-70."},{"key":"1213560","unstructured":"GRIN, Eduardo Jos\u00e9;
+        ABRUCIO, Fernando Luiz Abrucio. Governos locais: uma leitura introdut\u00f3ria.
+        Bras\u00edlia: Enap, 2019."},{"key":"1213561","doi-asserted-by":"crossref","unstructured":"GURGEL,
+        Claudio; JUSTEN, Agatha. Controle Social e Pol\u00edticas P\u00fablicas: a
+        Experi\u00eancia dos Conselhos Gestores. Revista Administra\u00e7\u00e3o P\u00fablica,
+        v. 47, n. 2, Rio de Janeiro, p. 357-378, mar.\/abr. 2013.","DOI":"10.1590\/S0034-76122013000200004"},{"key":"1213562","unstructured":"HARGUIND\u00c9GUY,
+        Jean-Baptiste. Government. In: BEVIR, Mark (Org.). Encyclopedia of Governance.
+        London: Sage Publications, 2007, p. 385-389."},{"key":"1213563","doi-asserted-by":"crossref","unstructured":"HEIDEMANN,
+        Francisco; KISSLER, Leo. Governan\u00e7a p\u00fablica: novo modelo regulat\u00f3rio
+        para as rela\u00e7\u00f5es entre Estado, Mercado e Sociedade? Rio de Janeiro:
+        Revista de Administra\u00e7\u00e3o P\u00fablica, n. 40, v. 3, 2006, mai\/jun,
+        p. 479-499, 2006.","DOI":"10.1590\/S0034-76122006000300008"},{"key":"1213564","unstructured":"INSTITUTO
+        BRASILEIRO DE DIREITO URBAN\u00cdSTICO (IBDU). Nota T\u00e9cnica Sobre a MP
+        881\/2019. S\u00e3o Paulo: IBDU, 2019."},{"key":"1213565","unstructured":"INSTITUTO
+        P\u00d3LIS. Estatuto da Cidade: Guia para implementa\u00e7\u00e3o pelos munic\u00edpios
+        e cidad\u00e3os. S\u00e3o Paulo: Instituto P\u00f3lis, 2002."},{"key":"1213566","unstructured":"LIMA
+        NETO, Vicente Correia; KRAUSE, Cleandro Henrique; BALBIM, Renato Nunes. Instrumentos
+        urban\u00edsticos \u00e0 luz dos Planos Diretores: uma an\u00e1lise a partir
+        de um circuito completo de interven\u00e7\u00e3o. Rio de Janeiro: Ipea, 2014."},{"key":"1213567","unstructured":"MARICATO,
+        Erm\u00ednia. O Minist\u00e9rio das Cidades e a Pol\u00edtica Nacional de
+        Desenvolvimento Urbano. Pol\u00edticas Sociais \u2013 Acompanhamento e An\u00e1lise,
+        v. 12, p. 211-220, fev. 2006."},{"key":"1213568","unstructured":"MARICATO,
+        Erm\u00ednia. Para entender a crise urbana. Cadernos do N\u00facleo de An\u00e1lises
+        Urbanas, Rio Grande, v. 8, n. 1, p. 11\u201322, 2015."},{"key":"1213569","doi-asserted-by":"crossref","unstructured":"MELLO
+        FILHO, Cleber Lago do Valle. Contribui\u00e7\u00e3o das Confer\u00eancias
+        da Cidade para Constru\u00e7\u00e3o da Pol\u00edtica Nacional de Desenvolvimento
+        Urbano. Bras\u00edlia: IPEA, 2020.","DOI":"10.38116\/ntdirur20"},{"key":"1213570","unstructured":"MOREIRA,
+        M. T. V. Inst\u00e2ncias Deliberativas dos Sistemas Descentralizados e Participativos
+        das Pol\u00edticas P\u00fablicas de Cunho Social: Contorno Jur\u00eddico dos
+        Conselhos. Informativo CEPAM, S\u00e3o Paulo, p. 65-69, 1999."},{"key":"1213571","unstructured":"NIEBUHR,
+        Pedro. A Isen\u00e7\u00e3o de Licenciamento e a Aprova\u00e7\u00e3o T\u00e1cita
+        Previstas na Declara\u00e7\u00e3o dos Direitos de Liberdade Econ\u00f4mica:
+        Reflexos na Administra\u00e7\u00e3o Ambiental e Urban\u00edstica. Revista
+        Brasileira de Pol\u00edticas P\u00fablicas, Bras\u00edlia, v. 9, n. 3, p.
+        249-272, 2019."},{"key":"1213572","unstructured":"OSBORNE, David; GAEBLER,
+        Ted. Reinventing Government. Reading: Addison-Wesley, 1992."},{"key":"1213573","unstructured":"PAOLI,
+        Maria Celia Pinheiro Machado. Movimentos sociais no Brasil: em busca de um
+        estatuto pol\u00edtico. In: HELLMANN, Michaela (Org.). Movimentos sociais
+        e democracia no Brasil. S\u00e3o Paulo: Marco Zero, 1995."},{"key":"1213574","unstructured":"PEREIRA,
+        Elson Manoel. A Pol\u00edtica Urbana Brasileira e o Ide\u00e1rio Cr\u00edtico
+        da Reforma Urbana Introduzido na Constitui\u00e7\u00e3o de 1988. Conflu\u00eancias:
+        Revista Interdisciplinar de Sociologia e Direito, Florian\u00f3polis, v. 20,
+        n. 2, p.73-87, 2018."},{"key":"1213575","unstructured":"PIERRE, Jon; PETERS,
+        Guy. Governance, Politics and the State. Houndmills: Macmillian, 2000."},{"key":"1213576","doi-asserted-by":"crossref","unstructured":"RHODES,
+        Roderick. The Governance Narrative: Key Findings and Lessons from the ESRC\u00b4S
+        Whitehall Programme. Public Administration, v. 78, n. 2, p. 345-363, 2000.","DOI":"10.1111\/1467-9299.00209"},{"key":"1213577","doi-asserted-by":"crossref","unstructured":"ROLNIK,
+        Raquel. Democracia no Fio da Navalha: Limites e Possibilidades para Implementa\u00e7\u00e3o
+        de uma Reforma Urbana no Brasil. Revista Brasileira de Estudos Urbanos e Regionais,
+        v. 11, n. 22, p. 31-50, 2009.","DOI":"10.22296\/2317-1529.2009v11n2p31"},{"key":"1213578","doi-asserted-by":"crossref","unstructured":"RONCONI,
+        Luciana. Governan\u00e7a p\u00fablica: um desafio \u00e0 democracia. Emancipa\u00e7\u00e3o.
+        Ponta Grossa, 11(1), 2011, p. 21-34.","DOI":"10.5212\/Emancipacao.v.11i1.0002"},{"key":"1213579","unstructured":"SANTOS
+        JUNIOR, Orlando Alves dos. Cidade, cidadania e planejamento urbano. Desafios
+        na perspectiva da reforma urbana. In: FELDMAN, Sarah; FERNANDES, Ana. (Org.)
+        O urbano e o regional no Brasil contempor\u00e2neo: muta\u00e7\u00f5es, tens\u00f5es,
+        desafios. Salvador: EDUFBA, 2007."},{"key":"1213580","unstructured":"SANTOS
+        JUNIOR, Orlando Alves dos; RIBEIRO, Luiz Cesar de Queiroz; AZEVEDO, Sergio.
+        Governan\u00e7a democr\u00e1tica e poder local: a experi\u00eancia dos Conselhos
+        Municipais no Brasil. Rio de Janeiro: Ed. Revan, 2004, p.131-159."},{"key":"1213581","unstructured":"SANTOS,
+        \u00c2ngela Moulin Penalva. Planejamento urbano: para qu\u00ea e para quem?
+        Revista de Direito da Cidade, v. 04, n. 01, p. 91- 119, 2012."},{"key":"1213582","unstructured":"SAULE
+        J\u00daNIOR, Nelson; UZZO, Karina. A trajet\u00f3ria da reforma urbana no
+        Brasil. In: SUGRANYES, Ana; MATHIVET, Charlotte (Org.). Cidades para todos:
+        propostas e experi\u00eancias pelo direito \u00e0 cidade. Santiago, Chile:
+        HIC, 2010, p. 259-270."},{"key":"1213583","unstructured":"SCHAAP, Linze. Local
+        Governance. In: BEVIR, Mark (Org.). Encyclopedia of Governance. London: Sage
+        Publications, 2007, p. 531-534."},{"key":"1213584","doi-asserted-by":"crossref","unstructured":"SCHICK,
+        Allen. The Performing State: Reflection on an Idea Whose Time Has Come but
+        Whose Implementation Has Not. OECD Journal on Budgeting, v. 3, n. 2, p. 71\u2013103,
+        2003.","DOI":"10.1787\/budget-v3-art10-en"},{"key":"1213585","doi-asserted-by":"crossref","unstructured":"SCHMITTER,
+        Philippe C. Defining, Explaining and, then, Exploiting the Elusive Concept
+        of \u201cGovernance\u201d. Fudan Journal of the Humanities and Social Sciences,
+        v. 12, n. 4, p. 547\u2013567, 2018.","DOI":"10.1007\/s40647-018-0236-9"},{"key":"1213586","unstructured":"SCHROETER,
+        Eckhard. Bureaucracy. In: BEVIR, Mark (Org.). Encyclopedia of Governance.
+        London: Sage Publications, 2007, p. 56-60."},{"key":"1213587","unstructured":"SOUZA,
+        Celina; GRIN, Eduardo Jos\u00e9. Desafios da Federa\u00e7\u00e3o Brasileira:
+        Descentraliza\u00e7\u00e3o e Gest\u00e3o Municipal. In: GRIN, Eduardo Jos\u00e9;
+        DEMARCO, Diogo Joel; ABRUCIO, Fernando Luiz. Capacidades Estatais Municipais:
+        o Universo Desconhecido do Federalismo Brasileiro. Porto Alegre: Editora da
+        UFRGS\/CEGOV, 2021, p. 86-123."},{"key":"1213588","doi-asserted-by":"crossref","unstructured":"STEGER,
+        Manfred B.; ROY, Ravi K. Neoliberalism: A Very Short Introduction. Cambridge:
+        Cambridge University Press, 2010.","DOI":"10.1093\/actrade\/9780199560516.001.0001"},{"key":"1213589","unstructured":"STEIGLEDER,
+        Annelise Monteiro; PICCINI, L\u00edvia Teresinha Salom\u00e3o. A Lei de Liberdade
+        Econ\u00f4mica e seus Impactos no Direito Ambiental e na Tutela do Patrim\u00f4nio
+        Cultural. Revista do Minist\u00e9rio P\u00fablico do RS, Porto Alegre, n.
+        89, p. 205-232, jan. 2021 \/ jun. 2021."},{"key":"1213590","unstructured":"TATAGIBA,
+        Luciana. Os conselhos gestores e a democratiza\u00e7\u00e3o das pol\u00edticas
+        p\u00fablicas no Brasil. In: DAGNINO, Evelina (Org.). Sociedade civil e espa\u00e7os
+        p\u00fablicos no Brasil. S\u00e3o Paulo: Paz e Terra, 2002, p. 47-104."},{"key":"1213591","unstructured":"TEXEIRA,
+        Ana Claudia Chaves; SOUZA, Cl\u00f3vis Henrique de; LIMA, Paula Pompeu Fiuza.
+        Arquitetura da Participa\u00e7\u00e3o no Brasil: Uma Leitura das Representa\u00e7\u00f5es
+        Pol\u00edticas em Espa\u00e7os Participativos Nacionais. IPEA: Texto para
+        Discuss\u00e3o n\u00ba 1735. Rio de Janeiro: IPEA, 2012."},{"key":"1213592","unstructured":"TIMMERS,
+        Juliano da Costa Machado; SOBARZO, Oscar. El juego de las utop\u00edas urbanas:
+        proyectos de renovaci\u00f3n de la Orla del Lago Gua\u00edba en Porto Alegre.
+        Estudios Socioterritoriales: Revista de Geograf\u00eda, v. 13, n. 1, p. 13\u201342,
+        2013."},{"key":"1213593","doi-asserted-by":"crossref","unstructured":"TONELLA,
+        Celene. Pol\u00edticas Urbanas no Brasil: Marcos Legais, Sujeitos e Institui\u00e7\u00f5es.
+        Revista Sociedade e Estado, v. 28, n. 1, p. 29-52, jan.\/abr. 2013.","DOI":"10.1590\/S0102-69922013000100003"},{"key":"1213594","unstructured":"VAINER,
+        Carlos. P\u00e1tria, empresa e mercadoria: notas sobre a estrat\u00e9gia discursiva
+        do planejamento estrat\u00e9gico urbano. In: ARANTES, Ot\u00edlia.; VAINER,
+        Carlos, MARICATO, Erm\u00ednia (Org.). A cidade do pensamento \u00fanico:
+        desmanchando consensos. Petr\u00f3polis: Vozes, 2002, p. 75-104."},{"key":"1213595","doi-asserted-by":"crossref","unstructured":"VALLA,
+        Victor Vicent. Sobre a Participa\u00e7\u00e3o Popular: Uma Quest\u00e3o de
+        Perspectiva. Caderno Sa\u00fade P\u00fablica, Rio de Janeiro, v. 14, n. 2,
+        p. 07-18, 1998.","DOI":"10.1590\/S0102-311X1998000600002"},{"key":"1213596","unstructured":"VILLA\u00c7A,
+        Flavio. Uma contribui\u00e7\u00e3o para a hist\u00f3ria do planejamento urbano
+        no Brasil. In: DE\u00c1K, Csaba.; SCHIFFER, Sueli Ramos (Org.) O processo
+        de urbaniza\u00e7\u00e3o no Brasil. S\u00e3o Paulo: EdUSP, 1999."},{"key":"1213597","unstructured":"WALDO,
+        Dwight. The Administrative State Revisited. In: SHAFRITZ, Jay M,; HYDE, Albert
+        C. (Org.). Classics of Public Administration. 8 ed. Boston: Cengage Learning,
+        2017, p. 149-165."},{"key":"1213598","doi-asserted-by":"crossref","unstructured":"WILSON,
+        Robert. Understanding local governance: an international perspective. RAE
+        - Revista de Administra\u00e7\u00e3o de Empresas, v. 40, n. 2, p. 51-63, 2000.","DOI":"10.1590\/S0034-75902000000200006"},{"key":"1213599","unstructured":"WORLD
+        BANK. Urban Population (% of total population) \u2013 Brazil. Available at:
+        <https:\/\/data.worldbank.org\/indicator\/SP.URB.TOTL.IN.ZS?locations=BR>.
+        Accessed on: 18 may 2023."}],"container-title":["Revista InterA\u00e7\u00e3o"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/interacao\/article\/download\/83862\/61421","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/interacao\/article\/download\/83862\/61421","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,8,8]],"date-time":"2023-08-08T12:58:13Z","timestamp":1691499493000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/interacao\/article\/view\/83862"}},"issued":{"date-parts":[[2023,7,28]]},"references-count":81,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2023,7,28]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/2357797583862","ISSN":["2357-7975","2357-7975"],"issn-type":[{"value":"2357-7975","type":"electronic"},{"value":"2357-7975","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2023,7,28]]}},{"indexed":{"date-parts":[[2023,5,20]],"date-time":"2023-05-20T06:52:38Z","timestamp":1684565558505},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"4","license":[{"start":{"date-parts":[[2022,12,16]],"date-time":"2022-12-16T00:00:00Z","timestamp":1671148800000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["ReA
+        UFSM"],"abstract":"<jats:p>Objetivo: Este estudo tem por objetivo analisar
+        os efeitos que o ambiente competitivo e o poder de mercado da firma exercem
+        na posi\u00e7\u00e3o competitiva de firmas, no per\u00edodo de 2012 a 2017,
+        que abarca os efeitos da crise de 2008.Desenho\/metodologia\/abordagem: Os
+        par\u00e2metros do modelo estrutural foram estimados por meio de modelagem
+        de caminhos com m\u00ednimos quadrados parciais. O tamanho da firma foi utilizado
+        como fator de pondera\u00e7\u00e3o. A amostra \u00e9 composta por firmas brasileiras
+        de capital aberto, atuantes na ind\u00fastria manufatureira e ativas no per\u00edodo
+        de 2012 a 2017.Resultados: A capacidade das firmas de alcan\u00e7ar e sustentar
+        uma posi\u00e7\u00e3o competitiva favor\u00e1vel \u00e9 dependente do seu
+        poder de mercado. Sob uma perspectiva gerencial reativa, gestores devem fazer
+        escolhas estrat\u00e9gicas que permitam \u00e0 firma se manter pr\u00f3xima
+        aos consumidores, e manter e refor\u00e7ar o seu poder de mercado, evitando
+        redu\u00e7\u00f5es em sua participa\u00e7\u00e3o de mercado. Sob uma perspectiva
+        gerencial proativa, os gestores devem tirar vantagem do poder de mercado,
+        com o estabelecimento de barreiras que dificultem o acesso dos concorrentes
+        aos consumidores.Originalidade\/valor: Esta pesquisa apresenta duas contribui\u00e7\u00f5es
+        originais. A primeira delas \u00e9 a identifica\u00e7\u00e3o dos fatores determinantes
+        da posi\u00e7\u00e3o competitiva de firmas brasileiras, durante o per\u00edodo
+        ap\u00f3s a crise financeira de 2008. A segunda \u00e9 a proposi\u00e7\u00e3o
+        e o teste de um modelo de equa\u00e7\u00f5es estruturais, com o objetivo de
+        estimar os efeitos do poder de mercado e do ambiente competitivo, na posi\u00e7\u00e3o
+        competitiva da firma.<\/jats:p>","DOI":"10.5902\/1983465968594","type":"journal-article","created":{"date-parts":[[2022,12,18]],"date-time":"2022-12-18T17:10:07Z","timestamp":1671383407000},"page":"581-595","source":"Crossref","is-referenced-by-count":1,"title":["An\u00e1lise
+        dos efeitos do ambiente de opera\u00e7\u00f5es e do poder de mercado da firma
+        na posi\u00e7\u00e3o competitiva de firmas brasileiras"],"prefix":"10.5902","volume":"15","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-0512-9829","authenticated-orcid":false,"given":"Alexandre
+        Teixeira","family":"Dias","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-3456-8249","authenticated-orcid":false,"given":"Marcos
+        Ant\u00f4nio de","family":"Camargos","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0001-9172-7085","authenticated-orcid":false,"given":"Nidelson
+        Teixeira","family":"Falc\u00e3o","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-6737-2656","authenticated-orcid":false,"given":"Pedro
+        Verga","family":"Matos","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2022,12,16]]},"container-title":["Revista
+        de Administra\u00e7\u00e3o da UFSM"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/reaufsm\/article\/download\/68594\/50725","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/reaufsm\/article\/download\/68594\/50725","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,18]],"date-time":"2022-12-18T17:10:07Z","timestamp":1671383407000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/reaufsm\/article\/view\/68594"}},"issued":{"date-parts":[[2022,12,16]]},"references-count":0,"journal-issue":{"issue":"4","published-online":{"date-parts":[[2022,12,16]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1983465968594","ISSN":["1983-4659","1983-4659"],"issn-type":[{"value":"1983-4659","type":"electronic"},{"value":"1983-4659","type":"print"}],"subject":["Pharmacology
+        (medical)"],"published":{"date-parts":[[2022,12,16]]}},{"indexed":{"date-parts":[[2022,10,18]],"date-time":"2022-10-18T07:14:43Z","timestamp":1666077283915},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","license":[{"start":{"date-parts":[[2022,10,13]],"date-time":"2022-10-13T00:00:00Z","timestamp":1665619200000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by-nc\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Educa\u00e7\u00e3o"],"abstract":"<jats:p>O
+        presente trabalho buscou fazer uma s\u00edntese do conhecimento produzido
+        no Brasil sobre o tema das rela\u00e7\u00f5es de poder entre as crian\u00e7as,
+        com base na an\u00e1lise bibliogr\u00e1fica das disserta\u00e7\u00f5es e teses
+        defendidas nos programas de p\u00f3s-gradua\u00e7\u00e3o do pa\u00eds e dispon\u00edveis
+        na Biblioteca Digital Brasileira de Teses e Disserta\u00e7\u00f5es (BDTD),
+        dos artigos publicados no portal de peri\u00f3dicos da Coordena\u00e7\u00e3o
+        de Aperfei\u00e7oamento de Pessoal de N\u00edvel Superior (CAPES) e dos p\u00f4steres
+        e trabalhos apresentados na Associa\u00e7\u00e3o Nacional de P\u00f3s-Gradua\u00e7\u00e3o
+        e Pesquisa em Educa\u00e7\u00e3o (ANPEd), no grupo de trabalho sobre educa\u00e7\u00e3o
+        de crian\u00e7as de 0 a 6 anos (GT07), no per\u00edodo de 2000 a 2019. Foi
+        poss\u00edvel concluir que as rela\u00e7\u00f5es sociais das crian\u00e7as
+        s\u00e3o atravessadas por desigualdades sociais, econ\u00f4micas e quest\u00f5es
+        de g\u00eanero que, por sua vez, produzem comportamentos e falas infantis
+        que expressam rela\u00e7\u00f5es de poder na inf\u00e2ncia. Tanto a fam\u00edlia
+        como a escola configuraram-se, a partir da an\u00e1lise dos textos supracitados,
+        como espa\u00e7os de reprodu\u00e7\u00e3o de estere\u00f3tipos e preconceitos,
+        bem como lugar de resist\u00eancia e transforma\u00e7\u00e3o. A tem\u00e1tica
+        das rela\u00e7\u00f5es de poder entre as crian\u00e7as ainda \u00e9 pouco
+        explorada no pa\u00eds e o n\u00famero de trabalhos acad\u00eamicos que relacionam
+        as rela\u00e7\u00f5es de poder \u00e0s intera\u00e7\u00f5es que se estabelecem
+        entre as crian\u00e7as \u00e9 muito pequeno, se considerarmos a quantidade
+        de pesquisas realizadas no \u00e2mbito da educa\u00e7\u00e3o.<\/jats:p>","DOI":"10.5902\/1984644463243","type":"journal-article","created":{"date-parts":[[2022,10,14]],"date-time":"2022-10-14T01:36:40Z","timestamp":1665711400000},"source":"Crossref","is-referenced-by-count":0,"title":["rela\u00e7\u00f5es
+        de poder entre as crian\u00e7as: estado da arte a partir das pesquisas produzidas
+        no Brasil, no per\u00edodo de 2000 a 2019"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0003-0121-939X","authenticated-orcid":false,"given":"Rebeka
+        Rodrigues Alves da","family":"Costa","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-4890-5821","authenticated-orcid":false,"given":"Ana
+        Maria Coelho Monte","family":"Frota","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2022,10,13]]},"container-title":["Educa\u00e7\u00e3o"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/download\/63243\/49187","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/download\/63243\/49188","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/download\/63243\/49187","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,10,18]],"date-time":"2022-10-18T01:36:38Z","timestamp":1666056998000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/reveducacao\/article\/view\/63243"}},"issued":{"date-parts":[[2022,10,13]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5902\/1984644463243","ISSN":["1984-6444"],"issn-type":[{"value":"1984-6444","type":"electronic"}],"subject":["General
+        Earth and Planetary Sciences","General Environmental Science"],"published":{"date-parts":[[2022,10,13]]}},{"indexed":{"date-parts":[[2023,3,28]],"date-time":"2023-03-28T04:36:00Z","timestamp":1679978160639},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Regae:
+        Rev. Gest. Aval. Educ."],"abstract":"<jats:p>O presente estudo teve como objetivo
+        avaliar a correla\u00e7\u00e3o do desempenho em testes de profici\u00eancia
+        no Brasil - Prova Brasil - e quatro dimens\u00f5es das escolas: gest\u00e3o
+        institucional, espa\u00e7o f\u00edsico, organiza\u00e7\u00e3o e ambiente de
+        trabalho e pr\u00e1ticas pedag\u00f3gicas e de avalia\u00e7\u00e3o. Correlacionou-se
+        os resultados da pol\u00edtica auto avaliativa feita no Rio Grade do Sul e
+        a nota m\u00e9dia das escolas da Prova Brasil, ambos de 2013, para os testes
+        de profici\u00eancia em l\u00edngua portuguesa e matem\u00e1tica para o 5\u00ba
+        ano e o 9\u00ba ano nas escolas da rede p\u00fablica estadual do Rio Grande
+        do Sul. Para as dimens\u00f5es analisadas, construiu-se uma escala agregando
+        as respostas de indicadores correspondentes a cada dimens\u00e3o, que variam
+        de\u00a0situa\u00e7\u00e3o cr\u00edtica a situa\u00e7\u00e3o ideal, em uma
+        escala de 1 a 5. Utilizando a t\u00e9cnica de an\u00e1lise de vari\u00e2ncia,
+        constatou-se que h\u00e1 uma tend\u00eancia estatisticamente significativa
+        de que os melhores desempenhos coincidam com as melhores autoavalia\u00e7\u00f5es
+        institucionais, por\u00e9m, a \u00fanica dimens\u00e3o em que esta tend\u00eancia
+        ocorreu nas duas s\u00e9ries e nos dois componentes curriculares das disciplinas
+        pesquisadas foi na dimens\u00e3o sobre as pr\u00e1ticas pedag\u00f3gicas e
+        de avalia\u00e7\u00e3o.<\/jats:p>","DOI":"10.5902\/2318133874095","type":"journal-article","created":{"date-parts":[[2023,3,27]],"date-time":"2023-03-27T12:53:41Z","timestamp":1679921621000},"page":"e74095","source":"Crossref","is-referenced-by-count":0,"title":["O
+        efeito escola sobre o desempenho dos alunos ga\u00fachos: uma an\u00e1lise
+        a partir da auto-avalia\u00e7\u00e3o institucional"],"prefix":"10.5902","author":[{"given":"Mar\u00edlia
+        Patta","family":"Ramos","sequence":"first","affiliation":[]},{"given":"Lauren","family":"Xerxenevsky","sequence":"additional","affiliation":[]},{"given":"Mateus","family":"Saraiva","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2023,3,26]]},"container-title":["Revista
+        de Gest\u00e3o e Avalia\u00e7\u00e3o Educacional"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/download\/74095\/51781","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/download\/74095\/51781","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,3,27]],"date-time":"2023-03-27T12:53:42Z","timestamp":1679921622000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/view\/74095"}},"issued":{"date-parts":[[2023,3,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5902\/2318133874095","ISSN":["2318-1338","2176-2171"],"issn-type":[{"value":"2318-1338","type":"electronic"},{"value":"2176-2171","type":"print"}],"subject":["Organic
+        Chemistry","Biochemistry"],"published":{"date-parts":[[2023,3,26]]}},{"indexed":{"date-parts":[[2023,3,28]],"date-time":"2023-03-28T04:29:59Z","timestamp":1679977799934},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Regae:
+        Rev. Gest. Aval. Educ."],"abstract":"<jats:p>Por meio deste texto, apresenta-se
+        resultados de pesquisa na qual se utilizou algoritmos de aprendizado de m\u00e1quina
+        combinado com o GPT para prever e melhorar o desempenho dos alunos. Essa abordagem
+        pode ter impacto inovador na educa\u00e7\u00e3o e na experi\u00eancia de aprendizado
+        dos alunos. O estudo teve abordagem quantitativa, com base em pesquisa experimental
+        e t\u00e9cnicas variadas. Foram processados 900 alunos em 21 algoritmos. Os
+        resultados indicaram uma ferramenta poderosa para prever e melhorar o desempenho
+        dos alunos, combinado ao GPT, superando outros m\u00e9todos. Conhecer as lacunas
+        no conhecimento dos alunos e fornecer feedback personalizado, permite uma
+        forma\u00e7\u00e3o mais efetiva. Essa combina\u00e7\u00e3o pode ser uma ferramenta
+        valiosa para aprimorar a educa\u00e7\u00e3o.<\/jats:p>","DOI":"10.5902\/2318133874348","type":"journal-article","created":{"date-parts":[[2023,3,27]],"date-time":"2023-03-27T12:53:34Z","timestamp":1679921614000},"page":"e74348","source":"Crossref","is-referenced-by-count":0,"title":["Prever
+        e melhorar o desempenho dos alunos com o uso combinado de aprendizagem de
+        m\u00e1quina e GPT"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-5442-2124","authenticated-orcid":false,"given":"Maurilio","family":"Benevento","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-0631-9800","authenticated-orcid":false,"given":"Fernando
+        de Souza","family":"Meirelles","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2023,3,26]]},"container-title":["Revista
+        de Gest\u00e3o e Avalia\u00e7\u00e3o Educacional"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/download\/74348\/51844","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/download\/74348\/51844","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,3,27]],"date-time":"2023-03-27T12:53:35Z","timestamp":1679921615000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/view\/74348"}},"issued":{"date-parts":[[2023,3,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5902\/2318133874348","ISSN":["2318-1338","2176-2171"],"issn-type":[{"value":"2318-1338","type":"electronic"},{"value":"2176-2171","type":"print"}],"subject":["Organic
+        Chemistry","Biochemistry"],"published":{"date-parts":[[2023,3,26]]}},{"indexed":{"date-parts":[[2023,10,10]],"date-time":"2023-10-10T04:52:27Z","timestamp":1696913547503},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","license":[{"start":{"date-parts":[[2023,10,9]],"date-time":"2023-10-09T00:00:00Z","timestamp":1696809600000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Kinesis"],"DOI":"10.5902\/2316546485351","type":"journal-article","created":{"date-parts":[[2023,10,10]],"date-time":"2023-10-10T01:50:09Z","timestamp":1696902609000},"source":"Crossref","is-referenced-by-count":0,"title":["Editorial"],"prefix":"10.5902","volume":"41","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-3157-5048","authenticated-orcid":false,"given":"Thiago","family":"Farias
+        da Fonseca Pimenta","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-4958-5527","authenticated-orcid":false,"given":"Mariani","family":"Guedes
+        Santiago","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-1463-6694","authenticated-orcid":false,"given":"Natiele","family":"Follmann","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2023,10,9]]},"container-title":["Kinesis"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/kinesis\/article\/download\/85351\/61950","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/kinesis\/article\/download\/85351\/61950","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,10]],"date-time":"2023-10-10T01:50:09Z","timestamp":1696902609000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/kinesis\/article\/view\/85351"}},"issued":{"date-parts":[[2023,10,9]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5902\/2316546485351","ISSN":["2316-5464","0102-8308"],"issn-type":[{"value":"2316-5464","type":"electronic"},{"value":"0102-8308","type":"print"}],"subject":["Applied
+        Mathematics","General Mathematics"],"published":{"date-parts":[[2023,10,9]]}},{"indexed":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T18:57:08Z","timestamp":1697050628809},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Rev
+        Enferm UFSM"],"abstract":"<jats:p>Objetivo: refletir sobre a dimens\u00e3o
+        pol\u00edtica no cuidado \u00e0 sa\u00fade de crian\u00e7as e adolescentes
+        com necessidades especiais de sa\u00fade. M\u00e9todo: an\u00e1lise reflexiva
+        sobre as pol\u00edticas de sa\u00fade vigente, que se relacionam com a sa\u00fade
+        da crian\u00e7a e do adolescente, considerando as demandas apresentadas por
+        estas crian\u00e7as. Resultados: apresenta-se alguns marcos das pol\u00edticas
+        p\u00fablicas e sociais da sa\u00fade da crian\u00e7a e do adolescente, entre
+        elas a inclus\u00e3o dos direitos que asseguram o acesso universal \u00e0
+        assist\u00eancia \u00e0 sa\u00fade. Dentre as pol\u00edticas sociais, destaca-se
+        a Lei Org\u00e2nica da Assist\u00eancia Social. Conclus\u00e3o: a despeito
+        de as pol\u00edticas p\u00fablicas de sa\u00fade assegurarem os direitos de
+        crian\u00e7as e adolescentes, elas n\u00e3o atendem as especificidades das
+        demandas dessa popula\u00e7\u00e3o que necessitam ser reconhecidas. Faz-se
+        necess\u00e1rio o reconhecimento desta clientela nas taxas epidemiol\u00f3gicas
+        no cen\u00e1rio nacional. O olhar de equidade \u00e9 essencial para os desiguais
+        que, muitas vezes, n\u00e3o encontram espa\u00e7os nos servi\u00e7os de sa\u00fade.<\/jats:p>","DOI":"10.5902\/2179769221976","type":"journal-article","created":{"date-parts":[[2017,9,11]],"date-time":"2017-09-11T22:34:37Z","timestamp":1505169277000},"page":"337-346","source":"Crossref","is-referenced-by-count":2,"title":["Dimens\u00e3o
+        pol\u00edtica do cuidado \u00e0s crian\u00e7as e adolescentes com necessidades
+        especiais de sa\u00fade: uma reflex\u00e3o"],"prefix":"10.5902","volume":"7","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-4182-4714","authenticated-orcid":false,"given":"Andressa
+        da","family":"Silveira","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-1559-9533","authenticated-orcid":false,"given":"Eliane
+        Tatsch","family":"Neves","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2017,9,11]]},"container-title":["Revista
+        de Enfermagem da UFSM"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/reufsm\/article\/download\/21976\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/reufsm\/article\/download\/21976\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,2,28]],"date-time":"2023-02-28T12:13:11Z","timestamp":1677586391000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/reufsm\/article\/view\/21976"}},"issued":{"date-parts":[[2017,9,11]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2017,9,11]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/2179769221976","ISSN":["2179-7692"],"issn-type":[{"value":"2179-7692","type":"electronic"}],"subject":["Management
+        Science and Operations Research","Mechanical Engineering","Energy Engineering
+        and Power Technology"],"published":{"date-parts":[[2017,9,11]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:17:05Z","timestamp":1697087825120},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Esta Revista Eletr\u00f4nica realiza,
+        na sua edi\u00e7\u00e3o de n\u00famero 06, a publica\u00e7\u00e3o de trabalhos
+        apresentados durante o simp\u00f3sio da ABRALIC, o qual foi organizado pelo
+        pelo Professor Jaime Ginzburg, sob o enfoque da mesa tem\u00e1tica que d\u00e1
+        t\u00edtulo a esta edi\u00e7\u00e3o: autoritarismo, viol\u00eancia e melancolia
+        [No \u00e2mbito do Congresso Internacional da Associa\u00e7\u00e3o Brasileira
+        de Literatura Comparada, de 18 a 21 de julho de 2004, em Porto Alegre - RS].
+        Com base nessas discuss\u00f5es \u2013 t\u00e3o fundamentais, mas ainda pouco
+        difundidas dentro da realidade da pesquisa e do debate acad\u00eamico e levando
+        em considera\u00e7\u00e3o todos os problemas relacionados com essa tem\u00e1tica
+        e com as discuss\u00f5es propostas pelo Grupo de Pesquisa Literatura e Autoritarismo
+        \u2013 \u00e9 que esses trabalhos se inserem, buscando o espa\u00e7o necess\u00e1rio
+        na articula\u00e7\u00e3o entre a cr\u00edtica e a pesquisa.<\/jats:p>","DOI":"10.5902\/1679849x74035","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:35:02Z","timestamp":1696995302000},"source":"Crossref","is-referenced-by-count":0,"title":["Apresenta\u00e7\u00e3o
+        - Autoritarismo, viol\u00eancia e melancolia"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-8221-1869","authenticated-orcid":false,"given":"Rosani
+        \u00darsula Ketzer","family":"Umbach","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-4113-5553","authenticated-orcid":false,"given":"Jo\u00e3o
+        Luis Pereira","family":"Ourique","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-7104-1833","authenticated-orcid":false,"given":"Lizandro
+        Carlos","family":"Calegari","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-2413-9085","authenticated-orcid":false,"given":"Jaime","family":"Ginzburg","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2005,7,1]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74035\/51475","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74035\/51475","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:35:03Z","timestamp":1696995303000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/74035"}},"issued":{"date-parts":[[2005,7,1]]},"references-count":0,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2005,7,1]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x74035","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2005,7,1]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:17:17Z","timestamp":1697087837035},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Como se representam na arte e na literatura
+        contempor\u00e2nea a terr\u00edvel mem\u00f3ria das ditaduras militares? Como
+        tratam a literatura e a arte a conflu\u00eancia entre a mem\u00f3ria particular
+        e a mem\u00f3ria p\u00fablica do autoritarismo, entre o trauma individual
+        e o nacional? E finalmente, como reconciliam, ou reconhecem, a narrativa e
+        as artes pl\u00e1sticas as diferentes vers\u00f5es do passado? Este ensaio
+        primeiro examinar\u00e1 brevemente as representa\u00e7\u00f5es da brutalidade
+        dos regimes autorit\u00e1rios latino americanos nas artes pl\u00e1sticas.
+        Vai-se abordar como artistas tais como Iv\u00e1n Navarro (Chile), Fernando
+        Traverso (Argentina), Cildo Meirelles (Brasil) e Luis Camnitzer (Uruguai)
+        trabalham com objetos do dia a dia para abordar quest\u00f5es ligadas \u00e0
+        opress\u00e3o e \u00e0 mem\u00f3ria. Esta an\u00e1lise ser\u00e1 seguida pela
+        leitura de dois romances recentes, um brasileiro,\u00a0Prova contr\u00e1ria\u00a0(2005),
+        de Fernando Bonassi e outro chileno\u00a0El desierto\u00a0(2003), de Carlos
+        Franz, que recuperam os fios que ligam a hist\u00f3ria (ou seja, a lembran\u00e7a
+        p\u00fablica) com a mem\u00f3ria (ou seja, a lembran\u00e7a pessoal); o passado
+        ao presente.<\/jats:p>","DOI":"10.5902\/1679849x74665","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:04:52Z","timestamp":1696993492000},"page":"e10","source":"Crossref","is-referenced-by-count":0,"title":["Haunted
+        homes and desert landscapes: the sites of memory in latin american postdictatorship
+        fiction"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0003-2417-4788","authenticated-orcid":false,"given":"Leila","family":"Lehnen","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2009,12,10]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74665\/51794","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74665\/51794","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:04:52Z","timestamp":1696993492000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/74665"}},"issued":{"date-parts":[[2009,12,10]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2009,12,10]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x74665","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2009,12,10]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:17:39Z","timestamp":1697087859341},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"13","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Este trabalho \u00e9 um estudo do conto
+        \"A pris\u00e3o de J. Carmo Gomes\", de Graciliano Ramos, a partir de alguns
+        pressupostos de Lucien Goldman e de Marthe Robert, a fim de estabelecer homologias
+        entre a sociedade e a s\u00e9rie liter\u00e1ria. Tamb\u00e9m constituem fonte
+        de reflex\u00e3o os estudos de Northrop Frye, especialmente no que diz respeito
+        aos \u201cmodos de fic\u00e7\u00e3o\u201d, e os de Sigmund Freud, em \"Romances
+        familiares\".<\/jats:p>","DOI":"10.5902\/1679849x73911","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:12:15Z","timestamp":1696993935000},"page":"58-67","source":"Crossref","is-referenced-by-count":0,"title":["O
+        social e o individual: rela\u00e7\u00f5es conflituosas em A pris\u00e3o de
+        J. Carmo Gomes, de Graciliano Ramos"],"prefix":"10.5902","author":[{"given":"Eliana
+        da Mota Bordin de","family":"Sales","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-3290-8497","authenticated-orcid":false,"given":"Jos\u00e9
+        Batista de","family":"Sales","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2009,1,1]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/73911\/51222","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/73911\/51222","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:12:16Z","timestamp":1696993936000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/73911"}},"issued":{"date-parts":[[2009,1,1]]},"references-count":0,"journal-issue":{"issue":"13","published-online":{"date-parts":[[2009,1,1]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x73911","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2009,1,1]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:15:16Z","timestamp":1697087716259},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"7","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Com a fal\u00eancia do projeto lusitano
+        de expans\u00e3o territorial ultramarina, decorrente das lutas de independ\u00eancia
+        de na\u00e7\u00f5es africanas, como Mo\u00e7ambique e Guin\u00e9, e a subseq\u00fcente
+        derrocada do regime fascista portugu\u00eas, em 1974, estabeleceu-se uma literatura
+        de cunho testemunhal, documental e revelador das condi\u00e7\u00f5es de vida
+        das na\u00e7\u00f5es colonizadas. A tem\u00e1tica de maior enfoque nesses
+        textos liter\u00e1rios \u00e9 a guerra e suas diversas implica\u00e7\u00f5es,
+        como as mais variadas formas de viol\u00eancia sobre os indiv\u00edduos. Assim,
+        por meio da an\u00e1lise das obras Lugar de Massacre\u00a0(1975), de Jos\u00e9
+        Martins Garcia, e\u00a0Terra Son\u00e2mbula\u00a0(1992), de Mia Couto, busca-se
+        desvelar a maneira como ambos os escritores, de nacionalidade a\u00e7oriana
+        e mo\u00e7ambicana, respectivamente, representam essa tem\u00e1tica, evidenciando-se
+        os distanciamentos, mas, sobretudo, as converg\u00eancias entre os seus romances.
+        Tal procedimento anal\u00edtico \u00e9 desenvolvido a partir, principalmente,
+        de algumas das principais concep\u00e7\u00f5es dos te\u00f3ricos da Escola
+        de Frankfurt sobre as rela\u00e7\u00f5es entre a hist\u00f3ria e fic\u00e7\u00e3o,
+        bem como sobre o conceito de autoritarismo, problematizando-se a dimens\u00e3o
+        social e cr\u00edtica da arte liter\u00e1ria.<\/jats:p>","DOI":"10.5902\/1679849x74013","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:32:55Z","timestamp":1696995175000},"source":"Crossref","is-referenced-by-count":0,"title":["Lugar
+        de massacre, de Jos\u00e9 Martins Garcia, e Terra son\u00e2mbula, de Mia Couto:
+        olhares convergentes sobre o autoritarismo"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-2623-9402","authenticated-orcid":false,"given":"Evelise
+        de Oliveira","family":"Bolzan","sequence":"first","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0001-8950-7374","authenticated-orcid":false,"given":"Inara
+        de Oliveira","family":"Rodrigues","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2006,1,1]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74013\/51434","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74013\/51434","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:32:55Z","timestamp":1696995175000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/74013"}},"issued":{"date-parts":[[2006,1,1]]},"references-count":0,"journal-issue":{"issue":"7","published-online":{"date-parts":[[2006,1,1]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x74013","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2006,1,1]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:14:12Z","timestamp":1697087652088},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"11","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Com o objetivo de apresentar algumas
+        considera\u00e7\u00f5es sobre a arte de contar hist\u00f3rias, que est\u00e1
+        em vias de extin\u00e7\u00e3o em uma sociedade cada vez mais voltada \u00e0
+        t\u00e9cnica instrumental e utilit\u00e1ria, tomamos como pressuposto a palavra
+        como elemento imprescind\u00edvel da condi\u00e7\u00e3o humana. Essa perspectiva
+        acerca da palavra como constituinte de uma experi\u00eancia se ampara na abordagem
+        de Walter Benjamin, em uma interpreta\u00e7\u00e3o que busca o momento hist\u00f3rico
+        vivido, refletindo sobre as contradi\u00e7\u00f5es e paradoxos do homem e
+        da cultura. A perda da habilidade de narrar, de transmitir a experi\u00eancia
+        atrav\u00e9s da palavra, reflete um dos problemas que o desenvolvimento cient\u00edfico
+        e tecnol\u00f3gico desligado da condi\u00e7\u00e3o humana acarretou. Ainda
+        que existam problemas em exaltar o modelo narrativo, tendo em vista o seu
+        aspecto conservador, \u00e9 ineg\u00e1vel a troca de experi\u00eancias e o
+        papel de intera\u00e7\u00e3o entre os indiv\u00edduos oportunizados por ele.
+        Dessa forma, vemos a escola, nos seus primeiros anos, principalmente como
+        um espa\u00e7o para que a arte de contar hist\u00f3rias enrique\u00e7a o car\u00e1ter
+        formativo do ambiente escolar, oportunizando a imagina\u00e7\u00e3o, o vocabul\u00e1rio
+        e o poss\u00edvel despertar da curiosidade, entre outras possibilidades.<\/jats:p>","DOI":"10.5902\/1679849x73940","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:23:06Z","timestamp":1696994586000},"source":"Crossref","is-referenced-by-count":0,"title":["O
+        resgate do narrador"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0003-4113-5553","authenticated-orcid":false,"given":"Jo\u00e3o
+        Luis Pereira","family":"Ourique","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2008,1,1]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/73940\/51265","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/73940\/51265","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:23:06Z","timestamp":1696994586000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/73940"}},"issued":{"date-parts":[[2008,1,1]]},"references-count":0,"journal-issue":{"issue":"11","published-online":{"date-parts":[[2008,1,1]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x73940","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2008,1,1]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:06:19Z","timestamp":1697087179586},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"7","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Este artigo radica em torno da import\u00e2ncia
+        da forma\u00e7\u00e3o hist\u00f3rica e do sentido da constitui\u00e7\u00e3o
+        nacional, em termos de cultura, de tradi\u00e7\u00e3o e de patrim\u00f4nio
+        simb\u00f3lico, para a composi\u00e7\u00e3o do drama A Batalha de Arm\u00ednio,
+        do dramaturgo alem\u00e3o Heinrich von Kleist. Visa-se assim a verificar o
+        modo aleg\u00f3rico pelo qual as referidas inst\u00e2ncias se inserem na elabora\u00e7\u00e3o
+        est\u00e9tica, bem como o papel da dial\u00e9tica para o sentido de supera\u00e7\u00e3o
+        intr\u00ednseco \u00e0 obra.<\/jats:p>","DOI":"10.5902\/1679849x74010","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:33:50Z","timestamp":1696995230000},"source":"Crossref","is-referenced-by-count":0,"title":["A
+        dial\u00e9tica entre divis\u00e3o e uni\u00e3o em A Batalha de Arm\u00ednio:
+        uma alegoria da hist\u00f3ria e da quest\u00e3o nacional alem\u00e3s"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0003-4537-0681","authenticated-orcid":false,"given":"M\u00e1rcio
+        Jos\u00e9","family":"Coutinho","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2006,1,1]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74010\/51431","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74010\/51431","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:33:50Z","timestamp":1696995230000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/74010"}},"issued":{"date-parts":[[2006,1,1]]},"references-count":0,"journal-issue":{"issue":"7","published-online":{"date-parts":[[2006,1,1]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x74010","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2006,1,1]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:07:44Z","timestamp":1697087264385},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Ao pretender alcan\u00e7ar a\u00a0m\u00edmesis\u00a0social
+        por meio do ent\u00e3o chamado jornalismo-liter\u00e1rio, \u00e9 inevit\u00e1vel
+        que os resultados de tais buscas tenham alcan\u00e7ado esse tema da viol\u00eancia,
+        t\u00e3o presente no mundo material. Para entender o funcionamento liter\u00e1rio
+        nesses textos e a import\u00e2ncia da escolha do tema, ou melhor, de uma boa
+        pauta, analisamos tr\u00eas textos dessa corrente de jornalistas-escritores:\u00a0Hiroshima,
+        de John Hersey;\u00a0A sangue frio, de Truman Capote; e\u00a0Olga\u00a0de
+        Fernando Morais.<\/jats:p>","DOI":"10.5902\/1679849x74308","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:17:58Z","timestamp":1696994278000},"page":"e5","source":"Crossref","is-referenced-by-count":0,"title":["Jornalismo
+        busca humaniza\u00e7\u00e3o na literatura"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-5807-5713","authenticated-orcid":false,"given":"Cyntia
+        Belgini","family":"Andretta","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2008,11,16]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74308\/51630","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74308\/51630","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:17:59Z","timestamp":1696994279000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/74308"}},"issued":{"date-parts":[[2008,11,16]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2008,11,16]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x74308","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2008,11,16]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:20:41Z","timestamp":1697088041353},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>Com o objetivo de analisar as rela\u00e7\u00f5es
+        entre Literatura e Autoritarismo, atrav\u00e9s do estudo da representa\u00e7\u00e3o
+        liter\u00e1ria de experi\u00eancias ocorridas em contextos autorit\u00e1rios,
+        este artigo apresenta a an\u00e1lise e a interpreta\u00e7\u00e3o de dois contos
+        de Caio Fernando Abreu: \"Os sobreviventes\" e \"Eu, tu, ele\", da obra Morangos
+        mofados.\u00a0<\/jats:p>","DOI":"10.5902\/1679849x74041","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:38:56Z","timestamp":1696995536000},"source":"Crossref","is-referenced-by-count":0,"title":["Literatura
+        e autoritarismo: o processo de constru\u00e7\u00e3o da mem\u00f3ria coletiva
+        em Caio Fernando Abreu"],"prefix":"10.5902","author":[{"given":"Luziane Boemo","family":"Mozzaquatro","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2005,1,1]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74041\/51481","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74041\/51481","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:38:57Z","timestamp":1696995537000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/74041"}},"issued":{"date-parts":[[2005,1,1]]},"references-count":0,"journal-issue":{"issue":"5","published-online":{"date-parts":[[2005,1,1]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x74041","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2005,1,1]]}},{"indexed":{"date-parts":[[2023,10,12]],"date-time":"2023-10-12T05:19:04Z","timestamp":1697087944895},"reference-count":0,"publisher":"Universidade
+        Federal de Santa Maria","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
+        e Autoritarismo"],"abstract":"<jats:p>O texto analisa dois livros que fazem
+        parte da chamada \u201cnova literatura carcer\u00e1ria\u201d, cuja eclos\u00e3o
+        se deu no in\u00edcio desta d\u00e9cada. A partir da an\u00e1lise de Di\u00e1rio
+        de um detento, o livro, de Jocenir, e de\u00a0Mem\u00f3rias de um sobrevivente,
+        de Luiz Alberto Mendes, discute-se o modo como essa literatura se constr\u00f3i
+        em fun\u00e7\u00e3o de uma ambival\u00eancia, que se revela para al\u00e9m
+        da narrativa propriamente, por meio da ades\u00e3o aos valores do c\u00e1rcere
+        e aos valores do mundo exterior.<\/jats:p>","DOI":"10.5902\/1679849x74591","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:15:32Z","timestamp":1696994132000},"source":"Crossref","is-referenced-by-count":0,"title":["Ambival\u00eancias
+        formais em Mem\u00f3rias de um sobrevivente, de Luiz Alberto Mendes, e Di\u00e1rio
+        de um detento: o livro, de Jocenir"],"prefix":"10.5902","author":[{"ORCID":"http:\/\/orcid.org\/0000-0001-8020-7156","authenticated-orcid":false,"given":"Maria
+        Rita Sigaud Soares","family":"Palmeira","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2008,11,16]]},"container-title":["Literatura
+        e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74591\/51746","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/74591\/51746","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T03:15:33Z","timestamp":1696994133000},"score":26.666267,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/74591"}},"issued":{"date-parts":[[2008,11,16]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2008,11,16]]}},"URL":"http:\/\/dx.doi.org\/10.5902\/1679849x74591","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"subject":["General
+        Medicine"],"published":{"date-parts":[[2008,11,16]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - close
+      content-encoding:
+      - gzip
+      content-length:
+      - '20912'
+      content-type:
+      - application/json
+      date:
+      - Fri, 26 Jan 2024 20:57:30 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '50'
+      x-ratelimit-interval:
+      - 1s
+      x-ratelimit-limit:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1
