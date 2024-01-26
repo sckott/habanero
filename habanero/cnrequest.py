@@ -1,10 +1,16 @@
 import warnings
 
 import requests
-import bibtexparser
 
 from .cn_formats import cn_format_headers
 from .habanero_utils import make_ua
+
+try:
+    import bibtexparser
+except ImportError:
+    _has_bibtexparser = False
+else:
+    _has_bibtexparser = True
 
 
 def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
@@ -66,6 +72,8 @@ def make_request(url, ids, format, style, locale, fail, **kwargs):
     r.encoding = "UTF-8"
     text = r.text
     if format == "bibtex":
+        if not _has_bibtexparser:
+            raise ImportError("bibtexparser is required to do this")
         text = fix_bibtex(text)
     return text
 

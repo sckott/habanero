@@ -62,6 +62,14 @@ Stable version
 
   pip (or pip3) install habanero
 
+
+If you need to fix bibtex format citations using content negotiation use
+
+.. code-block:: console
+
+  pip (or pip3) install habanero[bibtex]
+
+
 Dev version
 
 .. code-block:: console

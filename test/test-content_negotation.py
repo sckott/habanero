@@ -1,4 +1,5 @@
 import warnings
+import re
 
 import pytest
 from requests.exceptions import HTTPError
@@ -14,6 +15,16 @@ def test_content_negotiation():
     """content negotiation - default - bibtex"""
     res = cn.content_negotiation(ids="10.1126/science.169.3946.635")
     assert str == str(res).__class__
+
+
+# addresses https://github.com/sckott/habanero/issues/144
+# this DOI gives back the month as "sep" instead of "{sep}" as it should
+@pytest.mark.vcr
+def test_content_negotiation_bad_bibtex():
+    """content negotiation - bad bibtex is fixed correctly"""
+    month_regex = re.compile(r"\{sep\}")
+    res = cn.content_negotiation(ids="10.1139/cjc-2022-0282")
+    assert month_regex.search(res) is not None
 
 
 @pytest.mark.vcr
