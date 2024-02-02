@@ -1,9 +1,13 @@
 Changelog
 =========
 
-1.2.4 (2023-02-13)
+1.2.6 (2024-02-01)
 --------------------
 * mark two more tests for vcr to create cassettes for (both content_negotation tests) - no user facing changes (#114)
+* habanero now conditionally uses bibtexparser to roundtrip bibtex to attempt to fix any bibtex that's not formatted correctly (#144) (#153)
+* generalize handling  of field queries like `query.publisher-name` to allow all field queries, and any in the future (#150) (#152)
+* improved error handling (#123)
+* `ids` now a required param in the Crossref.prefixes method; improved crossef API error parsing (#116)
 
 1.2.3 (2023-02-02)
 --------------------
