@@ -1,5 +1,5 @@
-import warnings
 import re
+import warnings
 
 import pytest
 from requests.exceptions import HTTPError

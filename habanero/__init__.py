@@ -1,3 +1,8 @@
+from .cn import content_negotiation, csl_styles
+from .counts import citation_count
+from .crossref import Crossref, WorksContainer
+from .exceptions import Error, RequestError
+
 # -*- coding: utf-8 -*-
 
 # habanero
@@ -39,11 +44,6 @@ Usage::
 """
 
 __title__ = "habanero"
-__version__ = "1.2.5"
+__version__ = "1.2.6"
 __author__ = "Scott Chamberlain"
 __license__ = "MIT"
-
-from .cn import content_negotiation, csl_styles
-from .counts import citation_count
-from .crossref import Crossref, WorksContainer
-from .exceptions import *
