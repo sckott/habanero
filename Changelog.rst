@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.2.6 (2024-02-01)
+1.2.6 (2024-02-03)
 --------------------
 * mark two more tests for vcr to create cassettes for (both content_negotation tests) - no user facing changes (#114)
 * habanero now conditionally uses bibtexparser to roundtrip bibtex to attempt to fix any bibtex that's not formatted correctly (#144) (#153)
