@@ -25,10 +25,10 @@ dist:
 	python3 -m build
 
 upload_test:
-	python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+	python3 -m twine upload --repository testpypi dist/*
 
 upload:
-	python3 -m twine upload dist/*
+	python3 -m twine upload --repository pypi dist/*
 
 .PHONY: lint-fix
 lint-fix:
