@@ -32,14 +32,12 @@ upload:
 
 .PHONY: lint-fix
 lint-fix:
-	pip3 install -q -r requirements-dev.txt
-	isort .
-	black .
-	ruff check --fix habanero
+	source .env/bin/activate; \
+	pip3 install -q -r requirements-dev.txt; \
+	ruff check --select I --fix habanero
 
 .PHONY: lint-check
 lint-check:
+	source ./.env/bin/activate; \
 	pip3 install -q -r requirements-dev.txt
-	isort . --check-only
-	black . --check
 	ruff check habanero

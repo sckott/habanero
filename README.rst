@@ -1,7 +1,7 @@
 habanero
 ========
 
-|pypi| |docs| |ghactions| |coverage| |black|
+|pypi| |docs| |ghactions| |coverage| |ruff|
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to interact with all from one client.
 
@@ -142,15 +142,20 @@ Meta
 
 .. |pypi| image:: https://badge.fury.io/py/habanero.svg
     :target: https://badge.fury.io/py/habanero
+    :alt: pypi
 
 .. |docs| image:: https://readthedocs.org/projects/habanero/badge/?version=latest
    :target: http://habanero.rtfd.org/
+   :alt: Docs
 
 .. |ghactions| image:: https://github.com/sckott/habanero/actions/workflows/python.yml/badge.svg?branch=main
    :target: https://github.com/sckott/habanero/actions/workflows/python.yml
+   :alt: ghactions
 
 .. |coverage| image:: https://codecov.io/gh/sckott/habanero/branch/main/graph/badge.svg?token=6RrgNAuQmR
    :target: https://codecov.io/gh/sckott/habanero
+   :alt: coverage
 
-.. |black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
-   :target: https://github.com/psf/black
+.. |ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
+    :target: https://github.com/astral-sh/ruff
+    :alt: Ruff
