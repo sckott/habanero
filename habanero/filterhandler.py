@@ -7,7 +7,7 @@ def filter_handler(x=None):
     else:
         # lowercase bools
         for k, v in x.items():
-            if v.__class__ == bool:
+            if isinstance(v, bool):
                 x[k] = str(v).lower()
 
         # combine
@@ -28,7 +28,7 @@ def filter_handler(x=None):
         # split any lists into duplicated key/filter names
         newx = []
         for k, v in x.items():
-            if v.__class__ == list:
+            if isinstance(v, list):
                 for a, b in enumerate(v):
                     newx.append(":".join([k, b]))
             else:

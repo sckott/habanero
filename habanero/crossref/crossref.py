@@ -1085,7 +1085,7 @@ class Crossref:
             True,
             **kwargs
         )
-        if res.__class__ != list:
+        if not isinstance(res, list):
             k = []
             k.append(res)
         else:

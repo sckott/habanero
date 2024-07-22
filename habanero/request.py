@@ -44,7 +44,7 @@ def request(
     url = url + path
 
     if cursor_max.__class__.__name__ != "NoneType":
-        if cursor_max.__class__ != int:
+        if not isinstance(cursor_max, int):
             raise ValueError("cursor_max must be of class int")
 
     filt = filter_handler(filter)
