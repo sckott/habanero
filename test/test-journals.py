@@ -10,8 +10,8 @@ cr = Crossref()
 def test_journals():
     """journals - basic test"""
     res = cr.journals(limit=1)
-    assert dict == res.__class__
-    assert dict == res["message"].__class__
+    assert isinstance(res, dict)
+    assert isinstance(res["message"], dict)
     assert 1 == res["message"]["items-per-page"]
 
 
@@ -19,7 +19,7 @@ def test_journals():
 def test_journals_query():
     """journals - param: query"""
     res = cr.journals(query="ecology", limit=2)
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 2 == res["message"]["items-per-page"]
     assert "journal-list" == res["message-type"]
 
@@ -28,8 +28,8 @@ def test_journals_query():
 def test_journals_ids():
     """journals - param: ids"""
     res = cr.journals(ids=["1803-2427", "2326-4225"])
-    assert list == res.__class__
-    assert dict == res[0].__class__
+    assert isinstance(res, list)
+    assert isinstance(res[0], dict)
     assert "journal" == res[0]["message-type"]
 
 
@@ -44,7 +44,7 @@ def test_journals_works():
         ids="2167-8359", query="ecology", works=True, sort="score", order="desc"
     )
     scores2 = [x["score"] for x in res2["message"]["items"]]
-    assert dict == res1.__class__
+    assert isinstance(res1, dict)
     assert "work-list" == res1["message-type"]
     assert max(scores1) == scores1[-1]
     assert min(scores2) == scores2[-1]
@@ -90,10 +90,10 @@ def test_journals_field_queries():
         filter={"type": "journal-article"},
     )
     titles = [x.get("title")[0] for x in res["message"]["items"]]
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
-    assert list == titles.__class__
-    assert str == str(titles[0]).__class__
+    assert isinstance(titles, list)
+    assert isinstance(titles[0], str)
 
 
 @pytest.mark.vcr

@@ -10,13 +10,13 @@ def test_filter_names():
     res_works = cr.filter_names()
     res_members = cr.filter_names("members")
     res_funders = cr.filter_names("funders")
-    assert list == res_works.__class__
-    assert str == res_works[0].__class__
-    assert list == res_members.__class__
-    assert str == res_members[0].__class__
+    assert isinstance(res_works, list)
+    assert isinstance(res_works[0], str)
+    assert isinstance(res_members, list)
+    assert isinstance(res_members[0], str)
     assert 4 == len(res_members)
-    assert list == res_funders.__class__
-    assert str == res_funders[0].__class__
+    assert isinstance(res_funders, list)
+    assert isinstance(res_funders[0], str)
     assert 1 == len(res_funders)
 
 
@@ -31,9 +31,9 @@ def test_filter_details():
     res_works = cr.filter_details()
     res_members = cr.filter_details("members")
     res_funders = cr.filter_details("funders")
-    assert dict == res_works.__class__
-    assert dict == res_members.__class__
-    assert dict == res_funders.__class__
+    assert isinstance(res_works, dict)
+    assert isinstance(res_members, dict)
+    assert isinstance(res_funders, dict)
 
 
 def test_filter_details_errors():

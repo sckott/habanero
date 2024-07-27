@@ -12,7 +12,7 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 def test_works_with_one_id():
     """works - param: ids, one DOI"""
     res = cr.works(ids="10.1371/journal.pone.0033693")
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 4 == len(res)
     assert "work" == res["message-type"]
 
@@ -28,7 +28,7 @@ def test_works_with_many_ids():
         "10.3892/ijo_00000353",
     ]
     res = cr.works(ids=dois)
-    assert list == res.__class__
+    assert isinstance(res, list)
     assert 5 == len(res)
     assert [4, 4, 4, 4, 4] == [len(x) for x in res]
     assert "work" == [x["message-type"] for x in res][0]
@@ -46,7 +46,7 @@ def test_works_with_many_ids():
 def test_works_no_id_withlimit():
     """works - param: limit, no other inputs"""
     res = cr.works(limit=2)
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
     assert 2 == len(res["message"]["items"])
 
@@ -55,7 +55,7 @@ def test_works_no_id_withlimit():
 def test_works_query():
     """works - param: query"""
     res = cr.works(query="ecology", limit=2)
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
 
 
@@ -63,7 +63,7 @@ def test_works_query():
 def test_works_sample():
     """works - param: sample"""
     res = cr.works(sample=2)
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
 
 
@@ -71,7 +71,7 @@ def test_works_sample():
 # def test_works_filter():
 #     """works - param: filter"""
 #     res = cr.works(filter = {'has_full_text': True}, limit = 3)
-#     assert dict == res.__class__
+#     assert isinstance(res, dict)
 #     assert 5 == len(res['message'])
 
 
@@ -80,7 +80,7 @@ def test_works_field_queries():
     """works - param: kwargs - field queries work as expected"""
     res = cr.works(query="ecology", query_author="carl boettiger")
     auths = [x["author"][0]["family"] for x in res["message"]["items"]]
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
     assert "Boettiger" in auths
 
@@ -99,7 +99,7 @@ def test_works_field_query_publisher_name():
     publisher_name = "Universidade Federal de Santa Maria"
     res = cr.works(query_publisher_name=publisher_name)
     publishers = [x["publisher"] for x in res["message"]["items"]]
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     for pub in publishers:
         assert publisher_name == pub
 

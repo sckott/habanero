@@ -9,7 +9,7 @@ cr = Crossref()
 def test_licenses():
     """licenses - basic test"""
     res = cr.licenses(limit=2)
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 2 == len(res["message"]["items"])
 
 

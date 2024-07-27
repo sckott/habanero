@@ -12,16 +12,16 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 def test_members():
     """members - basic test"""
     res = cr.members(limit=2)
-    assert dict == res.__class__
-    assert dict == res["message"].__class__
+    assert isinstance(res, dict)
+    assert isinstance(res["message"], dict)
 
 
 @pytest.mark.vcr
 def test_members_query():
     """members - param: query"""
     res = cr.members(query="ecology", limit=2)
-    assert dict == res.__class__
-    assert dict == res["message"].__class__
+    assert isinstance(res, dict)
+    assert isinstance(res["message"], dict)
 
 
 @pytest.mark.vcr
@@ -41,10 +41,10 @@ def test_members_field_queries():
     """members - param: kwargs - field queries work as expected"""
     res = cr.members(ids=98, works=True, query_author="carl boettiger", limit=7)
     auths = [x["author"][0]["family"] for x in res["message"]["items"]]
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
-    assert list == auths.__class__
-    assert str == str(auths[0]).__class__
+    assert isinstance(auths, list)
+    assert isinstance(auths[0], str)
 
 
 @pytest.mark.vcr

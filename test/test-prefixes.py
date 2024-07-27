@@ -12,15 +12,15 @@ a = '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"
 def test_prefixes():
     """prefixes - basic test"""
     res = cr.prefixes(ids="10.1016")
-    assert dict == res.__class__
-    assert dict == res["message"].__class__
+    assert isinstance(res, dict)
+    assert isinstance(res["message"], dict)
 
 
 @pytest.mark.vcr
 def test_prefixes_works():
     """prefixes - param: works"""
     res = cr.prefixes(ids="10.1016", works=True, sample=2)
-    assert dict == res.__class__
+    assert isinstance(res, dict)
 
 
 def test_prefixes_filter():
@@ -39,10 +39,10 @@ def test_prefixes_field_queries():
         filter={"type": "journal-article"},
     )
     eds = [x.get("editor")[0] for x in res["message"]["items"]]
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
-    assert list == eds.__class__
-    assert dict == eds[0].__class__
+    assert isinstance(eds, list)
+    assert isinstance(eds[0], dict)
 
 
 @pytest.mark.vcr

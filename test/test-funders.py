@@ -10,8 +10,8 @@ cr = Crossref()
 def test_funders():
     """funders - basic test"""
     res = cr.funders(limit=2)
-    assert dict == res.__class__
-    assert dict == res["message"].__class__
+    assert isinstance(res, dict)
+    assert isinstance(res["message"], dict)
     assert 2 == res["message"]["items-per-page"]
 
 
@@ -19,8 +19,8 @@ def test_funders():
 def test_funders_query():
     """funders - param: query"""
     res = cr.funders(query="NSF", limit=2)
-    assert dict == res.__class__
-    assert dict == res["message"].__class__
+    assert isinstance(res, dict)
+    assert isinstance(res["message"], dict)
     assert 2 == res["message"]["items-per-page"]
 
 
@@ -48,7 +48,7 @@ def test_funders_filter_works():
     res = cr.funders(
         ids="10.13039/100000001", works=True, filter={"has_assertion": True}
     )
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 20 == res["message"]["items-per-page"]
 
 
@@ -81,9 +81,9 @@ def test_funders_field_queries():
         limit=100,
     )
     titles = [x.get("title") for x in res["message"]["items"]]
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert 5 == len(res["message"])
-    assert list == titles.__class__
+    assert isinstance(titles, list)
     assert 100 == len(titles)
 
 

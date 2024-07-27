@@ -9,8 +9,8 @@ cr = Crossref()
 def test_random_dois():
     """random dois"""
     res = cr.random_dois()
-    assert list == res.__class__
-    assert str == res[0].__class__
+    assert isinstance(res, list)
+    assert isinstance(res[0], str)
     assert 10 == len(res)
 
 

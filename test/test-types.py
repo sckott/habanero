@@ -62,7 +62,7 @@ def test_types_query():
 def test_types_ids():
     """types - param: ids"""
     res = cr.types(ids="journal")
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert {"id": "journal", "label": "Journal"} == res["message"]
 
 
@@ -70,7 +70,7 @@ def test_types_ids():
 def test_types_works():
     """types - param: works"""
     res = cr.types(ids="journal", works=True, limit=2)
-    assert dict == res.__class__
+    assert isinstance(res, dict)
     assert "work-list" == res["message-type"]
 
 

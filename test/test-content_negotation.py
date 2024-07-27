@@ -14,7 +14,7 @@ cjson = '{"indexed":{"date-parts":[[2015,9,18]],"date-time":"2015-09-18T16:11:22
 def test_content_negotiation():
     """content negotiation - default - bibtex"""
     res = cn.content_negotiation(ids="10.1126/science.169.3946.635")
-    assert str == str(res).__class__
+    assert isinstance(res, str)
 
 
 # addresses https://github.com/sckott/habanero/issues/144
@@ -31,7 +31,7 @@ def test_content_negotiation_bad_bibtex():
 def test_content_negotiation_with_unicode_doi():
     """content negotiation - unicode"""
     res = cn.content_negotiation(ids="10.1126/science.169.3946.635")
-    assert str == str(res).__class__
+    assert isinstance(res, str)
 
 
 @pytest.mark.vcr
@@ -40,7 +40,7 @@ def test_content_negotiation_citeproc_json():
     res = cn.content_negotiation(
         ids="10.1126/science.169.3946.635", format="citeproc-json"
     )
-    assert str == str(res).__class__
+    assert isinstance(res, str)
 
 
 @pytest.mark.vcr
@@ -49,7 +49,7 @@ def test_content_negotiation_alt_url():
     res = cn.content_negotiation(
         ids="10.1126/science.169.3946.635", url="http://doi.org"
     )
-    assert str == str(res).__class__
+    assert isinstance(res, str)
 
 
 @pytest.mark.vcr

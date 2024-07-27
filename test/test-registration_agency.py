@@ -10,16 +10,16 @@ cr = Crossref()
 def test_registration_agency():
     """registration agency"""
     res = cr.registration_agency("10.1126/science.169.3946.635")
-    assert list == res.__class__
-    assert str == res[0].__class__
+    assert isinstance(res, list)
+    assert isinstance(res[0], str)
 
 
 @pytest.mark.vcr
 def test_registration_agency_unicode():
     """registration agency- unicode"""
     res = cr.registration_agency("10.1126/science.169.3946.635")
-    assert list == res.__class__
-    assert str == res[0].__class__
+    assert isinstance(res, list)
+    assert isinstance(res[0], str)
 
 
 @pytest.mark.vcr
