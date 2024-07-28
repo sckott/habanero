@@ -1,4 +1,5 @@
 import warnings
+from packaging.version import Version
 
 import requests
 
@@ -74,7 +75,16 @@ def make_request(url, ids, format, style, locale, fail, **kwargs):
     if format == "bibtex":
         if not _has_bibtexparser:
             raise ImportError("bibtexparser is required to do this")
-        text = fix_bibtex(text)
+
+        bibtexparser_ver = Version(bibtexparser.__version__)
+        if bibtexparser_ver.major >= 2:
+            text = fix_bibtex(text)
+        # if bibtexparser_ver.major < 2:
+        #     warnings.warn(
+        #         "your bibtexparser version is < v2 - skipping bibtexparser cleaning"
+        #     )
+        # else:
+        #     text = fix_bibtex(text)
     return text
 
 
