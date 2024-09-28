@@ -5,13 +5,13 @@ habanero
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to interact with all from one client.
 
-`Crossref API docs <https://github.com/CrossRef/rest-api-doc>`__
+`Crossref API docs <https://api.crossref.org/swagger-ui/index.html>`__
 
 Other Crossref API clients:
 
 - Ruby: `serrano`, `<https://github.com/sckott/serrano>`__
 
-Crossref's API issue tracker: https://gitlab.com/crossref/issues
+Crossref's API issue tracker: https://crossref.atlassian.net/jira/software/c/projects/CR/issues/
 
 `habanero` includes three modules you can import as needed (or
 import all):
