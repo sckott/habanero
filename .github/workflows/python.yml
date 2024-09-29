@@ -22,7 +22,7 @@ jobs:
       run: uv sync --all-extras --dev
     - name: Tests
       if: contains(fromJSON('["3.10.9", "3.11.1", "3.11.5", "3.12"]'), matrix.python-version)
-      run: pytest
+      run: make test
     - name: Test coverage
       if: matrix.python-version == '3.11.5'
       run: |
