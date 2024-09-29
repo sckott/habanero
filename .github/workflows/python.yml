@@ -27,4 +27,4 @@ jobs:
       if: matrix.python-version == '3.11.5'
       run: |
         uv run pytest --cov-report=xml --cov=habanero test/
-        codecov
+        uv run codecov
