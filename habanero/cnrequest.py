@@ -1,7 +1,7 @@
 import warnings
-from packaging.version import Version
 
 import requests
+from packaging.version import Version
 
 from .cn_formats import cn_format_headers
 from .habanero_utils import make_ua
