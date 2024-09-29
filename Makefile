@@ -6,10 +6,10 @@ install:
 	uv pip install .
 
 test:
-	python -m pytest --record-mode=once --cov-report term --cov=habanero test/
+	uv run pytest --record-mode=once --cov-report term --cov=habanero test/
 
 test_no_vcr:
-	python -m pytest --disable-recording --cov-report term --cov=habanero test/
+	uv run pytest --disable-recording --cov-report term --cov=habanero test/
 
 docs:
 	cd docs;\
