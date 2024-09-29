@@ -26,5 +26,5 @@ jobs:
     - name: Test coverage
       if: matrix.python-version == '3.11.5'
       run: |
-        python -m "pytest" --cov-report=xml --cov=habanero test/
+        uv run pytest --cov-report=xml --cov=habanero test/
         codecov
