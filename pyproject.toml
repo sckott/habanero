@@ -1,6 +1,51 @@
 [build-system]
-requires = ["setuptools >= 40.6.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "habanero"
+dynamic = ["version"]
+description = "Low Level Client for Crossref Search API"
+maintainers = [
+  {name = "Scott Chamberlain", email = "myrmecocystus@gmail.com"}
+]
+readme = "README.rst"
+license = {file = "docs/LICENSE.rst"}
+requires-python = ">=3.12"
+dependencies = [
+    "bibtexparser==2.0.0b7",
+    "pyyaml>=6.0.2",
+    "requests>=2.32.3",
+    "tqdm>=4.66.5",
+    "urllib3==2.2.0",
+]
+classifiers = [
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Science/Research",
+	"Intended Audience :: Developers",
+	"Topic :: Scientific/Engineering :: Bio-Informatics",
+	"Natural Language :: English",
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3.6",
+	"Programming Language :: Python :: 3.7",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/sckott/habanero"
+Documentation = "https://habanero.readthedocs.io/"
+Repository = "https://github.com/sckott/habanero"
+"Bug Tracker" = "https://github.com/sckott/habanero/issues"
+Changelog = "https://github.com/sckott/habanero/blob/main/Changelog.rst"
+
+[tool.setuptools.dynamic]
+version = {attr = "habanero.__version__"}
 
 [tool.ruff]
 line-length = 88
@@ -19,3 +64,33 @@ lint.ignore = [
 "habanero/request_class.py" = ["E722"]
 "test/*" = ["E501"]
 "habanero/*" = ["E501"]
+
+[tool.uv]
+dev-dependencies = [
+    "docutils>=0.21.2",
+    "ruff>=0.6.8",
+    "sphinx>=8.0.2",
+    "sphinx-autodoc-typehints>=2.4.4",
+    "sphinxcontrib-issuetracker>=0.11",
+    "pytest>=8.3.3",
+    "pytest-cov>=5.0.0",
+    "codecov>=2.1.13",
+    "vcrpy>=5.1.0",
+    "pytest-recording",
+    "sphinx-rtd-theme==3.0.0rc3",
+]
+
+[tool.uv.sources]
+pytest-recording = { git = "https://github.com/kiwicom/pytest-recording", rev = "128d134c77837d9f4eccbc0f2c08f50882af7e6a" }
+
+# from https://github.com/pypa/setuptools/discussions/3627
+[project.optional-dependencies]
+bibtex = [
+    "bibtexparser==2.0.0b7",
+]
+test = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "test*"]
