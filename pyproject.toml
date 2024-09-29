@@ -2,6 +2,9 @@
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[tool.hatch.version]
+path = "habanero/__init__.py"
+
 [project]
 name = "habanero"
 dynamic = ["version"]
