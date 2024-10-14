@@ -37,3 +37,6 @@ lint-fix:
 .PHONY: lint-check
 lint-check:
 	ruff check habanero
+
+format:
+	ruff format habanero

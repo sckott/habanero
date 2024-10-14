@@ -10,7 +10,7 @@ def citation_count(
     doi: str,
     url: str = "http://www.crossref.org/openurl/",
     key: str = "cboettig@ropensci.org",
-    **kwargs
+    **kwargs,
 ) -> int:
     """
     Get a citation count with a DOI

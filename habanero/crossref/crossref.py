@@ -203,7 +203,7 @@ class Crossref:
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Search Crossref works
@@ -357,7 +357,7 @@ class Crossref:
                 None,
                 progress_bar,
                 warn,
-                **kwargs
+                **kwargs,
             )
         else:
             return Request(
@@ -378,7 +378,7 @@ class Crossref:
                 cursor_max,
                 None,
                 progress_bar,
-                **kwargs
+                **kwargs,
             ).do_request(should_warn=warn)
 
     def members(
@@ -398,7 +398,7 @@ class Crossref:
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Search Crossref members
@@ -496,7 +496,7 @@ class Crossref:
             None,
             progress_bar,
             warn,
-            **kwargs
+            **kwargs,
         )
 
     def prefixes(
@@ -515,7 +515,7 @@ class Crossref:
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Search Crossref prefixes
@@ -613,7 +613,7 @@ class Crossref:
             cursor_max=cursor_max,
             progress_bar=progress_bar,
             should_warn=warn,
-            **kwargs
+            **kwargs,
         )
 
     def funders(
@@ -633,7 +633,7 @@ class Crossref:
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Search Crossref funders
@@ -743,7 +743,7 @@ class Crossref:
             None,
             progress_bar,
             warn,
-            **kwargs
+            **kwargs,
         )
 
     def journals(
@@ -763,7 +763,7 @@ class Crossref:
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Search Crossref journals
@@ -868,7 +868,7 @@ class Crossref:
             None,
             progress_bar,
             warn,
-            **kwargs
+            **kwargs,
         )
 
     def types(
@@ -888,7 +888,7 @@ class Crossref:
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Search Crossref types
@@ -972,7 +972,7 @@ class Crossref:
             None,
             progress_bar,
             warn,
-            **kwargs
+            **kwargs,
         )
 
     def licenses(
@@ -983,7 +983,7 @@ class Crossref:
         sort: str = None,
         order: str = None,
         facet: Union[str, bool] = None,
-        **kwargs
+        **kwargs,
     ) -> dict:
         """
         Search Crossref licenses
@@ -1028,7 +1028,7 @@ class Crossref:
             None,
             None,
             None,
-            **kwargs
+            **kwargs,
         )
         return res
 
@@ -1081,7 +1081,7 @@ class Crossref:
             None,
             None,
             True,
-            **kwargs
+            **kwargs,
         )
         if not isinstance(res, list):
             k = []
@@ -1127,7 +1127,7 @@ class Crossref:
             None,
             None,
             None,
-            **kwargs
+            **kwargs,
         )
         return [z["DOI"] for z in res["message"]["items"]]
 

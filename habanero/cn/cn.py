@@ -8,7 +8,7 @@ def content_negotiation(
     style: str = "apa",
     locale: str = "en-US",
     url: str = None,
-    **kwargs
+    **kwargs,
 ) -> str:
     """
     Get citations in various formats from CrossRef

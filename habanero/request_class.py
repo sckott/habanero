@@ -42,7 +42,7 @@ class Request(object):
         cursor_max=None,
         agency=False,
         progress_bar=False,
-        **kwargs
+        **kwargs,
     ):
         self.mailto = mailto
         self.ua_string = ua_string
