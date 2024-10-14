@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.8.15, 3.9.16, 3.10.9, 3.11.1, 3.11.5, 3.12]
+        python-version: [3.9.16, 3.10.9, 3.11.5, 3.12, 3.13]
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
@@ -15,16 +15,16 @@ jobs:
     - name: Install uv
       uses: astral-sh/setup-uv@v2
       with:
-        version: "0.4.17"
+        version: "0.4.20"
     - name: Set up Python ${{ matrix.python-version }}
       run: uv python install ${{ matrix.python-version }}
     - name: Install the project
       run: uv sync --all-extras --dev
     - name: Tests
-      if: contains(fromJSON('["3.10.9", "3.11.1", "3.11.5", "3.12"]'), matrix.python-version)
+      if: contains(fromJSON('["3.9.16", "3.10.9", "3.11.5", "3.12", "3.13"]'), matrix.python-version)
       run: make test
     - name: Test coverage
-      if: matrix.python-version == '3.11.5'
+      if: matrix.python-version == '3.13'
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: |
