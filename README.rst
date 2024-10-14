@@ -1,7 +1,7 @@
 habanero
 ========
 
-|pypi| |docs| |ghactions| |coverage| |ruff|
+|pypi| |docs| |ghactions| |coverage| |ruff| |uv|
 
 This is a low level client for working with Crossref's search API. It's been named to be more generic, as other organizations are/will adopt Crossref's search API, making it possible to interact with all from one client.
 
@@ -159,3 +159,7 @@ Meta
 .. |ruff| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json
     :target: https://github.com/astral-sh/ruff
     :alt: Ruff
+
+.. |uv| image:: https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json
+    :target: https://github.com/astral-sh/uv
+    :alt: uv
