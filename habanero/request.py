@@ -1,6 +1,6 @@
 import warnings
 
-import requests
+import httpx
 
 from .exceptions import RequestError
 from .filterhandler import filter_handler
@@ -37,7 +37,7 @@ def request(
     agency=False,
     progress_bar=False,
     should_warn=False,
-    **kwargs
+    **kwargs,
 ):
     """HTTP request helper."""
     warning_thrown = False
@@ -77,15 +77,16 @@ def request(
     if ids.__class__.__name__ == "NoneType":
         url = url.strip("/")
         try:
-            r = requests.get(url, params=payload, headers=make_ua(mailto, ua_string))
+            r = httpx.get(url, params=payload, headers=make_ua(mailto, ua_string))
             r.raise_for_status()
-        except requests.exceptions.HTTPError:
+        except httpx.HTTPStatusError:
             if is_json(r):
                 raise RequestError(r.status_code, parse_json_err(r))
             else:
                 r.raise_for_status()
-        except requests.exceptions.RequestException as e:
-            raise RuntimeError(e)
+        except httpx.HTTPError as e:
+            raise RuntimeError(f"HTTP Exception for {e.request.url} - {e}")
+            # raise RuntimeError(e)
         else:
             if not r:
                 raise RuntimeError("An unknown problem occurred with an HTTP request")
@@ -119,7 +120,7 @@ def request(
                     cursor_max,
                     None,
                     progress_bar,
-                    **kwargs
+                    **kwargs,
                 ).do_request(should_warn=should_warn)
                 coll.append(res)
             else:
@@ -130,12 +131,10 @@ def request(
 
                 endpt = endpt.strip("/")
 
-                r = requests.get(
-                    endpt, params=payload, headers=make_ua(mailto, ua_string)
-                )
+                r = httpx.get(endpt, params=payload, headers=make_ua(mailto, ua_string))
                 if r.status_code > 201 and should_warn:
                     warning_thrown = True
-                    mssg = "%s on %s: %s" % (r.status_code, ids[i], r.reason)
+                    mssg = "%s on %s: %s" % (r.status_code, ids[i], r.reason_phrase)
                     warnings.warn(mssg)
                 else:
                     r.raise_for_status()

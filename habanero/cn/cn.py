@@ -25,7 +25,7 @@ def content_negotiation(
         you'll get a `(500) Internal Server Error`
     :param locale: Language locale. See `locale.locale_alias`
     :param url: Base URL for the content negotiation request. Default: `https://doi.org`
-    :param kwargs: any additional arguments will be passed on to `requests.get`
+    :param kwargs: any additional arguments will be passed on to `httpx.get`
     :rtype: str, which can be parsed to various formats depending on what
         format you request (e.g., JSON vs. XML vs. bibtex)
 

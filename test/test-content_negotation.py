@@ -2,7 +2,7 @@ import re
 import warnings
 
 import pytest
-from requests.exceptions import HTTPError
+from httpx import HTTPError
 
 from habanero import cn
 

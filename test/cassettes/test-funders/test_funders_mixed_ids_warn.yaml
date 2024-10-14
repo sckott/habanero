@@ -1,40 +1,39 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/funders/10.13039/100000001
   response:
-    body:
-      string: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100014074":"Integrative
-        and Collaborative Education and Research","100010608":"Office of Inspector
-        General","100000179":"Office of the Director","100014411":"Center for Unmanned
-        Aircraft Systems","100020475":"Directorate for STEM Education","100020427":"Directorate
-        for Technology, Innovation and Partnerships","100005716":"National Science
-        Board","100000081":"Directorate for Education and Human Resources","100000083":"Directorate
-        for Computer and Information Science and Engineering","100031042":"Next Generation
-        Network for Neuroscience","100005441":"Office of Budget, Finance and Award
-        Management","100000001":"National Science Foundation","100000076":"Directorate
-        for Biological Sciences","100000084":"Directorate for Engineering","100014073":"National
-        Nanotechnology Coordinating Office","100014591":"BioXFEL Science and Technology
-        Center","100000088":"Directorate for Social, Behavioral and Economic Sciences","100005447":"Office
-        of Information and Resource Management","100000086":"Directorate for Mathematical
-        and Physical Sciences","100023581":"National Science Foundation Graduate Research
-        Fellowship Program","100000085":"Directorate for Geosciences","100014072":"National
-        Coordination Office"},"replaced-by":[],"work-count":343595,"name":"National
-        Science Foundation","descendants":["100000076","100000077","100000078","100000081","100000082","100000083","100000084","100000085","100000086","100000087","100000088","100000089","100000105","100000106","100000121","100000141","100000143","100000144","100000145","100000146","100000147","100000148","100000149","100000150","100000151","100000152","100000153","100000154","100000155","100000156","100000159","100000160","100000162","100000163","100000164","100000165","100000166","100000169","100000170","100000171","100000172","100000173","100000174","100000175","100000176","100000177","100000178","100000179","100005441","100005442","100005443","100005444","100005445","100005446","100005447","100005448","100005449","100005450","100005714","100005716","100005717","100006091","100006603","100007352","100007521","100007522","100007523","100010608","100014071","100014072","100014073","100014074","100014411","100014591","100020427","100020428","100020429","100020474","100020475","100020476","100022807","100023581","100024040","100031042"],"descendant-work-count":425712,"id":"100000001","tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","nsf","us","nsf"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100014074":{},"100010608":{},"100000179":{"more":true},"100014411":{},"100020475":{"more":true},"100020427":{"more":true},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100031042":{},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100023581":{},"100000085":{"more":true},"100014072":{}}},"alt-names":["U.S.
-        National Science Foundation","USA NSF","NSF","US NSF"],"location":"United
-        States"}}'
+    content: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100014074":"Integrative
+      and Collaborative Education and Research","100010608":"Office of Inspector General","100000179":"Office
+      of the Director","100014411":"Center for Unmanned Aircraft Systems","100020475":"Directorate
+      for STEM Education","100020427":"Directorate for Technology, Innovation and
+      Partnerships","100005716":"National Science Board","100000081":"Directorate
+      for Education and Human Resources","100000083":"Directorate for Computer and
+      Information Science and Engineering","100031042":"Next Generation Network for
+      Neuroscience","100005441":"Office of Budget, Finance and Award Management","100000001":"National
+      Science Foundation","100000076":"Directorate for Biological Sciences","100000084":"Directorate
+      for Engineering","100014073":"National Nanotechnology Coordinating Office","100014591":"BioXFEL
+      Science and Technology Center","100000088":"Directorate for Social, Behavioral
+      and Economic Sciences","100005447":"Office of Information and Resource Management","100000086":"Directorate
+      for Mathematical and Physical Sciences","100023581":"National Science Foundation
+      Graduate Research Fellowship Program","100000085":"Directorate for Geosciences","100014072":"National
+      Coordination Office"},"replaced-by":[],"work-count":377933,"name":"National
+      Science Foundation","descendants":["100000076","100000077","100000078","100000081","100000082","100000083","100000084","100000085","100000086","100000087","100000088","100000089","100000105","100000106","100000121","100000141","100000143","100000144","100000145","100000146","100000147","100000148","100000149","100000150","100000151","100000152","100000153","100000154","100000155","100000156","100000159","100000160","100000162","100000163","100000164","100000165","100000166","100000169","100000170","100000171","100000172","100000173","100000174","100000175","100000176","100000177","100000178","100000179","100005441","100005442","100005443","100005444","100005445","100005446","100005447","100005448","100005449","100005450","100005553","100005554","100005714","100005716","100005717","100006091","100006603","100007352","100007521","100007522","100007523","100010608","100014071","100014072","100014073","100014074","100014411","100014591","100020427","100020428","100020429","100020474","100020475","100020476","100022807","100023581","100024040","100031042","100031424"],"descendant-work-count":466516,"id":"100000001","tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","nsf","us","nsf"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100014074":{},"100010608":{},"100000179":{"more":true},"100014411":{},"100020475":{"more":true},"100020427":{"more":true},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100031042":{},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100023581":{},"100000085":{"more":true},"100014072":{}}},"alt-names":["U.S.
+      National Science Foundation","USA NSF","NSF","US NSF"],"location":"United States"}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -48,11 +47,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '1079'
+      - '1088'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 00:23:57 GMT
+      - Sun, 13 Oct 2024 04:57:50 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -69,27 +68,27 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/funders/10.13039/notarealdoi
   response:
-    body:
-      string: Resource not found.
+    content: Resource not found.
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -101,9 +100,9 @@ interactions:
       connection:
       - close
       content-type:
-      - application/json
+      - text/plain
       date:
-      - Tue, 16 Jan 2024 00:23:58 GMT
+      - Sun, 13 Oct 2024 04:57:50 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -120,7 +119,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 404
-      message: Not Found
+    http_version: HTTP/1.1
+    status_code: 404
 version: 1

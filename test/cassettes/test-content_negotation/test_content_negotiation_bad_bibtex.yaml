@@ -1,80 +1,82 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - application/x-bibtex
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - doi.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://doi.org/10.1139/cjc-2022-0282
   response:
-    body:
-      string: '<html><head><title>Handle Redirect</title></head>
+    content: '<html><head><title>Handle Redirect</title></head>
 
-        <body><a href="https://api.crossref.org/v1/works/10.1139%2Fcjc-2022-0282/transform">https://api.crossref.org/v1/works/10.1139%2Fcjc-2022-0282/transform</a></body></html>'
+      <body><a href="https://api.crossref.org/v1/works/10.1139%2Fcjc-2022-0282/transform">https://api.crossref.org/v1/works/10.1139%2Fcjc-2022-0282/transform</a></body></html>'
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 84bc13162923c376-SEA
+      - 8d1ac9f97a36762d-SEA
       Connection:
       - keep-alive
-      Content-Length:
-      - '219'
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Fri, 26 Jan 2024 22:08:26 GMT
+      - Sat, 12 Oct 2024 23:14:55 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0q12AlCDp%2BpXtpggXh%2Bv4BigNj30eNBrk5gLQINBUZemsaWnlMEjS5slAWblee89Sbzf6Nem4GUW6wJxH96E5k5G6nffCkw%2FUuAVNB7gfht5VC5i2il3U64%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=jBOFeB7IqsdNNhMoFRpBCIER6pcOuCWBIAH%2FqKj9Yw8zY1IZcd5Jh1IghO924bai2huDhT%2F4QpEpPkpfpALvIByBfDyBhjvAfAGJTkuIxYDdBDwxICTCknM%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
       alt-svc:
       - h3=":443"; ma=86400
       expires:
-      - Fri, 26 Jan 2024 22:48:08 GMT
+      - Sat, 12 Oct 2024 23:50:14 GMT
       location:
       - https://api.crossref.org/v1/works/10.1139%2Fcjc-2022-0282/transform
       permissions-policy:
       - interest-cohort=(),browsing-topics=()
       vary:
+      - Origin
       - Accept
-    status:
-      code: 302
-      message: Found
+    http_version: HTTP/1.1
+    status_code: 302
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - application/x-bibtex
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/v1/works/10.1139%2Fcjc-2022-0282/transform
   response:
-    body:
-      string: " @article{Zupan_2023, title={Grid-based state space exploration for
-        molecular binding}, volume={101}, ISSN={1480-3291}, url={http://dx.doi.org/10.1139/cjc-2022-0282},
-        DOI={10.1139/cjc-2022-0282}, number={9}, journal={Canadian Journal of Chemistry},
-        publisher={Canadian Science Publishing}, author={Zupan, Hana and Heinz, Frederick
-        and Keller, Bettina G.}, year={2023}, month=sep, pages={710\u2013724} }\n"
+    content: " @article{Zupan_2023, title={Grid-based state space exploration for
+      molecular binding}, volume={101}, ISSN={1480-3291}, url={http://dx.doi.org/10.1139/cjc-2022-0282},
+      DOI={10.1139/cjc-2022-0282}, number={9}, journal={Canadian Journal of Chemistry},
+      publisher={Canadian Science Publishing}, author={Zupan, Hana and Heinz, Frederick
+      and Keller, Bettina G.}, year={2023}, month=sep, pages={710\u2013724} }\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -88,13 +90,7 @@ interactions:
       content-type:
       - application/x-bibtex
       date:
-      - Fri, 26 Jan 2024 22:08:27 GMT
-      link:
-      - <http://dx.doi.org/10.1139/cjc-2022-0282>; rel="canonical", <https://cdnsciencepub.com/doi/full-xml/10.1139/cjc-2022-0282>;
-        version="vor"; type="application/xml"; rel="item", <https://cdnsciencepub.com/doi/pdf/10.1139/cjc-2022-0282>;
-        version="vor"; rel="item", <http://www.nrcresearchpress.com/page/about/CorporateTextAndDataMining>;
-        version="tdm"; rel="license", <http://orcid.org/0000-0002-5501-3883>; title="Hana
-        Zupan"; rel="author"
+      - Sat, 12 Oct 2024 23:14:56 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -113,7 +109,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

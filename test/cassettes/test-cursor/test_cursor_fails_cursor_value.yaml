@@ -1,31 +1,32 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/works?query=widget&cursor=thing
   response:
-    body:
-      string: '{"status":"error","message-type":"exception","message-version":"1.0.0","message":{"name":"class
-        clojure.lang.ExceptionInfo","description":"clojure.lang.ExceptionInfo: Response
-        Exception qbits.spandex.Response@62e94d4","message":"Response Exception","stack":["clojure.core$ex_info.invokeStatic(core.clj:4617)","clojure.core$ex_info.invoke(core.clj:4617)","qbits.spandex$response_ex__GT_ex_info.invokeStatic(spandex.clj:218)","qbits.spandex$response_ex__GT_ex_info.invoke(spandex.clj:215)","qbits.spandex$eval12950$fn__12951.invoke(spandex.clj:227)","qbits.spandex$eval12933$fn__12934$G__12924__12939.invoke(spandex.clj:222)","qbits.spandex$response_listener$reify__12959.onFailure(spandex.clj:251)","org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onDefinitiveFailure(RestClient.java:605)","org.elasticsearch.client.RestClient$1.completed(RestClient.java:362)","org.elasticsearch.client.RestClient$1.completed(RestClient.java:343)","org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:119)","org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:181)","org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:437)","org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:327)","org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265)","org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81)","org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39)","org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:121)","org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)","org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)","org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)","org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)","org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)","org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)","java.base\/java.lang.Thread.run(Thread.java:1583)"],"cause":null}}'
+    content: '{"status":"error","message-type":"exception","message-version":"1.0.0","message":{"name":"class
+      clojure.lang.ExceptionInfo","description":"clojure.lang.ExceptionInfo: Response
+      Exception qbits.spandex.Response@88400ca9","message":"Response Exception","stack":["qbits.spandex$response_ex__GT_ex_info.invokeStatic(spandex.clj:218)","qbits.spandex$response_ex__GT_ex_info.invoke(spandex.clj:215)","qbits.spandex$fn__15113.invokeStatic(spandex.clj:227)","qbits.spandex$fn__15113.invoke(spandex.clj:225)","qbits.spandex$fn__15102$G__15097__15107.invoke(spandex.clj:222)","qbits.spandex$response_listener$reify__15118.onFailure(spandex.clj:251)","org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onDefinitiveFailure(RestClient.java:605)","org.elasticsearch.client.RestClient$1.completed(RestClient.java:362)","org.elasticsearch.client.RestClient$1.completed(RestClient.java:343)","org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:119)","org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:181)","org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:437)","org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:327)","org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265)","org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81)","org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39)","org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:121)","org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)","org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)","org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)","org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)","org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)","org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)","java.base\/java.lang.Thread.run(Thread.java:1583)"],"cause":null}}'
     headers:
       connection:
       - close
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 00:22:26 GMT
+      - Sun, 13 Oct 2024 14:08:28 GMT
       exception-name:
       - class clojure.lang.ExceptionInfo
       permissions-policy:
@@ -44,7 +45,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 500
-      message: Server Error
+    http_version: HTTP/1.1
+    status_code: 500
 version: 1

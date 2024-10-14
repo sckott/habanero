@@ -1,7 +1,7 @@
 import math
 import warnings
 
-import requests
+import httpx
 from tqdm import tqdm  # type: ignore
 from urllib3.exceptions import ConnectTimeoutError
 
@@ -144,26 +144,26 @@ class Request(object):
     def _req(self, payload, should_warn):
         r = None
         try:
-            r = requests.get(
+            r = httpx.get(
                 self._url(),
                 params=payload,
                 headers=make_ua(self.mailto, self.ua_string),
             )
             r.raise_for_status()
-        except requests.exceptions.HTTPError:
+        except httpx.HTTPStatusError:
             try:
                 f = r.json()
                 raise RequestError(r.status_code, f["message"][0]["message"])
             except:
                 if should_warn:
-                    mssg = "%s: %s" % (r.status_code, r.reason)
+                    mssg = "%s: %s" % (r.status_code, r.reason_phrase)
                     warnings.warn(mssg)
                     return None
                 else:
                     r.raise_for_status()
         except ConnectTimeoutError as e:
-            raise requests.exceptions.ConnectTimeout(e, r)
-        except requests.exceptions.RequestException as e:
+            raise httpx.ConnectTimeout(e, r)
+        except httpx.HTTPError as e:
             # print(e)
             raise RuntimeError(e)
         else:

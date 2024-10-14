@@ -1,25 +1,25 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/members/2984/works?offset=0&rows=1
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":415728,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:28Z","timestamp":1648950388348},"reference-count":0,"publisher":"Fairchild
-        Books","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2021]]},"DOI":"10.5040\/9781501365072.388","type":"book-chapter","created":{"date-parts":[[2022,3,28]],"date-time":"2022-03-28T13:39:01Z","timestamp":1648474741000},"source":"Crossref","is-referenced-by-count":0,"title":["alternating
-        twist texturing"],"prefix":"10.5040","member":"2984","container-title":["The
-        Fairchild Books Dictionary of Textiles"],"deposited":{"date-parts":[[2022,3,28]],"date-time":"2022-03-28T13:48:03Z","timestamp":1648475283000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.bloomsburycollections.com\/book\/the-fairchild-books-dictionary-of-textiles\/"}},"issued":{"date-parts":[[2021]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781501365072.388","published":{"date-parts":[[2021]]}}],"items-per-page":1,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":563692,"items":[{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T07:31:45Z","timestamp":1697441505756},"reference-count":0,"publisher":"Continuum","isbn-type":[{"value":"9780826459725","type":"print"},{"value":"9780826459732","type":"print"},{"value":"9781472546173","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.5040\/9781472546173.ch-003","type":"book-chapter","created":{"date-parts":[[2014,9,12]],"date-time":"2014-09-12T15:10:47Z","timestamp":1410534647000},"source":"Crossref","is-referenced-by-count":1,"title":["Deleuze
+      and Derrida, Immanence and Transcendence : Two Directions in Recent French Thought"],"prefix":"10.5040","member":"2984","container-title":["Between
+      Deleuze and Derrida"],"deposited":{"date-parts":[[2023,9,11]],"date-time":"2023-09-11T23:58:55Z","timestamp":1694476735000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9781472546173&tocid=b-9781472546173-chapter3"}},"issued":{"date-parts":[[null]]},"ISBN":["9780826459725","9780826459732","9781472546173"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781472546173.ch-003"}],"items-per-page":1,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -33,11 +33,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '605'
+      - '709'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:48:16 GMT
+      - Sun, 13 Oct 2024 14:04:32 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -54,7 +54,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

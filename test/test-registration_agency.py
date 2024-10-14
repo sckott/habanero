@@ -1,5 +1,5 @@
 import pytest
-from requests import HTTPError
+from httpx import HTTPError
 
 from habanero import Crossref
 

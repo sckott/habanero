@@ -1,143 +1,154 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/members/98/works?rows=5
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":517173,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:42:47Z","timestamp":1648950167156},"reference-count":0,"publisher":"Hindawi
-        Limited","issue":"305","license":[{"start":{"date-parts":[[1901,1,1]],"date-time":"1901-01-01T00:00:00Z","timestamp":-2177452800000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psyche:
-        A Journal of Entomology"],"published-print":{"date-parts":[[1901,1,1]]},"DOI":"10.1155\/1901\/120761","type":"journal-article","created":{"date-parts":[[2014,3,10]],"date-time":"2014-03-10T17:00:53Z","timestamp":1394470853000},"page":"243-245","source":"Crossref","is-referenced-by-count":0,"title":["Sketch
-        of the Habits of North American Ants\u2014II"],"prefix":"10.1155","volume":"9","author":[{"given":"Auguste","family":"Forel","sequence":"first","affiliation":[{"name":"Chigny
-        pr\u00e9s Morges, Switzerland"}]}],"member":"98","container-title":["Psyche:
-        A Journal of Entomology"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1901\/120761.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/psyche\/1901\/120761.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,11,22]],"date-time":"2018-11-22T19:50:19Z","timestamp":1542916219000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.hindawi.com\/journals\/psyche\/1901\/120761\/abs\/"}},"issued":{"date-parts":[[1901,1,1]]},"references-count":0,"journal-issue":{"issue":"305","published-print":{"date-parts":[[1901,1,1]]}},"alternative-id":["120761"],"URL":"http:\/\/dx.doi.org\/10.1155\/1901\/120761","ISSN":["0033-2615","1687-7438"],"issn-type":[{"value":"0033-2615","type":"print"},{"value":"1687-7438","type":"electronic"}],"subject":["Insect
-        Science","Ecology, Evolution, Behavior and Systematics"],"published":{"date-parts":[[1901,1,1]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:38Z","timestamp":1648950398268},"reference-count":14,"publisher":"Hindawi
-        Limited","license":[{"start":{"date-parts":[[2014,1,1]],"date-time":"2014-01-01T00:00:00Z","timestamp":1388534400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Case
-        Reports in Otolaryngology"],"published-print":{"date-parts":[[2014]]},"abstract":"<jats:p><jats:italic>Background.<\/jats:italic>Subcutaneous
-        lipomas that occur in the trunk and proximal extremities are commonly dissected
-        by low-invasive method. However, a standard surgical method for lipomas of
-        the epiglottis has been absent. Microscopic laryngeal surgery is appropriate
-        to extirpate small epiglottic lipomas. However, microscopic laryngeal surgery
-        may be insufficient for giant epiglottic lipomas because there is restricted
-        visualization of the operating field of the tumor under the microscope. Furthermore,
-        microscopic surgical instruments are very small to manipulate giant lipomas,
-        and it would be excessive to approach these lipomas via external cervical
-        incisions.<jats:italic>Case Presentation.<\/jats:italic>A 57-year-old female
-        presented with a giant lipoma on the lingual surface of the epiglottis. Following
-        a tracheotomy, microscopic surgery was inadequate to manipulate the epiglottic
-        lipoma. Instead, we performed macroscopic surgery in which the epiglottic
-        lipoma was pulled into the oral cavity with forceps and then separated from
-        the surrounding tissues using the surgeon\u2019s finger to dissect the tumor
-        en bloc.<jats:italic>Conclusion.<\/jats:italic>The low-invasive method of
-        transoral finger dissection enabled the giant lipoma to be extirpated without
-        leaving any remnants or causing excessive epiglottic damage.<\/jats:p>","DOI":"10.1155\/2014\/640704","type":"journal-article","created":{"date-parts":[[2014,10,27]],"date-time":"2014-10-27T17:05:21Z","timestamp":1414429521000},"page":"1-5","source":"Crossref","is-referenced-by-count":0,"title":["A
-        Method of Transoral Finger Dissection for a Giant Epiglottic Lipoma"],"prefix":"10.1155","volume":"2014","author":[{"ORCID":"http:\/\/orcid.org\/0000-0002-2682-4329","authenticated-orcid":true,"given":"Toshizo","family":"Koizumi","sequence":"first","affiliation":[{"name":"Department
-        of Otorhinolaryngology, Saiseikai Gose Hospital, 20 Mimuro, Gose, Nara 639\u20132306,
-        Japan"}]},{"given":"Katsunari","family":"Yane","sequence":"additional","affiliation":[{"name":"Department
-        of Otorhinolaryngology, Kinki University Nara Hospital, Ikoma, Nara, Japan"}]},{"given":"Toshiaki","family":"Yamanaka","sequence":"additional","affiliation":[{"name":"Department
-        of Otorhinolaryngology and Head & Neck Surgery, Nara Medical University, Kashihara,
-        Nara, Japan"}]},{"given":"Tadashi","family":"Kitahara","sequence":"additional","affiliation":[{"name":"Department
-        of Otorhinolaryngology and Head & Neck Surgery, Nara Medical University, Kashihara,
-        Nara, Japan"}]}],"member":"98","reference":[{"key":"1","first-page":"265","volume-title":"Soft
-        tissue neoplasms","year":"1993"},{"issue":"4","key":"2","doi-asserted-by":"crossref","first-page":"353","DOI":"10.1017\/S0022215100130130","volume":"109","year":"1995","journal-title":"The
-        Journal of Laryngology & Otology"},{"issue":"6","key":"3","first-page":"669","volume":"56","year":"2002","journal-title":"Otolaryngologia
-        Polska"},{"key":"4","doi-asserted-by":"publisher","DOI":"10.1016\/0196-0709(94)90065-5"},{"issue":"2","key":"5","doi-asserted-by":"crossref","first-page":"122","DOI":"10.1177\/014556139907800212","volume":"78","year":"1999","journal-title":"Ear,
-        Nose and Throat Journal"},{"issue":"2","key":"6","doi-asserted-by":"crossref","first-page":"174","DOI":"10.1017\/S0022215100126222","volume":"108","year":"1994","journal-title":"The
-        Journal of Laryngology & Otology"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1177\/000348949110000917"},{"issue":"1","key":"8","first-page":"173","volume":"188","year":"1996","journal-title":"Journal
-        of Anatomy"},{"key":"10","doi-asserted-by":"publisher","DOI":"10.1097\/00042728-200501000-00011"},{"key":"11","first-page":"24","volume":"407","year":"2013","journal-title":"FP
-        essentials"},{"issue":"1","key":"12","doi-asserted-by":"crossref","first-page":"34","DOI":"10.1177\/014556131008900110","volume":"89","year":"2010","journal-title":"Ear,
-        Nose and Throat Journal"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1017\/S0022215100069425"},{"key":"13","doi-asserted-by":"publisher","DOI":"10.1159\/000163036"},{"key":"14","doi-asserted-by":"publisher","DOI":"10.1177\/002215540205000807"}],"container-title":["Case
-        Reports in Otolaryngology"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/criot\/2014\/640704.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/criot\/2014\/640704.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/criot\/2014\/640704.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,8,16]],"date-time":"2019-08-16T14:12:15Z","timestamp":1565964735000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/criot\/2014\/640704\/"}},"issued":{"date-parts":[[2014]]},"references-count":14,"alternative-id":["640704","640704"],"URL":"http:\/\/dx.doi.org\/10.1155\/2014\/640704","ISSN":["2090-6765","2090-6773"],"issn-type":[{"value":"2090-6765","type":"print"},{"value":"2090-6773","type":"electronic"}],"subject":["Psychiatry
-        and Mental health","Health Policy","Neuropsychology and Physiological Psychology"],"published":{"date-parts":[[2014]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:25Z","timestamp":1648950325539},"reference-count":37,"publisher":"Hindawi
-        Limited","license":[{"start":{"date-parts":[[2013,1,1]],"date-time":"2013-01-01T00:00:00Z","timestamp":1356998400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"funder":[{"DOI":"10.13039\/501100001809","name":"National
-        Natural Science Foundation of China","doi-asserted-by":"publisher","award":["61203005","HEUCFR1024"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Mathematical
-        Problems in Engineering"],"published-print":{"date-parts":[[2013]]},"abstract":"<jats:p>This
-        paper is concerned with the problem of robust<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-        id=\"M2\"><mml:mrow><mml:msub><mml:mrow><mml:mi>H<\/mml:mi><\/mml:mrow><mml:mrow><mml:mi>\u221e<\/mml:mi><\/mml:mrow><\/mml:msub><\/mml:mrow><\/mml:math>control
-        for a class of uncertain time-delay fuzzy systems with norm-bounded parameter
-        uncertainties. By utilizing the instrumental idea of delay decomposition,
-        the decomposed Lyapunov-Krasovskii functional is introduced to uncertain T-S
-        fuzzy system, and some delay-dependent conditions for the existence of robust
-        controller are formulated in the form of linear matrix inequalities (LMIs).
-        When these LMIs are feasible, a controller is presented. A numerical example
-        is given to demonstrate the effectiveness of the proposed method.<\/jats:p>","DOI":"10.1155\/2013\/345601","type":"journal-article","created":{"date-parts":[[2013,5,8]],"date-time":"2013-05-08T00:36:08Z","timestamp":1367973368000},"page":"1-10","source":"Crossref","is-referenced-by-count":2,"title":["Robust<mml:math
-        xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" id=\"M1\"><mml:mrow><mml:msub><mml:mrow><mml:mi>H<\/mml:mi><\/mml:mrow><mml:mrow><mml:mi>\u221e<\/mml:mi><\/mml:mrow><\/mml:msub><\/mml:mrow><\/mml:math>Control
-        of Uncertain T-S Fuzzy Time-Delay System: A Delay Decomposition Approach"],"prefix":"10.1155","volume":"2013","author":[{"given":"Cheng","family":"Gong","sequence":"first","affiliation":[{"name":"Harbin
-        Engineering University, Harbin 150001, China"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-4045-7035","authenticated-orcid":true,"given":"Chunsong","family":"Han","sequence":"additional","affiliation":[{"name":"Space
-        Control and Inertial Technology Research Center, Harbin Institute of Technology,
-        Harbin 150001, China"}]}],"member":"98","reference":[{"key":"1","series-title":"Applied
-        Mathematical Sciences","first-page":"x+447","volume":"99","year":"1993"},{"key":"2","doi-asserted-by":"publisher","DOI":"10.1109\/9.728880"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.1109\/9.847747"},{"key":"4","doi-asserted-by":"publisher","DOI":"10.1080\/00207170110067116"},{"key":"5","doi-asserted-by":"publisher","DOI":"10.1109\/9.754838"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.1080\/00207179608921866"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1016\/j.automatica.2008.06.024"},{"key":"8","doi-asserted-by":"publisher","DOI":"10.1016\/j.automatica.2009.05.014"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1016\/j.automatica.2012.05.064"},{"key":"10","doi-asserted-by":"publisher","DOI":"10.1016\/S0377-0427(03)00433-3"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1016\/0165-0114(94)00293-G"},{"key":"12","doi-asserted-by":"publisher","DOI":"10.1016\/j.automatica.2005.08.005"},{"key":"13","doi-asserted-by":"publisher","DOI":"10.1080\/00207170802036196"},{"key":"14","doi-asserted-by":"publisher","DOI":"10.1109\/TCSII.2007.910962"},{"key":"15","doi-asserted-by":"publisher","DOI":"10.1109\/21.52551"},{"issue":"1","key":"16","first-page":"116","volume":"15","year":"1985","journal-title":"IEEE
-        Transactions on Systems, Man and Cybernetics B"},{"key":"17","doi-asserted-by":"publisher","DOI":"10.1016\/j.fss.2005.05.041"},{"key":"18","doi-asserted-by":"publisher","DOI":"10.1109\/TFUZZ.2006.883415"},{"issue":"4","key":"19","first-page":"7491","volume":"2","year":"2006","journal-title":"International
-        Journal of Innovative Computing, Information and Control"},{"key":"20","doi-asserted-by":"publisher","DOI":"10.1109\/91.842153"},{"key":"21","doi-asserted-by":"publisher","DOI":"10.1016\/S0165-0114(00)00120-2"},{"key":"22","doi-asserted-by":"publisher","DOI":"10.1109\/TFUZZ.2011.2104363"},{"key":"23","doi-asserted-by":"publisher","DOI":"10.1109\/TSMCB.2008.2012350"},{"key":"24","doi-asserted-by":"publisher","DOI":"10.1109\/TSMCB.2010.2051541"},{"issue":"5","key":"25","first-page":"1429","volume":"5","year":"2009","journal-title":"International
-        Journal of Innovative Computing, Information and Control"},{"issue":"4","key":"26","first-page":"793","volume":"4","year":"2008","journal-title":"International
-        Journal of Innovative Computing, Information and Control"},{"issue":"9","key":"27","first-page":"2665","volume":"5","year":"2009","journal-title":"International
-        Journal of Innovative Computing, Information and Control"},{"key":"28","doi-asserted-by":"publisher","DOI":"10.1109\/TFUZZ.2009.2017378"},{"issue":"1","key":"29","first-page":"347","volume":"8","year":"2012","journal-title":"International
-        Journal of Innovative Computing, Information and Control"},{"issue":"1","key":"30","first-page":"403","volume":"8","year":"2012","journal-title":"International
-        Journal of Innovative Computing, Information and Control"},{"key":"31","doi-asserted-by":"publisher","DOI":"10.1002\/rnc.1399"},{"issue":"1","key":"32","first-page":"339","volume":"9","year":"2013","journal-title":"International
-        Journal of Innovative Computing, Information and Control"},{"key":"34","doi-asserted-by":"publisher","DOI":"10.1016\/0005-1098(86)90045-2"},{"key":"35","doi-asserted-by":"publisher","DOI":"10.1109\/9.618250"},{"issue":"6","key":"36","first-page":"691","volume":"151","year":"2004","journal-title":"IEE
-        Proceedings: Control Theory and Applications"},{"key":"37","doi-asserted-by":"publisher","DOI":"10.1049\/iet-cta.2008.0186"},{"key":"38","doi-asserted-by":"publisher","DOI":"10.1109\/TFUZZ.2004.840112"}],"container-title":["Mathematical
-        Problems in Engineering"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/mpe\/2013\/345601.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/mpe\/2013\/345601.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/mpe\/2013\/345601.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,7,30]],"date-time":"2016-07-30T11:46:25Z","timestamp":1469879185000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/mpe\/2013\/345601\/"}},"issued":{"date-parts":[[2013]]},"references-count":37,"alternative-id":["345601","345601"],"URL":"http:\/\/dx.doi.org\/10.1155\/2013\/345601","ISSN":["1024-123X","1563-5147"],"issn-type":[{"value":"1024-123X","type":"print"},{"value":"1563-5147","type":"electronic"}],"subject":["General
-        Engineering","General Mathematics"],"published":{"date-parts":[[2013]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:43:21Z","timestamp":1648950201252},"reference-count":33,"publisher":"Hindawi
-        Limited","license":[{"start":{"date-parts":[[2019,6,17]],"date-time":"2019-06-17T00:00:00Z","timestamp":1560729600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"funder":[{"DOI":"10.13039\/501100001809","name":"National
-        Natural Science Foundation of China","doi-asserted-by":"publisher","award":["81702365","ZR2017MH090"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["BioMed
-        Research International"],"published-print":{"date-parts":[[2019,6,17]]},"abstract":"<jats:p>Laparoscopic
-        spleen-preserving distal pancreatectomy (LSPDP) can be accomplished with either
-        the preservation or the resection of splenic vessels; the latter is also known
-        as Warshaw technique. Our study is designed to investigate the operation selection
-        strategy when proceeding LSPDP and to evaluate the long-term outcomes of patients
-        undergoing Warshaw surgery. The medical records and follow-up data of patients
-        who underwent LSPDP in Qilu Hospital, Shandong University, were reviewed retrospectively.
-        A total of thirty-five patients were involved in this study, including 17
-        cases of patients who were treated with Warshaw procedure (WT) while the other
-        18 cases had splenic vessels preserved (SVP). Compared with the SVP group,
-        the operative time and intraoperative blood loss in WT group were improved
-        significantly. The incidence of early postoperative splenic infarction was
-        higher in WT group. However, there was no report of splenic abscess or second
-        operation. Follow-up data confirmed that there was no significant difference
-        in spleen phagocytosis and immune function compared with normal healthy population.
-        Our study confirms that LSPDP-Warshaw procedure is a safe and efficient treatment
-        for the benign or low grade malignant tumors in distal pancreas in selected
-        patients. The long-term spleen function is normal after Warshaw procedure.
-        Preoperative assessment and intraoperative exploration are recommended for
-        the selection of operation approaches.<\/jats:p>","DOI":"10.1155\/2019\/4074369","type":"journal-article","created":{"date-parts":[[2019,6,17]],"date-time":"2019-06-17T23:30:56Z","timestamp":1560814256000},"page":"1-10","source":"Crossref","is-referenced-by-count":1,"title":["Warshaw
-        Technique in Laparoscopic Spleen-Preserving Distal Pancreatectomy: Surgical
-        Strategy and Late Outcomes of Splenic Preservation"],"prefix":"10.1155","volume":"2019","author":[{"given":"Lei","family":"Wang","sequence":"first","affiliation":[{"name":"Department
-        of General Surgery, Qilu Hospital, Shandong University, Jinan, Shandong Province,
-        250012, China"}]},{"given":"Dong","family":"Wu","sequence":"additional","affiliation":[{"name":"Department
-        of General Surgery, Qilu Hospital, Shandong University, Jinan, Shandong Province,
-        250012, China"}]},{"given":"Yu-gang","family":"Cheng","sequence":"additional","affiliation":[{"name":"Department
-        of General Surgery, Qilu Hospital, Shandong University, Jinan, Shandong Province,
-        250012, China"}]},{"given":"Jian-wei","family":"Xu","sequence":"additional","affiliation":[{"name":"Department
-        of General Surgery, Qilu Hospital, Shandong University, Jinan, Shandong Province,
-        250012, China"}]},{"given":"Hai-bo","family":"Chu","sequence":"additional","affiliation":[{"name":"Department
-        of General Surgery, 89th Hospital of the People\u2019s Liberation Army, Weifang,
-        Shandong Province, 261000, China"}]},{"given":"Guang-yong","family":"Zhang","sequence":"additional","affiliation":[{"name":"Department
-        of General Surgery, Qilu Hospital, Shandong University, Jinan, Shandong Province,
-        250012, China"}]},{"ORCID":"http:\/\/orcid.org\/0000-0002-0546-9778","authenticated-orcid":true,"given":"San-yuan","family":"Hu","sequence":"additional","affiliation":[{"name":"Department
-        of General Surgery, Qilu Hospital, Shandong University, Jinan, Shandong Province,
-        250012, China"}]},{"ORCID":"http:\/\/orcid.org\/0000-0001-5489-1142","authenticated-orcid":true,"given":"Han-xiang","family":"Zhan","sequence":"additional","affiliation":[{"name":"Department
-        of General Surgery, Qilu Hospital, Shandong University, Jinan, Shandong Province,
-        250012, China"}]}],"member":"98","reference":[{"key":"1","doi-asserted-by":"publisher","DOI":"10.3109\/00365521.2016.1169317"},{"key":"2","doi-asserted-by":"publisher","DOI":"10.1097\/SLA.0000000000002893"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.1016\/j.surg.2014.06.081"},{"key":"4","doi-asserted-by":"publisher","DOI":"10.1007\/s00423-011-0755-1"},{"key":"5","doi-asserted-by":"publisher","DOI":"10.1002\/bjs.10434"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.1245\/s10434-015-4870-z"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1007\/s00464-018-6277-y"},{"key":"8","doi-asserted-by":"publisher","DOI":"10.1001\/archsurg.1988.01400290032004"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1016\/s0039-6060(96)80099-7"},{"key":"10","doi-asserted-by":"publisher","DOI":"10.1007\/s00464-015-4720-x"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1007\/s00464-012-2605-9"},{"key":"12","doi-asserted-by":"publisher","DOI":"10.1089\/lap.2018.0135"},{"key":"13","doi-asserted-by":"publisher","DOI":"10.1016\/j.surge.2015.11.002"},{"key":"14","doi-asserted-by":"publisher","DOI":"10.1016\/j.pan.2014.09.007"},{"key":"18","doi-asserted-by":"publisher","DOI":"10.1001\/jamasurg.2013.768"},{"key":"27","doi-asserted-by":"publisher","DOI":"10.21037\/tgh.2016.03.24"},{"key":"30","doi-asserted-by":"publisher","DOI":"10.1097\/sla.0b013e318212c1e2"},{"key":"32","doi-asserted-by":"publisher","DOI":"10.1007\/s11605-007-0266-0"},{"key":"33","doi-asserted-by":"publisher","DOI":"10.1245\/s10434-010-0983-6"},{"key":"15","doi-asserted-by":"publisher","DOI":"10.1136\/gut.50.5.707"},{"key":"20","doi-asserted-by":"publisher","DOI":"10.1007\/s00423-015-1273-3"},{"key":"16","doi-asserted-by":"publisher","DOI":"10.1007\/s00534-009-0250-z"},{"key":"17","doi-asserted-by":"publisher","DOI":"10.1007\/s00268-014-2671-3"},{"key":"19","doi-asserted-by":"publisher","DOI":"10.1097\/SLE.0000000000000484"},{"issue":"11","key":"21","doi-asserted-by":"crossref","first-page":"476","DOI":"10.1002\/jhbp.569","volume":"25","year":"2018","journal-title":"Journal
-        of Hepato-Biliary-Pancreatic Sciences"},{"key":"22","doi-asserted-by":"publisher","DOI":"10.1111\/ans.14190"},{"key":"23","doi-asserted-by":"publisher","DOI":"10.1080\/08941939.2018.1449918"},{"key":"24","doi-asserted-by":"publisher","DOI":"10.1245\/s10434-010-1332-5"},{"key":"25","doi-asserted-by":"publisher","DOI":"10.1007\/s00534-009-0226-z"},{"key":"26","doi-asserted-by":"publisher","DOI":"10.1007\/s11605-014-2561-x"},{"key":"28","doi-asserted-by":"publisher","DOI":"10.1097\/SLE.0000000000000182"},{"key":"29","doi-asserted-by":"publisher","DOI":"10.3748\/wjg.v18.i38.5329"},{"key":"31","doi-asserted-by":"publisher","DOI":"10.1007\/s00268-006-0425-6"}],"container-title":["BioMed
-        Research International"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/bmri\/2019\/4074369.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/bmri\/2019\/4074369.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/bmri\/2019\/4074369.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,9,23]],"date-time":"2019-09-23T11:46:09Z","timestamp":1569239169000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.hindawi.com\/journals\/bmri\/2019\/4074369\/"}},"issued":{"date-parts":[[2019,6,17]]},"references-count":33,"alternative-id":["4074369","4074369"],"URL":"http:\/\/dx.doi.org\/10.1155\/2019\/4074369","ISSN":["2314-6133","2314-6141"],"issn-type":[{"value":"2314-6133","type":"print"},{"value":"2314-6141","type":"electronic"}],"subject":["General
-        Immunology and Microbiology","General Biochemistry, Genetics and Molecular
-        Biology","General Medicine"],"published":{"date-parts":[[2019,6,17]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:47:10Z","timestamp":1648950430396},"reference-count":0,"publisher":"Hindawi
-        Limited","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":130,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Aquacult
-        Nutr"],"published-print":{"date-parts":[[2015,6]]},"DOI":"10.1111\/anu.12242","type":"journal-article","created":{"date-parts":[[2015,4,24]],"date-time":"2015-04-24T20:21:18Z","timestamp":1429906878000},"page":"i-i","source":"Crossref","is-referenced-by-count":0,"title":["Issue
-        Information"],"prefix":"10.1155","volume":"21","member":"98","published-online":{"date-parts":[[2015,4,24]]},"container-title":["Aquaculture
-        Nutrition"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fanu.12242","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/anu.12242\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T06:01:08Z","timestamp":1643349668000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/anu.12242"}},"issued":{"date-parts":[[2015,4,24]]},"references-count":0,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2015,6]]}},"URL":"http:\/\/dx.doi.org\/10.1111\/anu.12242","ISSN":["1353-5773"],"issn-type":[{"value":"1353-5773","type":"print"}],"subject":["Aquatic
-        Science"],"published":{"date-parts":[[2015,4,24]]}}],"items-per-page":5,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":412910,"items":[{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T19:32:33Z","timestamp":1697484753049},"reference-count":0,"publisher":"Hindawi
+      Limited","issue":"4","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":6452,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Hum.
+      Mutat."],"published-print":{"date-parts":[[1998]]},"DOI":"10.1002\/(sici)1098-1004(1998)11:4<286::aid-humu6>3.3.co;2-2","type":"journal-article","created":{"date-parts":[[2002,8,25]],"date-time":"2002-08-25T19:00:59Z","timestamp":1030302059000},"page":"286-294","source":"Crossref","is-referenced-by-count":1,"title":["Mutation
+      and expression analysis of the endoglin gene in hereditary hemorrhagic telangiectasia
+      reveals null alleles"],"prefix":"10.1155","volume":"11","author":[{"given":"Carol
+      J.","family":"Gallione","sequence":"first","affiliation":[]},{"given":"Daniel
+      J.","family":"Klaus","sequence":"additional","affiliation":[]},{"given":"Eric
+      Y.","family":"Yeh","sequence":"additional","affiliation":[]},{"given":"Timothy
+      T.","family":"Stenzel","sequence":"additional","affiliation":[]},{"given":"Yan","family":"Xue","sequence":"additional","affiliation":[]},{"given":"Kara
+      B.","family":"Anthony","sequence":"additional","affiliation":[]},{"given":"Kimberly
+      A.","family":"McAllister","sequence":"additional","affiliation":[]},{"given":"Melanie
+      A.","family":"Baldwin","sequence":"additional","affiliation":[]},{"given":"Jonathan
+      N.","family":"Berg","sequence":"additional","affiliation":[]},{"given":"Andreas","family":"Lux","sequence":"additional","affiliation":[]},{"given":"Joshua
+      D.","family":"Smith","sequence":"additional","affiliation":[]},{"given":"Calvin
+      P.H.","family":"Vary","sequence":"additional","affiliation":[]},{"given":"William
+      J.","family":"Craigen","sequence":"additional","affiliation":[]},{"given":"C.J.J.","family":"Westermann","sequence":"additional","affiliation":[]},{"given":"Mary
+      L.","family":"Warner","sequence":"additional","affiliation":[]},{"given":"York
+      E.","family":"Miller","sequence":"additional","affiliation":[]},{"given":"C.
+      Eugene","family":"Jackson","sequence":"additional","affiliation":[]},{"given":"Alan
+      E.","family":"Guttmacher","sequence":"additional","affiliation":[]},{"given":"Douglas
+      A.","family":"Marchuk","sequence":"additional","affiliation":[]}],"member":"98","container-title":["Human
+      Mutation"],"link":[{"URL":"http:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2F(SICI)1098-1004(1998)11:4%3C286::AID-HUMU6%3E3.3.CO;2-2","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2022,12,29]],"date-time":"2022-12-29T16:50:03Z","timestamp":1672332603000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/doi.wiley.com\/10.1002\/%28SICI%291098-1004%281998%2911%3A4%3C286%3A%3AAID-HUMU6%3E3.3.CO%3B2-2"}},"issued":{"date-parts":[[1998]]},"references-count":0,"journal-issue":{"issue":"4"},"URL":"http:\/\/dx.doi.org\/10.1002\/(sici)1098-1004(1998)11:4<286::aid-humu6>3.3.co;2-2","ISSN":["1059-7794","1098-1004"],"issn-type":[{"value":"1059-7794","type":"print"},{"value":"1098-1004","type":"electronic"}],"published":{"date-parts":[[1998]]}},{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T18:54:23Z","timestamp":1697482463821},"reference-count":43,"publisher":"Hindawi
+      Limited","issue":"5","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":6574,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Breast
+      Journal"],"published-print":{"date-parts":[[1997,9]]},"DOI":"10.1111\/j.1524-4741.1997.tb00181.x","type":"journal-article","created":{"date-parts":[[2007,2,2]],"date-time":"2007-02-02T21:03:21Z","timestamp":1170450201000},"page":"261-266","source":"Crossref","is-referenced-by-count":5,"title":["Morphologic
+      Risk Factors for Local Recurrence in Patients with Invasive Breast Cancer Treated
+      with Conservative Surgery and Radiation Therapy"],"prefix":"10.1155","volume":"3","author":[{"given":"Stuart
+      J.","family":"Schnitt","sequence":"first","affiliation":[]}],"member":"98","reference":[{"key":"b1_323","doi-asserted-by":"publisher","DOI":"10.1001\/jama.265.3.391"},{"key":"b2_324","first-page":"11","volume":"3","author":"Bedwinek
+      JM","year":"1980","journal-title":"Cancer Clin Trials"},{"key":"b3_325","doi-asserted-by":"publisher","DOI":"10.1097\/00000421-198406000-00006"},{"key":"b4_326","first-page":"434","volume":"13","author":"Recht
+      A","year":"1986","journal-title":"Semin Oncol"},{"key":"b5_327","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/S0167-8140(87)80016-6","volume":"8","author":"Limbergen
+      E","year":"1987","journal-title":"Radiother Oncol"},{"key":"b6_328","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19900501)65:9+<2113::AID-CNCR2820651406>3.0.CO;2-N"},{"key":"b7_329","doi-asserted-by":"crossref","first-page":"33","DOI":"10.2214\/ajr.162.1.8273685","volume":"162","author":"Graham
+      RA","year":"1994","journal-title":"AJR"},{"key":"b8_330","doi-asserted-by":"crossref","first-page":"81","DOI":"10.2214\/ajr.164.1.7998574","volume":"164","author":"Lee
+      CH","year":"1995","journal-title":"AJR"},{"key":"b9_331","doi-asserted-by":"publisher","DOI":"10.1016\/0167-8140(90)90163-Q"},{"key":"b10_332","doi-asserted-by":"publisher","DOI":"10.1016\/0167-8140(92)90264-U"},{"key":"b11_333","doi-asserted-by":"crossref","first-page":"873","DOI":"10.1038\/bjc.1990.195","volume":"61","author":"Jacquemier
+      J","year":"1990","journal-title":"Br J Cancer"},{"key":"b12_334","doi-asserted-by":"crossref","first-page":"890","DOI":"10.1002\/bjs.1800760906","volume":"76","author":"Locker
+      AP","year":"1989","journal-title":"Br J Surg"},{"key":"b13_335","first-page":"13","volume":"105","author":"Lindley
+      R","year":"1989","journal-title":"Surgery"},{"key":"b14_336","doi-asserted-by":"crossref","first-page":"719","DOI":"10.1016\/0360-3016(89)90057-6","volume":"17","author":"Fourquet
+      A","year":"1989","journal-title":"Int J Radiat Oncol Biol Phys"},{"key":"b15_337","first-page":"167","volume-title":"Breast
+      Cancer Treatment. A Comprehensive Guide to Management","author":"Yeh I","year":"1991"},{"key":"b16_338","doi-asserted-by":"publisher","DOI":"10.1007\/BF00348194"},{"key":"b17_339","doi-asserted-by":"crossref","first-page":"1217","DOI":"10.1016\/0360-3016(89)90529-4","volume":"17","author":"Healey
+      EA","year":"1989","journal-title":"Int J Radiat Oncol Biol Phys"},{"key":"b18_340","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19870215)59:4<675::AID-CNCR2820590402>3.0.CO;2-U"},{"key":"b19_341","doi-asserted-by":"crossref","first-page":"113","DOI":"10.1200\/JCO.1990.8.1.113","volume":"8","author":"Holland
+      R","year":"1980","journal-title":"J Clin Oncol"},{"key":"b20_342","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19910601)67:11<2805::AID-CNCR2820671116>3.0.CO;2-D"},{"key":"b21_343","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19860501)57:9<1717::AID-CNCR2820570902>3.0.CO;2-H"},{"key":"b22_344","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19940915)74:6<1746::AID-CNCR2820740617>3.0.CO;2-Y"},{"key":"b23_345","doi-asserted-by":"publisher","DOI":"10.1002\/(SICI)1097-0142(19961101)78:9<1921::AID-CNCR12>3.0.CO;2-#"},{"key":"b24_346","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19950715)76:2<259::AID-CNCR2820760216>3.0.CO;2-2"},{"key":"b25_347","doi-asserted-by":"crossref","first-page":"125","DOI":"10.1093\/ajcp\/98.1.125","volume":"98","author":"Schnitt
+      SJ","year":"1992","journal-title":"Am J Clin Pathol"},{"key":"b26_348","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19950701)76:1<32::AID-CNCR2820760106>3.0.CO;2-R"},{"key":"b27_349","doi-asserted-by":"crossref","first-page":"279","DOI":"10.1016\/0360-3016(91)90772-V","volume":"21","author":"Solin
+      LJ","year":"1991","journal-title":"Int J Radiat Oncol Biol Phys"},{"key":"b28_350","doi-asserted-by":"crossref","first-page":"653","DOI":"10.1200\/JCO.1994.12.4.653","volume":"12","author":"Borger
+      J","year":"1994","journal-title":"J Clin Oncol"},{"key":"b29_351","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19900415)65:8<1867::AID-CNCR2820650833>3.0.CO;2-I"},{"key":"b30_352","doi-asserted-by":"publisher","DOI":"10.1097\/00000658-199307000-00005"},{"key":"b31_353","doi-asserted-by":"crossref","first-page":"952","DOI":"10.1001\/archsurg.1994.01420330066013","volume":"129","author":"Spivack
+      B","year":"1994","journal-title":"Arch Surg"},{"key":"b32_354","doi-asserted-by":"publisher","DOI":"10.1002\/(SICI)1097-0142(19961015)78:8<1722::AID-CNCR12>3.0.CO;2-#"},{"key":"b33_355","doi-asserted-by":"publisher","DOI":"10.1056\/NEJM199511303332203"},{"key":"b34_356","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(96)02133-2"},{"key":"b35_357","doi-asserted-by":"crossref","first-page":"93","DOI":"10.1007\/978-3-642-84593-2_10","volume-title":"Non-Disseminated
+      Breast Cancer-Controversial Issues in Management","author":"Schnitt SJ.","year":"1993"},{"key":"b36_358","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19890415)63:8<1630::AID-CNCR2820630833>3.0.CO;2-U"},{"key":"b37_359","doi-asserted-by":"crossref","first-page":"941","DOI":"10.1016\/0360-3016(92)90898-R","volume":"23","author":"Weiss
+      MC","year":"1992","journal-title":"In J Radiat Oncol Biol Phys"},{"key":"b38_360","doi-asserted-by":"crossref","first-page":"7","DOI":"10.1111\/j.1524-4741.1997.tb00134.x","volume":"3","author":"Haffty
+      BG","year":"1997","journal-title":"The Breast J"},{"key":"b39_361","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19920601)69:11<2789::AID-CNCR2820691126>3.0.CO;2-J"},{"key":"b40_362","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19890715)64:2<448::AID-CNCR2820640218>3.0.CO;2-7"},{"key":"b41_363","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19940315)73:6<1673::AID-CNCR2820730620>3.0.CO;2-B"},{"key":"b42_364","doi-asserted-by":"publisher","DOI":"10.1002\/1097-0142(19940715)74:2<640::AID-CNCR2820740216>3.0.CO;2-V"},{"key":"b43_365","doi-asserted-by":"publisher","DOI":"10.1002\/(SICI)1097-0142(19960101)77:1<113::AID-CNCR19>3.0.CO;2-8"}],"container-title":["The
+      Breast Journal"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1524-4741.1997.tb00181.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1524-4741.1997.tb00181.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T06:23:49Z","timestamp":1643351029000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1524-4741.1997.tb00181.x"}},"issued":{"date-parts":[[1997,9]]},"references-count":43,"journal-issue":{"issue":"5","published-print":{"date-parts":[[1997,9]]}},"alternative-id":["10.1111\/j.1524-4741.1997.tb00181.x"],"URL":"http:\/\/dx.doi.org\/10.1111\/j.1524-4741.1997.tb00181.x","ISSN":["1075-122X","1524-4741"],"issn-type":[{"value":"1075-122X","type":"print"},{"value":"1524-4741","type":"electronic"}],"published":{"date-parts":[[1997,9]]}},{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T14:00:36Z","timestamp":1697464836188},"reference-count":67,"publisher":"Hindawi
+      Limited","issue":"1","license":[{"start":{"date-parts":[[2009,4,14]],"date-time":"2009-04-14T00:00:00Z","timestamp":1239667200000},"content-version":"unspecified","delay-in-days":4821,"URL":"https:\/\/www.cambridge.org\/core\/terms"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Genet.
+      Res."],"published-print":{"date-parts":[[1996,2]]},"abstract":"<jats:title>Summary<\/jats:title><jats:p>Microsatellites
+      closely associated with each member of the<jats:italic>Tcp1O<\/jats:italic>gene
+      family were amplified simultaneously from<jats:italic>t<\/jats:italic>haplotype
+      and wild-type forms of mouse chromosome 17, by PCR. The<jats:italic>t<\/jats:italic>complex
+      responder (<jats:italic>Tcr<\/jats:italic>) locus, which plays a central role
+      in transmission ratio distortion, maps within the<jats:italic>Tcp10<\/jats:italic>cluster
+      on the<jats:italic>t<\/jats:italic>haplotype. Thus the amplified set of microsatellite
+      loci (referred to collectively as<jats:italic>Tcp10ms<\/jats:italic>) provides
+      a direct marker for this central component of the meiotic drive system associated
+      with all naturally occurring<jats:italic>t<\/jats:italic>haplotypes. A unique<jats:italic>Tcp10ms<\/jats:italic>pattern
+      of microsatellite alleles was obtained for a number of independent, laboratory-maintained
+      complete and partial<jats:italic>t<\/jats:italic>haplotypes. Independent<jats:italic>t<\/jats:italic>chromosomes
+      found in wild mice from US populations also had unique patterns, even when they
+      were classified within the same lethal complementation group. Wild and laboratory
+      chromosomes in the<jats:italic>t<\/jats:italic><jats:sup>w5<\/jats:sup>group
+      showed similarly-sized but non-identical Tcp10ms patterns, suggesting they share
+      a recent common ancestor. These chromosomes are likely to have derived from
+      an ancestral chromosome within the founding population of North American house
+      mice. The Tcp10ms pattern was also shown to be useful in field studies for distinguishing
+      among independent<jats:italic>t<\/jats:italic>haplotypes, when more than one
+      is present within a single population.<\/jats:p>","DOI":"10.1017\/s0016672300033425","type":"journal-article","created":{"date-parts":[[2009,9,17]],"date-time":"2009-09-17T07:23:27Z","timestamp":1253172207000},"page":"1-10","source":"Crossref","is-referenced-by-count":8,"title":["Recent
+      evolution of mouse<i>t<\/i>haplotypes at polymorphic microsatellites associated
+      with the<i>t<\/i>complex responder (<i>Tcr<\/i>) locus"],"prefix":"10.1155","volume":"67","author":[{"given":"Kristin
+      G.","family":"Ardlie","sequence":"first","affiliation":[]},{"given":"Lee M.","family":"Silver","sequence":"additional","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,14]]},"reference":[{"key":"S0016672300033425_ref054","doi-asserted-by":"publisher","DOI":"10.1017\/S0016672300026720"},{"key":"S0016672300033425_ref043","doi-asserted-by":"publisher","DOI":"10.1111\/j.1558-5646.1967.tb03403.x"},{"key":"S0016672300033425_ref002","doi-asserted-by":"publisher","DOI":"10.1016\/0888-7543(92)90285-Z"},{"key":"S0016672300033425_ref065","first-page":"388","article-title":"Abundant
+      class of human DNA polymorphisms which can be typed using the polymerase chain
+      reaction","volume":"44","author":"Weber","year":"1989","journal-title":"American
+      Journal of Human Genetics"},{"key":"S0016672300033425_ref061","volume-title":"DNA
+      Fingerprinting: State of the science","author":"Tautz","year":"1993"},{"key":"S0016672300033425_ref059","doi-asserted-by":"publisher","DOI":"10.1016\/0888-7543(91)90467-S"},{"key":"S0016672300033425_ref052","volume-title":"Mouse
+      Genetics: Concepts and Applications","author":"Silver","year":"1995"},{"key":"S0016672300033425_ref051","doi-asserted-by":"publisher","DOI":"10.1016\/0168-9525(93)90090-5"},{"key":"S0016672300033425_ref049","doi-asserted-by":"publisher","DOI":"10.1007\/BF00401359"},{"key":"S0016672300033425_ref067","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(86)90839-1"},{"key":"S0016672300033425_ref047","doi-asserted-by":"publisher","DOI":"10.1016\/0022-2836(87)90235-X"},{"key":"S0016672300033425_ref019","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.86.9.3261"},{"key":"S0016672300033425_ref008","first-page":"922","article-title":"Incidence
+      and origin of \u2018null\u2019 alleles in the (AC)n microsatellite markers","volume":"52","author":"Callen","year":"1993","journal-title":"American
+      Journal of Human Genetics"},{"key":"S0016672300033425_ref035","doi-asserted-by":"publisher","DOI":"10.1093\/nar\/18.14.4123"},{"key":"S0016672300033425_ref014","doi-asserted-by":"crossref","first-page":"175","DOI":"10.1093\/genetics\/131.1.175","article-title":"New
+      molecular markers for the distal end of the t-complex and their relationships
+      to mutations affecting mouse development","volume":"131","author":"Ebersole","year":"1992","journal-title":"Genetics"},{"key":"S0016672300033425_ref011","doi-asserted-by":"publisher","DOI":"10.1007\/BF00352330"},{"key":"S0016672300033425_ref066","doi-asserted-by":"publisher","DOI":"10.1093\/hmg\/2.8.1123"},{"key":"S0016672300033425_ref025","volume-title":"Manipulating
+      the Mouse Embryo: A Laboratory Manual, Second Edition","author":"Hogan","year":"1994"},{"key":"S0016672300033425_ref015","doi-asserted-by":"publisher","DOI":"10.1007\/BF00364807"},{"key":"S0016672300033425_ref003","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(75)90033-1"},{"key":"S0016672300033425_ref037","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(84)90393-3"},{"key":"S0016672300033425_ref057","doi-asserted-by":"publisher","DOI":"10.1006\/geno.1994.1232"},{"key":"S0016672300033425_ref001","doi-asserted-by":"publisher","DOI":"10.1084\/jem.162.1.93"},{"key":"S0016672300033425_ref017","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(85)90309-5"},{"key":"S0016672300033425_ref013","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.43.1.158"},{"key":"S0016672300033425_ref009","doi-asserted-by":"publisher","DOI":"10.1038\/349239a0"},{"key":"S0016672300033425_ref012","doi-asserted-by":"crossref","first-page":"423","DOI":"10.1093\/genetics\/131.2.423","article-title":"A
+      genetic map of the mouse suitable for typing intraspecific crosses","volume":"131","author":"Dietrich","year":"1992","journal-title":"Genetics"},{"key":"S0016672300033425_ref029","doi-asserted-by":"publisher","DOI":"10.1093\/hmg\/2.12.2075"},{"key":"S0016672300033425_ref040","doi-asserted-by":"publisher","DOI":"10.1016\/0888-7543(91)90448-N"},{"key":"S0016672300033425_ref033","doi-asserted-by":"publisher","DOI":"10.2307\/1381340"},{"key":"S0016672300033425_ref020","first-page":"971","article-title":"Phylogenetic
+      analysis of the alpha-globin pseudogene-4 (Hba-ps4) locus in the house mouse
+      species complex reveals a stepwise evolution of t haplotypes","volume":"10","author":"Hammer","year":"1993","journal-title":"Molecular
+      Biology and Evolution"},{"key":"S0016672300033425_ref031","doi-asserted-by":"publisher","DOI":"10.1016\/0735-0651(89)90021-6"},{"key":"S0016672300033425_ref007","doi-asserted-by":"publisher","DOI":"10.1007\/BF00350625"},{"key":"S0016672300033425_ref021","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(86)90468-X"},{"key":"S0016672300033425_ref023","doi-asserted-by":"publisher","DOI":"10.1093\/nar\/17.14.5865"},{"key":"S0016672300033425_ref026","doi-asserted-by":"publisher","DOI":"10.1017\/S0016672300030652"},{"key":"S0016672300033425_ref027","doi-asserted-by":"crossref","first-page":"1103","DOI":"10.1093\/genetics\/126.4.1103","article-title":"Genetic
+      Molecular analysis of the proximal region of the mouse t-complex using new molecular
+      probes and partial t-haplotypes","volume":"126","author":"Howard","year":"1990","journal-title":"Genetics"},{"key":"S0016672300033425_ref050","doi-asserted-by":"publisher","DOI":"10.1146\/annurev.ge.19.120185.001143"},{"key":"S0016672300033425_ref018","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.79.21.6465"},{"key":"S0016672300033425_ref032","doi-asserted-by":"publisher","DOI":"10.1007\/BF00356162"},{"key":"S0016672300033425_ref058","doi-asserted-by":"publisher","DOI":"10.1016\/0888-7543(95)80115-3"},{"key":"S0016672300033425_ref064","doi-asserted-by":"crossref","first-page":"737","DOI":"10.1093\/genetics\/133.3.737","article-title":"Allele
+      frequencies at microsatellite loci: The stepwise mutation model revisited","volume":"133","author":"Valdes","year":"1993","journal-title":"Genetics"},{"key":"S0016672300033425_ref053","first-page":"473","article-title":"Molecular
+      evidence for the rapid propagation of mouse t haplotypes from a single, recent,
+      ancestral chromosome","volume":"4","author":"Silver","year":"1987","journal-title":"Molecular
+      Biology and Evolution"},{"key":"S0016672300033425_ref036","first-page":"483","article-title":"Tracing
+      paternal ancestry in mice, using the Y-linked, sex-determining locus. Sry","volume":"11","author":"Lundrigan","year":"1994","journal-title":"Molecular
+      Biology and Evolution"},{"key":"S0016672300033425_ref038","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(86)90770-1"},{"key":"S0016672300033425_ref055","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(83)90205-2"},{"key":"S0016672300033425_ref041","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.89.15.6851"},{"key":"S0016672300033425_ref010","doi-asserted-by":"publisher","DOI":"10.1007\/BF00350842"},{"key":"S0016672300033425_ref042","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-294X.1995.tb00214.x"},{"key":"S0016672300033425_ref056","doi-asserted-by":"crossref","first-page":"457","DOI":"10.1093\/genetics\/139.1.457","article-title":"A
+      measure of population subdivision based on microsatellite allele frequencies","volume":"139","author":"Slatkin","year":"1995","journal-title":"Genetics"},{"key":"S0016672300033425_ref063","doi-asserted-by":"crossref","first-page":"1093","DOI":"10.1093\/genetics\/126.4.1093","article-title":"Submegabase
+      clusters of unstable tandem repeats unique to the Tla region of mouse t haplotypes","volume":"126","author":"Uehara","year":"1990","journal-title":"Genetics"},{"key":"S0016672300033425_ref062","doi-asserted-by":"publisher","DOI":"10.1093\/nar\/12.10.4127"},{"key":"S0016672300033425_ref045","doi-asserted-by":"publisher","DOI":"10.1016\/0888-7543(90)90235-M"},{"key":"S0016672300033425_ref006","doi-asserted-by":"publisher","DOI":"10.1007\/BF00352329"},{"key":"S0016672300033425_ref005","doi-asserted-by":"crossref","first-page":"957","DOI":"10.1093\/genetics\/124.4.957","article-title":"Molecular
+      cloning and genetic mapping of the t complex responder candidate gene family","volume":"124","author":"Bullard","year":"1990","journal-title":"Genetics"},{"key":"S0016672300033425_ref028","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-294X.1993.tb00102.x"},{"key":"S0016672300033425_ref046","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(88)90010-4"},{"key":"S0016672300033425_ref030","doi-asserted-by":"publisher","DOI":"10.1017\/S0016672300026239"},{"key":"S0016672300033425_ref016","doi-asserted-by":"crossref","first-page":"157","DOI":"10.1093\/genetics\/119.1.157","article-title":"t-specific
+      DNA polymorphisms among wild mice from Israel and Spain","volume":"119","author":"Figueroa","year":"1988","journal-title":"Genetics"},{"key":"S0016672300033425_ref039","doi-asserted-by":"publisher","DOI":"10.1017\/S0016672300023302"},{"key":"S0016672300033425_ref004","doi-asserted-by":"publisher","DOI":"10.1016\/0959-437X(93)90017-J"},{"key":"S0016672300033425_ref034","first-page":"397","article-title":"A
+      hypervariable microsatellite revealed by in vitro amplification of a dinucleotide
+      repeat within the cardiac muscle actin gene","volume":"44","author":"Litt","year":"1989","journal-title":"American
+      Journal of Human Genetics"},{"key":"S0016672300033425_ref060","doi-asserted-by":"crossref","first-page":"333","DOI":"10.1093\/genetics\/136.1.333","article-title":"Possible
+      role of natural selection in the formation of tandem-repetitive noncoding DNA","volume":"136","author":"Stephan","year":"1994","journal-title":"Genetics"},{"key":"S0016672300033425_ref022","doi-asserted-by":"publisher","DOI":"10.1016\/0092-8674(87)90078-X"},{"key":"S0016672300033425_ref024","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.90.2.730"},{"key":"S0016672300033425_ref044","doi-asserted-by":"publisher","DOI":"10.1016\/0888-7543(92)90403-F"},{"key":"S0016672300033425_ref048","doi-asserted-by":"publisher","DOI":"10.1093\/nar\/20.2.211"}],"container-title":["Genetical
+      Research"],"language":"en","link":[{"URL":"https:\/\/www.cambridge.org\/core\/services\/aop-cambridge-core\/content\/view\/S0016672300033425","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,10,10]],"date-time":"2021-10-10T22:41:43Z","timestamp":1633905703000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.cambridge.org\/core\/product\/identifier\/S0016672300033425\/type\/journal_article"}},"issued":{"date-parts":[[1996,2]]},"references-count":67,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1996,2]]}},"alternative-id":["S0016672300033425"],"URL":"http:\/\/dx.doi.org\/10.1017\/s0016672300033425","ISSN":["0016-6723","1469-5073"],"issn-type":[{"value":"0016-6723","type":"print"},{"value":"1469-5073","type":"electronic"}],"published":{"date-parts":[[1996,2]]}},{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T18:28:24Z","timestamp":1697480904464},"reference-count":4,"publisher":"Hindawi
+      Limited","issue":"2","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":7854,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Int.
+      J. Energy Res."],"published-print":{"date-parts":[[1994,3]]},"DOI":"10.1002\/er.4440180220","type":"journal-article","created":{"date-parts":[[2007,7,4]],"date-time":"2007-07-04T13:59:12Z","timestamp":1183557552000},"page":"223-231","source":"Crossref","is-referenced-by-count":16,"title":["New
+      zeolites in fischer-tropsch synthesis"],"prefix":"10.1155","volume":"18","author":[{"given":"H.","family":"Hammer","sequence":"first","affiliation":[]},{"given":"M.","family":"Joisten","sequence":"additional","affiliation":[]},{"given":"S.","family":"L\u00fcngen","sequence":"additional","affiliation":[]},{"given":"D.","family":"Winkler","sequence":"additional","affiliation":[]}],"member":"98","reference":[{"key":"10.1002\/er.4440180220-BIB1","first-page":"440","volume-title":"Chemische
+      Technologie","volume":"3","author":"K\u00f6lbel","year":"1959","unstructured":"(1959).
+      \u2018Die Fischer-Tropsch Synthese\u2019 in Chemische Technologie Vol. 3, and
+      (Eds.), M\u00fcnchen, Carl Hanser Verlag, pp. 440\u2013530."},{"key":"10.1002\/er.4440180220-BIB2","author":"Meier","year":"1987","unstructured":"and
+      (1987). Atlas of Zeolite Structure Types, Butterworth."},{"key":"10.1002\/er.4440180220-BIB3","doi-asserted-by":"crossref","first-page":"259","DOI":"10.1007\/BF02084207","volume":"6","author":"R\u00e4hse","year":"1977","journal-title":"React.
+      Kinet. Catal. Lett."},{"key":"10.1002\/er.4440180220-BIB4","first-page":"a7","volume-title":"Ullmann''s
+      Encyclopedia of Industrial Chemistry","year":"1986","unstructured":"Ullmann''s
+      Encyclopedia of Industrial Chemistry (1986), Weinheim, Verlag VCH, A7, 206."}],"container-title":["International
+      Journal of Energy Research"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fer.4440180220","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/er.4440180220","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,1,6]],"date-time":"2023-01-06T11:54:11Z","timestamp":1673006051000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/er.4440180220"}},"issued":{"date-parts":[[1994,3]]},"references-count":4,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1994,3]]}},"URL":"http:\/\/dx.doi.org\/10.1002\/er.4440180220","ISSN":["0363-907X","1099-114X"],"issn-type":[{"value":"0363-907X","type":"print"},{"value":"1099-114X","type":"electronic"}],"published":{"date-parts":[[1994,3]]}},{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T18:21:41Z","timestamp":1697480501442},"reference-count":8,"publisher":"Hindawi
+      Limited","issue":"2","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":12296,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Int.
+      J. Energy Res."],"published-print":{"date-parts":[[1982]]},"DOI":"10.1002\/er.4440060208","type":"journal-article","created":{"date-parts":[[2007,7,3]],"date-time":"2007-07-03T09:26:48Z","timestamp":1183454808000},"page":"169-173","source":"Crossref","is-referenced-by-count":3,"title":["Spectral
+      selectivity and accelerated life testing of Al-PbS solar selective surfaces"],"prefix":"10.1155","volume":"6","author":[{"given":"R.","family":"Thangaraj","sequence":"first","affiliation":[]},{"given":"S.
+      B.","family":"Gadgil","sequence":"additional","affiliation":[]},{"given":"B.
+      K.","family":"Gupta","sequence":"additional","affiliation":[]},{"given":"J.
+      Vaidhyanathan","family":"Iyer","sequence":"additional","affiliation":[]},{"given":"O.
+      P. A.","family":"Agnihotri","sequence":"additional","affiliation":[]}],"member":"98","reference":[{"key":"10.1002\/er.4440060208-BIB1","doi-asserted-by":"crossref","first-page":"390","DOI":"10.1063\/1.324345","volume":"49","author":"Marchini","year":"1978","journal-title":"J.
+      Appl. Phys."},{"key":"10.1002\/er.4440060208-BIB2","doi-asserted-by":"crossref","first-page":"182","DOI":"10.1116\/1.568750","volume":"12","author":"Mattox","year":"1975","journal-title":"J.
+      Vac. Sci. Technol."},{"key":"10.1002\/er.4440060208-BIB3","doi-asserted-by":"crossref","first-page":"793","DOI":"10.1116\/1.1312754","volume":"11","author":"Mattox","year":"1974","journal-title":"J.
+      Vac. Sci. Technol."},{"key":"10.1002\/er.4440060208-BIB4","doi-asserted-by":"crossref","first-page":"2750","DOI":"10.1364\/AO.13.002750","volume":"13","author":"McMohan","year":"1974","journal-title":"Appl.
+      Optics"},{"key":"10.1002\/er.4440060208-BIB5","doi-asserted-by":"crossref","first-page":"596","DOI":"10.1116\/1.569041","volume":"13","author":"Pettit","year":"1976","journal-title":"J.
+      Vac. Sci. Technol."},{"key":"10.1002\/er.4440060208-BIB6","first-page":"5","volume-title":"Topics
+      in Applied Physics","author":"Seraphin","year":"1978a","unstructured":"(1978a).
+      Topics in Applied Physics, Springer Verlag, Berlin, Germany, 5."},{"key":"10.1002\/er.4440060208-BIB7","first-page":"1","volume-title":"Physics
+      of Thin Films","author":"Seraphin","year":"1978b","unstructured":"(1978b). In
+      (ed.). Physics of Thin Films, Academic Press, New York, 1."},{"key":"10.1002\/er.4440060208-BIB8","author":"Williams","year":"1963","unstructured":"and
+      (1963). J. Engg. for Power, 213."}],"container-title":["International Journal
+      of Energy Research"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fer.4440060208","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1002\/er.4440060208","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,1,6]],"date-time":"2023-01-06T11:54:30Z","timestamp":1673006070000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/er.4440060208"}},"issued":{"date-parts":[[1982]]},"references-count":8,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1982]]}},"URL":"http:\/\/dx.doi.org\/10.1002\/er.4440060208","ISSN":["0363-907X","1099-114X"],"issn-type":[{"value":"0363-907X","type":"print"},{"value":"1099-114X","type":"electronic"}],"published":{"date-parts":[[1982]]}}],"items-per-page":5,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -151,11 +162,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '6344'
+      - '7586'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:51:07 GMT
+      - Sun, 13 Oct 2024 14:07:02 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -172,7 +183,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

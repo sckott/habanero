@@ -1,93 +1,108 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/works?query=ecology&rows=2
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":500477,"items":[{"indexed":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T15:11:58Z","timestamp":1658761918700},"reference-count":0,"publisher":"Oxford
-        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"abstract":"<p>Communication
-        is perhaps the most important, but least formally discussed, aspect of current
-        ecological research and teaching. The last twenty years has demonstrated that
-        this is no longer a viable approach and the rise of climate change research,
-        and its concomitant denial, has brought disagreement and outright refusal
-        to accept facts to the research community and the wider world. This has, in
-        turn, produced a vigorous research community aimed specifically at challenging
-        false ideas and getting accurate science fully embedded into the public sphere.
-        What is less common is an exploration of the parameters surrounding communication
-        and the outputs of discourse. Ecology suffers from exactly the same problems
-        as climate science but without the mass of research exploring the issues and
-        potential solutions. The aim of this article is to propose a model of communication
-        and outline the key factors involved as well as point toward some solutions.
-        As far as can be ascertained, there is no model of ecological communication
-        extant. Some research has put forward some elements but it is far from comprehensive.
-        It became obvious that using a systems model would provide the base needed.
-        Research starts with gathering data (input), working on that data (processing),
-        and producing an end product that people can see\/use (output). At this stage,
-        the model can be left as it is because it follows the usual route of current
-        research (as exemplified by academia, for example). However, it was proposed,
-        early on, to broaden this remit. The original goal was to explore how information
-        can be distorted between production and (often multiple chains of) users and
-        how such distortion might be ameliorated. This started in climate science
-        but has recently moved to ecology. Thus, the final iteration of the proposed
-        model consists of four parts. The first is the creation of a product\u2014usually
-        research project and associated data. This aspect is subject to a range of
-        political and logistical biases thus ensuring that the aim of studying all
-        aspects of ecology is unlikely to be achieved. From here, data go into the
-        process of being prepared for publication. Again, a series of forces control
-        and constrain what is able to be later communicated. This ranges from philosophical
-        and ideological limitations through to political and sociological filters.
-        Cognition plays a key part not only in interpreting data but also introducing
-        bias (deliberate or otherwise) into the results. From there, the move is to
-        publish. Consumers take material from a range of media who may, or may not,
-        have allowed publication. It is also the place where research output gets
-        a wider airing and where further misinterpretation can be found. Normally,
-        this would feed back into initial product stage but here the aim is to create
-        a fourth division, a precursor, that argues that by studying issues in ecological
-        communication, adaptations can be made to make it more effective and less
-        prone to mis\/disinformation. The aim here is to provide a practical element
-        to assist improvement of ecological communication.<\/p>","DOI":"10.1093\/obo\/9780199830060-0238","type":"reference-entry","created":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T14:38:07Z","timestamp":1658759887000},"source":"Crossref","is-referenced-by-count":0,"title":["Communicating
-        Ecology"],"prefix":"10.1093","member":"286","published-online":{"date-parts":[[2022,7,26]]},"container-title":["Ecology"],"original-title":["Communicating
-        Ecology"],"deposited":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T14:38:08Z","timestamp":1658759888000},"score":10.841319,"resource":{"primary":{"URL":"https:\/\/oxfordbibliographies.com\/view\/document\/obo-9780199830060\/obo-9780199830060-0238.xml"}},"issued":{"date-parts":[[2022,7,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/obo\/9780199830060-0238","published":{"date-parts":[[2022,7,26]]}},{"indexed":{"date-parts":[[2022,4,2]],"date-time":"2022-04-02T08:06:04Z","timestamp":1648886764924},"reference-count":0,"publisher":"Oxford
-        University Press","content-domain":{"domain":[],"crossmark-restriction":false},"abstract":"<p>Ecosystem
-        ecology is a branch of study and thinking within the ecological sciences that
-        focuses on the ecosystem\u2014a dynamic network of interactions of organisms
-        and their environment\u2014and the importance of these interactions to the
-        organisms and earth system processes. The discipline represents one of two
-        different epistemological approaches within ecology that emerged in the 20th
-        century: a species-centric community-based approach, and a process-centric
-        ecosystem-based approach. Both approaches study the ways in which species
-        interact among themselves and their environment, share a common language,
-        and share a common set of principles. The community-based approach focuses
-        on how species\u2019 distributions and abundances are shaped by their resource
-        needs and tolerances to environmental conditions, and by their interactions
-        with other species. The ecosystem-based approach represents a significant
-        departure in that it considers both the resource needs and tolerances of species
-        and their interactions with other species, but also factors in the contributions
-        that species make to earth system processes (e.g., biogeochemical cycles,
-        climate). The two perspectives are not as mutually exclusive as the phrasing
-        of the approaches suggests, but rather offer different approaches to how we
-        view the environment and communities and the factors that regulate them. In
-        the 21st century, modern ecosystem science includes the influences that humans
-        have as part of ecological communities and as drivers of change in ecological
-        communities. This linkage within the ecosystem perspective of biology affecting
-        the physical environment, and the recent developments that include the social
-        and human dimensions, has positioned the approach as a critical one in understanding
-        the relationship among global processes and the services that ecosystems provide
-        to human well-being that is embodied in the emerging science of sustainability.<\/p>","DOI":"10.1093\/obo\/9780199830060-0202","type":"reference-entry","created":{"date-parts":[[2018,8,28]],"date-time":"2018-08-28T09:14:08Z","timestamp":1535447648000},"source":"Crossref","is-referenced-by-count":0,"title":["Ecosystem
-        Ecology"],"prefix":"10.1093","author":[{"given":"J.C.","family":"Moore","sequence":"first","affiliation":[]}],"member":"286","published-online":{"date-parts":[[2018,8,28]]},"container-title":["Ecology"],"original-title":["Ecosystem
-        Ecology"],"deposited":{"date-parts":[[2021,9,23]],"date-time":"2021-09-23T19:22:29Z","timestamp":1632424949000},"score":10.737013,"resource":{"primary":{"URL":"https:\/\/oxfordbibliographies.com\/view\/document\/obo-9780199830060\/obo-9780199830060-0202.xml"}},"issued":{"date-parts":[[2018,8,28]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/obo\/9780199830060-0202","published":{"date-parts":[[2018,8,28]]}}],"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":525905,"items":[{"indexed":{"date-parts":[[2024,5,9]],"date-time":"2024-05-09T22:23:56Z","timestamp":1715293436118},"reference-count":0,"publisher":"Oxford
+      University Press","isbn-type":[{"value":"9780199830060","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"abstract":"<p>Communication
+      is perhaps the most important, but least formally discussed, aspect of current
+      ecological research and teaching. The last twenty years has demonstrated that
+      this is no longer a viable approach and the rise of climate change research,
+      and its concomitant denial, has brought disagreement and outright refusal to
+      accept facts to the research community and the wider world. This has, in turn,
+      produced a vigorous research community aimed specifically at challenging false
+      ideas and getting accurate science fully embedded into the public sphere. What
+      is less common is an exploration of the parameters surrounding communication
+      and the outputs of discourse. Ecology suffers from exactly the same problems
+      as climate science but without the mass of research exploring the issues and
+      potential solutions. The aim of this article is to propose a model of communication
+      and outline the key factors involved as well as point toward some solutions.
+      As far as can be ascertained, there is no model of ecological communication
+      extant. Some research has put forward some elements but it is far from comprehensive.
+      It became obvious that using a systems model would provide the base needed.
+      Research starts with gathering data (input), working on that data (processing),
+      and producing an end product that people can see\/use (output). At this stage,
+      the model can be left as it is because it follows the usual route of current
+      research (as exemplified by academia, for example). However, it was proposed,
+      early on, to broaden this remit. The original goal was to explore how information
+      can be distorted between production and (often multiple chains of) users and
+      how such distortion might be ameliorated. This started in climate science but
+      has recently moved to ecology. Thus, the final iteration of the proposed model
+      consists of four parts. The first is the creation of a product\u2014usually
+      research project and associated data. This aspect is subject to a range of political
+      and logistical biases thus ensuring that the aim of studying all aspects of
+      ecology is unlikely to be achieved. From here, data go into the process of being
+      prepared for publication. Again, a series of forces control and constrain what
+      is able to be later communicated. This ranges from philosophical and ideological
+      limitations through to political and sociological filters. Cognition plays a
+      key part not only in interpreting data but also introducing bias (deliberate
+      or otherwise) into the results. From there, the move is to publish. Consumers
+      take material from a range of media who may, or may not, have allowed publication.
+      It is also the place where research output gets a wider airing and where further
+      misinterpretation can be found. Normally, this would feed back into initial
+      product stage but here the aim is to create a fourth division, a precursor,
+      that argues that by studying issues in ecological communication, adaptations
+      can be made to make it more effective and less prone to mis\/disinformation.
+      The aim here is to provide a practical element to assist improvement of ecological
+      communication.<\/p>","DOI":"10.1093\/obo\/9780199830060-0238","type":"reference-entry","created":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T14:38:07Z","timestamp":1658759887000},"source":"Crossref","is-referenced-by-count":0,"title":["Communicating
+      Ecology"],"prefix":"10.1093","member":"286","published-online":{"date-parts":[[2022,7,26]]},"container-title":["Ecology"],"original-title":["Communicating
+      Ecology"],"language":"en","deposited":{"date-parts":[[2022,7,25]],"date-time":"2022-07-25T14:38:08Z","timestamp":1658759888000},"score":11.051357,"resource":{"primary":{"URL":"https:\/\/oxfordbibliographies.com\/view\/document\/obo-9780199830060\/obo-9780199830060-0238.xml"}},"issued":{"date-parts":[[2022,7,26]]},"ISBN":["9780199830060"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/obo\/9780199830060-0238","published":{"date-parts":[[2022,7,26]]}},{"indexed":{"date-parts":[[2024,5,9]],"date-time":"2024-05-09T22:22:12Z","timestamp":1715293332691},"reference-count":0,"publisher":"Oxford
+      University Press","isbn-type":[{"value":"9780199830060","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"abstract":"<p>\u201cOurs
+      is a world of sights and sounds. We live by our eyes and ears and tend generally
+      to be oblivious to the chemical happenings in our surrounds. Such happenings
+      are ubiquitous. All organisms engender chemical signals, and all, in their respective
+      ways, respond to the chemical emissions of others. The result is a vast communicative
+      interplay, fundamental to the fabric of life\u201d (Eisner and Meinwald 1995,
+      p. v), cited under General Overviews). Chemical ecology is the study of ecological
+      interactions between organisms mediated by chemicals produced by those organisms.
+      Chemical interactions between organisms can be analyzed across all organizational
+      levels, reaching from cell-cell interaction and intraspecific and multitrophic-level
+      interactions to whole community interactions and environmental ecological processes.
+      Because of their ubiquity, chemical signals that carry information (semiochemicals)
+      can be categorized by the types of ecological interactions they mediate, such
+      as intraspecific social communication, antagonistic interactions, and mutualism.
+      Accordingly, this article is organized into three core areas, one formed by
+      the chemicals mediating interactions between members of the same species (pheromones),
+      and the others by interspecific interactions involving allomones (where the
+      sender benefits), and synomones (where both sender and receivers benefit). A
+      fourth group of signals, kairomones (where the receiver benefits), can comprise
+      all other signal categories when they are perceived and utilized by a third
+      organism that itself gains a benefit from eavesdropping on communication between
+      others. While primary studies in chemical ecology focused on the identification
+      of compounds mediating interactions between organisms, today\u2019s debates
+      are dominated by micro- and macroevolutionary aspects of chemical interactions.
+      The very rapid growth of the chemical ecology literature over recent decades
+      has been, in part, driven by the growing appreciation of the high economic value
+      of understanding chemical communication, reaching from applications in pest
+      management over the control of disease vectors in agriculture to the use of
+      chemical signals in medicine. Moreover, the field has dramatically profited
+      from innovations in analytical chemistry, making the separation of complex compound
+      mixtures as well as the identification of compound structures efficient and
+      accessible to a broader community of researchers. Recent advances in molecular
+      ecology have aided an even more rapid mechanistic and functional analysis of
+      semiochemicals, leading to a modern consolidation of different research fields.
+      This collection of significant publications focuses on the functional and evolutionary
+      analysis of chemical signals important in mediating ecological interactions.
+      Moreover, attention has been given to publications that provide conceptual frameworks
+      and are among the most highly cited in the respective subdisciplines. They can
+      thus provide a good introduction for the interested reader and allow efficient
+      forward and backward searching for more detailed information.<\/p>","DOI":"10.1093\/obo\/9780199830060-0023","type":"reference-entry","created":{"date-parts":[[2013,3,19]],"date-time":"2013-03-19T18:17:08Z","timestamp":1363717028000},"source":"Crossref","is-referenced-by-count":0,"title":["Chemical
+      Ecology"],"prefix":"10.1093","author":[{"given":"Andr\u00e9","family":"Kessler","sequence":"first","affiliation":[]}],"member":"286","published-online":{"date-parts":[[2012,5,23]]},"container-title":["Ecology"],"original-title":["Chemical
+      Ecology"],"language":"en","deposited":{"date-parts":[[2021,9,23]],"date-time":"2021-09-23T19:29:22Z","timestamp":1632425362000},"score":10.953343,"resource":{"primary":{"URL":"https:\/\/oxfordbibliographies.com\/view\/document\/obo-9780199830060\/obo-9780199830060-0023.xml"}},"issued":{"date-parts":[[2012,5,23]]},"ISBN":["9780199830060"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1093\/obo\/9780199830060-0023","published":{"date-parts":[[2012,5,23]]}}],"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -101,11 +116,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '3018'
+      - '3561'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:50:43 GMT
+      - Sun, 13 Oct 2024 04:36:40 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -122,7 +137,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

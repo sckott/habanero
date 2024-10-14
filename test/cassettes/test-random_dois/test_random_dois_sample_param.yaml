@@ -1,69 +1,182 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/works?sample=3
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2023,11,1]],"date-time":"2023-11-01T07:20:16Z","timestamp":1698823216113},"reference-count":16,"publisher":"American
-        Geophysical Union (AGU)","issue":"14","license":[{"start":{"date-parts":[[2005,7,22]],"date-time":"2005-07-22T00:00:00Z","timestamp":1121990400000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Geophysical
-        Research Letters"],"published-print":{"date-parts":[[2005,7,28]]},"abstract":"<jats:p>Sea
-        surface temperatures have been measured at the islands of Marion (47\u00b0S,
-        38\u00b0E) from 1949 to 1998 and Gough (40\u00b0S, 10\u00b0W) from 1956 to
-        1998. These are some of the longest records of their kind in the sub\u2010Antarctic.
-        Evidence for the passage of the Antarctic circumpolar wave is apparent at
-        each island, presenting one of the most extended documentation of this phenomenon
-        to date. The highest, negative correlation between the anomalies in each island''s
-        sea surface temperature record and the sea ice extent anomalies is observed
-        directly south of each individual island. The sea surface temperature anomalies
-        at Gough lead those at Marion by about one year in average, with mean precession
-        periods of 8.6, 8.9, and 10.4 years in the 60s, 80s and 90s, respectively.
-        These precession periods can be compared to those observed in the sea ice
-        extent anomalies.<\/jats:p>","DOI":"10.1029\/2005gl023361","type":"journal-article","created":{"date-parts":[[2005,7,21]],"date-time":"2005-07-21T20:52:08Z","timestamp":1121979128000},"source":"Crossref","is-referenced-by-count":7,"title":["Evidence
-        for the Antarctic circumpolar wave in the sub\u2010Antarctic during the past
-        50 years"],"prefix":"10.1029","volume":"32","author":[{"given":"J.\u2010L.","family":"M\u00e9lice","sequence":"first","affiliation":[{"name":"Department
-        of Oceanography University of Cape Town  Rondebosch South Africa"},{"name":"Institut
-        de Recherche pour le D\u00e9veloppement, Laboratoire d''Oc\u00e9anographie
-        et du Climat: Exp\u00e9rimentations et Approches Num\u00e9riques (LOCEAN)
-        Universit\u00e9 Pierre et Marie Curie  Paris France"}]},{"given":"J. R. E.","family":"Lutjeharms","sequence":"additional","affiliation":[{"name":"Department
-        of Oceanography University of Cape Town  Rondebosch South Africa"}]},{"given":"H.","family":"Goosse","sequence":"additional","affiliation":[{"name":"Institut
-        d''Astronomie et de G\u00e9ophysique G. Lema\u00eetre Universit\u00e9 Catholique
-        de Louvain  Louvain\u2010la\u2010Neuve Belgium"}]},{"given":"T.","family":"Fichefet","sequence":"additional","affiliation":[{"name":"Institut
-        d''Astronomie et de G\u00e9ophysique G. Lema\u00eetre Universit\u00e9 Catholique
-        de Louvain  Louvain\u2010la\u2010Neuve Belgium"}]},{"given":"C. J. C.","family":"Reason","sequence":"additional","affiliation":[{"name":"Department
-        of Oceanography University of Cape Town  Rondebosch South Africa"}]}],"member":"13","published-online":{"date-parts":[[2005,7,22]]},"reference":[{"key":"e_1_2_5_2_1","doi-asserted-by":"publisher","DOI":"10.1016\/S0924-7963(02)00243-9"},{"key":"e_1_2_5_3_1","doi-asserted-by":"publisher","DOI":"10.1029\/2001GL013804"},{"key":"e_1_2_5_4_1","doi-asserted-by":"publisher","DOI":"10.1029\/2004GL019623"},{"key":"e_1_2_5_5_1","doi-asserted-by":"publisher","DOI":"10.1029\/2000JC000380"},{"key":"e_1_2_5_6_1","doi-asserted-by":"publisher","DOI":"10.1029\/2001JC001148"},{"key":"e_1_2_5_7_1","doi-asserted-by":"publisher","DOI":"10.1029\/2000JC000230"},{"key":"e_1_2_5_8_1","doi-asserted-by":"publisher","DOI":"10.1029\/2000JC000507"},{"key":"e_1_2_5_9_1","first-page":"552","article-title":"The
-        Subtropical Convergence in the South Atlantic Ocean","volume":"89","author":"Lutjeharms
-        J. R. E.","year":"1993","journal-title":"S. Afr. J. Sci."},{"key":"e_1_2_5_10_1","doi-asserted-by":"publisher","DOI":"10.1007\/s00382\u2010002\u20100289\u2010x"},{"key":"e_1_2_5_11_1","first-page":"363","article-title":"Sea\u2010surface
-        temperatures at the sub\u2010Antarctic islands Marion and Gough during the
-        past 50 years","volume":"99","author":"M\u00e9lice J.\u2010L.","year":"2003","journal-title":"S.
-        Afr. J. Sci."},{"key":"e_1_2_5_12_1","volume-title":"Numerical Recipes in
-        Fortran: The Art of Scientific Computing","author":"Press W. H.","year":"1992"},{"key":"e_1_2_5_13_1","doi-asserted-by":"publisher","DOI":"10.1029\/2000JC000542"},{"key":"e_1_2_5_14_1","doi-asserted-by":"publisher","DOI":"10.1175\/1520-0442(2003)016<2509:TACWAC>2.0.CO;2"},{"key":"e_1_2_5_15_1","doi-asserted-by":"publisher","DOI":"10.1029\/1999JC900246"},{"key":"e_1_2_5_16_1","doi-asserted-by":"publisher","DOI":"10.1038\/380699a0"},{"key":"e_1_2_5_17_1","doi-asserted-by":"publisher","DOI":"10.1175\/1520-0442(2000)013<1697:ASIEVA>2.0.CO;2"}],"container-title":["Geophysical
-        Research Letters"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1029%2F2005GL023361","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/agupubs.onlinelibrary.wiley.com\/doi\/pdf\/10.1029\/2005GL023361","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,31]],"date-time":"2023-10-31T10:21:06Z","timestamp":1698747666000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/agupubs.onlinelibrary.wiley.com\/doi\/10.1029\/2005GL023361"}},"issued":{"date-parts":[[2005,7,22]]},"references-count":16,"journal-issue":{"issue":"14","published-print":{"date-parts":[[2005,7,28]]}},"alternative-id":["10.1029\/2005GL023361"],"URL":"http:\/\/dx.doi.org\/10.1029\/2005gl023361","archive":["Portico"],"ISSN":["0094-8276","1944-8007"],"issn-type":[{"value":"0094-8276","type":"print"},{"value":"1944-8007","type":"electronic"}],"subject":["General
-        Earth and Planetary Sciences","Geophysics"],"published":{"date-parts":[[2005,7,22]]}},{"indexed":{"date-parts":[[2024,1,13]],"date-time":"2024-01-13T00:10:55Z","timestamp":1705104655603},"reference-count":0,"publisher":"American
-        Association for the Advancement of Science (AAAS)","issue":"563","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Science"],"published-print":{"date-parts":[[1905,10,13]]},"DOI":"10.1126\/science.22.563.449","type":"journal-article","created":{"date-parts":[[2006,10,4]],"date-time":"2006-10-04T22:29:17Z","timestamp":1160000957000},"page":"449-464","source":"Crossref","is-referenced-by-count":0,"title":["Recent
-        Developments in Agricultural Science"],"prefix":"10.1126","volume":"22","author":[{"given":"A.
-        D.","family":"Hall","sequence":"first","affiliation":[]}],"member":"221","container-title":["Science"],"language":"en","link":[{"URL":"https:\/\/www.science.org\/doi\/pdf\/10.1126\/science.22.563.449","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,1,12]],"date-time":"2024-01-12T08:19:25Z","timestamp":1705047565000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.science.org\/doi\/10.1126\/science.22.563.449"}},"issued":{"date-parts":[[1905,10,13]]},"references-count":0,"journal-issue":{"issue":"563","published-print":{"date-parts":[[1905,10,13]]}},"alternative-id":["10.1126\/science.22.563.449"],"URL":"http:\/\/dx.doi.org\/10.1126\/science.22.563.449","ISSN":["0036-8075","1095-9203"],"issn-type":[{"value":"0036-8075","type":"print"},{"value":"1095-9203","type":"electronic"}],"subject":["Multidisciplinary"],"published":{"date-parts":[[1905,10,13]]}},{"indexed":{"date-parts":[[2022,4,1]],"date-time":"2022-04-01T03:47:03Z","timestamp":1648784823891},"reference-count":7,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1109\/qels.2005.1549158","type":"proceedings-article","created":{"date-parts":[[2005,12,10]],"date-time":"2005-12-10T20:49:09Z","timestamp":1134247749000},"source":"Crossref","is-referenced-by-count":0,"title":["Semi-Discrete
-        Solitons in Arrays of Quadraticall Nonlinear Waveguides"],"prefix":"10.1109","author":[{"given":"N.C.","family":"Panoiu","sequence":"first","affiliation":[]},{"given":"R.M.","family":"Osgood","sequence":"additional","affiliation":[]},{"given":"B.A.","family":"Malomed","sequence":"additional","affiliation":[]}],"member":"263","reference":[{"key":"ref4","doi-asserted-by":"publisher","DOI":"10.1103\/PhysRevE.57.1127"},{"key":"ref3","first-page":"414","article-title":"Mutualfocusing
-        of high-power light beams in media with quadratic nonlinearity","volume":"41","author":"karamzin","year":"1976","journal-title":"Sov
-        Phys JETP"},{"key":"ref6","doi-asserted-by":"publisher","DOI":"10.1038\/nature01936"},{"key":"ref5","doi-asserted-by":"publisher","DOI":"10.1103\/PhysRevLett.93.113902"},{"key":"ref7","article-title":"Extremely
-        thin, single-crystal films of LiNbO 3 fabricated using He + ion-implantation","author":"djukic","year":"0","journal-title":"CLEO
-        2005(submitted)"},{"key":"ref2","first-page":"1138","article-title":"One-dimensional
-        spatialsolitarywavesdueto cascaded second-order nonlinearities in planar waveguides","volume":"e
-        53","author":"schiek","year":"1996","journal-title":"Phys Rev"},{"key":"ref1","doi-asserted-by":"publisher","DOI":"10.1103\/PhysRevLett.74.5036"}],"event":{"name":"2005
-        Quantum Electronics and Laser Science Conference (QELS)","location":"Baltimore,
-        MD, USA","acronym":"QELS-05"},"container-title":["2005 Quantum Electronics
-        and Laser Science Conference"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/10390\/33021\/01549158.pdf?arnumber=1549158","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,15]],"date-time":"2017-03-15T03:49:53Z","timestamp":1489549793000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/ieeexplore.ieee.org\/document\/1549158\/"}},"issued":{"date-parts":[[null]]},"references-count":7,"URL":"http:\/\/dx.doi.org\/10.1109\/qels.2005.1549158"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2024,8,12]],"date-time":"2024-08-12T11:16:56Z","timestamp":1723461416170},"reference-count":34,"publisher":"ASME
+      International","issue":"1","content-domain":{"domain":["asmedigitalcollection.asme.org"],"crossmark-restriction":true},"published-print":{"date-parts":[[2018,1,1]]},"abstract":"<jats:p>Sudden
+      changes of flame shape are an undesired, yet poorly understood feature of swirl
+      combustors used in gas turbines. The present work studies flame shape transition
+      mechanisms of a bistable turbulent swirl flame in a gas turbine model combustor,
+      which alternates intermittently between an attached V-form and a lifted M-form.
+      Time-resolved velocity fields and two-dimensional flame structures were measured
+      simultaneously using high-speed stereo-particle image velocimetry (PIV) and
+      planar laser-induced fluorescence of OH (OH-PLIF) at 10\u2009kHz. The data analysis
+      is performed using two novel methods that are well adapted to the study of transient
+      flame shape transitions: First, the linear stability analysis (LSA) of a time-varying
+      mean flow and second, the recently proposed spectral proper orthogonal decomposition
+      (SPOD). The results show that the transitions are governed by two types of instability,
+      namely a hydrodynamic instability in the form of a precessing vortex core (PVC)
+      and a thermoacoustic (TA) instability. The LSA shows that the V-M transition
+      implies the transient formation of a PVC as the result of a self-amplification
+      process. The V-M transition, on the other hand, is induced by the appearance
+      of a TA instability that suppresses the PVC and thereby modifies the flowfield
+      such that the flame re-attaches at the nozzle. In summary, these results provide
+      novel insights into the complex interactions of TA and hydrodynamic instabilities
+      that govern the shape of turbulent swirl-stabilized flames.<\/jats:p>","DOI":"10.1115\/1.4037724","type":"journal-article","created":{"date-parts":[[2017,8,21]],"date-time":"2017-08-21T13:30:42Z","timestamp":1503322242000},"update-policy":"http:\/\/dx.doi.org\/10.1115\/crossmarkpolicy-asme","source":"Crossref","is-referenced-by-count":38,"title":["Experimental
+      Study of Transient Mechanisms of Bistable Flame Shape Transitions in a Swirl
+      Combustor"],"prefix":"10.1115","volume":"140","author":[{"given":"Michael","family":"St\u00f6hr","sequence":"first","affiliation":[{"name":"German
+      Aerospace Center (DLR), Institute of Combustion Technology, Pfaffenwaldring
+      38-40, Stuttgart 70569, Germany e-mail:"}]},{"given":"Kilian","family":"Oberleithner","sequence":"additional","affiliation":[{"name":"Chair
+      of Fluid Dynamics, Hermann-F\u00f6ttinger-Institut, Technische Universit\u00e4t
+      Berlin, M\u00fcller-Breslau-Str. 8, Berlin 10623, Germany e-mail:"}]},{"given":"Moritz","family":"Sieber","sequence":"additional","affiliation":[{"name":"Chair
+      of Fluid Dynamics, Hermann-F\u00f6ttinger-Institut, Technische Universit\u00e4t
+      Berlin, M\u00fcller-Breslau-Str. 8, Berlin 10623, Germany e-mail:"}]},{"given":"Zhiyao","family":"Yin","sequence":"additional","affiliation":[{"name":"German
+      Aerospace Center (DLR), Institute of Combustion Technology, Pfaffenwaldring
+      38-40, Stuttgart 70569, Germany e-mail:"}]},{"given":"Wolfgang","family":"Meier","sequence":"additional","affiliation":[{"name":"German
+      Aerospace Center (DLR), Institute of Combustion Technology, Pfaffenwaldring
+      38-40, Stuttgart 70569, Germany e-mail:"}]}],"member":"33","published-online":{"date-parts":[[2017,9,19]]},"reference":[{"issue":"1\u20132","key":"2019100612550086400_bib1","doi-asserted-by":"publisher","first-page":"29","DOI":"10.1016\/j.combustflame.2007.05.012","article-title":"An
+      Experimental Investigation of Thermoacoustic Instabilities in a Premixed Swirl-Stabilized
+      Flame","volume":"151","year":"2007","journal-title":"Combust. Flame"},{"issue":"7","key":"2019100612550086400_bib2","doi-asserted-by":"publisher","first-page":"1344","DOI":"10.1016\/j.expthermflusci.2007.11.007","article-title":"Combustion
+      Dynamics Linked to Flame Behaviour in a Partially Premixed Swirled Industrial
+      Burner","volume":"32","year":"2008","journal-title":"Exp. Therm. Fluid Sci."},{"issue":"2","key":"2019100612550086400_bib3","doi-asserted-by":"publisher","first-page":"447","DOI":"10.1016\/j.combustflame.2008.10.027","article-title":"Hysteresis
+      and Transition in Swirling Nonpremixed Flames","volume":"156","year":"2009","journal-title":"Combust.
+      Flame"},{"issue":"3","key":"2019100612550086400_bib4","doi-asserted-by":"publisher","first-page":"3365","DOI":"10.1016\/j.proci.2014.07.012","article-title":"Flame
+      Shape Transition in a Swirl Stabilised Liquid Fueled Burner","volume":"35","year":"2015","journal-title":"Proc.
+      Combust. Inst."},{"issue":"2","key":"2019100612550086400_bib5","doi-asserted-by":"publisher","first-page":"1385","DOI":"10.1016\/j.proci.2014.06.016","article-title":"Impact
+      of Heat Loss and Hydrogen Enrichment on the Shape of Confined Swirling Flames","volume":"35","year":"2015","journal-title":"Proc.
+      Combust. Inst."},{"issue":"8","key":"2019100612550086400_bib6","doi-asserted-by":"publisher","first-page":"3100","DOI":"10.1016\/j.combustflame.2015.02.015","article-title":"Formation
+      and Flame-Induced Suppression of the Precessing Vortex Core in a Swirl Combustor:
+      Experiments and Linear Stability Analysis","volume":"162","year":"2015","journal-title":"Combust.
+      Flame"},{"key":"2019100612550086400_bib7","doi-asserted-by":"publisher","article-title":"Flow-Field
+      and Flame Dynamics of a Gas Turbine Model Combustor During Transition Between
+      Thermo-Acoustically Stable and Unstable States","volume-title":"ASME","year":"2010","DOI":"10.1115\/GT2010-22830"},{"issue":"1","key":"2019100612550086400_bib8","doi-asserted-by":"publisher","first-page":"184","DOI":"10.1016\/j.combustflame.2013.07.022","article-title":"Bistable
+      Swirled Flames and Influence on Flame Transfer Functions","volume":"161","year":"2014","journal-title":"Combust.
+      Flame"},{"key":"2019100612550086400_bib9","doi-asserted-by":"publisher","first-page":"228","DOI":"10.1016\/j.combustflame.2016.03.011","article-title":"Coupled
+      Dynamics of Lift-Off and Precessing Vortex Core Formation in Swirl Flames","volume":"168","year":"2016","journal-title":"Combust.
+      Flame"},{"issue":"4","key":"2019100612550086400_bib10","doi-asserted-by":"publisher","first-page":"489","DOI":"10.1016\/j.combustflame.2004.03.008","article-title":"Compressible
+      Large Eddy Simulation of Turbulent Combustion in Complex Geometry on Unstructured
+      Meshes","volume":"137","year":"2004","journal-title":"Combust. Flame"},{"issue":"1","key":"2019100612550086400_bib11","doi-asserted-by":"publisher","first-page":"1477","DOI":"10.1016\/j.proci.2006.07.225","article-title":"Investigation
+      of a Strongly Swirled Unconfined Premixed Flame Using LES","volume":"31","year":"2007","journal-title":"Proc.
+      Combust. Inst."},{"issue":"7","key":"2019100612550086400_bib12","doi-asserted-by":"publisher","first-page":"071503","DOI":"10.1115\/1.4000141","article-title":"An
+      Experimental and Computational Study of a Swirl-Stabilized Premixed Flame","volume":"132","year":"2010","journal-title":"ASME
+      J. Eng. Gas Turbines Power"},{"issue":"3","key":"2019100612550086400_bib13","doi-asserted-by":"publisher","first-page":"3907","DOI":"10.1016\/j.proci.2016.06.084","article-title":"Interaction
+      Between Velocity Fluctuations and Equivalence Ratio Fluctuations During Thermoacoustic
+      Oscillations in a Partially Premixed Swirl Combustor","volume":"36","year":"2016","journal-title":"Proc.
+      Combust. Inst."},{"issue":"4","key":"2019100612550086400_bib14","doi-asserted-by":"publisher","first-page":"798","DOI":"10.1017\/jfm.2016.103","article-title":"Spectral
+      Proper Orthogonal Decomposition","volume":"792","year":"2016","journal-title":"J.
+      Fluid Mech."},{"key":"2019100612550086400_bib15","volume-title":"Turbulence,
+      Coherent Structures, Dynamical Systems and Symmetry","year":"1998"},{"key":"2019100612550086400_bib16","doi-asserted-by":"publisher","first-page":"383","DOI":"10.1017\/jfm.2011.141","article-title":"Three-Dimensional
+      Coherent Structures in a Swirling Jet Undergoing Vortex Breakdown: Stability
+      Analysis and Empirical Mode Construction","volume":"679","year":"2011","journal-title":"J.
+      Fluid Mech."},{"issue":"2","key":"2019100612550086400_bib17","doi-asserted-by":"publisher","first-page":"021503","DOI":"10.1115\/1.4034261","article-title":"Advanced
+      Identification of Coherent Structures in Swirl-Stabilized Combustors","volume":"139","year":"2016","journal-title":"ASME
+      J. Eng. Gas Turbines Power"},{"key":"2019100612550086400_bib18","doi-asserted-by":"publisher","first-page":"71","DOI":"10.1017\/S0022112005007834","article-title":"Spiral
+      Vortex Breakdown as a Global Mode","volume":"549","year":"2006","journal-title":"J.
+      Fluid Mech."},{"key":"2019100612550086400_bib19","doi-asserted-by":"publisher","article-title":"Absolute
+      and Convective Instability in Gas Turbine Fuel Injectors","volume-title":"ASME","year":"2012","DOI":"10.1115\/GT2012-68253"},{"issue":"3","key":"2019100612550086400_bib20","doi-asserted-by":"publisher","first-page":"620","DOI":"10.1017\/jfm.2016.86","article-title":"Coherent
+      Structures in a Swirl Injector at Re\u2009=\u20094800 by Nonlinear Simulations
+      and Linear Global Modes","volume":"792","year":"2016","journal-title":"J. Fluid
+      Mech."},{"key":"2019100612550086400_bib21","article-title":"Transient Evolution
+      of the Global Mode in Turbulent Swirling Jets: Experiments and Modal Stability
+      Analysis","volume":"65","year":"2015","journal-title":"Eur. J. Mech. B-Fluids"},{"issue":"7","key":"2019100612550086400_bib22","doi-asserted-by":"publisher","first-page":"074103","DOI":"10.1063\/1.4926443","article-title":"A
+      Self-Consistent Model for the Saturation Dynamics of the Vortex Shedding Around
+      the Mean Flow in the Unstable Cylinder Wake","volume":"27","year":"2015","journal-title":"Phys.
+      Fluids"},{"issue":"1","key":"2019100612550086400_bib23","doi-asserted-by":"publisher","first-page":"206","DOI":"10.1016\/0021-9991(89)90071-5","article-title":"Application
+      of Spectral Collocation Techniques to the Stability of Swirling Flows","volume":"81","year":"1989","journal-title":"J.
+      Comput. Phys."},{"key":"2019100612550086400_bib24","doi-asserted-by":"publisher","first-page":"473","DOI":"10.1146\/annurev.fl.22.010190.002353","article-title":"Local
+      and Global Instabilities in Spatially Developing Flows","volume":"22","year":"1990","journal-title":"Annu.
+      Rev. Fluid Mech."},{"issue":"1","key":"2019100612550086400_bib25","doi-asserted-by":"publisher","first-page":"25","DOI":"10.1103\/PhysRevLett.60.25","article-title":"Bifurcations
+      to Local and Global Modes in Spatially Developing Flows","volume":"60","year":"1988","journal-title":"Phys.
+      Rev. Lett."},{"issue":"2","key":"2019100612550086400_bib26","doi-asserted-by":"publisher","first-page":"119","DOI":"10.1002\/sapm1991842119","article-title":"A
+      Frequency Selection Criterion in Spatially Developing Flows","volume":"84","year":"1991","journal-title":"Stud.
+      Appl. Math."},{"key":"2019100612550086400_bib27","doi-asserted-by":"publisher","first-page":"205","DOI":"10.1016\/j.euromechflu.2016.05.004","article-title":"An
+      Assessment of Turbulence Models for Linear Hydrodynamic Stability Analysis of
+      Strongly Swirling Jets","volume":"59","year":"2016","journal-title":"Eur. J.
+      Mech. B\/Fluids"},{"issue":"4","key":"2019100612550086400_bib28","doi-asserted-by":"publisher","first-page":"1153","DOI":"10.1007\/s00348-011-1134-y","article-title":"Phase-Resolved
+      Characterization of Vortex Flame Interaction in a Turbulent Swirl Flame","volume":"51","year":"2011","journal-title":"Exp.
+      Fluids"},{"key":"2019100612550086400_bib29","doi-asserted-by":"publisher","first-page":"234","DOI":"10.1016\/j.combustflame.2016.06.013","article-title":"Suppression
+      and Excitation of the Precessing Vortex Core by Acoustic Velocity Fluctuations:
+      An Experimental and Analytical Study","volume":"172","year":"2016","journal-title":"Combust.
+      Flame"},{"key":"2019100612550086400_bib30","doi-asserted-by":"publisher","first-page":"50","DOI":"10.1016\/j.expthermflusci.2016.11.004","article-title":"Responses
+      of Combustor Surface Temperature to Flame Shape Transitions in a Turbulent bi-Stable
+      Swirl Flame","volume":"82","year":"2016","journal-title":"Exp. Therm. Fluid
+      Sci."},{"issue":"3","key":"2019100612550086400_bib31","doi-asserted-by":"publisher","first-page":"3347","DOI":"10.1016\/j.proci.2014.07.035","article-title":"Key
+      Parameters Governing the Precessing Vortex Core in Reacting Flows: An Experimental
+      and Analytical Study","volume":"35","year":"2015","journal-title":"Proc. Combust.
+      Inst."},{"key":"2019100612550086400_bib32","doi-asserted-by":"publisher","first-page":"335","DOI":"10.1017\/S0022112003006694","article-title":"A
+      Hierarchy of Low-Dimensional Models for the Transient and Post-Transient Cylinder
+      Wake","volume":"497","year":"2003","journal-title":"J. Fluid Mech."},{"issue":"5","key":"2019100612550086400_bib33","doi-asserted-by":"publisher","first-page":"750","DOI":"10.1209\/epl\/i2006-10168-7","article-title":"Linear
+      Analysis of the Cylinder Wake Mean Flow","volume":"75","year":"2006","journal-title":"Europhys.
+      Lett"},{"issue":"8","key":"2019100612550086400_bib34","doi-asserted-by":"publisher","first-page":"2650","DOI":"10.1016\/j.combustflame.2012.04.002","article-title":"Nonlinear
+      Interaction Between a Precessing Vortex Core and Acoustic Oscillations in a
+      Turbulent Swirling Flame","volume":"159","year":"2012","journal-title":"Combust.
+      Flame"}],"container-title":["Journal of Engineering for Gas Turbines and Power"],"language":"en","link":[{"URL":"http:\/\/asmedigitalcollection.asme.org\/gasturbinespower\/article-pdf\/doi\/10.1115\/1.4037724\/6176529\/gtp_140_01_011503.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"http:\/\/asmedigitalcollection.asme.org\/gasturbinespower\/article-pdf\/doi\/10.1115\/1.4037724\/6176529\/gtp_140_01_011503.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,10,6]],"date-time":"2019-10-06T16:55:08Z","timestamp":1570380908000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/asmedigitalcollection.asme.org\/gasturbinespower\/article\/doi\/10.1115\/1.4037724\/374503\/Experimental-Study-of-Transient-Mechanisms-of"}},"issued":{"date-parts":[[2017,9,19]]},"references-count":34,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2018,1,1]]}},"URL":"http:\/\/dx.doi.org\/10.1115\/1.4037724","ISSN":["0742-4795","1528-8919"],"issn-type":[{"value":"0742-4795","type":"print"},{"value":"1528-8919","type":"electronic"}],"published":{"date-parts":[[2017,9,19]]}},{"institution":[{"name":"bioRxiv"}],"indexed":{"date-parts":[[2023,9,17]],"date-time":"2023-09-17T10:25:55Z","timestamp":1694946355558},"posted":{"date-parts":[[2017,11,24]]},"group-title":"Neuroscience","reference-count":49,"publisher":"Cold
+      Spring Harbor Laboratory","content-domain":{"domain":[],"crossmark-restriction":false},"accepted":{"date-parts":[[2017,11,24]]},"abstract":"<jats:title>ABSTRACT<\/jats:title><jats:sec><jats:title>BACKGROUND<\/jats:title><jats:p>Cognitive
+      behavioural therapy (CBT) is an effective evidence based treatment for depression.
+      At present there is no reliable predictor of CBT in depression. Although the
+      key to successful CBT in depression lies in altering maladaptive information
+      processing, no previous imaging study has probed predictors of CBT response
+      using pre-treatment neural encoding of information processing. METHODS: Using
+      functional magnetic resonance imaging we scanned 37 unmedicated depressed subjects
+      before and after completing computerised CBT (cCBT). We model the trial-by-trial
+      appraisal of feedback information during a probabilistic learning task by means
+      of a dynamic learning rate. To discriminate response to cCBT we capitalise on
+      the pre-treatment blood oxygen level dependent (BOLD) activity encoding the
+      dynamic learning rate as a function of feedback congruence and valence. Additionally,
+      we probe between-group differences in the learning style encoded in the model\u2019s
+      parameters.<\/jats:p><\/jats:sec><jats:sec><jats:title>RESULTS<\/jats:title><jats:p>We
+      show BOLD activity in the dorsomedial prefrontal cortex (dmPFC) to be encoding
+      the dynamic learning rate. Crucially, responders exhibit greater BOLD activity
+      in the dmPFC during incongruent negative trials but lower BOLD activity during
+      congruent negative trials than non-responders. Additionally, on between-group
+      comparisons of model\u2019s parameter estimates we show responders take relatively
+      greater account of previous feedback history and make comparatively smaller
+      adjustments to the learning rate as a result of outcome surprisingness.<\/jats:p><\/jats:sec><jats:sec><jats:title>CONCLUSIONS<\/jats:title><jats:p>Our
+      findings provide novel and important insights into the cognitive mechanisms
+      underpinning response to cCBT and lend support to the feasibility and validity
+      of neurocomputational approaches to treatment prediction research in psychiatry.<\/jats:p><\/jats:sec>","DOI":"10.1101\/224410","type":"posted-content","created":{"date-parts":[[2017,11,25]],"date-time":"2017-11-25T06:10:18Z","timestamp":1511590218000},"source":"Crossref","is-referenced-by-count":1,"title":["Dorsomedial
+      prefrontal cortex activity during learning discriminates response to Cognitive
+      Behavioural Therapy in depression"],"prefix":"10.1101","author":[{"given":"Filippo","family":"Queirazza","sequence":"first","affiliation":[]},{"given":"Elsa","family":"Fouragnan","sequence":"additional","affiliation":[]},{"given":"J.
+      Douglas","family":"Steele","sequence":"additional","affiliation":[]},{"given":"Jonathan","family":"Cavanagh","sequence":"additional","affiliation":[]},{"given":"Marios
+      G.","family":"Philiastides","sequence":"additional","affiliation":[]}],"member":"246","reference":[{"key":"2019071809533919000_224410v1.1","unstructured":"Beck
+      AT (1972): Depression; causes and treatment. Philadelphia,: University of Pennsylvania
+      Press."},{"key":"2019071809533919000_224410v1.2","doi-asserted-by":"publisher","DOI":"10.1016\/j.biopsych.2010.01.027"},{"key":"2019071809533919000_224410v1.3","unstructured":"Beck
+      AT (1976): Cognitive therapy and the emotional disorders. New York: International
+      Universities Press."},{"key":"2019071809533919000_224410v1.4","doi-asserted-by":"publisher","DOI":"10.1177\/070674371305800702"},{"key":"2019071809533919000_224410v1.5","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pone.0021274"},{"key":"2019071809533919000_224410v1.6","doi-asserted-by":"publisher","DOI":"10.1001\/archgenpsychiatry.2012.65"},{"key":"2019071809533919000_224410v1.7","doi-asserted-by":"publisher","DOI":"10.1176\/appi.ajp.163.4.735"},{"key":"2019071809533919000_224410v1.8","doi-asserted-by":"crossref","first-page":"821","DOI":"10.1001\/jamapsychiatry.2013.143","article-title":"Toward
+      a neuroimaging treatment selection biomarker for major depressive disorder","volume":"70","year":"2013","journal-title":"JAMA
+      Psychiatry"},{"key":"2019071809533919000_224410v1.9","doi-asserted-by":"crossref","first-page":"827","DOI":"10.1007\/s00127-011-0389-1","article-title":"Factors
+      associated with differential response to online cognitive behavioural therapy","volume":"47","year":"2012","journal-title":"Soc
+      Psychiatry Psychiatr Epidemiol"},{"key":"2019071809533919000_224410v1.10","doi-asserted-by":"publisher","DOI":"10.1016\/j.jad.2007.05.001"},{"key":"2019071809533919000_224410v1.11","doi-asserted-by":"publisher","DOI":"10.1037\/a0018324"},{"key":"2019071809533919000_224410v1.12","doi-asserted-by":"crossref","first-page":"343","DOI":"10.1016\/j.jad.2013.06.020","article-title":"Predictors
+      and moderators of response to internet-delivered Interpersonal Psychotherapy
+      and Cognitive Behavior Therapy for depression","volume":"151","year":"2013","journal-title":"J
+      Affect Disord"},{"key":"2019071809533919000_224410v1.13","doi-asserted-by":"crossref","first-page":"539","DOI":"10.31887\/DCNS.2014.16.4\/mthase","article-title":"Using
+      biomarkers to predict treatment response in major depressive disorder: evidence
+      from past and present studies","volume":"16","year":"2014","journal-title":"Dialogues
+      in clinical neuroscience"},{"key":"2019071809533919000_224410v1.14","doi-asserted-by":"publisher","DOI":"10.1038\/mp.2012.105"},{"key":"2019071809533919000_224410v1.15","doi-asserted-by":"publisher","DOI":"10.1038\/nrn2345"},{"key":"2019071809533919000_224410v1.16","doi-asserted-by":"publisher","DOI":"10.1016\/j.jpsychires.2010.09.007"},{"key":"2019071809533919000_224410v1.17","doi-asserted-by":"publisher","DOI":"10.1016\/j.biopsych.2006.05.048"},{"key":"2019071809533919000_224410v1.18","doi-asserted-by":"publisher","DOI":"10.1001\/archpsyc.61.1.34"},{"key":"2019071809533919000_224410v1.19","doi-asserted-by":"publisher","DOI":"10.1016\/j.biopsych.2013.12.005"},{"key":"2019071809533919000_224410v1.20","doi-asserted-by":"publisher","DOI":"10.3758\/CABN.9.4.343"},{"key":"2019071809533919000_224410v1.21","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pcbi.1001048"},{"key":"2019071809533919000_224410v1.22","doi-asserted-by":"publisher","DOI":"10.1038\/nn1954"},{"key":"2019071809533919000_224410v1.23","doi-asserted-by":"publisher","DOI":"10.1523\/JNEUROSCI.0822-10.2010"},{"key":"2019071809533919000_224410v1.24","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.0905191106"},{"key":"2019071809533919000_224410v1.25","doi-asserted-by":"publisher","DOI":"10.3389\/fnhum.2011.00039"},{"key":"2019071809533919000_224410v1.26","doi-asserted-by":"publisher","DOI":"10.1038\/nn.3961"},{"key":"2019071809533919000_224410v1.27","doi-asserted-by":"publisher","DOI":"10.1017\/S0033291702007018"},{"key":"2019071809533919000_224410v1.28","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuroimage.2008.05.049"},{"key":"2019071809533919000_224410v1.29","doi-asserted-by":"publisher","DOI":"10.1017\/S0033291700030415"},{"key":"2019071809533919000_224410v1.30","doi-asserted-by":"publisher","DOI":"10.1207\/s15327752jpa6703_13"},{"key":"2019071809533919000_224410v1.31","doi-asserted-by":"publisher","DOI":"10.1037\/0033-295X.87.6.532"},{"key":"2019071809533919000_224410v1.32","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pcbi.1002410"},{"key":"2019071809533919000_224410v1.33","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pcbi.1002028"},{"key":"2019071809533919000_224410v1.34","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(03)00073-9"},{"key":"2019071809533919000_224410v1.35","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuroimage.2004.07.051"},{"key":"2019071809533919000_224410v1.36","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(02)91132-8"},{"key":"2019071809533919000_224410v1.37","doi-asserted-by":"publisher","DOI":"10.1016\/S1361-8415(01)00036-6"},{"key":"2019071809533919000_224410v1.38","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuroimage.2009.06.060"},{"key":"2019071809533919000_224410v1.39","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(03)00435-X"},{"key":"2019071809533919000_224410v1.40","doi-asserted-by":"publisher","DOI":"10.1038\/nature04766"},{"key":"2019071809533919000_224410v1.41","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuron.2013.09.009."},{"key":"2019071809533919000_224410v1.42","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuron.2014.10.013."},{"key":"2019071809533919000_224410v1.43","unstructured":"Beck
+      AT (1979): Cognitive therapy of depression. New York: Guilford Press."},{"key":"2019071809533919000_224410v1.44","first-page":"1119","article-title":"Cognitive
+      Therapy of Depression - Theory and Practice","volume":"34","year":"1983","journal-title":"Hosp
+      Community Psych"},{"key":"2019071809533919000_224410v1.45","doi-asserted-by":"publisher","DOI":"10.1038\/nrn1302"},{"key":"2019071809533919000_224410v1.46","doi-asserted-by":"publisher","DOI":"10.1038\/nrn2994"},{"key":"2019071809533919000_224410v1.47","doi-asserted-by":"publisher","DOI":"10.1038\/nn2066"},{"key":"2019071809533919000_224410v1.48","first-page":"40","article-title":"The
+      optimism bias","volume":"177","year":"2011","journal-title":"Time"},{"key":"2019071809533919000_224410v1.49","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(02)00046-0"}],"link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1101\/224410","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,10,22]],"date-time":"2020-10-22T20:37:59Z","timestamp":1603399079000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/biorxiv.org\/lookup\/doi\/10.1101\/224410"}},"issued":{"date-parts":[[2017,11,24]]},"references-count":49,"URL":"http:\/\/dx.doi.org\/10.1101\/224410","published":{"date-parts":[[2017,11,24]]},"subtype":"preprint"},{"indexed":{"date-parts":[[2022,4,4]],"date-time":"2022-04-04T09:20:05Z","timestamp":1649064005613},"reference-count":0,"publisher":"Springer
+      Science and Business Media LLC","issue":"1-3","license":[{"start":{"date-parts":[[1927,4,1]],"date-time":"1927-04-01T00:00:00Z","timestamp":-1349222400000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Deutsche
+      Zeitschrift f. Nervenheilkunde"],"published-print":{"date-parts":[[1927,4]]},"DOI":"10.1007\/bf01667901","type":"journal-article","created":{"date-parts":[[2005,5,9]],"date-time":"2005-05-09T02:25:44Z","timestamp":1115605544000},"page":"22-31","source":"Crossref","is-referenced-by-count":2,"title":["\u00fcber
+      Wesen und Behandlung der Trigeminusneuralgie"],"prefix":"10.1007","volume":"97","author":[{"given":"F.
+      K.","family":"Walter","sequence":"first","affiliation":[]}],"member":"297","container-title":["Deutsche
+      Zeitschrift f\u00fcr Nervenheilkunde"],"language":"de","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01667901.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/BF01667901\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01667901","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,5,7]],"date-time":"2019-05-07T15:35:50Z","timestamp":1557243350000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/BF01667901"}},"issued":{"date-parts":[[1927,4]]},"references-count":0,"journal-issue":{"issue":"1-3","published-print":{"date-parts":[[1927,4]]}},"alternative-id":["BF01667901"],"URL":"http:\/\/dx.doi.org\/10.1007\/bf01667901","ISSN":["0340-5354","1432-1459"],"issn-type":[{"value":"0340-5354","type":"print"},{"value":"1432-1459","type":"electronic"}],"published":{"date-parts":[[1927,4]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -77,11 +190,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '3311'
+      - '7293'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:49:06 GMT
+      - Sun, 13 Oct 2024 04:59:45 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -98,43 +211,150 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/works?sample=5
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":5,"items":[{"indexed":{"date-parts":[[2022,4,4]],"date-time":"2022-04-04T04:00:42Z","timestamp":1649044842760},"reference-count":0,"publisher":"Public
-        Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0152318.g009","type":"component","created":{"date-parts":[[2016,3,29]],"date-time":"2016-03-29T18:14:04Z","timestamp":1459275244000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2018,10,24]],"date-time":"2018-10-24T00:58:51Z","timestamp":1540342731000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0152318.g009"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0152318.g009"},{"indexed":{"date-parts":[[2023,9,13]],"date-time":"2023-09-13T19:06:34Z","timestamp":1694631994873},"reference-count":0,"publisher":"Institute
-        of Electrical and Electronics Engineers (IEEE)","issue":"2","license":[{"start":{"date-parts":[[2008,2,1]],"date-time":"2008-02-01T00:00:00Z","timestamp":1201824000000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/ieeexplore.ieee.org\/Xplorehelp\/downloads\/license-information\/IEEE.html"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IEEE
-        Trans. Antennas Propagat."],"published-print":{"date-parts":[[2008,2]]},"DOI":"10.1109\/tap.2008.917827","type":"journal-article","created":{"date-parts":[[2008,2,11]],"date-time":"2008-02-11T20:22:29Z","timestamp":1202761349000},"page":"C2-C2","source":"Crossref","is-referenced-by-count":0,"title":["IEEE
-        Transactions on Antennas and Propagation publication information"],"prefix":"10.1109","volume":"56","member":"263","container-title":["IEEE
-        Transactions on Antennas and Propagation"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/8\/4447330\/04447339.pdf?arnumber=4447339","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,11,29]],"date-time":"2021-11-29T20:38:05Z","timestamp":1638218285000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/ieeexplore.ieee.org\/document\/4447339\/"}},"issued":{"date-parts":[[2008,2]]},"references-count":0,"journal-issue":{"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.1109\/tap.2008.917827","ISSN":["0018-926X","1558-2221"],"issn-type":[{"value":"0018-926X","type":"print"},{"value":"1558-2221","type":"electronic"}],"subject":["Electrical
-        and Electronic Engineering"],"published":{"date-parts":[[2008,2]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T11:21:39Z","timestamp":1648984899755},"description":"Quality
-        of life - Health - Public and private health expenditure Public and private
-        expenditure on health Public health expenditure Private health expanditure
-        Total health expenditure US dollars per capita, calculated using PPPs, 2003
-        or latest available year","reference-count":0,"publisher":"Organisation for
-        Economic Co-Operation and Development  (OECD)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1787\/834782733231","type":"component","created":{"date-parts":[[2008,9,30]],"date-time":"2008-09-30T11:45:55Z","timestamp":1222775155000},"source":"Crossref","is-referenced-by-count":0,"title":["Public
-        and private expenditure on health"],"prefix":"10.1787","member":"1963","deposited":{"date-parts":[[2021,9,3]],"date-time":"2021-09-03T23:25:55Z","timestamp":1630711555000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/statlinks.oecdcode.org\/302006011P1-10-01-04-G01.XLS"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1787\/834782733231"},{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T17:11:31Z","timestamp":1648660291102},"edition-number":"0","reference-count":1,"publisher":"Routledge","isbn-type":[{"value":"9781410613394","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2006,4,21]]},"DOI":"10.4324\/9781410613394-14","type":"book-chapter","created":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T21:08:06Z","timestamp":1614978486000},"page":"193-218","source":"Crossref","is-referenced-by-count":0,"title":["Parenting
-        Children with Developmental Disabilities"],"prefix":"10.4324","member":"301","reference":[{"key":"ref6","unstructured":"Abidin,
-        R. (1995). Parenting Stress Index: Professional manual (3rd ed.). Odessa,
-        FL: Psychological Assessment Resources."}],"container-title":["Parenting"],"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T21:08:21Z","timestamp":1614978501000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.taylorfrancis.com\/books\/9781135617356\/chapters\/10.4324\/9781410613394-14"}},"issued":{"date-parts":[[2006,4,21]]},"ISBN":["9781410613394"],"references-count":1,"URL":"http:\/\/dx.doi.org\/10.4324\/9781410613394-14","published":{"date-parts":[[2006,4,21]]}},{"indexed":{"date-parts":[[2023,1,14]],"date-time":"2023-01-14T06:16:19Z","timestamp":1673676979996},"reference-count":0,"publisher":"Frontiers
-        Media SA","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.3389\/fmars.2022.1080474.s002","type":"component","created":{"date-parts":[[2023,1,13]],"date-time":"2023-01-13T06:02:14Z","timestamp":1673589734000},"source":"Crossref","is-referenced-by-count":0,"title":["Table_1.xlsx"],"prefix":"10.3389","member":"1965","deposited":{"date-parts":[[2023,1,13]],"date-time":"2023-01-13T06:02:15Z","timestamp":1673589735000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.frontiersin.org\/articles\/10.3389\/fmars.2022.1080474\/supplementary-material\/10.3389\/fmars.2022.1080474.s002"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3389\/fmars.2022.1080474.s002"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":5,"items":[{"indexed":{"date-parts":[[2024,9,8]],"date-time":"2024-09-08T19:35:44Z","timestamp":1725824144416},"reference-count":52,"publisher":"Proceedings
+      of the National Academy of Sciences","issue":"22","content-domain":{"domain":["www.pnas.org"],"crossmark-restriction":true},"short-container-title":["Proc.
+      Natl. Acad. Sci. U.S.A."],"published-print":{"date-parts":[[2010,6]]},"abstract":"<jats:p>\n            Interferon
+      regulatory factor (IRF) 5 is a key transcription factor for the activation of
+      innate immune responses downstream of Toll-like receptor signaling. Based on
+      recent genetic analyses, IRF5 is a focus for its potential involvement in systemic
+      lupus erythematosus (SLE), although how IRF5 contributes to SLE is uncertain.
+      In this study, we demonstrate a requirement for IRF5 in the development of murine
+      SLE via its role in B lymphocytes. We show that antinuclear autoantibodies and
+      Ig glomerular deposits, hallmarks of SLE, are absent in\n            <jats:italic>\n              Irf5\n              <jats:sup>\u2212\/\u2212<\/jats:sup>\n            <\/jats:italic>\n            mice
+      challenged to develop SLE by pristane injection. In particular, production of
+      autoantibodies of the IgG2a subtype, the most prominent isotype in inducing
+      autoimmunity, requires IRF5. Finally, we provide evidence for the critical role
+      of this transcription factor in the secretion of pathogenic antibodies through
+      its direct control of class switch recombination of the \u03b32a locus. By demonstrating
+      a B-cell-intrinsic role, this study places IRF5 in a context that may have implications
+      for understanding the pathogenesis of human SLE.\n          <\/jats:p>","DOI":"10.1073\/pnas.1005599107","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T02:13:23Z","timestamp":1274148803000},"page":"10154-10159","update-policy":"http:\/\/dx.doi.org\/10.1073\/pnas.cm10313","source":"Crossref","is-referenced-by-count":81,"title":["Contribution
+      of IRF5 in B cells to the development of murine SLE-like disease through its
+      transcriptional control of the IgG2a locus"],"prefix":"10.1073","volume":"107","author":[{"given":"David
+      A.","family":"Savitsky","sequence":"first","affiliation":[{"name":"Department
+      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
+      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Core Research for Evolution
+      Science and Technology, Japan Science and Technology Agency, Chiyoda-ku, Tokyo
+      102-0075, Japan;"}]},{"given":"Hideyuki","family":"Yanai","sequence":"additional","affiliation":[{"name":"Department
+      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
+      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Core Research for Evolution
+      Science and Technology, Japan Science and Technology Agency, Chiyoda-ku, Tokyo
+      102-0075, Japan;"}]},{"given":"Tomohiko","family":"Tamura","sequence":"additional","affiliation":[{"name":"Department
+      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
+      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Graduate School of Medicine
+      and Faculty of Medicine, Yokohama City University, Kanazawa-ku, Yokohama, Kanagawa
+      236-0004, Japan; and"}]},{"given":"Tadatsugu","family":"Taniguchi","sequence":"additional","affiliation":[{"name":"Department
+      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
+      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Core Research for Evolution
+      Science and Technology, Japan Science and Technology Agency, Chiyoda-ku, Tokyo
+      102-0075, Japan;"}]},{"given":"Kenya","family":"Honda","sequence":"additional","affiliation":[{"name":"Department
+      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
+      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Precursory Research for
+      Embryonic Science and Technology, Japan Science and Technology Agency, Saitama
+      332-0012, Japan"}]}],"member":"341","published-online":{"date-parts":[[2010,5,17]]},"reference":[{"key":"e_1_3_3_1_2","doi-asserted-by":"publisher","DOI":"10.1016\/S1074-7613(04)00112-8"},{"key":"e_1_3_3_2_2","first-page":"182","article-title":"B
+      cell biology and dysfunction in SLE","volume":"65","author":"Anolik JH","year":"2007","unstructured":"JH
+      Anolik, B cell biology and dysfunction in SLE. Bull NYU Hosp Jt Dis 65, 182\u2013186
+      (2007).","journal-title":"Bull NYU Hosp Jt Dis"},{"key":"e_1_3_3_3_2","doi-asserted-by":"publisher","DOI":"10.1038\/sj.ki.5002663"},{"key":"e_1_3_3_4_2","doi-asserted-by":"publisher","DOI":"10.1177\/096120339200100609"},{"key":"e_1_3_3_5_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00296-002-0174-2"},{"key":"e_1_3_3_6_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-3083.1991.tb01546.x"},{"key":"e_1_3_3_7_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.autrev.2007.12.001"},{"key":"e_1_3_3_8_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.165.1.64"},{"key":"e_1_3_3_9_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.161.1.1"},{"key":"e_1_3_3_10_2","doi-asserted-by":"publisher","DOI":"10.1126\/science.1118948"},{"key":"e_1_3_3_11_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.191.8.1293"},{"key":"e_1_3_3_12_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.immuni.2005.11.010"},{"key":"e_1_3_3_13_2","doi-asserted-by":"publisher","DOI":"10.1038\/ni941"},{"key":"e_1_3_3_14_2","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.082114899"},{"key":"e_1_3_3_15_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.175.11.7419"},{"key":"e_1_3_3_16_2","doi-asserted-by":"publisher","DOI":"10.1172\/JCI30065"},{"key":"e_1_3_3_17_2","doi-asserted-by":"publisher","DOI":"10.1074\/jbc.M101216200"},{"key":"e_1_3_3_18_2","doi-asserted-by":"publisher","DOI":"10.1038\/nature03308"},{"key":"e_1_3_3_19_2","doi-asserted-by":"publisher","DOI":"10.1086\/428480"},{"key":"e_1_3_3_20_2","doi-asserted-by":"publisher","DOI":"10.1038\/ng1782"},{"key":"e_1_3_3_21_2","doi-asserted-by":"publisher","DOI":"10.1038\/sj.gene.6364409"},{"key":"e_1_3_3_22_2","doi-asserted-by":"publisher","DOI":"10.1080\/08916930701510905"},{"key":"e_1_3_3_23_2","doi-asserted-by":"publisher","DOI":"10.1038\/nri1957"},{"key":"e_1_3_3_24_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.immuni.2006.07.013"},{"key":"e_1_3_3_25_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.it.2006.12.006"},{"key":"e_1_3_3_26_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.0901748"},{"key":"e_1_3_3_27_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.178.11.6876"},{"key":"e_1_3_3_28_2","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.0911193107"},{"key":"e_1_3_3_29_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.180.6.2341"},{"key":"e_1_3_3_30_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.20050338"},{"key":"e_1_3_3_31_2","doi-asserted-by":"publisher","DOI":"10.1126\/science.1124978"},{"key":"e_1_3_3_32_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.20052438"},{"key":"e_1_3_3_33_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.coi.2009.05.003"},{"key":"e_1_3_3_34_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.immuni.2006.07.009"},{"key":"e_1_3_3_35_2","doi-asserted-by":"publisher","DOI":"10.1074\/jbc.M704755200"},{"key":"e_1_3_3_36_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.189.10.1639"},{"key":"e_1_3_3_37_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.188.5.985"},{"key":"e_1_3_3_38_2","doi-asserted-by":"publisher","DOI":"10.1093\/emboj\/18.18.5028"},{"key":"e_1_3_3_39_2","doi-asserted-by":"publisher","DOI":"10.1038\/ni1103-1041a"},{"key":"e_1_3_3_40_2","doi-asserted-by":"publisher","DOI":"10.1186\/ar2319"},{"key":"e_1_3_3_41_2","doi-asserted-by":"publisher","DOI":"10.1038\/ni1054"},{"key":"e_1_3_3_42_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.20050630"},{"key":"e_1_3_3_43_2","doi-asserted-by":"publisher","DOI":"10.1126\/science.1135299"},{"key":"e_1_3_3_44_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1600-065X.2008.00731.x"},{"key":"e_1_3_3_45_2","doi-asserted-by":"publisher","DOI":"10.1074\/jbc.274.20.14246"},{"key":"e_1_3_3_46_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.smim.2006.12.005"},{"key":"e_1_3_3_47_2","doi-asserted-by":"publisher","DOI":"10.1016\/S1074-7613(04)00108-6"},{"key":"e_1_3_3_48_2","doi-asserted-by":"publisher","DOI":"10.1002\/1529-0131(200001)43:1<76::AID-ANR10>3.0.CO;2-I"},{"key":"e_1_3_3_49_2","doi-asserted-by":"publisher","DOI":"10.1007\/s10067-009-1224-x"},{"key":"e_1_3_3_50_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.164.2.944"},{"key":"e_1_3_3_51_2","doi-asserted-by":"publisher","DOI":"10.1038\/nprot.2006.393"},{"key":"e_1_3_3_52_2","doi-asserted-by":"publisher","DOI":"10.1093\/intimm\/5.8.885"}],"container-title":["Proceedings
+      of the National Academy of Sciences"],"language":"en","link":[{"URL":"https:\/\/pnas.org\/doi\/pdf\/10.1073\/pnas.1005599107","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,12]],"date-time":"2022-04-12T22:26:26Z","timestamp":1649802386000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/pnas.org\/doi\/full\/10.1073\/pnas.1005599107"}},"issued":{"date-parts":[[2010,5,17]]},"references-count":52,"journal-issue":{"issue":"22","published-print":{"date-parts":[[2010,6]]}},"alternative-id":["10.1073\/pnas.1005599107"],"URL":"http:\/\/dx.doi.org\/10.1073\/pnas.1005599107","relation":{"has-review":[{"id-type":"doi","id":"10.3410\/f.3988956.3748054","asserted-by":"object"}]},"ISSN":["0027-8424","1091-6490"],"issn-type":[{"value":"0027-8424","type":"print"},{"value":"1091-6490","type":"electronic"}],"published":{"date-parts":[[2010,5,17]]},"assertion":[{"value":"2010-05-17","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+      History"}}]},{"indexed":{"date-parts":[[2022,4,2]],"date-time":"2022-04-02T02:55:26Z","timestamp":1648868126436},"reference-count":0,"publisher":"Early
+      Theatre","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.12745\/et.12.2.820","type":"journal-article","created":{"date-parts":[[2014,12,24]],"date-time":"2014-12-24T23:07:40Z","timestamp":1419462460000},"source":"Crossref","is-referenced-by-count":1,"title":["''The
+      house is hers, the soul is but a tenant'': Material Self-Fashioning and Revenge
+      Tragedy"],"prefix":"10.12745","volume":"12","author":[{"given":"Sheetal","family":"Lodhia","sequence":"first","affiliation":[]}],"member":"5047","published-online":{"date-parts":[[2009,1,1]]},"container-title":["Early
+      Theatre"],"deposited":{"date-parts":[[2014,12,24]],"date-time":"2014-12-24T23:09:16Z","timestamp":1419462556000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/earlytheatre.org\/earlytheatre\/article\/view\/820"}},"issued":{"date-parts":[[2009,1,1]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2014,9,3]]}},"URL":"http:\/\/dx.doi.org\/10.12745\/et.12.2.820","ISSN":["1206-9078"],"issn-type":[{"value":"1206-9078","type":"print"}],"published":{"date-parts":[[2009,1,1]]}},{"indexed":{"date-parts":[[2024,9,6]],"date-time":"2024-09-06T15:07:25Z","timestamp":1725635245922},"publisher-location":"Dordrecht","reference-count":0,"publisher":"Springer
+      Netherlands","isbn-type":[{"type":"print","value":"9789401065115"},{"type":"electronic","value":"9789400900493"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1997]]},"DOI":"10.1007\/978-94-009-0049-3_1","type":"book-chapter","created":{"date-parts":[[2011,11,18]],"date-time":"2011-11-18T05:48:12Z","timestamp":1321595292000},"page":"1-12","source":"Crossref","is-referenced-by-count":0,"title":["Hermeneutics
+      and the natural sciences: Introduction"],"prefix":"10.1007","author":[{"given":"Robert
+      P.","family":"Crease","sequence":"first","affiliation":[]}],"member":"297","container-title":["Hermeneutics
+      and the Natural Sciences"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-94-009-0049-3_1.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,11,25]],"date-time":"2020-11-25T14:59:52Z","timestamp":1606316392000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-94-009-0049-3_1"}},"issued":{"date-parts":[[1997]]},"ISBN":["9789401065115","9789400900493"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-94-009-0049-3_1","published":{"date-parts":[[1997]]}},{"indexed":{"date-parts":[[2024,9,15]],"date-time":"2024-09-15T17:08:00Z","timestamp":1726420080465},"reference-count":62,"publisher":"SAGE
+      Publications","issue":"2","license":[{"start":{"date-parts":[[1998,6,1]],"date-time":"1998-06-01T00:00:00Z","timestamp":896659200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/journals.sagepub.com\/page\/policies\/text-and-data-mining-license"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psychology
+      of Women Quarterly"],"published-print":{"date-parts":[[1998,6]]},"abstract":"<jats:p>
+      Self-in-relation theory (Jordan, Kaplan, Miller, Stiver, &amp; Surrey, 1991)
+      proposes that a lack of mutuality in women''s relationships predisposes them
+      to depression and inhibits their ability to acknowledge and address effectively
+      emotions such as anger. Research linking anger to depression has not examined
+      women''s emotional expressivity within the context of their partner relationships.
+      Women''s depression as a function of both their level of anger suppression or
+      inappropriate anger expression and the level of perceived relationship mutuality
+      was studied in a sample of 223 college women, aged 18 to 54. Lower levels of
+      mutuality and higher levels of suppressed or inappropriately expressed anger
+      were associated with depression. Moreover, mutuality made contributions to predicting
+      depression beyond that explained by anger. Lower mutuality was also related
+      to higher anger suppression, but unrelated to inappropriately expressed anger.
+      <\/jats:p>","DOI":"10.1111\/j.1471-6402.1998.tb00152.x","type":"journal-article","created":{"date-parts":[[2006,7,29]],"date-time":"2006-07-29T18:55:04Z","timestamp":1154199304000},"page":"223-238","source":"Crossref","is-referenced-by-count":46,"title":["Depression
+      in Women as Related to Anger and Mutuality in Relationships"],"prefix":"10.1177","volume":"22","author":[{"given":"Elizabeth
+      D.","family":"Sperberg","sequence":"first","affiliation":[{"name":"Texas Woman''s
+      University"}]},{"given":"Sally D.","family":"Stabb","sequence":"additional","affiliation":[{"name":"Texas
+      Woman''s University"}]}],"member":"179","published-online":{"date-parts":[[1998,6,1]]},"reference":[{"key":"bibr1-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1177\/0146167292181015"},{"first-page":"381","volume-title":"Women
+      in families: A framework for family therapy","year":"1989","author":"Anderson
+      C. M.","key":"bibr2-j.1471-6402.1998.tb00152.x"},{"first-page":"163","volume-title":"Women
+      in sexist society: Studies in power and powerlessness","year":"1971","author":"Bart
+      P.","key":"bibr3-j.1471-6402.1998.tb00152.x"},{"volume-title":"Beck Depression
+      Inventory: Suggestions for use","year":"1978","author":"Beck A. T.","key":"bibr4-j.1471-6402.1998.tb00152.x"},{"key":"bibr5-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1016\/0272-7358(88)90050-5"},{"key":"bibr6-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1001\/archpsyc.1961.01710120031004"},{"volume-title":"Women
+      and anger: Cultural prohibitions and the feminine ideal","year":"1988","author":"Bernardez
+      T.","key":"bibr7-j.1471-6402.1998.tb00152.x"},{"key":"bibr8-j.1471-6402.1998.tb00152.x","first-page":"215","volume":"33","author":"Bernardez-Bonesatti
+      T.","year":"1978","journal-title":"Journal of the American Medical Women''s
+      Association"},{"key":"bibr9-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.2466\/pr0.1987.61.1.87"},{"volume":"3","volume-title":"Attachment
+      and loss","year":"1980","author":"Bowlby J.","key":"bibr10-j.1471-6402.1998.tb00152.x"},{"key":"bibr11-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0033-2909.107.1.3"},{"key":"bibr12-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1525\/9780520924086"},{"key":"bibr13-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-006X.54.4.454"},{"key":"bibr14-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.2466\/pr0.1985.57.3.1015"},{"volume-title":"Women
+      and anger","year":"1993","author":"Denham G.","key":"bibr15-j.1471-6402.1998.tb00152.x"},{"first-page":"209","volume-title":"Women
+      and anger","year":"1993","author":"Droppleman P. G.","key":"bibr16-j.1471-6402.1998.tb00152.x"},{"key":"bibr17-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1002\/j.1556-6676.1993.tb02662.x"},{"key":"bibr18-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1521\/jscp.1990.9.2.243"},{"key":"bibr19-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1176\/ajp.145.1.41"},{"volume-title":"Women,
+      anger and depression: Strategies for self-empowerment","year":"1992","author":"Frankel
+      L. P.","key":"bibr20-j.1471-6402.1998.tb00152.x"},{"volume-title":"Research
+      project report: The mutual psychological development questionnaire","year":"1990","author":"Genero
+      N. P.","key":"bibr21-j.1471-6402.1998.tb00152.x"},{"key":"bibr22-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0893-3200.6.1.36"},{"volume-title":"In
+      a different voice","year":"1982","author":"Gilligan C.","key":"bibr23-j.1471-6402.1998.tb00152.x"},{"first-page":"6","volume-title":"Making
+      connections: The relational world of adolescent girls at Emma Willard School","year":"1990","author":"Gilligan
+      C.","key":"bibr24-j.1471-6402.1998.tb00152.x"},{"key":"bibr25-j.1471-6402.1998.tb00152.x","first-page":"31","volume":"8","author":"Gottman
+      J. M.","year":"1986","journal-title":"Behavioral Assessment"},{"first-page":"161","volume-title":"Women
+      and depression: A lifespan perspective","year":"1987","author":"Jack D.","key":"bibr26-j.1471-6402.1998.tb00152.x"},{"volume-title":"Silencing
+      the self: Women and depression","year":"1991","author":"Jack D. C.","key":"bibr27-j.1471-6402.1998.tb00152.x"},{"key":"bibr28-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1111\/j.1471-6402.1992.tb00242.x"},{"key":"bibr29-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1016\/1054-139X(92)90007-X"},{"first-page":"4","volume-title":"Work
+      in Progress, No. 49","year":"1991","author":"Jordan J. W.","key":"bibr30-j.1471-6402.1998.tb00152.x"},{"first-page":"81","volume-title":"Women''s
+      growth in connection: Writings from the Stone Center","year":"1991","author":"Jordan
+      J. W.","key":"bibr31-j.1471-6402.1998.tb00152.x"},{"key":"bibr32-j.1471-6402.1998.tb00152.x","first-page":"56","volume":"7","author":"Jordan
+      J. V.","year":"1992","journal-title":"Contemporary Psychotherapy Review"},{"volume-title":"Women''s
+      growth in connection: Writings from the Stone Center","year":"1991","author":"Jordan
+      J. V.","key":"bibr33-j.1471-6402.1998.tb00152.x"},{"key":"bibr34-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-3514.58.5.864"},{"key":"bibr35-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-0167.40.2.232"},{"key":"bibr36-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1111\/j.1471-6402.1991.tb00474.x"},{"volume-title":"The
+      dance of anger","year":"1985","author":"Lerner H. G.","key":"bibr37-j.1471-6402.1998.tb00152.x"},{"first-page":"200","volume-title":"Women
+      and depression: A lifespan perspective","year":"1987","author":"Lerner H. G.","key":"bibr38-j.1471-6402.1998.tb00152.x"},{"key":"bibr39-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1080\/00224545.1989.9712057"},{"key":"bibr40-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0882-7974.7.4.551"},{"key":"bibr41-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1300\/J035v06n03_11"},{"key":"bibr42-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1002\/1097-4679(199011)46:6<896::AID-JCLP2270460632>3.0.CO;2-R"},{"key":"bibr43-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/10074-000"},{"volume-title":"Toward
+      a new psychology of women","year":"1976","author":"Miller J. B.","key":"bibr44-j.1471-6402.1998.tb00152.x"},{"volume-title":"Connections,
+      disconnections and violations","year":"1988","author":"Miller J. B.","key":"bibr45-j.1471-6402.1998.tb00152.x"},{"first-page":"181","volume-title":"Women''s
+      growth in connection: Writings from the Stone Center","year":"1991","author":"Miller
+      J. B.","key":"bibr46-j.1471-6402.1998.tb00152.x"},{"volume-title":"Revisioning
+      women''s anger: The personal and the global","year":"1990","author":"Miller
+      J. B.","key":"bibr47-j.1471-6402.1998.tb00152.x"},{"key":"bibr48-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1080\/09515079208254480"},{"key":"bibr49-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0033-2909.101.2.259"},{"key":"bibr50-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1097\/00005053-198911000-00002"},{"key":"bibr51-j.1471-6402.1998.tb00152.x","unstructured":"Sperberg
+      E. (1992). The effects of anger suppression and sex role orientation on depression
+      in women college students. Unpublished manuscript, Texas Woman''s University,
+      Denton, Texas."},{"volume-title":"State-Trait Anger Expression Inventory research
+      edition professional manual","year":"1988","author":"Spielberger C. D.","key":"bibr52-j.1471-6402.1998.tb00152.x"},{"volume-title":"From
+      depression to sadness in women''s psychotherapy","year":"1988","author":"Stiver
+      I.","key":"bibr53-j.1471-6402.1998.tb00152.x"},{"key":"bibr54-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-006X.54.3.328"},{"edition":"2","volume-title":"Anger:
+      The misunderstood emotion","year":"1989","author":"Tavris C.","key":"bibr55-j.1471-6402.1998.tb00152.x"},{"key":"bibr56-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1002\/nur.4770120609"},{"volume-title":"Women
+      and anger","year":"1993","author":"Thomas S. P.","key":"bibr57-j.1471-6402.1998.tb00152.x"},{"key":"bibr58-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1080\/07399339309516035"},{"key":"bibr59-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.2105\/AJPH.77.4.445"},{"key":"bibr60-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1016\/0166-2236(85)90145-6"},{"first-page":"3","volume-title":"Women
+      and depression: A lifespan perspective","year":"1987","author":"Weissman M.
+      M.","key":"bibr61-j.1471-6402.1998.tb00152.x"},{"volume-title":"Clinical handbook
+      of depression","year":"1984","author":"Wetzel J. W.","key":"bibr62-j.1471-6402.1998.tb00152.x"}],"container-title":["Psychology
+      of Women Quarterly"],"language":"en","link":[{"URL":"https:\/\/journals.sagepub.com\/doi\/pdf\/10.1111\/j.1471-6402.1998.tb00152.x","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/journals.sagepub.com\/doi\/pdf\/10.1111\/j.1471-6402.1998.tb00152.x","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,9,5]],"date-time":"2024-09-05T01:36:39Z","timestamp":1725500199000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/journals.sagepub.com\/doi\/10.1111\/j.1471-6402.1998.tb00152.x"}},"issued":{"date-parts":[[1998,6]]},"references-count":62,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1998,6]]}},"alternative-id":["10.1111\/j.1471-6402.1998.tb00152.x"],"URL":"http:\/\/dx.doi.org\/10.1111\/j.1471-6402.1998.tb00152.x","ISSN":["0361-6843","1471-6402"],"issn-type":[{"type":"print","value":"0361-6843"},{"type":"electronic","value":"1471-6402"}],"published":{"date-parts":[[1998,6]]}},{"indexed":{"date-parts":[[2023,8,19]],"date-time":"2023-08-19T23:18:19Z","timestamp":1692487099080},"reference-count":0,"publisher":"Lynne
+      Rienner Publishers","isbn-type":[{"value":"9781685856472","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1993,12,31]]},"DOI":"10.1515\/9781685856472-011","type":"book-chapter","created":{"date-parts":[[2023,4,25]],"date-time":"2023-04-25T11:34:18Z","timestamp":1682422458000},"page":"97-130","source":"Crossref","is-referenced-by-count":1,"title":["10
+      Sarmiento and Rosas: Argentines in Search of a Nation, 1810-1852"],"prefix":"10.1515","author":[{"given":"Joseph
+      T.","family":"Criscenti","sequence":"first","affiliation":[]}],"member":"374","container-title":["Sarmiento
+      and His Argentina"],"link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9781685856472-011\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9781685856472-011\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,4,25]],"date-time":"2023-04-25T11:34:42Z","timestamp":1682422482000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9781685856472-011\/html"}},"issued":{"date-parts":[[1993,12,31]]},"ISBN":["9781685856472"],"references-count":0,"alternative-id":["10.1515\/9781685856472-011","10.1515\/9781685856472"],"URL":"http:\/\/dx.doi.org\/10.1515\/9781685856472-011","published":{"date-parts":[[1993,12,31]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -148,11 +368,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '1983'
+      - '6607'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:49:06 GMT
+      - Sun, 13 Oct 2024 04:59:49 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -169,7 +389,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

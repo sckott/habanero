@@ -1,23 +1,24 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/prefixes/10.1371
   response:
-    body:
-      string: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/340","name":"Public
-        Library of Science (PLoS)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1371"}}'
+    content: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/340","name":"Public
+      Library of Science (PLoS)","prefix":"http:\/\/id.crossref.org\/prefix\/10.1371"}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -31,7 +32,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Tue, 16 Jan 2024 06:48:43 GMT
+      - Sun, 13 Oct 2024 04:59:07 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -50,27 +51,27 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/prefixes/10.9999
   response:
-    body:
-      string: Resource not found.
+    content: Resource not found.
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -84,7 +85,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Tue, 16 Jan 2024 06:48:43 GMT
+      - Sun, 13 Oct 2024 04:59:07 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -103,7 +104,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 404
-      message: Not Found
+    http_version: HTTP/1.1
+    status_code: 404
 version: 1

@@ -1,33 +1,34 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/types?query=journal
   response:
-    body:
-      string: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":30,"items":[{"id":"book-section","label":"Book
-        Section"},{"id":"monograph","label":"Monograph"},{"id":"report-component","label":"Report
-        Component"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
-        Review"},{"id":"book-track","label":"Book Track"},{"id":"journal-article","label":"Journal
-        Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
-        Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
-        Entry"},{"id":"proceedings-article","label":"Proceedings Article"},{"id":"journal","label":"Journal"},{"id":"component","label":"Component"},{"id":"book-chapter","label":"Book
-        Chapter"},{"id":"proceedings-series","label":"Proceedings Series"},{"id":"report-series","label":"Report
-        Series"},{"id":"proceedings","label":"Proceedings"},{"id":"database","label":"Database"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
-        Book"},{"id":"posted-content","label":"Posted Content"},{"id":"journal-issue","label":"Journal
-        Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"grant","label":"Grant"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
-        Series"},{"id":"edited-book","label":"Edited Book"}]}}'
+    content: '{"status":"ok","message-type":"type-list","message-version":"1.0.0","message":{"total-results":30,"items":[{"id":"book-section","label":"Book
+      Section"},{"id":"monograph","label":"Monograph"},{"id":"report-component","label":"Report
+      Component"},{"id":"report","label":"Report"},{"id":"peer-review","label":"Peer
+      Review"},{"id":"book-track","label":"Book Track"},{"id":"journal-article","label":"Journal
+      Article"},{"id":"book-part","label":"Part"},{"id":"other","label":"Other"},{"id":"book","label":"Book"},{"id":"journal-volume","label":"Journal
+      Volume"},{"id":"book-set","label":"Book Set"},{"id":"reference-entry","label":"Reference
+      Entry"},{"id":"proceedings-article","label":"Proceedings Article"},{"id":"journal","label":"Journal"},{"id":"component","label":"Component"},{"id":"book-chapter","label":"Book
+      Chapter"},{"id":"proceedings-series","label":"Proceedings Series"},{"id":"report-series","label":"Report
+      Series"},{"id":"proceedings","label":"Proceedings"},{"id":"database","label":"Database"},{"id":"standard","label":"Standard"},{"id":"reference-book","label":"Reference
+      Book"},{"id":"posted-content","label":"Posted Content"},{"id":"journal-issue","label":"Journal
+      Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"grant","label":"Grant"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
+      Series"},{"id":"edited-book","label":"Edited Book"}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -45,7 +46,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Tue, 16 Jan 2024 06:49:53 GMT
+      - Sun, 13 Oct 2024 04:56:18 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -62,7 +63,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

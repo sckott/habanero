@@ -1,26 +1,27 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/funders?rows=2
   response:
-    body:
-      string: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":43539,"items":[{"id":"100000001","location":"United
-        States","name":"National Science Foundation","alt-names":["U.S. National Science
-        Foundation","USA NSF","NSF","US NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","nsf","us","nsf"]},{"id":"100000003","location":"United
-        States","name":"Boeing","alt-names":["Boeing Co.","The Boeing Company","Boeing
-        Co","Boeing Company"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000003","replaces":[],"replaced-by":[],"tokens":["boeing","boeing","co","the","boeing","company","boeing","co","boeing","company"]}]}}'
+    content: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":44099,"items":[{"id":"100000001","location":"United
+      States","name":"National Science Foundation","alt-names":["U.S. National Science
+      Foundation","USA NSF","NSF","US NSF"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","nsf","us","nsf"]},{"id":"100000003","location":"United
+      States","name":"Boeing","alt-names":["Boeing Co.","The Boeing Company","Boeing
+      Co","Boeing Company"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000003","replaces":[],"replaced-by":[],"tokens":["boeing","boeing","co","the","boeing","company","boeing","co","boeing","company"]}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -34,7 +35,7 @@ interactions:
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 00:23:46 GMT
+      - Sun, 13 Oct 2024 04:57:42 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -51,7 +52,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

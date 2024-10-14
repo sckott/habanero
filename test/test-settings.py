@@ -19,8 +19,8 @@ def test_ua_string():
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
-        assert "foo bar" in heads["User-Agent"][0]
-        assert "foo bar" in heads["X-USER-AGENT"][0]
+        assert "foo bar" in heads["user-agent"][0]
+        assert "foo bar" in heads["x-user-agent"][0]
     except FileNotFoundError:
         pytest.skip(f"{vcr_path} not found")
 
@@ -37,8 +37,8 @@ def test_no_ua_string():
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
-        assert "foo bar" not in heads["User-Agent"][0]
-        assert "foo bar" not in heads["X-USER-AGENT"][0]
+        assert "foo bar" not in heads["user-agent"][0]
+        assert "foo bar" not in heads["x-user-agent"][0]
     except FileNotFoundError:
         pytest.skip(f"{vcr_noua_path} not found")
 
@@ -55,8 +55,8 @@ def test_ua_string_members():
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
-        assert "foo bar" in heads["User-Agent"][0]
-        assert "foo bar" in heads["X-USER-AGENT"][0]
+        assert "foo bar" in heads["user-agent"][0]
+        assert "foo bar" in heads["x-user-agent"][0]
     except FileNotFoundError:
         pytest.skip(f"{vcr_path_members} not found")
 
@@ -73,8 +73,8 @@ def test_ua_string_prefixes():
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
-        assert "foo bar" in heads["User-Agent"][0]
-        assert "foo bar" in heads["X-USER-AGENT"][0]
+        assert "foo bar" in heads["user-agent"][0]
+        assert "foo bar" in heads["x-user-agent"][0]
     except FileNotFoundError:
         pytest.skip(f"{vcr_path_prefixes} not found")
 
@@ -93,8 +93,8 @@ def test_ua_string_registration_agency():
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
-        assert "foo bar" in heads["User-Agent"][0]
-        assert "foo bar" in heads["X-USER-AGENT"][0]
+        assert "foo bar" in heads["user-agent"][0]
+        assert "foo bar" in heads["x-user-agent"][0]
     except FileNotFoundError:
         pytest.skip(f"{vcr_path_registration_agency} not found")
 

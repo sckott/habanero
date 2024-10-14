@@ -1,28 +1,28 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/types/journal/works?rows=2
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":60172,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:41Z","timestamp":1648950281976},"reference-count":0,"publisher":"Allied
-        Academies","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.35841\/immunology-case-reports","type":"journal","created":{"date-parts":[[2019,8,16]],"date-time":"2019-08-16T10:13:55Z","timestamp":1565950435000},"source":"Crossref","is-referenced-by-count":0,"title":["Immunology
-        Case Reports"],"prefix":"10.35841","member":"21504","deposited":{"date-parts":[[2019,8,16]],"date-time":"2019-08-16T10:13:55Z","timestamp":1565950435000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.alliedacademies.org\/immunology-case-reports\/"}},"short-title":["immunology-case-reports."],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.35841\/immunology-case-reports"},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:47:14Z","timestamp":1648950434482},"reference-count":0,"publisher":"JUNI
-        KHYAT","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.46528\/jk","type":"journal","created":{"date-parts":[[2020,6,5]],"date-time":"2020-06-05T19:06:33Z","timestamp":1591383993000},"source":"Crossref","is-referenced-by-count":0,"title":["Juni
-        Khyat Journal"],"prefix":"10.46528","member":"25841","deposited":{"date-parts":[[2020,6,5]],"date-time":"2020-06-05T19:06:33Z","timestamp":1591383993000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.junikhyat.com\/"}},"short-title":["Juni
-        Khyat"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.46528\/jk","ISSN":["2278-4632"],"issn-type":[{"value":"2278-4632","type":"print"}],"subject":["Psychiatry
-        and Mental health","Neuropsychology and Physiological Psychology"]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":66938,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:44:41Z","timestamp":1648950281976},"reference-count":0,"publisher":"Allied
+      Academies","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.35841\/immunology-case-reports","type":"journal","created":{"date-parts":[[2019,8,16]],"date-time":"2019-08-16T10:13:55Z","timestamp":1565950435000},"source":"Crossref","is-referenced-by-count":0,"title":["Immunology
+      Case Reports"],"prefix":"10.35841","member":"21504","deposited":{"date-parts":[[2019,8,16]],"date-time":"2019-08-16T10:13:55Z","timestamp":1565950435000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.alliedacademies.org\/immunology-case-reports\/"}},"short-title":["immunology-case-reports."],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.35841\/immunology-case-reports"},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:47:14Z","timestamp":1648950434482},"reference-count":0,"publisher":"JUNI
+      KHYAT","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.46528\/jk","type":"journal","created":{"date-parts":[[2020,6,5]],"date-time":"2020-06-05T19:06:33Z","timestamp":1591383993000},"source":"Crossref","is-referenced-by-count":0,"title":["Juni
+      Khyat Journal"],"prefix":"10.46528","member":"25841","deposited":{"date-parts":[[2020,6,5]],"date-time":"2020-06-05T19:06:33Z","timestamp":1591383993000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.junikhyat.com\/"}},"short-title":["Juni
+      Khyat"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.46528\/jk","ISSN":["2278-4632"],"issn-type":[{"value":"2278-4632","type":"print"}]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -36,11 +36,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '740'
+      - '686'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:49:54 GMT
+      - Sun, 13 Oct 2024 04:56:19 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -57,7 +57,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

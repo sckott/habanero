@@ -65,7 +65,7 @@ class Crossref:
 
     Using `ua_string` you can set an additional string that will be added
     to the UA string we send in every request, which looks like:
-    `python-requests/2.22.0 habanero/0.7.0`. We send that string with
+    `python-httpx/0.27.2 habanero/1.2.6`. We send that string with
     the headers: `User-Agent` and `X-USER-AGENT`. Turn on verbose curl
     output to see the request headers sent. To unset the `ua_string`
     you set, just initialize a new Crossref class.
@@ -96,15 +96,13 @@ class Crossref:
 
     **Verbose curl output**::
 
-        import requests
         import logging
-        import http.client
-        http.client.HTTPConnection.debuglevel = 1
-        logging.basicConfig()
-        logging.getLogger().setLevel(logging.DEBUG)
-        requests_log = logging.getLogger("requests.packages.urllib3")
-        requests_log.setLevel(logging.DEBUG)
-        requests_log.propagate = True
+        import httpx
+        logging.basicConfig(
+            format="%(levelname)s [%(asctime)s] %(name)s - %(message)s",
+            datefmt="%Y-%m-%d %H:%M:%S",
+            level=logging.DEBUG
+        )
 
         from habanero import Crossref
         cr = Crossref()

@@ -1,127 +1,132 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - application/x-bibtex
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - doi.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: http://doi.org/10.1126/science.169.3946.635
   response:
-    body:
-      string: ''
+    content: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301
+      Moved Permanently</h1></center>\r\n<hr><center>cloudflare</center>\r\n</body>\r\n</html>\r\n"
     headers:
       CF-RAY:
-      - 8462377ef93f093f-SEA
+      - 8d1aca021f279b79-SEA
       Cache-Control:
       - max-age=3600
       Connection:
       - keep-alive
+      Content-Length:
+      - '167'
+      Content-Type:
+      - text/html
       Date:
-      - Tue, 16 Jan 2024 00:24:39 GMT
+      - Sat, 12 Oct 2024 23:14:56 GMT
       Expires:
-      - Tue, 16 Jan 2024 01:24:39 GMT
+      - Sun, 13 Oct 2024 00:14:56 GMT
       Location:
       - https://doi.org/10.1126/science.169.3946.635
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=265wS%2F2PXjV55S41di%2FPIK%2FNcxbENkIOQz1bu7bWp1QHbgdRAZMUN3pk%2Ba6LufndpicI9Bkz0TC4e%2Fmu6jllWZIKY%2BwTjgAuA0Aqc74mJ1jHahVFclFhGOM%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=hrZlUobYf1YgIQPzbzfiXl3PB6wqhhILVBLUj2GEdPmGVlMHlyYwOdcy7MWEwQh8q2fhqe5Va4p37fnd3HqkRAfGx3phYgMFLHISVgQ7wwwcnRT10UE79CU%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
-      Transfer-Encoding:
-      - chunked
       Vary:
       - Accept-Encoding
       alt-svc:
       - h3=":443"; ma=86400
-    status:
-      code: 301
-      message: Moved Permanently
+    http_version: HTTP/1.1
+    status_code: 301
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - application/x-bibtex
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - doi.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
-    body:
-      string: '<html><head><title>Handle Redirect</title></head>
+    content: '<html><head><title>Handle Redirect</title></head>
 
-        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+      <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 846237800ee2eb83-SEA
+      - 8d1aca027b4c7693-SEA
       Connection:
       - keep-alive
-      Content-Length:
-      - '233'
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Tue, 16 Jan 2024 00:24:39 GMT
+      - Sat, 12 Oct 2024 23:14:57 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7ob1x%2BEyGqntskfqtPZVuc49V%2Fxy%2FXcLUX27rMNqI492LQyJgEskE3agPidIZUM1pLtC7jVmZedrtahW6Zg2BUHQ82Kc6SuQ6yKwRZYB8JQirqyorST5500%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=4Iori3QGeANoiL68E4ukAFYs06Ph92sV%2FBPABKqOSuKh26KHPIq04FM2XimOuwoanVhZPKsB8o3%2FJ9gh51GE8uJfivguFdsqF4qfWJodwzsFoN9e2Z1YV4Q%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
       alt-svc:
       - h3=":443"; ma=86400
       expires:
-      - Tue, 16 Jan 2024 00:41:50 GMT
+      - Sat, 12 Oct 2024 23:50:14 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
       - interest-cohort=(),browsing-topics=()
       vary:
+      - Origin
       - Accept
-    status:
-      code: 302
-      message: Found
+    http_version: HTTP/1.1
+    status_code: 302
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - application/x-bibtex
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
-    body:
-      string: " @article{Frank_1970, title={The Structure of Ordinary Water: New data
-        and interpretations are yielding new insights into this fascinating substance.},
-        volume={169}, ISSN={1095-9203}, url={http://dx.doi.org/10.1126/science.169.3946.635},
-        DOI={10.1126/science.169.3946.635}, number={3946}, journal={Science}, publisher={American
-        Association for the Advancement of Science (AAAS)}, author={Frank, Henry S.},
-        year={1970}, month=aug, pages={635\u2013641} }\n"
+    content: " @article{Frank_1970, title={The Structure of Ordinary Water: New data
+      and interpretations are yielding new insights into this fascinating substance.},
+      volume={169}, ISSN={1095-9203}, url={http://dx.doi.org/10.1126/science.169.3946.635},
+      DOI={10.1126/science.169.3946.635}, number={3946}, journal={Science}, publisher={American
+      Association for the Advancement of Science (AAAS)}, author={Frank, Henry S.},
+      year={1970}, month=aug, pages={635\u2013641} }\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -135,10 +140,7 @@ interactions:
       content-type:
       - application/x-bibtex
       date:
-      - Tue, 16 Jan 2024 00:24:40 GMT
-      link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://www.science.org/doi/pdf/10.1126/science.169.3946.635>;
-        version="vor"; rel="item"
+      - Sat, 12 Oct 2024 23:14:57 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -157,7 +159,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

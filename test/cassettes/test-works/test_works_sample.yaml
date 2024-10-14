@@ -1,110 +1,29 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/works?sample=2
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T22:26:02Z","timestamp":1648679162823},"reference-count":0,"publisher":"State
-        University of Malang (UM)","issue":"2","license":[{"start":{"date-parts":[[2021,12,19]],"date-time":"2021-12-19T00:00:00Z","timestamp":1639872000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Knowl.
-        Eng. Data Sci."],"abstract":"<jats:p>Down syndrome, also known as trisomy
-        genetic condition, is a genetic disorder that affects many people. Williams
-        syndrome is a hereditary disorder that can affect anyone at birth. It marks
-        medical and cognitive issues, such as cardiovascular illness, developmental
-        delays, and learning impairments. This is accompanied by exceptional verbal
-        abilities, a gregarious attitude, and a passion for music. Down syndrome and
-        William Syndrome are both genetic illnesses. However, it can be distinguished
-        from the arrangement of chromosome 21. Down syndrome and William syndrome
-        can also be identified by recognizing faces, or facial characteristics, such
-        as observing particular facial features. Therefore, this research develops
-        Convolutional Neural Network (CNN) architectures to recognize Down syndrome
-        and William syndrome using a facial recognition approach. A total of 480 facial
-        photos were used in the study, with 390 images used for training data and
-        90 images used for testing data. The identification class is divided into
-        three categories, Down syndrome, William syndrome, and normal. There are 160
-        photos in each patient class. This research presents two CNN architectures
-        using a grayscale image of 256\u00d7256 pixels. The first CNN architecture
-        comprises 12 layers, while the second comprises 15 layers. The average accuracy
-        results with 12 layers were 91% by attempting to train and test six times.
-        With 15 layers, the average accuracy value is 89%. In comparison, the first
-        architecture has the highest accuracy value.<\/jats:p>","DOI":"10.17977\/um018v4i22021p138-144","type":"journal-article","created":{"date-parts":[[2022,3,15]],"date-time":"2022-03-15T06:43:17Z","timestamp":1647326597000},"page":"138","source":"Crossref","is-referenced-by-count":0,"title":["CNN
-        based Face Recognition System for Patients with  Down and William Syndrome"],"prefix":"10.17977","volume":"4","author":[{"given":"Endang","family":"Setyati","sequence":"first","affiliation":[]},{"given":"Suharyono","family":"Az","sequence":"additional","affiliation":[]},{"given":"Subroto
-        Prasetya","family":"Hudiono","sequence":"additional","affiliation":[]},{"given":"Fachrul","family":"Kurniawan","sequence":"additional","affiliation":[]}],"member":"7463","published-online":{"date-parts":[[2021,12,19]]},"container-title":["Knowledge
-        Engineering and Data Science"],"link":[{"URL":"http:\/\/journal2.um.ac.id\/index.php\/keds\/article\/viewFile\/24971\/9416","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/journal2.um.ac.id\/index.php\/keds\/article\/viewFile\/24971\/9416","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,3,15]],"date-time":"2022-03-15T06:43:29Z","timestamp":1647326609000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/journal2.um.ac.id\/index.php\/keds\/article\/view\/24971"}},"issued":{"date-parts":[[2021,12,19]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2021,12,15]]}},"URL":"http:\/\/dx.doi.org\/10.17977\/um018v4i22021p138-144","ISSN":["2597-4637","2597-4602"],"issn-type":[{"value":"2597-4637","type":"electronic"},{"value":"2597-4602","type":"print"}],"subject":["General
-        Earth and Planetary Sciences","General Environmental Science"],"published":{"date-parts":[[2021,12,19]]}},{"indexed":{"date-parts":[[2023,4,15]],"date-time":"2023-04-15T12:11:31Z","timestamp":1681560691251},"reference-count":25,"publisher":"Ovid
-        Technologies (Wolters Kluwer Health)","issue":"9","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.11124\/jbies-20-00355","type":"journal-article","created":{"date-parts":[[2021,5,16]],"date-time":"2021-05-16T13:01:12Z","timestamp":1621170072000},"page":"2406-2414","source":"Crossref","is-referenced-by-count":1,"title":["Risk-taking
-        behaviors and falls in community-dwelling older adults: a scoping review protocol"],"prefix":"10.11124","volume":"19","author":[{"given":"Diane","family":"B\u00e9gin","sequence":"first","affiliation":[]},{"given":"Ashley","family":"Morgan","sequence":"additional","affiliation":[]},{"given":"Luciana","family":"Macedo","sequence":"additional","affiliation":[]},{"given":"Julie","family":"Richardson","sequence":"additional","affiliation":[]},{"given":"Sarah","family":"Wojkowski","sequence":"additional","affiliation":[]}],"member":"276","published-online":{"date-parts":[[2021,9]]},"reference":[{"issue":"(1)","key":"R2-20230414","doi-asserted-by":"crossref","first-page":"1479586","DOI":"10.1080\/17482631.2018.1479586","article-title":"There
-        is more to life than risk avoidance\u2013elderly people''s experiences of
-        falls, fall-injuries and compliant flooring","volume":"13","author":"Gustavsson","year":"2018","journal-title":"Int
-        J Qual Stud Health Well-being"},{"issue":"(4)","key":"R3-20230414","doi-asserted-by":"crossref","first-page":"289","DOI":"10.1111\/j.1748-3743.2011.00299.x","article-title":"Older
-        people''s perspectives on fall risk and fall prevention programs: a literature
-        review","volume":"6","author":"McMahon","year":"2011","journal-title":"Int
-        J Older People Nurs"},{"issue":"(2)","key":"R4-20230414","doi-asserted-by":"crossref","first-page":"233","DOI":"10.1111\/hex.12026","article-title":"Why
-        do hospitalized older adults take risks that may lead to falls?","volume":"18","author":"Haines","year":"2015","journal-title":"Heal
-        Expect"},{"issue":"(2)","key":"R5-20230414","doi-asserted-by":"crossref","first-page":"82","DOI":"10.1177\/000841740807500204","article-title":"Falls
-        and the physical environment: a review and a new multifactorial falls-risk
-        conceptual framework","volume":"75","author":"Feldman","year":"2008","journal-title":"Can
-        J Occup Ther"},{"issue":"(4)","key":"R6-20230414","doi-asserted-by":"crossref","first-page":"443","DOI":"10.1093\/geront\/gnq013","article-title":"Mobility
-        in older adults: a comprehensive framework","volume":"50","author":"Webber","year":"2010","journal-title":"Gerontologist"},{"issue":"(4)","key":"R7-20230414","doi-asserted-by":"crossref","first-page":"389","DOI":"10.1016\/j.jclinepi.2009.06.010","article-title":"Quantifying
-        the magnitude of risk for balance impairment on falls in community-dwelling
-        older adults: a systematic review and meta-analysis","volume":"63","author":"Muir","year":"2010","journal-title":"J
-        Clin Epidemiol"},{"issue":"(1)","key":"R8-20230414","first-page":"CD012424","article-title":"Exercise
-        for preventing falls in older people living in the community","author":"Sherrington","year":"2019","journal-title":"Cochrane
-        Database Syst Rev"},{"issue":"(1)","key":"R9-20230414","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1111\/j.1440-1630.2009.00787.x","article-title":"The
-        physical environment as a fall risk factor in older adults: systematic review
-        and meta-analysis of cross-sectional and cohort studies","volume":"57","author":"Letts","year":"2010","journal-title":"Aust
-        Occup Ther J"},{"issue":"(1)","key":"R10-20230414","first-page":"9","article-title":"Reconceptualizing
-        the determinants of risk behavior","volume":"17","author":"Sitkin","year":"1992","journal-title":"Acad
-        Manag"},{"issue":"(3)","key":"R11-20230414","doi-asserted-by":"crossref","first-page":"367","DOI":"10.1037\/0033-2909.125.3.367","article-title":"Gender
-        differences in risk taking: a meta-analysis","volume":"125","author":"Byrnes","year":"1999","journal-title":"Psychol
-        Bull"},{"issue":"(2)","key":"R12-20230414","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1016\/j.newideapsych.2010.08.001","article-title":"What
-        is behavior? And so what?","volume":"29","author":"Bergner","year":"2011","journal-title":"New
-        Ideas Psychol"},{"issue":"(3)","key":"R14-20230414","doi-asserted-by":"crossref","first-page":"128","DOI":"10.1037\/h0032370","article-title":"Information
-        processing, situation specificity, and the generality of risk-taking behavior","volume":"22","author":"Slovic","year":"1972","journal-title":"J
-        Pers Soc Psychol"},{"issue":"(3)","key":"R15-20230414","doi-asserted-by":"crossref","first-page":"291","DOI":"10.1016\/j.dr.2006.05.002","article-title":"The
-        development of risk-taking: a multi-perspective review","volume":"26","author":"Boyer","year":"2006","journal-title":"Dev
-        Rev"},{"issue":"(4)","key":"R16-20230414","doi-asserted-by":"crossref","first-page":"297","DOI":"10.1080\/09669760.2010.531600","article-title":"Individual
-        differences in children''s risk perception and appraisals in outdoor play
-        environments","volume":"18","author":"Little","year":"2010","journal-title":"Int
-        J Early Years Educ"},{"issue":"(8)","key":"R17-20230414","doi-asserted-by":"crossref","first-page":"896","DOI":"10.1093\/gerona\/glr071","article-title":"Reach
-        distance but not judgment error is associated with falls in older people","volume":"66A","author":"Butler","year":"2011","journal-title":"J
-        Gerontol Ser A Biol Sci Med Sci"},{"issue":"(4)","key":"R18-20230414","first-page":"351","article-title":"An
-        ecological perspective on health promotion programs","volume":"15","author":"McLeroy","year":"1988","journal-title":"Heal
-        Educ Behav"},{"issue":"(1)","key":"R19-20230414","first-page":"1","article-title":"Systematic
-        review or scoping review? Guidance for authors when choosing between a systematic
-        or scoping review approach","volume":"18","author":"Munn","year":"2018","journal-title":"BMC
-        Med Res Methodol"},{"issue":"(1)","key":"R20-20230414","doi-asserted-by":"crossref","first-page":"19","DOI":"10.1080\/1364557032000119616","article-title":"Scoping
-        studies: towards a methodological framework","volume":"8","author":"Arksey","year":"2005","journal-title":"Int
-        J Soc Res Methodol Theory Pract"},{"issue":"(69)","key":"R21-20230414","first-page":"1","article-title":"Scoping
-        studies: advancing the methodology","volume":"5","author":"Levac","year":"2010","journal-title":"Implement
-        Sci"},{"key":"R22-20230414","article-title":"Chapter 11: Scoping reviews","author":"Peters","year":"2020","journal-title":"JBI
-        Manual for Evidence Synthesis [internet]"},{"issue":"(3)","key":"R23-20230414","doi-asserted-by":"crossref","first-page":"141","DOI":"10.1097\/XEB.0000000000000050","article-title":"Guidance
-        for conducting systematic scoping reviews","volume":"13","author":"Peters","year":"2015","journal-title":"Int
-        J Evid Based Healthc"},{"issue":"(3)","key":"R24-20230414","doi-asserted-by":"crossref","first-page":"307","DOI":"10.1080\/13698570120079903","article-title":"The
-        social construction of risk by community psychiatric nurses and family carers
-        for people with dementia","volume":"3","author":"Adams","year":"2001","journal-title":"Heal
-        Risk Soc"},{"issue":"(3)","key":"R25-20230414","doi-asserted-by":"crossref","first-page":"169","DOI":"10.1111\/j.1748-3743.2006.00027.x","article-title":"Risk
-        and ageing populations: practice development research through an international
-        research network","volume":"1","author":"Clarke","year":"2006","journal-title":"Int
-        J Older People Nurs"},{"issue":"(1)","key":"R26-20230414","doi-asserted-by":"crossref","first-page":"36","DOI":"10.1097\/XEB.0000000000000152","article-title":"The
-        development of software to support multiple systematic review types: The Joanna
-        Briggs Institute System for the Unified Management, Assessment and Review
-        of Information (JBI SUMARI)","volume":"17","author":"Munn","year":"2019","journal-title":"Int
-        J Evid Based Healthc"},{"issue":"(7)","key":"R27-20230414","doi-asserted-by":"crossref","first-page":"467","DOI":"10.7326\/M18-0850","article-title":"PRISMA
-        extension for scoping reviews (PRISMA-ScR): checklist and explanation","volume":"169","author":"Tricco","year":"2018","journal-title":"Ann
-        Intern Med"}],"container-title":["JBI Evidence Synthesis"],"language":"en","link":[{"URL":"https:\/\/journals.lww.com\/10.11124\/JBIES-20-00355","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,4,14]],"date-time":"2023-04-14T18:01:54Z","timestamp":1681495314000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/journals.lww.com\/10.11124\/JBIES-20-00355"}},"issued":{"date-parts":[[2021,5,10]]},"references-count":25,"journal-issue":{"issue":"9","published-print":{"date-parts":[[2021]]}},"URL":"http:\/\/dx.doi.org\/10.11124\/jbies-20-00355","ISSN":["2689-8381"],"issn-type":[{"value":"2689-8381","type":"electronic"}],"subject":["General
-        Nursing"],"published":{"date-parts":[[2021,5,10]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2024,9,16]],"date-time":"2024-09-16T15:46:15Z","timestamp":1726501575091},"edition-number":"1","reference-count":0,"publisher":"Bloomsbury
+      Publishing Plc","isbn-type":[{"type":"electronic","value":"9781350068056"},{"type":"print","value":"9781350369412"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2023]]},"DOI":"10.5040\/9781350068056.ch-i","type":"other","created":{"date-parts":[[2023,8,4]],"date-time":"2023-08-04T11:22:53Z","timestamp":1691148173000},"page":"1-14","source":"Crossref","is-referenced-by-count":0,"title":["Introduction"],"prefix":"10.5040","member":"2984","container-title":["Ludwig
+      Hilberseimer"],"deposited":{"date-parts":[[2024,1,19]],"date-time":"2024-01-19T10:19:02Z","timestamp":1705659542000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9781350068056&tocid=b-9781350068056-0000183"},"secondary":[{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9781350068056&tocid=b-9781350068056-0000183","label":"secondary_bloomsburyCollections"},{"URL":"https:\/\/www.bloomsburyvisualarts.com\/encyclopedia-chapter?docid=b-9781350068056&tocid=b-9781350068056-0000183","label":"secondary_architectureLibrary"}]},"issued":{"date-parts":[[2023]]},"ISBN":["9781350068056","9781350369412"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781350068056.ch-i","published":{"date-parts":[[2023]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T05:20:43Z","timestamp":1648963243181},"reference-count":0,"publisher":"Massachusetts
+      Medical Society","issue":"27","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
+      Boston Medical and Surgical Journal"],"published-print":{"date-parts":[[1914,12,31]]},"DOI":"10.1056\/nejm191412311712712","type":"journal-article","created":{"date-parts":[[2011,11,11]],"date-time":"2011-11-11T23:39:31Z","timestamp":1321054771000},"page":"1016-1016","source":"Crossref","is-referenced-by-count":0,"title":["Proposed
+      Reorganization of the Boston Board of Health"],"prefix":"10.1056","volume":"171","member":"150","container-title":["The
+      Boston Medical and Surgical Journal"],"language":"en","link":[{"URL":"http:\/\/www.nejm.org\/doi\/pdf\/10.1056\/NEJM191412311712712","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,11,2]],"date-time":"2016-11-02T16:36:01Z","timestamp":1478104561000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.nejm.org\/doi\/abs\/10.1056\/NEJM191412311712712"}},"issued":{"date-parts":[[1914,12,31]]},"references-count":0,"journal-issue":{"issue":"27","published-print":{"date-parts":[[1914,12,31]]}},"alternative-id":["10.1056\/NEJM191412311712712"],"URL":"http:\/\/dx.doi.org\/10.1056\/nejm191412311712712","ISSN":["0096-6762","1533-4406"],"issn-type":[{"value":"0096-6762","type":"print"},{"value":"1533-4406","type":"electronic"}],"published":{"date-parts":[[1914,12,31]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -118,11 +37,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '4322'
+      - '1213'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:50:43 GMT
+      - Sun, 13 Oct 2024 04:36:45 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -139,7 +58,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

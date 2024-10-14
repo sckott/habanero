@@ -1,25 +1,26 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/members?offset=0&rows=1
   response:
-    body:
-      string: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":1,"query":{"start-index":0,"search-terms":null},"total-results":25832,"items":[{"last-status-check-time":1705361028778,"primary-name":"Annals
-        of Family Medicine","counts":{"current-dois":1498,"backfile-dois":2509,"total-dois":4007},"breakdowns":{"dois-by-issued-year":[[2023,1063],[2022,435],[2018,162],[2005,154],[2015,150],[2019,147],[2017,146],[2004,146],[2020,142],[2013,140],[2008,137],[2021,135],[2010,134],[2006,132],[2014,131],[2009,129],[2016,127],[2011,123],[2007,120],[2012,118],[2003,36]]},"prefixes":["10.1370"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.3005181347150259,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"Annals
-        of Family Medicine","value":"10.1370"}],"id":1,"tokens":["annals","of","family","medicine"],"counts-type":{"all":{"journal-article":2808,"proceedings-article":1199},"backfile":{"journal-article":2509},"current":{"journal-article":299,"proceedings-article":1199}},"coverage-type":{"all":{"journal-article":{"last-status-check-time":1705361028778,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.375,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1705361028778,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"journal-article":{"last-status-check-time":1705361028778,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.3005181347150259,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"journal-article":{"last-status-check-time":1705361028778,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1705361028778,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":false},"location":"Leawood,
-        KS, United States","names":["Annals of Family Medicine"]}]}}'
+    content: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":1,"query":{"start-index":0,"search-terms":null},"total-results":27766,"items":[{"last-status-check-time":1728775410953,"primary-name":"Annals
+      of Family Medicine","counts":{"current-dois":1614,"backfile-dois":2509,"total-dois":4123},"breakdowns":{"dois-by-issued-year":[[2023,1063],[2022,435],[2018,162],[2005,154],[2015,150],[2019,147],[2017,146],[2004,146],[2020,142],[2013,140],[2008,137],[2021,135],[2010,134],[2006,132],[2014,131],[2009,129],[2016,127],[2011,123],[2007,120],[2012,118],[2024,116],[2003,36]]},"prefixes":["10.1370"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.3005181347150259,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"Annals
+      of Family Medicine","value":"10.1370"}],"id":1,"tokens":["annals","of","family","medicine"],"counts-type":{"all":{"journal-article":2924,"proceedings-article":1199},"backfile":{"journal-article":2509},"current":{"journal-article":415,"proceedings-article":1199}},"coverage-type":{"all":{"journal-article":{"last-status-check-time":1728775410953,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.3997948016415869,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1728775410953,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"journal-article":{"last-status-check-time":1728775410953,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.3005181347150259,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"journal-article":{"last-status-check-time":1728775410953,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1728775410953,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":false},"location":"Leawood,
+      KS, United States","names":["Annals of Family Medicine"]}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -33,11 +34,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '917'
+      - '936'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:48:16 GMT
+      - Sun, 13 Oct 2024 14:04:33 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -54,7 +55,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

@@ -1,6 +1,6 @@
 import re
 
-import requests
+import httpx
 
 from ..habanero_utils import check_json
 
@@ -9,7 +9,7 @@ def csl_styles(**kwargs) -> list:
     """
     Get list of styles from https://github.com/citation-style-language/styles
 
-    :param kwargs: any additional arguments will be passed on to `requests.get`
+    :param kwargs: any additional arguments will be passed on to `httpx.get`
     :rtype: list, of CSL styles
 
     Usage::
@@ -18,12 +18,12 @@ def csl_styles(**kwargs) -> list:
         cn.csl_styles()
     """
     base = "https://api.github.com/repos/citation-style-language/styles"
-    tt = requests.get(base + "/commits?per_page=1", **kwargs)
+    tt = httpx.get(base + "/commits?per_page=1", **kwargs)
     tt.raise_for_status()
     check_json(tt)
     commres = tt.json()
     sha = commres[0]["sha"]
-    sty = requests.get(base + "/git/trees/" + sha, **kwargs)
+    sty = httpx.get(base + "/git/trees/" + sha, **kwargs)
     sty.raise_for_status()
     check_json(sty)
     res = sty.json()

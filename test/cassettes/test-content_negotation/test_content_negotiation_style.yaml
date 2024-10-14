@@ -1,77 +1,79 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - text/x-bibliography; style = apa; locale = en-US
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - doi.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
-    body:
-      string: '<html><head><title>Handle Redirect</title></head>
+    content: '<html><head><title>Handle Redirect</title></head>
 
-        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+      <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 84623784983ceb87-SEA
+      - 8d1aca05b9ff7636-SEA
       Connection:
       - keep-alive
-      Content-Length:
-      - '233'
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Tue, 16 Jan 2024 00:24:40 GMT
+      - Sat, 12 Oct 2024 23:14:57 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gJ%2BHRugHRDQEI3%2BwNSni1Cv4yHfNbMjC9v%2BZsSkJEDdQh7jGAhxfeETwpe8N7SZE5TqvVfpolf9XTz7KbuFX%2BdFmr%2FRSiTb1sc9qPLgIyjz6xtpUlfqg27A%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=OtuoCcrA%2FNXhLVZaSldaSVDFt6f27hkrBXJu7x6kgKL5BjpuTkDIDa7OEf5PPEnpjfOXxe2iNOgUCVsUf5DaGB5ZlITNRFjlpyNLIml2Qr10WAxl%2BaARbq8%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
       alt-svc:
       - h3=":443"; ma=86400
       expires:
-      - Tue, 16 Jan 2024 00:47:38 GMT
+      - Sat, 12 Oct 2024 23:50:14 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
       - interest-cohort=(),browsing-topics=()
       vary:
+      - Origin
       - Accept
-    status:
-      code: 302
-      message: Found
+    http_version: HTTP/1.1
+    status_code: 302
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - text/x-bibliography; style = apa; locale = en-US
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
-    body:
-      string: "Frank, H. S. (1970). The Structure of Ordinary Water. Science, 169(3946),
-        635\u2013641. https://doi.org/10.1126/science.169.3946.635\n"
+    content: "Frank, H. S. (1970). The Structure of Ordinary Water. Science, 169(3946),
+      635\u2013641. https://doi.org/10.1126/science.169.3946.635\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -85,10 +87,7 @@ interactions:
       content-type:
       - text/x-bibliography
       date:
-      - Tue, 16 Jan 2024 00:24:43 GMT
-      link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://www.science.org/doi/pdf/10.1126/science.169.3946.635>;
-        version="vor"; rel="item"
+      - Sat, 12 Oct 2024 23:14:59 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -107,82 +106,83 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - text/x-bibliography; style = ieee; locale = en-US
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - doi.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
-    body:
-      string: '<html><head><title>Handle Redirect</title></head>
+    content: '<html><head><title>Handle Redirect</title></head>
 
-        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+      <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 84623799de383096-SEA
+      - 8d1aca117d87ec54-SEA
       Connection:
       - keep-alive
-      Content-Length:
-      - '233'
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Tue, 16 Jan 2024 00:24:43 GMT
+      - Sat, 12 Oct 2024 23:14:59 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=8YILgBOoep379YE0d2jtYJrQp2Yy3giZxCa2uDVx1y1uOD8LJCvB4hIW19Pfl7f7R4gQwJ1EqBpn4218FGNWaHcskiv5CHCEZN1tlHNnxiOuKQqZwEaLQsk%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Bpht74VlJv398B81ct1PdSdO1IZH6YOwYrR7892cdPr8h0ay7Y8GleCSAS1VNbnILmwbG%2BGeFC2rhPD8k2pxjdZen0s04nxGHN16bYPJS9TgUxh5T8XQMDc%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
       alt-svc:
       - h3=":443"; ma=86400
       expires:
-      - Tue, 16 Jan 2024 00:43:42 GMT
+      - Sat, 12 Oct 2024 23:50:14 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
       - interest-cohort=(),browsing-topics=()
       vary:
+      - Origin
       - Accept
-    status:
-      code: 302
-      message: Found
+    http_version: HTTP/1.1
+    status_code: 302
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - text/x-bibliography; style = ieee; locale = en-US
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
-    body:
-      string: "[1]H. S. Frank, \u201CThe Structure of Ordinary Water,\u201D Science,
-        vol. 169, no. 3946, pp. 635\u2013641, Aug. 1970, doi: 10.1126/science.169.3946.635.\n"
+    content: "[1]H. S. Frank, \u201CThe Structure of Ordinary Water,\u201D Science,
+      vol. 169, no. 3946, pp. 635\u2013641, Aug. 1970, doi: 10.1126/science.169.3946.635.\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -196,10 +196,7 @@ interactions:
       content-type:
       - text/x-bibliography
       date:
-      - Tue, 16 Jan 2024 00:24:44 GMT
-      link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://www.science.org/doi/pdf/10.1126/science.169.3946.635>;
-        version="vor"; rel="item"
+      - Sat, 12 Oct 2024 23:14:59 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -218,7 +215,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

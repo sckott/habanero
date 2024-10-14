@@ -1,7 +1,7 @@
 import json
 import re
 
-import requests
+import httpx
 
 from . import __version__
 from .exceptions import RequestError
@@ -77,7 +77,7 @@ def parse_json_err(x):
 
 
 def make_ua(mailto=None, ua_string=None):
-    requa = "python-requests/" + requests.__version__
+    requa = "python-httpx/" + httpx.__version__
     habua = "habanero/%s" % __version__
     ua = requa + " " + habua
     if mailto is not None:

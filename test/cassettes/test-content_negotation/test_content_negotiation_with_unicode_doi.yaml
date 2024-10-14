@@ -1,81 +1,83 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - application/x-bibtex
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - doi.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
-    body:
-      string: '<html><head><title>Handle Redirect</title></head>
+    content: '<html><head><title>Handle Redirect</title></head>
 
-        <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
+      <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
     headers:
       CF-Cache-Status:
       - DYNAMIC
       CF-RAY:
-      - 8462376fffce0879-SEA
+      - 8d1ac9fd3f11ba24-SEA
       Connection:
       - keep-alive
-      Content-Length:
-      - '233'
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Tue, 16 Jan 2024 00:24:37 GMT
+      - Sat, 12 Oct 2024 23:14:56 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xP4IETK3Tpdh8gg4%2FqjsNenXR5pgaTE4kbLwZMDbyV1JmQS7e1ALi42HbUFuCZIIGLt0TJgSImTujslAV%2FiASxTlp8Qy8lqWbZ%2Bb0lSqGwcxUWHSP6H%2FDvU%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=NX%2FOuHdyEeAUGcjiIDgBon1q83iNp3O36lSaleuHX1r323FFuHmxZgxjmf8f6tFAg%2B1aIx0l0S3h%2B8kWslknTvH8Yjo6nJRtHGmpVsc5h5n66NIeNQNNINM%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
       - max-age=31536000; includeSubDomains; preload
+      Transfer-Encoding:
+      - chunked
       alt-svc:
       - h3=":443"; ma=86400
       expires:
-      - Tue, 16 Jan 2024 00:47:38 GMT
+      - Sat, 12 Oct 2024 23:50:14 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
       - interest-cohort=(),browsing-topics=()
       vary:
+      - Origin
       - Accept
-    status:
-      code: 302
-      message: Found
+    http_version: HTTP/1.1
+    status_code: 302
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - application/x-bibtex
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
+      x-user-agent:
+      - python-requests/2.32.3 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
-    body:
-      string: " @article{Frank_1970, title={The Structure of Ordinary Water: New data
-        and interpretations are yielding new insights into this fascinating substance.},
-        volume={169}, ISSN={1095-9203}, url={http://dx.doi.org/10.1126/science.169.3946.635},
-        DOI={10.1126/science.169.3946.635}, number={3946}, journal={Science}, publisher={American
-        Association for the Advancement of Science (AAAS)}, author={Frank, Henry S.},
-        year={1970}, month=aug, pages={635\u2013641} }\n"
+    content: " @article{Frank_1970, title={The Structure of Ordinary Water: New data
+      and interpretations are yielding new insights into this fascinating substance.},
+      volume={169}, ISSN={1095-9203}, url={http://dx.doi.org/10.1126/science.169.3946.635},
+      DOI={10.1126/science.169.3946.635}, number={3946}, journal={Science}, publisher={American
+      Association for the Advancement of Science (AAAS)}, author={Frank, Henry S.},
+      year={1970}, month=aug, pages={635\u2013641} }\n"
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -89,10 +91,7 @@ interactions:
       content-type:
       - application/x-bibtex
       date:
-      - Tue, 16 Jan 2024 00:24:38 GMT
-      link:
-      - <http://dx.doi.org/10.1126/science.169.3946.635>; rel="canonical", <https://www.science.org/doi/pdf/10.1126/science.169.3946.635>;
-        version="vor"; rel="item"
+      - Sat, 12 Oct 2024 23:14:56 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -111,7 +110,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

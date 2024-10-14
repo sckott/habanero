@@ -1,5 +1,5 @@
 import pytest
-from requests import exceptions as ex
+from httpx import HTTPError
 
 from habanero import Crossref
 
@@ -33,7 +33,7 @@ def test_cursor_max():
 
 @pytest.mark.vcr
 def test_cursor_fails_cursor_value():
-    with pytest.raises(ex.HTTPError):
+    with pytest.raises(HTTPError):
         cr.works(query="widget", cursor="thing")
 
 

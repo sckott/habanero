@@ -1,36 +1,35 @@
 interactions:
 - request:
-    body: null
+    body: ''
     headers:
-      Accept:
+      accept:
       - '*/*'
-      Accept-Encoding:
+      accept-encoding:
       - gzip, deflate
-      Connection:
+      connection:
       - keep-alive
-      User-Agent:
-      - python-requests/2.31.0 habanero/1.2.5
-      X-USER-AGENT:
-      - python-requests/2.31.0 habanero/1.2.5
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
+      x-user-agent:
+      - python-httpx/0.27.2 habanero/1.2.6.91
     method: GET
     uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
   response:
-    body:
-      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":500477,"items":[{"DOI":"10.1093\/obo\/9780199830060-0238","title":["Communicating
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0202","title":["Ecosystem Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0026","title":["Fire
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0023","title":["Chemical Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0042","title":["Community
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0128","title":["Disease Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0222","title":["Urban
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0014","title":["Mycorrhizal
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0249","title":["Ecology and
-        Physics"]},{"DOI":"10.1093\/obo\/9780199830060-0201","title":["Grazer Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0200","title":["Industrial
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0244","title":["Flood Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0220","title":["Wetland
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0039","title":["Applied Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0139","title":["Ecology
-        of the Himalaya"]},{"DOI":"10.1093\/obo\/9780199830060-0224","title":["Stochastic
-        Processes in Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0067","title":["Soil
-        Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0192","title":["Animal Population
-        Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0036","title":["Global
-        Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0014","title":["Behavioral
-        Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":525905,"items":[{"DOI":"10.1093\/obo\/9780199830060-0238","title":["Communicating
+      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0023","title":["Chemical Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0202","title":["Ecosystem
+      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0026","title":["Fire Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0128","title":["Disease
+      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0042","title":["Community Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0249","title":["Ecology
+      and Physics"]},{"DOI":"10.1093\/obo\/9780199830060-0201","title":["Grazer Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0222","title":["Urban
+      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0014","title":["Mycorrhizal Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0244","title":["Flood
+      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0220","title":["Wetland Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0224","title":["Stochastic
+      Processes in Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0039","title":["Applied
+      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0200","title":["Industrial Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0067","title":["Soil
+      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0139","title":["Ecology of the
+      Himalaya"]},{"DOI":"10.1093\/obo\/9780199830060-0192","title":["Animal Population
+      Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0014","title":["Behavioral
+      Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0036","title":["Global Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -44,11 +43,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '475'
+      - '471'
       content-type:
       - application/json
       date:
-      - Tue, 16 Jan 2024 06:50:45 GMT
+      - Sun, 13 Oct 2024 04:36:48 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -65,7 +64,6 @@ interactions:
       - 1s
       x-ratelimit-limit:
       - '50'
-    status:
-      code: 200
-      message: OK
+    http_version: HTTP/1.1
+    status_code: 200
 version: 1

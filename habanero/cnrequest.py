@@ -1,6 +1,6 @@
 import warnings
 
-import requests
+import httpx
 from packaging.version import Version
 
 from .cn_formats import cn_format_headers
@@ -57,11 +57,11 @@ def make_request(url, ids, format, style, locale, fail, **kwargs):
 
     htype = {"Accept": type}
     head = dict(make_ua(), **htype)
-    r = requests.get(url, headers=head, allow_redirects=True, **kwargs)
+    r = httpx.get(url, headers=head, follow_redirects=True, **kwargs)
 
     # Raise an HTTPError if the status code of the response is 4XX or 5XX
     # or warn if fail=False
-    if not r.ok:
+    if not r.is_success:
         if fail:
             r.raise_for_status()
         else:
