@@ -18,6 +18,7 @@ class Crossref:
     :param api_key: An API key to send with each http request
     :param mailto: A mailto string, see section below
     :param ua_string: A user agent string, see section below
+    :param timeout: curl timeout
 
     |
     |
@@ -169,21 +170,24 @@ class Crossref:
         api_key: str = None,
         mailto: str = None,
         ua_string: str = None,
+        timeout: int = 5,
     ) -> None:
         self.base_url = base_url
         self.api_key = api_key
         self.mailto = mailto
         self.ua_string = ua_string
+        self.timeout = timeout
 
     def __repr__(self):
         return (
-            """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\nADDITIONAL UA STRING: %s\n>"""
+            """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\nADDITIONAL UA STRING: %s\nTimeout: %s\n>"""
             % (
                 type(self).__name__,
                 self.base_url,
                 sub_str(self.api_key),
                 self.mailto,
                 self.ua_string,
+                self.timeout,
             )
         )
 
@@ -337,9 +341,7 @@ class Crossref:
         """
         if ids.__class__.__name__ != "NoneType":
             return request(
-                self.mailto,
-                self.ua_string,
-                self.base_url,
+                self,
                 "/works/",
                 ids,
                 query,
@@ -363,6 +365,7 @@ class Crossref:
             return Request(
                 self.mailto,
                 self.ua_string,
+                self.timeout,
                 self.base_url,
                 "/works/",
                 query,
@@ -476,9 +479,7 @@ class Crossref:
             res = cr.members(filter = {'has_public_references': True})
         """
         return request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/members/",
             ids,
             query,
@@ -594,9 +595,7 @@ class Crossref:
         """
         check_kwargs(["query"], kwargs)
         return request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/prefixes/",
             ids,
             query=None,
@@ -723,9 +722,7 @@ class Crossref:
             [type(w) for w in x] # [dict, NoneType]
         """
         return request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/funders/",
             ids,
             query,
@@ -848,9 +845,7 @@ class Crossref:
             [ x.get('title') for x in res['message']['items'] ]
         """
         return request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/journals/",
             ids,
             query,
@@ -952,9 +947,7 @@ class Crossref:
             [ x.get('title') for x in res['message']['items'] ]
         """
         return request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/types/",
             ids,
             query,
@@ -1011,9 +1004,7 @@ class Crossref:
         """
         check_kwargs(["ids", "filter", "works"], kwargs)
         res = request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/licenses/",
             None,
             query,
@@ -1063,9 +1054,7 @@ class Crossref:
             kwargs,
         )
         res = request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/works/",
             ids,
             None,
@@ -1109,9 +1098,7 @@ class Crossref:
             cr.random_dois(100)
         """
         res = request(
-            self.mailto,
-            self.ua_string,
-            self.base_url,
+            self,
             "/works/",
             None,
             None,

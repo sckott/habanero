@@ -17,9 +17,7 @@ from .request_class import Request
 
 
 def request(
-    mailto,
-    ua_string,
-    url,
+    cr,
     path,
     ids=None,
     query=None,
@@ -41,7 +39,7 @@ def request(
 ):
     """HTTP request helper."""
     warning_thrown = False
-    url = url + path
+    url = cr.base_url + path
 
     if cursor_max.__class__.__name__ != "NoneType":
         if not isinstance(cursor_max, int):
@@ -77,7 +75,12 @@ def request(
     if ids.__class__.__name__ == "NoneType":
         url = url.strip("/")
         try:
-            r = httpx.get(url, params=payload, headers=make_ua(mailto, ua_string))
+            r = httpx.get(
+                url,
+                params=payload,
+                headers=make_ua(cr.mailto, cr.ua_string),
+                timeout=cr.timeout,
+            )
             r.raise_for_status()
         except httpx.HTTPStatusError:
             if is_json(r):
@@ -103,8 +106,9 @@ def request(
         for i in range(len(ids)):
             if works:
                 res = Request(
-                    mailto,
-                    ua_string,
+                    cr.mailto,
+                    cr.ua_string,
+                    cr.timeout,
                     url,
                     str(ids[i]) + "/works",
                     query,
@@ -131,7 +135,12 @@ def request(
 
                 endpt = endpt.strip("/")
 
-                r = httpx.get(endpt, params=payload, headers=make_ua(mailto, ua_string))
+                r = httpx.get(
+                    endpt,
+                    params=payload,
+                    headers=make_ua(cr.mailto, cr.ua_string),
+                    timeout=cr.timeout,
+                )
                 if r.status_code > 201 and should_warn:
                     warning_thrown = True
                     mssg = "%s on %s: %s" % (r.status_code, ids[i], r.reason_phrase)

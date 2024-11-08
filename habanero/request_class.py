@@ -27,6 +27,7 @@ class Request(object):
         self,
         mailto,
         ua_string,
+        timeout,
         url,
         path,
         query=None,
@@ -46,6 +47,7 @@ class Request(object):
     ):
         self.mailto = mailto
         self.ua_string = ua_string
+        self.timeout = timeout
         self.url = url
         self.path = path
         self.query = query
@@ -148,6 +150,7 @@ class Request(object):
                 self._url(),
                 params=payload,
                 headers=make_ua(self.mailto, self.ua_string),
+                timeout=self.timeout,
             )
             r.raise_for_status()
         except httpx.HTTPStatusError:

@@ -37,7 +37,7 @@ Usage::
 """
 
 __title__ = "habanero"
-__version__ = "1.2.6.91"
+__version__ = "1.2.7.91"
 __author__ = "Scott Chamberlain"
 __license__ = "MIT"
 
