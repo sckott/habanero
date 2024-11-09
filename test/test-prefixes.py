@@ -19,7 +19,7 @@ def test_prefixes():
 @pytest.mark.vcr
 def test_prefixes_works():
     """prefixes - param: works"""
-    res = cr.prefixes(ids="10.1016", works=True, sample=2)
+    res = cr.prefixes(ids="10.1016", works=True, limit=2)
     assert isinstance(res, dict)
 
 

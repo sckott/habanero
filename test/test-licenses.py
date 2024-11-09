@@ -8,7 +8,7 @@ cr = Crossref()
 @pytest.mark.vcr
 def test_licenses():
     """licenses - basic test"""
-    res = cr.licenses(limit=2)
+    res = cr.licenses(query="science", limit=2)
     assert isinstance(res, dict)
     assert 2 == len(res["message"]["items"])
 

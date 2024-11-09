@@ -11,13 +11,13 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/1.2.7.91
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/1.2.7.91
     method: GET
-    uri: https://api.crossref.org/licenses?rows=2
+    uri: https://api.crossref.org/licenses?query=science&rows=2
   response:
-    content: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":17201,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":100},{"URL":"Http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":1}]}}'
+    content: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":1581,"items":[{"URL":"Http:\/\/creativecommons.org\/license\/by-nc\/4.0.","work-count":4},{"URL":"http:\/\/\/nv.pdpu.edu.ua\/Info\/Index\/be91efc0-7518-4106-b1df-7c0b3b9da77b","work-count":1}]}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -31,7 +31,7 @@ interactions:
       content-type:
       - application/json;charset=utf-8
       date:
-      - Sun, 13 Oct 2024 22:26:27 GMT
+      - Sat, 09 Nov 2024 06:36:27 GMT
       permissions-policy:
       - interest-cohort=()
       server:

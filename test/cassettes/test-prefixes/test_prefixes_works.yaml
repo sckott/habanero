@@ -11,53 +11,84 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/1.2.7.91
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/1.2.7.91
     method: GET
-    uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
+    uri: https://api.crossref.org/prefixes/10.1016/works?rows=2
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2022,4,2]],"date-time":"2022-04-02T06:17:55Z","timestamp":1648880275451},"reference-count":0,"publisher":"Elsevier
-      BV","issue":"4","license":[{"start":{"date-parts":[[1881,10,1]],"date-time":"1881-10-01T00:00:00Z","timestamp":-2784931200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-      of the Franklin Institute"],"published-print":{"date-parts":[[1881,10]]},"DOI":"10.1016\/0016-0032(81)90225-8","type":"journal-article","created":{"date-parts":[[2003,11,1]],"date-time":"2003-11-01T19:48:29Z","timestamp":1067716109000},"page":"274-278","source":"Crossref","is-referenced-by-count":0,"title":["Radio-dynamic
-      facts"],"prefix":"10.1016","volume":"112","author":[{"given":"Pliny Earle","family":"Chase","sequence":"first","affiliation":[]}],"member":"78","container-title":["Journal
-      of the Franklin Institute"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0016003281902258?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0016003281902258?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,2,17]],"date-time":"2019-02-17T21:28:39Z","timestamp":1550438919000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0016003281902258"}},"issued":{"date-parts":[[1881,10]]},"references-count":0,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1881,10]]}},"alternative-id":["0016003281902258"],"URL":"http:\/\/dx.doi.org\/10.1016\/0016-0032(81)90225-8","ISSN":["0016-0032"],"issn-type":[{"value":"0016-0032","type":"print"}],"published":{"date-parts":[[1881,10]]}},{"indexed":{"date-parts":[[2024,5,4]],"date-time":"2024-05-04T01:27:57Z","timestamp":1714786077344},"reference-count":22,"publisher":"Elsevier","isbn-type":[{"value":"9781483283845","type":"print"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1979]]},"DOI":"10.1016\/b978-1-4832-8384-5.50061-2","type":"book-chapter","created":{"date-parts":[[2013,12,19]],"date-time":"2013-12-19T05:00:06Z","timestamp":1387429206000},"page":"113-148","source":"Crossref","is-referenced-by-count":0,"title":["Alpha-particle
-      Heating in High Density Plasmas"],"prefix":"10.1016","author":[{"given":"B.","family":"Coppi","sequence":"first","affiliation":[]},{"given":"A.","family":"Taroni","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib1","first-page":"47","volume":"3","author":"Coppi","year":"1977","journal-title":"Comments
-      on Plasma Physics and Controlled Fusion"},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib2","unstructured":"D.
-      Mikkelsen and D. Post, paper D-12, presented at the 1978 Controlled Fusion Theory
-      Conference, Gatlinburg, Tenn."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib3","unstructured":"E.
-      Bittoni and L. Felician, Centro Calcolo CNEN Report (Bologna Italy, 1978). To
-      be submitted to Nuclear Fusion."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib4","unstructured":"B.
-      Coppi and A. Taroni, in Proceedings of the 1977 Varenna Symposium on Magnetically
-      Confined Plasmas (Publ. Pergamon Press and Euratom, Brussels, 1978)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib5","unstructured":"A.
-      Bittoni, B. Coppi, M. Haegi and A. Taroni, in Proceedings of the 1977 International
-      College on Theoretical and Computational Plamas Physics, Trieste 1977 (Publish.
-      I.A.E.A., Vienna 1978)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib6","unstructured":"B.
-      Coppi, L. De Menna, F. Esposito and F. Laudiero in Proceedings of the 1977 Varenna
-      Symposium on Magnetically Confined Plasmas (Publ. Pergamon Press and Euratom,
-      Brussels, 1978)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib7","unstructured":"V.
-      E. Golant, paper presented at the International Symposium on \u201cHeating in
-      Toroidal Plasmas\u201d Grenoble, France 1978."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_sbref2","doi-asserted-by":"crossref","first-page":"1329","DOI":"10.1103\/PhysRevLett.33.1329","volume":"33","author":"Coppi","year":"1974","journal-title":"Phys.
-      Rev. Lett."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_sbref3","doi-asserted-by":"crossref","first-page":"5","DOI":"10.1088\/0029-5515\/17\/5\/009","volume":"17","author":"Coppi","year":"1977","journal-title":"Nucl.
-      Fusion"},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib9","doi-asserted-by":"crossref","first-page":"134","DOI":"10.1063\/1.1693264","volume":"14","author":"Coppi","year":"1971","journal-title":"Phys.
-      Fluids"},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib10","doi-asserted-by":"crossref","first-page":"400","DOI":"10.1103\/PhysRevLett.40.400","volume":"40","author":"Slusher","year":"1977","journal-title":"Phys.
-      Rev. Letters"},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_sbref6","doi-asserted-by":"crossref","first-page":"1096","DOI":"10.1063\/1.1711337","volume":"7","author":"Coppi","year":"1964","journal-title":"Phys.
-      Fluids"},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_ceotherref7","unstructured":"8,
-      2273 (1965)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib12","unstructured":"B.
-      Coppi, J. W-K. Mark, L. Sugiyama, and G. Bertin, Massachusetts Institute of
-      Technology, R.L.E. Report PRR-78\/24 (Cambridge, Mass., 1978); submitted to
-      Annals of Physics."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib13","unstructured":"D.
-      Gwinn and R. Granetz, Massachusetts Institute of Technology, P.F.C. Report PR-78\u20137
-      (Cambridge, Mass., 1978)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib14","unstructured":"FT
-      Group, Invited paper presented by F. De Marco at this Symposium (1978)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib15","doi-asserted-by":"crossref","first-page":"457","DOI":"10.1088\/0029-5515\/16\/3\/010","volume":"16","author":"Cenacchi","year":"1976","journal-title":"Nucl.
-      Fusion"},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib16","unstructured":"B.
-      Basu and B. Coppi, Report IN-CAM-1, Inesco Inc., Arlington, Va. (1978)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib17","unstructured":"E.
-      Bittoni, G. Cenacchi, A. Taroni, in Report CNEN RT-FIMA-78 (CNEN, Centro Calcolo,
-      Bologna, 1978; to be published)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib18","unstructured":"Solution
-      suggested by A. Sestero (1978)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib19","unstructured":"D.
-      Desboisblanc, Private Communication (1977)."},{"key":"10.1016\/B978-1-4832-8384-5.50061-2_bib20","doi-asserted-by":"crossref","unstructured":"H.
-      Wobig, Private Communication (1978).","DOI":"10.1002\/jlac.197819780710"}],"container-title":["Heating
-      in Toroidal Plasmas 1978"],"language":"en","deposited":{"date-parts":[[2019,8,5]],"date-time":"2019-08-05T03:45:42Z","timestamp":1564976742000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/B9781483283845500612"}},"issued":{"date-parts":[[1979]]},"ISBN":["9781483283845"],"references-count":22,"URL":"http:\/\/dx.doi.org\/10.1016\/b978-1-4832-8384-5.50061-2","published":{"date-parts":[[1979]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":21223566,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:52Z","timestamp":1648950352883},"reference-count":6,"publisher":"Elsevier
+      BV","issue":"1","license":[{"start":{"date-parts":[[2018,1,1]],"date-time":"2018-01-01T00:00:00Z","timestamp":1514764800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2019,1,2]],"date-time":"2019-01-02T00:00:00Z","timestamp":1546387200000},"content-version":"vor","delay-in-days":366,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"content-domain":{"domain":["clinicalkey.jp","onlinejacc.org","clinicalkey.com","clinicalkey.es","clinicalkey.com.au","clinicalkey.fr","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Journal
+      of the American College of Cardiology"],"published-print":{"date-parts":[[2018,1]]},"DOI":"10.1016\/j.jacc.2017.11.012","type":"journal-article","created":{"date-parts":[[2018,1,1]],"date-time":"2018-01-01T19:03:22Z","timestamp":1514833402000},"page":"37-39","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":2,"title":["TMVR
+      With Artificial Cords in the Treatment of Mitral Regurgitation"],"prefix":"10.1016","volume":"71","author":[{"given":"Michael","family":"Mack","sequence":"first","affiliation":[]},{"given":"Robert","family":"Smith","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.jacc.2017.11.012_bib1","doi-asserted-by":"crossref","first-page":"2315","DOI":"10.1016\/j.jacc.2017.09.015","article-title":"Outcomes
+      with transcatheter mitral valve repair in the United States","volume":"70","author":"Sorajja","year":"2017","journal-title":"J\u00a0Am
+      Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib2","doi-asserted-by":"crossref","first-page":"914","DOI":"10.1016\/j.jacc.2013.07.090","article-title":"Off-pump
+      transapical implantation of artificial neo-chordae to correct mitral regurgitation:
+      the TACT Trial (Transapical Artificial Chordae Tendinae) proof of concept","volume":"63","author":"Seeburger","year":"2014","journal-title":"J\u00a0Am
+      Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib3","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1016\/j.ijcard.2015.11.131","article-title":"Transapical
+      off-pump mitral valve repair with Neochord implantation: early clinical results","volume":"204","author":"Colli","year":"2016","journal-title":"Int
+      J Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib4","doi-asserted-by":"crossref","first-page":"25","DOI":"10.1016\/j.jacc.2017.10.062","article-title":"Beating-heart
+      mitral valve repair using a novel ePTFE cordal implantation device: a prospective
+      trial","volume":"71","author":"Gammie","year":"2018","journal-title":"J\u00a0Am
+      Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib5","doi-asserted-by":"crossref","first-page":"189","DOI":"10.1161\/CIRCULATIONAHA.116.022010","article-title":"Transapical
+      beating-heart mitral valve repair with an expanded polytetrafluoroethylene cordal
+      implantation device: initial clinical experience","volume":"134","author":"Gammie","year":"2016","journal-title":"Circulation"},{"key":"10.1016\/j.jacc.2017.11.012_bib6","doi-asserted-by":"crossref","first-page":"499","DOI":"10.1016\/j.jacc.2015.12.007","article-title":"The
+      time has come to define centers of excellence in mitral valve repair","volume":"67","author":"Bonow","year":"2016","journal-title":"J\u00a0Am
+      Coll Cardiol"}],"container-title":["Journal of the American College of Cardiology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0735109717415853?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0735109717415853?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,8,19]],"date-time":"2020-08-19T17:08:29Z","timestamp":1597856909000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0735109717415853"}},"issued":{"date-parts":[[2018,1]]},"references-count":6,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2018,1]]}},"alternative-id":["S0735109717415853"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.jacc.2017.11.012","ISSN":["0735-1097"],"issn-type":[{"value":"0735-1097","type":"print"}],"published":{"date-parts":[[2018,1]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+      article is maintained by"},{"value":"TMVR With Artificial Cords in the Treatment
+      of Mitral Regurgitation","name":"articletitle","label":"Article Title"},{"value":"Journal
+      of the American College of Cardiology","name":"journaltitle","label":"Journal
+      Title"},{"value":"https:\/\/doi.org\/10.1016\/j.jacc.2017.11.012","name":"articlelink","label":"CrossRef
+      DOI link to publisher maintained version"},{"value":"https:\/\/doi.org\/10.1016\/j.jacc.2017.10.062","name":"associatedlink","label":"CrossRef
+      DOI link to the associated document"},{"value":"simple-article","name":"content_type","label":"Content
+      Type"},{"value":"\u00a9 2018 by the American College of Cardiology Foundation.
+      Published by Elsevier.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361188},"reference-count":46,"publisher":"Elsevier
+      BV","issue":"10","license":[{"start":{"date-parts":[[1976,5,1]],"date-time":"1976-05-01T00:00:00Z","timestamp":199756800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Biochemical
+      Pharmacology"],"published-print":{"date-parts":[[1976,5]]},"DOI":"10.1016\/0006-2952(76)90360-9","type":"journal-article","created":{"date-parts":[[2002,12,14]],"date-time":"2002-12-14T00:31:08Z","timestamp":1039825868000},"page":"1139-1144","source":"Crossref","is-referenced-by-count":10,"title":["Enzyme
+      activated anti-tumour agents\u2014 II. The role of alkaline phosphatase in the
+      release of p-hydroxyaniline mustard from its phosphate conjugate in cells in
+      culture"],"prefix":"10.1016","volume":"25","author":[{"given":"P.","family":"Workman","sequence":"first","affiliation":[]},{"given":"C.R.","family":"Ball","sequence":"additional","affiliation":[]},{"given":"J.A.","family":"Double","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/0006-2952(76)90360-9_BIB1","doi-asserted-by":"crossref","first-page":"406","DOI":"10.1038\/205406a0","volume":"205","author":"Connors","year":"1965","journal-title":"Nature,
+      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB2","doi-asserted-by":"crossref","first-page":"689","DOI":"10.1038\/206689a0","volume":"206","author":"Connors","year":"1965","journal-title":"Nature,
+      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB3","doi-asserted-by":"crossref","first-page":"866","DOI":"10.1038\/210866b0","volume":"210","author":"Connors","year":"1966","journal-title":"Nature,
+      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB4","first-page":"825","volume":"14","author":"Whisson","year":"1966","journal-title":"Archs
+      immunologiae ther. experimentalis"},{"key":"10.1016\/0006-2952(76)90360-9_BIB5","doi-asserted-by":"crossref","first-page":"1373","DOI":"10.1016\/0006-2952(72)90300-0","volume":"21","author":"Connors","year":"1972","journal-title":"Biochem.
+      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB6","series-title":"Abstracts
+      of the Seventh Annual Meeting of the Am. Ass. of Clinical Oncologists","author":"Young","year":"1971"},{"key":"10.1016\/0006-2952(76)90360-9_BIB7","doi-asserted-by":"crossref","first-page":"963","DOI":"10.1016\/0006-2952(72)90400-5","volume":"21","author":"Bukhari","year":"1972","journal-title":"Biochem.
+      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB8","doi-asserted-by":"crossref","first-page":"81","DOI":"10.1038\/bjc.1973.92","volume":"28","author":"Ball","year":"1973","journal-title":"Br.
+      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB9","doi-asserted-by":"crossref","first-page":"3173","DOI":"10.1016\/0006-2952(74)90603-0","volume":"23","author":"Ball","year":"1974","journal-title":"Biochem.
+      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB10","series-title":"Biological
+      Alkylating Agents","author":"Ross","year":"1962"},{"key":"10.1016\/0006-2952(76)90360-9_BIB11","doi-asserted-by":"crossref","first-page":"246","DOI":"10.1038\/bjc.1975.175","volume":"32","author":"Workman","year":"1975","journal-title":"Br.
+      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB12","doi-asserted-by":"crossref","first-page":"549","DOI":"10.1007\/BF00485476","volume":"3","author":"Elson","year":"1969","journal-title":"Biochem.
+      Gen."},{"key":"10.1016\/0006-2952(76)90360-9_BIB13","doi-asserted-by":"crossref","first-page":"697","DOI":"10.1038\/219697a0","volume":"219","author":"Fishman","year":"1968","journal-title":"Nature"},{"key":"10.1016\/0006-2952(76)90360-9_BIB14","doi-asserted-by":"crossref","first-page":"595","DOI":"10.1042\/bj0570595","volume":"57","author":"Morton","year":"1954","journal-title":"Biochem.
+      J."},{"key":"10.1016\/0006-2952(76)90360-9_BIB15","doi-asserted-by":"crossref","first-page":"375","DOI":"10.1016\/S0021-9258(18)84756-1","volume":"66","author":"Fiske","year":"1925","journal-title":"J.
+      biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB16","doi-asserted-by":"crossref","first-page":"658","DOI":"10.1021\/ja01318a036","volume":"56","author":"Lineweaver","year":"1934","journal-title":"J.
+      Am. chem. Soc."},{"key":"10.1016\/0006-2952(76)90360-9_BIB17","first-page":"240","volume":"651","author":"Taketa","year":"1965","journal-title":"J.
+      biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB18","first-page":"286","volume":"175","author":"Ghosh","year":"1972","journal-title":"Biochim.
+      biophys. Acta"},{"key":"10.1016\/0006-2952(76)90360-9_BIB19","doi-asserted-by":"crossref","first-page":"262","DOI":"10.1016\/S0021-9258(19)52451-6","volume":"193","author":"Lowry","year":"1951","journal-title":"J.
+      biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB20","doi-asserted-by":"crossref","first-page":"404","DOI":"10.1111\/j.1749-6632.1964.tb14213.x","volume":"121","author":"Davis","year":"1964","journal-title":"Ann.
+      N.Y. Acad. Sci."},{"key":"10.1016\/0006-2952(76)90360-9_BIB21","doi-asserted-by":"crossref","first-page":"985","DOI":"10.1038\/215985a0","volume":"215","author":"Spencer","year":"1967","journal-title":"Nature,
+      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB22","doi-asserted-by":"crossref","first-page":"927","DOI":"10.1042\/bj1160927","volume":"116","author":"Spencer","year":"1970","journal-title":"Biochem.
+      J."},{"key":"10.1016\/0006-2952(76)90360-9_BIB23","first-page":"329","volume":"42","author":"Spencer","year":"1971","journal-title":"Enzymologia"},{"key":"10.1016\/0006-2952(76)90360-9_BIB24","series-title":"Microscopic
+      Histochemistry","author":"Gomori","year":"1952"},{"key":"10.1016\/0006-2952(76)90360-9_BIB25","doi-asserted-by":"crossref","first-page":"169","DOI":"10.1177\/11.2.169","volume":"1","author":"Allen","year":"1963","journal-title":"J.
+      Histochem. Cytochem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB26","doi-asserted-by":"crossref","first-page":"255","DOI":"10.1016\/S0065-2423(08)60115-8","volume":"10","author":"Fishman","year":"1967","journal-title":"Adv.
+      clin. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB27","doi-asserted-by":"crossref","first-page":"1257","DOI":"10.1038\/2071257a0","volume":"207","author":"Robson","year":"1965","journal-title":"Nature,
+      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB28","doi-asserted-by":"crossref","first-page":"641","DOI":"10.1111\/j.1749-6632.1969.tb46424.x","volume":"166","author":"Moss","year":"1969","journal-title":"Ann.
+      N.Y. Acad. Sci."},{"key":"10.1016\/0006-2952(76)90360-9_BIB29","volume":"Vol.
+      16","author":"Morton","year":"1965"},{"key":"10.1016\/0006-2952(76)90360-9_BIB30","series-title":"Lysosomes","author":"Barret","year":"1972"},{"key":"10.1016\/0006-2952(76)90360-9_BIB31","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1016\/0003-9861(68)90008-8","volume":"128","author":"Bosmann","year":"1968","journal-title":"Archs
+      Biochem. Biophys."},{"key":"10.1016\/0006-2952(76)90360-9_BIB32","doi-asserted-by":"crossref","first-page":"817","DOI":"10.1038\/bjc.1970.96","volume":"24","author":"Dendy","year":"1970","journal-title":"Br.
+      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB33","doi-asserted-by":"crossref","first-page":"55","DOI":"10.1038\/bjc.1973.70","volume":"28","author":"Morley","year":"1973","journal-title":"Br.
+      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB34","first-page":"150","volume":"28","author":"Fishman","year":"1968","journal-title":"Cancer
+      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB35","doi-asserted-by":"crossref","first-page":"1388","DOI":"10.1002\/1097-0142(197106)27:6<1388::AID-CNCR2820270619>3.0.CO;2-0","volume":"27","author":"Nathanson","year":"1971","journal-title":"Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB36","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/0304-4165(66)90064-X","volume":"115","author":"Barban","year":"1965","journal-title":"Biochem.
+      biophys. Acta"},{"key":"10.1016\/0006-2952(76)90360-9_BIB37","first-page":"1210","volume":"24","author":"Bieber","year":"1964","journal-title":"Cancer
+      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB38","first-page":"2034","volume":"32","author":"Nelson","year":"1972","journal-title":"Cancer
+      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB39","first-page":"1620","volume":"31","author":"Wolpert","year":"1971","journal-title":"Cancer
+      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB40","first-page":"1013","volume":"42","author":"Rosman","year":"1973","journal-title":"Blood"},{"key":"10.1016\/0006-2952(76)90360-9_BIB41","first-page":"1773","volume":"27","author":"Henderson","year":"1967","journal-title":"Cancer
+      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB42","doi-asserted-by":"crossref","first-page":"725","DOI":"10.1016\/0006-2952(69)90043-4","volume":"18","author":"Bennett","year":"1969","journal-title":"Biochem.
+      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB43","series-title":"Cancer
+      of the Prostate","author":"Balogh","year":"1968"},{"key":"10.1016\/0006-2952(76)90360-9_BIB44","doi-asserted-by":"crossref","first-page":"882","DOI":"10.1007\/BF01471475","volume":"30","author":"Druckery","year":"1952","journal-title":"Klin.
+      Wschr."},{"key":"10.1016\/0006-2952(76)90360-9_BIB45","first-page":"38","volume":"12","author":"Tritsch","year":"1974","journal-title":"Investig.
+      Urol."},{"key":"10.1016\/0006-2952(76)90360-9_BIB46","doi-asserted-by":"crossref","first-page":"10","DOI":"10.1093\/clinchem\/19.1.10","volume":"19","author":"Schwartz","year":"1973","journal-title":"Clin.
+      Chem."}],"container-title":["Biochemical Pharmacology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0006295276903609?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0006295276903609?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2021,6,1]],"date-time":"2021-06-01T15:39:06Z","timestamp":1622561946000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0006295276903609"}},"issued":{"date-parts":[[1976,5]]},"references-count":46,"journal-issue":{"issue":"10","published-print":{"date-parts":[[1976,5]]}},"alternative-id":["0006295276903609"],"URL":"http:\/\/dx.doi.org\/10.1016\/0006-2952(76)90360-9","ISSN":["0006-2952"],"issn-type":[{"value":"0006-2952","type":"print"}],"published":{"date-parts":[[1976,5]]}}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
     headers:
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
@@ -71,11 +102,11 @@ interactions:
       content-encoding:
       - gzip
       content-length:
-      - '2345'
+      - '3806'
       content-type:
       - application/json
       date:
-      - Sun, 13 Oct 2024 04:59:04 GMT
+      - Sat, 09 Nov 2024 06:35:59 GMT
       permissions-policy:
       - interest-cohort=()
       server:
