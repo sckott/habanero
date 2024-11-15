@@ -17,7 +17,7 @@ jobs:
         envs: 'GITHUB_TOKEN'
         usesh: true
         prepare: |
-          pkg install -y uv
+          pkg install -y -v 0.4.29 uv
         run: |
           pwd
           uv python install 3.11.5
