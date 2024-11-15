@@ -1,0 +1,25 @@
+name: freebsd
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: A job to run test in FreeBSD
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v4
+    - name: Test in FreeBSD
+      id: test
+      uses: vmactions/freebsd-vm@v1
+      with:
+        envs: 'GITHUB_TOKEN'
+        usesh: true
+        prepare: |
+          pkg install -y uv
+        run: |
+          pwd
+          uv python install 3.11.5
+          uv sync --all-extras --dev
+          make test
