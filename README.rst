@@ -63,7 +63,7 @@ Stable version
   pip (or pip3) install habanero
 
 
-If you need to fix bibtex format citations using content negotiation use
+If you would like to fix bibtex format citations using content negotiation you'll have to install the optional dependency bibtexparser >= 2.0.0b7 (done for you with optional `[bibtex]`)
 
 .. code-block:: console
 

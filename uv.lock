@@ -166,10 +166,9 @@ wheels = [
 
 [[package]]
 name = "habanero"
-version = "1.2.6.91"
+version = "1.2.7.91"
 source = { editable = "." }
 dependencies = [
-    { name = "bibtexparser" },
     { name = "httpx" },
     { name = "packaging" },
     { name = "pyyaml" },
@@ -180,9 +179,6 @@ dependencies = [
 [package.optional-dependencies]
 bibtex = [
     { name = "bibtexparser" },
-]
-test = [
-    { name = "pytest" },
 ]
 
 [package.dev-dependencies]
@@ -202,11 +198,9 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bibtexparser", specifier = "==2.0.0b7" },
-    { name = "bibtexparser", marker = "extra == 'bibtex'", specifier = "==2.0.0b7" },
+    { name = "bibtexparser", marker = "extra == 'bibtex'", specifier = ">=2.0.0b7" },
     { name = "httpx", specifier = ">=0.27.2" },
     { name = "packaging", specifier = ">=24.1" },
-    { name = "pytest", marker = "extra == 'test'" },
     { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "tqdm", specifier = ">=4.66.5" },
     { name = "urllib3", specifier = "==2.2.0" },
