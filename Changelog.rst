@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2.0.0 (2024-11-25)
+--------------------
+* Now using `uv` to manage work on this package. See `Makefile` and GH Actions files for how it's used (#195)
+* Moved `bibtexparser` from required dependency to optional, install with `pip install habanero[bibtex]` (#185)
+* Added new `Crossref` instance variable `timeout` for the user to set a curl timeout for all requests using the instance of the class created with `timeout` (#111)
+* Update Crossref issue tracker URL (#160)
+* Replaced `requests` with `httpx` throughout this package. `requests` is on feature freeze (#196)
+
 1.2.6 (2024-02-03)
 --------------------
 * mark two more tests for vcr to create cassettes for (both content_negotation tests) - no user facing changes (#114)
