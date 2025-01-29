@@ -59,7 +59,6 @@ def content_negotiation(
 
         # return an apa style citation
         cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "apa")
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "harvard3")
         cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "elsevier-harvard")
         cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "ecoscience")
         cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "heredity")
@@ -70,10 +69,8 @@ def content_negotiation(
         # cn.content_negotiation(ids = "10.15468/t4rau8", format = "crossref-xml")
 
         ## But most do work
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "text")
         cn.content_negotiation(ids = "10.15468/t4rau8", format = "crossref-tdm")
         cn.content_negotiation(ids = "10.15468/t4rau8", format = "datacite-xml")
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "rdf-xml")
         cn.content_negotiation(ids = "10.15468/t4rau8", format = "turtle")
         cn.content_negotiation(ids = "10.15468/t4rau8", format = "ris")
         cn.content_negotiation(ids = "10.15468/t4rau8", format = "bibtex")
