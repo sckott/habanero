@@ -7,15 +7,15 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.9.16, 3.10.9, 3.11.5, 3.12, 3.13]
+        python-version: [3.10.9, 3.11.5, 3.12, 3.13]
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
     - uses: actions/checkout@v4
     - name: Install uv
-      uses: astral-sh/setup-uv@v3
+      uses: astral-sh/setup-uv@v5
       with:
-        version: "0.5.4"
+        version: "0.5.27"
     - name: Set up Python ${{ matrix.python-version }}
       run: uv python install ${{ matrix.python-version }}
     - name: Install the project
