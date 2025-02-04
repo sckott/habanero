@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2.2.0 (2025-02-04)
+--------------------
+* Make tests independent of optional dependency `bibtexparser` (#199) thanks @hseg !
+
 2.0.0 (2024-11-25)
 --------------------
 * Now using `uv` to manage work on this package. See `Makefile` and GH Actions files for how it's used (#195)
