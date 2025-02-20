@@ -1,6 +1,6 @@
 all: install
 
-.PHONY: install test docs distclean dist upload
+.PHONY: install test docs
 
 install:
 	uv pip install .
@@ -17,18 +17,6 @@ docs:
 
 opendocs:
 	open docs/_build/html/index.html
-
-clean:
-	rm -rf dist/* build/*
-
-dist:
-	python -m build
-
-upload_test:
-	python -m twine upload --repository testpypi dist/*
-
-upload:
-	python -m twine upload --repository pypi dist/*
 
 .PHONY: lint-fix
 lint-fix:
