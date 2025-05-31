@@ -35,7 +35,7 @@ import all):
 - `content_negotiation` - get citations in a variety of formats
 - `csl_styles` - get CSL styles, used in `content_negotation` method
 
-`WorksContainer` - A class for handling Crossref works. Pass output of works from methods on the `Crossref` class to more easily extract specific fields of works. 
+`WorksContainer` - A class for handling Crossref works. Pass output of works from methods on the `Crossref` class to more easily extract specific fields of works.
 
 Note about searching:
 
@@ -60,14 +60,20 @@ Stable version
 
 .. code-block:: console
 
-  pip (or pip3) install habanero
+  # pip
+  pip install habanero
+
+  # uv w/ legacy project setup
+  uv pip install habanero
+  # uv w/ pyproject.toml
+  uv add habanero
 
 
 If you would like to fix bibtex format citations using content negotiation you'll have to install the optional dependency bibtexparser >= 2.0.0b7 (done for you with optional `[bibtex]`)
 
 .. code-block:: console
 
-  pip (or pip3) install habanero[bibtex]
+  pip install habanero[bibtex]
 
 
 Dev version
@@ -98,7 +104,7 @@ Initialize a client
 Works route
 
 .. code-block:: python
-  
+
   # query
   x = cr.works(query = "ecology")
   x['message']
@@ -111,7 +117,7 @@ Works route
 Members route
 
 .. code-block:: python
-  
+
   # ids here is the Crossref Member ID; 98 = Hindawi
   cr.members(ids = 98, works = True)
 
