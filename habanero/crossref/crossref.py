@@ -1,4 +1,4 @@
-from typing import List, Union, Optional
+from typing import List, Optional, Union
 
 from ..habanero_utils import check_kwargs, sub_str
 from ..request import request
