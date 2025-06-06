@@ -1,6 +1,10 @@
 Changelog
 =========
 
+2.3.0 (2025-06-06)
+--------------------
+* Change `urllib3` version to `urllib3>=2.2.2,<3.0.0` to account for a security fix (#202) (#203)
+
 2.2.0 (2025-02-04)
 --------------------
 * Make tests independent of optional dependency `bibtexparser` (#199) thanks @hseg !
