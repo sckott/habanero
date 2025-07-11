@@ -208,7 +208,7 @@ class Crossref:
         progress_bar: bool = False,
         warn: bool = False,
         **kwargs,
-    ) -> dict:
+    ) -> dict | list[dict]:
         """
         Search Crossref works
 
@@ -253,7 +253,8 @@ class Crossref:
             Returns `None` when `warn=True` for each DOI that errors.
         :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
             queries (see examples and FieldQueries_)
-        :rtype: dict
+        :returns: list[dict] when cursor is used and xx, and dict when cursor is not used
+        :rtype: dict | list[dict]
 
         Usage::
 
