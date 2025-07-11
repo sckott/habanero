@@ -28,3 +28,9 @@ lint-check:
 
 format:
 	ruff format habanero
+
+ipython:
+	uv run --with rich --with ipython python -m IPython
+
+py:
+	uv run python
