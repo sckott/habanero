@@ -70,8 +70,6 @@ def parse_json_err(x):
             msg = msg[0]["message"]
         except TypeError:
             msg = failed_parse_msg
-        else:
-            msg = failed_parse_msg
 
         return msg
 
