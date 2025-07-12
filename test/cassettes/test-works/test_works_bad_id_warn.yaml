@@ -11,14 +11,22 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.1371/notarealdoi
   response:
     content: Resource not found.
     headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/plain
+      Date:
+      - Sat, 12 Jul 2025 04:28:59 GMT
+      Transfer-Encoding:
+      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -26,24 +34,12 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
-      content-type:
-      - text/plain
-      date:
-      - Sun, 13 Oct 2024 04:36:48 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
-      transfer-encoding:
-      - chunked
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

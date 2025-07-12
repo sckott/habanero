@@ -11,61 +11,30 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works?rows=2
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":163135345,"items":[{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T18:58:20Z","timestamp":1697482700644},"reference-count":37,"publisher":"Elsevier
-      BV","issue":"1-2","license":[{"start":{"date-parts":[[2008,5,1]],"date-time":"2008-05-01T00:00:00Z","timestamp":1209600000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-      of Chromatography A"],"published-print":{"date-parts":[[2008,5]]},"DOI":"10.1016\/j.chroma.2008.01.017","type":"journal-article","created":{"date-parts":[[2008,1,14]],"date-time":"2008-01-14T07:20:02Z","timestamp":1200295202000},"page":"90-98","source":"Crossref","is-referenced-by-count":8,"title":["A
-      new generation of more pH stable reversed phases prepared by silanization of
-      zirconized silica"],"prefix":"10.1016","volume":"1191","author":[{"given":"C\u00e9sar
-      R.","family":"Silva","sequence":"first","affiliation":[]},{"given":"Claudio","family":"Airoldi","sequence":"additional","affiliation":[]},{"given":"Kenneth
-      E.","family":"Collins","sequence":"additional","affiliation":[]},{"given":"Carol
-      H.","family":"Collins","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.chroma.2008.01.017_bib1","first-page":"532","volume":"25","author":"Majors","year":"2007","journal-title":"LC
-      GC North Am."},{"key":"10.1016\/j.chroma.2008.01.017_bib2","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1016\/S0021-9673(04)01438-4","volume":"1060","author":"Claessens","year":"2004","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib3","doi-asserted-by":"crossref","first-page":"1158","DOI":"10.1002\/jssc.200600492","volume":"30","author":"Plumb","year":"2007","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib4","doi-asserted-by":"crossref","first-page":"1207","DOI":"10.1002\/jssc.200600535","volume":"30","author":"Anspach","year":"2007","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib5","doi-asserted-by":"crossref","first-page":"285","DOI":"10.1016\/S0021-9673(98)00908-X","volume":"830","author":"Fairbank","year":"1999","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib6","doi-asserted-by":"crossref","first-page":"153","DOI":"10.1016\/S0021-9673(99)01194-2","volume":"868","author":"Li","year":"2000","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib7","doi-asserted-by":"crossref","first-page":"4344","DOI":"10.1021\/ac971380i","volume":"70","author":"Kirkland","year":"1998","journal-title":"Anal.
-      Chem."},{"key":"10.1016\/j.chroma.2008.01.017_bib8","first-page":"1162","volume":"18","author":"Cheng","year":"2000","journal-title":"LC
-      GC North Am."},{"key":"10.1016\/j.chroma.2008.01.017_bib9","doi-asserted-by":"crossref","first-page":"6781","DOI":"10.1021\/ac034767w","volume":"75","author":"Wyndhan","year":"2004","journal-title":"Anal.
-      Chem."},{"key":"10.1016\/j.chroma.2008.01.017_bib10","doi-asserted-by":"crossref","first-page":"5777","DOI":"10.1021\/ac049756x","volume":"76","author":"Patel","year":"2004","journal-title":"Anal.
-      Chem."},{"key":"10.1016\/j.chroma.2008.01.017_bib11","doi-asserted-by":"crossref","first-page":"144","DOI":"10.1016\/j.aca.2005.08.026","volume":"554","author":"Liu","year":"2005","journal-title":"Anal.
-      Chim. Acta"},{"key":"10.1016\/j.chroma.2008.01.017_bib12","doi-asserted-by":"crossref","first-page":"1115","DOI":"10.1002\/jssc.200600521","volume":"30","author":"Pereira","year":"2007","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib13","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/j.chroma.2003.11.052","volume":"1028","author":"Nawrocki","year":"2004","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib14","doi-asserted-by":"crossref","first-page":"111","DOI":"10.1016\/S0021-9673(01)88938-X","volume":"535","author":"Tr\u00fcndinger","year":"1990","journal-title":"J.
-      Chromatogr."},{"key":"10.1016\/j.chroma.2008.01.017_bib15","doi-asserted-by":"crossref","first-page":"424","DOI":"10.1007\/BF02467618","volume":"49","author":"Ellwanger","year":"1999","journal-title":"Chromatographia"},{"key":"10.1016\/j.chroma.2008.01.017_bib16","doi-asserted-by":"crossref","first-page":"1101","DOI":"10.1002\/jssc.200600507","volume":"30","author":"Teutenberg","year":"2007","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib17","doi-asserted-by":"crossref","first-page":"790","DOI":"10.1002\/jssc.200500479","volume":"29","author":"Silva","year":"2006","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib18","doi-asserted-by":"crossref","first-page":"782","DOI":"10.1002\/jssc.200500478","volume":"29","author":"Faria","year":"2006","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib19","doi-asserted-by":"crossref","first-page":"63","DOI":"10.1016\/S0021-9673(01)87432-X","volume":"326","author":"Stout","year":"1985","journal-title":"J.
-      Chromatogr."},{"key":"10.1016\/j.chroma.2008.01.017_bib20","doi-asserted-by":"crossref","first-page":"3","DOI":"10.1016\/0021-9673(94)00631-I","volume":"691","author":"Kirkland","year":"1995","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib21","doi-asserted-by":"crossref","first-page":"5016","DOI":"10.1021\/ac030389j","volume":"76","author":"Dun","year":"2004","journal-title":"Anal.
-      Chem."},{"key":"10.1016\/j.chroma.2008.01.017_bib22","doi-asserted-by":"crossref","first-page":"25","DOI":"10.1365\/s10337-005-0697-2","volume":"63","author":"Ge","year":"2006","journal-title":"Chromatographia"},{"key":"10.1016\/j.chroma.2008.01.017_bib23","doi-asserted-by":"crossref","first-page":"2329","DOI":"10.1080\/10826070600864700","volume":"29","author":"Ge","year":"2006","journal-title":"J.
-      Liq. Chromatogr. Relat. Technol."},{"key":"10.1016\/j.chroma.2008.01.017_bib24","doi-asserted-by":"crossref","first-page":"155","DOI":"10.1016\/j.chroma.2004.09.019","volume":"1073","author":"Silva","year":"2005","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib25","first-page":"856","volume":"15","author":"Engelhardt","year":"1997","journal-title":"LC
-      GC North Am."},{"key":"10.1016\/j.chroma.2008.01.017_bib26","doi-asserted-by":"crossref","first-page":"721","DOI":"10.1093\/chromsci\/27.12.721","volume":"27","author":"Kimata","year":"1989","journal-title":"J.
-      Chromatogr. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib27","doi-asserted-by":"crossref","first-page":"9093","DOI":"10.1021\/jp010828n","volume":"105","author":"Teo","year":"2001","journal-title":"J.
-      Phys. Chem. B"},{"key":"10.1016\/j.chroma.2008.01.017_bib28","doi-asserted-by":"crossref","first-page":"1437","DOI":"10.1080\/01483918008062788","volume":"3","author":"Berendsen","year":"1980","journal-title":"J.
-      Liq. Chromatogr."},{"key":"10.1016\/j.chroma.2008.01.017_bib29","doi-asserted-by":"crossref","first-page":"215","DOI":"10.1002\/jssc.200390028","volume":"15","author":"Albert","year":"2003","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib30","doi-asserted-by":"crossref","first-page":"45","DOI":"10.1016\/j.chroma.2006.02.025","volume":"1114","author":"Silva","year":"2006","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib31","doi-asserted-by":"crossref","first-page":"2120","DOI":"10.1002\/jssc.200500151","volume":"28","author":"Euerby","year":"2005","journal-title":"J.
-      Sep. Sci."},{"key":"10.1016\/j.chroma.2008.01.017_bib32","doi-asserted-by":"crossref","first-page":"13","DOI":"10.1016\/S0021-9673(03)00393-5","volume":"994","author":"Euerby","year":"2003","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib33","doi-asserted-by":"crossref","first-page":"111","DOI":"10.1016\/S0021-9673(97)00865-0","volume":"797","author":"Kirkland","year":"1998","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib34","doi-asserted-by":"crossref","first-page":"153","DOI":"10.1016\/j.chroma.2004.04.016","volume":"1060","author":"Trammell","year":"2004","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib35","doi-asserted-by":"crossref","first-page":"312","DOI":"10.1016\/S0021-9673(02)02085-X","volume":"988","author":"Tindall","year":"2003","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib36","doi-asserted-by":"crossref","first-page":"149","DOI":"10.1016\/j.chroma.2003.11.035","volume":"1030","author":"Fonseca","year":"2004","journal-title":"J.
-      Chromatogr. A"},{"key":"10.1016\/j.chroma.2008.01.017_bib37","doi-asserted-by":"crossref","first-page":"1844","DOI":"10.1002\/jssc.200700027","volume":"30","author":"Faria","year":"2007","journal-title":"J.
-      Sep. Sci."}],"container-title":["Journal of Chromatography A"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0021967308000605?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0021967308000605?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,1,1]],"date-time":"2019-01-01T09:55:02Z","timestamp":1546336502000},"score":1.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0021967308000605"}},"issued":{"date-parts":[[2008,5]]},"references-count":37,"journal-issue":{"issue":"1-2","published-print":{"date-parts":[[2008,5]]}},"alternative-id":["S0021967308000605"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.chroma.2008.01.017","ISSN":["0021-9673"],"issn-type":[{"value":"0021-9673","type":"print"}],"published":{"date-parts":[[2008,5]]}},{"indexed":{"date-parts":[[2023,10,16]],"date-time":"2023-10-16T18:58:20Z","timestamp":1697482700908},"reference-count":0,"publisher":"Walter
-      de Gruyter GmbH","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Hoppe-Seyler\u00b4s
-      Zeitschrift f\u00fcr physiologische Chemie"],"published-print":{"date-parts":[[1969,1]]},"DOI":"10.1515\/bchm2.1969.350.2.1437","type":"journal-article","created":{"date-parts":[[2011,2,24]],"date-time":"2011-02-24T22:14:42Z","timestamp":1298585682000},"page":"1437-1448","source":"Crossref","is-referenced-by-count":6,"title":["Untersuchungen
-      \u00fcber den Kollagenabbau durch Rattenorgane. Differenzierung und Charakterisierung
-      Prolinpeptid-spaltender Enzyme"],"prefix":"10.1515","volume":"350","author":[{"given":"HEIDRUN","family":"KIRSCHKE","sequence":"first","affiliation":[]},{"given":"HORST","family":"HANSON","sequence":"additional","affiliation":[]}],"member":"374","container-title":["Hoppe-Seyler\u00b4s
-      Zeitschrift f\u00fcr physiologische Chemie"],"language":"en","link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/bchm2.1969.350.2.1437\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,21]],"date-time":"2021-04-21T21:05:40Z","timestamp":1619039140000},"score":1.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/bchm2.1969.350.2.1437\/html"}},"issued":{"date-parts":[[1969,1]]},"references-count":0,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1969,1]]}},"alternative-id":["10.1515\/bchm2.1969.350.2.1437"],"URL":"http:\/\/dx.doi.org\/10.1515\/bchm2.1969.350.2.1437","ISSN":["0018-4888"],"issn-type":[{"value":"0018-4888","type":"print"}],"published":{"date-parts":[[1969,1]]}}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":171479891,"items":[{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T20:11:24Z","timestamp":1651003884571},"publisher-location":"1
+      Oliver''s Yard,\u00a055 City Road,\u00a0London\u00a0EC1Y 1SP\u00a0United Kingdom\u00a0","reference-count":0,"publisher":"SAGE
+      Publications Ltd","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014]]},"DOI":"10.4135\/9781473913875.n8","type":"book-chapter","created":{"date-parts":[[2014,12,23]],"date-time":"2014-12-23T12:25:28Z","timestamp":1419337528000},"page":"92-107","source":"Crossref","is-referenced-by-count":0,"title":["Data
+      Analysis"],"prefix":"10.4135","member":"179","container-title":["Success with
+      Your Early Years Research Project"],"link":[{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.4135\/9781473913875.n8","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T19:33:52Z","timestamp":1651001632000},"score":1.0,"resource":{"primary":{"URL":"https:\/\/methods.sagepub.com\/book\/success-with-your-early-years-research-project\/n8.xml"}},"issued":{"date-parts":[[2014]]},"references-count":0,"alternative-id":["10.4135\/9781473913875"],"URL":"https:\/\/doi.org\/10.4135\/9781473913875.n8","published":{"date-parts":[[2014]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T20:11:49Z","timestamp":1651003909895},"publisher-location":"1
+      Oliver''s Yard,\u00a055 City Road,\u00a0London\u00a0England\u00a0EC1Y 1SP\u00a0United
+      Kingdom\u00a0","reference-count":0,"publisher":"SAGE Publications Ltd","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2005]]},"DOI":"10.4135\/9781849209977.n6","type":"book-chapter","created":{"date-parts":[[2016,6,19]],"date-time":"2016-06-19T11:02:14Z","timestamp":1466334134000},"page":"96-111","source":"Crossref","is-referenced-by-count":0,"title":["Doing
+      Research: Reflecting on Methods, Methodology and Ethics"],"prefix":"10.4135","member":"179","container-title":["Succeeding
+      with Your Doctorate"],"link":[{"URL":"http:\/\/journals.sagepub.com\/doi\/pdf\/10.4135\/9781849209977.n6","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T19:33:42Z","timestamp":1651001622000},"score":1.0,"resource":{"primary":{"URL":"https:\/\/methods.sagepub.com\/book\/succeeding-with-your-doctorate\/n6.xml"}},"issued":{"date-parts":[[2005]]},"references-count":0,"alternative-id":["10.4135\/9781849209977"],"URL":"https:\/\/doi.org\/10.4135\/9781849209977.n6","published":{"date-parts":[[2005]]}}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '964'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:53 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -73,16 +42,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '2672'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:36:39 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -91,10 +52,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

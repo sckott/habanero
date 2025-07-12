@@ -11,15 +11,15 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91 foo bar
+      - python-httpx/0.27.2 habanero/2.3.0 foo bar
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91 foo bar
+      - python-httpx/0.27.2 habanero/2.3.0 foo bar
     method: GET
     uri: https://api.crossref.org/works/10.1371/journal.pone.0033693
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,9,25]],"date-time":"2024-09-25T11:20:08Z","timestamp":1727263208808},"reference-count":70,"publisher":"Public
+    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,6,3]],"date-time":"2025-06-03T01:29:02Z","timestamp":1748914142187,"version":"3.40.2"},"reference-count":70,"publisher":"Public
       Library of Science (PLoS)","issue":"3","license":[{"start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-      ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":67,"title":["Methylphenidate
+      ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"https:\/\/doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":69,"title":["Methylphenidate
       Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
       Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
       B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
@@ -32,10 +32,10 @@ interactions:
       Treat Options Neurol"},{"key":"ref4","doi-asserted-by":"crossref","first-page":"L7","DOI":"10.1016\/S0024-3205(99)00225-8","article-title":"Methylphenidate
       and cocaine have a similar in vivo potency to block dopamine transporters in
       the human brain.","volume":"65","author":"ND Volkow","year":"1999","journal-title":"Life
-      Sci"},{"first-page":"1","article-title":"Monitoring the Future national survey
-      results on drug use, 1975\u20132010.","year":"2011","author":"LD Johnston","key":"ref5"},{"first-page":"1","article-title":"Monitoring
-      the Future national survey results on drug use, 1975\u20132010.","year":"2011","author":"LD
-      Johnston","key":"ref6"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"511","DOI":"10.1007\/s00213-010-1853-4","article-title":"Non-specific
+      Sci"},{"key":"ref5","first-page":"1","article-title":"Monitoring the Future
+      national survey results on drug use, 1975\u20132010.","author":"LD Johnston","year":"2011"},{"key":"ref6","first-page":"1","article-title":"Monitoring
+      the Future national survey results on drug use, 1975\u20132010.","author":"LD
+      Johnston","year":"2011"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"511","DOI":"10.1007\/s00213-010-1853-4","article-title":"Non-specific
       effects of methylphenidate (Ritalin) on cognitive ability and decision-making
       of ADHD and healthy adults.","volume":"210","author":"N Agay","year":"2010","journal-title":"Psychopharmacology
       (Berl)"},{"key":"ref8","doi-asserted-by":"crossref","first-page":"46","DOI":"10.1007\/BF02244750","article-title":"Cognitive
@@ -61,8 +61,8 @@ interactions:
       Psychiatry"},{"key":"ref16","doi-asserted-by":"crossref","first-page":"79","DOI":"10.1006\/exnr.1993.1008","article-title":"Pre-
       and postsynaptic neurotoxic effects of dopamine demonstrated by intrastriatal
       injection.","volume":"119","author":"F Filloux","year":"1993","journal-title":"Experimental
-      Neurology"},{"key":"ref17","first-page":"633","article-title":"Oxidative pathways
-      for catecholamines in the genesis of neuromelanin and cytotoxic quinones.","volume":"14","author":"DG
+      Neurology"},{"key":"ref17","doi-asserted-by":"crossref","first-page":"633","DOI":"10.1016\/S0026-895X(25)13535-9","article-title":"Oxidative
+      pathways for catecholamines in the genesis of neuromelanin and cytotoxic quinones.","volume":"14","author":"DG
       Graham","year":"1978","journal-title":"Mol Pharmacol"},{"key":"ref18","doi-asserted-by":"crossref","first-page":"428","DOI":"10.1002\/jnr.490260405","article-title":"Toxicity
       of 6-hydroxydopamine and dopamine for dopaminergic neurons in culture.","volume":"26","author":"PP
       Michel","year":"1990","journal-title":"Journal Of Neuroscience Research"},{"key":"ref19","doi-asserted-by":"crossref","first-page":"165","DOI":"10.1007\/BF03033137","article-title":"Dopamine-
@@ -78,9 +78,9 @@ interactions:
       effects of metallothionein against dopamine quinone-induced dopaminergic neurotoxicity.","volume":"581","author":"I
       Miyazaki","year":"2007","journal-title":"FEBS Lett"},{"key":"ref23","first-page":"141","article-title":"Dopaminergic
       neuron-specific oxidative stress caused by dopamine itself.","volume":"62","author":"I
-      Miyazaki","year":"2008","journal-title":"Acta Med Okayama"},{"journal-title":"J
-      Neurosci","article-title":"Inflammatory effects of highly pathogenic H5N1 influenza
-      virus infection in the CNS of mice.","year":"2012","author":"H Jang","key":"ref24"},{"key":"ref25","first-page":"382","article-title":"Pharmacokinetics
+      Miyazaki","year":"2008","journal-title":"Acta Med Okayama"},{"key":"ref24","article-title":"Inflammatory
+      effects of highly pathogenic H5N1 influenza virus infection in the CNS of mice.","author":"H
+      Jang","year":"2012","journal-title":"J Neurosci"},{"key":"ref25","doi-asserted-by":"crossref","first-page":"382","DOI":"10.1016\/S0022-3565(25)21542-7","article-title":"Pharmacokinetics
       of methylphenidate in man, rat and monkey.","volume":"226","author":"W Wargin","year":"1983","journal-title":"J
       Pharmacol Exp Ther"},{"key":"ref26","doi-asserted-by":"crossref","first-page":"432","DOI":"10.1002\/1098-2396(20001215)38:4<432::AID-SYN8>3.0.CO;2-Q","article-title":"Synergistic
       interactions between nicotine and cocaine or methylphenidate depend on the dose
@@ -203,10 +203,18 @@ interactions:
       Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","doi-asserted-by":"crossref","first-page":"Article3","DOI":"10.2202\/1544-6115.1027","article-title":"Linear
       models and empirical bayes methods for assessing differential expression in
       microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
-      Appl Genet Mol Biol"}],"updated-by":[{"updated":{"date-parts":[[2012,5,8]],"date-time":"2012-05-08T00:00:00Z","timestamp":1336435200000},"DOI":"10.1371\/annotation\/c76da2c1-ccb8-4797-94c1-359d3ceceeda","type":"correction","label":"Correction"}],"container-title":["PLoS
-      ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,4,21]],"date-time":"2024-04-21T21:52:23Z","timestamp":1713736343000},"score":1,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0033693"}},"subtitle":[],"editor":[{"given":"Cesario
-      V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2012,3,21]]}},"URL":"http:\/\/dx.doi.org\/10.1371\/journal.pone.0033693","relation":{},"ISSN":["1932-6203"],"issn-type":[{"type":"electronic","value":"1932-6203"}],"subject":[],"published":{"date-parts":[[2012,3,21]]}}}'
+      Appl Genet Mol Biol"}],"updated-by":[{"updated":{"date-parts":[[2012,5,8]],"date-time":"2012-05-08T00:00:00Z","timestamp":1336435200000},"DOI":"10.1371\/annotation\/c76da2c1-ccb8-4797-94c1-359d3ceceeda","type":"correction","source":"publisher","label":"Correction"}],"container-title":["PLoS
+      ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2025,3,23]],"date-time":"2025-03-23T19:53:43Z","timestamp":1742759623000},"score":1,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0033693"}},"subtitle":[],"editor":[{"given":"Cesario
+      V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2012,3,21]]}},"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0033693","relation":{},"ISSN":["1932-6203"],"issn-type":[{"type":"electronic","value":"1932-6203"}],"subject":[],"published":{"date-parts":[[2012,3,21]]}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '7182'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:03 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -214,16 +222,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '7140'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 05:00:34 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -232,10 +232,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

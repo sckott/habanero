@@ -11,13 +11,13 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.1136/jclinpath-2020-206745
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,8,8]],"date-time":"2024-08-08T00:54:44Z","timestamp":1723078484439},"reference-count":36,"publisher":"BMJ","issue":"5","license":[{"start":{"date-parts":[[2020,8,17]],"date-time":"2020-08-17T00:00:00Z","timestamp":1597622400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/"}],"funder":[{"DOI":"10.13039\/501100012166","name":"National
+    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T10:32:16Z","timestamp":1740133936125,"version":"3.37.3"},"reference-count":36,"publisher":"BMJ","issue":"5","license":[{"start":{"date-parts":[[2020,8,17]],"date-time":"2020-08-17T00:00:00Z","timestamp":1597622400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/"}],"funder":[{"DOI":"10.13039\/501100012166","name":"National
       Key Research and Development Program","doi-asserted-by":"crossref","award":["2017YFC0906500
       and 2016YFC1000301"],"id":[{"id":"10.13039\/501100012166","id-type":"DOI","asserted-by":"crossref"}]}],"content-domain":{"domain":["bmj.com"],"crossmark-restriction":true},"short-container-title":["J
       Clin Pathol"],"accepted":{"date-parts":[[2020,7,2]]},"published-print":{"date-parts":[[2021,5]]},"abstract":"<jats:sec><jats:title>Background<\/jats:title><jats:p>The
@@ -50,26 +50,34 @@ interactions:
       had correct results for each mutation.<\/jats:p><\/jats:sec><jats:sec><jats:title>Conclusion<\/jats:title><jats:p>RM
       for a<jats:italic>KRAS<\/jats:italic>\/<jats:italic>NRAS<\/jats:italic>\/<jats:italic>EGFR<\/jats:italic>\/<jats:italic>BRAF<\/jats:italic>\/<jats:italic>MET<\/jats:italic>mutation
       panel for plasma ctDNA was developed, which will be essential for quality control
-      of the performance of independent laboratories.<\/jats:p><\/jats:sec>","DOI":"10.1136\/jclinpath-2020-206745","type":"journal-article","created":{"date-parts":[[2020,8,17]],"date-time":"2020-08-17T21:28:34Z","timestamp":1597699714000},"page":"314-320","update-policy":"http:\/\/dx.doi.org\/10.1136\/crossmarkpolicy","source":"Crossref","is-referenced-by-count":7,"title":["Construction
+      of the performance of independent laboratories.<\/jats:p><\/jats:sec>","DOI":"10.1136\/jclinpath-2020-206745","type":"journal-article","created":{"date-parts":[[2020,8,17]],"date-time":"2020-08-17T21:28:34Z","timestamp":1597699714000},"page":"314-320","update-policy":"https:\/\/doi.org\/10.1136\/crossmarkpolicy","source":"Crossref","is-referenced-by-count":7,"title":["Construction
       of a reference material panel for detecting<i>KRAS<\/i>\/<i>NRAS<\/i>\/<i>EGFR<\/i>\/<i>BRAF<\/i>\/<i>MET<\/i>mutations
-      in plasma ctDNA"],"prefix":"10.1136","volume":"74","author":[{"given":"Jun","family":"Xu","sequence":"first","affiliation":[]},{"given":"Shoufang","family":"Qu","sequence":"additional","affiliation":[]},{"given":"Nan","family":"Sun","sequence":"additional","affiliation":[]},{"given":"Wenxin","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Juanli","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Qingtao","family":"Song","sequence":"additional","affiliation":[]},{"given":"Mufei","family":"Lin","sequence":"additional","affiliation":[]},{"given":"Wei","family":"Gao","sequence":"additional","affiliation":[]},{"given":"Qiaosong","family":"Zheng","sequence":"additional","affiliation":[]},{"given":"Mipeng","family":"Han","sequence":"additional","affiliation":[]},{"given":"Chenglong","family":"Na","sequence":"additional","affiliation":[]},{"given":"Ren","family":"Xu","sequence":"additional","affiliation":[]},{"given":"Xiaoyan","family":"Chang","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0002-3513-6501","authenticated-orcid":false,"given":"Xuexi","family":"Yang","sequence":"additional","affiliation":[]},{"given":"Jie","family":"Huang","sequence":"additional","affiliation":[]}],"member":"239","published-online":{"date-parts":[[2020,8,17]]},"reference":[{"key":"2024053002053277000_74.5.314.1","doi-asserted-by":"publisher","DOI":"10.3322\/caac.21338"},{"key":"2024053002053277000_74.5.314.2","doi-asserted-by":"publisher","DOI":"10.1016\/j.cllc.2015.07.002"},{"key":"2024053002053277000_74.5.314.3","doi-asserted-by":"crossref","first-page":"1080","DOI":"10.1001\/jamaoncol.2018.1395","article-title":"Cost-Effectiveness
+      in plasma ctDNA"],"prefix":"10.1136","volume":"74","author":[{"given":"Jun","family":"Xu","sequence":"first","affiliation":[]},{"given":"Shoufang","family":"Qu","sequence":"additional","affiliation":[]},{"given":"Nan","family":"Sun","sequence":"additional","affiliation":[]},{"given":"Wenxin","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Juanli","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Qingtao","family":"Song","sequence":"additional","affiliation":[]},{"given":"Mufei","family":"Lin","sequence":"additional","affiliation":[]},{"given":"Wei","family":"Gao","sequence":"additional","affiliation":[]},{"given":"Qiaosong","family":"Zheng","sequence":"additional","affiliation":[]},{"given":"Mipeng","family":"Han","sequence":"additional","affiliation":[]},{"given":"Chenglong","family":"Na","sequence":"additional","affiliation":[]},{"given":"Ren","family":"Xu","sequence":"additional","affiliation":[]},{"given":"Xiaoyan","family":"Chang","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-3513-6501","authenticated-orcid":false,"given":"Xuexi","family":"Yang","sequence":"additional","affiliation":[]},{"given":"Jie","family":"Huang","sequence":"additional","affiliation":[]}],"member":"239","published-online":{"date-parts":[[2020,8,17]]},"reference":[{"key":"2024111105500526000_74.5.314.1","doi-asserted-by":"publisher","DOI":"10.3322\/caac.21338"},{"key":"2024111105500526000_74.5.314.2","doi-asserted-by":"publisher","DOI":"10.1016\/j.cllc.2015.07.002"},{"key":"2024111105500526000_74.5.314.3","doi-asserted-by":"crossref","first-page":"1080","DOI":"10.1001\/jamaoncol.2018.1395","article-title":"Cost-Effectiveness
       of Osimertinib in the first-line treatment of patients with EGFR-mutated advanced
       non-small cell lung cancer","volume":"4","author":"Aguiar","year":"2018","journal-title":"JAMA
-      Oncol"},{"key":"2024053002053277000_74.5.314.4","doi-asserted-by":"publisher","DOI":"10.1001\/jama.2019.11058"},{"key":"2024053002053277000_74.5.314.5","doi-asserted-by":"publisher","DOI":"10.1016\/j.pharmthera.2018.08.007"},{"key":"2024053002053277000_74.5.314.6","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa0810699"},{"key":"2024053002053277000_74.5.314.7","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa0904554"},{"key":"2024053002053277000_74.5.314.8","doi-asserted-by":"publisher","DOI":"10.1016\/S1470-2045(15)00077-7"},{"key":"2024053002053277000_74.5.314.9","doi-asserted-by":"publisher","DOI":"10.1634\/theoncologist.2013-0095"},{"key":"2024053002053277000_74.5.314.10","doi-asserted-by":"publisher","DOI":"10.1016\/j.lungcan.2014.01.023"},{"key":"2024053002053277000_74.5.314.11","doi-asserted-by":"publisher","DOI":"10.1007\/s40265-015-0533-4"},{"key":"2024053002053277000_74.5.314.12","doi-asserted-by":"publisher","DOI":"10.21037\/tlcr.2016.08.07"},{"key":"2024053002053277000_74.5.314.13","doi-asserted-by":"publisher","DOI":"10.1038\/ncomms9760"},{"key":"2024053002053277000_74.5.314.14","doi-asserted-by":"publisher","DOI":"10.1038\/nrclinonc.2017.14"},{"key":"2024053002053277000_74.5.314.15","first-page":"241","article-title":"Les
+      Oncol"},{"key":"2024111105500526000_74.5.314.4","doi-asserted-by":"publisher","DOI":"10.1001\/jama.2019.11058"},{"key":"2024111105500526000_74.5.314.5","doi-asserted-by":"publisher","DOI":"10.1016\/j.pharmthera.2018.08.007"},{"key":"2024111105500526000_74.5.314.6","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa0810699"},{"key":"2024111105500526000_74.5.314.7","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa0904554"},{"key":"2024111105500526000_74.5.314.8","doi-asserted-by":"publisher","DOI":"10.1016\/S1470-2045(15)00077-7"},{"key":"2024111105500526000_74.5.314.9","doi-asserted-by":"publisher","DOI":"10.1634\/theoncologist.2013-0095"},{"key":"2024111105500526000_74.5.314.10","doi-asserted-by":"publisher","DOI":"10.1016\/j.lungcan.2014.01.023"},{"key":"2024111105500526000_74.5.314.11","doi-asserted-by":"publisher","DOI":"10.1007\/s40265-015-0533-4"},{"key":"2024111105500526000_74.5.314.12","doi-asserted-by":"publisher","DOI":"10.21037\/tlcr.2016.08.07"},{"key":"2024111105500526000_74.5.314.13","doi-asserted-by":"publisher","DOI":"10.1038\/ncomms9760"},{"key":"2024111105500526000_74.5.314.14","doi-asserted-by":"publisher","DOI":"10.1038\/nrclinonc.2017.14"},{"key":"2024111105500526000_74.5.314.15","first-page":"241","article-title":"Les
       acides nucl\u00e9iques Du plasma sanguin CheZ l''homme","volume":"142","author":"Mandel","year":"1948","journal-title":"C
-      R Seances Soc Biol Fil"},{"key":"2024053002053277000_74.5.314.16","first-page":"646","article-title":"Free
+      R Seances Soc Biol Fil"},{"key":"2024111105500526000_74.5.314.16","first-page":"646","article-title":"Free
       DNA in the serum of cancer patients and the effect of therapy","volume":"37","author":"Leon","year":"1977","journal-title":"Cancer
-      Res"},{"key":"2024053002053277000_74.5.314.17","doi-asserted-by":"publisher","DOI":"10.1159\/000226740"},{"key":"2024053002053277000_74.5.314.18","doi-asserted-by":"publisher","DOI":"10.1007\/s10555-016-9629-x"},{"key":"2024053002053277000_74.5.314.19","doi-asserted-by":"publisher","DOI":"10.1097\/JTO.0000000000000263"},{"key":"2024053002053277000_74.5.314.20","doi-asserted-by":"publisher","DOI":"10.1158\/1078-0432.CCR-14-2594"},{"key":"2024053002053277000_74.5.314.21","doi-asserted-by":"publisher","DOI":"10.1038\/nature11156"},{"key":"2024053002053277000_74.5.314.22","doi-asserted-by":"publisher","DOI":"10.1038\/nature12065"},{"key":"2024053002053277000_74.5.314.23","doi-asserted-by":"publisher","DOI":"10.1038\/nm.3854"},{"key":"2024053002053277000_74.5.314.24","unstructured":"US
+      Res"},{"key":"2024111105500526000_74.5.314.17","doi-asserted-by":"publisher","DOI":"10.1159\/000226740"},{"key":"2024111105500526000_74.5.314.18","doi-asserted-by":"publisher","DOI":"10.1007\/s10555-016-9629-x"},{"key":"2024111105500526000_74.5.314.19","doi-asserted-by":"publisher","DOI":"10.1097\/JTO.0000000000000263"},{"key":"2024111105500526000_74.5.314.20","doi-asserted-by":"publisher","DOI":"10.1158\/1078-0432.CCR-14-2594"},{"key":"2024111105500526000_74.5.314.21","doi-asserted-by":"publisher","DOI":"10.1038\/nature11156"},{"key":"2024111105500526000_74.5.314.22","doi-asserted-by":"publisher","DOI":"10.1038\/nature12065"},{"key":"2024111105500526000_74.5.314.23","doi-asserted-by":"publisher","DOI":"10.1038\/nm.3854"},{"key":"2024111105500526000_74.5.314.24","unstructured":"US
       Food & Drug Administration . Premarket approval P150044 - Cobas EGFR MUTATION
       TEST V2, 2016. Available: http:\/\/www.accessdata.fda.gov\/scripts\/cdrh\/cfdocs\/
-      cfpma\/pma.cfm?id=P150044"},{"key":"2024053002053277000_74.5.314.25","first-page":"3495","article-title":"Multiplexed
+      cfpma\/pma.cfm?id=P150044"},{"key":"2024111105500526000_74.5.314.25","first-page":"3495","article-title":"Multiplexed
       molecular profiling of lung cancer with malignant pleural effusion using next
       generation sequencing in Chinese patients","volume":"19","author":"Ruan","year":"2020","journal-title":"Oncol
-      Lett"},{"key":"2024053002053277000_74.5.314.26","doi-asserted-by":"publisher","DOI":"10.1126\/scitranslmed.aaz8084"},{"key":"2024053002053277000_74.5.314.27","doi-asserted-by":"publisher","DOI":"10.1002\/ijc.32133"},{"key":"2024053002053277000_74.5.314.28","doi-asserted-by":"crossref","first-page":"176","DOI":"10.1016\/j.cels.2015.09.004","article-title":"Advancing
+      Lett"},{"key":"2024111105500526000_74.5.314.26","doi-asserted-by":"publisher","DOI":"10.1126\/scitranslmed.aaz8084"},{"key":"2024111105500526000_74.5.314.27","doi-asserted-by":"publisher","DOI":"10.1002\/ijc.32133"},{"key":"2024111105500526000_74.5.314.28","doi-asserted-by":"crossref","first-page":"176","DOI":"10.1016\/j.cels.2015.09.004","article-title":"Advancing
       benchmarks for genome sequencing","volume":"1","author":"Zook","year":"2015","journal-title":"Cell
-      Syst"},{"key":"2024053002053277000_74.5.314.29","doi-asserted-by":"publisher","DOI":"10.1186\/s13104-015-1803-7"},{"key":"2024053002053277000_74.5.314.30","doi-asserted-by":"publisher","DOI":"10.1038\/nrc.2017.7"},{"key":"2024053002053277000_74.5.314.31","doi-asserted-by":"publisher","DOI":"10.1080\/14737159.2018.1400384"},{"key":"2024053002053277000_74.5.314.32","doi-asserted-by":"publisher","DOI":"10.1038\/nm.3519"},{"key":"2024053002053277000_74.5.314.33","doi-asserted-by":"publisher","DOI":"10.1038\/nbt.3520"},{"key":"2024053002053277000_74.5.314.34","doi-asserted-by":"publisher","DOI":"10.1126\/science.aai8690"},{"key":"2024053002053277000_74.5.314.35","doi-asserted-by":"publisher","DOI":"10.1002\/cncy.22134"},{"key":"2024053002053277000_74.5.314.36","doi-asserted-by":"publisher","DOI":"10.1002\/cncy.21868"}],"container-title":["Journal
-      of Clinical Pathology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1136\/jclinpath-2020-206745","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,5,30]],"date-time":"2024-05-30T16:39:13Z","timestamp":1717087153000},"score":1,"resource":{"primary":{"URL":"https:\/\/jcp.bmj.com\/lookup\/doi\/10.1136\/jclinpath-2020-206745"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2020,8,17]]},"references-count":36,"journal-issue":{"issue":"5","published-online":{"date-parts":[[2021,4,19]]},"published-print":{"date-parts":[[2021,5]]}},"alternative-id":["10.1136\/jclinpath-2020-206745"],"URL":"http:\/\/dx.doi.org\/10.1136\/jclinpath-2020-206745","relation":{},"ISSN":["0021-9746","1472-4146"],"issn-type":[{"value":"0021-9746","type":"print"},{"value":"1472-4146","type":"electronic"}],"subject":[],"published":{"date-parts":[[2020,8,17]]}}}'
+      Syst"},{"key":"2024111105500526000_74.5.314.29","doi-asserted-by":"publisher","DOI":"10.1186\/s13104-015-1803-7"},{"key":"2024111105500526000_74.5.314.30","doi-asserted-by":"publisher","DOI":"10.1038\/nrc.2017.7"},{"key":"2024111105500526000_74.5.314.31","doi-asserted-by":"publisher","DOI":"10.1080\/14737159.2018.1400384"},{"key":"2024111105500526000_74.5.314.32","doi-asserted-by":"publisher","DOI":"10.1038\/nm.3519"},{"key":"2024111105500526000_74.5.314.33","doi-asserted-by":"publisher","DOI":"10.1038\/nbt.3520"},{"key":"2024111105500526000_74.5.314.34","doi-asserted-by":"publisher","DOI":"10.1126\/science.aai8690"},{"key":"2024111105500526000_74.5.314.35","doi-asserted-by":"publisher","DOI":"10.1002\/cncy.22134"},{"key":"2024111105500526000_74.5.314.36","doi-asserted-by":"publisher","DOI":"10.1002\/cncy.21868"}],"container-title":["Journal
+      of Clinical Pathology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1136\/jclinpath-2020-206745","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,11,11]],"date-time":"2024-11-11T13:50:22Z","timestamp":1731333022000},"score":1,"resource":{"primary":{"URL":"https:\/\/jcp.bmj.com\/lookup\/doi\/10.1136\/jclinpath-2020-206745"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2020,8,17]]},"references-count":36,"journal-issue":{"issue":"5","published-online":{"date-parts":[[2021,4,19]]},"published-print":{"date-parts":[[2021,5]]}},"alternative-id":["10.1136\/jclinpath-2020-206745"],"URL":"https:\/\/doi.org\/10.1136\/jclinpath-2020-206745","relation":{},"ISSN":["0021-9746","1472-4146"],"issn-type":[{"type":"print","value":"0021-9746"},{"type":"electronic","value":"1472-4146"}],"subject":[],"published":{"date-parts":[[2020,8,17]]}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3549'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:30:06 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -77,16 +85,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '3535'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 14:07:00 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -95,10 +95,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -117,23 +113,23 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.1136/esmoopen-2020-000776
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,8,15]],"date-time":"2024-08-15T23:09:42Z","timestamp":1723763382949},"reference-count":28,"publisher":"Elsevier
+    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,7,2]],"date-time":"2025-07-02T13:33:13Z","timestamp":1751463193208,"version":"3.37.3"},"reference-count":28,"publisher":"Elsevier
       BV","issue":"4","license":[{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2020,11,5]],"date-time":"2020-11-05T00:00:00Z","timestamp":1604534400000},"content-version":"vor","delay-in-days":309,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/"}],"funder":[{"DOI":"10.13039\/100009619","name":"Japan
       Agency for Medical Research and Development","doi-asserted-by":"publisher","award":["JP18lk0201037"],"id":[{"id":"10.13039\/100009619","id-type":"DOI","asserted-by":"publisher"}]}],"content-domain":{"domain":["esmoopen.com","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["ESMO
-      Open"],"published-print":{"date-parts":[[2020]]},"DOI":"10.1136\/esmoopen-2020-000776","type":"journal-article","created":{"date-parts":[[2020,8,20]],"date-time":"2020-08-20T05:50:49Z","timestamp":1597902649000},"page":"e000776","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":13,"title":["Phase
+      Open"],"published-print":{"date-parts":[[2020]]},"DOI":"10.1136\/esmoopen-2020-000776","type":"journal-article","created":{"date-parts":[[2020,8,20]],"date-time":"2020-08-20T05:50:49Z","timestamp":1597902649000},"page":"e000776","update-policy":"https:\/\/doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":14,"title":["Phase
       II study of lenvatinib for metastatic colorectal cancer refractory to standard
-      chemotherapy: the LEMON study (NCCH1503)"],"prefix":"10.1016","volume":"5","clinical-trial-number":[{"clinical-trial-number":"nct03797326","registry":"10.18810\/clinical-trials-gov"},{"clinical-trial-number":"nct04008797","registry":"10.18810\/clinical-trials-gov"}],"author":[{"ORCID":"http:\/\/orcid.org\/0000-0003-3863-9582","authenticated-orcid":false,"given":"Satoru","family":"Iwasa","sequence":"first","affiliation":[]},{"given":"Natsuko","family":"Okita","sequence":"additional","affiliation":[]},{"given":"Aya","family":"Kuchiba","sequence":"additional","affiliation":[]},{"given":"Gakuto","family":"Ogawa","sequence":"additional","affiliation":[]},{"given":"Mamiko","family":"Kawasaki","sequence":"additional","affiliation":[]},{"given":"Kenichi","family":"Nakamura","sequence":"additional","affiliation":[]},{"given":"Hirokazu","family":"Shoji","sequence":"additional","affiliation":[]},{"given":"Yoshitaka","family":"Honma","sequence":"additional","affiliation":[]},{"given":"Atsuo","family":"Takashima","sequence":"additional","affiliation":[]},{"given":"Ken","family":"Kato","sequence":"additional","affiliation":[]},{"given":"Tetsuya","family":"Hamaguchi","sequence":"additional","affiliation":[]},{"given":"Narikazu","family":"Boku","sequence":"additional","affiliation":[]},{"ORCID":"http:\/\/orcid.org\/0000-0003-0692-8419","authenticated-orcid":false,"given":"Yasuhide","family":"Yamada","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1136\/esmoopen-2020-000776_bb0010","author":"Saltz"},{"key":"10.1136\/esmoopen-2020-000776_bb0015","author":"Tabernero"},{"key":"10.1136\/esmoopen-2020-000776_bb0020","author":"Van
-      Cutsem"},{"key":"10.1136\/esmoopen-2020-000776_bb0025","author":"Yamazaki"},{"key":"10.1136\/esmoopen-2020-000776_bb0030","author":"Price"},{"key":"10.1136\/esmoopen-2020-000776_bb0035","author":"Mayer"},{"key":"10.1136\/esmoopen-2020-000776_bb0040","author":"Grothey"},{"key":"10.1136\/esmoopen-2020-000776_bb0045","author":"Matsui"},{"key":"10.1136\/esmoopen-2020-000776_bb0050","author":"Matsui"},{"key":"10.1136\/esmoopen-2020-000776_bb0055","author":"Wiegering"},{"key":"10.1136\/esmoopen-2020-000776_bb0060","author":"Hong"},{"key":"10.1136\/esmoopen-2020-000776_bb0065","author":"Boss"},{"key":"10.1136\/esmoopen-2020-000776_bb0070","author":"Yamada"},{"key":"10.1136\/esmoopen-2020-000776_bb0075","author":"Nakamichi"},{"key":"10.1136\/esmoopen-2020-000776_bb0080","author":"Kiyota"},{"key":"10.1136\/esmoopen-2020-000776_bb0085","author":"Yoshino"},{"key":"10.1136\/esmoopen-2020-000776_bb0090","author":"Tahara"},{"key":"10.1136\/esmoopen-2020-000776_bb0095","author":"Takahashi"},{"key":"10.1136\/esmoopen-2020-000776_bb0100","author":"Yamashita"},{"key":"10.1136\/esmoopen-2020-000776_bb0105","author":"Kudo"},{"key":"10.1136\/esmoopen-2020-000776_bb0110","author":"Schlumberger"},{"key":"10.1136\/esmoopen-2020-000776_bb0115","author":"Li"},{"key":"10.1136\/esmoopen-2020-000776_bb0120","author":"Van
-      Cutsem"},{"key":"10.1136\/esmoopen-2020-000776_bb0125","author":"Ott"},{"key":"10.1136\/esmoopen-2020-000776_bb0130","author":"Kato"},{"key":"10.1136\/esmoopen-2020-000776_bb0135","author":"Taylor"},{"key":"10.1136\/esmoopen-2020-000776_bb0140","author":"Makker"},{"key":"10.1136\/esmoopen-2020-000776_bb0145","doi-asserted-by":"crossref","DOI":"10.1200\/JCO.2019.37.15_suppl.2522","article-title":"Regorafenib
+      chemotherapy: the LEMON study (NCCH1503)"],"prefix":"10.1016","volume":"5","clinical-trial-number":[{"clinical-trial-number":"nct03797326","registry":"10.18810\/clinical-trials-gov"},{"clinical-trial-number":"nct04008797","registry":"10.18810\/clinical-trials-gov"}],"author":[{"ORCID":"https:\/\/orcid.org\/0000-0003-3863-9582","authenticated-orcid":false,"given":"Satoru","family":"Iwasa","sequence":"first","affiliation":[]},{"given":"Natsuko","family":"Okita","sequence":"additional","affiliation":[]},{"given":"Aya","family":"Kuchiba","sequence":"additional","affiliation":[]},{"given":"Gakuto","family":"Ogawa","sequence":"additional","affiliation":[]},{"given":"Mamiko","family":"Kawasaki","sequence":"additional","affiliation":[]},{"given":"Kenichi","family":"Nakamura","sequence":"additional","affiliation":[]},{"given":"Hirokazu","family":"Shoji","sequence":"additional","affiliation":[]},{"given":"Yoshitaka","family":"Honma","sequence":"additional","affiliation":[]},{"given":"Atsuo","family":"Takashima","sequence":"additional","affiliation":[]},{"given":"Ken","family":"Kato","sequence":"additional","affiliation":[]},{"given":"Tetsuya","family":"Hamaguchi","sequence":"additional","affiliation":[]},{"given":"Narikazu","family":"Boku","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0003-0692-8419","authenticated-orcid":false,"given":"Yasuhide","family":"Yamada","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"author":"Saltz","key":"10.1136\/esmoopen-2020-000776_bb0010"},{"author":"Tabernero","key":"10.1136\/esmoopen-2020-000776_bb0015"},{"author":"Van
+      Cutsem","key":"10.1136\/esmoopen-2020-000776_bb0020"},{"author":"Yamazaki","key":"10.1136\/esmoopen-2020-000776_bb0025"},{"author":"Price","key":"10.1136\/esmoopen-2020-000776_bb0030"},{"author":"Mayer","key":"10.1136\/esmoopen-2020-000776_bb0035"},{"author":"Grothey","key":"10.1136\/esmoopen-2020-000776_bb0040"},{"author":"Matsui","key":"10.1136\/esmoopen-2020-000776_bb0045"},{"author":"Matsui","key":"10.1136\/esmoopen-2020-000776_bb0050"},{"author":"Wiegering","key":"10.1136\/esmoopen-2020-000776_bb0055"},{"author":"Hong","key":"10.1136\/esmoopen-2020-000776_bb0060"},{"author":"Boss","key":"10.1136\/esmoopen-2020-000776_bb0065"},{"author":"Yamada","key":"10.1136\/esmoopen-2020-000776_bb0070"},{"author":"Nakamichi","key":"10.1136\/esmoopen-2020-000776_bb0075"},{"author":"Kiyota","key":"10.1136\/esmoopen-2020-000776_bb0080"},{"author":"Yoshino","key":"10.1136\/esmoopen-2020-000776_bb0085"},{"author":"Tahara","key":"10.1136\/esmoopen-2020-000776_bb0090"},{"author":"Takahashi","key":"10.1136\/esmoopen-2020-000776_bb0095"},{"author":"Yamashita","key":"10.1136\/esmoopen-2020-000776_bb0100"},{"author":"Kudo","key":"10.1136\/esmoopen-2020-000776_bb0105"},{"author":"Schlumberger","key":"10.1136\/esmoopen-2020-000776_bb0110"},{"author":"Li","key":"10.1136\/esmoopen-2020-000776_bb0115"},{"author":"Van
+      Cutsem","key":"10.1136\/esmoopen-2020-000776_bb0120"},{"author":"Ott","key":"10.1136\/esmoopen-2020-000776_bb0125"},{"author":"Kato","key":"10.1136\/esmoopen-2020-000776_bb0130"},{"author":"Taylor","key":"10.1136\/esmoopen-2020-000776_bb0135"},{"author":"Makker","key":"10.1136\/esmoopen-2020-000776_bb0140"},{"key":"10.1136\/esmoopen-2020-000776_bb0145","doi-asserted-by":"crossref","DOI":"10.1200\/JCO.2019.37.15_suppl.2522","article-title":"Regorafenib
       plus nivolumab in patients with advanced gastric (GC) or colorectal cancer (CRC):
       an open-label, dose-finding, and dose-expansion phase 1B trial (REGONIVO, EPOC1603)","volume":"37","author":"Fukuoka","year":"2019","journal-title":"JCO"}],"container-title":["ESMO
-      Open"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2059702920326508?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2059702920326508?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1136\/esmoopen-2020-000776","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,13]],"date-time":"2021-06-13T04:27:08Z","timestamp":1623558428000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S2059702920326508"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2020]]},"references-count":28,"journal-issue":{"issue":"4","published-print":{"date-parts":[[2020]]}},"alternative-id":["S2059702920326508"],"URL":"http:\/\/dx.doi.org\/10.1136\/esmoopen-2020-000776","relation":{},"ISSN":["2059-7029"],"issn-type":[{"value":"2059-7029","type":"print"}],"subject":[],"published":{"date-parts":[[2020]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+      Open"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2059702920326508?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2059702920326508?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1136\/esmoopen-2020-000776","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,13]],"date-time":"2021-06-13T04:27:08Z","timestamp":1623558428000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S2059702920326508"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2020]]},"references-count":28,"journal-issue":{"issue":"4","published-print":{"date-parts":[[2020]]}},"alternative-id":["S2059702920326508"],"URL":"https:\/\/doi.org\/10.1136\/esmoopen-2020-000776","relation":{},"ISSN":["2059-7029"],"issn-type":[{"type":"print","value":"2059-7029"}],"subject":[],"published":{"date-parts":[[2020]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
       article is maintained by"},{"value":"Phase II study of lenvatinib for metastatic
       colorectal cancer refractory to standard chemotherapy: the LEMON study (NCCH1503)","name":"articletitle","label":"Article
       Title"},{"value":"ESMO Open","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1136\/esmoopen-2020-000776","name":"articlelink","label":"CrossRef
@@ -141,6 +137,14 @@ interactions:
       Type"},{"value":"\u00a9 2020 THE AUTHORS. Published by Elsevier Limited on behalf
       of European Society for Medical Oncology; Originally published by BMJ.","name":"copyright","label":"Copyright"}],"article-number":"e000776"}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2210'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:30:06 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -148,16 +152,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '2196'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 14:07:00 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -166,10 +162,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

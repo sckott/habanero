@@ -11,20 +11,131 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works?sample=2
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2024,9,16]],"date-time":"2024-09-16T15:46:15Z","timestamp":1726501575091},"edition-number":"1","reference-count":0,"publisher":"Bloomsbury
-      Publishing Plc","isbn-type":[{"type":"electronic","value":"9781350068056"},{"type":"print","value":"9781350369412"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2023]]},"DOI":"10.5040\/9781350068056.ch-i","type":"other","created":{"date-parts":[[2023,8,4]],"date-time":"2023-08-04T11:22:53Z","timestamp":1691148173000},"page":"1-14","source":"Crossref","is-referenced-by-count":0,"title":["Introduction"],"prefix":"10.5040","member":"2984","container-title":["Ludwig
-      Hilberseimer"],"deposited":{"date-parts":[[2024,1,19]],"date-time":"2024-01-19T10:19:02Z","timestamp":1705659542000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9781350068056&tocid=b-9781350068056-0000183"},"secondary":[{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9781350068056&tocid=b-9781350068056-0000183","label":"secondary_bloomsburyCollections"},{"URL":"https:\/\/www.bloomsburyvisualarts.com\/encyclopedia-chapter?docid=b-9781350068056&tocid=b-9781350068056-0000183","label":"secondary_architectureLibrary"}]},"issued":{"date-parts":[[2023]]},"ISBN":["9781350068056","9781350369412"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.5040\/9781350068056.ch-i","published":{"date-parts":[[2023]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T05:20:43Z","timestamp":1648963243181},"reference-count":0,"publisher":"Massachusetts
-      Medical Society","issue":"27","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-      Boston Medical and Surgical Journal"],"published-print":{"date-parts":[[1914,12,31]]},"DOI":"10.1056\/nejm191412311712712","type":"journal-article","created":{"date-parts":[[2011,11,11]],"date-time":"2011-11-11T23:39:31Z","timestamp":1321054771000},"page":"1016-1016","source":"Crossref","is-referenced-by-count":0,"title":["Proposed
-      Reorganization of the Boston Board of Health"],"prefix":"10.1056","volume":"171","member":"150","container-title":["The
-      Boston Medical and Surgical Journal"],"language":"en","link":[{"URL":"http:\/\/www.nejm.org\/doi\/pdf\/10.1056\/NEJM191412311712712","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,11,2]],"date-time":"2016-11-02T16:36:01Z","timestamp":1478104561000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.nejm.org\/doi\/abs\/10.1056\/NEJM191412311712712"}},"issued":{"date-parts":[[1914,12,31]]},"references-count":0,"journal-issue":{"issue":"27","published-print":{"date-parts":[[1914,12,31]]}},"alternative-id":["10.1056\/NEJM191412311712712"],"URL":"http:\/\/dx.doi.org\/10.1056\/nejm191412311712712","ISSN":["0096-6762","1533-4406"],"issn-type":[{"value":"0096-6762","type":"print"},{"value":"1533-4406","type":"electronic"}],"published":{"date-parts":[[1914,12,31]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T03:10:28Z","timestamp":1740107428837,"version":"3.37.3"},"reference-count":19,"publisher":"Springer
+      Science and Business Media LLC","issue":"2","license":[{"start":{"date-parts":[[2016,6,22]],"date-time":"2016-06-22T00:00:00Z","timestamp":1466553600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"funder":[{"DOI":"10.13039\/100002429","name":"Amgen","doi-asserted-by":"publisher","id":[{"id":"10.13039\/100002429","id-type":"DOI","asserted-by":"publisher"}]}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Cancer
+      Chemother Pharmacol"],"published-print":{"date-parts":[[2016,8]]},"DOI":"10.1007\/s00280-016-3089-4","type":"journal-article","created":{"date-parts":[[2016,6,23]],"date-time":"2016-06-23T00:33:07Z","timestamp":1466641987000},"page":"361-367","update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":12,"title":["TACTIC:
+      a multicentre, open-label, single-arm phase II trial of panitumumab, cisplatin,
+      and gemcitabine in biliary tract cancer"],"prefix":"10.1007","volume":"78","author":[{"name":"behalf
+      of the the Australasian Gastro-Intestinal Trials Group","sequence":"first","affiliation":[]},{"given":"D.","family":"Ferraro","sequence":"first","affiliation":[]},{"given":"D.","family":"Goldstein","sequence":"additional","affiliation":[]},{"given":"R.
+      L.","family":"O\u2019Connell","sequence":"additional","affiliation":[]},{"given":"J.
+      R.","family":"Zalcberg","sequence":"additional","affiliation":[]},{"given":"K.
+      M.","family":"Sjoquist","sequence":"additional","affiliation":[]},{"given":"N.
+      C.","family":"Tebbutt","sequence":"additional","affiliation":[]},{"given":"P.","family":"Grimison","sequence":"additional","affiliation":[]},{"given":"S.","family":"McLachlan","sequence":"additional","affiliation":[]},{"given":"L.
+      L.","family":"Lipton","sequence":"additional","affiliation":[]},{"given":"P.","family":"Vasey","sequence":"additional","affiliation":[]},{"given":"V.
+      J.","family":"Gebski","sequence":"additional","affiliation":[]},{"given":"C.","family":"Aiken","sequence":"additional","affiliation":[]},{"given":"M.","family":"Cronk","sequence":"additional","affiliation":[]},{"given":"S.","family":"Ng","sequence":"additional","affiliation":[]},{"given":"C.
+      S.","family":"Karapetis","sequence":"additional","affiliation":[]},{"given":"J.","family":"Shannon","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2016,6,22]]},"reference":[{"issue":"3","key":"3089_CR1","doi-asserted-by":"publisher","first-page":"242","DOI":"10.1002\/(sici)1096-9098(199703)64:3<242::aid-jso12>3.0.co;2-6","volume":"64","author":"TP
+      Wade","year":"1997","unstructured":"Wade TP, Prasad CN, Virgo KS, Johnson FE
+      (1997) Experience with distal bile duct cancers in U.S. Veterans Affairs hospitals:
+      1987\u20131991. J Surg Oncol 64(3):242\u2013245. doi: 10.1002\/(sici)1096-9098(199703)64:3<242:aid-jso12>3.0.co;2-6","journal-title":"J
+      Surg Oncol"},{"issue":"15","key":"3089_CR2","doi-asserted-by":"publisher","first-page":"2169","DOI":"10.1016\/j.ejca.2015.07.034","volume":"51","author":"C
+      Lepage","year":"2015","unstructured":"Lepage C, Capocaccia R, Hackl M, Lemmens
+      V, Molina E, Pierannunzio D, Sant M, Trama A, Faivre J (2015) Survival in patients
+      with primary liver cancer, gallbladder and extrahepatic biliary tract cancer
+      and pancreatic cancer in Europe 1999\u20132007: results of EUROCARE-5. Eur J
+      Cancer 51(15):2169\u20132178. doi: 10.1016\/j.ejca.2015.07.034","journal-title":"Eur
+      J Cancer"},{"issue":"14","key":"3089_CR3","doi-asserted-by":"publisher","first-page":"1273","DOI":"10.1056\/nejmoa0908721","volume":"362","author":"J
+      Valle","year":"2010","unstructured":"Valle J, Wasan H, Palmer DH, Cunningham
+      D, Anthoney A, Maraveyas A, Madhusudan S, Iveson T, Hughes S, Pereira SP, Roughton
+      M, Bridgewater J (2010) Cisplatin plus gemcitabine versus gemcitabine for biliary
+      tract cancer. N Engl J Med 362(14):1273\u20131281. doi: 10.1056\/nejmoa0908721","journal-title":"N
+      Engl J Med"},{"issue":"11","key":"3089_CR4","doi-asserted-by":"publisher","first-page":"1160","DOI":"10.1056\/nejmra0707704","volume":"358","author":"F
+      Ciardiello","year":"2008","unstructured":"Ciardiello F, Tortora G (2008) EGFR
+      antagonists in cancer treatment. N Engl J Med 358(11):1160\u20131174. doi: 10.1056\/nejmra0707704","journal-title":"N
+      Engl J Med"},{"issue":"12","key":"3089_CR5","doi-asserted-by":"publisher","first-page":"1142","DOI":"10.1016\/s1470-2045(10)70247-3","volume":"11","author":"B
+      Gruenberger","year":"2010","unstructured":"Gruenberger B, Schueller J, Heubrandtner
+      U, Wrba F, Tamandl D, Kaczirek K, Roka R, Freimann-Pircher S, Gruenberger T
+      (2010) Cetuximab, gemcitabine, and oxaliplatin in patients with unresectable
+      advanced or metastatic biliary tract cancer: a phase 2 study. Lancet Oncol 11(12):1142\u20131148.
+      doi: 10.1016\/s1470-2045(10)70247-3","journal-title":"Lancet Oncol"},{"issue":"12","key":"3089_CR6","doi-asserted-by":"publisher","first-page":"3061","DOI":"10.1093\/annonc\/mdt416","volume":"24","author":"DPS
+      Sohal","year":"2013","unstructured":"Sohal DPS, Mykulowycz K, Uehara T, Teitelbaum
+      UR, Damjanov N, Giantonio BJ, Carberry M, Wissel P, Jacobs-Small M, O\u2019Dwyer
+      PJ, Sepulveda A, Sun W (2013) A phase II trial of gemcitabine, irinotecan and
+      panitumumab in advanced cholangiocarcinoma. Ann Oncol 24(12):3061\u20133065.
+      doi: 10.1093\/annonc\/mdt416","journal-title":"Ann Oncol"},{"issue":"9","key":"3089_CR7","doi-asserted-by":"publisher","first-page":"2341","DOI":"10.1093\/annonc\/mds008","volume":"23","author":"LH
+      Jensen","year":"2012","unstructured":"Jensen LH, Lindebjerg J, Ploen J, Hansen
+      TF, Jakobsen A (2012) Phase II marker-driven trial of panitumumab and chemotherapy
+      in KRAS wild-type biliary tract cancer. Ann Oncol 23(9):2341\u20132346. doi:
+      10.1093\/annonc\/mds008","journal-title":"Ann Oncol"},{"issue":"2","key":"3089_CR8","doi-asserted-by":"publisher","first-page":"181","DOI":"10.1016\/s1470-2045(11)70301-1","volume":"13","author":"J
+      Lee","year":"2012","unstructured":"Lee J, Park SH, Chang HM, Kim JS, Choi HJ,
+      Lee MA, Jang JS, Jeung HC, Kang JH, Lee HW, Shin DB, Kang HJ, Sun JM, Park JO,
+      Park YS, Kang WK, Lim HY (2012) Gemcitabine and oxaliplatin with or without
+      erlotinib in advanced biliary-tract cancer: a multicentre, open-label, randomised,
+      phase 3 study. Lancet Oncol 13(2):181\u2013188. doi: 10.1016\/s1470-2045(11)70301-1","journal-title":"Lancet
+      Oncol"},{"issue":"3","key":"3089_CR9","doi-asserted-by":"publisher","first-page":"519","DOI":"10.1007\/s00280-010-1351-8","volume":"67","author":"D
+      Goldstein","year":"2010","unstructured":"Goldstein D, Gainford MC, Brown C,
+      Tebbutt N, Ackland SP, van Hazel G, Jefford M, Abdi E, Selva-Nayagam S, Gebski
+      V, Miller D, Shannon J (2010) Fixed-dose-rate gemcitabine combined with cisplatin
+      in patients with inoperable biliary tract carcinomas. Cancer Chemother Pharmacol
+      67(3):519\u2013525. doi: 10.1007\/s00280-010-1351-8","journal-title":"Cancer
+      Chemother Pharmacol"},{"issue":"2","key":"3089_CR10","doi-asserted-by":"publisher","first-page":"564","DOI":"10.1007\/s10620-007-9885-2","volume":"53","author":"JA
+      Meyerhardt","year":"2007","unstructured":"Meyerhardt JA, Zhu AX, Stuart K, Ryan
+      DP, Blaszkowsky L, Lehman N, Earle CC, Kulke MH, Bhargava P, Fuchs CS (2007)
+      Phase-II study of gemcitabine and cisplatin in patients with metastatic biliary
+      and gallbladder cancer. Dig Dis Sci 53(2):564\u2013570. doi: 10.1007\/s10620-007-9885-2","journal-title":"Dig
+      Dis Sci"},{"issue":"1","key":"3089_CR11","doi-asserted-by":"publisher","first-page":"1","DOI":"10.1016\/0197-2456(89)90015-9","volume":"10","author":"R
+      Simon","year":"1989","unstructured":"Simon R (1989) Optimal two-stage designs
+      for phase II clinical trials. Control Clin Trials 10(1):1\u201310. doi: 10.1016\/0197-2456(89)90015-9","journal-title":"Control
+      Clin Trials"},{"key":"3089_CR12","doi-asserted-by":"publisher","DOI":"10.1002\/9781118032619","volume-title":"Analysis
+      of health surveys","author":"EL Korn","year":"1999","unstructured":"Korn EL,
+      Graubard BI (1999) Analysis of health surveys. Wiley, Blackwell, New York. doi:
+      10.1002\/9781118032619"},{"issue":"4","key":"3089_CR13","doi-asserted-by":"publisher","first-page":"343","DOI":"10.1016\/0197-2456(96)00075-x","volume":"17","author":"M
+      Schemper","year":"1996","unstructured":"Schemper M, Smith TL (1996) A note on
+      quantifying follow-up in studies of failure time. Control Clin Trials 17(4):343\u2013346.
+      doi: 10.1016\/0197-2456(96)00075-x","journal-title":"Control Clin Trials"},{"issue":"9314","key":"3089_CR14","doi-asserted-by":"publisher","first-page":"1309","DOI":"10.1016\/s0140-6736(02)08272-7","volume":"359","author":"TG
+      Clark","year":"2002","unstructured":"Clark TG, Altman DG, Stavola BLD (2002)
+      Quantification of the completeness of follow-up. Lancet 359(9314):1309\u20131310.
+      doi: 10.1016\/s0140-6736(02)08272-7","journal-title":"Lancet"},{"issue":"8","key":"3089_CR15","doi-asserted-by":"publisher","first-page":"819","DOI":"10.1016\/s1470-2045(14)70212-8","volume":"15","author":"D
+      Malka","year":"2014","unstructured":"Malka D, Cervera P, Foulon S, Trarbach
+      T, de la Fouchardi\u00e8re C, Boucher E, Fartoux L, Faivre S, Blanc J-F, Viret
+      F, Assenat E, Seufferlein T, Herrmann T, Grenier J, Hammel P, Dollinger M, Andr\u00e9
+      T, Hahn P, Heinemann V, Rousseau V, Ducreux M, Pignon J-P, Wendum D, Rosmorduc
+      O, Greten TF (2014) Gemcitabine and oxaliplatin with or without cetuximab in
+      advanced biliary-tract cancer (BINGO): a randomised, open-label, non-comparative
+      phase 2 trial. Lancet Oncol 15(8):819\u2013828. doi: 10.1016\/s1470-2045(14)70212-8","journal-title":"Lancet
+      Oncol"},{"issue":"8","key":"3089_CR16","doi-asserted-by":"publisher","first-page":"778","DOI":"10.1016\/s1470-2045(14)70238-4","volume":"15","author":"JW
+      Valle","year":"2014","unstructured":"Valle JW (2014) BINGO: targeted therapy
+      for advanced biliary-tract cancer. Lancet Oncol 15(8):778\u2013780. doi: 10.1016\/s1470-2045(14)70238-4","journal-title":"Lancet
+      Oncol"},{"issue":"5","key":"3089_CR17","doi-asserted-by":"publisher","first-page":"943","DOI":"10.1093\/annonc\/mdv035","volume":"26","author":"JS
+      Chen","year":"2015","unstructured":"Chen JS, Hsu C, Chiang NJ, Tsai CS, Tsou
+      HH, Huang SF, Bai LY, Chang IC, Shiah HS, Ho CL, Yen CJ, Lee KD, Chiu CF, Rau
+      KM, Yu MS, Yang Y, Hsieh RK, Chang JY, Shan YS, Chao Y, Chen LT, Taiwan Cooperative
+      Oncology G, Shen WC, Hsu HC, Hsu CH, Shen YC, Wang TE, Li CP, Chen MH, Kao WY,
+      Chang PY, Wu CC, Teng CL, Lu CH, Lin SJ, Wang BW, Chen YY, Chin YH, Chung TR,
+      Yu WL, Lee MH, Lin LF, Lin PC, Wu YL, Wang HL, Lu LJ, Chen SY, Wu CC, Wei TC
+      (2015) A KRAS mutation status-stratified randomized phase II trial of gemcitabine
+      and oxaliplatin alone or in combination with cetuximab in advanced biliary tract
+      cancer. Ann Oncol 26(5):943\u2013949. doi: 10.1093\/annonc\/mdv035","journal-title":"Ann
+      Oncol"},{"issue":"1","key":"3089_CR18","doi-asserted-by":"publisher","first-page":"13","DOI":"10.1093\/annonc\/mdu378","volume":"26","author":"MJ
+      Sorich","year":"2014","unstructured":"Sorich MJ, Wiese MD, Rowland A, Kichenadasse
+      G, McKinnon RA, Karapetis CS (2014) Extended RAS mutations and anti-EGFR monoclonal
+      antibody survival benefit in metastatic colorectal cancer: a meta-analysis of
+      randomized, controlled trials. Ann Oncol 26(1):13\u201321. doi: 10.1093\/annonc\/mdu378","journal-title":"Ann
+      Oncol"},{"issue":"8","key":"3089_CR19","doi-asserted-by":"publisher","first-page":"1914","DOI":"10.1002\/ijc.28153","volume":"133","author":"Z-Y
+      Yang","year":"2013","unstructured":"Yang Z-Y, Wu X-Y, Huang Y-F, Di M-Y, Zheng
+      D-Y, Chen J-Z, Ding H, Mao C, Tang J-L (2013) Promising biomarkers for predicting
+      the outcomes of patients with KRAS wild-type metastatic colorectal cancer treated
+      with anti-epidermal growth factor receptor monoclonal antibodies: a systematic
+      review with meta-analysis. Int J Cancer 133(8):1914\u20131925. doi: 10.1002\/ijc.28153","journal-title":"Int
+      J Cancer"}],"container-title":["Cancer Chemotherapy and Pharmacology"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00280-016-3089-4.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/s00280-016-3089-4\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00280-016-3089-4","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,7,28]],"date-time":"2016-07-28T04:28:56Z","timestamp":1469680136000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/s00280-016-3089-4"}},"issued":{"date-parts":[[2016,6,22]]},"references-count":19,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2016,8]]}},"alternative-id":["3089"],"URL":"https:\/\/doi.org\/10.1007\/s00280-016-3089-4","ISSN":["0344-5704","1432-0843"],"issn-type":[{"type":"print","value":"0344-5704"},{"type":"electronic","value":"1432-0843"}],"published":{"date-parts":[[2016,6,22]]}},{"indexed":{"date-parts":[[2022,3,31]],"date-time":"2022-03-31T01:41:32Z","timestamp":1648690892035},"reference-count":0,"publisher":"American
+      Library Association","issue":"09","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Choice
+      Reviews Online"],"published-print":{"date-parts":[[1992,5,1]]},"DOI":"10.5860\/choice.29-5410","type":"journal-article","created":{"date-parts":[[2013,1,24]],"date-time":"2013-01-24T00:56:18Z","timestamp":1358988978000},"page":"29-5410-29-5410","source":"Crossref","is-referenced-by-count":0,"title":["Porn:
+      myths for the twentieth century"],"prefix":"10.5860","volume":"29","member":"3932","container-title":["Choice
+      Reviews Online"],"language":"en","deposited":{"date-parts":[[2016,8,11]],"date-time":"2016-08-11T16:37:32Z","timestamp":1470933452000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/choicereviews.org\/review\/10.5860\/CHOICE.29-5410"}},"issued":{"date-parts":[[1992,5,1]]},"references-count":0,"journal-issue":{"issue":"09","published-print":{"date-parts":[[1992,5,1]]}},"URL":"https:\/\/doi.org\/10.5860\/choice.29-5410","ISSN":["0009-4978","1523-8253"],"issn-type":[{"value":"0009-4978","type":"print"},{"value":"1523-8253","type":"electronic"}],"published":{"date-parts":[[1992,5,1]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5033'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:55 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -32,16 +143,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '1213'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:36:45 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -50,10 +153,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

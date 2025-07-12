@@ -11,157 +11,653 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works?sample=10
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":10,"items":[{"indexed":{"date-parts":[[2024,8,2]],"date-time":"2024-08-02T05:54:57Z","timestamp":1722578097719},"reference-count":0,"publisher":"Oxford
-      University Press (OUP)","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Social
-      Politics: International Studies in Gender, State &amp; Society"],"published-print":{"date-parts":[[2003,12,1]]},"DOI":"10.1093\/sp\/jxg017","type":"journal-article","created":{"date-parts":[[2004,2,19]],"date-time":"2004-02-19T13:53:14Z","timestamp":1077198794000},"page":"290-313","source":"Crossref","is-referenced-by-count":27,"title":["Sexual
-      Identities and Political Engagements: A Queer Survey"],"prefix":"10.1093","volume":"10","author":[{"given":"J.","family":"Rollins","sequence":"first","affiliation":[]}],"member":"286","container-title":["Social
-      Politics: International Studies in Gender, State &amp; Society"],"language":"en","link":[{"URL":"http:\/\/academic.oup.com\/sp\/article-pdf\/10\/3\/290\/4627370\/jxg017.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,8,23]],"date-time":"2017-08-23T20:38:53Z","timestamp":1503520733000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/academic.oup.com\/sp\/article-lookup\/doi\/10.1093\/sp\/jxg017"}},"issued":{"date-parts":[[2003,12,1]]},"references-count":0,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2003,12,1]]}},"URL":"http:\/\/dx.doi.org\/10.1093\/sp\/jxg017","ISSN":["1072-4745","1468-2893"],"issn-type":[{"value":"1072-4745","type":"print"},{"value":"1468-2893","type":"electronic"}],"published":{"date-parts":[[2003,12,1]]}},{"indexed":{"date-parts":[[2022,4,1]],"date-time":"2022-04-01T17:20:30Z","timestamp":1648833630424},"reference-count":0,"publisher":"King
-      Abdulaziz University Scientific Publishing Centre","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["edu"],"published-print":{"date-parts":[[1995]]},"DOI":"10.4197\/edu.8-1.5","type":"journal-article","created":{"date-parts":[[2010,7,12]],"date-time":"2010-07-12T09:43:15Z","timestamp":1278927795000},"page":"3-33","source":"Crossref","is-referenced-by-count":0,"title":["Evaluating
-      the Educational Process of the Scientific Departments in Faculty of Education:
-      Field Study"],"prefix":"10.4197","volume":"8","author":[{"given":"ABDULFATTAH","family":"GHAWANNl","sequence":"first","affiliation":[]}],"member":"2709","container-title":["Journal
-      of King Abdulaziz University-Educational Sciences"],"language":"en","link":[{"URL":"http:\/\/www.kau.edu.sa\/centers\/spc\/jkau\/Doc\/Edu\/8\/1.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2011,1,24]],"date-time":"2011-01-24T00:21:10Z","timestamp":1295828470000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/prod.kau.edu.sa\/centers\/spc\/jkau\/Data\/Review_Artical.aspx?No=1128"}},"issued":{"date-parts":[[1995]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1995]]}},"URL":"http:\/\/dx.doi.org\/10.4197\/edu.8-1.5","ISSN":["1319-0970"],"issn-type":[{"value":"1319-0970","type":"print"}],"published":{"date-parts":[[1995]]}},{"indexed":{"date-parts":[[2023,10,28]],"date-time":"2023-10-28T06:42:07Z","timestamp":1698475327312},"reference-count":19,"publisher":"Wiley","issue":"1","license":[{"start":{"date-parts":[[2008,4,22]],"date-time":"2008-04-22T00:00:00Z","timestamp":1208822400000},"content-version":"vor","delay-in-days":4435,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["EPPO
-      Bulletin"],"published-print":{"date-parts":[[1996,3]]},"abstract":"<jats:p>Periodic
-      inspections of air\u2010assisted sprayers have been carried out i n Germany
-      since 1984. The inspection follows <jats:bold>BBA<\/jats:bold> Guideline no.
-      44 and includes measurement of pump function and single nozzle output. a check
-      o n pressure gauge operation and other visual checks. Similar systems have been
-      implemented or are under consideration in other countries. There is discussion
-      throughout Europe on the inclusion of a vertical patternator into the inspection
-      procedure, to measure and optimize the vertical liquid distribution pattern
-      with respect to an individual application situation. The original idea of the
-      sprayer inspection was to improve the equipment and to save repair time during
-      the spraying season. Environmental aspects were stressed later. The introduction
-      of the mandatory periodic inspection of field sprayers in Germany was justified
-      by the aim of avoiding chemical pollution due to deficient spraying equipment.
-      <jats:bold>A<\/jats:bold> 4\u2010year test programme with air\u2010assisted
-      sprayers in Germany has now proved that vertical patternators are not appropriate
-      for specific adjustment of sprayer to particular crop situations. It is concluded
-      that this equipment should not be a generally required test stand for periodic
-      sprayer inspections.<\/jats:p>","DOI":"10.1111\/j.1365-2338.1996.tb01531.x","type":"journal-article","created":{"date-parts":[[2008,4,22]],"date-time":"2008-04-22T19:46:15Z","timestamp":1208893575000},"page":"79-86","source":"Crossref","is-referenced-by-count":2,"title":["Periodic
-      inspection of air\u2010assisted sprayers<sup>1<\/sup>"],"prefix":"10.1111","volume":"26","author":[{"given":"H.","family":"KOCH","sequence":"first","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2008,4,22]]},"reference":[{"key":"e_1_2_1_2_1","unstructured":"ANON.(1991)Richtlinien
-      I991 f\u00fcr die Regionale Ueberpr\u00fcfung von Gebl\u00e4sespritzen f\u00fcr
-      Obst\u2010und Weinbau. FAT\u2010T\u00e4nikon FAW\u2010W\u00e4denswil RAC\u2010Chaingins.
-      SVLT\u2010Riniken (CH) (in German)."},{"key":"e_1_2_1_3_1","unstructured":"BBA(1983)
-      [Inspection of plant protection equipment.]BBA MerkblauNr. 44. 2 ed. Biologische
-      Bundesanstalt. Braunschweig (DE) (in German)."},{"key":"e_1_2_1_4_1","unstructured":"BBA(1988)
-      [Spray and misting equipinen1 for space crops.]Richtlinien f\u00fcr die anuliche
-      Pr\u00fcfung von Pflanzenschutzmitteln. Teil VII. (Pflanzenschutzger\u00e4te)no.
-      1\u20101.1.2 Biologische Bundesanstalt. Branunscliweig (DE) (in German)."},{"key":"e_1_2_1_5_1","unstructured":"BBA(1990)
-      [Inspection of plant protection equipment.]BBA Merkblatt Nr. 44. 3. ed. Biologische
-      Bundesanstalt. Braunschweig (DE) (in German)."},{"key":"e_1_2_1_6_1","volume-title":"Check
-      List for Corp Sprayers","author":"Bjugstad N.","year":"1993"},{"key":"e_1_2_1_7_1","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-2338.1996.tb01528.x"},{"key":"e_1_2_1_8_1","unstructured":"Irla
-      E.(1986) [Comparative testing of air\u2010assisted sprayers.]FAT\u2010Berichte.
-      FAT. T\u00e4nikon. CH (in German)."},{"key":"e_1_2_1_9_1","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-2338.1996.tb01530.x"},{"key":"e_1_2_1_10_1","unstructured":"Koch
-      H.(1993)Application rate and spray deposit on targets in plant protection. In
-      Proceedings of the Second International Symposium on Pesticide Application Vol.
-      1. PP.175 182. Strasbourg (FR)."},{"key":"e_1_2_1_11_1","first-page":"634","article-title":"Variablity
-      of initial deposits of pesticides in orchards","volume":"96","author":"Koch
-      H.","year":"1994","journal-title":"Zeitschrift f\u00fcr Pftanzenkrankheiten
-      und Pflanzenschutz"},{"key":"e_1_2_1_12_1","first-page":"199","article-title":"Improved
-      inspection of spra) equipment with data from a Iamcllar test stand","volume":"44","author":"K\u00dcMMEL
-      K.","year":"1989","journal-title":"Mitteilungen der Obstbau Versuchsanstalt
-      Jork"},{"key":"e_1_2_1_13_1","first-page":"27","volume-title":"Air\u2010Assisted
-      Sprqirig in Crop Protection","author":"K\u00dcMMEL K.","year":"1991"},{"key":"e_1_2_1_14_1","first-page":"370","article-title":"New
-      test station for spraying equipment from Steiermark","volume":"13","author":"Lind
-      K.","year":"1988","journal-title":"Ohstbuu"},{"key":"e_1_2_1_15_1","unstructured":"Martin.K.(1993)
-      [Water volume and product dose in orchards in relation to registration.]Mittelungen
-      aus der Biologischen Bundesanstalt f\u00fcr Land\u2010 und Forstwirtsehaftno.
-      292 121\u2013129(in German)."},{"key":"e_1_2_1_16_1","first-page":"269","volume-title":"Air\u2010Assisred
-      Sprqing in Crop Protection","author":"Raisigl U.","year":"1991"},{"key":"e_1_2_1_17_1","unstructured":"Schimidt.K.&Koch.H.(1995)
-      [Adjustment of air\u2010blast sprayers and distribution of pesticides in orchards.Nachrichtenblatt
-      des Deutschen Pflanzenschutzdienstes(in press) (in German)."},{"key":"e_1_2_1_18_1","first-page":"185","article-title":"Application
-      technique in orchards \u2010 a comparison of dilffcrent air\u2010assisted sprays","volume":"126","author":"Siegfried
-      W.","year":"1990","journal-title":"Schweizerische Zeitschrift f\u00fcr Obst-
-      und Weinbau"},{"key":"e_1_2_1_19_1","unstructured":"SKL(1994) [General SKL inspections
-      standards for orchards sprayers. 1994\u201001\u201001.]Stichfing Kwaliteitseisen
-      Landbouwtechnik(in Dutch)."},{"issue":"30","key":"e_1_2_1_20_1","first-page":"18","article-title":"A
-      measuring system for controlling sprayer operation","volume":"79","author":"Van
-      Zuydam R.","year":"1989","journal-title":"Fruitteeh"}],"container-title":["EPPO
-      Bulletin"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1365-2338.1996.tb01531.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1111\/j.1365-2338.1996.tb01531.x","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,27]],"date-time":"2023-10-27T07:19:12Z","timestamp":1698391152000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1365-2338.1996.tb01531.x"}},"issued":{"date-parts":[[1996,3]]},"references-count":19,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1996,3]]}},"alternative-id":["10.1111\/j.1365-2338.1996.tb01531.x"],"URL":"http:\/\/dx.doi.org\/10.1111\/j.1365-2338.1996.tb01531.x","archive":["Portico"],"ISSN":["0250-8052","1365-2338"],"issn-type":[{"value":"0250-8052","type":"print"},{"value":"1365-2338","type":"electronic"}],"published":{"date-parts":[[1996,3]]}},{"indexed":{"date-parts":[[2024,9,19]],"date-time":"2024-09-19T15:03:34Z","timestamp":1726758214385},"reference-count":0,"publisher":"American
-      Psychological Association (APA)","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-      of Consulting and Clinical Psychology"],"DOI":"10.1037\/0022-006x.60.3.426","type":"journal-article","created":{"date-parts":[[2005,9,21]],"date-time":"2005-09-21T16:41:25Z","timestamp":1127320885000},"page":"426-432","source":"Crossref","is-referenced-by-count":198,"title":["Cognitive-behavioral
-      intervention with aggressive boys: Three-year follow-up and preventive effects."],"prefix":"10.1037","volume":"60","author":[{"given":"John
-      E.","family":"Lochman","sequence":"first","affiliation":[]}],"member":"15","published-online":{"date-parts":[[1992]]},"container-title":["Journal
-      of Consulting and Clinical Psychology"],"language":"en","link":[{"URL":"http:\/\/psycnet.apa.org\/journals\/ccp\/60\/3\/426.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,2,6]],"date-time":"2024-02-06T20:39:08Z","timestamp":1707251948000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/doi.apa.org\/doi\/10.1037\/0022-006X.60.3.426"}},"issued":{"date-parts":[[1992]]},"references-count":0,"journal-issue":{"issue":"3","published-online":{"date-parts":[[1992]]}},"alternative-id":["1992-32202-001","1619096"],"URL":"http:\/\/dx.doi.org\/10.1037\/0022-006x.60.3.426","ISSN":["1939-2117","0022-006X"],"issn-type":[{"value":"1939-2117","type":"electronic"},{"value":"0022-006X","type":"print"}],"published":{"date-parts":[[1992]]}},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T12:58:19Z","timestamp":1648990699064},"reference-count":0,"publisher":"Oxford
-      University Press (OUP)","issue":"259","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-      Economic Journal"],"published-print":{"date-parts":[[1955,9]]},"DOI":"10.2307\/2227351","type":"journal-article","created":{"date-parts":[[2006,6,19]],"date-time":"2006-06-19T14:32:35Z","timestamp":1150727555000},"page":"545","source":"Crossref","is-referenced-by-count":0,"title":["[Mr.
-      Hahn of Liquidity Preference]: Rejoinder"],"prefix":"10.1093","volume":"65","author":[{"given":"F.
-      H.","family":"H.","sequence":"first","affiliation":[]}],"member":"286","container-title":["The
-      Economic Journal"],"deposited":{"date-parts":[[2019,4,2]],"date-time":"2019-04-02T15:21:37Z","timestamp":1554218497000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/academic.oup.com\/ej\/article\/65\/259\/545-546\/5258878"}},"issued":{"date-parts":[[1955,9]]},"references-count":0,"journal-issue":{"issue":"259","published-print":{"date-parts":[[1955,9]]}},"URL":"http:\/\/dx.doi.org\/10.2307\/2227351","ISSN":["0013-0133"],"issn-type":[{"value":"0013-0133","type":"print"}],"published":{"date-parts":[[1955,9]]}},{"institution":[{"name":"Koninklijke
-      Brill NV","acronym":["BRILL"]}],"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T03:01:52Z","timestamp":1648954912560},"reference-count":0,"publisher":"Brill","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1163\/2210-7975_hrd-0084-0007","type":"dataset","created":{"date-parts":[[2016,1,26]],"date-time":"2016-01-26T10:54:27Z","timestamp":1453805667000},"source":"Crossref","is-referenced-by-count":0,"title":["background-information-1981-no3-the-human-rights-issue-and-the-human-rights-movement-by-jose-zalaquett-1981-65-pp"],"prefix":"10.1163","member":"50","container-title":["Human
-      Rights Documents online"],"deposited":{"date-parts":[[2018,11,20]],"date-time":"2018-11-20T22:57:29Z","timestamp":1542754649000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/primarysources.brillonline.com\/browse\/human-rights-documents-online\/background-information-1981-no3-the-human-rights-issue-and-the-human-rights-movement-by-jose-zalaquett-1981-65-pp;hrdhrd00840007"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1163\/2210-7975_hrd-0084-0007"},{"indexed":{"date-parts":[[2022,3,29]],"date-time":"2022-03-29T15:05:59Z","timestamp":1648566359166},"reference-count":0,"publisher":"IEEE","isbn-type":[{"value":"9781509026753","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2016,6]]},"DOI":"10.1109\/icws38488.2016","type":"proceedings","created":{"date-parts":[[2020,2,2]],"date-time":"2020-02-02T16:39:26Z","timestamp":1580661566000},"source":"Crossref","is-referenced-by-count":0,"title":["2016
-      IEEE International Conference on Web Services (ICWS)"],"prefix":"10.1109","member":"263","event":{"name":"2016
-      IEEE International Conference on Web Services (ICWS)","location":"San Francisco,
-      CA","start":{"date-parts":[[2016,6,27]]},"end":{"date-parts":[[2016,7,2]]}},"deposited":{"date-parts":[[2020,2,2]],"date-time":"2020-02-02T16:39:27Z","timestamp":1580661567000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/ieeexplore.ieee.org\/xpl\/mostRecentIssue.jsp?punumber=7557851"}},"issued":{"date-parts":[[2016,6]]},"ISBN":["9781509026753"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1109\/icws38488.2016","published":{"date-parts":[[2016,6]]}},{"indexed":{"date-parts":[[2024,5,17]],"date-time":"2024-05-17T18:13:45Z","timestamp":1715969625908},"reference-count":3,"publisher":"American
-      Society of Hematology","issue":"3","content-domain":{"domain":["ashpublications.org"],"crossmark-restriction":true},"published-print":{"date-parts":[[2006,2,1]]},"DOI":"10.1182\/blood-2005-11-4606","type":"journal-article","created":{"date-parts":[[2006,1,24]],"date-time":"2006-01-24T16:08:07Z","timestamp":1138118887000},"page":"852-853","update-policy":"http:\/\/dx.doi.org\/10.1182\/blood.2019cm0000","source":"Crossref","is-referenced-by-count":3,"title":["In
-      adult ALL, less is now more"],"prefix":"10.1182","volume":"107","author":[{"given":"Mark
-      A","family":"Weiss","sequence":"first","affiliation":[{"name":"MEMORIAL SLOAN
-      KETTERING CANCER CENTER"}]},{"given":"Nicole","family":"Lamanna","sequence":"additional","affiliation":[{"name":"MEMORIAL
-      SLOAN KETTERING CANCER CENTER"}]}],"member":"234","reference":[{"key":"2019111713281333900_REF1","unstructured":"Scheinberg
-      D, Maslak P, Weiss M. Acute leukemias. In: DeVita V, Hellman S, Rosenberg S,
-      eds. Cancer: Principles and Practice of Oncology. Philadelphia, PA: Lippincott-Raven;
-      2005: 2404-2432."},{"key":"2019111713281333900_REF2","doi-asserted-by":"crossref","unstructured":"Gaynor
-      J, Chapman D, Little C, et al. A cause-specific hazard rate analysis of prognostic
-      factors among 199 adults with acute lymphoblastic leukemia: The Memorial Hospital
-      experience since 1969. J Clin Oncol. 1988;6: 1014-1030.","DOI":"10.1200\/JCO.1988.6.6.1014"},{"key":"2019111713281333900_REF3","doi-asserted-by":"crossref","unstructured":"Hoelzer
-      D, Thiel E, Loffler H, et al. Prognostic factors in a multicenter study for
-      treatment of acute lymphoblastic leukemia in adults. Blood. 1998;71: 123-131.","DOI":"10.1182\/blood.V71.1.123.123"}],"container-title":["Blood"],"language":"en","link":[{"URL":"http:\/\/ashpublications.org\/blood\/article-pdf\/107\/3\/852\/1280768\/zh800306000847g.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"http:\/\/ashpublications.org\/blood\/article-pdf\/107\/3\/852\/1280768\/zh800306000847g.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,11,17]],"date-time":"2019-11-17T18:28:21Z","timestamp":1574015301000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/ashpublications.org\/blood\/article\/107\/3\/852\/22130\/In-adult-ALL-less-is-now-more"}},"issued":{"date-parts":[[2006,2,1]]},"references-count":3,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2006,2,1]]}},"URL":"http:\/\/dx.doi.org\/10.1182\/blood-2005-11-4606","ISSN":["0006-4971","1528-0020"],"issn-type":[{"value":"0006-4971","type":"print"},{"value":"1528-0020","type":"electronic"}],"published":{"date-parts":[[2006,2,1]]}},{"indexed":{"date-parts":[[2022,11,5]],"date-time":"2022-11-05T04:56:11Z","timestamp":1667624171003},"reference-count":0,"publisher":"International
-      Union of Crystallography (IUCr)","issue":"1","license":[{"start":{"date-parts":[[1973,2,1]],"date-time":"1973-02-01T00:00:00Z","timestamp":97372800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html"},{"start":{"date-parts":[[1973,2,1]],"date-time":"1973-02-01T00:00:00Z","timestamp":97372800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/journals.iucr.org\/services\/copyrightpolicy.html#TDM"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J
-      Appl Crystallogr","J Appl Cryst"],"published-print":{"date-parts":[[1973,2,1]]},"DOI":"10.1107\/s0021889873008137","type":"journal-article","created":{"date-parts":[[2009,7,10]],"date-time":"2009-07-10T14:35:02Z","timestamp":1247236502000},"page":"58-58","source":"Crossref","is-referenced-by-count":0,"title":["<i>Handbook
-      of electronic materials. Vol. 7. III-V. Ternary semiconducting compunds - Data
-      tables<\/i>by M. Neuberger"],"prefix":"10.1107","volume":"6","author":[{"given":"M.
-      M.","family":"Woolfson","sequence":"first","affiliation":[]}],"member":"329","container-title":["Journal
-      of Applied Crystallography"],"link":[{"URL":"http:\/\/journals.iucr.org\/j\/issues\/1973\/01\/00\/a10441\/a10441.pdf","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/journals.iucr.org\/j\/issues\/1973\/01\/00\/a10441\/a10441.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,11,4]],"date-time":"2022-11-04T09:28:22Z","timestamp":1667554102000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/scripts.iucr.org\/cgi-bin\/paper?S0021889873008137"}},"issued":{"date-parts":[[1973,2,1]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1973,2]]}},"alternative-id":["S0021889873008137"],"URL":"http:\/\/dx.doi.org\/10.1107\/s0021889873008137","ISSN":["0021-8898"],"issn-type":[{"value":"0021-8898","type":"print"}],"published":{"date-parts":[[1973,2,1]]}},{"indexed":{"date-parts":[[2024,6,11]],"date-time":"2024-06-11T00:01:52Z","timestamp":1718064112275},"reference-count":17,"publisher":"European
-      Mathematical Society - EMS - Publishing House GmbH","issue":"2","license":[{"start":{"date-parts":[[2004,4,1]],"date-time":"2004-04-01T00:00:00Z","timestamp":1080777600000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2013,8,22]],"date-time":"2013-08-22T00:00:00Z","timestamp":1377129600000},"content-version":"vor","delay-in-days":3430,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Ann.
-      Inst. H. Poincar\u00e9 C Anal. Non Lin\u00e9aire"],"published-print":{"date-parts":[[2004,4]]},"DOI":"10.1016\/j.anihpc.2003.01.001","type":"journal-article","created":{"date-parts":[[2004,8,25]],"date-time":"2004-08-25T15:32:12Z","timestamp":1093447932000},"page":"187-207","source":"Crossref","is-referenced-by-count":5,"title":["On
-      planar selfdual Electroweak vortices"],"prefix":"10.4171","volume":"21","author":[{"given":"Dongho","family":"Chae","sequence":"first","affiliation":[{"name":"Department
-      of Mathematics, Seoul National University, Seoul 151-742, South Korea"}]},{"given":"Gabriella","family":"Tarantello","sequence":"additional","affiliation":[{"name":"Dipartimento
-      di Matematica, Universit\u00e0 degli Studi di Roma \u201cTor Vergata\u201d,
-      Via della Ricerca Scientifica, 00133 Roma, Italy"}]}],"member":"2673","reference":[{"key":"10.1016\/j.anihpc.2003.01.001_BIB001","first-page":"1174","article-title":"On
-      the magnetic properties of superconductors of second group","volume":"5","author":"Abrikosov","year":"1957","journal-title":"Sov.
-      Phys. JETP"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB002","doi-asserted-by":"crossref","first-page":"67","DOI":"10.1016\/0370-2693(89)90476-0","article-title":"A
-      magnetic condensate solution of the classical electroweak theory","volume":"218","author":"Ambjorn","year":"1989","journal-title":"Phys.
-      Lett. B"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB003","doi-asserted-by":"crossref","first-page":"606","DOI":"10.1016\/0550-3213(89)90004-7","article-title":"On
-      electroweak magnetis","volume":"315","author":"Ambjorn","year":"1989","journal-title":"Nucl.
-      Phys. B"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB004","doi-asserted-by":"crossref","first-page":"193","DOI":"10.1016\/0550-3213(90)90307-Y","article-title":"A
-      condensate solution of the electroweak theory which interpolates between the
-      broken and symmetry phase","volume":"330","author":"Ambjorn","year":"1990","journal-title":"Nucl.
-      Phys. B"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB005","doi-asserted-by":"crossref","first-page":"3","DOI":"10.1007\/s002200200664","article-title":"The
-      Liouville equations with singular data and their applications to electroweak
-      vortices","volume":"229","author":"Bartolucci","year":"2002","journal-title":"Comm.
-      Math. Phys."},{"key":"10.1016\/j.anihpc.2003.01.001_BIB006","doi-asserted-by":"crossref","unstructured":"H.
-      Brezis, F. Merle, Uniform estimates and blow-up behaviour for solutions of \u2212\u0394u=V(x)eu
-      in two dimensions, Comm. Partial Differential Equations 16, (8,9), 1223\u20131253","DOI":"10.1080\/03605309108820797"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB007","doi-asserted-by":"crossref","first-page":"119","DOI":"10.1007\/s002200000302","article-title":"The
-      existence of non-topological multivortex solutions in the relativistic self-dual
-      Chern\u2013Simons theory","volume":"215","author":"Chae","year":"2000","journal-title":"Comm.
-      Math. Phys."},{"issue":"2","key":"10.1016\/j.anihpc.2003.01.001_BIB008","doi-asserted-by":"crossref","first-page":"427","DOI":"10.1215\/S0012-7094-93-07117-7","article-title":"Qualitative
-      properties of solutions to some nonlinear elliptic equations in \u211d2","volume":"71","author":"Chen","year":"1993","journal-title":"Duke
-      Math. J."},{"key":"10.1016\/j.anihpc.2003.01.001_BIB009","doi-asserted-by":"crossref","first-page":"141","DOI":"10.1016\/0550-3213(79)90595-9","article-title":"A
-      property of electric and magnetic flux in nonabelian gauge theories","volume":"153","author":"''t
-      Hooft","year":"1979","journal-title":"Nucl. Phys. B"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB010","unstructured":"C.H.
-      Lai (Ed.), Selected Papers on Gauge Theory of Weak and Electromagnetic Interactions,
-      World Scientific, Singapore"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB011","article-title":"Topics
-      in Nonlinear Analysis","author":"Nirenberg","year":"2001"},{"issue":"4","key":"10.1016\/j.anihpc.2003.01.001_BIB012","doi-asserted-by":"crossref","first-page":"967","DOI":"10.1017\/S0308210500001219","article-title":"On
-      a class of elliptic problems in \u211d2: symmetry and uniqueness results","volume":"131","author":"Prajapat","year":"2001","journal-title":"Proc.
-      Royal Soc. Edinburgh"},{"key":"10.1016\/j.anihpc.2003.01.001_BIB013","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1007\/BF02099188","article-title":"On
-      multivortices in the electroweak theory I: existence of periodic solutions","volume":"144","author":"Spruck","year":"1992","journal-title":"Comm.
-      Math. Phys."},{"key":"10.1016\/j.anihpc.2003.01.001_BIB014","doi-asserted-by":"crossref","first-page":"215","DOI":"10.1007\/BF02101090","article-title":"On
-      multivortices in the electroweak theory II: existence of Bogomol''nyi solutions
-      in \u211d2","volume":"144","author":"Spruck","year":"1992","journal-title":"Comm.
-      Math. Phys."},{"key":"10.1016\/j.anihpc.2003.01.001_BIB015","doi-asserted-by":"crossref","first-page":"277","DOI":"10.1007\/BF01197552","article-title":"Arbitrary
-      N-vortex solutions to the first order Ginzburg\u2013Landau equation","volume":"72","author":"Taubes","year":"1980","journal-title":"Comm.
-      Math. Phys."},{"key":"10.1016\/j.anihpc.2003.01.001_BIB016","doi-asserted-by":"crossref","first-page":"207","DOI":"10.1007\/BF01212709","article-title":"On
-      the equivalence of first order and second order equations for gauge theories","volume":"75","author":"Taubes","year":"1980","journal-title":"Comm.
-      Math. Phys."},{"key":"10.1016\/j.anihpc.2003.01.001_BIB017","doi-asserted-by":"crossref","article-title":"Solitons
-      in Field Theory and Nonlinear Analysis","author":"Yang","year":"2001","DOI":"10.1007\/978-1-4757-6548-9"}],"container-title":["Annales
-      de l''Institut Henri Poincar\u00e9 C, Analyse non lin\u00e9aire"],"link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0294144903000349?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0294144903000349?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2024,6,10]],"date-time":"2024-06-10T15:15:56Z","timestamp":1718032556000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/ems.press\/doi\/10.1016\/j.anihpc.2003.01.001"}},"issued":{"date-parts":[[2004,4]]},"references-count":17,"journal-issue":{"issue":"2"},"URL":"http:\/\/dx.doi.org\/10.1016\/j.anihpc.2003.01.001","ISSN":["0294-1449","1873-1430"],"issn-type":[{"value":"0294-1449","type":"print"},{"value":"1873-1430","type":"electronic"}],"published":{"date-parts":[[2004,4]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":10,"items":[{"indexed":{"date-parts":[[2025,3,17]],"date-time":"2025-03-17T19:10:17Z","timestamp":1742238617790,"version":"3.40.1"},"reference-count":0,"publisher":"Oxford
+      University Press (OUP)","issue":"5","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1968,6,1]]},"DOI":"10.1086\/ahr\/73.5.1551","type":"journal-article","created":{"date-parts":[[2017,2,1]],"date-time":"2017-02-01T00:04:09Z","timestamp":1485907449000},"page":"1551-1552","source":"Crossref","is-referenced-by-count":0,"title":["Latvijas
+      V\u0113sture, 1914\u20131920. by <i>Edgar Anderson<\/i>. ([Stockholm:] Daugava.
+      1967. Pp. 754)"],"prefix":"10.1093","volume":"73","author":[{"given":"Francis
+      J.","family":"Bowman","sequence":"first","affiliation":[{"name":"University
+      of Southern California"}]}],"member":"286","published-online":{"date-parts":[[1968,6,1]]},"container-title":["The
+      American Historical Review"],"language":"en","link":[{"URL":"https:\/\/academic.oup.com\/ahr\/article-pdf\/73\/5\/1551\/568505\/73-5-1551.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"https:\/\/academic.oup.com\/ahr\/article-pdf\/73\/5\/1551\/568505\/73-5-1551.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2025,3,17]],"date-time":"2025-03-17T18:38:27Z","timestamp":1742236707000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/academic.oup.com\/ahr\/article\/73\/5\/1551\/214678"}},"issued":{"date-parts":[[1968,6,1]]},"references-count":0,"journal-issue":{"issue":"5","published-online":{"date-parts":[[1968,6,1]]},"published-print":{"date-parts":[[1968,6,1]]}},"URL":"https:\/\/doi.org\/10.1086\/ahr\/73.5.1551","ISSN":["1937-5239","0002-8762"],"issn-type":[{"type":"electronic","value":"1937-5239"},{"type":"print","value":"0002-8762"}],"published-other":{"date-parts":[[1968,6]]},"published":{"date-parts":[[1968,6,1]]}},{"indexed":{"date-parts":[[2022,4,4]],"date-time":"2022-04-04T23:08:12Z","timestamp":1649113692605},"publisher-location":"Providence,
+      Rhode Island","reference-count":0,"publisher":"American Mathematical Society","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1962]]},"DOI":"10.1090\/psapm\/014\/9946","type":"other","created":{"date-parts":[[2013,1,29]],"date-time":"2013-01-29T17:46:37Z","timestamp":1359481597000},"page":"225-231","source":"Crossref","is-referenced-by-count":0,"title":["From
+      chemotherapy to computers to trajectories"],"prefix":"10.1090","author":[{"given":"Richard","family":"Bellman","sequence":"first","affiliation":[]}],"member":"14","container-title":["Proceedings
+      of Symposia in Applied Mathematics","Mathematical Problems in the Biological
+      Sciences"],"deposited":{"date-parts":[[2013,1,29]],"date-time":"2013-01-29T17:17:45Z","timestamp":1359479865000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.ams.org\/psapm\/014"}},"issued":{"date-parts":[[1962]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1090\/psapm\/014\/9946","ISSN":["2324-7088","0160-7634"],"issn-type":[{"value":"2324-7088","type":"electronic"},{"value":"0160-7634","type":"print"}],"published":{"date-parts":[[1962]]}},{"indexed":{"date-parts":[[2025,2,14]],"date-time":"2025-02-14T11:40:13Z","timestamp":1739533213765,"version":"3.37.1"},"reference-count":42,"publisher":"Yuriy
+      Fedkovych Chernivtsi National University","issue":"45","license":[{"start":{"date-parts":[[2022,6,27]],"date-time":"2022-06-27T00:00:00Z","timestamp":1656288000000},"content-version":"unspecified","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["\u0406\u041f\u041f\u0421\u0421"],"abstract":"<jats:p>\u041c\u0435\u0442\u0430
+      \u0441\u0442\u0430\u0442\u0442\u0456 \u043f\u043e\u043b\u044f\u0433\u0430\u0454
+      \u0443 \u0434\u043e\u0441\u043b\u0456\u0434\u0436\u0435\u043d\u043d\u0456 \u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f
+      \u0456 \u0440\u043e\u0437\u0432\u0438\u0442\u043a\u0443 \u0435-\u0443\u0440\u044f\u0434\u0443\u0432\u0430\u043d\u043d\u044f
+      \u0432 \u0411\u043e\u043b\u0433\u0430\u0440\u0456\u0457, \u044f\u043a \u0444\u0430\u043a\u0442\u043e\u0440\u0443
+      \u043c\u043e\u0434\u0435\u0440\u043d\u0456\u0437\u0430\u0446\u0456\u0457 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u043e\u0457
+      \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0446\u0456\u0457,
+      \u043e\u0446\u0456\u043d\u0446\u0456 \u0442\u0435\u043d\u0434\u0435\u043d\u0446\u0456\u0439
+      \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043d\u043d\u044f \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u0438\u0445
+      \u0435-\u043f\u043e\u0441\u043b\u0443\u0433 \u043d\u0430 \u043e\u0441\u043d\u043e\u0432\u0456
+      \u0430\u043d\u0430\u043b\u0456\u0437\u0443 \u043f\u043e\u0442\u043e\u0447\u043d\u043e\u0457
+      \u0441\u0438\u0442\u0443\u0430\u0446\u0456\u0457. \u0412\u0438\u0440\u0456\u0448\u0435\u043d\u0456
+      \u043d\u0430\u0441\u0442\u0443\u043f\u043d\u0456 \u0437\u0430\u0432\u0434\u0430\u043d\u043d\u044f:
+      \u043e\u0431\u0491\u0440\u0443\u043d\u0442\u043e\u0432\u0430\u043d\u043e \u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f
+      \u0435-\u0443\u0440\u044f\u0434\u0443\u0432\u0430\u043d\u043d\u044f \u0439 \u0435-\u0443\u0440\u044f\u0434\u0443
+      \u0432 \u0411\u043e\u043b\u0433\u0430\u0440\u0456\u0457; \u0440\u043e\u0437\u0433\u043b\u044f\u043d\u0443\u0442\u0456
+      \u0440\u0435\u0444\u043e\u0440\u043c\u0438 \u0435-\u0443\u0440\u044f\u0434\u0443;
+      \u0434\u043e\u0441\u043b\u0456\u0434\u0436\u0435\u043d\u0456 \u0441\u0443\u0447\u0430\u0441\u043d\u0456
+      \u0442\u0435\u043d\u0434\u0435\u043d\u0446\u0456\u0457 \u0440\u043e\u0437\u0432\u0438\u0442\u043a\u0443
+      \u0435-\u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0439 \u0435-\u0443\u0440\u044f\u0434\u0443,
+      \u044f\u043a \u0456\u043d\u0441\u0442\u0438\u0442\u0443\u0446\u0456\u0439\u043d\u043e\u0457
+      \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0438 \u0411\u043e\u043b\u0433\u0430\u0440\u0456\u0457.
+      \u0414\u043e\u0441\u043b\u0456\u0434\u0436\u0435\u043d\u043e, \u0449\u043e \u0442\u0435\u0440\u043c\u0456\u043d
+      \u00ab\u0431\u043e\u043b\u0433\u0430\u0440\u0441\u044c\u043a\u0438\u0439 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u0438\u0439
+      \u0443\u0440\u044f\u0434\u00bb \u0432\u043f\u0435\u0440\u0448\u0435 \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u0430\u043b\u0438
+      \u0432 \u0404\u0434\u0438\u043d\u0456\u0439 \u0441\u0438\u0441\u0442\u0435\u043c\u0456
+      \u0440\u0435\u0454\u0441\u0442\u0440\u0430\u0446\u0456\u0457 \u0430\u043a\u0442\u0456\u0432
+      \u0446\u0438\u0432\u0456\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0430\u043d\u0443
+      \u0442\u0430 \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u0438\u0445
+      \u043f\u043e\u0441\u043b\u0443\u0433 \u0443 1977 \u0440. \u0404\u0434\u0438\u043d\u0438\u0439
+      \u0443\u0441\u043f\u0456\u0448\u043d\u0438\u0439 \u0440\u0435\u0454\u0441\u0442\u0440
+      \u0430\u043a\u0442\u0456\u0432 \u0446\u0438\u0432\u0456\u043b\u044c\u043d\u043e\u0433\u043e
+      \u0441\u0442\u0430\u043d\u0443 \u043d\u0430\u0434\u0430\u0432 \u0435\u0444\u0435\u043a\u0442\u0438\u0432\u043d\u0438\u0439
+      \u0434\u043e\u0441\u0442\u0443\u043f \u0433\u0440\u043e\u043c\u0430\u0434\u044f\u043d\u0430\u043c
+      \u0456 \u043e\u0440\u0433\u0430\u043d\u0456\u0437\u0430\u0446\u0456\u044f\u043c
+      \u0434\u043e \u0432\u0438\u0434\u0430\u0447\u0456 \u0441\u0432\u0456\u0434\u043e\u0446\u0442\u0432,
+      \u043a\u043e\u043f\u0456\u0439 \u0440\u0435\u0454\u0441\u0442\u0440\u0443 \u0430\u043a\u0442\u0456\u0432
+      \u0446\u0438\u0432\u0456\u043b\u044c\u043d\u043e\u0433\u043e \u0441\u0442\u0430\u043d\u0443,
+      \u0431\u043b\u0430\u043d\u043a\u0456\u0432, \u0434\u043e\u0437\u0432\u043e\u043b\u0456\u0432
+      \u043d\u0430 \u0431\u0443\u0434\u0456\u0432\u043d\u0438\u0446\u0442\u0432\u043e,
+      \u043f\u0440\u0430\u0432 \u043a\u043e\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u043d\u043d\u044f,
+      \u043c\u0438\u0442\u0430, \u0440\u0435\u0433\u0443\u043b\u044e\u0432\u0430\u043d\u043d\u044f
+      \u043f\u043e\u0434\u0430\u0442\u043a\u0456\u0432. \u041f\u043e\u043b\u0456\u0442\u0438\u0447\u043d\u0456
+      \u0437\u043c\u0456\u043d\u0438 1989 \u0440. \u0456 \u0434\u0435\u043c\u043e\u043a\u0440\u0430\u0442\u0438\u0437\u0430\u0446\u0456\u044f
+      \u0411\u043e\u043b\u0433\u0430\u0440\u0456\u0457 \u0432\u0438\u043a\u043b\u0438\u043a\u0430\u043b\u0438
+      \u043f\u043e\u0442\u0440\u0435\u0431\u0443 \u043d\u043e\u0432\u043e\u0457 \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0442\u0438\u0432\u043d\u043e-\u043f\u0440\u0430\u0432\u043e\u0432\u043e\u0457
+      \u0431\u0430\u0437\u0438, \u0430 \u043f\u0456\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430
+      \u0434\u043e \u0432\u0441\u0442\u0443\u043f\u0443 \u0432 \u0404\u0421 \u2013
+      \u043f\u0435\u0432\u043d\u0438\u0439 \u0440\u0435\u043d\u0435\u0441\u0430\u043d\u0441
+      \u0435-\u0443\u0440\u044f\u0434\u0443 \u0443 \u043d\u043e\u0432\u0456\u0439
+      \u0444\u0430\u0437\u0456 \u0456 \u0444\u043e\u0440\u043c\u0456. \u041d\u0438\u043d\u0456
+      \u043f\u0440\u043e\u0446\u0435\u0441 \u0440\u0435\u0444\u043e\u0440\u043c \u0435-\u0443\u0440\u044f\u0434\u0443\u0432\u0430\u043d\u043d\u044f
+      \u0432 \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0456\u0446\u0456 \u0411\u043e\u043b\u0433\u0430\u0440\u0456\u044f
+      \u2013 \u0441\u043a\u043b\u0430\u0434\u043e\u0432\u0430 \u043d\u043e\u0432\u043e\u0457
+      \u043f\u043e\u043b\u0456\u0442\u0438\u043a\u043e-\u0435\u043a\u043e\u043d\u043e\u043c\u0456\u0447\u043d\u043e\u0457
+      \u043c\u043e\u0434\u0435\u043b\u0456 \u0440\u043e\u0437\u0432\u0438\u0442\u043a\u0443.
+      \u0414\u043b\u044f \u043f\u043e\u0432\u043d\u043e\u0457 \u043c\u043e\u0434\u0435\u0440\u043d\u0456\u0437\u0430\u0446\u0456\u0457
+      \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u043e\u0457 \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0446\u0456\u0457
+      \u0432 \u0411\u043e\u043b\u0433\u0430\u0440\u0456\u0457 \u043d\u0435\u043e\u0431\u0445\u0456\u0434\u043d\u0456
+      \u0448\u0438\u0440\u043e\u043a\u0456 \u043a\u043e\u043d\u0441\u0443\u043b\u044c\u0442\u0430\u0446\u0456\u0457,
+      \u0437 \u043e\u0434\u043d\u043e\u0433\u043e \u0431\u043e\u043a\u0443, \u043c\u0456\u0436
+      \u0414\u0435\u0440\u0436\u0430\u0432\u043d\u0438\u043c \u0430\u0433\u0435\u043d\u0442\u0441\u0442\u0432\u043e\u043c,
+      \u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440\u043e\u043c \u0404\u0434\u0438\u043d\u043e\u0457
+      \u0441\u0438\u0441\u0442\u0435\u043c\u0438, \u0431\u0456\u0437\u043d\u0435\u0441\u043e\u043c,
+      \u0456 \u043f\u0440\u043e\u043c\u0438\u0441\u043b\u043e\u0432\u0456\u0441\u0442\u044e,
+      \u0430 \u0437 \u0456\u043d\u0448\u043e\u0433\u043e \u2013 \u0437 \u0433\u0440\u043e\u043c\u0430\u0434\u044f\u043d\u0430\u043c\u0438.
+      \u0422\u0430\u043a\u0456 \u0434\u0456\u0457, \u0432 \u043f\u043e\u0454\u0434\u043d\u0430\u043d\u043d\u0456
+      \u0437 \u0440\u0435\u0444\u043e\u0440\u043c\u0430\u043c\u0438, \u0437\u043d\u0430\u0447\u043d\u043e
+      \u043f\u0440\u0438\u0448\u0432\u0438\u0434\u0448\u0430\u0442\u044c \u043c\u043e\u0434\u0435\u0440\u043d\u0456\u0437\u0430\u0446\u0456\u044e
+      \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u043e\u0457 \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0446\u0456\u0457
+      \u0432 \u0434\u0435\u0440\u0436\u0430\u0432\u0456. <\/jats:p>","DOI":"10.31861\/mhpi2022.45.140-152","type":"journal-article","created":{"date-parts":[[2022,7,6]],"date-time":"2022-07-06T15:04:15Z","timestamp":1657119855000},"page":"140-152","source":"Crossref","is-referenced-by-count":0,"title":["\u0421\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f
+      \u0435-\u0443\u0440\u044f\u0434\u0443\u0432\u0430\u043d\u043d\u044f \u0432 \u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0456\u0446\u0456
+      \u0411\u043e\u043b\u0433\u0430\u0440\u0456\u044f \u044f\u043a \u0447\u0438\u043d\u043d\u0438\u043a
+      \u043c\u043e\u0434\u0435\u0440\u043d\u0456\u0437\u0430\u0446\u0456\u0457 \u043f\u0443\u0431\u043b\u0456\u0447\u043d\u043e\u0457
+      \u0430\u0434\u043c\u0456\u043d\u0456\u0441\u0442\u0440\u0430\u0446\u0456\u0457","Formation
+      of e-Governance in the Republic of Bulgaria as a Factor of Modernization of
+      Public Administration"],"prefix":"10.31861","author":[{"ORCID":"https:\/\/orcid.org\/0000-0003-0037-2173","authenticated-orcid":false,"given":"\u0412\u0456\u0440\u0430","family":"\u0411\u0443\u0440\u0434\u044f\u043a","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-8305-3949","authenticated-orcid":false,"given":"\u0420\u0443\u0441\u043b\u0430\u043d\u0430","family":"\u041a\u043b\u0438\u043c","sequence":"additional","affiliation":[]}],"member":"17116","published-online":{"date-parts":[[2022,6,27]]},"reference":[{"key":"3186","doi-asserted-by":"crossref","unstructured":"Burdiak,
+      V. (2021), Politychnyi protses u Bolharii: nevdala koalitsiada ta treti vprodovzh
+      roku vybory do parlamentu, Mediaforum: analityka, prohnozy, informatsiinyi menedzhment,
+      (9), 28-49.","DOI":"10.31861\/mediaforum.2021.9.28-49"},{"key":"3187","unstructured":"Vyrovyi,
+      S.I., Diachenko, N.P. (2014), Publichne vriaduvannia: problemy teorii ta praktyky,
+      Publichne upravlinnia: shliakhy rozvytku, Kyiv, NADU, (1), 61-62."},{"key":"3188","unstructured":"V''rbanov,
+      R. (2007), Elektronno pravitelstvo i elektronni uslugi, Sofija."},{"key":"3189","unstructured":"Havkalova
+      N.L. (2014), Publichne upravlinnia: metodolohichnyi aspekt, Publichne upravlinnia:
+      shliakhy rozvytku, Kyiv, NADU, (1), 16\u201318."},{"key":"3190","unstructured":"Gogolev,
+      A.M. (2015), Publichnoe administrirovanie kak pravovaya kategoriya, Ekonomika.
+      Nalogi. Pravo, \u2116 3, 141-146."},{"key":"3191","unstructured":"Dobrev, B.E.
+      (2005), P''tevoditel za elektronno pravitelstvo, Sofiya."},{"key":"3192","unstructured":"Doklad
+      za s''stoyanieto na administratsiyata prez 2007 g. (2008), Sofiya, Ministerstvo
+      na d''rzha-vnata administratsiya i administrativnata reforma."},{"key":"3193","unstructured":"Doklad
+      za s''stoyanieto na administratsiyata prez 2008 g. (2009), Sofiya, Ministerstvo
+      na d''rzha-vnata administratsiya i administrativnata reforma."},{"key":"3194","unstructured":"Edinen
+      portal za elektronni administrativni uslugi (2015), URL: https:\/\/egov.bg\/wps\/portal\/en."},{"key":"3195","unstructured":"Elektronno
+      upravlenie v kraya na tunela (2016), Kapital, 10.06.2016. ULR: http:\/\/www.capital.bg\/politika_i_ikonomika\/bulgaria\/2016\/06\/10\/2775252_elektron-no_upravlenie_v_kraia_na_tunela\/."},{"key":"3196","unstructured":"Zakon
+      za elektronnoto upravlenie (2009), UNDP, E-Government in Bulgaria, Project Code:
+      00011716, Final CCICMT Report, URL: http:\/\/www.\u0435g.government.bg\/upload\/docs\/2016-07\/\/ZAKON_za_elektron-noto_upravlenie.pdf."},{"key":"3197","unstructured":"Zarubizhnyi
+      dosvid publichnoho administruvannia (2010), Kyiv, NADU."},{"key":"3198","unstructured":"Indeks
+      za digitalna ikonomika i obschestvo, DESI (2021), ULR: https:\/\/ digital-strategy.ec.
+      europa.eu\/en\/policies\/desi-bulgaria."},{"key":"3199","unstructured":"Kiskinov,
+      V. (2003), Elektronno pravitelstvo, Sofiya, SIBI."},{"key":"3200","unstructured":"Mihaleva,
+      S. (2009), Kontseptsiyata \u00abElektronno pravitelstvo\u00bb v konteksta na
+      elektronnoto upravlenie, ULR: https:\/\/ejournal.vfu.bg\/en\/pdfs\/Svetla_MihalevaKon-cepciata%27Elektronno_
+      pravitelstvo%27v_kontektsta_na_elektronnoto_upravlenie."},{"key":"3201","doi-asserted-by":"crossref","unstructured":"Nikolina,
+      I., Bavarovska, L. (2021). Porivnialnyi analiz rozvytku e-uriaduvannia Ukrainy
+      ta Bolharii, InterConf, (93),157-161,ULR: https:\/\/doi.org\/10.51582\/inter\u0441onf.","DOI":"10.51582\/interconf.21-22.12.2021.017"},{"key":"3202","unstructured":"Osnovni
+      prioriteti za razvitie na IKT (2015), URL: https:\/\/ec.europa. eu\/priorities\/digital-single-market_en."},{"key":"3203","unstructured":"Postanovlenie
+      (1977) \u2116 15 na Ministerskiya s''vet ot 1977 g. za Vnedryavane na edinnata
+      sistema za grazhdanska registratsiya i administrativno obsluzhvane na naselenieto
+      i za izmenenie i dop''lnenie na naredbata za grazhdanskoto s''stoyanie. ULR:
+      https:\/\/www.ciela.net\/svobodna-zona-darjaven-vestnik\/document\/-1092339200\/issue\/876\/postanovlenie-%E2%84%96-15-na-ministerskiya-savet-ot-1977-g-za-vnedryavane-na-edin-nata-sistema-za-grazhdanska-registratsiya-i-administra-tivno
+      -obsluzhvane-na-naselenieto-i-za-izmenenie-i-dopalnenie-na-naredbata-za-grazhdanskoto-sastoyanie."},{"key":"3204","unstructured":"Postanovlenie
+      (1998) \u2116 40 na Ministerskiya s''vet ot 17 fevruari 1998 g. za s''zdavane
+      na koordinatsionen s''vet po problemite na informatsionnoto obschestvo. ULR:https:\/\/www.ciela.net\/
+      svobodna-zona-darjaven-vestnik\/document\/-1086837248\/issue\/1374\/postanovlenie-%E2%40-na-ministerskiya-savet-ot-17-fev-ruari-1998-g-za-sazdavane-na-koordinatsionen-savet-po-problemite-na-informatsionnoto-obshtestvo."},{"key":"3205","unstructured":"Pravets
+      (1984). ULR: http:\/\/pravetz.bg\/history\/."},{"key":"3206","unstructured":"PROON.
+      Doklad o razvitii cheloveka (2009), Preodolenie barerov: cheloveche-skaya mobilnost
+      i razvitie. Opublikovano dlya Programmyi razvitiya OON (PROON), M., \u00abVes
+      Mir\u00bb, URL: https:\/\/www.un.org\/ru\/development\/hdr\/2009\/hdr_2009_comp-lete.pdf."},{"key":"3207","unstructured":"Publichne
+      upravlinnia ta administruvannia v umovakh informatsiinoho suspilstva: vitchyznianyi
+      i zarubizhnyi dosvid (2016), Zaporizhzhia, ZDIA."},{"key":"3208","unstructured":"Rae
+      A., Tsitselkov S., Decheva R., Sm''v''rake K. (2016), Preotkrivane na publichnite
+      uslugi za 21-vi vek. Sravnitelen analiz na elektronnite reformi v Estoniya,
+      B''lgariya i Rumyiniya, Sofiya, Evropeyski liberalen forum."},{"key":"3209","unstructured":"Republika
+      B''lgariya (2019), D''rzhavna agentsiya \u00abElektronno upravlenie\u00bb, URL:
+      https:\/\/e-gov.bg\/wps\/portal\/ agency\/home."},{"key":"3210","unstructured":"Strategiya
+      za elektronno upravlenie v Republika B''lgariya 2010-2015 (2010), URL: https:\/\/www.mtitc.government.bg\/upload\/docs\/eGovStrategy.pdf."},{"key":"3211","unstructured":"Ukaz
+      (1985), \u2116 2472\/1985 za Administrativno-pravnoto obsluzhvane na naselenieto,
+      ULR: http:\/\/ www.mtitc.government.bg\/upload\/docs\/eGovStrategy.pdf."},{"key":"3212","unstructured":"Hristov,
+      P. (2016), Elektronnoto upravlenie sche zaraboti do 4 godini, ULR: http:\/\/web.barometar.
+      net\/85271\/."},{"key":"3213","unstructured":"Chernov, S.I., Haiduchenko, S.O.
+      (2014), Tekst lektsii z dystsypliny \u00abPublichne administruvan-nia\u00bb,
+      Kharkiv, KhNUMH."},{"key":"3214","unstructured":"Carter, L., Belanger, F. (2004),
+      The Utilization of E-government Services, Citizen Trust, Innovation And Acceptance
+      Factors."},{"key":"3215","unstructured":"e-Governance Strategy of Bulgaria,
+      MTITC (2013). URL: https:\/\/www.mtitc.government.bg\/ upload\/ docs\/2014-07\/e_Governance_Strategy_Draft.pdf."},{"key":"3216","unstructured":"e-Governance
+      Strategy of Bulgaria, MTITC, (2014). URL: https:\/\/www.mtitc.government.bg\/
+      upload\/ docs\/2014-07\/e_Governance_Strategy_Draft.pdf."},{"key":"3217","unstructured":"EU
+      IDAbc, Interoperable Delivery of European e-Government Services to public Administrations,
+      Business and Citizens (2009), URL: http:\/\/ec.europa.eu\/idabc\/en\/ chapter\/3.html."},{"key":"3218","unstructured":"European
+      Commission (2004), An official website of the European Union, URL: www.ec.europa.eu\/index_en.
+      htm."},{"key":"3219","unstructured":"European e-Government Action Plan 2016-2020
+      (2016), URL: https:\/\/ ec.europa.eu\/digital-single-market\/en\/ european-egovernment-action-plan-2016-2020."},{"key":"3220","unstructured":"European
+      e-Justice, European e-Justice Portal, URL: http:\/\/ec.europa.eu\/justice\/criminal\/european-ejustice\/
+      index_en.htm."},{"key":"3221","unstructured":"Haag St., M. Cummings, A. Phillips
+      (2007), Management Information Systems for the Information Age."},{"key":"3222","unstructured":"IDABC
+      (2005), presented \"The Power of Communities\" at Open World Forum, ULR: http:\/\/ec.europa.eu\/idabc\/en\/
+      chapter\/6031."},{"key":"3223","doi-asserted-by":"crossref","unstructured":"Petrov,
+      K. (2020), Problem Aspects of E-Governance and E-Learning Management in Bulgaria,
+      EJBMR, European Journal of Business and Management Research, V. 5, \u2116 6,
+      URL: https:\/\/www.ejbmr.org\/index.php\/ejbmr\/article\/ view\/ 591","DOI":"10.24018\/ejbmr.2020.5.6.591"},{"key":"3224","unstructured":"Santiago,
+      E. (2008), The Development \u043ef \u0430 Model For Municipal \u0435-government
+      \u0456n Puerto Rico And \u0456ts Evalution Tools. Puerto Rico."},{"key":"3225","doi-asserted-by":"crossref","unstructured":"Silcock,
+      R. (2001), What is E-government? ParliamentaryAffairs.","DOI":"10.1093\/pa\/54.1.88"},{"key":"3226","unstructured":"Sprecher,
+      M. (2000), Racing to e-government, Using the Internet for Citizen Service Delivery."},{"key":"3227","unstructured":"UN
+      E-Government Survey (2016). URL: https:\/\/publicadministration.un. org\/egovkb\/en-us\/
+      Reports\/UN-E-Government-Survey-2016 UN."}],"container-title":["\u0406\u0441\u0442\u043e\u0440\u0438\u043a\u043e-\u043f\u043e\u043b\u0456\u0442\u0438\u0447\u043d\u0456
+      \u043f\u0440\u043e\u0431\u043b\u0435\u043c\u0438 \u0441\u0443\u0447\u0430\u0441\u043d\u043e\u0433\u043e
+      \u0441\u0432\u0456\u0442\u0443"],"link":[{"URL":"https:\/\/mhpi.chnu.edu.ua\/mhpi\/article\/download\/184\/179","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/mhpi.chnu.edu.ua\/mhpi\/article\/download\/184\/179","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2025,2,14]],"date-time":"2025-02-14T11:00:47Z","timestamp":1739530847000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/mhpi.chnu.edu.ua\/mhpi\/article\/view\/184"}},"issued":{"date-parts":[[2022,6,27]]},"references-count":42,"journal-issue":{"issue":"45","published-online":{"date-parts":[[2022,6,27]]}},"URL":"https:\/\/doi.org\/10.31861\/mhpi2022.45.140-152","ISSN":["2617-2372","2519-4518"],"issn-type":[{"type":"electronic","value":"2617-2372"},{"type":"print","value":"2519-4518"}],"published":{"date-parts":[[2022,6,27]]}},{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T08:04:30Z","timestamp":1648627470363},"reference-count":0,"publisher":"Informa
+      UK Limited","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Bront\u00eb
+      Society Transactions"],"published-print":{"date-parts":[[1942,1]]},"DOI":"10.1179\/030977642796561396","type":"journal-article","created":{"date-parts":[[2011,8,23]],"date-time":"2011-08-23T20:15:38Z","timestamp":1314130538000},"page":"107-109","source":"Crossref","is-referenced-by-count":0,"title":["Correct
+      Text of Emily Bront\u00eb\u2019s Poems"],"prefix":"10.1080","volume":"10","author":[{"given":"Fannie
+      E.","family":"Ratchford","sequence":"first","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2013,7,18]]},"container-title":["Bront\u00eb
+      Society Transactions"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1179\/030977642796561396","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,11]],"date-time":"2016-12-11T18:19:46Z","timestamp":1481480386000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.tandfonline.com\/doi\/full\/10.1179\/030977642796561396"}},"issued":{"date-parts":[[1942,1]]},"references-count":0,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2013,7,18]]},"published-print":{"date-parts":[[1942,1]]}},"alternative-id":["10.1179\/030977642796561396"],"URL":"https:\/\/doi.org\/10.1179\/030977642796561396","ISSN":["0309-7765"],"issn-type":[{"value":"0309-7765","type":"print"}],"published":{"date-parts":[[1942,1]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T17:26:06Z","timestamp":1649179566649},"reference-count":0,"publisher":"Walter
+      de Gruyter GmbH","issue":"3-4","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1977]]},"DOI":"10.1515\/flin.1977.11.3-4.277","type":"journal-article","created":{"date-parts":[[2009,7,16]],"date-time":"2009-07-16T12:24:47Z","timestamp":1247747087000},"source":"Crossref","is-referenced-by-count":0,"title":["THE
+      NEGATIVE PARTICLE N\u00c1 WHEN USED WITH THE AORIST SYSTEM IN THE RG-VEDA"],"prefix":"10.1515","volume":"11","author":[{"given":"A.","family":"HEJIB","sequence":"first","affiliation":[]},{"given":"A.","family":"SHARMA","sequence":"additional","affiliation":[]}],"member":"374","container-title":["Folia
+      Linguistica"],"link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/flin.1977.11.3-4.277\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,22]],"date-time":"2021-04-22T00:59:45Z","timestamp":1619053185000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/flin.1977.11.3-4.277\/html"}},"issued":{"date-parts":[[1977]]},"references-count":0,"journal-issue":{"issue":"3-4"},"URL":"https:\/\/doi.org\/10.1515\/flin.1977.11.3-4.277","ISSN":["0165-4004","1614-7308"],"issn-type":[{"value":"0165-4004","type":"print"},{"value":"1614-7308","type":"electronic"}],"published":{"date-parts":[[1977]]}},{"indexed":{"date-parts":[[2022,3,31]],"date-time":"2022-03-31T00:45:42Z","timestamp":1648687542322},"reference-count":0,"publisher":"Stef92
+      Technology","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014,9,1]]},"DOI":"10.5593\/sgemsocial2014\/b24\/s7.064","type":"proceedings-article","created":{"date-parts":[[2015,2,17]],"date-time":"2015-02-17T17:31:02Z","timestamp":1424194262000},"source":"Crossref","is-referenced-by-count":1,"title":["MUSEUM\ufffdS
+      WEBSITE AS A SIGNIFICANT TOOL OF FINANCIAL ACTIVITY OF MUSEUMS"],"prefix":"10.5593","author":[{"given":"Maksim","family":"Shubinskiy","sequence":"first","affiliation":[]}],"member":"3602","event":{"name":"SGEM
+      2014 Scientific SubConference on POLITICAL SCIENCES, LAW, FINANCE, ECONOMICS
+      AND TOURISM","acronym":"SGEMSOCIAL2014B24"},"container-title":["SGEM International
+      Multidisciplinary Scientific Conferences on SOCIAL SCIENCES and ARTS Proceedings","SGEM
+      2014 Scientific SubConference on POLITICAL SCIENCES, LAW, FINANCE, ECONOMICS
+      AND TOURISM"],"deposited":{"date-parts":[[2015,2,17]],"date-time":"2015-02-17T17:31:19Z","timestamp":1424194279000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/sgemsocial.org\/ssgemlib\/spip.php?article960"}},"issued":{"date-parts":[[2014,9,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5593\/sgemsocial2014\/b24\/s7.064","ISSN":["2367-5659"],"issn-type":[{"value":"2367-5659","type":"print"}],"published":{"date-parts":[[2014,9,1]]}},{"indexed":{"date-parts":[[2025,6,19]],"date-time":"2025-06-19T23:05:32Z","timestamp":1750374332424},"reference-count":104,"publisher":"Wiley","issue":"20","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":1446,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2011,10,20]]},"DOI":"10.1016\/j.febslet.2011.09.014","type":"journal-article","created":{"date-parts":[[2011,9,17]],"date-time":"2011-09-17T21:05:20Z","timestamp":1316293520000},"page":"3208-3215","source":"Crossref","is-referenced-by-count":28,"title":["Protein
+      kinase C-theta in platelet activation"],"prefix":"10.1002","volume":"585","author":[{"given":"Sagit","family":"Cohen","sequence":"first","affiliation":[]},{"given":"Alex","family":"Braiman","sequence":"additional","affiliation":[]},{"given":"George","family":"Shubinsky","sequence":"additional","affiliation":[]},{"given":"Noah","family":"Isakov","sequence":"additional","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2011,9,16]]},"reference":[{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0005|feb2s0014579311006934-cit-b0005","unstructured":"R.W.
+      Colman V.J. Marder A.W. Clowes J.N. George S.Z. Goldhaber Hemostasis and thrombosis:
+      basic principles and clinical practice, Fifth edition, Lippincott 2006 Williams
+      &amp; Wilkins Philadelphia, PA"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0010|feb2s0014579311006934-cit-b0010","volume-title":"Platelets","year":"2007"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0015|feb2s0014579311006934-cit-b0015","doi-asserted-by":"crossref","first-page":"661","DOI":"10.1111\/j.1538-7836.2007.02407.x","article-title":"A
+      guide to murine platelet structure, function, assays, and genetic alterations","volume":"5","author":"Jirouskova","year":"2007","journal-title":"J.
+      Thromb. Haemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0020|feb2s0014579311006934-cit-b0020","doi-asserted-by":"crossref","first-page":"S13","DOI":"10.1160\/THS10-11-0720","article-title":"Platelets,
+      inflammation and tissue regeneration","volume":"105","author":"Nurden","year":"2011","journal-title":"Thromb.
+      Haemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0025|feb2s0014579311006934-cit-b0025","doi-asserted-by":"crossref","first-page":"1711","DOI":"10.1016\/j.febslet.2011.05.017","article-title":"Unravelling
+      the different functions of protein kinase C isoforms in platelets","volume":"585","author":"Heemskerk","year":"2011","journal-title":"FEBS
+      Lett."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0030|feb2s0014579311006934-cit-b0030","doi-asserted-by":"crossref","first-page":"128","DOI":"10.1055\/s-2007-969025","article-title":"Platelets
+      and endothelial cells","volume":"33","author":"Siegel-Axel","year":"2007","journal-title":"Semin.
+      Thromb. Hemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0035|feb2s0014579311006934-cit-b0035","doi-asserted-by":"crossref","first-page":"1335","DOI":"10.1046\/j.1538-7836.2003.00260.x","article-title":"Von
+      Willebrand factor, platelets and endothelial cell interactions","volume":"1","author":"Ruggeri","year":"2003","journal-title":"J.
+      Thromb. Haemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0040|feb2s0014579311006934-cit-b0040","doi-asserted-by":"crossref","first-page":"1673","DOI":"10.1161\/01.RES.0000267878.97021.ab","article-title":"Adhesion
+      mechanisms in platelet function","volume":"100","author":"Ruggeri","year":"2007","journal-title":"Circ.
+      Res."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0045|feb2s0014579311006934-cit-b0045","doi-asserted-by":"crossref","first-page":"264","DOI":"10.1038\/nri2956","article-title":"Platelets
+      and the immune continuum","volume":"11","author":"Semple","year":"2011","journal-title":"Nat.
+      Rev. Immunol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0050|feb2s0014579311006934-cit-b0050","doi-asserted-by":"crossref","first-page":"145","DOI":"10.1097\/00000542-200101000-00025","article-title":"Leukocytes
+      can enhance platelet-mediated aggregation and thromboxane release via interaction
+      of P-selectin glycoprotein ligand 1 with P-selectin","volume":"94","author":"Faraday","year":"2001","journal-title":"Anesthesiology"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0055|feb2s0014579311006934-cit-b0055","doi-asserted-by":"crossref","first-page":"1293","DOI":"10.1161\/01.ATV.0000163184.02484.69","article-title":"Importance
+      of platelet phospholipase Cgamma2 signaling in arterial thrombosis as a function
+      of lesion severity","volume":"25","author":"Nonne","year":"2005","journal-title":"Arterioscler.
+      Thromb. Vasc. Biol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0060|feb2s0014579311006934-cit-b0060","doi-asserted-by":"crossref","first-page":"1606","DOI":"10.1182\/blood-2004-04-1257","article-title":"Integrins:
+      dynamic scaffolds for adhesion and signaling in platelets","volume":"104","author":"Shattil","year":"2004","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0065|feb2s0014579311006934-cit-b0065","doi-asserted-by":"crossref","first-page":"860","DOI":"10.1042\/bst0290860","article-title":"AGC
+      protein kinase phosphorylation and protein kinase C","volume":"29","author":"Parker","year":"2001","journal-title":"Biochem.
+      Soc. Trans."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0070|feb2s0014579311006934-cit-b0070","doi-asserted-by":"crossref","first-page":"1144","DOI":"10.1016\/0006-291X(86)91047-8","article-title":"Immunocytochemical
+      evidence for phorbol ester-induced protein kinase C translocation in HL60 cells","volume":"135","author":"Shoji","year":"1986","journal-title":"Biochem.
+      Biophys. Res. Commun."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0075|feb2s0014579311006934-cit-b0075","doi-asserted-by":"crossref","first-page":"3100","DOI":"10.4049\/jimmunol.138.10.3100","article-title":"Human
+      T lymphocyte activation by tumor promoters: role of protein kinase C","volume":"138","author":"Isakov","year":"1987","journal-title":"J.
+      Immunol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0080|feb2s0014579311006934-cit-b0080","doi-asserted-by":"crossref","first-page":"393","DOI":"10.1002\/(SICI)1097-4547(19970815)49:4<393::AID-JNR1>3.0.CO;2-3","article-title":"Transport
+      of protein kinase C isoforms to the nucleus of PC12 cells by nerve growth factor:
+      association of atypical zeta-PKC with the nuclear matrix","volume":"49","author":"Wooten","year":"1997","journal-title":"J.
+      Neurosci. Res."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0085|feb2s0014579311006934-cit-b0085","doi-asserted-by":"crossref","first-page":"59","DOI":"10.1210\/mend-4-1-59","article-title":"Activation
+      of alpha-protein kinase C leads to association with detergent-insoluble components
+      of GH4C1 cells","volume":"4","author":"Kiley","year":"1990","journal-title":"Mol.
+      Endocrinol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0090|feb2s0014579311006934-cit-b0090","doi-asserted-by":"crossref","first-page":"15823","DOI":"10.1074\/jbc.271.26.15823","article-title":"Protein
+      kinase C beta II specifically binds to and is activated by F-actin","volume":"271","author":"Blobe","year":"1996","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0095|feb2s0014579311006934-cit-b0095","doi-asserted-by":"crossref","first-page":"168","DOI":"10.1016\/S0955-0674(96)80062-7","article-title":"Protein
+      kinase C isozymes and substrates","volume":"8","author":"Jaken","year":"1996","journal-title":"Curr.
+      Opin. Cell Biol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0100|feb2s0014579311006934-cit-b0100","doi-asserted-by":"crossref","first-page":"596","DOI":"10.1042\/bst0230596","article-title":"Interaction
+      of protein kinase C with RACK1, a receptor for activated C-kinase: a role in
+      beta protein kinase C mediated signal transduction","volume":"23","author":"Mochly-Rosen","year":"1995","journal-title":"Biochem.
+      Soc. Trans."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0105|feb2s0014579311006934-cit-b0105","doi-asserted-by":"crossref","first-page":"1589","DOI":"10.1126\/science.271.5255.1589","article-title":"Coordination
+      of three signaling enzymes by AKAP79, a mammalian scaffold protein","volume":"271","author":"Klauck","year":"1996","journal-title":"Science"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0110|feb2s0014579311006934-cit-b0110","doi-asserted-by":"crossref","first-page":"77","DOI":"10.1083\/jcb.132.1.77","article-title":"Identification
+      and localization of an actin-binding motif that is unique to the epsilon isoform
+      of protein kinase C and participates in the regulation of synaptic function","volume":"132","author":"Prekeris","year":"1996","journal-title":"J.
+      Cell Biol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0115|feb2s0014579311006934-cit-b0115","doi-asserted-by":"crossref","first-page":"4997","DOI":"10.1016\/S0021-9258(18)53494-3","article-title":"Molecular
+      cloning and characterization of PKC theta, a novel member of the protein kinase
+      C (PKC) gene family expressed predominantly in hematopoietic cells","volume":"268","author":"Baier","year":"1993","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0120|feb2s0014579311006934-cit-b0120","doi-asserted-by":"crossref","first-page":"14208","DOI":"10.1016\/S0021-9258(19)85228-6","article-title":"Molecular
+      cloning and expression of a cDNA encoding a novel isoenzyme of protein kinase
+      C (nPKC). A new member of the nPKC family expressed in skeletal muscle, megakaryoblastic
+      cells, and platelets","volume":"268","author":"Chang","year":"1993","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0125|feb2s0014579311006934-cit-b0125","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1242\/jcs.108.1.51","article-title":"Developmental
+      regulation of a protein kinase C isoform localized in the neuromuscular junction","volume":"108","author":"Hilgenberg","year":"1995","journal-title":"J.
+      Cell Sci."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0130|feb2s0014579311006934-cit-b0130","doi-asserted-by":"crossref","first-page":"177","DOI":"10.1038\/sj.bjp.0700877","article-title":"Protein
+      kinase C isoenzymes in rat and human cardiovascular tissues","volume":"120","author":"Erdbrugger","year":"1997","journal-title":"Br.
+      J. Pharmacol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0135|feb2s0014579311006934-cit-b0135","doi-asserted-by":"crossref","first-page":"240","DOI":"10.1006\/bbrc.1993.1208","article-title":"A
+      new protein kinase C, nPKC eta&rsquo;, and nPKC theta are expressed in human
+      platelets: involvement of nPKC eta&rsquo; and nPKC theta in signal transduction
+      stimulated by PAF","volume":"191","author":"Wang","year":"1993","journal-title":"Biochem.
+      Biophys. Res. Commun."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0140|feb2s0014579311006934-cit-b0140","doi-asserted-by":"crossref","first-page":"185","DOI":"10.1006\/cimm.1999.1478","article-title":"Protein
+      kinase C-theta (PKCtheta) distribution analysis in hematopoietic cells: proliferating
+      T cells exhibit high proportions of PKCtheta in the particulate fraction","volume":"193","author":"Meller","year":"1999","journal-title":"Cell.
+      Immunol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0145|feb2s0014579311006934-cit-b0145","doi-asserted-by":"crossref","first-page":"82","DOI":"10.1038\/25764","article-title":"Three-dimensional
+      segregation of supramolecular activation clusters in T cells","volume":"395","author":"Monks","year":"1998","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0150|feb2s0014579311006934-cit-b0150","doi-asserted-by":"crossref","first-page":"83","DOI":"10.1038\/385083a0","article-title":"Selective
+      modulation of protein kinase C-theta during T-cell activation","volume":"385","author":"Monks","year":"1997","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0155|feb2s0014579311006934-cit-b0155","doi-asserted-by":"crossref","first-page":"1269","DOI":"10.1016\/S1097-2765(02)00728-1","article-title":"Mechanism
+      of recruitment of WASP to the immunological synapse and of its activation following
+      TCR ligation","volume":"10","author":"Sasahara","year":"2002","journal-title":"Mol.
+      Cell"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0160|feb2s0014579311006934-cit-b0160","doi-asserted-by":"crossref","first-page":"253","DOI":"10.1083\/jcb.200201097","article-title":"Translocation
+      of PKC[theta] in T cells is mediated by a nonconventional, PI3-K- and Vav-dependent
+      pathway, but does not absolutely require phospholipase C","volume":"157","author":"Villalba","year":"2002","journal-title":"J.
+      Cell Biol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0165|feb2s0014579311006934-cit-b0165","doi-asserted-by":"crossref","first-page":"402","DOI":"10.1038\/35006090","article-title":"PKC-theta
+      is required for TCR-induced NF-kappaB activation in mature but not immature
+      T lymphocytes","volume":"404","author":"Sun","year":"2000","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0170|feb2s0014579311006934-cit-b0170","doi-asserted-by":"crossref","first-page":"567","DOI":"10.1016\/S0167-5699(00)01749-7","article-title":"Protein
+      kinase Ctheta: a new essential superstar on the T-cell stage","volume":"21","author":"Altman","year":"2000","journal-title":"Immunol.
+      Today"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0175|feb2s0014579311006934-cit-b0175","doi-asserted-by":"crossref","first-page":"1525","DOI":"10.1084\/jem.20020234","article-title":"Protein
+      kinase C theta affects Ca2+ mobilization and NFAT cell activation in primary
+      mouse T cells","volume":"197","author":"Pfeifhofer","year":"2003","journal-title":"J.
+      Exp. Med."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0180|feb2s0014579311006934-cit-b0180","doi-asserted-by":"crossref","first-page":"333","DOI":"10.1016\/0952-7915(95)80107-3","article-title":"Transcriptional
+      regulation of the IL-2 gene","volume":"7","author":"Jain","year":"1995","journal-title":"Curr.
+      Opin. Immunol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0185|feb2s0014579311006934-cit-b0185","doi-asserted-by":"crossref","first-page":"181","DOI":"10.1084\/jem.20032229","article-title":"Protein
+      kinase C theta is critical for the development of in vivo T helper (Th)2 cell
+      but not Th1 cell responses","volume":"200","author":"Marsland","year":"2004","journal-title":"J.
+      Exp. Med."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0190|feb2s0014579311006934-cit-b0190","doi-asserted-by":"crossref","first-page":"6440","DOI":"10.4049\/jimmunol.173.10.6440","article-title":"Differential
+      regulation of Th2 and Th1 lung inflammatory responses by protein kinase C theta","volume":"173","author":"Salek-Ardakani","year":"2004","journal-title":"J.
+      Immunol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0195|feb2s0014579311006934-cit-b0195","first-page":"221","article-title":"Involvement
+      of PKC&theta; in CD4+ T cell polarization and mouse resistance to cutaneous
+      Leishmaniasis","volume-title":"Lymphocyte Activation, Signal Transduction","author":"Ohayon","year":"2007"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0200|feb2s0014579311006934-cit-b0200","doi-asserted-by":"crossref","first-page":"5126","DOI":"10.4049\/jimmunol.175.8.5126","article-title":"Protein
+      kinase C-theta is an early survival factor required for differentiation of effector
+      CD8+ T cells","volume":"175","author":"Barouch-Bentov","year":"2005","journal-title":"J.
+      Immunol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0205|feb2s0014579311006934-cit-b0205","doi-asserted-by":"crossref","first-page":"479","DOI":"10.1042\/bj2580479","article-title":"Phosphorylation-dependent
+      and -independent pathways of platelet aggregation","volume":"258","author":"Watson","year":"1989","journal-title":"Biochem.
+      J."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0210|feb2s0014579311006934-cit-b0210","doi-asserted-by":"crossref","first-page":"5242","DOI":"10.1046\/j.0014-2956.2001.02448.x","article-title":"Signalling
+      events underlying platelet aggregation induced by the glycoprotein VI agonist
+      convulxin","volume":"268","author":"Atkinson","year":"2001","journal-title":"Eur.
+      J. Biochem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0215|feb2s0014579311006934-cit-b0215","doi-asserted-by":"crossref","unstructured":"P.
+      Gresele C. Page V. Fuster J. Vermylen Platelets in thrombotic and non-thrombotic
+      disorders: Pathophysiology, Pharmacology and Therapeutics 2002 Cambridge University
+      Press","DOI":"10.1017\/CBO9780511545283"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0220|feb2s0014579311006934-cit-b0220","doi-asserted-by":"crossref","first-page":"61","DOI":"10.1016\/0167-4889(88)90222-4","article-title":"Control
+      of platelet protein kinase C activation by cyclic AMP","volume":"970","author":"Kroll","year":"1988","journal-title":"Biochim.
+      Biophys. Acta"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0225|feb2s0014579311006934-cit-b0225","doi-asserted-by":"crossref","first-page":"2001","DOI":"10.1182\/blood.V74.6.2001.2001","article-title":"Activation
+      of protein kinase C in platelets by epinephrine and A23187: correlation with
+      fibrinogen binding","volume":"74","author":"Saitoh","year":"1989","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0230|feb2s0014579311006934-cit-b0230","doi-asserted-by":"crossref","first-page":"C35","DOI":"10.1152\/ajpcell.1989.256.1.C35","article-title":"Response
+      of aequorin-loaded platelets to activators of protein kinase C","volume":"256","author":"Ware","year":"1989","journal-title":"Am.
+      J. Physiol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0235|feb2s0014579311006934-cit-b0235","doi-asserted-by":"crossref","first-page":"2360","DOI":"10.1074\/jbc.M306960200","article-title":"Differential
+      role of protein kinase C delta isoform in agonist-induced dense granule secretion
+      in human platelets","volume":"279","author":"Murugappan","year":"2004","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0240|feb2s0014579311006934-cit-b0240","doi-asserted-by":"crossref","first-page":"e3793","DOI":"10.1371\/journal.pone.0003793","article-title":"Differential
+      roles of the PKC novel isoforms, PKCdelta and PKCepsilon, in mouse and human
+      platelets","volume":"3","author":"Pears","year":"2008","journal-title":"PLoS
+      ONE"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0245|feb2s0014579311006934-cit-b0245","doi-asserted-by":"crossref","first-page":"22","DOI":"10.1016\/j.bbrc.2009.05.021","article-title":"PKCtheta
+      is required for hemostasis and positive regulation of thrombin-induced platelet
+      aggregation and alpha-granule secretion","volume":"385","author":"Cohen","year":"2009","journal-title":"Biochem.
+      Biophys. Res. Commun."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0250|feb2s0014579311006934-cit-b0250","doi-asserted-by":"crossref","first-page":"13413","DOI":"10.1074\/jbc.M808970200","article-title":"Mechanism
+      of activation and functional role of protein kinase Ceta in human platelets","volume":"284","author":"Bynagari","year":"2009","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0255|feb2s0014579311006934-cit-b0255","doi-asserted-by":"crossref","first-page":"505","DOI":"10.1016\/j.bcp.2011.05.022","article-title":"Differential
+      dephosphorylation of the Protein Kinase C-zeta (PKCzeta) in an integrin alphaIIbbeta3-dependent
+      manner in platelets","volume":"82","author":"Mayanglambam","year":"2011","journal-title":"Biochem.
+      Pharmacol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0260|feb2s0014579311006934-cit-b0260","doi-asserted-by":"crossref","first-page":"159","DOI":"10.1111\/j.1469-7793.2000.00159.x","article-title":"Protein
+      kinase C activates non-capacitative calcium entry in human platelets","volume":"529","author":"Rosado","year":"2000","journal-title":"J.
+      Physiol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0265|feb2s0014579311006934-cit-b0265","doi-asserted-by":"crossref","first-page":"7046","DOI":"10.1074\/jbc.M611367200","article-title":"Dual
+      role of platelet protein kinase C in thrombus formation: stimulation of pro-aggregatory
+      and suppression of procoagulant activity in platelets","volume":"282","author":"Strehl","year":"2007","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0270|feb2s0014579311006934-cit-b0270","doi-asserted-by":"crossref","first-page":"648","DOI":"10.1111\/j.1538-7836.2006.01806.x","article-title":"A
+      role for PKCtheta in outside-in alpha(IIb)beta3 signaling","volume":"4","author":"Soriani","year":"2006","journal-title":"J.
+      Thromb. Haemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0275|feb2s0014579311006934-cit-b0275","doi-asserted-by":"crossref","first-page":"644","DOI":"10.1074\/jbc.M410229200","article-title":"Regulation
+      of outside-in signaling in platelets by integrin-associated protein kinase C
+      beta","volume":"280","author":"Buensuceso","year":"2005","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0280|feb2s0014579311006934-cit-b0280","first-page":"399","article-title":"PKCalpha
+      regulates platelet granule secretion and thrombus formation in mice","volume":"119","author":"Konopatskaya","year":"2009","journal-title":"J.
+      Clin. Invest."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0285|feb2s0014579311006934-cit-b0285","doi-asserted-by":"crossref","first-page":"4035","DOI":"10.1182\/blood-2006-05-023739","article-title":"PKCdelta
+      regulates collagen-induced platelet aggregation through inhibition of VASP-mediated
+      filopodia formation","volume":"108","author":"Pula","year":"2006","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0290|feb2s0014579311006934-cit-b0290","doi-asserted-by":"crossref","first-page":"152","DOI":"10.1182\/blood.V87.1.152.152","article-title":"Protein
+      kinase C regulates tyrosine phosphorylation of pp125FAK in platelets adherent
+      to fibrinogen","volume":"87","author":"Haimovich","year":"1996","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0295|feb2s0014579311006934-cit-b0295","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1038\/341197a0","article-title":"Inositol
+      phosphates and cell signalling","volume":"341","author":"Berridge","year":"1989","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0300|feb2s0014579311006934-cit-b0300","doi-asserted-by":"crossref","first-page":"607","DOI":"10.1126\/science.1411571","article-title":"Intracellular
+      signaling by hydrolysis of phospholipids and activation of protein kinase C","volume":"258","author":"Nishizuka","year":"1992","journal-title":"Science"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0305|feb2s0014579311006934-cit-b0305","doi-asserted-by":"crossref","first-page":"277","DOI":"10.1042\/bj2890277","article-title":"Synergy
+      between Ca2+ and protein kinase C is the major factor in determining the level
+      of secretion from human platelets","volume":"289","author":"Walker","year":"1993","journal-title":"Biochem.
+      J."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0310|feb2s0014579311006934-cit-b0310","doi-asserted-by":"crossref","first-page":"673","DOI":"10.1016\/S0092-8674(02)00971-6","article-title":"Integrins:
+      bidirectional, allosteric signaling machines","volume":"110","author":"Hynes","year":"2002","journal-title":"Cell"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0315|feb2s0014579311006934-cit-b0315","doi-asserted-by":"crossref","first-page":"E65","DOI":"10.1038\/ncb0402-e65","article-title":"Networks
+      and crosstalk: integrin signalling spreads","volume":"4","author":"Schwartz","year":"2002","journal-title":"Nat.
+      Cell Biol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0320|feb2s0014579311006934-cit-b0320","doi-asserted-by":"crossref","first-page":"392","DOI":"10.1055\/s-0037-1615858","article-title":"The
+      elegant platelet: signals controlling actin assembly","volume":"82","author":"Hartwig","year":"1999","journal-title":"Thromb.
+      Haemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0325|feb2s0014579311006934-cit-b0325","doi-asserted-by":"crossref","first-page":"1602","DOI":"10.1046\/j.1538-7836.2003.00267.x","article-title":"Signaling
+      events underlying thrombus formation","volume":"1","author":"Jackson","year":"2003","journal-title":"J.
+      Thromb. Haemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0330|feb2s0014579311006934-cit-b0330","doi-asserted-by":"crossref","first-page":"117","DOI":"10.1016\/j.bpc.2004.07.011","article-title":"The
+      thrombin-fibrinogen interaction","volume":"112","author":"Scheraga","year":"2004","journal-title":"Biophys.
+      Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0335|feb2s0014579311006934-cit-b0335","doi-asserted-by":"crossref","first-page":"253","DOI":"10.1016\/0014-5793(96)00595-9","article-title":"alphaIIb
+      beta 3-integrin mediated adhesion of human platelets to a fibrinogen matrix
+      triggers phospholipase C activation and phosphatidylinositol 3&rsquo;, 4&rsquo;-biphosphate
+      accumulation","volume":"389","author":"Gironcel","year":"1996","journal-title":"FEBS
+      Lett."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0340|feb2s0014579311006934-cit-b0340","doi-asserted-by":"crossref","first-page":"2557","DOI":"10.1182\/blood-2008-07-169268","article-title":"Impaired
+      activation of platelets lacking protein kinase C-theta isoform","volume":"113","author":"Nagy","year":"2009","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0345|feb2s0014579311006934-cit-b0345","doi-asserted-by":"crossref","first-page":"2443","DOI":"10.1242\/jcs.00433","article-title":"WIP
+      participates in actin reorganization and ruffle formation induced by PDGF","volume":"116","author":"Anton","year":"2003","journal-title":"J.
+      Cell Sci."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0350|feb2s0014579311006934-cit-b0350","doi-asserted-by":"crossref","first-page":"1852","DOI":"10.1182\/blood.V92.6.1852","article-title":"Collagen
+      induces tyrosine phosphorylation of Wiskott&ndash;Aldrich syndrome protein in
+      human platelets","volume":"92","author":"Oda","year":"1998","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0355|feb2s0014579311006934-cit-b0355","doi-asserted-by":"crossref","first-page":"4466","DOI":"10.1182\/blood.V99.12.4466","article-title":"Arp2\/3
+      complex is required for actin polymerization during platelet shape change","volume":"99","author":"Li","year":"2002","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0360|feb2s0014579311006934-cit-b0360","doi-asserted-by":"crossref","first-page":"453","DOI":"10.1016\/S0092-8674(03)00120-X","article-title":"Cellular
+      motility driven by assembly and disassembly of actin filaments","volume":"112","author":"Pollard","year":"2003","journal-title":"Cell"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0365|feb2s0014579311006934-cit-b0365","doi-asserted-by":"crossref","first-page":"416","DOI":"10.1111\/j.1365-2141.2009.07959.x","article-title":"WASP
+      plays a novel role in regulating platelet responses dependent on alphaIIbbeta3
+      integrin outside-in signalling","volume":"148","author":"Shcherbina","year":"2010","journal-title":"Br.
+      J. Haematol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0370|feb2s0014579311006934-cit-b0370","doi-asserted-by":"crossref","first-page":"948","DOI":"10.1182\/blood-2003-07-2299","article-title":"Association
+      of CBFA2 mutation with decreased platelet PKC-theta and impaired receptor-mediated
+      activation of GPIIb-IIIa and pleckstrin phosphorylation: proteins regulated
+      by CBFA2 play a role in GPIIb-IIIa activation","volume":"103","author":"Sun","year":"2004","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0375|feb2s0014579311006934-cit-b0375","doi-asserted-by":"crossref","first-page":"9958","DOI":"10.1074\/jbc.M108965200","article-title":"Interaction
+      of Bruton&rsquo;s tyrosine kinase and protein kinase Ctheta in platelets. Cross-talk
+      between tyrosine and serine\/threonine kinases","volume":"277","author":"Crosby","year":"2002","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0380|feb2s0014579311006934-cit-b0380","doi-asserted-by":"crossref","first-page":"e3277","DOI":"10.1371\/journal.pone.0003277","article-title":"Genetic
+      analysis of the role of protein kinase Ctheta in platelet function and thrombus
+      formation","volume":"3","author":"Hall","year":"2008","journal-title":"PLoS
+      ONE"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0385|feb2s0014579311006934-cit-b0385","doi-asserted-by":"crossref","first-page":"489","DOI":"10.1182\/blood-2009-03-208454","article-title":"PKCtheta
+      in platelet activation","volume":"114","author":"Harper","year":"2009","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0390|feb2s0014579311006934-cit-b0390","doi-asserted-by":"crossref","first-page":"491","DOI":"10.1182\/blood-2009-05-219022","article-title":"Response:
+      Role of PKCtheta in collagen-related peptide-induced platelet activaiton","volume":"114","author":"Kunapuli","year":"2009","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0395|feb2s0014579311006934-cit-b0395","doi-asserted-by":"crossref","first-page":"9175","DOI":"10.1073\/pnas.91.19.9175","article-title":"The
+      pleckstrin homology domain of Bruton tyrosine kinase interacts with protein
+      kinase C","volume":"91","author":"Yao","year":"1994","journal-title":"Proc Natl
+      Acad Sci U S A"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0400|feb2s0014579311006934-cit-b0400","doi-asserted-by":"crossref","first-page":"3603","DOI":"10.1074\/jbc.275.5.3603","article-title":"Regulation
+      of protein kinase Ctheta function during T cell activation by Lck-mediated tyrosine
+      phosphorylation","volume":"275","author":"Liu","year":"2000","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0405|feb2s0014579311006934-cit-b0405","doi-asserted-by":"crossref","first-page":"879","DOI":"10.1172\/JCI6042","article-title":"Protease-activated
+      receptors 1 and 4 mediate activation of human platelets by thrombin","volume":"103","author":"Kahn","year":"1999","journal-title":"J.
+      Clin. Invest."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0410|feb2s0014579311006934-cit-b0410","doi-asserted-by":"crossref","first-page":"74","DOI":"10.1038\/35092573","article-title":"Role
+      of thrombin signalling in platelets in haemostasis and thrombosis","volume":"413","author":"Sambrano","year":"2001","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0415|feb2s0014579311006934-cit-b0415","doi-asserted-by":"crossref","first-page":"690","DOI":"10.1038\/29325","article-title":"A
+      dual thrombin receptor system for platelet activation","volume":"394","author":"Kahn","year":"1998","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0420|feb2s0014579311006934-cit-b0420","doi-asserted-by":"crossref","first-page":"609","DOI":"10.1038\/35007085","article-title":"PAR3
+      is a cofactor for PAR4 activation by thrombin","volume":"404","author":"Nakanishi-Matsui","year":"2000","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0425|feb2s0014579311006934-cit-b0425","doi-asserted-by":"crossref","first-page":"25","DOI":"10.1172\/JCI17564","article-title":"PARticipation
+      in inflammation","volume":"111","author":"Coughlin","year":"2003","journal-title":"J.
+      Clin. Invest."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0430|feb2s0014579311006934-cit-b0430","doi-asserted-by":"crossref","first-page":"130","DOI":"10.1172\/JCI112542","article-title":"A
+      platelet alpha granule membrane protein that is associated with the plasma membrane
+      after activation. Characterization and subcellular localization of platelet
+      activation-dependent granule-external membrane protein","volume":"78","author":"Berman","year":"1986","journal-title":"J.
+      Clin. Invest."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0435|feb2s0014579311006934-cit-b0435","first-page":"73","article-title":"Properties
+      of GMP-140, an inducible granule membrane protein of platelets and endothelium","volume":"16","author":"McEver","year":"1990","journal-title":"Blood
+      Cells"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0440|feb2s0014579311006934-cit-b0440","doi-asserted-by":"crossref","first-page":"214","DOI":"10.1055\/s-0037-1616219","article-title":"A
+      journey with platelet P-selectin: the molecular basis of granule secretion,
+      signalling and cell adhesion","volume":"86","author":"Furie","year":"2001","journal-title":"Thromb.
+      Haemost."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0445|feb2s0014579311006934-cit-b0445","doi-asserted-by":"crossref","first-page":"156","DOI":"10.1002\/jcb.240450206","article-title":"GMP-140:
+      a receptor for neutrophils and monocytes on activated platelets and endothelium","volume":"45","author":"McEver","year":"1991","journal-title":"J.
+      Cell. Biochem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0450|feb2s0014579311006934-cit-b0450","doi-asserted-by":"crossref","first-page":"85","DOI":"10.1006\/bbrc.2000.2255","article-title":"Flow
+      cytometric parameters for characterizing platelet activation by measuring P-selectin
+      (CD62) expression: theoretical consideration and evaluation in thrombin-treated
+      platelet populations","volume":"269","author":"Leytin","year":"2000","journal-title":"Biochem.
+      Biophys. Res. Commun."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0455|feb2s0014579311006934-cit-b0455","doi-asserted-by":"crossref","first-page":"475","DOI":"10.1515\/CCLM.2004.082","article-title":"The
+      emerging value of P-selectin as a disease marker","volume":"42","author":"Kappelmayer","year":"2004","journal-title":"Clin.
+      Chem. Lab. Med."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0460|feb2s0014579311006934-cit-b0460","doi-asserted-by":"crossref","first-page":"495","DOI":"10.1016\/j.clim.2009.01.006","article-title":"Platelet-derived
+      microparticles and soluble P-selectin as platelet activation markers in patients
+      with atopic dermatitis","volume":"131","author":"Tamagawa-Mineoka","year":"2009","journal-title":"Clin.
+      Immunol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0465|feb2s0014579311006934-cit-b0465","doi-asserted-by":"crossref","first-page":"35","DOI":"10.1046\/j.0019-2805.2001.01351.x","article-title":"Signalling
+      pathways induced by protease-activated receptors and integrins in T cells","volume":"105","author":"Bar-Shavit","year":"2002","journal-title":"Immunology"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0470|feb2s0014579311006934-cit-b0470","doi-asserted-by":"crossref","first-page":"2867","DOI":"10.1182\/blood.V93.9.2867","article-title":"Consequences
+      of GATA-1 deficiency in megakaryocytes and platelets","volume":"93","author":"Vyas","year":"1999","journal-title":"Blood"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0475|feb2s0014579311006934-cit-b0475","doi-asserted-by":"crossref","first-page":"1419","DOI":"10.1083\/jcb.147.7.1419","article-title":"Primary
+      megakaryocytes reveal a role for transcription factor NF-E2 in integrin alpha
+      IIb beta 3 signaling","volume":"147","author":"Shiraga","year":"1999","journal-title":"J.
+      Cell Biol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0480|feb2s0014579311006934-cit-b0480","doi-asserted-by":"crossref","first-page":"166","DOI":"10.1038\/13793","article-title":"Haploinsufficiency
+      of CBFA2 causes familial thrombocytopenia with propensity to develop acute myelogenous
+      leukaemia","volume":"23","author":"Song","year":"1999","journal-title":"Nat.
+      Genet."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0485|feb2s0014579311006934-cit-b0485","doi-asserted-by":"crossref","first-page":"470","DOI":"10.1038\/333470a0","article-title":"Molecular
+      cloning and expression of the major protein kinase C substrate of platelets","volume":"333","author":"Tyers","year":"1988","journal-title":"Nature"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0490|feb2s0014579311006934-cit-b0490","doi-asserted-by":"crossref","first-page":"23317","DOI":"10.1074\/jbc.270.40.23317","article-title":"Protein
+      kinase C regulates pleckstrin by phosphorylation of sites adjacent to the N-terminal
+      pleckstrin homology domain","volume":"270","author":"Abrams","year":"1995","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0495|feb2s0014579311006934-cit-b0495","doi-asserted-by":"crossref","first-page":"951","DOI":"10.1016\/0092-8674(86)90077-2","article-title":"Protein
+      kinase C phosphorylates human platelet inositol trisphosphate 5&rsquo;-phosphomonoesterase,
+      increasing the phosphatase activity","volume":"46","author":"Connolly","year":"1986","journal-title":"Cell"},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0500|feb2s0014579311006934-cit-b0500","doi-asserted-by":"crossref","first-page":"1786","DOI":"10.1074\/jbc.272.3.1786","article-title":"Phosphorylation
+      of platelet pleckstrin activates inositol polyphosphate 5-phosphatase I","volume":"272","author":"Auethavekiat","year":"1997","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0505|feb2s0014579311006934-cit-b0505","doi-asserted-by":"crossref","first-page":"2146","DOI":"10.1016\/S0021-9258(18)61629-1","article-title":"The
+      metabolism of tris- and tetraphosphates of inositol by 5-phosphomonoesterase
+      and 3-kinase enzymes","volume":"262","author":"Connolly","year":"1987","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0510|feb2s0014579311006934-cit-b0510","doi-asserted-by":"crossref","first-page":"921","DOI":"10.1161\/ATVBAHA.110.221879","article-title":"Platelet
+      protein kinase C-theta deficiency with human RUNX1 mutation: PRKCQ is a transcriptional
+      target of RUNX1","volume":"31","author":"Jalagadugula","year":"2011","journal-title":"Arterioscler.
+      Thromb. Vasc. Biol."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0515|feb2s0014579311006934-cit-b0515","doi-asserted-by":"crossref","first-page":"39379","DOI":"10.1074\/jbc.M102933200","article-title":"Identification
+      of protein kinase Calpha as an essential, but not sufficient, cytosolic factor
+      for Ca2+-induced alpha- and dense-core granule secretion in platelets","volume":"276","author":"Yoshioka","year":"2001","journal-title":"J.
+      Biol. Chem."},{"key":"10.1016\/j.febslet.2011.09.014-BIB2s0014579311006934-bib-b0520|feb2s0014579311006934-cit-b0520","doi-asserted-by":"crossref","first-page":"26374","DOI":"10.1074\/jbc.M212407200","article-title":"Direct
+      demonstration of involvement of protein kinase Calpha in the Ca2+-induced platelet
+      aggregation","volume":"278","author":"Tabuchi","year":"2003","journal-title":"J.
+      Biol. Chem."}],"container-title":["FEBS Letters"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1016%2Fj.febslet.2011.09.014","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/full\/10.1016\/j.febslet.2011.09.014","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,6,9]],"date-time":"2023-06-09T17:26:18Z","timestamp":1686331578000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/doi.wiley.com\/10.1016\/j.febslet.2011.09.014"}},"issued":{"date-parts":[[2011,9,16]]},"references-count":104,"journal-issue":{"issue":"20","published-print":{"date-parts":[[2011,10,20]]}},"URL":"https:\/\/doi.org\/10.1016\/j.febslet.2011.09.014","archive":["Portico"],"ISSN":["0014-5793"],"issn-type":[{"value":"0014-5793","type":"print"}],"published":{"date-parts":[[2011,9,16]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T01:34:57Z","timestamp":1649122497009},"reference-count":0,"publisher":"Public
+      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0054033.s001","type":"component","created":{"date-parts":[[2013,1,10]],"date-time":"2013-01-10T00:10:33Z","timestamp":1357776633000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2018,10,26]],"date-time":"2018-10-26T01:12:23Z","timestamp":1540516343000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0054033.s001"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0054033.s001"},{"indexed":{"date-parts":[[2025,6,25]],"date-time":"2025-06-25T08:08:09Z","timestamp":1750838889042,"version":"3.37.3"},"reference-count":72,"publisher":"MDPI
+      AG","issue":"10","license":[{"start":{"date-parts":[[2019,5,24]],"date-time":"2019-05-24T00:00:00Z","timestamp":1558656000000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"funder":[{"name":"National
+      Key R &amp; D Program of China","award":["2017YFC0406101"]},{"DOI":"10.13039\/501100012226","name":"Fundamental
+      Research Funds for the Central Universities","doi-asserted-by":"publisher","award":["2017B10714"],"id":[{"id":"10.13039\/501100012226","id-type":"DOI","asserted-by":"publisher"}]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IJERPH"],"abstract":"<jats:p>Groundwater
+      depth is an important environmental factor affecting vegetation growth and landscape
+      dynamics in arid environments. This study applied a science mapping approach
+      to visualize the development of groundwater-vegetation-related research, synthesized
+      the vegetation response to changes in groundwater depth, and analyzed the change
+      rate of the response curve to identify the groundwater threshold that is essential
+      to conserve the groundwater-dependent terrestrial ecosystems. These ecosystems
+      emerged as a research hotspot due to climate change, groundwater overexploitation,
+      and the recognition of these ecosystems\u2019 importance for sustainable development.
+      There are two main types of response functions of vegetation to changes in groundwater
+      depth\u2014monotone and bell-shaped functions\u2014among which the monotone
+      function includes linear, curvilinear, and stepwise response. The shape of a
+      response curve is mainly determined by the combined effects of oxygen stress,
+      salinization, and water stress; oxygen stress and salinization dominate in shallow
+      groundwater depth, while water stress dominates in deep groundwater depth. On
+      a non-linear vegetation metric\u2014groundwater depth response curve, the change
+      rate analysis method is effective to identify the breakpoint that can be taken
+      as a candidate threshold of groundwater depth. The results will add insight
+      into the intellectual structure of the groundwater-vegetation interactions and
+      provide practical reference for groundwater resource management, ecological
+      conservation, and sustainable development in arid environments.<\/jats:p>","DOI":"10.3390\/ijerph16101849","type":"journal-article","created":{"date-parts":[[2019,5,24]],"date-time":"2019-05-24T15:20:46Z","timestamp":1558711246000},"page":"1849","source":"Crossref","is-referenced-by-count":30,"title":["Vegetation
+      Response to Groundwater Variation in Arid Environments: Visualization of Research
+      Evolution, Synthesis of Response Types, and Estimation of Groundwater Threshold"],"prefix":"10.3390","volume":"16","author":[{"ORCID":"https:\/\/orcid.org\/0000-0002-4909-8809","authenticated-orcid":false,"given":"Feng","family":"Huang","sequence":"first","affiliation":[{"name":"College
+      of Hydrology and Water Resources, Hohai University, Nanjing 210098, China"}]},{"given":"Danrong","family":"Zhang","sequence":"additional","affiliation":[{"name":"College
+      of Hydrology and Water Resources, Hohai University, Nanjing 210098, China"}]},{"ORCID":"https:\/\/orcid.org\/0000-0003-3647-5617","authenticated-orcid":false,"given":"Xi","family":"Chen","sequence":"additional","affiliation":[{"name":"Institute
+      of Surface-Earth System Science, Tianjin University, Tianjin 300072, China"}]}],"member":"1968","published-online":{"date-parts":[[2019,5,24]]},"reference":[{"key":"ref_1","doi-asserted-by":"crossref","first-page":"1633","DOI":"10.5194\/hess-11-1633-2007","article-title":"Updated
+      world map of the Koppen-Geiger climate classification","volume":"11","author":"Peel","year":"2007","journal-title":"Hydrol.
+      Earth Syst. Sci."},{"key":"ref_2","first-page":"33","article-title":"Economic
+      value of plant diversity in arid environments","volume":"32","author":"Belal","year":"1996","journal-title":"Nat.
+      Resour."},{"key":"ref_3","doi-asserted-by":"crossref","first-page":"97","DOI":"10.1071\/BT05031","article-title":"A
+      functional methodology for determining the groundwater regime needed to maintain
+      the health of groundwater-dependent vegetation","volume":"54","author":"Eamus","year":"2006","journal-title":"Aust.
+      J. Bot."},{"key":"ref_4","doi-asserted-by":"crossref","first-page":"657","DOI":"10.1007\/s13280-012-0328-8","article-title":"The
+      water table: The shifting foundation of life on land","volume":"41","author":"Glazer","year":"2012","journal-title":"Ambio"},{"key":"ref_5","doi-asserted-by":"crossref","first-page":"309","DOI":"10.1111\/j.1745-6584.2002.tb02659.x","article-title":"Effects
+      of ground water exchange on the hydrology and ecology of surface water","volume":"40","author":"Hayashi","year":"2002","journal-title":"Ground
+      Water"},{"key":"ref_6","doi-asserted-by":"crossref","first-page":"325","DOI":"10.1134\/S009780781303010X","article-title":"A
+      review of the numerical modelling of salt mobilization from groundwater-surface
+      water interactions","volume":"40","author":"Alaghmand","year":"2013","journal-title":"Water
+      Resour."},{"key":"ref_7","first-page":"137","article-title":"A review of information
+      on interactions between vegetation and groundwater","volume":"25","author":"Scott","year":"1999","journal-title":"Water
+      SA"},{"key":"ref_8","doi-asserted-by":"crossref","first-page":"104","DOI":"10.1017\/S0376892903000109","article-title":"Present
+      state and future prospects for groundwater ecosystems","volume":"30","author":"Danielopol","year":"2003","journal-title":"Environ.
+      Conserv."},{"key":"ref_9","doi-asserted-by":"crossref","first-page":"353","DOI":"10.1360\/02tb9084","article-title":"Review
+      of several problems on the study of eco-hydrological processes in arid zones","volume":"47","author":"Zhao","year":"2002","journal-title":"Chin.
+      Sci. Bull."},{"key":"ref_10","doi-asserted-by":"crossref","first-page":"726","DOI":"10.1007\/s00267-004-0194-7","article-title":"Phreatophytic
+      vegetation and groundwater fluctuations: A review of current research and application
+      of ecosystem response modeling with an emphasis on Great Basin vegetation","volume":"35","author":"Naumburg","year":"2005","journal-title":"Environ.
+      Manag."},{"key":"ref_11","doi-asserted-by":"crossref","first-page":"471","DOI":"10.1111\/j.1745-6584.2005.0063.x","article-title":"The
+      role of ground water in arid\/semiarid ecosystems, Northwest China","volume":"43","author":"Cui","year":"2005","journal-title":"Ground
+      Water"},{"key":"ref_12","doi-asserted-by":"crossref","first-page":"W07542","DOI":"10.1029\/2010WR010317","article-title":"Ecohydrological
+      consequences of non-native riparian vegetation in the southwestern United States:
+      A review from an ecophysiological perspective","volume":"47","author":"Hultine","year":"2011","journal-title":"Water
+      Resour. Res."},{"key":"ref_13","doi-asserted-by":"crossref","first-page":"17","DOI":"10.1007\/s10040-010-0652-7","article-title":"Review:
+      Environmental tracers in arid-zone hydrology","volume":"19","author":"Herczeg","year":"2011","journal-title":"Hydrogeol.
+      J."},{"key":"ref_14","doi-asserted-by":"crossref","first-page":"679","DOI":"10.1111\/j.1745-6584.2011.00899.x","article-title":"The
+      application of ecohydrological groundwater indicators to hydrogeological conceptual
+      models","volume":"50","author":"Lewis","year":"2012","journal-title":"Ground
+      Water"},{"key":"ref_15","doi-asserted-by":"crossref","first-page":"629","DOI":"10.1016\/j.ecoleng.2016.06.107","article-title":"Ecosystem
+      restoration and conservation in the arid inland river basins of Northwest China:
+      Problems and strategies","volume":"94","author":"Zhu","year":"2016","journal-title":"Ecol.
+      Eng."},{"key":"ref_16","doi-asserted-by":"crossref","first-page":"2941","DOI":"10.1111\/gcb.13629","article-title":"Hydrologic
+      refugia, plants, and climate change","volume":"23","author":"McLaughlin","year":"2017","journal-title":"Glob.
+      Chang. Biol."},{"key":"ref_17","doi-asserted-by":"crossref","unstructured":"Huang,
+      F., Zhang, Y.D., Zhang, D.R., and Chen, X. (2019). Environmental groundwater
+      depth for groundwater-dependent terrestrial ecosystems in arid\/semiarid regions:
+      A review. Int. J. Environ. Res. Public Health, 16.","DOI":"10.3390\/ijerph16050763"},{"key":"ref_18","doi-asserted-by":"crossref","first-page":"110","DOI":"10.1046\/j.1442-8903.2003.00144.x","article-title":"Groundwater-dependent
+      ecosystems in Australia: It\u2019s more than just water for rivers","volume":"4","author":"Murray","year":"2003","journal-title":"Ecol.
+      Manag. Restor."},{"key":"ref_19","doi-asserted-by":"crossref","first-page":"1577","DOI":"10.1007\/s11442-017-1453-x","article-title":"Ecological-hydrological
+      processes in arid environment: Past, present and future","volume":"27","author":"Song","year":"2017","journal-title":"J.
+      Geogr. Sci."},{"key":"ref_20","doi-asserted-by":"crossref","first-page":"936","DOI":"10.1071\/MF09267","article-title":"Ecology
+      and management of subsurface groundwater dependent ecosystems in Australia\u2014A
+      review","volume":"61","author":"Tomlinson","year":"2010","journal-title":"Mar.
+      Freshw. Res."},{"key":"ref_21","doi-asserted-by":"crossref","first-page":"4229","DOI":"10.5194\/hess-19-4229-2015","article-title":"Groundwater-dependent
+      ecosystems: Recent insights from satellite and field-based studies","volume":"19","author":"Eamus","year":"2015","journal-title":"Hydrol.
+      Earth Syst. Sci."},{"key":"ref_22","doi-asserted-by":"crossref","first-page":"173","DOI":"10.1071\/BT05081","article-title":"Defining
+      phreatophyte response to reduced water availability: Preliminary investigations
+      on the use of xylem cavitation vulnerability in Banksia woodland species","volume":"54","author":"Froend","year":"2006","journal-title":"Aust.
+      J. Bot."},{"key":"ref_23","doi-asserted-by":"crossref","unstructured":"Zhang,
+      X.L., Guan, T.Y., Zhou, J.H., Cai, W.T., Gao, N.N., Du, H., Jiang, L.H., Lai,
+      L.M., and Zheng, Y.R. (2018). Groundwater depth and soil properties are associated
+      with variation in vegetation of a desert riparian ecosystem in an arid area
+      of China. Forests, 9.","DOI":"10.3390\/f9010034"},{"key":"ref_24","first-page":"121","article-title":"Eco-environmental
+      effect induced by groundwater in the Yuka-Daqaidam Basin and assessment of eco-environment
+      quality","volume":"42","author":"Wang","year":"2015","journal-title":"Hydrogeol.
+      Eng. Geol."},{"key":"ref_25","first-page":"1","article-title":"Science mapping:
+      A systematic review of the literature","volume":"2","author":"Chen","year":"2017","journal-title":"J.
+      Data Inf. Sci."},{"key":"ref_26","doi-asserted-by":"crossref","first-page":"359","DOI":"10.1002\/asi.20317","article-title":"CiteSpace
+      II: Detecting and visualizing emerging trends and transient patterns in scientific
+      literature","volume":"57","author":"Chen","year":"2006","journal-title":"J.
+      Am. Soc. Inf. Sci. Technol."},{"key":"ref_27","doi-asserted-by":"crossref","first-page":"1386","DOI":"10.1002\/asi.21309","article-title":"The
+      structure and dynamics of cocitation clusters: A multiple-perspective cocitation
+      analysis","volume":"61","author":"Chen","year":"2010","journal-title":"J. Am.
+      Soc. Inf. Sci. Technol."},{"key":"ref_28","doi-asserted-by":"crossref","first-page":"53","DOI":"10.1016\/0377-0427(87)90125-7","article-title":"Silhouettes:
+      A graphical aid to the interpretation and validation of cluster analysis","volume":"20","author":"Rousseeuw","year":"1987","journal-title":"J.
+      Comput. Appl. Math."},{"key":"ref_29","doi-asserted-by":"crossref","first-page":"8577","DOI":"10.1073\/pnas.0601602103","article-title":"Modularity
+      and community structure in networks","volume":"103","author":"Newman","year":"2006","journal-title":"Proc.
+      Natl. Acad. Sci. USA"},{"key":"ref_30","doi-asserted-by":"crossref","first-page":"2199","DOI":"10.5194\/bg-14-2199-2017","article-title":"Reviews
+      and syntheses: Isotopic approaches to quantify root water uptake: A review and
+      comparison of methods","volume":"14","author":"Rothfuss","year":"2017","journal-title":"Biogeosciences"},{"key":"ref_31","first-page":"517","article-title":"Intra-
+      and interspecific variation for summer precipitation use in pinyon-juniper woodlands","volume":"70","author":"Williams","year":"2000","journal-title":"Ecol.
+      Monogr."},{"key":"ref_32","doi-asserted-by":"crossref","first-page":"99","DOI":"10.1093\/treephys\/tpn008","article-title":"Water
+      relations and photosynthetic performance in Larix sibirica growing in the forest-steppe
+      ecotone of northern Mongolia","volume":"29","author":"Dulamsuren","year":"2009","journal-title":"Tree
+      Physiol."},{"key":"ref_33","doi-asserted-by":"crossref","first-page":"6033","DOI":"10.1073\/pnas.0408571102","article-title":"Ecological
+      controls on water-cycle response to climate variability in deserts","volume":"102","author":"Scanlon","year":"2005","journal-title":"Proc.
+      Natl. Acad. Sci. USA"},{"key":"ref_34","first-page":"695","article-title":"Groundwater
+      dependent ecosystems and man: Conflicting groundwater uses","volume":"58","author":"Wachniew","year":"2014","journal-title":"Geol.
+      Q."},{"key":"ref_35","first-page":"741","article-title":"Ecohydrology of groundwater
+      dependent ecosystems: A review","volume":"33","author":"Liu","year":"2018","journal-title":"Adv.
+      Earth Sci."},{"key":"ref_36","doi-asserted-by":"crossref","first-page":"186","DOI":"10.1016\/j.rse.2016.07.004","article-title":"Assessing
+      the role of climate and resource management on groundwater dependent ecosystem
+      changes in arid environments with the Landsat archive","volume":"185","author":"Huntington","year":"2016","journal-title":"Remote
+      Sens. Environ."},{"key":"ref_37","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1111\/gwat.12511","article-title":"A
+      global synthesis of managing groundwater dependent ecosystems under sustainable
+      groundwater policy","volume":"55","author":"Rohde","year":"2017","journal-title":"Groundwater"},{"key":"ref_38","doi-asserted-by":"crossref","first-page":"713","DOI":"10.1111\/j.1744-7909.2012.01167.x","article-title":"Satellite-based
+      studies on large-scale vegetation changes in China","volume":"54","author":"Zhao","year":"2012","journal-title":"J.
+      Integr. Plant Biol."},{"key":"ref_39","doi-asserted-by":"crossref","first-page":"765","DOI":"10.1007\/s12665-009-0072-y","article-title":"Long-term
+      changes of Tamarix-vegetation in the oasis-desert ecotone and its driving factors:
+      Implication for dryland management","volume":"59","author":"Ma","year":"2009","journal-title":"Environ.
+      Earth Sci."},{"key":"ref_40","first-page":"603","article-title":"Variation of
+      vegetation coverage in the Dulan area of Qaidam River basin","volume":"34","author":"Jin","year":"2014","journal-title":"J.
+      Desert Res."},{"key":"ref_41","doi-asserted-by":"crossref","first-page":"561","DOI":"10.1007\/s10661-016-5570-2","article-title":"Sap
+      flow characteristics and their response to environmental variables in a desert
+      riparian forest along lower Heihe River Basin, Northwest China","volume":"188","author":"Li","year":"2016","journal-title":"Environ.
+      Monit. Assess."},{"key":"ref_42","doi-asserted-by":"crossref","first-page":"57","DOI":"10.1093\/treephys\/tps120","article-title":"Physiological
+      and morphological responses of Tamarix ramosissima and Populus euphratica to
+      altered groundwater availability","volume":"33","author":"Li","year":"2013","journal-title":"Tree
+      Physiol."},{"key":"ref_43","doi-asserted-by":"crossref","first-page":"785","DOI":"10.1016\/j.jaridenv.2005.03.026","article-title":"Riparian
+      plant species richness along lateral and longitudinal gradients of water stress
+      and flood disturbance, San Pedro River, Arizona, USA","volume":"63","author":"Lite","year":"2005","journal-title":"J.
+      Arid Environ."},{"key":"ref_44","doi-asserted-by":"crossref","first-page":"770","DOI":"10.1111\/j.1365-2664.2006.01197.x","article-title":"Decline
+      in alkali meadow vegetation cover in California: The effects of groundwater
+      extraction and drought","volume":"43","author":"Elmore","year":"2006","journal-title":"J.
+      Appl. Ecol."},{"key":"ref_45","doi-asserted-by":"crossref","first-page":"956","DOI":"10.1002\/eco.1413","article-title":"Adaptation
+      strategies of desert riparian forest vegetation in response to drought stress","volume":"6","author":"Chen","year":"2013","journal-title":"Ecohydrology"},{"key":"ref_46","doi-asserted-by":"crossref","first-page":"949","DOI":"10.1002\/eco.1385","article-title":"Ecological
+      response and hydrological mechanism of desert riparian forest in inland river,
+      northwest of China","volume":"6","author":"Li","year":"2013","journal-title":"Ecohydrology"},{"key":"ref_47","first-page":"6836","article-title":"Response
+      of Populus euphratica communities in a desert riparian forest to the groundwater
+      level gradient in the Tarim Basin","volume":"37","author":"Han","year":"2017","journal-title":"Acta
+      Ecol. Sin."},{"key":"ref_48","first-page":"400","article-title":"The effect
+      of groundwater level on vegetation in the middle and lower reaches of the Tarim
+      River, Xinjiang, China","volume":"28","author":"Xu","year":"2004","journal-title":"Acta
+      Phytoecol. Sin."},{"key":"ref_49","doi-asserted-by":"crossref","first-page":"178","DOI":"10.1002\/hyp.7432","article-title":"Assessment
+      of the groundwater threshold of desert riparian forest vegetation along the
+      middle and lower reaches of the Tarim River, China","volume":"24","author":"Hao","year":"2010","journal-title":"Hydrol.
+      Process."},{"key":"ref_50","doi-asserted-by":"crossref","first-page":"142","DOI":"10.1002\/eco.1254","article-title":"Groundwater-dependent
+      distribution of vegetation in Hailiutu River catchment, a semi-arid region in
+      China","volume":"6","author":"Lv","year":"2013","journal-title":"Ecohydrology"},{"key":"ref_51","first-page":"86","article-title":"Study
+      on the relationship between vegetation cover and groundwater depth in the middle
+      reaches of Golmud River","volume":"16","author":"Guan","year":"2018","journal-title":"South-to-North
+      Water Transf. Water Sci. Technol."},{"key":"ref_52","doi-asserted-by":"crossref","first-page":"15418","DOI":"10.1038\/srep15418","article-title":"How
+      to regenerate and protect desert riparian Populus euphratica forest in arid
+      areas","volume":"5","author":"Ling","year":"2015","journal-title":"Sci. Rep."},{"key":"ref_53","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1046\/j.1365-3040.2001.00681.x","article-title":"Responses
+      of riparian trees to interannual variation in ground water depth in a semi-arid
+      river basin","volume":"24","author":"Horton","year":"2001","journal-title":"Plant
+      Cell Environ."},{"key":"ref_54","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/S1872-5791(07)60026-8","article-title":"A
+      study of the relationship between vegetation growth and groundwater in the Yinchuan
+      Plain","volume":"14","author":"Jin","year":"2007","journal-title":"Earth Sci.
+      Front."},{"key":"ref_55","doi-asserted-by":"crossref","first-page":"194","DOI":"10.1080\/15324982.2011.554953","article-title":"Groundwater
+      depth and vegetation in the Ejina area, China","volume":"25","author":"Jin","year":"2011","journal-title":"Arid
+      Land Res. Manag."},{"key":"ref_56","first-page":"100","article-title":"Variation
+      of vegetation coverage and its relationship with groundwater in Wutumeiren area
+      of Qaidam Basin","volume":"21","author":"Jin","year":"2014","journal-title":"Earth
+      Sci. Front."},{"key":"ref_57","first-page":"1","article-title":"Quantitative
+      relationship between vegetation and groundwater depth in Mahai Oasis area","volume":"12","author":"Liu","year":"2014","journal-title":"South-to-North
+      Water Transf. Water Sci. Technol."},{"key":"ref_58","doi-asserted-by":"crossref","first-page":"710","DOI":"10.1080\/01431161.2015.1137648","article-title":"Vegetation
+      dynamics and their response to groundwater and climate variables in Qaidam Basin,
+      China","volume":"37","author":"Jin","year":"2016","journal-title":"Int. J. Remote
+      Sens."},{"key":"ref_59","doi-asserted-by":"crossref","first-page":"56","DOI":"10.1111\/j.1654-109X.2009.01050.x","article-title":"Life
+      on the edge\u2014To which degree does phreatic water sustain vegetation in the
+      periphery of the Taklamakan Desert?","volume":"13","author":"Bruelheide","year":"2010","journal-title":"Appl.
+      Veg. Sci."},{"key":"ref_60","doi-asserted-by":"crossref","first-page":"292","DOI":"10.1016\/j.jaridenv.2015.09.007","article-title":"50
+      years of water extraction in the Pampa del Tamarugal basin: Can Prosopis tamarugo
+      trees survive in the hyper-arid Atacama Desert (Northern Chile)?","volume":"124","author":"Chavez","year":"2016","journal-title":"J.
+      Arid Environ."},{"key":"ref_61","unstructured":"Chun Yu, X.Z., Huang, F., Xia,
+      Z.Q., Zhang, D.R., Chen, X., and Xie, Y.Y. (2019). Assessing the ecological
+      effects of water transport to a lake in arid regions: A case study of Qingtu
+      Lake in Shiyang River basin, Northwest China. Int. J. Environ. Res. Public Health,
+      16."},{"key":"ref_62","doi-asserted-by":"crossref","first-page":"167","DOI":"10.1007\/s10661-008-0305-7","article-title":"Indicating
+      appropriate groundwater tables for desert river-bank forest at the Tarim River,
+      Xinjiang, China","volume":"152","author":"Hao","year":"2009","journal-title":"Environ.
+      Monit. Assess."},{"key":"ref_63","doi-asserted-by":"crossref","first-page":"54","DOI":"10.1002\/eco.196","article-title":"Vegetation
+      as affected by groundwater depth and microtopography in a shallow aquifer area
+      of the Great Basin","volume":"5","author":"McLendon","year":"2012","journal-title":"Ecohydrology"},{"key":"ref_64","doi-asserted-by":"crossref","first-page":"2405","DOI":"10.5194\/hess-21-2405-2017","article-title":"The
+      spatial distribution and temporal variation of desert riparian forests and their
+      influencing factors in the downstream Heihe River basin, China","volume":"21","author":"Ding","year":"2017","journal-title":"Hydrol.
+      Earth Syst. Sci."},{"key":"ref_65","doi-asserted-by":"crossref","first-page":"151","DOI":"10.1007\/BF02257571","article-title":"Soil
+      structure and plant growth: Impact of bulk density and biopores","volume":"185","author":"Stirzaker","year":"1996","journal-title":"Plant
+      Soil"},{"key":"ref_66","doi-asserted-by":"crossref","first-page":"297","DOI":"10.1007\/s11104-013-1727-8","article-title":"Hydraulic
+      redistribution of soil water by roots of two desert riparian phreatophytes in
+      northwest China\u2019s extremely arid region","volume":"372","author":"Yu","year":"2013","journal-title":"Plant
+      Soil"},{"key":"ref_67","doi-asserted-by":"crossref","first-page":"151","DOI":"10.1007\/s004420050363","article-title":"Hydraulic
+      lift: Consequences of water efflux from the roots of plants","volume":"113","author":"Caldwell","year":"1998","journal-title":"Oecologia"},{"key":"ref_68","doi-asserted-by":"crossref","first-page":"322","DOI":"10.1038\/nclimate1744","article-title":"Ground
+      water and climate change","volume":"3","author":"Taylor","year":"2013","journal-title":"Nat.
+      Clim. Chang."},{"key":"ref_69","doi-asserted-by":"crossref","first-page":"91","DOI":"10.1071\/BT06029","article-title":"Groundwater-dependent
+      ecosystems: The where, what and why of GDEs","volume":"54","author":"Eamus","year":"2006","journal-title":"Aust.
+      J. Bot."},{"key":"ref_70","doi-asserted-by":"crossref","first-page":"940","DOI":"10.1126\/science.1229881","article-title":"Global
+      patterns of groundwater table depth","volume":"339","author":"Fan","year":"2013","journal-title":"Science"},{"key":"ref_71","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1007\/s10021-003-0142-z","article-title":"Ecological
+      thresholds: The key to successful environmental management or an important concept
+      with no practical application?","volume":"9","author":"Groffman","year":"2006","journal-title":"Ecosystems"},{"key":"ref_72","doi-asserted-by":"crossref","first-page":"53","DOI":"10.1002\/(SICI)1099-1646(199801\/02)14:1<53::AID-RRR476>3.0.CO;2-Z","article-title":"Use
+      of wetted perimeter in defining minimum environmental flows","volume":"14","author":"Gippel","year":"1998","journal-title":"Regul.
+      Rivers-Res. Manag."}],"container-title":["International Journal of Environmental
+      Research and Public Health"],"language":"en","link":[{"URL":"https:\/\/www.mdpi.com\/1660-4601\/16\/10\/1849\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2025,1,20]],"date-time":"2025-01-20T13:25:49Z","timestamp":1737379549000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.mdpi.com\/1660-4601\/16\/10\/1849"}},"issued":{"date-parts":[[2019,5,24]]},"references-count":72,"journal-issue":{"issue":"10","published-online":{"date-parts":[[2019,5]]}},"alternative-id":["ijerph16101849"],"URL":"https:\/\/doi.org\/10.3390\/ijerph16101849","ISSN":["1660-4601"],"issn-type":[{"type":"electronic","value":"1660-4601"}],"published":{"date-parts":[[2019,5,24]]}},{"indexed":{"date-parts":[[2022,3,29]],"date-time":"2022-03-29T19:50:22Z","timestamp":1648583422690},"reference-count":1,"publisher":"Elsevier
+      BV","issue":"5","license":[{"start":{"date-parts":[[2011,5,1]],"date-time":"2011-05-01T00:00:00Z","timestamp":1304208000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["American
+      Journal of Orthodontics and Dentofacial Orthopedics"],"published-print":{"date-parts":[[2011,5]]},"DOI":"10.1016\/j.ajodo.2011.01.018","type":"journal-article","created":{"date-parts":[[2011,5,3]],"date-time":"2011-05-03T05:04:19Z","timestamp":1304399059000},"page":"577","source":"Crossref","is-referenced-by-count":0,"title":["And
+      justice for all"],"prefix":"10.1016","volume":"139","author":[{"given":"Peter
+      M.","family":"Greco","sequence":"first","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.ajodo.2011.01.018_bib1","series-title":"Ethical
+      principles","first-page":"65","article-title":"Ethical questions in dentistry","author":"Rule","year":"2004"}],"container-title":["American
+      Journal of Orthodontics and Dentofacial Orthopedics"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0889540611000825?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0889540611000825?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,12,3]],"date-time":"2018-12-03T02:54:01Z","timestamp":1543805641000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0889540611000825"}},"issued":{"date-parts":[[2011,5]]},"references-count":1,"journal-issue":{"issue":"5","published-print":{"date-parts":[[2011,5]]}},"alternative-id":["S0889540611000825"],"URL":"https:\/\/doi.org\/10.1016\/j.ajodo.2011.01.018","ISSN":["0889-5406"],"issn-type":[{"value":"0889-5406","type":"print"}],"published":{"date-parts":[[2011,5]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '23820'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:26:16 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -169,16 +665,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '8062'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:59:40 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -187,10 +675,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

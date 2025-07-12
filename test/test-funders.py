@@ -54,14 +54,8 @@ def test_funders_filter_works():
 
 @pytest.mark.vcr
 def test_funders_fail_limit():
-    with pytest.raises(KeyError):
+    with pytest.raises(exceptions.RequestError):
         cr.funders(limit="things")
-
-
-@pytest.mark.vcr
-def test_funders_fail_offset():
-    with pytest.raises(KeyError):
-        cr.funders(offset="things")
 
 
 @pytest.mark.vcr

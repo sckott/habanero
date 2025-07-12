@@ -11,85 +11,283 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.7.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.7.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016/works?rows=2
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":21223566,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:45:52Z","timestamp":1648950352883},"reference-count":6,"publisher":"Elsevier
-      BV","issue":"1","license":[{"start":{"date-parts":[[2018,1,1]],"date-time":"2018-01-01T00:00:00Z","timestamp":1514764800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2019,1,2]],"date-time":"2019-01-02T00:00:00Z","timestamp":1546387200000},"content-version":"vor","delay-in-days":366,"URL":"http:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"content-domain":{"domain":["clinicalkey.jp","onlinejacc.org","clinicalkey.com","clinicalkey.es","clinicalkey.com.au","clinicalkey.fr","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Journal
-      of the American College of Cardiology"],"published-print":{"date-parts":[[2018,1]]},"DOI":"10.1016\/j.jacc.2017.11.012","type":"journal-article","created":{"date-parts":[[2018,1,1]],"date-time":"2018-01-01T19:03:22Z","timestamp":1514833402000},"page":"37-39","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":2,"title":["TMVR
-      With Artificial Cords in the Treatment of Mitral Regurgitation"],"prefix":"10.1016","volume":"71","author":[{"given":"Michael","family":"Mack","sequence":"first","affiliation":[]},{"given":"Robert","family":"Smith","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.jacc.2017.11.012_bib1","doi-asserted-by":"crossref","first-page":"2315","DOI":"10.1016\/j.jacc.2017.09.015","article-title":"Outcomes
-      with transcatheter mitral valve repair in the United States","volume":"70","author":"Sorajja","year":"2017","journal-title":"J\u00a0Am
-      Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib2","doi-asserted-by":"crossref","first-page":"914","DOI":"10.1016\/j.jacc.2013.07.090","article-title":"Off-pump
-      transapical implantation of artificial neo-chordae to correct mitral regurgitation:
-      the TACT Trial (Transapical Artificial Chordae Tendinae) proof of concept","volume":"63","author":"Seeburger","year":"2014","journal-title":"J\u00a0Am
-      Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib3","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1016\/j.ijcard.2015.11.131","article-title":"Transapical
-      off-pump mitral valve repair with Neochord implantation: early clinical results","volume":"204","author":"Colli","year":"2016","journal-title":"Int
-      J Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib4","doi-asserted-by":"crossref","first-page":"25","DOI":"10.1016\/j.jacc.2017.10.062","article-title":"Beating-heart
-      mitral valve repair using a novel ePTFE cordal implantation device: a prospective
-      trial","volume":"71","author":"Gammie","year":"2018","journal-title":"J\u00a0Am
-      Coll Cardiol"},{"key":"10.1016\/j.jacc.2017.11.012_bib5","doi-asserted-by":"crossref","first-page":"189","DOI":"10.1161\/CIRCULATIONAHA.116.022010","article-title":"Transapical
-      beating-heart mitral valve repair with an expanded polytetrafluoroethylene cordal
-      implantation device: initial clinical experience","volume":"134","author":"Gammie","year":"2016","journal-title":"Circulation"},{"key":"10.1016\/j.jacc.2017.11.012_bib6","doi-asserted-by":"crossref","first-page":"499","DOI":"10.1016\/j.jacc.2015.12.007","article-title":"The
-      time has come to define centers of excellence in mitral valve repair","volume":"67","author":"Bonow","year":"2016","journal-title":"J\u00a0Am
-      Coll Cardiol"}],"container-title":["Journal of the American College of Cardiology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0735109717415853?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0735109717415853?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2020,8,19]],"date-time":"2020-08-19T17:08:29Z","timestamp":1597856909000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0735109717415853"}},"issued":{"date-parts":[[2018,1]]},"references-count":6,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2018,1]]}},"alternative-id":["S0735109717415853"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.jacc.2017.11.012","ISSN":["0735-1097"],"issn-type":[{"value":"0735-1097","type":"print"}],"published":{"date-parts":[[2018,1]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-      article is maintained by"},{"value":"TMVR With Artificial Cords in the Treatment
-      of Mitral Regurgitation","name":"articletitle","label":"Article Title"},{"value":"Journal
-      of the American College of Cardiology","name":"journaltitle","label":"Journal
-      Title"},{"value":"https:\/\/doi.org\/10.1016\/j.jacc.2017.11.012","name":"articlelink","label":"CrossRef
-      DOI link to publisher maintained version"},{"value":"https:\/\/doi.org\/10.1016\/j.jacc.2017.10.062","name":"associatedlink","label":"CrossRef
-      DOI link to the associated document"},{"value":"simple-article","name":"content_type","label":"Content
-      Type"},{"value":"\u00a9 2018 by the American College of Cardiology Foundation.
-      Published by Elsevier.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T01:46:01Z","timestamp":1648950361188},"reference-count":46,"publisher":"Elsevier
-      BV","issue":"10","license":[{"start":{"date-parts":[[1976,5,1]],"date-time":"1976-05-01T00:00:00Z","timestamp":199756800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Biochemical
-      Pharmacology"],"published-print":{"date-parts":[[1976,5]]},"DOI":"10.1016\/0006-2952(76)90360-9","type":"journal-article","created":{"date-parts":[[2002,12,14]],"date-time":"2002-12-14T00:31:08Z","timestamp":1039825868000},"page":"1139-1144","source":"Crossref","is-referenced-by-count":10,"title":["Enzyme
-      activated anti-tumour agents\u2014 II. The role of alkaline phosphatase in the
-      release of p-hydroxyaniline mustard from its phosphate conjugate in cells in
-      culture"],"prefix":"10.1016","volume":"25","author":[{"given":"P.","family":"Workman","sequence":"first","affiliation":[]},{"given":"C.R.","family":"Ball","sequence":"additional","affiliation":[]},{"given":"J.A.","family":"Double","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/0006-2952(76)90360-9_BIB1","doi-asserted-by":"crossref","first-page":"406","DOI":"10.1038\/205406a0","volume":"205","author":"Connors","year":"1965","journal-title":"Nature,
-      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB2","doi-asserted-by":"crossref","first-page":"689","DOI":"10.1038\/206689a0","volume":"206","author":"Connors","year":"1965","journal-title":"Nature,
-      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB3","doi-asserted-by":"crossref","first-page":"866","DOI":"10.1038\/210866b0","volume":"210","author":"Connors","year":"1966","journal-title":"Nature,
-      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB4","first-page":"825","volume":"14","author":"Whisson","year":"1966","journal-title":"Archs
-      immunologiae ther. experimentalis"},{"key":"10.1016\/0006-2952(76)90360-9_BIB5","doi-asserted-by":"crossref","first-page":"1373","DOI":"10.1016\/0006-2952(72)90300-0","volume":"21","author":"Connors","year":"1972","journal-title":"Biochem.
-      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB6","series-title":"Abstracts
-      of the Seventh Annual Meeting of the Am. Ass. of Clinical Oncologists","author":"Young","year":"1971"},{"key":"10.1016\/0006-2952(76)90360-9_BIB7","doi-asserted-by":"crossref","first-page":"963","DOI":"10.1016\/0006-2952(72)90400-5","volume":"21","author":"Bukhari","year":"1972","journal-title":"Biochem.
-      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB8","doi-asserted-by":"crossref","first-page":"81","DOI":"10.1038\/bjc.1973.92","volume":"28","author":"Ball","year":"1973","journal-title":"Br.
-      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB9","doi-asserted-by":"crossref","first-page":"3173","DOI":"10.1016\/0006-2952(74)90603-0","volume":"23","author":"Ball","year":"1974","journal-title":"Biochem.
-      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB10","series-title":"Biological
-      Alkylating Agents","author":"Ross","year":"1962"},{"key":"10.1016\/0006-2952(76)90360-9_BIB11","doi-asserted-by":"crossref","first-page":"246","DOI":"10.1038\/bjc.1975.175","volume":"32","author":"Workman","year":"1975","journal-title":"Br.
-      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB12","doi-asserted-by":"crossref","first-page":"549","DOI":"10.1007\/BF00485476","volume":"3","author":"Elson","year":"1969","journal-title":"Biochem.
-      Gen."},{"key":"10.1016\/0006-2952(76)90360-9_BIB13","doi-asserted-by":"crossref","first-page":"697","DOI":"10.1038\/219697a0","volume":"219","author":"Fishman","year":"1968","journal-title":"Nature"},{"key":"10.1016\/0006-2952(76)90360-9_BIB14","doi-asserted-by":"crossref","first-page":"595","DOI":"10.1042\/bj0570595","volume":"57","author":"Morton","year":"1954","journal-title":"Biochem.
-      J."},{"key":"10.1016\/0006-2952(76)90360-9_BIB15","doi-asserted-by":"crossref","first-page":"375","DOI":"10.1016\/S0021-9258(18)84756-1","volume":"66","author":"Fiske","year":"1925","journal-title":"J.
-      biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB16","doi-asserted-by":"crossref","first-page":"658","DOI":"10.1021\/ja01318a036","volume":"56","author":"Lineweaver","year":"1934","journal-title":"J.
-      Am. chem. Soc."},{"key":"10.1016\/0006-2952(76)90360-9_BIB17","first-page":"240","volume":"651","author":"Taketa","year":"1965","journal-title":"J.
-      biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB18","first-page":"286","volume":"175","author":"Ghosh","year":"1972","journal-title":"Biochim.
-      biophys. Acta"},{"key":"10.1016\/0006-2952(76)90360-9_BIB19","doi-asserted-by":"crossref","first-page":"262","DOI":"10.1016\/S0021-9258(19)52451-6","volume":"193","author":"Lowry","year":"1951","journal-title":"J.
-      biol. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB20","doi-asserted-by":"crossref","first-page":"404","DOI":"10.1111\/j.1749-6632.1964.tb14213.x","volume":"121","author":"Davis","year":"1964","journal-title":"Ann.
-      N.Y. Acad. Sci."},{"key":"10.1016\/0006-2952(76)90360-9_BIB21","doi-asserted-by":"crossref","first-page":"985","DOI":"10.1038\/215985a0","volume":"215","author":"Spencer","year":"1967","journal-title":"Nature,
-      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB22","doi-asserted-by":"crossref","first-page":"927","DOI":"10.1042\/bj1160927","volume":"116","author":"Spencer","year":"1970","journal-title":"Biochem.
-      J."},{"key":"10.1016\/0006-2952(76)90360-9_BIB23","first-page":"329","volume":"42","author":"Spencer","year":"1971","journal-title":"Enzymologia"},{"key":"10.1016\/0006-2952(76)90360-9_BIB24","series-title":"Microscopic
-      Histochemistry","author":"Gomori","year":"1952"},{"key":"10.1016\/0006-2952(76)90360-9_BIB25","doi-asserted-by":"crossref","first-page":"169","DOI":"10.1177\/11.2.169","volume":"1","author":"Allen","year":"1963","journal-title":"J.
-      Histochem. Cytochem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB26","doi-asserted-by":"crossref","first-page":"255","DOI":"10.1016\/S0065-2423(08)60115-8","volume":"10","author":"Fishman","year":"1967","journal-title":"Adv.
-      clin. Chem."},{"key":"10.1016\/0006-2952(76)90360-9_BIB27","doi-asserted-by":"crossref","first-page":"1257","DOI":"10.1038\/2071257a0","volume":"207","author":"Robson","year":"1965","journal-title":"Nature,
-      Lond."},{"key":"10.1016\/0006-2952(76)90360-9_BIB28","doi-asserted-by":"crossref","first-page":"641","DOI":"10.1111\/j.1749-6632.1969.tb46424.x","volume":"166","author":"Moss","year":"1969","journal-title":"Ann.
-      N.Y. Acad. Sci."},{"key":"10.1016\/0006-2952(76)90360-9_BIB29","volume":"Vol.
-      16","author":"Morton","year":"1965"},{"key":"10.1016\/0006-2952(76)90360-9_BIB30","series-title":"Lysosomes","author":"Barret","year":"1972"},{"key":"10.1016\/0006-2952(76)90360-9_BIB31","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1016\/0003-9861(68)90008-8","volume":"128","author":"Bosmann","year":"1968","journal-title":"Archs
-      Biochem. Biophys."},{"key":"10.1016\/0006-2952(76)90360-9_BIB32","doi-asserted-by":"crossref","first-page":"817","DOI":"10.1038\/bjc.1970.96","volume":"24","author":"Dendy","year":"1970","journal-title":"Br.
-      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB33","doi-asserted-by":"crossref","first-page":"55","DOI":"10.1038\/bjc.1973.70","volume":"28","author":"Morley","year":"1973","journal-title":"Br.
-      J. Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB34","first-page":"150","volume":"28","author":"Fishman","year":"1968","journal-title":"Cancer
-      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB35","doi-asserted-by":"crossref","first-page":"1388","DOI":"10.1002\/1097-0142(197106)27:6<1388::AID-CNCR2820270619>3.0.CO;2-0","volume":"27","author":"Nathanson","year":"1971","journal-title":"Cancer"},{"key":"10.1016\/0006-2952(76)90360-9_BIB36","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/0304-4165(66)90064-X","volume":"115","author":"Barban","year":"1965","journal-title":"Biochem.
-      biophys. Acta"},{"key":"10.1016\/0006-2952(76)90360-9_BIB37","first-page":"1210","volume":"24","author":"Bieber","year":"1964","journal-title":"Cancer
-      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB38","first-page":"2034","volume":"32","author":"Nelson","year":"1972","journal-title":"Cancer
-      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB39","first-page":"1620","volume":"31","author":"Wolpert","year":"1971","journal-title":"Cancer
-      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB40","first-page":"1013","volume":"42","author":"Rosman","year":"1973","journal-title":"Blood"},{"key":"10.1016\/0006-2952(76)90360-9_BIB41","first-page":"1773","volume":"27","author":"Henderson","year":"1967","journal-title":"Cancer
-      Res."},{"key":"10.1016\/0006-2952(76)90360-9_BIB42","doi-asserted-by":"crossref","first-page":"725","DOI":"10.1016\/0006-2952(69)90043-4","volume":"18","author":"Bennett","year":"1969","journal-title":"Biochem.
-      Pharmac."},{"key":"10.1016\/0006-2952(76)90360-9_BIB43","series-title":"Cancer
-      of the Prostate","author":"Balogh","year":"1968"},{"key":"10.1016\/0006-2952(76)90360-9_BIB44","doi-asserted-by":"crossref","first-page":"882","DOI":"10.1007\/BF01471475","volume":"30","author":"Druckery","year":"1952","journal-title":"Klin.
-      Wschr."},{"key":"10.1016\/0006-2952(76)90360-9_BIB45","first-page":"38","volume":"12","author":"Tritsch","year":"1974","journal-title":"Investig.
-      Urol."},{"key":"10.1016\/0006-2952(76)90360-9_BIB46","doi-asserted-by":"crossref","first-page":"10","DOI":"10.1093\/clinchem\/19.1.10","volume":"19","author":"Schwartz","year":"1973","journal-title":"Clin.
-      Chem."}],"container-title":["Biochemical Pharmacology"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0006295276903609?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0006295276903609?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2021,6,1]],"date-time":"2021-06-01T15:39:06Z","timestamp":1622561946000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0006295276903609"}},"issued":{"date-parts":[[1976,5]]},"references-count":46,"journal-issue":{"issue":"10","published-print":{"date-parts":[[1976,5]]}},"alternative-id":["0006295276903609"],"URL":"http:\/\/dx.doi.org\/10.1016\/0006-2952(76)90360-9","ISSN":["0006-2952"],"issn-type":[{"value":"0006-2952","type":"print"}],"published":{"date-parts":[[1976,5]]}}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":22085486,"items":[{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T20:11:20Z","timestamp":1651090280032},"reference-count":45,"publisher":"Elsevier
+      BV","issue":"2","license":[{"start":{"date-parts":[[2015,8,1]],"date-time":"2015-08-01T00:00:00Z","timestamp":1438387200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/100000041","name":"American
+      Diabetes Association","doi-asserted-by":"publisher","award":["1-10-IN-30"],"id":[{"id":"10.13039\/100000041","id-type":"DOI","asserted-by":"publisher"}]},{"name":"Iowa
+      City VA Health Care System (5101BX00285-07)"},{"DOI":"10.13039\/100000002","name":"National
+      Institutes of Health","doi-asserted-by":"publisher","award":["AR059115-04","F30AG043304,
+      UL1RR024979"],"id":[{"id":"10.13039\/100000002","id-type":"DOI","asserted-by":"publisher"}]}],"content-domain":{"domain":["clinicalkey.jp","clinicalkey.com","clinicalkey.es","translationalres.com","clinicalkey.com.au","clinicalkey.fr","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Translational
+      Research"],"published-print":{"date-parts":[[2015,8]]},"DOI":"10.1016\/j.trsl.2015.01.007","type":"journal-article","created":{"date-parts":[[2015,1,28]],"date-time":"2015-01-28T04:41:29Z","timestamp":1422420089000},"page":"176-187","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":4,"title":["Evidence
+      for metabolic aberrations in asymptomatic persons with type 2 diabetes after
+      initiation of simvastatin therapy"],"prefix":"10.1016","volume":"166","author":[{"given":"Manish","family":"Suneja","sequence":"first","affiliation":[]},{"given":"Daniel
+      K.","family":"Fox","sequence":"additional","affiliation":[]},{"given":"Brian
+      D.","family":"Fink","sequence":"additional","affiliation":[]},{"given":"Judy
+      A.","family":"Herlein","sequence":"additional","affiliation":[]},{"given":"Christopher
+      M.","family":"Adams","sequence":"additional","affiliation":[]},{"given":"William
+      I.","family":"Sivitz","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.trsl.2015.01.007_bib1","series-title":"Standards
+      of care. Diabetes care","year":"2008"},{"key":"10.1016\/j.trsl.2015.01.007_bib2","doi-asserted-by":"crossref","first-page":"C1208","DOI":"10.1152\/ajpcell.00226.2006","article-title":"Statin-induced
+      apoptosis and skeletal myopathy","volume":"291","author":"Dirks","year":"2006","journal-title":"Am
+      J Physiol Cell Physiol"},{"key":"10.1016\/j.trsl.2015.01.007_bib3","doi-asserted-by":"crossref","first-page":"389","DOI":"10.1007\/s11883-007-0050-3","article-title":"Statin
+      myopathy: incidence, risk factors, and pathophysiology","volume":"9","author":"Sewright","year":"2007","journal-title":"Curr
+      Atheroscler Rep"},{"issue":"suppl","key":"10.1016\/j.trsl.2015.01.007_bib4","doi-asserted-by":"crossref","first-page":"S62","DOI":"10.1016\/j.mito.2007.03.007","article-title":"Endogenous
+      synthesis of coenzyme Q in eukaryotes","volume":"7","author":"Tran","year":"2007","journal-title":"Mitochondrion"},{"key":"10.1016\/j.trsl.2015.01.007_bib5","doi-asserted-by":"crossref","first-page":"659","DOI":"10.2165\/00002018-200528080-00002","article-title":"The
+      effect of HMG-CoA reductase inhibitors on coenzyme Q10: possible biochemical\/clinical
+      implications","volume":"28","author":"Hargreaves","year":"2005","journal-title":"Drug
+      Saf"},{"key":"10.1016\/j.trsl.2015.01.007_bib6","doi-asserted-by":"crossref","first-page":"2231","DOI":"10.1016\/j.jacc.2007.02.049","article-title":"The
+      role of coenzyme Q10 in statin-associated myopathy: a systematic review","volume":"49","author":"Marcoff","year":"2007","journal-title":"J
+      Am Coll Cardiol"},{"key":"10.1016\/j.trsl.2015.01.007_bib7","doi-asserted-by":"crossref","first-page":"60","DOI":"10.1016\/j.clpt.2005.03.006","article-title":"High-dose
+      statins and skeletal muscle metabolism in humans: a randomized, controlled trial","volume":"78","author":"Paiva","year":"2005","journal-title":"Clin
+      Pharmacol Ther"},{"key":"10.1016\/j.trsl.2015.01.007_bib8","doi-asserted-by":"crossref","first-page":"44","DOI":"10.1016\/j.jacc.2012.09.036","article-title":"Simvastatin
+      effects on skeletal muscle: relation to decreased mitochondrial function and
+      glucose intolerance","volume":"61","author":"Larsen","year":"2013","journal-title":"J
+      Am Coll Cardiol"},{"key":"10.1016\/j.trsl.2015.01.007_bib9","doi-asserted-by":"crossref","first-page":"1709","DOI":"10.1001\/archneur.62.11.1709","article-title":"Muscle
+      coenzyme Q10 level in statin-related myopathy","volume":"62","author":"Lamperti","year":"2005","journal-title":"Arch
+      Neurol"},{"key":"10.1016\/j.trsl.2015.01.007_bib10","doi-asserted-by":"crossref","first-page":"117","DOI":"10.1016\/0009-8981(96)06357-7","article-title":"Plasma
+      ubiquinol\/cholesterol ratios in patients with hyperlipidaemia, those with diabetes
+      mellitus and in patients requiring dialysis","volume":"253","author":"McDonnell","year":"1996","journal-title":"Clin
+      Chim Acta"},{"key":"10.1016\/j.trsl.2015.01.007_bib11","first-page":"324","article-title":"Effect
+      of treatment with 3-hydroxy-3-methylglutaryl coenzyme A reductase inhibitors
+      on serum coenzyme Q10 in diabetic patients","volume":"49","author":"Miyake","year":"1999","journal-title":"Arzneimittelforschung"},{"key":"10.1016\/j.trsl.2015.01.007_bib12","doi-asserted-by":"crossref","first-page":"2556","DOI":"10.1001\/jama.2011.860","article-title":"Risk
+      of incident diabetes with intensive-dose compared with moderate-dose statin
+      therapy: a meta-analysis","volume":"305","author":"Preiss","year":"2011","journal-title":"JAMA"},{"key":"10.1016\/j.trsl.2015.01.007_bib13","doi-asserted-by":"crossref","first-page":"735","DOI":"10.1016\/S0140-6736(09)61965-6","article-title":"Statins
+      and risk of incident diabetes: a collaborative meta-analysis of randomised statin
+      trials","volume":"375","author":"Sattar","year":"2010","journal-title":"Lancet"},{"key":"10.1016\/j.trsl.2015.01.007_bib14","doi-asserted-by":"crossref","first-page":"e282","DOI":"10.1161\/CIRCULATIONAHA.112.122135","article-title":"Statins
+      and risk of new-onset diabetes mellitus","volume":"126","author":"Shah","year":"2012","journal-title":"Circulation"},{"key":"10.1016\/j.trsl.2015.01.007_bib15","doi-asserted-by":"crossref","first-page":"361","DOI":"10.1007\/s10557-014-6534-9","article-title":"Lipid-lowering
+      therapies, glucose control and incident diabetes: evidence, mechanisms and clinical
+      implications","volume":"28","author":"Zafrir","year":"2014","journal-title":"Cardiovasc
+      Drugs Ther"},{"key":"10.1016\/j.trsl.2015.01.007_bib16","doi-asserted-by":"crossref","first-page":"537","DOI":"10.1089\/ars.2009.2531","article-title":"Mitochondrial
+      dysfunction in diabetes: from molecular mechanisms to functional significance
+      and therapeutic opportunities","volume":"12","author":"Sivitz","year":"2010","journal-title":"Antioxid
+      Redox Signal"},{"issue":"suppl 1","key":"10.1016\/j.trsl.2015.01.007_bib17","first-page":"S13","article-title":"Standards
+      of medical care in diabetes\u20142009","volume":"32","year":"2009","journal-title":"Diabetes
+      Care"},{"key":"10.1016\/j.trsl.2015.01.007_bib18","doi-asserted-by":"crossref","first-page":"20","DOI":"10.1177\/014860718801200120","article-title":"Calculation
+      of metabolic expenditure and substrate utilization from gas exchange measurements","volume":"12","author":"Westenskow","year":"1988","journal-title":"JPEN
+      J Parenter Enteral Nutr"},{"key":"10.1016\/j.trsl.2015.01.007_bib19","doi-asserted-by":"crossref","first-page":"429","DOI":"10.1080\/10715760290021289","article-title":"Ubiquinol
+      and a coenzyme Q reducing system protect platelet mitochondrial function of
+      transfusional buffy coats from oxidative stress","volume":"36","author":"Merlo
+      Pich","year":"2002","journal-title":"Free Radic Res"},{"key":"10.1016\/j.trsl.2015.01.007_bib20","doi-asserted-by":"crossref","first-page":"1833","DOI":"10.2337\/db12-1152","article-title":"Mitochondrial
+      function in diabetes: novel methodology and new insight","volume":"62","author":"Yu","year":"2013","journal-title":"Diabetes"},{"key":"10.1016\/j.trsl.2015.01.007_bib21","doi-asserted-by":"crossref","first-page":"219","DOI":"10.1016\/j.cccn.2003.12.020","article-title":"Simultaneous
+      analysis of coenzyme Q10 in plasma, erythrocytes and platelets: comparison of
+      the antioxidant level in blood cells and their environment in healthy children
+      and after oral supplementation in adults","volume":"342","author":"Niklowitz","year":"2004","journal-title":"Clin
+      Chim Acta"},{"key":"10.1016\/j.trsl.2015.01.007_bib22","doi-asserted-by":"crossref","first-page":"1210","DOI":"10.1096\/fj.06-7285com","article-title":"Gene
+      expression profiling in the early phases of DMD: a constant molecular signature
+      characterizes DMD muscle from early postnatal life throughout disease progression","volume":"21","author":"Pescatori","year":"2007","journal-title":"FASEB
+      J"},{"key":"10.1016\/j.trsl.2015.01.007_bib23","doi-asserted-by":"crossref","first-page":"258","DOI":"10.1002\/path.4346","article-title":"Altered
+      RIG-I\/DDX58-mediated innate immunity in dermatomyositis","volume":"233","author":"Suarez-Calvet","year":"2014","journal-title":"J
+      Pathol"},{"key":"10.1016\/j.trsl.2015.01.007_bib24","doi-asserted-by":"crossref","first-page":"627","DOI":"10.1016\/j.cmet.2011.03.020","article-title":"mRNA
+      expression signatures of human skeletal muscle atrophy identify a natural compound
+      that increases muscle mass","volume":"13","author":"Kunkel","year":"2011","journal-title":"Cell
+      Metab"},{"key":"10.1016\/j.trsl.2015.01.007_bib25","doi-asserted-by":"crossref","first-page":"402","DOI":"10.1006\/meth.2001.1262","article-title":"Analysis
+      of relative gene expression data using real-time quantitative PCR and the 2(-delta
+      delta C(T)) method","volume":"25","author":"Livak","year":"2001","journal-title":"Methods"},{"key":"10.1016\/j.trsl.2015.01.007_bib26","doi-asserted-by":"crossref","first-page":"2495","DOI":"10.1001\/jama.292.20.2495","article-title":"Trends
+      in cardiovascular complications of diabetes","volume":"292","author":"Fox","year":"2004","journal-title":"JAMA"},{"key":"10.1016\/j.trsl.2015.01.007_bib27","doi-asserted-by":"crossref","first-page":"2889","DOI":"10.1016\/j.jacc.2013.11.002","article-title":"2013
+      ACC\/AHA guideline on the treatment of blood cholesterol to reduce atherosclerotic
+      cardiovascular risk in adults: a report of the American College of Cardiology\/American
+      Heart Association Task Force on practice guidelines","volume":"63","author":"Stone","year":"2013","journal-title":"J
+      Am Coll Cardiol"},{"key":"10.1016\/j.trsl.2015.01.007_bib28","doi-asserted-by":"crossref","first-page":"263","DOI":"10.1016\/j.taap.2012.01.008","article-title":"Muscle
+      mitochondrial metabolism and calcium signaling impairment in patients treated
+      with statins","volume":"259","author":"Sirvent","year":"2012","journal-title":"Toxicol
+      Appl Pharmacol"},{"key":"10.1016\/j.trsl.2015.01.007_bib29","doi-asserted-by":"crossref","first-page":"333","DOI":"10.1046\/j.1365-2125.1996.04178.x","article-title":"Lipid-lowering
+      drugs and mitochondrial function: effects of HMG-CoA reductase inhibitors on
+      serum ubiquinone and blood lactate\/pyruvate ratio","volume":"42","author":"De
+      Pinieux","year":"1996","journal-title":"Br J Clin Pharmacol"},{"key":"10.1016\/j.trsl.2015.01.007_bib30","doi-asserted-by":"crossref","first-page":"1067","DOI":"10.1016\/j.bbrc.2005.02.070","article-title":"Simvastatin
+      triggers mitochondria-induced Ca2+ signaling alteration in skeletal muscle","volume":"329","author":"Sirvent","year":"2005","journal-title":"Biochem
+      Biophys Res Commun"},{"key":"10.1016\/j.trsl.2015.01.007_bib31","doi-asserted-by":"crossref","first-page":"62","DOI":"10.1016\/0009-9236(95)90266-X","article-title":"Decreases
+      in serum ubiquinone concentrations do not result in reduced levels in muscle
+      tissue during short-term simvastatin treatment in humans","volume":"57","author":"Laaksonen","year":"1995","journal-title":"Clin
+      Pharmacol Ther"},{"key":"10.1016\/j.trsl.2015.01.007_bib32","doi-asserted-by":"crossref","first-page":"851","DOI":"10.1016\/S0002-9149(97)89180-1","article-title":"The
+      effect of simvastatin treatment on natural antioxidants in low-density lipoproteins
+      and high-energy phosphates and ubiquinone in skeletal muscle","volume":"77","author":"Laaksonen","year":"1996","journal-title":"Am
+      J Cardiol"},{"issue":"suppl","key":"10.1016\/j.trsl.2015.01.007_bib33","doi-asserted-by":"crossref","first-page":"s187","DOI":"10.1016\/0098-2997(94)90028-0","article-title":"Exogenous
+      CoQ10 supplementation prevents plasma ubiquinone reduction induced by HMG-CoA
+      reductase inhibitors","volume":"15","author":"Bargossi","year":"1994","journal-title":"Mol
+      Aspects Med"},{"key":"10.1016\/j.trsl.2015.01.007_bib34","doi-asserted-by":"crossref","first-page":"709","DOI":"10.1016\/j.jacc.2013.02.074","article-title":"Simvastatin
+      impairs exercise training adaptations","volume":"62","author":"Mikus","year":"2013","journal-title":"J
+      Am Coll Cardiol"},{"key":"10.1016\/j.trsl.2015.01.007_bib35","doi-asserted-by":"crossref","first-page":"183","DOI":"10.1016\/j.atherosclerosis.2004.06.014","article-title":"Statin
+      myotoxicity is associated with changes in the cardiopulmonary function","volume":"177","author":"Phillips","year":"2004","journal-title":"Atherosclerosis"},{"key":"10.1016\/j.trsl.2015.01.007_bib36","doi-asserted-by":"crossref","first-page":"76","DOI":"10.1002\/mus.21847","article-title":"Evaluation
+      of skeletal muscle during calf exercise by 31-phosphorus magnetic resonance
+      spectroscopy in patients on statin medications","volume":"43","author":"Wu","year":"2011","journal-title":"Muscle
+      Nerve"},{"key":"10.1016\/j.trsl.2015.01.007_bib37","doi-asserted-by":"crossref","first-page":"2337","DOI":"10.1161\/01.str.0000034125.94759.41","article-title":"ACC\/AHA\/NHLBI
+      Clinical Advisory on the use and safety of statins","volume":"33","author":"Pasternak","year":"2002","journal-title":"Stroke"},{"key":"10.1016\/j.trsl.2015.01.007_bib38","doi-asserted-by":"crossref","first-page":"55","DOI":"10.1002\/wsbm.1197","article-title":"Systems
+      analysis of biological networks in skeletal muscle function","volume":"5","author":"Smith","year":"2013","journal-title":"Wiley
+      Interdiscip Rev Syst Biol Med"},{"key":"10.1016\/j.trsl.2015.01.007_bib39","doi-asserted-by":"crossref","first-page":"712","DOI":"10.1038\/nri2852","article-title":"The
+      impact of the extracellular matrix on inflammation","volume":"10","author":"Sorokin","year":"2010","journal-title":"Nat
+      Rev Immunol"},{"key":"10.1016\/j.trsl.2015.01.007_bib40","doi-asserted-by":"crossref","first-page":"2944","DOI":"10.2337\/diabetes.51.10.2944","article-title":"Dysfunction
+      of mitochondria in human skeletal muscle in type 2 diabetes","volume":"51","author":"Kelley","year":"2002","journal-title":"Diabetes"},{"key":"10.1016\/j.trsl.2015.01.007_bib41","doi-asserted-by":"crossref","first-page":"1592","DOI":"10.2337\/db06-0981","article-title":"Mitochondrial
+      respiration is decreased in skeletal muscle of patients with type 2 diabetes","volume":"56","author":"Mogensen","year":"2007","journal-title":"Diabetes"},{"key":"10.1016\/j.trsl.2015.01.007_bib42","doi-asserted-by":"crossref","first-page":"789","DOI":"10.1056\/NEJMoa0801936","article-title":"SLCO1B1
+      variants and statin-induced myopathy\u2014a genomewide study","volume":"359","author":"Link","year":"2008","journal-title":"N
+      Engl J Med"},{"key":"10.1016\/j.trsl.2015.01.007_bib43","doi-asserted-by":"crossref","first-page":"2585","DOI":"10.1001\/jama.292.21.2585","article-title":"Incidence
+      of hospitalized rhabdomyolysis in patients treated with lipid-lowering drugs","volume":"292","author":"Graham","year":"2004","journal-title":"JAMA"},{"key":"10.1016\/j.trsl.2015.01.007_bib44","doi-asserted-by":"crossref","first-page":"6546","DOI":"10.1016\/S0021-9258(18)43600-9","article-title":"Synthesis
+      of delta 2-isopentenyl tRNA from mevalonate in cultured human fibroblasts","volume":"255","author":"Faust","year":"1980","journal-title":"J
+      Biol Chem"},{"key":"10.1016\/j.trsl.2015.01.007_bib45","doi-asserted-by":"crossref","first-page":"553","DOI":"10.1097\/MOL.0b013e3283168ecd","article-title":"Effects
+      of ubiquinone (coenzyme Q10) on myopathy in statin users","volume":"19","author":"Schaars","year":"2008","journal-title":"Curr
+      Opin Lipidol"}],"container-title":["Translational Research"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1931524415000341?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1931524415000341?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T19:41:05Z","timestamp":1651088465000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S1931524415000341"}},"issued":{"date-parts":[[2015,8]]},"references-count":45,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2015,8]]}},"alternative-id":["S1931524415000341"],"URL":"https:\/\/doi.org\/10.1016\/j.trsl.2015.01.007","ISSN":["1931-5244"],"issn-type":[{"value":"1931-5244","type":"print"}],"published":{"date-parts":[[2015,8]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+      article is maintained by"},{"value":"Evidence for metabolic aberrations in asymptomatic
+      persons with type 2 diabetes after initiation of simvastatin therapy","name":"articletitle","label":"Article
+      Title"},{"value":"Translational Research","name":"journaltitle","label":"Journal
+      Title"},{"value":"https:\/\/doi.org\/10.1016\/j.trsl.2015.01.007","name":"articlelink","label":"CrossRef
+      DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+      Type"},{"value":"Published by Elsevier B.V.","name":"copyright","label":"Copyright"}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T23:40:37Z","timestamp":1651102837968},"reference-count":49,"publisher":"Elsevier
+      BV","issue":"1","license":[{"start":{"date-parts":[[2022,3,1]],"date-time":"2022-03-01T00:00:00Z","timestamp":1646092800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Perfectionnement
+      en P\u00e9diatrie"],"published-print":{"date-parts":[[2022,3]]},"DOI":"10.1016\/j.perped.2022.01.002","type":"journal-article","created":{"date-parts":[[2022,2,9]],"date-time":"2022-02-09T13:05:44Z","timestamp":1644411944000},"page":"14-20","update-policy":"http:\/\/dx.doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":0,"title":["Les
+      assistances extracorporelles respiratoires et circulatoires de l\u2019enfant
+      et du nouveau-n\u00e9"],"prefix":"10.1016","volume":"5","author":[{"given":"J.","family":"Rambaud","sequence":"first","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.perped.2022.01.002_bib0250","doi-asserted-by":"crossref","first-page":"832","DOI":"10.1097\/MAT.0000000000000697","article-title":"Esperanza:
+      The First Neonatal ECMO Patient","volume":"63","author":"Bartlett","year":"2017","journal-title":"ASAIO
+      J"},{"key":"10.1016\/j.perped.2022.01.002_bib0255","doi-asserted-by":"crossref","first-page":"479","DOI":"10.1542\/peds.76.4.479","article-title":"Extracorporeal
+      circulation in neonatal respiratory failure: a prospective randomized study","volume":"76","author":"Bartlett","year":"1985","journal-title":"Pediatrics"},{"key":"10.1016\/j.perped.2022.01.002_bib0260","doi-asserted-by":"crossref","first-page":"276","DOI":"10.1164\/rccm.201205-0815OC","article-title":"Extracorporeal
+      membrane oxygenation for pandemic influenza A(H1N1)-induced acute respiratory
+      distress syndrome: a cohort study and propensity-matched analysis","volume":"187","author":"Pham","year":"2013","journal-title":"Am
+      J Respir Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0265","doi-asserted-by":"crossref","first-page":"545","DOI":"10.1016\/S0140-6736(20)30733-9","article-title":"Venoarterial
+      extracorporeal membrane oxygenation to rescue sepsis-induced cardiogenic shock:
+      a retrospective, multicentre, international cohort study","volume":"396","author":"Br\u00e9chot","year":"2020","journal-title":"Lancet"},{"key":"10.1016\/j.perped.2022.01.002_bib0270","doi-asserted-by":"crossref","first-page":"1616","DOI":"10.1097\/CCM.0b013e31828a2370","article-title":"Venoarterial
+      extracorporeal membrane oxygenation support for refractory cardiovascular dysfunction
+      during severe bacterial septic shock","volume":"41","author":"Br\u00e9chot","year":"2013","journal-title":"Crit
+      Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0275","doi-asserted-by":"crossref","first-page":"1965","DOI":"10.1056\/NEJMoa1800385","article-title":"Extracorporeal
+      membrane oxygenation for severe acute respiratory distress syndrome","volume":"378","author":"Combes","year":"2018","journal-title":"N
+      Engl J Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0280","doi-asserted-by":"crossref","first-page":"692","DOI":"10.1097\/PCC.0000000000002753","article-title":"Multisite
+      veno-venous cannulation for neonates and nonambulatory children","volume":"22","author":"Lillie","year":"2021","journal-title":"Pediatr
+      Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0285","doi-asserted-by":"crossref","first-page":"750","DOI":"10.1097\/PCC.0000000000001191","article-title":"Validation
+      of the vasoactive-inotropic score in pediatric sepsis","volume":"18","author":"McIntosh","year":"2017","journal-title":"Pediatr
+      Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0290","doi-asserted-by":"crossref","first-page":"398","DOI":"10.1016\/j.acvd.2014.04.006","article-title":"Mechanical
+      circulatory support for infants and small children","volume":"107","author":"Gournay","year":"2014","journal-title":"Arch
+      Cardiovasc Dis"},{"key":"10.1016\/j.perped.2022.01.002_bib0295","doi-asserted-by":"crossref","first-page":"600","DOI":"10.4103\/0972-5229.167038","article-title":"Venoarterial
+      extracorporeal membrane oxygenation support for neonatal and pediatric refractory
+      septic shock","volume":"19","author":"Rambaud","year":"2015","journal-title":"Indian
+      J Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0300","doi-asserted-by":"crossref","first-page":"1948","DOI":"10.1007\/s00134-016-4574-2","article-title":"Refractory
+      septic shock in children: a European Society of Paediatric and Neonatal Intensive
+      Care definition","volume":"42","author":"Morin","year":"2016","journal-title":"Intensive
+      Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0305","doi-asserted-by":"crossref","first-page":"32","DOI":"10.1186\/s13613-021-00822-8","article-title":"Validation
+      of the pediatric refractory septic shock definition: post hoc analysis of a
+      controlled trial","volume":"11","author":"Morin","year":"2021","journal-title":"Ann
+      Intensive Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0310","doi-asserted-by":"crossref","first-page":"762","DOI":"10.1164\/rccm.201609-1945OC","article-title":"Factors
+      associated with bleeding and thrombosis in children receiving extracorporeal
+      membrane oxygenation","volume":"196","author":"Dalton","year":"2017","journal-title":"Am
+      J Respir Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0315","doi-asserted-by":"crossref","first-page":"562","DOI":"10.1097\/ALN.0000000000003044","article-title":"Anticoagulation
+      management and antithrombin supplementation practice during veno-venous extracorporeal
+      membrane oxygenation: a worldwide survey","volume":"132","author":"Protti","year":"2020","journal-title":"Anesthesiology"},{"key":"10.1016\/j.perped.2022.01.002_bib0320","doi-asserted-by":"crossref","first-page":"1636","DOI":"10.1097\/CCM.0000000000004590","article-title":"A
+      randomized controlled trial of antithrombin supplementation during extracorporeal
+      membrane oxygenation","volume":"48","author":"Panigada","year":"2020","journal-title":"Crit
+      Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0325","doi-asserted-by":"crossref","first-page":"456","DOI":"10.1097\/MAT.0000000000000603","article-title":"Pediatric
+      extracorporeal life support organization registry international report 2016","volume":"63","author":"Barbaro","year":"2017","journal-title":"ASAIO
+      J"},{"key":"10.1016\/j.perped.2022.01.002_bib0330","doi-asserted-by":"crossref","first-page":"1525","DOI":"10.1164\/rccm.202001-0023OC","article-title":"The
+      early change in PaCO2\u00a0after extracorporeal membrane oxygenation initiation
+      is associated with neurological complications","volume":"201","author":"Cavayas","year":"2020","journal-title":"Am
+      J Respir Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0335","doi-asserted-by":"crossref","first-page":"935","DOI":"10.1007\/s12028-020-01111-1","article-title":"Continuous
+      monitoring of cerebral autoregulation in children supported by extracorporeal
+      membrane oxygenation: a pilot study","volume":"34","author":"Joram","year":"2021","journal-title":"Neurocrit
+      Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0340","doi-asserted-by":"crossref","DOI":"10.1097\/WNP.0000000000000890","article-title":"Continuous
+      amplitude-integrated electroencephalography during neonatal and pediatric extracorporeal
+      membrane oxygenation","author":"Chahine","year":"2021","journal-title":"J Clin
+      Neurophysiol"},{"key":"10.1016\/j.perped.2022.01.002_bib0345","doi-asserted-by":"crossref","first-page":"447","DOI":"10.1111\/jocs.14060","article-title":"Transcranial
+      Doppler is an effective method in assessing cerebral blood flow patterns during
+      peripheral venoarterial extracorporeal membrane oxygenation","volume":"34","author":"Salna","year":"2019","journal-title":"J
+      Card Surg"},{"key":"10.1016\/j.perped.2022.01.002_bib0350","doi-asserted-by":"crossref","first-page":"409","DOI":"10.1007\/s12028-020-01179-9","article-title":"Association
+      of cerebral oxymetry with short-term outcome in critically ill children undergoing
+      extracorporeal membrane oxygenation","volume":"35","author":"Vedrenne-Cloquet","year":"2021","journal-title":"Neurocrit
+      Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0355","doi-asserted-by":"crossref","first-page":"68","DOI":"10.1053\/j.semperi.2017.12.002","article-title":"An
+      overview of medical ECMO for neonates","volume":"42","author":"Fletcher","year":"2018","journal-title":"Semin
+      Perinatol"},{"key":"10.1016\/j.perped.2022.01.002_bib0360","doi-asserted-by":"crossref","first-page":"975","DOI":"10.1016\/j.jpedsurg.2017.03.022","article-title":"Centrifugal
+      pumps and hemolysis in pediatric extracorporeal membrane oxygenation (ECMO)
+      patients: An analysis of Extracorporeal Life Support Organization (ELSO) registry
+      data","volume":"52","author":"O\u2019Brien","year":"2017","journal-title":"J
+      Pediatr Surg"},{"key":"10.1016\/j.perped.2022.01.002_bib0365","doi-asserted-by":"crossref","first-page":"239","DOI":"10.1097\/MAT.0000000000000974","article-title":"Hemolysis
+      and plasma free hemoglobin during extracorporeal membrane oxygenation support:
+      from clinical implications to laboratory details","volume":"66","author":"Dufour","year":"2020","journal-title":"ASAIO
+      J"},{"key":"10.1016\/j.perped.2022.01.002_bib0370","doi-asserted-by":"crossref","first-page":"277","DOI":"10.1097\/PCC.0b013e3181e28894","article-title":"Infections
+      acquired during extracorporeal membrane oxygenation in neonates, children, and
+      adults","volume":"12","author":"Bizzarro","year":"2011","journal-title":"Pediatr
+      Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0375","doi-asserted-by":"crossref","first-page":"2260","DOI":"10.1016\/j.jpedsurg.2011.09.013","article-title":"Defining
+      risk for infectious complications on extracorporeal life support","volume":"46","author":"Vogel","year":"2011","journal-title":"J
+      Pediatr Surg"},{"key":"10.1016\/j.perped.2022.01.002_bib0380","doi-asserted-by":"crossref","first-page":"392","DOI":"10.5005\/jp-journals-10071-23231","article-title":"Nosocomial
+      infections in neonates supported by extracorporeal membrane oxygenation: first
+      French retrospective study","volume":"23","author":"Rambaud","year":"2019","journal-title":"Indian
+      J Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0385","doi-asserted-by":"crossref","first-page":"1633","DOI":"10.1093\/cid\/cis783","article-title":"Nosocomial
+      infections in adult cardiogenic shock patients supported by venoarterial extracorporeal
+      membrane oxygenation","volume":"55","author":"Schmidt","year":"2012","journal-title":"Clin
+      Infect Dis"},{"key":"10.1016\/j.perped.2022.01.002_bib0390","doi-asserted-by":"crossref","first-page":"407","DOI":"10.1097\/MAT.0b013e3182579218","article-title":"A
+      multicenter international survey of renal supportive therapy during ECMO: the
+      Kidney Intervention During Extracorporeal Membrane Oxygenation (KIDMO) group","volume":"58","author":"Fleming","year":"2012","journal-title":"ASAIO
+      J"},{"key":"10.1016\/j.perped.2022.01.002_bib0395","doi-asserted-by":"crossref","first-page":"493","DOI":"10.1097\/MCC.0000000000000559","article-title":"Continuous
+      renal replacement therapy during extracorporeal membrane oxygenation: why, when
+      and how?","volume":"24","author":"Ostermann","year":"2018","journal-title":"Curr
+      Opin Crit Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0400","doi-asserted-by":"crossref","first-page":"341","DOI":"10.1159\/000504287","article-title":"Outcomes
+      among patients treated with renal replacement therapy during extracorporeal
+      membrane oxygenation: a single-center retrospective study","volume":"49","author":"Dado","year":"2020","journal-title":"Blood
+      Purif"},{"key":"10.1016\/j.perped.2022.01.002_bib0405","doi-asserted-by":"crossref","first-page":"77","DOI":"10.1097\/MAT.0000000000000748","article-title":"The
+      functional immune response of patients on extracorporeal life support","volume":"65","author":"Beshish","year":"2019","journal-title":"ASAIO
+      J"},{"key":"10.1016\/j.perped.2022.01.002_bib0410","doi-asserted-by":"crossref","first-page":"387","DOI":"10.1186\/s13054-016-1570-4","article-title":"The
+      inflammatory response to extracorporeal membrane oxygenation (ECMO): a review
+      of the pathophysiology","volume":"20","author":"Millar","year":"2016","journal-title":"Crit
+      Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0415","doi-asserted-by":"crossref","first-page":"9","DOI":"10.1186\/s13054-020-03444-x","article-title":"Venoarterial
+      extracorporeal membrane oxygenation induces early immune alterations","volume":"25","author":"Frerou","year":"2021","journal-title":"Crit
+      Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0420","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1186\/s40635-017-0166-x","article-title":"HLA-DR
+      expression in neonates after cardiac surgery under cardiopulmonary bypass: a
+      pilot study","volume":"6","author":"Chenouard","year":"2018","journal-title":"Intensive
+      Care Med Exp"},{"key":"10.1016\/j.perped.2022.01.002_bib0425","doi-asserted-by":"crossref","first-page":"1636","DOI":"10.1016\/j.athoracsur.2020.05.071","article-title":"Monocytic
+      human leukocyte antigen DR expression in young infants undergoing cardiopulmonary
+      bypass","volume":"111","author":"Chenouard","year":"2021","journal-title":"Ann
+      Thorac Surg"},{"key":"10.1016\/j.perped.2022.01.002_bib0430","doi-asserted-by":"crossref","first-page":"166","DOI":"10.1053\/j.sempedsurg.2017.04.006","article-title":"ECMO
+      in CDH: Is there a role?","volume":"26","author":"Kays","year":"2017","journal-title":"Semin
+      Pediatr Surg"},{"key":"10.1016\/j.perped.2022.01.002_bib0435","first-page":"213","article-title":"Congenital
+      diaphragmatic hernia--results of an ECMO-centre","volume":"215","author":"Dahlheim","year":"2003","journal-title":"Klin
+      Padiatr"},{"key":"10.1016\/j.perped.2022.01.002_bib0440","doi-asserted-by":"crossref","DOI":"10.23736\/S0026-4946.20.05725-4","article-title":"Extracorporeal
+      membrane oxygenation for immunocompromised children with acute respiratory distress
+      syndrome: a French referral center cohort","author":"Robert","year":"2020","journal-title":"Minerva
+      Pediat"},{"key":"10.1016\/j.perped.2022.01.002_bib0445","doi-asserted-by":"crossref","first-page":"1297","DOI":"10.1164\/rccm.201708-1761OC","article-title":"Six-month
+      Outcome of Immunocompromised Severe ARDS Patients Rescued by ECMO. An International
+      Multicenter Retrospective Study","volume":"197","author":"Schmidt","year":"2018","journal-title":"Am
+      J Respir Crit Care Me"},{"key":"10.1016\/j.perped.2022.01.002_bib0450","doi-asserted-by":"crossref","first-page":"70","DOI":"10.1186\/s13613-021-00856-y","article-title":"Malignant
+      pertussis in infants: factors associated with mortality in a multicenter cohort
+      study","volume":"11","author":"Coquaz-Garoudet","year":"2021","journal-title":"Ann
+      Intensive Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0455","doi-asserted-by":"crossref","first-page":"7","DOI":"10.1186\/s13054-019-2722-0","article-title":"ECPR
+      for out-of-hospital cardiac arrest: more evidence is needed","volume":"24","author":"MacLaren","year":"2020","journal-title":"Crit
+      Care"},{"key":"10.1016\/j.perped.2022.01.002_bib0460","doi-asserted-by":"crossref","first-page":"297","DOI":"10.1097\/MAT.0b013e31825a21ff","article-title":"Pediatric
+      outcomes after extracorporeal membrane oxygenation for cardiac disease and for
+      cardiac arrest: a review","volume":"58","author":"Joffe","year":"2012","journal-title":"ASAIO
+      J"},{"key":"10.1016\/j.perped.2022.01.002_bib0465","doi-asserted-by":"crossref","first-page":"1060","DOI":"10.1016\/j.jpedsurg.2018.02.039","article-title":"Evaluating
+      quality of life of extracorporeal membrane oxygenation survivors using the pediatric
+      quality of life inventory survey","volume":"53","author":"Yu","year":"2018","journal-title":"J
+      Pediatr Surg"},{"key":"10.1016\/j.perped.2022.01.002_bib0470","doi-asserted-by":"crossref","first-page":"e723","DOI":"10.1097\/PCC.0000000000002421","article-title":"Mobile
+      extracorporeal membrane oxygenation: 5-year experience of a french pediatric
+      and neonatal center","volume":"21","author":"Soreze","year":"2020","journal-title":"Pediatr
+      Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0475","doi-asserted-by":"crossref","first-page":"940","DOI":"10.1007\/s00134-015-4144-z","article-title":"Transportation
+      of children on extracorporeal membrane oxygenation: one-year experience of the
+      first neonatal and paediatric mobile ECMO team in the north of France","volume":"42","author":"Rambaud","year":"2016","journal-title":"Intensive
+      Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0480","doi-asserted-by":"crossref","first-page":"e558","DOI":"10.1097\/PCC.0000000000002748","article-title":"Frequency
+      of extracorporeal membrane oxygenation support and outcomes after implementation
+      of a structured PICU network in neonates and children: a prospective population-based
+      study in the west of France","volume":"22","author":"Bourgoin","year":"2021","journal-title":"Pediatr
+      Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0485","doi-asserted-by":"crossref","first-page":"992","DOI":"10.1097\/PCC.0000000000000897","article-title":"Outcome
+      comparison in children undergoing extracorporeal life support initiated at a
+      local hospital by a mobile cardiorespiratory assistance unit or at a referral
+      center","volume":"17","author":"d\u2019Aranda","year":"2016","journal-title":"Pediatr
+      Crit Care Med"},{"key":"10.1016\/j.perped.2022.01.002_bib0245","doi-asserted-by":"crossref","first-page":"384","DOI":"10.1177\/0267659118824006","article-title":"Mobile
+      extracorporeal membrane oxygenation for children: single-center 10\u00a0years\u2019
+      experience","volume":"34","author":"Fouilloux","year":"2019","journal-title":"Perfusion"}],"container-title":["Perfectionnement
+      en P\u00e9diatrie"],"language":"fr","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2588932X2200002X?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2588932X2200002X?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T06:16:33Z","timestamp":1651040193000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S2588932X2200002X"}},"issued":{"date-parts":[[2022,3]]},"references-count":49,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2022,3]]}},"alternative-id":["S2588932X2200002X"],"URL":"https:\/\/doi.org\/10.1016\/j.perped.2022.01.002","ISSN":["2588-932X"],"issn-type":[{"value":"2588-932X","type":"print"}],"published":{"date-parts":[[2022,3]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+      article is maintained by"},{"value":"Les assistances extracorporelles respiratoires
+      et circulatoires de l\u2019enfant et du nouveau-n\u00e9","name":"articletitle","label":"Article
+      Title"},{"value":"Perfectionnement en P\u00e9diatrie","name":"journaltitle","label":"Journal
+      Title"},{"value":"https:\/\/doi.org\/10.1016\/j.perped.2022.01.002","name":"articlelink","label":"CrossRef
+      DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+      Type"},{"value":"\u00a9 2022 Soci\u00e9t\u00e9 Fran\u00e7aise de P\u00e9diatrie
+      (SFP). Published by Elsevier Masson SAS. All rights reserved.","name":"copyright","label":"Copyright"}]}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '9311'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:25:59 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -97,16 +295,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '3806'
-      content-type:
-      - application/json
-      date:
-      - Sat, 09 Nov 2024 06:35:59 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -115,10 +305,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

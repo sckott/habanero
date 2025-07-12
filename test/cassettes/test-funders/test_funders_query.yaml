@@ -11,24 +11,29 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/funders?query=NSF&rows=2
   response:
     content: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"NSF"},"total-results":89,"items":[{"id":"100014071","location":"United
       States","name":"Large Facilities Office","alt-names":["Large Facilities Office
       at NSF","NSF''s Large Facilities Office","National Science Foundation''s Large
-      Facilities Office","BFA\/LFO","LFO","NSF Large Facilities Office"],"uri":"http:\/\/dx.doi.org\/10.13039\/100014071","replaces":[],"replaced-by":[],"tokens":["large","facilities","office","large","facilities","office","at","nsf","nsfs","large","facilities","office","national","science","foundations","large","facilities","office","bfa\/lfo","lfo","nsf","large","facilities","office"]},{"id":"100000150","location":"United
-      States","name":"Division of Emerging Frontiers and Multidisciplinary Activities","alt-names":["Office
-      of Emerging Frontiers and Multidisciplinary Activities","EFMA","NSF''s Emerging
-      Frontiers in Research and Innovation","NSF EFRI","Emerging Frontiers in Research
-      and Innovation","EFRI","NSF''s Division of Emerging Frontiers in Research and
-      Innovation","Division of Emerging Frontiers in Research and Innovation","NSF
-      Emerging Frontiers in Research and Innovation","NSF: Emerging Frontiers In Research
-      And Innovation"],"uri":"http:\/\/dx.doi.org\/10.13039\/100000150","replaces":[],"replaced-by":[],"tokens":["division","of","emerging","frontiers","and","multidisciplinary","activities","office","of","emerging","frontiers","and","multidisciplinary","activities","efma","nsfs","emerging","frontiers","in","research","and","innovation","nsf","efri","emerging","frontiers","in","research","and","innovation","efri","nsfs","division","of","emerging","frontiers","in","research","and","innovation","division","of","emerging","frontiers","in","research","and","innovation","nsf","emerging","frontiers","in","research","and","innovation","nsf:","emerging","frontiers","in","research","and","innovation"]}]}}'
+      Facilities Office","BFA\/LFO","LFO","NSF Large Facilities Office"],"uri":"https:\/\/doi.org\/10.13039\/100014071","replaces":[],"replaced-by":[],"tokens":["large","facilities","office","large","facilities","office","at","nsf","nsfs","large","facilities","office","national","science","foundations","large","facilities","office","bfa\/lfo","lfo","nsf","large","facilities","office"]},{"id":"100000106","location":"United
+      States","name":"Office of Integrative Activities","alt-names":["OIA","NSF Office
+      of Integrative Activities","National Science Foundation''s Office of Integrative
+      Activities","NSF OIA","Office of Integrative Activities, National Science Foundation","NSF''s
+      Office of Integrative Activities","OD\/OIA"],"uri":"https:\/\/doi.org\/10.13039\/100000106","replaces":["100007522"],"replaced-by":[],"tokens":["office","of","integrative","activities","oia","nsf","office","of","integrative","activities","national","science","foundations","office","of","integrative","activities","nsf","oia","office","of","integrative","activities","national","science","foundation","nsfs","office","of","integrative","activities","od\/oia"]}]}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '487'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 11 Jul 2025 23:25:11 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -36,16 +41,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '570'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:57:42 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -54,10 +51,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

@@ -11,9 +11,9 @@ interactions:
       host:
       - doi.org
       user-agent:
-      - python-requests/2.32.3 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-requests/2.32.3 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://doi.org/10.1126/foo
   response:
@@ -137,10 +137,8 @@ interactions:
       \   }\n\n    function validateDoi(doi) {\n        const regEx = /^10(?:\\.[^\\s\\/]+)?\\//;\n
       \       return regEx.test(doi);\n    }\n</script>\n\n</body>\n</html>\n"
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 8d1aca1508cf30ab-SEA
+      - 95dd66038ddb680f-SEA
       Connection:
       - keep-alive
       Content-Encoding:
@@ -148,11 +146,11 @@ interactions:
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Sat, 12 Oct 2024 23:15:00 GMT
+      - Sat, 12 Jul 2025 03:19:21 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Lck8LPED7pQJbOWgoso4NryU0wURpo7D9g3qRHYfPa2L6TCDYFPbELUiIKPTFAdt4RxeySc4nmRvZeLyY1nwLeLgzn4GaRLak9JFegYwc7IwmIZIWtnA2mU%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=fN23kV0AuNx27M2mpHWWjDepDCFytEtkNgaJhfV73A4sMvbQTPnfj62FTG%2B5FGWBy1vn0HckOD3STODZDZVZcmLo9bxdk%2B1FVaPEQcOt0KiPcv%2FmvbbY0Z0%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -161,8 +159,13 @@ interactions:
       - chunked
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=17781&min_rtt=17135&rtt_var=7717&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2828&recv_bytes=847&delivery_rate=129848&cwnd=237&unsent_bytes=0&cid=5e86d4f6786ff06c&ts=310&x=0"
       vary:
       - Origin
+      - accept-encoding
     http_version: HTTP/1.1
     status_code: 404
 version: 1

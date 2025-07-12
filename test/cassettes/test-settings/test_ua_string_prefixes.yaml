@@ -11,99 +11,141 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91 foo bar
+      - python-httpx/0.27.2 habanero/2.3.0 foo bar
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91 foo bar
+      - python-httpx/0.27.2 habanero/2.3.0 foo bar
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016/works?sample=2
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2024,8,20]],"date-time":"2024-08-20T19:14:42Z","timestamp":1724181282740},"reference-count":43,"publisher":"Elsevier
-      BV","issue":"2","license":[{"start":{"date-parts":[[2003,7,1]],"date-time":"2003-07-01T00:00:00Z","timestamp":1057017600000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-      of Catalysis"],"published-print":{"date-parts":[[2003,7]]},"DOI":"10.1016\/s0021-9517(03)00147-7","type":"journal-article","created":{"date-parts":[[2003,5,12]],"date-time":"2003-05-12T21:09:12Z","timestamp":1052773752000},"page":"478-486","source":"Crossref","is-referenced-by-count":92,"title":["CO-induced
-      surface structural changes of Pt on oxide-supported Pt catalysts studied by
-      DRIFTS"],"prefix":"10.1016","volume":"217","author":[{"given":"J.","family":"Rask\u00f3","sequence":"first","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/S0021-9517(03)00147-7_BIB001_1","first-page":"4783","volume":"89","author":"Solymosi","year":"1986","journal-title":"J.
-      Phys. Chem."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB001_2","doi-asserted-by":"crossref","first-page":"5312","DOI":"10.1021\/j100412a081","volume":"90","author":"Solymosi","year":"1986","journal-title":"J.
-      Phys. Chem."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB002_1","doi-asserted-by":"crossref","first-page":"2570","DOI":"10.1039\/f19787402570","volume":"74","author":"Primet","year":"1978","journal-title":"J.
-      Chem. Soc. Faraday I"},{"key":"10.1016\/S0021-9517(03)00147-7_BIB002_2","doi-asserted-by":"crossref","first-page":"411","DOI":"10.1016\/0304-5102(78)80011-X","volume":"4","author":"Primet","year":"1978","journal-title":"J.
-      Mol. Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB003","doi-asserted-by":"crossref","first-page":"6748","DOI":"10.1063\/1.440987","volume":"74","author":"Rice","year":"1981","journal-title":"J.
-      Chem. Phys."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB004","doi-asserted-by":"crossref","first-page":"7250","DOI":"10.1021\/j100381a054","volume":"94","author":"Solymosi","year":"1990","journal-title":"J.
-      Phys. Chem."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB005","doi-asserted-by":"crossref","first-page":"107","DOI":"10.1016\/0021-9517(89)90011-0","volume":"115","author":"Solymosi","year":"1989","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB006_1","doi-asserted-by":"crossref","first-page":"17732","DOI":"10.1021\/jp9627638","volume":"100","author":"Berk\u00f3","year":"1996","journal-title":"J.
-      Phys. Chem."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB006_2","doi-asserted-by":"crossref","first-page":"91","DOI":"10.1006\/jcat.1998.2368","volume":"183","author":"Berk\u00f3","year":"1999","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB007","first-page":"10251","volume":"104","author":"Berk\u00f3","year":"2000","journal-title":"J.
-      Phys. Chem. B"},{"key":"10.1016\/S0021-9517(03)00147-7_BIB008","doi-asserted-by":"crossref","first-page":"50","DOI":"10.1016\/0021-9517(82)90079-3","volume":"73","author":"Stoop","year":"1982","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB009","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1023\/A:1018919412751","volume":"43","author":"Hippe","year":"1997","journal-title":"Catal.
-      Lett."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB010","doi-asserted-by":"crossref","first-page":"320","DOI":"10.1016\/0021-9517(81)90235-9","volume":"71","author":"Cant","year":"1981","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB011","first-page":"319","volume":"110","author":"Haaland","year":"1982","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB012","doi-asserted-by":"crossref","first-page":"319","DOI":"10.1016\/0021-9517(88)90323-5","volume":"110","author":"Li","year":"1988","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB013","doi-asserted-by":"crossref","first-page":"35","DOI":"10.1006\/jcat.2001.3369","volume":"204","author":"Fanson","year":"2001","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB014","doi-asserted-by":"crossref","first-page":"15","DOI":"10.1016\/0039-6028(93)90552-U","volume":"286","author":"Brandt","year":"1993","journal-title":"Surf.
-      Sci."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB015","doi-asserted-by":"crossref","first-page":"257","DOI":"10.1016\/S0020-1693(00)81992-1","volume":"17","author":"Tripathi","year":"1976","journal-title":"Inorg.
-      Chim. Acta"},{"key":"10.1016\/S0021-9517(03)00147-7_BIB016","first-page":"471","volume":"6","author":"Hartley","year":"1978"},{"key":"10.1016\/S0021-9517(03)00147-7_BIB017","first-page":"351","volume":"6","author":"Roundhill","year":"1978"},{"key":"10.1016\/S0021-9517(03)00147-7_BIB018","doi-asserted-by":"crossref","first-page":"7234","DOI":"10.1021\/ja00803a009","volume":"95","author":"K\u00fcndig","year":"1973","journal-title":"J.
-      Am. Chem. Soc."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB019","doi-asserted-by":"crossref","first-page":"171","DOI":"10.1007\/BF00767199","volume":"12","author":"Li","year":"1992","journal-title":"Catal.
-      Lett."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB020","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1007\/BF00806878","volume":"34","author":"Stakheev","year":"1995","journal-title":"Catal.
-      Lett."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB021","doi-asserted-by":"crossref","first-page":"191","DOI":"10.1007\/BF00805582","volume":"39","author":"Mojet","year":"1996","journal-title":"Catal.
-      Lett."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB022","doi-asserted-by":"crossref","first-page":"382","DOI":"10.1006\/jcat.1997.1716","volume":"169","author":"Stakheev","year":"1997","journal-title":"J.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB023","doi-asserted-by":"crossref","first-page":"3994","DOI":"10.1021\/ja9638723","volume":"119","author":"Su","year":"1997","journal-title":"J.
-      Am. Chem. Soc."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB024","doi-asserted-by":"crossref","first-page":"3858","DOI":"10.1103\/PhysRevLett.77.3858","volume":"77","author":"Su","year":"1996","journal-title":"Phys.
-      Rev. Lett."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB025","doi-asserted-by":"crossref","first-page":"5059","DOI":"10.1039\/a906334j","volume":"1","author":"Harle","year":"1999","journal-title":"Phys.
-      Chem. Chem. Phys."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB026","doi-asserted-by":"crossref","first-page":"3797","DOI":"10.1021\/jp003585s","volume":"105","author":"Rupprechter","year":"2001","journal-title":"J.
-      Phys. Chem."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB027","doi-asserted-by":"crossref","first-page":"L627","DOI":"10.1016\/S0039-6028(00)00639-7","volume":"463","author":"Kung","year":"2000","journal-title":"Surf.
-      Sci."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB028","doi-asserted-by":"crossref","first-page":"331","DOI":"10.1016\/S0169-4332(98)00298-0","volume":"135","author":"Hadjiivanov","year":"1998","journal-title":"Appl.
-      Surf. Sci."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB029","doi-asserted-by":"crossref","first-page":"233","DOI":"10.1080\/01614946808064705","volume":"1","author":"Solymosi","year":"1967","journal-title":"Catal.
-      Rev."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB030","doi-asserted-by":"crossref","first-page":"7147","DOI":"10.1021\/j100080a009","volume":"98","author":"Rask\u00f3","year":"1994","journal-title":"J.
-      Phys. Chem."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB031","doi-asserted-by":"crossref","first-page":"11","DOI":"10.1023\/A:1019072021006","volume":"56","author":"Rask\u00f3","year":"1998","journal-title":"Catal.
-      Lett."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB032","doi-asserted-by":"crossref","first-page":"4437","DOI":"10.1039\/b103627k","volume":"3","author":"Rask\u00f3","year":"2001","journal-title":"Phys.
-      Chem. Chem. Phys."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB033","doi-asserted-by":"crossref","first-page":"13","DOI":"10.1021\/la00079a003","volume":"4","author":"Klier","year":"1988","journal-title":"Langmuir"},{"key":"10.1016\/S0021-9517(03)00147-7_BIB034","doi-asserted-by":"crossref","first-page":"95","DOI":"10.1016\/0304-5102(93)87112-L","volume":"80","author":"Bischoff","year":"1993","journal-title":"J.
-      Mol. Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB035","doi-asserted-by":"crossref","first-page":"233","DOI":"10.1039\/ft9949000233","volume":"90","author":"Zholobenko","year":"1994","journal-title":"Chem.
-      Soc. Faraday Trans."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB036","first-page":"8","volume":"117","author":"White","year":"1973","journal-title":"Catal.
-      Rev.-Sci. Eng."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB037","unstructured":"J.
-      S\u00e1rk\u00e1ny, University thesis, Szeged, 1977, p. 50"},{"key":"10.1016\/S0021-9517(03)00147-7_BIB038","doi-asserted-by":"crossref","first-page":"53","DOI":"10.1016\/0166-9834(82)80289-3","volume":"4","author":"S\u00e1rk\u00e1ny","year":"1982","journal-title":"Appl.
-      Catal."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB039","doi-asserted-by":"crossref","first-page":"548","DOI":"10.1021\/i300012a007","volume":"22","author":"S\u00e1rk\u00e1ny","year":"1983","journal-title":"Ind.
-      Eng. Chem. Prod. Res. Dev."},{"key":"10.1016\/S0021-9517(03)00147-7_BIB040","doi-asserted-by":"crossref","first-page":"85","DOI":"10.1016\/0166-9834(83)80297-8","volume":"5","author":"S\u00e1rk\u00e1ny","year":"1983","journal-title":"Appl.
-      Catal."}],"container-title":["Journal of Catalysis"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0021951703001477?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0021951703001477?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,3,21]],"date-time":"2019-03-21T09:57:53Z","timestamp":1553162273000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0021951703001477"}},"issued":{"date-parts":[[2003,7]]},"references-count":43,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2003,7]]}},"alternative-id":["S0021951703001477"],"URL":"http:\/\/dx.doi.org\/10.1016\/s0021-9517(03)00147-7","ISSN":["0021-9517"],"issn-type":[{"value":"0021-9517","type":"print"}],"published":{"date-parts":[[2003,7]]}},{"indexed":{"date-parts":[[2022,10,25]],"date-time":"2022-10-25T02:51:05Z","timestamp":1666666265091},"reference-count":17,"publisher":"Elsevier
-      BV","issue":"2","license":[{"start":{"date-parts":[[1982,6,1]],"date-time":"1982-06-01T00:00:00Z","timestamp":391737600000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2013,7,17]],"date-time":"2013-07-17T00:00:00Z","timestamp":1374019200000},"content-version":"vor","delay-in-days":11369,"URL":"https:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-      of Multivariate Analysis"],"published-print":{"date-parts":[[1982,6]]},"DOI":"10.1016\/0047-259x(82)90017-3","type":"journal-article","created":{"date-parts":[[2004,8,10]],"date-time":"2004-08-10T19:55:49Z","timestamp":1092167749000},"page":"230-247","source":"Crossref","is-referenced-by-count":3,"title":["Local
-      asymptotic normality for progressively censored likelihood ratio statistics
-      and applications"],"prefix":"10.1016","volume":"12","author":[{"given":"Joseph","family":"Gardiner","sequence":"first","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/0047-259X(82)90017-3_BIB1","first-page":"15","article-title":"Nonparametric
-      inference in connection with multiple decrement models","volume":"3","author":"Aalen","year":"1976","journal-title":"Scand.
-      J. Statist."},{"issue":"A","key":"10.1016\/0047-259X(82)90017-3_BIB2","doi-asserted-by":"crossref","first-page":"21","DOI":"10.1007\/BF02480263","article-title":"Asymptotic
-      expansion of the log-likelihood function based on stopping times defined on
-      a Markov process","volume":"31","author":"Akritas","year":"1979","journal-title":"Ann.
-      Inst. Statist. Math."},{"key":"10.1016\/0047-259X(82)90017-3_BIB3","doi-asserted-by":"crossref","first-page":"71","DOI":"10.1080\/03610927808827738","article-title":"Sample
-      size, parameter rates and contiguity\u2014the iid case","volume":"A8","author":"Akritas","year":"1979","journal-title":"Commun.
-      Statist."},{"key":"10.1016\/0047-259X(82)90017-3_BIB4","series-title":"Proc.
-      42nd Session Int. Statist. Instit.","article-title":"Asymptotic expansion of
-      the log-likelihood function based on stopping times defined on a stochastic
-      process","author":"Akritas","year":"1979"},{"key":"10.1016\/0047-259X(82)90017-3_BIB5","doi-asserted-by":"crossref","first-page":"207","DOI":"10.1016\/0025-5564(80)90037-1","article-title":"Asymptotic
-      theory for analysing dose-response survival data with application to the low
-      dose extrapolation problem","volume":"50","author":"Daffer","year":"1980","journal-title":"Math.
-      Biosci."},{"key":"10.1016\/0047-259X(82)90017-3_BIB6","doi-asserted-by":"crossref","first-page":"829","DOI":"10.1214\/aop\/1176995431","article-title":"Functional
-      limit theorems for dependent variables","volume":"6","author":"Durrett","year":"1978","journal-title":"Ann.
-      Probab."},{"key":"10.1016\/0047-259X(82)90017-3_BIB7","author":"H\u00e1jek","year":"1967"},{"key":"10.1016\/0047-259X(82)90017-3_BIB8","series-title":"Proc.
-      Sixth Berk. Symp. Math. Statist. and Probability","first-page":"175","article-title":"Local
-      asymptotic minimax and admissibility in estimation","author":"H\u00e1jek","year":"1972"},{"key":"10.1016\/0047-259X(82)90017-3_BIB9","doi-asserted-by":"crossref","first-page":"445","DOI":"10.1137\/1117054","article-title":"Asymptotic
-      behavior of statistical estimators in the smooth case. I. Study of the likelihood
-      ratio","volume":"17","author":"Ibragimov","year":"1972","journal-title":"Theory
-      Probab. Appl."},{"key":"10.1016\/0047-259X(82)90017-3_BIB10","doi-asserted-by":"crossref","first-page":"246","DOI":"10.1137\/1120032","article-title":"Local
-      asymptotic normality for non-identically distributed observations","volume":"20","author":"Ibragimov","year":"1975","journal-title":"Theory
-      Probab. Appl."},{"key":"10.1016\/0047-259X(82)90017-3_BIB11","first-page":"37","article-title":"Locally
-      asymptotically normal families of distributions","volume":"3","author":"LeCam","year":"1960","journal-title":"Univ.
-      Calif. Publ. Statist."},{"key":"10.1016\/0047-259X(82)90017-3_BIB12","doi-asserted-by":"crossref","first-page":"620","DOI":"10.1214\/aop\/1176996608","article-title":"Dependent
-      central limit theorems and invariance principles","volume":"2","author":"McLeish","year":"1974","journal-title":"Ann.
-      Probab."},{"key":"10.1016\/0047-259X(82)90017-3_BIB13","doi-asserted-by":"crossref","first-page":"454","DOI":"10.1214\/aos\/1176342411","article-title":"Asymptotic
-      distribution of the likelihood function in the independent not identically distributed
-      case","volume":"1","author":"Philippou","year":"1973","journal-title":"Ann.
-      Statist."},{"key":"10.1016\/0047-259X(82)90017-3_BIB14","author":"Roussas","year":"1972"},{"key":"10.1016\/0047-259X(82)90017-3_BIB15","doi-asserted-by":"crossref","first-page":"31","DOI":"10.1007\/BF00533249","article-title":"Asymptotic
-      distribution of the log-likelihood function for stochastic processes","volume":"47","author":"Roussas","year":"1979","journal-title":"Z.
-      Wahrsch. Verw. Gebiete"},{"key":"10.1016\/0047-259X(82)90017-3_BIB16","doi-asserted-by":"crossref","first-page":"106","DOI":"10.1177\/0008068319610306","article-title":"A
-      note on the large sample behavior of extreme values from distributions with
-      finite end-points","volume":"10","author":"Sen","year":"1961","journal-title":"Calcutta
-      Statist. Assoc. Bull."},{"key":"10.1016\/0047-259X(82)90017-3_BIB17","doi-asserted-by":"crossref","first-page":"1247","DOI":"10.1214\/aos\/1176343657","article-title":"Weak
-      convergence of progressively censored likelihood ratio statistics and its role
-      in the asymptotic theory of life testing","volume":"4","author":"Sen","year":"1976","journal-title":"Ann.
-      Statist."}],"container-title":["Journal of Multivariate Analysis"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0047259X82900173?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:0047259X82900173?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,2,5]],"date-time":"2019-02-05T01:55:57Z","timestamp":1549331757000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/0047259X82900173"}},"issued":{"date-parts":[[1982,6]]},"references-count":17,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1982,6]]}},"alternative-id":["0047259X82900173"],"URL":"http:\/\/dx.doi.org\/10.1016\/0047-259x(82)90017-3","ISSN":["0047-259X"],"issn-type":[{"value":"0047-259X","type":"print"}],"published":{"date-parts":[[1982,6]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":2,"items":[{"indexed":{"date-parts":[[2025,5,29]],"date-time":"2025-05-29T16:45:29Z","timestamp":1748537129672,"version":"3.37.3"},"reference-count":40,"publisher":"Elsevier
+      BV","license":[{"start":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T00:00:00Z","timestamp":1719792000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T00:00:00Z","timestamp":1719792000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/legal\/tdmrep-license"},{"start":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T00:00:00Z","timestamp":1719792000000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-017"},{"start":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T00:00:00Z","timestamp":1719792000000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-037"},{"start":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T00:00:00Z","timestamp":1719792000000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-012"},{"start":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T00:00:00Z","timestamp":1719792000000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-029"},{"start":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T00:00:00Z","timestamp":1719792000000},"content-version":"stm-asf","delay-in-days":0,"URL":"https:\/\/doi.org\/10.15223\/policy-004"}],"funder":[{"DOI":"10.13039\/501100013280","name":"Major
+      Basic Research Project of the Natural Science Foundation of the Jiangsu Higher
+      Education Institutions","doi-asserted-by":"publisher","id":[{"id":"10.13039\/501100013280","id-type":"DOI","asserted-by":"publisher"}]},{"DOI":"10.13039\/501100001809","name":"National
+      Natural Science Foundation of China","doi-asserted-by":"publisher","id":[{"id":"10.13039\/501100001809","id-type":"DOI","asserted-by":"publisher"}]}],"content-domain":{"domain":["elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["Talanta"],"published-print":{"date-parts":[[2024,7]]},"DOI":"10.1016\/j.talanta.2024.125989","type":"journal-article","created":{"date-parts":[[2024,3,24]],"date-time":"2024-03-24T00:09:48Z","timestamp":1711238988000},"page":"125989","update-policy":"https:\/\/doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":9,"special_numbering":"C","title":["Ag-modified
+      CuO cavity arrays as a SERS-electrochemical dual signal platform for thiram
+      detection"],"prefix":"10.1016","volume":"274","author":[{"given":"Xinyi","family":"Shao","sequence":"first","affiliation":[]},{"given":"Qun","family":"Zhao","sequence":"additional","affiliation":[]},{"given":"Jiayi","family":"Xia","sequence":"additional","affiliation":[]},{"given":"Mengxiang","family":"Xie","sequence":"additional","affiliation":[]},{"given":"Qingzhi","family":"Li","sequence":"additional","affiliation":[]},{"given":"Yuqi","family":"Tang","sequence":"additional","affiliation":[]},{"given":"Xuefang","family":"Gu","sequence":"additional","affiliation":[]},{"given":"Xiaofeng","family":"Ning","sequence":"additional","affiliation":[]},{"given":"Shanshan","family":"Geng","sequence":"additional","affiliation":[]},{"given":"Jin","family":"Fu","sequence":"additional","affiliation":[]},{"given":"Shu","family":"Tian","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.talanta.2024.125989_bib1","doi-asserted-by":"crossref","DOI":"10.1016\/j.talanta.2021.122383","article-title":"Detection
+      and quantification of toxicants in food and water using Ag\u2013Au core-shell
+      fractal SERS nanostructures and multivariate analysis","volume":"231","author":"Raveendran","year":"2021","journal-title":"Talanta"},{"key":"10.1016\/j.talanta.2024.125989_bib2","doi-asserted-by":"crossref","first-page":"3676","DOI":"10.1007\/s11664-021-08875-y","article-title":"Functionalization
+      of silver nanoparticles with carbohydrate derivative for colorimetric assay
+      of thiram","volume":"50","author":"Dhavle","year":"2021","journal-title":"J.
+      Electron. Mater."},{"key":"10.1016\/j.talanta.2024.125989_bib3","doi-asserted-by":"crossref","DOI":"10.1016\/j.chemosphere.2022.133928","article-title":"Thiram
+      exposure in environment: a critical review on cytotoxicity","volume":"295","author":"Liu","year":"2022","journal-title":"Chemosphere"},{"key":"10.1016\/j.talanta.2024.125989_bib4","doi-asserted-by":"crossref","DOI":"10.1016\/j.foodres.2020.109141","article-title":"Review
+      of pesticide residue analysis in fruits and vegetables. Pre-treatment, extraction
+      and detection techniques","volume":"133","author":"Narenderan","year":"2020","journal-title":"Food
+      Res. Int."},{"key":"10.1016\/j.talanta.2024.125989_bib5","doi-asserted-by":"crossref","first-page":"186","DOI":"10.1016\/j.foodchem.2012.04.064","article-title":"Optimisation
+      and validation of a specific analytical method for the determination of thiram
+      residues in fruits and vegetables by LC\u2013MS\/MS","volume":"135","author":"Peruga","year":"2012","journal-title":"Food
+      Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib6","doi-asserted-by":"crossref","first-page":"1675","DOI":"10.1021\/jf000937j","article-title":"Development
+      of an immunoassay (ELISA) for the quantification of thiram in lettuce","volume":"49","author":"Queffelec","year":"2001","journal-title":"J.
+      Agric. Food Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib7","doi-asserted-by":"crossref","first-page":"717","DOI":"10.1039\/b304710e","article-title":"Thiram:
+      degradation, applications and analytical methods","volume":"5","author":"Sharma","year":"2003","journal-title":"J.
+      Environ. Monit."},{"key":"10.1016\/j.talanta.2024.125989_bib8","doi-asserted-by":"crossref","DOI":"10.1016\/j.foodchem.2019.125377","article-title":"A
+      label-free colorimetric aptasensor based on controllable aggregation of AuNPs
+      for the detection of multiplex antibiotics","volume":"304","author":"Wu","year":"2020","journal-title":"Food
+      Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib9","doi-asserted-by":"crossref","first-page":"508","DOI":"10.1016\/j.bios.2016.08.107","article-title":"Novel
+      single-stranded DNA binding protein-assisted fluorescence aptamer switch based
+      on FRET for homogeneous detection of antibiotics","volume":"87","author":"Wang","year":"2017","journal-title":"Biosens.
+      Bioelectron."},{"key":"10.1016\/j.talanta.2024.125989_bib10","doi-asserted-by":"crossref","DOI":"10.1016\/j.jhazmat.2020.122356","article-title":"Preparation
+      of multi-functional magnetic\u2013plasmonic nanocomposite for adsorption and
+      detection of thiram using SERS","volume":"392","author":"Fu","year":"2020","journal-title":"J.
+      Hazard Mater."},{"key":"10.1016\/j.talanta.2024.125989_bib11","doi-asserted-by":"crossref","DOI":"10.1016\/j.talanta.2023.124535","article-title":"Ultra-sensitive,
+      rapid detection of dried bloodstains by surface enhanced Raman scattering on
+      Ag substrates","volume":"259","author":"Suarez","year":"2023","journal-title":"Talanta"},{"key":"10.1016\/j.talanta.2024.125989_bib12","doi-asserted-by":"crossref","first-page":"87","DOI":"10.1038\/s43586-021-00083-6","article-title":"Surface-enhanced
+      Raman spectroscopy","volume":"1","author":"Han","year":"2022","journal-title":"Nat.
+      Rev. Methods Primers."},{"key":"10.1016\/j.talanta.2024.125989_bib13","doi-asserted-by":"crossref","first-page":"57","DOI":"10.3390\/bios9020057","article-title":"A
+      review on surface-enhanced Raman scattering","volume":"9","author":"Pilot","year":"2019","journal-title":"Biosensors"},{"key":"10.1016\/j.talanta.2024.125989_bib14","article-title":"A
+      novel ultra-sensitive semiconductor SERS substrate boosted by the coupled resonance
+      effect","volume":"6","author":"Yang","year":"2019","journal-title":"Adv. Sci."},{"key":"10.1016\/j.talanta.2024.125989_bib15","doi-asserted-by":"crossref","first-page":"267","DOI":"10.1146\/annurev.physchem.58.032806.104607","article-title":"Localized
+      surface plasmon resonance spectroscopy and sensing","volume":"58","author":"Willets","year":"2007","journal-title":"Annu.
+      Rev. Phys. Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib16","doi-asserted-by":"crossref","first-page":"8172","DOI":"10.1002\/anie.201900589","article-title":"Effect
+      of TiO2 on altering direction of interfacial charge transfer in a TiO2\u2010Ag\u2010MPY\u2010FePc
+      system by SERS","volume":"58","author":"Wang","year":"2019","journal-title":"Angew.
+      Chem. Int. Ed."},{"key":"10.1016\/j.talanta.2024.125989_bib17","doi-asserted-by":"crossref","first-page":"14452","DOI":"10.1002\/anie.201907283","article-title":"Enhanced
+      Raman scattering by ZnO superstructures: synergistic effect of charge transfer
+      and mie resonances","volume":"58","author":"Ji","year":"2019","journal-title":"Angew.
+      Chem. Int. Ed."},{"key":"10.1016\/j.talanta.2024.125989_bib18","doi-asserted-by":"crossref","first-page":"6967","DOI":"10.1021\/acs.analchem.1c05200","article-title":"Charge-transfer
+      resonance and surface defect-dominated WO3 hollow microspheres as SERS substrates
+      for the miRNA 155 assay","volume":"94","author":"Jiang","year":"2022","journal-title":"Anal.
+      Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib19","doi-asserted-by":"crossref","DOI":"10.1016\/j.apsusc.2022.155095","article-title":"Regulating
+      the work function of Cu2O films via crystal facet engineering with enhanced
+      charge transfer and SERS activity","volume":"607","author":"Luo","year":"2023","journal-title":"Appl.
+      Surf. Sci."},{"key":"10.1016\/j.talanta.2024.125989_bib20","doi-asserted-by":"crossref","first-page":"842","DOI":"10.1063\/1.1483848","article-title":"Excited-state
+      dynamics of alizarin-sensitized TiO2 nanoparticles from resonance Raman spectroscopy","volume":"117","author":"Shoute","year":"2002","journal-title":"J.
+      Chem. Phys."},{"key":"10.1016\/j.talanta.2024.125989_bib21","doi-asserted-by":"crossref","first-page":"7778","DOI":"10.1021\/acs.jpcc.2c01818","article-title":"Silver
+      nanoparticles-based SERS platform towards detecting chloramphenicol and amoxicillin:
+      an experimental insight into the role of HOMO-LUMO energy levels of the analyte
+      in the SERS signal and charge transfer process","volume":"126","author":"Mai","year":"2022","journal-title":"J.
+      Phys. Chem. C"},{"key":"10.1016\/j.talanta.2024.125989_bib22","doi-asserted-by":"crossref","first-page":"4563","DOI":"10.1039\/D0SC00809E","article-title":"Surface-enhanced
+      Raman spectroscopy: benefits, trade-offs and future developments","volume":"11","author":"P\u00e9rez-Jim\u00e9nez","year":"2020","journal-title":"Chem.
+      Sci."},{"key":"10.1016\/j.talanta.2024.125989_bib23","doi-asserted-by":"crossref","DOI":"10.1002\/admi.201800672","article-title":"Capillarity-assistant
+      assembly: a fast preparation of 3D pomegranate-like Ag nanoparticle clusters
+      on CuO nanowires and its applications in SERS","volume":"5","author":"Yu","year":"2018","journal-title":"Adv.
+      Mater. Interfac."},{"key":"10.1016\/j.talanta.2024.125989_bib24","doi-asserted-by":"crossref","first-page":"12500","DOI":"10.1021\/jp503202f","article-title":"Improved
+      performance of solution-phase surface-enhanced Raman scattering at Ag\/CuO nanocomposite
+      surfaces","volume":"118","author":"Hsieh","year":"2014","journal-title":"J.
+      Phys. Chem. C"},{"key":"10.1016\/j.talanta.2024.125989_bib25","doi-asserted-by":"crossref","first-page":"8065","DOI":"10.1021\/jp900052q","article-title":"SERS
+      spectroscopy used to study an adsorbate on a nanoscale thin film of CuO coated
+      with Ag","volume":"113","author":"Wang","year":"2009","journal-title":"J. Phys.
+      Chem. C"},{"key":"10.1016\/j.talanta.2024.125989_bib26","doi-asserted-by":"crossref","first-page":"64611","DOI":"10.1039\/C6RA09598D","article-title":"Zinc
+      oxide thin film based nonenzymatic electrochemical sensor for the detection
+      of trace level catechol","volume":"6","author":"Maikap","year":"2016","journal-title":"RSC
+      Adv."},{"key":"10.1016\/j.talanta.2024.125989_bib27","doi-asserted-by":"crossref","DOI":"10.1016\/j.foodchem.2022.133120","article-title":"Electrochemical
+      detection of aminoglycoside antibiotics residuals in milk based on magnetic
+      molecularly imprinted particles and metal ions","volume":"389","author":"Zhang","year":"2022","journal-title":"Food
+      Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib28","doi-asserted-by":"crossref","first-page":"13624","DOI":"10.1021\/acs.analchem.8b03850","article-title":"Core-Shell
+      heterostructured CuFe@FeFe prussian blue analogue coupling with silver nanoclusters
+      via a one-step bioinspired approach: efficiently nonlabeled aptasensor for detection
+      of bleomycin in various aqueous environments","volume":"90","author":"Zhou","year":"2018","journal-title":"Anal.
+      Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib29","doi-asserted-by":"crossref","DOI":"10.1016\/j.foodchem.2022.134379","article-title":"Ultrasensitive
+      indirect electrochemical sensing of thiabendazole in fruit and water by the
+      anodic stripping voltammetry of Cu2+ with hierarchical Ti3C2Tx-TiO2 for signal
+      amplification","volume":"402","author":"Zhong","year":"2023","journal-title":"Food
+      Chem."},{"key":"10.1016\/j.talanta.2024.125989_bib30","doi-asserted-by":"crossref","first-page":"2367","DOI":"10.1021\/acsanm.9b00243","article-title":"Nanocomposites
+      of Zr(IV)-Based metal\u2013organic frameworks and reduced graphene oxide for
+      electrochemically sensing Ciprofloxacin in water","volume":"2","author":"Fang","year":"2019","journal-title":"ACS
+      Appl. Nano Mater."},{"key":"10.1016\/j.talanta.2024.125989_bib31","doi-asserted-by":"crossref","first-page":"4466","DOI":"10.1016\/S0167-577X(03)00344-6","article-title":"Preparation
+      of monodisperse polystyrene spheres in aqueous alcohol system","volume":"57","author":"Zhang","year":"2003","journal-title":"Mater.
+      Lett."},{"key":"10.1016\/j.talanta.2024.125989_bib32","doi-asserted-by":"crossref","first-page":"18299","DOI":"10.1039\/C5NR04783H","article-title":"Black-CuO:
+      surface-enhanced Raman scattering and infrared properties","volume":"7","author":"Bal\u010dytis","year":"2015","journal-title":"Nanoscale"},{"key":"10.1016\/j.talanta.2024.125989_bib33","doi-asserted-by":"crossref","DOI":"10.1016\/j.jhazmat.2023.131278","article-title":"Cu2+-assisted
+      sensing of fungicide Thiram in food, soil, and plant samples and the ratiometric
+      detection of Hg2+ in living cells by a low cytotoxic and red emissive fluorescent
+      sensor","volume":"452","author":"Erdemir","year":"2023","journal-title":"J.
+      Hazard Mater."},{"key":"10.1016\/j.talanta.2024.125989_bib34","doi-asserted-by":"crossref","first-page":"125","DOI":"10.1016\/j.jhazmat.2014.06.051","article-title":"Effect
+      of copper ions on the degradation of thiram in aqueous solution: identification
+      of degradation products by HPLC-MS\/MS","volume":"279","author":"Filipe","year":"2014","journal-title":"J.
+      Hazard Mater."},{"key":"10.1016\/j.talanta.2024.125989_bib35","doi-asserted-by":"crossref","DOI":"10.1016\/j.cej.2022.135686","article-title":"Smartphone-integrated
+      multi-color ratiometric fluorescence portable optical device based on deep learning
+      for visual monitoring of Cu2+ and thiram","volume":"439","author":"Lu","year":"2022","journal-title":"Chem.
+      Eng. J."},{"key":"10.1016\/j.talanta.2024.125989_bib36","first-page":"3999","article-title":"Femtomolar
+      detection of thiram via SERS using silver nanocubes as an efficient substrate","volume":"7","author":"Bhavya","year":"2020","journal-title":"Environ.
+      Sci.: Nano"},{"key":"10.1016\/j.talanta.2024.125989_bib37","doi-asserted-by":"crossref","DOI":"10.1088\/1361-6528\/ab2845","article-title":"Silver
+      nanodendrites for ultralow detection of thiram based on surface-enhanced Raman
+      spectroscopy","volume":"30","author":"Verma","year":"2019","journal-title":"Nanotechnology"},{"key":"10.1016\/j.talanta.2024.125989_bib38","doi-asserted-by":"crossref","first-page":"149","DOI":"10.1016\/S0020-1693(00)83216-8","article-title":"Spectroscopic
+      characterization of anionic tris(N,N-dialkyldithiocarbamate) complexes of zinc(II)
+      and cadmium(II)","volume":"164","author":"Frigerio","year":"1989","journal-title":"Inorg.
+      Chim. Acta."},{"key":"10.1016\/j.talanta.2024.125989_bib39","doi-asserted-by":"crossref","DOI":"10.1016\/j.envpol.2022.120775","article-title":"Core-shell
+      Au@ZIF-67-based pollutant monitoring of thiram and carbendazim pesticides","volume":"317","author":"Tran","year":"2023","journal-title":"Environ.
+      Pollut."},{"key":"10.1016\/j.talanta.2024.125989_bib40","doi-asserted-by":"crossref","DOI":"10.1002\/slct.202104357","article-title":"Laser
+      fabricated Cu2O-CuO\/Ag nanocomposite films for SERS application","volume":"7","author":"Yao","year":"2022","journal-title":"ChemistrySelect"}],"container-title":["Talanta"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0039914024003680?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0039914024003680?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2024,7,1]],"date-time":"2024-07-01T08:05:56Z","timestamp":1719821156000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0039914024003680"}},"issued":{"date-parts":[[2024,7]]},"references-count":40,"alternative-id":["S0039914024003680"],"URL":"https:\/\/doi.org\/10.1016\/j.talanta.2024.125989","ISSN":["0039-9140"],"issn-type":[{"type":"print","value":"0039-9140"}],"published":{"date-parts":[[2024,7]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
+      article is maintained by"},{"value":"Ag-modified CuO cavity arrays as a SERS-electrochemical
+      dual signal platform for thiram detection","name":"articletitle","label":"Article
+      Title"},{"value":"Talanta","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1016\/j.talanta.2024.125989","name":"articlelink","label":"CrossRef
+      DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
+      Type"},{"value":"\u00a9 2024 Elsevier B.V. All rights reserved.","name":"copyright","label":"Copyright"}],"article-number":"125989"},{"indexed":{"date-parts":[[2024,7,9]],"date-time":"2024-07-09T13:43:14Z","timestamp":1720532594782},"reference-count":0,"publisher":"Elsevier
+      BV","license":[{"start":{"date-parts":[[2011,6,1]],"date-time":"2011-06-01T00:00:00Z","timestamp":1306886400000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2013,7,16]],"date-time":"2013-07-16T00:00:00Z","timestamp":1373932800000},"content-version":"vor","delay-in-days":776,"URL":"https:\/\/www.elsevier.com\/open-access\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
+      of Cystic Fibrosis"],"published-print":{"date-parts":[[2011,6]]},"DOI":"10.1016\/s1569-1993(11)60316-0","type":"journal-article","created":{"date-parts":[[2011,6,23]],"date-time":"2011-06-23T03:04:12Z","timestamp":1308798252000},"page":"S77","source":"Crossref","is-referenced-by-count":0,"special_numbering":"S1","title":["303
+      The effect of sunshine on vitamin D levels (25-OHD) in cystic fibrosis (CF)
+      patients \u2013 a UK experience"],"prefix":"10.1016","volume":"10","author":[{"given":"M.","family":"Gautam","sequence":"first","affiliation":[]},{"given":"R.","family":"Menon","sequence":"additional","affiliation":[]},{"given":"S.","family":"Huq","sequence":"additional","affiliation":[]},{"given":"S.","family":"Pandya","sequence":"additional","affiliation":[]},{"given":"J.","family":"Greenwood","sequence":"additional","affiliation":[]},{"given":"M.J.","family":"Walshaw","sequence":"additional","affiliation":[]}],"member":"78","container-title":["Journal
+      of Cystic Fibrosis"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1569199311603160?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S1569199311603160?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,12,1]],"date-time":"2018-12-01T22:24:32Z","timestamp":1543703072000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S1569199311603160"}},"issued":{"date-parts":[[2011,6]]},"references-count":0,"alternative-id":["S1569199311603160"],"URL":"https:\/\/doi.org\/10.1016\/s1569-1993(11)60316-0","ISSN":["1569-1993"],"issn-type":[{"value":"1569-1993","type":"print"}],"published":{"date-parts":[[2011,6]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5638'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:05 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -111,16 +153,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '3951'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 05:00:36 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -129,10 +163,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

@@ -11,15 +11,23 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/prefixes/10.1016
   response:
-    content: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"http:\/\/id.crossref.org\/member\/78","name":"Elsevier
-      BV","prefix":"http:\/\/id.crossref.org\/prefix\/10.1016"}}'
+    content: '{"status":"ok","message-type":"prefix","message-version":"1.0.0","message":{"member":"https:\/\/id.crossref.org\/member\/78","name":"Elsevier
+      BV","prefix":"https:\/\/id.crossref.org\/prefix\/10.1016"}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 12 Jul 2025 04:30:10 GMT
+      Transfer-Encoding:
+      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -27,26 +35,14 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
-      content-type:
-      - application/json;charset=utf-8
-      date:
-      - Sun, 13 Oct 2024 14:07:09 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
-      transfer-encoding:
-      - chunked
       vary:
       - Accept
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -65,26 +61,34 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/members/98
   response:
-    content: '{"status":"ok","message-type":"member","message-version":"1.0.0","message":{"last-status-check-time":1728775467597,"primary-name":"Hindawi
-      Limited","counts":{"current-dois":59057,"backfile-dois":352451,"total-dois":411508},"breakdowns":{"dois-by-issued-year":[[2022,45422],[2020,38020],[2021,37048],[2014,30900],[2013,26728],[2019,23437],[2012,23041],[2015,22466],[2018,21462],[2016,20230],[2017,18457],[2011,13479],[2009,13321],[2023,10078],[2010,8602],[2007,5212],[2008,4559],[2006,3741],[2024,3557],[2005,3001],[2004,2927],[2001,2777],[2003,2624],[2000,2510],[2002,2509],[1999,2149],[1998,2095],[1997,1897],[1996,1745],[1994,1358],[1995,1356],[1992,1338],[1993,1250],[1991,1082],[1989,887],[1990,849],[1988,790],[1987,697],[1986,616],[1984,457],[1983,440],[1978,433],[1980,418],[1985,413],[1979,382],[1982,377],[1981,376],[1977,354],[1976,327],[1970,303],[1967,303],[1972,282],[1971,266],[1975,256],[1968,248],[1966,228],[1969,217],[1965,207],[1963,201],[1974,198],[1964,198],[1973,179],[1962,87],[1961,79],[1960,46],[1895,9],[1896,6],[1908,1]]},"prefixes":["10.7167","10.1100","10.1155","10.5402","10.7217","10.4061","10.6064","10.3814"],"coverage":{"affiliations-current":0.9645596626987487,"similarity-checking-current":0.9699273583148484,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.376917642452426,"licenses-backfile":0.9655526583837186,"funders-current":0.5406810369642887,"affiliations-backfile":0.7504135326612777,"resource-links-backfile":0.9535935491742115,"orcids-backfile":0.4766648413538336,"update-policies-current":0.1383578576629358,"ror-ids-backfile":0.0,"orcids-current":0.947542204988401,"similarity-checking-backfile":0.9458222561434072,"references-backfile":0.8709863215028472,"descriptions-backfile":0.0,"award-numbers-backfile":0.2949941977750099,"update-policies-backfile":0.0886704818542152,"licenses-current":0.9699612239023316,"award-numbers-current":0.4494302114905938,"abstracts-backfile":0.5820865879228602,"resource-links-current":0.9699273583148484,"abstracts-current":0.8260155443046548,"references-current":0.9633574343430923},"prefix":[{"name":"Hindawi
+    content: '{"status":"ok","message-type":"member","message-version":"1.0.0","message":{"last-status-check-time":1752275401728,"primary-name":"Hindawi
+      Limited","counts":{"current-dois":2,"backfile-dois":149599,"total-dois":149601},"breakdowns":{"dois-by-issued-year":[[2012,13361],[2009,12045],[2014,11545],[2015,10202],[2013,9903],[2011,9258],[2010,6446],[2020,6416],[2016,6144],[2021,4658],[2007,4587],[2008,4075],[2006,3587],[2022,2979],[2005,2887],[2004,2836],[2001,2583],[2003,2504],[2000,2389],[2002,2387],[1999,2084],[1998,2071],[1997,1863],[1996,1706],[2017,1460],[2019,1459],[1994,1324],[1995,1323],[1992,1309],[1993,1210],[1991,1054],[2018,998],[1989,865],[1990,826],[1988,780],[1987,688],[1986,602],[1984,448],[1978,430],[1983,428],[1980,408],[1985,407],[1979,381],[1981,372],[1982,368],[1977,343],[1976,322],[1967,299],[1970,297],[1972,275],[1971,263],[1975,255],[1968,246],[1966,227],[1969,217],[1965,203],[1963,200],[1974,198],[1964,195],[1973,179],[1962,85],[1961,78],[1960,46],[1895,9],[1896,6],[2023,2]]},"prefixes":["10.7167","10.1100","10.1155","10.5402","10.7217","10.4061","10.6064","10.3814"],"coverage":{"affiliations-current":0.5,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.07899116972707038,"licenses-backfile":0.9070983094806783,"funders-current":0.0,"affiliations-backfile":0.4202568198985287,"resource-links-backfile":0.8796181792659042,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.862479027266225,"references-backfile":0.7097440490912372,"descriptions-backfile":0.0,"award-numbers-backfile":0.04524094412395805,"update-policies-backfile":0.028182006564215,"licenses-current":1.0,"award-numbers-current":0.0,"abstracts-backfile":0.3145275035260931,"resource-links-current":1.0,"abstracts-current":1.0,"references-current":1.0},"prefix":[{"name":"Hindawi
       (Datasets International)","value":"10.7167"},{"name":"Hindawi (The Scientific
       World)","value":"10.1100"},{"name":"Hindawi Limited","value":"10.1155"},{"name":"Hindawi
       (International Scholarly Research Network)","value":"10.5402"},{"name":"Hindawi
       (Conference Papers in Science)","value":"10.7217"},{"name":"Hindawi Publishing
       Corporation (Sage-Hindawi Access to Research)","value":"10.4061"},{"name":"Hindawi
-      (Scientifica)","value":"10.6064"},{"name":"Hindawi Publishing Corporation (Syrexe)","value":"10.3814"}],"id":98,"tokens":["hindawi","limited"],"counts-type":{"all":{"monograph":6,"peer-review":10621,"journal-article":393914,"journal":1111,"component":303,"journal-issue":6955,"dataset":1,"edited-book":12},"backfile":{"monograph":6,"peer-review":9100,"journal-article":336631,"journal-issue":6702,"edited-book":12},"current":{"peer-review":1521,"journal-article":57283,"journal-issue":253}},"coverage-type":{"all":{"monograph":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"peer-review":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1728775467597,"affiliations":0.8160359875505822,"abstracts":0.6446559401290637,"orcids":0.5685504957934981,"licenses":0.9978853252232721,"references":0.9237371609031413,"funders":0.4183045030133481,"similarity-checking":0.9893174652335281,"award-numbers":0.3313235883974675,"ror-ids":0.0,"update-policies":0.1000802205557558,"resource-links":0.9871799428301609,"descriptions":0.0},"journal":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0108010801080108,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"component":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.8052805280528053},"journal-issue":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.6487419122933142,"references":0.0,"funders":0.0,"similarity-checking":0.1338605319913731,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.6487419122933142,"descriptions":0.0},"dataset":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"edited-book":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"monograph":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"peer-review":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1728775467597,"affiliations":0.785679274933087,"abstracts":0.6094417923482983,"orcids":0.4990657426083753,"licenses":0.9975254804221833,"references":0.9119183913543316,"funders":0.3946309163446028,"similarity-checking":0.9875056070296556,"award-numbers":0.3088574730194189,"ror-ids":0.0,"update-policies":0.09283755803832683,"resource-links":0.9850043519461963,"descriptions":0.0},"journal-issue":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.6732318710832587,"references":0.0,"funders":0.0,"similarity-checking":0.1389137570874366,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.6732318710832587,"descriptions":0.0},"edited-book":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"peer-review":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1728775467597,"affiliations":0.9944311575860203,"abstracts":0.8515964596826284,"orcids":0.9768866854040466,"licenses":1.0,"references":0.9931916973622192,"funders":0.5574254141717438,"similarity-checking":0.9999650856274986,"award-numbers":0.4633486374666131,"ror-ids":0.0,"update-policies":0.142642668854634,"resource-links":0.9999650856274986,"descriptions":0.0},"journal-issue":{"last-status-check-time":1728775467597,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":true,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":true,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"location":"London,
+      (Scientifica)","value":"10.6064"},{"name":"Hindawi Publishing Corporation (Syrexe)","value":"10.3814"}],"id":98,"tokens":["hindawi","limited"],"counts-type":{"all":{"monograph":6,"peer-review":10621,"journal-article":132017,"journal":1111,"component":294,"journal-issue":6945,"dataset":1,"edited-book":12},"backfile":{"monograph":6,"peer-review":10621,"journal-article":132015,"journal-issue":6945,"edited-book":12},"current":{"journal-article":2}},"coverage-type":{"all":{"monograph":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"peer-review":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1752275401728,"affiliations":0.4762341213631578,"abstracts":0.356431368687366,"orcids":0.0,"licenses":0.9937508048205913,"references":0.8042827817629548,"funders":0.0895111993152397,"similarity-checking":0.9703068544202641,"award-numbers":0.05126612481725838,"ror-ids":0.0,"update-policies":0.03193528106228743,"resource-links":0.9626108758720467,"descriptions":0.0},"journal":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0108010801080108,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"component":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.8027210884353742},"journal-issue":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.649532037437005,"references":0.0,"funders":0.0,"similarity-checking":0.134053275737941,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.649532037437005,"descriptions":0.0},"dataset":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"edited-book":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"monograph":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"peer-review":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1752275401728,"affiliations":0.4762337613150021,"abstracts":0.3564216187554445,"orcids":0.0,"licenses":0.9937507101465743,"references":0.8042798166874976,"funders":0.0895125553914328,"similarity-checking":0.9703064045752376,"award-numbers":0.05126690148846722,"ror-ids":0.0,"update-policies":0.03193576487520358,"resource-links":0.962610309434534,"descriptions":0.0},"journal-issue":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.649532037437005,"references":0.0,"funders":0.0,"similarity-checking":0.134053275737941,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.649532037437005,"descriptions":0.0},"edited-book":{"last-status-check-time":1752275401728,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"journal-article":{"last-status-check-time":1752275401728,"affiliations":0.5,"abstracts":1.0,"orcids":0.0,"licenses":1.0,"references":1.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":1.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":true,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":true,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"location":"London,
       United Kingdom","names":["Hindawi Limited","Hindawi (Datasets International)","Hindawi
       (The Scientific World)","Hindawi (International Scholarly Research Network)","Hindawi
       (Conference Papers in Science)","Hindawi Publishing Corporation (Sage-Hindawi
       Access to Research)","Hindawi (Scientifica)","Hindawi Publishing Corporation
       (Syrexe)"]}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1788'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:30:11 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -92,16 +96,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '2101'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 14:07:09 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -110,10 +106,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

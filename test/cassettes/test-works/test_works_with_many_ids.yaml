@@ -11,17 +11,17 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.1016/j.neurobiolaging.2010.03.024
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,9,20]],"date-time":"2024-09-20T15:54:22Z","timestamp":1726847662175},"reference-count":57,"publisher":"Elsevier
+    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,6,20]],"date-time":"2025-06-20T16:26:29Z","timestamp":1750436789228},"reference-count":57,"publisher":"Elsevier
       BV","issue":"3","license":[{"start":{"date-parts":[[2012,3,1]],"date-time":"2012-03-01T00:00:00Z","timestamp":1330560000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/501100004085","name":"Ministry
       of Education, Science and Technology","doi-asserted-by":"crossref","award":["R32-10064"],"id":[{"id":"10.13039\/501100004085","id-type":"DOI","asserted-by":"crossref"}]},{"name":"Stem
       Cell Research Center","award":["SC4170"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Neurobiology
-      of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":220,"title":["Human
+      of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":225,"title":["Human
       umbilical cord blood-derived mesenchymal stem cells improve neuropathology and
       cognitive impairment in an Alzheimer''s disease mouse model through modulation
       of neuroinflammation"],"prefix":"10.1016","volume":"33","author":[{"given":"Hyun
@@ -170,8 +170,16 @@ interactions:
       and amyloid-beta peptide neurotoxicity in Alzheimer''s disease","volume":"382","author":"Yan","year":"1996","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib57","doi-asserted-by":"crossref","first-page":"1176","DOI":"10.1111\/j.1471-4159.2006.04172.x","article-title":"Protective
       effects of an anti- inflammatory cytokine, interleukin-4, on motoneuron toxicity
       induced by activated microglia","volume":"99","author":"Zhao","year":"2006","journal-title":"J.
-      Neurochem"}],"container-title":["Neurobiology of Aging"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2023,6,1]],"date-time":"2023-06-01T06:17:39Z","timestamp":1685600259000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0197458010001570"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2012,3]]}},"alternative-id":["S0197458010001570"],"URL":"http:\/\/dx.doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{"has-review":[{"id-type":"doi","id":"10.3410\/f.3904957.3650055","asserted-by":"object"}]},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}],"subject":[],"published":{"date-parts":[[2012,3]]}}}'
+      Neurochem"}],"container-title":["Neurobiology of Aging"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2023,6,1]],"date-time":"2023-06-01T06:17:39Z","timestamp":1685600259000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0197458010001570"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2012,3]]}},"alternative-id":["S0197458010001570"],"URL":"https:\/\/doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{"has-review":[{"id-type":"doi","id":"10.3410\/f.3904957.3650055","asserted-by":"object"}]},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}],"subject":[],"published":{"date-parts":[[2012,3]]}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '6269'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:51 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -179,16 +187,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '6274'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:36:35 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -197,10 +197,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -219,9 +215,9 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.1002/jor.1100150407
   response:
@@ -286,11 +282,19 @@ interactions:
       PE","year":"1978","journal-title":"J Anat"},{"key":"e_1_2_1_37_2","first-page":"359","article-title":"Muscle
       and tendon: properties, models, scaling and application to biomechanics and
       motor control","volume":"17","author":"Zajac FE","year":"1989","journal-title":"Crit
-      Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,27]],"date-time":"2023-10-27T22:42:30Z","timestamp":1698446550000},"score":1,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/jor.1100150407"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1997,7]]}},"alternative-id":["10.1002\/jor.1100150407"],"URL":"http:\/\/dx.doi.org\/10.1002\/jor.1100150407","archive":["Portico"],"relation":{},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":[],"published":{"date-parts":[[1997,7]]},"assertion":[{"value":"1996-11-25","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
+      Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,27]],"date-time":"2023-10-27T22:42:30Z","timestamp":1698446550000},"score":1,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/jor.1100150407"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1997,7]]}},"alternative-id":["10.1002\/jor.1100150407"],"URL":"https:\/\/doi.org\/10.1002\/jor.1100150407","archive":["Portico"],"relation":{},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":[],"published":{"date-parts":[[1997,7]]},"assertion":[{"value":"1996-11-25","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
       History"}},{"value":"1997-06-18","order":1,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
       History"}},{"value":"2005-02-18","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
       History"}}]}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '3700'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:51 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -298,16 +302,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '3702'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:36:35 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -316,10 +312,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -338,13 +330,13 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.1038/srep16696
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,8,27]],"date-time":"2024-08-27T05:05:38Z","timestamp":1724735138818},"reference-count":62,"publisher":"Springer
+    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,5,27]],"date-time":"2025-05-27T13:24:04Z","timestamp":1748352244786},"reference-count":62,"publisher":"Springer
       Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"},{"start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Sci
       Rep"],"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Oligomers of alpha-synuclein
       are toxic to cells and have been proposed to play a key role in the etiopathogenesis
@@ -364,7 +356,7 @@ interactions:
       of oligomers during the lag-phase of the aggregation of wild-type and mutated
       alpha-synuclein, suggesting that the properties of the ensemble of oligomers
       generated during self-assembly might be more relevant than their absolute concentration
-      for triggering neurodegeneration.<\/jats:p>","DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":94,"title":["Single-molecule
+      for triggering neurodegeneration.<\/jats:p>","DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":96,"title":["Single-molecule
       FRET studies on alpha-synuclein oligomerization of Parkinson\u2019s disease
       genetically related mutants"],"prefix":"10.1038","volume":"5","author":[{"given":"Laura","family":"Tosatto","sequence":"first","affiliation":[]},{"given":"Mathew
       H.","family":"Horrocks","sequence":"additional","affiliation":[]},{"given":"Alexander
@@ -595,7 +587,7 @@ interactions:
       Biol. Chem."},{"key":"BFsrep16696_CR62","doi-asserted-by":"publisher","first-page":"e67713","DOI":"10.1371\/journal.pone.0067713","volume":"8","author":"SB
       Nielsen","year":"2013","unstructured":"Nielsen, S. B. et al. Wildtype and A30P
       mutant alpha-synuclein form different fibril structures. PloS One 8, e67713
-      (2013).","journal-title":"PloS One"}],"container-title":["Scientific Reports"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep16696","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,1,5]],"date-time":"2023-01-05T19:09:42Z","timestamp":1672945782000},"score":1,"resource":{"primary":{"URL":"https:\/\/www.nature.com\/articles\/srep16696"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,11,19]]},"references-count":62,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2015,12,22]]}},"alternative-id":["BFsrep16696"],"URL":"http:\/\/dx.doi.org\/10.1038\/srep16696","relation":{},"ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"subject":[],"published":{"date-parts":[[2015,11,19]]},"assertion":[{"value":"21
+      (2013).","journal-title":"PloS One"}],"container-title":["Scientific Reports"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep16696","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,1,5]],"date-time":"2023-01-05T19:09:42Z","timestamp":1672945782000},"score":1,"resource":{"primary":{"URL":"https:\/\/www.nature.com\/articles\/srep16696"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,11,19]]},"references-count":62,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2015,12,22]]}},"alternative-id":["BFsrep16696"],"URL":"https:\/\/doi.org\/10.1038\/srep16696","relation":{},"ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"subject":[],"published":{"date-parts":[[2015,11,19]]},"assertion":[{"value":"21
       July 2015","order":1,"name":"received","label":"Received","group":{"name":"ArticleHistory","label":"Article
       History"}},{"value":"19 October 2015","order":2,"name":"accepted","label":"Accepted","group":{"name":"ArticleHistory","label":"Article
       History"}},{"value":"19 November 2015","order":3,"name":"first_online","label":"First
@@ -603,6 +595,14 @@ interactions:
       authors declare no competing financial interests.","order":1,"name":"Ethics","group":{"name":"EthicsHeading","label":"Competing
       interests"}}],"article-number":"16696"}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '8638'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:51 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -610,16 +610,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '8638'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:36:36 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -628,10 +620,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -650,33 +638,41 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.1109/icdcsw.2003.1203662
   response:
     content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,9,4]],"date-time":"2024-09-04T17:47:57Z","timestamp":1725472077957},"reference-count":13,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1109\/icdcsw.2003.1203662","type":"proceedings-article","created":{"date-parts":[[2004,6,22]],"date-time":"2004-06-22T20:27:43Z","timestamp":1087936063000},"page":"877-882","source":"Crossref","is-referenced-by-count":2,"title":["Accurate
-      and explicit differentiation of wireless and congestion losses"],"prefix":"10.1109","author":[{"given":"V.","family":"Arya","sequence":"first","affiliation":[]},{"given":"T.","family":"Turletti","sequence":"additional","affiliation":[]}],"member":"263","reference":[{"key":"ref10","doi-asserted-by":"publisher","DOI":"10.1109\/WSC.1996.873340"},{"journal-title":"RFC
-      3168","article-title":"Addition of ECN to IP","year":"2001","author":"ramakrishnan","key":"ref11"},{"journal-title":"RFC
-      1889","article-title":"RTP: A transport protocol for real-time applications","year":"1996","author":"schulzrine","key":"ref12"},{"key":"ref13","first-page":"252","article-title":"Acheiving
-      moderate fairness for UDP flows by pathstatus classification","author":"tobe","year":"2000","journal-title":"The
-      25th Annual IEEE Conf on Local Computer Networks"},{"journal-title":"IEEE Symposium
-      ASSET''99","article-title":"Discriminating congestion losses from wireless losses
-      using inter-arrival times at the reciever","year":"1999","author":"biaz","key":"ref4"},{"key":"ref3","doi-asserted-by":"publisher","DOI":"10.1109\/INFCOM.2001.916251"},{"key":"ref6","first-page":"43","article-title":"Equation-based
+      and explicit differentiation of wireless and congestion losses"],"prefix":"10.1109","author":[{"given":"V.","family":"Arya","sequence":"first","affiliation":[]},{"given":"T.","family":"Turletti","sequence":"additional","affiliation":[]}],"member":"263","reference":[{"key":"ref10","doi-asserted-by":"publisher","DOI":"10.1109\/WSC.1996.873340"},{"key":"ref11","article-title":"Addition
+      of ECN to IP","author":"ramakrishnan","year":"2001","journal-title":"RFC 3168"},{"key":"ref12","article-title":"RTP:
+      A transport protocol for real-time applications","author":"schulzrine","year":"1996","journal-title":"RFC
+      1889"},{"key":"ref13","first-page":"252","article-title":"Acheiving moderate
+      fairness for UDP flows by pathstatus classification","author":"tobe","year":"2000","journal-title":"The
+      25th Annual IEEE Conf on Local Computer Networks"},{"key":"ref4","article-title":"Discriminating
+      congestion losses from wireless losses using inter-arrival times at the reciever","author":"biaz","year":"1999","journal-title":"IEEE
+      Symposium ASSET''99"},{"key":"ref3","doi-asserted-by":"publisher","DOI":"10.1109\/INFCOM.2001.916251"},{"key":"ref6","first-page":"43","article-title":"Equation-based
       congestion control for unicast applications","author":"floyd","year":"2000","journal-title":"SIG-COMM"},{"key":"ref5","first-page":"1","article-title":"End-to-end
       differentiation of congestion and wireless losses","author":"cen","year":"2002","journal-title":"Proc
       Multimedia Computing and Networking (MMCN) Conf"},{"journal-title":"Datagram
       Congestion Control Protocol","year":"2002","author":"kohler","key":"ref8"},{"journal-title":"TCP
-      Friendly Rate Control(TFRC) Protocol Specification","year":"2002","author":"handley","key":"ref7"},{"key":"ref2","doi-asserted-by":"publisher","DOI":"10.1007\/BF01985757"},{"journal-title":"IEEE
-      Globecom Internet Mini-Conference","article-title":"Explicit loss notification
-      and wireless web performance","year":"1998","author":"balakrishnan","key":"ref1"},{"journal-title":"Proc
-      ISCCSP","article-title":"An empirical study of today''s internet traffic for
-      differentiated services IP QoS","year":"2000","author":"li","key":"ref9"}],"event":{"name":"23rd
-      International Conference on Distributed Computing Systems Workshops, 2003.","location":"Providence,
-      Rhode Island, USA"},"container-title":["23rd International Conference on Distributed
-      Computing Systems Workshops, 2003. Proceedings."],"original-title":[],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/8560\/27094\/01203662.pdf?arnumber=1203662","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,13]],"date-time":"2017-03-13T18:23:30Z","timestamp":1489429410000},"score":1,"resource":{"primary":{"URL":"http:\/\/ieeexplore.ieee.org\/document\/1203662\/"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":13,"URL":"http:\/\/dx.doi.org\/10.1109\/icdcsw.2003.1203662","relation":{},"subject":[]}}'
+      Friendly Rate Control(TFRC) Protocol Specification","year":"2002","author":"handley","key":"ref7"},{"key":"ref2","doi-asserted-by":"publisher","DOI":"10.1007\/BF01985757"},{"key":"ref1","article-title":"Explicit
+      loss notification and wireless web performance","author":"balakrishnan","year":"1998","journal-title":"IEEE
+      Globecom Internet Mini-Conference"},{"key":"ref9","article-title":"An empirical
+      study of today''s internet traffic for differentiated services IP QoS","author":"li","year":"2000","journal-title":"Proc
+      ISCCSP"}],"event":{"name":"23rd International Conference on Distributed Computing
+      Systems Workshops, 2003.","location":"Providence, Rhode Island, USA"},"container-title":["23rd
+      International Conference on Distributed Computing Systems Workshops, 2003. Proceedings."],"original-title":[],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/8560\/27094\/01203662.pdf?arnumber=1203662","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,13]],"date-time":"2017-03-13T18:23:30Z","timestamp":1489429410000},"score":1,"resource":{"primary":{"URL":"http:\/\/ieeexplore.ieee.org\/document\/1203662\/"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":13,"URL":"https:\/\/doi.org\/10.1109\/icdcsw.2003.1203662","relation":{},"subject":[]}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1523'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:52 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -684,16 +680,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '1529'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:36:36 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -702,10 +690,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -724,9 +708,9 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works/10.3892/ijo_00000353
   response:
@@ -735,8 +719,16 @@ interactions:
       J Oncol"],"published-print":{"date-parts":[[2009,6,26]]},"DOI":"10.3892\/ijo_00000353","type":"journal-article","created":{"date-parts":[[2009,6,26]],"date-time":"2009-06-26T11:19:22Z","timestamp":1246015162000},"source":"Crossref","is-referenced-by-count":4,"title":["Human
       bladder cancer cells undergo cisplatin-induced apoptosis that is associated
       with p53-dependent and p53-independent responses"],"prefix":"10.3892","author":[{"family":"Stravopodis","sequence":"first","affiliation":[]}],"member":"2249","container-title":["International
-      Journal of Oncology"],"original-title":[],"link":[{"URL":"https:\/\/spandidos-publications.com\/10.3892\/ijo_00000353\/download","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,27]],"date-time":"2017-04-27T09:37:08Z","timestamp":1493285828000},"score":1,"resource":{"primary":{"URL":"http:\/\/www.spandidos-publications.com\/ijo\/35\/2\/401"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009,6,26]]},"references-count":0,"URL":"http:\/\/dx.doi.org\/10.3892\/ijo_00000353","relation":{},"ISSN":["1019-6439"],"issn-type":[{"value":"1019-6439","type":"print"}],"subject":[],"published":{"date-parts":[[2009,6,26]]}}}'
+      Journal of Oncology"],"original-title":[],"link":[{"URL":"https:\/\/spandidos-publications.com\/10.3892\/ijo_00000353\/download","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,27]],"date-time":"2017-04-27T09:37:08Z","timestamp":1493285828000},"score":1,"resource":{"primary":{"URL":"http:\/\/www.spandidos-publications.com\/ijo\/35\/2\/401"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009,6,26]]},"references-count":0,"URL":"https:\/\/doi.org\/10.3892\/ijo_00000353","relation":{},"ISSN":["1019-6439"],"issn-type":[{"value":"1019-6439","type":"print"}],"subject":[],"published":{"date-parts":[[2009,6,26]]}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '792'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:28:52 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -744,16 +736,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '798'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:36:36 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -762,10 +746,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

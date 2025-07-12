@@ -11,14 +11,22 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/members/2984/works?rows=0&facet=issn%3A%2A
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{"issn":{"value-count":13,"values":{"http:\/\/id.crossref.org\/issn\/1091-3297":270,"http:\/\/id.crossref.org\/issn\/2193-5505":86,"http:\/\/id.crossref.org\/issn\/2191-7442":86,"http:\/\/id.crossref.org\/issn\/1360-466X":61,"http:\/\/id.crossref.org\/issn\/1354-3628":20,"http:\/\/id.crossref.org\/issn\/0849-6757":7,"http:\/\/id.crossref.org\/issn\/1460-3349":2,"http:\/\/id.crossref.org\/issn\/2048-7347":1,"http:\/\/id.crossref.org\/issn\/2048-2604":1,"http:\/\/id.crossref.org\/issn\/1746-7632":1,"http:\/\/id.crossref.org\/issn\/1746-7616":1,"http:\/\/id.crossref.org\/issn\/1746-6709":1,"http:\/\/id.crossref.org\/issn\/0962-2624":1}}},"total-results":563692,"items":[],"items-per-page":0,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{"issn":{"value-count":11,"values":{"https:\/\/id.crossref.org\/issn\/1091-3297":270,"https:\/\/id.crossref.org\/issn\/2193-5505":86,"https:\/\/id.crossref.org\/issn\/2191-7442":86,"https:\/\/id.crossref.org\/issn\/1360-466X":61,"https:\/\/id.crossref.org\/issn\/1354-3628":20,"https:\/\/id.crossref.org\/issn\/0849-6757":7,"https:\/\/id.crossref.org\/issn\/1460-3349":2,"https:\/\/id.crossref.org\/issn\/1746-7632":1,"https:\/\/id.crossref.org\/issn\/1746-7616":1,"https:\/\/id.crossref.org\/issn\/1746-6709":1,"https:\/\/id.crossref.org\/issn\/0962-2624":1}}},"total-results":669550,"items":[],"items-per-page":0,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:25:39 GMT
+      Transfer-Encoding:
+      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -26,24 +34,12 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 14:04:32 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
-      transfer-encoding:
-      - chunked
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

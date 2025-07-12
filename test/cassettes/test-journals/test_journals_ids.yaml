@@ -11,16 +11,24 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/journals/1803-2427
   response:
-    content: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1728793195607,"counts":{"current-dois":54,"backfile-dois":234,"total-dois":288},"breakdowns":{"dois-by-issued-year":[[2017,35],[2018,23],[2020,22],[2023,20],[2022,20],[2021,20],[2019,20],[2015,20],[2016,15],[2013,15],[2011,15],[2024,14],[2014,11],[2010,10],[2008,10],[2012,9],[2009,9]]},"publisher":"De
-      Gruyter Poland Sp. z o.o.","coverage":{"affiliations-current":1.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.735042735042735,"funders-current":0.0,"affiliations-backfile":0.7307692307692308,"resource-links-backfile":0.782051282051282,"orcids-backfile":0.02136752136752137,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.2222222222222222,"similarity-checking-backfile":0.9829059829059829,"references-backfile":0.735042735042735,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":1.0,"award-numbers-current":0.0,"abstracts-backfile":0.8632478632478632,"resource-links-current":0.0,"abstracts-current":1.0,"references-current":1.0},"title":"Journal
-      of Landscape Ecology","subjects":[],"coverage-type":{"all":{"last-status-check-time":1728793195607,"affiliations":0.78125,"abstracts":0.888888888888889,"orcids":0.05902777777777778,"licenses":0.7847222222222222,"references":0.7847222222222222,"funders":0.0,"similarity-checking":0.986111111111111,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.6354166666666667,"descriptions":0.0},"backfile":{"last-status-check-time":1728793195607,"affiliations":0.7307692307692308,"abstracts":0.8632478632478632,"orcids":0.02136752136752137,"licenses":0.735042735042735,"references":0.735042735042735,"funders":0.0,"similarity-checking":0.9829059829059829,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.782051282051282,"descriptions":0.0},"current":{"last-status-check-time":1728793195607,"affiliations":1.0,"abstracts":1.0,"orcids":0.2222222222222222,"licenses":1.0,"references":1.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["1803-2427","1805-4196"],"issn-type":[{"type":"print","value":"1803-2427"},{"type":"electronic","value":"1805-4196"}]}}'
+    content: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1752287139880,"counts":{"current-dois":60,"backfile-dois":254,"total-dois":314},"breakdowns":{"dois-by-issued-year":[[2017,35],[2024,23],[2018,23],[2020,22],[2023,20],[2022,20],[2021,20],[2019,20],[2015,20],[2025,17],[2016,15],[2013,15],[2011,15],[2014,11],[2010,10],[2008,10],[2012,9],[2009,9]]},"publisher":"De
+      Gruyter Poland Sp. z o.o.","coverage":{"affiliations-current":1.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.7559055118110236,"funders-current":0.0,"affiliations-backfile":0.7519685039370079,"resource-links-backfile":0.7204724409448819,"orcids-backfile":0.03937007874015748,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.1666666666666667,"similarity-checking-backfile":0.984251968503937,"references-backfile":0.7559055118110236,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":1.0,"award-numbers-current":0.0,"abstracts-backfile":0.8740157480314961,"resource-links-current":0.0,"abstracts-current":1.0,"references-current":1.0},"title":"Journal
+      of Landscape Ecology","subjects":[],"coverage-type":{"all":{"last-status-check-time":1752287139880,"affiliations":0.7993630573248408,"abstracts":0.8980891719745223,"orcids":0.06369426751592357,"licenses":0.8025477707006369,"references":0.8025477707006369,"funders":0.0,"similarity-checking":0.9872611464968153,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.5828025477707006,"descriptions":0.0},"backfile":{"last-status-check-time":1752287139880,"affiliations":0.7519685039370079,"abstracts":0.8740157480314961,"orcids":0.03937007874015748,"licenses":0.7559055118110236,"references":0.7559055118110236,"funders":0.0,"similarity-checking":0.984251968503937,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.7204724409448819,"descriptions":0.0},"current":{"last-status-check-time":1752287139880,"affiliations":1.0,"abstracts":1.0,"orcids":0.1666666666666667,"licenses":1.0,"references":1.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["1803-2427","1805-4196"],"issn-type":[{"type":"print","value":"1803-2427"},{"type":"electronic","value":"1805-4196"}]}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '940'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 03:20:00 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -28,16 +36,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '886'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:55:52 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -46,10 +46,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -68,16 +64,24 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/journals/2326-4225
   response:
-    content: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1728794309270,"counts":{"current-dois":0,"backfile-dois":179,"total-dois":179},"breakdowns":{"dois-by-issued-year":[[2014,55],[2013,50],[2017,33],[2016,27],[2018,14]]},"publisher":"American
+    content: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1752287614349,"counts":{"current-dois":0,"backfile-dois":179,"total-dois":179},"breakdowns":{"dois-by-issued-year":[[2014,55],[2013,50],[2017,33],[2016,27],[2018,14]]},"publisher":"American
       Scientific Publishers","coverage":{"affiliations-current":0.0,"similarity-checking-current":0.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.547486033519553,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"title":"Journal
-      of Nutritional Ecology and Food Research","subjects":[],"coverage-type":{"all":{"last-status-check-time":1728794309270,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"backfile":{"last-status-check-time":1728794309270,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"current":{"last-status-check-time":1728794309270,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":false,"deposits-licenses-current":false},"ISSN":["2326-4225"],"issn-type":[{"type":"print","value":"2326-4225"}]}}'
+      of Nutritional Ecology and Food Research","subjects":[],"coverage-type":{"all":{"last-status-check-time":1752287614349,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"backfile":{"last-status-check-time":1752287614349,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.547486033519553,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"current":{"last-status-check-time":1752287614349,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":false,"deposits-licenses-current":false},"ISSN":["2326-4225"],"issn-type":[{"type":"print","value":"2326-4225"}]}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '686'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 03:20:01 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -85,16 +89,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '686'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:55:52 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -103,10 +99,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

@@ -11,9 +11,9 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/types?query=journal
   response:
@@ -30,6 +30,14 @@ interactions:
       Issue"},{"id":"dissertation","label":"Dissertation"},{"id":"grant","label":"Grant"},{"id":"dataset","label":"Dataset"},{"id":"book-series","label":"Book
       Series"},{"id":"edited-book","label":"Edited Book"}]}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '451'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Sat, 12 Jul 2025 04:28:32 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -37,16 +45,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '451'
-      content-type:
-      - application/json;charset=utf-8
-      date:
-      - Sun, 13 Oct 2024 04:56:18 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -55,10 +55,6 @@ interactions:
       - Accept, Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

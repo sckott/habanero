@@ -11,173 +11,89 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works?sample=3
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2024,8,12]],"date-time":"2024-08-12T11:16:56Z","timestamp":1723461416170},"reference-count":34,"publisher":"ASME
-      International","issue":"1","content-domain":{"domain":["asmedigitalcollection.asme.org"],"crossmark-restriction":true},"published-print":{"date-parts":[[2018,1,1]]},"abstract":"<jats:p>Sudden
-      changes of flame shape are an undesired, yet poorly understood feature of swirl
-      combustors used in gas turbines. The present work studies flame shape transition
-      mechanisms of a bistable turbulent swirl flame in a gas turbine model combustor,
-      which alternates intermittently between an attached V-form and a lifted M-form.
-      Time-resolved velocity fields and two-dimensional flame structures were measured
-      simultaneously using high-speed stereo-particle image velocimetry (PIV) and
-      planar laser-induced fluorescence of OH (OH-PLIF) at 10\u2009kHz. The data analysis
-      is performed using two novel methods that are well adapted to the study of transient
-      flame shape transitions: First, the linear stability analysis (LSA) of a time-varying
-      mean flow and second, the recently proposed spectral proper orthogonal decomposition
-      (SPOD). The results show that the transitions are governed by two types of instability,
-      namely a hydrodynamic instability in the form of a precessing vortex core (PVC)
-      and a thermoacoustic (TA) instability. The LSA shows that the V-M transition
-      implies the transient formation of a PVC as the result of a self-amplification
-      process. The V-M transition, on the other hand, is induced by the appearance
-      of a TA instability that suppresses the PVC and thereby modifies the flowfield
-      such that the flame re-attaches at the nozzle. In summary, these results provide
-      novel insights into the complex interactions of TA and hydrodynamic instabilities
-      that govern the shape of turbulent swirl-stabilized flames.<\/jats:p>","DOI":"10.1115\/1.4037724","type":"journal-article","created":{"date-parts":[[2017,8,21]],"date-time":"2017-08-21T13:30:42Z","timestamp":1503322242000},"update-policy":"http:\/\/dx.doi.org\/10.1115\/crossmarkpolicy-asme","source":"Crossref","is-referenced-by-count":38,"title":["Experimental
-      Study of Transient Mechanisms of Bistable Flame Shape Transitions in a Swirl
-      Combustor"],"prefix":"10.1115","volume":"140","author":[{"given":"Michael","family":"St\u00f6hr","sequence":"first","affiliation":[{"name":"German
-      Aerospace Center (DLR), Institute of Combustion Technology, Pfaffenwaldring
-      38-40, Stuttgart 70569, Germany e-mail:"}]},{"given":"Kilian","family":"Oberleithner","sequence":"additional","affiliation":[{"name":"Chair
-      of Fluid Dynamics, Hermann-F\u00f6ttinger-Institut, Technische Universit\u00e4t
-      Berlin, M\u00fcller-Breslau-Str. 8, Berlin 10623, Germany e-mail:"}]},{"given":"Moritz","family":"Sieber","sequence":"additional","affiliation":[{"name":"Chair
-      of Fluid Dynamics, Hermann-F\u00f6ttinger-Institut, Technische Universit\u00e4t
-      Berlin, M\u00fcller-Breslau-Str. 8, Berlin 10623, Germany e-mail:"}]},{"given":"Zhiyao","family":"Yin","sequence":"additional","affiliation":[{"name":"German
-      Aerospace Center (DLR), Institute of Combustion Technology, Pfaffenwaldring
-      38-40, Stuttgart 70569, Germany e-mail:"}]},{"given":"Wolfgang","family":"Meier","sequence":"additional","affiliation":[{"name":"German
-      Aerospace Center (DLR), Institute of Combustion Technology, Pfaffenwaldring
-      38-40, Stuttgart 70569, Germany e-mail:"}]}],"member":"33","published-online":{"date-parts":[[2017,9,19]]},"reference":[{"issue":"1\u20132","key":"2019100612550086400_bib1","doi-asserted-by":"publisher","first-page":"29","DOI":"10.1016\/j.combustflame.2007.05.012","article-title":"An
-      Experimental Investigation of Thermoacoustic Instabilities in a Premixed Swirl-Stabilized
-      Flame","volume":"151","year":"2007","journal-title":"Combust. Flame"},{"issue":"7","key":"2019100612550086400_bib2","doi-asserted-by":"publisher","first-page":"1344","DOI":"10.1016\/j.expthermflusci.2007.11.007","article-title":"Combustion
-      Dynamics Linked to Flame Behaviour in a Partially Premixed Swirled Industrial
-      Burner","volume":"32","year":"2008","journal-title":"Exp. Therm. Fluid Sci."},{"issue":"2","key":"2019100612550086400_bib3","doi-asserted-by":"publisher","first-page":"447","DOI":"10.1016\/j.combustflame.2008.10.027","article-title":"Hysteresis
-      and Transition in Swirling Nonpremixed Flames","volume":"156","year":"2009","journal-title":"Combust.
-      Flame"},{"issue":"3","key":"2019100612550086400_bib4","doi-asserted-by":"publisher","first-page":"3365","DOI":"10.1016\/j.proci.2014.07.012","article-title":"Flame
-      Shape Transition in a Swirl Stabilised Liquid Fueled Burner","volume":"35","year":"2015","journal-title":"Proc.
-      Combust. Inst."},{"issue":"2","key":"2019100612550086400_bib5","doi-asserted-by":"publisher","first-page":"1385","DOI":"10.1016\/j.proci.2014.06.016","article-title":"Impact
-      of Heat Loss and Hydrogen Enrichment on the Shape of Confined Swirling Flames","volume":"35","year":"2015","journal-title":"Proc.
-      Combust. Inst."},{"issue":"8","key":"2019100612550086400_bib6","doi-asserted-by":"publisher","first-page":"3100","DOI":"10.1016\/j.combustflame.2015.02.015","article-title":"Formation
-      and Flame-Induced Suppression of the Precessing Vortex Core in a Swirl Combustor:
-      Experiments and Linear Stability Analysis","volume":"162","year":"2015","journal-title":"Combust.
-      Flame"},{"key":"2019100612550086400_bib7","doi-asserted-by":"publisher","article-title":"Flow-Field
-      and Flame Dynamics of a Gas Turbine Model Combustor During Transition Between
-      Thermo-Acoustically Stable and Unstable States","volume-title":"ASME","year":"2010","DOI":"10.1115\/GT2010-22830"},{"issue":"1","key":"2019100612550086400_bib8","doi-asserted-by":"publisher","first-page":"184","DOI":"10.1016\/j.combustflame.2013.07.022","article-title":"Bistable
-      Swirled Flames and Influence on Flame Transfer Functions","volume":"161","year":"2014","journal-title":"Combust.
-      Flame"},{"key":"2019100612550086400_bib9","doi-asserted-by":"publisher","first-page":"228","DOI":"10.1016\/j.combustflame.2016.03.011","article-title":"Coupled
-      Dynamics of Lift-Off and Precessing Vortex Core Formation in Swirl Flames","volume":"168","year":"2016","journal-title":"Combust.
-      Flame"},{"issue":"4","key":"2019100612550086400_bib10","doi-asserted-by":"publisher","first-page":"489","DOI":"10.1016\/j.combustflame.2004.03.008","article-title":"Compressible
-      Large Eddy Simulation of Turbulent Combustion in Complex Geometry on Unstructured
-      Meshes","volume":"137","year":"2004","journal-title":"Combust. Flame"},{"issue":"1","key":"2019100612550086400_bib11","doi-asserted-by":"publisher","first-page":"1477","DOI":"10.1016\/j.proci.2006.07.225","article-title":"Investigation
-      of a Strongly Swirled Unconfined Premixed Flame Using LES","volume":"31","year":"2007","journal-title":"Proc.
-      Combust. Inst."},{"issue":"7","key":"2019100612550086400_bib12","doi-asserted-by":"publisher","first-page":"071503","DOI":"10.1115\/1.4000141","article-title":"An
-      Experimental and Computational Study of a Swirl-Stabilized Premixed Flame","volume":"132","year":"2010","journal-title":"ASME
-      J. Eng. Gas Turbines Power"},{"issue":"3","key":"2019100612550086400_bib13","doi-asserted-by":"publisher","first-page":"3907","DOI":"10.1016\/j.proci.2016.06.084","article-title":"Interaction
-      Between Velocity Fluctuations and Equivalence Ratio Fluctuations During Thermoacoustic
-      Oscillations in a Partially Premixed Swirl Combustor","volume":"36","year":"2016","journal-title":"Proc.
-      Combust. Inst."},{"issue":"4","key":"2019100612550086400_bib14","doi-asserted-by":"publisher","first-page":"798","DOI":"10.1017\/jfm.2016.103","article-title":"Spectral
-      Proper Orthogonal Decomposition","volume":"792","year":"2016","journal-title":"J.
-      Fluid Mech."},{"key":"2019100612550086400_bib15","volume-title":"Turbulence,
-      Coherent Structures, Dynamical Systems and Symmetry","year":"1998"},{"key":"2019100612550086400_bib16","doi-asserted-by":"publisher","first-page":"383","DOI":"10.1017\/jfm.2011.141","article-title":"Three-Dimensional
-      Coherent Structures in a Swirling Jet Undergoing Vortex Breakdown: Stability
-      Analysis and Empirical Mode Construction","volume":"679","year":"2011","journal-title":"J.
-      Fluid Mech."},{"issue":"2","key":"2019100612550086400_bib17","doi-asserted-by":"publisher","first-page":"021503","DOI":"10.1115\/1.4034261","article-title":"Advanced
-      Identification of Coherent Structures in Swirl-Stabilized Combustors","volume":"139","year":"2016","journal-title":"ASME
-      J. Eng. Gas Turbines Power"},{"key":"2019100612550086400_bib18","doi-asserted-by":"publisher","first-page":"71","DOI":"10.1017\/S0022112005007834","article-title":"Spiral
-      Vortex Breakdown as a Global Mode","volume":"549","year":"2006","journal-title":"J.
-      Fluid Mech."},{"key":"2019100612550086400_bib19","doi-asserted-by":"publisher","article-title":"Absolute
-      and Convective Instability in Gas Turbine Fuel Injectors","volume-title":"ASME","year":"2012","DOI":"10.1115\/GT2012-68253"},{"issue":"3","key":"2019100612550086400_bib20","doi-asserted-by":"publisher","first-page":"620","DOI":"10.1017\/jfm.2016.86","article-title":"Coherent
-      Structures in a Swirl Injector at Re\u2009=\u20094800 by Nonlinear Simulations
-      and Linear Global Modes","volume":"792","year":"2016","journal-title":"J. Fluid
-      Mech."},{"key":"2019100612550086400_bib21","article-title":"Transient Evolution
-      of the Global Mode in Turbulent Swirling Jets: Experiments and Modal Stability
-      Analysis","volume":"65","year":"2015","journal-title":"Eur. J. Mech. B-Fluids"},{"issue":"7","key":"2019100612550086400_bib22","doi-asserted-by":"publisher","first-page":"074103","DOI":"10.1063\/1.4926443","article-title":"A
-      Self-Consistent Model for the Saturation Dynamics of the Vortex Shedding Around
-      the Mean Flow in the Unstable Cylinder Wake","volume":"27","year":"2015","journal-title":"Phys.
-      Fluids"},{"issue":"1","key":"2019100612550086400_bib23","doi-asserted-by":"publisher","first-page":"206","DOI":"10.1016\/0021-9991(89)90071-5","article-title":"Application
-      of Spectral Collocation Techniques to the Stability of Swirling Flows","volume":"81","year":"1989","journal-title":"J.
-      Comput. Phys."},{"key":"2019100612550086400_bib24","doi-asserted-by":"publisher","first-page":"473","DOI":"10.1146\/annurev.fl.22.010190.002353","article-title":"Local
-      and Global Instabilities in Spatially Developing Flows","volume":"22","year":"1990","journal-title":"Annu.
-      Rev. Fluid Mech."},{"issue":"1","key":"2019100612550086400_bib25","doi-asserted-by":"publisher","first-page":"25","DOI":"10.1103\/PhysRevLett.60.25","article-title":"Bifurcations
-      to Local and Global Modes in Spatially Developing Flows","volume":"60","year":"1988","journal-title":"Phys.
-      Rev. Lett."},{"issue":"2","key":"2019100612550086400_bib26","doi-asserted-by":"publisher","first-page":"119","DOI":"10.1002\/sapm1991842119","article-title":"A
-      Frequency Selection Criterion in Spatially Developing Flows","volume":"84","year":"1991","journal-title":"Stud.
-      Appl. Math."},{"key":"2019100612550086400_bib27","doi-asserted-by":"publisher","first-page":"205","DOI":"10.1016\/j.euromechflu.2016.05.004","article-title":"An
-      Assessment of Turbulence Models for Linear Hydrodynamic Stability Analysis of
-      Strongly Swirling Jets","volume":"59","year":"2016","journal-title":"Eur. J.
-      Mech. B\/Fluids"},{"issue":"4","key":"2019100612550086400_bib28","doi-asserted-by":"publisher","first-page":"1153","DOI":"10.1007\/s00348-011-1134-y","article-title":"Phase-Resolved
-      Characterization of Vortex Flame Interaction in a Turbulent Swirl Flame","volume":"51","year":"2011","journal-title":"Exp.
-      Fluids"},{"key":"2019100612550086400_bib29","doi-asserted-by":"publisher","first-page":"234","DOI":"10.1016\/j.combustflame.2016.06.013","article-title":"Suppression
-      and Excitation of the Precessing Vortex Core by Acoustic Velocity Fluctuations:
-      An Experimental and Analytical Study","volume":"172","year":"2016","journal-title":"Combust.
-      Flame"},{"key":"2019100612550086400_bib30","doi-asserted-by":"publisher","first-page":"50","DOI":"10.1016\/j.expthermflusci.2016.11.004","article-title":"Responses
-      of Combustor Surface Temperature to Flame Shape Transitions in a Turbulent bi-Stable
-      Swirl Flame","volume":"82","year":"2016","journal-title":"Exp. Therm. Fluid
-      Sci."},{"issue":"3","key":"2019100612550086400_bib31","doi-asserted-by":"publisher","first-page":"3347","DOI":"10.1016\/j.proci.2014.07.035","article-title":"Key
-      Parameters Governing the Precessing Vortex Core in Reacting Flows: An Experimental
-      and Analytical Study","volume":"35","year":"2015","journal-title":"Proc. Combust.
-      Inst."},{"key":"2019100612550086400_bib32","doi-asserted-by":"publisher","first-page":"335","DOI":"10.1017\/S0022112003006694","article-title":"A
-      Hierarchy of Low-Dimensional Models for the Transient and Post-Transient Cylinder
-      Wake","volume":"497","year":"2003","journal-title":"J. Fluid Mech."},{"issue":"5","key":"2019100612550086400_bib33","doi-asserted-by":"publisher","first-page":"750","DOI":"10.1209\/epl\/i2006-10168-7","article-title":"Linear
-      Analysis of the Cylinder Wake Mean Flow","volume":"75","year":"2006","journal-title":"Europhys.
-      Lett"},{"issue":"8","key":"2019100612550086400_bib34","doi-asserted-by":"publisher","first-page":"2650","DOI":"10.1016\/j.combustflame.2012.04.002","article-title":"Nonlinear
-      Interaction Between a Precessing Vortex Core and Acoustic Oscillations in a
-      Turbulent Swirling Flame","volume":"159","year":"2012","journal-title":"Combust.
-      Flame"}],"container-title":["Journal of Engineering for Gas Turbines and Power"],"language":"en","link":[{"URL":"http:\/\/asmedigitalcollection.asme.org\/gasturbinespower\/article-pdf\/doi\/10.1115\/1.4037724\/6176529\/gtp_140_01_011503.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"http:\/\/asmedigitalcollection.asme.org\/gasturbinespower\/article-pdf\/doi\/10.1115\/1.4037724\/6176529\/gtp_140_01_011503.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,10,6]],"date-time":"2019-10-06T16:55:08Z","timestamp":1570380908000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/asmedigitalcollection.asme.org\/gasturbinespower\/article\/doi\/10.1115\/1.4037724\/374503\/Experimental-Study-of-Transient-Mechanisms-of"}},"issued":{"date-parts":[[2017,9,19]]},"references-count":34,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2018,1,1]]}},"URL":"http:\/\/dx.doi.org\/10.1115\/1.4037724","ISSN":["0742-4795","1528-8919"],"issn-type":[{"value":"0742-4795","type":"print"},{"value":"1528-8919","type":"electronic"}],"published":{"date-parts":[[2017,9,19]]}},{"institution":[{"name":"bioRxiv"}],"indexed":{"date-parts":[[2023,9,17]],"date-time":"2023-09-17T10:25:55Z","timestamp":1694946355558},"posted":{"date-parts":[[2017,11,24]]},"group-title":"Neuroscience","reference-count":49,"publisher":"Cold
-      Spring Harbor Laboratory","content-domain":{"domain":[],"crossmark-restriction":false},"accepted":{"date-parts":[[2017,11,24]]},"abstract":"<jats:title>ABSTRACT<\/jats:title><jats:sec><jats:title>BACKGROUND<\/jats:title><jats:p>Cognitive
-      behavioural therapy (CBT) is an effective evidence based treatment for depression.
-      At present there is no reliable predictor of CBT in depression. Although the
-      key to successful CBT in depression lies in altering maladaptive information
-      processing, no previous imaging study has probed predictors of CBT response
-      using pre-treatment neural encoding of information processing. METHODS: Using
-      functional magnetic resonance imaging we scanned 37 unmedicated depressed subjects
-      before and after completing computerised CBT (cCBT). We model the trial-by-trial
-      appraisal of feedback information during a probabilistic learning task by means
-      of a dynamic learning rate. To discriminate response to cCBT we capitalise on
-      the pre-treatment blood oxygen level dependent (BOLD) activity encoding the
-      dynamic learning rate as a function of feedback congruence and valence. Additionally,
-      we probe between-group differences in the learning style encoded in the model\u2019s
-      parameters.<\/jats:p><\/jats:sec><jats:sec><jats:title>RESULTS<\/jats:title><jats:p>We
-      show BOLD activity in the dorsomedial prefrontal cortex (dmPFC) to be encoding
-      the dynamic learning rate. Crucially, responders exhibit greater BOLD activity
-      in the dmPFC during incongruent negative trials but lower BOLD activity during
-      congruent negative trials than non-responders. Additionally, on between-group
-      comparisons of model\u2019s parameter estimates we show responders take relatively
-      greater account of previous feedback history and make comparatively smaller
-      adjustments to the learning rate as a result of outcome surprisingness.<\/jats:p><\/jats:sec><jats:sec><jats:title>CONCLUSIONS<\/jats:title><jats:p>Our
-      findings provide novel and important insights into the cognitive mechanisms
-      underpinning response to cCBT and lend support to the feasibility and validity
-      of neurocomputational approaches to treatment prediction research in psychiatry.<\/jats:p><\/jats:sec>","DOI":"10.1101\/224410","type":"posted-content","created":{"date-parts":[[2017,11,25]],"date-time":"2017-11-25T06:10:18Z","timestamp":1511590218000},"source":"Crossref","is-referenced-by-count":1,"title":["Dorsomedial
-      prefrontal cortex activity during learning discriminates response to Cognitive
-      Behavioural Therapy in depression"],"prefix":"10.1101","author":[{"given":"Filippo","family":"Queirazza","sequence":"first","affiliation":[]},{"given":"Elsa","family":"Fouragnan","sequence":"additional","affiliation":[]},{"given":"J.
-      Douglas","family":"Steele","sequence":"additional","affiliation":[]},{"given":"Jonathan","family":"Cavanagh","sequence":"additional","affiliation":[]},{"given":"Marios
-      G.","family":"Philiastides","sequence":"additional","affiliation":[]}],"member":"246","reference":[{"key":"2019071809533919000_224410v1.1","unstructured":"Beck
-      AT (1972): Depression; causes and treatment. Philadelphia,: University of Pennsylvania
-      Press."},{"key":"2019071809533919000_224410v1.2","doi-asserted-by":"publisher","DOI":"10.1016\/j.biopsych.2010.01.027"},{"key":"2019071809533919000_224410v1.3","unstructured":"Beck
-      AT (1976): Cognitive therapy and the emotional disorders. New York: International
-      Universities Press."},{"key":"2019071809533919000_224410v1.4","doi-asserted-by":"publisher","DOI":"10.1177\/070674371305800702"},{"key":"2019071809533919000_224410v1.5","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pone.0021274"},{"key":"2019071809533919000_224410v1.6","doi-asserted-by":"publisher","DOI":"10.1001\/archgenpsychiatry.2012.65"},{"key":"2019071809533919000_224410v1.7","doi-asserted-by":"publisher","DOI":"10.1176\/appi.ajp.163.4.735"},{"key":"2019071809533919000_224410v1.8","doi-asserted-by":"crossref","first-page":"821","DOI":"10.1001\/jamapsychiatry.2013.143","article-title":"Toward
-      a neuroimaging treatment selection biomarker for major depressive disorder","volume":"70","year":"2013","journal-title":"JAMA
-      Psychiatry"},{"key":"2019071809533919000_224410v1.9","doi-asserted-by":"crossref","first-page":"827","DOI":"10.1007\/s00127-011-0389-1","article-title":"Factors
-      associated with differential response to online cognitive behavioural therapy","volume":"47","year":"2012","journal-title":"Soc
-      Psychiatry Psychiatr Epidemiol"},{"key":"2019071809533919000_224410v1.10","doi-asserted-by":"publisher","DOI":"10.1016\/j.jad.2007.05.001"},{"key":"2019071809533919000_224410v1.11","doi-asserted-by":"publisher","DOI":"10.1037\/a0018324"},{"key":"2019071809533919000_224410v1.12","doi-asserted-by":"crossref","first-page":"343","DOI":"10.1016\/j.jad.2013.06.020","article-title":"Predictors
-      and moderators of response to internet-delivered Interpersonal Psychotherapy
-      and Cognitive Behavior Therapy for depression","volume":"151","year":"2013","journal-title":"J
-      Affect Disord"},{"key":"2019071809533919000_224410v1.13","doi-asserted-by":"crossref","first-page":"539","DOI":"10.31887\/DCNS.2014.16.4\/mthase","article-title":"Using
-      biomarkers to predict treatment response in major depressive disorder: evidence
-      from past and present studies","volume":"16","year":"2014","journal-title":"Dialogues
-      in clinical neuroscience"},{"key":"2019071809533919000_224410v1.14","doi-asserted-by":"publisher","DOI":"10.1038\/mp.2012.105"},{"key":"2019071809533919000_224410v1.15","doi-asserted-by":"publisher","DOI":"10.1038\/nrn2345"},{"key":"2019071809533919000_224410v1.16","doi-asserted-by":"publisher","DOI":"10.1016\/j.jpsychires.2010.09.007"},{"key":"2019071809533919000_224410v1.17","doi-asserted-by":"publisher","DOI":"10.1016\/j.biopsych.2006.05.048"},{"key":"2019071809533919000_224410v1.18","doi-asserted-by":"publisher","DOI":"10.1001\/archpsyc.61.1.34"},{"key":"2019071809533919000_224410v1.19","doi-asserted-by":"publisher","DOI":"10.1016\/j.biopsych.2013.12.005"},{"key":"2019071809533919000_224410v1.20","doi-asserted-by":"publisher","DOI":"10.3758\/CABN.9.4.343"},{"key":"2019071809533919000_224410v1.21","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pcbi.1001048"},{"key":"2019071809533919000_224410v1.22","doi-asserted-by":"publisher","DOI":"10.1038\/nn1954"},{"key":"2019071809533919000_224410v1.23","doi-asserted-by":"publisher","DOI":"10.1523\/JNEUROSCI.0822-10.2010"},{"key":"2019071809533919000_224410v1.24","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.0905191106"},{"key":"2019071809533919000_224410v1.25","doi-asserted-by":"publisher","DOI":"10.3389\/fnhum.2011.00039"},{"key":"2019071809533919000_224410v1.26","doi-asserted-by":"publisher","DOI":"10.1038\/nn.3961"},{"key":"2019071809533919000_224410v1.27","doi-asserted-by":"publisher","DOI":"10.1017\/S0033291702007018"},{"key":"2019071809533919000_224410v1.28","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuroimage.2008.05.049"},{"key":"2019071809533919000_224410v1.29","doi-asserted-by":"publisher","DOI":"10.1017\/S0033291700030415"},{"key":"2019071809533919000_224410v1.30","doi-asserted-by":"publisher","DOI":"10.1207\/s15327752jpa6703_13"},{"key":"2019071809533919000_224410v1.31","doi-asserted-by":"publisher","DOI":"10.1037\/0033-295X.87.6.532"},{"key":"2019071809533919000_224410v1.32","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pcbi.1002410"},{"key":"2019071809533919000_224410v1.33","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pcbi.1002028"},{"key":"2019071809533919000_224410v1.34","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(03)00073-9"},{"key":"2019071809533919000_224410v1.35","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuroimage.2004.07.051"},{"key":"2019071809533919000_224410v1.36","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(02)91132-8"},{"key":"2019071809533919000_224410v1.37","doi-asserted-by":"publisher","DOI":"10.1016\/S1361-8415(01)00036-6"},{"key":"2019071809533919000_224410v1.38","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuroimage.2009.06.060"},{"key":"2019071809533919000_224410v1.39","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(03)00435-X"},{"key":"2019071809533919000_224410v1.40","doi-asserted-by":"publisher","DOI":"10.1038\/nature04766"},{"key":"2019071809533919000_224410v1.41","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuron.2013.09.009."},{"key":"2019071809533919000_224410v1.42","doi-asserted-by":"publisher","DOI":"10.1016\/j.neuron.2014.10.013."},{"key":"2019071809533919000_224410v1.43","unstructured":"Beck
-      AT (1979): Cognitive therapy of depression. New York: Guilford Press."},{"key":"2019071809533919000_224410v1.44","first-page":"1119","article-title":"Cognitive
-      Therapy of Depression - Theory and Practice","volume":"34","year":"1983","journal-title":"Hosp
-      Community Psych"},{"key":"2019071809533919000_224410v1.45","doi-asserted-by":"publisher","DOI":"10.1038\/nrn1302"},{"key":"2019071809533919000_224410v1.46","doi-asserted-by":"publisher","DOI":"10.1038\/nrn2994"},{"key":"2019071809533919000_224410v1.47","doi-asserted-by":"publisher","DOI":"10.1038\/nn2066"},{"key":"2019071809533919000_224410v1.48","first-page":"40","article-title":"The
-      optimism bias","volume":"177","year":"2011","journal-title":"Time"},{"key":"2019071809533919000_224410v1.49","doi-asserted-by":"publisher","DOI":"10.1016\/S1053-8119(02)00046-0"}],"link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1101\/224410","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,10,22]],"date-time":"2020-10-22T20:37:59Z","timestamp":1603399079000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/biorxiv.org\/lookup\/doi\/10.1101\/224410"}},"issued":{"date-parts":[[2017,11,24]]},"references-count":49,"URL":"http:\/\/dx.doi.org\/10.1101\/224410","published":{"date-parts":[[2017,11,24]]},"subtype":"preprint"},{"indexed":{"date-parts":[[2022,4,4]],"date-time":"2022-04-04T09:20:05Z","timestamp":1649064005613},"reference-count":0,"publisher":"Springer
-      Science and Business Media LLC","issue":"1-3","license":[{"start":{"date-parts":[[1927,4,1]],"date-time":"1927-04-01T00:00:00Z","timestamp":-1349222400000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Deutsche
-      Zeitschrift f. Nervenheilkunde"],"published-print":{"date-parts":[[1927,4]]},"DOI":"10.1007\/bf01667901","type":"journal-article","created":{"date-parts":[[2005,5,9]],"date-time":"2005-05-09T02:25:44Z","timestamp":1115605544000},"page":"22-31","source":"Crossref","is-referenced-by-count":2,"title":["\u00fcber
-      Wesen und Behandlung der Trigeminusneuralgie"],"prefix":"10.1007","volume":"97","author":[{"given":"F.
-      K.","family":"Walter","sequence":"first","affiliation":[]}],"member":"297","container-title":["Deutsche
-      Zeitschrift f\u00fcr Nervenheilkunde"],"language":"de","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01667901.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/BF01667901\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01667901","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,5,7]],"date-time":"2019-05-07T15:35:50Z","timestamp":1557243350000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/BF01667901"}},"issued":{"date-parts":[[1927,4]]},"references-count":0,"journal-issue":{"issue":"1-3","published-print":{"date-parts":[[1927,4]]}},"alternative-id":["BF01667901"],"URL":"http:\/\/dx.doi.org\/10.1007\/bf01667901","ISSN":["0340-5354","1432-1459"],"issn-type":[{"value":"0340-5354","type":"print"},{"value":"1432-1459","type":"electronic"}],"published":{"date-parts":[[1927,4]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":3,"items":[{"indexed":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T07:59:21Z","timestamp":1648627161538},"reference-count":4,"publisher":"Elsevier
+      BV","issue":"3","license":[{"start":{"date-parts":[[2019,6,1]],"date-time":"2019-06-01T00:00:00Z","timestamp":1559347200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Trends
+      in Chemistry"],"published-print":{"date-parts":[[2019,6]]},"DOI":"10.1016\/j.trechm.2019.03.009","type":"journal-article","created":{"date-parts":[[2019,4,6]],"date-time":"2019-04-06T00:42:14Z","timestamp":1554511334000},"page":"361-362","source":"Crossref","is-referenced-by-count":1,"title":["C
+      C Bond Formation in Heterobiaryls via Phosphorus(V) Intermediates"],"prefix":"10.1016","volume":"1","author":[{"given":"Weiling","family":"Chiu","sequence":"first","affiliation":[]},{"given":"Kristof
+      M.","family":"Altus","sequence":"additional","affiliation":[]},{"given":"Jennifer
+      A.","family":"Love","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.trechm.2019.03.009_bib0005","doi-asserted-by":"crossref","first-page":"3418","DOI":"10.1039\/C5CS00012B","article-title":"Recent
+      advances and new concepts for the synthesis of axially stereoenriched biaryls","volume":"44","author":"Wencel-Delord","year":"2015","journal-title":"Chem.
+      Soc. Rev."},{"key":"10.1016\/j.trechm.2019.03.009_bib0010","doi-asserted-by":"crossref","first-page":"799","DOI":"10.1126\/science.aas8961","article-title":"Heterobiaryl
+      synthesis by contractive C\u2013C coupling via P(V) intermediates","volume":"362","author":"Hilton","year":"2018","journal-title":"Science"},{"key":"10.1016\/j.trechm.2019.03.009_bib0015","doi-asserted-by":"crossref","first-page":"3047","DOI":"10.1021\/ja00764a028","article-title":"Molecular
+      orbital theory of pentacoordinate phosphorus","volume":"94","author":"Hoffmann","year":"1972","journal-title":"J.
+      Am. Chem. Soc."},{"key":"10.1016\/j.trechm.2019.03.009_bib0020","doi-asserted-by":"crossref","first-page":"2457","DOI":"10.1021\/cr00039a007","article-title":"Palladium-catalyzed
+      cross-coupling reactions of organoboron compounds","volume":"95","author":"Miyaura","year":"1995","journal-title":"Chem.
+      Rev."}],"container-title":["Trends in Chemistry"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2589597419300759?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2589597419300759?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2019,6,4]],"date-time":"2019-06-04T17:23:48Z","timestamp":1559669028000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S2589597419300759"}},"issued":{"date-parts":[[2019,6]]},"references-count":4,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2019,6]]}},"alternative-id":["S2589597419300759"],"URL":"https:\/\/doi.org\/10.1016\/j.trechm.2019.03.009","ISSN":["2589-5974"],"issn-type":[{"value":"2589-5974","type":"print"}],"published":{"date-parts":[[2019,6]]}},{"indexed":{"date-parts":[[2024,9,8]],"date-time":"2024-09-08T22:31:54Z","timestamp":1725834714656},"publisher-location":"Cham","reference-count":9,"publisher":"Springer
+      International Publishing","isbn-type":[{"type":"print","value":"9783319265018"},{"type":"electronic","value":"9783319265025"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2015]]},"DOI":"10.1007\/978-3-319-26502-5_5","type":"book-chapter","created":{"date-parts":[[2015,10,16]],"date-time":"2015-10-16T07:14:44Z","timestamp":1444979684000},"page":"64-71","source":"Crossref","is-referenced-by-count":0,"title":["Design
+      of a Privacy-Preserving Document Submission and Grading System"],"prefix":"10.1007","author":[{"given":"Benjamin","family":"Greschbach","sequence":"first","affiliation":[]},{"given":"Guillermo","family":"Rodr\u00edguez-Cano","sequence":"additional","affiliation":[]},{"given":"Tomas","family":"Ericsson","sequence":"additional","affiliation":[]},{"given":"Sonja","family":"Buchegger","sequence":"additional","affiliation":[]}],"member":"297","reference":[{"key":"5_CR1","doi-asserted-by":"crossref","unstructured":"Chaum,
+      D.: Blind signatures for untraceable payments. In: Chaum, D., Rivest, R.L.,
+      Sherman, A.T. (eds.) Advances in Cryptology, pp. 199\u2013203. Springer US (1982)","DOI":"10.1007\/978-1-4757-0602-4_18"},{"key":"5_CR2","unstructured":"Dey,
+      A., Weis, S.: PseudoID: Enhancing privacy in federated login. In: Hot Topics
+      in Privacy Enhancing Technologies, pp. 95\u2013107 (2010). \n                    http:\/\/www.pseudoid.net"},{"key":"5_CR3","doi-asserted-by":"crossref","unstructured":"Dingledine,
+      R., Mathewson, N., Syverson, P.: Tor: The second-generation onion router. In:
+      SSYM Proceedings, vol. 13. p. 21. USENIX Association, USA (2004)","DOI":"10.21236\/ADA465464"},{"key":"5_CR4","unstructured":"Free
+      Software Foundation (FSF): Libgcrypt (2007). \n                    http:\/\/www.gnu.org\/software\/libgcrypt\/"},{"key":"5_CR5","unstructured":"Freedom
+      of the Press Foundation (FPF): SecureDrop (2013). \n                    https:\/\/securedrop.org\/"},{"key":"5_CR6","unstructured":"French
+      Institute for Research in Computer Science and Automation (INRIA): Taler (2015).
+      \n                    http:\/\/www.taler.net"},{"key":"5_CR7","unstructured":"Hayes,
+      P.D.: CryptoBallot (2013). \n                    https:\/\/cryptoballot.com\/"},{"key":"5_CR8","unstructured":"Hermes
+      Center for Transparency and Digital Human Rights: GlobaLeaks (2011). \n                    https:\/\/www.globaleaks.org\/"},{"key":"5_CR9","doi-asserted-by":"crossref","unstructured":"Stamatiou,
+      Y., et al.: Course evaluation in higher education: the patras pilot of ABC4Trust.
+      In: Rannenberg, K., Camenisch, J., Sabouri, A. (eds.) Attribute-based Credentials
+      for Trust, pp. 197\u2013239. Springer International Publishing (2015)","DOI":"10.1007\/978-3-319-14439-9_7"}],"container-title":["Lecture
+      Notes in Computer Science","Secure IT Systems"],"link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-3-319-26502-5_5","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,5,31]],"date-time":"2019-05-31T02:54:07Z","timestamp":1559271247000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-3-319-26502-5_5"}},"issued":{"date-parts":[[2015]]},"ISBN":["9783319265018","9783319265025"],"references-count":9,"URL":"https:\/\/doi.org\/10.1007\/978-3-319-26502-5_5","ISSN":["0302-9743","1611-3349"],"issn-type":[{"type":"print","value":"0302-9743"},{"type":"electronic","value":"1611-3349"}],"published":{"date-parts":[[2015]]}},{"indexed":{"date-parts":[[2022,4,1]],"date-time":"2022-04-01T13:07:31Z","timestamp":1648818451812},"reference-count":31,"publisher":"American
+      Institute of Aeronautics and Astronautics (AIAA)","issue":"11","content-domain":{"domain":["arc.aiaa.org"],"crossmark-restriction":true},"short-container-title":["AIAA
+      Journal"],"published-print":{"date-parts":[[1967,11]]},"DOI":"10.2514\/3.4356","type":"journal-article","created":{"date-parts":[[2008,6,5]],"date-time":"2008-06-05T17:55:58Z","timestamp":1212688558000},"page":"2021-2027","update-policy":"http:\/\/dx.doi.org\/10.2514\/aiaa_crossmarkpolicy","source":"Crossref","is-referenced-by-count":12,"title":["Stability
+      of continuous time dynamical systems with m-feedback nonlinearities."],"prefix":"10.2514","volume":"5","author":[{"given":"KUMPATI
+      S.","family":"NARENDRA","sequence":"first","affiliation":[{"name":"Yale University,
+      New Haven, Conn."}]},{"given":"CHARLES P.","family":"NEUMAN","sequence":"additional","affiliation":[{"name":"Harvard
+      University, Cambridge, Mass."}]}],"member":"1387","reference":[{"key":"p_3","volume-title":"NEUMANf
+      Harvard University"},{"key":"p_4","volume-title":"AIAA\/JACC Guidance and Control
+      Conference","volume":"14","author":"Presented","year":"1966"},{"key":"p_63","series-title":"March
+      1962","volume-title":"Absolute stability of nonlinear systems of automatic control\/7
+      Automation Remote Control 22, 857-875","author":"Popov V. M."},{"key":"p_64","first-page":"1304","volume":"143","author":"Yakubovich
+      V. A.","year":"1962","journal-title":"Dokl. Akad. Nauk. S. S. S. R."},{"key":"p_65","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.49.2.201"},{"key":"p_66","doi-asserted-by":"publisher","DOI":"10.1016\/0020-7225(64)90015-1"},{"key":"p_67","volume":"406","author":"Narendra
+      K. S.","year":"1964","journal-title":"IEEE Trans. Circuit Theory CT-11"},{"key":"p_68","volume":"46","author":"Rekasius
+      Z. V.","year":"1964","journal-title":"IEEE Trans. Autom. Control AC-9"},{"key":"p_69","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.53.3.501"},{"key":"p_70","doi-asserted-by":"publisher","DOI":"10.1137\/0303025"},{"key":"p_71","volume-title":"Absolute
+      Stability of Regulator Systems","author":"Aizerman M. A.","year":"1964"},{"key":"p_72","volume-title":"Absolute
+      Stability of Nonlinear Control Systems","author":"Lefschetz S.","year":"1965"},{"key":"p_73","volume-title":"Summaries
+      of the International Conference on Microwaves, Circuit Theory, and Information
+      Theory","author":"Zames G.","year":"1964"},{"key":"p_74","doi-asserted-by":"publisher","DOI":"10.1109\/TAC.1965.1098143"},{"key":"p_75","first-page":"295","volume":"4","author":"Narendra
+      K. S.","year":"1966","journal-title":"Soc. Ind. Appl. Math. J. Control"},{"key":"p_76","first-page":"577","volume":"26","author":"Yakubovich
+      V. A.","year":"1965","journal-title":"Avtomatika i Telemekhanika"},{"key":"p_77","volume":"54","author":"Dewey
+      A. G.","year":"1966","journal-title":"IEEE Trans. Automatic Control AC-11"},{"key":"p_78","volume-title":"Studii
+      Cercetari de Energetica, Acad. R.P.Rominee IX","author":"Popov V. M.","year":"1959"},{"key":"p_79","volume-title":"Studii
+      Cercetari de Energetica, Acad. R.P.Rominee IX (1959)","author":"Popov","year":"1960"},{"key":"p_80","volume":"154","author":"Ibrahim
+      E. S.","year":"1964","journal-title":"Trans. IEEE Automatic Control AC-9"},{"key":"p_81","first-page":"256","volume-title":"Joint
+      Automatic Control Conference (American Institute of Aeronautics and Astronautics","author":"Ibrahim
+      E. S.","year":"1964"},{"key":"p_82","first-page":"161","volume":"25","author":"Sultanov
+      I. A.","year":"1964","journal-title":"Avtomatika i Telemekhanika"},{"key":"p_83","first-page":"347","volume-title":"Memoirs
+      of the Faculty of Engineering","author":"Tokumaru H.","year":"1965"},{"key":"p_84","volume":"172","author":"Youla
+      D. C.","year":"1961","journal-title":"IEEE Trans. Information Theory, IT-7"},{"key":"p_85","volume-title":"Joint
+      Automatic Control Conference (American Institute of Aeronautics and Astronautics","author":"Narendra
+      K. S.","year":"1966"},{"key":"p_86","volume-title":"Dunham Lab. Yale Univ.","author":"Narendra
+      K. S.","year":"1965"},{"key":"p_87","volume-title":"Network Analysis and Synthesis","author":"Weinberg
+      L.","year":"1962"},{"key":"p_88","volume":"217","author":"Weinberg L.","year":"1958","journal-title":"IRE
+      Trans. Circuit Theory CT-5"},{"key":"p_89","first-page":"17","author":"Krasovskii
+      N. N.","year":"1953","journal-title":"P. M. M."},{"key":"p_90","volume-title":"Stability
+      of Motion","author":"Krasovskii N. N.","year":"1963"},{"key":"p_91","doi-asserted-by":"publisher","DOI":"10.1017\/S0305004100030401"}],"container-title":["AIAA
+      Journal"],"language":"en","link":[{"URL":"http:\/\/arc.aiaa.org\/doi\/pdf\/10.2514\/3.4356","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,2,9]],"date-time":"2021-02-09T22:46:36Z","timestamp":1612910796000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/arc.aiaa.org\/doi\/10.2514\/3.4356"}},"issued":{"date-parts":[[1967,11]]},"references-count":31,"journal-issue":{"issue":"11","published-print":{"date-parts":[[1967,11]]}},"alternative-id":["10.2514\/3.4356"],"URL":"https:\/\/doi.org\/10.2514\/3.4356","ISSN":["0001-1452","1533-385X"],"issn-type":[{"value":"0001-1452","type":"print"},{"value":"1533-385X","type":"electronic"}],"published":{"date-parts":[[1967,11]]},"assertion":[{"value":"2012-05-17","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
+      History"}}]}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4122'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:26:17 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -185,16 +101,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '7293'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:59:45 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -203,10 +111,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -225,137 +129,365 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works?sample=5
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":5,"items":[{"indexed":{"date-parts":[[2024,9,8]],"date-time":"2024-09-08T19:35:44Z","timestamp":1725824144416},"reference-count":52,"publisher":"Proceedings
-      of the National Academy of Sciences","issue":"22","content-domain":{"domain":["www.pnas.org"],"crossmark-restriction":true},"short-container-title":["Proc.
-      Natl. Acad. Sci. U.S.A."],"published-print":{"date-parts":[[2010,6]]},"abstract":"<jats:p>\n            Interferon
-      regulatory factor (IRF) 5 is a key transcription factor for the activation of
-      innate immune responses downstream of Toll-like receptor signaling. Based on
-      recent genetic analyses, IRF5 is a focus for its potential involvement in systemic
-      lupus erythematosus (SLE), although how IRF5 contributes to SLE is uncertain.
-      In this study, we demonstrate a requirement for IRF5 in the development of murine
-      SLE via its role in B lymphocytes. We show that antinuclear autoantibodies and
-      Ig glomerular deposits, hallmarks of SLE, are absent in\n            <jats:italic>\n              Irf5\n              <jats:sup>\u2212\/\u2212<\/jats:sup>\n            <\/jats:italic>\n            mice
-      challenged to develop SLE by pristane injection. In particular, production of
-      autoantibodies of the IgG2a subtype, the most prominent isotype in inducing
-      autoimmunity, requires IRF5. Finally, we provide evidence for the critical role
-      of this transcription factor in the secretion of pathogenic antibodies through
-      its direct control of class switch recombination of the \u03b32a locus. By demonstrating
-      a B-cell-intrinsic role, this study places IRF5 in a context that may have implications
-      for understanding the pathogenesis of human SLE.\n          <\/jats:p>","DOI":"10.1073\/pnas.1005599107","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T02:13:23Z","timestamp":1274148803000},"page":"10154-10159","update-policy":"http:\/\/dx.doi.org\/10.1073\/pnas.cm10313","source":"Crossref","is-referenced-by-count":81,"title":["Contribution
-      of IRF5 in B cells to the development of murine SLE-like disease through its
-      transcriptional control of the IgG2a locus"],"prefix":"10.1073","volume":"107","author":[{"given":"David
-      A.","family":"Savitsky","sequence":"first","affiliation":[{"name":"Department
-      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
-      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Core Research for Evolution
-      Science and Technology, Japan Science and Technology Agency, Chiyoda-ku, Tokyo
-      102-0075, Japan;"}]},{"given":"Hideyuki","family":"Yanai","sequence":"additional","affiliation":[{"name":"Department
-      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
-      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Core Research for Evolution
-      Science and Technology, Japan Science and Technology Agency, Chiyoda-ku, Tokyo
-      102-0075, Japan;"}]},{"given":"Tomohiko","family":"Tamura","sequence":"additional","affiliation":[{"name":"Department
-      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
-      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Graduate School of Medicine
-      and Faculty of Medicine, Yokohama City University, Kanazawa-ku, Yokohama, Kanagawa
-      236-0004, Japan; and"}]},{"given":"Tadatsugu","family":"Taniguchi","sequence":"additional","affiliation":[{"name":"Department
-      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
-      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Core Research for Evolution
-      Science and Technology, Japan Science and Technology Agency, Chiyoda-ku, Tokyo
-      102-0075, Japan;"}]},{"given":"Kenya","family":"Honda","sequence":"additional","affiliation":[{"name":"Department
-      of Immunology, Graduate School of Medicine and Faculty of Medicine, University
-      of Tokyo, Bunkyo-ku, Tokyo 113-0031, Japan;"},{"name":"Precursory Research for
-      Embryonic Science and Technology, Japan Science and Technology Agency, Saitama
-      332-0012, Japan"}]}],"member":"341","published-online":{"date-parts":[[2010,5,17]]},"reference":[{"key":"e_1_3_3_1_2","doi-asserted-by":"publisher","DOI":"10.1016\/S1074-7613(04)00112-8"},{"key":"e_1_3_3_2_2","first-page":"182","article-title":"B
-      cell biology and dysfunction in SLE","volume":"65","author":"Anolik JH","year":"2007","unstructured":"JH
-      Anolik, B cell biology and dysfunction in SLE. Bull NYU Hosp Jt Dis 65, 182\u2013186
-      (2007).","journal-title":"Bull NYU Hosp Jt Dis"},{"key":"e_1_3_3_3_2","doi-asserted-by":"publisher","DOI":"10.1038\/sj.ki.5002663"},{"key":"e_1_3_3_4_2","doi-asserted-by":"publisher","DOI":"10.1177\/096120339200100609"},{"key":"e_1_3_3_5_2","doi-asserted-by":"publisher","DOI":"10.1007\/s00296-002-0174-2"},{"key":"e_1_3_3_6_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-3083.1991.tb01546.x"},{"key":"e_1_3_3_7_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.autrev.2007.12.001"},{"key":"e_1_3_3_8_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.165.1.64"},{"key":"e_1_3_3_9_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.161.1.1"},{"key":"e_1_3_3_10_2","doi-asserted-by":"publisher","DOI":"10.1126\/science.1118948"},{"key":"e_1_3_3_11_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.191.8.1293"},{"key":"e_1_3_3_12_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.immuni.2005.11.010"},{"key":"e_1_3_3_13_2","doi-asserted-by":"publisher","DOI":"10.1038\/ni941"},{"key":"e_1_3_3_14_2","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.082114899"},{"key":"e_1_3_3_15_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.175.11.7419"},{"key":"e_1_3_3_16_2","doi-asserted-by":"publisher","DOI":"10.1172\/JCI30065"},{"key":"e_1_3_3_17_2","doi-asserted-by":"publisher","DOI":"10.1074\/jbc.M101216200"},{"key":"e_1_3_3_18_2","doi-asserted-by":"publisher","DOI":"10.1038\/nature03308"},{"key":"e_1_3_3_19_2","doi-asserted-by":"publisher","DOI":"10.1086\/428480"},{"key":"e_1_3_3_20_2","doi-asserted-by":"publisher","DOI":"10.1038\/ng1782"},{"key":"e_1_3_3_21_2","doi-asserted-by":"publisher","DOI":"10.1038\/sj.gene.6364409"},{"key":"e_1_3_3_22_2","doi-asserted-by":"publisher","DOI":"10.1080\/08916930701510905"},{"key":"e_1_3_3_23_2","doi-asserted-by":"publisher","DOI":"10.1038\/nri1957"},{"key":"e_1_3_3_24_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.immuni.2006.07.013"},{"key":"e_1_3_3_25_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.it.2006.12.006"},{"key":"e_1_3_3_26_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.0901748"},{"key":"e_1_3_3_27_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.178.11.6876"},{"key":"e_1_3_3_28_2","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.0911193107"},{"key":"e_1_3_3_29_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.180.6.2341"},{"key":"e_1_3_3_30_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.20050338"},{"key":"e_1_3_3_31_2","doi-asserted-by":"publisher","DOI":"10.1126\/science.1124978"},{"key":"e_1_3_3_32_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.20052438"},{"key":"e_1_3_3_33_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.coi.2009.05.003"},{"key":"e_1_3_3_34_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.immuni.2006.07.009"},{"key":"e_1_3_3_35_2","doi-asserted-by":"publisher","DOI":"10.1074\/jbc.M704755200"},{"key":"e_1_3_3_36_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.189.10.1639"},{"key":"e_1_3_3_37_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.188.5.985"},{"key":"e_1_3_3_38_2","doi-asserted-by":"publisher","DOI":"10.1093\/emboj\/18.18.5028"},{"key":"e_1_3_3_39_2","doi-asserted-by":"publisher","DOI":"10.1038\/ni1103-1041a"},{"key":"e_1_3_3_40_2","doi-asserted-by":"publisher","DOI":"10.1186\/ar2319"},{"key":"e_1_3_3_41_2","doi-asserted-by":"publisher","DOI":"10.1038\/ni1054"},{"key":"e_1_3_3_42_2","doi-asserted-by":"publisher","DOI":"10.1084\/jem.20050630"},{"key":"e_1_3_3_43_2","doi-asserted-by":"publisher","DOI":"10.1126\/science.1135299"},{"key":"e_1_3_3_44_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1600-065X.2008.00731.x"},{"key":"e_1_3_3_45_2","doi-asserted-by":"publisher","DOI":"10.1074\/jbc.274.20.14246"},{"key":"e_1_3_3_46_2","doi-asserted-by":"publisher","DOI":"10.1016\/j.smim.2006.12.005"},{"key":"e_1_3_3_47_2","doi-asserted-by":"publisher","DOI":"10.1016\/S1074-7613(04)00108-6"},{"key":"e_1_3_3_48_2","doi-asserted-by":"publisher","DOI":"10.1002\/1529-0131(200001)43:1<76::AID-ANR10>3.0.CO;2-I"},{"key":"e_1_3_3_49_2","doi-asserted-by":"publisher","DOI":"10.1007\/s10067-009-1224-x"},{"key":"e_1_3_3_50_2","doi-asserted-by":"publisher","DOI":"10.4049\/jimmunol.164.2.944"},{"key":"e_1_3_3_51_2","doi-asserted-by":"publisher","DOI":"10.1038\/nprot.2006.393"},{"key":"e_1_3_3_52_2","doi-asserted-by":"publisher","DOI":"10.1093\/intimm\/5.8.885"}],"container-title":["Proceedings
-      of the National Academy of Sciences"],"language":"en","link":[{"URL":"https:\/\/pnas.org\/doi\/pdf\/10.1073\/pnas.1005599107","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,12]],"date-time":"2022-04-12T22:26:26Z","timestamp":1649802386000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/pnas.org\/doi\/full\/10.1073\/pnas.1005599107"}},"issued":{"date-parts":[[2010,5,17]]},"references-count":52,"journal-issue":{"issue":"22","published-print":{"date-parts":[[2010,6]]}},"alternative-id":["10.1073\/pnas.1005599107"],"URL":"http:\/\/dx.doi.org\/10.1073\/pnas.1005599107","relation":{"has-review":[{"id-type":"doi","id":"10.3410\/f.3988956.3748054","asserted-by":"object"}]},"ISSN":["0027-8424","1091-6490"],"issn-type":[{"value":"0027-8424","type":"print"},{"value":"1091-6490","type":"electronic"}],"published":{"date-parts":[[2010,5,17]]},"assertion":[{"value":"2010-05-17","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-      History"}}]},{"indexed":{"date-parts":[[2022,4,2]],"date-time":"2022-04-02T02:55:26Z","timestamp":1648868126436},"reference-count":0,"publisher":"Early
-      Theatre","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.12745\/et.12.2.820","type":"journal-article","created":{"date-parts":[[2014,12,24]],"date-time":"2014-12-24T23:07:40Z","timestamp":1419462460000},"source":"Crossref","is-referenced-by-count":1,"title":["''The
-      house is hers, the soul is but a tenant'': Material Self-Fashioning and Revenge
-      Tragedy"],"prefix":"10.12745","volume":"12","author":[{"given":"Sheetal","family":"Lodhia","sequence":"first","affiliation":[]}],"member":"5047","published-online":{"date-parts":[[2009,1,1]]},"container-title":["Early
-      Theatre"],"deposited":{"date-parts":[[2014,12,24]],"date-time":"2014-12-24T23:09:16Z","timestamp":1419462556000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/earlytheatre.org\/earlytheatre\/article\/view\/820"}},"issued":{"date-parts":[[2009,1,1]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2014,9,3]]}},"URL":"http:\/\/dx.doi.org\/10.12745\/et.12.2.820","ISSN":["1206-9078"],"issn-type":[{"value":"1206-9078","type":"print"}],"published":{"date-parts":[[2009,1,1]]}},{"indexed":{"date-parts":[[2024,9,6]],"date-time":"2024-09-06T15:07:25Z","timestamp":1725635245922},"publisher-location":"Dordrecht","reference-count":0,"publisher":"Springer
-      Netherlands","isbn-type":[{"type":"print","value":"9789401065115"},{"type":"electronic","value":"9789400900493"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1997]]},"DOI":"10.1007\/978-94-009-0049-3_1","type":"book-chapter","created":{"date-parts":[[2011,11,18]],"date-time":"2011-11-18T05:48:12Z","timestamp":1321595292000},"page":"1-12","source":"Crossref","is-referenced-by-count":0,"title":["Hermeneutics
-      and the natural sciences: Introduction"],"prefix":"10.1007","author":[{"given":"Robert
-      P.","family":"Crease","sequence":"first","affiliation":[]}],"member":"297","container-title":["Hermeneutics
-      and the Natural Sciences"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-94-009-0049-3_1.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,11,25]],"date-time":"2020-11-25T14:59:52Z","timestamp":1606316392000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-94-009-0049-3_1"}},"issued":{"date-parts":[[1997]]},"ISBN":["9789401065115","9789400900493"],"references-count":0,"URL":"http:\/\/dx.doi.org\/10.1007\/978-94-009-0049-3_1","published":{"date-parts":[[1997]]}},{"indexed":{"date-parts":[[2024,9,15]],"date-time":"2024-09-15T17:08:00Z","timestamp":1726420080465},"reference-count":62,"publisher":"SAGE
-      Publications","issue":"2","license":[{"start":{"date-parts":[[1998,6,1]],"date-time":"1998-06-01T00:00:00Z","timestamp":896659200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/journals.sagepub.com\/page\/policies\/text-and-data-mining-license"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Psychology
-      of Women Quarterly"],"published-print":{"date-parts":[[1998,6]]},"abstract":"<jats:p>
-      Self-in-relation theory (Jordan, Kaplan, Miller, Stiver, &amp; Surrey, 1991)
-      proposes that a lack of mutuality in women''s relationships predisposes them
-      to depression and inhibits their ability to acknowledge and address effectively
-      emotions such as anger. Research linking anger to depression has not examined
-      women''s emotional expressivity within the context of their partner relationships.
-      Women''s depression as a function of both their level of anger suppression or
-      inappropriate anger expression and the level of perceived relationship mutuality
-      was studied in a sample of 223 college women, aged 18 to 54. Lower levels of
-      mutuality and higher levels of suppressed or inappropriately expressed anger
-      were associated with depression. Moreover, mutuality made contributions to predicting
-      depression beyond that explained by anger. Lower mutuality was also related
-      to higher anger suppression, but unrelated to inappropriately expressed anger.
-      <\/jats:p>","DOI":"10.1111\/j.1471-6402.1998.tb00152.x","type":"journal-article","created":{"date-parts":[[2006,7,29]],"date-time":"2006-07-29T18:55:04Z","timestamp":1154199304000},"page":"223-238","source":"Crossref","is-referenced-by-count":46,"title":["Depression
-      in Women as Related to Anger and Mutuality in Relationships"],"prefix":"10.1177","volume":"22","author":[{"given":"Elizabeth
-      D.","family":"Sperberg","sequence":"first","affiliation":[{"name":"Texas Woman''s
-      University"}]},{"given":"Sally D.","family":"Stabb","sequence":"additional","affiliation":[{"name":"Texas
-      Woman''s University"}]}],"member":"179","published-online":{"date-parts":[[1998,6,1]]},"reference":[{"key":"bibr1-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1177\/0146167292181015"},{"first-page":"381","volume-title":"Women
-      in families: A framework for family therapy","year":"1989","author":"Anderson
-      C. M.","key":"bibr2-j.1471-6402.1998.tb00152.x"},{"first-page":"163","volume-title":"Women
-      in sexist society: Studies in power and powerlessness","year":"1971","author":"Bart
-      P.","key":"bibr3-j.1471-6402.1998.tb00152.x"},{"volume-title":"Beck Depression
-      Inventory: Suggestions for use","year":"1978","author":"Beck A. T.","key":"bibr4-j.1471-6402.1998.tb00152.x"},{"key":"bibr5-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1016\/0272-7358(88)90050-5"},{"key":"bibr6-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1001\/archpsyc.1961.01710120031004"},{"volume-title":"Women
-      and anger: Cultural prohibitions and the feminine ideal","year":"1988","author":"Bernardez
-      T.","key":"bibr7-j.1471-6402.1998.tb00152.x"},{"key":"bibr8-j.1471-6402.1998.tb00152.x","first-page":"215","volume":"33","author":"Bernardez-Bonesatti
-      T.","year":"1978","journal-title":"Journal of the American Medical Women''s
-      Association"},{"key":"bibr9-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.2466\/pr0.1987.61.1.87"},{"volume":"3","volume-title":"Attachment
-      and loss","year":"1980","author":"Bowlby J.","key":"bibr10-j.1471-6402.1998.tb00152.x"},{"key":"bibr11-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0033-2909.107.1.3"},{"key":"bibr12-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1525\/9780520924086"},{"key":"bibr13-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-006X.54.4.454"},{"key":"bibr14-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.2466\/pr0.1985.57.3.1015"},{"volume-title":"Women
-      and anger","year":"1993","author":"Denham G.","key":"bibr15-j.1471-6402.1998.tb00152.x"},{"first-page":"209","volume-title":"Women
-      and anger","year":"1993","author":"Droppleman P. G.","key":"bibr16-j.1471-6402.1998.tb00152.x"},{"key":"bibr17-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1002\/j.1556-6676.1993.tb02662.x"},{"key":"bibr18-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1521\/jscp.1990.9.2.243"},{"key":"bibr19-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1176\/ajp.145.1.41"},{"volume-title":"Women,
-      anger and depression: Strategies for self-empowerment","year":"1992","author":"Frankel
-      L. P.","key":"bibr20-j.1471-6402.1998.tb00152.x"},{"volume-title":"Research
-      project report: The mutual psychological development questionnaire","year":"1990","author":"Genero
-      N. P.","key":"bibr21-j.1471-6402.1998.tb00152.x"},{"key":"bibr22-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0893-3200.6.1.36"},{"volume-title":"In
-      a different voice","year":"1982","author":"Gilligan C.","key":"bibr23-j.1471-6402.1998.tb00152.x"},{"first-page":"6","volume-title":"Making
-      connections: The relational world of adolescent girls at Emma Willard School","year":"1990","author":"Gilligan
-      C.","key":"bibr24-j.1471-6402.1998.tb00152.x"},{"key":"bibr25-j.1471-6402.1998.tb00152.x","first-page":"31","volume":"8","author":"Gottman
-      J. M.","year":"1986","journal-title":"Behavioral Assessment"},{"first-page":"161","volume-title":"Women
-      and depression: A lifespan perspective","year":"1987","author":"Jack D.","key":"bibr26-j.1471-6402.1998.tb00152.x"},{"volume-title":"Silencing
-      the self: Women and depression","year":"1991","author":"Jack D. C.","key":"bibr27-j.1471-6402.1998.tb00152.x"},{"key":"bibr28-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1111\/j.1471-6402.1992.tb00242.x"},{"key":"bibr29-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1016\/1054-139X(92)90007-X"},{"first-page":"4","volume-title":"Work
-      in Progress, No. 49","year":"1991","author":"Jordan J. W.","key":"bibr30-j.1471-6402.1998.tb00152.x"},{"first-page":"81","volume-title":"Women''s
-      growth in connection: Writings from the Stone Center","year":"1991","author":"Jordan
-      J. W.","key":"bibr31-j.1471-6402.1998.tb00152.x"},{"key":"bibr32-j.1471-6402.1998.tb00152.x","first-page":"56","volume":"7","author":"Jordan
-      J. V.","year":"1992","journal-title":"Contemporary Psychotherapy Review"},{"volume-title":"Women''s
-      growth in connection: Writings from the Stone Center","year":"1991","author":"Jordan
-      J. V.","key":"bibr33-j.1471-6402.1998.tb00152.x"},{"key":"bibr34-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-3514.58.5.864"},{"key":"bibr35-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-0167.40.2.232"},{"key":"bibr36-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1111\/j.1471-6402.1991.tb00474.x"},{"volume-title":"The
-      dance of anger","year":"1985","author":"Lerner H. G.","key":"bibr37-j.1471-6402.1998.tb00152.x"},{"first-page":"200","volume-title":"Women
-      and depression: A lifespan perspective","year":"1987","author":"Lerner H. G.","key":"bibr38-j.1471-6402.1998.tb00152.x"},{"key":"bibr39-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1080\/00224545.1989.9712057"},{"key":"bibr40-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0882-7974.7.4.551"},{"key":"bibr41-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1300\/J035v06n03_11"},{"key":"bibr42-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1002\/1097-4679(199011)46:6<896::AID-JCLP2270460632>3.0.CO;2-R"},{"key":"bibr43-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/10074-000"},{"volume-title":"Toward
-      a new psychology of women","year":"1976","author":"Miller J. B.","key":"bibr44-j.1471-6402.1998.tb00152.x"},{"volume-title":"Connections,
-      disconnections and violations","year":"1988","author":"Miller J. B.","key":"bibr45-j.1471-6402.1998.tb00152.x"},{"first-page":"181","volume-title":"Women''s
-      growth in connection: Writings from the Stone Center","year":"1991","author":"Miller
-      J. B.","key":"bibr46-j.1471-6402.1998.tb00152.x"},{"volume-title":"Revisioning
-      women''s anger: The personal and the global","year":"1990","author":"Miller
-      J. B.","key":"bibr47-j.1471-6402.1998.tb00152.x"},{"key":"bibr48-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1080\/09515079208254480"},{"key":"bibr49-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0033-2909.101.2.259"},{"key":"bibr50-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1097\/00005053-198911000-00002"},{"key":"bibr51-j.1471-6402.1998.tb00152.x","unstructured":"Sperberg
-      E. (1992). The effects of anger suppression and sex role orientation on depression
-      in women college students. Unpublished manuscript, Texas Woman''s University,
-      Denton, Texas."},{"volume-title":"State-Trait Anger Expression Inventory research
-      edition professional manual","year":"1988","author":"Spielberger C. D.","key":"bibr52-j.1471-6402.1998.tb00152.x"},{"volume-title":"From
-      depression to sadness in women''s psychotherapy","year":"1988","author":"Stiver
-      I.","key":"bibr53-j.1471-6402.1998.tb00152.x"},{"key":"bibr54-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1037\/0022-006X.54.3.328"},{"edition":"2","volume-title":"Anger:
-      The misunderstood emotion","year":"1989","author":"Tavris C.","key":"bibr55-j.1471-6402.1998.tb00152.x"},{"key":"bibr56-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1002\/nur.4770120609"},{"volume-title":"Women
-      and anger","year":"1993","author":"Thomas S. P.","key":"bibr57-j.1471-6402.1998.tb00152.x"},{"key":"bibr58-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1080\/07399339309516035"},{"key":"bibr59-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.2105\/AJPH.77.4.445"},{"key":"bibr60-j.1471-6402.1998.tb00152.x","doi-asserted-by":"publisher","DOI":"10.1016\/0166-2236(85)90145-6"},{"first-page":"3","volume-title":"Women
-      and depression: A lifespan perspective","year":"1987","author":"Weissman M.
-      M.","key":"bibr61-j.1471-6402.1998.tb00152.x"},{"volume-title":"Clinical handbook
-      of depression","year":"1984","author":"Wetzel J. W.","key":"bibr62-j.1471-6402.1998.tb00152.x"}],"container-title":["Psychology
-      of Women Quarterly"],"language":"en","link":[{"URL":"https:\/\/journals.sagepub.com\/doi\/pdf\/10.1111\/j.1471-6402.1998.tb00152.x","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/journals.sagepub.com\/doi\/pdf\/10.1111\/j.1471-6402.1998.tb00152.x","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,9,5]],"date-time":"2024-09-05T01:36:39Z","timestamp":1725500199000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/journals.sagepub.com\/doi\/10.1111\/j.1471-6402.1998.tb00152.x"}},"issued":{"date-parts":[[1998,6]]},"references-count":62,"journal-issue":{"issue":"2","published-print":{"date-parts":[[1998,6]]}},"alternative-id":["10.1111\/j.1471-6402.1998.tb00152.x"],"URL":"http:\/\/dx.doi.org\/10.1111\/j.1471-6402.1998.tb00152.x","ISSN":["0361-6843","1471-6402"],"issn-type":[{"type":"print","value":"0361-6843"},{"type":"electronic","value":"1471-6402"}],"published":{"date-parts":[[1998,6]]}},{"indexed":{"date-parts":[[2023,8,19]],"date-time":"2023-08-19T23:18:19Z","timestamp":1692487099080},"reference-count":0,"publisher":"Lynne
-      Rienner Publishers","isbn-type":[{"value":"9781685856472","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1993,12,31]]},"DOI":"10.1515\/9781685856472-011","type":"book-chapter","created":{"date-parts":[[2023,4,25]],"date-time":"2023-04-25T11:34:18Z","timestamp":1682422458000},"page":"97-130","source":"Crossref","is-referenced-by-count":1,"title":["10
-      Sarmiento and Rosas: Argentines in Search of a Nation, 1810-1852"],"prefix":"10.1515","author":[{"given":"Joseph
-      T.","family":"Criscenti","sequence":"first","affiliation":[]}],"member":"374","container-title":["Sarmiento
-      and His Argentina"],"link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9781685856472-011\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9781685856472-011\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,4,25]],"date-time":"2023-04-25T11:34:42Z","timestamp":1682422482000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/9781685856472-011\/html"}},"issued":{"date-parts":[[1993,12,31]]},"ISBN":["9781685856472"],"references-count":0,"alternative-id":["10.1515\/9781685856472-011","10.1515\/9781685856472"],"URL":"http:\/\/dx.doi.org\/10.1515\/9781685856472-011","published":{"date-parts":[[1993,12,31]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":5,"items":[{"indexed":{"date-parts":[[2022,4,3]],"date-time":"2022-04-03T10:11:10Z","timestamp":1648980670150},"description":"Figure
+      48 Propodeal declivity equipped with a broad and conspicuous lamella (A MAC_S14_LLSP_Sp.4,
+      photographed by Fran\u00e7ois Brassard) and propodeal declivity equipped with
+      a simple carina in S. feae (B MAC_S15_LLSP_Sp.8, photographed by Fran\u00e7ois
+      Brassard).","reference-count":0,"publisher":"Pensoft Publishers","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.3897\/zookeys.970.54958.figure48","type":"component","created":{"date-parts":[[2020,9,21]],"date-time":"2020-09-21T15:55:13Z","timestamp":1600703713000},"source":"Crossref","is-referenced-by-count":0,"title":["Figure
+      48 from: Brassard F, Leong C-M, Chan H-H, Gue\u0301nard B (2020) A new subterranean
+      species and an updated checklist of Strumigenys (Hymenoptera, Formicidae) from
+      Macao SAR, China, with a key to species of the Greater Bay Area. ZooKeys 970:
+      63-116. https:\/\/doi.org\/10.3897\/zookeys.970.54958"],"prefix":"10.3897","author":[{"given":"Fran\u00e7ois","family":"Brassard","sequence":"first","affiliation":[]},{"given":"Chi-Man","family":"Leong","sequence":"additional","affiliation":[]},{"given":"Hoi-Hou","family":"Chan","sequence":"additional","affiliation":[]},{"given":"Benoit","family":"Gue\u0301nard","sequence":"additional","affiliation":[]}],"member":"2258","published-online":{"date-parts":[[2020,9,21]]},"deposited":{"date-parts":[[2020,9,21]],"date-time":"2020-09-21T15:55:24Z","timestamp":1600703724000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/zookeys.pensoft.net\/article\/54958\/element\/2\/148\/"}},"issued":{"date-parts":[[2020,9,21]]},"references-count":0,"URL":"https:\/\/doi.org\/10.3897\/zookeys.970.54958.figure48","published":{"date-parts":[[2020,9,21]]}},{"indexed":{"date-parts":[[2022,4,4]],"date-time":"2022-04-04T03:40:54Z","timestamp":1649043654115},"reference-count":11,"publisher":"Cambridge
+      University Press (CUP)","license":[{"start":{"date-parts":[[2016,4,12]],"date-time":"2016-04-12T00:00:00Z","timestamp":1460419200000},"content-version":"unspecified","delay-in-days":8502,"URL":"https:\/\/www.cambridge.org\/core\/terms"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["International
+      Astronomical Union Colloquium"],"published-print":{"date-parts":[[1993]]},"abstract":"<jats:title>Abstract<\/jats:title><jats:p>We
+      compare the log g parameters of early A and late B type stars determined from
+      model atmospheres with those issued from models of stellar evolution. There
+      is a systematic deviation between both determinations for log g &lt; 3.7 .<\/jats:p>","DOI":"10.1017\/s0252921100017620","type":"journal-article","created":{"date-parts":[[2016,7,21]],"date-time":"2016-07-21T05:54:46Z","timestamp":1469080486000},"page":"150-152","source":"Crossref","is-referenced-by-count":2,"title":["Parameters
+      T<sub><i>eff<\/i><\/sub> and log g for Late B and Early A Type Stars"],"prefix":"10.1017","volume":"137","author":[{"given":"M.","family":"Gerbaldi","sequence":"first","affiliation":[]},{"given":"J.","family":"Zorec","sequence":"additional","affiliation":[]}],"member":"56","published-online":{"date-parts":[[2016,4,12]]},"reference":[{"key":"S0252921100017620_ref006","doi-asserted-by":"publisher","DOI":"10.1086\/191122"},{"key":"S0252921100017620_ref008","volume":"78","author":"Moon","year":"1985","journal-title":"Comm.
+      London Observatory n\u00b0"},{"key":"S0252921100017620_ref004","first-page":"299","volume":"1","author":"Johnson","year":"1975","journal-title":"Rev.
+      Mexicana Astr. Astrof."},{"key":"S0252921100017620_ref002","first-page":"106","volume":"251","author":"Castelli","year":"1991","journal-title":"Astr.
+      Ap."},{"key":"S0252921100017620_ref005","doi-asserted-by":"publisher","DOI":"10.1086\/190589"},{"key":"S0252921100017620_ref001","doi-asserted-by":"publisher","DOI":"10.1093\/mnras\/180.2.177"},{"key":"S0252921100017620_ref003","first-page":"107","volume":"86","author":"Hauck","year":"1990","journal-title":"Astr.
+      Ap. Suppl."},{"key":"S0252921100017620_ref007","first-page":"411","volume":"76","author":"Maeder","year":"1988","journal-title":"Astr.
+      Ap. Suppl."},{"key":"S0252921100017620_ref010","doi-asserted-by":"publisher","DOI":"10.1086\/169334"},{"key":"S0252921100017620_ref011","first-page":"1279","volume-title":"C.R.
+      Acad. Sci.","volume":"305","author":"Zorec","year":"1987"},{"key":"S0252921100017620_ref009","doi-asserted-by":"publisher","DOI":"10.1093\/mnras\/217.2.305"}],"container-title":["International
+      Astronomical Union Colloquium"],"language":"en","link":[{"URL":"https:\/\/www.cambridge.org\/core\/services\/aop-cambridge-core\/content\/view\/S0252921100017620","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,6,6]],"date-time":"2019-06-06T17:39:15Z","timestamp":1559842755000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.cambridge.org\/core\/product\/identifier\/S0252921100017620\/type\/journal_article"}},"issued":{"date-parts":[[1993]]},"references-count":11,"alternative-id":["S0252921100017620"],"URL":"https:\/\/doi.org\/10.1017\/s0252921100017620","ISSN":["0252-9211"],"issn-type":[{"value":"0252-9211","type":"print"}],"published":{"date-parts":[[1993]]}},{"indexed":{"date-parts":[[2025,6,18]],"date-time":"2025-06-18T04:04:44Z","timestamp":1750219484869,"version":"3.41.0"},"reference-count":88,"publisher":"MDPI
+      AG","issue":"2","license":[{"start":{"date-parts":[[2025,6,17]],"date-time":"2025-06-17T00:00:00Z","timestamp":1750118400000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"funder":[{"name":"FCT\u2014Funda\u00e7\u00e3o
+      para a Ci\u00eancia e a Tecnologia, I.P.","award":["UID\/05105"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Tourism
+      and Hospitality"],"abstract":"<jats:p>This study investigates the impact of
+      wellness tourism motivation (WTM) on tourist satisfaction (TS) and tourist experience
+      (TE), while also examining the mediating role of TE in the relationship between
+      WTM and TS in the context of luxury spa resorts situated in the Himalayan regions
+      of India. Drawing on an extensive review of the literature, this study proposes
+      a conceptual model that hypothesizes the influence of WTM on TS and TE, as well
+      as the impact of TE on TS. Data were collected through 260 questionnaires distributed
+      to tourists visiting prominent spa resorts to validate the proposed model empirically.
+      Structural equation modeling (SEM) was employed to analyze the relationships
+      between the constructs. The results revealed that wellness tourism motivations
+      have a positive impact on both TS and TE. Additionally, TE serves as a mediator,
+      further enhancing the connection between WTM and TS. This study contributes
+      to the growing body of literature on wellness tourism by providing empirical
+      evidence on the unique dynamics of WTM, TE, and TS in Himalayan spa resorts,
+      which cater to a distinct segment of wellness tourists. The results offer valuable
+      insights for tourism operators and policymakers, enabling them to design tailored
+      wellness experiences that enhance customer satisfaction and meet the specific
+      needs of wellness-focused travelers. This research underscores the importance
+      of prioritizing tourist experiences as a strategic tool for fostering satisfaction
+      and loyalty in the luxury wellness tourism sector.<\/jats:p>","DOI":"10.3390\/tourhosp6020118","type":"journal-article","created":{"date-parts":[[2025,6,17]],"date-time":"2025-06-17T09:52:47Z","timestamp":1750153967000},"page":"118","source":"Crossref","is-referenced-by-count":0,"title":["Wellness
+      Tourism in the Himalayas: A Structural Analysis of Motivation, Experience, and
+      Satisfaction in Spa Resorts"],"prefix":"10.3390","volume":"6","author":[{"ORCID":"https:\/\/orcid.org\/0000-0003-4686-6320","authenticated-orcid":false,"given":"Parikshat
+      Singh","family":"Manhas","sequence":"first","affiliation":[{"name":"The Business
+      School, University of Jammu, Jammu 180006, India"},{"name":"School of Hospitality
+      and Tourism Management, University of Jammu, Jammu 180006, India"}]},{"given":"Priyanka","family":"Sharma","sequence":"additional","affiliation":[{"name":"School
+      of Hospitality and Tourism Management, University of Jammu, Jammu 180006, India"}]},{"ORCID":"https:\/\/orcid.org\/0000-0002-4475-2744","authenticated-orcid":false,"given":"Joana
+      A.","family":"Quintela","sequence":"additional","affiliation":[{"name":"Department
+      of Tourism, Heritage and Culture, REMIT\u2014Research on Economics, Management
+      and Information Technologies, Portucalense University, 4200-072 Porto, Portugal"}]}],"member":"1968","published-online":{"date-parts":[[2025,6,17]]},"reference":[{"key":"ref_1","first-page":"589","article-title":"The
+      geographies of sensory tourism experiences","volume":"15","author":"Agapito","year":"2013","journal-title":"Tourism
+      Geographies"},{"key":"ref_2","doi-asserted-by":"crossref","first-page":"2205","DOI":"10.1108\/IJCHM-06-2018-0527","article-title":"Cruise
+      brand experience: Functional and wellness value creation in tourism business","volume":"31","author":"Ahn","year":"2019","journal-title":"International
+      Journal of Contemporary Hospitality Management"},{"key":"ref_3","doi-asserted-by":"crossref","unstructured":"Ahn,
+      Y.-J., and Kim, K. B. (2024). Understanding the interplay between wellness motivation,
+      engagement, satisfaction, and destination loyalty. Behavioral Sciences, 14,
+      (3).","DOI":"10.3390\/bs14030239"},{"key":"ref_4","first-page":"220","article-title":"Cultural
+      tourism experience and destination loyalty: A case of Pamukkale","volume":"46","author":"Altunel","year":"2015","journal-title":"Tourism
+      Management"},{"key":"ref_5","doi-asserted-by":"crossref","first-page":"411","DOI":"10.1037\/0033-2909.103.3.411","article-title":"Structural
+      equation modelling in practice: A review and recommended two-step approach","volume":"103","author":"Anderson","year":"1988","journal-title":"Psychological
+      Bulletin"},{"key":"ref_6","unstructured":"Awang, Z. (2012). A handbook on SEM:
+      Structural equation modelling using AMOS, Universiti Sultan Zainal Abidin."},{"key":"ref_7","doi-asserted-by":"crossref","first-page":"74","DOI":"10.1007\/BF02723327","article-title":"On
+      the evaluation of structural equation models","volume":"16","author":"Bagozzi","year":"1988","journal-title":"Journal
+      of the Academy of Marketing Science"},{"key":"ref_8","doi-asserted-by":"crossref","unstructured":"Balcioglu,
+      Y. S. (2024). Exploring consumer engagement and satisfaction in health and wellness
+      tourism through text-mining. Kybernetes, ahead-of-print.","DOI":"10.1108\/K-12-2023-2721"},{"key":"ref_9","doi-asserted-by":"crossref","first-page":"1173","DOI":"10.1037\/0022-3514.51.6.1173","article-title":"The
+      moderator\u2013mediator variable distinction in social psychological research:
+      Conceptual, strategic, and statistical considerations","volume":"51","author":"Baron","year":"1986","journal-title":"Journal
+      of Personality and Social Psychology"},{"key":"ref_10","first-page":"134","article-title":"The
+      importance of patient-centered care for various patient groups","volume":"82","author":"Boer","year":"2011","journal-title":"Patient
+      Education and Counselling"},{"key":"ref_11","doi-asserted-by":"crossref","unstructured":"Bojovi\u0107,
+      P., Vujko, A., Kne\u017eevi\u0107, M., and Bojovi\u0107, R. (2024). Sustainable
+      approach to the development of the tourism sector in the conditions of global
+      challenges. Sustainability, 16, (5).","DOI":"10.3390\/su16052098"},{"key":"ref_12","first-page":"45","article-title":"The
+      development of spa tourism: Perspectives and experiences","volume":"6","author":"Chang","year":"2013","journal-title":"Tourism
+      Management Perspectives"},{"key":"ref_13","first-page":"100401","article-title":"Exploring
+      the role of destination image and tourist experience in the relationship between
+      motivation and satisfaction: A structural model approach","volume":"15","author":"Chen","year":"2020","journal-title":"Journal
+      of Destination Marketing & Management"},{"key":"ref_14","first-page":"100559","article-title":"Experiential
+      value in wellness tourism: A review and future research agenda","volume":"19","author":"Choi","year":"2021","journal-title":"Journal
+      of Destination Marketing & Management"},{"key":"ref_15","first-page":"42","article-title":"Eudaimonic
+      and hedonic well-being: A framework for experience design in tourism","volume":"63","author":"Cohen","year":"2017","journal-title":"Annals
+      of Tourism Research"},{"key":"ref_16","doi-asserted-by":"crossref","first-page":"101879","DOI":"10.1016\/j.ctcp.2024.101879","article-title":"Impact
+      of spa therapy on physical activity, sleep and heart rate variability among
+      individuals with fibromyalgia","volume":"57","author":"Colas","year":"2024","journal-title":"Complementary
+      Therapies in Clinical Practice"},{"key":"ref_17","first-page":"102562","article-title":"Potential
+      strategies for supporting mental health and mitigating the risk of burnout among
+      healthcare professionals","volume":"71","author":"Collett","year":"2024","journal-title":"Postgraduate
+      Medical Journal"},{"key":"ref_18","doi-asserted-by":"crossref","unstructured":"Dahanayake,
+      S., Wanninayake, B., and Ranasinghe, R. (2024). Memorable wellness tourism experiences:
+      Scale development and validation. Tourism and Hospitality Research.","DOI":"10.1177\/13567667241310886"},{"key":"ref_19","doi-asserted-by":"crossref","first-page":"978","DOI":"10.1108\/TR-02-2019-0046","article-title":"Wellness
+      and healthy lifestyle in tourism settings","volume":"74","year":"2019","journal-title":"Tourism
+      Review"},{"key":"ref_20","doi-asserted-by":"crossref","first-page":"187","DOI":"10.1016\/0160-7383(81)90082-7","article-title":"Tourist
+      motivation: An appraisal","volume":"8","author":"Dann","year":"1981","journal-title":"Annals
+      of Tourism Research"},{"key":"ref_21","doi-asserted-by":"crossref","first-page":"794","DOI":"10.1080\/13683500.2020.1746247","article-title":"Dimensions
+      of holistic wellness as a result of international wellness tourism experiences","volume":"24","author":"Dillette","year":"2020","journal-title":"Current
+      Issues in Tourism"},{"key":"ref_22","doi-asserted-by":"crossref","first-page":"37","DOI":"10.1300\/J073v03n03_03","article-title":"Consumer
+      behavior and tourism","volume":"3","author":"Dimanche","year":"1995","journal-title":"Journal
+      of Travel & Tourism Marketing"},{"key":"ref_23","doi-asserted-by":"crossref","unstructured":"Dimitrovski,
+      D., Marinkovi\u0107, V., Djordjevic, A., and Sthapit, E. (2024). Wellness spa
+      hotel experience: Evidence from spa hotel guests in Serbia. Tourism Review,
+      ahead-of-print.","DOI":"10.1108\/TR-11-2023-0770"},{"key":"ref_24","doi-asserted-by":"crossref","first-page":"38","DOI":"10.21608\/ijtah.2024.237088.1101","article-title":"Evaluating
+      the importance of meditation tourism in Egypt","volume":"4","author":"Eltayeb","year":"2024","journal-title":"International
+      Journal of Tourism, Archaeology and Hospitality"},{"key":"ref_25","unstructured":"Elzie,
+      P. D. (2024). Rethinking total body wellness. [Ph.D. Dissertation, Liberty University].
+      Available online: https:\/\/digitalcommons.liberty.edu\/doctoral\/6379."},{"key":"ref_26","doi-asserted-by":"crossref","first-page":"39","DOI":"10.1177\/002224378101800104","article-title":"Evaluating
+      structural equation models with unobservable variables and measurement error","volume":"18","author":"Fornell","year":"1981","journal-title":"Journal
+      of Marketing Research"},{"key":"ref_27","unstructured":"Global Wellness Institute
+      (2024, September 06). The global wellness economy: Looking beyond COVID-19,
+      Available online: https:\/\/globalwellnessinstitute.org\/wp-content\/uploads\/2021\/11\/GWI-WE-Monitor-2021_final-digital.pdf."},{"key":"ref_28","unstructured":"Global
+      Wellness Institute (2025, January 05). Global wellness tourism market report,
+      Available online: https:\/\/globalwellnessinstitute.org\/industry-research\/global-wellness-institute-2023-global-wellness-economy-monitor\/."},{"key":"ref_29","unstructured":"Global
+      Wellness Institute (2025, January 15). Global wellness economy monitor 2024,
+      Available online: https:\/\/globalwellnessinstitute.org\/wp-content\/uploads\/2024\/11\/WellnessEconMonitor2024PDF.pdf."},{"key":"ref_30","unstructured":"Hair,
+      J. F., Black, W. C., Babin, B. J., and Anderson, R. E. (2010). Multivariate
+      data analysis, Pearson. [7th ed.]."},{"key":"ref_31","doi-asserted-by":"crossref","first-page":"595","DOI":"10.1080\/10548408.2017.1376031","article-title":"The
+      role of wellness spa tourism performance in building destination loyalty: The
+      case of Thailand","volume":"35","author":"Han","year":"2018","journal-title":"Journal
+      of Travel and Tourism Marketing"},{"key":"ref_32","doi-asserted-by":"crossref","first-page":"11","DOI":"10.1016\/j.ijhm.2017.07.007","article-title":"Investigating
+      customer loyalty formation for wellness spa: Individualism vs. collectivism","volume":"67","author":"Han","year":"2017","journal-title":"International
+      Journal of Hospitality Management"},{"key":"ref_33","doi-asserted-by":"crossref","first-page":"2759","DOI":"10.1108\/IJCHM-10-2018-0852","article-title":"Indoor
+      and outdoor physical surroundings and guests\u2019 emotional well-being: A luxury
+      resort hotel context","volume":"31","author":"Han","year":"2019","journal-title":"International
+      Journal of Contemporary Hospitality Management"},{"key":"ref_34","first-page":"276","article-title":"Fine-dining
+      restaurant selection: Direct and moderating effects of customer attributes","volume":"16","author":"Harrington","year":"2013","journal-title":"Journal
+      of Foodservice Business Research"},{"key":"ref_35","first-page":"567","article-title":"Impact
+      of wellness tourism experiences","volume":"46","author":"He","year":"2022","journal-title":"Journal
+      of Hospitality & Tourism Research"},{"key":"ref_36","first-page":"367","article-title":"Tourist
+      inspiration: How the wellness tourism experience inspires tourist engagement","volume":"47","author":"He","year":"2021","journal-title":"Journal
+      of Hospitality & Tourism Research"},{"key":"ref_37","doi-asserted-by":"crossref","first-page":"351","DOI":"10.1177\/0047287509346859","article-title":"Dimensions
+      of cruisers\u2019 experiences","volume":"49","author":"Hosany","year":"2010","journal-title":"Journal
+      of Travel Research"},{"key":"ref_38","doi-asserted-by":"crossref","first-page":"1692","DOI":"10.1080\/1528008X.2023.2173710","article-title":"The
+      integrated power of gastronomic experience quality and accommodation experience
+      to build tourists\u2019 satisfaction, revisit intention, and word-of-mouth intention","volume":"25","author":"Hossain","year":"2024","journal-title":"Journal
+      of Quality Assurance in Hospitality & Tourism"},{"key":"ref_39","doi-asserted-by":"crossref","unstructured":"Hung,
+      V. V., Dey, S. K., Vaculcikova, Z., and Anh, L. T. H. (2021). The Influence
+      of Tourists\u2019 Experience on Destination Loyalty: A Case Study of Hue City,
+      Vietnam. Sustainability, 13, (16).","DOI":"10.3390\/su13168889"},{"key":"ref_40","doi-asserted-by":"crossref","first-page":"82","DOI":"10.1002\/jtr.1968","article-title":"The
+      effect of experience quality on perceived value, satisfaction, image, and behavioral
+      intention of water park patrons: New versus repeat visitors","volume":"17","author":"Jin","year":"2015","journal-title":"International
+      Journal of Tourism Research"},{"key":"ref_41","doi-asserted-by":"crossref","first-page":"1319","DOI":"10.18280\/ijsdp.190410","article-title":"The
+      role of tourist experience in shaping memorable tourism experiences and behavioral
+      intentions","volume":"19","author":"Juliana","year":"2024","journal-title":"International
+      Journal of Sustainable Development and Planning"},{"key":"ref_42","unstructured":"Juvan,
+      E., Omerzel, D. G., and Maravi\u0107, M. U. (2017). Tourist Behaviour: An Overview
+      of Models to Date, University of Primorska Press."},{"key":"ref_43","doi-asserted-by":"crossref","unstructured":"Kemppainen,
+      L., Koskinen, V., Bergroth, H., Marttila, E., and Kemppainen, T. (2021). Health
+      and wellness\u2013related travel: A scoping study of the literature in 2010\u20132018.
+      SAGE Open, 11, (2).","DOI":"10.1177\/21582440211013792"},{"key":"ref_44","first-page":"E12","article-title":"COVID
+      Ageism as a public mental health concern","volume":"1","author":"Kessler","year":"2020","journal-title":"The
+      Lancet"},{"key":"ref_45","doi-asserted-by":"crossref","first-page":"12","DOI":"10.1177\/0047287510385467","article-title":"Development
+      of a scale to measure memorable tourism experiences","volume":"51","author":"Kim","year":"2010","journal-title":"Journal
+      of Travel Research"},{"key":"ref_46","unstructured":"Kline, R. B. (2005). Principles
+      and practice of structural equation modeling, Guilford Press. [2nd ed.]."},{"key":"ref_47","doi-asserted-by":"crossref","first-page":"784","DOI":"10.1016\/S0160-7383(00)00078-5","article-title":"Repeaters\u2019
+      behavior at two distinct destinations","volume":"28","author":"Kozak","year":"2001","journal-title":"Annals
+      of Tourism Research"},{"key":"ref_48","doi-asserted-by":"crossref","unstructured":"Liao,
+      C., Zuo, Y., Xu, S., Law, R., and Zhang, M. (2023). Dimensions of the health
+      benefits of wellness tourism: A review. Frontiers in Psychology, 13.","DOI":"10.3389\/fpsyg.2022.1071578"},{"key":"ref_49","first-page":"9","article-title":"Satisfaction
+      and loyalty evaluation towards health and wellness destination","volume":"36","author":"Liberato","year":"2021","journal-title":"Journal
+      of Tourism & Development"},{"key":"ref_50","doi-asserted-by":"crossref","unstructured":"Liu,
+      B., Kralj, A., and Li, Y. (2024). Perceived destination restorative qualities
+      in wellness tourism: The role of ontological security and psychological resilience.
+      Journal of Travel Research, 64, (4).","DOI":"10.1177\/00472875241230019"},{"key":"ref_51","doi-asserted-by":"crossref","unstructured":"Liu,
+      L., Zhou, Y., and Sun, X. (2023). The impact of the wellness tourism experience
+      on tourist well-being: The mediating role of tourist satisfaction. Sustainability,
+      15, (3).","DOI":"10.3390\/su15031872"},{"key":"ref_52","doi-asserted-by":"crossref","first-page":"168","DOI":"10.1108\/IJCTHR-10-2014-0087","article-title":"Service
+      quality and customer satisfaction: Qualitative research implications for luxury
+      hotels","volume":"9","author":"Lu","year":"2015","journal-title":"International
+      Journal of Culture, Tourism and Hospitality Research"},{"key":"ref_53","first-page":"1","article-title":"Towards
+      quality of life: The effects of the wellness tourism experience","volume":"35","author":"Luo","year":"2017","journal-title":"Journal
+      of Travel & Tourism Marketing"},{"key":"ref_54","doi-asserted-by":"crossref","first-page":"135","DOI":"10.1080\/24721735.2020.1819705","article-title":"Wellness
+      and spa tourism: Finding space for Indian Himalayan spa resorts","volume":"2","author":"Manhas","year":"2019","journal-title":"International
+      Journal of Spa and Wellness"},{"key":"ref_55","doi-asserted-by":"crossref","first-page":"122","DOI":"10.31410\/Balkans.JETSS.2021.4.2.122-131","article-title":"Measuring
+      tourist experience: Perspectives of different tourists segments","volume":"4","author":"Sker","year":"2021","journal-title":"Balkans
+      Journal of Emerging Trends in Social Sciences"},{"key":"ref_56","first-page":"149","article-title":"The
+      travel behavior of international students: The relationship between studying
+      abroad and their choice of tourist destinations","volume":"15","author":"Michael","year":"2009","journal-title":"Journal
+      of Vacation Marketing"},{"key":"ref_57","first-page":"29","article-title":"Wellness
+      tourism in India: A comparative analysis of domestic and international visitors\u2019
+      motivations","volume":"13","author":"Mishra","year":"2024","journal-title":"Journal
+      of Hospitality and Tourism"},{"key":"ref_58","doi-asserted-by":"crossref","first-page":"67","DOI":"10.1016\/S0278-4319(98)00047-4","article-title":"Service
+      quality, customer satisfaction, and customer value: A holistic perspective","volume":"18","author":"Oh","year":"1999","journal-title":"International
+      Journal of Hospitality Management"},{"key":"ref_59","doi-asserted-by":"crossref","first-page":"165","DOI":"10.1016\/0261-5177(96)00003-9","article-title":"The
+      service experience in tourism","volume":"17","author":"Otto","year":"1996","journal-title":"Tourism
+      Management"},{"key":"ref_60","unstructured":"Panchal, J. (2012). Ancient traditions
+      in modern wellness tourism: The influence of Ayurveda and Traditional Chinese
+      Medicine, Oxford University Press."},{"key":"ref_61","first-page":"45","article-title":"The
+      rise of wellness tourism in India: An integrative approach","volume":"12","author":"Patil","year":"2025","journal-title":"Journal
+      of Tourism and Health"},{"key":"ref_62","doi-asserted-by":"crossref","first-page":"237","DOI":"10.1080\/24721735.2022.2107801","article-title":"Baby
+      boomers and their growing interest in spa and wellness tourism","volume":"5","author":"Patterson","year":"2022","journal-title":"International
+      Journal of Spa and Wellness"},{"key":"ref_63","doi-asserted-by":"crossref","unstructured":"Paul,
+      L. A. (2014). Transformative experience, OUP Oxford.","DOI":"10.1093\/acprof:oso\/9780198717959.001.0001"},{"key":"ref_64","doi-asserted-by":"crossref","unstructured":"Peng,
+      C., Zou, Y.-G., and Jin, D. (2025). Wellness tourism healing: A systematic review
+      unveiling how cultural symbolic experiences influence health recovery. Tourism
+      Review, ahead-of-print.","DOI":"10.1108\/TR-10-2024-0918"},{"key":"ref_65","unstructured":"Pine,
+      B. J., and Gilmore, J. H. (1999). The experience economy: Work is theatre &
+      every business a stage, Harvard Business Press."},{"key":"ref_66","first-page":"378","article-title":"Understanding
+      the relationships between tourist motivation, satisfaction, and loyalty: The
+      case of a wellness festival","volume":"6","author":"Prayag","year":"2017","journal-title":"Journal
+      of Destination Marketing & Management"},{"key":"ref_67","doi-asserted-by":"crossref","first-page":"253","DOI":"10.1177\/0047287512461181","article-title":"Motivation
+      and involvement as antecedents of the perceived value of the destination experience","volume":"52","author":"Prebensen","year":"2012","journal-title":"Journal
+      of Travel Research"},{"key":"ref_68","doi-asserted-by":"crossref","first-page":"94","DOI":"10.1016\/j.tourman.2016.02.004","article-title":"Exploring
+      well-being as a tourism product resource","volume":"55","author":"Pyke","year":"2016","journal-title":"Tourism
+      Management"},{"key":"ref_69","doi-asserted-by":"crossref","first-page":"297","DOI":"10.1016\/S0261-5177(03)00130-4","article-title":"Towards
+      a structural model of the tourist experience: An illustration from food experiences
+      in tourism","volume":"25","author":"Quan","year":"2004","journal-title":"Tourism
+      Management"},{"key":"ref_70","doi-asserted-by":"crossref","unstructured":"Saeidnia,
+      H. R., Fotami, S. G. H., Lund, B., and Ghiasi, N. (2024). Ethical considerations
+      in artificial intelligence interventions for mental health and well-being: Ensuring
+      responsible implementation and impact. Social Sciences, 13, (7).","DOI":"10.3390\/socsci13070381"},{"key":"ref_71","doi-asserted-by":"crossref","unstructured":"Seow,
+      A. N., Foroughi, B., and Choong, Y. O. (2024). Tourists\u2019 satisfaction,
+      experience, and revisit intention for wellness tourism: E word-of-mouth as the
+      mediator. SAGE Open, 14, (3).","DOI":"10.1177\/21582440241274049"},{"key":"ref_72","doi-asserted-by":"crossref","first-page":"928","DOI":"10.1108\/YC-01-2024-1950","article-title":"Exploring
+      the link between creative tourist experiences and intentions among Gen Z: A
+      sequential mediation modeling approach in creative tourism","volume":"25","author":"Sharma","year":"2024","journal-title":"Young
+      Consumers"},{"key":"ref_73","doi-asserted-by":"crossref","unstructured":"Sharpley,
+      R. (2021). Creating Wellness Tourism Experiences. Routledge handbook of the
+      tourist experience, Routledge.","DOI":"10.4324\/9781003219866"},{"key":"ref_74","unstructured":"Smith,
+      M. K., and Puczk\u00f3, L. (2014). Health, tourism and hospitality: Spas, wellness
+      and medical travel, Routledge."},{"key":"ref_75","unstructured":"Smith, M. K.,
+      and Puczk\u00f3, L. (2023). The Routledge handbook of health tourism, Routledge."},{"key":"ref_76","first-page":"168","article-title":"The
+      effect of environmentally friendly perceptions on festival visitors\u2019 decision-making
+      process using an extended model of goal-directed behavior","volume":"46","author":"Song","year":"2015","journal-title":"Tourism
+      Management"},{"key":"ref_77","doi-asserted-by":"crossref","unstructured":"Suban,
+      S. A. (2024). Visitor\u2019s emotional experience in predicting destination
+      image, satisfaction and intention to revisit: A spa tourism perspective. International
+      Hospitality Review, ahead-of-print.","DOI":"10.1108\/IHR-05-2023-0032"},{"key":"ref_78","unstructured":"Times
+      of India (2025, January 15). How wellness tourism is becoming the next travel
+      trend to follow among travelers, Available online: https:\/\/timesofindia.indiatimes.com\/life-style\/travel\/news\/how-wellness-tourism-is-becoming-the-next-travel-trend-to-follow-among-travellers\/articleshow\/118420013.cms."},{"key":"ref_79","unstructured":"Times
+      of India (2025, January 15). Healthcare workers face rising mental health challenges
+      post-COVID, Available online: https:\/\/www.timesofindia.com\/healthcare-workers-mental-health."},{"key":"ref_80","doi-asserted-by":"crossref","first-page":"1141","DOI":"10.1016\/j.annals.2006.06.003","article-title":"Antecedents
+      of Revisit Intention","volume":"33","author":"Um","year":"2006","journal-title":"Annals
+      of Tourism Research"},{"key":"ref_81","doi-asserted-by":"crossref","unstructured":"Valente-Mosqueda,
+      F., Thakur, P., Calero-Sanz, J., and Orea-Giner, A. (2025). The inspired wellness:
+      Unveiling the connection between mental health and wellness tourism. Tourism
+      Recreation Research, 1\u201317.","DOI":"10.1080\/02508281.2024.2448084"},{"key":"ref_82","doi-asserted-by":"crossref","unstructured":"Voigt,
+      C., and Pforr, C. (2013). Wellness tourism: A destination perspective. Wellness
+      tourism: A destination perspective, Routledge.","DOI":"10.4324\/9780203079362"},{"key":"ref_83","doi-asserted-by":"crossref","unstructured":"Voigt,
+      C., and Pforr, C. (2013). Wellness Tourism: A Destination Perspective, Routledge.","DOI":"10.4324\/9780203079362"},{"key":"ref_84","doi-asserted-by":"crossref","first-page":"719","DOI":"10.1177\/0011000006286345","article-title":"A
+      brief guide to structural equation modeling","volume":"34","author":"Weston","year":"2006","journal-title":"The
+      Counseling Psychologist"},{"key":"ref_85","doi-asserted-by":"crossref","first-page":"200","DOI":"10.1016\/j.tourman.2017.12.011","article-title":"A
+      study of experiential quality, experiential value, trust, corporate reputation,
+      experiential satisfaction and behavioral intentions for cruise tourists: The
+      case of Hong Kong","volume":"66","author":"Wu","year":"2018","journal-title":"Tourism
+      Management"},{"key":"ref_86","doi-asserted-by":"crossref","unstructured":"Yu,
+      C. P., Chang, W. C., and Ramanpong, J. (2019). Assessing visitors\u2019 memorable
+      tourism experiences (MTE) in forest recreation destination: A case study in
+      Xitou nature education area. Forests, 10, (8).","DOI":"10.3390\/f10080636"},{"key":"ref_87","doi-asserted-by":"crossref","first-page":"326","DOI":"10.1016\/j.jdmm.2017.06.004","article-title":"A
+      model of perceived image, memorable tourism experiences and revisit intention","volume":"8","author":"Zhang","year":"2018","journal-title":"Journal
+      of Destination Marketing & Management"},{"key":"ref_88","doi-asserted-by":"crossref","unstructured":"Zhao,
+      Y., Yang, J., Song, J., and Lu, Y. (2025). The effects of tourism motivation
+      and perceived value on tourists\u2019 behavioral intention toward forest health
+      tourism: The moderating role of attitude. Sustainability, 17, (2).","DOI":"10.3390\/su17020713"}],"container-title":["Tourism
+      and Hospitality"],"language":"en","link":[{"URL":"https:\/\/www.mdpi.com\/2673-5768\/6\/2\/118\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2025,6,17]],"date-time":"2025-06-17T10:27:44Z","timestamp":1750156064000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.mdpi.com\/2673-5768\/6\/2\/118"}},"issued":{"date-parts":[[2025,6,17]]},"references-count":88,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2025,6]]}},"alternative-id":["tourhosp6020118"],"URL":"https:\/\/doi.org\/10.3390\/tourhosp6020118","ISSN":["2673-5768"],"issn-type":[{"value":"2673-5768","type":"electronic"}],"published":{"date-parts":[[2025,6,17]]}},{"indexed":{"date-parts":[[2023,3,8]],"date-time":"2023-03-08T05:52:34Z","timestamp":1678254754428},"reference-count":0,"publisher":"Oxford
+      University Press (OUP)","issue":"Supplement_1","license":[{"start":{"date-parts":[[2023,3,7]],"date-time":"2023-03-07T00:00:00Z","timestamp":1678147200000},"content-version":"vor","delay-in-days":6,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2023,3,7]]},"abstract":"<jats:title>Abstract<\/jats:title>\n               <jats:p>NOT
+      PUBLISHED AT AUTHOR\u2019S REQUEST<\/jats:p>\n               <jats:sec>\n                  <jats:title>Disclosure
+      of Interest<\/jats:title>\n                  <jats:p>None Declared<\/jats:p>\n               <\/jats:sec>","DOI":"10.1093\/jcag\/gwac036.229","type":"journal-article","created":{"date-parts":[[2023,3,7]],"date-time":"2023-03-07T21:29:23Z","timestamp":1678224563000},"page":"62-62","source":"Crossref","is-referenced-by-count":0,"title":["A229
+      THE BACTERIAL VIRULENCE FACTOR NLEA UNDERGOES HOST-MEDIATED O-LINKED GLYCOSYLATION"],"prefix":"10.1093","volume":"6","author":[{"given":"L","family":"Burns","sequence":"first","affiliation":[{"name":"Microbiology
+      & Immunology"}]},{"given":"N","family":"Giannakopoulou","sequence":"additional","affiliation":[{"name":"Microbiology
+      & Immunology"}]},{"given":"L","family":"Zhu","sequence":"additional","affiliation":[{"name":"Microbiology
+      & Immunology"}]},{"given":"Y Z","family":"Xu","sequence":"additional","affiliation":[{"name":"Medicine
+      , McGill University , Montreal"}]},{"given":"R H","family":"Khan","sequence":"additional","affiliation":[{"name":"Food
+      Science and Agricultural Chemistry, McGill University, Sainte-Anne-de-Bellevue"},{"name":"Microbiologie,
+      Infectologie et Immunologie, Universite de Montreal , Montreal"}]},{"given":"S","family":"Bekal","sequence":"additional","affiliation":[{"name":"Microbiologie,
+      Infectologie et Immunologie, Universite de Montreal , Montreal"},{"name":"Institut
+      National de Sante Publique du Quebec, Sainte-Anne-de-Bellevue"}]},{"given":"E","family":"Schurr","sequence":"additional","affiliation":[{"name":"Biochemistry,
+      McGill University , Montreal , Canada"}]},{"given":"T M","family":"Schmeing","sequence":"additional","affiliation":[{"name":"Biochemistry,
+      McGill University , Montreal , Canada"}]},{"given":"S","family":"Gruenheid","sequence":"additional","affiliation":[{"name":"Microbiology
+      & Immunology"}]}],"member":"286","published-online":{"date-parts":[[2023,3,7]]},"container-title":["Journal
+      of the Canadian Association of Gastroenterology"],"language":"en","link":[{"URL":"https:\/\/academic.oup.com\/jcag\/article-pdf\/6\/Supplement_1\/62\/49441039\/gwac036.229.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"https:\/\/academic.oup.com\/jcag\/article-pdf\/6\/Supplement_1\/62\/49441039\/gwac036.229.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,3,7]],"date-time":"2023-03-07T21:29:24Z","timestamp":1678224564000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/academic.oup.com\/jcag\/article\/6\/Supplement_1\/62\/7071180"}},"issued":{"date-parts":[[2023,3,1]]},"references-count":0,"journal-issue":{"issue":"Supplement_1","published-online":{"date-parts":[[2023,3,7]]},"published-print":{"date-parts":[[2023,3,7]]}},"URL":"https:\/\/doi.org\/10.1093\/jcag\/gwac036.229","ISSN":["2515-2084","2515-2092"],"issn-type":[{"value":"2515-2084","type":"print"},{"value":"2515-2092","type":"electronic"}],"published-other":{"date-parts":[[2023,3,1]]},"published":{"date-parts":[[2023,3,1]]}},{"indexed":{"date-parts":[[2023,5,18]],"date-time":"2023-05-18T04:29:57Z","timestamp":1684384197751},"reference-count":49,"publisher":"University
+      of Illinois Press","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2018,4,1]]},"abstract":"<jats:title>Abstract<\/jats:title>\n               <jats:p>This
+      paper argues that Euripides in Cresphontes (produced probably in 424 B.C.E.)
+      and Aristophanes in Farmers (423 B.C.E.) and Peace (421 B.C.E.) reflect and
+      promote the plan of the peace enthusiasts in Athens to institute an official
+      cult of the goddess in the city once peace with Sparta was agreed; through investigation
+      of contemporary and later literary and visual evidence (including Aristophanes\u2019s
+      Acharnians and Lysistrata, Thucydides, and Plutarch) it offers an explanation
+      why this plan was not fulfilled till much later, i.e., after the Peace of Timotheus
+      in 374 B.C.E.<\/jats:p>","DOI":"10.5406\/illiclasstud.43.1.0001","type":"journal-article","created":{"date-parts":[[2018,9,20]],"date-time":"2018-09-20T16:24:29Z","timestamp":1537460669000},"page":"1-24","source":"Crossref","is-referenced-by-count":2,"title":["The
+      Cult of Peace on the Athenian Stage during the Peloponnesian War: From Euripides\u2019s
+      <i>Cresphontes<\/i> to Aristophanes\u2019s <i>Peace<\/i> and Beyond"],"prefix":"10.5406","volume":"43","author":[{"given":"Lucia","family":"Athanassaki","sequence":"first","affiliation":[{"name":"University
+      of Crete, athanassaki@uoc.gr"}]}],"member":"3673","reference":[{"key":"2023051715540902100_ref1","volume-title":"The
+      Odes of Bacchylides, in Perseus Project","author":"","year":"1991"},{"key":"2023051715540902100_ref2","first-page":"173","article-title":"\u201cRecreating
+      the Emotional Experience of Contest and Victory Celebrations: Spectators and
+      Celebrants in Pindar\u2019s Epinicians.\u201d","volume-title":"Approaches to
+      Archaic Greek Poetry","author":"","year":"2012"},{"key":"2023051715540902100_ref3","volume-title":"From
+      Plataea to Potidaea: Studies in the History and Historiography of the Pentecontaetia","author":"","year":"1993"},{"key":"2023051715540902100_ref4","volume-title":"Aristophanes:
+      Myth, Ritual and Comedy","author":"","year":"1993"},{"key":"2023051715540902100_ref5","first-page":"61","article-title":"\u201cChoral
+      Performances.\u201d","volume-title":"Greeks on Greekness: Viewing the Roman
+      Past under the Roman Empire","author":"","year":"2006"},{"key":"2023051715540902100_ref6","volume-title":"Euripides.
+      Selected Fragmentary Plays, Vol. I.","author":"","year":"1995"},{"key":"2023051715540902100_ref7","volume-title":"Euripides
+      Fragments: Aegeus-Meleager","author":"","year":"2008"},{"key":"2023051715540902100_ref8","doi-asserted-by":"crossref","first-page":"1","DOI":"10.2307\/632228","article-title":"\u201cWas
+      Sophocles Heroised as Dexion?","volume":"118","author":"","year":"1998","journal-title":"JHS"},{"key":"2023051715540902100_ref9","volume-title":"Philostratus
+      the Elder, Imagines. Philostratus the Younger, Imagines. Callistratus, Descriptions","author":"","year":"1931"},{"key":"2023051715540902100_ref10","volume-title":"Introducing
+      New Gods. The Politics of Greek Religion","author":"","year":"1992"},{"key":"2023051715540902100_ref11","doi-asserted-by":"crossref","first-page":"34","DOI":"10.2307\/632480","article-title":"\u201cCivic
+      Ideology and the Problem of Difference: The Politics of Aeschylean Tragedy Once
+      Again.\u201d","volume":"120","author":"","year":"2000","journal-title":"JHS"},{"key":"2023051715540902100_ref12","volume-title":"Pausanias:
+      Description of Greece","author":"","year":"1918"},{"key":"2023051715540902100_ref13","volume-title":"Philostratus:
+      Apollonius of Tyana","author":"","year":"2005"},{"key":"2023051715540902100_ref14","doi-asserted-by":"crossref","first-page":"53","DOI":"10.1017\/S0009838800001609","article-title":"\u201cA
+      Paean in the Philoctetes.\u201d","volume":"13","author":"","year":"1963","journal-title":"CQ"},{"key":"2023051715540902100_ref15","volume-title":"Euripides
+      \u2018Kresphontes and Archelaos","author":"","year":"1985"},{"key":"2023051715540902100_ref16","volume-title":"Aristophanes:
+      Clouds, Wasps, Peace","author":"","year":"1998"},{"key":"2023051715540902100_ref17","volume-title":"Aristophanes:
+      Fragments","author":"","year":"2008"},{"key":"2023051715540902100_ref18","first-page":"56","article-title":"\u201cWhy
+      Should I Dance?: Choral Self-Referentiality in Greek Tragedy.\u201d","volume":"3.1","author":"","year":"1994\/5","journal-title":"Arion"},{"key":"2023051715540902100_ref19","volume-title":"War,
+      Peace, and Alliance in Demosthenes Athens","author":"","year":"2010"},{"key":"2023051715540902100_ref20","volume-title":"The
+      Acropolis of Athens in the Age of Pericles","author":"","year":"2004"},{"key":"2023051715540902100_ref21","volume-title":"Bacchylide:
+      Dithyrambes-\u00c9pinicies Fragments","author":"","year":"1993"},{"key":"2023051715540902100_ref22","volume-title":"Tragicorum
+      Graecorum Fragmenta, vol. 5 (in two parts): Euripides","author":"","year":"2004"},{"key":"2023051715540902100_ref23","volume-title":"Poetae
+      Comici Graeci. Vol. V. Damoxenus-Magnes","author":"","year":"1986"},{"key":"2023051715540902100_ref24","first-page":"112","article-title":"\u201cOn
+      the Early History of the Braggart Soldier. Part Two: Aristophanes\u2019 Lamachus
+      and the Politicization of the Comic Type.\u201d","volume":"6","author":"","year":"2016","journal-title":"Logeion"},{"key":"2023051715540902100_ref25","volume-title":"Euripides:
+      Children of Heracles, Hippolytus, Andromache, Hecuba","author":"","year":"1995"},{"key":"2023051715540902100_ref26","volume-title":"Euripides:
+      Helen, Phoenician Women, Orestes","author":"","year":"2002"},{"key":"2023051715540902100_ref27","volume-title":"Euripides:
+      Bacchae, Iphigenia at Aulis, Rhesus","author":"","year":"2003"},{"key":"2023051715540902100_ref28","volume-title":"The
+      Ancient Messenians: Constructions of Ethnicity and Memory","author":"","year":"2008"},{"key":"2023051715540902100_ref29","first-page":"61","article-title":"\u201cDas
+      Bild des \u2018Friedens\u2019 im Athen des 4. Jhs. V. Chr.: Sehnsucht, Hoffnung
+      und Versprechen.\u201d","volume-title":"Friede: Eine Spurensuche","author":"","year":"2008"},{"key":"2023051715540902100_ref30","volume-title":"Die
+      Fragmente der Trag\u00f6dien des Aischylos","author":"","year":"1959"},{"key":"2023051715540902100_ref31","first-page":"91","article-title":"\u201cThe
+      Sarapion Monument and the Paean of Sophocles.\u201d","volume":"5.1","author":"","year":"1936","journal-title":"Hesperia"},{"key":"2023051715540902100_ref32","volume-title":"Aristophanes:
+      Peace","author":"","year":"1998"},{"key":"2023051715540902100_ref33","first-page":"35","article-title":"\u201cComedy,
+      Politics, and Society.\u201d","volume-title":"Brill\u2019s Companion to the
+      Study of Greek Comedy","author":"","year":"2010"},{"key":"2023051715540902100_ref34","volume-title":"Poetae
+      Melici Graeci","author":"","year":"1962"},{"key":"2023051715540902100_ref35","volume-title":"Athenian
+      Religion: A History","author":"","year":"1996"},{"key":"2023051715540902100_ref36","doi-asserted-by":"crossref","first-page":"74","DOI":"10.2307\/630633","article-title":"\u201cPlutarch\u2019s
+      Method of Work in his Roman Lives.\u201d","volume":"99","author":"","year":"1979","journal-title":"JHS"},{"key":"2023051715540902100_ref37","doi-asserted-by":"crossref","first-page":"127","DOI":"10.2307\/630736","article-title":"\u201cPlutarch\u2019s
+      Adaptation of his Source Material.\u201d","volume":"100","author":"","year":"1980","journal-title":"JHS"},{"key":"2023051715540902100_ref38","volume-title":"Tragicorum
+      Graecorum Fragmenta, vol. 3: Aeschylus","author":"","year":"1985"},{"key":"2023051715540902100_ref39","first-page":"651","article-title":"\u201cEir\u00ean\u00ea
+      Philheortos and Dionysiac Poetics in Aristophanic Comedy.\u201d","volume-title":"The
+      Contribution of Ancient Sparta to Political Thought and Practice","author":"","year":"2013"},{"key":"2023051715540902100_ref40","volume-title":"Personifications
+      in Greek Art: The Representation of Abstract Concepts 600\u2013400 BC","author":"","year":"1993"},{"key":"2023051715540902100_ref41","first-page":"43","article-title":"\u201cProblems
+      in the Hypotheses toAristophanes\u2019 Peace.\u201d","volume":"74","author":"","year":"1988","journal-title":"ZPE"},{"key":"2023051715540902100_ref42","volume-title":"Monumenta
+      Graeca etRomana: Polls and Personification in Classical Athenian Art","author":"","year":"2011"},{"key":"2023051715540902100_ref43","volume-title":"Greek
+      Grammar","author":"","year":"1956"},{"key":"2023051715540902100_ref44","volume-title":"Aristophanes:
+      Peace","author":"","year":"2005"},{"key":"2023051715540902100_ref45","volume-title":"Tragedy
+      and Athenian Religion","author":"","year":"2003"},{"key":"2023051715540902100_ref46","volume-title":"Pausaniae
+      Graeciae Description","author":"","year":"1903"},{"key":"2023051715540902100_ref47","volume-title":"Worshipping
+      Virtues: Personification and the Divine in Ancient Greece","author":"","year":"2000"},{"key":"2023051715540902100_ref48","first-page":"118","article-title":"\u201cNegotiation
+      and Reconciliation: A New Interpretation of the Athenian Introduction of the
+      Asklepios Cult.\u201d","volume":"98.1","author":"","year":"2016","journal-title":"Klio"},{"key":"2023051715540902100_ref49","volume-title":"Echoes
+      of Contemporary History in Athenian Comedy","author":"","year":"2015"}],"container-title":["Illinois
+      Classical Studies"],"language":"en","link":[{"URL":"https:\/\/scholarlypublishingcollective.org\/uip\/ics\/article-pdf\/43\/1\/1\/1896585\/illiclasstud.43.1.0001.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"syndication"},{"URL":"https:\/\/scholarlypublishingcollective.org\/uip\/ics\/article-pdf\/43\/1\/1\/1896585\/illiclasstud.43.1.0001.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,5,17]],"date-time":"2023-05-17T15:54:43Z","timestamp":1684338883000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/scholarlypublishingcollective.org\/ics\/article\/43\/1\/1\/234153\/The-Cult-of-Peace-on-the-Athenian-Stage-during-the"}},"issued":{"date-parts":[[2018,4,1]]},"references-count":49,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2018,4,1]]}},"URL":"https:\/\/doi.org\/10.5406\/illiclasstud.43.1.0001","ISSN":["0363-1923","2328-5265"],"issn-type":[{"value":"0363-1923","type":"print"},{"value":"2328-5265","type":"electronic"}],"published":{"date-parts":[[2018,4,1]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '13312'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 12 Jul 2025 04:26:18 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -363,16 +495,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '6607'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:59:49 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -381,10 +505,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

@@ -11,40 +11,40 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/works?query=widget&cursor=thing
   response:
-    content: '{"status":"error","message-type":"exception","message-version":"1.0.0","message":{"name":"class
-      clojure.lang.ExceptionInfo","description":"clojure.lang.ExceptionInfo: Response
-      Exception qbits.spandex.Response@88400ca9","message":"Response Exception","stack":["qbits.spandex$response_ex__GT_ex_info.invokeStatic(spandex.clj:218)","qbits.spandex$response_ex__GT_ex_info.invoke(spandex.clj:215)","qbits.spandex$fn__15113.invokeStatic(spandex.clj:227)","qbits.spandex$fn__15113.invoke(spandex.clj:225)","qbits.spandex$fn__15102$G__15097__15107.invoke(spandex.clj:222)","qbits.spandex$response_listener$reify__15118.onFailure(spandex.clj:251)","org.elasticsearch.client.RestClient$FailureTrackingResponseListener.onDefinitiveFailure(RestClient.java:605)","org.elasticsearch.client.RestClient$1.completed(RestClient.java:362)","org.elasticsearch.client.RestClient$1.completed(RestClient.java:343)","org.apache.http.concurrent.BasicFuture.completed(BasicFuture.java:119)","org.apache.http.impl.nio.client.DefaultClientExchangeHandlerImpl.responseCompleted(DefaultClientExchangeHandlerImpl.java:181)","org.apache.http.nio.protocol.HttpAsyncRequestExecutor.processResponse(HttpAsyncRequestExecutor.java:437)","org.apache.http.nio.protocol.HttpAsyncRequestExecutor.inputReady(HttpAsyncRequestExecutor.java:327)","org.apache.http.impl.nio.DefaultNHttpClientConnection.consumeInput(DefaultNHttpClientConnection.java:265)","org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:81)","org.apache.http.impl.nio.client.InternalIODispatch.onInputReady(InternalIODispatch.java:39)","org.apache.http.impl.nio.reactor.AbstractIODispatch.inputReady(AbstractIODispatch.java:121)","org.apache.http.impl.nio.reactor.BaseIOReactor.readable(BaseIOReactor.java:162)","org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvent(AbstractIOReactor.java:337)","org.apache.http.impl.nio.reactor.AbstractIOReactor.processEvents(AbstractIOReactor.java:315)","org.apache.http.impl.nio.reactor.AbstractIOReactor.execute(AbstractIOReactor.java:276)","org.apache.http.impl.nio.reactor.BaseIOReactor.execute(BaseIOReactor.java:104)","org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:588)","java.base\/java.lang.Thread.run(Thread.java:1583)"],"cause":null}}'
+    content: '{"status":"failed","message-type":"resource-failure","message":[{"type":"cursor-invalid","value":"thing","message":"Cursor
+      specified but it is invalid"}]}'
     headers:
-      connection:
-      - close
-      content-type:
+      Connection:
+      - keep-alive
+      Content-Type:
       - application/json
-      date:
-      - Sun, 13 Oct 2024 14:08:28 GMT
-      exception-name:
-      - class clojure.lang.ExceptionInfo
+      Date:
+      - Sat, 12 Jul 2025 04:30:44 GMT
+      Transfer-Encoding:
+      - chunked
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
-      transfer-encoding:
-      - chunked
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
       - '50'
     http_version: HTTP/1.1
-    status_code: 500
+    status_code: 404
 version: 1

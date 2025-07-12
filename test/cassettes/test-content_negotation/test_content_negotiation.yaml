@@ -11,9 +11,9 @@ interactions:
       host:
       - doi.org
       user-agent:
-      - python-requests/2.32.3 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-requests/2.32.3 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://doi.org/10.1126/science.169.3946.635
   response:
@@ -21,20 +21,18 @@ interactions:
 
       <body><a href="https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform">https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform</a></body></html>'
     headers:
-      CF-Cache-Status:
-      - DYNAMIC
       CF-RAY:
-      - 8d1ac9f5aaf37538-SEA
+      - 95dd65e52edb9b5f-SEA
       Connection:
       - keep-alive
       Content-Type:
       - text/html;charset=utf-8
       Date:
-      - Sat, 12 Oct 2024 23:14:55 GMT
+      - Sat, 12 Jul 2025 03:19:16 GMT
       NEL:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qOs0SMRSQsfA4ssi%2Br1XO21IUl494IWvAwO4aOEGsBJ3iZDSbOukOqMkKi%2BMCpOcieVik7vaVt%2BAxyT1HVaEHYChGbsv76AdTZGk0EP%2BOL4WH%2B65GNwJzRw%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=egLfsCFmNAmRM3KgpBqkwhupBgOA02kR%2BnGVUokqQrBg7p3iCMSo4ePiPwIFs%2BYIfnoYb62rXhv0vtLQBDDd0gKvCQvibdZpLxQH0LR6wVr%2F3fzLYc6dim8%3D"}],"group":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Strict-Transport-Security:
@@ -43,12 +41,16 @@ interactions:
       - chunked
       alt-svc:
       - h3=":443"; ma=86400
+      cf-cache-status:
+      - DYNAMIC
       expires:
-      - Sat, 12 Oct 2024 23:39:58 GMT
+      - Sat, 12 Jul 2025 03:46:15 GMT
       location:
       - https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
       permissions-policy:
       - interest-cohort=(),browsing-topics=()
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=22479&min_rtt=9976&rtt_var=28747&sent=5&recv=7&lost=0&retrans=1&sent_bytes=4210&recv_bytes=864&delivery_rate=26201&cwnd=251&unsent_bytes=0&cid=a5dc193f209c7c38&ts=222&x=0"
       vary:
       - Origin
       - Accept
@@ -66,9 +68,9 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-requests/2.32.3 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-requests/2.32.3 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/v1/works/10.1126%2Fscience.169.3946.635/transform
   response:
@@ -79,6 +81,14 @@ interactions:
       Association for the Advancement of Science (AAAS)}, author={Frank, Henry S.},
       year={1970}, month=aug, pages={635\u2013641} }\n"
     headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/x-bibtex
+      Date:
+      - Sat, 12 Jul 2025 03:19:16 GMT
+      Transfer-Encoding:
+      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -86,26 +96,14 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
-      content-type:
-      - application/x-bibtex
-      date:
-      - Sat, 12 Oct 2024 23:14:55 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
-      transfer-encoding:
-      - chunked
       vary:
       - Accept
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

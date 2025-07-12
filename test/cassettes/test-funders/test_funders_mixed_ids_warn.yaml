@@ -11,9 +11,9 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/funders/10.13039/100000001
   response:
@@ -31,10 +31,18 @@ interactions:
       and Economic Sciences","100005447":"Office of Information and Resource Management","100000086":"Directorate
       for Mathematical and Physical Sciences","100023581":"National Science Foundation
       Graduate Research Fellowship Program","100000085":"Directorate for Geosciences","100014072":"National
-      Coordination Office"},"replaced-by":[],"work-count":377933,"name":"National
-      Science Foundation","descendants":["100000076","100000077","100000078","100000081","100000082","100000083","100000084","100000085","100000086","100000087","100000088","100000089","100000105","100000106","100000121","100000141","100000143","100000144","100000145","100000146","100000147","100000148","100000149","100000150","100000151","100000152","100000153","100000154","100000155","100000156","100000159","100000160","100000162","100000163","100000164","100000165","100000166","100000169","100000170","100000171","100000172","100000173","100000174","100000175","100000176","100000177","100000178","100000179","100005441","100005442","100005443","100005444","100005445","100005446","100005447","100005448","100005449","100005450","100005553","100005554","100005714","100005716","100005717","100006091","100006603","100007352","100007521","100007522","100007523","100010608","100014071","100014072","100014073","100014074","100014411","100014591","100020427","100020428","100020429","100020474","100020475","100020476","100022807","100023581","100024040","100031042","100031424"],"descendant-work-count":466516,"id":"100000001","tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","nsf","us","nsf"],"replaces":[],"uri":"http:\/\/dx.doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100014074":{},"100010608":{},"100000179":{"more":true},"100014411":{},"100020475":{"more":true},"100020427":{"more":true},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100031042":{},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100023581":{},"100000085":{"more":true},"100014072":{}}},"alt-names":["U.S.
-      National Science Foundation","USA NSF","NSF","US NSF"],"location":"United States"}}'
+      Coordination Office"},"replaced-by":[],"work-count":392984,"name":"National
+      Science Foundation","descendants":["100000076","100000077","100000078","100000081","100000082","100000083","100000084","100000085","100000086","100000087","100000088","100000089","100000105","100000106","100000121","100000141","100000143","100000144","100000145","100000146","100000147","100000148","100000149","100000150","100000151","100000152","100000153","100000154","100000155","100000156","100000159","100000160","100000162","100000163","100000164","100000165","100000166","100000169","100000170","100000171","100000172","100000173","100000174","100000175","100000176","100000177","100000178","100000179","100005441","100005442","100005443","100005444","100005445","100005446","100005447","100005448","100005449","100005450","100005553","100005554","100005714","100005716","100005717","100006091","100006603","100007352","100007521","100007522","100007523","100010608","100014071","100014072","100014073","100014074","100014411","100014591","100020427","100020428","100020429","100020474","100020475","100020476","100022807","100023581","100024040","100031042","100031424"],"descendant-work-count":488101,"id":"100000001","tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","us","nsf","nsf"],"replaces":[],"uri":"https:\/\/doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100014074":{},"100010608":{},"100000179":{"more":true},"100014411":{},"100020475":{"more":true},"100020427":{"more":true},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100031042":{},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100023581":{},"100000085":{"more":true},"100014072":{}}},"alt-names":["U.S.
+      National Science Foundation","USA NSF","US NSF","NSF"],"location":"United States"}}'
     headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1084'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 11 Jul 2025 23:25:28 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -42,16 +50,8 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
       content-encoding:
       - gzip
-      content-length:
-      - '1088'
-      content-type:
-      - application/json
-      date:
-      - Sun, 13 Oct 2024 04:57:50 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -60,10 +60,6 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:
@@ -82,14 +78,22 @@ interactions:
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/1.2.6.91
+      - python-httpx/0.27.2 habanero/2.3.0
     method: GET
     uri: https://api.crossref.org/funders/10.13039/notarealdoi
   response:
     content: Resource not found.
     headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/plain
+      Date:
+      - Fri, 11 Jul 2025 23:25:29 GMT
+      Transfer-Encoding:
+      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -97,24 +101,12 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
-      connection:
-      - close
-      content-type:
-      - text/plain
-      date:
-      - Sun, 13 Oct 2024 04:57:50 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
-      transfer-encoding:
-      - chunked
       x-api-pool:
       - public
-      x-rate-limit-interval:
-      - 1s
-      x-rate-limit-limit:
-      - '50'
       x-ratelimit-interval:
       - 1s
       x-ratelimit-limit:

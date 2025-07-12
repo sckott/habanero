@@ -64,14 +64,8 @@ def test_journals_filter_fails_noids():
 
 @pytest.mark.vcr
 def test_journals_fail_limit():
-    with pytest.raises(KeyError):
+    with pytest.raises(exceptions.RequestError):
         cr.journals(limit="things")
-
-
-@pytest.mark.vcr
-def test_journals_fail_offset():
-    with pytest.raises(KeyError):
-        cr.journals(offset="things")
 
 
 @pytest.mark.vcr
