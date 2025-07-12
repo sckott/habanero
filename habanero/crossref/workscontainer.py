@@ -1,6 +1,3 @@
-from typing import Union
-
-
 class WorksContainer:
     """
     WorksContainer: Class for working with works results
@@ -57,7 +54,7 @@ class WorksContainer:
             len(self.works),
         )
 
-    def works_handler(self, x: Union[list, dict]) -> list:
+    def works_handler(self, x: list | dict) -> list:
         message_type = (
             [w["message-type"] for w in x][0]
             if isinstance(x, list)

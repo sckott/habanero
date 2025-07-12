@@ -1,4 +1,4 @@
-from typing import List, Optional, Union
+from typing import List, Optional
 
 from ..habanero_utils import check_kwargs, sub_str
 from ..request import request
@@ -1024,7 +1024,7 @@ class Crossref:
         )
         return res
 
-    def registration_agency(self, ids: Union[List[str], str], **kwargs) -> list:
+    def registration_agency(self, ids: List[str] | str, **kwargs) -> list:
         """
         Determine registration agency for DOIs
 
