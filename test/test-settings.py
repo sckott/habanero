@@ -15,7 +15,8 @@ def test_ua_string():
     """settings (ua_string) - with ua string, works"""
     cr_with_ua.works(ids="10.1371/journal.pone.0033693")
     try:
-        x = open(vcr_path, "r").read()
+        with open(vcr_path, "r") as f:
+            x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
@@ -33,7 +34,8 @@ def test_no_ua_string():
     """settings (ua_string) - without ua string, works"""
     cr_without_ua.works(ids="10.1371/journal.pone.0033693")
     try:
-        x = open(vcr_noua_path, "r").read()
+        with open(vcr_noua_path, "r") as f:
+            x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
@@ -51,7 +53,8 @@ def test_ua_string_members():
     """settings (ua_string) - with ua string, members"""
     cr_with_ua.members(query="ecology", limit=2)
     try:
-        x = open(vcr_path_members, "r").read()
+        with open(vcr_path_members, "r") as f:
+            x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
@@ -69,7 +72,8 @@ def test_ua_string_prefixes():
     """settings (ua_string) - with ua string, prefixes"""
     cr_with_ua.prefixes(ids="10.1016", works=True, sample=2)
     try:
-        x = open(vcr_path_prefixes, "r").read()
+        with open(vcr_path_prefixes, "r") as f:
+            x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
@@ -89,7 +93,8 @@ def test_ua_string_registration_agency():
     """settings (ua_string) - with ua string, registration_agency"""
     cr_with_ua.registration_agency("10.1126/science.169.3946.635")
     try:
-        x = open(vcr_path_registration_agency, "r").read()
+        with open(vcr_path_registration_agency, "r") as f:
+            x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
 
