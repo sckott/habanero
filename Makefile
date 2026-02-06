@@ -18,16 +18,17 @@ docs:
 opendocs:
 	open docs/_build/html/index.html
 
-.PHONY: lint-fix
 lint-fix:
-	ruff check --select I --fix habanero
+	uv run ruff check --select I --fix habanero
 
-.PHONY: lint-check
 lint-check:
-	ruff check habanero
+	uv run ruff check habanero
 
-format:
-	ruff format habanero
+format-fix:
+	uv run ruff format habanero
+
+format-check:
+	uv run ruff format --check habanero
 
 ipython:
 	uv run --with rich --with ipython python -m IPython
