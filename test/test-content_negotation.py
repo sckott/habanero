@@ -39,7 +39,7 @@ def pkgverBounds(pkg, minVer, maxVer=None):
         reason='Test requires the optional dependency "bibtexparser" to run')
 def test_content_negotiation_bad_bibtex():
     """content negotiation - bad bibtex is fixed correctly"""
-    month_regex = re.compile(r"\{sep\}")
+    month_regex = re.compile(r"\{Sept\}")
     res = cn.content_negotiation(ids="10.1139/cjc-2022-0282")
     assert month_regex.search(res) is not None
 
