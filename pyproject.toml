@@ -16,10 +16,10 @@ readme = "README.rst"
 license = { file = "LICENSE.md" }
 requires-python = ">=3.10"
 dependencies = [
-  "httpx>=0.27.2",
-  "packaging>=24.1",
-  "tqdm>=4.66.5",
-  "urllib3>=2.2.2,<3.0.0",
+  "httpx>=0.28.1",
+  "packaging>=26.2",
+  "tqdm>=4.67.3",
+  "urllib3>=2.7.0,<3.0.0",
 ]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -68,16 +68,16 @@ bibtex = ["bibtexparser>=2.0.0b7"]
 dev = [
     "codecov>=2.1.13",
     "docutils>=0.21.2",
-    "pytest>=8.4.2",
-    "pytest-cov>=7.0.0",
+    "pytest>=9.0.3",
+    "pytest-cov>=7.1.0",
     "pytest-recording>=0.13.4",
-    "pyyaml>=6.0.2",
-    "ruff>=0.15.0",
+    "pyyaml>=6.0.3",
+    "ruff>=0.15.15",
     "sphinx>=8.1.3",
     "sphinx-autodoc-typehints>=3.0.1",
     "sphinx-rtd-theme>=3.0.2",
     "sphinxcontrib-issuetracker>=0.11",
-    "vcrpy>=5.1.0",
+    "vcrpy>=8.1.1",
 ]
 
 [tool.setuptools.packages.find]
