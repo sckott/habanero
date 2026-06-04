@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.4.0 (2026-06-04)
+--------------------
+* fixed return type declaration for Crossref.works (#204) thanks @StarryWorm
+* pyyaml package moved from dependencies to the optional dev depencies group (#210) thanks @hseg
+* updated package for new filters; now documented options for the `select` parameter; documented new field queries; documented new facet count options (#218)
+
 2.3.0 (2025-06-06)
 --------------------
 * Change `urllib3` version to `urllib3>=2.2.2,<3.0.0` to account for a security fix (#202) (#203)
