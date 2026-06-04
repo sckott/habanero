@@ -142,21 +142,26 @@ class Crossref:
     **Facet count options**
 
     * `affiliation` - Author affiliation. Allowed value: *
-    * `year` - Earliest year of publication, synonym for published. Allowed value: *
-    * `funder-name` - Funder literal name as deposited alongside DOIs. Allowed value: *
-    * `funder-doi` - Funder DOI. Allowed value: *
-    * `orcid` - Contributor ORCID. Max value: 100
-    * `container-title` - Work container title, such as journal title, or book title. Max value: 100
-    * `assertion` - Custom Crossmark assertion name. Allowed value: *
     * `archive` - Archive location. Allowed value: *
-    * `update-type` - Significant update type. Allowed value: *
-    * `issn` - Journal ISSN (any - print, electronic, link). Max value: 100
-    * `published` - Earliest year of publication. Allowed value: *
-    * `type-name` - Work type name, such as journal-article or book-chapter. Allowed value: *
-    * `license` - License URI of work. Allowed value: *
-    * `category-name` - Category name of work. Allowed value: *
-    * `relation-type` - Relation type described by work or described by another work with work as object. Allowed value: *
+    * `assertion` - Custom Crossmark assertion name. Allowed value: *
     * `assertion-group` - Custom Crossmark assertion group name. Allowed value: *
+    * `category-name` - Category name of work. Allowed value: *
+    * `container-title` - Work container title, such as journal title, or book title. Max value: 100
+    * `funder-doi` - Funder DOI. Allowed value: *
+    * `funder-name` - Funder literal name as deposited alongside DOIs. Allowed value: *
+    * `issn` - Journal ISSN (any - print, electronic, link). Max value: 100
+    * `journal-issue` - journal issue number.
+    * `journal-volume` - journal volume.
+    * `license` - License URI of work. Allowed value: *
+    * `link-application` - intended application of the full text link
+    * `orcid` - Contributor ORCID. Max value: 100
+    * `published` - Earliest year of publication. Allowed value: *
+    * `publisher-name` - publisher name of work.
+    * `relation-type` - Relation type described by work or described by another work with work as object. Allowed value: *
+    * `ror-id` - institution ROR ID.
+    * `source` - source of the DOI.
+    * `type-name` - Work type name, such as journal-article or book-chapter. Allowed value: *
+    * `update-type` - Significant update type. Allowed value: *
 
 
     |
