@@ -387,7 +387,7 @@ class Crossref:
 
     def members(
         self,
-        ids: List[str] | str | None = None,
+        ids: List[str] | str | int | None = None,
         query: Optional[str] = None,
         filter: Optional[dict] = None,
         offset: Optional[float] = None,
