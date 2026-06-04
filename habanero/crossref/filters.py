@@ -9,6 +9,10 @@ works_filter_details: Dict[str, dict] = {
         "possible_values": "{funder_id}",
         "description": "metadata which include the {funder_id} in FundRef data",
     },
+    "funder_doi_asserted_by": {
+        "possible_values": "{string}",
+        "description": "metadata where funder DOI was asserted by the given body (crossref or publisher)",
+    },
     "location": {
         "possible_values": "{country_name}",
         "description": "funder records where location = {country name}. Only works on /funders route",
@@ -93,6 +97,46 @@ works_filter_details: Dict[str, dict] = {
         "possible_values": "{date}",
         "description": "metadata where accepted date is before (inclusive) {date}",
     },
+    "from_approved_date": {
+        "possible_values": "{date}",
+        "description": "metadata where approved date is on or after {date}; for types dissertation, standard, and report",
+    },
+    "until_approved_date": {
+        "possible_values": "{date}",
+        "description": "metadata where approved date is on or before {date}; for types dissertation, standard, and report",
+    },
+    "from_awarded_date": {
+        "possible_values": "{date}",
+        "description": "metadata where awarded date is on or after {date}; for the grant type",
+    },
+    "until_awarded_date": {
+        "possible_values": "{date}",
+        "description": "metadata where award date is on or before {date}; for the grant type",
+    },
+    "from_issued_date": {
+        "possible_values": "{date}",
+        "description": "metadata where issued date is on or after {date}",
+    },
+    "until_issued_date": {
+        "possible_values": "{date}",
+        "description": "metadata where issued date is on or before {date}",
+    },
+    "from_event_start_date": {
+        "possible_values": "{date}",
+        "description": "metadata where event start date is on or after {date}",
+    },
+    "until_event_start_date": {
+        "possible_values": "{date}",
+        "description": "metadata where event start date is on or before {date}",
+    },
+    "from_event_end_date": {
+        "possible_values": "{date}",
+        "description": "metadata where event end date is on or after {date}",
+    },
+    "until_event_end_date": {
+        "possible_values": "{date}",
+        "description": "metadata where event end date is on or before {date}",
+    },
     "has_license": {
         "possible_values": None,
         "description": "metadata that includes any '<license_ref>' elements",
@@ -137,6 +181,38 @@ works_filter_details: Dict[str, dict] = {
         "possible_values": "{string}",
         "description": "metadata which where value of archive partner is '{string}'",
     },
+    "has_funder_doi": {
+        "possible_values": None,
+        "description": "metadata which includes a funder DOI",
+    },
+    "has_ror_id": {
+        "possible_values": None,
+        "description": "metadata which includes a ROR ID",
+    },
+    "has_alias": {
+        "possible_values": None,
+        "description": "metadata for records that have other DOIs aliased to them",
+    },
+    "has_prime_doi": {
+        "possible_values": None,
+        "description": "metadata for records that have been aliased and redirect to another DOI",
+    },
+    "has_description": {
+        "possible_values": None,
+        "description": "metadata for records that have a description field",
+    },
+    "has_award": {
+        "possible_values": None,
+        "description": "metadata for records that were funded by an award",
+    },
+    "has_event": {
+        "possible_values": None,
+        "description": "metadata for records associated with an event",
+    },
+    "has_update": {
+        "possible_values": None,
+        "description": "metadata for records that have been updated by another DOI (e.g., via a correction or retraction)",
+    },
     "has_orcid": {
         "possible_values": None,
         "description": "metadata which includes one or more ORCIDs",
@@ -148,6 +224,14 @@ works_filter_details: Dict[str, dict] = {
     "orcid": {
         "possible_values": "{orcid}",
         "description": "metadata where '<orcid>' element's value = '{orcid}'",
+    },
+    "ror_id": {
+        "possible_values": "{ror_id}",
+        "description": "metadata where contributor affiliation or funding ROR ID matches '{ror_id}'",
+    },
+    "isbn": {
+        "possible_values": "{isbn}",
+        "description": "metadata where record has the given ISBN",
     },
     "issn": {
         "possible_values": "{issn}",
@@ -168,6 +252,10 @@ works_filter_details: Dict[str, dict] = {
     "updates": {
         "possible_values": "{doi}",
         "description": "metadata for records that represent editorial updates to the DOI '{doi}'",
+    },
+    "update_type": {
+        "possible_values": "{string}",
+        "description": "metadata for records that are an update of the given type (e.g., correction or retraction)",
     },
     "is_update": {
         "possible_values": None,
@@ -197,6 +285,14 @@ works_filter_details: Dict[str, dict] = {
         "possible_values": "{funder doi or id}",
         "description": "metadata for records with an award with matching funder. Optionally combine with 'award_number'",
     },
+    "gte_award_amount": {
+        "possible_values": "{integer}",
+        "description": "metadata for records where the award amount is greater than or equal to the given number",
+    },
+    "lte_award_amount": {
+        "possible_values": "{integer}",
+        "description": "metadata for records where the award amount is less than or equal to the given number",
+    },
     "has_assertion": {
         "possible_values": None,
         "description": "metadata for records with any assertions",
@@ -221,6 +317,10 @@ works_filter_details: Dict[str, dict] = {
         "possible_values": None,
         "description": "metadata for records with a given article number",
     },
+    "group_title": {
+        "possible_values": None,
+        "description": "metadata for records with a matching group title; used by posted-content type",
+    },
     "has_abstract": {
         "possible_values": None,
         "description": "metadata for records which include an abstract",
@@ -228,6 +328,10 @@ works_filter_details: Dict[str, dict] = {
     "has_clinical_trial_number": {
         "possible_values": None,
         "description": "metadata for records which include a clinical trial number",
+    },
+    "clinical_trial_number": {
+        "possible_values": "{string}",
+        "description": "metadata for records with the given clinical trial number",
     },
     "content_domain": {
         "possible_values": None,
@@ -237,7 +341,7 @@ works_filter_details: Dict[str, dict] = {
         "possible_values": None,
         "description": "metadata where the publisher records a domain name location for Crossmark content",
     },
-    "has_crossmark_restriction": {
+    "has_domain_restriction": {
         "possible_values": None,
         "description": "metadata where the publisher restricts Crossmark usage to content domains",
     },
@@ -272,27 +376,23 @@ works_filter_details: Dict[str, dict] = {
 }
 
 members_filter_details: Dict[str, dict] = {
-    "has_public_references": {
-        "possible_values": None,
-        "description": "member has made their references public for one or more of their prefixes",
-    },
-    "reference_visibility": {
-        "possible_values": ["open", "limited", "closed"],
-        "description": "members who have made their references either open, limited (to Metadata Plus subscribers) or closed",
+    "prefix": {
+        "possible_values": "{string}",
+        "description": "members with given DOI prefix, e.g. 10.5555.",
     },
     "backfile_doi_count": {
         "possible_values": "{integer}",
-        "description": "count of DOIs for material published more than two years ago",
+        "description": "members with given count of DOIs for material published more than two years ago",
     },
     "current_doi_count": {
         "possible_values": "{integer}",
-        "description": "count of DOIs for material published within last two years",
+        "description": "members with given count of DOIs for material published within last two years",
     },
 }
 
 funders_filter_details: Dict[str, dict] = {
     "location": {
-        "possible_values": None,
-        "description": "funders located in specified country",
+        "possible_values": "{string}",
+        "description": "funders located in the given country",
     }
 }

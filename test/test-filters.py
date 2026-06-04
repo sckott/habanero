@@ -14,7 +14,7 @@ def test_filter_names():
     assert isinstance(res_works[0], str)
     assert isinstance(res_members, list)
     assert isinstance(res_members[0], str)
-    assert 4 == len(res_members)
+    assert 3 == len(res_members)
     assert isinstance(res_funders, list)
     assert isinstance(res_funders[0], str)
     assert 1 == len(res_funders)
