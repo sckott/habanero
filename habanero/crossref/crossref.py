@@ -164,6 +164,22 @@ class Crossref:
     * `update-type` - Significant update type. Allowed value: *
 
 
+    .. _Select:
+
+    **Select parameter options**
+
+    DOI, ISBN, ISSN, URL, abstract, accepted, alternative-id, approved,
+    archive, article-number, assertion, author, chair, clinical-trial-number,
+    container-title, content-created, content-domain, contributor, created,
+    degree, deposited, editor, event, funder, group-title, indexed,
+    is-referenced-by-count, issn-type, issue, issued, license, link, member,
+    original-title, page, posted, prefix, published, published-online,
+    published-print, publisher, publisher-location, reference,
+    references-count, relation, resource, score, short-container-title,
+    short-title, standards-body, subject, subtitle, title, translator, type,
+    update-policy, update-to, updated-by, volume
+
+
     |
     |
     |
@@ -240,8 +256,8 @@ class Crossref:
             See Facets_ for options.
         :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
-            a subset of elements to return. This can make your API calls much more efficient. Not
-            clear yet which fields are allowed here.
+            a subset of elements to return. This can make your API calls much more efficient. See
+            Select_ for options.
         :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
@@ -436,8 +452,8 @@ class Crossref:
             See Facets_ for options.
         :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
-            a subset of elements to return. This can make your API calls much more efficient. Not
-            clear yet which fields are allowed here.
+            a subset of elements to return. This can make your API calls much more efficient. See
+            Select_ for options.
         :param works: If true, works returned as well. Default: false
         :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
@@ -548,8 +564,8 @@ class Crossref:
             See Facets_ for options.
         :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
-            a subset of elements to return. This can make your API calls much more efficient. Not
-            clear yet which fields are allowed here.
+            a subset of elements to return. This can make your API calls much more efficient. See
+            Select_ for options.
         :param works: If true, works returned as well. Default: false
         :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
@@ -670,8 +686,8 @@ class Crossref:
             See Facets_ for options.
         :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
-            a subset of elements to return. This can make your API calls much more efficient. Not
-            clear yet which fields are allowed here.
+            a subset of elements to return. This can make your API calls much more efficient. See
+            Select_ for options.
         :param works: If true, works returned as well. Default: false
         :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
@@ -793,8 +809,8 @@ class Crossref:
             See Facets_ for options.
         :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
-            a subset of elements to return. This can make your API calls much more efficient. Not
-            clear yet which fields are allowed here.
+            a subset of elements to return. This can make your API calls much more efficient. See
+            Select_ for options.
         :param works: If true, works returned as well. Default: false
         :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
@@ -916,8 +932,8 @@ class Crossref:
             See Facets_ for options.
         :param select: Crossref metadata records can be
             quite large. Sometimes you just want a few elements from the schema. You can "select"
-            a subset of elements to return. This can make your API calls much more efficient. Not
-            clear yet which fields are allowed here.
+            a subset of elements to return. This can make your API calls much more efficient. See
+            Select_ for options.
         :param works: If true, works returned as well. Default: false
         :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
