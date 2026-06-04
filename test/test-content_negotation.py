@@ -18,12 +18,13 @@ def test_content_negotiation():
 
 
 def pkgverBounds(pkg, minVer, maxVer=None):
-    from importlib.util import find_spec
     from importlib.metadata import version
+    from importlib.util import find_spec
+
     from packaging.version import Version
 
     # Package not installed
-    if(not find_spec(pkg)):
+    if not find_spec(pkg):
         return False
 
     ver = Version(version(pkg))
@@ -35,8 +36,9 @@ def pkgverBounds(pkg, minVer, maxVer=None):
 # this DOI gives back the month as "sep" instead of "{sep}" as it should
 @pytest.mark.vcr
 @pytest.mark.skipif(
-        not pkgverBounds("bibtexparser", "2.0.0b5"),
-        reason='Test requires the optional dependency "bibtexparser" to run')
+    not pkgverBounds("bibtexparser", "2.0.0b5"),
+    reason='Test requires the optional dependency "bibtexparser" to run',
+)
 def test_content_negotiation_bad_bibtex():
     """content negotiation - bad bibtex is fixed correctly"""
     month_regex = re.compile(r"\{Sept\}")
