@@ -141,7 +141,6 @@ class Request(object):
             return js
 
     def _req(self, payload, should_warn):
-        r = None
         try:
             r = httpx.get(
                 self._url(),
@@ -154,7 +153,7 @@ class Request(object):
             try:
                 f = r.json()
                 raise RequestError(r.status_code, f["message"][0]["message"])
-            except:
+            except (ValueError, KeyError, IndexError):
                 if should_warn:
                     mssg = "%s: %s" % (r.status_code, r.reason_phrase)
                     warnings.warn(mssg)
@@ -162,9 +161,8 @@ class Request(object):
                 else:
                     r.raise_for_status()
         except ConnectTimeoutError as e:
-            raise httpx.ConnectTimeout(e, r)
+            raise httpx.ConnectTimeout(str(e))
         except httpx.HTTPError as e:
-            # print(e)
             raise RuntimeError(e)
         else:
             if not r:
