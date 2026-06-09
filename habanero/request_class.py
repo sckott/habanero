@@ -2,7 +2,7 @@ import math
 import warnings
 
 import httpx
-from tqdm import tqdm  # type: ignore
+from tqdm import tqdm
 from urllib3.exceptions import ConnectTimeoutError
 
 from .exceptions import RequestError
