@@ -14,7 +14,7 @@ from .habanero_utils import (
     rename_query_filters,
 )
 from .request_class import Request
-
+from .facets import validate_facets
 
 def request(
     cr,
@@ -48,6 +48,8 @@ def request(
     filt = filter_handler(filter)
     if select.__class__ is list:
         select = ",".join(select)
+
+    validate_facets(facet)
 
     payload = {
         "query": query,

@@ -14,6 +14,7 @@ from .habanero_utils import (
     make_ua,
     rename_query_filters,
 )
+from .facets import validate_facets
 
 
 class Request(object):
@@ -73,6 +74,8 @@ class Request(object):
         filt = filter_handler(self.filter)
         if isinstance(self.select, list):
             self.select = ",".join(self.select)
+
+        validate_facets(self.facet)
 
         if not isinstance(self.cursor_max, (type(None), int)):
             raise ValueError("cursor_max must be of class int")
