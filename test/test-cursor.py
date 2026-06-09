@@ -1,7 +1,6 @@
 import pytest
-from httpx import HTTPError
 
-from habanero import Crossref
+from habanero import Crossref, exceptions
 
 cr = Crossref()
 
@@ -33,11 +32,11 @@ def test_cursor_max():
 
 @pytest.mark.vcr
 def test_cursor_fails_cursor_value():
-    with pytest.raises(HTTPError):
+    with pytest.raises(exceptions.RequestError):
         cr.works(query="widget", cursor="thing")
 
 
 @pytest.mark.vcr
 def test_cursor_fails_cursor_max():
     with pytest.raises(ValueError):
-        cr.works(query="widget", cursor="*", cursor_max="thing")
+        cr.works(query="widget", cursor="*", cursor_max="thing")  # ty: ignore[invalid-argument-type]
