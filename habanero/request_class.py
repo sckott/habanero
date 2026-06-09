@@ -41,7 +41,7 @@ class Request(object):
         facet=None,
         select=None,
         cursor=None,
-        cursor_max=None,
+        cursor_max=5000,
         agency=False,
         progress_bar=False,
         **kwargs,

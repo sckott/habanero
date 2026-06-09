@@ -32,7 +32,7 @@ def request(
     select=None,
     works=None,
     cursor=None,
-    cursor_max=None,
+    cursor_max=5000,
     agency=False,
     progress_bar=False,
     should_warn=False,
