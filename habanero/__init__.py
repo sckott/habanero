@@ -43,5 +43,5 @@ __license__ = "MIT"
 
 from .cn import content_negotiation, csl_styles
 from .counts import citation_count
-from .crossref import Crossref, WorksContainer
+from .crossref import Crossref, WorksContainer, WorksQuery
 from .exceptions import Error, RequestError
