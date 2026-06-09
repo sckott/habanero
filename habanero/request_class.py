@@ -71,7 +71,7 @@ class Request(object):
 
     def do_request(self, should_warn=False):
         filt = filter_handler(self.filter)
-        if self.select.__class__ is list:
+        if isinstance(self.select, list):
             self.select = ",".join(self.select)
 
         if not isinstance(self.cursor_max, (type(None), int)):
@@ -109,7 +109,7 @@ class Request(object):
         return res
 
     def _redo_req(self, js, payload, cu, max_avail, should_warn):
-        if cu.__class__.__name__ != "NoneType" and self.cursor_max > len(
+        if cu is not None and self.cursor_max > len(
             js["message"]["items"]
         ):
             res = [js]
@@ -126,7 +126,7 @@ class Request(object):
                 pbar = tqdm(total=runs - 1)
 
             while (
-                cu.__class__.__name__ != "NoneType"
+                cu is not None
                 and self.cursor_max > total
                 and total < max_avail
             ):

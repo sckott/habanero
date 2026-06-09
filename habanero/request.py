@@ -41,7 +41,7 @@ def request(
     warning_thrown = False
     url = cr.base_url + path
 
-    if cursor_max.__class__.__name__ != "NoneType":
+    if cursor_max is not None:
         if not isinstance(cursor_max, int):
             raise ValueError("cursor_max must be of class int")
 
@@ -72,7 +72,7 @@ def request(
     # rename query filters
     payload = rename_query_filters(payload)
 
-    if ids.__class__.__name__ == "NoneType":
+    if ids is None:
         url = url.strip("/")
         try:
             r = httpx.get(
@@ -97,11 +97,11 @@ def request(
             check_json(r)
             coll = r.json()
     else:
-        if ids.__class__.__name__ == "str":
+        if isinstance(ids, str):
             ids = ids.split()
-        if ids.__class__.__name__ == "int":
+        if isinstance(ids, int):
             ids = [ids]
-        # should_warn = len(ids) > 1
+
         coll = []
         for i in range(len(ids)):
             if works:
