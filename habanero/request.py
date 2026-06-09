@@ -3,6 +3,7 @@ import warnings
 import httpx
 
 from .exceptions import RequestError
+from .facets import validate_facets
 from .filterhandler import filter_handler
 from .habanero_utils import (
     check_json,
@@ -14,7 +15,7 @@ from .habanero_utils import (
     rename_query_filters,
 )
 from .request_class import Request
-from .facets import validate_facets
+
 
 def request(
     cr,

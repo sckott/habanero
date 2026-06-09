@@ -6,6 +6,7 @@ from tqdm import tqdm  # type: ignore
 from urllib3.exceptions import ConnectTimeoutError
 
 from .exceptions import RequestError
+from .facets import validate_facets
 from .filterhandler import filter_handler
 from .habanero_utils import (
     check_json,
@@ -14,7 +15,6 @@ from .habanero_utils import (
     make_ua,
     rename_query_filters,
 )
-from .facets import validate_facets
 
 
 class Request(object):
@@ -112,9 +112,7 @@ class Request(object):
         return res
 
     def _redo_req(self, js, payload, cu, max_avail, should_warn):
-        if cu is not None and self.cursor_max > len(
-            js["message"]["items"]
-        ):
+        if cu is not None and self.cursor_max > len(js["message"]["items"]):
             res = [js]
             total = len(js["message"]["items"])
 
@@ -128,11 +126,7 @@ class Request(object):
                 runs = math.ceil(actual_max / (self.limit or 20))
                 pbar = tqdm(total=runs - 1)
 
-            while (
-                cu is not None
-                and self.cursor_max > total
-                and total < max_avail
-            ):
+            while cu is not None and self.cursor_max > total and total < max_avail:
                 payload["cursor"] = cu
                 out = self._req(payload=payload, should_warn=should_warn)
                 cu = out["message"].get("next-cursor")
