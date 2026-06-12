@@ -32,6 +32,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
       (
         q.query("climate change")
           .query(author="Hansen")
+          .query(publisher_name="plos")
           .filter(from_pub_date="2010", has_funder="true")
           .sort("published")
           .order("desc")
@@ -64,6 +65,8 @@ class WorksQuery(Iterable[dict[str, Any]]):
     def __init__(self, cr: Crossref | None = None):
         self._cr = cr or Crossref()
         self._params = {}
+        self._endpoint = "works"
+        self._ids = None
         self._result = None
 
     def __iter__(self) -> Iterator[dict[str, Any]]:
@@ -71,12 +74,45 @@ class WorksQuery(Iterable[dict[str, Any]]):
         return iter(data["message"]["items"])
 
     def __repr__(self):
-        return f"WorksQuery({self._params})"
+        ids_part = f", ids={self._ids!r}" if self._ids else ""
+        return (
+            f"WorksQuery(endpoint={self._endpoint!r}{ids_part}, params={self._params})"
+        )
 
     def _clone(self, **updates):
         clone = copy.copy(self)
         clone._params = copy.deepcopy({**self._params, **updates})
         clone._result = None  # fresh clone shouldn't inherit cached results
+        return clone
+
+    def journals(self, ids=None) -> "WorksQuery":
+        clone = self._clone()
+        clone._endpoint = "journals"
+        clone._ids = ids
+        return clone
+
+    def members(self, ids=None) -> "WorksQuery":
+        clone = self._clone()
+        clone._endpoint = "members"
+        clone._ids = ids
+        return clone
+
+    def funders(self, ids=None) -> "WorksQuery":
+        clone = self._clone()
+        clone._endpoint = "funders"
+        clone._ids = ids
+        return clone
+
+    def prefixes(self, ids=None) -> "WorksQuery":
+        clone = self._clone()
+        clone._endpoint = "prefixes"
+        clone._ids = ids
+        return clone
+
+    def types(self, ids=None) -> "WorksQuery":
+        clone = self._clone()
+        clone._endpoint = "types"
+        clone._ids = ids
         return clone
 
     def query(self, q: str | None = None, **kwargs) -> "WorksQuery":
@@ -115,23 +151,42 @@ class WorksQuery(Iterable[dict[str, Any]]):
     def url(self) -> str:
         from urllib.parse import urlencode
 
-        base = "https://api.crossref.org/works"
+        base = "https://api.crossref.org"
+        if self._endpoint == "works":
+            path = "/works"
+        else:
+            path = (
+                f"/{self._endpoint}/{self._ids}/works"
+                if self._ids
+                else f"/{self._endpoint}/works"
+            )
         flat = {
             k: str(v)
             for k, v in self._params.items()
             if not isinstance(v, (dict, list))
         }
-        return f"{base}?{urlencode(flat)}"
+        return f"{base}{path}?{urlencode(flat)}"
 
     def count(self) -> int:
         params = {k: v for k, v in self._params.items() if k != "limit"}
-        result = self._cr.works(**params, limit=0)
+        if self._endpoint == "works":
+            result = self._cr.works(**params, limit=0)
+        else:
+            method = getattr(self._cr, self._endpoint)
+            result = method(ids=self._ids, works=True, **params, limit=0)
         assert isinstance(result, dict)
         return result["message"]["total-results"]
 
+    def _call_method(self, **extra_params) -> dict[str, Any] | list[dict[str, Any]]:
+        params = {**self._params, **extra_params}
+        if self._endpoint == "works":
+            return self._cr.works(**params)
+        method = getattr(self._cr, self._endpoint)
+        return method(ids=self._ids, works=True, **params)
+
     def execute(self) -> dict[str, Any]:
         if self._result is None:
-            result = self._cr.works(**self._params)
+            result = self._call_method()
             assert isinstance(result, dict)
             self._result = result
         return self._result
