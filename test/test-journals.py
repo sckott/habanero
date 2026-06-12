@@ -70,7 +70,7 @@ def test_journals_fail_limit():
 
 @pytest.mark.vcr
 def test_journals_fail_sort():
-    with pytest.raises(exceptions.RequestError):
+    with pytest.raises(ValueError, match="Invalid sort name: things"):
         cr.journals(sort="things")
 
 

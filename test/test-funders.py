@@ -60,7 +60,7 @@ def test_funders_fail_limit():
 
 @pytest.mark.vcr
 def test_funders_fail_sort():
-    with pytest.raises(exceptions.RequestError):
+    with pytest.raises(ValueError, match="Invalid sort name: things"):
         cr.funders(sort="things")
 
 

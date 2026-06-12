@@ -15,6 +15,9 @@ from .habanero_utils import (
     make_ua,
     rename_query_filters,
 )
+from .field_queries import validate_field_queries
+from .sort import validate_sort
+from .select import validate_select
 
 
 class Request(object):
@@ -76,6 +79,10 @@ class Request(object):
             self.select = ",".join(self.select)
 
         validate_facets(self.facet)
+        validate_sort(self.sort)
+        validate_select(self.select)
+        fq_keys = [k.replace("query_", "query.", 1).replace("_", "-") for k in filter_dict(self.kwargs)]
+        validate_field_queries(fq_keys if fq_keys else None)
 
         if not isinstance(self.cursor_max, (type(None), int)):
             raise ValueError("cursor_max must be of class int")
@@ -98,9 +105,9 @@ class Request(object):
         payload["rows"] = ifelsestr(payload["rows"])
         # remove params with value None
         payload = dict((k, v) for k, v in payload.items() if v)
-        # add query filters
+        # add field queries
         payload.update(filter_dict(self.kwargs))
-        # rename query filters
+        # rename field queries
         payload = rename_query_filters(payload)
 
         js = self._req(payload=payload, should_warn=should_warn)

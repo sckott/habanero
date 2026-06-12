@@ -84,7 +84,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
         if q:
             updates["query"] = q
         for k, v in kwargs.items():
-            updates[f"query.{k.replace('_', '-')}"] = v
+            updates[f"query_{k}"] = v
         return self._clone(**updates)
 
     def filter(self, **kwargs) -> "WorksQuery":
