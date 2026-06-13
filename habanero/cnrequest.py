@@ -7,7 +7,7 @@ from .cn_formats import cn_format_headers
 from .habanero_utils import make_ua
 
 try:
-    import bibtexparser
+    import bibtexparser  # type: ignore
 except ImportError:
     _has_bibtexparser = False
 else:
