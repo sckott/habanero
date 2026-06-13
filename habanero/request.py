@@ -4,6 +4,7 @@ import httpx
 
 from .exceptions import RequestError
 from .facets import validate_facets
+from .field_queries import validate_field_queries
 from .filterhandler import filter_handler
 from .habanero_utils import (
     check_json,
@@ -15,9 +16,9 @@ from .habanero_utils import (
     rename_query_filters,
 )
 from .request_class import Request
-from .sort import validate_sort
-from .field_queries import validate_field_queries
 from .select import validate_select
+from .sort import validate_sort
+
 
 def request(
     cr,
@@ -55,7 +56,9 @@ def request(
     validate_facets(facet)
     validate_sort(sort)
     validate_select(select)
-    fq_keys = [k.replace("query_", "query.", 1).replace("_", "-") for k in filter_dict(kwargs)]
+    fq_keys = [
+        k.replace("query_", "query.", 1).replace("_", "-") for k in filter_dict(kwargs)
+    ]
     validate_field_queries(fq_keys if fq_keys else None)
 
     payload = {

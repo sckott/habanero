@@ -1,6 +1,6 @@
-import pytest
 from typing import no_type_check
 
+import pytest
 from httpx import HTTPError
 
 from habanero import Crossref, exceptions
@@ -81,6 +81,7 @@ def test_members_bad_id_works_warn():
     with pytest.warns(UserWarning):
         out = cr.members(ids=121212121212, works=True, warn=True)
     assert out is None
+
 
 @no_type_check
 @pytest.mark.vcr

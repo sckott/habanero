@@ -1,6 +1,6 @@
-import pytest
 from typing import no_type_check
 
+import pytest
 import yaml
 
 from habanero import Crossref

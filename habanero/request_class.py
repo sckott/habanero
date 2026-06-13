@@ -7,6 +7,7 @@ from urllib3.exceptions import ConnectTimeoutError
 
 from .exceptions import RequestError
 from .facets import validate_facets
+from .field_queries import validate_field_queries
 from .filterhandler import filter_handler
 from .habanero_utils import (
     check_json,
@@ -15,9 +16,8 @@ from .habanero_utils import (
     make_ua,
     rename_query_filters,
 )
-from .field_queries import validate_field_queries
-from .sort import validate_sort
 from .select import validate_select
+from .sort import validate_sort
 
 
 class Request(object):
@@ -81,7 +81,10 @@ class Request(object):
         validate_facets(self.facet)
         validate_sort(self.sort)
         validate_select(self.select)
-        fq_keys = [k.replace("query_", "query.", 1).replace("_", "-") for k in filter_dict(self.kwargs)]
+        fq_keys = [
+            k.replace("query_", "query.", 1).replace("_", "-")
+            for k in filter_dict(self.kwargs)
+        ]
         validate_field_queries(fq_keys if fq_keys else None)
 
         if not isinstance(self.cursor_max, (type(None), int)):
