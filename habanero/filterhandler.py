@@ -1,8 +1,8 @@
 import re
 
 
-def filter_handler(x=None):
-    if x.__class__.__name__ == "NoneType":
+def filter_handler(x: dict | None = None) -> str | None:
+    if x is None:
         return None
     else:
         # lowercase bools
@@ -30,9 +30,9 @@ def filter_handler(x=None):
         for k, v in x.items():
             if isinstance(v, list):
                 for a, b in enumerate(v):
-                    newx.append(":".join([k, b]))
+                    newx.append(":".join([k, str(b)]))
             else:
-                newx.append(":".join([k, v]))
+                newx.append(":".join([k, str(v)]))
 
         newx = ",".join(newx)
         return newx
@@ -63,16 +63,16 @@ dict_filts = {
 }
 
 
-def switch_filters(x):
+def switch_filters(x: str) -> str:
     return switch(x, dict_filts)
 
 
-def switch(x, dict):
+def switch(x: str, dict: dict[str, str]) -> str:
     return dict[x]
 
 
 # https://github.com/healthsites/healthsites/blob/3b10b12f004bfa783ee3121647ff9856836717f3/django_project/api/utils.py
-def rename_keys(old_dict, transform):
+def rename_keys(old_dict: dict, transform: dict) -> dict:
     new_dict = {}
     for k, v in old_dict.items():
         if k in transform:
