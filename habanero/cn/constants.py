@@ -1,1 +1,1 @@
-cn_base_url = "https://doi.org"
+CN_BASE_URL = "https://doi.org"
