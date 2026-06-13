@@ -20,15 +20,7 @@ def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
     if isinstance(ids, list):
         if not all([isinstance(z, str) for z in ids]):
             raise TypeError("'ids' must be a str or list of all str's")
-    should_split = False
-    try:
-        # Python 2
-        if isinstance(ids, (str, unicode)):
-            should_split = True
-    except NameError:
-        # Python 3
-        if isinstance(ids, str):
-            should_split = True
+    should_split = isinstance(ids, str)
     if should_split:
         ids = ids.split()
 
