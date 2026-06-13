@@ -1,5 +1,6 @@
 import re
 import warnings
+from typing import no_type_check
 
 import pytest
 from httpx import HTTPError
@@ -84,11 +85,13 @@ def test_content_negotiation_style():
 
 
 # errors
+@no_type_check
 def test_content_negotiation_ids_missing():
     with pytest.raises(TypeError):
         cn.content_negotiation()
 
 
+@no_type_check
 def test_content_negotiation_ids_none():
     with pytest.raises(TypeError):
         cn.content_negotiation(ids=None)
@@ -101,12 +104,14 @@ def test_content_negotiation_raises_an_http_error_with_bad_requests():
 
 
 # warnings
+@no_type_check
 @pytest.mark.vcr
 def test_content_negotiation_throws_warnings():
     with pytest.warns(UserWarning):
         cn.content_negotiation(ids=["10.1126/science.169.3946.635", "foo"])
 
 
+@no_type_check
 @pytest.mark.vcr
 def test_content_negotiation_throws_warnings_can_be_suppressed():
     warnings.filterwarnings("ignore")

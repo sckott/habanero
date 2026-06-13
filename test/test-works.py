@@ -79,8 +79,8 @@ def test_works_sample():
 def test_works_field_queries():
     """works - param: kwargs - field queries work as expected"""
     res = cr.works(query="ecology", query_author="carl boettiger")
-    auths = [x["author"][0]["family"] for x in res["message"]["items"]]
     assert isinstance(res, dict)
+    auths = [x["author"][0]["family"] for x in res["message"]["items"]]
     assert 5 == len(res["message"])
     assert "Boettiger" in auths
 
@@ -98,8 +98,8 @@ def test_works_field_query_publisher_name():
     """works - param: kwargs - field query query_publisher_name works as expected"""
     publisher_name = "Universidade Federal de Santa Maria"
     res = cr.works(query_publisher_name=publisher_name)
-    publishers = [x["publisher"] for x in res["message"]["items"]]
     assert isinstance(res, dict)
+    publishers = [x["publisher"] for x in res["message"]["items"]]
     for pub in publishers:
         assert publisher_name == pub
 
@@ -108,6 +108,7 @@ def test_works_field_query_publisher_name():
 def test_works_with_select_param():
     """works - param: select"""
     res1 = cr.works(query="ecology", select="DOI,title")
+    assert isinstance(res1, dict)
     assert list(res1["message"]["items"][0].keys()) == ["DOI", "title"]
 
 

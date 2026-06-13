@@ -1,4 +1,6 @@
 import pytest
+from typing import no_type_check
+
 from httpx import HTTPError
 
 from habanero import Crossref, exceptions
@@ -62,6 +64,7 @@ def test_members_bad_id_warn():
     assert out is None
 
 
+@no_type_check
 @pytest.mark.vcr
 def test_members_mixed_ids_warn():
     """members - param: warn"""
@@ -79,7 +82,7 @@ def test_members_bad_id_works_warn():
         out = cr.members(ids=121212121212, works=True, warn=True)
     assert out is None
 
-
+@no_type_check
 @pytest.mark.vcr
 def test_members_mixed_ids_works_warn():
     """""members - param: warn""" ""

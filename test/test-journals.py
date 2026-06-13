@@ -1,4 +1,6 @@
 import pytest
+from typing import no_type_check
+
 from httpx import HTTPError
 
 from habanero import Crossref, exceptions
@@ -62,6 +64,7 @@ def test_journals_filter_fails_noids():
         cr.journals(works=True, filter={"has_assertion": True})
 
 
+@no_type_check
 @pytest.mark.vcr
 def test_journals_fail_limit():
     with pytest.raises(exceptions.RequestError):

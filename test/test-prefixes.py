@@ -1,4 +1,6 @@
 import pytest
+from typing import no_type_check
+
 from httpx import HTTPError
 
 from habanero import Crossref
@@ -23,6 +25,7 @@ def test_prefixes_works():
     assert isinstance(res, dict)
 
 
+@no_type_check
 def test_prefixes_filter():
     """prefixes - param: filter"""
     with pytest.raises(TypeError, match="missing 1 required positional"):

@@ -1,11 +1,13 @@
 import pytest
+from typing import no_type_check
+
 import yaml
 
 from habanero import Crossref
 
 cr_with_ua = Crossref(ua_string="foo bar")
 cr_without_ua = Crossref()
-cr_with_bad_ua = Crossref(ua_string=5)
+cr_with_bad_ua = Crossref(ua_string=5)  # type: ignore
 
 vcr_path = "test/cassettes/test-settings/test_ua_string.yaml"
 

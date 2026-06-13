@@ -1,4 +1,6 @@
 import pytest
+from typing import no_type_check
+
 from httpx import HTTPError
 
 from habanero import Crossref, exceptions
@@ -52,6 +54,7 @@ def test_funders_filter_works():
     assert 20 == res["message"]["items-per-page"]
 
 
+@no_type_check
 @pytest.mark.vcr
 def test_funders_fail_limit():
     with pytest.raises(exceptions.RequestError):

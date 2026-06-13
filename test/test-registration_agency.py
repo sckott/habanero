@@ -1,4 +1,6 @@
 import pytest
+from typing import no_type_check
+
 from httpx import HTTPError
 
 from habanero import Crossref
@@ -22,6 +24,7 @@ def test_registration_agency_unicode():
     assert isinstance(res[0], str)
 
 
+@no_type_check
 @pytest.mark.vcr
 def test_registration_agency_bad_request():
     """registration agency - bad request"""
