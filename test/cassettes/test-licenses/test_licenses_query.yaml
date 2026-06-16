@@ -5,28 +5,27 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/licenses?query=aps
   response:
-    content: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":105,"items":[{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":2},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/es\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":13},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":11},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":100},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/3.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0","work-count":13},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/3.0\/","work-count":9},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0","work-count":109},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/","work-count":38},{"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/2.5\/ar\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-sa\/4.0","work-count":6},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0","work-count":4},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/2.0\/uk\/legalcode","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/","work-count":38},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0","work-count":28},{"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/","work-count":134},{"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1","work-count":22}]}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/62TMW/DIBCF/wuzbULsNK3HzJ0qdahKB0pOrmUbIjiniiz/92IrUitDhuJs6ICP
+        9+4dA7EosLekJLohCenAWlFBipcTuFpbS1AW0ra2+Gf3DMbWWrkDLNtkm98dUg4ENYo2NWD7Fh2X
+        sSIhNULn1u8DeX15dte+EE8lp5xKAwLrM0jddVrZTJuK0+urltPDG6fF/MC3Nk0qda+QlNsx+S/o
+        85Iqmaojp9tsx+lUWkDZGmjuaVyL8/Xla4h+E1mxkucrZE+xSCtumF4DDHjeRfLC6vbRtJC02HzD
+        YRSPcbhb2UbRphTm/ybMHYl+86K8TtKWoKg/MYPu4++K6htXhkq0Uh9hwY0ak/D85pF98wPII90G
+        R+1hP36M4w9zWhwXmgYAAA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '322'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Sat, 12 Jul 2025 04:23:56 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -34,8 +33,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '301'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 16 Jun 2026 13:13:28 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -44,41 +51,43 @@ interactions:
       - Accept, Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
-    uri: https://api.crossref.org/licenses?query=cellular%20oncology
+    uri: https://api.crossref.org/licenses?query=cellular+oncology
   response:
-    content: '{"status":"ok","message-type":"license-list","message-version":"1.0.0","message":{"total-results":508,"items":[{"URL":"http:\/\/academic.oup.com\/journals\/pages\/about_us\/legal\/notices","work-count":19},{"URL":"http:\/\/aspb.org\/publications\/aspb-journals\/open-articles","work-count":124},{"URL":"http:\/\/auo.asmepress.com\/list-9-6.html","work-count":1},{"URL":"http:\/\/creativecom","work-count":1},{"URL":"http:\/\/creativecommons.org\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/Licenses\/by\/4.0\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-NC-ND\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY-SA\/4.0","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/BY\/4.0","work-count":9},{"URL":"http:\/\/creativecommons.org\/licenses\/by-n\/4.0\/","work-count":6},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/es\/","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/2.5\/in","work-count":1},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0","work-count":353},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/","work-count":1848},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/es\/","work-count":3},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/igo\/","work-count":14},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0","work-count":1170},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":46831},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/
-      http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/","work-count":164},{"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0\/deed.pt_BR","work-count":1}]}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/62UQW+CMBTHv8rSs20FhCi3uR2NB5cdlrGYAg0yS9vQ1sUYv/uekswFOGzgqc1r
+        36///3svPSFjmXUGxUjt0QRV3BhWcGyPmkNMlBmXhmNRGvvr9MBrUyoJFzwyJdPbCYpPyCrLBK65
+        ccICN4zmE1RaXsH+/YReNytI21mr44QmlGUs51WZEeU0yVSV0E/lasmESagGICwsVc5uHewEL5hI
+        qFQWZBl49UvVe5wpJy2KvcV50sUbnRJVFwBzKZhhFmSbJo5vLynNJWY1YEWX68/6wE4RZiquwadp
+        hF9qhBc4IjtbiTakB5HVHOQcOCT/73YFFhpTQ/NWTVvBeXpM6IxMh6PED2r5htdPeP18BbZw/iDc
+        y+PdWH0gb4DJ9Ihlf8WiYbAMyzyhPgkTegmNb0MLWsp7IoNOEYMwGAnsmp6HA3rcYvYUc7zQslBd
+        tX3/zp+xPVPph2OJHY1hEM1HzecV+nAfMV40agSvyJzznGi7XW460/1xPn8DWbvNT9UGAAA=
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '393'
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Sat, 12 Jul 2025 04:23:56 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -86,8 +95,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '395'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 16 Jun 2026 13:13:37 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -96,10 +113,13 @@ interactions:
       - Accept, Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

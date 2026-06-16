@@ -5,216 +5,148 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/works/10.1371/journal.pone.0033693
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,6,3]],"date-time":"2025-06-03T01:29:02Z","timestamp":1748914142187,"version":"3.40.2"},"reference-count":70,"publisher":"Public
-      Library of Science (PLoS)","issue":"3","license":[{"start":{"date-parts":[[2012,3,21]],"date-time":"2012-03-21T00:00:00Z","timestamp":1332288000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-      ONE"],"DOI":"10.1371\/journal.pone.0033693","type":"journal-article","created":{"date-parts":[[2012,3,23]],"date-time":"2012-03-23T01:00:52Z","timestamp":1332464452000},"page":"e33693","update-policy":"https:\/\/doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":69,"title":["Methylphenidate
-      Exposure Induces Dopamine Neuron Loss and Activation of Microglia in the Basal
-      Ganglia of Mice"],"prefix":"10.1371","volume":"7","author":[{"given":"Shankar","family":"Sadasivan","sequence":"first","affiliation":[]},{"given":"Brooks
-      B.","family":"Pond","sequence":"additional","affiliation":[]},{"given":"Amar
-      K.","family":"Pani","sequence":"additional","affiliation":[]},{"given":"Chunxu","family":"Qu","sequence":"additional","affiliation":[]},{"given":"Yun","family":"Jiao","sequence":"additional","affiliation":[]},{"given":"Richard
-      J.","family":"Smeyne","sequence":"additional","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2012,3,21]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"2376","DOI":"10.1038\/sj.npp.1301164","article-title":"Stimulants:
-      Therapeutic actions in ADHD.","volume":"31","author":"AF Arnsten","year":"2006","journal-title":"Neuropsychopharmacology"},{"key":"ref2","doi-asserted-by":"crossref","first-page":"325","DOI":"10.1586\/14737175.5.3.325","article-title":"Methylphenidate
-      HCl: therapy for attention deficit hyperactivity disorder.","volume":"5","author":"PK
-      Capp","year":"2005","journal-title":"Expert Rev Neurother"},{"key":"ref3","doi-asserted-by":"crossref","first-page":"437","DOI":"10.1007\/s11940-011-0137-6","article-title":"Recent
-      advances in the treatment of narcolepsy.","volume":"13","author":"N Hirai","year":"2011","journal-title":"Curr
-      Treat Options Neurol"},{"key":"ref4","doi-asserted-by":"crossref","first-page":"L7","DOI":"10.1016\/S0024-3205(99)00225-8","article-title":"Methylphenidate
-      and cocaine have a similar in vivo potency to block dopamine transporters in
-      the human brain.","volume":"65","author":"ND Volkow","year":"1999","journal-title":"Life
-      Sci"},{"key":"ref5","first-page":"1","article-title":"Monitoring the Future
-      national survey results on drug use, 1975\u20132010.","author":"LD Johnston","year":"2011"},{"key":"ref6","first-page":"1","article-title":"Monitoring
-      the Future national survey results on drug use, 1975\u20132010.","author":"LD
-      Johnston","year":"2011"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"511","DOI":"10.1007\/s00213-010-1853-4","article-title":"Non-specific
-      effects of methylphenidate (Ritalin) on cognitive ability and decision-making
-      of ADHD and healthy adults.","volume":"210","author":"N Agay","year":"2010","journal-title":"Psychopharmacology
-      (Berl)"},{"key":"ref8","doi-asserted-by":"crossref","first-page":"46","DOI":"10.1007\/BF02244750","article-title":"Cognitive
-      effects of milacemide and methylphenidate in healthy young adults.","volume":"115","author":"JA
-      Camp-Bruno","year":"1994","journal-title":"Psychopharmacology (Berl)"},{"key":"ref9","doi-asserted-by":"crossref","first-page":"187","DOI":"10.1016\/j.phrs.2010.04.002","article-title":"Modafinil
-      and methylphenidate for neuroenhancement in healthy individuals: A systematic
-      review.","volume":"62","author":"D Repantis","year":"2010","journal-title":"Pharmacol
-      Res"},{"key":"ref10","doi-asserted-by":"crossref","first-page":"702","DOI":"10.1038\/456702a","article-title":"Towards
-      responsible use of cognitive-enhancing drugs by the healthy.","volume":"456","author":"H
-      Greely","year":"2008","journal-title":"Nature"},{"key":"ref11","doi-asserted-by":"crossref","first-page":"457","DOI":"10.2165\/00003088-199937060-00002","article-title":"Pharmacokinetics
-      and clinical effectiveness of methylphenidate.","volume":"37","author":"HC Kimko","year":"1999","journal-title":"Clin
-      Pharmacokinet"},{"key":"ref12","doi-asserted-by":"crossref","first-page":"2032","DOI":"10.1046\/j.1471-4159.1997.68052032.x","article-title":"Effects
-      of methylphenidate on extracellular dopamine, serotonin, and norepinephrine:
-      comparison with amphetamine.","volume":"68","author":"R Kuczenski","year":"1997","journal-title":"J
-      Neurochem"},{"key":"ref13","doi-asserted-by":"crossref","first-page":"243","DOI":"10.1002\/syn.20235","article-title":"Therapeutic
-      doses of amphetamine or methylphenidate differentially increase synaptic and
-      extracellular dopamine.","volume":"59","author":"WK Schiffer","year":"2006","journal-title":"Synapse"},{"key":"ref14","doi-asserted-by":"crossref","first-page":"439","DOI":"10.1002\/(SICI)1097-4547(19960215)43:4<439::AID-JNR5>3.0.CO;2-G","article-title":"Dopamine
-      receptors mediate differential morphological effects on cerebral cortical neurons
-      in vitro.","volume":"43","author":"BS Reinoso","year":"1996","journal-title":"J
-      Neurosci Res"},{"key":"ref15","doi-asserted-by":"crossref","first-page":"794","DOI":"10.1016\/0006-3223(92)90311-M","article-title":"Neural
-      development is regulated by classical neurotransmitters: dopamine D2 receptor
-      stimulation enhances neurite outgrowth.","volume":"31","author":"RD Todd","year":"1992","journal-title":"Biol
-      Psychiatry"},{"key":"ref16","doi-asserted-by":"crossref","first-page":"79","DOI":"10.1006\/exnr.1993.1008","article-title":"Pre-
-      and postsynaptic neurotoxic effects of dopamine demonstrated by intrastriatal
-      injection.","volume":"119","author":"F Filloux","year":"1993","journal-title":"Experimental
-      Neurology"},{"key":"ref17","doi-asserted-by":"crossref","first-page":"633","DOI":"10.1016\/S0026-895X(25)13535-9","article-title":"Oxidative
-      pathways for catecholamines in the genesis of neuromelanin and cytotoxic quinones.","volume":"14","author":"DG
-      Graham","year":"1978","journal-title":"Mol Pharmacol"},{"key":"ref18","doi-asserted-by":"crossref","first-page":"428","DOI":"10.1002\/jnr.490260405","article-title":"Toxicity
-      of 6-hydroxydopamine and dopamine for dopaminergic neurons in culture.","volume":"26","author":"PP
-      Michel","year":"1990","journal-title":"Journal Of Neuroscience Research"},{"key":"ref19","doi-asserted-by":"crossref","first-page":"165","DOI":"10.1007\/BF03033137","article-title":"Dopamine-
-      or L-DOPA-induced neurotoxicity: the role of dopamine quinone formation and
-      tyrosinase in a model of Parkinson&apos;s disease.","volume":"5","author":"M
-      Asanuma","year":"2003","journal-title":"Neurotox Res"},{"key":"ref20","doi-asserted-by":"crossref","first-page":"590","DOI":"10.1111\/j.1476-5381.1993.tb12847.x","article-title":"Striatal
-      dopamine release in vivo following neurotoxic doses of methamphetamine and effect
-      of the neuroprotective drugs, chlormethiazole and dizocilpine.","volume":"108","author":"HA
-      Baldwin","year":"1993","journal-title":"Br J Pharmacol"},{"key":"ref21","doi-asserted-by":"crossref","first-page":"95","DOI":"10.1016\/j.neulet.2009.08.060","article-title":"Superoxide
-      production after acute and chronic treatment with methylphenidate in young and
-      adult rats.","volume":"465","author":"KM Gomes","year":"2009","journal-title":"Neurosci
-      Lett"},{"key":"ref22","doi-asserted-by":"crossref","first-page":"5003","DOI":"10.1016\/j.febslet.2007.09.046","article-title":"Protective
-      effects of metallothionein against dopamine quinone-induced dopaminergic neurotoxicity.","volume":"581","author":"I
-      Miyazaki","year":"2007","journal-title":"FEBS Lett"},{"key":"ref23","first-page":"141","article-title":"Dopaminergic
-      neuron-specific oxidative stress caused by dopamine itself.","volume":"62","author":"I
-      Miyazaki","year":"2008","journal-title":"Acta Med Okayama"},{"key":"ref24","article-title":"Inflammatory
-      effects of highly pathogenic H5N1 influenza virus infection in the CNS of mice.","author":"H
-      Jang","year":"2012","journal-title":"J Neurosci"},{"key":"ref25","doi-asserted-by":"crossref","first-page":"382","DOI":"10.1016\/S0022-3565(25)21542-7","article-title":"Pharmacokinetics
-      of methylphenidate in man, rat and monkey.","volume":"226","author":"W Wargin","year":"1983","journal-title":"J
-      Pharmacol Exp Ther"},{"key":"ref26","doi-asserted-by":"crossref","first-page":"432","DOI":"10.1002\/1098-2396(20001215)38:4<432::AID-SYN8>3.0.CO;2-Q","article-title":"Synergistic
-      interactions between nicotine and cocaine or methylphenidate depend on the dose
-      of dopamine transporter inhibitor.","volume":"38","author":"MR Gerasimov","year":"2000","journal-title":"Synapse"},{"key":"ref27","doi-asserted-by":"crossref","first-page":"205","DOI":"10.1097\/FBP.0b013e328153daf5","article-title":"Sensitization
-      and cross-sensitization after chronic treatment with methylphenidate in adolescent
-      Wistar rats.","volume":"18","author":"SS Valvassori","year":"2007","journal-title":"Behav
-      Pharmacol"},{"key":"ref28","doi-asserted-by":"crossref","first-page":"91","DOI":"10.1016\/S0006-8993(99)01273-1","article-title":"Differential
-      strain susceptibility following 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine
-      (MPTP) administration acts in an autosomal dominant fashion: quantitative analysis
-      in seven strains of Mus musculus.","volume":"828","author":"K Hamre","year":"1999","journal-title":"Brain
-      Res"},{"key":"ref29","doi-asserted-by":"crossref","first-page":"107","DOI":"10.1016\/j.brainres.2007.07.067","article-title":"Response
-      to 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) differs in mouse strains
-      and reveals a divergence in JNK signaling and COX-2 induction prior to loss
-      of neurons in the substantia nigra pars compacta.","volume":"1175","author":"JD
-      Boyd","year":"2007","journal-title":"Brain Res"},{"key":"ref30","doi-asserted-by":"crossref","first-page":"151","DOI":"10.1002\/hup.579","article-title":"Methylphenidate:
-      a review of its neuropharmacological, neuropsychological and adverse clinical
-      effects.","volume":"19","author":"BE Leonard","year":"2004","journal-title":"Hum
-      Psychopharmacol"},{"key":"ref31","doi-asserted-by":"crossref","first-page":"45","DOI":"10.1097\/00005053-199501000-00009","article-title":"Psychiatric
-      morbidity in narcoleptics on chronic high dose methylphenidate therapy.","volume":"183","author":"LK
-      Pawluk","year":"1995","journal-title":"J Nerv Ment Dis"},{"key":"ref32","doi-asserted-by":"crossref","first-page":"657","DOI":"10.1016\/j.jhealeco.2010.07.005","article-title":"Measuring
-      inappropriate medical diagnosis and treatment in survey data: The case of ADHD
-      among school-age children.","volume":"29","author":"WN Evans","year":"2010","journal-title":"J
-      Health Econ"},{"key":"ref33","doi-asserted-by":"crossref","first-page":"21","DOI":"10.1097\/chi.0b013e31815a56f1","article-title":"Misuse
-      and diversion of stimulants prescribed for ADHD: a systematic review of the
-      literature.","volume":"47","author":"TE Wilens","year":"2008","journal-title":"J
-      Am Acad Child Adolesc Psychiatry"},{"key":"ref34","doi-asserted-by":"crossref","first-page":"197","DOI":"10.1016\/S0166-4328(01)00417-X","article-title":"Changes
-      in the second messenger cyclic AMP during development may underlie motoric symptoms
-      in attention deficit\/hyperactivity disorder (ADHD).","volume":"130","author":"SL
-      Andersen","year":"2002","journal-title":"Behav Brain Res"},{"key":"ref35","doi-asserted-by":"crossref","first-page":"93","DOI":"10.1007\/s002130051093","article-title":"Dopamine-transporter
-      occupancy after intravenous doses of cocaine and methylphenidate in mice and
-      humans.","volume":"146","author":"SJ Gatley","year":"1999","journal-title":"Psychopharmacology
-      (Berl)"},{"key":"ref36","doi-asserted-by":"crossref","first-page":"181","DOI":"10.1002\/syn.10038","article-title":"Relationship
-      between blockade of dopamine transporters by oral methylphenidate and the increases
-      in extracellular dopamine: therapeutic implications.","volume":"43","author":"ND
-      Volkow","year":"2002","journal-title":"Synapse"},{"key":"ref37","doi-asserted-by":"crossref","first-page":"259","DOI":"10.1111\/j.1471-4159.2010.06750.x","article-title":"Effects
-      of acute and chronic administration of atomoxetine and methylphenidate on extracellular
-      levels of noradrenaline, dopamine and serotonin in the prefrontal cortex and
-      striatum of mice.","volume":"114","author":"K Koda","year":"2010","journal-title":"J
-      Neurochem"},{"key":"ref38","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1021\/tx960145c","article-title":"Oxidation
-      of dopamine in the presence of cysteine: characterization of new toxic products.","volume":"10","author":"XM
-      Shen","year":"1997","journal-title":"Chem Res Toxicol"},{"key":"ref39","doi-asserted-by":"crossref","first-page":"143","DOI":"10.1046\/j.1471-4159.2003.01808.x","article-title":"Dopamine-dependent
-      cytotoxicity of tetrahydrobiopterin: a possible mechanism for selective neurodegeneration
-      in Parkinson&apos;s disease.","volume":"86","author":"HJ Choi","year":"2003","journal-title":"J
-      Neurochem"},{"key":"ref40","doi-asserted-by":"crossref","first-page":"329","DOI":"10.1016\/j.neuint.2004.10.009","article-title":"Inhibition
-      of vesicular monoamine transporter enhances vulnerability of dopaminergic cells:
-      relevance to Parkinson&apos;s disease.","volume":"46","author":"HJ Choi","year":"2005","journal-title":"Neurochem
-      Int"},{"key":"ref41","doi-asserted-by":"crossref","first-page":"1242","DOI":"10.1046\/j.1471-4159.2001.00125.x","article-title":"Reaction
-      of oxidized dopamine with endogenous cysteine residues in the human dopamine
-      transporter.","volume":"76","author":"RE Whitehead","year":"2001","journal-title":"J
-      Neurochem"},{"key":"ref42","doi-asserted-by":"crossref","first-page":"905","DOI":"10.1016\/j.neuroscience.2005.09.035","article-title":"Adult
-      and in utero exposure to cocaine alters sensitivity to the Parkinsonian toxin
-      1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine.","volume":"137","author":"SA Lloyd","year":"2006","journal-title":"Neuroscience"},{"key":"ref43","doi-asserted-by":"crossref","first-page":"1024","DOI":"10.1007\/s11064-007-9544-1","article-title":"Antioxidant
-      enzyme activities following acute or chronic methylphenidate treatment in young
-      rats.","volume":"33","author":"KM Gomes","year":"2008","journal-title":"Neurochem
-      Res"},{"key":"ref44","doi-asserted-by":"crossref","first-page":"189","DOI":"10.1016\/j.brainres.2006.01.004","article-title":"Methylphenidate
-      treatment induces oxidative stress in young rat brain.","volume":"1078","author":"MR
-      Martins","year":"2006","journal-title":"Brain Res"},{"key":"ref45","doi-asserted-by":"crossref","first-page":"239","DOI":"10.3727\/000000006783981990","article-title":"Progressive
-      dopamine neuron loss in Parkinson&apos;s disease: the multiple hit hypothesis.","volume":"15","author":"PM
-      Carvey","year":"2006","journal-title":"Cell Transplant"},{"key":"ref46","doi-asserted-by":"crossref","first-page":"1263","DOI":"10.1289\/ehp.7570","article-title":"Developmental
-      pesticide models of the Parkinson disease phenotype.","volume":"113","author":"DA
-      Cory-Slechta","year":"2005","journal-title":"Environ Health Perspect"},{"key":"ref47","doi-asserted-by":"crossref","first-page":"28","DOI":"10.1177\/1073858408319974","article-title":"Etiopathogenesis
-      of Parkinson disease: a new beginning?","volume":"15","author":"L Weidong","year":"2009","journal-title":"Neuroscientist"},{"key":"ref48","doi-asserted-by":"crossref","first-page":"193","DOI":"10.1007\/BF03036449","article-title":"MPTP
-      and SNpc DA neuronal vulnerability: role of dopamine, superoxide and nitric
-      oxide in neurotoxicity. Minireview.","volume":"7","author":"V Jackson-Lewis","year":"2005","journal-title":"Neurotox
-      Res"},{"key":"ref49","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1007\/s10072-008-0986-2","article-title":"Targeting
-      reactive oxygen species, reactive nitrogen species and inflammation in MPTP
-      neurotoxicity and Parkinson&apos;s disease.","volume":"29","author":"H Yokoyama","year":"2008","journal-title":"Neurol
-      Sci"},{"key":"ref50","doi-asserted-by":"crossref","first-page":"685","DOI":"10.1089\/ars.2005.7.685","article-title":"Reactive
-      oxygen and nitrogen species: weapons of neuronal destruction in models of Parkinson&apos;s
-      disease.","volume":"7","author":"S Przedborski","year":"2005","journal-title":"Antioxid
-      Redox Signal"},{"key":"ref51","doi-asserted-by":"crossref","first-page":"35","DOI":"10.1016\/j.drugalcdep.2011.06.013","article-title":"Increased
-      risk of Parkinson&apos;s disease in individuals hospitalized with conditions
-      related to the use of methamphetamine or other amphetamine-type drugs.","volume":"120","author":"RC
-      Callaghan","year":"2012","journal-title":"Drug Alcohol Depend"},{"key":"ref52","doi-asserted-by":"crossref","first-page":"2424","DOI":"10.1523\/JNEUROSCI.19-07-02424.1999","article-title":"Increased
-      methamphetamine neurotoxicity in heterozygous vesicular monoamine transporter
-      2 knock-out mice.","volume":"19","author":"F Fumagalli","year":"1999","journal-title":"J
-      Neurosci"},{"key":"ref53","doi-asserted-by":"crossref","first-page":"2459","DOI":"10.1096\/fj.00-0205rev","article-title":"The
-      VMAT2 gene in mice and humans: amphetamine responses, locomotion, cardiac arrhythmias,
-      aging, and vulnerability to dopaminergic toxins.","volume":"14","author":"GR
-      Uhl","year":"2000","journal-title":"Faseb J"},{"key":"ref54","doi-asserted-by":"crossref","first-page":"10289","DOI":"10.1523\/JNEUROSCI.19-23-10289.1999","article-title":"Peroxynitrite
-      inactivation of tyrosine hydroxylase: mediation by sulfhydryl oxidation, not
-      tyrosine nitration.","volume":"19","author":"DM Kuhn","year":"1999","journal-title":"J
-      Neurosci"},{"key":"ref55","doi-asserted-by":"crossref","first-page":"691","DOI":"10.1002\/(SICI)1097-4547(19981201)54:5<691::AID-JNR14>3.0.CO;2-F","article-title":"Dopamine,
-      in the presence of tyrosinase, covalently modifies and inactivates tyrosine
-      hydroxylase.","volume":"54","author":"Y Xu","year":"1998","journal-title":"J
-      Neurosci Res"},{"key":"ref56","doi-asserted-by":"crossref","first-page":"598","DOI":"10.1002\/1531-8249(199910)46:4<598::AID-ANA7>3.0.CO;2-F","article-title":"Evidence
-      of active nerve cell degeneration in the substantia nigra of humans years after
-      1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine exposure.","volume":"46","author":"JW
-      Langston","year":"1999","journal-title":"Ann Neurol"},{"key":"ref57","doi-asserted-by":"crossref","first-page":"457","DOI":"10.1016\/j.reprotox.2007.01.007","article-title":"The
-      gestational environment and Parkinson&apos;s disease: evidence for neurodevelopmental
-      origins of a neurodegenerative disorder.","volume":"23","author":"BK Barlow","year":"2007","journal-title":"Reprod
-      Toxicol"},{"key":"ref58","doi-asserted-by":"crossref","first-page":"2333","DOI":"10.1002\/mds.23263","article-title":"Incidence
-      of Parkinson&apos;s disease among hospital patients with methamphetamine-use
-      disorders.","volume":"25","author":"RC Callaghan","year":"2010","journal-title":"Mov
-      Disord"},{"key":"ref59","doi-asserted-by":"crossref","first-page":"311","DOI":"10.1007\/978-3-211-73574-9_38","article-title":"Association
-      of Parkinson&apos;s disease with symptoms of attention deficit hyperactivity
-      disorder in childhood.","author":"S Walitza","year":"2007","journal-title":"J
-      Neural Transm Suppl"},{"key":"ref60","doi-asserted-by":"crossref","first-page":"847","DOI":"10.1542\/peds.63.6.847","article-title":"The
-      effects of stimulant medication on the growth of hyperkinetic children.","volume":"63","author":"AF
-      Croche","year":"1979","journal-title":"Pediatrics"},{"key":"ref61","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1089\/1044546041649066","article-title":"Weekend
-      holidays during methylphenidate use in ADHD children: a randomized clinical
-      trial.","volume":"14","author":"S Martins","year":"2004","journal-title":"J
-      Child Adolesc Psychopharmacol"},{"key":"ref62","doi-asserted-by":"crossref","first-page":"73","DOI":"10.1016\/S0166-4328(01)00433-8","article-title":"Pharmacokinetic
-      and pharmacodynamic properties of stimulants: implications for the design of
-      new treatments for ADHD.","volume":"130","author":"JM Swanson","year":"2002","journal-title":"Behav
-      Brain Res"},{"article-title":"The Mouse Brain in Stereotaxic Coordinates","year":"2001","author":"G
-      Paxinos","key":"ref63"},{"key":"ref64","doi-asserted-by":"crossref","first-page":"1082","DOI":"10.1016\/j.neuroscience.2009.04.031","article-title":"A
-      comparison of model-based (2D) and design-based (3D) stereological methods for
-      estimating cell number in the substantia nigra pars compacta (SNpc) of the C57BL\/6J
-      Mouse.","volume":"161","author":"ZC Baquet","year":"2009","journal-title":"Neuroscience"},{"key":"ref65","doi-asserted-by":"crossref","first-page":"482","DOI":"10.1002\/ar.1092310411","article-title":"Unbiased
-      stereological estimation of the total number of neurons in thesubdivisions of
-      the rat hippocampus using the optical fractionator.","volume":"231","author":"MJ
-      West","year":"1991","journal-title":"Anat Rec"},{"key":"ref66","doi-asserted-by":"crossref","first-page":"89","DOI":"10.1007\/s00401-009-0622-0","article-title":"Microglia:
-      biology and pathology.","volume":"119","author":"MB Graeber","year":"2010","journal-title":"Acta
-      Neuropathol"},{"key":"ref67","doi-asserted-by":"crossref","first-page":"783","DOI":"10.1126\/science.1190929","article-title":"Changing
-      face of microglia.","volume":"330","author":"MB Graeber","year":"2010","journal-title":"Science"},{"key":"ref68","doi-asserted-by":"crossref","first-page":"e15","DOI":"10.1093\/nar\/gng015","article-title":"Summaries
-      of Affymetrix GeneChip probe level data.","volume":"31","author":"RA Irizarry","year":"2003","journal-title":"Nucleic
-      Acids Res"},{"key":"ref69","doi-asserted-by":"crossref","first-page":"118","DOI":"10.1093\/biostatistics\/kxj037","article-title":"Adjusting
-      batch effects in microarray expression data using empirical Bayes methods.","volume":"8","author":"WE
-      Johnson","year":"2007","journal-title":"Biostatistics"},{"key":"ref70","doi-asserted-by":"crossref","first-page":"Article3","DOI":"10.2202\/1544-6115.1027","article-title":"Linear
-      models and empirical bayes methods for assessing differential expression in
-      microarray experiments.","volume":"3","author":"GK Smyth","year":"2004","journal-title":"Stat
-      Appl Genet Mol Biol"}],"updated-by":[{"updated":{"date-parts":[[2012,5,8]],"date-time":"2012-05-08T00:00:00Z","timestamp":1336435200000},"DOI":"10.1371\/annotation\/c76da2c1-ccb8-4797-94c1-359d3ceceeda","type":"correction","source":"publisher","label":"Correction"}],"container-title":["PLoS
-      ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0033693","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2025,3,23]],"date-time":"2025-03-23T19:53:43Z","timestamp":1742759623000},"score":1,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0033693"}},"subtitle":[],"editor":[{"given":"Cesario
-      V.","family":"Borlongan","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2012,3,21]]},"references-count":70,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2012,3,21]]}},"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0033693","relation":{},"ISSN":["1932-6203"],"issn-type":[{"type":"electronic","value":"1932-6203"}],"subject":[],"published":{"date-parts":[[2012,3,21]]}}}'
+    body:
+      string: !!binary |
+        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
+        PJBFQtXM6I2pfP8XnvdM/CFeAAA=
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '7182'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:59 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -222,8 +154,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '7202'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:35:12 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -232,40 +172,36 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/works/10.1371/notarealdoi
   response:
-    content: Resource not found.
+    body:
+      string: Resource not found.
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - text/plain
-      Date:
-      - Sat, 12 Jul 2025 04:29:00 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -273,165 +209,137 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - text/plain
+      date:
+      - Tue, 16 Jun 2026 13:35:12 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 404
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 404
+      message: Not Found
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/works/10.1371/journal.pone.0020476
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,7,12]],"date-time":"2025-07-12T02:29:23Z","timestamp":1752287363385},"reference-count":54,"publisher":"Public
-      Library of Science (PLoS)","issue":"6","license":[{"start":{"date-parts":[[2011,6,9]],"date-time":"2011-06-09T00:00:00Z","timestamp":1307577600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-      ONE"],"DOI":"10.1371\/journal.pone.0020476","type":"journal-article","created":{"date-parts":[[2011,6,17]],"date-time":"2011-06-17T20:05:32Z","timestamp":1308341132000},"page":"e20476","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":1448,"title":["Using
-      and Reporting the Delphi Method for Selecting Healthcare Quality Indicators:
-      A Systematic Review"],"prefix":"10.1371","volume":"6","author":[{"given":"Rym","family":"Boulkedid","sequence":"first","affiliation":[]},{"given":"Hendy","family":"Abdoul","sequence":"additional","affiliation":[]},{"given":"Marine","family":"Loustau","sequence":"additional","affiliation":[]},{"given":"Olivier","family":"Sibony","sequence":"additional","affiliation":[]},{"given":"Corinne","family":"Alberti","sequence":"additional","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2011,6,9]]},"reference":[{"key":"ref1"},{"key":"ref2","article-title":"To
-      Err is Human, Building a Safer Health System","author":"LTC, JM Kohn","year":"1999"},{"key":"ref3","doi-asserted-by":"crossref","first-page":"209","DOI":"10.1136\/bmj.311.6999.209","article-title":"Performance
-      indicators for general practice.","volume":"311","author":"FA Majeed","year":"1995","journal-title":"Bmj"},{"key":"ref4","article-title":"Explorations
-      in quality assessment and monitoring: the definition of quality and approaches
-      to its assessment","author":"A Donabedian","year":"1980"},{"key":"ref5","doi-asserted-by":"crossref","first-page":"1120","DOI":"10.1136\/bmj.317.7166.1120","article-title":"Preventing
-      ischaemic heart disease in one general practice: from one patient, through clinical
-      audit, needs assessment, and commissioning into quality improvement.","volume":"317","author":"M
-      Pringle","year":"1998","journal-title":"Bmj"},{"key":"ref6","doi-asserted-by":"crossref","first-page":"5","DOI":"10.1046\/j.1365-2710.2001.00331.x","article-title":"Consensus
-      methods in prescribing research.","volume":"26","author":"SM Campbell","year":"2001","journal-title":"J
-      Clin Pharm Ther"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"173","DOI":"10.1136\/qhc.0100173","article-title":"Expert
-      consensus on the desirable characteristics of review criteria for improvement
-      of health care quality.","volume":"10","author":"HM Hearnshaw","year":"2001","journal-title":"Qual
-      Health Care"},{"key":"ref8","doi-asserted-by":"crossref","first-page":"1008","DOI":"10.1046\/j.1365-2648.2000.t01-1-01567.x","article-title":"Research
-      guidelines for the Delphi survey technique.","volume":"32","author":"F Hasson","year":"2000","journal-title":"J
-      Adv Nurs"},{"key":"ref9","doi-asserted-by":"crossref","first-page":"425","DOI":"10.1136\/bmj.321.7258.425","article-title":"Prescribing
-      indicators for UK general practice: Delphi consultation study.","volume":"321","author":"SM
-      Campbell","year":"2000","journal-title":"Bmj"},{"key":"ref10","doi-asserted-by":"crossref","first-page":"198","DOI":"10.1046\/j.1365-2524.1999.00176.x","article-title":"Applying
-      the Delphi technique in a study of GPs&apos; information requirements.","volume":"7","author":"B
-      Green","year":"1999","journal-title":"Health Soc Care Community"},{"key":"ref11","doi-asserted-by":"crossref","first-page":"979","DOI":"10.2105\/AJPH.74.9.979","article-title":"Consensus
-      methods: characteristics and guidelines for use.","volume":"74","author":"A
-      Fink","year":"1984","journal-title":"Am J Public Health"},{"key":"ref12","doi-asserted-by":"crossref","first-page":"376","DOI":"10.1046\/j.1365-2648.2003.02537.x","article-title":"The
-      Delphi technique: myths and realities.","volume":"41","author":"C Powell","year":"2003","journal-title":"J
-      Adv Nurs"},{"key":"ref13","first-page":"29","article-title":"The Delphi methodology
-      (Part one): A useful administrative approach.","volume":"7","author":"N Jairath","year":"1994","journal-title":"Can
-      J Nurs Adm"},{"key":"ref14","article-title":"Gazing into the oracle: the delphi
-      method and its application to social policy and public health.","author":"M
-      Adler","year":"1996","journal-title":"Jessica Kingsley Publisher"},{"key":"ref15","article-title":"Quality
-      assessment for general practice: supporting clinical governance in primary care
-      groups","author":"M Roland","year":"1998"},{"key":"ref16","doi-asserted-by":"crossref","first-page":"47","DOI":"10.1136\/emj.2003.001123","article-title":"A
-      Delphi study to identify performance indicators for emergency medicine.","volume":"21","author":"E
-      Beattie","year":"2004","journal-title":"Emerg Med J"},{"key":"ref17","doi-asserted-by":"crossref","first-page":"247","DOI":"10.1093\/intqhc\/10.3.247","article-title":"Eliciting
-      expert opinion using the Delphi technique: identifying performance indicators
-      for cardiovascular disease.","volume":"10","author":"SL Normand","year":"1998","journal-title":"Int
-      J Qual Health Care"},{"key":"ref18","doi-asserted-by":"crossref","first-page":"205","DOI":"10.1111\/j.1365-2648.2006.03716.x","article-title":"Consulting
-      the oracle: ten lessons from using the Delphi technique in nursing research.","volume":"53","author":"S
-      Keeney","year":"2006","journal-title":"J Adv Nurs"},{"key":"ref19","article-title":"Quality
-      improvement research: understanding the science of change in health care.","author":"R
-      Grol","year":"2004","journal-title":"BMJ Books"},{"key":"ref20","doi-asserted-by":"crossref","first-page":"523","DOI":"10.1093\/intqhc\/mzg081","article-title":"Defining
-      and classifying clinical indicators for quality improvement.","volume":"15","author":"J
-      Mainz","year":"2003","journal-title":"Int J Qual Health Care"},{"key":"ref21","doi-asserted-by":"crossref","first-page":"446","DOI":"10.1016\/j.ygyno.2004.12.059","article-title":"Development
-      of ovarian cancer surgery quality indicators using a modified Delphi approach.","volume":"97","author":"AR
-      Gagliardi","year":"2005","journal-title":"Gynecol Oncol"},{"key":"ref22","doi-asserted-by":"crossref","first-page":"33","DOI":"10.1186\/1472-6920-8-33","article-title":"Identifying
-      outcome-based indicators and developing a curriculum for a continuing medical
-      education programme on rational prescribing using a modified Delphi process.","volume":"8","author":"HM
-      Esmaily","year":"2008","journal-title":"BMC Med Educ"},{"key":"ref23","author":"K
-      Fitch"},{"key":"ref24","doi-asserted-by":"crossref","first-page":"e1000393","DOI":"10.1371\/journal.pmed.1000393","article-title":"Using
-      the Delphi technique to determine which outcomes to measure in clinical trials:
-      recommendations for the future based on a systematic review of existing studies.","volume":"8","author":"IP
-      Sinha","journal-title":"PLoS Med"},{"key":"ref25","first-page":"37","article-title":"Delphi
-      forecasting of health care organization.","volume":"12","author":"DB Starkweather","year":"1975","journal-title":"Inquiry"},{"key":"ref26","first-page":"288","article-title":"An
-      approach to an index of hospital performance.","volume":"11","author":"RM Grimes","year":"1976","journal-title":"Health
-      Serv Res"},{"key":"ref27","first-page":"21","article-title":"How do we decide
-      whether an investigation or procedure is appropriate?,","author":"M Chassin","year":"1989"},{"key":"ref28","article-title":"AHCPR
-      Clinical Practice Guideline Program.","year":"1995"},{"key":"ref29","article-title":"Clinical
-      guidelines. Using clinical guidelines to improve patient care in the NHS","author":"T
-      Mann","year":"1996"},{"key":"ref30","article-title":"Health measurement scales:
-      a pratical guide to their development and use","author":"DL Stereiner","year":"1995"},{"key":"ref31","doi-asserted-by":"crossref","first-page":"489","DOI":"10.1093\/intqhc\/13.6.489","article-title":"From
-      a process of care to a measure: the development and testing of a quality indicator.","volume":"13","author":"HR
-      Rubin","year":"2001","journal-title":"Int J Qual Health Care"},{"key":"ref32","doi-asserted-by":"crossref","first-page":"II46","DOI":"10.1097\/00005650-200108002-00003","article-title":"Successes
-      and failures in the implementation of evidence-based guidelines for clinical
-      practice.","volume":"39","author":"R Grol","year":"2001","journal-title":"Med
-      Care"},{"key":"ref33","doi-asserted-by":"crossref","first-page":"227","DOI":"10.1016\/0020-7489(93)90033-Q","article-title":"The
-      Delphi technique: a comparison of results obtained using two expert panels.","volume":"30","author":"C
-      Duffield","year":"1993","journal-title":"Int J Nurs Stud"},{"key":"ref34","doi-asserted-by":"crossref","first-page":"729","DOI":"10.1111\/j.1365-2648.1987.tb01376.x","article-title":"The
-      Delphi technique: a critique.","volume":"12","author":"CM Goodman","year":"1987","journal-title":"J
-      Adv Nurs"},{"key":"ref35","doi-asserted-by":"crossref","first-page":"964","DOI":"10.1097\/00005650-199909000-00012","article-title":"The
-      effect of panel membership and feedback on ratings in a two-round Delphi survey:
-      results of a randomized controlled trial.","volume":"37","author":"SM Campbell","year":"1999","journal-title":"Med
-      Care"},{"key":"ref36","doi-asserted-by":"crossref","first-page":"512","DOI":"10.1097\/00005650-199606000-00002","article-title":"Variations
-      by specialty in physician ratings of the appropriateness and necessity of indications
-      for procedures.","volume":"34","author":"JP Kahan","year":"1996","journal-title":"Med
-      Care"},{"key":"ref37","first-page":"577","article-title":"Impact of varying
-      panel membership on ratings of appropriateness in consensus panels: a comparison
-      of a multi- and single disciplinary panel.","volume":"30","author":"I Coulter","year":"1995","journal-title":"Health
-      Serv Res"},{"key":"ref38","first-page":"151","article-title":"Group judgments
-      of appropriateness: the effect of panel composition.","volume":"4","author":"LL
-      Leape","year":"1992","journal-title":"Qual Assur Health Care"},{"key":"ref39","doi-asserted-by":"crossref","first-page":"35","DOI":"10.2466\/pr0.1993.73.1.35","article-title":"Comprehensiveness
-      of strategic planning: the importance of heterogeneity of a top team.","volume":"73","author":"K
-      Bantel","year":"1993","journal-title":"Psychol Rep"},{"key":"ref40","doi-asserted-by":"crossref","first-page":"1107","DOI":"10.1001\/jama.2010.1287","article-title":"Relationship
-      between patient panel characteristics and primary care physician clinical performance
-      rankings.","volume":"304","author":"CS Hong","journal-title":"Jama"},{"key":"ref41","doi-asserted-by":"crossref","first-page":"4","DOI":"10.1186\/1752-4458-4-4","article-title":"Mental
-      Health First Aid guidelines for helping a suicidal person: a Delphi consensus
-      study in India.","volume":"4","author":"E Colucci","journal-title":"Int J Ment
-      Health Syst"},{"key":"ref42","doi-asserted-by":"crossref","first-page":"69","DOI":"10.1192\/bjp.bp.109.066266","article-title":"TENTS
-      guidelines: development of post-disaster psychosocial care guidelines through
-      a Delphi process.","volume":"196","author":"JI Bisson","journal-title":"Br J
-      Psychiatry"},{"key":"ref43","doi-asserted-by":"crossref","first-page":"1107","DOI":"10.1378\/chest.06-3014","article-title":"A
-      web-based Delphi study on the indications of chest radiographs for patients
-      in ICUs.","volume":"133","author":"G Hejblum","year":"2008","journal-title":"Chest"},{"key":"ref44","doi-asserted-by":"crossref","first-page":"e39","DOI":"10.2196\/jmir.6.4.e39","article-title":"Internet
-      versus mailed questionnaires: a controlled comparison (2).","volume":"6","author":"P
-      Leece","year":"2004","journal-title":"J Med Internet Res"},{"issue":"12","key":"ref45","doi-asserted-by":"crossref","first-page":"677","DOI":"10.12968\/bjtr.1996.3.12.14731","article-title":"The
-      Delphi method: a useful tool for the allied health researcher.","volume":"3","author":"A
-      Walker","year":"1996","journal-title":"nternational Journal of Therapy and Rehabilitation"},{"key":"ref46","doi-asserted-by":"crossref","first-page":"337","DOI":"10.2105\/AJPH.62.3.337","article-title":"The
-      nominal group as a research instrument for exploratory health studies.","volume":"62","author":"A
-      Van de Ven","year":"1972","journal-title":"Am J Public Health"},{"key":"ref47","first-page":"181","article-title":"Decision
-      Conferencing A Unique Approach to the Behavioral Aggregation of Expert Judgment
-      Part II","author":"P Reagan-Cirincione","year":"1992","journal-title":"Decision
-      Conferencing A Unique Approach to the Behavioral Aggregation of Expert Judgment
-      Part II"},{"key":"ref48","doi-asserted-by":"crossref","first-page":"217","DOI":"10.1177\/1046496493242004","article-title":"What
-      (little) we know about formal group discussion procedures: A review of relevant
-      research.","volume":"24","author":"C Pavitt","year":"1993","journal-title":"Small
-      Group Research"},{"key":"ref49","doi-asserted-by":"crossref","first-page":"100","DOI":"10.1136\/qhc.12.2.100","article-title":"Quality
-      indicators for primary care mental health services.","volume":"12","author":"T
-      Shield","year":"2003","journal-title":"Qual Saf Health Care"},{"key":"ref50","doi-asserted-by":"crossref","first-page":"763","DOI":"10.1111\/j.1540-5915.1997.tb01330.x","article-title":"Managing
-      Delphi surveys using nonparametric statistical techniques.","volume":"28, 3","author":"R
-      Schmidt","year":"1997","journal-title":"Decision Sciences"},{"key":"ref51","doi-asserted-by":"crossref","first-page":"i","DOI":"10.3310\/hta2030","article-title":"Consensus
-      development methods, and their use in clinical guideline development.","volume":"2","author":"MK
-      Murphy","year":"1998","journal-title":"Health Technol Assess"},{"key":"ref52","doi-asserted-by":"crossref","first-page":"2058","DOI":"10.1161\/hs0901.94620","article-title":"Development
-      of performance measures for acute ischemic stroke.","volume":"32","author":"RG
-      Holloway","year":"2001","journal-title":"Stroke"},{"key":"ref53","doi-asserted-by":"crossref","first-page":"1623","DOI":"10.1093\/jnci\/djj438","article-title":"Development
-      of quality indicators for patients undergoing colorectal cancer surgery.","volume":"98","author":"ML
-      McGory","year":"2006","journal-title":"J Natl Cancer Inst"},{"key":"ref54","doi-asserted-by":"crossref","first-page":"2080","DOI":"10.1542\/peds.2005-1904","article-title":"Quality-of-care
-      indicators for the neurodevelopmental follow-up of very low birth weight children:
-      results of an expert panel process.","volume":"117","author":"CJ Wang","year":"2006","journal-title":"Pediatrics"}],"container-title":["PLoS
-      ONE"],"original-title":[],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0020476","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,4,7]],"date-time":"2024-04-07T17:33:37Z","timestamp":1712511217000},"score":1,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0020476"}},"subtitle":[],"editor":[{"given":"James
-      M.","family":"Wright","sequence":"first","affiliation":[]}],"short-title":[],"issued":{"date-parts":[[2011,6,9]]},"references-count":54,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2011,6,9]]}},"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0020476","relation":{},"ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"subject":[],"published":{"date-parts":[[2011,6,9]]}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '4900'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:29:00 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -439,8 +347,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '4936'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:35:12 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -449,10 +365,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

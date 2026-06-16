@@ -5,79 +5,93 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/works/10.1136/jclinpath-2020-206745
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T10:32:16Z","timestamp":1740133936125,"version":"3.37.3"},"reference-count":36,"publisher":"BMJ","issue":"5","license":[{"start":{"date-parts":[[2020,8,17]],"date-time":"2020-08-17T00:00:00Z","timestamp":1597622400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/"}],"funder":[{"DOI":"10.13039\/501100012166","name":"National
-      Key Research and Development Program","doi-asserted-by":"crossref","award":["2017YFC0906500
-      and 2016YFC1000301"],"id":[{"id":"10.13039\/501100012166","id-type":"DOI","asserted-by":"crossref"}]}],"content-domain":{"domain":["bmj.com"],"crossmark-restriction":true},"short-container-title":["J
-      Clin Pathol"],"accepted":{"date-parts":[[2020,7,2]]},"published-print":{"date-parts":[[2021,5]]},"abstract":"<jats:sec><jats:title>Background<\/jats:title><jats:p>The
-      absence of high-quality next-generation sequencing (NGS) reference material
-      (RM) has impeded the clinical use of liquid biopsies with plasma cell-free DNA
-      (cfDNA) in China.<\/jats:p><\/jats:sec><jats:sec><jats:title>Objective<\/jats:title><jats:p>This
-      study aimed to develop a national RM panel for external quality assessment and
-      performance evaluation during kit registration of non-small-cell lung cancer
-      (NSCLC)-related Kirsten rat sarcoma viral oncogene (<jats:italic>KRAS<\/jats:italic>)\/neuroblastoma
-      ras oncogene (<jats:italic>NRAS<\/jats:italic>)\/epidermal growth factor receptor
-      (<jats:italic>EGFR<\/jats:italic>)\/B-type Raf kinase (<jats:italic>BRAF<\/jats:italic>)\/mesenchymal\u2013epithelial
-      transition factor (<jats:italic>MET<\/jats:italic>) genetic assays using plasma
-      circulating tumor DNA (ctDNA).<\/jats:p><\/jats:sec><jats:sec><jats:title>Methods<\/jats:title><jats:p>Mutation
-      cell lines detected by NGS and validated by Sanger sequencing were selected
-      to establish the RM. Cell line genomic DNA was sheared and used to spike basal
-      plasma cfDNA at 10% concentration. Then, the calibration accuracy was determined
-      by four sequencing platforms. Average values were adopted and diluted to 0.1%,
-      0.3%, 1% and 3% concentrations with basal plasma as the RM panel. Then, five
-      manufacturers were invited to evaluate the performance of the RM panel.<\/jats:p><\/jats:sec><jats:sec><jats:title>Results<\/jats:title><jats:p>20\u2009cell
-      lines with 23 clinically important mutations were selected, including six mutations
-      in<jats:italic>KRAS<\/jats:italic>, two mutations in<jats:italic>NRAS<\/jats:italic>,
-      three in<jats:italic>BRAF<\/jats:italic>, four in phosphatidylinositol-4,5-bisphosphate
-      3-kinase catalytic subunit alpha (<jats:italic>PIK3CA<\/jats:italic>), six in<jats:italic>EGFR<\/jats:italic>,
-      one<jats:italic>EGFR<\/jats:italic>Gain (4-5 copy) and<jats:italic>one MET<\/jats:italic>Gain
-      (2-5 copy). The RM panel consisted of 87 samples, including these 21 mutations
-      at four concentrations (0.1%, 0.3%, 1% and 3%), one<jats:italic>MET<\/jats:italic>gain,
-      one<jats:italic>EGFR<\/jats:italic>gain and one wild type. The detection rate
-      was 100% for the 3%, 1% and 0.3% samples at all five companies. For the 0.1%
-      concentration, 15 samples had inconsistent results, but at least three companies
-      had correct results for each mutation.<\/jats:p><\/jats:sec><jats:sec><jats:title>Conclusion<\/jats:title><jats:p>RM
-      for a<jats:italic>KRAS<\/jats:italic>\/<jats:italic>NRAS<\/jats:italic>\/<jats:italic>EGFR<\/jats:italic>\/<jats:italic>BRAF<\/jats:italic>\/<jats:italic>MET<\/jats:italic>mutation
-      panel for plasma ctDNA was developed, which will be essential for quality control
-      of the performance of independent laboratories.<\/jats:p><\/jats:sec>","DOI":"10.1136\/jclinpath-2020-206745","type":"journal-article","created":{"date-parts":[[2020,8,17]],"date-time":"2020-08-17T21:28:34Z","timestamp":1597699714000},"page":"314-320","update-policy":"https:\/\/doi.org\/10.1136\/crossmarkpolicy","source":"Crossref","is-referenced-by-count":7,"title":["Construction
-      of a reference material panel for detecting<i>KRAS<\/i>\/<i>NRAS<\/i>\/<i>EGFR<\/i>\/<i>BRAF<\/i>\/<i>MET<\/i>mutations
-      in plasma ctDNA"],"prefix":"10.1136","volume":"74","author":[{"given":"Jun","family":"Xu","sequence":"first","affiliation":[]},{"given":"Shoufang","family":"Qu","sequence":"additional","affiliation":[]},{"given":"Nan","family":"Sun","sequence":"additional","affiliation":[]},{"given":"Wenxin","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Juanli","family":"Zhang","sequence":"additional","affiliation":[]},{"given":"Qingtao","family":"Song","sequence":"additional","affiliation":[]},{"given":"Mufei","family":"Lin","sequence":"additional","affiliation":[]},{"given":"Wei","family":"Gao","sequence":"additional","affiliation":[]},{"given":"Qiaosong","family":"Zheng","sequence":"additional","affiliation":[]},{"given":"Mipeng","family":"Han","sequence":"additional","affiliation":[]},{"given":"Chenglong","family":"Na","sequence":"additional","affiliation":[]},{"given":"Ren","family":"Xu","sequence":"additional","affiliation":[]},{"given":"Xiaoyan","family":"Chang","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-3513-6501","authenticated-orcid":false,"given":"Xuexi","family":"Yang","sequence":"additional","affiliation":[]},{"given":"Jie","family":"Huang","sequence":"additional","affiliation":[]}],"member":"239","published-online":{"date-parts":[[2020,8,17]]},"reference":[{"key":"2024111105500526000_74.5.314.1","doi-asserted-by":"publisher","DOI":"10.3322\/caac.21338"},{"key":"2024111105500526000_74.5.314.2","doi-asserted-by":"publisher","DOI":"10.1016\/j.cllc.2015.07.002"},{"key":"2024111105500526000_74.5.314.3","doi-asserted-by":"crossref","first-page":"1080","DOI":"10.1001\/jamaoncol.2018.1395","article-title":"Cost-Effectiveness
-      of Osimertinib in the first-line treatment of patients with EGFR-mutated advanced
-      non-small cell lung cancer","volume":"4","author":"Aguiar","year":"2018","journal-title":"JAMA
-      Oncol"},{"key":"2024111105500526000_74.5.314.4","doi-asserted-by":"publisher","DOI":"10.1001\/jama.2019.11058"},{"key":"2024111105500526000_74.5.314.5","doi-asserted-by":"publisher","DOI":"10.1016\/j.pharmthera.2018.08.007"},{"key":"2024111105500526000_74.5.314.6","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa0810699"},{"key":"2024111105500526000_74.5.314.7","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa0904554"},{"key":"2024111105500526000_74.5.314.8","doi-asserted-by":"publisher","DOI":"10.1016\/S1470-2045(15)00077-7"},{"key":"2024111105500526000_74.5.314.9","doi-asserted-by":"publisher","DOI":"10.1634\/theoncologist.2013-0095"},{"key":"2024111105500526000_74.5.314.10","doi-asserted-by":"publisher","DOI":"10.1016\/j.lungcan.2014.01.023"},{"key":"2024111105500526000_74.5.314.11","doi-asserted-by":"publisher","DOI":"10.1007\/s40265-015-0533-4"},{"key":"2024111105500526000_74.5.314.12","doi-asserted-by":"publisher","DOI":"10.21037\/tlcr.2016.08.07"},{"key":"2024111105500526000_74.5.314.13","doi-asserted-by":"publisher","DOI":"10.1038\/ncomms9760"},{"key":"2024111105500526000_74.5.314.14","doi-asserted-by":"publisher","DOI":"10.1038\/nrclinonc.2017.14"},{"key":"2024111105500526000_74.5.314.15","first-page":"241","article-title":"Les
-      acides nucl\u00e9iques Du plasma sanguin CheZ l''homme","volume":"142","author":"Mandel","year":"1948","journal-title":"C
-      R Seances Soc Biol Fil"},{"key":"2024111105500526000_74.5.314.16","first-page":"646","article-title":"Free
-      DNA in the serum of cancer patients and the effect of therapy","volume":"37","author":"Leon","year":"1977","journal-title":"Cancer
-      Res"},{"key":"2024111105500526000_74.5.314.17","doi-asserted-by":"publisher","DOI":"10.1159\/000226740"},{"key":"2024111105500526000_74.5.314.18","doi-asserted-by":"publisher","DOI":"10.1007\/s10555-016-9629-x"},{"key":"2024111105500526000_74.5.314.19","doi-asserted-by":"publisher","DOI":"10.1097\/JTO.0000000000000263"},{"key":"2024111105500526000_74.5.314.20","doi-asserted-by":"publisher","DOI":"10.1158\/1078-0432.CCR-14-2594"},{"key":"2024111105500526000_74.5.314.21","doi-asserted-by":"publisher","DOI":"10.1038\/nature11156"},{"key":"2024111105500526000_74.5.314.22","doi-asserted-by":"publisher","DOI":"10.1038\/nature12065"},{"key":"2024111105500526000_74.5.314.23","doi-asserted-by":"publisher","DOI":"10.1038\/nm.3854"},{"key":"2024111105500526000_74.5.314.24","unstructured":"US
-      Food & Drug Administration . Premarket approval P150044 - Cobas EGFR MUTATION
-      TEST V2, 2016. Available: http:\/\/www.accessdata.fda.gov\/scripts\/cdrh\/cfdocs\/
-      cfpma\/pma.cfm?id=P150044"},{"key":"2024111105500526000_74.5.314.25","first-page":"3495","article-title":"Multiplexed
-      molecular profiling of lung cancer with malignant pleural effusion using next
-      generation sequencing in Chinese patients","volume":"19","author":"Ruan","year":"2020","journal-title":"Oncol
-      Lett"},{"key":"2024111105500526000_74.5.314.26","doi-asserted-by":"publisher","DOI":"10.1126\/scitranslmed.aaz8084"},{"key":"2024111105500526000_74.5.314.27","doi-asserted-by":"publisher","DOI":"10.1002\/ijc.32133"},{"key":"2024111105500526000_74.5.314.28","doi-asserted-by":"crossref","first-page":"176","DOI":"10.1016\/j.cels.2015.09.004","article-title":"Advancing
-      benchmarks for genome sequencing","volume":"1","author":"Zook","year":"2015","journal-title":"Cell
-      Syst"},{"key":"2024111105500526000_74.5.314.29","doi-asserted-by":"publisher","DOI":"10.1186\/s13104-015-1803-7"},{"key":"2024111105500526000_74.5.314.30","doi-asserted-by":"publisher","DOI":"10.1038\/nrc.2017.7"},{"key":"2024111105500526000_74.5.314.31","doi-asserted-by":"publisher","DOI":"10.1080\/14737159.2018.1400384"},{"key":"2024111105500526000_74.5.314.32","doi-asserted-by":"publisher","DOI":"10.1038\/nm.3519"},{"key":"2024111105500526000_74.5.314.33","doi-asserted-by":"publisher","DOI":"10.1038\/nbt.3520"},{"key":"2024111105500526000_74.5.314.34","doi-asserted-by":"publisher","DOI":"10.1126\/science.aai8690"},{"key":"2024111105500526000_74.5.314.35","doi-asserted-by":"publisher","DOI":"10.1002\/cncy.22134"},{"key":"2024111105500526000_74.5.314.36","doi-asserted-by":"publisher","DOI":"10.1002\/cncy.21868"}],"container-title":["Journal
-      of Clinical Pathology"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1136\/jclinpath-2020-206745","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,11,11]],"date-time":"2024-11-11T13:50:22Z","timestamp":1731333022000},"score":1,"resource":{"primary":{"URL":"https:\/\/jcp.bmj.com\/lookup\/doi\/10.1136\/jclinpath-2020-206745"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2020,8,17]]},"references-count":36,"journal-issue":{"issue":"5","published-online":{"date-parts":[[2021,4,19]]},"published-print":{"date-parts":[[2021,5]]}},"alternative-id":["10.1136\/jclinpath-2020-206745"],"URL":"https:\/\/doi.org\/10.1136\/jclinpath-2020-206745","relation":{},"ISSN":["0021-9746","1472-4146"],"issn-type":[{"type":"print","value":"0021-9746"},{"type":"electronic","value":"1472-4146"}],"subject":[],"published":{"date-parts":[[2020,8,17]]}}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/91bCW/bSJb+KwUBPRsDJM1D1GHM9sKRk7TdsZOW3TvTiYJFiSxJlVAkwyLtqIP8
+        9/lekZQoR06Tac8s0EbiQ2TVq3d97+Dj557KeV6o3kkv+dAzemuhFF8KM9+kAp/dJVnz01uRKZnE
+        uOBYtmXvrvROPvdkHIpPIqRfQ54LM+VZjn3fvnVtd2C4hmu/e2eUl3K5pt3pgmm7pmvf2P2T/vDE
+        t99gT7qKU63T3okzHDr+wB0N7YHnG70dfc/ybcvpfTF6mViITMSBMIOkiPPeiTcwemkxj6RaiQy3
+        Pr28wKZSqYJo+vg9koGIFf56+5nYz/KDZ7aNkeEMD5zZNu2R6QxvbPtE/7t/Zn88HLhu36YvHDBI
+        4lzEeUN4RaxSEciFhLSwu4j4xpSxGfINaNtG79fpS9y1yvP0ZHY8Ow4ywXN5K4JkvU5iZSXZcnZc
+        8aBmx/ONGQez475lz457X3DcRQFNZJq7s1fnpCyIyrO98ezYtx0Hp3JcZzAA6Zhrnq6wfRLziP0s
+        NmwqlOBZsGI8DtmZuBVRkq5xfvY6S5YZX9OJE2lypUSWi9Ccb7BDkCVKQRO4yO94BiN4C0k5w9+e
+        T+yxPfBtW2+Hjwb4iI7g2U7vXXU3mF8k+rzln3GxnmsG2uxBHMtQr6YfDzMrw9qqSSogfZiDL3rH
+        WmlhsuYy1vZR/fa2N1+/t6ALOr5etebZBzOD+jMZ5FrDeVYIaF6tkiw3aSusFBlMKI/I6noXbBLJ
+        mL3m+SqJtBiCQKT5A85jG0PDfffuy86sQzPNZHzYbB3D1/fyOQ7EA9zU+/t7nqsTJYIfZzE78FVe
+        16f78SkPPiwzeFL499lx4/NvrUx/vFkJBoLkhixZsJVcrsyPBY9kvmGx+JSbSwEBaDNjSnwscKOM
+        l+zJ1YvrI7b1YLYGM5mEIT6ZXh6xFVdMrlMRipDlIBBAZjLA1UJpKpH8WMiQzWWSKikUu5P5iqUR
+        h0JYIKLIXGRCsLOrU/YkWODHEYPMJysZc6vmLT3IV331IYl1keer+XsRkPd2Eefhq4zdrKRiKi/C
+        DeMAHIglYWHpooyzuHbj6SVLeSwitkgyBumLjD6t9UF2D6MllyZ/SkWG29ac5C9ueVSUWgqLjDT0
+        QebQz1KSLenPIfc4iU3IGAImKbOowH0Brc+g0OvJy8kRvCGCKkP2s8wU/IhhMVNAFfgQu5UZTpPE
+        QUJGwZ48xGwpDJnj1MGPP09Pr2sJVh89tO5odhyLIkvmsIScCGawo47krjqRE6kE4EIiDJ5zByNc
+        wO8g+kyQV+OXdkSfvXg+bU/0qUYzNuULKCnmqi1rT6enz9tTQVSDZ642YG5WAHo98ApfjMhJYRKx
+        ktoqKobbneDy2U3bAzDSWS4DMlpER3g+GWXt4zILCtgZfZQXa9AvfT0nX7ce8LD/mONfCoB7qLq4
+        /WWRl05W+hVihoJ758APuNJ8w4CW2mXhpTLk1YfXPF7C8xqoegc0xd9RuQ4QQZmJDhwaRqeXFpvU
+        BEjAyRoCJtHdwVEQXXiGZUQHOKvXq1R+EGzOFZRey54AlcGrHfsHhgiHZKRCCAsoJWKjRGwcdF4B
+        B0JcgXi00VSIq2wN+pqFRVLsMQAaOWGSstgpsibkl8RyQRBPrPEwoVipjxjKqKi4RNz/wcB3D9+d
+        H/RV797ZqhixxwlOU0qlxMz6+AtANuJRXJBpFxlyt5K4jG9lLdYSLYVe34RRYOTelv85o0PyVkR5
+        J6N7yPdcmxzeHjdsUQvP9baBONpQfEaOwxFL1pXxqn37MyCxICpC0quSnxq3yfixkR9Gd5d0p9AB
+        7MmsKalouXMHrDVKL0CGkq4Sla7AQriBnBMgbBKZfcM351LV1wTzzAr1A46NN4SRqpgXMeI1j3BL
+        Syx+ff6zNzltC8eGVmFL5juEMwPxWTz2pi+QdLMnfdMHBqSbIwKEViRwFNY+RJVU3JqKho9dAgb0
+        UcidgBfAhNEQOdA6jYRqOgWQAlp0nYbdAla1MdzDricHEe6ovfDac7UEV/8WpdDG+uAk5TsZAUiR
+        xZRSK0MdxYqMLJziBOq3H3QWS3jaYJtkUAuTxAUsKhEbGSYkj2rAYs+rZSS1fVFiG3+7esVD0kal
+        qJjSXY2hBpsXOe0dCeSRld9vt9fLgiRDirddUabbHKVzrcr/9yRkkpCdUdvhMUICzJpY5I+N27Pj
+        x8bpljt2MNyWO3ZA/JY7tnfa2uoaxV+dreV1eldVixSX71YSpgofjNgcpR+qwjintJ7W1bUi9S6y
+        JKozmntJDnX8UoFv8JqIzxN4V5KR7/1Zs+8Zjc6V4w1wiXKOlOcrUzfgXHsw7FMrr+rovAdcosY1
+        eYZAGIkedWYEf7ih8gedPWd44o5OvP6hzt7I95x+2dlLdeezh79Nz6VuaJGWtBKoaVO18JTu4YWJ
+        LPt2W462raPqbqOnwERAG0523TSpzG17hDpVdZPTselkVTsJXo76vAjqAp0faqnsjKLC2Xj5gJpk
+        7bvyAVN7yHKx8uq7V1a++B0rK5/7jpWlbz20sJlI7nkSdexSiFh+2pkodHWbRIW2pGGf2osF6r+y
+        C7tEZKK+70UR48KCr2VE1vHPgpRelj20bEHNElq5WEgU2GUrEcurLu2ZIBvWfRvo+IpaHKrIUPtt
+        jLKrZV5wKJk9hwvGoVrJlP2EbJFAw2BPhXwPjVd36jYx/LpsgZe/1AcmPgI+R2Gd3e+LGjtWrlcJ
+        KqN42eTnl3v88DCUZUfqG0zJW6kqsz2TfIl8l1JZMtOrJKbGsE4JCoWrCoFYGGzbrT6H1csc5V8Z
+        eZ8nSVkTnmXFkk1K5Hp8zq/4nhKvtU7/8lz/Q8Sf5B7jb1al+v/yrF8UPI7kY7C+58Dn1EjIkqYQ
+        pgIBJUYieYOIo1n4ScTw6EsR6r73s4+FLJ/FnOsnSBrvt0Ix2JuViJe/wzMfjfdfcIqcJ3sGn3wP
+        79O/nbEJTi4yg52uk02DbQXVWQZ7mSMn+afE7fGjHf+yWIg9zb2U3+Gtr1AdRMlyw55S+xGJEvsV
+        ZTYM7cU5eyGSeL3PwzW08PvqEbn4xz4PL7Q+/oT8X4hYpKgKzMpTmib02M7zi+SJSvbjhDbTP88C
+        nCeGg/AoX7En1bmPoIfHZ+JSpmKfhZ/4d9hRk4GnIss2xEZyz3oe++wTEnZ0TwNX/M+dHjFQGw6p
+        QQnxEYAVrOLSSc7jYHvDo3ExFd/MnLqe/5oAfMUl+w3Y/lGypzIxX684KptAFLnGWmikdufy3kfj
+        BRiXbPaTiMljBJTyaTJUYLDX4gOpBzCV7KLHJIkisRT/hqTw1XRyfrZX7iRZIMOy4KEpCBP/XdPz
+        Hc8c+LZTZcdUbwZUpJn69t7JgkeI9ztBFeLTHvL99l1Sug5WSVnCvqxr1E0pFHr+QfkD1J9vDRga
+        T+hw2U5ykKMe3shx8QUs5nFj7IUUe9BS/JXzqnc0MlROd/Rcb9xrzjQkMT1m+GbF3pz30YQ/iE1Z
+        uvuO4zoO7uz3fSrP/2/Yt3wLpbnlHJxY2U0INXoNnue6qMw5DyzX8bxRj/TUgoTbnoRjO9TOsIIo
+        AhHb8S17aME72pLy/mj+RleRZtWacOyRvU/ddqjPsub0QDyiA4wsxxtTK6XqndRTKr0JLMh8tliU
+        4ws674FtvVJyDcIylnMqi6krVFLUTxNz6rrUgJTCvnQ6q58bUX1v6pKaHt2Ft9RECnezBOz+LEGz
+        oG7W073TZSE5Xd4Irs0IPOCvugVUH//i9PKU6dStrWj7XbRYy5FEOLawod/aWvzu1pJScCJQ4qXK
+        bPyzh20JDroQ9EHw6tnFZcLtkWMPxuO2VIbfSWVs932/35bKqKvwrp3+kBqGff+J4x9hr+HQbC25
+        cQdqA68/O4aOkrJckConXXmIfXCvlvQcu7ttkM/AZYhY37Idy3a91uQ6YCNMfjg7Vn3bHfgmcMu0
+        fc8zW+vN6YCRrmN7oJVHQUZcDbS5t9aZcxgiH2DKG82OY5qsVOPhwG5NoxNWaBoZdbBhG8TRkDZo
+        S8q/D+pu3zkA1y/pSRjSKPyIiyCaFbYtxvIjTU2cFXX7UiG3KPQUnHjDov9agW/RBFqn7zah9hJZ
+        gIh2UOuM+4egdsKm7FoQaiskTwHlUxF7LlsDrzO4z+KgPzjA4vN6nq8KPBB9saZIU02fbQMOJS90
+        g9DRq3p6kfF00+TVGzZZfQm/bTI6HB5itKQzFao1a11Q0fHHOl923cGw394WO0GidmLgr09OPDDH
+        A3dsfmpNqgse2mOQurh5ZdnNL3fQGp3cLmDo+CN6uDIcmXbfc63JZGo6fdP1x60dze0EhtqnOU0G
+        OaA9aE2kU6rYIOLag9ZRxO2OgGvLG7UPwi7BX1E9dMLpaO761+uycPhbWTachmvkiNuxUYu9zgQ9
+        7RI542maJbeoO147vo3NmYkiY86VThHZ5a83pzfnr67YzbPrG/a/rqEnvmkSjMuIzyNxwraT8Xd3
+        dxaNTiuFioFbi5Bby+QWBh5kMs0VUvkwW+H7IkwC/MWCRbrms2N8s4LF+n9k+N/VEVoz/hUYe/2D
+        yfNlEeUyjeiFCLZGcUSDigCoLKHiDTkujS835mZ1how0WC5jmqXCwoKGZIFf+uF9NfdIk9Ts8CR1
+        NdlMoyQ1Cu7h+riJddOCN7COyqsDWKdTZ/ZS5Hlr4XTJMx13QHqSeog0WovQ4vz3kT1qr4pO+aaN
+        uk6+DyyP6rrWJA4j64PF1nBwsNITkaoqvTGwsH/AWk51OUR6nNO0LflJWYrr6UzRUPSeUps6fZPo
+        93d2NZF/KH5RjXW9Ue1V2gXwnRGp1PEcu68TRGdke+1Tba9T6lulVGUy1Z5GJ4gf2Ygo/aE3RFyu
+        KmVs57U3Ua872AOHfad1yeV1B/p5Dgpu6+TC65Lo1j5N3Rm4sxwNxu0JdaqKyZ2DONggnjpee310
+        KoR3NGDYo179VtD9V3lKFyNAn9Tvp2w7sTQokGRyKRtO+BafRZSGl6ChG9tY+EG3s3ZvfpV9VLWJ
+        qQWpZ8nopZo7mYmyrVq9oKQnSxpTJQ/NydTvM1XzMvtvoH39htqt7uJJ+jiEmBCxo+oYuKjkGpE4
+        k/nGDFYioFazlk4oUppWfWDoxjccx3CdA1M3QArHdJ0bZ3Ti2if+V1M3w4E37I9dv5q6UUGSYaVD
+        rcB6ZOZzL83kWrcbvxbi+yC1qne2ZscRcLJI24ntC1Er5g3FlW90NT7QrxV+e8qo2bNUzZcUa3Su
+        Xk38vPeOYqu2qGP0DWfc8dUwejcs0u8EUV/P1O/O/dGg1TvjK6l+PdH0kO3pl4G06XwG7fPr6yui
+        CP9yzPFQF3pAWdfsO/i9FGlc2Sk8Qg/+g3Dz9sqIS0bJ9+ubdvtsb9Jj6FkCx9Q2CnXS+1il8rYy
+        +7b+vnz5F1eAlAEmOwAA
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '3549'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:30:06 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -85,8 +99,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '4062'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:27:48 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -95,56 +117,76 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/works/10.1136/esmoopen-2020-000776
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,7,2]],"date-time":"2025-07-02T13:33:13Z","timestamp":1751463193208,"version":"3.37.3"},"reference-count":28,"publisher":"Elsevier
-      BV","issue":"4","license":[{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"},{"start":{"date-parts":[[2020,11,5]],"date-time":"2020-11-05T00:00:00Z","timestamp":1604534400000},"content-version":"vor","delay-in-days":309,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/"}],"funder":[{"DOI":"10.13039\/100009619","name":"Japan
-      Agency for Medical Research and Development","doi-asserted-by":"publisher","award":["JP18lk0201037"],"id":[{"id":"10.13039\/100009619","id-type":"DOI","asserted-by":"publisher"}]}],"content-domain":{"domain":["esmoopen.com","elsevier.com","sciencedirect.com"],"crossmark-restriction":true},"short-container-title":["ESMO
-      Open"],"published-print":{"date-parts":[[2020]]},"DOI":"10.1136\/esmoopen-2020-000776","type":"journal-article","created":{"date-parts":[[2020,8,20]],"date-time":"2020-08-20T05:50:49Z","timestamp":1597902649000},"page":"e000776","update-policy":"https:\/\/doi.org\/10.1016\/elsevier_cm_policy","source":"Crossref","is-referenced-by-count":14,"title":["Phase
-      II study of lenvatinib for metastatic colorectal cancer refractory to standard
-      chemotherapy: the LEMON study (NCCH1503)"],"prefix":"10.1016","volume":"5","clinical-trial-number":[{"clinical-trial-number":"nct03797326","registry":"10.18810\/clinical-trials-gov"},{"clinical-trial-number":"nct04008797","registry":"10.18810\/clinical-trials-gov"}],"author":[{"ORCID":"https:\/\/orcid.org\/0000-0003-3863-9582","authenticated-orcid":false,"given":"Satoru","family":"Iwasa","sequence":"first","affiliation":[]},{"given":"Natsuko","family":"Okita","sequence":"additional","affiliation":[]},{"given":"Aya","family":"Kuchiba","sequence":"additional","affiliation":[]},{"given":"Gakuto","family":"Ogawa","sequence":"additional","affiliation":[]},{"given":"Mamiko","family":"Kawasaki","sequence":"additional","affiliation":[]},{"given":"Kenichi","family":"Nakamura","sequence":"additional","affiliation":[]},{"given":"Hirokazu","family":"Shoji","sequence":"additional","affiliation":[]},{"given":"Yoshitaka","family":"Honma","sequence":"additional","affiliation":[]},{"given":"Atsuo","family":"Takashima","sequence":"additional","affiliation":[]},{"given":"Ken","family":"Kato","sequence":"additional","affiliation":[]},{"given":"Tetsuya","family":"Hamaguchi","sequence":"additional","affiliation":[]},{"given":"Narikazu","family":"Boku","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0003-0692-8419","authenticated-orcid":false,"given":"Yasuhide","family":"Yamada","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"author":"Saltz","key":"10.1136\/esmoopen-2020-000776_bb0010"},{"author":"Tabernero","key":"10.1136\/esmoopen-2020-000776_bb0015"},{"author":"Van
-      Cutsem","key":"10.1136\/esmoopen-2020-000776_bb0020"},{"author":"Yamazaki","key":"10.1136\/esmoopen-2020-000776_bb0025"},{"author":"Price","key":"10.1136\/esmoopen-2020-000776_bb0030"},{"author":"Mayer","key":"10.1136\/esmoopen-2020-000776_bb0035"},{"author":"Grothey","key":"10.1136\/esmoopen-2020-000776_bb0040"},{"author":"Matsui","key":"10.1136\/esmoopen-2020-000776_bb0045"},{"author":"Matsui","key":"10.1136\/esmoopen-2020-000776_bb0050"},{"author":"Wiegering","key":"10.1136\/esmoopen-2020-000776_bb0055"},{"author":"Hong","key":"10.1136\/esmoopen-2020-000776_bb0060"},{"author":"Boss","key":"10.1136\/esmoopen-2020-000776_bb0065"},{"author":"Yamada","key":"10.1136\/esmoopen-2020-000776_bb0070"},{"author":"Nakamichi","key":"10.1136\/esmoopen-2020-000776_bb0075"},{"author":"Kiyota","key":"10.1136\/esmoopen-2020-000776_bb0080"},{"author":"Yoshino","key":"10.1136\/esmoopen-2020-000776_bb0085"},{"author":"Tahara","key":"10.1136\/esmoopen-2020-000776_bb0090"},{"author":"Takahashi","key":"10.1136\/esmoopen-2020-000776_bb0095"},{"author":"Yamashita","key":"10.1136\/esmoopen-2020-000776_bb0100"},{"author":"Kudo","key":"10.1136\/esmoopen-2020-000776_bb0105"},{"author":"Schlumberger","key":"10.1136\/esmoopen-2020-000776_bb0110"},{"author":"Li","key":"10.1136\/esmoopen-2020-000776_bb0115"},{"author":"Van
-      Cutsem","key":"10.1136\/esmoopen-2020-000776_bb0120"},{"author":"Ott","key":"10.1136\/esmoopen-2020-000776_bb0125"},{"author":"Kato","key":"10.1136\/esmoopen-2020-000776_bb0130"},{"author":"Taylor","key":"10.1136\/esmoopen-2020-000776_bb0135"},{"author":"Makker","key":"10.1136\/esmoopen-2020-000776_bb0140"},{"key":"10.1136\/esmoopen-2020-000776_bb0145","doi-asserted-by":"crossref","DOI":"10.1200\/JCO.2019.37.15_suppl.2522","article-title":"Regorafenib
-      plus nivolumab in patients with advanced gastric (GC) or colorectal cancer (CRC):
-      an open-label, dose-finding, and dose-expansion phase 1B trial (REGONIVO, EPOC1603)","volume":"37","author":"Fukuoka","year":"2019","journal-title":"JCO"}],"container-title":["ESMO
-      Open"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2059702920326508?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S2059702920326508?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/syndication.highwire.org\/content\/doi\/10.1136\/esmoopen-2020-000776","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,13]],"date-time":"2021-06-13T04:27:08Z","timestamp":1623558428000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S2059702920326508"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2020]]},"references-count":28,"journal-issue":{"issue":"4","published-print":{"date-parts":[[2020]]}},"alternative-id":["S2059702920326508"],"URL":"https:\/\/doi.org\/10.1136\/esmoopen-2020-000776","relation":{},"ISSN":["2059-7029"],"issn-type":[{"type":"print","value":"2059-7029"}],"subject":[],"published":{"date-parts":[[2020]]},"assertion":[{"value":"Elsevier","name":"publisher","label":"This
-      article is maintained by"},{"value":"Phase II study of lenvatinib for metastatic
-      colorectal cancer refractory to standard chemotherapy: the LEMON study (NCCH1503)","name":"articletitle","label":"Article
-      Title"},{"value":"ESMO Open","name":"journaltitle","label":"Journal Title"},{"value":"https:\/\/doi.org\/10.1136\/esmoopen-2020-000776","name":"articlelink","label":"CrossRef
-      DOI link to publisher maintained version"},{"value":"article","name":"content_type","label":"Content
-      Type"},{"value":"\u00a9 2020 THE AUTHORS. Published by Elsevier Limited on behalf
-      of European Society for Medical Oncology; Originally published by BMJ.","name":"copyright","label":"Copyright"}],"article-number":"e000776"}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '2210'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:30:06 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -152,8 +194,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '2260'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:27:48 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -162,10 +212,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

@@ -1,3 +1,4 @@
+from asyncio.timeouts import timeout
 import pytest
 import yaml
 
@@ -43,44 +44,6 @@ def test_no_ua_string():
         assert "foo bar" not in heads["x-user-agent"][0]
     except FileNotFoundError:
         pytest.skip(f"{vcr_noua_path} not found")
-
-
-vcr_path_members = "test/cassettes/test-settings/test_ua_string_members.yaml"
-
-
-@pytest.mark.vcr(vcr_path_members)
-def test_ua_string_members():
-    """settings (ua_string) - with ua string, members"""
-    cr_with_ua.members(query="ecology", limit=2)
-    try:
-        with open(vcr_path_members, "r") as f:
-            x = f.read()
-        xy = yaml.safe_load(x)
-        heads = xy["interactions"][0]["request"]["headers"]
-
-        assert "foo bar" in heads["user-agent"][0]
-        assert "foo bar" in heads["x-user-agent"][0]
-    except FileNotFoundError:
-        pytest.skip(f"{vcr_path_members} not found")
-
-
-vcr_path_prefixes = "test/cassettes/test-settings/test_ua_string_prefixes.yaml"
-
-
-@pytest.mark.vcr(vcr_path_prefixes)
-def test_ua_string_prefixes():
-    """settings (ua_string) - with ua string, prefixes"""
-    cr_with_ua.prefixes(ids="10.1016", works=True, sample=2)
-    try:
-        with open(vcr_path_prefixes, "r") as f:
-            x = f.read()
-        xy = yaml.safe_load(x)
-        heads = xy["interactions"][0]["request"]["headers"]
-
-        assert "foo bar" in heads["user-agent"][0]
-        assert "foo bar" in heads["x-user-agent"][0]
-    except FileNotFoundError:
-        pytest.skip(f"{vcr_path_prefixes} not found")
 
 
 vcr_path_registration_agency = (

@@ -5,31 +5,63 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/journals?query=ecology&rows=2
   response:
-    content: '{"status":"ok","message-type":"journal-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"ecology"},"total-results":304,"items":[{"last-status-check-time":1752284733881,"counts":{"current-dois":808,"backfile-dois":24561,"total-dois":25369},"breakdowns":{"dois-by-issued-year":[[2002,772],[2000,724],[2001,698],[1998,603],[1997,594],[1999,578],[2010,535],[2017,463],[2008,460],[2016,449],[2004,435],[2015,433],[2005,433],[2006,432],[2009,417],[2007,414],[2003,411],[2014,402],[2019,386],[2018,375],[2013,363],[2021,351],[2012,342],[2022,329],[2023,318],[2020,315],[1993,315],[2011,311],[1995,311],[1996,310],[1987,308],[1990,301],[1994,297],[1988,292],[2024,287],[1982,285],[1991,280],[1992,276],[1989,276],[1985,260],[1981,260],[1983,255],[1984,254],[1986,242],[1974,237],[1968,236],[1973,222],[1969,222],[1980,221],[1975,220],[1967,220],[1966,212],[1972,211],[1971,208],[2025,203],[1977,203],[1970,201],[1976,200],[1978,195],[1959,195],[1960,193],[1964,191],[1961,189],[1965,187],[1979,186],[1956,175],[1963,173],[1957,172],[1958,170],[1962,165],[1955,153],[1954,127],[1953,127],[1952,112],[1951,108],[1940,107],[1936,101],[1950,100],[1941,95],[1935,93],[1939,89],[1938,88],[1945,87],[1942,87],[1937,86],[1949,84],[1943,84],[1930,82],[1948,81],[1947,80],[1924,78],[1928,74],[1931,73],[1927,72],[1944,70],[1929,70],[1932,69],[1934,68],[1946,65],[1923,63],[1926,62],[1922,61],[1921,60],[1925,59],[1933,53],[1920,42]]},"publisher":"Wiley
-      (John Wiley & Sons)","coverage":{"affiliations-current":0.8712871287128713,"similarity-checking-current":0.9616336633663366,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.06331175440739384,"licenses-backfile":0.9782989291966939,"funders-current":0.7165841584158416,"affiliations-backfile":0.09918162941248321,"resource-links-backfile":0.9782582142420911,"orcids-backfile":0.04727006229388054,"update-policies-current":0.9616336633663366,"ror-ids-backfile":0.0,"orcids-current":0.8391089108910891,"similarity-checking-backfile":0.9207279833882985,"references-backfile":0.3264932209600586,"descriptions-backfile":0.0,"award-numbers-backfile":0.0476772118399088,"update-policies-backfile":0.06571393672896055,"licenses-current":0.9616336633663366,"award-numbers-current":0.6089108910891089,"abstracts-backfile":0.3611823622816661,"resource-links-current":0.1695544554455446,"abstracts-current":0.7301980198019802,"references-current":0.7933168316831684},"title":"Ecology","subjects":[],"coverage-type":{"all":{"last-status-check-time":1752284733881,"affiliations":0.1237682301931415,"abstracts":0.3729207725660229,"orcids":0.07248718959400867,"licenses":0.9777296018919984,"references":0.3413480488766259,"funders":0.08411509657075286,"similarity-checking":0.9219944816712653,"award-numbers":0.06554986204178163,"ror-ids":0.0,"update-policies":0.09424517146235711,"resource-links":0.952463539613717,"descriptions":0.0},"backfile":{"last-status-check-time":1752284733881,"affiliations":0.09918162941248321,"abstracts":0.3611823622816661,"orcids":0.04727006229388054,"licenses":0.9782989291966939,"references":0.3264932209600586,"funders":0.06331175440739384,"similarity-checking":0.9207279833882985,"award-numbers":0.0476772118399088,"ror-ids":0.0,"update-policies":0.06571393672896055,"resource-links":0.9782582142420911,"descriptions":0.0},"current":{"last-status-check-time":1752284733881,"affiliations":0.8712871287128713,"abstracts":0.7301980198019802,"orcids":0.8391089108910891,"licenses":0.9616336633663366,"references":0.7933168316831684,"funders":0.7165841584158416,"similarity-checking":0.9616336633663366,"award-numbers":0.6089108910891089,"ror-ids":0.0,"update-policies":0.9616336633663366,"resource-links":0.1695544554455446,"descriptions":0.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":true,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":true,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["0012-9658","1939-9170"],"issn-type":[{"type":"print","value":"0012-9658"},{"type":"electronic","value":"1939-9170"}]},{"last-status-check-time":1752279509990,"counts":{"current-dois":86,"backfile-dois":2169,"total-dois":2255},"breakdowns":{"dois-by-issued-year":[[2010,71],[2015,70],[2013,69],[2009,65],[2012,62],[2008,61],[2006,57],[2019,55],[2011,49],[2014,46],[2007,46],[2005,45],[1980,45],[1998,44],[2022,43],[2020,43],[2018,42],[2016,39],[2004,39],[1983,39],[2017,38],[2003,38],[2000,38],[1999,38],[1976,38],[2002,37],[2021,36],[1995,36],[1994,36],[1996,35],[2024,34],[2023,33],[2001,33],[1992,33],[1997,32],[1993,32],[1985,32],[1990,31],[1991,30],[1989,30],[1986,30],[1982,30],[1988,29],[1981,28],[1973,28],[1987,27],[1984,27],[1979,25],[1977,24],[1978,22],[1970,22],[1975,20],[2025,19],[1972,19],[1967,19],[1966,19],[1968,18],[1969,17],[1963,16],[1952,16],[1965,15],[1974,13],[1964,12],[1953,12],[1956,11],[1971,9],[1962,8]]},"publisher":"Wiley
-      (John Wiley & Sons)","coverage":{"affiliations-current":0.6976744186046512,"similarity-checking-current":0.2209302325581395,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.2295988934993084,"licenses-backfile":0.921622867680959,"funders-current":0.3604651162790698,"affiliations-backfile":0.8934993084370678,"resource-links-backfile":0.851083448593822,"orcids-backfile":0.0599354541263255,"update-policies-current":0.8837209302325582,"ror-ids-backfile":0.0,"orcids-current":0.6976744186046512,"similarity-checking-backfile":0.921622867680959,"references-backfile":0.8188105117565698,"descriptions-backfile":0.0,"award-numbers-backfile":0.1212540341171047,"update-policies-backfile":0.6459197786998617,"licenses-current":0.8837209302325582,"award-numbers-current":0.2790697674418605,"abstracts-backfile":0.781005071461503,"resource-links-current":0.04651162790697674,"abstracts-current":0.6627906976744186,"references-current":0.6976744186046512},"title":"Population
-      Ecology","subjects":[],"coverage-type":{"all":{"last-status-check-time":1752279509990,"affiliations":0.8852459016393442,"abstracts":0.7758085954807266,"orcids":0.08418254319893664,"licenses":0.9193619849357554,"references":0.8134692069118299,"funders":0.2343819229065131,"similarity-checking":0.8941072219760744,"award-numbers":0.127159946832078,"ror-ids":0.0,"update-policies":0.6544085068675233,"resource-links":0.819672131147541,"descriptions":0.0},"backfile":{"last-status-check-time":1752279509990,"affiliations":0.8934993084370678,"abstracts":0.781005071461503,"orcids":0.0599354541263255,"licenses":0.921622867680959,"references":0.8188105117565698,"funders":0.2295988934993084,"similarity-checking":0.921622867680959,"award-numbers":0.1212540341171047,"ror-ids":0.0,"update-policies":0.6459197786998617,"resource-links":0.851083448593822,"descriptions":0.0},"current":{"last-status-check-time":1752279509990,"affiliations":0.6976744186046512,"abstracts":0.6627906976744186,"orcids":0.6976744186046512,"licenses":0.8837209302325582,"references":0.6976744186046512,"funders":0.3604651162790698,"similarity-checking":0.2209302325581395,"award-numbers":0.2790697674418605,"ror-ids":0.0,"update-policies":0.8837209302325582,"resource-links":0.04651162790697674,"descriptions":0.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":true,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":true,"deposits-resource-links-current":true,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":true,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":true,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":true,"deposits-update-policies-current":true,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["1438-3896","1438-390X"],"issn-type":[{"type":"print","value":"1438-3896"},{"type":"electronic","value":"1438-390X"}]}]}}'
+    body:
+      string: !!binary |
+        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
+        AA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '2298'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 03:20:00 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -37,8 +69,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '2338'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:06:37 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -47,10 +87,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

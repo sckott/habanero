@@ -5,226 +5,107 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/members/98/works?rows=5
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":151007,"items":[{"indexed":{"date-parts":[[2023,8,30]],"date-time":"2023-08-30T20:51:03Z","timestamp":1693428663198},"reference-count":21,"publisher":"Hindawi
-      Limited","issue":"2","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":1624,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2012,1]]},"DOI":"10.1111\/j.1365-2109.2011.02829.x","type":"journal-article","created":{"date-parts":[[2011,3,23]],"date-time":"2011-03-23T02:44:02Z","timestamp":1300848242000},"page":"292-296","source":"Crossref","is-referenced-by-count":10,"title":["Spawning-related
-      mortality in captive Atlantic cod (Gadus morhua L.)"],"prefix":"10.1155","volume":"43","author":[{"given":"T\u00f3mas","family":"\u00c1rnason","sequence":"first","affiliation":[]},{"given":"Bj\u00f6rn","family":"Bj\u00f6rnsson","sequence":"additional","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2011,3,22]]},"reference":[{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB1|cit1","doi-asserted-by":"crossref","first-page":"290","DOI":"10.1079\/9781845934941.0290","volume-title":"Finfish
-      Aquaculture Diversification","author":"Bj\u00f6rnsson","year":"2010"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB2|cit2","first-page":"677","volume-title":"The
-      propagation of cod Gadus morhua L. Vol. 1, Fl\u00f8devigen Rapportserie","author":"Braaten","year":"1984"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB3|cit3","first-page":"84","volume-title":"Fiskehelse
-      og Fiskesykdommer","author":"Eggset","year":"2002"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB4|cit4","first-page":"289","volume-title":"Proceedings
-      of the 6th International Symposium on the Reproductive Physiology of Fish","author":"Finn","year":"2000"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB5|cit5","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1046\/j.1439-0426.1999.00098.x","article-title":"Feeding
-      behaviour of cod (Gadus morhua) in relation to spawning","volume":"15","author":"Fordham","year":"1999","journal-title":"Journal
-      of Applied Ichthyology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB6|cit6","first-page":"1","article-title":"Mortality
-      of cod in sea-cages","volume":"10","author":"Gunnarsson","year":"2010","journal-title":"Sj\u00e1var\u00fatvegurinn-vefrit
-      um sj\u00e1var\u00fatvegsm\u00e1l"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB7|cit7","first-page":"42","article-title":"Categorization
-      of mortality causes in cod farming","volume":"34","author":"Hanche-Olsen","year":"2009","journal-title":"Norsk
-      fiskeoppdrett"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB8|cit8","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1016\/S0044-8486(01)00610-X","article-title":"Growth,
-      gonadal development and spawning time of Atlantic cod (Gadus morhua) reared
-      under different photoperiods","volume":"203","author":"Hansen","year":"2001","journal-title":"Aquaculture"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB9|cit9","doi-asserted-by":"crossref","first-page":"159","DOI":"10.1016\/0044-8486(94)00399-9","article-title":"Effects
-      of periodic starvation on reproductive investment in first-time spawning Atlantic
-      cod (Gadus morhua L)","volume":"133","author":"Karlsen","year":"1995","journal-title":"Aquaculture"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB11|cit10","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1111\/j.1095-8649.1989.tb03302.x","article-title":"The
-      spawning activity of cod, Gadus morhua L","volume":"34","author":"Kjesbu","year":"1989","journal-title":"Journal
-      of Fish Biology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB10|cit11","doi-asserted-by":"crossref","first-page":"719","DOI":"10.1111\/j.1095-8649.1994.tb00939.x","article-title":"Time
-      of start of spawning in Atlantic cod (Gadus morhua) females in relation to vitellogenic
-      oocyte diameter, temperature, fish length and condition","volume":"45","author":"Kjesbu","year":"1994","journal-title":"Journal
-      of Fish Biology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB12|cit12","doi-asserted-by":"crossref","first-page":"2333","DOI":"10.1139\/f91-274","article-title":"Fecundity,
-      atresia, and egg size of captive Atlantic cod (Gadus morhua) in relation to
-      proximate body composition","volume":"48","author":"Kjesbu","year":"1991","journal-title":"Canadian
-      Journal of Fisheries and Aquatic Sciences"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB13|cit13","first-page":"68","volume-title":"Fiskehelse
-      og Fiskesykdommer","author":"Larsen","year":"2002"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB14|cit14","doi-asserted-by":"crossref","first-page":"824","DOI":"10.1006\/jmsc.2000.0568","article-title":"Spatial
-      variation in abundance, size composition and viable egg production of spawning
-      cod (Gadus morhua L.) in Icelandic waters","volume":"57","author":"Marteinsd\u00f3ttir","year":"2000","journal-title":"ICES
-      Journal of Marine Science"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB15|cit15","doi-asserted-by":"crossref","first-page":"477","DOI":"10.1111\/j.1095-8649.1999.tb00629.x","article-title":"The
-      effect of stress on reproduction in Atlantic cod","volume":"54","author":"Morgan","year":"1999","journal-title":"Journal
-      of Fish Biology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB16|cit16","doi-asserted-by":"crossref","first-page":"1383","DOI":"10.1139\/f58-076","article-title":"Studies
-      on reproduction and feeding of Atlantic cod (Gadus callarias L.) in the Southwestern
-      Gulf of St. Lawrence","volume":"15","author":"Powles","year":"1958","journal-title":"Fisheries
-      Research Board Canada"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB17|cit17","doi-asserted-by":"crossref","first-page":"194","DOI":"10.1016\/j.icesjms.2005.11.012","article-title":"Worldwide
-      status and perspective on gadoid culture","volume":"63","author":"Rosenlund","year":"2006","journal-title":"ICES
-      Journal of Marine Science"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB18|cit18","doi-asserted-by":"crossref","first-page":"163","DOI":"10.1007\/s10695-005-4319-6","article-title":"The
-      effect of photoperiod on sexual maturation, appetite and growth in wild Atlantic
-      cod (Gadus morhua L.)","volume":"30","author":"Skjaeraasen","year":"2004","journal-title":"Fish
-      Physiology and Biochemistry"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB19|cit19","doi-asserted-by":"crossref","first-page":"433","DOI":"10.1002\/9780470995617.ch10","volume-title":"Culture
-      of Cold-Water Marine Fish","author":"Sv\u00e5sand","year":"2004"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB20|cit20","doi-asserted-by":"crossref","first-page":"55","DOI":"10.2960\/J.v33.a4","article-title":"Experimental
-      methods to monitor the production and quality of eggs of captive marine fish","volume":"33","author":"Thorsen","year":"2003","journal-title":"Journal
-      of Northwest Atlantic Fishery Science"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB21|cit21","first-page":"64","volume-title":"Havbruksrapporten
-      2002, Fisken og Havet, 3","author":"Van der Meeren","year":"2002"}],"container-title":["Aquaculture
-      Research"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1365-2109.2011.02829.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1365-2109.2011.02829.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:55:18Z","timestamp":1671540918000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1365-2109.2011.02829.x"}},"subtitle":["Spawning-related
-      mortality in captive Atlantic cod"],"issued":{"date-parts":[[2011,3,22]]},"references-count":21,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2012,1]]}},"URL":"https:\/\/doi.org\/10.1111\/j.1365-2109.2011.02829.x","ISSN":["1355-557X"],"issn-type":[{"value":"1355-557X","type":"print"}],"published":{"date-parts":[[2011,3,22]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T13:14:33Z","timestamp":1724418873372},"reference-count":17,"publisher":"Hindawi
-      Limited","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2038,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2010,2]]},"DOI":"10.1111\/j.1742-1241.2009.02256.x","type":"journal-article","created":{"date-parts":[[2010,1,11]],"date-time":"2010-01-11T17:43:16Z","timestamp":1263231796000},"page":"316-321","source":"Crossref","is-referenced-by-count":14,"title":["Low-grade
-      fever: how to distinguish organic from non-organic forms"],"prefix":"10.1155","volume":"64","author":[{"given":"M.","family":"Affronti","sequence":"first","affiliation":[]},{"given":"P.","family":"Mansueto","sequence":"additional","affiliation":[]},{"given":"M.","family":"Soresi","sequence":"additional","affiliation":[]},{"given":"A.
-      M.","family":"Abbene","sequence":"additional","affiliation":[]},{"given":"A.","family":"Affronti","sequence":"additional","affiliation":[]},{"given":"M.","family":"Valenti","sequence":"additional","affiliation":[]},{"given":"L.","family":"Giannitrapani","sequence":"additional","affiliation":[]},{"given":"G.","family":"Montalto","sequence":"additional","affiliation":[]}],"member":"98","reference":[{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB1","first-page":"775","volume-title":"Cecil
-      Essentials of Medicine","author":"Blosson","year":"2007"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB2","doi-asserted-by":"crossref","first-page":"68","DOI":"10.1016\/S1385-299X(01)00089-7","article-title":"Hypothalamic
-      neuroactivity in specific processes and central regulation of body temperature
-      and water intake","volume":"8","author":"Takahashi","year":"2001","journal-title":"Brain
-      Res Brain Res Protoc"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB3","doi-asserted-by":"crossref","first-page":"126","DOI":"10.1016\/S0304-3940(01)01865-1","article-title":"The
-      role of preoptic area and anterior hypothalamus and median raphe nucleus on
-      thermoregulatory system in freely moving rats","volume":"22","author":"Ishiwata","year":"2001","journal-title":"Neurosci
-      Lett"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB4","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1097\/00005792-196102000-00001","article-title":"Fever
-      of unexplained origin: report on 100 cases","volume":"40","author":"Petersdorf","year":"1961","journal-title":"Medicine"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB5","doi-asserted-by":"crossref","first-page":"1033","DOI":"10.1001\/archinte.163.9.1033","article-title":"From
-      prolonged febrile illness to fever of unknown origin: the challenge continues","volume":"163","author":"Vanderschueren","year":"2003","journal-title":"Arch
-      Intern Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB6","first-page":"5","volume-title":"Le
-      Febbri di Origine Oscura, una Guida Alla Diagnosi","author":"Iandolo","year":"1987"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB7","doi-asserted-by":"crossref","first-page":"1225","DOI":"10.1001\/archinte.1979.03630480015009","article-title":"Fever
-      patterns. Their lack of clinical significance","volume":"139","author":"Musher","year":"1979","journal-title":"Arch
-      Intern Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB8","first-page":"125S","article-title":"Le
-      Febbri di Origine Sconosciuta: un frequente, costoso cimento","volume":"19","author":"Mansueto","year":"2004","journal-title":"Atti
-      del 105\u00e2\u0080\u0083\u00c2\u00b0 Congresso Nazionale della Societ\u00c3\u00a0
-      Italiana di Medicina Interna, Palermo"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB9","doi-asserted-by":"crossref","first-page":"392","DOI":"10.1097\/00005792-199711000-00002","article-title":"Fever
-      of unknown origin. I A prospective multicenter study of 167 patients with FUO,
-      using fixed epidemiologic entry criteria. The Netherlands Study Group","volume":"76","author":"De
-      Kleijn","year":"1997","journal-title":"Medicine (Baltimore)"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB10","doi-asserted-by":"crossref","first-page":"575","DOI":"10.1016\/S0140-6736(97)07061-X","article-title":"Fever
-      Of unknown origin","volume":"350","author":"Arnow","year":"1997","journal-title":"The
-      Lancet"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB11","doi-asserted-by":"crossref","first-page":"632","DOI":"10.1080\/00365540600606564","article-title":"Fever
-      of unknown origin in adults: evaluation of 144 cases in a non-university hospital","volume":"38","author":"Zenone","year":"2006","journal-title":"Scand
-      J Infect Dis"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB12","first-page":"35","article-title":"Fever
-      of unknown origin \u00e2\u0080\u0093 re-examined and redefined","volume":"11","author":"Durack","year":"1991","journal-title":"Curr
-      Clin Trop Infect Dis"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB13","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1001\/archinte.1992.00400130077008","article-title":"Fever
-      of unknown origin in the 1980s. An update of the diagnostic spectrum","volume":"152","author":"Knockaert","year":"1992","journal-title":"Arch
-      Int Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB14","doi-asserted-by":"crossref","first-page":"1860","DOI":"10.1001\/jama.1932.27410740001012","article-title":"Habitual
-      hypertermia","volume":"99","author":"Reimann","year":"1932","journal-title":"JAMA"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB15","doi-asserted-by":"crossref","first-page":"219","DOI":"10.1007\/s11739-008-0129-z","article-title":"Fever
-      of unknown origin in a Mediterranean survey from a division of Internal Medicine:
-      report of 91 cases during a 12-year-period (1991\u00e2\u0080\u00932002)","volume":"3","author":"Mansueto","year":"2008","journal-title":"Intern
-      Emerg Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB16","doi-asserted-by":"crossref","first-page":"884","DOI":"10.1136\/pgmj.68.805.884","article-title":"Pyrexia
-      of unknown origin: changing spectrum of diseases in two consecutive series","volume":"68","author":"Barbado","year":"1992","journal-title":"Postgrad
-      Med J"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB17","doi-asserted-by":"crossref","first-page":"205","DOI":"10.1097\/00006231-200603000-00002","article-title":"Fever
-      of unknown origin: a systematic review of the literature for 1995\u00e2\u0080\u00932004","volume":"27","author":"Gaeta","year":"2006","journal-title":"Nucl
-      Med Comm"}],"container-title":["International Journal of Clinical Practice"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1742-1241.2009.02256.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1742-1241.2009.02256.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T06:07:37Z","timestamp":1643350057000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1742-1241.2009.02256.x"}},"issued":{"date-parts":[[2010,2]]},"references-count":17,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2010,2]]}},"URL":"https:\/\/doi.org\/10.1111\/j.1742-1241.2009.02256.x","ISSN":["1368-5031","1742-1241"],"issn-type":[{"value":"1368-5031","type":"print"},{"value":"1742-1241","type":"electronic"}],"published":{"date-parts":[[2010,2]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T12:33:10Z","timestamp":1724416390476},"reference-count":81,"publisher":"Hindawi
-      Limited","issue":"2","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":3471,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Dermatol
-      Ther"],"published-print":{"date-parts":[[2006,3]]},"DOI":"10.1111\/j.1529-8019.2006.00059.x","type":"journal-article","created":{"date-parts":[[2006,4,10]],"date-time":"2006-04-10T15:50:02Z","timestamp":1144684202000},"page":"108-117","source":"Crossref","is-referenced-by-count":12,"title":["Atopic
-      dermatitis prevention"],"prefix":"10.1155","volume":"19","author":[{"given":"Eric
-      L.","family":"Simpson","sequence":"first","affiliation":[]}],"member":"98","reference":[{"key":"b1_69","doi-asserted-by":"crossref","DOI":"10.3310\/hta4370","volume":"4","author":"Hoare
-      C","year":"2000","journal-title":"Health Technology Assessment"},{"key":"b2_70","doi-asserted-by":"publisher","DOI":"10.1001\/archderm.138.3.391"},{"key":"b3_71","volume-title":"Clinical
-      preventive medicine","author":"Lang RS","year":"2002","edition":"2"},{"key":"b4_72","doi-asserted-by":"crossref","first-page":"7","DOI":"10.1111\/j.1399-3038.1999.tb00421.x","volume":"10","author":"Beyer
-      K","year":"1999","journal-title":"Pediatr Allergy Immunol"},{"key":"b5_73","doi-asserted-by":"crossref","first-page":"465","DOI":"10.1111\/j.1651-2227.1976.tb04915.x","volume":"65","author":"Kjellman
-      NI","year":"1976","journal-title":"Acta Paediatr Scand"},{"key":"b6_74","doi-asserted-by":"crossref","first-page":"739","DOI":"10.1111\/j.1365-2222.1991.tb03204.x","volume":"21","author":"Hide
-      DW","year":"1991","journal-title":"Clin Exp Allergy"},{"key":"b7_75","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(94)91641-1"},{"key":"b8_76","doi-asserted-by":"crossref","first-page":"423","DOI":"10.1111\/j.1365-2222.1994.tb00930.x","volume":"24","author":"Warner
-      JA","year":"1994","journal-title":"Clin Exp Allergy"},{"key":"b9_77","doi-asserted-by":"crossref","first-page":"543","DOI":"10.1111\/j.1365-2222.1995.tb01092.x","volume":"25","author":"Borres
-      MP","year":"1995","journal-title":"Clin Exp Allergy"},{"key":"b10_78","doi-asserted-by":"crossref","first-page":"422","DOI":"10.1016\/S0190-9622(84)70184-8","volume":"11","author":"Heskel
-      NS","year":"1984","journal-title":"J Am Acad Dermatol"},{"key":"b11_79","doi-asserted-by":"crossref","first-page":"677","DOI":"10.1111\/j.1398-9995.1994.tb00141.x","volume":"49","author":"Odelram
-      H","year":"1994","journal-title":"Allergy"},{"key":"b12_80","first-page":"15","volume-title":"Handbook
-      of atopic eczema","author":"Schultz Larsen F","year":"1991"},{"key":"b13_81","doi-asserted-by":"crossref","first-page":"1018","DOI":"10.1136\/adc.67.8.1018","volume":"67","author":"Dold
-      S","year":"1992","journal-title":"Arch Dis Child"},{"key":"b14_82","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2222.1997.310899.x"},{"key":"b15_83","first-page":"214","volume-title":"Atopic
-      dermatitis - the epidemiology, causes and prevention of atopic eczema","author":"Mar
-      A","year":"2000"},{"key":"b16_84","doi-asserted-by":"crossref","unstructured":"16.EL
-      Simpson, and JM Hanifin . Periodic synopsis on atopic dermatitis . J Am Acad
-      Dermatol2005 : 53 : 115 -128 .","DOI":"10.1016\/j.jaad.2005.01.130"},{"key":"b17_85","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2004.04.027"},{"key":"b18_86","doi-asserted-by":"publisher","DOI":"10.1007\/BF00412924"},{"key":"b19_87","first-page":"72","volume":"4","author":"Kramer
-      MS","year":"2004","journal-title":"Cochrane Library"},{"key":"b21_88","doi-asserted-by":"publisher","DOI":"10.1067\/mjd.2001.114741"},{"key":"b22_89","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2222.2002.01274.x"},{"key":"b23_90","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(02)11025-7"},{"key":"b24_91","doi-asserted-by":"publisher","DOI":"10.1093\/aje\/kwh208"},{"key":"b25_92","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaad.2003.08.003"},{"key":"b26_93","doi-asserted-by":"publisher","DOI":"10.1111\/j.1399-3038.2004.00127.x"},{"key":"b27_94","doi-asserted-by":"crossref","first-page":"101","DOI":"10.1111\/j.1399-3038.1993.tb00077.x","volume":"4","author":"Businco
-      L","year":"1993","journal-title":"Pediatr Allergy Immunol"},{"key":"b28_95","doi-asserted-by":"publisher","DOI":"10.1067\/mai.2003.101"},{"key":"b29_96","doi-asserted-by":"publisher","DOI":"10.1016\/S0022-3476(88)80054-4"},{"key":"b30_97","doi-asserted-by":"publisher","DOI":"10.1016\/S0091-6749(95)70074-9"},{"key":"b31_98","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.2000.03666.x"},{"key":"b32_99","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.2001.04283.x"},{"key":"b33_100","doi-asserted-by":"publisher","DOI":"10.1164\/rccm.2106026"},{"key":"b34_101","doi-asserted-by":"publisher","DOI":"10.1034\/j.1398-9995.2001.056002152.x"},{"key":"b35_102","doi-asserted-by":"crossref","first-page":"439","DOI":"10.1136\/gut.32.4.439","volume":"32","author":"Fuller
-      R","year":"1991","journal-title":"Gut"},{"key":"b36_103","first-page":"456","volume":"119","author":"Isolauri
-      E","year":"2000","journal-title":"Clin Exp Allergy"},{"key":"b37_104","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(00)04259-8"},{"key":"b38_105","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(03)13490-3"},{"key":"b39_106","doi-asserted-by":"publisher","DOI":"10.1001\/archderm.138.3.391"},{"key":"b40_107","doi-asserted-by":"publisher","DOI":"10.1016\/S0168-1605(98)00128-7"},{"key":"b41_108","doi-asserted-by":"crossref","first-page":"3345","DOI":"10.1128\/IAI.65.8.3345-3351.1997","volume":"65","author":"Wagner
-      RD","year":"1997","journal-title":"Infect Immunol"},{"key":"b42_109","doi-asserted-by":"crossref","first-page":"4949","DOI":"10.1128\/AEM.65.11.4949-4956.1999","volume":"65","author":"Jacobsen
-      CN","year":"1999","journal-title":"Appl Environ Microbiol"},{"key":"b43_110","doi-asserted-by":"publisher","DOI":"10.1067\/mai.2003.389"},{"key":"b44_111","doi-asserted-by":"publisher","DOI":"10.1001\/archderm.130.11.1402"},{"key":"b45_112","doi-asserted-by":"crossref","first-page":"429","DOI":"10.2340\/0001555575429433","volume":"75","author":"Seidenari
-      S","year":"1995","journal-title":"Acta Derm Venereol"},{"key":"b46_113","doi-asserted-by":"publisher","DOI":"10.1046\/j.1523-1747.2000.00072.x"},{"key":"b47_114","first-page":"1079","volume":"137","author":"Elias
-      PM","year":"2001","journal-title":"Arch Dermatol"},{"key":"b48_115","doi-asserted-by":"crossref","first-page":"660","DOI":"10.1016\/S0022-3476(96)80132-6","volume":"128","author":"Nopper
-      AJ","year":"1996","journal-title":"J Pediatrics"},{"key":"b49_116","doi-asserted-by":"crossref","first-page":"1039","DOI":"10.1016\/S0140-6736(05)71140-5","volume":"365","author":"Darmstadt
-      GL","year":"2005","journal-title":"Lancet"},{"key":"b50_117","doi-asserted-by":"crossref","first-page":"123","DOI":"10.3109\/9780203908877-8","volume-title":"Atopic
-      dermatitis","author":"Proksch E","year":"2002"},{"key":"b51_118","doi-asserted-by":"publisher","DOI":"10.1080\/000155599750011705"},{"key":"b52_119","doi-asserted-by":"publisher","DOI":"10.1080\/080352502753711678"},{"key":"b53_120","doi-asserted-by":"publisher","DOI":"10.1542\/peds.105.5.1041"},{"key":"b54_121","doi-asserted-by":"publisher","DOI":"10.1016\/S0011-393X(98)85076-5"},{"key":"b55_122","doi-asserted-by":"crossref","first-page":"321","DOI":"10.1111\/j.1525-1470.1997.tb00968.x","volume":"14","author":"Lucky
-      AW","year":"1997","journal-title":"Pediatr Dermatol"},{"key":"b56_123","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.1999.02660.x"},{"key":"b57_124","doi-asserted-by":"publisher","DOI":"10.1067\/mjd.2002.124617"},{"key":"b58_125","doi-asserted-by":"publisher","DOI":"10.1067\/mai.2001.112942"},{"key":"b59_126","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2004.05.066"},{"key":"b60_127","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.2002.05006.x"},{"key":"b61_128","doi-asserted-by":"crossref","first-page":"1367","DOI":"10.1136\/bmj.326.7403.1367","volume":"326","author":"Berth-Jones
-      J","year":"2003","journal-title":"Br Med J"},{"key":"b62_129","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.1999.02893.x"},{"key":"b63_130","doi-asserted-by":"publisher","DOI":"10.1542\/peds.110.1.e2"},{"key":"b64_131","doi-asserted-by":"crossref","first-page":"78","DOI":"10.1001\/archderm.137.1.78","volume":"137","author":"Tausk
-      FA","year":"2001","journal-title":"Arch Dermatol"},{"key":"b65_132","doi-asserted-by":"publisher","DOI":"10.1111\/j.0022-202X.2005.23589.x"},{"key":"b66_133","doi-asserted-by":"publisher","DOI":"10.1037\/\/0022-006X.63.4.624"},{"key":"b67_134","doi-asserted-by":"publisher","DOI":"10.1046\/j.1525-1470.1998.1998015390.x"},{"key":"b68_135","doi-asserted-by":"crossref","first-page":"286","DOI":"10.1016\/S0190-9622(88)70041-9","volume":"18","author":"Cole
-      WC","year":"1988","journal-title":"J Am Acad Dermatol"},{"key":"b69_136","doi-asserted-by":"crossref","first-page":"778","DOI":"10.1111\/j.1365-2133.1995.tb00726.x","volume":"132","author":"Stewart
-      AC","year":"1995","journal-title":"Br J Dermatol"},{"key":"b70_137","doi-asserted-by":"crossref","first-page":"495","DOI":"10.2340\/00015555-70495499","volume":"70","author":"Broberg
-      A","year":"1990","journal-title":"Acta Derm Venereol"},{"key":"b71_138","doi-asserted-by":"publisher","DOI":"10.1016\/S0022-3476(89)80323-3"},{"key":"b72_139","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-2222.2004.1953.x"},{"key":"b73_140","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(78)91199-6"},{"key":"b74_141","doi-asserted-by":"publisher","DOI":"10.1111\/j.1398-9995.2004.00571.x"},{"key":"b75_142","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaad.2004.03.025"},{"key":"b76_143","doi-asserted-by":"crossref","unstructured":"76.MM
-      Thompson, and JM Hanifin . Effective therapy of childhood atopic dermatitis
-      allays food allergy concerns . J Am Acad Dermatol2005 : 53 : 5214 -5219 .","DOI":"10.1016\/j.jaad.2005.04.065"},{"key":"b77_144","doi-asserted-by":"publisher","DOI":"10.1034\/j.1398-9995.2001.056002152.x"},{"key":"b78_145","doi-asserted-by":"crossref","first-page":"765","DOI":"10.1172\/JCI8624","volume":"105","author":"Herrick
-      CA","year":"2000","journal-title":"J Clin Invest"},{"key":"b79_146","doi-asserted-by":"crossref","first-page":"1614","DOI":"10.1172\/JCI1647","volume":"101","author":"Spergel
-      JM","year":"1998","journal-title":"J Clin Invest"},{"key":"b80_147","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2003.09.033"},{"key":"b81_148","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2003.09.033"},{"key":"b82_149","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa013536"}],"container-title":["Dermatologic
-      Therapy"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1529-8019.2006.00059.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1529-8019.2006.00059.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,2,3]],"date-time":"2024-02-03T18:16:00Z","timestamp":1706984160000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1529-8019.2006.00059.x"}},"issued":{"date-parts":[[2006,3]]},"references-count":81,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2006,3]]}},"alternative-id":["10.1111\/j.1529-8019.2006.00059.x"],"URL":"https:\/\/doi.org\/10.1111\/j.1529-8019.2006.00059.x","ISSN":["1396-0296","1529-8019"],"issn-type":[{"value":"1396-0296","type":"print"},{"value":"1529-8019","type":"electronic"}],"published":{"date-parts":[[2006,3]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T12:36:20Z","timestamp":1724416580909},"reference-count":60,"publisher":"Hindawi
-      Limited","issue":"s9","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2831,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Pediatr
-      Diabetes"],"published-print":{"date-parts":[[2007,12]]},"DOI":"10.1111\/j.1399-5448.2007.00338.x","type":"journal-article","created":{"date-parts":[[2007,11,7]],"date-time":"2007-11-07T07:40:59Z","timestamp":1194421259000},"page":"88-95","source":"Crossref","is-referenced-by-count":27,"title":["Double
-      or hybrid diabetes associated with an increase in type 1 and type 2 diabetes
-      in children and youths"],"prefix":"10.1155","volume":"8","author":[{"given":"Paolo","family":"Pozzilli","sequence":"first","affiliation":[]},{"given":"Chiara","family":"Guglielmi","sequence":"additional","affiliation":[]},{"given":"Ekaterina","family":"Pronina","sequence":"additional","affiliation":[]},{"given":"Elena","family":"Petraikina","sequence":"additional","affiliation":[]}],"member":"98","reference":[{"key":"b1_210","doi-asserted-by":"publisher","DOI":"10.1016\/j.ecl.2005.04.010"},{"key":"b2_211","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.20.4.484"},{"key":"b3_212","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.21.1.80"},{"key":"b4_213","doi-asserted-by":"publisher","DOI":"10.1097\/00008480-200008000-00004"},{"key":"b5_214","first-page":"52","volume":"147","author":"Dean
-      HJ","year":"1992","journal-title":"CMAJ"},{"key":"b6_215","doi-asserted-by":"crossref","first-page":"12217","DOI":"10.1073\/pnas.0605480103","volume":"103","author":"Donath
-      MY","year":"2006","journal-title":"Proc Natl Acad Sci USA"},{"key":"b7_216","doi-asserted-by":"crossref","first-page":"52","DOI":"10.1016\/j.tem.2006.12.003","volume":"18","author":"Pozzilli
-      P","year":"2007","journal-title":"Trends Endocrinol Metab"},{"key":"b8_217","doi-asserted-by":"publisher","DOI":"10.1007\/s00125-002-0845-2"},{"key":"b9_218","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.23.3.381"},{"key":"b10_219","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.26.10.2876"},{"key":"b11_220","doi-asserted-by":"publisher","DOI":"10.1034\/j.1399-5448.2003.00012.x"},{"key":"b12_221","doi-asserted-by":"crossref","first-page":"2760","DOI":"10.1001\/jama.297.24.2760","volume":"297","author":"Writing
-      Group for the SEARCH for Diabetes in Youth Study Group","year":"2007","journal-title":"JAMA"},{"key":"b13_222","doi-asserted-by":"crossref","first-page":"971","DOI":"10.1093\/ajcn\/75.6.971","volume":"75","author":"Wang
-      Y","year":"2002","journal-title":"Am J Clin Nutr"},{"key":"b14_223","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(02)09678-2"},{"key":"b15_224","doi-asserted-by":"crossref","first-page":"1457","DOI":"10.1038\/sj.bjc.6603703","volume":"96","author":"Larsson
-      SC","year":"2000","journal-title":"Br J Cancer"},{"key":"b16_225","first-page":"1","volume":"894","author":"Report
-      of a WHO Consultation","year":"2000","journal-title":"World Health Organ Tech
-      Rep Ser"},{"key":"b17_226","doi-asserted-by":"publisher","DOI":"10.1046\/j.1440-6047.11.supp3.9.x"},{"key":"b18_227","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-789X.2004.00133.x"},{"key":"b19_228","first-page":"1","volume":"916","year":"2003","journal-title":"World
-      Health Organ Tech Rep Ser"},{"key":"b20_229","unstructured":"20. WorldHeartFederation(2007
-      ). Children, Adolescents and Heart Disease . Geneva (available fromhttp:\/\/www.worldheart.org\/pdf\/press.factsheets.children.pdf)."},{"key":"b21_230","doi-asserted-by":"publisher","DOI":"10.1046\/j.1467-789X.2003.00116.x"},{"key":"b22_231","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-789X.2005.00176.x"},{"key":"b23_232","doi-asserted-by":"publisher","DOI":"10.1111\/j.1464-5491.2006.01925.x"},{"key":"b24_233","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.23.12.1755"},{"key":"b25_234","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.28.2.290"},{"key":"b26_235","doi-asserted-by":"crossref","first-page":"420","DOI":"10.1007\/s00125-003-1045-4","volume":"46","author":"Hermann
-      R","year":"2003","journal-title":"Diabetologia"},{"key":"b27_236","doi-asserted-by":"publisher","DOI":"10.1046\/j.1464-5491.2003.01005.x"},{"key":"b28_237","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(04)17357-1"},{"key":"b29_238","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.27.12.2790"},{"key":"b30_239","doi-asserted-by":"publisher","DOI":"10.1196\/annals.1372.029"},{"key":"b31_240","doi-asserted-by":"publisher","DOI":"10.1111\/j.1399-543X.2004.00060.x"},{"key":"b32_241","doi-asserted-by":"crossref","first-page":"276","DOI":"10.26719\/2000.6.2-3.276","volume":"6","author":"El-Hazmi
-      MA","year":"2000","journal-title":"East Mediterr Health J"},{"key":"b33_242","doi-asserted-by":"publisher","DOI":"10.1016\/0168-8227(96)01262-4"},{"key":"b34_243","doi-asserted-by":"publisher","DOI":"10.1016\/S0168-8227(01)00267-4"},{"key":"b35_244","first-page":"71","volume":"16","author":"Likitmascul
-      S","year":"2003","journal-title":"J Pediatr Endocrinol Metab"},{"key":"b36_245","doi-asserted-by":"publisher","DOI":"10.2337\/diabetes.48.12.2422"},{"key":"b37_246","doi-asserted-by":"publisher","DOI":"10.1016\/S0168-8227(96)01337-X"},{"key":"b38_247","doi-asserted-by":"crossref","first-page":"183","DOI":"10.1515\/JPEM.2004.17.2.183","volume":"17","author":"Cruz
-      M","year":"2004","journal-title":"J Pediatr Endocrinol Metab"},{"key":"b39_248","volume":"29","author":"Ramos
-      OF","year":"2003","journal-title":"Diabetes Metab"},{"key":"b40_249","doi-asserted-by":"publisher","DOI":"10.1080\/08035250510026788"},{"key":"b41_250","doi-asserted-by":"publisher","DOI":"10.2337\/dc06-1813"},{"key":"b42_251","doi-asserted-by":"crossref","DOI":"10.1067\/mpd.2001.112510","volume":"138","author":"Rapaport
-      R","year":"2001","journal-title":"J Pediatr"},{"key":"b43_252","doi-asserted-by":"crossref","first-page":"437","DOI":"10.1136\/adc.2005.088229","volume":"91","author":"Reinehr
-      T","year":"2006","journal-title":"Arch Dis Child"},{"key":"b44_253","doi-asserted-by":"crossref","first-page":"2954","DOI":"10.2337\/diacare.26.10.2954","volume":"26","author":"Libman
-      IM","year":"2003","journal-title":"Diabetes Care"},{"key":"b45_254","doi-asserted-by":"crossref","first-page":"288","DOI":"10.1007\/s00125-001-0724-2","volume":"45","author":"Wilkins
-      TJ","year":"2002","journal-title":"Diabetologia"},{"key":"b46_255","doi-asserted-by":"publisher","DOI":"10.1007\/s11892-003-0020-2"},{"key":"b47_256","doi-asserted-by":"publisher","DOI":"10.2337\/diabetes.51.5.1356"},{"key":"b48_257","doi-asserted-by":"crossref","first-page":"3137","DOI":"10.4049\/jimmunol.174.6.3137","volume":"174","author":"Matarese
-      G","year":"2005","journal-title":"J Immunol"},{"key":"b49_258","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2265.2003.01966.x"},{"key":"b50_259","doi-asserted-by":"crossref","first-page":"875","DOI":"10.4049\/jimmunol.168.2.875","volume":"168","author":"Busso
-      N","year":"2002","journal-title":"J Immunol"},{"key":"b51_260","doi-asserted-by":"publisher","DOI":"10.1172\/JCI200319246"},{"key":"b52_261","doi-asserted-by":"publisher","DOI":"10.1161\/01.CIR.0000127960.28627.75"},{"key":"b53_262","doi-asserted-by":"publisher","DOI":"10.1172\/JCI200319451"},{"key":"b54_263","doi-asserted-by":"publisher","DOI":"10.1172\/JCI200316721"},{"key":"b55_264","doi-asserted-by":"crossref","first-page":"555","DOI":"10.1007\/s001250051194","volume":"42","author":"Ronaldsson
-      O","year":"1999","journal-title":"Diabetologia"},{"key":"b56_265","doi-asserted-by":"publisher","DOI":"10.1016\/S0896-8411(03)00039-8"},{"key":"b57_266","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa012512"},{"key":"b58_267","doi-asserted-by":"publisher","DOI":"10.1111\/j.1399-5448.2007.00237.x"},{"key":"b59_268","doi-asserted-by":"publisher","DOI":"10.1196\/annals.1375.012"},{"key":"b60_269","doi-asserted-by":"publisher","DOI":"10.1002\/dmrr.503"}],"container-title":["Pediatric
-      Diabetes"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1399-5448.2007.00338.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1399-5448.2007.00338.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,5,14]],"date-time":"2023-05-14T16:50:08Z","timestamp":1684083008000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1399-5448.2007.00338.x"}},"issued":{"date-parts":[[2007,12]]},"references-count":60,"journal-issue":{"issue":"s9","published-print":{"date-parts":[[2007,12]]}},"alternative-id":["10.1111\/j.1399-5448.2007.00338.x"],"URL":"https:\/\/doi.org\/10.1111\/j.1399-5448.2007.00338.x","ISSN":["1399-543X","1399-5448"],"issn-type":[{"value":"1399-543X","type":"print"},{"value":"1399-5448","type":"electronic"}],"published":{"date-parts":[[2007,12]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T11:52:47Z","timestamp":1724413967933},"reference-count":35,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Gastroenterology
-      Research and Practice"],"published-print":{"date-parts":[[2016]]},"abstract":"<jats:p><jats:italic>Objective<\/jats:italic>.
-      The aim of the present study was to investigate whether pentraxin 3 (PTX3) can
-      be a new noninvasive marker for prediction of liver fibrosis in patients with
-      NAFLD. We also aimed to evaluate the relationship between PTX3 and atherosclerosis
-      in patients with NAFLD.<jats:italic>Method<\/jats:italic>. Fifty-four male patients
-      with biopsy-proven NAFLD and 20 apparently healthy male volunteers were included.
-      PTX3 levels were determined, using an ELISA method (R&amp;D Sysytems, Quantikine
-      ELISA, USA). To detect the presence of subclinical atherosclerosis in NAFLD,
-      measurements of CIMT, FMD, and cf-PWV levels were performed.<jats:italic>Results<\/jats:italic>.
-      PTX3 levels in NAFLD patients with fibrosis were higher than both NAFLD patients
-      without fibrosis and controls (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-      id=\"M1\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn fontstyle=\"italic\">0.032<\/mml:mn><\/mml:math>and<mml:math
-      xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" id=\"M2\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn
-      fontstyle=\"italic\">0.028<\/mml:mn><\/mml:math>, respectively), but there was
-      no difference between controls and NAFLD patients without fibrosis in terms
-      of PTX3 levels (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-      id=\"M3\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn fontstyle=\"italic\">0.903<\/mml:mn><\/mml:math>).
-      PTX3 levels were strongly correlated with cf-PWV (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-      id=\"M4\"><mml:mi>r<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn fontstyle=\"italic\">0.359<\/mml:mn><\/mml:math>,<mml:math
-      xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" id=\"M5\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn
-      fontstyle=\"italic\">0.003<\/mml:mn><\/mml:math>), whereas no significant correlation
-      was found with other atherosclerosis markers, CIMT and FMD.<jats:italic>Conclusion<\/jats:italic>.
-      Elevated plasma PTX3 levels are associated with the presence of fibrosis in
-      patients with NAFLD, independently of metabolic syndrome components. This study
-      demonstrated that for the first time there is a close association between elevated
-      PTX3 levels and increased arterial stiffness in patients with NAFLD.<\/jats:p>","DOI":"10.1155\/2016\/1417962","type":"journal-article","created":{"date-parts":[[2016,2,22]],"date-time":"2016-02-22T21:01:29Z","timestamp":1456174889000},"page":"1-7","source":"Crossref","is-referenced-by-count":13,"title":["Pentraxin
-      3 Is a Predictor for Fibrosis and Arterial Stiffness in Patients with Nonalcoholic
-      Fatty Liver Disease"],"prefix":"10.1155","volume":"2016","author":[{"given":"Kadir","family":"Ozturk","sequence":"first","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Omer","family":"Kurt","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Tolga","family":"Dogan","sequence":"additional","affiliation":[{"name":"Department
-      of Internal Medicine, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Alptug","family":"Ozen","sequence":"additional","affiliation":[{"name":"Department
-      of Radiology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Hakan","family":"Demirci","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Fatih","family":"Yesildal","sequence":"additional","affiliation":[{"name":"Department
-      of Medical Biochemistry, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Murat","family":"Kantarcioglu","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Turker","family":"Turker","sequence":"additional","affiliation":[{"name":"Department
-      of Health Public and Epidemiology, Gulhane School of Medicine, 06010 Ankara,
-      Turkey"}]},{"given":"Ahmet Kerem","family":"Guler","sequence":"additional","affiliation":[{"name":"Department
-      of Internal Medicine, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Y\u0131ld\u0131r\u0131m","family":"Karslioglu","sequence":"additional","affiliation":[{"name":"Department
-      of Pathology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Battal","family":"Altun","sequence":"additional","affiliation":[{"name":"Department
-      of Internal Medicine, Kas\u0131mpasa Military Hospital, Istanbul, Turkey"}]},{"given":"Ahmet","family":"Uygun","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Sait","family":"Bagci","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]}],"member":"98","reference":[{"key":"1","doi-asserted-by":"publisher","DOI":"10.1056\/nejmra011775"},{"key":"2","doi-asserted-by":"publisher","DOI":"10.1016\/s0016-5085(98)70599-2"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.1046\/j.1440-1746.2003.02989.x"},{"key":"4","doi-asserted-by":"publisher","DOI":"10.1002\/hep.510300604"},{"issue":"10","key":"5","first-page":"823","volume":"26","year":"2002","journal-title":"Gastroenterologie
-      Clinique et Biologique"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.3748\/wjg.v11.i2.255"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1186\/1471-230x-6-34"},{"key":"8","doi-asserted-by":"publisher","DOI":"10.1161\/01.atv.0000012282.39306.64"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1146\/annurev.immunol.23.021704.115756"},{"key":"10","doi-asserted-by":"publisher","DOI":"10.1016\/j.atherosclerosis.2009.10.033"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1016\/j.atherosclerosis.2015.04.009"},{"key":"12","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pone.0049286"},{"issue":"11","key":"13","first-page":"1583","volume":"18","year":"2014","journal-title":"European
-      Review for Medical and Pharmacological Sciences"},{"key":"14","doi-asserted-by":"publisher","DOI":"10.1186\/1471-230x-8-53"},{"key":"15","doi-asserted-by":"publisher","DOI":"10.1089\/met.2015.0046"},{"issue":"6","key":"16","doi-asserted-by":"crossref","first-page":"499","DOI":"10.1093\/clinchem\/18.6.499","volume":"18","year":"1972","journal-title":"Clinical
-      Chemistry"},{"key":"17","doi-asserted-by":"crossref","first-page":"S81","DOI":"10.2337\/dc14-S081","volume":"37","year":"2014","journal-title":"Diabetes
-      Care"},{"key":"18","doi-asserted-by":"publisher","DOI":"10.1007\/bf00280883"},{"key":"19","doi-asserted-by":"publisher","DOI":"10.1002\/hep.20701"},{"key":"20","doi-asserted-by":"publisher","DOI":"10.1055\/s-0028-1091981"},{"key":"21","doi-asserted-by":"publisher","DOI":"10.1002\/hep.24001"},{"key":"22","doi-asserted-by":"publisher","DOI":"10.1111\/j.1440-1746.2004.03362.x"},{"key":"23","doi-asserted-by":"publisher","DOI":"10.1038\/ni.1854"},{"key":"24","doi-asserted-by":"publisher","DOI":"10.1016\/j.mehy.2012.05.011"},{"key":"25","doi-asserted-by":"publisher","DOI":"10.1016\/j.numecd.2013.10.030"},{"key":"26","doi-asserted-by":"publisher","DOI":"10.1016\/j.jhep.2010.12.017"},{"key":"27","doi-asserted-by":"publisher","DOI":"10.1111\/j.1572-0241.2008.02034.x"},{"key":"28","doi-asserted-by":"publisher","DOI":"10.1016\/j.atherosclerosis.2013.07.052"},{"key":"29","doi-asserted-by":"publisher","DOI":"10.1038\/ajh.2010.144"},{"key":"30","doi-asserted-by":"publisher","DOI":"10.1093\/ajh\/hpt103"},{"key":"31","doi-asserted-by":"publisher","DOI":"10.1038\/jhh.2015.105"},{"key":"32","doi-asserted-by":"publisher","DOI":"10.1038\/ajh.2010.248"},{"key":"33","doi-asserted-by":"publisher","DOI":"10.1161\/01.atv.zhq0504.0173"},{"key":"34","doi-asserted-by":"publisher","DOI":"10.1161\/circulationaha.105.535435"},{"key":"35","doi-asserted-by":"publisher","DOI":"10.5551\/jat.no613"}],"container-title":["Gastroenterology
-      Research and Practice"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/grp\/2016\/1417962.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/grp\/2016\/1417962.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/grp\/2016\/1417962.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,9,15]],"date-time":"2020-09-15T23:21:30Z","timestamp":1600212090000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/grp\/2016\/1417962\/"}},"issued":{"date-parts":[[2016]]},"references-count":35,"alternative-id":["1417962","1417962"],"URL":"https:\/\/doi.org\/10.1155\/2016\/1417962","ISSN":["1687-6121","1687-630X"],"issn-type":[{"value":"1687-6121","type":"print"},{"value":"1687-630X","type":"electronic"}],"published":{"date-parts":[[2016]]}}],"items-per-page":5,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '11168'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:30:08 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -232,8 +113,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '4881'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:28:46 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -242,10 +131,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

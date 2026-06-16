@@ -5,147 +5,163 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/works?query=widget&cursor=%2A
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"next-cursor":"DnF1ZXJ5VGhlbkZldGNoJAAAAABCf9GKFnJJeVBjYXBCUlFXb0dNNkVrbFktV3cAAAAAQitnARZMeVZxUF9jN1RLZUlhMjRpazc3Q0JRAAAAAEHvxnQWLXRxcGRqMklSczZsX1B1LWxIMWRGUQAAAABB78ZzFi10cXBkajJJUnM2bF9QdS1sSDFkRlEAAAAAD_EGxxZHTHRaMjlaZ1RwR2Q1YWFfMURpNTBnAAAAABFnNNkWbWlGZ0pSbjFTbHV5bXkxaE5qOFliQQAAAABBSa3fFjBpV0RZM2JiU2pTeEk1bmdZZEVJRUEAAAAAQitnAhZMeVZxUF9jN1RLZUlhMjRpazc3Q0JRAAAAABFnNNoWbWlGZ0pSbjFTbHV5bXkxaE5qOFliQQAAAAAP8QbGFkdMdFoyOVpnVHBHZDVhYV8xRGk1MGcAAAAAQitnAxZMeVZxUF9jN1RLZUlhMjRpazc3Q0JRAAAAAEIrZwUWTHlWcVBfYzdUS2VJYTI0aWs3N0NCUQAAAABCZx7DFjFxZVFGUzZtUWJlakF6eGhfa0NlaEEAAAAAQxpW3BY1d1hDaEYyb1RZcVdxcW5Nclg3ZktRAAAAAEJ_0YsWckl5UGNhcEJSUVdvR002RWtsWS1XdwAAAABCpMhnFnViempRUnd2UlpPY0owOE9NVG9vLUEAAAAAQk2TUxZXczluajY0RVFVYS1tbW80eklrT2NBAAAAAEHvxnUWLXRxcGRqMklSczZsX1B1LWxIMWRGUQAAAABBSa3eFjBpV0RZM2JiU2pTeEk1bmdZZEVJRUEAAAAAQxpW3RY1d1hDaEYyb1RZcVdxcW5Nclg3ZktRAAAAAEJ_0Y0Wckl5UGNhcEJSUVdvR002RWtsWS1XdwAAAABCuim1Flk0U0I5Nm9mU1VhV0xBMDZtZjdaTlEAAAAAQUmt3RYwaVdEWTNiYlNqU3hJNW5nWWRFSUVBAAAAAEJ_0YwWckl5UGNhcEJSUVdvR002RWtsWS1XdwAAAABB78Z2Fi10cXBkajJJUnM2bF9QdS1sSDFkRlEAAAAAQitnBBZMeVZxUF9jN1RLZUlhMjRpazc3Q0JRAAAAAEKkyGYWdWJ6alFSd3ZSWk9jSjA4T01Ub28tQQAAAABCgA5CFngyS1ZqLWY3U0xpVnh4S1FhczdrOFEAAAAAQmcexBYxcWVRRlM2bVFiZWpBenhoX2tDZWhBAAAAAEHvxncWLXRxcGRqMklSczZsX1B1LWxIMWRGUQAAAABCuimxFlk0U0I5Nm9mU1VhV0xBMDZtZjdaTlEAAAAAQn_RjhZySXlQY2FwQlJRV29HTTZFa2xZLVd3AAAAAEK6KbIWWTRTQjk2b2ZTVWFXTEEwNm1mN1pOUQAAAABCuimzFlk0U0I5Nm9mU1VhV0xBMDZtZjdaTlEAAAAAQroptBZZNFNCOTZvZlNVYVdMQTA2bWY3Wk5RAAAAAEOZrZkWYUZMSVpSdWFTeUM1SEtxeVc4RWxuQQ==","total-results":419,"items":[{"indexed":{"date-parts":[[2024,9,6]],"date-time":"2024-09-06T02:45:48Z","timestamp":1725590748847},"publisher-location":"Berlin\/Heidelberg","reference-count":0,"publisher":"Springer-Verlag","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1007\/springerreference_66110","type":"reference-entry","created":{"date-parts":[[2011,8,29]],"date-time":"2011-08-29T12:57:47Z","timestamp":1314622667000},"source":"Crossref","is-referenced-by-count":0,"title":["Web
-      Widget"],"prefix":"10.1007","member":"297","container-title":["SpringerReference"],"language":"en","deposited":{"date-parts":[[2011,8,29]],"date-time":"2011-08-29T13:12:29Z","timestamp":1314623549000},"score":21.31392,"resource":{"primary":{"URL":"http:\/\/www.springerreference.com\/index\/doi\/10.1007\/SpringerReference_66110"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/springerreference_66110"},{"indexed":{"date-parts":[[2024,9,4]],"date-time":"2024-09-04T22:59:26Z","timestamp":1725490766949},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"print","value":"9781590598160"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1007\/978-1-4302-0197-7_9","type":"book-chapter","created":{"date-parts":[[2007,9,8]],"date-time":"2007-09-08T13:37:48Z","timestamp":1189258668000},"page":"305-349","source":"Crossref","is-referenced-by-count":0,"title":["Widget
-      Mania: Using a GUI Widget Framework"],"prefix":"10.1007","member":"297","container-title":["Practical
-      JavaScript\u2122, DOM Scripting, and Ajax Projects"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4302-0197-7_9.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,5,1]],"date-time":"2021-05-01T00:01:45Z","timestamp":1619827305000},"score":21.12829,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-1-4302-0197-7_9"}},"issued":{"date-parts":[[null]]},"ISBN":["9781590598160"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4302-0197-7_9"},{"indexed":{"date-parts":[[2025,3,26]],"date-time":"2025-03-26T15:59:30Z","timestamp":1743004770434,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484267004"}],"license":[{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2020]]},"DOI":"10.1007\/978-1-4842-6700-4_7","type":"book-chapter","created":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:20Z","timestamp":1605193460000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Adding
-      a Widget Intent"],"prefix":"10.1007","author":[{"given":"Stewart","family":"Lynch","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2020,11,13]]},"container-title":["Introducing
-      WidgetKit for iOS"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-6700-4_7","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:22Z","timestamp":1605193462000},"score":20.401068,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-1-4842-6700-4_7"}},"issued":{"date-parts":[[2020]]},"ISBN":["9781484267004"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-6700-4_7","published":{"date-parts":[[2020]]},"assertion":[{"value":"13
-      November 2020","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2025,3,27]],"date-time":"2025-03-27T18:07:56Z","timestamp":1743098876388,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484267004"}],"license":[{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2020]]},"DOI":"10.1007\/978-1-4842-6700-4_5","type":"book-chapter","created":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:20Z","timestamp":1605193460000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Adding
-      Additional Widget Sizes"],"prefix":"10.1007","author":[{"given":"Stewart","family":"Lynch","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2020,11,13]]},"container-title":["Introducing
-      WidgetKit for iOS"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-6700-4_5","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:26Z","timestamp":1605193466000},"score":20.391739,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-1-4842-6700-4_5"}},"issued":{"date-parts":[[2020]]},"ISBN":["9781484267004"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-6700-4_5","published":{"date-parts":[[2020]]},"assertion":[{"value":"13
-      November 2020","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2024,10,29]],"date-time":"2024-10-29T09:45:20Z","timestamp":1730195120930,"version":"3.28.0"},"reference-count":26,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2009,9]]},"DOI":"10.1109\/afrcon.2009.5308146","type":"proceedings-article","created":{"date-parts":[[2009,11,12]],"date-time":"2009-11-12T15:56:19Z","timestamp":1258041379000},"page":"1-6","source":"Crossref","is-referenced-by-count":2,"title":["A
-      review of the widget landscape and incompatibilities between widget engines"],"prefix":"10.1109","author":[{"given":"Paco","family":"Mendes","sequence":"first","affiliation":[]},{"given":"Marcos","family":"Caceres","sequence":"additional","affiliation":[]},{"given":"Barry","family":"Dwolatzky","sequence":"additional","affiliation":[]}],"member":"263","reference":[{"journal-title":"Widgets
-      1 0 APIs and events","year":"2009","author":"bersvendsen","key":"19"},{"year":"0","key":"17"},{"journal-title":"Opera
-      widgets security model","year":"2008","key":"18"},{"key":"15","first-page":"604","article-title":"Technological
-      discontinuities and dominant designs: A cyclical model of technological change","volume":"5","author":"tushman","year":"1990","journal-title":"Administrative
-      Science Quarterly"},{"year":"0","key":"16"},{"year":"0","key":"13"},{"journal-title":"The
-      Innovator''s Dilemma When New Technologies Cause Great Firms to Fail","year":"1997","author":"christensen","key":"14"},{"journal-title":"Widgets
-      1 0 The Widget Landscape (Q1 2008)","year":"2008","author":"ca?ceres","key":"11"},{"year":"0","key":"12"},{"year":"0","key":"21"},{"journal-title":"Working
-      Group Charter","year":"2005","key":"20"},{"journal-title":"Working group wiki","year":"2009","key":"22"},{"journal-title":"Working
-      Group Charter","year":"2009","key":"23"},{"year":"0","key":"24"},{"year":"0","key":"25"},{"year":"0","key":"26"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.1109\/SEAA.2008.17"},{"journal-title":"Practical
-      JavaScript DOM Scripting and Ajax Projects","year":"2007","author":"zammetti","key":"2"},{"journal-title":"Widgets
-      1 0 Packaging and configuration","year":"2009","author":"ca?ceres","key":"10"},{"journal-title":"Widgets
-      1 0 Requirements","year":"2008","author":"ca?ceres","key":"1"},{"journal-title":"Dashboard
-      Widgets","year":"2009","key":"7"},{"journal-title":"Apple reports second quarter
-      results [Online] Available","year":"2009","key":"6"},{"journal-title":"Apple''s
-      revolutionary app store downloads top one billion in just nine months","year":"2009","key":"5"},{"year":"0","key":"4"},{"journal-title":"Mobile
-      Web 2 0 The Innovator''s Guide to Developing and Marketing Next Generation Wireless
-      Mobile Applications","year":"2006","author":"laokar","key":"9"},{"journal-title":"Windows
-      sidebar and gadgets","year":"2009","key":"8"}],"event":{"name":"AFRICON 2009
-      (AFRICON)","start":{"date-parts":[[2009,9,23]]},"location":"Nairobi, Kenya","end":{"date-parts":[[2009,9,25]]}},"container-title":["AFRICON
-      2009"],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/5295237\/5308064\/05308146.pdf?arnumber=5308146","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,18]],"date-time":"2017-03-18T02:37:47Z","timestamp":1489804667000},"score":19.733116,"resource":{"primary":{"URL":"http:\/\/ieeexplore.ieee.org\/document\/5308146\/"}},"issued":{"date-parts":[[2009,9]]},"references-count":26,"URL":"https:\/\/doi.org\/10.1109\/afrcon.2009.5308146","published":{"date-parts":[[2009,9]]}},{"indexed":{"date-parts":[[2024,9,13]],"date-time":"2024-09-13T07:40:44Z","timestamp":1726213244026},"edition-number":"3","reference-count":0,"publisher":"Oxford
-      University Press","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2023,3,2]]},"DOI":"10.1093\/oed\/5229773278","type":"book-chapter","created":{"date-parts":[[2023,7,20]],"date-time":"2023-07-20T06:57:48Z","timestamp":1689836268000},"source":"Crossref","is-referenced-by-count":0,"title":["widget,
-      n."],"prefix":"10.1093","member":"286","container-title":["Oxford English Dictionary"],"language":"en","deposited":{"date-parts":[[2023,7,20]],"date-time":"2023-07-20T07:03:40Z","timestamp":1689836620000},"score":19.49998,"resource":{"primary":{"URL":"https:\/\/oed.com\/dictionary\/widget_n"}},"issued":{"date-parts":[[2023,3,2]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1093\/oed\/5229773278","published":{"date-parts":[[2023,3,2]]}},{"indexed":{"date-parts":[[2025,3,26]],"date-time":"2025-03-26T10:14:10Z","timestamp":1742984050595,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484290804"}],"license":[{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2022]]},"DOI":"10.1007\/978-1-4842-9080-4_2","type":"book-chapter","created":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:17:59Z","timestamp":1667708279000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Setting
-      up widget design and properties"],"prefix":"10.1007","author":[{"given":"Tihomir","family":"Radev","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2022,11,6]]},"container-title":["Custom
-      Widgets in Android Studio"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-9080-4_2","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:19:16Z","timestamp":1667708356000},"score":19.327768,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/978-1-4842-9080-4_2"}},"issued":{"date-parts":[[2022]]},"ISBN":["9781484290804"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-9080-4_2","published":{"date-parts":[[2022]]},"assertion":[{"value":"6
-      November 2022","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"institution":[{"name":"Comprehensive R Archive Network","acronym":["CRAN"]}],"indexed":{"date-parts":[[2024,6,12]],"date-time":"2024-06-12T00:32:59Z","timestamp":1718152379951},"description":"Add
-      a searchbar widget to your ''Shiny'' application. The widget quickly integrates
-      with any existing element containing text to highlight matches. Highlighting
-      is done with the ''JavaScript'' library ''mark.js''. The widget includes buttons
-      to cycle through multiple instances of the match and automatically scroll to
-      the matches in an overflow element (or window). The widget also displays the
-      total number of matches and which match is currently being cycled through. The
-      widget is structured as a ''Bootstrap 3'' input group.","reference-count":0,"publisher":"The
-      R Foundation","content-domain":{"domain":[],"crossmark-restriction":false},"content-updated":{"date-parts":[[2020,6,2]]},"published-print":{"date-parts":[[2020,6,2]]},"DOI":"10.32614\/cran.package.shinysearchbar","type":"dataset","created":{"date-parts":[[2024,6,11]],"date-time":"2024-06-11T10:02:56Z","timestamp":1718100176000},"source":"Crossref","is-referenced-by-count":0,"title":["shinySearchbar:
-      Shiny Searchbar - An Input Widget for Highlighting Text and More"],"prefix":"10.32614","author":[{"given":"Jesse","family":"Norris","sequence":"first","affiliation":[]}],"member":"17266","content-created":{"date-parts":[[2020,6,2]]},"container-title":["CRAN:
-      Contributed Packages"],"deposited":{"date-parts":[[2024,6,11]],"date-time":"2024-06-11T17:33:40Z","timestamp":1718127220000},"score":19.315819,"resource":{"primary":{"URL":"https:\/\/CRAN.R-project.org\/package=shinySearchbar"}},"issued":{"date-parts":[[2020,6,2]]},"references-count":0,"URL":"https:\/\/doi.org\/10.32614\/cran.package.shinysearchbar","published":{"date-parts":[[2020,6,2]]}},{"indexed":{"date-parts":[[2025,3,27]],"date-time":"2025-03-27T11:13:32Z","timestamp":1743074012883,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484267004"}],"license":[{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2020]]},"DOI":"10.1007\/978-1-4842-6700-4_3","type":"book-chapter","created":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:20Z","timestamp":1605193460000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Creating
-      a Widget Extension"],"prefix":"10.1007","author":[{"given":"Stewart","family":"Lynch","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2020,11,13]]},"container-title":["Introducing
-      WidgetKit for iOS"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-6700-4_3","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:25Z","timestamp":1605193465000},"score":19.11831,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-1-4842-6700-4_3"}},"issued":{"date-parts":[[2020]]},"ISBN":["9781484267004"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-6700-4_3","published":{"date-parts":[[2020]]},"assertion":[{"value":"13
-      November 2020","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2025,3,27]],"date-time":"2025-03-27T03:07:18Z","timestamp":1743044838104,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484267004"}],"license":[{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2020,1,1]],"date-time":"2020-01-01T00:00:00Z","timestamp":1577836800000},"content-version":"vor","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2020]]},"DOI":"10.1007\/978-1-4842-6700-4_4","type":"book-chapter","created":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:20Z","timestamp":1605193460000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Designing
-      the Small Widget"],"prefix":"10.1007","author":[{"given":"Stewart","family":"Lynch","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2020,11,13]]},"container-title":["Introducing
-      WidgetKit for iOS"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-6700-4_4","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,11,12]],"date-time":"2020-11-12T15:04:25Z","timestamp":1605193465000},"score":19.11831,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/978-1-4842-6700-4_4"}},"issued":{"date-parts":[[2020]]},"ISBN":["9781484267004"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-6700-4_4","published":{"date-parts":[[2020]]},"assertion":[{"value":"13
-      November 2020","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2025,3,26]],"date-time":"2025-03-26T08:59:33Z","timestamp":1742979573284,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484290804"}],"license":[{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2022]]},"DOI":"10.1007\/978-1-4842-9080-4_1","type":"book-chapter","created":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:17:59Z","timestamp":1667708279000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Creating
-      the project and adding the widget classes"],"prefix":"10.1007","author":[{"given":"Tihomir","family":"Radev","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2022,11,6]]},"container-title":["Custom
-      Widgets in Android Studio"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-9080-4_1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:19:14Z","timestamp":1667708354000},"score":19.034805,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/978-1-4842-9080-4_1"}},"issued":{"date-parts":[[2022]]},"ISBN":["9781484290804"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-9080-4_1","published":{"date-parts":[[2022]]},"assertion":[{"value":"6
-      November 2022","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2025,3,25]],"date-time":"2025-03-25T14:47:29Z","timestamp":1742914049523,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484290804"}],"license":[{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2022]]},"DOI":"10.1007\/978-1-4842-9080-4_4","type":"book-chapter","created":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:17:59Z","timestamp":1667708279000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Setting
-      up the provider for widget screen update"],"prefix":"10.1007","author":[{"given":"Tihomir","family":"Radev","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2022,11,6]]},"container-title":["Custom
-      Widgets in Android Studio"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-9080-4_4","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:19:11Z","timestamp":1667708351000},"score":18.948309,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/978-1-4842-9080-4_4"}},"issued":{"date-parts":[[2022]]},"ISBN":["9781484290804"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-9080-4_4","published":{"date-parts":[[2022]]},"assertion":[{"value":"6
-      November 2022","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2025,3,27]],"date-time":"2025-03-27T19:28:23Z","timestamp":1743103703450,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484290804"}],"license":[{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2022]]},"DOI":"10.1007\/978-1-4842-9080-4_5","type":"book-chapter","created":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:17:59Z","timestamp":1667708279000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Updating
-      the widget and testing the project"],"prefix":"10.1007","author":[{"given":"Tihomir","family":"Radev","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2022,11,6]]},"container-title":["Custom
-      Widgets in Android Studio"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-9080-4_5","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:19:13Z","timestamp":1667708353000},"score":18.860432,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/978-1-4842-9080-4_5"}},"issued":{"date-parts":[[2022]]},"ISBN":["9781484290804"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-9080-4_5","published":{"date-parts":[[2022]]},"assertion":[{"value":"6
-      November 2022","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2025,3,25]],"date-time":"2025-03-25T15:43:48Z","timestamp":1742917428997,"version":"3.40.3"},"publisher-location":"Berkeley,
-      CA","reference-count":0,"publisher":"Apress","isbn-type":[{"type":"electronic","value":"9781484290804"}],"license":[{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2022,1,1]],"date-time":"2022-01-01T00:00:00Z","timestamp":1640995200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"published-print":{"date-parts":[[2022]]},"DOI":"10.1007\/978-1-4842-9080-4_3","type":"book-chapter","created":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:17:59Z","timestamp":1667708279000},"update-policy":"https:\/\/doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Creating
-      the functions for widget update scheduling"],"prefix":"10.1007","author":[{"given":"Tihomir","family":"Radev","sequence":"first","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2022,11,6]]},"container-title":["Custom
-      Widgets in Android Studio"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/978-1-4842-9080-4_3","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,11,6]],"date-time":"2022-11-06T04:19:17Z","timestamp":1667708357000},"score":18.809397,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/978-1-4842-9080-4_3"}},"issued":{"date-parts":[[2022]]},"ISBN":["9781484290804"],"references-count":0,"URL":"https:\/\/doi.org\/10.1007\/978-1-4842-9080-4_3","published":{"date-parts":[[2022]]},"assertion":[{"value":"6
-      November 2022","order":1,"name":"first_online","label":"First Online","group":{"name":"ChapterHistory","label":"Chapter
-      History"}}]},{"indexed":{"date-parts":[[2024,1,25]],"date-time":"2024-01-25T00:07:19Z","timestamp":1706141239791},"reference-count":38,"publisher":"SPIE-Intl
-      Soc Optical Eng","issue":"06","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["J.
-      Electron. Imag."],"published-print":{"date-parts":[[2019,12,3]]},"DOI":"10.1117\/1.jei.28.6.063006","type":"journal-article","created":{"date-parts":[[2019,12,3]],"date-time":"2019-12-03T16:50:15Z","timestamp":1575391815000},"page":"1","source":"Crossref","is-referenced-by-count":0,"title":["Widget
-      Detection Network: widget detection in mobile screenshot with region-based attention
-      networks"],"prefix":"10.1117","volume":"28","author":[{"given":"Lin","family":"Qi","sequence":"first","affiliation":[{"name":"Hebei
-      University of Science and Technology, School of Information Science and Engineering,
-      Shijiazhu"}]},{"given":"Tiezhu","family":"Wang","sequence":"additional","affiliation":[{"name":"Hebei
-      University of Chinese Medicine, Center of Information Technology, Shijiazhuang"}]}],"member":"189","reference":[{"key":"r1","doi-asserted-by":"publisher","DOI":"10.1109\/ICSTW.2011.77"},{"key":"r2","doi-asserted-by":"publisher","DOI":"10.1007\/978-3-319-07626-3"},{"key":"r3","doi-asserted-by":"publisher","DOI":"10.1109\/ICPRIME.2013.6496451"},{"key":"r4","doi-asserted-by":"publisher","DOI":"10.1145\/1982595.1982612"},{"key":"r5","article-title":"Very
-      deep convolutional networks for large-scale image recognition","author":"Simonyan","year":"2014"},{"key":"r6","doi-asserted-by":"publisher","DOI":"10.1109\/CVPR.2015.7298594"},{"key":"r7","first-page":"770","article-title":"Deep
-      residual learning for image recognition","author":"He","year":"2016"},{"key":"r8","doi-asserted-by":"publisher","DOI":"10.1109\/CVPR.2014.81"},{"key":"r9","first-page":"91","article-title":"Faster
-      R-CNN: towards real-time object detection with region proposal networks","author":"Ren","year":"2015"},{"key":"r10","first-page":"379","article-title":"R-FCN:
-      object detection via region-based fully convolutional networks","author":"Dai","year":"2016"},{"key":"r11","doi-asserted-by":"publisher","DOI":"10.1109\/CVPR.2016.90"},{"key":"r12","doi-asserted-by":"publisher","DOI":"10.1109\/QUATIC.2014.16"},{"key":"r13","doi-asserted-by":"publisher","DOI":"10.1109\/CVPR.2016.91"},{"key":"r14","doi-asserted-by":"publisher","DOI":"10.1109\/CVPR.2017.690"},{"key":"r15","doi-asserted-by":"publisher","DOI":"10.1007\/978-3-319-46448-0"},{"key":"r16","article-title":"DSSD:
-      deconvolutional single shot detector","author":"Fu","year":"2017"},{"key":"r17","first-page":"2999","article-title":"Focal
-      loss for dense object detection","author":"Lin","year":"2017"},{"key":"r18","doi-asserted-by":"publisher","DOI":"10.1109\/ICCV.2015.169"},{"key":"r19","doi-asserted-by":"publisher","DOI":"10.1007\/978-3-319-10602-1"},{"key":"r20","doi-asserted-by":"publisher","DOI":"10.1109\/TPAMI.2015.2389824"},{"key":"r21","doi-asserted-by":"publisher","DOI":"10.1109\/CVPR.2015.7298965"},{"key":"r22","first-page":"2980","article-title":"Mask
-      R-CNN","author":"He","year":"2017"},{"key":"r23","doi-asserted-by":"publisher","DOI":"10.1007\/s11263-015-0816-y"},{"key":"r24","first-page":"6000","article-title":"Attention
-      is all you need","author":"Vaswani","year":"2017"},{"key":"r25","doi-asserted-by":"publisher","DOI":"10.1145\/3240508.3240571"},{"key":"r26","doi-asserted-by":"publisher","DOI":"10.1145\/3231737"},{"key":"r27","article-title":"Neural
-      machine translation by jointly learning to align and translate","author":"Bahdanau","year":"2015"},{"key":"r28","first-page":"1412","article-title":"Effective
-      approaches to attention-based neural machine translation","author":"Luong","year":"2015"},{"key":"r29","first-page":"7794","article-title":"Non-local
-      neural networks","author":"Wang","year":"2018"},{"key":"r30","article-title":"Self-attention
-      generative adversarial networks","author":"Zhang","year":"2018"},{"key":"r31","first-page":"603","article-title":"CCNet:
-      criss-cross attention for semantic segmentation","author":"Huang","year":"2019"},{"key":"r32","doi-asserted-by":"crossref","DOI":"10.1109\/ICCV.2019.00615","article-title":"Scale-aware
-      trident networks for object detection","author":"Li","year":"2019"},{"key":"r33","article-title":"Multi-scale
-      context aggregation by dilated convolutions","author":"Yu","year":"2016"},{"key":"r34","article-title":"Automatic
-      differentiation in PyTorch","author":"Paszke","year":"2017"},{"key":"r35","doi-asserted-by":"publisher","DOI":"10.1109\/CVPR.2018.00377"},{"key":"r36","first-page":"761","article-title":"Training
-      region-based object detectors with online hard example mining","author":"Shrivastava","year":"2016"},{"key":"r37","doi-asserted-by":"publisher","DOI":"10.1109\/ICCV.2015.123"},{"key":"r38","article-title":"Random
-      erasing data augmentation","author":"Zhong","year":"2017"}],"container-title":["Journal
-      of Electronic Imaging"],"link":[{"URL":"https:\/\/www.spiedigitallibrary.org\/journalArticle\/Download?urlId=10.1117%2F1.JEI.28.6.063006","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,1,24]],"date-time":"2024-01-24T22:14:36Z","timestamp":1706134476000},"score":18.703617,"resource":{"primary":{"URL":"https:\/\/www.spiedigitallibrary.org\/journals\/journal-of-electronic-imaging\/volume-28\/issue-06\/063006\/Widget-Detection-Network--widget-detection-in-mobile-screenshot-with\/10.1117\/1.JEI.28.6.063006.full"}},"issued":{"date-parts":[[2019,12,3]]},"references-count":38,"journal-issue":{"issue":"06"},"URL":"https:\/\/doi.org\/10.1117\/1.jei.28.6.063006","ISSN":["1017-9909"],"issn-type":[{"value":"1017-9909","type":"print"}],"published":{"date-parts":[[2019,12,3]]}},{"institution":[{"name":"Comprehensive
-      R Archive Network","acronym":["CRAN"]}],"indexed":{"date-parts":[[2024,6,14]],"date-time":"2024-06-14T00:30:26Z","timestamp":1718325026508},"description":"A
-      HTML widget that shows differences between files (text, images, and data frames).","reference-count":0,"publisher":"The
-      R Foundation","content-domain":{"domain":[],"crossmark-restriction":false},"content-updated":{"date-parts":[[2024,6,12]]},"published-print":{"date-parts":[[2020,9,10]]},"DOI":"10.32614\/cran.package.diffviewer","type":"dataset","created":{"date-parts":[[2024,6,11]],"date-time":"2024-06-11T18:41:50Z","timestamp":1718131310000},"source":"Crossref","is-referenced-by-count":0,"title":["diffviewer:
-      HTML Widget to Show File Differences"],"prefix":"10.32614","author":[{"given":"Hadley","family":"Wickham","sequence":"first","affiliation":[]},{"given":"Joshua","family":"Kunst","sequence":"additional","affiliation":[]},{"given":"Winston","family":"Chang","sequence":"additional","affiliation":[]}],"member":"17266","content-created":{"date-parts":[[2020,9,10]]},"container-title":["CRAN:
-      Contributed Packages"],"deposited":{"date-parts":[[2024,6,13]],"date-time":"2024-06-13T10:29:30Z","timestamp":1718274570000},"score":18.461918,"resource":{"primary":{"URL":"https:\/\/CRAN.R-project.org\/package=diffviewer"}},"issued":{"date-parts":[[2020,9,10]]},"references-count":0,"URL":"https:\/\/doi.org\/10.32614\/cran.package.diffviewer","published":{"date-parts":[[2020,9,10]]}},{"indexed":{"date-parts":[[2024,4,28]],"date-time":"2024-04-28T09:28:28Z","timestamp":1714296508700},"reference-count":0,"publisher":"Elsevier","isbn-type":[{"value":"9781558608023","type":"print"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2003]]},"DOI":"10.1016\/b978-155860802-3\/50012-0","type":"book-chapter","created":{"date-parts":[[2007,8,7]],"date-time":"2007-08-07T12:33:18Z","timestamp":1186489998000},"page":"315-378","source":"Crossref","is-referenced-by-count":0,"title":["Using
-      the canvas Widget"],"prefix":"10.1016","author":[{"given":"Clif","family":"Flynt","sequence":"first","affiliation":[]}],"member":"78","container-title":["Tcl\/Tk"],"language":"en","deposited":{"date-parts":[[2019,1,5]],"date-time":"2019-01-05T10:55:00Z","timestamp":1546685700000},"score":18.306862,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/B9781558608023500120"}},"issued":{"date-parts":[[2003]]},"ISBN":["9781558608023"],"references-count":0,"URL":"https:\/\/doi.org\/10.1016\/b978-155860802-3\/50012-0","published":{"date-parts":[[2003]]}},{"indexed":{"date-parts":[[2024,4,28]],"date-time":"2024-04-28T08:58:25Z","timestamp":1714294705477},"reference-count":0,"publisher":"Elsevier","isbn-type":[{"value":"9781558607002","type":"print"}],"license":[{"start":{"date-parts":[[2002,1,1]],"date-time":"2002-01-01T00:00:00Z","timestamp":1009843200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2002]]},"DOI":"10.1016\/b978-155860700-2.50014-8","type":"book-chapter","created":{"date-parts":[[2008,6,27]],"date-time":"2008-06-27T08:14:20Z","timestamp":1214554460000},"page":"483-486","source":"Crossref","is-referenced-by-count":0,"title":["Widget
-      Properties"],"prefix":"10.1016","member":"78","container-title":["Practical
-      IDL Programming"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:B9781558607002500148?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:B9781558607002500148?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,12,27]],"date-time":"2018-12-27T15:54:59Z","timestamp":1545926099000},"score":18.267794,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/B9781558607002500148"}},"issued":{"date-parts":[[2002]]},"ISBN":["9781558607002"],"references-count":0,"URL":"https:\/\/doi.org\/10.1016\/b978-155860700-2.50014-8","published":{"date-parts":[[2002]]}},{"indexed":{"date-parts":[[2024,3,1]],"date-time":"2024-03-01T05:01:41Z","timestamp":1709269301724},"reference-count":0,"publisher":"Elsevier","isbn-type":[{"value":"9781558607002","type":"print"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2002]]},"DOI":"10.1016\/b978-155860700-2\/50014-8","type":"book-chapter","created":{"date-parts":[[2007,8,1]],"date-time":"2007-08-01T11:36:10Z","timestamp":1185968170000},"page":"483-486","source":"Crossref","is-referenced-by-count":0,"title":["Widget
-      Properties"],"prefix":"10.1016","author":[{"given":"L","family":"GUMLEY","sequence":"first","affiliation":[]}],"member":"78","container-title":["Practical
-      IDL Programming"],"deposited":{"date-parts":[[2015,6,25]],"date-time":"2015-06-25T19:16:58Z","timestamp":1435259818000},"score":18.043959,"resource":{"primary":{"URL":"http:\/\/linkinghub.elsevier.com\/retrieve\/pii\/B9781558607002500148"}},"issued":{"date-parts":[[2002]]},"ISBN":["9781558607002"],"references-count":0,"URL":"https:\/\/doi.org\/10.1016\/b978-155860700-2\/50014-8","published":{"date-parts":[[2002]]}},{"indexed":{"date-parts":[[2024,4,28]],"date-time":"2024-04-28T08:58:26Z","timestamp":1714294706202},"reference-count":0,"publisher":"Elsevier","isbn-type":[{"value":"9781558607002","type":"print"}],"license":[{"start":{"date-parts":[[2002,1,1]],"date-time":"2002-01-01T00:00:00Z","timestamp":1009843200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2002]]},"DOI":"10.1016\/b978-155860700-2.50013-6","type":"book-chapter","created":{"date-parts":[[2008,6,27]],"date-time":"2008-06-27T08:14:20Z","timestamp":1214554460000},"page":"475-482","source":"Crossref","is-referenced-by-count":0,"title":["Widget
-      Event Structures"],"prefix":"10.1016","member":"78","container-title":["Practical
-      IDL Programming"],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:B9781558607002500136?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:B9781558607002500136?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2018,12,27]],"date-time":"2018-12-27T15:54:59Z","timestamp":1545926099000},"score":18.020454,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/B9781558607002500136"}},"issued":{"date-parts":[[2002]]},"ISBN":["9781558607002"],"references-count":0,"URL":"https:\/\/doi.org\/10.1016\/b978-155860700-2.50013-6","published":{"date-parts":[[2002]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":"widget"}}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/+1diXPaSLP/V1SuepXdKoQ1ukW9fV/5IsEJ2OZMWKdSAxqDbCERSdjGW/nfX/dI
+        gATisB3n2M+7m40txBw9ffy6p6fnn70wotEk3Cvt+Td7hb0RC0M6YGI0HTN4ducHN6LrhFHqo1sW
+        hI7vwaekKBWlxSd7pX/2rmifRdDaP98Kex67j8T+JAj9AF4+9sqk+/FUa78dur2brmu/rfmnB/hP
+        ucaGh9Oy2yYtWTvulk/llnz6od5uT2rXdkjbw/vOzQm+eNj86F/077ttu12bXMj1hu3WnIbUbveu
+        Pym9t+6nfnt8yJtsqef2tN9pdsY3fVK/bbqHzWrLvmBvy+9a7dO3H5qDu+4d7/vTw1B9Vx61y/Rt
+        92v9JCTt8nBcP24HtWvod3T/sfu2z/tuf3p/Wz/sHreUw8PmSfmOuqf0Qyu6brdgFJ3uHf3oenHf
+        1hdNNDv2x26jcV3VqNRu0uuK3PMO5JoUnbbf2t2k7/bgq3VYvqk1+yfl6sXHw68t148acq1dl1uk
+        6x2OWSfuuzmwlNN6t0ZH9Yf2W+usVa7e18mh+qll11s3n6Kz48O473bLb95edOrNdrnxUJ+cnXSb
+        tVH7tlo2p2cf2+/b7untxcW87+Nd+u50KvR22D3vjE7fs5PT+7pb81pTEnbl8XtbspXmu5oS9338
+        /kYMO82bltw6KR+eNcvN/vWp1iJVpXNT1XoyuWjFfV9Mx+dfyzdaueYeHl40b+5bSmXK2rVmjYyP
+        zzpW1CrH6/1JP+pFw27Tvq53q5J1WCW1SlMeB9VOu0ql+rR9c5r0bb+d2n7nojNssI/9h0Z52Kp1
+        2ud2u92tHpFuV6mXZ+s97tw0ym7X7T64YfvBldonwybttCsfmhek/s6+rSbzbku9U/m+e0jLp5r9
+        UKt0yhek27JIu31z96HtevZJO7Xe6i7rPfSl+6PyyDrslNtap2xX2m/NKfX6UW8Ufe0c19y+G8+7
+        Vf3aNA67Z/Vm9+KidaJV27Vp1XObrQebXjy4t732YX3B55924fNr/3SilN2aXCvfPDSlk4eWNDyn
+        o/C+27oP6u9OOxfeYt7K4Q7z7ry9bp5UOz2p/Kn90f3Uloat3sPpV3tKJlQef6rK7WlrwWtHO/G5
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '7517'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:30:40 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -153,8 +169,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '8082'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 16:43:54 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -163,10 +187,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

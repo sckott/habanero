@@ -5,29 +5,22 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/prefixes/10.1371?query.editor=cooper
   response:
-    content: '{"status":"failed","message-type":"validation-failure","message":[{"type":"parameter-not-allowed","value":"query.*","message":"This
-      route does not support field query parameters"}]}'
+    body:
+      string: '{"status":"failed","message-type":"validation-failure","message":[{"type":"parameter-not-allowed","value":"query.*","message":"This
+        route does not support field query parameters"}]}'
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Sat, 12 Jul 2025 04:26:00 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -35,18 +28,29 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 16 Jun 2026 13:17:45 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 400
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 400
+      message: Bad Request
 version: 1

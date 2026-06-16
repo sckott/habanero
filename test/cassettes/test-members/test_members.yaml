@@ -5,33 +5,62 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/members?rows=2
   response:
-    content: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":29833,"items":[{"last-status-check-time":1752275362568,"primary-name":"Annals
-      of Family Medicine","counts":{"current-dois":1844,"backfile-dois":2944,"total-dois":4788},"breakdowns":{"dois-by-issued-year":[[2023,1063],[2024,710],[2022,435],[2018,162],[2005,154],[2015,150],[2019,147],[2017,146],[2004,146],[2020,142],[2013,140],[2008,137],[2021,135],[2010,134],[2006,132],[2014,131],[2009,129],[2016,127],[2011,123],[2007,120],[2012,118],[2025,71],[2003,36]]},"prefixes":["10.1370"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.003253796095444685,"similarity-checking-backfile":0.4038722826086957,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"Annals
-      of Family Medicine","value":"10.1370"}],"id":1,"tokens":["annals","of","family","medicine"],"counts-type":{"all":{"journal-article":3273,"proceedings-article":1515},"backfile":{"journal-article":2655,"proceedings-article":289},"current":{"journal-article":618,"proceedings-article":1226}},"coverage-type":{"all":{"journal-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.001833180568285976,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.463794683776352,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"journal-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.3389830508474576,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"journal-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.00970873786407767,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":false},"location":"Leawood,
-      KS, United States","names":["Annals of Family Medicine"]},{"last-status-check-time":1752275367549,"primary-name":"American
-      Association of Petroleum Geologists AAPG\/Datapages","counts":{"current-dois":832,"backfile-dois":31572,"total-dois":32404},"breakdowns":{"dois-by-issued-year":[[2019,1129],[2000,869],[2018,793],[2001,729],[1993,700],[1990,635],[1981,633],[1986,606],[1991,603],[1992,593],[1994,590],[1997,586],[1999,567],[2020,547],[1984,547],[1988,540],[1995,532],[2021,522],[1996,513],[1982,512],[1977,496],[1998,493],[1979,481],[1978,479],[1985,444],[1989,438],[2023,424],[2017,420],[1983,418],[1972,397],[1987,395],[1971,393],[1968,389],[2016,382],[1974,382],[1969,380],[2014,373],[1973,371],[2022,356],[1980,354],[1970,352],[2024,349],[2015,335],[1975,324],[2002,306],[1965,288],[1976,273],[2004,262],[1959,249],[1961,241],[1967,239],[1956,238],[1964,234],[1962,232],[1951,228],[1963,226],[1958,225],[2012,221],[1957,217],[1954,211],[2003,209],[1966,209],[2006,201],[2009,193],[1955,188],[1929,182],[2005,181],[1960,178],[1953,178],[2011,177],[1941,167],[1942,164],[1939,163],[1950,160],[1936,158],[2013,156],[1952,148],[1934,144],[1935,140],[1948,138],[2007,137],[1926,136],[1946,132],[1947,130],[1940,126],[1930,125],[1933,120],[1921,114],[1938,112],[1927,112],[1949,109],[1932,109],[1931,109],[1928,106],[1925,103],[2010,98],[1937,97],[1945,95],[1944,92],[1943,90],[2008,89],[1924,75],[1923,75],[1922,68],[2025,59],[1920,34],[1919,30],[1917,15],[1918,12]]},"prefixes":["10.15530","10.1306"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":0.02403846153846154,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.008425186874445711,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.0,"similarity-checking-backfile":0.6298619029519829,"references-backfile":0.02156974534397567,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.01599518560750032,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"AAPG\/Datapages","value":"10.15530"},{"name":"AAPG\/Datapages","value":"10.1306"}],"id":2,"tokens":["american","association","of","petroleum","geologists","aapg\/datapages"],"counts-type":{"all":{"monograph":4,"journal-article":22980,"other":20,"proceedings-article":4332,"book-chapter":4947,"proceedings":1,"book-series":8,"edited-book":397},"backfile":{"monograph":4,"journal-article":22799,"proceedings-article":3681,"book-chapter":4690,"proceedings":1,"edited-book":397},"current":{"journal-article":181,"proceedings-article":651}},"coverage-type":{"all":{"monograph":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.25,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.004351610095735422,"funders":0.0,"similarity-checking":0.8248041775456919,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"other":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.1121883656509695,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"book-chapter":{"last-status-check-time":1752275367549,"affiliations":0.05215281989084294,"abstracts":0.085708510208207,"orcids":0.0,"licenses":0.0,"references":0.1431170406306853,"funders":0.0,"similarity-checking":0.09824135839902971,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"book-series":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"edited-book":{"last-status-check-time":1752275367549,"affiliations":0.02015113350125945,"abstracts":0.2040302267002519,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.007556675062972292,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"monograph":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.25,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"journal-article":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.004386157287600333,"funders":0.0,"similarity-checking":0.8304750208342471,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.1320293398533007,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"book-chapter":{"last-status-check-time":1752275367549,"affiliations":0.05501066098081023,"abstracts":0.09040511727078891,"orcids":0.0,"licenses":0.0,"references":0.1238805970149254,"funders":0.0,"similarity-checking":0.09850746268656715,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"edited-book":{"last-status-check-time":1752275367549,"affiliations":0.02015113350125945,"abstracts":0.2040302267002519,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.007556675062972292,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"journal-article":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.1104972375690608,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275367549,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":false,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":false},"location":"Tulsa,
-      OK, United States","names":["American Association of Petroleum Geologists AAPG\/Datapages","AAPG\/Datapages"]}]}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '2179'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:24:11 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -39,8 +68,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '2313'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:15:42 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -49,10 +86,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

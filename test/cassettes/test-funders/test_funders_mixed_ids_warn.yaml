@@ -5,44 +5,40 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/funders/10.13039/100000001
   response:
-    content: '{"status":"ok","message-type":"funder","message-version":"1.0.0","message":{"hierarchy-names":{"100014074":"Integrative
-      and Collaborative Education and Research","100010608":"Office of Inspector General","100000179":"Office
-      of the Director","100014411":"Center for Unmanned Aircraft Systems","100020475":"Directorate
-      for STEM Education","100020427":"Directorate for Technology, Innovation and
-      Partnerships","100005716":"National Science Board","100000081":"Directorate
-      for Education and Human Resources","100000083":"Directorate for Computer and
-      Information Science and Engineering","100031042":"Next Generation Network for
-      Neuroscience","100005441":"Office of Budget, Finance and Award Management","100000001":"National
-      Science Foundation","100000076":"Directorate for Biological Sciences","100000084":"Directorate
-      for Engineering","100014073":"National Nanotechnology Coordinating Office","100014591":"BioXFEL
-      Science and Technology Center","100000088":"Directorate for Social, Behavioral
-      and Economic Sciences","100005447":"Office of Information and Resource Management","100000086":"Directorate
-      for Mathematical and Physical Sciences","100023581":"National Science Foundation
-      Graduate Research Fellowship Program","100000085":"Directorate for Geosciences","100014072":"National
-      Coordination Office"},"replaced-by":[],"work-count":392984,"name":"National
-      Science Foundation","descendants":["100000076","100000077","100000078","100000081","100000082","100000083","100000084","100000085","100000086","100000087","100000088","100000089","100000105","100000106","100000121","100000141","100000143","100000144","100000145","100000146","100000147","100000148","100000149","100000150","100000151","100000152","100000153","100000154","100000155","100000156","100000159","100000160","100000162","100000163","100000164","100000165","100000166","100000169","100000170","100000171","100000172","100000173","100000174","100000175","100000176","100000177","100000178","100000179","100005441","100005442","100005443","100005444","100005445","100005446","100005447","100005448","100005449","100005450","100005553","100005554","100005714","100005716","100005717","100006091","100006603","100007352","100007521","100007522","100007523","100010608","100014071","100014072","100014073","100014074","100014411","100014591","100020427","100020428","100020429","100020474","100020475","100020476","100022807","100023581","100024040","100031042","100031424"],"descendant-work-count":488101,"id":"100000001","tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","us","nsf","nsf"],"replaces":[],"uri":"https:\/\/doi.org\/10.13039\/100000001","hierarchy":{"100000001":{"100014074":{},"100010608":{},"100000179":{"more":true},"100014411":{},"100020475":{"more":true},"100020427":{"more":true},"100005716":{},"100000081":{"more":true},"100000083":{"more":true},"100031042":{},"100005441":{"more":true},"100000076":{"more":true},"100000084":{"more":true},"100014073":{},"100014591":{},"100000088":{"more":true},"100005447":{"more":true},"100000086":{"more":true},"100023581":{},"100000085":{"more":true},"100014072":{}}},"alt-names":["U.S.
-      National Science Foundation","USA NSF","US NSF","NSF"],"location":"United States"}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/5VXW2/qOBD+K1aegTr3wFvbLd0jbdlqaaWV2j54EwNRg40cp12E+O9nnJsn56Ti
+        HB7Qhz3zjefi8XBySs10VToLR747E2fPy5Jt+VQfDxzWNpXIuELrH1yVuRSw5c7ojNodZ3FydjlX
+        TKW741QwWDZLLqXUpRFNQOPvzSZPOZEb8k2UB55qqcg9F6BTAI+RBNl4PpDUO07+yFUt3Aq5QeC6
+        IHTLheaKbIDlWeyZEDwj17lKFdtosj6Wmu/LVsWjQRyCSsfENK/11k93D+Quq1KmjVO9sBePCD/x
+        dCdkIbfHCTgg5EetRJjIyCNTGvwod/mhM0nD2I2AZVVLsYKs05wLcOpGMpX1/tLEHTHVH6lm/7MC
+        78g/vJSVSnmJdP0R3Vu5P1QmMEb1m4ClfUPVHcCs34ltLjhXudi2dL4Lbpvz8v91m5Vaa8X1p1Tv
+        NfWKV0qWDU3vJmRjkLGbKttyPSHLXLDO3PUn+EwemIBC2UParAvUHYvRUkLd4ZzAJ45GnL3JTULy
+        1Ori8ARjoR3xPKTeT0V3C8W8GcSv2VcTcvm4bkBjHzu2YkLqvn4gR1JlEB/E22uGcxMScOzf5d1f
+        g6Q9IYK69pGryVh1yzRnxYTc8B37yGG9aHKfSiH3efpTxCCV8Q/X1HpvNLsSHM1kMpafBwaxNAxp
+        a/xxdyzH0uX5YXKhFMi9YlllmOEc3PQZsuRFIT/NtSOPSm4V26PzjF34e97Vb4lS5WHDY7k5TxzF
+        DwVLeTb97+gsXt4mjrkV0xROp50FBC5J/Ilj2t7Fes54mXL4KTR0yBdU3rbUY4STQa+w2Bv0AVz0
+        OAQ4PRbHg8qxeG77MA0RtrquZ8/gBhj7CAcII54A8QQxwgnC6AwhRRjZCj2Ekd0Q2Q2R3RDZDRF/
+        hPgjxBkhzghxRogzQpwR4owRZ4zOHCP+GPHHiD9G/KgeXFQPLqoH81biLmyxh7CPcIBwiHCEcIxw
+        gjCyZfMShjb+gC1/7GIcIdzzRxHtdWPf5jQObY0BxuudfDNR4AuM+y4eE3BXxc+7xQnCc4v7vDSz
+        Q4u9hPa6dcdqcUCDLibNQ9rhwAt6bJ6ZN3z/p7iHhCHcCTpx8swMV7T5GANavnNRtwrR9hVYtK/w
+        BveWyrS1XxFjRq7c/IaKyDU3c4uZF/mvmumtmO+3vouWTQutVA6+7rQ+lIvXq9erTOYzqbavVy6d
+        uT715wbZQPTjZTdYNhvDKfN0HoySJ2cvFfRkrSp+HsyPnWA7G44ItoPgyE473Flb9Rg3JtgMaSM7
+        7bzVUzRz1DiFGX2+IA++IK9HmtMZXwv0s54x8OmTL9ysJ4IvTI8fqn3IMfl4dNuH93Q+wwIrdPef
+        4cV5nq1nF4as5/U1Wa2XNbokWhcuWddle5G2ZTXfUKCFbP8ZLIY0zvn8HYzJuQs5DQAA
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1084'
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 11 Jul 2025 23:25:28 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -50,8 +46,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '1077'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 05:39:09 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -60,40 +64,36 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/funders/10.13039/notarealdoi
   response:
-    content: Resource not found.
+    body:
+      string: Resource not found.
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - text/plain
-      Date:
-      - Fri, 11 Jul 2025 23:25:29 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -101,16 +101,27 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - text/plain
+      date:
+      - Tue, 16 Jun 2026 05:39:10 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 404
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 404
+      message: Not Found
 version: 1
