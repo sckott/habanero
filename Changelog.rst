@@ -4,6 +4,7 @@ Changelog
 2.4.0 (2026-06-04)
 --------------------
 * fixed return type declaration for Crossref.works (#204) thanks @StarryWorm
+* use `with open()` context manager to properly close files in tests (#206) thanks @Stephen0512
 * pyyaml package moved from dependencies to the optional dev depencies group (#210) thanks @hseg
 * updated package for new filters; now documented options for the `select` parameter; documented new field queries; documented new facet count options (#218)
 
