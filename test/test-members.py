@@ -1,7 +1,7 @@
 from typing import no_type_check
 
 import pytest
-from httpx import HTTPError
+from httpx2 import HTTPError
 
 from habanero import Crossref, exceptions
 

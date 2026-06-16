@@ -5,181 +5,137 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
     method: GET
     uri: https://api.crossref.org/works/10.1016/j.neurobiolaging.2010.03.024
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,6,20]],"date-time":"2025-06-20T16:26:29Z","timestamp":1750436789228},"reference-count":57,"publisher":"Elsevier
-      BV","issue":"3","license":[{"start":{"date-parts":[[2012,3,1]],"date-time":"2012-03-01T00:00:00Z","timestamp":1330560000000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.elsevier.com\/tdm\/userlicense\/1.0\/"}],"funder":[{"DOI":"10.13039\/501100004085","name":"Ministry
-      of Education, Science and Technology","doi-asserted-by":"crossref","award":["R32-10064"],"id":[{"id":"10.13039\/501100004085","id-type":"DOI","asserted-by":"crossref"}]},{"name":"Stem
-      Cell Research Center","award":["SC4170"]}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Neurobiology
-      of Aging"],"published-print":{"date-parts":[[2012,3]]},"DOI":"10.1016\/j.neurobiolaging.2010.03.024","type":"journal-article","created":{"date-parts":[[2010,5,18]],"date-time":"2010-05-18T07:20:15Z","timestamp":1274167215000},"page":"588-602","source":"Crossref","is-referenced-by-count":225,"title":["Human
-      umbilical cord blood-derived mesenchymal stem cells improve neuropathology and
-      cognitive impairment in an Alzheimer''s disease mouse model through modulation
-      of neuroinflammation"],"prefix":"10.1016","volume":"33","author":[{"given":"Hyun
-      Ju","family":"Lee","sequence":"first","affiliation":[]},{"given":"Jong Kil","family":"Lee","sequence":"additional","affiliation":[]},{"given":"Hyun","family":"Lee","sequence":"additional","affiliation":[]},{"given":"Janet
-      E.","family":"Carter","sequence":"additional","affiliation":[]},{"given":"Jong
-      Wook","family":"Chang","sequence":"additional","affiliation":[]},{"given":"Wonil","family":"Oh","sequence":"additional","affiliation":[]},{"given":"Yoon
-      Sun","family":"Yang","sequence":"additional","affiliation":[]},{"given":"Jun-Gyo","family":"Suh","sequence":"additional","affiliation":[]},{"given":"Byoung-Hee","family":"Lee","sequence":"additional","affiliation":[]},{"given":"Hee
-      Kyung","family":"Jin","sequence":"additional","affiliation":[]},{"given":"Jae-sung","family":"Bae","sequence":"additional","affiliation":[]}],"member":"78","reference":[{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib1","doi-asserted-by":"crossref","first-page":"63","DOI":"10.1096\/fasebj.13.1.63","article-title":"TNFalpha
-      plus IFNgamma induce the production of Alzheimer beta-amyloid peptides and decrease
-      the secretion of APPs","volume":"13","author":"Blasko","year":"1999","journal-title":"FASEB
-      J"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib2","doi-asserted-by":"crossref","first-page":"437","DOI":"10.2174\/156720506779025242","article-title":"Pathways
-      by which Abeta facilitates tau pathology","volume":"3","author":"Blurton-Jones","year":"2006","journal-title":"Curr.
-      Alzheimer Res"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib3","doi-asserted-by":"crossref","first-page":"11784","DOI":"10.1073\/pnas.0604681103","article-title":"Glatiramer
-      acetate fights against Alzheimer''s disease by inducing dendritic-like microglia
-      expressing insulin-like growth factor 1","volume":"103","author":"Butovsky","year":"2006","journal-title":"Proc.
-      Natl. Acad. Sci. U S A"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib4","doi-asserted-by":"crossref","first-page":"67","DOI":"10.1016\/j.expneurol.2005.11.015","article-title":"Infusion
-      of human umbilical cord blood cells protect against cerebral ischemia and damage
-      during heatstroke in the rat","volume":"199","author":"Chen","year":"2006","journal-title":"Exp.
-      Neurol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib5","doi-asserted-by":"crossref","first-page":"46","DOI":"10.1186\/1742-2094-5-46","article-title":"Interleukin-1beta
-      and tumor necrosis factor-alpha are expressed by different subsets of microglia
-      and macrophages after ischemic stroke in mice","volume":"5","author":"Clausen","year":"2008","journal-title":"J.
-      Neuroinflammation"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib6","doi-asserted-by":"crossref","first-page":"399","DOI":"10.1007\/s11481-009-9164-4","article-title":"Heterogeneity
-      of microglial activation in the innate immune response in the brain","volume":"4","author":"Colton","year":"2009","journal-title":"J
-      Neuroimmune Pharmacol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib7","first-page":"3","article-title":"Expression
-      profiles for macrophage alternative activation genes in AD and in mouse models
-      of AD","volume":"27","author":"Colton","year":"2006","journal-title":"J. Neuroinflammation"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib8","doi-asserted-by":"crossref","first-page":"101","DOI":"10.1016\/S0002-9440(10)64354-4","article-title":"CD36,
-      a class B scavenger receptor, is expressed on microglia in Alzheimer''s disease
-      brains and can mediate production of reactive oxygen species in response to
-      beta-amyloid fibrils","volume":"160","author":"Coraci","year":"2002","journal-title":"Am.
-      J. Pathol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib9","doi-asserted-by":"crossref","first-page":"339","DOI":"10.1016\/j.nbd.2007.06.010","article-title":"Enhancement
-      of neuroplasticity through upregulation of beta1-integrin in human umbilical
-      cord-derived stromal cell implanted stroke model","volume":"27","author":"Ding","year":"2007","journal-title":"Neurobiol.
-      Dis"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib10","doi-asserted-by":"crossref","first-page":"710","DOI":"10.1038\/383710a0","article-title":"Increased
-      amyloid-beta42(43) in brains of mice expressing mutant presenilin 1","volume":"383","author":"Duff","year":"1996","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib11","doi-asserted-by":"crossref","first-page":"1298","DOI":"10.1189\/jlb.0406249","article-title":"Biochemical
-      and functional characterization of three activated macrophage populations","volume":"80","author":"Edwards","year":"2006","journal-title":"J.
-      Leukoc. Biol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib12","doi-asserted-by":"crossref","first-page":"S81","DOI":"10.1016\/S0197-4580(98)00036-0","article-title":"Microglia,
-      scavenger receptors, and the pathogenesis of Alzheimer''s disease","volume":"19","author":"El
-      Khoury","year":"1998","journal-title":"Neurobiol. Aging"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib13","doi-asserted-by":"crossref","first-page":"1657","DOI":"10.1084\/jem.20021546","article-title":"CD36
-      mediates the innate host response to beta-amyloid","volume":"197","author":"El
-      Khoury","year":"2003","journal-title":"J. Exp. Med"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib14","doi-asserted-by":"crossref","first-page":"4822","DOI":"10.4049\/jimmunol.160.10.4822","article-title":"A
-      critical role for IL-4 in regulating disease severity in experimental allergic
-      encephalomyelitis as demonstrated in IL-4-deficient C57BL\/6 mice and BALB\/c
-      mice","volume":"160","author":"Falcone","year":"1998","journal-title":"J. Immunol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib15","doi-asserted-by":"crossref","first-page":"274","DOI":"10.1111\/j.1749-6632.2000.tb06936.x","article-title":"Prevention
-      and reduction of AD-type pathology in PDAPP mice immunized with A beta 1\u201342","volume":"920","author":"Games","year":"2000","journal-title":"Ann.
-      N Y Acad. Sci"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib16","doi-asserted-by":"crossref","first-page":"23","DOI":"10.1038\/nri978","article-title":"Alternative
-      activation of macrophages","volume":"3","author":"Gordon","year":"2003","journal-title":"Nat.
-      Rev. Immunol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib17","doi-asserted-by":"crossref","first-page":"857","DOI":"10.1038\/ni.1636","article-title":"The
-      NALP3 inflammasome is involved in the innate immune response to amyloid-beta","volume":"9","author":"Halle","year":"2008","journal-title":"Nat.
-      Immunol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib18","first-page":"269","article-title":"Cord
-      blood stem cells: a review of potential neurological applications","volume":"4","author":"Harris","year":"2008","journal-title":"Stem.
-      Cell Res"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib19","doi-asserted-by":"crossref","first-page":"829","DOI":"10.1083\/jcb.200705042","article-title":"Deletion
-      of tumor necrosis factor death receptor inhibits amyloid beta generation and
-      prevents learning and memory deficits in Alzheimer''s mice","volume":"178","author":"He","year":"2007","journal-title":"J.
-      Cell Biol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib20","doi-asserted-by":"crossref","first-page":"69","DOI":"10.1016\/j.jneuroim.2006.11.017","article-title":"Inflammatory
-      processes in Alzheimer''s disease","volume":"184","author":"Heneka","year":"2007","journal-title":"J.
-      Neuroimmunol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib21","doi-asserted-by":"crossref","first-page":"2893","DOI":"10.1634\/stemcells.2008-0075","article-title":"Modulation
-      of inflammatory responses after global ischemia by transplanted umbilical cord
-      matrix stem cells","volume":"26","author":"Hirko","year":"2008","journal-title":"Stem
-      Cells"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib22","doi-asserted-by":"crossref","first-page":"99","DOI":"10.1126\/science.274.5284.99","article-title":"Correlative
-      memory deficits, Abeta elevation, and amyloid plaques in transgenic mice","volume":"274","author":"Hsiao","year":"1996","journal-title":"Science"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib23","doi-asserted-by":"crossref","first-page":"15","DOI":"10.3233\/JAD-2009-0960","article-title":"Accumulated
-      amyloid-beta peptide and hyperphosphorylated tau protein: relationship and links
-      in Alzheimer''s disease","volume":"16","author":"Huang","year":"2009","journal-title":"J.
-      Alzheimers Dis"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib24","doi-asserted-by":"crossref","first-page":"11650","DOI":"10.1523\/JNEUROSCI.3024-08.2008","article-title":"Inflammatory
-      response in the hippocampus of PS1M146L\/APP751SL mouse model of Alzheimer''s
-      disease: age-dependent switch in the microglial phenotype from alternative to
-      classic","volume":"28","author":"Jimenez","year":"2008","journal-title":"J.
-      Neurosci"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib25","doi-asserted-by":"crossref","first-page":"511","DOI":"10.1089\/scd.2008.0050","article-title":"Overexpression
-      of CXC chemokine receptors is required for the superior glioma-tracking property
-      of umbilical cord blood-derived mesenchymal stem cells","volume":"18","author":"Kim","year":"2009","journal-title":"Stem
-      Cells and Development"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib26","doi-asserted-by":"crossref","first-page":"8240","DOI":"10.1523\/JNEUROSCI.1808-05.2005","article-title":"Microglial
-      phagocytosis induced by fibrillar beta-amyloid and IgGs are differentially regulated
-      by proinflammatory cytokines","volume":"25","author":"Koenigsknecht-Talboo","year":"2005","journal-title":"J.
-      Neurosci"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib27","doi-asserted-by":"crossref","first-page":"14675","DOI":"10.1073\/pnas.261562998","article-title":"Specific
-      spatial learning deficits become severe with age in beta -amyloid precursor
-      protein transgenic mice that harbor diffuse beta-amyloid deposits but do not
-      form plaques","volume":"98","author":"Koistinaho","year":"2001","journal-title":"Proc.
-      Natl. Acad. Sci. U S A"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib28","doi-asserted-by":"crossref","first-page":"1149","DOI":"10.1084\/jem.20081271","article-title":"Role
-      of breast regression protein 39 (BRP-39)\/chitinase 3-like-one in Th2 and IL-13-induced
-      tissue responses and apoptosis","volume":"206","author":"Lee","year":"2009","journal-title":"J.
-      Exp. Med"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib29","doi-asserted-by":"crossref","first-page":"136","DOI":"10.1016\/j.neulet.2008.11.059","article-title":"Bone
-      marrow-derived mesenchymal stem cells reduce brain amyloid-beta deposition and
-      accelerate the activation of microglia in an acutely induced Alzheimer''s disease
-      mouse model","volume":"450","author":"Lee","year":"2009","journal-title":"Neurosci.
-      Lett"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib30","doi-asserted-by":"crossref","first-page":"37","DOI":"10.1186\/1742-2094-5-37","article-title":"Neuro-
-      inflammation induced by lipopolysaccharide causes cognitive impairment through
-      enhancement of beta-amyloid generation","volume":"5","author":"Lee","year":"2008","journal-title":"J.
-      Neuroinflammation"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib31","doi-asserted-by":"crossref","first-page":"1087","DOI":"10.1016\/S0896-6273(03)00787-6","article-title":"Enhanced
-      proteolysis of beta-amyloid in APP transgenic mice prevents plaque formation,
-      secondary pathology, and premature death","volume":"40","author":"Leissring","year":"2003","journal-title":"Neuron"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib32","doi-asserted-by":"crossref","first-page":"402","DOI":"10.1006\/meth.2001.1262","article-title":"Analysis
-      of relative gene expression data using real-time quantitative PCR and the2 (-Delta
-      Delta C(T)) Method","volume":"25","author":"Livak","year":"2001","journal-title":"Methods"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib33","doi-asserted-by":"crossref","first-page":"8309","DOI":"10.1523\/JNEUROSCI.1781-07.2007","article-title":"CD200
-      ligand receptor interaction modulates microglial activation in vivo and in vitro:
-      a role for IL-4","volume":"27","author":"Lyons","year":"2007","journal-title":"J.
-      Neurosci"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib34","doi-asserted-by":"crossref","first-page":"103","DOI":"10.1016\/j.bbrc.2009.09.075","article-title":"Demethylallosamidin,
-      a chitinase inhibitor, suppresses airway inflammation and hyperresponsiveness","volume":"390","author":"Matsumoto","year":"2009","journal-title":"Biochem.
-      Biophys. Res. Commun"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib35","doi-asserted-by":"crossref","first-page":"631","DOI":"10.1038\/nature02621","article-title":"Pathways
-      towards and away from Alzheimer''s disease","volume":"430","author":"Mattson","year":"2004","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib36","doi-asserted-by":"crossref","first-page":"647","DOI":"10.1038\/374647a0","article-title":"Activation
-      of microglial cells by beta-amyloid protein and interferon-gamma","volume":"374","author":"Meda","year":"1995","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib37","doi-asserted-by":"crossref","first-page":"681","DOI":"10.1038\/297681a0","article-title":"Place
-      navigation impaired in. Rats with hippocampal lesion","volume":"297","author":"Morris","year":"1982","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib38","doi-asserted-by":"crossref","first-page":"385","DOI":"10.1128\/IAI.73.1.385-394.2005","article-title":"Chitinase
-      and Fizz family members are a generalized feature of nematode infection with
-      selective upregulation of Ym1 and Fizz1 by antigen-presenting cells","volume":"73","author":"Nair","year":"2005","journal-title":"Infect.
-      Immun"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib39","doi-asserted-by":"crossref","first-page":"423","DOI":"10.1089\/scd.2008.0018","article-title":"Peripherally
-      administered human umbilical cord blood cells reduce parenchymal and vascular
-      beta-amyloid deposits in Alzheimer mice","volume":"17","author":"Nikolic","year":"2008","journal-title":"Stem
-      Cells Dev"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib40","doi-asserted-by":"crossref","first-page":"14638","DOI":"10.1073\/pnas.0803670105","article-title":"Stem\/progenitor
-      cells from bone marrow decrease neuronal death in global ischemia by modulation
-      of inflammatory\/immune responses","volume":"105","author":"Ohtaki","year":"2008","journal-title":"Proc.
-      Natl. Acad. Sci. U S A"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib41","doi-asserted-by":"crossref","first-page":"10714","DOI":"10.1523\/JNEUROSCI.1922-07.2007","article-title":"CNS-derived
-      interleukin-4 is essential for the regulation of autoimmune inflammation and
-      induces a state of alternative activation in microglial cells","volume":"27","author":"Ponomarev","year":"2007","journal-title":"J.
-      Neurosci"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib42","doi-asserted-by":"crossref","first-page":"441","DOI":"10.1016\/S0197-4580(00)00141-X","article-title":"Inflammatory
-      hypotheses: novel mechanisms of Alzheimer''s neurodegeneration and new therapeutic
-      targets?","volume":"21","author":"Pratic\u00f2","year":"2000","journal-title":"Neurobiol.
-      Aging"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib43","doi-asserted-by":"crossref","first-page":"750","DOI":"10.1126\/science.1141736","article-title":"Reducing
-      endogenous tau ameliorates amyloid beta-induced deficits in an Alzheimer''s
-      disease mouse model","volume":"316","author":"Roberson","year":"2007","journal-title":"Science"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib44","doi-asserted-by":"crossref","first-page":"9796","DOI":"10.1523\/JNEUROSCI.23-30-09796.2003","article-title":"Nonsteroidal
-      anti-inflammatory drugs and peroxisome proliferator-activated receptor-gamma
-      agonists modulate immunostimulated processing of amyloid precursor protein through
-      regulation of beta-secretase","volume":"23","author":"Sastre","year":"2003","journal-title":"J.
-      Neurosci"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib45","doi-asserted-by":"crossref","first-page":"173","DOI":"10.1038\/22124","article-title":"Immunization
-      with amyloid-beta attenuates Alzheimer-disease-like pathology in the PDAPP mouse","volume":"400","author":"Schenk","year":"1999","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib46","doi-asserted-by":"crossref","first-page":"599","DOI":"10.2353\/ajpath.2006.060002","article-title":"Alzheimer''s
-      disease-like tau neuropathology leads to memory deficits and loss of functional
-      synapses in a novel mutated tau transgenic mouse without any motor deficits","volume":"169","author":"Schindowski","year":"2006","journal-title":"Am.
-      J. Pathol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib47","doi-asserted-by":"crossref","first-page":"489","DOI":"10.1016\/j.neuron.2006.01.022","article-title":"Bone
-      marrow-derived microglia play a critical role in restricting senile plaque formation
-      in Alzheimer''s disease","volume":"49","author":"Simard","year":"2006","journal-title":"Neuron"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib48","doi-asserted-by":"crossref","first-page":"2787","DOI":"10.1083\/jcb.103.6.2787","article-title":"A
-      Monoclonal Antibody against a-Smooth Muscle Actin: A New Probe for Smooth Muscle
-      Differentiation","volume":"103","author":"Skalli","year":"1986","journal-title":"J.
-      Cell Biol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib49","doi-asserted-by":"crossref","first-page":"2352","DOI":"10.1126\/science.286.5448.2352","article-title":"Microglial
-      activation resulting from CD40-CD40L interaction after beta-amyloid stimulation","volume":"286","author":"Tan","year":"1999","journal-title":"Science"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib50","doi-asserted-by":"crossref","first-page":"276","DOI":"10.1002\/cmdc.200800289","article-title":"In
-      vitro and in vivo staining characteristics of small, fluorescent, Abeta42-binding
-      D-enantiomeric peptides in transgenic AD mouse models","volume":"4","author":"Van
-      Groen","year":"2009","journal-title":"Chemmedchem"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib51","doi-asserted-by":"crossref","first-page":"157","DOI":"10.1385\/JMN:17:2:157","article-title":"The
-      beta-secretase, BACE: a prime drug target for Alzheimer''s disease","volume":"17","author":"Vassar","year":"2001","journal-title":"J.
-      Mol. Neurosci"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib52","doi-asserted-by":"crossref","first-page":"2390","DOI":"10.1161\/01.STR.0000141681.06735.9b","article-title":"Infusion
-      of human umbilical cord blood cells in a rat model of stroke dose dependently
-      rescues behavioral deficits and reduces infarct volume","volume":"35","author":"Vendrame","year":"2004","journal-title":"Stroke"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib53","doi-asserted-by":"crossref","first-page":"595","DOI":"10.1089\/scd.2005.14.595","article-title":"Anti-inflammatory
-      effects of human cord blood cells in a rat model of stroke","volume":"14","author":"Vendrame","year":"2005","journal-title":"Stem
-      Cells Dev"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib54","doi-asserted-by":"crossref","first-page":"60","DOI":"10.1001\/archneurol.2008.511","article-title":"Carbon-11-labeled
-      Pittsburgh Compound B and carbon-11-labeled (R)-PK11195 positron emission tomographic
-      imaging in Alzheimer disease","volume":"66","author":"Wiley","year":"2009","journal-title":"Arch.
-      Neurol"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib55","doi-asserted-by":"crossref","first-page":"24566","DOI":"10.1074\/jbc.M602440200","article-title":"Matrix
-      metalloproteinase-nine degrades amyloid-beta fibrils in vitro and compact plaques
-      in situ","volume":"281","author":"Yan","year":"2006","journal-title":"J. Biol.
-      Chem"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib56","doi-asserted-by":"crossref","first-page":"685","DOI":"10.1038\/382685a0","article-title":"RAGE
-      and amyloid-beta peptide neurotoxicity in Alzheimer''s disease","volume":"382","author":"Yan","year":"1996","journal-title":"Nature"},{"key":"10.1016\/j.neurobiolaging.2010.03.024_bib57","doi-asserted-by":"crossref","first-page":"1176","DOI":"10.1111\/j.1471-4159.2006.04172.x","article-title":"Protective
-      effects of an anti- inflammatory cytokine, interleukin-4, on motoneuron toxicity
-      induced by activated microglia","volume":"99","author":"Zhao","year":"2006","journal-title":"J.
-      Neurochem"}],"container-title":["Neurobiology of Aging"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/xml","content-type":"text\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/api.elsevier.com\/content\/article\/PII:S0197458010001570?httpAccept=text\/plain","content-type":"text\/plain","content-version":"vor","intended-application":"text-mining"}],"deposited":{"date-parts":[[2023,6,1]],"date-time":"2023-06-01T06:17:39Z","timestamp":1685600259000},"score":1,"resource":{"primary":{"URL":"https:\/\/linkinghub.elsevier.com\/retrieve\/pii\/S0197458010001570"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2012,3]]},"references-count":57,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2012,3]]}},"alternative-id":["S0197458010001570"],"URL":"https:\/\/doi.org\/10.1016\/j.neurobiolaging.2010.03.024","relation":{"has-review":[{"id-type":"doi","id":"10.3410\/f.3904957.3650055","asserted-by":"object"}]},"ISSN":["0197-4580"],"issn-type":[{"value":"0197-4580","type":"print"}],"subject":[],"published":{"date-parts":[[2012,3]]}}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/9Vca2/bRtb+K4S+vAlg0ryTMvBi4UuaOk1Sw3a7262DYkSOpIlJDsuLHbXof99z
+        ZkiKQ9GRKbddbJHNRhTFGT5zLs+5zPw+KytS1eXsZMbvZ0ezlJYlWVG92uQUrj3yon/1gRYl4xl8
+        YRmmYW6/mZ38PmNZTL/QGP8Zk4rqOSkqeO7PP9um7R/5R5b96dOR/KpiKT4dv9BNX7fsW9s5sfwT
+        2/k3PBO/hVml+ezECkLLMX0rdOZ+cDTbju8YnmtYsz+OZgVd0oJmEdUjXmfV7MSDG/N6kbByTQu4
+        9U1S0gdGC+3sR3g4K8sax3bg3wmLaFbCp59/RxiKamzuln3kHFm7U7ds3XR007o1zRPxZzh1xzE9
+        35T/wTwjnlU0q3oYVnEKP4lpQjY6y/SYbGBI82j2w/V7+HZdVXl5cnd8d/z4+GjQ5iWMiKd3x/DL
+        u+O6pEXzBnfHsB53xwDH/9iLJHRFEvE+Bc31dj3+gDkuaxCnQizNxfeXKHGmAaLgzO+OPdOycC6u
+        GXowbkbEi3xgGSurYqPxpfYmriNSweSOtJuIoXBoJIu1WxqtM57w1Qany5lOSsCworG+2MATooKX
+        JYgTfEkeSQGS/PPs2rF1GMx3Z5+aq/CGSy7mJT9mdboQE+3fi2/AYnEX/t/Tk2dxq2r4ljDE+Iz+
+        +IRL27zpTUVT7ZwmiXZNS0qKaA2fYE2K/sRvzl0rMJ8x6/bGP8Sk28WNeUpYJsSo+dfPsygBiCOS
+        3NMNrh6MNrhikHpwkZaDC8ticOFzDhf6QgEfS7lmMStoVIlrODPEIiXFvV6AZBYsqoTwVUVNQSjL
+        NS8qHWcPk6UFSHeVoGLPPtK64AsmVh1F43TFshU+rzURsZ4XLHtSYz4B8j0JNC3/7vizkbVPJfg4
+        A24Fc+gYpu2i7sgF/czrIiOJDs9jEUwGX4HCCKMW0jKPvCMrHNFOUzc93QpvTefENk8sb6idduBa
+        nh1antTOXFjjmReGum/acG+dy7E4aNdGUUfQAIMXKzAe7Yu16/BLlP7S/ACghfeI8JnnW/1gpd7Z
+        XZTV1vbaro2za7D/tk5JpoGksQSXW4t4EWuLhPNYB91mDzTW4D3gGetNCl+XKNcRyHWpsTQv+APV
+        BM45qdZy/VCJI77KWAU/xpsIK1IQV41l8J12mvy2pgBN8X+lFjNQjZJqKa/F32CdtGpd8Hq1xk91
+        IuwDSoQYA9QjIWkqLgrpgNdjX7aLDu/8wJNaLIqDvoPUMClpn1YwGTSD327qTHuHKrAkKUsQ7PcU
+        172kv9aIFFxYsqKs8OfLJYAihzv5GQYseCId0QOPyAKmVwxMkryhHVcahHbkdzxbad+x5KtDkzhm
+        OB5J/vTx8c3/W2O/IxmttDdGf/xzUCxhDv+mKSD8/+SCQG3nsCZgaP6uKfyTZ+ryf7/+28b+iYMi
+        3agS8NPf+fLv6kx/u+H98W/qv+/9zzZg/Fb6t0Lo/zv6R6n2Hejgqj+Bdyz7G5WQ6uVg/DPyFwPw
+        CcMPSWNmQTjrhQLiOcAunuu0f1mwhbWPEwrTrTf+1Ucf0KMFcxhhCf5m8RmInmEZ4vvG87dkZHb7
+        8RuS5Gui5UldapfffFyhywHnBXSVgneiGng9+HfrmTp/pi1oRXSSbhLOYi2necViWgp3GFNkFaX8
+        eYkful9fXZV9t2X13dbsLCHlParMBhgkfjufz+FTS1raKX9zevPmTHsnIouJgNqTAHWdoI+obQUu
+        EBPPD2zTM/0gmJu2B+xiBNUroAePEHJoi432uGbAhk8RLm1JIpAwiG4BqYrUWkcjFF+uYlIXFc90
+        sOeCuDbQ2MDpR6A5r4vC6K0RkPFDYHImwWRBROyqohc4d8d5RkrD9E3XDyG8GJO9t0h4CoITJRFF
+        VLQlW60rkKIVUOayGmVPAKmQTpg3SFoWF6DAEcRp90CpGMxxBSqs0S/AlsoS74EH1UDu5R2rgj9W
+        a1yHiheapciiqQJfV/yhvN/sxfyq4JGhfSRVAshHJDYwvjO0H7Qb7fQQ8N1pSh/MRmIBeH0xSAIP
+        Nz3DglDc8kZW4DJb1mWjm+snmXFDgMEQVBD8dIsTgWFbFHAnK6M1TQF1ofwkhZlpcV0g+GuILiAy
+        4gA98GG0BwWpFNSFineon69pthfxN19yAFy83yEAe9OMgK8AbIUwAhgCW7fNuat7uvh+F1fgegmt
+        70HuLKH5CE1VpyB0GcWhWNkIoS7NLyloK7QQgoCMx2wpPEellfWipKAUsEZbAcfnpQQ+wY9XaHeX
+        MGK7EpG2xRw+0T7gngJ3QiAUUREPRxB/1+CthCQHQO9Pgt4RstETbjO4Oy4tyw0t3TTn+tzyXd0d
+        gf9bCmDwFc0oqzYKbglYGgjUZKDVSCTLMjQ9LE3rDOSTljnPyk5eQcIFaekAdBUAeQLWWcFvzGW9
+        a+CTQ1ytSQFrd5j0BjsojQDwpjF/8JKgtcBqQEKWIHtbidFIAhjBi2PU2sMEQSvx3U8vhIyhBG3D
+        VSGEpxd9OOxgDx5jGvxnyVM4zVGZ1q6xvDFN09bnrmu+sszXvut44zJ1fuH4RxrRIiAppXamlREB
+        nrkCpStoBOyHF0egfj0d5llPXdl4JkAIlyRNERjflMYMRVGlXMClIrFM/MsGlkcrcxoxuUidsFZc
+        5WNLtihYonIt31RXqgAyoqyUPbJSp6mhwWpdCaJyyBLNp6m8M99dIhhiEaMnC4BPgCczxyQ+g9g2
+        oiLz0iZQclgquAttQJtmqWF1Vr1EC4Jm6QzM9Qr8FUI65ga71BCaVUwLoUPEXE9C4Jdxa22Fijyt
+        GxdMBCNbvIMRvLvcoKFdsIPIm4Dn+YgH4v4e4k54d+yEDlwnY0BfZpLcx1ojazpi6NqvXOc14teI
+        tDS6tE/E0roCuDT8TDNAN1P5F4ypoFUvl0ooMGZHgHXVBT0IpWmxlWXPwwEPmMMgycIwXdO33fkI
+        UmeMS2+MXgc0fFlnkYw1tQg8ACg1SNVvnSiCiNLOFNO+d9dynjcyq2h0qCj0mxiz6PtjBNDm98BM
+        kLTCDA/SaWtaHHUTjtpdax7orhear+bhazDCjq+PyduH1oYejZjc8kgSKwxT0UIJ78VKJVDdmluV
+        dyrYJdp3a8Bpo0jcGBPq6adM2x8C38T4yvcGJD+EOPQzTdEk2pY3ykDRXbX+pOzTnDUH6v6U31AR
+        CvZABMM74wImGPoHGh+EzrQAyA1tu4+Oa7qomYJqwSqB1zPwqrxriNKpFonwEVQSUzmCI12+113p
+        W6WjwDCzcdclfQCVrTAARcMG/0Z/g+qdJLRYAe/GTA/obMLTDYVAH0SRgPjRFMCuCqHW8FMcAVzK
+        kmFNqdLOveDs/d2xLw0myvPZ6fuzu+Noh7sPXPg3JIl4RvfKLCzIpYTjoPWYFi/ZgZoLgP9wDAiZ
+        5rrvOzYKrWlUC9OfO77xZSx5UgDMmTCLCEZB++mnC1Gb3CZOEM+ri9OrK4meWHb2G+D8yCDOPxXS
+        rVl3NbyUI1I1HZhzWwHzLUkHCRZzjA5lGVBX7adtpH8QpNPiIHuQ2EMPnRVsLhKMOyI9zuvRH2/D
+        xSfTTW+B7Qz4+5iKg981tGv68DLBCiahEA6toICBgYY7YwbwFkzex9P3V47WBhklTylSdJbBuz9I
+        VfxK/Aemsc9wFNHpQ/YtKv/eCFog9hKwwh2p8MdIx/k2a7OtXZ5A3FJgFfUR5SDnWE7HWFjmiPhK
+        UpQ8R8a7wzJc9WWLgpV73xbbAYyuH+Cg950WN4T2IG4IHRgjWoiowfTM0SztBU26zPRobgYsN9iZ
+        jm2ApKzZgmF+sgmzhHVB0lGQzl7l0nyVWgIQZeg+RK4GfECx0aTVr8phQLhj6aVud7CrAjYWOLxr
+        8D6U09nTwgZ/NE77LAvXgpn4Mu0YjKcdZdiPkECwG2HEvIPJGGsLVWkE5O/Jc6DZpl8ORGdauGCH
+        c9Vm+w5QNlRIoY8IT6jDZMdysh+UTgDWh6q1TW26b5XwRT//uoBAtyBZ2calg2QuPKVgX3p2QYlV
+        fQVZVvQrMV9RcyF1B6m4PS2KGCQDLRuGaLpyDCAdhmeHrjF/wiYWNJEucaCHR01hBizBQ9Odhdra
+        lbUS8mstJVMAC6rOdmmZpDxb7EpG1CrWWBjWNIEdBNzE+MHrA+fYDpjGd0CkMFepm3N/LOo6jaI6
+        RTEcxPltoU+gtAYmVuQQUMD/io28WVS1sFDAshNNog4Su2a5+AUE/ffP0nNVGGsyyJyM5lh7ha/y
+        0OSJPS34sCA2U9Mnno3ofnzzw/X3N+eXhgPP1c3QaBToq4ZwmHkG0HIekTSvRUB7dWN9sFwfIgVg
+        u4Fn3bxXGonGQ17w/CsKsUZOs1jUEoAWR+t2hF5aPF/TjAtqvSx4qmSHgQiJpCeLFKFXHNQ7jITo
+        b3stRmuKy8OIsz0tFvGsQeIBkzZlJHKJoWGa3pjofw8xHt3mzwHX83+da2hh+T0TBLHJPSCXLOiv
+        NYMIRUSOotxdY1jI0TYznhIdzEZ0jyQAlAK+keWIA9rPVC/Yh/47lu7Vja2hFmp4AQwl4TkGrwet
+        wrTwJbTdr+qIFaIz9ESp8msJIBRSsuLRphIUTbYoiFqZzHYnZNCUgK96uXpbiuJaV0+DByWbNrqX
+        v897lQjURBwC11p1kErl7DsOrmBV3gNjXFf6LUkWXPWX3l8g/dMCJjAWgTcbr8vbvuX5tkwXDAG/
+        wfrCEouIEGUj7B2R7djrgkYYTIl8CJWhNuYpMf2LTmLbFgLKUhclqEPjE4ZuFHSGVNqaFAtk27BE
+        aNCURQTbBcuNY9aVFnMNrBQqW9r6ZiUuUxWDs7JiGVmrC2ONLMyfXcO3JxamLHcYvmwzfKFlB9bI
+        Ml1jwgpLGJiOx5TeqlfyE1g7c+3V2fWV7sxf3x1Ha4ZgALyOaIXQeSYW7HZtS0V5r1uO3ipVJfYk
+        9AknsqKc50L3FLUwFV8tW8z2euqXJAjtaaGh5agV/O0YEP1JT4CBijeawkeQUoh5+eO+9mCRpmoq
+        eiplaiS4jQ9JBD/AgFH2Rw1yNP2KIYE/UV3RZNMZuz3txErc7plTF6Y1TlghqA5yDc60KFJtsNpt
+        rnDGokcxS13r1477ziBhIKY82ZQANBgWJKsRdjmU423abWWQqgVExQZtI/zZU50UQ3j/yi4KZ2Lt
+        ygxHmoRugAz5um8HzivTeQ2xaBjoY3m0prAaS6uCuMr6igIQMvqrqx3j3qVCpK0WdruJskrwIFlM
+        MP5vU7lHbfokFVU9mXxRJHog0GCjimFNdTRbiWgehvTEhkHTVoE2YYyUVms0M5YBIetoEQLm2qLa
+        xakoclqPhsYELEkt6qhg7xOxGUP7FQKjCtsJ8RdX59dtMczWXukXNIFfyL/PX92+fg3mFpBTSjwq
+        pXkPduh+r6uUTzmsrXBa3Bo6puoVh7wxwD6gwGiyPrsVMPgCrMFKFhG6FB4ENkTWE5o9F7R8uj/o
+        gT3wtg/mgVUFF6nUfqlo9mS9//1GZlKfl5w6kBM6EwNW09k1BZ+NxaKIEMe5gX9G01IXFAUZovwk
+        4SVJWcwy0Q7T0YomOYp9MBAEyS4Y4A2seCQb1Vh3uYOGXmDDNtzdR9KZK7r+gVRlnfJKZXJjLqwp
+        uovadr7elFimgL/OOeb+DgJ4WsjpO4OQU1QphEEzQf3HiFzXLFxxUcGXLAFRE6H4nlSJ6wyRqspB
+        Bccds4kHd04406I/3x0p2ziBC9dH+0tOx/lQ0tAscPBq43nDdaWOgm5DkMczXXSxKwKl5uiAevby
+        xtZ8PhauvQCjaZGaP2yQQIzseQDXRzG6Sgh414w8gHGTlkrwGVHSAoEHZZExWZdBEkFcOeAvtlrg
+        /8DV0o41D8cawl4AyrSgyAnV4NWyAZTL00sjwM0M8C3ENe5TSYPzziyhYHzDfvtNk5tANLk9Q+YE
+        2tpNIirGSyp5h2gfw0xAjEZtSaWzEICWwNxlL96wkeyn1OqGslBK0TPD03XZ7iTaCHYSOYFSe/0I
+        S7g3hXApJtSUEg9ahWnRkzssPg9SaNZYBuEKQqV8jcAC4CROxTZoivK5t8m8CaNyUnRBFsL6QMqo
+        3knwdLmBfkZ5pJamoMzucRfpXrLeS5ld0IeDGvmnxUKW6ztqj1lvG0VoOn4Ajx+TdZwp3CcantH/
+        NkgK57HYBrDbbTli2tiGJsubAN5IISl9sgx1dzwolavJSVMhld+vK3LP9qL9p2+imBoiBZbatjLk
+        mnPb/hrX/HjT5QdYr/ffFS3BZdnU29sksWo6AKu2M3yHJsm4FqyVVor9MXj7eIMHy3ac5dPU9Ipn
+        HKQC5PovpqfuxADK/XqnoGlCpGq5lv6vkUVQiinALzlADcJ5omX8gSZg+COIZFmZ7rQHileI6aCO
+        n9FHXKyC5LSGgbSKFCtalf9QULUUVPHX0V1tmkt7tq+T6M9oJHSnBVTBoFallFAtgDUY7aS5ps1u
+        K5rFaGN4LTevkZQmjBcigOo3RHRJxH6zw/6t8ApbUwuA1xxd9oDVjknrC4qq7rRAah7M/a8ZDNvR
+        HVM38TajSUvs5LGwKRDYKouFk6uYrhQh4qJeyVgAIiX+hYn2JbDyCVuimOLOoa5XuA1vJe/VyIqj
+        xy27CFc2N/GyYm1Rt+m6wGVFm/J0vr5Jj+22zetyZ+cgHLEVSnNDyqpQE2NPdIy+yMhMC9GsYKSf
+        zrYte2zbx6VsKCRbDqjkdiHaolktVKATb70RbrnjUOlUROPfdCui4KvJLSWOuwFPnPWyMU/shT2c
+        jbvTwjhPbb+wHQ/EnXzGt5PNPiYexzOa3tpVe4kM2pDBYRoJJTHGwTvtUqJ5AGaGwtfroy83Gcmb
+        1iHS2vm66joR+glJYWlwBXldwfOQ4cgWLzmEwmH8+WAtwKTxx3JAZMbaOl68X8adFjq64fiGGUHx
+        mpWx4NljKzNa3egKEHlCNpjgURqk5Z4jedQNmA6xkYPupHef0eHhqgizFM8I2gfu4Ylcd1rsaQfD
+        lHnbTwjWwgCLLr/fbSf/AMQqSoRsnoJFX/B40+2XJfpNyoGUaB/qEn6lYaYjO9FOwfY9akCAFzKp
+        qN50sS1bD+sPgw3LN/cQbrG+xQif2P7xoj5Bd1r8CIZCzYmrfVuhb3iuGxrNbV+p/feoLkhgnQj5
+        EzHO+YVr6vjXeyW7K1vklHix9X/DREiosI1bku21uy8gGt60sNAOBuVL0747jtJY5GtD+BSOFS4v
+        m3T1Nnf9wDGEYKKOv91+hPvjhFEtIdJOjrRlUnOANwKBa1rjXFtfgPXDn13oNEOeAkQEDMD2zAe1
+        rH96oewYnT3VSvwjUMK3Baf7d8+eQ1Ca0hhj04MAnxgLDvrMndADYvfh44kVnNgn8tuxZnOVEx1p
+        Z6fnb7BakOMuEcHmmhBCaPm+BrhAhaosiZobGivNgGp/wHjiJVzKmxaw2TJR31Nv37o7Bo9zc3tt
+        4JlyEFX4ITggP3A8Y74YD9uefwaB8PPAfrdNb83ey5iXWDFs+txEg08ZYevmgq7JA4YpicomZKIJ
+        n7gkRVRpDfT9IERJZPyIR02QVCWzY5n1GzGhg7CfFs5580F3Ty815xmWa8gbdsuNw0iDLjGnWG4X
+        4NmwKyLr7oVrLKH58jybN/HEjMF+VxMEFg8s3B6YERqycXAny4NtSpluWXpCFjQBtnTFqqpc1AUE
+        SOc8zXmNm7ea7dzDe19dv9avvrMsa+5pIm0JVEajKZP13YqnfFWQfA0WFMjQSp5c0stqjhgJX3Fb
+        /wQmttlrS0/hTV90eMbE3WCu5w/8Fx6i83kRGR98eKRr2ubork/Zqp6CLU0S3gSjGDlk2IIZU4Aq
+        3qYdZCzW7HnvSrXN0XxpDq6u38kN0Neq+1eyOD+RZ51fcCZSN+eH+qSJRbRBLaTZpG3D9dEC0fXp
+        2zf9Rna1d1tMreJf5Nb4/VzdEYWgcYD+9I3Z3sQmR2vAj9r9hm5g6a7lzZsYyLUC+4ndhuJUG8ym
+        9uwgtl6hndRG+0KP1CTvkTjrARCVUZfWg7brSurt6245bR9i9RScf68Jf44MCjWWtKg5J/W5J43y
+        gsE/t0/D084Skq1qiaogZdisL04tG56ZS3I2ODO3OaIVDalA9+746vLyRCRuMW+Lp8sCcTL/gc84
+        jTBX9f8V/QL3f0kx79ee8NqcUjr21fZk3weOTAgXAFx9rPe2rTU/1VPBcoXw/YVTB4siDoYZnfzw
+        y0Omj+euygLXEydYe0eWOXZ6su3peESrdWtZJ1YIvHXnBGtv7uCG3ECez1qCv4dfWnhaXXuy6u8z
+        5K3iwLtdFFEyYIrrejEAE7hvwegDgJgz1mTu+yjO/sDh6kVP6uQpub0LovN0/EDa9uzb7lC9sn/A
+        dqsgzXHavyvnaj//aF14fq/EojN5dPHOm3zaPUt69/DaPafytvtjcDZrgufX4h7N5ojmVqDgqbOj
+        7shmx7XMu+OlAbzbnXuB4fge8CrB8xR7yRefwZaJIxFnlzc3H/ElujrKTMKcNUPgAYckEVBtb+nO
+        DJZ4oTTCwomHimXqAP3qSslJyQMVt6O0x5/PupOyt4ejox0CwiSCKtw+L7US62h45rMwcGhQhXa3
+        z/tfPdS3e/3mLaUWbBE4bV7+Vlzvv/G4Ye+e16jC8Hnv5OWR571AiNVXEE5jO6I4n/maLjVw0GL3
+        FyZ3u8XuL2lrIfuz2h5T3QzSmNNfhGj2RpGXtVu83H/AOc83BR4pqGFVjsw1FE2tO33/Motw01ii
+        FfLYQWzVKEBajP6IzROU4dproF5//AeBaK8nr2AAAA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6269'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:51 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -187,8 +143,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '6586'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 14:22:54 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -196,105 +160,103 @@ interactions:
       vary:
       - Accept-Encoding
       x-api-pool:
-      - public
-      x-ratelimit-interval:
+      - polite
+      x-concurrency-limit:
+      - '3'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '10'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
     method: GET
     uri: https://api.crossref.org/works/10.1002/jor.1100150407
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,1,25]],"date-time":"2024-01-25T13:00:59Z","timestamp":1706187659346},"reference-count":36,"publisher":"Wiley","issue":"4","license":[{"start":{"date-parts":[[2005,2,18]],"date-time":"2005-02-18T00:00:00Z","timestamp":1108684800000},"content-version":"vor","delay-in-days":2789,"URL":"http:\/\/onlinelibrary.wiley.com\/termsAndConditions#vor"}],"content-domain":{"domain":["onlinelibrary.wiley.com"],"crossmark-restriction":true},"short-container-title":["Journal
-      Orthopaedic Research"],"published-print":{"date-parts":[[1997,7]]},"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Twenty\u2010two
-      beagles were divided into two equal groups, and the right hindlimb of each animal
-      was immobilized at 105\u00b0 of knee flexion by external fixation. After 10
-      weeks of fixation, the device was removed, allowing free mobility for the following
-      5 weeks. Each day throughout the 15 weeks, one group received a growth hormone
-      secretagogue (treatment) at a dose of 5 mg\/kg, and the other received a lactose
-      placebo (control). At weeks 0, 10, and 15, strength as indicated by maximum
-      isometric extension torque was measuredin the right hindlimb, biopsies of the
-      vastus lateralis muscle were taken, and the dogs were weighed. Weekly blood
-      samples were analyzed for insulin\u2010like growth factor\u2010I, blood urea
-      nitrogen, and creatine phosphokaase. Between weeks 0 and 10, tetanic torque
-      declined by about 60% (p &lt; 0.001) in both groups, with no significant difference
-      between the groups (p &gt; 0.7). Between weeks 10 and 15, tetanic torque in
-      the treated group increased by 0.81 Nm; this was significantly greater than
-      the increase of 0.25 Nm in the placebo group (p &lt; 0.05). The diameters of
-      slow (type\u20101) and fast (type\u20102) fibers measured from the vastus lateralis
-      muscle followed the same trend. At all time points, fiber diameter correlated
-      strongly with torque; this argues against nonmuscular causes such as nerve injury
-      for strength loss. The mean levels of insulin\u2010like growth factor\u20101
-      increased 100% by week 4 in the treated group and remained elevated by about
-      60% throughout the experiment. Levels of insulin\u2010like growth factor\u20101
-      in the placebo group decreased 30% within week 1 and remained depressed throughout
-      the experiment. Our interpretation of these data suggests that the growth hormone
-      secretagogue elevated levels of serum insulin\u2010like growth factor\u20101,
-      which in turn increased the size and strength of the quadriceos muscle during
-      remobilization. These data may ultimately have therapeutic application to humans
-      during rehabilitation after prolonged inactivity.<\/jats:p>","DOI":"10.1002\/jor.1100150407","type":"journal-article","created":{"date-parts":[[2005,2,24]],"date-time":"2005-02-24T10:47:51Z","timestamp":1109242071000},"page":"519-527","update-policy":"http:\/\/dx.doi.org\/10.1002\/crossmark_policy","source":"Crossref","is-referenced-by-count":19,"title":["Growth
-      hormone secretagogue increases muscle strength during remobilization after canine
-      hindlimb immobilization"],"prefix":"10.1002","volume":"15","author":[{"given":"Richard
-      L.","family":"Lieber","sequence":"first","affiliation":[]},{"given":"Thomas
-      M.","family":"Jacks","sequence":"additional","affiliation":[]},{"given":"Randall
-      L.","family":"Mohler","sequence":"additional","affiliation":[]},{"given":"Klaus","family":"Schleim","sequence":"additional","affiliation":[]},{"given":"Michelle","family":"Haven","sequence":"additional","affiliation":[]},{"given":"Denise","family":"Cuizon","sequence":"additional","affiliation":[]},{"given":"David
-      H.","family":"Gershuni","sequence":"additional","affiliation":[]},{"given":"Michael
-      A.","family":"Lopez","sequence":"additional","affiliation":[]},{"suffix":"Jr.","given":"Donald","family":"Hora","sequence":"additional","affiliation":[]},{"given":"Ravi","family":"Nargund","sequence":"additional","affiliation":[]},{"given":"William","family":"Feeney","sequence":"additional","affiliation":[]},{"given":"Gerard
-      J.","family":"Hickey","sequence":"additional","affiliation":[]}],"member":"311","published-online":{"date-parts":[[2005,2,18]]},"reference":[{"key":"e_1_2_1_2_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1532-5415.1993.tb06764.x"},{"key":"e_1_2_1_3_2","doi-asserted-by":"publisher","DOI":"10.1007\/BF00591371"},{"key":"e_1_2_1_4_2","doi-asserted-by":"crossref","first-page":"435","DOI":"10.1152\/jappl.1979.47.2.435","article-title":"Recovery
-      of skeletal muscle after 3 mo of hindlimb immobilization in rats","volume":"47","author":"Booth
-      FW","year":"1979","journal-title":"J Appl Physiol"},{"key":"e_1_2_1_5_2","doi-asserted-by":"publisher","DOI":"10.1210\/en.137.8.3253"},{"key":"e_1_2_1_6_2","doi-asserted-by":"publisher","DOI":"10.1096\/fasebj.10.4.8647349"},{"key":"e_1_2_1_7_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(75)90036-9"},{"key":"e_1_2_1_8_2","doi-asserted-by":"publisher","DOI":"10.1016\/S0363-5023(09)91107-8"},{"key":"e_1_2_1_9_2","doi-asserted-by":"publisher","DOI":"10.1016\/0014-4886(83)90011-0"},{"key":"e_1_2_1_10_2","first-page":"E331","article-title":"Insulin\u2010like
-      growth factor I exerts growth hormone\u2010 and insulin\u2010like actions on
-      human muscle protein metabolism","volume":"267","author":"Fryburg DA","year":"1994","journal-title":"Am
-      J Physiol"},{"key":"e_1_2_1_11_2","doi-asserted-by":"crossref","first-page":"215","DOI":"10.1097\/00003086-198204000-00037","article-title":"Transcutaneous
-      muscle stimulation as a method to retard disuse atrophy","volume":"164","author":"Gould
-      N","year":"1982","journal-title":"Clin Orthop"},{"key":"e_1_2_1_12_2","doi-asserted-by":"publisher","DOI":"10.1210\/en.134.2.695"},{"key":"e_1_2_1_13_2","doi-asserted-by":"publisher","DOI":"10.1677\/joe.0.1520183"},{"key":"e_1_2_1_14_2","doi-asserted-by":"publisher","DOI":"10.1677\/joe.0.1430399"},{"key":"e_1_2_1_15_2","doi-asserted-by":"crossref","first-page":"5284","DOI":"10.1210\/endo.137.12.8940347","article-title":"MK\u20100677,
-      a potent, novel, orally active growth hormone (GH) secretagogue: GH, insulin\u2010like
-      growth factor I, and hormonal responses An beagles","volume":"137","author":"Jacks
-      T","year":"1996","journal-title":"Endocrinology"},{"key":"e_1_2_1_16_2","doi-asserted-by":"publisher","DOI":"10.1093\/ptj\/63.4.494"},{"key":"e_1_2_1_17_2","doi-asserted-by":"publisher","DOI":"10.1016\/0010-468X(81)90081-7"},{"key":"e_1_2_1_18_2","doi-asserted-by":"publisher","DOI":"10.1152\/ajpcell.1988.254.6.C759"},{"key":"e_1_2_1_19_2","doi-asserted-by":"publisher","DOI":"10.1152\/ajpcell.1988.254.6.C769"},{"key":"e_1_2_1_20_2","doi-asserted-by":"publisher","DOI":"10.1002\/jor.1100070313"},{"key":"e_1_2_1_21_2","doi-asserted-by":"publisher","DOI":"10.1152\/jn.1994.71.3.874"},{"key":"e_1_2_1_22_2","doi-asserted-by":"publisher","DOI":"10.1016\/0021-9290(95)00055-0"},{"key":"e_1_2_1_23_2","doi-asserted-by":"publisher","DOI":"10.1016\/0021-9290(90)90017-W"},{"key":"e_1_2_1_24_2","doi-asserted-by":"publisher","DOI":"10.1210\/jc.80.3.869"},{"key":"e_1_2_1_25_2","first-page":"1097","article-title":"Disruptions
-      of muscle fiber plasma membranes: role in exercise\u2010induced damage","volume":"140","author":"McNeil
-      PL","year":"1992","journal-title":"Am J Pathol"},{"key":"e_1_2_1_26_2","doi-asserted-by":"publisher","DOI":"10.1111\/j.1532-5415.1993.tb02049.x"},{"key":"e_1_2_1_27_2","doi-asserted-by":"crossref","unstructured":"NachlasMM
-      TsouKC DeSE ChengCS SeligmanAM: Cytochemical demonstration of succinic dehydrogenase
-      by the use of a new p\u2010nitrophenyl substituted ditetrazole.J Histochem Cytochem
-      insert:420\u2013436 1957","DOI":"10.1177\/5.4.420"},{"key":"e_1_2_1_28_2","doi-asserted-by":"publisher","DOI":"10.1073\/pnas.92.15.7001"},{"key":"e_1_2_1_29_2","doi-asserted-by":"publisher","DOI":"10.1097\/00000441-196101000-00035"},{"key":"e_1_2_1_30_2","volume-title":"Biometry","author":"Sokal
-      RR","year":"1981"},{"key":"e_1_2_1_31_2","doi-asserted-by":"publisher","DOI":"10.1113\/jphysiol.1972.sp009891"},{"key":"e_1_2_1_32_2","first-page":"277","article-title":"Functional
-      adaptation of sarcomere number of normal cat muscle","volume":"72","author":"Tabary
-      JC","year":"1976","journal-title":"J Physiol (Paris)"},{"key":"e_1_2_1_33_2","doi-asserted-by":"publisher","DOI":"10.1210\/jc.75.4.1092"},{"key":"e_1_2_1_34_2","first-page":"101","volume-title":"Point
-      Counting Methods: Practical Methods for Biological Morphometry","author":"Weibel
-      ER","year":"1979"},{"key":"e_1_2_1_35_2","volume-title":"Small Animal Clinical
-      Diagnosis by Laboratory Methods","author":"Willard MD","year":"1989"},{"key":"e_1_2_1_36_2","first-page":"459","article-title":"Changes
-      in sarcomere length and physiological properties in immobilized muscle","volume":"127","author":"Williams
-      PE","year":"1978","journal-title":"J Anat"},{"key":"e_1_2_1_37_2","first-page":"359","article-title":"Muscle
-      and tendon: properties, models, scaling and application to biomechanics and
-      motor control","volume":"17","author":"Zajac FE","year":"1989","journal-title":"Crit
-      Rev Biomed Eng"}],"container-title":["Journal of Orthopaedic Research"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1002%2Fjor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1002\/jor.1100150407","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,27]],"date-time":"2023-10-27T22:42:30Z","timestamp":1698446550000},"score":1,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1002\/jor.1100150407"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[1997,7]]},"references-count":36,"journal-issue":{"issue":"4","published-print":{"date-parts":[[1997,7]]}},"alternative-id":["10.1002\/jor.1100150407"],"URL":"https:\/\/doi.org\/10.1002\/jor.1100150407","archive":["Portico"],"relation":{},"ISSN":["0736-0266","1554-527X"],"issn-type":[{"value":"0736-0266","type":"print"},{"value":"1554-527X","type":"electronic"}],"subject":[],"published":{"date-parts":[[1997,7]]},"assertion":[{"value":"1996-11-25","order":0,"name":"received","label":"Received","group":{"name":"publication_history","label":"Publication
-      History"}},{"value":"1997-06-18","order":1,"name":"accepted","label":"Accepted","group":{"name":"publication_history","label":"Publication
-      History"}},{"value":"2005-02-18","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-      History"}}]}}'
+    body:
+      string: !!binary |
+        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
+        oW5V8YY7wo29n4hsn/0RygDn/wGiQxkNKSwAAA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '3700'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:51 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -302,8 +264,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '3733'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 14:22:55 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -311,298 +281,190 @@ interactions:
       vary:
       - Accept-Encoding
       x-api-pool:
-      - public
-      x-ratelimit-interval:
+      - polite
+      x-concurrency-limit:
+      - '3'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '10'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
     method: GET
     uri: https://api.crossref.org/works/10.1038/srep16696
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2025,5,27]],"date-time":"2025-05-27T13:24:04Z","timestamp":1748352244786},"reference-count":62,"publisher":"Springer
-      Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"},{"start":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T00:00:00Z","timestamp":1447891200000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/creativecommons.org\/licenses\/by\/4.0"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Sci
-      Rep"],"abstract":"<jats:title>Abstract<\/jats:title><jats:p>Oligomers of alpha-synuclein
-      are toxic to cells and have been proposed to play a key role in the etiopathogenesis
-      of Parkinson\u2019s disease. As certain missense mutations in the gene encoding
-      for alpha-synuclein induce early-onset forms of the disease, it has been suggested
-      that these variants might have an inherent tendency to produce high concentrations
-      of oligomers during aggregation, although a direct experimental evidence for
-      this is still missing. We used single-molecule F\u00f6rster Resonance Energy
-      Transfer to visualize directly the protein self-assembly process by wild-type
-      alpha-synuclein and A53T, A30P and E46K mutants and to compare the structural
-      properties of the ensemble of oligomers generated. We found that the kinetics
-      of oligomer formation correlates with the natural tendency of each variant to
-      acquire beta-sheet structure. Moreover, A53T and A30P showed significant differences
-      in the averaged FRET efficiency of one of the two types of oligomers formed
-      compared to the wild-type oligomers, indicating possible structural variety
-      among the ensemble of species generated. Importantly, we found similar concentrations
-      of oligomers during the lag-phase of the aggregation of wild-type and mutated
-      alpha-synuclein, suggesting that the properties of the ensemble of oligomers
-      generated during self-assembly might be more relevant than their absolute concentration
-      for triggering neurodegeneration.<\/jats:p>","DOI":"10.1038\/srep16696","type":"journal-article","created":{"date-parts":[[2015,11,19]],"date-time":"2015-11-19T10:33:19Z","timestamp":1447929199000},"update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":96,"title":["Single-molecule
-      FRET studies on alpha-synuclein oligomerization of Parkinson\u2019s disease
-      genetically related mutants"],"prefix":"10.1038","volume":"5","author":[{"given":"Laura","family":"Tosatto","sequence":"first","affiliation":[]},{"given":"Mathew
-      H.","family":"Horrocks","sequence":"additional","affiliation":[]},{"given":"Alexander
-      J.","family":"Dear","sequence":"additional","affiliation":[]},{"given":"Tuomas
-      P. J.","family":"Knowles","sequence":"additional","affiliation":[]},{"given":"Mauro","family":"Dalla
-      Serra","sequence":"additional","affiliation":[]},{"given":"Nunilo","family":"Cremades","sequence":"additional","affiliation":[]},{"given":"Christopher
-      M.","family":"Dobson","sequence":"additional","affiliation":[]},{"given":"David","family":"Klenerman","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2015,11,19]]},"reference":[{"key":"BFsrep16696_CR1","doi-asserted-by":"publisher","first-page":"140","DOI":"10.3389\/fnana.2010.00140","volume":"4","author":"T
-      Gonz\u00e1lez-Hern\u00e1ndez","year":"2010","unstructured":"Gonz\u00e1lez-Hern\u00e1ndez,
-      T., Cruz-Muros, I., Afonso-Oramas, D., Salas-Hernandez, J. & Castro-Hernandez,
-      J. Vulnerability of mesostriatal dopaminergic neurons in Parkinson\u2019s disease.
-      Front. Neuroanat. 4, 140 (2010).","journal-title":"Front. Neuroanat"},{"key":"BFsrep16696_CR2","doi-asserted-by":"publisher","first-page":"839","DOI":"10.1038\/42166","volume":"388","author":"MG
-      Spillantini","year":"1997","unstructured":"Spillantini, M. G. et al. Alpha-synuclein
-      in Lewy bodies. Nature 388, 839\u2013840 (1997).","journal-title":"Nature"},{"key":"BFsrep16696_CR3","doi-asserted-by":"publisher","first-page":"13709","DOI":"10.1021\/bi961799n","volume":"35","author":"PH
-      Weinreb","year":"1996","unstructured":"Weinreb, P. H., Zhen, W., Poon, A. W.,
-      Conway, K. A. & Lansbury, P. T., Jr. NACP, a protein implicated in Alzheimer\u2019s
-      disease and learning, is natively unfolded. Biochemistry (Mosc.) 35, 13709\u201313715
-      (1996).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR4","doi-asserted-by":"publisher","first-page":"2552","DOI":"10.1021\/bi991447r","volume":"39","author":"KA
-      Conway","year":"2000","unstructured":"Conway, K. A., Harper, J. D. & Lansbury,
-      P. T., Jr . Fibrils formed in vitro from alpha-synuclein and two mutant forms
-      linked to Parkinson\u2019s disease are typical amyloid. Biochemistry (Mosc.)
-      39, 2552\u20132563 (2000).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR5","doi-asserted-by":"publisher","first-page":"2045","DOI":"10.1126\/science.276.5321.2045","volume":"276","author":"MH
-      Polymeropoulos","year":"1997","unstructured":"Polymeropoulos, M. H. et al. Mutation
-      in the alpha-synuclein gene identified in families with Parkinson\u2019s disease.
-      Science 276, 2045\u20132047 (1997).","journal-title":"Science"},{"key":"BFsrep16696_CR6","doi-asserted-by":"publisher","first-page":"106","DOI":"10.1038\/ng0298-106","volume":"18","author":"R
-      Kr\u00fcger","year":"1998","unstructured":"Kr\u00fcger, R. et al. Ala30Pro mutation
-      in the gene encoding alpha-synuclein in Parkinson\u2019s disease. Nat. Genet.
-      18, 106\u2013108 (1998).","journal-title":"Nat. Genet."},{"key":"BFsrep16696_CR7","doi-asserted-by":"publisher","first-page":"164","DOI":"10.1002\/ana.10795","volume":"55","author":"JJ
-      Zarranz","year":"2004","unstructured":"Zarranz, J. J. et al. The new mutation,
-      E46K, of alpha-synuclein causes Parkinson and Lewy body dementia. Ann. Neurol.
-      55, 164\u2013173 (2004).","journal-title":"Ann. Neurol."},{"key":"BFsrep16696_CR8","doi-asserted-by":"publisher","first-page":"841","DOI":"10.1126\/science.1090278","volume":"302","author":"AB
-      Singleton","year":"2003","unstructured":"Singleton, A. B. et al. \u03b1-Synuclein
-      Locus Triplication Causes Parkinson\u2019s Disease. Science 302, 841 (2003).","journal-title":"Science"},{"key":"BFsrep16696_CR9","doi-asserted-by":"publisher","first-page":"1062","DOI":"10.1212\/WNL.0b013e31828727ba","volume":"80","author":"C
-      Proukakis","year":"2013","unstructured":"Proukakis, C. et al. A novel \u03b1-synuclein
-      missense mutation in Parkinson disease. Neurology 80, 1062\u20131064 (2013).","journal-title":"Neurology"},{"key":"BFsrep16696_CR10","doi-asserted-by":"publisher","first-page":"753","DOI":"10.1007\/s00401-013-1096-7","volume":"125","author":"AP
-      Kiely","year":"2013","unstructured":"Kiely, A. P. et al. \u03b1-Synucleinopathy
-      associated with G51D SNCA mutation: a link between Parkinson\u2019s disease
-      and multiple system atrophy? Acta Neuropathol. (Berl.) 125, 753\u2013769 (2013).","journal-title":"Acta
-      Neuropathol. (Berl.)"},{"key":"BFsrep16696_CR11","doi-asserted-by":"publisher","first-page":"2180.e1","DOI":"10.1016\/j.neurobiolaging.2014.03.024","volume":"35","author":"P
-      Pasanen","year":"2014","unstructured":"Pasanen, P. et al. A novel \u03b1-synuclein
-      mutation A53E associated with atypical multiple system atrophy and Parkinson\u2019s
-      disease-type pathology. Neurobiol. Aging 35, 2180.e1\u20135 (2014).","journal-title":"Neurobiol.
-      Aging"},{"key":"BFsrep16696_CR12","doi-asserted-by":"publisher","first-page":"1167","DOI":"10.1016\/S0140-6736(04)17103-1","volume":"364","author":"M-C
-      Chartier-Harlin","year":"2004","unstructured":"Chartier-Harlin, M.-C. et al.
-      Alpha-synuclein locus duplication as a cause of familial Parkinson\u2019s disease.
-      Lancet 364, 1167\u20131169 (2004).","journal-title":"Lancet"},{"key":"BFsrep16696_CR13","doi-asserted-by":"publisher","first-page":"2380","DOI":"10.1074\/jbc.M008919200","volume":"276","author":"BI
-      Giasson","year":"2001","unstructured":"Giasson, B. I., Murray, I. V., Trojanowski,
-      J. Q. & Lee, V. M. A hydrophobic stretch of 12 amino acid residues in the middle
-      of alpha-synuclein is essential for filament assembly. J. Biol. Chem. 276, 2380\u20132386
-      (2001).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR14","doi-asserted-by":"publisher","first-page":"4491","DOI":"10.1093\/hmg\/ddu165","volume":"23","author":"M-B
-      Fares","year":"2014","unstructured":"Fares, M.-B. et al. The novel Parkinson\u2019s
-      disease linked mutation G51D attenuates in vitro aggregation and membrane binding
-      of \u03b1-synuclein and enhances its secretion and nuclear localization in cells.
-      Hum. Mol. Genet. 23, 4491\u20134509 (2014).","journal-title":"Hum. Mol. Genet."},{"key":"BFsrep16696_CR15","doi-asserted-by":"publisher","first-page":"7800","DOI":"10.1074\/jbc.M411638200","volume":"280","author":"EA
-      Greenbaum","year":"2005","unstructured":"Greenbaum, E. A. et al. The E46K mutation
-      in alpha-synuclein increases amyloid fibril formation. J. Biol. Chem. 280, 7800\u20137807
-      (2005).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR16","doi-asserted-by":"publisher","first-page":"11604","DOI":"10.1021\/bi010616g","volume":"40","author":"J
-      Li","year":"2001","unstructured":"Li, J., Uversky, V. N. & Fink, A. L. Effect
-      of familial Parkinson\u2019s disease point mutations A30P and A53T on the structural
-      properties, aggregation and fibrillation of human alpha-synuclein. Biochemistry
-      (Mosc.) 40, 11604\u201311613 (2001).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR17","doi-asserted-by":"publisher","first-page":"6419","DOI":"10.1021\/bi5010365","volume":"53","author":"D
-      Ghosh","year":"2014","unstructured":"Ghosh, D. et al. The newly discovered parkinson\u2019s
-      disease associated finnish mutation (A53E) attenuates \u03b1-synuclein aggregation
-      and membrane binding. Biochemistry (Mosc.) 53, 6419\u20136421 (2014).","journal-title":"Biochemistry
-      (Mosc.)"},{"key":"BFsrep16696_CR18","doi-asserted-by":"publisher","first-page":"6925","DOI":"10.1021\/bi400999d","volume":"52","author":"D
-      Ghosh","year":"2013","unstructured":"Ghosh, D. et al. The Parkinson\u2019s disease-associated
-      H50Q mutation accelerates \u03b1-Synuclein aggregation in vitro. Biochemistry
-      (Mosc.) 52, 6925\u20136927 (2013).","journal-title":"Biochemistry (Mosc.)"},{"key":"BFsrep16696_CR19","doi-asserted-by":"publisher","first-page":"45996","DOI":"10.1074\/jbc.M106777200","volume":"276","author":"R
-      Bussell Jr","year":"2001","unstructured":"Bussell, R., Jr & Eliezer, D. Residual
-      structure and dynamics in Parkinson\u2019s disease-associated mutants of alpha-synuclein.
-      J. Biol. Chem. 276, 45996\u201346003 (2001).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR20","doi-asserted-by":"publisher","first-page":"1037","DOI":"10.1016\/j.jmb.2005.11.035","volume":"355","author":"F
-      Rousseau","year":"2006","unstructured":"Rousseau, F., Serrano, L. & Schymkowitz,
-      J. W. H. How evolutionary pressure against protein aggregation shaped chaperone
-      specificity. J. Mol. Biol. 355, 1037\u20131047 (2006).","journal-title":"J.
-      Mol. Biol."},{"key":"BFsrep16696_CR21","doi-asserted-by":"publisher","first-page":"251","DOI":"10.1146\/annurev.bi.47.070178.001343","volume":"47","author":"PY
-      Chou","year":"1978","unstructured":"Chou, P. Y. & Fasman, G. D. Empirical predictions
-      of protein conformation. Annu. Rev. Biochem. 47, 251\u2013276 (1978).","journal-title":"Annu.
-      Rev. Biochem."},{"key":"BFsrep16696_CR22","doi-asserted-by":"publisher","first-page":"18850","DOI":"10.1073\/pnas.1012336107","volume":"107","author":"VL
-      Anderson","year":"2010","unstructured":"Anderson, V. L., Ramlall, T. F., Rospigliosi,
-      C. C., Webb, W. W. & Eliezer, D. Identification of a helical intermediate in
-      trifluoroethanol-induced alpha-synuclein aggregation. Proc. Natl. Acad. Sci.
-      USA 107, 18850\u201318855 (2010).","journal-title":"Proc. Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR23","doi-asserted-by":"publisher","first-page":"715","DOI":"10.1016\/j.nbd.2011.05.025","volume":"43","author":"K
-      Ono","year":"2011","unstructured":"Ono, K., Ikeda, T., Takasaki, J. & Yamada,
-      M. Familial Parkinson disease mutations influence \u03b1-synuclein assembly.
-      Neurobiol. Dis. 43, 715\u2013724 (2011).","journal-title":"Neurobiol. Dis."},{"key":"BFsrep16696_CR24","doi-asserted-by":"publisher","first-page":"30649","DOI":"10.1074\/jbc.C500288200","volume":"280","author":"CW
-      Bertoncini","year":"2005","unstructured":"Bertoncini, C. W., Fernandez, C. O.,
-      Griesinger, C., Jovin, T. M. & Zweckstetter, M. Familial mutants of alpha-synuclein
-      with increased neurotoxicity have a destabilized conformation. J. Biol. Chem.
-      280, 30649\u201330652 (2005).","journal-title":"J. Biol. Chem."},{"key":"BFsrep16696_CR25","doi-asserted-by":"publisher","first-page":"1022","DOI":"10.1016\/j.jmb.2009.03.065","volume":"388","author":"CC
-      Rospigliosi","year":"2009","unstructured":"Rospigliosi, C. C. et al. E46K Parkinson\u2019s-linked
-      mutation enhances C-terminal-to-N-terminal contacts in alpha-synuclein. J. Mol.
-      Biol. 388, 1022\u20131032 (2009).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR26","doi-asserted-by":"publisher","first-page":"10737","DOI":"10.1021\/jp405614j","volume":"117","author":"C
-      Camilloni","year":"2013","unstructured":"Camilloni, C. & Vendruscolo, M. A relationship
-      between the aggregation rates of \u03b1-synuclein variants and the \u03b2-sheet
-      populations in their monomeric forms. J. Phys. Chem. B 117, 10737\u201310741
-      (2013).","journal-title":"J. Phys. Chem. B"},{"key":"BFsrep16696_CR27","doi-asserted-by":"crossref","unstructured":"Coskuner,
-      O. & Wise-Scira, O. Structures and Free Energy Landscapes of the A53T Mutant-Type
-      \u03b1-Synuclein Protein and Impact of A53T Mutation on the Structures of the
-      Wild-Type \u03b1-Synuclein Protein with Dynamics. ACS Chem. Neurosci. (2013).
-      doi: 10.1021\/cn400041j.","DOI":"10.1021\/cn400041j"},{"key":"BFsrep16696_CR28","doi-asserted-by":"publisher","first-page":"571","DOI":"10.1073\/pnas.97.2.571","volume":"97","author":"KA
-      Conway","year":"2000","unstructured":"Conway, K. A. et al. Acceleration of oligomerization,
-      not fibrillization, is a shared property of both alpha-synuclein mutations linked
-      to early-onset Parkinson\u2019s disease: implications for pathogenesis and therapy.
-      Proc. Natl. Acad. Sci. USA 97, 571\u2013576 (2000).","journal-title":"Proc.
-      Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR29","doi-asserted-by":"publisher","first-page":"1089","DOI":"10.1016\/S0022-2836(02)00735-0","volume":"322","author":"HA
-      Lashuel","year":"2002","unstructured":"Lashuel, H. A. et al. Alpha-synuclein,
-      especially the Parkinson\u2019s disease-associated mutants, forms pore-like
-      annular and tubular protofibrils. J. Mol. Biol. 322, 1089\u20131102 (2002).","journal-title":"J.
-      Mol. Biol."},{"key":"BFsrep16696_CR30","doi-asserted-by":"publisher","first-page":"7107","DOI":"10.1021\/bi7000246","volume":"46","author":"RA
-      Fredenburg","year":"2007","unstructured":"Fredenburg, R. A. et al. The impact
-      of the E46K mutation on the properties of alpha-synuclein in its monomeric and
-      oligomeric states. Biochemistry (Mosc.) 46, 7107\u20137118 (2007).","journal-title":"Biochemistry
-      (Mosc.)"},{"key":"BFsrep16696_CR31","doi-asserted-by":"publisher","first-page":"805","DOI":"10.1038\/nature01891","volume":"424","author":"F
-      Chiti","year":"2003","unstructured":"Chiti, F., Stefani, M., Taddei, N., Ramponi,
-      G. & Dobson, C. M. Rationalization of the effects of mutations on peptide and
-      protein aggregation rates. Nature 424, 805\u2013808 (2003).","journal-title":"Nature"},{"key":"BFsrep16696_CR32","doi-asserted-by":"publisher","first-page":"4194","DOI":"10.1073\/pnas.1100976108","volume":"108","author":"B
-      Winner","year":"2011","unstructured":"Winner, B. et al. In vivo demonstration
-      that alpha-synuclein oligomers are toxic. Proc. Natl. Acad. Sci. USA 108, 4194\u20134199
-      (2011).","journal-title":"Proc. Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR33","doi-asserted-by":"publisher","first-page":"1048","DOI":"10.1016\/j.cell.2012.03.037","volume":"149","author":"N
-      Cremades","year":"2012","unstructured":"Cremades, N. et al. Direct Observation
-      of the Interconversion of Normal and Toxic Forms of \u03b1-Synuclein. Cell 149,
-      1048\u20131059 (2012).","journal-title":"Cell"},{"key":"BFsrep16696_CR34","doi-asserted-by":"publisher","first-page":"3256","DOI":"10.1038\/emboj.2009.257","volume":"28","author":"DP
-      Karpinar","year":"2009","unstructured":"Karpinar, D. P. et al. Pre-fibrillar
-      alpha-synuclein variants with impaired beta-structure increase neurotoxicity
-      in Parkinson\u2019s disease models. EMBO J. 28, 3256\u20133268 (2009).","journal-title":"EMBO
-      J."},{"key":"BFsrep16696_CR35","doi-asserted-by":"publisher","first-page":"19509","DOI":"10.1074\/jbc.274.28.19509","volume":"274","author":"SJ
-      Wood","year":"1999","unstructured":"Wood, S. J. et al. alpha-synuclein fibrillogenesis
-      is nucleation-dependent. Implications for the pathogenesis of Parkinson\u2019s
-      disease. J. Biol. Chem. 274, 19509\u201319512 (1999).","journal-title":"J. Biol.
-      Chem."},{"key":"BFsrep16696_CR36","doi-asserted-by":"publisher","first-page":"3246","DOI":"10.1073\/pnas.1013225108","volume":"108","author":"L
-      Giehm","year":"2011","unstructured":"Giehm, L., Svergun, D. I., Otzen, D. E.
-      & Vestergaard, B. Low-resolution structure of a vesicle disrupting &alpha;-synuclein
-      oligomer that accumulates during fibrillation. Proc. Natl. Acad. Sci. USA 108,
-      3246\u20133251 (2011).","journal-title":"Proc. Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR37","doi-asserted-by":"publisher","first-page":"7812","DOI":"10.1021\/bi0102398","volume":"40","author":"MJ
-      Volles","year":"2001","unstructured":"Volles, M. J. et al. Vesicle permeabilization
-      by protofibrillar alpha-synuclein: implications for the pathogenesis and treatment
-      of Parkinson\u2019s disease. Biochemistry (Mosc.) 40, 7812\u20137819 (2001).","journal-title":"Biochemistry
-      (Mosc.)"},{"key":"BFsrep16696_CR38","doi-asserted-by":"publisher","first-page":"7560","DOI":"10.1002\/anie.201400491","volume":"53","author":"W
-      Paslawski","year":"2014","unstructured":"Paslawski, W., Mysling, S., Thomsen,
-      K., J\u00f8rgensen, T. J. D. & Otzen, D. E. Co-existence of two different \u03b1-synuclein
-      oligomers with different core structures determined by hydrogen\/deuterium exchange
-      mass spectrometry. Angew. Chem. Int. Ed Engl. 53, 7560\u20137563 (2014).","journal-title":"Angew.
-      Chem. Int. Ed Engl."},{"key":"BFsrep16696_CR39","doi-asserted-by":"publisher","first-page":"239","DOI":"10.1021\/cn500168x","volume":"6","author":"S
-      Basak","year":"2015","unstructured":"Basak, S., Prasad, G. V. R. K., Varkey,
-      J. & Chattopadhyay, K. Early Sodium Dodecyl Sulfate Induced Collapse of \u03b1-Synuclein
-      Correlates with Its Amyloid Formation. ACS Chem. Neurosci. 6, 239\u2013246 (2015).","journal-title":"ACS
-      Chem. Neurosci."},{"key":"BFsrep16696_CR40","doi-asserted-by":"publisher","first-page":"1202","DOI":"10.1016\/j.bbrc.2005.06.025","volume":"333","author":"A
-      Giese","year":"2005","unstructured":"Giese, A. et al. Single particle detection
-      and characterization of synuclein co-aggregation. Biochem. Biophys. Res. Commun.
-      333, 1202\u20131210 (2005).","journal-title":"Biochem. Biophys. Res. Commun."},{"key":"BFsrep16696_CR41","doi-asserted-by":"publisher","first-page":"1302","DOI":"10.1016\/j.bpj.2009.12.4290","volume":"98","author":"S
-      Nath","year":"2010","unstructured":"Nath, S., Meuvis, J., Hendrix, J., Carl,
-      S. A. & Engelborghs, Y. Early Aggregation Steps in \u03b1-Synuclein as Measured
-      by FCS and FRET: Evidence for a Contagious Conformational Change. Biophys. J.
-      98, 1302\u20131311 (2010).","journal-title":"Biophys. J."},{"key":"BFsrep16696_CR42","doi-asserted-by":"publisher","first-page":"1064","DOI":"10.1016\/j.jmb.2008.03.034","volume":"378","author":"S
-      Thirunavukkuarasu","year":"2008","unstructured":"Thirunavukkuarasu, S., Jares-Erijman,
-      E. A. & Jovin, T. M. Multiparametric fluorescence detection of early stages
-      in the amyloid protein aggregation of pyrene-labeled alpha-synuclein. J. Mol.
-      Biol. 378, 1064\u20131073 (2008).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR43","doi-asserted-by":"publisher","first-page":"E115","DOI":"10.1038\/35017124","volume":"2","author":"MS
-      Goldberg","year":"2000","unstructured":"Goldberg, M. S. & Lansbury Jr, P. T.
-      Is there a cause-and-effect relationship between \u03b1-synuclein fibrillization
-      and Parkinson\u2019s disease? Nat. Cell Biol. 2, E115\u2013E119 (2000).","journal-title":"Nat.
-      Cell Biol."},{"key":"BFsrep16696_CR44","doi-asserted-by":"publisher","first-page":"63","DOI":"10.1016\/j.jmb.2005.10.071","volume":"355","author":"MM
-      Apetri","year":"2006","unstructured":"Apetri, M. M., Maiti, N. C., Zagorski,
-      M. G., Carey, P. R. & Anderson, V. E. Secondary structure of alpha-synuclein
-      oligomers: characterization by raman and atomic force microscopy. J. Mol. Biol.
-      355, 63\u201371 (2006).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR45","doi-asserted-by":"publisher","first-page":"9228","DOI":"10.1038\/srep09228","volume":"5","author":"D
-      Ghosh","year":"2015","unstructured":"Ghosh, D. et al. Structure based aggregation
-      studies reveal the presence of helix-rich intermediate during \u03b1-Synuclein
-      aggregation. Sci. Rep. 5, 9228 (2015).","journal-title":"Sci. Rep"},{"key":"BFsrep16696_CR46","doi-asserted-by":"publisher","first-page":"14424","DOI":"10.1073\/pnas.0803086105","volume":"105","author":"A
-      Orte","year":"2008","unstructured":"Orte, A. et al. Direct characterization
-      of amyloidogenic oligomers by single-molecule fluorescence. Proc. Natl. Acad.
-      Sci. USA 105, 14424\u201314429 (2008).","journal-title":"Proc. Natl. Acad. Sci.
-      USA"},{"key":"BFsrep16696_CR47","doi-asserted-by":"publisher","first-page":"79","DOI":"10.1038\/nsmb.2191","volume":"19","author":"P
-      Narayan","year":"2012","unstructured":"Narayan, P. et al. The extracellular
-      chaperone clusterin sequesters oligomeric forms of the amyloid-\u03b2(1\u201340)
-      peptide. Nat. Struct. Mol. Biol. 19, 79\u201383 (2012).","journal-title":"Nat.
-      Struct. Mol. Biol."},{"key":"BFsrep16696_CR48","doi-asserted-by":"publisher","first-page":"179","DOI":"10.1021\/ac202313d","volume":"84","author":"MH
-      Horrocks","year":"2012","unstructured":"Horrocks, M. H. et al. Single molecule
-      fluorescence under conditions of fast flow. Anal. Chem. 84, 179\u2013185 (2012).","journal-title":"Anal.
-      Chem."},{"key":"BFsrep16696_CR49","doi-asserted-by":"publisher","first-page":"8818","DOI":"10.1021\/acs.analchem.5b01811","volume":"87","author":"MH
-      Horrocks","year":"2015","unstructured":"Horrocks, M. H. et al. Fast Flow Microfluidics
-      and Single-Molecule Fluorescence for the Rapid Characterization of \u03b1-Synuclein
-      Oligomers. Anal. Chem. 87, 8818\u20138826 (2015).","journal-title":"Anal. Chem."},{"key":"BFsrep16696_CR50","doi-asserted-by":"crossref","unstructured":"Chen,
-      S. W. et al. Structural characterization of toxic oligomers that are kinetically
-      trapped during \u03b1-synuclein fibril formation. Proc. Natl. Acad. Sci. USA
-      (2015). doi: 10.1073\/pnas.1421204112.","DOI":"10.1073\/pnas.1421204112"},{"key":"BFsrep16696_CR51","doi-asserted-by":"publisher","first-page":"9758","DOI":"10.1073\/pnas.1218402110","volume":"110","author":"SIA
-      Cohen","year":"2013","unstructured":"Cohen, S. I. A. et al. Proliferation of
-      amyloid-\u03b242 aggregates occurs through a secondary nucleation mechanism.
-      Proc. Natl. Acad. Sci. USA 110, 9758\u20139763 (2013).","journal-title":"Proc.
-      Natl. Acad. Sci. USA"},{"key":"BFsrep16696_CR52","doi-asserted-by":"publisher","first-page":"032712","DOI":"10.1103\/PhysRevE.89.032712","volume":"89","author":"GA
-      Garcia","year":"2014","unstructured":"Garcia, G. A., Cohen, S. I. A., Dobson,
-      C. M. & Knowles, T. P. J. Nucleation-conversion-polymerization reactions of
-      biological macromolecules with prenucleation clusters. Phys. Rev. E Stat. Nonlin.
-      Soft Matter Phys. 89, 032712 (2014).","journal-title":"Phys. Rev. E Stat. Nonlin.
-      Soft Matter Phys."},{"key":"BFsrep16696_CR53","doi-asserted-by":"publisher","first-page":"454","DOI":"10.1016\/j.jmb.2007.09.039","volume":"374","author":"S
-      Zibaee","year":"2007","unstructured":"Zibaee, S. et al. Sequence Determinants
-      for Amyloid Fibrillogenesis of Human alpha-Synuclein. J. Mol. Biol. 374, 454\u2013464
-      (2007).","journal-title":"J. Mol. Biol."},{"key":"BFsrep16696_CR54","doi-asserted-by":"publisher","first-page":"772","DOI":"10.1016\/j.bbrc.2008.01.140","volume":"368","author":"H-J
-      Koo","year":"2008","unstructured":"Koo, H.-J., Lee, H.-J. & Im, H. Sequence
-      determinants regulating fibrillation of human alpha-synuclein. Biochem. Biophys.
-      Res. Commun. 368, 772\u2013778 (2008).","journal-title":"Biochem. Biophys. Res.
-      Commun."},{"key":"BFsrep16696_CR55","doi-asserted-by":"publisher","first-page":"18","DOI":"10.1186\/1472-6807-5-18","volume":"5","author":"N
-      S\u00e1nchez de Groot","year":"2005","unstructured":"S\u00e1nchez de Groot,
-      N., Pallar\u00e9s, I., Avil\u00e9s, F. X., Vendrell, J. & Ventura, S. Prediction
-      of \u2018hot spots\u2019 of aggregation in disease-linked polypeptides. BMC
-      Struct. Biol. 5, 18 (2005).","journal-title":"BMC Struct. Biol."},{"key":"BFsrep16696_CR56","doi-asserted-by":"publisher","first-page":"498","DOI":"10.1021\/cn3002027","volume":"4","author":"O
-      Wise-Scira","year":"2013","unstructured":"Wise-Scira, O., Dunn, A., Aloglu,
-      A. K., Sakallioglu, I. T. & Coskuner, O. Structures of the E46K mutant-type
-      \u03b1-synuclein protein and impact of E46K mutation on the structures of the
-      wild-type \u03b1-synuclein protein. ACS Chem. Neurosci. 4, 498\u2013508 (2013).","journal-title":"ACS
-      Chem. Neurosci"},{"key":"BFsrep16696_CR57","doi-asserted-by":"publisher","first-page":"e49750","DOI":"10.1371\/journal.pone.0049750","volume":"8","author":"LR
-      Lemkau","year":"2013","unstructured":"Lemkau, L. R. et al. Site-specific perturbations
-      of alpha-synuclein fibril structure by the Parkinson\u2019s disease associated
-      mutations A53T and E46K. PloS One 8, e49750 (2013).","journal-title":"PloS One"},{"key":"BFsrep16696_CR58","doi-asserted-by":"publisher","first-page":"2575","DOI":"10.1038\/ncomms3575","volume":"4","author":"L
-      Bousset","year":"2013","unstructured":"Bousset, L. et al. Structural and functional
-      characterization of two alpha-synuclein strains. Nat. Commun. 4, 2575 (2013).","journal-title":"Nat.
-      Commun."},{"key":"BFsrep16696_CR59","doi-asserted-by":"publisher","first-page":"444","DOI":"10.1016\/j.jmb.2008.05.026","volume":"380","author":"H
-      Heise","year":"2008","unstructured":"Heise, H. et al. Solid-state NMR reveals
-      structural differences between fibrils of wild-type and disease-related A53T
-      mutant alpha-synuclein. J. Mol. Biol. 380, 444\u2013450 (2008).","journal-title":"J.
-      Mol. Biol."},{"key":"BFsrep16696_CR60","doi-asserted-by":"publisher","first-page":"387","DOI":"10.1002\/pro.570","volume":"20","author":"M-K
-      Cho","year":"2011","unstructured":"Cho, M.-K., Kim, H.-Y., Fernandez, C. O.,
-      Becker, S. & Zweckstetter, M. Conserved core of amyloid fibrils of wild type
-      and A30P mutant \u03b1-synuclein. Protein Sci. Publ. Protein Soc. 20, 387\u2013395
-      (2011).","journal-title":"Protein Sci. Publ. Protein Soc"},{"key":"BFsrep16696_CR61","doi-asserted-by":"publisher","first-page":"11526","DOI":"10.1074\/jbc.M111.306902","volume":"287","author":"LR
-      Lemkau","year":"2012","unstructured":"Lemkau, L. R. et al. Mutant protein A30P
-      \u03b1-synuclein adopts wild-type fibril structure, despite slower fibrillation
-      kinetics. J. Biol. Chem. 287, 11526\u201311532 (2012).","journal-title":"J.
-      Biol. Chem."},{"key":"BFsrep16696_CR62","doi-asserted-by":"publisher","first-page":"e67713","DOI":"10.1371\/journal.pone.0067713","volume":"8","author":"SB
-      Nielsen","year":"2013","unstructured":"Nielsen, S. B. et al. Wildtype and A30P
-      mutant alpha-synuclein form different fibril structures. PloS One 8, e67713
-      (2013).","journal-title":"PloS One"}],"container-title":["Scientific Reports"],"original-title":[],"language":"en","link":[{"URL":"https:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep16696","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.nature.com\/articles\/srep16696.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,1,5]],"date-time":"2023-01-05T19:09:42Z","timestamp":1672945782000},"score":1,"resource":{"primary":{"URL":"https:\/\/www.nature.com\/articles\/srep16696"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2015,11,19]]},"references-count":62,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2015,12,22]]}},"alternative-id":["BFsrep16696"],"URL":"https:\/\/doi.org\/10.1038\/srep16696","relation":{},"ISSN":["2045-2322"],"issn-type":[{"value":"2045-2322","type":"electronic"}],"subject":[],"published":{"date-parts":[[2015,11,19]]},"assertion":[{"value":"21
-      July 2015","order":1,"name":"received","label":"Received","group":{"name":"ArticleHistory","label":"Article
-      History"}},{"value":"19 October 2015","order":2,"name":"accepted","label":"Accepted","group":{"name":"ArticleHistory","label":"Article
-      History"}},{"value":"19 November 2015","order":3,"name":"first_online","label":"First
-      Online","group":{"name":"ArticleHistory","label":"Article History"}},{"value":"The
-      authors declare no competing financial interests.","order":1,"name":"Ethics","group":{"name":"EthicsHeading","label":"Competing
-      interests"}}],"article-number":"16696"}}'
+    body:
+      string: !!binary |
+        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
+        X5tmkZWzdQAA
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '8638'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:51 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -610,8 +472,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '8673'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 14:22:55 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -619,60 +489,65 @@ interactions:
       vary:
       - Accept-Encoding
       x-api-pool:
-      - public
-      x-ratelimit-interval:
+      - polite
+      x-concurrency-limit:
+      - '3'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '10'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
     method: GET
     uri: https://api.crossref.org/works/10.1109/icdcsw.2003.1203662
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,9,4]],"date-time":"2024-09-04T17:47:57Z","timestamp":1725472077957},"reference-count":13,"publisher":"IEEE","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":[],"DOI":"10.1109\/icdcsw.2003.1203662","type":"proceedings-article","created":{"date-parts":[[2004,6,22]],"date-time":"2004-06-22T20:27:43Z","timestamp":1087936063000},"page":"877-882","source":"Crossref","is-referenced-by-count":2,"title":["Accurate
-      and explicit differentiation of wireless and congestion losses"],"prefix":"10.1109","author":[{"given":"V.","family":"Arya","sequence":"first","affiliation":[]},{"given":"T.","family":"Turletti","sequence":"additional","affiliation":[]}],"member":"263","reference":[{"key":"ref10","doi-asserted-by":"publisher","DOI":"10.1109\/WSC.1996.873340"},{"key":"ref11","article-title":"Addition
-      of ECN to IP","author":"ramakrishnan","year":"2001","journal-title":"RFC 3168"},{"key":"ref12","article-title":"RTP:
-      A transport protocol for real-time applications","author":"schulzrine","year":"1996","journal-title":"RFC
-      1889"},{"key":"ref13","first-page":"252","article-title":"Acheiving moderate
-      fairness for UDP flows by pathstatus classification","author":"tobe","year":"2000","journal-title":"The
-      25th Annual IEEE Conf on Local Computer Networks"},{"key":"ref4","article-title":"Discriminating
-      congestion losses from wireless losses using inter-arrival times at the reciever","author":"biaz","year":"1999","journal-title":"IEEE
-      Symposium ASSET''99"},{"key":"ref3","doi-asserted-by":"publisher","DOI":"10.1109\/INFCOM.2001.916251"},{"key":"ref6","first-page":"43","article-title":"Equation-based
-      congestion control for unicast applications","author":"floyd","year":"2000","journal-title":"SIG-COMM"},{"key":"ref5","first-page":"1","article-title":"End-to-end
-      differentiation of congestion and wireless losses","author":"cen","year":"2002","journal-title":"Proc
-      Multimedia Computing and Networking (MMCN) Conf"},{"journal-title":"Datagram
-      Congestion Control Protocol","year":"2002","author":"kohler","key":"ref8"},{"journal-title":"TCP
-      Friendly Rate Control(TFRC) Protocol Specification","year":"2002","author":"handley","key":"ref7"},{"key":"ref2","doi-asserted-by":"publisher","DOI":"10.1007\/BF01985757"},{"key":"ref1","article-title":"Explicit
-      loss notification and wireless web performance","author":"balakrishnan","year":"1998","journal-title":"IEEE
-      Globecom Internet Mini-Conference"},{"key":"ref9","article-title":"An empirical
-      study of today''s internet traffic for differentiated services IP QoS","author":"li","year":"2000","journal-title":"Proc
-      ISCCSP"}],"event":{"name":"23rd International Conference on Distributed Computing
-      Systems Workshops, 2003.","location":"Providence, Rhode Island, USA"},"container-title":["23rd
-      International Conference on Distributed Computing Systems Workshops, 2003. Proceedings."],"original-title":[],"link":[{"URL":"http:\/\/xplorestaging.ieee.org\/ielx5\/8560\/27094\/01203662.pdf?arnumber=1203662","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,13]],"date-time":"2017-03-13T18:23:30Z","timestamp":1489429410000},"score":1,"resource":{"primary":{"URL":"http:\/\/ieeexplore.ieee.org\/document\/1203662\/"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[null]]},"references-count":13,"URL":"https:\/\/doi.org\/10.1109\/icdcsw.2003.1203662","relation":{},"subject":[]}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/61XbY/aOBD+K1a+tJUIOAmEF+l04tjdCul2yy30Kl3ZDyYx4K4Tp7bDLl3tf7+Z
+        JEB4WVWV+g3seOaZZ54Zj18cY5nNjTNw1KPTcBJuDFtx124zDmtPStdXN1wboVLY8Jq0SQ87zuDF
+        EWnMn3mMP2NmuZsxbcHu168+9TsNjzYC7+GhUe5ZkaB53HE96gbezOsNaDjo0P/AKO4CrCRzBl43
+        9PpBm3q03ek3nAOARS5k7Po07ATdIKS+89pwNF9yzdOIu5HKUwung4aT5QspzJprODS+vr4G+5FK
+        LU+tG6uEibQAXP36CgAjrYxJmH50NaDQIrKFxyWThoMTs1baumgCTnANoVjJy5NXn8ZIDW16Hu3P
+        WyKKI/PU9CkNmp5PgzD0MbiS2UyriPNYpCvjAlEiAiPomwM9Fzmk7UbY8P1zCmnbpaHr+zOfDvzu
+        oB2cUkh73T5QFAaUUgggK/Ll9Lpdt9dDREblOsKlEUYOJMKaMO6ezdhdbHeMttF0GbAzjKJcAxTC
+        0pjw50yKSFgSi2VxzgqGxBG1JE9CcwlCKT4E5lYADbckuOPGgYgycCaeD+QBApZbYBr8vDgrseGY
+        83+bsL5kiZBb+DfUW4bo+fccUcLKUmhj8ehyKWTpvkyMVgXil+rHzjboSUVskUum0WC0C//14bVx
+        8Do78jrLteTWimPPLI4FumPy97h/wMpKFoVo/TBwatouDD1yPAFrHhZhrITLgEpti1yhuvaiP1Pl
+        l+mo6fX7YbPXDaCwHAz1YM5D/KUcd8p2hlVwmMrr0R2xiowntQw5miXsUYO/lKWwvuVMl8pEa99A
+        XcDL3tr9zYgEXtg7cexfcHw/mwzIkFjNUpNB1REoGqsiJclSaQKlIosqICxD7RWEmzouE61z+UND
+        mR5QYehvoPJ6vf4JKmS+UJVbVY3fuQR0GK252EAtk0TFvKiJJRM6Rc0j1M9XE7KU6smQxZZkzK7L
+        pksiCWkTywp7HbpVC35EJb0AerbmxO/YNRmmac4kwfZGRipdEkjW36AtCf+SLLdckztusZmb4wDb
+        F4K5EibSIhEpgIKIzuqVLLVKDjVdLeYGPxbQWDX0My024LxoQoRZYgGo5pHgm0KR+ygXgv04Sk3/
+        QpRFVNNtkikj8oQMp9Pr2bv+SaaCXy2D8d3N6NMtNmev2fdCv+MdGwxPM98OLnB1/T0vUucumOFH
+        vQ0vCF0pNU8hw8a+qVOQxjb+aban448uQL49xtk5xXmpgq/T2LXK5dB+L7TnGmps0CeZrQON+HF9
+        +xdgTuBiI7e5xOTHglUKRHGg8UqG+Pf97e3o7kOh1yKkU0NXzLIVtBb8YodvVLE6qRrBGZo91Ee1
+        lkXe90z1LnqZjSbkRgugRm7JPVZu5eP97OZ+9GHviUwzEHCtVN/wu4YoJbisOe4eZ8z/BalS2p23
+        /rqhXr/X6XZODF3M9O4axuSRVNk95OPcPvEFybgGdSYML5V6UTJ5oZtDcfbeKs6PErpVBE1hjOWf
+        cktuRSpczGx1Zx3h7l/qoCnhSSZg2oK+YWweb1GZVsVs+86UbQXtwlUAl2tUVFVdyVB7QOZGRNBv
+        xhPyj5rWI5Lip8VVqHY8HY2mEwdvX+hUOO68OCkrx6xAx1V4rLzoySE8bLfQNWFWXOQI5SD56dZY
+        nhjyBVvvWmWmQYpxEBBIVUmpcL4RMVpqkPs13CBkbCSkq0E+T4c42J5Pm78bEOp8N482cSJTWqxE
+        jSGcY6RIH4vx4/P93yh1a7PBvDVvgeYUzsoMTqyagnPeVHoFAzCXz515q9cJ6bzld2m/PW/RahJu
+        ZvHyT6bTHKecPw7j8W42r8bkHG7+ou54XNs8PAM2xRyF+oDXR+zWOize/3CLwXAlLIyvax5h1ymS
+        G3O8S96Ys71uI2h4wfmc7XVdGrhegE8VPxgEZ0+Vdq/f9vttKNpizjYRkALLOLvtRuwXmHRFUsx7
+        ZywibyWTNQpjFeUJhDxvVRTNW84rGs8XtcSUb5LagjAmvxRemkv58FB/Kpn6W+mAyBSQoE2VMH7y
+        poGmUnH+UmL7xiOLSF5f/wfOVKNyYQ4AAA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1523'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:52 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -680,8 +555,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '1564'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 14:22:55 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -689,46 +572,52 @@ interactions:
       vary:
       - Accept-Encoding
       x-api-pool:
-      - public
-      x-ratelimit-interval:
+      - polite
+      x-concurrency-limit:
+      - '3'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '10'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
     method: GET
     uri: https://api.crossref.org/works/10.3892/ijo_00000353
   response:
-    content: '{"status":"ok","message-type":"work","message-version":"1.0.0","message":{"indexed":{"date-parts":[[2024,2,26]],"date-time":"2024-02-26T10:21:39Z","timestamp":1708942899915},"reference-count":0,"publisher":"Spandidos
-      Publications","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Int
-      J Oncol"],"published-print":{"date-parts":[[2009,6,26]]},"DOI":"10.3892\/ijo_00000353","type":"journal-article","created":{"date-parts":[[2009,6,26]],"date-time":"2009-06-26T11:19:22Z","timestamp":1246015162000},"source":"Crossref","is-referenced-by-count":4,"title":["Human
-      bladder cancer cells undergo cisplatin-induced apoptosis that is associated
-      with p53-dependent and p53-independent responses"],"prefix":"10.3892","author":[{"family":"Stravopodis","sequence":"first","affiliation":[]}],"member":"2249","container-title":["International
-      Journal of Oncology"],"original-title":[],"link":[{"URL":"https:\/\/spandidos-publications.com\/10.3892\/ijo_00000353\/download","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,4,27]],"date-time":"2017-04-27T09:37:08Z","timestamp":1493285828000},"score":1,"resource":{"primary":{"URL":"http:\/\/www.spandidos-publications.com\/ijo\/35\/2\/401"}},"subtitle":[],"short-title":[],"issued":{"date-parts":[[2009,6,26]]},"references-count":0,"URL":"https:\/\/doi.org\/10.3892\/ijo_00000353","relation":{},"ISSN":["1019-6439"],"issn-type":[{"value":"1019-6439","type":"print"}],"subject":[],"published":{"date-parts":[[2009,6,26]]}}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/4VUTW/bOBD9KwLPok1R8od07R42xWK7aNrLxkZBU7TNRCK5JGU3MPzfd0ayEiHp
+        hy8WZsg3M+89zoWEKGIXSEXsE0lJq0IQB0Xjs1MQO1s/jZ6UD9oaSGQzNmOvGVJdiDa1+q5q/KxF
+        VNQJHwH34YEzXqQ85cvtNh1SUbeIjgnKOOXLLxmreFbl5b+AiVnoqnWkylZsXRZ8XZZltrimxKu9
+        8spIRaXtTCQVS4nrdo0OR+UB8d4JU+vahuQfjEoRod0AmNKaqEyktW2FNn2Pt68HaEp6G0Ir/BP1
+        UNlrGfsp96IJCqqGo/WRIgTcUB7ajw30/0DuTEw+Jp+MtA3ZvnZSU+c1dveeCVamy54JgP3j0x0y
+        yWb5uuSbuX603xj+8kWOLAwKPNrOG9FQgNASqmKzCkB/yPML+lueWUnZsuc5q7Ky4vwtz7xYsmyR
+        LeEow4mhqsSrH5AZYB2O60Bf6K/p7nmUoECkGyF/dq0wya4Rda18IgUchT/VNCHpwB7+YBOpg2tA
+        F0PBMB1AJcJZF23QIYlHERP4FyFYqXHK5KzjMXGLnNbKKYAAxkHiPoKGG2OgmwOlVeh1gD7191du
+        oXnRRRARWryQvWh184xmiV6crLO1RocE9V+Ho0Fir32IeGm/140WgxnQJ972Y15uHyNqSk5Wil3X
+        CI+4cuTsur1u8Ym0u96cnBflzYrvfaRAZSwkmuTjIHli94O17OEZp7JeHzRaYbwGsUabp76hr5//
+        ggrHGF2oNvPNPIwPgbrJQ5hJ227mP3TcZl7bs2msqCev5ebBzgSnpN5rNU2+LoNTz4HGcA3WEM6N
+        FSEZNNAtvI5gmKOST9ocCNIC2oHmPzFytkphZazeGzlbUVZQvvrCyipfVWz91shFmfP1Ys3XNyNL
+        6+FmhqtjNPUFDKLbXqspcT1v5/N59ivugLLNPF9s5kBfwTJyxRrdbiLJsCwmAR1C95vnOt1sYbLa
+        3qpaWz2z/vATCQmiNDfeL4B5d3//N9orY1lJl0VekqEdcxMWfHMSTaf6lzIeedk8ww5DqWDARyXj
+        MM7Lkvv1RNfr/76HxQdbBgAA
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '792'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:52 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -736,8 +625,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '816'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 14:22:56 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -745,11 +642,14 @@ interactions:
       vary:
       - Accept-Encoding
       x-api-pool:
-      - public
-      x-ratelimit-interval:
+      - polite
+      x-concurrency-limit:
+      - '3'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '10'
+    status:
+      code: 200
+      message: OK
 version: 1

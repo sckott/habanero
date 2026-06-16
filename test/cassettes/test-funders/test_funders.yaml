@@ -5,32 +5,29 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/funders?rows=2
   response:
-    content: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":null},"total-results":44529,"items":[{"id":"100000001","location":"United
-      States","name":"National Science Foundation","alt-names":["U.S. National Science
-      Foundation","USA NSF","US NSF","NSF"],"uri":"https:\/\/doi.org\/10.13039\/100000001","replaces":[],"replaced-by":[],"tokens":["national","science","foundation","us","national","science","foundation","usa","nsf","us","nsf","nsf"]},{"id":"100000003","location":"United
-      States","name":"Boeing","alt-names":["Boeing Co.","The Boeing Company","Boeing
-      Co","Boeing Company"],"uri":"https:\/\/doi.org\/10.13039\/100000003","replaces":[],"replaced-by":[],"tokens":["boeing","boeing","co","the","boeing","company","boeing","co","boeing","company"]}]}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/5VSwW7bMAz9FUFn23GWDkV9ywb0WBTwclp8UGUmESpLnkQXCwr/+ygrsd1ibRof
+        DOnxPfKR4iv3KLDzvOD2mSe8Ae/FHlI8tkDYrjM1uFQrj7PgCzivrKH4MsuzfIrw4pUrhManLana
+        AfmW8D8duGOIUS2HqaKcf3mRJ9yDcPKQIriGHJhO6z7haFHo1IHvNBJ68/02J+qQlhe/qUAdCufx
+        W1JxbaXA6GdjiFezknoCTyEjmtDGwxAXmpVSgZHA7i01FkUJFxrTQAzp+SYrM/Y5f1Ou2UN5P5wu
+        Ued+LqY9ZQ3/KuGdU2T9gNj6YrvYLmqrMuv228Uyz5arfHUXTtMUHLRayKGJarzV6dMxAmifwQwd
+        mpML0vjog067uZMuju4yTQSe310hGeYR4tMLfc3NUCX8qz55twOrL+3ADwvK7N8/d0TZT5tR5NcB
+        2Ag0rTBHAkdgOtMC0OVRSLVTkq3BWfbobN1J9P8TnoGPBNlEXitH72ZgVF23B6tr9uDpPJDxIEOP
+        eIC32Nn+W9p4i1vQxt7CeKm7AJz6+yjFGfpcONeI02xm8qqv+v4fh5473MMEAAA=
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 11 Jul 2025 23:25:11 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -38,16 +35,31 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '446'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 05:38:55 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

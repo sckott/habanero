@@ -5,465 +5,487 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/members/98/works
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":151007,"items":[{"indexed":{"date-parts":[[2023,8,30]],"date-time":"2023-08-30T20:51:03Z","timestamp":1693428663198},"reference-count":21,"publisher":"Hindawi
-      Limited","issue":"2","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":1624,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2012,1]]},"DOI":"10.1111\/j.1365-2109.2011.02829.x","type":"journal-article","created":{"date-parts":[[2011,3,23]],"date-time":"2011-03-23T02:44:02Z","timestamp":1300848242000},"page":"292-296","source":"Crossref","is-referenced-by-count":10,"title":["Spawning-related
-      mortality in captive Atlantic cod (Gadus morhua L.)"],"prefix":"10.1155","volume":"43","author":[{"given":"T\u00f3mas","family":"\u00c1rnason","sequence":"first","affiliation":[]},{"given":"Bj\u00f6rn","family":"Bj\u00f6rnsson","sequence":"additional","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2011,3,22]]},"reference":[{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB1|cit1","doi-asserted-by":"crossref","first-page":"290","DOI":"10.1079\/9781845934941.0290","volume-title":"Finfish
-      Aquaculture Diversification","author":"Bj\u00f6rnsson","year":"2010"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB2|cit2","first-page":"677","volume-title":"The
-      propagation of cod Gadus morhua L. Vol. 1, Fl\u00f8devigen Rapportserie","author":"Braaten","year":"1984"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB3|cit3","first-page":"84","volume-title":"Fiskehelse
-      og Fiskesykdommer","author":"Eggset","year":"2002"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB4|cit4","first-page":"289","volume-title":"Proceedings
-      of the 6th International Symposium on the Reproductive Physiology of Fish","author":"Finn","year":"2000"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB5|cit5","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1046\/j.1439-0426.1999.00098.x","article-title":"Feeding
-      behaviour of cod (Gadus morhua) in relation to spawning","volume":"15","author":"Fordham","year":"1999","journal-title":"Journal
-      of Applied Ichthyology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB6|cit6","first-page":"1","article-title":"Mortality
-      of cod in sea-cages","volume":"10","author":"Gunnarsson","year":"2010","journal-title":"Sj\u00e1var\u00fatvegurinn-vefrit
-      um sj\u00e1var\u00fatvegsm\u00e1l"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB7|cit7","first-page":"42","article-title":"Categorization
-      of mortality causes in cod farming","volume":"34","author":"Hanche-Olsen","year":"2009","journal-title":"Norsk
-      fiskeoppdrett"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB8|cit8","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1016\/S0044-8486(01)00610-X","article-title":"Growth,
-      gonadal development and spawning time of Atlantic cod (Gadus morhua) reared
-      under different photoperiods","volume":"203","author":"Hansen","year":"2001","journal-title":"Aquaculture"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB9|cit9","doi-asserted-by":"crossref","first-page":"159","DOI":"10.1016\/0044-8486(94)00399-9","article-title":"Effects
-      of periodic starvation on reproductive investment in first-time spawning Atlantic
-      cod (Gadus morhua L)","volume":"133","author":"Karlsen","year":"1995","journal-title":"Aquaculture"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB11|cit10","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1111\/j.1095-8649.1989.tb03302.x","article-title":"The
-      spawning activity of cod, Gadus morhua L","volume":"34","author":"Kjesbu","year":"1989","journal-title":"Journal
-      of Fish Biology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB10|cit11","doi-asserted-by":"crossref","first-page":"719","DOI":"10.1111\/j.1095-8649.1994.tb00939.x","article-title":"Time
-      of start of spawning in Atlantic cod (Gadus morhua) females in relation to vitellogenic
-      oocyte diameter, temperature, fish length and condition","volume":"45","author":"Kjesbu","year":"1994","journal-title":"Journal
-      of Fish Biology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB12|cit12","doi-asserted-by":"crossref","first-page":"2333","DOI":"10.1139\/f91-274","article-title":"Fecundity,
-      atresia, and egg size of captive Atlantic cod (Gadus morhua) in relation to
-      proximate body composition","volume":"48","author":"Kjesbu","year":"1991","journal-title":"Canadian
-      Journal of Fisheries and Aquatic Sciences"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB13|cit13","first-page":"68","volume-title":"Fiskehelse
-      og Fiskesykdommer","author":"Larsen","year":"2002"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB14|cit14","doi-asserted-by":"crossref","first-page":"824","DOI":"10.1006\/jmsc.2000.0568","article-title":"Spatial
-      variation in abundance, size composition and viable egg production of spawning
-      cod (Gadus morhua L.) in Icelandic waters","volume":"57","author":"Marteinsd\u00f3ttir","year":"2000","journal-title":"ICES
-      Journal of Marine Science"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB15|cit15","doi-asserted-by":"crossref","first-page":"477","DOI":"10.1111\/j.1095-8649.1999.tb00629.x","article-title":"The
-      effect of stress on reproduction in Atlantic cod","volume":"54","author":"Morgan","year":"1999","journal-title":"Journal
-      of Fish Biology"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB16|cit16","doi-asserted-by":"crossref","first-page":"1383","DOI":"10.1139\/f58-076","article-title":"Studies
-      on reproduction and feeding of Atlantic cod (Gadus callarias L.) in the Southwestern
-      Gulf of St. Lawrence","volume":"15","author":"Powles","year":"1958","journal-title":"Fisheries
-      Research Board Canada"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB17|cit17","doi-asserted-by":"crossref","first-page":"194","DOI":"10.1016\/j.icesjms.2005.11.012","article-title":"Worldwide
-      status and perspective on gadoid culture","volume":"63","author":"Rosenlund","year":"2006","journal-title":"ICES
-      Journal of Marine Science"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB18|cit18","doi-asserted-by":"crossref","first-page":"163","DOI":"10.1007\/s10695-005-4319-6","article-title":"The
-      effect of photoperiod on sexual maturation, appetite and growth in wild Atlantic
-      cod (Gadus morhua L.)","volume":"30","author":"Skjaeraasen","year":"2004","journal-title":"Fish
-      Physiology and Biochemistry"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB19|cit19","doi-asserted-by":"crossref","first-page":"433","DOI":"10.1002\/9780470995617.ch10","volume-title":"Culture
-      of Cold-Water Marine Fish","author":"Sv\u00e5sand","year":"2004"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB20|cit20","doi-asserted-by":"crossref","first-page":"55","DOI":"10.2960\/J.v33.a4","article-title":"Experimental
-      methods to monitor the production and quality of eggs of captive marine fish","volume":"33","author":"Thorsen","year":"2003","journal-title":"Journal
-      of Northwest Atlantic Fishery Science"},{"key":"10.1111\/j.1365-2109.2011.02829.x-BIB21|cit21","first-page":"64","volume-title":"Havbruksrapporten
-      2002, Fisken og Havet, 3","author":"Van der Meeren","year":"2002"}],"container-title":["Aquaculture
-      Research"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1365-2109.2011.02829.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1365-2109.2011.02829.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:55:18Z","timestamp":1671540918000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1365-2109.2011.02829.x"}},"subtitle":["Spawning-related
-      mortality in captive Atlantic cod"],"issued":{"date-parts":[[2011,3,22]]},"references-count":21,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2012,1]]}},"URL":"https:\/\/doi.org\/10.1111\/j.1365-2109.2011.02829.x","ISSN":["1355-557X"],"issn-type":[{"value":"1355-557X","type":"print"}],"published":{"date-parts":[[2011,3,22]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T13:14:33Z","timestamp":1724418873372},"reference-count":17,"publisher":"Hindawi
-      Limited","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2038,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2010,2]]},"DOI":"10.1111\/j.1742-1241.2009.02256.x","type":"journal-article","created":{"date-parts":[[2010,1,11]],"date-time":"2010-01-11T17:43:16Z","timestamp":1263231796000},"page":"316-321","source":"Crossref","is-referenced-by-count":14,"title":["Low-grade
-      fever: how to distinguish organic from non-organic forms"],"prefix":"10.1155","volume":"64","author":[{"given":"M.","family":"Affronti","sequence":"first","affiliation":[]},{"given":"P.","family":"Mansueto","sequence":"additional","affiliation":[]},{"given":"M.","family":"Soresi","sequence":"additional","affiliation":[]},{"given":"A.
-      M.","family":"Abbene","sequence":"additional","affiliation":[]},{"given":"A.","family":"Affronti","sequence":"additional","affiliation":[]},{"given":"M.","family":"Valenti","sequence":"additional","affiliation":[]},{"given":"L.","family":"Giannitrapani","sequence":"additional","affiliation":[]},{"given":"G.","family":"Montalto","sequence":"additional","affiliation":[]}],"member":"98","reference":[{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB1","first-page":"775","volume-title":"Cecil
-      Essentials of Medicine","author":"Blosson","year":"2007"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB2","doi-asserted-by":"crossref","first-page":"68","DOI":"10.1016\/S1385-299X(01)00089-7","article-title":"Hypothalamic
-      neuroactivity in specific processes and central regulation of body temperature
-      and water intake","volume":"8","author":"Takahashi","year":"2001","journal-title":"Brain
-      Res Brain Res Protoc"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB3","doi-asserted-by":"crossref","first-page":"126","DOI":"10.1016\/S0304-3940(01)01865-1","article-title":"The
-      role of preoptic area and anterior hypothalamus and median raphe nucleus on
-      thermoregulatory system in freely moving rats","volume":"22","author":"Ishiwata","year":"2001","journal-title":"Neurosci
-      Lett"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB4","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1097\/00005792-196102000-00001","article-title":"Fever
-      of unexplained origin: report on 100 cases","volume":"40","author":"Petersdorf","year":"1961","journal-title":"Medicine"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB5","doi-asserted-by":"crossref","first-page":"1033","DOI":"10.1001\/archinte.163.9.1033","article-title":"From
-      prolonged febrile illness to fever of unknown origin: the challenge continues","volume":"163","author":"Vanderschueren","year":"2003","journal-title":"Arch
-      Intern Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB6","first-page":"5","volume-title":"Le
-      Febbri di Origine Oscura, una Guida Alla Diagnosi","author":"Iandolo","year":"1987"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB7","doi-asserted-by":"crossref","first-page":"1225","DOI":"10.1001\/archinte.1979.03630480015009","article-title":"Fever
-      patterns. Their lack of clinical significance","volume":"139","author":"Musher","year":"1979","journal-title":"Arch
-      Intern Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB8","first-page":"125S","article-title":"Le
-      Febbri di Origine Sconosciuta: un frequente, costoso cimento","volume":"19","author":"Mansueto","year":"2004","journal-title":"Atti
-      del 105\u00e2\u0080\u0083\u00c2\u00b0 Congresso Nazionale della Societ\u00c3\u00a0
-      Italiana di Medicina Interna, Palermo"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB9","doi-asserted-by":"crossref","first-page":"392","DOI":"10.1097\/00005792-199711000-00002","article-title":"Fever
-      of unknown origin. I A prospective multicenter study of 167 patients with FUO,
-      using fixed epidemiologic entry criteria. The Netherlands Study Group","volume":"76","author":"De
-      Kleijn","year":"1997","journal-title":"Medicine (Baltimore)"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB10","doi-asserted-by":"crossref","first-page":"575","DOI":"10.1016\/S0140-6736(97)07061-X","article-title":"Fever
-      Of unknown origin","volume":"350","author":"Arnow","year":"1997","journal-title":"The
-      Lancet"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB11","doi-asserted-by":"crossref","first-page":"632","DOI":"10.1080\/00365540600606564","article-title":"Fever
-      of unknown origin in adults: evaluation of 144 cases in a non-university hospital","volume":"38","author":"Zenone","year":"2006","journal-title":"Scand
-      J Infect Dis"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB12","first-page":"35","article-title":"Fever
-      of unknown origin \u00e2\u0080\u0093 re-examined and redefined","volume":"11","author":"Durack","year":"1991","journal-title":"Curr
-      Clin Trop Infect Dis"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB13","doi-asserted-by":"crossref","first-page":"51","DOI":"10.1001\/archinte.1992.00400130077008","article-title":"Fever
-      of unknown origin in the 1980s. An update of the diagnostic spectrum","volume":"152","author":"Knockaert","year":"1992","journal-title":"Arch
-      Int Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB14","doi-asserted-by":"crossref","first-page":"1860","DOI":"10.1001\/jama.1932.27410740001012","article-title":"Habitual
-      hypertermia","volume":"99","author":"Reimann","year":"1932","journal-title":"JAMA"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB15","doi-asserted-by":"crossref","first-page":"219","DOI":"10.1007\/s11739-008-0129-z","article-title":"Fever
-      of unknown origin in a Mediterranean survey from a division of Internal Medicine:
-      report of 91 cases during a 12-year-period (1991\u00e2\u0080\u00932002)","volume":"3","author":"Mansueto","year":"2008","journal-title":"Intern
-      Emerg Med"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB16","doi-asserted-by":"crossref","first-page":"884","DOI":"10.1136\/pgmj.68.805.884","article-title":"Pyrexia
-      of unknown origin: changing spectrum of diseases in two consecutive series","volume":"68","author":"Barbado","year":"1992","journal-title":"Postgrad
-      Med J"},{"key":"10.1111\/j.1742-1241.2009.02256.x-BIB17","doi-asserted-by":"crossref","first-page":"205","DOI":"10.1097\/00006231-200603000-00002","article-title":"Fever
-      of unknown origin: a systematic review of the literature for 1995\u00e2\u0080\u00932004","volume":"27","author":"Gaeta","year":"2006","journal-title":"Nucl
-      Med Comm"}],"container-title":["International Journal of Clinical Practice"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1742-1241.2009.02256.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1742-1241.2009.02256.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T06:07:37Z","timestamp":1643350057000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1742-1241.2009.02256.x"}},"issued":{"date-parts":[[2010,2]]},"references-count":17,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2010,2]]}},"URL":"https:\/\/doi.org\/10.1111\/j.1742-1241.2009.02256.x","ISSN":["1368-5031","1742-1241"],"issn-type":[{"value":"1368-5031","type":"print"},{"value":"1742-1241","type":"electronic"}],"published":{"date-parts":[[2010,2]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T12:33:10Z","timestamp":1724416390476},"reference-count":81,"publisher":"Hindawi
-      Limited","issue":"2","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":3471,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Dermatol
-      Ther"],"published-print":{"date-parts":[[2006,3]]},"DOI":"10.1111\/j.1529-8019.2006.00059.x","type":"journal-article","created":{"date-parts":[[2006,4,10]],"date-time":"2006-04-10T15:50:02Z","timestamp":1144684202000},"page":"108-117","source":"Crossref","is-referenced-by-count":12,"title":["Atopic
-      dermatitis prevention"],"prefix":"10.1155","volume":"19","author":[{"given":"Eric
-      L.","family":"Simpson","sequence":"first","affiliation":[]}],"member":"98","reference":[{"key":"b1_69","doi-asserted-by":"crossref","DOI":"10.3310\/hta4370","volume":"4","author":"Hoare
-      C","year":"2000","journal-title":"Health Technology Assessment"},{"key":"b2_70","doi-asserted-by":"publisher","DOI":"10.1001\/archderm.138.3.391"},{"key":"b3_71","volume-title":"Clinical
-      preventive medicine","author":"Lang RS","year":"2002","edition":"2"},{"key":"b4_72","doi-asserted-by":"crossref","first-page":"7","DOI":"10.1111\/j.1399-3038.1999.tb00421.x","volume":"10","author":"Beyer
-      K","year":"1999","journal-title":"Pediatr Allergy Immunol"},{"key":"b5_73","doi-asserted-by":"crossref","first-page":"465","DOI":"10.1111\/j.1651-2227.1976.tb04915.x","volume":"65","author":"Kjellman
-      NI","year":"1976","journal-title":"Acta Paediatr Scand"},{"key":"b6_74","doi-asserted-by":"crossref","first-page":"739","DOI":"10.1111\/j.1365-2222.1991.tb03204.x","volume":"21","author":"Hide
-      DW","year":"1991","journal-title":"Clin Exp Allergy"},{"key":"b7_75","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(94)91641-1"},{"key":"b8_76","doi-asserted-by":"crossref","first-page":"423","DOI":"10.1111\/j.1365-2222.1994.tb00930.x","volume":"24","author":"Warner
-      JA","year":"1994","journal-title":"Clin Exp Allergy"},{"key":"b9_77","doi-asserted-by":"crossref","first-page":"543","DOI":"10.1111\/j.1365-2222.1995.tb01092.x","volume":"25","author":"Borres
-      MP","year":"1995","journal-title":"Clin Exp Allergy"},{"key":"b10_78","doi-asserted-by":"crossref","first-page":"422","DOI":"10.1016\/S0190-9622(84)70184-8","volume":"11","author":"Heskel
-      NS","year":"1984","journal-title":"J Am Acad Dermatol"},{"key":"b11_79","doi-asserted-by":"crossref","first-page":"677","DOI":"10.1111\/j.1398-9995.1994.tb00141.x","volume":"49","author":"Odelram
-      H","year":"1994","journal-title":"Allergy"},{"key":"b12_80","first-page":"15","volume-title":"Handbook
-      of atopic eczema","author":"Schultz Larsen F","year":"1991"},{"key":"b13_81","doi-asserted-by":"crossref","first-page":"1018","DOI":"10.1136\/adc.67.8.1018","volume":"67","author":"Dold
-      S","year":"1992","journal-title":"Arch Dis Child"},{"key":"b14_82","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2222.1997.310899.x"},{"key":"b15_83","first-page":"214","volume-title":"Atopic
-      dermatitis - the epidemiology, causes and prevention of atopic eczema","author":"Mar
-      A","year":"2000"},{"key":"b16_84","doi-asserted-by":"crossref","unstructured":"16.EL
-      Simpson, and JM Hanifin . Periodic synopsis on atopic dermatitis . J Am Acad
-      Dermatol2005 : 53 : 115 -128 .","DOI":"10.1016\/j.jaad.2005.01.130"},{"key":"b17_85","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2004.04.027"},{"key":"b18_86","doi-asserted-by":"publisher","DOI":"10.1007\/BF00412924"},{"key":"b19_87","first-page":"72","volume":"4","author":"Kramer
-      MS","year":"2004","journal-title":"Cochrane Library"},{"key":"b21_88","doi-asserted-by":"publisher","DOI":"10.1067\/mjd.2001.114741"},{"key":"b22_89","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2222.2002.01274.x"},{"key":"b23_90","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(02)11025-7"},{"key":"b24_91","doi-asserted-by":"publisher","DOI":"10.1093\/aje\/kwh208"},{"key":"b25_92","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaad.2003.08.003"},{"key":"b26_93","doi-asserted-by":"publisher","DOI":"10.1111\/j.1399-3038.2004.00127.x"},{"key":"b27_94","doi-asserted-by":"crossref","first-page":"101","DOI":"10.1111\/j.1399-3038.1993.tb00077.x","volume":"4","author":"Businco
-      L","year":"1993","journal-title":"Pediatr Allergy Immunol"},{"key":"b28_95","doi-asserted-by":"publisher","DOI":"10.1067\/mai.2003.101"},{"key":"b29_96","doi-asserted-by":"publisher","DOI":"10.1016\/S0022-3476(88)80054-4"},{"key":"b30_97","doi-asserted-by":"publisher","DOI":"10.1016\/S0091-6749(95)70074-9"},{"key":"b31_98","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.2000.03666.x"},{"key":"b32_99","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.2001.04283.x"},{"key":"b33_100","doi-asserted-by":"publisher","DOI":"10.1164\/rccm.2106026"},{"key":"b34_101","doi-asserted-by":"publisher","DOI":"10.1034\/j.1398-9995.2001.056002152.x"},{"key":"b35_102","doi-asserted-by":"crossref","first-page":"439","DOI":"10.1136\/gut.32.4.439","volume":"32","author":"Fuller
-      R","year":"1991","journal-title":"Gut"},{"key":"b36_103","first-page":"456","volume":"119","author":"Isolauri
-      E","year":"2000","journal-title":"Clin Exp Allergy"},{"key":"b37_104","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(00)04259-8"},{"key":"b38_105","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(03)13490-3"},{"key":"b39_106","doi-asserted-by":"publisher","DOI":"10.1001\/archderm.138.3.391"},{"key":"b40_107","doi-asserted-by":"publisher","DOI":"10.1016\/S0168-1605(98)00128-7"},{"key":"b41_108","doi-asserted-by":"crossref","first-page":"3345","DOI":"10.1128\/IAI.65.8.3345-3351.1997","volume":"65","author":"Wagner
-      RD","year":"1997","journal-title":"Infect Immunol"},{"key":"b42_109","doi-asserted-by":"crossref","first-page":"4949","DOI":"10.1128\/AEM.65.11.4949-4956.1999","volume":"65","author":"Jacobsen
-      CN","year":"1999","journal-title":"Appl Environ Microbiol"},{"key":"b43_110","doi-asserted-by":"publisher","DOI":"10.1067\/mai.2003.389"},{"key":"b44_111","doi-asserted-by":"publisher","DOI":"10.1001\/archderm.130.11.1402"},{"key":"b45_112","doi-asserted-by":"crossref","first-page":"429","DOI":"10.2340\/0001555575429433","volume":"75","author":"Seidenari
-      S","year":"1995","journal-title":"Acta Derm Venereol"},{"key":"b46_113","doi-asserted-by":"publisher","DOI":"10.1046\/j.1523-1747.2000.00072.x"},{"key":"b47_114","first-page":"1079","volume":"137","author":"Elias
-      PM","year":"2001","journal-title":"Arch Dermatol"},{"key":"b48_115","doi-asserted-by":"crossref","first-page":"660","DOI":"10.1016\/S0022-3476(96)80132-6","volume":"128","author":"Nopper
-      AJ","year":"1996","journal-title":"J Pediatrics"},{"key":"b49_116","doi-asserted-by":"crossref","first-page":"1039","DOI":"10.1016\/S0140-6736(05)71140-5","volume":"365","author":"Darmstadt
-      GL","year":"2005","journal-title":"Lancet"},{"key":"b50_117","doi-asserted-by":"crossref","first-page":"123","DOI":"10.3109\/9780203908877-8","volume-title":"Atopic
-      dermatitis","author":"Proksch E","year":"2002"},{"key":"b51_118","doi-asserted-by":"publisher","DOI":"10.1080\/000155599750011705"},{"key":"b52_119","doi-asserted-by":"publisher","DOI":"10.1080\/080352502753711678"},{"key":"b53_120","doi-asserted-by":"publisher","DOI":"10.1542\/peds.105.5.1041"},{"key":"b54_121","doi-asserted-by":"publisher","DOI":"10.1016\/S0011-393X(98)85076-5"},{"key":"b55_122","doi-asserted-by":"crossref","first-page":"321","DOI":"10.1111\/j.1525-1470.1997.tb00968.x","volume":"14","author":"Lucky
-      AW","year":"1997","journal-title":"Pediatr Dermatol"},{"key":"b56_123","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.1999.02660.x"},{"key":"b57_124","doi-asserted-by":"publisher","DOI":"10.1067\/mjd.2002.124617"},{"key":"b58_125","doi-asserted-by":"publisher","DOI":"10.1067\/mai.2001.112942"},{"key":"b59_126","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2004.05.066"},{"key":"b60_127","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.2002.05006.x"},{"key":"b61_128","doi-asserted-by":"crossref","first-page":"1367","DOI":"10.1136\/bmj.326.7403.1367","volume":"326","author":"Berth-Jones
-      J","year":"2003","journal-title":"Br Med J"},{"key":"b62_129","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2133.1999.02893.x"},{"key":"b63_130","doi-asserted-by":"publisher","DOI":"10.1542\/peds.110.1.e2"},{"key":"b64_131","doi-asserted-by":"crossref","first-page":"78","DOI":"10.1001\/archderm.137.1.78","volume":"137","author":"Tausk
-      FA","year":"2001","journal-title":"Arch Dermatol"},{"key":"b65_132","doi-asserted-by":"publisher","DOI":"10.1111\/j.0022-202X.2005.23589.x"},{"key":"b66_133","doi-asserted-by":"publisher","DOI":"10.1037\/\/0022-006X.63.4.624"},{"key":"b67_134","doi-asserted-by":"publisher","DOI":"10.1046\/j.1525-1470.1998.1998015390.x"},{"key":"b68_135","doi-asserted-by":"crossref","first-page":"286","DOI":"10.1016\/S0190-9622(88)70041-9","volume":"18","author":"Cole
-      WC","year":"1988","journal-title":"J Am Acad Dermatol"},{"key":"b69_136","doi-asserted-by":"crossref","first-page":"778","DOI":"10.1111\/j.1365-2133.1995.tb00726.x","volume":"132","author":"Stewart
-      AC","year":"1995","journal-title":"Br J Dermatol"},{"key":"b70_137","doi-asserted-by":"crossref","first-page":"495","DOI":"10.2340\/00015555-70495499","volume":"70","author":"Broberg
-      A","year":"1990","journal-title":"Acta Derm Venereol"},{"key":"b71_138","doi-asserted-by":"publisher","DOI":"10.1016\/S0022-3476(89)80323-3"},{"key":"b72_139","doi-asserted-by":"publisher","DOI":"10.1111\/j.1365-2222.2004.1953.x"},{"key":"b73_140","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(78)91199-6"},{"key":"b74_141","doi-asserted-by":"publisher","DOI":"10.1111\/j.1398-9995.2004.00571.x"},{"key":"b75_142","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaad.2004.03.025"},{"key":"b76_143","doi-asserted-by":"crossref","unstructured":"76.MM
-      Thompson, and JM Hanifin . Effective therapy of childhood atopic dermatitis
-      allays food allergy concerns . J Am Acad Dermatol2005 : 53 : 5214 -5219 .","DOI":"10.1016\/j.jaad.2005.04.065"},{"key":"b77_144","doi-asserted-by":"publisher","DOI":"10.1034\/j.1398-9995.2001.056002152.x"},{"key":"b78_145","doi-asserted-by":"crossref","first-page":"765","DOI":"10.1172\/JCI8624","volume":"105","author":"Herrick
-      CA","year":"2000","journal-title":"J Clin Invest"},{"key":"b79_146","doi-asserted-by":"crossref","first-page":"1614","DOI":"10.1172\/JCI1647","volume":"101","author":"Spergel
-      JM","year":"1998","journal-title":"J Clin Invest"},{"key":"b80_147","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2003.09.033"},{"key":"b81_148","doi-asserted-by":"publisher","DOI":"10.1016\/j.jaci.2003.09.033"},{"key":"b82_149","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa013536"}],"container-title":["Dermatologic
-      Therapy"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1529-8019.2006.00059.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1529-8019.2006.00059.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,2,3]],"date-time":"2024-02-03T18:16:00Z","timestamp":1706984160000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1529-8019.2006.00059.x"}},"issued":{"date-parts":[[2006,3]]},"references-count":81,"journal-issue":{"issue":"2","published-print":{"date-parts":[[2006,3]]}},"alternative-id":["10.1111\/j.1529-8019.2006.00059.x"],"URL":"https:\/\/doi.org\/10.1111\/j.1529-8019.2006.00059.x","ISSN":["1396-0296","1529-8019"],"issn-type":[{"value":"1396-0296","type":"print"},{"value":"1529-8019","type":"electronic"}],"published":{"date-parts":[[2006,3]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T12:36:20Z","timestamp":1724416580909},"reference-count":60,"publisher":"Hindawi
-      Limited","issue":"s9","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2831,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Pediatr
-      Diabetes"],"published-print":{"date-parts":[[2007,12]]},"DOI":"10.1111\/j.1399-5448.2007.00338.x","type":"journal-article","created":{"date-parts":[[2007,11,7]],"date-time":"2007-11-07T07:40:59Z","timestamp":1194421259000},"page":"88-95","source":"Crossref","is-referenced-by-count":27,"title":["Double
-      or hybrid diabetes associated with an increase in type 1 and type 2 diabetes
-      in children and youths"],"prefix":"10.1155","volume":"8","author":[{"given":"Paolo","family":"Pozzilli","sequence":"first","affiliation":[]},{"given":"Chiara","family":"Guglielmi","sequence":"additional","affiliation":[]},{"given":"Ekaterina","family":"Pronina","sequence":"additional","affiliation":[]},{"given":"Elena","family":"Petraikina","sequence":"additional","affiliation":[]}],"member":"98","reference":[{"key":"b1_210","doi-asserted-by":"publisher","DOI":"10.1016\/j.ecl.2005.04.010"},{"key":"b2_211","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.20.4.484"},{"key":"b3_212","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.21.1.80"},{"key":"b4_213","doi-asserted-by":"publisher","DOI":"10.1097\/00008480-200008000-00004"},{"key":"b5_214","first-page":"52","volume":"147","author":"Dean
-      HJ","year":"1992","journal-title":"CMAJ"},{"key":"b6_215","doi-asserted-by":"crossref","first-page":"12217","DOI":"10.1073\/pnas.0605480103","volume":"103","author":"Donath
-      MY","year":"2006","journal-title":"Proc Natl Acad Sci USA"},{"key":"b7_216","doi-asserted-by":"crossref","first-page":"52","DOI":"10.1016\/j.tem.2006.12.003","volume":"18","author":"Pozzilli
-      P","year":"2007","journal-title":"Trends Endocrinol Metab"},{"key":"b8_217","doi-asserted-by":"publisher","DOI":"10.1007\/s00125-002-0845-2"},{"key":"b9_218","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.23.3.381"},{"key":"b10_219","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.26.10.2876"},{"key":"b11_220","doi-asserted-by":"publisher","DOI":"10.1034\/j.1399-5448.2003.00012.x"},{"key":"b12_221","doi-asserted-by":"crossref","first-page":"2760","DOI":"10.1001\/jama.297.24.2760","volume":"297","author":"Writing
-      Group for the SEARCH for Diabetes in Youth Study Group","year":"2007","journal-title":"JAMA"},{"key":"b13_222","doi-asserted-by":"crossref","first-page":"971","DOI":"10.1093\/ajcn\/75.6.971","volume":"75","author":"Wang
-      Y","year":"2002","journal-title":"Am J Clin Nutr"},{"key":"b14_223","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(02)09678-2"},{"key":"b15_224","doi-asserted-by":"crossref","first-page":"1457","DOI":"10.1038\/sj.bjc.6603703","volume":"96","author":"Larsson
-      SC","year":"2000","journal-title":"Br J Cancer"},{"key":"b16_225","first-page":"1","volume":"894","author":"Report
-      of a WHO Consultation","year":"2000","journal-title":"World Health Organ Tech
-      Rep Ser"},{"key":"b17_226","doi-asserted-by":"publisher","DOI":"10.1046\/j.1440-6047.11.supp3.9.x"},{"key":"b18_227","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-789X.2004.00133.x"},{"key":"b19_228","first-page":"1","volume":"916","year":"2003","journal-title":"World
-      Health Organ Tech Rep Ser"},{"key":"b20_229","unstructured":"20. WorldHeartFederation(2007
-      ). Children, Adolescents and Heart Disease . Geneva (available fromhttp:\/\/www.worldheart.org\/pdf\/press.factsheets.children.pdf)."},{"key":"b21_230","doi-asserted-by":"publisher","DOI":"10.1046\/j.1467-789X.2003.00116.x"},{"key":"b22_231","doi-asserted-by":"publisher","DOI":"10.1111\/j.1467-789X.2005.00176.x"},{"key":"b23_232","doi-asserted-by":"publisher","DOI":"10.1111\/j.1464-5491.2006.01925.x"},{"key":"b24_233","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.23.12.1755"},{"key":"b25_234","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.28.2.290"},{"key":"b26_235","doi-asserted-by":"crossref","first-page":"420","DOI":"10.1007\/s00125-003-1045-4","volume":"46","author":"Hermann
-      R","year":"2003","journal-title":"Diabetologia"},{"key":"b27_236","doi-asserted-by":"publisher","DOI":"10.1046\/j.1464-5491.2003.01005.x"},{"key":"b28_237","doi-asserted-by":"publisher","DOI":"10.1016\/S0140-6736(04)17357-1"},{"key":"b29_238","doi-asserted-by":"publisher","DOI":"10.2337\/diacare.27.12.2790"},{"key":"b30_239","doi-asserted-by":"publisher","DOI":"10.1196\/annals.1372.029"},{"key":"b31_240","doi-asserted-by":"publisher","DOI":"10.1111\/j.1399-543X.2004.00060.x"},{"key":"b32_241","doi-asserted-by":"crossref","first-page":"276","DOI":"10.26719\/2000.6.2-3.276","volume":"6","author":"El-Hazmi
-      MA","year":"2000","journal-title":"East Mediterr Health J"},{"key":"b33_242","doi-asserted-by":"publisher","DOI":"10.1016\/0168-8227(96)01262-4"},{"key":"b34_243","doi-asserted-by":"publisher","DOI":"10.1016\/S0168-8227(01)00267-4"},{"key":"b35_244","first-page":"71","volume":"16","author":"Likitmascul
-      S","year":"2003","journal-title":"J Pediatr Endocrinol Metab"},{"key":"b36_245","doi-asserted-by":"publisher","DOI":"10.2337\/diabetes.48.12.2422"},{"key":"b37_246","doi-asserted-by":"publisher","DOI":"10.1016\/S0168-8227(96)01337-X"},{"key":"b38_247","doi-asserted-by":"crossref","first-page":"183","DOI":"10.1515\/JPEM.2004.17.2.183","volume":"17","author":"Cruz
-      M","year":"2004","journal-title":"J Pediatr Endocrinol Metab"},{"key":"b39_248","volume":"29","author":"Ramos
-      OF","year":"2003","journal-title":"Diabetes Metab"},{"key":"b40_249","doi-asserted-by":"publisher","DOI":"10.1080\/08035250510026788"},{"key":"b41_250","doi-asserted-by":"publisher","DOI":"10.2337\/dc06-1813"},{"key":"b42_251","doi-asserted-by":"crossref","DOI":"10.1067\/mpd.2001.112510","volume":"138","author":"Rapaport
-      R","year":"2001","journal-title":"J Pediatr"},{"key":"b43_252","doi-asserted-by":"crossref","first-page":"437","DOI":"10.1136\/adc.2005.088229","volume":"91","author":"Reinehr
-      T","year":"2006","journal-title":"Arch Dis Child"},{"key":"b44_253","doi-asserted-by":"crossref","first-page":"2954","DOI":"10.2337\/diacare.26.10.2954","volume":"26","author":"Libman
-      IM","year":"2003","journal-title":"Diabetes Care"},{"key":"b45_254","doi-asserted-by":"crossref","first-page":"288","DOI":"10.1007\/s00125-001-0724-2","volume":"45","author":"Wilkins
-      TJ","year":"2002","journal-title":"Diabetologia"},{"key":"b46_255","doi-asserted-by":"publisher","DOI":"10.1007\/s11892-003-0020-2"},{"key":"b47_256","doi-asserted-by":"publisher","DOI":"10.2337\/diabetes.51.5.1356"},{"key":"b48_257","doi-asserted-by":"crossref","first-page":"3137","DOI":"10.4049\/jimmunol.174.6.3137","volume":"174","author":"Matarese
-      G","year":"2005","journal-title":"J Immunol"},{"key":"b49_258","doi-asserted-by":"publisher","DOI":"10.1046\/j.1365-2265.2003.01966.x"},{"key":"b50_259","doi-asserted-by":"crossref","first-page":"875","DOI":"10.4049\/jimmunol.168.2.875","volume":"168","author":"Busso
-      N","year":"2002","journal-title":"J Immunol"},{"key":"b51_260","doi-asserted-by":"publisher","DOI":"10.1172\/JCI200319246"},{"key":"b52_261","doi-asserted-by":"publisher","DOI":"10.1161\/01.CIR.0000127960.28627.75"},{"key":"b53_262","doi-asserted-by":"publisher","DOI":"10.1172\/JCI200319451"},{"key":"b54_263","doi-asserted-by":"publisher","DOI":"10.1172\/JCI200316721"},{"key":"b55_264","doi-asserted-by":"crossref","first-page":"555","DOI":"10.1007\/s001250051194","volume":"42","author":"Ronaldsson
-      O","year":"1999","journal-title":"Diabetologia"},{"key":"b56_265","doi-asserted-by":"publisher","DOI":"10.1016\/S0896-8411(03)00039-8"},{"key":"b57_266","doi-asserted-by":"publisher","DOI":"10.1056\/NEJMoa012512"},{"key":"b58_267","doi-asserted-by":"publisher","DOI":"10.1111\/j.1399-5448.2007.00237.x"},{"key":"b59_268","doi-asserted-by":"publisher","DOI":"10.1196\/annals.1375.012"},{"key":"b60_269","doi-asserted-by":"publisher","DOI":"10.1002\/dmrr.503"}],"container-title":["Pediatric
-      Diabetes"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1399-5448.2007.00338.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1399-5448.2007.00338.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,5,14]],"date-time":"2023-05-14T16:50:08Z","timestamp":1684083008000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1399-5448.2007.00338.x"}},"issued":{"date-parts":[[2007,12]]},"references-count":60,"journal-issue":{"issue":"s9","published-print":{"date-parts":[[2007,12]]}},"alternative-id":["10.1111\/j.1399-5448.2007.00338.x"],"URL":"https:\/\/doi.org\/10.1111\/j.1399-5448.2007.00338.x","ISSN":["1399-543X","1399-5448"],"issn-type":[{"value":"1399-543X","type":"print"},{"value":"1399-5448","type":"electronic"}],"published":{"date-parts":[[2007,12]]}},{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T11:52:47Z","timestamp":1724413967933},"reference-count":35,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2016,1,1]],"date-time":"2016-01-01T00:00:00Z","timestamp":1451606400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Gastroenterology
-      Research and Practice"],"published-print":{"date-parts":[[2016]]},"abstract":"<jats:p><jats:italic>Objective<\/jats:italic>.
-      The aim of the present study was to investigate whether pentraxin 3 (PTX3) can
-      be a new noninvasive marker for prediction of liver fibrosis in patients with
-      NAFLD. We also aimed to evaluate the relationship between PTX3 and atherosclerosis
-      in patients with NAFLD.<jats:italic>Method<\/jats:italic>. Fifty-four male patients
-      with biopsy-proven NAFLD and 20 apparently healthy male volunteers were included.
-      PTX3 levels were determined, using an ELISA method (R&amp;D Sysytems, Quantikine
-      ELISA, USA). To detect the presence of subclinical atherosclerosis in NAFLD,
-      measurements of CIMT, FMD, and cf-PWV levels were performed.<jats:italic>Results<\/jats:italic>.
-      PTX3 levels in NAFLD patients with fibrosis were higher than both NAFLD patients
-      without fibrosis and controls (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-      id=\"M1\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn fontstyle=\"italic\">0.032<\/mml:mn><\/mml:math>and<mml:math
-      xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" id=\"M2\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn
-      fontstyle=\"italic\">0.028<\/mml:mn><\/mml:math>, respectively), but there was
-      no difference between controls and NAFLD patients without fibrosis in terms
-      of PTX3 levels (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-      id=\"M3\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn fontstyle=\"italic\">0.903<\/mml:mn><\/mml:math>).
-      PTX3 levels were strongly correlated with cf-PWV (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-      id=\"M4\"><mml:mi>r<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn fontstyle=\"italic\">0.359<\/mml:mn><\/mml:math>,<mml:math
-      xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\" id=\"M5\"><mml:mi>P<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn
-      fontstyle=\"italic\">0.003<\/mml:mn><\/mml:math>), whereas no significant correlation
-      was found with other atherosclerosis markers, CIMT and FMD.<jats:italic>Conclusion<\/jats:italic>.
-      Elevated plasma PTX3 levels are associated with the presence of fibrosis in
-      patients with NAFLD, independently of metabolic syndrome components. This study
-      demonstrated that for the first time there is a close association between elevated
-      PTX3 levels and increased arterial stiffness in patients with NAFLD.<\/jats:p>","DOI":"10.1155\/2016\/1417962","type":"journal-article","created":{"date-parts":[[2016,2,22]],"date-time":"2016-02-22T21:01:29Z","timestamp":1456174889000},"page":"1-7","source":"Crossref","is-referenced-by-count":13,"title":["Pentraxin
-      3 Is a Predictor for Fibrosis and Arterial Stiffness in Patients with Nonalcoholic
-      Fatty Liver Disease"],"prefix":"10.1155","volume":"2016","author":[{"given":"Kadir","family":"Ozturk","sequence":"first","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Omer","family":"Kurt","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Tolga","family":"Dogan","sequence":"additional","affiliation":[{"name":"Department
-      of Internal Medicine, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Alptug","family":"Ozen","sequence":"additional","affiliation":[{"name":"Department
-      of Radiology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Hakan","family":"Demirci","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Fatih","family":"Yesildal","sequence":"additional","affiliation":[{"name":"Department
-      of Medical Biochemistry, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Murat","family":"Kantarcioglu","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Turker","family":"Turker","sequence":"additional","affiliation":[{"name":"Department
-      of Health Public and Epidemiology, Gulhane School of Medicine, 06010 Ankara,
-      Turkey"}]},{"given":"Ahmet Kerem","family":"Guler","sequence":"additional","affiliation":[{"name":"Department
-      of Internal Medicine, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Y\u0131ld\u0131r\u0131m","family":"Karslioglu","sequence":"additional","affiliation":[{"name":"Department
-      of Pathology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Battal","family":"Altun","sequence":"additional","affiliation":[{"name":"Department
-      of Internal Medicine, Kas\u0131mpasa Military Hospital, Istanbul, Turkey"}]},{"given":"Ahmet","family":"Uygun","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]},{"given":"Sait","family":"Bagci","sequence":"additional","affiliation":[{"name":"Department
-      of Gastroenterology, Gulhane School of Medicine, 06010 Ankara, Turkey"}]}],"member":"98","reference":[{"key":"1","doi-asserted-by":"publisher","DOI":"10.1056\/nejmra011775"},{"key":"2","doi-asserted-by":"publisher","DOI":"10.1016\/s0016-5085(98)70599-2"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.1046\/j.1440-1746.2003.02989.x"},{"key":"4","doi-asserted-by":"publisher","DOI":"10.1002\/hep.510300604"},{"issue":"10","key":"5","first-page":"823","volume":"26","year":"2002","journal-title":"Gastroenterologie
-      Clinique et Biologique"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.3748\/wjg.v11.i2.255"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1186\/1471-230x-6-34"},{"key":"8","doi-asserted-by":"publisher","DOI":"10.1161\/01.atv.0000012282.39306.64"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1146\/annurev.immunol.23.021704.115756"},{"key":"10","doi-asserted-by":"publisher","DOI":"10.1016\/j.atherosclerosis.2009.10.033"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1016\/j.atherosclerosis.2015.04.009"},{"key":"12","doi-asserted-by":"publisher","DOI":"10.1371\/journal.pone.0049286"},{"issue":"11","key":"13","first-page":"1583","volume":"18","year":"2014","journal-title":"European
-      Review for Medical and Pharmacological Sciences"},{"key":"14","doi-asserted-by":"publisher","DOI":"10.1186\/1471-230x-8-53"},{"key":"15","doi-asserted-by":"publisher","DOI":"10.1089\/met.2015.0046"},{"issue":"6","key":"16","doi-asserted-by":"crossref","first-page":"499","DOI":"10.1093\/clinchem\/18.6.499","volume":"18","year":"1972","journal-title":"Clinical
-      Chemistry"},{"key":"17","doi-asserted-by":"crossref","first-page":"S81","DOI":"10.2337\/dc14-S081","volume":"37","year":"2014","journal-title":"Diabetes
-      Care"},{"key":"18","doi-asserted-by":"publisher","DOI":"10.1007\/bf00280883"},{"key":"19","doi-asserted-by":"publisher","DOI":"10.1002\/hep.20701"},{"key":"20","doi-asserted-by":"publisher","DOI":"10.1055\/s-0028-1091981"},{"key":"21","doi-asserted-by":"publisher","DOI":"10.1002\/hep.24001"},{"key":"22","doi-asserted-by":"publisher","DOI":"10.1111\/j.1440-1746.2004.03362.x"},{"key":"23","doi-asserted-by":"publisher","DOI":"10.1038\/ni.1854"},{"key":"24","doi-asserted-by":"publisher","DOI":"10.1016\/j.mehy.2012.05.011"},{"key":"25","doi-asserted-by":"publisher","DOI":"10.1016\/j.numecd.2013.10.030"},{"key":"26","doi-asserted-by":"publisher","DOI":"10.1016\/j.jhep.2010.12.017"},{"key":"27","doi-asserted-by":"publisher","DOI":"10.1111\/j.1572-0241.2008.02034.x"},{"key":"28","doi-asserted-by":"publisher","DOI":"10.1016\/j.atherosclerosis.2013.07.052"},{"key":"29","doi-asserted-by":"publisher","DOI":"10.1038\/ajh.2010.144"},{"key":"30","doi-asserted-by":"publisher","DOI":"10.1093\/ajh\/hpt103"},{"key":"31","doi-asserted-by":"publisher","DOI":"10.1038\/jhh.2015.105"},{"key":"32","doi-asserted-by":"publisher","DOI":"10.1038\/ajh.2010.248"},{"key":"33","doi-asserted-by":"publisher","DOI":"10.1161\/01.atv.zhq0504.0173"},{"key":"34","doi-asserted-by":"publisher","DOI":"10.1161\/circulationaha.105.535435"},{"key":"35","doi-asserted-by":"publisher","DOI":"10.5551\/jat.no613"}],"container-title":["Gastroenterology
-      Research and Practice"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/grp\/2016\/1417962.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/grp\/2016\/1417962.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/grp\/2016\/1417962.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,9,15]],"date-time":"2020-09-15T23:21:30Z","timestamp":1600212090000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/grp\/2016\/1417962\/"}},"issued":{"date-parts":[[2016]]},"references-count":35,"alternative-id":["1417962","1417962"],"URL":"https:\/\/doi.org\/10.1155\/2016\/1417962","ISSN":["1687-6121","1687-630X"],"issn-type":[{"value":"1687-6121","type":"print"},{"value":"1687-630X","type":"electronic"}],"published":{"date-parts":[[2016]]}},{"indexed":{"date-parts":[[2022,4,4]],"date-time":"2022-04-04T23:29:07Z","timestamp":1649114947912},"reference-count":0,"publisher":"Hindawi
-      Limited","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1155\/2014\/684305\/dataset","type":"component","created":{"date-parts":[[2014,8,14]],"date-time":"2014-08-14T18:12:44Z","timestamp":1408039964000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1155","member":"98","deposited":{"date-parts":[[2017,8,9]],"date-time":"2017-08-09T03:03:51Z","timestamp":1502247831000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.hindawi.com\/archive\/2014\/684305\/dataset\/"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1155\/2014\/684305\/dataset"},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T08:45:57Z","timestamp":1649148357166},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2003,2]]},"DOI":"10.1111\/anu.2003.9.issue-1","type":"journal-issue","created":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T05:58:16Z","timestamp":1643349496000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1155","volume":"9","member":"98","container-title":["Aquaculture
-      Nutrition"],"language":"en","deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T05:58:16Z","timestamp":1643349496000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/doi.wiley.com\/10.1111\/anu.2003.9.issue-1"}},"issued":{"date-parts":[[2003,2]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2003,2]]}},"URL":"https:\/\/doi.org\/10.1111\/anu.2003.9.issue-1","ISSN":["1353-5773"],"issn-type":[{"value":"1353-5773","type":"print"}],"published":{"date-parts":[[2003,2]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T08:23:32Z","timestamp":1649147012924},"reference-count":29,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2014,1,1]],"date-time":"2014-01-01T00:00:00Z","timestamp":1388534400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Interdisciplinary
-      Perspectives on Infectious Diseases"],"published-print":{"date-parts":[[2014]]},"abstract":"<jats:p>We
-      report on the serotype distribution and the antimicrobial resistance patterns
-      to 20 different antimicrobials of 150<jats:italic>Salmonella enterica<\/jats:italic>strains
-      isolated from stools of diarrhoeal patients on the island of Crete over the
-      period January 2011-December 2012. Among the<jats:italic>S. enterica<\/jats:italic>serotypes
-      recovered, Enteritidis was the most prevalent (37.3%), followed by Typhimurium
-      (28.7%) and Newport (8.7%). No resistance was detected to extended-spectrum
-      cephalosporins and carbapenems. Rates of resistance to ampicillin, amoxicillin\/clavulanic
-      acid, chloramphenicol, tetracycline, and cotrimoxazole were 9.3%, 4%, 2%, 15.3%,
-      and 8.7%, respectively. Resistance to \u22654 antibiotics was primarily observed
-      for serotypes Typhimurium and Hadar. Enteritidis remains the predominant serotype
-      in Crete. Although low resistance to most antimicrobials was detected, continued
-      surveillance of susceptibility is needed due to the risk of resistance.<\/jats:p>","DOI":"10.1155\/2014\/256181","type":"journal-article","created":{"date-parts":[[2014,4,22]],"date-time":"2014-04-22T21:05:50Z","timestamp":1398200750000},"page":"1-5","source":"Crossref","is-referenced-by-count":6,"title":["Serotypes
-      and Antimicrobial Resistance of Human Nontyphoidal Isolates of<i>Salmonella
-      enterica<\/i>from Crete, Greece"],"prefix":"10.1155","volume":"2014","author":[{"given":"Sofia","family":"Maraki","sequence":"first","affiliation":[{"name":"Department
-      of Clinical Microbiology, Parasitology, Zoonoses and Geographical Medicine,
-      University Hospital of Heraklion, Heraklion, 71 110 Crete, Greece"}]},{"given":"Ioannis
-      S.","family":"Papadakis","sequence":"additional","affiliation":[{"name":"Department
-      of Clinical Microbiology, Parasitology, Zoonoses and Geographical Medicine,
-      University Hospital of Heraklion, Heraklion, 71 110 Crete, Greece"}]}],"member":"98","reference":[{"key":"1","doi-asserted-by":"publisher","DOI":"10.1086\/650733"},{"issue":"2","key":"2","doi-asserted-by":"crossref","first-page":"293","DOI":"10.1017\/S0950268812000568","volume":"141","year":"2013","journal-title":"Epidemiology
-      and Infection"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.3201\/eid1701.P11101"},{"key":"4","first-page":"2636","volume-title":"Salmonella
-      species including Salmonella typhi","year":"2005"},{"key":"5","doi-asserted-by":"publisher","DOI":"10.1086\/422726"},{"issue":"6","key":"6","doi-asserted-by":"crossref","first-page":"943","DOI":"10.3201\/eid1106.041231","volume":"11","year":"2005","journal-title":"Emerging
-      Infectious Diseases"},{"issue":"5","key":"7","doi-asserted-by":"crossref","first-page":"490","DOI":"10.3201\/eid0805.010267","volume":"8","year":"2002","journal-title":"Emerging
-      Infectious Diseases"},{"issue":"3","key":"8","doi-asserted-by":"crossref","first-page":"377","DOI":"10.1086\/381270","volume":"189","year":"2004","journal-title":"The
-      Journal of Infectious Diseases"},{"key":"9","first-page":"670","volume-title":"Escherichia,
-      Shigella, and Salmonella","year":"2007"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1007\/s10096-006-0101-7"},{"key":"12","doi-asserted-by":"publisher","DOI":"10.1023\/A:1022528205793"},{"issue":"3","key":"13","first-page":"2597","volume":"10","year":"2012","journal-title":"The
-      European Food Safety Authority Journal"},{"issue":"5","key":"14","doi-asserted-by":"crossref","first-page":"705","DOI":"10.1093\/cid\/cis967","volume":"56","year":"2013","journal-title":"Clinical
-      Infectious Diseases"},{"issue":"27","key":"15","doi-asserted-by":"crossref","first-page":"20519","DOI":"10.2807\/1560-7917.ES2013.18.27.20519","volume":"18","year":"2013","journal-title":"Euro
-      Surveillance"},{"issue":"8","key":"16","doi-asserted-by":"crossref","first-page":"1604","DOI":"10.1017\/S0950268812002014","volume":"141","year":"2013","journal-title":"Epidemiology
-      and Infection"},{"key":"17","doi-asserted-by":"publisher","DOI":"10.1017\/S0950268804001992"},{"key":"18","doi-asserted-by":"publisher","DOI":"10.1089\/mdr.2008.0777"},{"key":"19","first-page":"122","volume-title":"Salmonella
-      enterica serovar Virchow with TEM-52 ESBL in Greece","volume":"11","year":"2005"},{"key":"20","doi-asserted-by":"publisher","DOI":"10.1128\/JCM.43.7.3453-3456.2005"},{"issue":"4","key":"21","doi-asserted-by":"crossref","first-page":"302","DOI":"10.1089\/fpd.2012.1336","volume":"10","year":"2013","journal-title":"Foodborne
-      Pathogens and Disease"},{"key":"22","doi-asserted-by":"publisher","DOI":"10.1128\/AAC.47.4.1297-1300.2003"},{"key":"23","doi-asserted-by":"publisher","DOI":"10.1128\/AAC.05719-11"},{"key":"24","doi-asserted-by":"publisher","DOI":"10.1086\/497599"},{"key":"25","doi-asserted-by":"publisher","DOI":"10.1007\/s10096-011-1517-2"},{"issue":"8","key":"26","first-page":"117","volume":"6","year":"2001","journal-title":"Euro
-      Surveillance"},{"key":"27","doi-asserted-by":"publisher","DOI":"10.1111\/j.1469-0691.2006.01539.x"},{"issue":"1","key":"28","doi-asserted-by":"crossref","first-page":"7","DOI":"10.1093\/jac\/46.1.7","volume":"46","year":"2000","journal-title":"Journal
-      of Antimicrobial Chemotherapy"},{"issue":"22","key":"29","first-page":"19580","volume":"15","year":"2010","journal-title":"Euro
-      Surveillance"},{"issue":"22","key":"30","first-page":"20496","volume":"18","year":"2013","journal-title":"Euro
-      Surveillance"}],"container-title":["Interdisciplinary Perspectives on Infectious
-      Diseases"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/ipid\/2014\/256181.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ipid\/2014\/256181.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ipid\/2014\/256181.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,22]],"date-time":"2017-06-22T11:59:39Z","timestamp":1498132779000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/ipid\/2014\/256181\/"}},"issued":{"date-parts":[[2014]]},"references-count":29,"alternative-id":["256181","256181"],"URL":"https:\/\/doi.org\/10.1155\/2014\/256181","ISSN":["1687-708X","1687-7098"],"issn-type":[{"value":"1687-708X","type":"print"},{"value":"1687-7098","type":"electronic"}],"published":{"date-parts":[[2014]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:04:00Z","timestamp":1649127840646},"reference-count":9,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2011,1,1]],"date-time":"2011-01-01T00:00:00Z","timestamp":1293840000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Case
-      Reports in Pulmonology"],"published-print":{"date-parts":[[2011]]},"abstract":"<jats:p><jats:italic>Case<\/jats:italic>.
-      A 45-year-old man with a blank medical history presented at the emergency room
-      with dizziness and cyanosis. Physical examination showed cyanosis with a peripheral
-      saturation (SpO<jats:sub>2<\/jats:sub>) of 85%, he did not respond to supplemental
-      oxygen. Arterial blood gas analysis showed a striking chocolate brown colour.
-      Based on these data, we determined the arterial methaemoglobin concentration.
-      This was 32%. We gave 100% oxygen and observed the patient in a medium care
-      unit. The next day, patient could be discharged in good condition. Further inquiry
-      about exhibitions and extensive history revealed that the patient used MDMA
-      (3,4- methylenedioxymethamphetamine, the active ingredient of ecstasy).<jats:italic>Conclusion<\/jats:italic>.
-      Acquired methaemoglobinemia is a condition that occurs infrequently, but is
-      potentially life threatening. Different nutrients, medications, and chemicals
-      can induce methaemoglobinemia by oxidation of haemoglobin. The clinical presentation
-      of a patient with methaemoglobinemia is due to the impossibility of O<jats:sub>2<\/jats:sub>binding
-      and transport, resulting in tissue hypoxia. Important is to think about methaemoglobin
-      in a patient who presents with cyanosis, a peripheral saturation of 85% that
-      fails to respond properly to the administration of O<jats:sub>2<\/jats:sub>.
-      Because methaemoglobin can be reduced physiologically, it is usually sufficient
-      to remove the causative agent, to give O<jats:sub>2<\/jats:sub>, and to observe
-      the patient.<\/jats:p>","DOI":"10.1155\/2011\/494328","type":"journal-article","created":{"date-parts":[[2011,10,19]],"date-time":"2011-10-19T21:00:56Z","timestamp":1319058056000},"page":"1-3","source":"Crossref","is-referenced-by-count":0,"title":["Methaemoglobinemia
-      Induced by MDMA?"],"prefix":"10.1155","volume":"2011","author":[{"given":"L.
-      L. W.","family":"Verhaert","sequence":"first","affiliation":[{"name":"Catharina
-      Hospital Eindhoven, The Netherlands"}]}],"member":"98","reference":[{"issue":"4","key":"1","first-page":"253","volume":"1","year":"1986","journal-title":"Medical
-      Toxicology and Adverse Drug Experience"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.1016\/S0196-0644(99)70167-8"},{"key":"5","doi-asserted-by":"publisher","DOI":"10.1016\/j.jen.2006.11.007"},{"issue":"6","key":"3","doi-asserted-by":"crossref","first-page":"394","DOI":"10.2165\/00002018-199614060-00005","volume":"14","year":"1996","journal-title":"Drug
-      Safety"},{"issue":"1","key":"8","first-page":"45","volume":"16","year":"1997","journal-title":"Adverse
-      Drug Reactions and Toxicological Reviews"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1016\/j.blre.2004.02.001"},{"key":"2","doi-asserted-by":"publisher","DOI":"10.2165\/00139709-200322010-00003"},{"key":"4","doi-asserted-by":"publisher","DOI":"10.1016\/j.jopan.2004.04.003"},{"issue":"10","key":"9","doi-asserted-by":"crossref","first-page":"860","DOI":"10.2169\/internalmedicine.39.860","volume":"39","year":"2000","journal-title":"Internal
-      Medicine"}],"container-title":["Case Reports in Pulmonology"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/cripu\/2011\/494328.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/cripu\/2011\/494328.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/cripu\/2011\/494328.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,20]],"date-time":"2017-06-20T08:18:07Z","timestamp":1497946687000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/cripu\/2011\/494328\/"}},"issued":{"date-parts":[[2011]]},"references-count":9,"alternative-id":["494328","494328"],"URL":"https:\/\/doi.org\/10.1155\/2011\/494328","ISSN":["2090-6846","2090-6854"],"issn-type":[{"value":"2090-6846","type":"print"},{"value":"2090-6854","type":"electronic"}],"published":{"date-parts":[[2011]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T07:46:31Z","timestamp":1649144791045},"reference-count":0,"publisher":"Hindawi
-      Limited","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1155\/7151","type":"journal","created":{"date-parts":[[2016,7,31]],"date-time":"2016-07-31T10:35:49Z","timestamp":1469961349000},"source":"Crossref","is-referenced-by-count":0,"title":["Asian
-      Journal of Neuroscience"],"prefix":"10.1155","member":"98","language":"en","deposited":{"date-parts":[[2016,7,31]],"date-time":"2016-07-31T10:35:49Z","timestamp":1469961349000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/archive\/"}},"short-title":["Asian
-      Journal of Neuroscience"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1155\/7151","ISSN":["2314-7482"],"issn-type":[{"value":"2314-7482","type":"electronic"}]},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T07:46:39Z","timestamp":1649144799260},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"1","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":648,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Breast
-      J"],"published-print":{"date-parts":[[2014,1]]},"DOI":"10.1111\/tbj.12212","type":"journal-article","created":{"date-parts":[[2013,11,23]],"date-time":"2013-11-23T03:35:55Z","timestamp":1385177755000},"page":"91-92","source":"Crossref","is-referenced-by-count":1,"title":["Ectopic
-      Mammary Tissue as a Vulvar Mass in a Lactating Woman"],"prefix":"10.1155","volume":"20","author":[{"given":"Zhe","family":"Zhang","sequence":"first","affiliation":[{"name":"Department
-      of Obstetrics and Gynecology; Qilu Hospital; Shandong University; Jinan China"}]},{"given":"Guoyun","family":"Wang","sequence":"additional","affiliation":[{"name":"Department
-      of Obstetrics and Gynecology; Qilu Hospital; Shandong University; Jinan China"}]},{"given":"Jie","family":"Jiang","sequence":"additional","affiliation":[{"name":"Department
-      of Obstetrics and Gynecology; Qilu Hospital; Shandong University; Jinan China"}]},{"given":"Xi","family":"Zhang","sequence":"additional","affiliation":[{"name":"Department
-      of Obstetrics and Gynecology; Qilu Hospital; Shandong University; Jinan China"}]},{"given":"Beihua","family":"Kong","sequence":"additional","affiliation":[{"name":"Department
-      of Obstetrics and Gynecology; Qilu Hospital; Shandong University; Jinan China"}]}],"member":"98","published-online":{"date-parts":[[2013,11,22]]},"container-title":["The
-      Breast Journal"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Ftbj.12212","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/tbj.12212\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T06:26:42Z","timestamp":1643351202000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/tbj.12212"}},"issued":{"date-parts":[[2013,11,22]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2014,1]]}},"URL":"https:\/\/doi.org\/10.1111\/tbj.12212","ISSN":["1075-122X"],"issn-type":[{"value":"1075-122X","type":"print"}],"published":{"date-parts":[[2013,11,22]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T07:46:50Z","timestamp":1649144810074},"reference-count":16,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2014,1,1]],"date-time":"2014-01-01T00:00:00Z","timestamp":1388534400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Discrete
-      Dynamics in Nature and Society"],"published-print":{"date-parts":[[2014]]},"abstract":"<jats:p>The
-      concepts of stabilization with internal loop are analyzed for well-posed transfer
-      functions. We obtain some sufficient and necessary conditions such that a stabilizing
-      controller with internal loop stabilizes plant <mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"
-      id=\"M1\"><mml:mrow><mml:mi>L<\/mml:mi><\/mml:mrow><\/mml:math>. We also analyze
-      two special subclasses of stabilizing controllers with internal loop, called
-      canonical and dual canonical controllers, and show that all stabilizing controllers
-      can be parameterized by a doubly coprime factorization of the original transfer
-      function.<\/jats:p>","DOI":"10.1155\/2014\/159198","type":"journal-article","created":{"date-parts":[[2014,4,28]],"date-time":"2014-04-28T21:01:49Z","timestamp":1398718909000},"page":"1-7","source":"Crossref","is-referenced-by-count":1,"title":["Stabilization
-      with Internal Loop for Infinite-Dimensional  Discrete Time-Varying Systems"],"prefix":"10.1155","volume":"2014","author":[{"given":"Nai-feng","family":"Gan","sequence":"first","affiliation":[{"name":"School
-      of Mathematical Sciences, Dalian University of Technology, Dalian 116027, China"},{"name":"College
-      of Mathematics and Information Science, Anshan Normal University, Anshan 114007,
-      China"}]},{"given":"Yu-feng","family":"LU","sequence":"additional","affiliation":[{"name":"School
-      of Mathematical Sciences, Dalian University of Technology, Dalian 116027, China"}]},{"given":"Ting","family":"Gong","sequence":"additional","affiliation":[{"name":"School
-      of Mathematical Sciences, Dalian University of Technology, Dalian 116027, China"}]}],"member":"98","reference":[{"key":"1","doi-asserted-by":"publisher","DOI":"10.1155\/2012\/612198"},{"key":"2","doi-asserted-by":"publisher","DOI":"10.1155\/2009\/670314"},{"key":"3","year":"1998"},{"key":"4","year":"2000"},{"key":"5","doi-asserted-by":"publisher","DOI":"10.1155\/2013\/396759"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.1155\/2013\/909721"},{"key":"7","first-page":"179","volume-title":"Stabilization
-      of irrational transfer functions by controllers with in-\nternal loop, System,
-      approximation, singular integral operators and related topics","year":"2000"},{"key":"8","doi-asserted-by":"publisher","DOI":"10.1109\/9.553684"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1016\/j.sysconle.2011.08.009"},{"key":"10","doi-asserted-by":"publisher","DOI":"10.1016\/j.sysconle.2012.01.005"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1002\/rnc.1728"},{"key":"12","doi-asserted-by":"publisher","DOI":"10.1002\/rnc.1662"},{"key":"13","doi-asserted-by":"publisher","DOI":"10.1080\/00207720903308348"},{"key":"14","doi-asserted-by":"publisher","DOI":"10.1155\/2008\/231710"},{"key":"15","doi-asserted-by":"publisher","DOI":"10.1155\/2012\/132597"},{"key":"17","doi-asserted-by":"publisher","DOI":"10.1016\/S0005-1098(96)00102-1"}],"container-title":["Discrete
-      Dynamics in Nature and Society"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/ddns\/2014\/159198.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ddns\/2014\/159198.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ddns\/2014\/159198.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,1]],"date-time":"2016-12-01T21:08:16Z","timestamp":1480626496000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.hindawi.com\/journals\/ddns\/2014\/159198\/"}},"issued":{"date-parts":[[2014]]},"references-count":16,"alternative-id":["159198","159198"],"URL":"https:\/\/doi.org\/10.1155\/2014\/159198","ISSN":["1026-0226","1607-887X"],"issn-type":[{"value":"1026-0226","type":"print"},{"value":"1607-887X","type":"electronic"}],"published":{"date-parts":[[2014]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T08:11:26Z","timestamp":1649146286745},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"1","license":[{"start":{"date-parts":[[1988,1,1]],"date-time":"1988-01-01T00:00:00Z","timestamp":567993600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Behavioural
-      Neurology"],"published-print":{"date-parts":[[1988]]},"DOI":"10.1155\/1988\/259489","type":"journal-article","created":{"date-parts":[[2014,3,16]],"date-time":"2014-03-16T17:00:55Z","timestamp":1394989255000},"page":"59-60","source":"Crossref","is-referenced-by-count":0,"title":["The
-      Ciba Collection of Medical Illustrations"],"prefix":"10.1155","volume":"1","author":[{"given":"W.
-      R. G.","family":"Gibb","sequence":"first","affiliation":[]}],"member":"98","container-title":["Behavioural
-      Neurology"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/bn\/1988\/259489.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/bn\/1988\/259489.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T03:45:43Z","timestamp":1471923943000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/bn\/1988\/259489\/abs\/"}},"issued":{"date-parts":[[1988]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1988]]}},"alternative-id":["259489"],"URL":"https:\/\/doi.org\/10.1155\/1988\/259489","ISSN":["0953-4180","1875-8584"],"issn-type":[{"value":"0953-4180","type":"print"},{"value":"1875-8584","type":"electronic"}],"published":{"date-parts":[[1988]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:15:10Z","timestamp":1649128510816},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"1","license":[{"start":{"date-parts":[[2009,4,14]],"date-time":"2009-04-14T00:00:00Z","timestamp":1239667200000},"content-version":"unspecified","delay-in-days":6831,"URL":"https:\/\/www.cambridge.org\/core\/terms"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Genet.
-      Res."],"published-print":{"date-parts":[[1990,8]]},"DOI":"10.1017\/s0016672300028913","type":"journal-article","created":{"date-parts":[[2009,9,17]],"date-time":"2009-09-17T07:31:56Z","timestamp":1253172716000},"page":"74-75","source":"Crossref","is-referenced-by-count":0,"title":["The
-      Cattle of the Tropics. By John P. Maule. Edinburgh: can be ordered from The
-      Senior Administrative Officer, Centre for Tropical Veterinary Medicine, Easter
-      Bush, Roslin, Midlothian EH25 9RG, Scotland, U.K.255 pages. \u00a325.00 including
-      postage. ISBN 0 907146 05 8."],"prefix":"10.1155","volume":"56","author":[{"given":"R.
-      C.","family":"Roberts","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,14]]},"container-title":["Genetical
-      Research"],"language":"en","link":[{"URL":"https:\/\/www.cambridge.org\/core\/services\/aop-cambridge-core\/content\/view\/S0016672300028913","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,12,31]],"date-time":"2020-12-31T22:45:59Z","timestamp":1609454759000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.cambridge.org\/core\/product\/identifier\/S0016672300028913\/type\/journal_article"}},"issued":{"date-parts":[[1990,8]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1990,8]]}},"alternative-id":["S0016672300028913"],"URL":"https:\/\/doi.org\/10.1017\/s0016672300028913","ISSN":["0016-6723","1469-5073"],"issn-type":[{"value":"0016-6723","type":"print"},{"value":"1469-5073","type":"electronic"}],"published":{"date-parts":[[1990,8]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T07:24:38Z","timestamp":1649143478658},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"11","license":[{"start":{"date-parts":[[2019,10,23]],"date-time":"2019-10-23T00:00:00Z","timestamp":1571788800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":["onlinelibrary.wiley.com"],"crossmark-restriction":true},"short-container-title":["Int
-      J Clin Pract"],"published-print":{"date-parts":[[2019,11]]},"DOI":"10.1111\/ijcp.13233","type":"journal-article","created":{"date-parts":[[2019,10,23]],"date-time":"2019-10-23T19:07:19Z","timestamp":1571857639000},"update-policy":"http:\/\/dx.doi.org\/10.1002\/crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Issue
-      Information"],"prefix":"10.1155","volume":"73","member":"98","published-online":{"date-parts":[[2019,10,23]]},"container-title":["International
-      Journal of Clinical Practice"],"language":"en","link":[{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1111\/ijcp.13233","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/pdf\/10.1111\/ijcp.13233","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T06:10:57Z","timestamp":1643350257000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/ijcp.13233"}},"issued":{"date-parts":[[2019,10,23]]},"references-count":0,"journal-issue":{"issue":"11","published-online":{"date-parts":[[2019,8,6]]},"published-print":{"date-parts":[[2019,11]]}},"alternative-id":["10.1111\/ijcp.13233"],"URL":"https:\/\/doi.org\/10.1111\/ijcp.13233","archive":["Portico"],"ISSN":["1368-5031","1742-1241"],"issn-type":[{"value":"1368-5031","type":"print"},{"value":"1742-1241","type":"electronic"}],"published":{"date-parts":[[2019,10,23]]},"assertion":[{"value":"2019-10-23","order":2,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-      History"}}]},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T05:26:29Z","timestamp":1649136389770},"reference-count":21,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2013,1,1]],"date-time":"2013-01-01T00:00:00Z","timestamp":1356998400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-      of Engineering"],"published-print":{"date-parts":[[2013]]},"abstract":"<jats:p>General
-      formulation of practically applicable fundamental approach for development of
-      engineering applications in systems with dynamically appearing and disappearing
-      fractal structures is proposed. The approach is illustrated on the low-temperature
-      pyrolysis of butane\/propane mixture being pumped via the liquid tin and bismuth
-      alloy preserved at the temperature 200 \u00b1 20\u00b0C in the U-shaped test
-      glass. Other prospective engineering applications of the approach are proposed
-      on the base of analysis of selected experiments described in literature.<\/jats:p>","DOI":"10.1155\/2013\/310748","type":"journal-article","created":{"date-parts":[[2013,5,13]],"date-time":"2013-05-13T17:02:05Z","timestamp":1368464525000},"page":"1-7","source":"Crossref","is-referenced-by-count":0,"title":["Prospective
-      Engineering Applications of Dynamic Transfer Processes Possessing the Self-Organized
-      Fractal Interfaces"],"prefix":"10.1155","volume":"2013","author":[{"given":"Aliaksandr
-      Yurievich","family":"Alevanau","sequence":"first","affiliation":[{"name":"KTH,
-      ITM\/MSE, Division of Energy and Furnace Technology, Brinellv\u00e4gen 23, 10044
-      Stockholm, Sweden"}]},{"given":"Olgerd Pavlovich","family":"Kuznechik","sequence":"additional","affiliation":[{"name":"BSU,
-      Observatory, Nezalezhnasty Avenue 4, 220030 Minsk, Belarus"}]},{"given":"Oleksandr
-      Ivanovych","family":"Vyhoniailo","sequence":"additional","affiliation":[{"name":"Ukrenergoproduct,
-      Balzack Street 8\/31, Kiev 02225, Ukraine"}]}],"member":"98","reference":[{"key":"1","year":"1991"},{"key":"2","doi-asserted-by":"publisher","DOI":"10.1186\/1742-4682-8-4"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.1016\/S0305-4403(03)00063-3"},{"key":"4","year":"1983"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.1142\/S0129183112500350"},{"key":"7","doi-asserted-by":"publisher","DOI":"10.1088\/1751-8113\/42\/27\/275306"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1088\/1364-7830\/8\/2\/005"},{"key":"10","first-page":"551","volume":"12","year":"1986","journal-title":"Technical
-      Physics Letters"},{"issue":"6242","key":"11","first-page":"492","volume":"341","year":"1989","journal-title":"Nature"},{"issue":"4","key":"13","first-page":"701","volume":"27","year":"2002","journal-title":"Annales
-      de la Fondation Louis de Broglie"},{"issue":"3","key":"14","first-page":"1149","volume":"29","year":"2004","journal-title":"Annales
-      de la Fondation Louis de Broglie"},{"issue":"1","key":"15","series-title":"Interdisciplinary
-      Studies of Complex Systems","first-page":"33","volume-title":"Basic principles
-      of the concept of evolution of systems with varying constraints","volume":"1","year":"2012"},{"issue":"1","key":"16","series-title":"Interdisciplinary
-      Studies of Complex Systems","first-page":"55","volume-title":"Fractal nuclear
-      isomers and clusters","volume":"1","year":"2012"},{"key":"17","year":"2007"},{"key":"18","first-page":"46","volume":"272","year":"1995","journal-title":"Scientific
-      American"},{"key":"19","doi-asserted-by":"publisher","DOI":"10.1126\/science.1067589"},{"issue":"7","key":"20","doi-asserted-by":"crossref","first-page":"1359","DOI":"10.1103\/PhysRevLett.78.1359","volume":"78","year":"1997","journal-title":"Physical
-      Review Letters"},{"issue":"2","key":"21","first-page":"183","volume":"34","year":"2009","journal-title":"Annales
-      de la Fondation Louis de Broglie"},{"key":"22","doi-asserted-by":"publisher","DOI":"10.1142\/S0217732312501027"},{"key":"23","year":"2004"},{"key":"25","doi-asserted-by":"publisher","DOI":"10.1007\/BF00709225"}],"container-title":["Journal
-      of Engineering"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/je\/2013\/310748.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/je\/2013\/310748.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/je\/2013\/310748.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,6,21]],"date-time":"2017-06-21T08:57:06Z","timestamp":1498035426000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/je\/2013\/310748\/"}},"issued":{"date-parts":[[2013]]},"references-count":21,"alternative-id":["310748","310748"],"URL":"https:\/\/doi.org\/10.1155\/2013\/310748","ISSN":["2314-4904","2314-4912"],"issn-type":[{"value":"2314-4904","type":"print"},{"value":"2314-4912","type":"electronic"}],"published":{"date-parts":[[2013]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T05:26:44Z","timestamp":1649136404435},"reference-count":0,"publisher":"Hindawi
-      Limited","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1155\/jps","type":"journal","created":{"date-parts":[[2009,4,9]],"date-time":"2009-04-09T09:37:47Z","timestamp":1239269867000},"source":"Crossref","is-referenced-by-count":0,"title":["Journal
-      of Probability and Statistics"],"prefix":"10.1155","member":"98","language":"en","deposited":{"date-parts":[[2009,4,9]],"date-time":"2009-04-09T09:37:47Z","timestamp":1239269867000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/JPS\/"}},"short-title":["Journal
-      of Probability and Statistics"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1155\/jps","ISSN":["1687-952X","1687-9538"],"issn-type":[{"value":"1687-952X","type":"print"},{"value":"1687-9538","type":"electronic"}]},{"indexed":{"date-parts":[[2022,4,23]],"date-time":"2022-04-23T11:43:07Z","timestamp":1650714187750},"reference-count":13,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2014,11,26]],"date-time":"2014-11-26T00:00:00Z","timestamp":1416960000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Journal
-      of Veterinary Medicine"],"published-print":{"date-parts":[[2014,11,26]]},"abstract":"<jats:p>The
-      biological properties and pathogenicity of seven Newcastle disease virus field
-      isolates were studied. These isolates were recovered from different outbreaks
-      in Sudan (5 from chickens and 2 from pigeons) during 2008\u20132013. Based on
-      intracerebral pathogenicity index, four NDV isolates were characterized as velogenic
-      (their ICPI ranged 2.0\u20131.6) and three isolates were characterized as mesogenic
-      (ICPI ranged 1.2\u20131.3). The mean death time for all isolates ranged from
-      54 to 76.8 hours. The elution time of the viruses from chicken erythrocytes
-      and the ability to haemagglutinate mammalian red blood cells differed considerably
-      in their reactions.<\/jats:p>","DOI":"10.1155\/2014\/209357","type":"journal-article","created":{"date-parts":[[2014,11,26]],"date-time":"2014-11-26T21:13:10Z","timestamp":1417036390000},"page":"1-4","source":"Crossref","is-referenced-by-count":4,"title":["Biological
-      Pathotyping of Newcastle Disease Viruses in Sudan 2008\u20132013"],"prefix":"10.1155","volume":"2014","author":[{"given":"Egbal
-      Sidahmed Abdelrahim","family":"Bilal","sequence":"first","affiliation":[{"name":"Veterinary
-      Research Institute, P.O. Box 8067, Khartoum, Sudan"}]},{"given":"Iman Mohammed","family":"Elnasri","sequence":"additional","affiliation":[{"name":"Veterinary
-      Research Institute, P.O. Box 8067, Khartoum, Sudan"}]},{"given":"Aymen Mohamed","family":"Alhassan","sequence":"additional","affiliation":[{"name":"Veterinary
-      Research Institute, P.O. Box 8067, Khartoum, Sudan"}]},{"given":"Khalda Abdelaziz","family":"Khalifa","sequence":"additional","affiliation":[{"name":"Veterinary
-      Research Institute, P.O. Box 8067, Khartoum, Sudan"}]},{"given":"Jedddha Ibrahim","family":"Elhag","sequence":"additional","affiliation":[{"name":"Veterinary
-      Research Institute, P.O. Box 8067, Khartoum, Sudan"}]},{"given":"Selma Osman","family":"Ahmed","sequence":"additional","affiliation":[{"name":"Veterinary
-      Research Institute, P.O. Box 8067, Khartoum, Sudan"}]}],"member":"98","reference":[{"key":"2","doi-asserted-by":"publisher","DOI":"10.1177\/1040638711407887"},{"key":"3","doi-asserted-by":"publisher","DOI":"10.2307\/1592236"},{"key":"5a","doi-asserted-by":"publisher","DOI":"10.2307\/1588616"},{"issue":"4","key":"5b","doi-asserted-by":"crossref","first-page":"287","DOI":"10.4142\/jvs.2005.6.4.287","volume":"6","year":"2005","journal-title":"Journal
-      of Veterinary Science"},{"issue":"3160","key":"6","doi-asserted-by":"crossref","first-page":"156","DOI":"10.1126\/science.122.3160.156.a","volume":"122","year":"1955","journal-title":"Science"},{"key":"7","first-page":"123","volume-title":"Conventional
-      diagnosis of Newcastle disease virus infections","year":"2009"},{"key":"8","first-page":"63","volume-title":"Newcastle
-      disease other avian paramyxoviruses, and avian pneumovirus infection","year":"2003"},{"issue":"1","key":"9","first-page":"57","volume":"14","year":"2009","journal-title":"Archives
-      of Veterinary Science"},{"key":"10","first-page":"1","volume":"50","year":"1999","journal-title":"Archive
-      Razi Institute"},{"issue":"3","key":"11","doi-asserted-by":"crossref","first-page":"887","DOI":"10.20506\/rst.12.3.731","volume":"12","year":"1993","journal-title":"Revue
-      Scientifique et Technique"},{"issue":"4","key":"12a","doi-asserted-by":"crossref","first-page":"287","DOI":"10.4142\/jvs.2005.6.4.287","volume":"6","year":"2005","journal-title":"Journal
-      of Veterinary Science"},{"key":"12b","doi-asserted-by":"publisher","DOI":"10.1016\/S0145-305X(99)00077-4"},{"key":"13","doi-asserted-by":"publisher","DOI":"10.2307\/1590781"}],"container-title":["Journal
-      of Veterinary Medicine"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/archive\/2014\/209357.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/archive\/2014\/209357.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/archive\/2014\/209357.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,23]],"date-time":"2022-04-23T11:15:46Z","timestamp":1650712546000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.hindawi.com\/journals\/jvm\/2014\/209357\/"}},"issued":{"date-parts":[[2014,11,26]]},"references-count":13,"alternative-id":["209357","209357"],"URL":"https:\/\/doi.org\/10.1155\/2014\/209357","ISSN":["2356-7708","2314-6966"],"issn-type":[{"value":"2356-7708","type":"print"},{"value":"2314-6966","type":"electronic"}],"published":{"date-parts":[[2014,11,26]]}},{"indexed":{"date-parts":[[2022,4,4]],"date-time":"2022-04-04T22:57:20Z","timestamp":1649113040049},"reference-count":21,"publisher":"Hindawi
-      Limited","license":[{"start":{"date-parts":[[2012,1,1]],"date-time":"2012-01-01T00:00:00Z","timestamp":1325376000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Critical
-      Care Research and Practice"],"published-print":{"date-parts":[[2012]]},"abstract":"<jats:p><jats:italic>Objective.<\/jats:italic>Echogenic
-      technology has recently enhanced the ability of cannulas to be visualized during
-      ultrasound-guided vascular access. We studied whether the use of an EC could
-      improve visualization if compared with a nonechogenic vascular cannula (NEC)
-      during real-time ultrasound-guided internal jugular vein (IJV) cannulation in
-      the intensive care unit (ICU).<jats:italic>Material and Methods.<\/jats:italic>We
-      prospectively enrolled 80 mechanically ventilated patients who required central
-      venous access in a randomized study that was conducted in two medical-surgical
-      ICUs. Forty patients underwent EC and 40 patients were randomized to NEC. The
-      procedure was ultrasound-guided IJV cannulation via a transverse approach.<jats:italic>Results.<\/jats:italic>The
-      EC group exhibited increased visibility as compared to the NEC group (88%\u2009\u2009\u00b1
-      8% versus 20%\u2009\u2009\u00b1 15%, resp.<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mml:mrow><mml:mi>P<\/mml:mi><mml:mo>&lt;<\/mml:mo><mml:mn>0.01<\/mml:mn><\/mml:mrow><\/mml:math>).
-      There was strong agreement between the procedure operators and independent observers
-      (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mml:mrow><mml:mi>k<\/mml:mi><mml:mo>=<\/mml:mo><mml:mn>0.9<\/mml:mn><\/mml:mrow><\/mml:math>;
-      95% confidence intervals assessed by bootstrap analysis = 0.87\u20130.95;<mml:math
-      xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mml:mrow><mml:mi>P<\/mml:mi><mml:mo>&lt;<\/mml:mo><mml:mn>0.01<\/mml:mn><\/mml:mrow><\/mml:math>).
-      Access time (5.2\u2009s \u00b1 2.5 versus 10.6\u2009s \u00b1 5.7) and mechanical
-      complications were both decreased in the EC group compared to the NEC group
-      (<mml:math xmlns:mml=\"http:\/\/www.w3.org\/1998\/Math\/MathML\"><mml:mrow><mml:mi>P<\/mml:mi><mml:mo>&lt;<\/mml:mo><mml:mn>0.05<\/mml:mn><\/mml:mrow><\/mml:math>).<jats:italic>Conclusion.<\/jats:italic>Echogenic
-      technology significantly improved cannula visibility and decreased access time
-      and mechanical complications during real-time ultrasound-guided IJV cannulation
-      via a transverse approach.<\/jats:p>","DOI":"10.1155\/2012\/306182","type":"journal-article","created":{"date-parts":[[2012,5,10]],"date-time":"2012-05-10T21:01:41Z","timestamp":1336683701000},"page":"1-5","source":"Crossref","is-referenced-by-count":0,"title":["Echogenic
-      Technology Improves Cannula Visibility during Ultrasound-Guided Internal Jugular
-      Vein Catheterization via a Transverse Approach"],"prefix":"10.1155","volume":"2012","author":[{"given":"Konstantinos","family":"Stefanidis","sequence":"first","affiliation":[{"name":"Radiology
-      Department, Evangelismos University Hospital, Athens, Greece"}]},{"given":"Nicos","family":"Pentilas","sequence":"additional","affiliation":[{"name":"Intensive
-      Care Unit, General State Hospital of Athens, Athens, Greece"}]},{"given":"Stavros","family":"Dimopoulos","sequence":"additional","affiliation":[{"name":"1st
-      Critical Care Department, Evangelismos University Hospital, Athens, Greece"}]},{"given":"Serafim","family":"Nanas","sequence":"additional","affiliation":[{"name":"1st
-      Critical Care Department, Evangelismos University Hospital, Athens, Greece"}]},{"given":"Richard
-      H.","family":"Savel","sequence":"additional","affiliation":[{"name":"Jay B.
-      Langner Critical Care Service, Department of Medicine, Montefiore Medical Center,
-      Albert Einstein College of Medicine, NY, USA"}]},{"given":"Ariel L.","family":"Shiloh","sequence":"additional","affiliation":[{"name":"Jay
-      B. Langner Critical Care Service, Department of Medicine, Montefiore Medical
-      Center, Albert Einstein College of Medicine, NY, USA"}]},{"given":"John","family":"Poularas","sequence":"additional","affiliation":[{"name":"Intensive
-      Care Unit, General State Hospital of Athens, Athens, Greece"}]},{"given":"Michel","family":"Slama","sequence":"additional","affiliation":[{"name":"Intensive
-      Care Unit, CHU Sud, 80054 Amiens Cedex 1, France, France"},{"name":"Unit\u00e9
-      INSERM 1088, University Picardie Jules Vernes, Amiens, France"}]},{"given":"Dimitrios","family":"Karakitsos","sequence":"additional","affiliation":[{"name":"Intensive
-      Care Unit, General State Hospital of Athens, Athens, Greece"}]}],"member":"98","reference":[{"issue":"12","key":"1","doi-asserted-by":"crossref","first-page":"2053","DOI":"10.1097\/00003246-199612000-00020","volume":"24","year":"1996","journal-title":"Critical
-      Care Medicine"},{"issue":"3","key":"2","doi-asserted-by":"crossref","first-page":"321","DOI":"10.1016\/0002-9610(87)90619-2","volume":"153","year":"1987","journal-title":"American
-      Journal of Surgery"},{"issue":"5","key":"3","first-page":"700","volume":"68","year":"1989","journal-title":"Anesthesia
-      and Analgesia"},{"issue":"1","key":"4","doi-asserted-by":"crossref","first-page":"157","DOI":"10.1378\/chest.98.1.157","volume":"98","year":"1990","journal-title":"Chest"},{"issue":"5","key":"5","doi-asserted-by":"crossref","first-page":"1557","DOI":"10.1161\/01.CIR.87.5.1557","volume":"87","year":"1993","journal-title":"Circulation"},{"key":"6","doi-asserted-by":"publisher","DOI":"10.1186\/cc5101"},{"issue":"5","key":"7","doi-asserted-by":"crossref","first-page":"481","DOI":"10.1097\/00000542-198405000-00016","volume":"60","year":"1984","journal-title":"Anesthesiology"},{"key":"8","doi-asserted-by":"publisher","DOI":"10.1053\/jcan.2002.126950"},{"key":"9","doi-asserted-by":"publisher","DOI":"10.1053\/jcan.2002.126949"},{"issue":"2","key":"10","doi-asserted-by":"crossref","first-page":"259","DOI":"10.1001\/archinte.1986.00360140065007","volume":"146","year":"1986","journal-title":"Archives
-      of Internal Medicine"},{"key":"11","doi-asserted-by":"publisher","DOI":"10.1056\/NEJM199412293312602"},{"key":"12","doi-asserted-by":"publisher","DOI":"10.1097\/CCM.0b013e3181a067d4"},{"key":"13","doi-asserted-by":"publisher","DOI":"10.1016\/j.rapm.2007.07.002"},{"key":"14","doi-asserted-by":"crossref","first-page":"207","DOI":"10.1097\/AAP.0b013e3181d273da","volume":"35","year":"2010","journal-title":"Regional
-      Anesthesia and Pain Medicine"},{"key":"15","doi-asserted-by":"publisher","DOI":"10.1016\/j.rapm.2004.07.001"},{"issue":"4","key":"16","doi-asserted-by":"crossref","first-page":"582","DOI":"10.1177\/0310057X0703500419","volume":"35","year":"2007","journal-title":"Anaesthesia
-      and Intensive Care"},{"key":"17","doi-asserted-by":"crossref","first-page":"555","DOI":"10.1097\/00004424-198907000-00008","volume":"24","year":"1989","journal-title":"Invest
-      Radiol"},{"key":"18","doi-asserted-by":"crossref","first-page":"1553","DOI":"10.1097\/01.RVI.0000099527.29957.A6","volume":"14","year":"2003","journal-title":"Journal
-      of Vascular and Interventional Radiology"},{"key":"19","doi-asserted-by":"crossref","first-page":"185","DOI":"10.1097\/AAP.0b013e31820d4349","volume":"36","year":"2011","journal-title":"Regional
-      Anesthesia and Pain Medicine"},{"key":"20","first-page":"104","volume":"10","year":"1987","journal-title":"Regional
-      Anesthesia"},{"key":"21","year":"1993"}],"container-title":["Critical Care Research
-      and Practice"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/ccrp\/2012\/306182.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ccrp\/2012\/306182.xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/ccrp\/2012\/306182.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,6,28]],"date-time":"2019-06-28T14:23:31Z","timestamp":1561731811000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/ccrp\/2012\/306182\/"}},"issued":{"date-parts":[[2012]]},"references-count":21,"alternative-id":["306182","306182"],"URL":"https:\/\/doi.org\/10.1155\/2012\/306182","ISSN":["2090-1305","2090-1313"],"issn-type":[{"value":"2090-1305","type":"print"},{"value":"2090-1313","type":"electronic"}],"published":{"date-parts":[[2012]]}},{"indexed":{"date-parts":[[2022,4,2]],"date-time":"2022-04-02T02:25:00Z","timestamp":1648866300219},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"4","license":[{"start":{"date-parts":[[2005,1,1]],"date-time":"2005-01-01T00:00:00Z","timestamp":1104537600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc\/4.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Canadian
-      Journal of Gastroenterology"],"published-print":{"date-parts":[[2005]]},"abstract":"<jats:p>Three
-      elderly sisters presented with symptomatic Crohn''s disease. All had ileocolic
-      involvement, and granulomatous inflammation was documented in endoscopic biopsies
-      or surgically resected intestinal specimens. The present report documents the
-      unusual occurrence of very late phenotypical expression of familial ileocolic
-      Crohn''s disease. The observations presented here reflect a possible gene-based
-      predisposition to Crohn''s disease or, alternatively, disease clustering related
-      to a commonly shared environmental factor.<\/jats:p>","DOI":"10.1155\/2005\/241486","type":"journal-article","created":{"date-parts":[[2016,3,21]],"date-time":"2016-03-21T22:40:29Z","timestamp":1458600029000},"page":"251-252","source":"Crossref","is-referenced-by-count":0,"title":["Crohn''s
-      Disease Defined in Three Elderly Disters"],"prefix":"10.1155","volume":"19","author":[{"given":"Hugh
-      J","family":"Freeman","sequence":"first","affiliation":[{"name":"Department
-      of Medicine, Division of Gastroenterology, University of British Columbia, Vancouver,
-      British Columbia, Canada"}]}],"member":"98","container-title":["Canadian Journal
-      of Gastroenterology"],"language":"en","link":[{"URL":"http:\/\/downloads.hindawi.com\/journals\/cjgh\/2005\/241486.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/downloads.hindawi.com\/journals\/cjgh\/2005\/241486.pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,8,23]],"date-time":"2016-08-23T07:00:48Z","timestamp":1471935648000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.hindawi.com\/journals\/cjgh\/2005\/241486\/abs\/"}},"issued":{"date-parts":[[2005]]},"references-count":0,"journal-issue":{"issue":"4","published-print":{"date-parts":[[2005]]}},"alternative-id":["241486"],"URL":"https:\/\/doi.org\/10.1155\/2005\/241486","ISSN":["0835-7900"],"issn-type":[{"value":"0835-7900","type":"print"}],"published":{"date-parts":[[2005]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '21570'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:24:15 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -471,8 +493,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '26547'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:44:10 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -481,40 +511,36 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/members/121212121212/works
   response:
-    content: Resource not found.
+    body:
+      string: Resource not found.
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Sat, 12 Jul 2025 04:24:15 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -522,184 +548,240 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 16 Jun 2026 15:44:11 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 404
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 404
+      message: Not Found
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/members/340/works
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":4582152,"items":[{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:12Z","timestamp":1650994932462},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pmed.1003972.s026","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:24:54Z","timestamp":1650993894000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:25:07Z","timestamp":1650993907000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pmed.1003972.s026"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pmed.1003972.s026"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:13Z","timestamp":1650994933663},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0266623.t008","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:28:08Z","timestamp":1650994088000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:28:14Z","timestamp":1650994094000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0266623.t008"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0266623.t008"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:18Z","timestamp":1650994938023},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pgph.0000284.g002","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:26:30Z","timestamp":1650993990000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:26:36Z","timestamp":1650993996000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pgph.0000284.g002"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pgph.0000284.g002"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:29Z","timestamp":1650994949343},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pmed.1003972.s027","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:24:54Z","timestamp":1650993894000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:25:07Z","timestamp":1650993907000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pmed.1003972.s027"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pmed.1003972.s027"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:29Z","timestamp":1650994949514},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pgph.0000372.s002","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:27:12Z","timestamp":1650994032000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:27:15Z","timestamp":1650994035000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pgph.0000372.s002"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pgph.0000372.s002"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:03Z","timestamp":1655489703278},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0269971.r004","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:29:42Z","timestamp":1655486982000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:29:55Z","timestamp":1655486995000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0269971.r004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0269971.r004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:06Z","timestamp":1655489706053},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0269673.t003","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:50Z","timestamp":1655487350000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:53Z","timestamp":1655487353000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0269673.t003"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0269673.t003"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:06Z","timestamp":1655489706889},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0269529.r003","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:13Z","timestamp":1655487013000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:27Z","timestamp":1655487027000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0269529.r003"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0269529.r003"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:08Z","timestamp":1655489708253},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0268322.s005","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:33:03Z","timestamp":1655487183000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:33:05Z","timestamp":1655487185000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0268322.s005"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0268322.s005"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:10Z","timestamp":1655489710754},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270031.r006","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:28:29Z","timestamp":1655486909000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:28:43Z","timestamp":1655486923000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270031.r006"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270031.r006"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:28:31Z","timestamp":1655490511083},"reference-count":45,"publisher":"Public
-      Library of Science (PLoS)","issue":"4","license":[{"start":{"date-parts":[[2014,4,23]],"date-time":"2014-04-23T00:00:00Z","timestamp":1398211200000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-      ONE"],"DOI":"10.1371\/journal.pone.0095888","type":"journal-article","created":{"date-parts":[[2014,4,23]],"date-time":"2014-04-23T22:39:14Z","timestamp":1398292754000},"page":"e95888","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":4,"title":["Specific
-      Activation of K-RasG12D Allele in the Bladder Urothelium Results in Lung Alveolar
-      and Vascular Defects"],"prefix":"10.1371","volume":"9","author":[{"given":"Francisco","family":"Ayala
-      de la Pe\u00f1a","sequence":"first","affiliation":[]},{"given":"Keizo","family":"Kanasaki","sequence":"additional","affiliation":[]},{"given":"Megumi","family":"Kanasaki","sequence":"additional","affiliation":[]},{"given":"Sylvia","family":"Vong","sequence":"additional","affiliation":[]},{"given":"Carlota","family":"Rovira","sequence":"additional","affiliation":[]},{"given":"Raghu","family":"Kalluri","sequence":"additional","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2014,4,23]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"295","DOI":"10.1038\/nrc2109","article-title":"Hyperactive
-      Ras in developmental disorders and cancer","volume":"7","author":"S Schubbert","year":"2007","journal-title":"Nat
-      Rev Cancer"},{"key":"ref2","first-page":"145","article-title":"Mouse models
-      of K-ras-initiated carcinogenesis","volume":"1756","author":"KP Janssen","year":"2005","journal-title":"Biochim
-      Biophys Acta"},{"key":"ref3","doi-asserted-by":"crossref","first-page":"695","DOI":"10.1136\/jmg.2007.055772","article-title":"Clinical
-      and molecular aspects of RAS related disorders","volume":"45","author":"E Denayer","year":"2008","journal-title":"J
-      Med Genet"},{"key":"ref4","doi-asserted-by":"crossref","first-page":"1444","DOI":"10.1128\/MCB.21.5.1444-1452.2001","article-title":"Targeted
-      genomic disruption of H-ras and N-ras, individually or in combination, reveals
-      the dispensability of both loci for mouse growth and development","volume":"21","author":"LM
-      Esteban","year":"2001","journal-title":"Mol Cell Biol"},{"key":"ref5","doi-asserted-by":"crossref","first-page":"2468","DOI":"10.1101\/gad.11.19.2468","article-title":"K-ras
-      is an essential gene in the mouse with partial functional overlap with N-ras","volume":"11","author":"L
-      Johnson","year":"1997","journal-title":"Genes Dev"},{"key":"ref6","doi-asserted-by":"crossref","first-page":"111","DOI":"10.1016\/S1535-6108(03)00191-0","article-title":"Tumor
-      induction by an endogenous K-ras oncogene is highly dependent on cellular context","volume":"4","author":"C
-      Guerra","year":"2003","journal-title":"Cancer Cell"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"7765","DOI":"10.1128\/MCB.00965-07","article-title":"Biochemical
-      and functional characterization of germ line KRAS mutations","volume":"27","author":"S
-      Schubbert","year":"2007","journal-title":"Mol Cell Biol"},{"key":"ref8","doi-asserted-by":"crossref","first-page":"694","DOI":"10.1101\/gad.1526207","article-title":"Sprouty-2
-      regulates oncogenic K-ras in lung development and tumorigenesis","volume":"21","author":"AT
-      Shaw","year":"2007","journal-title":"Genes Dev"},{"key":"ref9","doi-asserted-by":"crossref","first-page":"375","DOI":"10.1016\/S1535-6108(04)00085-6","article-title":"Endogenous
-      oncogenic K-ras(G12D) stimulates proliferation and widespread neoplastic and
-      developmental defects","volume":"5","author":"DA Tuveson","year":"2004","journal-title":"Cancer
-      Cell"},{"key":"ref10","doi-asserted-by":"crossref","first-page":"1973","DOI":"10.1038\/sj.onc.1204315","article-title":"Role
-      of Ha-ras activation in superficial papillary pathway of urothelial tumor formation","volume":"20","author":"ZT
-      Zhang","year":"2001","journal-title":"Oncogene"},{"key":"ref11","doi-asserted-by":"crossref","unstructured":"Cordon-Cardo
-      C (2008) Molecular alterations associated with bladder cancer initiation and
-      progression. Scand J Urol Nephrol Suppl: 154\u2013165.","DOI":"10.1080\/03008880802291915"},{"key":"ref12","doi-asserted-by":"crossref","first-page":"1987","DOI":"10.1097\/01.ju.0000088670.02905.78","article-title":"Review
-      Article: The Role of Ras Superfamily Proteins in Bladder Cancer Progression","volume":"170","author":"G
-      Oxford","year":"2003","journal-title":"J Urol"},{"key":"ref13","doi-asserted-by":"crossref","first-page":"e74809","DOI":"10.1371\/journal.pone.0074809","article-title":"Simultaneous
-      activation of Kras and inactivation of p53 induces soft tissue sarcoma and bladder
-      urothelial hyperplasia","volume":"8","author":"X Yang","year":"2013","journal-title":"PLoS
-      One"},{"key":"ref14","doi-asserted-by":"crossref","first-page":"e65189","DOI":"10.1371\/journal.pone.0065189","article-title":"Overexpression
-      of p16(INK4a) in urothelial carcinoma in situ is a marker for MAPK-mediated
-      epithelial-mesenchymal transition but is not related to human papillomavirus
-      infection","volume":"8","author":"J Steinestel","year":"2013","journal-title":"PLoS
-      One"},{"key":"ref15","doi-asserted-by":"crossref","first-page":"179","DOI":"10.1053\/j.semperi.2006.05.004","article-title":"Pathology
-      of Bronchopulmonary Dysplasia","volume":"30","author":"JJ Coalson","year":"2006","journal-title":"Semin
-      Perinatol"},{"key":"ref16","doi-asserted-by":"crossref","first-page":"1946","DOI":"10.1056\/NEJMra067279","article-title":"Chronic
-      lung disease after premature birth","volume":"357","author":"E Baraldi","year":"2007","journal-title":"N
-      Engl J Med"},{"key":"ref17","doi-asserted-by":"crossref","first-page":"20778","DOI":"10.1074\/jbc.M110.198069","article-title":"Loss
-      of p53 and acquisition of angiogenic microRNA profile are insufficient to facilitate
-      progression of bladder urothelial carcinoma in situ to invasive carcinoma","volume":"286","author":"F
-      Ayala de la Pena","year":"2011","journal-title":"J Biol Chem"},{"key":"ref18","doi-asserted-by":"crossref","first-page":"164","DOI":"10.1016\/j.ymgme.2006.03.014","article-title":"Mouth
-      cell collection device for newborn mice","volume":"89","author":"YH Zhang","year":"2006","journal-title":"Mol
-      Genet Metab"},{"key":"ref19","doi-asserted-by":"crossref","unstructured":"Birkedal-Hansen
-      H, Yamada S, Windsor J, Pollard AH, Lyons G, et al. (2008) Matrix metalloproteinases.
-      Curr Protoc Cell Biol Chapter 10: Unit 10 8.","DOI":"10.1002\/0471143030.cb1008s40"},{"key":"ref20","doi-asserted-by":"crossref","first-page":"F562","DOI":"10.1152\/ajprenal.00368.2004","article-title":"Gene
-      deletion in urothelium by specific expression of Cre recombinase","volume":"289","author":"L
-      Mo","year":"2005","journal-title":"Am J Physiol Ren Physiol"},{"key":"ref21","unstructured":"Schittny
-      PH. J B (2003) Morphogenesis of the mammalian lung: aspects of structure and
-      extracellular matrix components. In: Massaro D Chambon P, editors MGD, editor.
-      Lung development and regeneration. New York: Marcel Dekker Inc. pp. 275\u2013317."},{"key":"ref22","doi-asserted-by":"crossref","first-page":"113","DOI":"10.1002\/ppul.20252","article-title":"Similarities
-      and dissimilarities of branching and septation during lung development","volume":"40","author":"M
-      Roth-Kleiner","year":"2005","journal-title":"Pediatr Pulmonol"},{"key":"ref23","doi-asserted-by":"crossref","first-page":"1549","DOI":"10.1053\/jpsu.2000.18305","article-title":"Early
-      fetal obstructive uropathy produces Potter&apos;s syndrome in the lamb","volume":"35","author":"H
-      Kitagawa","year":"2000","journal-title":"J Pediatr Surg"},{"key":"ref24","doi-asserted-by":"crossref","first-page":"482","DOI":"10.1046\/j.1469-0705.2000.00252.x","article-title":"The
-      fetal lung. 2: Pulmonary hypoplasia","volume":"16","author":"JA Laudy","year":"2000","journal-title":"Ultrasound
-      Obs Gynecol"},{"key":"ref25","doi-asserted-by":"crossref","first-page":"5512","DOI":"10.1158\/0008-5472.CAN-05-0074","article-title":"K-ras
-      codon-specific mutations produce distinctive metabolic phenotypes in NIH3T3
-      mice [corrected] fibroblasts","volume":"65","author":"P Vizan","year":"2005","journal-title":"Cancer
-      Res"},{"key":"ref26","doi-asserted-by":"crossref","first-page":"455","DOI":"10.1203\/PDR.0b013e3181b3b0fa","article-title":"Placental
-      IL-10 dysregulation and association with bronchopulmonary dysplasia risk","volume":"66","author":"EC
-      McGowan","year":"2009","journal-title":"Pediatr Res"},{"key":"ref27","doi-asserted-by":"crossref","first-page":"791","DOI":"10.1091\/mbc.E08-07-0732","article-title":"Oncogenic
-      K-Ras regulates proliferation and cell junctions in lung epithelial cells through
-      induction of cyclooxygenase-2 and activation of metalloproteinase-9","volume":"20","author":"XQ
-      Wang","year":"2009","journal-title":"Mol Biol Cell"},{"key":"ref28","doi-asserted-by":"crossref","first-page":"341","DOI":"10.1038\/sj.jp.7211290","article-title":"Amniotic
-      Fluid: Not Just Fetal Urine Anymore","volume":"25","author":"MA Underwood","year":"2005","journal-title":"J
-      Perinatol"},{"key":"ref29","doi-asserted-by":"crossref","first-page":"679","DOI":"10.1073\/pnas.92.3.679","article-title":"A
-      tissue-specific promoter that can drive a foreign gene to express in the suprabasal
-      urothelial cells of transgenic mice","volume":"92","author":"JH Lin","year":"1995","journal-title":"Proc
-      Natl Acad Sci U S A"},{"key":"ref30","doi-asserted-by":"crossref","first-page":"6610","DOI":"10.1158\/1078-0432.CCR-08-1136","article-title":"Tumor-specific
-      urinary matrix metalloproteinase fingerprinting: identification of high molecular
-      weight urinary matrix metalloproteinase species","volume":"14","author":"R Roy","year":"2008","journal-title":"Clin
-      Cancer Res"},{"key":"ref31","doi-asserted-by":"crossref","first-page":"68","DOI":"10.1152\/jappl.1986.61.1.68","article-title":"Influence
-      of upper respiratory tract on liquid flow to and from fetal lungs","volume":"61","author":"R
-      Harding","year":"1986","journal-title":"J Appl Physiol"},{"key":"ref32","first-page":"1562","article-title":"Pitfalls,
-      Problems, and Progress in Bronchopulmonary Dysplasia 10.1542\/peds.2008-1962","volume":"123","author":"A
-      Bhandari","year":"2009","journal-title":"Pediatrics"},{"key":"ref33","doi-asserted-by":"crossref","first-page":"312","DOI":"10.1203\/PDR.0b013e31820bcb2a","article-title":"Developmental
-      stage is a major determinant of lung injury in a murine model of bronchopulmonary
-      dysplasia","volume":"69","author":"E Backstrom","year":"2011","journal-title":"Pediatr
-      Res"},{"key":"ref34","doi-asserted-by":"crossref","first-page":"8724","DOI":"10.1074\/jbc.M511798200","article-title":"Loss
-      of PECAM-1 function impairs alveolarization","volume":"281","author":"HM DeLisser","year":"2006","journal-title":"J
-      Biol Chem"},{"key":"ref35","first-page":"702","article-title":"Loss of HIF-2[alpha]
-      and inhibition of VEGF impair fetal lung maturation, whereas treatment with
-      VEGF prevents fatal respiratory distress in premature mice","volume":"8","author":"V
-      Compernolle","year":"2002"},{"key":"ref36","doi-asserted-by":"crossref","first-page":"978","DOI":"10.1164\/rccm.200611-1660PP","article-title":"Bronchopulmonary
-      dysplasia: where have all the vessels gone? Roles of angiogenic growth factors
-      in chronic lung disease","volume":"175","author":"B Thebaud","year":"2007","journal-title":"Am
-      J Respir Crit Care Med"},{"key":"ref37","doi-asserted-by":"crossref","first-page":"16","DOI":"10.1159\/000047179","article-title":"Basement
-      membrane biomarkers in very low birth weight premature infants. Association
-      with length of NICU stay and bronchopulmonary dysplasia","volume":"81","author":"ZH
-      Aghai","year":"2002","journal-title":"Biol Neonate"},{"key":"ref38","doi-asserted-by":"crossref","first-page":"1709","DOI":"10.1542\/peds.113.6.1709","article-title":"Low
-      levels of tissue inhibitors of metalloproteinases with a high matrix metalloproteinase-9\/tissue
-      inhibitor of metalloproteinase-1 ratio are present in tracheal aspirate fluids
-      of infants who develop chronic lung disease","volume":"113","author":"II Ekekezie","year":"2004","journal-title":"Pediatrics"},{"key":"ref39","first-page":"84","article-title":"Complex
-      Integration of Matrix, Oxidative Stress, and Apoptosis in Genetic Emphysema
-      10.2353\/ajpath.2009.080870","volume":"175","author":"M Podowski","year":"2009","journal-title":"Am
-      J Pathol"},{"key":"ref40","doi-asserted-by":"crossref","first-page":"15571","DOI":"10.1073\/pnas.1007625107","article-title":"Extracellular
-      superoxide dismutase protects against pulmonary emphysema by attenuating oxidative
-      fragmentation of ECM","volume":"107","author":"H Yao","year":"2010","journal-title":"Proc
-      Natl Acad Sci U S A"},{"key":"ref41","doi-asserted-by":"crossref","first-page":"1831","DOI":"10.1016\/S0002-9440(10)64318-0","article-title":"Matrilysin
-      (matrix metalloproteinase-7) mediates E-cadherin ectodomain shedding in injured
-      lung epithelium","volume":"162","author":"JK McGuire","year":"2003","journal-title":"Am
-      J Pathol"},{"key":"ref42","doi-asserted-by":"crossref","first-page":"204","DOI":"10.1164\/rccm.200506-927OC","article-title":"Growth
-      of pulmonary microvasculature in ventilated preterm infants","volume":"173","author":"ME
-      De Paepe","year":"2006","journal-title":"Am J Respir Crit Care Med"},{"key":"ref43","doi-asserted-by":"crossref","first-page":"2477","DOI":"10.1161\/CIRCULATIONAHA.105.541524","article-title":"Vascular
-      endothelial growth factor gene therapy increases survival, promotes lung angiogenesis,
-      and prevents alveolar damage in hyperoxia-induced lung injury: evidence that
-      angiogenesis participates in alveolarization","volume":"112","author":"B Thebaud","year":"2005","journal-title":"Circulation"},{"key":"ref44","doi-asserted-by":"crossref","first-page":"7529","DOI":"10.1158\/0008-5472.CAN-08-4382","article-title":"Pulmonary
-      vascular destabilization in the premetastatic phase facilitates lung metastasis","volume":"69","author":"Y
-      Huang","year":"2009","journal-title":"Cancer Res"},{"key":"ref45","doi-asserted-by":"crossref","first-page":"154","DOI":"10.1073\/pnas.98.1.154","article-title":"Urothelial
-      function reconsidered: a role in urinary protein secretion","volume":"98","author":"FM
-      Deng","year":"2001","journal-title":"Proc Natl Acad Sci U S A"}],"container-title":["PLoS
-      ONE"],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0095888","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,8,9]],"date-time":"2019-08-09T21:03:13Z","timestamp":1565384593000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0095888"}},"editor":[{"given":"Rory
-      Edward","family":"Morty","sequence":"first","affiliation":[]}],"issued":{"date-parts":[[2014,4,23]]},"references-count":45,"journal-issue":{"issue":"4","published-online":{"date-parts":[[2014,4,23]]}},"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0095888","ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"published":{"date-parts":[[2014,4,23]]}},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:14:48Z","timestamp":1655489688488},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0266720.r004","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:32:29Z","timestamp":1655487149000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:32:40Z","timestamp":1655487160000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0266720.r004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0266720.r004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:14:51Z","timestamp":1655489691337},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270101.s005","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:09Z","timestamp":1655487309000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:16Z","timestamp":1655487316000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270101.s005"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270101.s005"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:14:57Z","timestamp":1655489697589},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270142.t001","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:44Z","timestamp":1655487044000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:46Z","timestamp":1655487046000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270142.t001"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270142.t001"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:41:50Z","timestamp":1655487710426},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pcbi.1010095.g006","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:50Z","timestamp":1655486750000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:54Z","timestamp":1655486754000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pcbi.1010095.g006"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pcbi.1010095.g006"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:41:52Z","timestamp":1655487712259},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pcbi.1010095.g007","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:50Z","timestamp":1655486750000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:54Z","timestamp":1655486754000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pcbi.1010095.g007"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pcbi.1010095.g007"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:42:11Z","timestamp":1655487731207},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270136.s004","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:26:47Z","timestamp":1655486807000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:26:51Z","timestamp":1655486811000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270136.s004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270136.s004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:42:16Z","timestamp":1655487736207},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270239.g002","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:27:16Z","timestamp":1655486836000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:27:21Z","timestamp":1655486841000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270239.g002"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270239.g002"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T12:41:48Z","timestamp":1655469708102},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270096.g004","type":"component","created":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:43:11Z","timestamp":1655401391000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:43:12Z","timestamp":1655401392000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270096.g004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270096.g004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T12:41:09Z","timestamp":1655469669174},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0268774.t004","type":"component","created":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:36:09Z","timestamp":1655400969000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:36:12Z","timestamp":1655400972000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0268774.t004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0268774.t004"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6301'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:24:16 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -707,8 +789,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '10699'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:44:17 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -717,10 +807,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

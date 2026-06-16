@@ -5,31 +5,39 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/members?offset=0&rows=1
   response:
-    content: '{"status":"ok","message-type":"member-list","message-version":"1.0.0","message":{"items-per-page":1,"query":{"start-index":0,"search-terms":null},"total-results":29833,"items":[{"last-status-check-time":1752275362568,"primary-name":"Annals
-      of Family Medicine","counts":{"current-dois":1844,"backfile-dois":2944,"total-dois":4788},"breakdowns":{"dois-by-issued-year":[[2023,1063],[2024,710],[2022,435],[2018,162],[2005,154],[2015,150],[2019,147],[2017,146],[2004,146],[2020,142],[2013,140],[2008,137],[2021,135],[2010,134],[2006,132],[2014,131],[2009,129],[2016,127],[2011,123],[2007,120],[2012,118],[2025,71],[2003,36]]},"prefixes":["10.1370"],"coverage":{"affiliations-current":0.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.0,"funders-current":0.0,"affiliations-backfile":0.0,"resource-links-backfile":0.0,"orcids-backfile":0.0,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.003253796095444685,"similarity-checking-backfile":0.4038722826086957,"references-backfile":0.0,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":0.0,"award-numbers-current":0.0,"abstracts-backfile":0.0,"resource-links-current":0.0,"abstracts-current":0.0,"references-current":0.0},"prefix":[{"name":"Annals
-      of Family Medicine","value":"10.1370"}],"id":1,"tokens":["annals","of","family","medicine"],"counts-type":{"all":{"journal-article":3273,"proceedings-article":1515},"backfile":{"journal-article":2655,"proceedings-article":289},"current":{"journal-article":618,"proceedings-article":1226}},"coverage-type":{"all":{"journal-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.001833180568285976,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.463794683776352,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"backfile":{"journal-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":0.3389830508474576,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"current":{"journal-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.00970873786407767,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0},"proceedings-article":{"last-status-check-time":1752275362568,"affiliations":0.0,"abstracts":0.0,"orcids":0.0,"licenses":0.0,"references":0.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}}},"flags":{"deposits-abstracts-current":false,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":false,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":false,"deposits-funders-current":false,"deposits-references-backfile":false,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":false,"deposits-licenses-backfile":false,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":false,"deposits-resource-links-backfile":false,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":false,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":false},"location":"Leawood,
-      KS, United States","names":["Annals of Family Medicine"]}]}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/+1XS4/jNgz+K4HPUqCHn3PrpZe2p0VPixwUW55V49ipJO9sMPB/L2V5JolsT3LY
+        RVtggUGG4UsU+ZGhXiNjhe1N9BR1hwhFR2mMeJbYnk8SeEd53EuNG2XslfCr1EZ1LcjplmzJRRI9
+        vUbKyqPBJ7A6jRyKor97qc9OBmdpi1VbyW/RE0GRkUKXX7CV+ggRtH3TDCiynRUN1tL0jQUuZ1nK
+        kHcbPX1+jRphLPZR4/KLLA/YqqM7KMtpksZFEZMsRdFJq6PQZ9wKJ4x+aVvRmE1Xb34VR9WcN3/I
+        SpWqlRB92fWtO+o1KnutZWtx1Sn4TjmHk/eiPNSqkRMzJiR7C9JzEs4LiHuvpThU3Us7enIivD9j
+        ZUwvK3yGm0L0nxlhHFGS8h1ydIwySjyZoCTOPclQzJORpDmiKRtJkiCaxJ7rSG9GC0TjzJMZkKnX
+        jd9JRoD0HiicHHszAn65N2MUyOk00OX+CJICOZmBM049F05jheeCApsOBg/MXwhSQ9kUGUOUThdK
+        UTa55Yinu93gyiNr9U26kkaUbCEaEu1cKQBcE5JEDWlXwgLUoNK+MgCbrQOOghoKrezZQ0C1zxcN
+        6jQqaUqtTkvGutNYVSG37gGWGmo2lXtiN6qUrZEz/pv6rZObkAMLQHTX61JCN7WHmbTTpYsp4Pan
+        SliJTx2EoeTaRZZdXeuSOLn5S5ZTeO0oSV2R44zSLIlj7uKvJTgs57m4yXUgEy9CV7jt3Ry5e721
+        3AdJvnEZyPbGalHae9lfswoSfLnyteAdvuM8emDAfBVN73TegD4A0lU1zkbbHWQ7doEYHYB2V8NH
+        PToZR+vkZvc2qKbhDA3SNO7fX3AxMMUwW1XpLsxjaD4IsSslGLfP5iKiBcuGy0xbNGc5jIcVc1q4
+        UfeejAXrFIbPsnHG8mG4tPjdazw86q+7LqzoTU/4XgBA586W8pzzhBUXoM3Kftvs68PHSeI8SXle
+        MBonPC1YHgD1tmeXG2ARqwtNdkHhQpp/UNq+S5borH+/f1ruwfu/nB+y5VnyEzj/GnA+Gmw/ahwV
+        BedZFuccfmUzkmf/m3z9hNEyjCAxdSOe/TNAnjqj4Dd7YcWo4edeootKuLdZ3V+Jw+94ZdcMva7v
+        WKHmxxthePryEhb6XFu7ZnrhTh4qTPC6k4ZV89m6Pg90Ybtdi3JdY2n/DHUWnhQzNytbc6i3/Mr5
+        4G6PFurBI9fVZu+ZtYo8jtzV2D98DQZwmb8pRm/Qs01XjiiCPf13KV66rkKb3z6hzZ+tsrLafIJ5
+        Jt167vb9cWFf3/h3w24Y/gE3NBT8WxEAAA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '1004'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:25:41 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -37,8 +45,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '994'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:17:06 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -47,10 +63,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

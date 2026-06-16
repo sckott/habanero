@@ -5,35 +5,30 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/funders?query=NSF&rows=2
   response:
-    content: '{"status":"ok","message-type":"funder-list","message-version":"1.0.0","message":{"items-per-page":2,"query":{"start-index":0,"search-terms":"NSF"},"total-results":89,"items":[{"id":"100014071","location":"United
-      States","name":"Large Facilities Office","alt-names":["Large Facilities Office
-      at NSF","NSF''s Large Facilities Office","National Science Foundation''s Large
-      Facilities Office","BFA\/LFO","LFO","NSF Large Facilities Office"],"uri":"https:\/\/doi.org\/10.13039\/100014071","replaces":[],"replaced-by":[],"tokens":["large","facilities","office","large","facilities","office","at","nsf","nsfs","large","facilities","office","national","science","foundations","large","facilities","office","bfa\/lfo","lfo","nsf","large","facilities","office"]},{"id":"100000106","location":"United
-      States","name":"Office of Integrative Activities","alt-names":["OIA","NSF Office
-      of Integrative Activities","National Science Foundation''s Office of Integrative
-      Activities","NSF OIA","Office of Integrative Activities, National Science Foundation","NSF''s
-      Office of Integrative Activities","OD\/OIA"],"uri":"https:\/\/doi.org\/10.13039\/100000106","replaces":["100007522"],"replaced-by":[],"tokens":["office","of","integrative","activities","oia","nsf","office","of","integrative","activities","national","science","foundations","office","of","integrative","activities","nsf","oia","office","of","integrative","activities","national","science","foundation","nsfs","office","of","integrative","activities","od\/oia"]}]}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/61TsW7bMBT8FYJLF8mi7LZBtLkIBAQI4sHoVGlgpCeHCC0qJBXUCPTvfRRt2Rks
+        c+hCU3z33h2P509qLLe9oRlVbzSiezCG7yC2hw7wrOnbGnQshbEXxQ/QRqgW6+mCLdi5QrNPKizs
+        TdxhVzeeLCP63oM+uBpyaRsLnPmXZiyiBriuXmMLeu8UPG9zOkTUKstlrMH00uLx/SryQ2n2B8fX
+        jpYxln5ndylSS1Vx69X8bhFXky3eCAyWWr53l3jiegck55WQwgowZNM0ogIEcGljB3Kjr8EIt8QJ
+        i5y8b4Zcn/Y86uCSbCsBLXbmCu0bD2f7fuXrInnKN7j1KxJdhZcR7bXAW71a25msSIqkVmKh9K5I
+        UrZIV2x173ZngzR0klfjHcvpq45fDv7AqjdoRwOko8SGZiLFD3VSOV/lLh+tafxqbuLbo1e4Nd4t
+        B538uj3gpeFFIhvlgOPqyeeayiG6yA8axH4G5eeYA9WQx9bCTiP8A8i6wp8Tw5cgbR7Xx0cM6JwP
+        TcgAxzMy3gJHZIZsyncA5eahSBxleBZPZl9k0T/C3Y/lks7Hcnpy5R5YnEU53y9lKcGnHAQ3BQQx
+        fJanHmX8LwHnP1S4D3WROBHlUA7DPx4xElPhBQAA
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '487'
-      Content-Type:
-      - application/json
-      Date:
-      - Fri, 11 Jul 2025 23:25:11 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -41,8 +36,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '486'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 05:38:56 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -51,10 +54,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

@@ -5,31 +5,85 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/members/2984/works?offset=0&rows=1
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":669550,"items":[{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T14:44:43Z","timestamp":1724424283404},"reference-count":0,"publisher":"T&t
-      Clark","isbn-type":[{"value":"9780567686404","type":"print"},{"value":"9780567686411","type":"electronic"},{"value":"9780567689764","type":"electronic"},{"value":"9780567686428","type":"electronic"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2019]]},"DOI":"10.5040\/9780567686428.ch-001","type":"book-chapter","created":{"date-parts":[[2019,9,25]],"date-time":"2019-09-25T09:50:26Z","timestamp":1569405026000},"source":"Crossref","is-referenced-by-count":6,"title":["Introduction:
-      \u201cFor All Her Household are Clothed in Crimson\u201d"],"prefix":"10.5040","author":[{"given":"Antonios","family":"Finitsis","sequence":"first","affiliation":[]}],"member":"2984","container-title":["Dress
-      and Clothing in the Hebrew Bible"],"deposited":{"date-parts":[[2023,9,12]],"date-time":"2023-09-12T02:59:11Z","timestamp":1694487551000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.bloomsburycollections.com\/monograph-detail?docid=b-9780567686428&tocid=b-9780567686428-0000536"}},"issued":{"date-parts":[[2019]]},"ISBN":["9780567686404","9780567686411","9780567689764","9780567686428"],"references-count":0,"URL":"https:\/\/doi.org\/10.5040\/9780567686428.ch-001","published":{"date-parts":[[2019]]}}],"items-per-page":1,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '788'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:25:40 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -37,8 +91,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '3635'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:17:00 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -47,10 +109,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

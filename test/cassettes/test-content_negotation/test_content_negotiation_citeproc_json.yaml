@@ -5,230 +5,167 @@ interactions:
       accept:
       - transform/application/vnd.citationstyles.csl+json
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: http://api.crossref.org/works/10.1126/science.169.3946.635/transform/application/vnd.citationstyles.csl+json
   response:
-    content: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301
-      Moved Permanently</h1></center>\r\n</body>\r\n</html>\r\n"
+    body:
+      string: "<html>\r\n<head><title>301 Moved Permanently</title></head>\r\n<body>\r\n<center><h1>301
+        Moved Permanently</h1></center>\r\n</body>\r\n</html>\r\n"
     headers:
-      Connection:
+      connection:
       - keep-alive
-      Content-Length:
+      content-length:
       - '134'
-      Content-Type:
+      content-type:
       - text/html
-      Date:
-      - Sat, 12 Jul 2025 03:19:17 GMT
-      Location:
+      date:
+      - Tue, 16 Jun 2026 13:04:52 GMT
+      location:
       - https://api.crossref.org:443/works/10.1126/science.169.3946.635/transform/application/vnd.citationstyles.csl+json
-      Server:
+      server:
       - awselb/2.0
-    http_version: HTTP/1.1
-    status_code: 301
+    status:
+      code: 301
+      message: Moved Permanently
 - request:
     body: ''
     headers:
       accept:
       - transform/application/vnd.citationstyles.csl+json
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/works/10.1126/science.169.3946.635/transform/application/vnd.citationstyles.csl+json
   response:
-    content: '{"indexed":{"date-parts":[[2024,9,20]],"date-time":"2024-09-20T15:45:05Z","timestamp":1726847105811},"reference-count":76,"publisher":"American
-      Association for the Advancement of Science (AAAS)","issue":"3946","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1970,8,14]]},"abstract":"<jats:p>The
-      train of thought pursued in this article has led to the conclusion that the
-      structure of cold water seems likely to consist, for the most part, of hydrogen-bonded,
-      four-coordinated, framework regions, with interstitial monomers occupying some
-      fraction of the cavities the framework encloses. The precise geometry of the
-      framework has not been specified, but some evidence suggests that it is rather
-      regular at low temperatures and becomes more random as the water gets warmer.
-      These conclusions, meager as they are in comparison with what we shall eventually
-      need to know about water, are still \"subject to change without notice.\" Such
-      a change would, for instance, be made necessary by the discrediting either of
-      the data or of the interpretations on which the model is based. The discovery
-      of new facts, or of new meanings in old facts, which were clearly in conflict
-      with the model, would also make it necessary to modify, if not to abandon, it.
-      Even this would be progress, however, for it would be another product of the
-      method of drawing upon data from diverse sources and would be a further step
-      toward the progressively more comprehensive model to which this method will
-      lead and the progressively greater confidence we will be able to place in our
-      conclusions.<\/jats:p>","DOI":"10.1126\/science.169.3946.635","type":"journal-article","created":{"date-parts":[[2006,10,5]],"date-time":"2006-10-05T12:56:56Z","timestamp":1160053016000},"page":"635-641","source":"Crossref","is-referenced-by-count":89,"title":"The
-      Structure of Ordinary Water","prefix":"10.1126","volume":"169","author":[{"given":"Henry
-      S.","family":"Frank","sequence":"first","affiliation":[{"name":"University of
-      Pittsburgh, Mellon Institute of Carnegie-Mellon University"}]}],"member":"221","reference":[{"key":"e_1_2_1_1_1","unstructured":"Waller
-      R. Essayes of Natural Experiments (1964)."},{"key":"e_1_2_1_2_1","first-page":"2020","volume":"5","year":"1670","unstructured":"PHILOSOPHICAL
-      TRANSACTIONS 5: 2020 (1670).","journal-title":"PHILOSOPHICAL TRANSACTIONS"},{"key":"e_1_2_1_3_1","first-page":"105","year":"1967","unstructured":"Arnett,
-      E. M., Physico-Chemical Processes in Mixed Aqueous Solvents: 105 (1967).","journal-title":"Physico-Chemical
-      Processes in Mixed Aqueous Solvents"},{"key":"e_1_2_1_4_1","unstructured":"Ben-Naim
-      A. Water and Aqueous Solutions: Structure Thermodynamics and Transport Processes
-      (1970)."},{"key":"e_1_2_1_5_1","doi-asserted-by":"crossref","first-page":"515","DOI":"10.1063\/1.1749327","volume":"1","year":"1933","unstructured":"BERNAL,
-      J.D., A theory of water and ionic solution, with particular reference to hydrogen
-      and hydroxyl ions, JOURNAL OF CHEMICAL PHYSICS 1: 515 (1933).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_6_1","first-page":"299","volume":"280","year":"1964","unstructured":"BERNAL,
-      J.D., BAKERIAN LECTURE 1962 - STRUCTURE OF LIQUIDS, PROCEEDINGS OF THE ROYAL
-      SOCIETY OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES 280: 299 (1964).","journal-title":"PROCEEDINGS
-      OF THE ROYAL SOCIETY OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES"},{"key":"e_1_2_1_7_1","unstructured":"Bernstein
-      H. J. Raman Newsletter 1 (1968)."},{"key":"e_1_2_1_8_1","first-page":"40","volume":"3","year":"1926","unstructured":"International
-      Critical Tables 3: 40 (1926).","journal-title":"International Critical Tables"},{"key":"e_1_2_1_9_1","doi-asserted-by":"crossref","first-page":"57","DOI":"10.2307\/20026138","volume":"61","year":"1926","unstructured":"BRIDGMAN,
-      P.W., The effect of pressure on the viscosity of forty-four pure liquids., PROCEEDINGS
-      OF THE AMERICAN ACADEMY OF ARTS AND SCIENCES 61: 57 (1926).","journal-title":"PROCEEDINGS
-      OF THE AMERICAN ACADEMY OF ARTS AND SCIENCES"},{"key":"e_1_2_1_10_1","first-page":"169","volume":"248","year":"1958","unstructured":"BUCKINGHAM,
-      A.D., SOLVENT EFFECTS IN INFRA-RED SPECTROSCOPY, PROCEEDINGS OF THE ROYAL SOCIETY
-      OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES 248: 169 (1958).","journal-title":"PROCEEDINGS
-      OF THE ROYAL SOCIETY OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES"},{"key":"e_1_2_1_11_1","doi-asserted-by":"crossref","first-page":"621","DOI":"10.1016\/0009-2614(70)80100-2","volume":"4","year":"1970","unstructured":"COLLES,
-      M.J., CHEM PHYS LETT 4: 621 (1970).","journal-title":"CHEM PHYS LETT"},{"key":"e_1_2_1_12_1","doi-asserted-by":"crossref","first-page":"145","DOI":"10.1088\/0959-5309\/60\/2\/304","volume":"60","year":"1948","unstructured":"COLLIE,
-      C.H., THE DIELECTRIC PROPERTIES OF WATER AND HEAVY WATER, PROCEEDINGS OF THE
-      PHYSICAL SOCIETY OF LONDON 60: 145 (1948).","journal-title":"PROCEEDINGS OF
-      THE PHYSICAL SOCIETY OF LONDON"},{"key":"e_1_2_1_13_1","doi-asserted-by":"crossref","first-page":"3965","DOI":"10.1021\/ja00879a035","volume":"84","year":"1962","unstructured":"DANFORD,
-      M.D., STRUCTURE OF WATER AT ROOM TEMPERATURE, JOURNAL OF THE AMERICAN CHEMICAL
-      SOCIETY 84: 3965 (1962).","journal-title":"JOURNAL OF THE AMERICAN CHEMICAL
-      SOCIETY"},{"key":"e_1_2_1_14_1","doi-asserted-by":"crossref","first-page":"2563","DOI":"10.1063\/1.1696333","volume":"42","year":"1965","unstructured":"DAVIS,
-      C.M., 2-STATE THEORY OF STRUCTURE OF WATER, JOURNAL OF CHEMICAL PHYSICS 42:
-      2563 (1965).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_15_1","doi-asserted-by":"crossref","first-page":"426","DOI":"10.1016\/0009-2614(69)85004-9","volume":"4","year":"1969","unstructured":"DELBENE,
-      J.E., CHEM PHYS LETT 4: 426 (1969).","journal-title":"CHEM PHYS LETT"},{"key":"e_1_2_1_16_1","doi-asserted-by":"crossref","first-page":"4858","DOI":"10.1063\/1.1673723","volume":"52","year":"1970","unstructured":"DELBENE,
-      J, THEORY OF MOLECULAR INTERACTIONS .1. MOLECULAR ORBITAL STUDIES OF WATER POLYMERS
-      USING A MINIMAL SLATER-TYPE BASIS, JOURNAL OF CHEMICAL PHYSICS 52: 4858 (1970).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_17_1","doi-asserted-by":"crossref","first-page":"109","DOI":"10.1039\/df9664200109","volume":"42","year":"1966","unstructured":"DERJAGUIN,
-      B. V., DISCUSSIONS OF THE FARADAY SOCIETY 42: 109 (1966).","journal-title":"DISCUSSIONS
-      OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_18_1","unstructured":"Dorsey N. E.
-      Properties of Ordinary Water-Substance In All Its Phases (1968)."},{"key":"e_1_2_1_19_1","unstructured":"Eisenberg
-      D. The Structure and Properties of Water (1969)."},{"key":"e_1_2_1_20_1","first-page":"79","year":"1969","unstructured":"Eisenberg,
-      D., The Structure and Properties of Water: 79 (1969).","journal-title":"The
-      Structure and Properties of Water"},{"key":"e_1_2_1_21_1","first-page":"38","year":"1946","unstructured":"EUCKEN,
-      A, NACHRICHTEN VON DER GESELLSCHAFT DER WISSENSCHAFTEN: 38 (1946).","journal-title":"NACHRICHTEN
-      VON DER GESELLSCHAFT DER WISSENSCHAFTEN"},{"key":"e_1_2_1_22_1","doi-asserted-by":"crossref","first-page":"1699","DOI":"10.1139\/v66-255","volume":"44","year":"1966","unstructured":"FALK,
-      M, INFRARED SPECTRUM AND STRUCTURE OF LIQUID WATER, CANADIAN JOURNAL OF CHEMISTRY
-      44: 1699 (1966).","journal-title":"CANADIAN JOURNAL OF CHEMISTRY"},{"key":"e_1_2_1_23_1","first-page":"9","volume":"115","year":"1952","unstructured":"FORSLIND,
-      E, ACTA POLYTECH SCAND 115: 9 (1952).","journal-title":"ACTA POLYTECH SCAND"},{"key":"e_1_2_1_24_1","first-page":"108","year":"1967","unstructured":"FRANCK,
-      E. U., DISCUSSIONS OF THE FARADAY SOCIETY: 108 (1967).","journal-title":"DISCUSSIONS
-      OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_25_1","unstructured":"Franck E. U.
-      Berichte der Bunsengesellschaft f\u00fcr physikalische Chemie in press."},{"key":"e_1_2_1_26_1","first-page":"133","year":"1957","unstructured":"FRANK,
-      H. S., DISCUSSIONS OF THE FARADAY SOCIETY: 133 (1957).","journal-title":"DISCUSSIONS
-      OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_27_1","first-page":"137","year":"1967","unstructured":"FRANK,
-      H.S., DISCUSSIONS OF THE FARADAY SOCIETY: 137 (1967).","journal-title":"DISCUSSIONS
-      OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_28_1","doi-asserted-by":"crossref","first-page":"604","DOI":"10.1063\/1.1700993","volume":"34","year":"1961","unstructured":"FRANK,
-      H.S., PAULINGS MODEL AND THERMODYNAMIC PROPERTIES OF WATER, JOURNAL OF CHEMICAL
-      PHYSICS 34: 604 (1961).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"issue":"942","key":"e_1_2_1_29_1","first-page":"141","article-title":"Desalination
-      Research Conference Proceedings","year":"1963","unstructured":"FRANK, H. S.,
-      Desalination Research Conference Proceedings NATIONAL ACADEMIES OF SCIENCE-NATIONAL
-      RESEARCH COUNCIL PUBLICATION 942 141 (1963).","journal-title":"NATIONAL ACADEMIES
-      OF SCIENCE-NATIONAL RESEARCH COUNCIL PUBLICATION"},{"key":"e_1_2_1_30_1","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1039\/QR9662000001","volume":"20","year":"1966","unstructured":"FRANKS,
-      F, STRUCTURAL PROPERTIES OF ALCOHOL-WATER MIXTURES, QUARTERLY REVIEWS 20: 1
-      (1966).","journal-title":"QUARTERLY REVIEWS"},{"key":"e_1_2_1_31_1","doi-asserted-by":"crossref","first-page":"1193","DOI":"10.3891\/acta.chem.scand.08-1193","volume":"8","year":"1954","unstructured":"GRJOTHEIM,
-      K, ACTA CHEMICA SCANDINAVICA 8: 1193 (1954).","journal-title":"ACTA CHEMICA
-      SCANDINAVICA"},{"key":"e_1_2_1_32_1","doi-asserted-by":"crossref","first-page":"775","DOI":"10.1103\/PhysRev.73.775","volume":"73","year":"1948","unstructured":"HALL,
-      L, THE ORIGIN OF ULTRASONIC ABSORPTION IN WATER, PHYSICAL REVIEW 73: 775 (1948).","journal-title":"PHYSICAL
-      REVIEW"},{"key":"e_1_2_1_33_1","doi-asserted-by":"crossref","first-page":"2454","DOI":"10.1063\/1.1703330","volume":"47","year":"1967","unstructured":"HALL,
-      R.T., PURE ROTATIONAL SPECTRUM OF WATER VAPOR, JOURNAL OF CHEMICAL PHYSICS 47:
-      2454 (1967).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_34_1","doi-asserted-by":"crossref","first-page":"527","DOI":"10.1016\/0009-2614(70)87052-X","volume":"4","year":"1970","unstructured":"HANKINS,
-      D, CHEM PHYS LETT 4: 527 (1970).","journal-title":"CHEM PHYS LETT"},{"key":"e_1_2_1_35_1","doi-asserted-by":"crossref","first-page":"979","DOI":"10.1002\/bbpc.19670710905","volume":"71","year":"1967","unstructured":"HERTZ,
-      H.G., ROTATIONAL AND TRANSLATIONAL DIFFUSION AND DIPOLAR SPIN RELAXATION IN
-      DIAMAGNETIC ELECTROLYTE SOLUTIONS, BERICHTE DER BUNSEN-GESELLSCHAFT FUR PHYSIKALISCHE
-      CHEMIE 71: 979 (1967).","journal-title":"BERICHTE DER BUNSEN-GESELLSCHAFT FUR
-      PHYSIKALISCHE CHEMIE"},{"key":"e_1_2_1_36_1","doi-asserted-by":"crossref","first-page":"999","DOI":"10.1002\/bbpc.19670710906","volume":"71","year":"1967","unstructured":"HERTZ,
-      H.G., INTERMOLECULAR PROTON-RELAXATION RATE IN DIAMAGNETIC ELECTROLYTE SOLUTIONS,
-      BERICHTE DER BUNSEN-GESELLSCHAFT FUR PHYSIKALISCHE CHEMIE 71: 999 (1967).","journal-title":"BERICHTE
-      DER BUNSEN-GESELLSCHAFT FUR PHYSIKALISCHE CHEMIE"},{"key":"e_1_2_1_37_1","first-page":"997","year":"1954","unstructured":"Hirschfelder,
-      J. O., Molecular Theory of Gases and Liquids: 997 (1954).","journal-title":"Molecular
-      Theory of Gases and Liquids"},{"key":"e_1_2_1_38_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.167.3924.1520"},{"key":"e_1_2_1_39_1","doi-asserted-by":"crossref","unstructured":"Kavanau
-      J. L. Water and Solute-Water Interactions (1964).","DOI":"10.1119\/1.1971997"},{"key":"e_1_2_1_40_1","doi-asserted-by":"crossref","first-page":"2325","DOI":"10.1021\/j100879a040","volume":"70","year":"1966","unstructured":"KAY,
-      R. L., JOURNAL OF PHYSICAL CHEMISTRY 70: 2325 (1966).","journal-title":"JOURNAL
-      OF PHYSICAL CHEMISTRY"},{"key":"e_1_2_1_41_1","doi-asserted-by":"crossref","first-page":"2336","DOI":"10.1021\/j100879a041","volume":"70","year":"1966","unstructured":"KAY,
-      R.L., VISCOSITY B COEFFICIENTS FOR TETRAALKYLAMMONIUM HALIDES, JOURNAL OF PHYSICAL
-      CHEMISTRY 70: 2336 (1966).","journal-title":"JOURNAL OF PHYSICAL CHEMISTRY"},{"key":"e_1_2_1_42_1","first-page":"25","year":"1951","unstructured":"Kirshenbaum,
-      I., Physical Properties and Analysis of Heavy Water: 25 (1951).","journal-title":"Physical
-      Properties and Analysis of Heavy Water"},{"key":"e_1_2_1_43_1","doi-asserted-by":"crossref","first-page":"3286","DOI":"10.1063\/1.1672509","volume":"51","year":"1969","unstructured":"KOLLMAN,
-      P.A., THEORY OF HYDROGEN BOND - ELECTRONIC STRUCTURE AND PROPERTIES OF WATER
-      DIMER, JOURNAL OF CHEMICAL PHYSICS 51: 3286 (1969).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_44_1","first-page":"445","volume":"40","year":"1967","unstructured":"LEVELUT,
-      A.M., BULLETIN DE LA SOCIETE FRANCAISE DE MINERALOGIE ET DE CRISTALLOGRAPHIE
-      40: 445 (1967).","journal-title":"BULLETIN DE LA SOCIETE FRANCAISE DE MINERALOGIE
-      ET DE CRISTALLOGRAPHIE"},{"key":"e_1_2_1_45_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.164.3887.1482"},{"key":"e_1_2_1_46_1","doi-asserted-by":"crossref","first-page":"3275","DOI":"10.1063\/1.1669604","volume":"48","year":"1968","unstructured":"MOROKUMA,
-      K, MOLECULAR-ORBITAL STUDIES OF HYDROGEN BONDS . AN AB INITIO CALCULATION FOR
-      DIMERIC H2O, JOURNAL OF CHEMICAL PHYSICS 48: 3275 (1968).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_47_1","doi-asserted-by":"crossref","first-page":"1301","DOI":"10.1063\/1.1673129","volume":"52","year":"1970","unstructured":"MOROKUMA,
-      K, MOLECULAR ORBITAL STUDIES OF HYDROGEN BONDS - DIMERIC H20 WITH SLATER MINIMAL
-      BASIS SET, JOURNAL OF CHEMICAL PHYSICS 52: 1301 (1970).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_48_1","first-page":"97","year":"1967","unstructured":"NARTEN,
-      A.H., X-RAY DIFFRACTION STUDY OF LIQUID WATER IN TEMPERATURE RANGE 4-200 DEGREES
-      C, DISCUSSIONS OF THE FARADAY SOCIETY: 97 (1967).","journal-title":"DISCUSSIONS
-      OF THE FARADAY SOCIETY"},{"key":"e_1_2_1_49_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.165.3892.447"},{"key":"e_1_2_1_50_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.167.3924.1521"},{"key":"e_1_2_1_51_1","doi-asserted-by":"crossref","first-page":"3382","DOI":"10.1063\/1.1732472","volume":"36","year":"1962","unstructured":"NEMETHY,
-      G, STRUCTURE OF WATER AND HYDROPHOBIC BONDING IN PROTEINS .1. A MODEL FOR THERMODYNAMIC
-      PROPERTIES OF LIQUID WATER, JOURNAL OF CHEMICAL PHYSICS 36: 3382 (1962).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_52_1","doi-asserted-by":"crossref","first-page":"199","DOI":"10.1080\/00018735800101227","volume":"7","year":"1958","unstructured":"OCKMAN,
-      N, ADVANCES IN PHYSICS 7: 199 (1958).","journal-title":"ADVANCES IN PHYSICS"},{"key":"e_1_2_1_53_1","first-page":"1","year":"1959","unstructured":"Pauling,
-      L., Hydrogen Bonding: 1 (1959).","journal-title":"Hydrogen Bonding"},{"key":"e_1_2_1_54_1","doi-asserted-by":"crossref","unstructured":"Pauling
-      L. The Nature of the Chemical Bond 3 461 (1960).","DOI":"10.1016\/B978-0-08-092669-8.50006-0"},{"key":"e_1_2_1_55_1","first-page":"468","year":"1960","unstructured":"Pauling,
-      L., The Nature of the Chemical Bond: 468 (1960).","journal-title":"The Nature
-      of the Chemical Bond"},{"key":"e_1_2_1_56_1","doi-asserted-by":"crossref","first-page":"70","DOI":"10.1107\/S0365110X5700016X","volume":"10","year":"1957","unstructured":"PETERSON,
-      S.W., A SINGLE-CRYSTAL NEUTRON DIFFRACTION STUDY OF HEAVY ICE, ACTA CRYSTALLOGRAPHICA
-      10: 70 (1957).","journal-title":"ACTA CRYSTALLOGRAPHICA"},{"key":"e_1_2_1_57_1","first-page":"CH8","year":"1960","unstructured":"Pimentel,
-      G. C., The Hydrogen Bond: CH8 (1960).","journal-title":"The Hydrogen Bond"},{"key":"e_1_2_1_58_1","doi-asserted-by":"publisher","DOI":"10.1126\/science.146.3642.347"},{"key":"e_1_2_1_59_1","first-page":"163","volume":"205","year":"1951","unstructured":"POPLE,
-      J.A., MOLECULAR ASSOCIATION IN LIQUIDS .2. A THEORY OF THE STRUCTURE OF WATER,
-      PROCEEDINGS OF THE ROYAL SOCIETY OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL
-      SCIENCES 205: 163 (1951).","journal-title":"PROCEEDINGS OF THE ROYAL SOCIETY
-      OF LONDON SERIES A-MATHEMATICAL AND PHYSICAL SCIENCES"},{"key":"e_1_2_1_60_1","doi-asserted-by":"crossref","first-page":"91","DOI":"10.1002\/andp.18922810108","volume":"281","year":"1892","unstructured":"ROENTGEN,
-      W.C., ANNALEN DER PHYSIK 281: 91 (1892).","journal-title":"ANNALEN DER PHYSIK"},{"key":"e_1_2_1_61_1","first-page":"75","volume":"15","year":"1880","unstructured":"ROWLAND,
-      H.A., PROCEEDINGS OF THE AMERICAN ACADEMY OF ARTS AND SCIENCES 15: 75 (1880).","journal-title":"PROCEEDINGS
-      OF THE AMERICAN ACADEMY OF ARTS AND SCIENCES"},{"key":"e_1_2_1_62_1","doi-asserted-by":"crossref","first-page":"4444","DOI":"10.1063\/1.1670917","volume":"50","year":"1969","unstructured":"SAFFORD,
-      G.J., INVESTIGATION OF LOW-FREQUENCY MOTIONS OF H2O MOLECULES IN IONIC SOLUTIONS
-      BY NEUTRON INELASTIC SCATTERING, JOURNAL OF CHEMICAL PHYSICS 50: 4444 (1969).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_63_1","unstructured":"Samoilov O. Y. Structure
-      of Aqueous Electrolyte Solutions and the Hydration of Ions (1965)."},{"key":"e_1_2_1_64_1","first-page":"12","volume":"20","year":"1946","unstructured":"SAMOILOV,
-      O.Y., ZHURNAL FIZICHESKOI KHIMII 20: 12 (1946).","journal-title":"ZHURNAL FIZICHESKOI
-      KHIMII"},{"key":"e_1_2_1_65_1","doi-asserted-by":"crossref","first-page":"4242","DOI":"10.1021\/j100846a035","volume":"73","year":"1969","unstructured":"SENIOR,
-      W.A., SPECTROSCOPIC EVIDENCE FOR MIXTURE MODEL IN HOD SOLUTIONS, JOURNAL OF
-      PHYSICAL CHEMISTRY 73: 4242 (1969).","journal-title":"JOURNAL OF PHYSICAL CHEMISTRY"},{"key":"e_1_2_1_66_1","doi-asserted-by":"crossref","first-page":"3712","DOI":"10.1063\/1.1726524","volume":"44","year":"1966","unstructured":"SLIE,
-      W.M., ULTRASONIC SHEAR AND LONGITUDINAL MEASUREMENTS IN AQUEOUS GLYCEROL, JOURNAL
-      OF CHEMICAL PHYSICS 44: 3712 (1966).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_67_1","doi-asserted-by":"crossref","first-page":"398","DOI":"10.1063\/1.1750922","volume":"9","year":"1941","unstructured":"STOCKMAYER,
-      W.H., Second virial coefficients of polar gases, JOURNAL OF CHEMICAL PHYSICS
-      9: 398 (1941).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_68_1","doi-asserted-by":"crossref","first-page":"681","DOI":"10.1103\/PhysRevLett.14.681","volume":"14","year":"1965","unstructured":"TERHUNE,
-      R.W., MEASUREMENTS OF NONLINEAR LIGHT SCATTERING, PHYSICAL REVIEW LETTERS 14:
-      681 (1965).","journal-title":"PHYSICAL REVIEW LETTERS"},{"key":"e_1_2_1_69_1","first-page":"25","volume":"88","year":"1954","unstructured":"VONSTAKELBERG,
-      M, ZEITSCHRIFT FUR ELEKTROCHEMIE 88: 25 (1954).","journal-title":"ZEITSCHRIFT
-      FUR ELEKTROCHEMIE"},{"key":"e_1_2_1_70_1","doi-asserted-by":"crossref","first-page":"604","DOI":"10.1246\/bcsj.34.604","volume":"34","year":"1961","unstructured":"WADA,
-      G, BULLETIN OF THE CHEMICAL SOCIETY OF JAPAN 34: 604 (1961).","journal-title":"BULLETIN
-      OF THE CHEMICAL SOCIETY OF JAPAN"},{"key":"e_1_2_1_71_1","doi-asserted-by":"crossref","first-page":"2079","DOI":"10.1063\/1.1697078","volume":"43","year":"1965","unstructured":"WALL,
-      T.T., RAMAN INTENSITIES OF HDO AND STRUCTURE IN LIQUID WATER, JOURNAL OF CHEMICAL
-      PHYSICS 43: 2079 (1965).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_72_1","doi-asserted-by":"crossref","first-page":"1546","DOI":"10.1063\/1.1726891","volume":"44","year":"1966","unstructured":"WALRAFEN,
-      G.E., RAMAN SPECTRAL STUDIES OF EFFECTS OF TEMPERATURE ON WATER AND ELECTROLYTE
-      SOLUTIONS, JOURNAL OF CHEMICAL PHYSICS 44: 1546 (1966).","journal-title":"JOURNAL
-      OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_73_1","doi-asserted-by":"crossref","first-page":"244","DOI":"10.1063\/1.1667910","volume":"48","year":"1968","unstructured":"WALRAFEN,
-      G.E., RAMAN SPECTRAL STUDIES OF HDO IN H2O, JOURNAL OF CHEMICAL PHYSICS 48:
-      244 (1968).","journal-title":"JOURNAL OF CHEMICAL PHYSICS"},{"key":"e_1_2_1_74_1","doi-asserted-by":"crossref","first-page":"466","DOI":"10.1021\/ja01098a061","volume":"75","year":"1953","unstructured":"WANG,
-      J.H., SELF-DIFFUSION AND STRUCTURE OF LIQUID WATER .3. MEASUREMENT OF THE SELF-DIFFUSION
-      OF LIQUID WATER WITH H-2, H-3, AND O-18 AS TRACERS, JOURNAL OF THE AMERICAN
-      CHEMICAL SOCIETY 75: 466 (1953).","journal-title":"JOURNAL OF THE AMERICAN CHEMICAL
-      SOCIETY"},{"key":"e_1_2_1_75_1","unstructured":"WHITING H THESIS HARVARD U (1884)."},{"key":"e_1_2_1_76_1","doi-asserted-by":"crossref","first-page":"106","DOI":"10.1002\/anie.196601061","volume":"5","year":"1966","unstructured":"WICKE,
-      E, STRUCTURE FORMATION AND MOLECULAR MOBILITY IN WATER AND IN AQUEOUS SOLUTIONS,
-      ANGEWANDTE CHEMIE-INTERNATIONAL EDITION 5: 106 (1966).","journal-title":"ANGEWANDTE
-      CHEMIE-INTERNATIONAL EDITION"}],"container-title":"Science","original-title":[],"language":"en","link":[{"URL":"https:\/\/www.science.org\/doi\/pdf\/10.1126\/science.169.3946.635","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2024,2,6]],"date-time":"2024-02-06T23:56:00Z","timestamp":1707263760000},"score":1,"resource":{"primary":{"URL":"https:\/\/www.science.org\/doi\/10.1126\/science.169.3946.635"}},"subtitle":["New
-      data and interpretations are yielding new insights into this fascinating substance."],"short-title":[],"issued":{"date-parts":[[1970,8,14]]},"references-count":76,"journal-issue":{"issue":"3946","published-print":{"date-parts":[[1970,8,14]]}},"alternative-id":["10.1126\/science.169.3946.635"],"URL":"http:\/\/dx.doi.org\/10.1126\/science.169.3946.635","relation":{},"ISSN":["0036-8075","1095-9203"],"subject":[],"container-title-short":"Science","published":{"date-parts":[[1970,8,14]]}}'
+    body:
+      string: !!binary |
+        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
+        44yV/lQAAA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6135'
-      Date:
-      - Sat, 12 Jul 2025 03:19:17 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -236,8 +173,14 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '6163'
+      date:
+      - Tue, 16 Jun 2026 13:04:52 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -246,10 +189,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

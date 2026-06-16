@@ -5,152 +5,119 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
-    uri: https://api.crossref.org/members/98/works?rows=7&query.author=carl%20boettiger
+    uri: https://api.crossref.org/members/98/works?rows=7&query.author=carl+boettiger
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":182,"items":[{"indexed":{"date-parts":[[2022,12,30]],"date-time":"2022-12-30T05:18:24Z","timestamp":1672377504991},"reference-count":45,"publisher":"Hindawi
-      Limited","issue":"4","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":3007,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1365-2524.1993.tb00219.x","type":"journal-article","created":{"date-parts":[[2010,8,5]],"date-time":"2010-08-05T18:28:40Z","timestamp":1281032920000},"page":"203-210","source":"Crossref","is-referenced-by-count":0,"title":["Young
-      heavy drinkers: if there is a problem, is there a solution?"],"prefix":"10.1155","volume":"1","author":[{"given":"Carl","family":"May","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2007,6,8]]},"reference":[{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB1|cit1","volume-title":"Ten
-      to Fourteen Year Olds and Alcohol: a Developmental Study in the Central Region
-      of Scotland","author":"Aitken","year":"1978"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB2|cit2","doi-asserted-by":"crossref","first-page":"241","DOI":"10.1016\/0376-8716(88)90024-5","article-title":"Use
-      of alcohol, tobacco and illicit drugs amongst 13 year olds in three areas of
-      Britain","volume":"22","author":"Bagnall","year":"1988","journal-title":"Drug
-      and Alcohol Dependence"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB3|cit3","volume-title":"Educating
-      Young Drinkers","author":"Bagnall","year":"1991a"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB4|cit4","first-page":"895","article-title":"Alcohol
-      and drug use in a Scottish cohort: ten years on","volume":"66","author":"Bagnall","year":"1992b","journal-title":"British
-      Journal of Addiction"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB5|cit5","first-page":"18","volume-title":"Youth
-      Policy in the 1990s: the Way Forward","author":"Coleman","year":"1992"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB6|cit6","doi-asserted-by":"crossref","first-page":"473","DOI":"10.2307\/352012","article-title":"Parenting
-      styles and substance use during childhood and adolescence","volume":"50","author":"Coombs","year":"1988","journal-title":"Journal
-      of Marriage and the Family"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB7|cit7","volume-title":"Teenagers
-      and Alcohol: a Developmental Study in Glasgow","author":"Davies","year":"1972"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB8|cit8","volume-title":"Youth
-      and the Condition of Britain: Images of Adolescent Conflict","author":"Davis","year":"1990"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB9|cit9","volume-title":"Road
-      Accidents in Great Britain: the Casualty Report","author":"Department of Transport","year":"1990"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB10|cit10","volume-title":"Alcohol,
-      Youth and the State: Drinking Practices, Controls and Health Education","author":"Dorn","year":"1983"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB11|cit11","volume-title":"Trends
-      in Alcohol Consumption Patterns 1978-1989","author":"Duffy","year":"1991"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB12|cit12","volume-title":"The
-      Aetiology of Psychoactive Substance Use","author":"Fazey","year":"1977"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB13|cit13","doi-asserted-by":"crossref","first-page":"116","DOI":"10.1177\/001789698704600309","article-title":"Alcohol
-      consumption and young people in Australia","volume":"46","author":"Fisher","year":"1987","journal-title":"Health
-      Education Journal"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB14|cit14","doi-asserted-by":"crossref","first-page":"255","DOI":"10.1016\/0140-1971(91)90020-R","article-title":"Adolescent
-      drinking behaviour and family socialization factors: a meta-analysis","volume":"14","author":"Foxcroft","year":"1991","journal-title":"Journal
-      of Adolescence"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB15|cit15","doi-asserted-by":"crossref","first-page":"175","DOI":"10.1111\/j.1360-0443.1987.tb01457.x","article-title":"Alcohol
-      consumption between the ages of 16 and 23 in Britain: a longitudinal study","volume":"82","author":"Ghodsian","year":"1987","journal-title":"British
-      Journal of Addiction"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB16|cit16","volume-title":"Drinking
-      in England and Wales in the Late 1980s","author":"Goddard","year":"1991"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB17|cit17","volume-title":"Drinking
-      in England and Wales in 1987","author":"Goddard","year":"1988"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB18|cit18","first-page":"9","article-title":"Effective
-      school based approaches to drug education","volume":"45","author":"Hansen","year":"1988","journal-title":"Educational
-      Leadership"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB19|cit19","volume-title":"Alcohol
-      and Health","author":"Hartz","year":"1990"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB20|cit20","volume-title":"Teenage
-      Health and Life-styles Volume 2: Alcohol","author":"Health Education Authority","year":"1989"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB21|cit21","volume-title":"Young
-      Adults'' Health and Lifestyles","author":"Health Education Authority","year":"1990"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB22|cit22","volume-title":"Standing
-      Conference on Crime Prevention: Report of the Working Group on Young People
-      and Alcohol","author":"Home Office","year":"1987"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB23|cit23","volume-title":"Statistical
-      Bulletin 40\/90: Offences of Drunkenness, England and Wales, 1989","author":"Home
-      Office","year":"1990"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB24|cit24","doi-asserted-by":"crossref","first-page":"1055","DOI":"10.3109\/10826088009040077","article-title":"Drug
-      and alcohol education programs: a review of outcome studies","volume":"15","author":"Kinder","year":"1980","journal-title":"International
-      Journal of the Addictions"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB25|cit25","volume-title":"Adolescent
-      drinking","author":"Marsh","year":"1986"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB26|cit26","doi-asserted-by":"crossref","first-page":"51","DOI":"10.15288\/jsa.1988.49.51","article-title":"The
-      problematic aspects of prevention in the classroom: should alcohol education
-      be expected to reduce drinking by youth","volume":"49","author":"Mauss","year":"1988","journal-title":"Journal
-      of Studies on Alcohol"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB27|cit27","doi-asserted-by":"crossref","first-page":"195","DOI":"10.1177\/001789699105000410","article-title":"Research
-      on alcohol education for young people: a critical review of the literature","volume":"50","author":"May","year":"1991","journal-title":"Health
-      Education Journal"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB28|cit28","first-page":"109","article-title":"A
-      burning issue? Adolescent alcohol use in Britain 1970-1991","volume":"27","author":"May","year":"1992","journal-title":"Alcohol
-      and Alcoholism"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB29|cit29","doi-asserted-by":"crossref","first-page":"54","DOI":"10.15288\/jsa.1989.50.54","article-title":"The
-      primary prevention of alcohol problems: a critical review of the research literature","volume":"50","author":"Moskowitz","year":"1989","journal-title":"Journal
-      of Studies on Alcohol"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB30|cit30","volume-title":"Alcohol
-      and Drugs: the Scottish Experience","author":"Murray","year":"1992"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB31|cit31","doi-asserted-by":"crossref","first-page":"165","DOI":"10.3109\/10826089209068736","article-title":"Drug
-      education: an appraisal of a popular preventative","volume":"26","author":"O''Connor","year":"1992","journal-title":"International
-      Journal of the Addictions"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB32|cit32","volume-title":"Mortality
-      Statistics, England and Wales 1988","author":"OPCS","year":"1990"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB33|cit33","doi-asserted-by":"crossref","first-page":"209","DOI":"10.3109\/10826089209068738","article-title":"Effect
-      of alcohol control measures on alcohol consumption","volume":"26","author":"Osterberg","year":"1992","journal-title":"International
-      Journal of the Addictions"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB34|cit34","doi-asserted-by":"crossref","first-page":"691","DOI":"10.1093\/oxfordjournals.alcalc.a045067","article-title":"Teenage
-      heavy drinkers: alcohol related knowledge, beliefs, experience and the social
-      context of drinking","volume":"25","author":"Plant","year":"1990a","journal-title":"Alcohol
-      and Alcoholism"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB35|cit35","doi-asserted-by":"crossref","first-page":"685","DOI":"10.1093\/oxfordjournals.alcalc.a045066","article-title":"Young
-      People and drinking: results of an English national survey","volume":"25","author":"Plant","year":"1990b","journal-title":"Alcohol
-      and Alcoholism"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB36|cit36","doi-asserted-by":"crossref","first-page":"203","DOI":"10.1016\/0376-8716(91)90077-C","article-title":"Teenagers
-      and alcohol: results of a Scottish National survey","volume":"28","author":"Plant","year":"1991","journal-title":"Drug
-      and Alcohol Dependence"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB37|cit37","volume-title":"Alcohol,
-      Drugs and School-leavers","author":"Plant","year":"1985"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB38|cit38","volume-title":"The
-      risk takers: alcohol, drugs, sex and youth","author":"Plant","year":"1992"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB39|cit39","volume-title":"Scottish
-      Health Service Statistics 1983","author":"Scottish Home and Health Department","year":"1983"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB40|cit40","volume-title":"Scottish
-      Health Service Statistics 1985","author":"Scottish Home and Health Department","year":"1986"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB41|cit41","volume-title":"Scottish
-      Health Service Statistics 1986","author":"Scottish Home and Health Department","year":"1987"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB42|cit42","volume-title":"Scottish
-      Health Service Statistics 1986","author":"Scottish Home and Health Department","year":"1989"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB43|cit43","volume-title":"Scottish
-      Health Service Statistics 1986","author":"Scottish Home and Health Department","year":"1990"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB44|cit44","doi-asserted-by":"crossref","first-page":"295","DOI":"10.1016\/0140-1971(89)90079-1","article-title":"Adolescents
-      and alcohol: a review of recent British Research","volume":"12","author":"Sharp","year":"1989","journal-title":"Journal
-      of Adolescence"},{"key":"10.1111\/j.1365-2524.1993.tb00219.x-BIB45|cit45","volume-title":"Coming
-      of Age: Adolescence in Britain 1860-1960","author":"Springhall","year":"1986"}],"container-title":["Health
-      &amp; Social Care in the Community"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1365-2524.1993.tb00219.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1365-2524.1993.tb00219.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,29]],"date-time":"2022-12-29T16:49:10Z","timestamp":1672332550000},"score":9.419025,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1365-2524.1993.tb00219.x"}},"issued":{"date-parts":[[2007,6,8]]},"references-count":45,"journal-issue":{"issue":"4"},"URL":"https:\/\/doi.org\/10.1111\/j.1365-2524.1993.tb00219.x","ISSN":["0966-0410"],"issn-type":[{"value":"0966-0410","type":"print"}],"published":{"date-parts":[[2007,6,8]]}},{"indexed":{"date-parts":[[2024,3,14]],"date-time":"2024-03-14T06:44:31Z","timestamp":1710398671631},"reference-count":2,"publisher":"Hindawi
-      Limited","issue":"3","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2318,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1996.tb02771.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T10:25:23Z","timestamp":1279967123000},"page":"137-140","source":"Crossref","is-referenced-by-count":1,"title":["Andrology-development
-      and future* Critical remarks after 45 years of medical practice"],"prefix":"10.1155","volume":"28","author":[{"given":"Carl","family":"Schirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,27]]},"reference":[{"key":"10.1111\/j.1439-0272.1996.tb02771.x-BIB1|cit1","doi-asserted-by":"crossref","first-page":"201","DOI":"10.1002\/j.1939-4640.1987.tb03302.x","article-title":"Andrology
-      as a speciality-its origin","volume":"8","author":"Niemi","year":"1987","journal-title":"J
-      Androl"},{"key":"10.1111\/j.1439-0272.1996.tb02771.x-BIB2|cit2","first-page":"633","article-title":"Gyn\u00e4kologe
-      und Androloge bei der Sterilit\u00e4tsberatung","volume":"73","author":"Siebke","year":"1951","journal-title":"Zbl
-      Gyn\u00e4kol"}],"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1996.tb02771.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1996.tb02771.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:35:15Z","timestamp":1671539715000},"score":9.419025,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1996.tb02771.x"}},"issued":{"date-parts":[[2009,4,27]]},"references-count":2,"journal-issue":{"issue":"3"},"URL":"https:\/\/doi.org\/10.1111\/j.1439-0272.1996.tb02771.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"published":{"date-parts":[[2009,4,27]]}},{"indexed":{"date-parts":[[2022,12,21]],"date-time":"2022-12-21T05:55:10Z","timestamp":1671602110040},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"S1","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2318,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1989.tb01354.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T08:38:50Z","timestamp":1279960730000},"page":"7-7","source":"Crossref","is-referenced-by-count":0,"title":["Vorwort"],"prefix":"10.1155","volume":"21","author":[{"given":"Carl","family":"Schirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,27]]},"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1989.tb01354.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1989.tb01354.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:32:29Z","timestamp":1671539549000},"score":9.4189005,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1989.tb01354.x"}},"issued":{"date-parts":[[2009,4,27]]},"references-count":0,"journal-issue":{"issue":"S1"},"URL":"https:\/\/doi.org\/10.1111\/j.1439-0272.1989.tb01354.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"published":{"date-parts":[[2009,4,27]]}},{"indexed":{"date-parts":[[2022,12,30]],"date-time":"2022-12-30T05:18:33Z","timestamp":1672377513884},"reference-count":15,"publisher":"Hindawi
-      Limited","issue":"1","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":3007,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1365-2524.1997.tb00099.x","type":"journal-article","created":{"date-parts":[[2010,8,6]],"date-time":"2010-08-06T14:38:38Z","timestamp":1281105518000},"page":"55-62","source":"Crossref","is-referenced-by-count":1,"title":["Short
-      reports"],"prefix":"10.1155","volume":"5","author":[{"given":"Carl","family":"May","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2007,6,8]]},"reference":[{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB1|cit1","volume-title":"Young
-      people in 1987","author":"Balding","year":"1988"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB2|cit2","volume-title":"Young
-      People, Health and Family Life","author":"Brannen","year":"1994"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB3|cit3","first-page":"64","article-title":"Is
-      there a place for adolescent screening in general practice","volume":"20","author":"Donovan","year":"1988","journal-title":"Health
-      Trends."},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB4|cit4","first-page":"247","article-title":"Teenagers''
-      health concerns: implications for primary health care professionals","volume":"39","author":"Epstein","year":"1989","journal-title":"Journal
-      of the Royal College of General Practitioners."},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB5|cit5","first-page":"420","article-title":"A
-      review of teenage health: time for a new direction","volume":"44","author":"Jacobson","year":"1994","journal-title":"British
-      Journal of General Practice."},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB6|cit6","doi-asserted-by":"crossref","first-page":"296","DOI":"10.1093\/fampra\/11.3.296","article-title":"Is
-      the potential of teenage consultations being missed? A study of consultation
-      times in primary care","volume":"11","author":"Jacobson","year":"1994","journal-title":"Family
-      Practice"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB7|cit7","first-page":"291","article-title":"Communication
-      between teenagers and British general practitioners: a preliminary study of
-      the teenage perspective","volume":"1","author":"Jacobson","year":"1996","journal-title":"Ambulatory
-      Child Health"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB8|cit8","doi-asserted-by":"crossref","first-page":"245","DOI":"10.1093\/fampra\/6.4.245","article-title":"Caring
-      for adolescents","volume":"6","author":"Melville","year":"1989","journal-title":"Family
-      Practice"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB9|cit9","first-page":"95","volume-title":"Looking
-      After Yourself - Some Issues From 15 to 19 Year Olds on Health and Illness -
-      Special Report Series 73","author":"Morris","year":"1985"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB10|cit10","doi-asserted-by":"crossref","first-page":"655","DOI":"10.1016\/0277-9536(94)90022-1","article-title":"Patient
-      views on quality in general practice: literature review","volume":"39","author":"Rees","year":"1994","journal-title":"Social
-      Science and Medicine"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB11|cit11","volume-title":"Adolescent
-      Health Care - Clinical Issues","author":"Resnick","year":"1982"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB12|cit12","unstructured":"Smy
-      J. 1994 Confidence trick to win minds of teenagers Doctor 38 39"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB13|cit13","first-page":"201","article-title":"The
-      exceptional potential in each primary care consultation","volume":"29","author":"Stott","year":"1979","journal-title":"Journal
-      of the Royal College of General Practitioners"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB14|cit14","doi-asserted-by":"crossref","first-page":"125","DOI":"10.1093\/fampra\/7.2.125","article-title":"Advise
-      yes, dictate no","volume":"7","author":"Stott","year":"1990","journal-title":"Family
-      Practice"},{"key":"10.1111\/j.1365-2524.1997.tb00099.x-BIB15|cit15","doi-asserted-by":"crossref","first-page":"786","DOI":"10.1136\/bmj.309.6957.786","article-title":"Profile
-      of young people''s advice clinic in reproductive health, 1988-93","volume":"309","author":"Williams","year":"1994","journal-title":"British
-      Medical Journal"}],"container-title":["Health &amp; Social Care in the Community"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1365-2524.1997.tb00099.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1365-2524.1997.tb00099.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,29]],"date-time":"2022-12-29T16:45:49Z","timestamp":1672332349000},"score":9.4189005,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1365-2524.1997.tb00099.x"}},"issued":{"date-parts":[[2007,6,8]]},"references-count":15,"journal-issue":{"issue":"1"},"URL":"https:\/\/doi.org\/10.1111\/j.1365-2524.1997.tb00099.x","ISSN":["0966-0410"],"issn-type":[{"value":"0966-0410","type":"print"}],"published":{"date-parts":[[2007,6,8]]}},{"indexed":{"date-parts":[[2022,12,21]],"date-time":"2022-12-21T05:54:51Z","timestamp":1671602091415},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"4","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2321,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1969.tb00562.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T04:53:48Z","timestamp":1279947228000},"page":"167-168","source":"Crossref","is-referenced-by-count":0,"title":["II.
-      ESCO-Kongre\u00df in Dubrovnik"],"prefix":"10.1155","volume":"1","author":[{"given":"Carl","family":"Schirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,4,24]]},"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1969.tb00562.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1969.tb00562.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:33:44Z","timestamp":1671539624000},"score":9.401631,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1969.tb00562.x"}},"issued":{"date-parts":[[2009,4,24]]},"references-count":0,"journal-issue":{"issue":"4"},"URL":"https:\/\/doi.org\/10.1111\/j.1439-0272.1969.tb00562.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"published":{"date-parts":[[2009,4,24]]}},{"indexed":{"date-parts":[[2022,12,30]],"date-time":"2022-12-30T05:18:40Z","timestamp":1672377520499},"reference-count":6,"publisher":"Hindawi
-      Limited","issue":"4","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":3007,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1365-2524.1997.tb00123.x","type":"journal-article","created":{"date-parts":[[2010,8,2]],"date-time":"2010-08-02T22:16:12Z","timestamp":1280787372000},"page":"269-283","source":"Crossref","is-referenced-by-count":1,"title":["Planning
-      and managing teams"],"prefix":"10.1155","volume":"5","author":[{"given":"Carl","family":"May","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2007,6,8]]},"reference":[{"key":"10.1111\/j.1365-2524.1997.tb00123.x-BIB1|cit1","volume-title":"Teamwork
-      For Preventative Care","author":"Bruce","year":"1980"},{"key":"10.1111\/j.1365-2524.1997.tb00123.x-BIB2|cit2","unstructured":"Marchmant
-      M. 1992 Quote reported in The Health Services Journal 33"},{"key":"10.1111\/j.1365-2524.1997.tb00123.x-BIB3|cit3","volume-title":"Therapy
-      Services: Organisation, Management, and Autonomy","author":"\u00d8vretveit","year":"1992"},{"key":"10.1111\/j.1365-2524.1997.tb00123.x-BIB4|cit4","volume-title":"Coordinating
-      Community Care: Multi-disciplinary Teams and Care Management in Health and Social
-      Services","author":"\u00d8vretveit","year":"1993"},{"key":"10.1111\/j.1365-2524.1997.tb00123.x-BIB5|cit5","volume-title":"Purchasing
-      for Health","author":"\u00d8vretveit","year":"1994a"},{"key":"10.1111\/j.1365-2524.1997.tb00123.x-BIB6|cit6","volume-title":"Mental
-      Health Unit","author":"\u00d8vretveit","year":"1994b"}],"container-title":["Health
-      &amp; Social Care in the Community"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1365-2524.1997.tb00123.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1365-2524.1997.tb00123.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,29]],"date-time":"2022-12-29T16:45:58Z","timestamp":1672332358000},"score":9.401631,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1365-2524.1997.tb00123.x"}},"issued":{"date-parts":[[2007,6,8]]},"references-count":6,"journal-issue":{"issue":"4"},"URL":"https:\/\/doi.org\/10.1111\/j.1365-2524.1997.tb00123.x","ISSN":["0966-0410"],"issn-type":[{"value":"0966-0410","type":"print"}],"published":{"date-parts":[[2007,6,8]]}},{"indexed":{"date-parts":[[2022,12,21]],"date-time":"2022-12-21T05:55:19Z","timestamp":1671602119087},"reference-count":0,"publisher":"Hindawi
-      Limited","issue":"1","license":[{"start":{"date-parts":[[2015,9,1]],"date-time":"2015-09-01T00:00:00Z","timestamp":1441065600000},"content-version":"tdm","delay-in-days":2149,"URL":"http:\/\/doi.wiley.com\/10.1002\/tdm_license_1.1"}],"content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1111\/j.1439-0272.1999.tb02844.x","type":"journal-article","created":{"date-parts":[[2010,7,24]],"date-time":"2010-07-24T09:46:25Z","timestamp":1279964785000},"page":"57-57","source":"Crossref","is-referenced-by-count":0,"title":["Congratulatory
-      message"],"prefix":"10.1155","volume":"31","author":[{"given":"Carl","family":"Sshirren","sequence":"first","affiliation":[]}],"member":"98","published-online":{"date-parts":[[2009,10,13]]},"container-title":["Andrologia"],"language":"en","link":[{"URL":"https:\/\/api.wiley.com\/onlinelibrary\/tdm\/v1\/articles\/10.1111%2Fj.1439-0272.1999.tb02844.x","content-type":"unspecified","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/onlinelibrary.wiley.com\/wol1\/doi\/10.1111\/j.1439-0272.1999.tb02844.x\/fullpdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,12,20]],"date-time":"2022-12-20T12:32:37Z","timestamp":1671539557000},"score":9.387163,"resource":{"primary":{"URL":"https:\/\/onlinelibrary.wiley.com\/doi\/10.1111\/j.1439-0272.1999.tb02844.x"}},"subtitle":["Emil
-      Steinberger"],"issued":{"date-parts":[[2009,10,13]]},"references-count":0,"journal-issue":{"issue":"1"},"URL":"https:\/\/doi.org\/10.1111\/j.1439-0272.1999.tb02844.x","ISSN":["0303-4569","1439-0272"],"issn-type":[{"value":"0303-4569","type":"print"},{"value":"1439-0272","type":"electronic"}],"published":{"date-parts":[[2009,10,13]]}}],"items-per-page":7,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '5562'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:24:12 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -158,8 +125,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '5560'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:15:46 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -168,10 +143,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

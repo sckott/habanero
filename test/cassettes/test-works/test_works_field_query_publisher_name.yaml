@@ -5,855 +5,592 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
     method: GET
-    uri: https://api.crossref.org/works?query.publisher-name=Universidade%20Federal%20de%20Santa%20Maria
+    uri: https://api.crossref.org/works?query.publisher-name=Universidade+Federal+de+Santa+Maria
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":6823768,"items":[{"indexed":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T04:46:25Z","timestamp":1696999585914},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"11","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Literatura
-      e Autoritarismo"],"abstract":"<jats:p>Tomando como base a an\u00e1lise de uma
-      cr\u00f4nica liter\u00e1ria do jornalista Jos\u00e9 Brito Broca, este artigo
-      prop\u00f5e uma leitura sobre a estada do embaixador franc\u00eas Joseph-Arthur
-      de Gobineau no Brasil (1869 a 1870), um dos mais importantes te\u00f3ricos do
-      racismo no s\u00e9culo XIX.<\/jats:p>","DOI":"10.5902\/1679849x78440","type":"journal-article","created":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T02:30:55Z","timestamp":1696991455000},"page":"19-32","source":"Crossref","is-referenced-by-count":0,"title":["Uma
-      cr\u00f4nica para Gobineau"],"prefix":"10.5902","author":[{"given":"Ronaldo
-      Guimar\u00e3es","family":"Galv\u00e3o","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2012,10,22]]},"container-title":["Literatura
-      e Autoritarismo"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/78440\/55482","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/download\/78440\/55482","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,10,11]],"date-time":"2023-10-11T02:30:56Z","timestamp":1696991456000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/LA\/article\/view\/78440"}},"issued":{"date-parts":[[2012,10,22]]},"references-count":0,"journal-issue":{"issue":"11","published-online":{"date-parts":[[2012,10,22]]}},"URL":"https:\/\/doi.org\/10.5902\/1679849x78440","ISSN":["1679-849X","1679-849X"],"issn-type":[{"value":"1679-849X","type":"electronic"},{"value":"1679-849X","type":"print"}],"published":{"date-parts":[[2012,10,22]]}},{"indexed":{"date-parts":[[2022,9,8]],"date-time":"2022-09-08T02:12:44Z","timestamp":1662603164426},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","license":[{"start":{"date-parts":[[2022,9,5]],"date-time":"2022-09-05T00:00:00Z","timestamp":1662336000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Kinesis"],"abstract":"<jats:p>Este
-      estudo visa a determinar os principais fatores, segundo a an\u00e1lise do treinador,
-      que permitiram \u00e0 equipe de handebol masculina da ADUFSM lograr \u00eaxito,
-      em termos de resultado, nos anos 80 do s\u00e9culo passado. Para tal, foi realizada
-      uma entrevista com Luiz Celso Giacomini (2015), professor e t\u00e9cnico. Foram
-      elencados, em ordem crescente de import\u00e2ncia, oito fatores que contribu\u00edram
-      para o sucesso e a supremacia da cidade de Santa Maria\u2013RS no handebol em
-      n\u00edvel regional, nacional e internacional. A partir disso, procurou-se analisar
-      e discutir cada item com o que a literatura apresenta como sugest\u00e3o no
-      treinamento de equipes de alto rendimento. Conclui-se que os fatores apresentados
-      pelo treinador integram h\u00e1 35 anos uma concep\u00e7\u00e3o de esporte para
-      o handebol, que ainda hoje pode ser considerada atual perante a bibliografia
-      contempor\u00e2nea especializada, podendo, assim, servir como referencial para
-      a estrutura\u00e7\u00e3o de modelos pr\u00f3prios para o treinamento de equipes
-      de alto n\u00edvel nos esportes coletivos.\nPalavras-chave: Handebol; ADUFSM;
-      Treinamento<\/jats:p>","DOI":"10.5902\/2316546469677","type":"journal-article","created":{"date-parts":[[2022,9,6]],"date-time":"2022-09-06T01:35:19Z","timestamp":1662428119000},"source":"Crossref","is-referenced-by-count":0,"title":["Equipe
-      masculina adulta de handebol da ADUFSM na d\u00e9cada de 1980: ponto de vista
-      do t\u00e9cnico Luiz Celso Giacomini"],"prefix":"10.5902","volume":"40","author":[{"given":"C\u00e9sar
-      Alcides","family":"Geller","sequence":"first","affiliation":[]},{"given":"Luma","family":"Lemos
-      Aires","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2022,9,5]]},"container-title":["Kinesis"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/kinesis\/article\/download\/69677\/48817","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/kinesis\/article\/download\/69677\/48817","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,9,8]],"date-time":"2022-09-08T01:37:41Z","timestamp":1662601061000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/kinesis\/article\/view\/69677"}},"issued":{"date-parts":[[2022,9,5]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2316546469677","ISSN":["2316-5464","0102-8308"],"issn-type":[{"value":"2316-5464","type":"electronic"},{"value":"0102-8308","type":"print"}],"published":{"date-parts":[[2022,9,5]]}},{"indexed":{"date-parts":[[2023,9,20]],"date-time":"2023-09-20T04:59:15Z","timestamp":1695185955407},"reference-count":26,"publisher":"Universidade
-      Federal de Santa Maria","issue":"69","license":[{"start":{"date-parts":[[2022,8,20]],"date-time":"2022-08-20T00:00:00Z","timestamp":1660953600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Balduinia"],"abstract":"<jats:p>ocorr\u00eancia
-      natural no Brasil. As caracter\u00edsticas anat\u00f4micas observadas est\u00e3o
-      dentro das possibilidades estruturais da tribo Tigridieae e fam\u00edlia Iridaceae.
-      Tanto a identifica\u00e7\u00e3o das esp\u00e9cies quanto o reconhecimento do
-      g\u00eanero e sua separa\u00e7\u00e3o da maioria dos demais integrantes nativos
-      de Tigridieae mostraram-se poss\u00edveis. Para o reconhecimento do g\u00eanero,
-      destacam-se as seguintes caracter\u00edsticas: folhas plicadas, ocorr\u00eancia
-      de grande quantidade de escler\u00eanquima lignificado no interior das nervuras
-      de maior calibre e aus\u00eancia de fibras deslignificadas na extremidade das
-      folhas. Para a separa\u00e7\u00e3o das esp\u00e9cies, salienta-se a forma e
-      orienta\u00e7\u00e3o das c\u00e9lulas parenquim\u00e1ticas, a presen\u00e7a
-      ou n\u00e3o de fibras lignificadas no lado do xilema das grandes nervuras, bem
-      como a quantidade de pequenos feixes vasculares existente entre eles.<\/jats:p>","DOI":"10.5902\/2358198071429","type":"journal-article","created":{"date-parts":[[2023,9,19]],"date-time":"2023-09-19T21:51:10Z","timestamp":1695160270000},"page":"24-31","source":"Crossref","is-referenced-by-count":0,"title":["Anatomia
-      foliar de duas esp\u00e9cies de Phalocallis Herbert (Iridaceae)"],"prefix":"10.5902","author":[{"given":"Sidinei","family":"Santos","sequence":"first","affiliation":[]},{"given":"Leonardo
-      Paz","family":"Deble","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2022,8,20]]},"reference":[{"key":"881365","doi-asserted-by":"crossref","unstructured":"Chauveau,
-      O., Eggers, L., Souza-Chies, T.T. & Nadot, S. 2012. Oil-producing flowers within
-      the Iridoideae (Iridaceae): evolutionary trends in the flowers of the New World
-      genera. Ann. Bot., 110: 713\u2013729.","DOI":"10.1093\/aob\/mcs134"},{"key":"881366","unstructured":"Deble,
-      L.P. 2012. Panorama da Fam\u00edlia Iridaceae Juss. no Bioma Pampa. Bioma Pampa:
-      Ambiente \u00d7 Sociedade. Organizadores: Anabela Silveira de Oliveira Deble,
-      Leonardo Paz Deble e Ana L\u00facia Stefani Le\u00e3o. Bag\u00e9: Ediurcamp.
-      200 p."},{"key":"881367","unstructured":"Deble, L.P. 2021. Survey on the tribe
-      Tigridieae (Iridaceae) in the Campos of Southeast South America. Balduinia,
-      68: 14-33."},{"key":"881368","doi-asserted-by":"crossref","unstructured":"Deble,
-      L.P. & Alves, F.S. 2020. Cypella (Iridaceae): What do we know about the diversity
-      of the genus? Balduinia, 66: 2-27.","DOI":"10.5902\/2358198053318"},{"key":"881369","unstructured":"Eggers,
-      L. & Chauveau, O. Phalocallis in Flora e Funga do Brasil. Jardim Bot\u00e2nico
-      do Rio de Janeiro. Dispon\u00edvel em: <https:\/\/floradobrasil.jbrj.gov.br\/FB36359>.
-      Acesso em: 13 jul. 2022."},{"key":"881370","unstructured":"Eggers, L., Gil,
-      A.S.B., In\u00e1cio, C.D., Lovo, J., Pastori, T., Hall, C.F., Damasceno, R.G.L.
-      & Chauveau, O. 2022. Iridaceae in Flora e Funga do Brasil. Jardim Bot\u00e2nico
-      do Rio de Janeiro. Dispon\u00edvel em: <https:\/\/floradobrasil.jbrj.gov.br\/FB136>.
-      Acesso em: 12 jul. 2022."},{"key":"881371","doi-asserted-by":"crossref","unstructured":"Goldblatt,
-      P., Rodriguez, A., Powell, M.P., Davis, T.J., Manning, J.C., Van Der Bank, M.
-      & Savolainen, V. 2008. Iridaceae \u2018out of Australasia\u2019? Phylogeny,
-      biogeography, and divergence time based on plastid DNA sequences. Systematic
-      Botany, 33: 495\u2013508.","DOI":"10.1600\/036364408785679806"},{"key":"881372","unstructured":"Goldblatt,
-      P. & Manning, J.C. 2008. The Iris Family. Natural History and Classification.
-      Portland: Timber Press. 290 p."},{"key":"881373","doi-asserted-by":"crossref","unstructured":"Goldblatt,
-      P., Rich, J.E.H., Rudal, P. 1984. Occurrence of crystals in iridaceae and allied
-      families and their phylogenetic significance. Annals of Missouri Botanical Garden,
-      71:1013-1020.","DOI":"10.2307\/2399238"},{"key":"881374","unstructured":"Kraus,
-      J.E., Arduin, M. 1997. Manual b\u00e1sico de m\u00e9todos em morfologia vegetal.
-      Rio de Janeiro: EDUR. Editora Universidade Rural. 194 p."},{"key":"881375","unstructured":"Lima,
-      T.G. 2013. Anatomia foliar de esp\u00e9cies de Gelasine e Herbertia (Iridaceae)
-      nativas no Bioma Pampa. Trabalho de Conclus\u00e3o de Curso - Ci\u00eancias
-      Biol\u00f3gicas. Universidade da Regi\u00e3o da Campanha. Bag\u00e9. 18 p."},{"key":"881376","unstructured":"Pastori,
-      T., Chauveau, O., Souza-Chies, T.T., Eggers, L., Mariath, J.E. de A. 2018. Leaf
-      anatomy in Tigridieae reveals a diagnostic character for subtribes Cipurinae
-      and Tigridiinae (Iridoideae: Iridaceae). 6th International Conference on Comparative
-      Biology of Monocotyledons, Natal-RN."},{"key":"881377","unstructured":"Ravenna,
-      P.F. 2003. The genus Phalocallis (Iridaceae). Botanica Australis, 3: 1-7."},{"key":"881378","doi-asserted-by":"crossref","unstructured":"Rudall,
-      P. 1983. Leaf anatomy and relationships of Dietes (Iridaceae). Nord. J. Bot.,
-      3: 471-478.","DOI":"10.1111\/j.1756-1051.1983.tb01455.x"},{"key":"881379","doi-asserted-by":"crossref","unstructured":"Rudall,
-      P. 1986. Taxonomic significance of leaf anatomy in Australasian Iridaceae. Nord.
-      J. Bot., 6: 277\u2013289.","DOI":"10.1111\/j.1756-1051.1986.tb00879.x"},{"key":"881380","unstructured":"Rudall,
-      P. 1990. Comparative leaf morphogenesis in Iridaceae. Botanische Jahrbucher,
-      112: 241\u2013260."},{"key":"881381","doi-asserted-by":"crossref","unstructured":"Rudall,
-      P. 1991. Leaf anatomy in Tigridieae (Iridaceae). Pl. Syst. Evol. 175:1-10.","DOI":"10.1007\/BF00942141"},{"key":"881382","doi-asserted-by":"crossref","unstructured":"Rudall,
-      P. 1993. Leaf anatomy and systematics of Mariceae (Iridaceae). Kew Bulletin,
-      48: 151\u2013160.","DOI":"10.2307\/4115760"},{"key":"881383","doi-asserted-by":"crossref","unstructured":"Rudall,
-      P. 1994. Anatomy and Systematics of Iridaceae. Bot. J. Linn. Soc., 114: 01\u201321.","DOI":"10.1111\/j.1095-8339.1994.tb01920.x"},{"key":"881384","unstructured":"Rudall,
-      P. 1995. Anatomy of Monocotyledons: Iridaceae. Oxford University Press. 126
-      p."},{"key":"881385","doi-asserted-by":"crossref","unstructured":"Rudall, P.
-      & Burns, P. 1989. Leaf anatomy of the woody South African Iridaceae. Kew","DOI":"10.2307\/4110375"},{"key":"881386","unstructured":"Bulletin,
-      44: 525\u2013532."},{"key":"881387","doi-asserted-by":"crossref","unstructured":"Rudall,
-      P. & Goldblatt, P. 1991. Leaf anatomy and phylogeny of Ixioideae (Iridaceae).","DOI":"10.1111\/j.1095-8339.1991.tb02297.x"},{"key":"881388","unstructured":"Bot.
-      J. Linn. Soc., 106: 329\u2013345."},{"key":"881389","doi-asserted-by":"crossref","unstructured":"Rudall,
-      P. & Goldblatt, P. 1993. Leaf anatomy and systematics of Homeriinae","DOI":"10.1111\/j.1095-8339.1993.tb01911.x"},{"key":"881390","unstructured":"(Iridaceae).
-      Bot. J. Linn. Soc., 111: 379\u2013397."}],"container-title":["Balduinia"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/balduinia\/article\/download\/71429\/48737","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/balduinia\/article\/download\/71429\/48737","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,9,19]],"date-time":"2023-09-19T21:51:17Z","timestamp":1695160277000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/balduinia\/article\/view\/71429"}},"issued":{"date-parts":[[2022,8,20]]},"references-count":26,"journal-issue":{"issue":"69","published-online":{"date-parts":[[2022,8,20]]}},"URL":"https:\/\/doi.org\/10.5902\/2358198071429","ISSN":["2358-1980","1808-2688"],"issn-type":[{"value":"2358-1980","type":"electronic"},{"value":"1808-2688","type":"print"}],"published":{"date-parts":[[2022,8,20]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:53:29Z","timestamp":1740174809143,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"60","license":[{"start":{"date-parts":[[2020,10,13]],"date-time":"2020-10-13T00:00:00Z","timestamp":1602547200000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Letras"],"abstract":"<jats:p>este
-      estudo investiga a rela\u00e7\u00e3o entre fen\u00f4menos sincr\u00f4nicos e
-      diacr\u00f4nicos no que tange \u00e0 combina\u00e7\u00e3o das pe\u00e7as morfol\u00f3gicas
-      e \u00e0 sua intepreta\u00e7\u00e3o ao longo do tempo. Para tanto, apresenta
-      a tipologia para os tipos de mudan\u00e7a sem\u00e2ntica, proposta por Rainer
-      (2005), e sua aplica\u00e7\u00e3o ao portugu\u00eas. Com base nessa tipologia,
-      este trabalho discute duas quest\u00f5es recentes dos estudos morfol\u00f3gicos:
-      (i) de que forma processos sincr\u00f4nicos servem como evid\u00eancia para
-      a identifica\u00e7\u00e3o de uma mudan\u00e7a sem\u00e2ntica diacr\u00f4nica,
-      (ii) qual o estatuto de \u201cpalavra\u201d no que concerne \u00e0s mudan\u00e7as
-      diacr\u00f4nicas. Em s\u00edntese, este artigo discute quest\u00f5es te\u00f3ricas
-      e metodol\u00f3gicas importantes para duas linhas de investiga\u00e7\u00e3o
-      com base do mesmo fen\u00f4meno.\u00a0<\/jats:p>","DOI":"10.5902\/2176148543108","type":"journal-article","created":{"date-parts":[[2020,10,14]],"date-time":"2020-10-14T02:40:41Z","timestamp":1602643241000},"page":"247-254","source":"Crossref","is-referenced-by-count":0,"title":["Mudan\u00e7a
-      sem\u00e2ntica e forma\u00e7\u00e3o de palavras"],"prefix":"10.5902","author":[{"ORCID":"https:\/\/orcid.org\/0000-0001-7487-5043","authenticated-orcid":false,"given":"Maur\u00edcio
-      Sartori","family":"Resende","sequence":"first","affiliation":[]},{"given":"Rodolfo","family":"Ilari","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2020,10,13]]},"container-title":["Letras"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/letras\/article\/viewFile\/43108\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/letras\/article\/viewFile\/43108\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,10,14]],"date-time":"2020-10-14T02:40:54Z","timestamp":1602643254000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/letras\/article\/view\/43108"}},"issued":{"date-parts":[[2020,10,13]]},"references-count":0,"journal-issue":{"issue":"60","published-online":{"date-parts":[[2020,10,13]]}},"URL":"https:\/\/doi.org\/10.5902\/2176148543108","ISSN":["2176-1485","1519-3985"],"issn-type":[{"type":"electronic","value":"2176-1485"},{"type":"print","value":"1519-3985"}],"published":{"date-parts":[[2020,10,13]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:53:29Z","timestamp":1740174809612,"version":"3.37.3"},"reference-count":20,"publisher":"Universidade
-      Federal de Santa Maria","license":[{"start":{"date-parts":[[2023,1,9]],"date-time":"2023-01-09T00:00:00Z","timestamp":1673222400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Letras"],"abstract":"<jats:p>Problematizamos
-      o ensino e a aprendizagem na EaD para produzirmos conhecimento sobre suas especificidades
-      e para promovermos uma experi\u00eancia de qualidade nesse contexto. Assim sendo,
-      abordamos no\u00e7\u00f5es de intera\u00e7\u00e3o e linguagem de Bakhtin (2003),
-      Saber Situado de AUTOR (2017) e aspectos da EaD de Moore (1997) e outros. Nossa
-      metodologia \u00e9 qualitativa, de cunho etnogr\u00e1fico, e est\u00e1 fundamentada
-      na Lingu\u00edstica aplicada (MOITA LOPES, 2006). Observamos, com an\u00e1lise
-      de dados, que h\u00e1 mais intera\u00e7\u00e3o e de melhor qualidade quando
-      se visa um saber situado. Conclu\u00edmos, na sequ\u00eancia, que a qualidade
-      da intera\u00e7\u00e3o tem implica\u00e7\u00e3o nos graus de distanciamento
-      pedag\u00f3gico.<\/jats:p>","DOI":"10.5902\/2176148571105","type":"journal-article","created":{"date-parts":[[2023,3,23]],"date-time":"2023-03-23T14:01:03Z","timestamp":1679580063000},"page":"57-74","source":"Crossref","is-referenced-by-count":0,"title":["A
-      constru\u00e7\u00e3o de um saber situado a partir da intera\u00e7\u00e3o nos
-      f\u00f3runs da licenciatura em Letras Espanhol EaD mediada pela internet"],"prefix":"10.5902","author":[{"ORCID":"https:\/\/orcid.org\/0000-0002-5358-2775","authenticated-orcid":false,"given":"Patricia","family":"Neyra","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-2613-8863","authenticated-orcid":false,"given":"Rita
-      de C\u00e1ssia Souto Maior Siqueira","family":"Lima","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2023,1,9]]},"reference":[{"key":"936684","unstructured":"BAJTIN,
-      M. Hacia una filosof\u00eda del acto \u00e9tico. De los borradores: y otros
-      escritos. Rubi (Barcelona): Anthropos; San Juan: Universidade de Puerto Rico,
-      1997."},{"key":"936685","unstructured":"BAKHTIN, M. Est\u00e9tica da Cria\u00e7\u00e3o
-      Verbal. 4.ed. S\u00e3o Paulo: Martins Fontes, 2003."},{"key":"936686","unstructured":"BAKHTIN,
-      M. (VOLOCH\u00cdNOV, V.N.). Marxismo e Filosofia da Linguagem: Problemas fundamentais
-      do M\u00e9todo Sociol\u00f3gico na Ci\u00eancia da Linguagem. Editora Hucitec,
-      S\u00e3o Paulo, 2004."},{"key":"936687","unstructured":"BELLONI, M. L. Educa\u00e7\u00e3o
-      \u00e0 Dist\u00e2ncia. Campina, SP: Autores Associados, 1999."},{"key":"936688","unstructured":"CELANI,
-      M. A. A. Afinal, o que \u00e9 Lingu\u00edstica Aplicada. In: ZANOTTO, M. S.;
-      CELANI, M. A. A. (Org.). Lingu\u00edstica Aplicada, da aplica\u00e7\u00e3o da
-      lingu\u00edstica \u00e0 lingu\u00edstica transdisciplinar. S\u00e3o Paulo: EDUC,
-      1992, p. 15-23."},{"key":"936689","unstructured":"FABR\u00cdCIO, B. F. Lingu\u00edstica
-      aplicada como espa\u00e7o de \u201cdesaprendizagem\u201d: redescri\u00e7\u00f5es
-      em curso. In: Fabr\u00edcio Blanca et. al. Luiz Paulo da Moita Lopes (org.).
-      Por uma lingu\u00edstica aplicada INdisciplinar. S\u00e3o Paulo: Par\u00e1bola
-      Editorial, 2006. p. 45-65."},{"key":"936690","unstructured":"FIGUEIREDO, F.
-      A colabora\u00e7\u00e3o como uma forma de promover a aprendizagem de l\u00edngua
-      estrangeira. In: I Congresso Internacional da ABRAPUI, 2007, Belo Horizonte.
-      Anais. p. 1-12. Dispon\u00edvel em <http:\/\/www.leffa.pro.br\/tela4\/Textos\/Textos\/Anais\/ABRAPUI_I_UFMG\/language_pdf\/lang31.pdf>.
-      Acesso em: 23 de janeiro de 2022."},{"key":"936691","unstructured":"LUZ, L.
-      As pr\u00e1ticas lingu\u00edstico-discursivas em cons\u00edgnias e as identidades
-      do docente na constitui\u00e7\u00e3o de saberes: estudo interpretativo em turmas
-      de letras EAD do IFAL. 2017. 216 f. Disserta\u00e7\u00e3o (Mestrado em Letras
-      e Lingu\u00edstica) - Faculdade de Letras, Programa de P\u00f3s-Gradua\u00e7\u00e3o
-      em Letras e Lingu\u00edstica, Universidade Federal de Alagoas, Macei\u00f3,
-      2017."},{"key":"936692","unstructured":"MOITA LOPES, L. P. Uma lingu\u00edstica
-      aplicada mesti\u00e7a e ideol\u00f3gica: o campo como linguista aplicado. In:
-      Fabr\u00edcio Blanca et. al. Luiz Paulo da Moita Lopes (org.). Por uma lingu\u00edstica
-      aplicada INdisciplinar. S\u00e3o Paulo: Par\u00e1bola Editorial, 2006. p. 13-44."},{"key":"936693","unstructured":"MOITA
-      LOPES, L. P. Da aplica\u00e7\u00e3o de lingu\u00edstica \u00e0 lingu\u00edstica
-      aplicada indisciplinar. Lingu\u00edstica aplicada: um caminho com diferentes
-      acessos. S\u00e3o Paulo: Contexto, 2009, p. 11-24."},{"key":"936694","unstructured":"MOORE,
-      Michael; KEARSLEY, Greg. Educa\u00e7\u00e3o \u00e0 Dist\u00e2ncia: uma vis\u00e3o
-      integrada. Trad. Roberto Galman. S\u00e3o Paulo: Thomson Learning, 2007."},{"key":"936695","unstructured":"MOORE,
-      Michael. Theory of transactional distance. In: KEEGAN, D. Theoretical Principles
-      of Distance Education. London: Routledge, 1997. p. 22-38."},{"key":"936696","unstructured":"PIMENTEL,
-      F. Apresenta\u00e7\u00e3o institucional no F\u00f3rum de Diretores (UFAL) ocorrida
-      no dia 23\/06\/22. Anota\u00e7\u00f5es. 2022."},{"key":"936697","doi-asserted-by":"crossref","unstructured":"PIMENTEL,
-      F.; MERCADO, L. A pol\u00edtica de expans\u00e3o do ensino superior por meio
-      da UAB em Alagoas. Revista Interfaces Cient\u00edficas. Aracaju. v. 7, n. 3.
-      p. 127\u2013138. Abr.\/mai.\/jun., 2019.","DOI":"10.17564\/2316-3828.2019v7n3p127-138"},{"key":"936698","doi-asserted-by":"crossref","unstructured":"ROBLYER,
-      M. D.; WIENCKE, W. R. Design and Use of a Rubric to Assess and Encourage Interactive
-      Qualities in Distance Courses. American Journal of Distance Education, v. 17,
-      n. 2, p. 77-98. 2003. Dispon\u00edvel em: http:\/\/dx.doi.org\/10.1207\/S15389286AJDE1702_2+.
-      Acesso em: 19 de ago. 2021.","DOI":"10.1207\/S15389286AJDE1702_2"},{"key":"936699","unstructured":"SOUTO
-      MAIOR, Rita de C\u00e1ssia. Pensamento Bakhtiniano nos estudos da linguagem:
-      a a\u00e7\u00e3o do pesquisador como ato respons\u00e1vel. Polifonia, 20 (27):31-53.
-      2013"},{"key":"936700","doi-asserted-by":"crossref","unstructured":"SOUTO MAIOR,
-      R.; LIMA, S. Recontando hist\u00f3rias da comunidade em sala de aula: Observando
-      o Ethos do\/a aluno\/a autor\/a em atividades de letramento. Revista Educa\u00e7\u00e3o
-      e Linguagens, Campo Mour\u00e3o, v. 6, n.c10, p.107-130, jan.\/ jun., 2017.
-      Dispon\u00edvel em: <https:\/\/periodicos.unespar.edu.br\/index.php\/revistaeduclings\/article\/view\/6455\/4476>.
-      Acesso em 16 de outubro de 2021.","DOI":"10.33871\/22386084...107-130"},{"key":"936701","doi-asserted-by":"crossref","unstructured":"SOUTO
-      MAIOR, R. de C.; LUZ, L. Identidades docentes e a \u00e9tica discursiva nas
-      intera\u00e7\u00f5es sugeridas nas cons\u00edgnias de abertura no contexto da
-      educa\u00e7\u00e3o a dist\u00e2ncia. Calidosc\u00f3pio, 17(2), p. 395\u2013413.
-      2019 Dispon\u00edvel em: <http:\/\/revistas.unisinos.br\/index.php\/calidoscopio\/article\/view\/cld.2019.172.10>.
-      Acesso em 10 de outubro de 2021.","DOI":"10.4013\/cld.2019.172.10"},{"key":"936702","doi-asserted-by":"crossref","unstructured":"SOUTO
-      MAIOR, R. Estudos Discursos na Lingu\u00edstica Aplicada Implicada. In: STURM,
-      L.; SOUTO MAIOR, R. de C. A lingu\u00edstica Aplicada no Ensino e Aprendizagem
-      e nos Estudos Discursivos. Tut\u00f3ia, MA: Di\u00e1logos, 2022a.","DOI":"10.52788\/9786589932499.1-17"},{"key":"936703","unstructured":"SOUTO
-      MAIOR, R. de C. A Lingu\u00edstica Aplicada e a implica\u00e7\u00e3o na pesquisa:
-      uma leitura bakhtiniana. In: OLIVEIRA JR.; MEDEIROS, Ana Clara. Livro Comemorativo
-      das tr\u00eas d\u00e9cadas do Programa de P\u00f3s-gradua\u00e7\u00e3o em Lingu\u00edstica
-      e Literatura\/UFAL. 2022b. (Prelo)"}],"container-title":["Letras"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/letras\/article\/download\/71105\/51013","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/letras\/article\/download\/71105\/51013","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,3,23]],"date-time":"2023-03-23T14:02:27Z","timestamp":1679580147000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/letras\/article\/view\/71105"}},"issued":{"date-parts":[[2023,1,9]]},"references-count":20,"URL":"https:\/\/doi.org\/10.5902\/2176148571105","ISSN":["2176-1485","1519-3985"],"issn-type":[{"type":"electronic","value":"2176-1485"},{"type":"print","value":"1519-3985"}],"published":{"date-parts":[[2023,1,9]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:53:33Z","timestamp":1740174813622,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"19","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Regae:
-      Rev. Gest. Aval. Educ."],"abstract":"<jats:p>Este estudo teve por objetivo abordar
-      aspectos estruturantes da reforma educacional deflagrada pelo Estado do Rio
-      Grande do Norte, no \u00e2mbito do Projeto RN Sustent\u00e1vel, situando a implanta\u00e7\u00e3o
-      do Sistema Integrado de Monitoramento e Avalia\u00e7\u00e3o Institucional da
-      Secretaria de Estado da Educa\u00e7\u00e3o do Rio Grande do Norte. A an\u00e1lise
-      foi desenvolvida a partir de uma pesquisa documental empreendida em s\u00edtios
-      oficiais do Executivo estadual e no site do pr\u00f3prio sistema de avalia\u00e7\u00e3o.
-      A reforma educacional em curso no Estado do Rio Grande do Norte integra um vasto
-      projeto de moderniza\u00e7\u00e3o da gest\u00e3o p\u00fablica, que prev\u00ea
-      uma s\u00e9rie de medidas de vi\u00e9s gerencialista para o campo educacional,
-      como \u00e9 o caso do sistema de avalia\u00e7\u00e3o externa voltado \u00e0
-      rede estadual de ensino b\u00e1sico.<\/jats:p>","DOI":"10.5902\/2318133867316","type":"journal-article","created":{"date-parts":[[2021,11,4]],"date-time":"2021-11-04T16:24:41Z","timestamp":1636043081000},"page":"e67316","source":"Crossref","is-referenced-by-count":0,"title":["Moderniza\u00e7\u00e3o
-      da gest\u00e3o p\u00fablica, reforma educacional e avalia\u00e7\u00e3o no Rio
-      Grande do Norte"],"prefix":"10.5902","volume":"10","author":[{"ORCID":"https:\/\/orcid.org\/0000-0001-8609-2257","authenticated-orcid":false,"given":"Ant\u00f4nia
-      Bruna da","family":"Silva","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-3094-7399","authenticated-orcid":false,"given":"Girlene
-      Pereira da","family":"Silva","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2021,11,3]]},"container-title":["Revista
-      de Gest\u00e3o e Avalia\u00e7\u00e3o Educacional"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/viewFile\/67316\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/viewFile\/67316\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,11,4]],"date-time":"2021-11-04T16:25:00Z","timestamp":1636043100000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/view\/67316"}},"issued":{"date-parts":[[2021,11,3]]},"references-count":0,"journal-issue":{"issue":"19","published-online":{"date-parts":[[2021,1,8]]}},"URL":"https:\/\/doi.org\/10.5902\/2318133867316","ISSN":["2318-1338","2176-2171"],"issn-type":[{"type":"electronic","value":"2318-1338"},{"type":"print","value":"2176-2171"}],"published":{"date-parts":[[2021,11,3]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:53:33Z","timestamp":1740174813375,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"19","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Regae:
-      Rev. Gest. Aval. Educ."],"abstract":"<jats:p>A educa\u00e7\u00e3o b\u00e1sica
-      e infantil no Brasil enfrenta desafios, ainda apresentando resultados abaixo
-      do n\u00edvel satisfat\u00f3rio. Como um dos recursos poss\u00edveis, tem-se
-      a possibilidade de aplicar mecanismos e princ\u00edpios de gest\u00e3o na busca
-      de maior efici\u00eancia e efic\u00e1cia institucional. Especificamente em Porto
-      Alegre\/RS\/RS o \u00edndice de qualidade no ensino tem diminu\u00eddo a cada
-      ano, com \u00eanfase especial aos resultados inferiores obtidos na educa\u00e7\u00e3o
-      infantil. Desde a perspectiva da gest\u00e3o da qualidade, h\u00e1 par\u00e2metros
-      de qualidade orientados pelo Minist\u00e9rio da Educa\u00e7\u00e3o, que podem
-      ser utilizados como refer\u00eancia para uma an\u00e1lise aprofundada das institui\u00e7\u00f5es.
-      A partir deste cen\u00e1rio o presente estudo teve como prop\u00f3sito analisar
-      a rela\u00e7\u00e3o entre a gest\u00e3o das escolas infantis municipais e creches
-      conveniadas de Porto Alegre\/RS\/RS com os par\u00e2metros de qualidade propostos
-      pelo MEC. Este estudo consiste num escopo descritivo, para o qual a coleta de
-      dados ocorreu por roteiro semiestruturado de entrevistas com gestores das organiza\u00e7\u00f5es
-      em foco. Os resultados obtidos apontaram que as compet\u00eancias e percep\u00e7\u00f5es
-      dos gestores tem impacto significativo e variado na maneira que os recursos
-      s\u00e3o geridos, mesmo num contexto no qual os par\u00e2metros gerais de gest\u00e3o
-      s\u00e3o compartilhados.Palavras-chave: gest\u00e3o da qualidade; escolas infantis;
-      creches p\u00fablicas municipais; gest\u00e3o de institui\u00e7\u00f5es de ensino.<\/jats:p>","DOI":"10.5902\/2318133844333","type":"journal-article","created":{"date-parts":[[2021,4,28]],"date-time":"2021-04-28T21:48:17Z","timestamp":1619646497000},"page":"e44333","source":"Crossref","is-referenced-by-count":0,"title":["Gest\u00e3o
-      da qualidade nas escolas infantis municipais e creches conveniadas de Porto
-      Alegre\/RS"],"prefix":"10.5902","volume":"10","author":[{"ORCID":"https:\/\/orcid.org\/0000-0001-9602-635X","authenticated-orcid":false,"given":"Martha
-      Carvalho","family":"Wagner","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-5713-5828","authenticated-orcid":false,"given":"Danielle
-      Nunes","family":"Pozzo","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-8656-9809","authenticated-orcid":false,"given":"Uiliam
-      Hahn","family":"Biegelmeyer","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-3800-2832","authenticated-orcid":false,"given":"Maria
-      Emilia","family":"Camargo","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2021,2,12]]},"container-title":["Revista
-      de Gest\u00e3o e Avalia\u00e7\u00e3o Educacional"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/viewFile\/44333\/pdf_1","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/viewFile\/44333\/pdf_1","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,4,28]],"date-time":"2021-04-28T21:48:17Z","timestamp":1619646497000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/regae\/article\/view\/44333"}},"issued":{"date-parts":[[2021,2,12]]},"references-count":0,"journal-issue":{"issue":"19","published-online":{"date-parts":[[2021,1,8]]}},"URL":"https:\/\/doi.org\/10.5902\/2318133844333","ISSN":["2318-1338","2176-2171"],"issn-type":[{"type":"electronic","value":"2318-1338"},{"type":"print","value":"2176-2171"}],"published":{"date-parts":[[2021,2,12]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:45:55Z","timestamp":1740174355951,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"1","license":[{"start":{"date-parts":[[2019,2,28]],"date-time":"2019-02-28T00:00:00Z","timestamp":1551312000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["RECDUFSM"],"abstract":"<jats:p>O
-      presente trabalho tem por objetivo de investiga\u00e7\u00e3o analisar as pol\u00edticas
-      p\u00fablicas de Media\u00e7\u00e3o e Concilia\u00e7\u00e3o como meios potenciais
-      para que o direito ao acesso \u00e0 justi\u00e7a seja efetivado. O acesso \u00e0
-      justi\u00e7a, que \u00e9 o objeto observado nesta abordagem, est\u00e1 positivado
-      no artigo 5\u00ba, XXXV, da CF\/1988 e \u00e9 uma garantia constitucional que
-      abrange n\u00e3o apenas a via judicial, mas tamb\u00e9m as vias extrajudiciais.
-      Nesse sentido, pol\u00edticas p\u00fablicas devem ser adotadas para que Mecanismos
-      consensuais possam ser utilizados e assim, as partes se empoderem e dialoguem
-      para solucionar seus conflitos. Na abordagem do artigo \u00e9 utilizado como
-      referencial o Sistema de Multiportas, em que h\u00e1 utiliza\u00e7\u00e3o da
-      via extrajudicial, a despeito de que algumas demandas tenham por meio mais adequado
-      o processo judicial. Assim, cada controv\u00e9rsia deve ser analisada individualmente
-      para identificar a sua natureza e qual o Mecanismo mais adequado para sua resolu\u00e7\u00e3o.
-      A legisla\u00e7\u00e3o brasileira recentemente positivou os M\u00e9todos consensuais,
-      com destaque para a Lei n\u00ba 13.140\/15, o C\u00f3digo de Processo Civil
-      de 2015 e a Resolu\u00e7\u00e3o n\u00ba 125\/2010, do Conselho Nacional de Justi\u00e7a.
-      Para tanto, o m\u00e9todo utilizado nesta pesquisa \u00e9 o de contextualiza\u00e7\u00e3o
-      geral inicial, a partir de pesquisa bibliogr\u00e1fica sobre os Mecanismos consensuais,
-      principalmente sobre a Media\u00e7\u00e3o e a Concilia\u00e7\u00e3o, bem como
-      sobre o acesso \u00e0 justi\u00e7a, que \u00e9 entendido como acesso \u00e0
-      ordem justa. Al\u00e9m do referencial bibliogr\u00e1fico, houve a contextualiza\u00e7\u00e3o
-      no referencial normativo positivado. Passos posteriores s\u00e3o analisadas
-      as possibilidades de utiliza\u00e7\u00e3o destes Mecanismos de solu\u00e7\u00e3o
-      conflitual e os meios de sua utiliza\u00e7\u00e3o.<\/jats:p>","DOI":"10.5902\/1981369430187","type":"journal-article","created":{"date-parts":[[2020,1,8]],"date-time":"2020-01-08T14:19:40Z","timestamp":1578493180000},"page":"30187","source":"Crossref","is-referenced-by-count":0,"title":["MECANISMOS
-      ADEQUADOS DE SOLU\u00c7\u00c3O DE CONFLITOS COMO POL\u00cdTICA P\u00daBLICA
-      PARA A EFETIVA\u00c7\u00c3O DO ACESSO \u00c0 JUSTI\u00c7A"],"prefix":"10.5902","volume":"14","author":[{"ORCID":"https:\/\/orcid.org\/0000-0001-8767-5542","authenticated-orcid":false,"given":"Alexandre
-      Walmott","family":"Borges","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-6081-4012","authenticated-orcid":false,"given":"Mariana
-      Lima","family":"Menegaz","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2019,2,28]]},"container-title":["Revista
-      Eletr\u00f4nica do Curso de Direito da UFSM"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/viewFile\/30187\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/viewFile\/30187\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2020,1,8]],"date-time":"2020-01-08T14:19:42Z","timestamp":1578493182000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/view\/30187"}},"issued":{"date-parts":[[2019,2,28]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2019,1,1]]}},"URL":"https:\/\/doi.org\/10.5902\/1981369430187","ISSN":["1981-3694","1981-3694"],"issn-type":[{"type":"electronic","value":"1981-3694"},{"type":"print","value":"1981-3694"}],"published":{"date-parts":[[2019,2,28]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:45:58Z","timestamp":1740174358371,"version":"3.37.3"},"reference-count":68,"publisher":"Universidade
-      Federal de Santa Maria","issue":"2","license":[{"start":{"date-parts":[[2022,11,30]],"date-time":"2022-11-30T00:00:00Z","timestamp":1669766400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["RECDUFSM"],"abstract":"<jats:p>O
-      presente trabalho, por meio do m\u00e9todo indutivo, se prop\u00f5e a enfrentar
-      o problema de pesquisa: Os incentivos \u00e0 inova\u00e7\u00e3o, quando relacionados
-      com a inclus\u00e3o digital necess\u00e1ria \u00e0 utiliza\u00e7\u00e3o dos
-      Servi\u00e7os P\u00fablicos Digitais, geram efeitos positivos ao desenvolvimento
-      socioecon\u00f4mico em \u00e2mbito nacional? Para tanto, tem-se como objetivos
-      espec\u00edficos: analisar o relacionamento digital entre a Administra\u00e7\u00e3o
-      P\u00fablica e os Cidad\u00e3os; destacar as circunst\u00e2ncias do cadastramento
-      e recebimento do Aux\u00edlio Emergencial e as dificuldades para inclus\u00e3o
-      digital e social; compreender a necessidade de inclus\u00e3o digital para a
-      realiza\u00e7\u00e3o do Governo Digital e para participa\u00e7\u00e3o no desenvolvimento
-      socioecon\u00f4mico; avaliar a rela\u00e7\u00e3o entre os mecanismos de inclus\u00e3o
-      digital e as estruturas de fomento \u00e0 inova\u00e7\u00e3o pelo Estado no
-      cen\u00e1rio de dissemina\u00e7\u00e3o das Novas Tecnologias. Compreende-se
-      que a inclus\u00e3o digital permite a participa\u00e7\u00e3o do indiv\u00edduo
-      no desenvolvimento como agente criador da inova\u00e7\u00e3o e como benefici\u00e1rio
-      dos efeitos decorrentes desta, desde que haja melhor capacita\u00e7\u00e3o dos
-      indiv\u00edduos, evitando-se que a digitaliza\u00e7\u00e3o das esferas sociais
-      eleve as desigualdades.<\/jats:p>","DOI":"10.5902\/1981369469673","type":"journal-article","created":{"date-parts":[[2023,5,5]],"date-time":"2023-05-05T21:11:02Z","timestamp":1683321062000},"page":"e69673","source":"Crossref","is-referenced-by-count":0,"title":["A
-      INCLUS\u00c3O DIGITAL E OS INCENTIVOS \u00c0 INOVA\u00c7\u00c3O"],"prefix":"10.5902","volume":"17","author":[{"ORCID":"https:\/\/orcid.org\/0000-0002-6873-5156","authenticated-orcid":false,"given":"Oksandro
-      Osdival","family":"Gon\u00e7alves","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0003-3456-4245","authenticated-orcid":false,"given":"Danna
-      Catharina Mascarello","family":"Luciani","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2022,11,30]]},"reference":[{"key":"963817","doi-asserted-by":"crossref","unstructured":"ANDRADE,
-      F\u00e1bio Siebeneichler de; ACIOLI, Catarine Gon\u00e7alves. A inclus\u00e3o
-      digital no Brasil e a responsabilidade civil estatal por omiss\u00e3o. Revista
-      De Direitos E Garantias Fundamentais, v. 14, n. 2, 2013. p. 243 DOI: https:\/\/doi.org\/10.18759\/rdgf.v14i2.378
-      Acesso em: 04 mar. 2022.","DOI":"10.18759\/rdgf.v14i2.378"},{"key":"963818","unstructured":"BRASIL.
-      Acessibilidade Digital. Publicado em: 27 nov. 2019. Dispon\u00edvel em: https:\/\/gov.br\/governodigital\/pt-br\/acessibilidade-digital
-      Acesso em: 04 mar. 2022."},{"key":"963819","unstructured":"BRASIL. Conhe\u00e7a
-      as Diretrizes da Estrat\u00e9gia de Governo Digital \u2013 2020 a 2022. Dispon\u00edvel
-      em: https:\/\/gov.br\/governodigital\/pt-br\/EGD2020 Acesso em: 04 mar. 2022."},{"key":"963820","unstructured":"BRASIL.
-      Decreto n\u00ba 9.637, de 26 de dezembro de 2018. Institui a Pol\u00edtica Nacional
-      de Seguran\u00e7a da Informa\u00e7\u00e3o, disp\u00f5e sobre a governan\u00e7a
-      da seguran\u00e7a da informa\u00e7\u00e3o, e altera o Decreto n\u00ba 2.295,
-      de 4 de agosto de 1997, que regulamenta o disposto no art. 24, caput, inciso
-      IX, da Lei n\u00ba 8.666, de 21 de junho de 1993, e disp\u00f5e sobre a dispensa
-      de licita\u00e7\u00e3o nos casos que possam comprometer a seguran\u00e7a nacional.
-      Bras\u00edlia: Presid\u00eancia da Rep\u00fablica, [2018]. Dispon\u00edvel em:
-      http:\/\/planalto.gov.br\/ccivil_03\/_ato2015-2018\/2018\/decreto\/D9637.htm
-      Acesso em: 04 mar. 2022."},{"key":"963821","unstructured":"BRASIL. Decreto n\u00ba
-      9.854, de 25 de junho de 2019. Institui o Plano Nacional de Internet das Coisas
-      e disp\u00f5e sobre a C\u00e2mara de Gest\u00e3o e Acompanhamento do Desenvolvimento
-      de Sistemas de Comunica\u00e7\u00e3o M\u00e1quina a M\u00e1quina e Internet
-      das Coisas. Bras\u00edlia: Presid\u00eancia da Rep\u00fablica, [2019]. Dispon\u00edvel
-      em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2019\/decreto\/D9854.htm
-      Acesso em: 04 mar. 2022."},{"key":"963822","unstructured":"BRASIL. Decreto n\u00ba
-      10.332, de 28 de abril de 2020. Institui a Estrat\u00e9gia de Governo Digital
-      para o per\u00edodo de 2020 a 2022, no \u00e2mbito dos \u00f3rg\u00e3os e das
-      entidades da administra\u00e7\u00e3o p\u00fablica federal direta, aut\u00e1rquica
-      e fundacional e d\u00e1 outras provid\u00eancias. Bras\u00edlia: Presid\u00eancia
-      da Rep\u00fablica, [2020]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2020\/decreto\/D10332.htm
-      Acesso em: 04 mar. 2022."},{"key":"963823","unstructured":"BRASIL. Decreto n\u00ba
-      10.412, de 30 de junho de 2020. Altera o Decreto n\u00ba 10.316, de 7 de abril
-      de 2020, para prorrogar o per\u00edodo de pagamento do aux\u00edlio emergencial
-      de que trata a Lei n\u00ba 13.982, de 2 de abril de 2020. Bras\u00edlia: Presid\u00eancia
-      da Rep\u00fablica, [2020]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2020\/decreto\/D10412.htm
-      Acesso em: 04 mar. 2022."},{"key":"963824","unstructured":"BRASIL. Decreto n\u00ba
-      10.534, de 28 de outubro de 2020. Institui a Pol\u00edtica Nacional de Inova\u00e7\u00e3o
-      e disp\u00f5e sobre a sua governan\u00e7a. Bras\u00edlia: Presid\u00eancia da
-      Rep\u00fablica, [2020]. Dispon\u00edvel em: http:\/\/www.planalto.gov.br\/ccivil_03\/_ato2019-2022\/2020\/decreto\/D10534.htm
-      Acesso em: 04 mar. 2022."},{"key":"963825","unstructured":"BRASIL. Decreto n\u00ba
-      11.260, de 22 de novembro de 2022. Disp\u00f5e sobre a elabora\u00e7\u00e3o
-      e o encaminhamento da Estrat\u00e9gia Nacional de Governo Digital e prorroga
-      o per\u00edodo de vig\u00eancia da Estrat\u00e9gia de Governo Digital, institu\u00edda
-      pelo Decreto n\u00ba 10.332, de 28 de abril de 2020. Dispon\u00edvel em: https:\/\/www.planalto.gov.br\/ccivil_03\/_ato2019-2022\/2022\/Decreto\/D11260.htm
-      Acesso em: 24 jan. 2023."},{"key":"963826","unstructured":"BRASIL. Estrat\u00e9gia
-      de Governan\u00e7a Digital, 2016-2019. Dispon\u00edvel em: https:\/\/gov.br\/governodigital\/pt-br\/estrategia-de-governanca-digital\/revisaodaestrategiadegovernancadigital20162019.pdf
-      Acesso em: 04 mar. 2022."},{"key":"963827","unstructured":"BRASIL. Lei Complementar
-      n\u00ba 182, de 01 de junho de 2021. Institui o marco legal das startups e do
-      empreendedorismo inovador; e altera a Lei n\u00ba 6.404, de 15 de dezembro de
-      1976, e a Lei Complementar n\u00ba 123, de 14 de dezembro de 2006. Bras\u00edlia:
-      Presid\u00eancia da Rep\u00fablica, [2021]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/leis\/lcp\/Lcp182.htm
-      Acesso em: 04 mar. 2022."},{"key":"963828","unstructured":"BRASIL. Lei n\u00ba
-      8.078, de 11 de setembro de 1990. Disp\u00f5e sobre a prote\u00e7\u00e3o do
-      consumidor e d\u00e1 outras provid\u00eancias. Bras\u00edlia: Presid\u00eancia
-      da Rep\u00fablica, [1990]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/Leis\/L8078.htm
-      Acesso em: 04 mar. 2022."},{"key":"963829","unstructured":"BRASIL. Lei n\u00ba
-      8.666, de 21 de junho de 1993. Regulamenta o art. 37, inciso XXI, da Constitui\u00e7\u00e3o
-      Federal, institui normas para licita\u00e7\u00f5es e contratos da Administra\u00e7\u00e3o
-      P\u00fablica e d\u00e1 outras provid\u00eancias. Bras\u00edlia: Presid\u00eancia
-      da Rep\u00fablica, [2021]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/leis\/l8666cons.htm
-      Acesso em: 04 mar. 2022."},{"key":"963830","unstructured":"BRASIL. Lei n\u00ba
-      8.987, de 13 de fevereiro de 1995. Disp\u00f5e sobre o regime de concess\u00e3o
-      e permiss\u00e3o da presta\u00e7\u00e3o de servi\u00e7os p\u00fablicos previsto
-      no art. 175 da Constitui\u00e7\u00e3o Federal, e d\u00e1 outras provid\u00eancias.
-      Bras\u00edlia: Presid\u00eancia da Rep\u00fablica, [1995]. Dispon\u00edvel em:
-      http:\/\/planalto.gov.br\/ccivil_03\/leis\/l8987cons.htm Acesso em: 04 mar.
-      2022."},{"key":"963831","unstructured":"BRASIL. Lei n\u00ba 10.973, de 02 de
-      dezembro de 2004. Disp\u00f5e sobre incentivos \u00e0 inova\u00e7\u00e3o e \u00e0
-      pesquisa cient\u00edfica e tecnol\u00f3gica no ambiente produtivo e d\u00e1
-      outras provid\u00eancias. Bras\u00edlia: Presid\u00eancia da Rep\u00fablica,
-      [2004]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2004-2006\/2004\/lei\/l10.973.htm
-      Acesso em: 04 mar. 2022."},{"key":"963832","unstructured":"BRASIL. Lei n\u00ba
-      12.965, de 23 de abril de 2014. Estabelece princ\u00edpios, garantias, direitos
-      e deveres para o uso da Internet no Brasil. Bras\u00edlia, Presid\u00eancia
-      da Rep\u00fablica, [2014]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2011-2014\/2014\/lei\/l12965.htm
-      Acesso em: 04 mar. 2022."},{"key":"963833","unstructured":"BRASIL. Lei n\u00ba
-      13.243, de 11 de janeiro de 2016. Disp\u00f5e sobre est\u00edmulos ao desenvolvimento
-      cient\u00edfico, \u00e0 pesquisa, \u00e0 capacita\u00e7\u00e3o cient\u00edfica
-      e tecnol\u00f3gica e \u00e0 inova\u00e7\u00e3o e altera a Lei n\u00ba 10.973,
-      de 2 de dezembro de 2004, a Lei n\u00ba 6.815, de 19 de agosto de 1980, a Lei
-      n\u00ba 8.666, de 21 de junho de 1993, a Lei n\u00ba 12.462, de 4 de agosto
-      de 2011, a Lei n\u00ba 8.745, de 9 de dezembro de 1993, a Lei n\u00ba 8.958,
-      de 20 de dezembro de 1994, a Lei n\u00ba 8.010, de 29 de mar\u00e7o de 1990,
-      a Lei n\u00ba 8.032, de 12 de abril de 1990, e a Lei n\u00ba 12.772, de 28 de
-      dezembro de 2012, nos termos da Emenda Constitucional n\u00ba 85, de 26 de fevereiro
-      de 2015. Bras\u00edlia: Presid\u00eancia da Rep\u00fablica, [2016]. Dispon\u00edvel
-      em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2015-2018\/2016\/lei\/l13243.htm
-      Acesso em: 04 mar. 2022."},{"key":"963834","unstructured":"BRASIL. Lei n\u00ba
-      13.874, de 20 de setembro de 2019. Institui a Declara\u00e7\u00e3o de Direitos
-      de Liberdade Econ\u00f4mica; estabelece garantias de livre mercado; altera as
-      Leis nos 10.406, de 10 de janeiro de 2002 (C\u00f3digo Civil), 6.404, de 15
-      de dezembro de 1976, 11.598, de 3 de dezembro de 2007, 12.682, de 9 de julho
-      de 2012, 6.015, de 31 de dezembro de 1973, 10.522, de 19 de julho de 2002, 8.934,
-      de 18 de novembro 1994, o Decreto-Lei n\u00ba 9.760, de 5 de setembro de 1946
-      e a Consolida\u00e7\u00e3o das Leis do Trabalho, aprovada pelo Decreto-Lei n\u00ba
-      5.452, de 1\u00ba de maio de 1943; revoga a Lei Delegada n\u00ba 4, de 26 de
-      setembro de 1962, a Lei n\u00ba 11.887, de 24 de dezembro de 2008, e dispositivos
-      do Decreto-Lei n\u00ba 73, de 21 de novembro de 1966; e d\u00e1 outras provid\u00eancias.
-      Bras\u00edlia: Presid\u00eancia da Rep\u00fablica, [2019]. Dispon\u00edvel em:
-      http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2019\/lei\/L13874.htm Acesso
-      em: 04 mar. 2022."},{"key":"963835","unstructured":"BRASIL. Lei n\u00ba 13.982,
-      de 02 de abril de 2020. Altera a Lei n\u00ba 8.742, de 7 de dezembro de 1993,
-      para dispor sobre par\u00e2metros adicionais de caracteriza\u00e7\u00e3o da
-      situa\u00e7\u00e3o de vulnerabilidade social para fins de elegibilidade ao benef\u00edcio
-      de presta\u00e7\u00e3o continuada (BPC), e estabelece medidas excepcionais de
-      prote\u00e7\u00e3o social a serem adotadas durante o per\u00edodo de enfrentamento
-      da emerg\u00eancia de sa\u00fade p\u00fablica de import\u00e2ncia internacional
-      decorrente do coronav\u00edrus (Covid-19) respons\u00e1vel pelo surto de 2019,
-      a que se refere a Lei n\u00ba 13.979, de 6 de fevereiro de 2020. Bras\u00edlia:
-      Presid\u00eancia da Rep\u00fablica, [2020]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2020\/lei\/l13982.htm
-      Acesso em: 04 mar. 2022."},{"key":"963836","unstructured":"BRASIL. Lei n\u00ba
-      14.133, de 01 de abril de 2021. Lei de Licita\u00e7\u00f5es e Contratos Administrativos.
-      Bras\u00edlia: Presid\u00eancia da Rep\u00fablica, [2021]. Dispon\u00edvel em:
-      http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2021\/lei\/L14133.htm Acesso
-      em: 04 mar. 2022."},{"key":"963837","unstructured":"BRASIL. Mais de 80 milh\u00f5es
-      de pessoas s\u00e3o usu\u00e1rias do gov.br. Publicado em: 06 out. 2020. Dispon\u00edvel
-      em: https:\/\/gov.br\/economia\/pt-br\/assuntos\/noticias\/2020\/outubro\/mais-de-80-milhoes-de-pessoas-sao-usuarias-do-gov.br
-      Acesso em: 04 mar. 2022."},{"key":"963838","unstructured":"BRASIL. Medida Provis\u00f3ria
-      n\u00ba 1.000, de 02 de setembro de 2020. Institui o aux\u00edlio emergencial
-      residual para enfrentamento da emerg\u00eancia de sa\u00fade p\u00fablica de
-      import\u00e2ncia internacional decorrente do coronav\u00edrus (covid-19) respons\u00e1vel
-      pelo surto de 2019, a que se refere a Lei n\u00ba 13.979, de 6 de fevereiro
-      de 2020. Bras\u00edlia: Presid\u00eancia da Rep\u00fablica, [2020]. Dispon\u00edvel
-      em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2020\/Mpv\/mpv1000.htm
-      Acesso em: 04 mar. 2022."},{"key":"963839","unstructured":"BRASIL. Medida Provis\u00f3ria
-      n\u00ba 1.039, de 18 de mar\u00e7o de 2021. Institui o Aux\u00edlio Emergencial
-      2021 para o enfrentamento da emerg\u00eancia de sa\u00fade p\u00fablica de import\u00e2ncia
-      internacional decorrente do coronav\u00edrus (covid-19). Bras\u00edlia: Presid\u00eancia
-      da Rep\u00fablica, [2020]. Dispon\u00edvel em: http:\/\/planalto.gov.br\/ccivil_03\/_ato2019-2022\/2021\/Mpv\/mpv1039.htm
-      Acesso em: 04 mar. 2022."},{"key":"963840","unstructured":"BRASIL. Monitoramento
-      revela avan\u00e7os na Estrat\u00e9gia de Governo Digital. Publicado em: 08
-      jun. 2021. Dispon\u00edvel em: https:\/\/www.gov.br\/secretariageral\/pt-br\/noticias\/2021\/junho\/monitoramento-revela-avancos-na-estrategia-de-governo-digital
-      Acesso em: 04 mar. 2022."},{"key":"963841","unstructured":"BRASIL. Reconhecimento
-      Facial pelo Aplicativo Meu gov.br \u00e9 a primeira etapa da prova de vida dos
-      aposentados. Publicado em: 09 set. 2020. Dispon\u00edvel em: https:\/\/gov.br\/governodigital\/pt-br\/noticias\/reconhecimento-facial-pelo-aplicativo-meu-gov-br-e-a-primeira-etapa-da-prova-de-vida-dos-aposentados
-      Acesso em: 04 mar. 2022."},{"key":"963842","unstructured":"BRASIL. Resolu\u00e7\u00e3o
-      da C\u00e2mara de Inova\u00e7\u00e3o n\u00ba 01, de 23 de julho de 2021. Aprova
-      a Estrat\u00e9gia Nacional de Inova\u00e7\u00e3o e os Planos de A\u00e7\u00e3o
-      para os Eixos de Fomento, Base Tecnol\u00f3gica, Cultura de Inova\u00e7\u00e3o,
-      Mercado para Produtos e Servi\u00e7os Inovadores e Sistemas Educacionais. Dispon\u00edvel
-      em: https:\/\/in.gov.br\/en\/web\/dou\/-\/resolucao-ci-n-1-de-23-de-julho-de-2021-334125807
-      Acesso em: 04 mar. 2022."},{"key":"963843","unstructured":"BRASIL. Reuni\u00e3o
-      sobre Estrat\u00e9gia de Governo Digital faz balan\u00e7o das iniciativas. Publicado
-      em: 17 dez. 2021 Dispon\u00edvel em: https:\/\/www.gov.br\/secretariageral\/pt-br\/noticias\/2021\/dezembro\/estrategia-de-governo-digital-mais-de-1-3-das-iniciativas-concluidas
-      Acesso em: 04 mar. 2022."},{"key":"963844","doi-asserted-by":"crossref","unstructured":"CALIENDO,
-      Paulo. Direitos Fundamentais, Direito Tribut\u00e1rio e An\u00e1lise Econ\u00f4mica
-      do Direito: Contribui\u00e7\u00f5es e Limites. Direitos Fundamentais & Justi\u00e7a.
-      Porto Alegre: HS Editora, v. 3, n. 7, abr.\/jun., 2009, DOI: https:\/\/doi.org\/10.30899\/dfj.v3i7.486
-      Dispon\u00edvel em: http:\/\/dfj.emnuvens.com.br\/dfj\/article\/view\/486 Acesso
-      em: 04 mar. 2022.","DOI":"10.30899\/dfj.v3i7.486"},{"key":"963845","doi-asserted-by":"crossref","unstructured":"CALIENDO,
-      Paulo; MUNIZ, Veyzon. Pol\u00edtica Fiscal e Desenvolvimento Tecnol\u00f3gico-Empresarial:
-      Uma an\u00e1lise Cr\u00edtica sobre Inova\u00e7\u00e3o e Tributa\u00e7\u00e3o.
-      Revista de Direito Brasileira, n. 4, v.8, 2014, p.179-196, DOI: http:\/\/dx.doi.org\/10.26668\/IndexLawJournals\/2358-1352\/2015.v12i5.2952
-      Dispon\u00edvel em: https:\/\/www.indexlaw.org\/index.php\/rdb\/article\/view\/2952
-      Acesso em: 04 mar. 2022.","DOI":"10.5585\/rdb.v8i4.287"},{"key":"963846","unstructured":"CASSI,
-      Guilherme Helfenberger Galino. Quarta Revolu\u00e7\u00e3o Industrial: A Influ\u00eancia
-      Da Matriz Institucional \u00c0 Promo\u00e7\u00e3o Da Inova\u00e7\u00e3o Tecnol\u00f3gica
-      No Brasil. Curitiba, 2020. 202 f. Tese (Doutorado). Programa de P\u00f3s-Gradua\u00e7\u00e3o
-      em Direito, Pontif\u00edcia Universidade Cat\u00f3lica do Paran\u00e1. Curitiba,
-      2020, Dispon\u00edvel em: https:\/\/archivum.grupomarista.org.br\/pergamumweb\/vinculos\/00008c\/00008cdc.pdf
-      Acesso em: 04 mar. 2022."},{"key":"963847","unstructured":"CAZELOTO, Edilson.
-      A Inclus\u00e3o Digital e a Reprodu\u00e7\u00e3o do Capitalismo Contempor\u00e2neo.
-      S\u00e3o Paulo, 2007. Tese (Doutorado em Comunica\u00e7\u00e3o). Programa de
-      Estudos P\u00f3s-Graduados em Comunica\u00e7\u00e3o e Semi\u00f3tica. Pontif\u00edcia
-      Universidade Cat\u00f3lica de S\u00e3o Paulo. Dispon\u00edvel em: https:\/\/tede2.pucsp.br\/handle\/handle\/4980
-      Acesso em: 04 mar. 2022."},{"key":"963848","unstructured":"CETIC.BR Pr\u00e1ticas
-      digitais m\u00f3veis das pessoas idosas no Brasil: dados e reflex\u00f5es, n.1,
-      2019. Dispon\u00edvel em: https:\/\/cetic.br\/media\/docs\/publicacoes\/1\/panorama_estendido_mar_2019_online.pdf
-      Acesso em: 04 mar. 2022."},{"key":"963849","unstructured":"CETIC.BR. Pesquisa
-      sobre Centros P\u00fablicos de Acesso \u00e0 Internet no Brasil 2019. S\u00e3o
-      Paulo: CGI.BR, 2020. Dispon\u00edvel em: https:\/\/cetic.br\/media\/docs\/publicacoes\/2\/20200707095230\/tic_centros_publicos_de_acesso_2019_livro_eletronico.pdf
-      Acesso em: 04 mar. 2022."},{"key":"963850","unstructured":"CETIC.BR TIC DOMIC\u00cdLIOS
-      2021. Dispon\u00edvel em: https:\/\/cetic.br\/media\/docs\/publicacoes\/2\/20221121125504\/tic_domicilios_2021_livro_eletronico.pdf
-      Acesso em: 24 jan 2023."},{"key":"963851","unstructured":"CHRISTENSEN, Clayton.
-      BAUMANN, Heiner. RUGGLES, Rudy. SADTER, Thomas. Disruptive Innovation for Social
-      Change. Harvard Business Review, dez, 2006. Dispon\u00edvel em: https:\/\/hbr.org\/2006\/12\/disruptive-innovation-for-social-change
-      Acesso em: 04 mar. 2022."},{"key":"963852","unstructured":"COELHO, F\u00e1bio
-      Ulhoa. Princ\u00edpios Constitucionais na Interpreta\u00e7\u00e3o das Normas
-      de Direito Comercial. In: SALOM\u00c3O, Luis Felipe; CUEVA, Ricardo Villas Boas;
-      FRAZ\u00c3O, Ana. Lei de Liberdade Econ\u00f4mica e seus Impactos no Direito
-      Brasileiro. S\u00e3o Paulo: Thompson Reuters Brasil, 2020."},{"key":"963853","doi-asserted-by":"crossref","unstructured":"COIMBRA,
-      Elisa Mara. FERES, Marcos Vin\u00edcio Chein. SANT\u2019ANNA, Leonardo da Silva.
-      A Inova\u00e7\u00e3o no Brasil: A An\u00e1lise Documental do Decreto n\u00ba
-      61.056\/1967. Revista Eletr\u00f4nica do Curso de Direito da UFSM, v. 15, n.
-      3, 2020, DOI: https:\/\/doi.org\/10.5902\/1981369437818 Dispon\u00edvel em:
-      https:\/\/periodicos.ufsm.br\/revistadireito\/article\/view\/37818 Acesso em:
-      04 mar. 2022.","DOI":"10.5902\/1981369437818"},{"key":"963854","unstructured":"CURITIBA.
-      Cidad\u00e3os Encaminham 5.485 Sugest\u00f5es para Proposta de Lei Or\u00e7ament\u00e1ria.
-      Publicado em: 29 jul. 2014. Dispon\u00edvel em: https:\/\/curitiba.pr.gov.br\/noticias\/cidadaos-encaminham-5485-sugestoes-para-proposta-da-lei-orcamentaria\/33654
-      Acesso em: 04 mar. 2022."},{"key":"963855","unstructured":"DI PIETRO, Maria
-      Sylvia Zanella. Direito Administrativo. 34. ed. Rio de Janeiro: Forense, 2021."},{"key":"963856","unstructured":"DIB,
-      Nat\u00e1lia Brasil. A Natureza Jur\u00eddica do Desenvolvimento na Constitui\u00e7\u00e3o:
-      defini\u00e7\u00f5es e classifica\u00e7\u00e3o normativa. Tese (doutorado).
-      Programa de P\u00f3s-Gradua\u00e7\u00e3o em Direito. Pontif\u00edcia Universidade
-      Cat\u00f3lica do Paran\u00e1, Curitiba, 2021."},{"key":"963857","doi-asserted-by":"crossref","unstructured":"FARRANHA,
-      Ana Cl\u00e1udia. SANTOS, Leonardo Tadeu dos. Administra\u00e7\u00e3o P\u00fablica,
-      Direito e Redes Sociais: o caso da CGU no Facebook. Revista Eletr\u00f4nica
-      do Curso de Direito da UFSM, v. 10, n. 2, 2015, DOI: https:\/\/doi.org\/10.5902\/1981369419768
-      Dispon\u00edvel em: https:\/\/periodicos.ufsm.br\/index.php\/revistadireito\/article\/view\/19768
-      Acesso em: 04 mar. 2022.","DOI":"10.5902\/1981369419768"},{"key":"963858","unstructured":"FGV
-      EAESP. Exclus\u00e3o digital afetou acesso ao aux\u00edlio emergencial durante
-      a pandemia, especialmente para as classes D e E. Dispon\u00edvel em: https:\/\/impacto.blog.br\/administracao-publica\/exclusao-digital-afetou-acesso-ao-auxilio-emergencial-durante-a-pandemia-especialmente-para-as-classes-d-e-e\/
-      Acesso em: 04 mar. 2022."},{"key":"963859","unstructured":"FONSECA, Renato.
-      Inova\u00e7\u00e3o tecnol\u00f3gica e o papel do governo. Parcerias Estrat\u00e9gicas,
-      v. 6, n. 13, 2001. Dispon\u00edvel em: http:\/\/seer.cgee.org.br\/index.php\/parcerias_estrategicas\/article\/view\/195
-      Acesso em: 04 mar. 2022."},{"key":"963860","unstructured":"FRIEDMANN, Milton.
-      Capitalismo e Liberdade. Tradu\u00e7\u00e3o Afonso Celso da Cunha Serra. Rio
-      de Janeiro: LTC, 2014."},{"key":"963861","doi-asserted-by":"crossref","unstructured":"FRIEDRICH,
-      Denise Bittencourt; PHILIPPI, Juliana Horn Machado. Inclus\u00e3o digital e
-      blockchain como instrumentos para o desenvolvimento econ\u00f4mico. International
-      Journal of Digital Law, Belo Horizonte, ano 1, n. 1, jan.\/abr., 2020, DOI:
-      https:\/\/doi.org\/10.47975\/IJDL\/1friedrich Dispon\u00edvel em: https:\/\/journal.nuped.com.br\/index.php\/revista\/article\/view\/friedrichv1n1
-      Acesso em: 04 mar. 2022.","DOI":"10.47975\/digital.law.vol.1.n.1.p.96-115"},{"key":"963862","doi-asserted-by":"crossref","unstructured":"GON\u00c7ALVES,
-      Oksandro Osdival; LUCIANI, Danna Catharina Mascarello. Servi\u00e7os p\u00fablicos
-      digitais de seguridade social na pandemia de COVID-19: efici\u00eancia e inclus\u00e3o.
-      Revista Eurolatinoamericana de Derecho Administrativo, Santa Fe, v. 7, n. 2,
-      jul.\/dez., 2020, DOI: https:\/\/doi.org\/10.14409\/redoeda.v7i2.9549 Dispon\u00edvel
-      em: https:\/\/bibliotecavirtual.unl.edu.ar\/publicaciones\/index.php\/Redoeda\/article\/view\/9549
-      Acesso em: 04 mar. 2022.","DOI":"10.14409\/redoeda.v7i2.9549"},{"key":"963863","unstructured":"GON\u00c7ALVES,
-      Oksandro. A Ordem Econ\u00f4mica no Estado Democr\u00e1tico de Direito e a Teoria
-      de Martha Nussbaum: Entre o Crescimento Econ\u00f4mico e o Desenvolvimento Humano.
-      Revista Jur\u00eddica Luso-Brasileira, ano 4, n. 5, 2018, Dispon\u00edvel em:
-      http:\/\/cidp.pt\/revistas\/rjlb\/2018\/5\/2018_05_0211_0232.pdf Acesso em:
-      04 mar. 2022."},{"key":"963864","unstructured":"HAYEK, Friedrich. O Caminho
-      da Servid\u00e3o. Tradu\u00e7\u00e3o de Anna Maria Capovilla, Jos\u00e9 Italo
-      Stelle e Liane de Morais Ribeiro para o Instituto Liberal. 6 ed. S\u00e3o Paulo:
-      Instituto Ludwing Von Mises Brasil, 2010."},{"key":"963865","unstructured":"INSTITUTO
-      BRASILEIRO DE GEOGRAFIA E ESTAT\u00cdSTICA. Secretaria Especial de Articula\u00e7\u00e3o
-      Social. ODS Brasil. Objetivos do Desenvolvimento Sustent\u00e1vel. Indicador
-      9.5.1. Dispon\u00edvel em: https:\/\/odsbrasil.gov.br\/objetivo9\/indicador951
-      Acesso em: 04 mar. 2022."},{"key":"963866","doi-asserted-by":"crossref","unstructured":"ICAZA-\u00c1LVAREZ,
-      Daniel. CAMPOVERDE-JIM\u00c9NEZ, Gerardo. ARIAS-REYES, Pablo. VERDUGO-ORMAZA,
-      Diego. El analfabetismo tecnol\u00f3gico o digital. Polo del Conocimiento, v.
-      4, n. 2, 2019, DOI: http:\/\/dx.doi.org\/10.23857\/pc.v4i2.922 Dispon\u00edvel
-      em: https:\/\/dialnet.unirioja.es\/servlet\/articulo?codigo=7164297 Acesso em:
-      04 mar. 2022.","DOI":"10.23857\/pc.v4i2.922"},{"key":"963867","doi-asserted-by":"crossref","unstructured":"KALIL,
-      Gilberto Alexandre de Abreu. GON\u00c7ALVES, Oksandro Osdival. Incentivos Fiscais
-      \u00e0 Inova\u00e7\u00e3o Tecnol\u00f3gica como Est\u00edmulo ao Desenvolvimento
-      Econ\u00f4mico: o caso das Start-ups. Revista Jur\u00eddica da Presid\u00eancia.
-      Bras\u00edlia, v. 17, n. 112, out.2015\/jan.2016, DOI: http:\/\/dx.doi.org\/10.20499\/2236-3645.RJP2016v17e113-1170
-      Dispon\u00edvel em: https:\/\/revistajuridica.presidencia.gov.br\/index.php\/saj\/article\/view\/1170
-      Acesso em: 04 mar. 2022.","DOI":"10.20499\/2236-3645.RJP2016v17e113-1170"},{"key":"963868","unstructured":"LUCIANI,
-      Danna Catharina Mascarello. Economia de plataforma e liberdade econ\u00f4mica
-      no Brasil: considera\u00e7\u00f5es a partir da an\u00e1lise econ\u00f4mica do
-      direito. 123 f. Disserta\u00e7\u00e3o (Mestrado) - Pontif\u00edcia Universidade
-      Cat\u00f3lica do Paran\u00e1, Curitiba, 2021. Dispon\u00edvel em: https:\/\/www.biblioteca.pucpr.br\/pergamum\/biblioteca\/index.php?codAcervo=357775&_ga=2.26727540.877469077.1644924064-288780520.1621251759
-      Acesso em: 04 mar. 2022."},{"key":"963869","doi-asserted-by":"crossref","unstructured":"MACIEL,
-      Igor Barbosa Beserra Gon\u00e7alves. Blockchain e Democracia: a nova tecnologia
-      a servi\u00e7o da cidadania. Revista de Direito, Governan\u00e7a e Novas Tecnologias.
-      Bel\u00e9m, v. 5, n. 2, jul.\/dez., 2019, DOI: https:\/\/doi.org\/10.26668\/IndexLawJournals\/2526-0049\/2019.v5i2.5786
-      Dispon\u00edvel em: https:\/\/indexlaw.org\/index.php\/revistadgnt\/article\/view\/5786
-      Acesso em: 04 mar. 2022.","DOI":"10.26668\/IndexLawJournals\/2526-0049\/2019.v5i2.5786"},{"key":"963870","unstructured":"MEIRELLES,
-      Hely Lopes. Direito Administrativo Brasileiro. S\u00e3o Paulo: Malheiros, 2003."},{"key":"963871","unstructured":"NORTH,
-      Douglass. Institui\u00e7\u00f5es, Mudan\u00e7a Institucional e Desempenho Econ\u00f4mico.
-      Tradu\u00e7\u00e3o de Alexandre Morales. S\u00e3o Paulo: Nova Estrela, 2018."},{"key":"963872","doi-asserted-by":"crossref","unstructured":"NUSSBAUM,
-      Martha. Creating Capabilities: the human development approach. Cambridge: Belknap,
-      2011.","DOI":"10.4159\/harvard.9780674061200"},{"key":"963873","unstructured":"ORGANIZA\u00c7\u00c3O
-      DAS NA\u00c7\u00d5ES UNIDAS. Declara\u00e7\u00e3o sobre o Direito ao Desenvolvimento.
-      Dispon\u00edvel em: http:\/\/direitoshumanos.usp.br\/index.php\/Direito-ao-Desenvolvimento\/declaracao-sobre-o-direito-ao-desenvolvimento.html
-      Acesso em: 04 mar. 2022."},{"key":"963874","unstructured":"ORGANIZA\u00c7\u00c3O
-      DAS NA\u00c7\u00d5ES UNIDAS. E-Government Survey 2020. Dispon\u00edvel em: https:\/\/publicadministration.un.org\/egovkb\/Portals\/egovkb\/Documents\/un\/2020-Survey\/2020%20UN%20E-Government%20Survey%20(Full%20Report).pdf
-      Acesso em: 04 mar. 2022."},{"key":"963875","unstructured":"ORGANIZA\u00c7\u00c3O
-      DAS NA\u00c7\u00d5ES UNIDAS. Plataforma Agenda 2030: Acelerando as transforma\u00e7\u00f5es
-      para a agenda 2030 no Brasil. Dispon\u00edvel em: http:\/\/agenda2030.com.br
-      Acesso em: 04 mar. 2022."},{"key":"963876","unstructured":"ORGANIZA\u00c7\u00c3O
-      DAS NA\u00c7\u00d5ES UNIDAS. World Social Report 2020. Dispon\u00edvel em: https:\/\/www.un.org\/development\/desa\/dspd\/wp-content\/uploads\/sites\/22\/2020\/01\/World-Social-Report-2020-FullReport.pdf
-      Acesso em: 04 mar. 2022."},{"key":"963877","unstructured":"PRESKY, Marc. Digital
-      natives, digital immigrants. On the Horizon, v. 9, n. 5, 2001. Dispon\u00edvel
-      em: https:\/\/marcprensky.com\/writing\/Prensky%20-%20Digital%20Natives,%20Digital%20Immigrants%20-%20Part1.pdf
-      Acesso em: 04 mar. 2022."},{"key":"963878","unstructured":"SCHUMPETER, Joseph
-      A. A teoria do desenvolvimento econ\u00f4mico: uma investiga\u00e7\u00e3o sobre
-      lucros, capital, cr\u00e9dito, juro e o ciclo econ\u00f4mico. Tradu\u00e7\u00e3o
-      de Maria Possas. S\u00e3o Paulo: Nova Cultural, 1997."},{"key":"963879","unstructured":"SCHWAB,
-      Klaus. A Quarta Revolu\u00e7\u00e3o Industrial. Tradu\u00e7\u00e3o de Daniel
-      Moreira Miranda. S\u00e3o Paulo: Edipro, 2016."},{"key":"963880","unstructured":"SEN,
-      Amartya. Development As Freedom. New York: Alfred A. Knopf, 1999."},{"key":"963881","unstructured":"SILVEIRA,
-      S\u00e9rgio Amadeu da. Inclus\u00e3o digital, software livre e globaliza\u00e7\u00e3o
-      contra-hegem\u00f4nica. In: Semin\u00e1rios Tem\u00e1ticos para a 3\u00aa Confer\u00eancia
-      Nacional de Ci\u00eancia, Tecnologia e Inova\u00e7\u00e3o. Bras\u00edlia: Centro
-      de Gest\u00e3o e Estudos Estrat\u00e9gicos; Minist\u00e9rio da Ci\u00eancia
-      e Tecnologia, 2005, Dispon\u00edvel em: https:\/\/portal.tcu.gov.br\/biblioteca-digital\/seminarios-tematicos-para-a-3-conferencia-nacional-de-ciencia-tecnologia-e-inovacao-parte-1.htm
-      Acesso em: 04 mar. 2022."},{"key":"963882","unstructured":"TRINDADE, Manoel
-      Gustavo Neubarth. Economia de Plataforma (ou Tend\u00eancia \u00e0 Bursatiliza\u00e7\u00e3o
-      dos Mercados): Pondera\u00e7\u00f5es Conceituais Distintivas em Rela\u00e7\u00e3o
-      \u00e0 Economia Compartilhada e \u00e0 Economia Colaborativa e Uma Abordagem
-      de An\u00e1lise Econ\u00f4mica do Direito dos Ganhos de Efici\u00eancia Econ\u00f4mica
-      Por Meio da Redu\u00e7\u00e3o Severa de Custos de Transa\u00e7\u00e3o. Revista
-      Jur\u00eddica Luso-Brasileira, ano 6, n. 4. 2020. Dispon\u00edvel em: https:\/\/cidp.pt\/revistas\/rjlb\/2020\/4\/2020_04_1977_2013.pdf
-      Acesso em: 04 mar. 2022."},{"key":"963883","doi-asserted-by":"crossref","unstructured":"TUMELERO,
-      Na\u00edna Ariana Souza. OLSSON, Giovanni. Os limites do Discurso do Desenvolvimento
-      Econ\u00f4mico e os Direitos Fundamentais: o caso da Liberdade na P\u00f3s-Modernidade.
-      Revista Eletr\u00f4nica do Curso de Direito da UFSM, v. 11, n. 3, DOI: https:\/\/doi.org\/10.5902\/1981369422625
-      Dispon\u00edvel em: https:\/\/periodicos.ufsm.br\/revistadireito\/article\/view\/22625
-      Acesso em: 04 mar. 2022","DOI":"10.5902\/1981369422625"},{"key":"963884","unstructured":"WILLIAMSON,
-      Oliver E. The Mechanisms of Governance. New York: Oxford University Press, 1996."}],"container-title":["Revista
-      Eletr\u00f4nica do Curso de Direito da UFSM"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/download\/69673\/51695","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/download\/69673\/51695","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2023,5,5]],"date-time":"2023-05-05T21:11:34Z","timestamp":1683321094000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/view\/69673"}},"subtitle":["O
-      GOVERNO DIGITAL NA BUSCA PELO DESENVOLVIMENTO SOCIOECON\u00d4MICO"],"issued":{"date-parts":[[2022,11,30]]},"references-count":68,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2023,2,17]]}},"URL":"https:\/\/doi.org\/10.5902\/1981369469673","ISSN":["1981-3694","1981-3694"],"issn-type":[{"type":"electronic","value":"1981-3694"},{"type":"print","value":"1981-3694"}],"published":{"date-parts":[[2022,11,30]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:45:55Z","timestamp":1740174355070,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"3","license":[{"start":{"date-parts":[[2018,12,18]],"date-time":"2018-12-18T00:00:00Z","timestamp":1545091200000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["RECDUFSM"],"abstract":"<jats:p>O
-      artigo trata de apresentar em linhas gerais, o desenvolvimento do conceito de
-      direito de a\u00e7\u00e3o a partir do processo penal. Al\u00e9m de apresentar
-      alguns problemas te\u00f3ricos relativos ao direito de a\u00e7\u00e3o, o artigo
-      trata de enfrentar problemas espec\u00edficos da teoria ecl\u00e9tica da a\u00e7\u00e3o,
-      justificada pela sua posi\u00e7\u00e3o predominante no Brasil, assim como a
-      quest\u00e3o do objeto do processo, que deve necessariamente ser revista. Neste
-      ponto, a renova\u00e7\u00e3o das categorias no processo penal \u00e9 uma forma
-      indispens\u00e1vel de se implementar a democracia, atrav\u00e9s da limita\u00e7\u00e3o
-      do poder punitivo.<\/jats:p>","DOI":"10.5902\/1981369430765","type":"journal-article","created":{"date-parts":[[2018,12,18]],"date-time":"2018-12-18T10:11:54Z","timestamp":1545127914000},"page":"1016","source":"Crossref","is-referenced-by-count":0,"title":["DIREITO
-      DE A\u00c7\u00c3O NO PROCESSO PENAL: POL\u00caMICAS E HORIZONTES POSS\u00cdVEIS"],"prefix":"10.5902","volume":"13","author":[{"ORCID":"https:\/\/orcid.org\/0000-0003-0874-0583","authenticated-orcid":false,"given":"Augusto
-      Jobim do","family":"Amaral","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-1205-380X","authenticated-orcid":false,"given":"Ricardo
-      Jacobsen","family":"Gloeckner","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2018,12,18]]},"container-title":["Revista
-      Eletr\u00f4nica do Curso de Direito da UFSM"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/viewFile\/30765\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/viewFile\/30765\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2018,12,18]],"date-time":"2018-12-18T10:12:01Z","timestamp":1545127921000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/view\/30765"}},"issued":{"date-parts":[[2018,12,18]]},"references-count":0,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2018,12,18]]}},"URL":"https:\/\/doi.org\/10.5902\/1981369430765","ISSN":["1981-3694","1981-3694"],"issn-type":[{"type":"electronic","value":"1981-3694"},{"type":"print","value":"1981-3694"}],"published":{"date-parts":[[2018,12,18]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:45:57Z","timestamp":1740174357443,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"1","license":[{"start":{"date-parts":[[2021,10,7]],"date-time":"2021-10-07T00:00:00Z","timestamp":1633564800000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["RECDUFSM"],"abstract":"<jats:p>Este
-      artigo pretende reconstituir os elementos que estruturam o conte\u00fado da
-      express\u00e3o \u201cQuarta Revolu\u00e7\u00e3o Industrial\u201d, tal como adotada
-      pelo F\u00f3rum Econ\u00f4mico Mundial (FEM), e cotejar tal conte\u00fado com
-      os prop\u00f3sitos da promo\u00e7\u00e3o do Trabalho Decente, nos termos difundidos
-      pela Organiza\u00e7\u00e3o Internacional do Trabalho. Trata-se de investiga\u00e7\u00e3o
-      de cunho explorat\u00f3rio e anal\u00edtico, para qual empregaram-se a metodologia
-      dedutiva de abordagem e a metodologia bibliogr\u00e1fica de procedimento, com
-      \u00eanfase no exame de documentos oficias (estudos e relat\u00f3rios) do FEM,
-      editados entre 2014 e 2019 e cujo teor aborde mais diretamente os impactos da
-      Quarta Revolu\u00e7\u00e3o Industrial no mundo do trabalho, sobretudo nas dimens\u00f5es
-      estrat\u00e9gicas de promo\u00e7\u00e3o do Trabalho Decente preceituadas pela
-      OIT. Ao final, conclui-se do quanto consta dos documentos examinados que, a
-      despeito das aproxima\u00e7\u00f5es aparentemente cogit\u00e1veis entre os objetivos
-      estrat\u00e9gicos da promo\u00e7\u00e3o do Trabalho Decente e o tratamento dos
-      impactos da Quarta Revolu\u00e7\u00e3o Industrial no mundo do trabalho, tal
-      se estabelece como artif\u00edcio ret\u00f3rico, destitu\u00eddo de aptid\u00e3o
-      para atacar o \u00e2mago da intensifica\u00e7\u00e3o da explora\u00e7\u00e3o
-      da for\u00e7a de trabalho e da desigualdade social, agudizadas pelo avan\u00e7o
-      tecnol\u00f3gico sobre as formas de labor.<\/jats:p>","DOI":"10.5902\/1981369455258","type":"journal-article","created":{"date-parts":[[2021,10,8]],"date-time":"2021-10-08T15:47:12Z","timestamp":1633708032000},"source":"Crossref","is-referenced-by-count":0,"title":["PERCEPTIONS
-      OF THE WORLD ECONOMIC FORUM ON LABOR IN THE FOURTH INDUSTRIAL REVOLUTION AND
-      REFLECTIONS FROM THE PERSPECTIVE OF DECENT WORK"],"prefix":"10.5902","volume":"16","author":[{"ORCID":"https:\/\/orcid.org\/0000-0002-3940-5983","authenticated-orcid":false,"given":"Silvio","family":"Beltramelli
-      Neto","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-1058-5191","authenticated-orcid":false,"given":"Leandro
-      Faria","family":"Costa","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2021,10,7]]},"container-title":["Revista
-      Eletr\u00f4nica do Curso de Direito da UFSM"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/viewFile\/55258\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/viewFile\/55258\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,10,8]],"date-time":"2021-10-08T15:47:19Z","timestamp":1633708039000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/revistadireito\/article\/view\/e55258"}},"issued":{"date-parts":[[2021,10,7]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2021,8,24]]}},"URL":"https:\/\/doi.org\/10.5902\/1981369455258","ISSN":["1981-3694","1981-3694"],"issn-type":[{"type":"electronic","value":"1981-3694"},{"type":"print","value":"1981-3694"}],"published":{"date-parts":[[2021,10,7]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T22:11:50Z","timestamp":1740175910568,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"10","license":[{"start":{"date-parts":[[2019,2,12]],"date-time":"2019-02-12T00:00:00Z","timestamp":1549929600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["RGC"],"abstract":"<jats:p>Este
-      artigo tem como objetivo identificar caracter\u00edsticas empreendedoras nos
-      gestores de cooperativas com sede na regi\u00e3o central do Rio Grande do Sul.
-      Considerando a relev\u00e2ncia das cooperativas para a economia brasileira,
-      buscamos a rela\u00e7\u00e3o do empreendedorismo com as cooperativas, por meio
-      da an\u00e1lise das caracter\u00edsticas de seus gestores. Assim, apresentam-se
-      o conceito de empreendedorismo e tamb\u00e9m a descri\u00e7\u00e3o das principais
-      caracter\u00edsticas empreendedoras de acordo com Filion (1999). Busca-se de
-      forma clara e objetiva, expor como aconteceu o desenvolvimento da atividade
-      empreendedora no mundo, e mais especificamente como se difundiu no Brasil. As
-      principais \u00e1reas do conhecimento do empreendedorismo, as fun\u00e7\u00f5es
-      do empreendedor, a import\u00e2ncia do plano de neg\u00f3cios e os tipos de
-      empreendedorismo tamb\u00e9m s\u00e3o abordados. A evolu\u00e7\u00e3o hist\u00f3rica
-      do cooperativismo \u00e9 mostrada, por\u00e9m de forma sint\u00e9tica. Um question\u00e1rio
-      foi aplicado aos gestores de cooperativas para a coleta de dados. O tratamento
-      dos dados foi realizado por meio de uma an\u00e1lise descritiva. O tema abordado
-      tem como base, publica\u00e7\u00f5es do autor Louis Jacques Filion. Como resultado,
-      verificou-se que os gestores das cooperativas analisadas, possuem caracter\u00edsticas
-      empreendedoras, sendo a lideran\u00e7a, a criatividade e a inova\u00e7\u00e3o
-      as mais encontradas.<\/jats:p>","DOI":"10.5902\/2359043229913","type":"journal-article","created":{"date-parts":[[2019,6,10]],"date-time":"2019-06-10T09:12:12Z","timestamp":1560157932000},"page":"139","source":"Crossref","is-referenced-by-count":0,"title":["Caracter\u00edsticas
-      empreendedoras em gestores de cooperativas: um estudo em cooperativas na Regi\u00e3o
-      Central do RS"],"prefix":"10.5902","volume":"5","author":[{"given":"V\u00e2nia
-      Maria","family":"Brum","sequence":"first","affiliation":[]},{"given":"Jaime
-      Peixoto","family":"Stecca","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0003-0027-3220","authenticated-orcid":false,"given":"Marcia
-      Helena Dos Santos","family":"Bento","sequence":"additional","affiliation":[]},{"given":"Fabiana
-      Let\u00edcia Pereira Alves","family":"Stecca","sequence":"additional","affiliation":[]},{"given":"Gustavo
-      Fontinelli","family":"Ross\u00e9s","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2019,2,12]]},"container-title":["Revista
-      de Gest\u00e3o e Organiza\u00e7\u00f5es Cooperativas"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/rgc\/article\/viewFile\/29913\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/rgc\/article\/viewFile\/29913\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,6,10]],"date-time":"2019-06-10T09:12:20Z","timestamp":1560157940000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/rgc\/article\/view\/29913"}},"issued":{"date-parts":[[2019,2,12]]},"references-count":0,"journal-issue":{"issue":"10","published-online":{"date-parts":[[2019,2,12]]}},"URL":"https:\/\/doi.org\/10.5902\/2359043229913","ISSN":["2359-0432","2446-7103"],"issn-type":[{"type":"electronic","value":"2359-0432"},{"type":"print","value":"2446-7103"}],"published":{"date-parts":[[2019,2,12]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T20:47:56Z","timestamp":1740170876760,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","license":[{"start":{"date-parts":[[2019,6,27]],"date-time":"2019-06-27T00:00:00Z","timestamp":1561593600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["REGET"],"abstract":"<jats:p>With
-      the emergence of excessive flooding in the urban environment, the need for unconventional
-      drainage control measures within the limitations of conventional solutions becomes
-      evident. In the present study, infiltration trenches and reservoirs that collect
-      and reserve rainwater were designed as control devices, attenuating the socio-environmental
-      impacts caused by waterproofing of urban areas in the hydrological cycle and
-      in the behavior of the hydrographic basins in question. The measurements were
-      made for two flooding points found in the city of Carazinho \u2013 RS, located
-      on Marqu\u00eas do Pombal Street and S\u00e3o Bento Avenue, due to the obstruction
-      of gutters and street inlets, paving and waterproofing of the ground due to
-      urbanization, lack of maintenance and cleaning of the micro drainage system
-      along with the inability of the system to collect all the volume of water from
-      the runoff. The reductions in flow rate in these areas through the use of trenches
-      were 16% and 15% for the first and second flooding point, respectively, while
-      the use of the delay reservoirs together with the infiltration trenches resulted
-      in a 29% reduction in the first flooding point and 27.5% in the second flooding
-      point. Therefore, it is evident that the use of unconventional control measures
-      is vital to the reduction of the peaks of the flow rate and control of the surface
-      runoff.<\/jats:p>","DOI":"10.5902\/2236117038528","type":"journal-article","created":{"date-parts":[[2019,7,3]],"date-time":"2019-07-03T08:36:55Z","timestamp":1562143015000},"page":"6","source":"Crossref","is-referenced-by-count":1,"title":["Contributions
-      to reduce the flood problems in critical points of the micro drainage system
-      in the city of Carazinho"],"prefix":"10.5902","volume":"23","author":[{"ORCID":"https:\/\/orcid.org\/0000-0002-8197-7862","authenticated-orcid":false,"given":"Carolina
-      Pasquetti","family":"Koppe","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-6910-7629","authenticated-orcid":false,"given":"Vin\u00edcius","family":"Scortegagna","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-9435-1113","authenticated-orcid":false,"given":"Virg\u00ednia","family":"Meneguzzi","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0003-4903-6103","authenticated-orcid":false,"given":"Anelise
-      Sertoli Lopes","family":"Gil","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-2876-4243","authenticated-orcid":false,"given":"Matheus
-      De Conto","family":"Ferreira","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-8880-3788","authenticated-orcid":false,"given":"Simone","family":"Fiori","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-5947-7693","authenticated-orcid":false,"given":"Vera
-      Maria Cartana","family":"Fernandes","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2019,6,27]]},"container-title":["Revista
-      Eletr\u00f4nica em Gest\u00e3o, Educa\u00e7\u00e3o e Tecnologia Ambiental"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/reget\/article\/viewFile\/38528\/html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/reget\/article\/viewFile\/38528\/html","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,7,3]],"date-time":"2019-07-03T17:29:03Z","timestamp":1562174943000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/reget\/article\/view\/38528"}},"issued":{"date-parts":[[2019,6,27]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2236117038528","ISSN":["2236-1170","2236-1170"],"issn-type":[{"type":"electronic","value":"2236-1170"},{"type":"print","value":"2236-1170"}],"published":{"date-parts":[[2019,6,27]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:19:23Z","timestamp":1740172763546,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","license":[{"start":{"date-parts":[[2020,12,30]],"date-time":"2020-12-30T00:00:00Z","timestamp":1609286400000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CeN"],"abstract":"<jats:p>Knowledge
-      about the groundwater potential is an important tool to sustainably manage groundwater
-      exploitation. In this context, based on the Geographic Information Systems (GIS)
-      and multicriteria analysis by the Analytic Hierarchy Process (AHP), this study
-      had the objective of mapping the groundwater potential of the district of Itabira,
-      Minas Gerais, which is one of the largest mining regions in Brazil. The evaluation
-      of the regional groundwater potential was based on thematic maps of land use
-      and cover, soil, geology, slope, lineament density, and drainage density. From
-      the evaluation of these parameters and their classes, weights were assigned
-      by the AHP method, according to the influence of each one with regard to favoring
-      water infiltration and aquifer recharge. The thematic maps were integrated in
-      a GIS environment, generating a groundwater map of the district divided into
-      five classes of groundwater potential (very low, low, moderate, high, and very
-      high). In about 64% of the territory the potential for groundwater occurrence
-      was very low to low and from moderate to very high in about 36%. The groundwater
-      potential map showed that 64.42% of the district of Itabira has very low to
-      low potential indices, mainly due to a number of regional characteristics that
-      make aquifer infiltration and recharge difficult and occur in large areas of
-      the territory.<\/jats:p>","DOI":"10.5902\/2179460x40433","type":"journal-article","created":{"date-parts":[[2021,2,10]],"date-time":"2021-02-10T08:06:07Z","timestamp":1612944367000},"page":"e84","source":"Crossref","is-referenced-by-count":0,"title":["Evaluation
-      of the groundwater recharge potential using GIS multi-criteria data analysis:
-      a case study from district of Itabira, Minas Gerais, southeastern Brazil"],"prefix":"10.5902","volume":"42","author":[{"ORCID":"https:\/\/orcid.org\/0000-0003-1659-0896","authenticated-orcid":false,"given":"Jos\u00e9
-      Augusto Costa","family":"Gon\u00e7alves","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-5473-1923","authenticated-orcid":false,"given":"Pedro
-      Henrique Rodrigues","family":"Pereira","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0003-1749-6105","authenticated-orcid":false,"given":"Eliane
-      Maria","family":"Vieira","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2020,12,30]]},"container-title":["Ci\u00eancia
-      e Natura"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/40433\/html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/40433\/html","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,9]],"date-time":"2021-06-09T03:29:00Z","timestamp":1623209340000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/view\/40433"}},"issued":{"date-parts":[[2020,12,30]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2179460x40433","ISSN":["2179-460X","0100-8307"],"issn-type":[{"type":"electronic","value":"2179-460X"},{"type":"print","value":"0100-8307"}],"published":{"date-parts":[[2020,12,30]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:19:25Z","timestamp":1740172765401,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CeN"],"abstract":"<jats:p>http:\/\/dx.doi.org\/10.5902\/2179460X14620The
-      main goal this paper is to be a brief introduction to the Group Theory. To begin
-      the study, the concept of permutation was introduced and defined as a bijective
-      function from a group on itself. After that, the concepts of group and subrgroup
-      were exhibited and discussed, as well as their basic properties. Using the concepts
-      discussed so far, the symmetry groups for the equilateral triangle and for the
-      square were presented in order to compare this particular groups with the permutation
-      groups. In the last section of this paper, we sugest a guide to apply the concept
-      discussed here on a High School class.<\/jats:p>","DOI":"10.5902\/2179460x14620","type":"journal-article","created":{"date-parts":[[2017,3,21]],"date-time":"2017-03-21T20:59:13Z","timestamp":1490129953000},"page":"289","source":"Crossref","is-referenced-by-count":1,"title":["PERMUTA\u00c7\u00d5ES,
-      GRUPOS E SIMETRIAS"],"prefix":"10.5902","volume":"37","author":[{"given":"Rodrigo
-      Luiz de","family":"Souza","sequence":"first","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2015,8,7]]},"container-title":["Ci\u00eancia
-      e Natura"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/14620\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/14620\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,21]],"date-time":"2017-03-21T21:00:02Z","timestamp":1490130002000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/view\/14620"}},"issued":{"date-parts":[[2015,8,7]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2179460x14620","ISSN":["2179-460X","0100-8307"],"issn-type":[{"type":"electronic","value":"2179-460X"},{"type":"print","value":"0100-8307"}],"published":{"date-parts":[[2015,8,7]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:19:30Z","timestamp":1740172770483,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CeN"],"abstract":"<jats:p>The
-      objective of this study was to assess the health and environmental profile milk
-      from a local dairy farm by applying inoculum in different environments. The
-      inoculum used was diluted with water and then sprinkled on the surface of predetermined
-      sites for characterization. Five swab samples from the ground were collected
-      at random from the room or environment. Populations of the total and fecal coliforms,
-      Salmonella spp., Staphylococcus coagulase positive and sulfite reducing Clostridium
-      were set as indicators of hygiene and sanitary conditions. Milk samples were
-      also collected from the cooling tank. Somatic cell counts (SCC) and different
-      physicochemical parameters were determined, we used the methods set by ANVISA.
-      A statistically significant reduction of SCC (P &lt; 0.05) was observed from
-      2.8 to 2.0 log SSC.mL\u20131, significant interactions were considered when
-      the probability was lower than 5%. The inoculum also showed a highly significant
-      effect on pathogen populations, especially on Salmonella spp. and sulfite reducing
-      Clostridium, while a lower reduction on the other two pathogens. In this way,
-      the inoculum was effective in reducing pathogen populations, improved the sanitary
-      quality,thus it might be used as a prevention tool for the diseases with environmental
-      origin in dairy farms.<\/jats:p>","DOI":"10.5902\/2179460x29203","type":"journal-article","created":{"date-parts":[[2018,4,11]],"date-time":"2018-04-11T23:57:38Z","timestamp":1523491058000},"page":"6","source":"Crossref","is-referenced-by-count":0,"title":["Microbial
-      pool for biological control of milk quality and pathogen profile of milk from
-      a dairy farm in southern Brazil"],"prefix":"10.5902","volume":"40","author":[{"ORCID":"https:\/\/orcid.org\/0000-0003-4008-8476","authenticated-orcid":false,"given":"Pamela
-      Lais Cabral","family":"Silva","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-6339-3225","authenticated-orcid":false,"given":"Thayli
-      Ramires","family":"Ara\u00fajo","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-4798-8306","authenticated-orcid":false,"given":"Lucas","family":"Guidoni","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-2827-210X","authenticated-orcid":false,"given":"Fernanda","family":"Gon\u00e7alves","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-7873-0092","authenticated-orcid":false,"given":"Roger","family":"Marques","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-6960-0854","authenticated-orcid":false,"given":"Lauren","family":"Vieira","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-1686-5282","authenticated-orcid":false,"given":"Luciara","family":"Corr\u00eaa","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-9191-0779","authenticated-orcid":false,"given":"\u00c9rico","family":"Corr\u00eaa","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2018,3,27]]},"container-title":["Ci\u00eancia
-      e Natura"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/29203\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/29203\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,1,17]],"date-time":"2019-01-17T07:29:11Z","timestamp":1547710151000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/view\/29203"}},"issued":{"date-parts":[[2018,3,27]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2179460x29203","ISSN":["2179-460X","0100-8307"],"issn-type":[{"type":"electronic","value":"2179-460X"},{"type":"print","value":"0100-8307"}],"published":{"date-parts":[[2018,3,27]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:19:30Z","timestamp":1740172770510,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CeN"],"abstract":"<jats:p>Solid
-      wastes from furniture industries require proper disposal and may have potential
-      to be used as input in other production chains. The aim of the current study
-      is to assess the use of medium density fiberboard (MDF) to produce bio-oil and
-      carbon black with low emission of toxic elements. A full factorial design was
-      used to assess 27 bio-oil preparation procedures based on the acid digestion
-      of MDF shavings. The influence of three concentrated acid types (HNO3, H2SO4
-      and HCl) at three different temperatures (25, 75 and 150\u00b0C) and digestion
-      times (30, 60 and 90min) was assessed. The contents of Al, Ba, Cd, Cr, Cu, Ni
-      and Pb samples were determined through ICP OES. The Al and Ba contents oscillated
-      between 442.2 \u00b1 235.9 mg kg-1 and 17.9 \u00b1 8.6 mg kg-1, respectively.
-      The\u00a0 Cd, Cr, Ni and Pb contents were below the detection limit set by the
-      technique. The tests showed that the studied material has the potential to be
-      used as bio-oil and carbon black with low emission of metallic elements; thus,
-      it was considered a potential alternative source of biomass-generated energy
-      and, in parallel, it provides the furniture sector with an additional\u00a0
-      waste management option<\/jats:p>","DOI":"10.5902\/2179460x27304","type":"journal-article","created":{"date-parts":[[2017,11,20]],"date-time":"2017-11-20T18:04:46Z","timestamp":1511201086000},"page":"643","source":"Crossref","is-referenced-by-count":0,"title":["CHARACTERIZATION
-      OF THE MEDIUM-DENSITY FIBERBOARD OBTAINED THROUGH ACID DIGESTION TO PRODUCE
-      BIO-OIL AND CARBON BLACK"],"prefix":"10.5902","volume":"39","author":[{"given":"Matheus
-      Severo","family":"Schalenberger","sequence":"first","affiliation":[]},{"given":"Evandro
-      Stoffels","family":"Mallmann","sequence":"additional","affiliation":[]},{"given":"H\u00e9lcio
-      Jos\u00e9","family":"Iz\u00e1rio Filho","sequence":"additional","affiliation":[]},{"given":"Joana
-      Bratz","family":"Louren\u00e7o","sequence":"additional","affiliation":[]},{"given":"Ritielli","family":"Berticelli","sequence":"additional","affiliation":[]},{"given":"Germano","family":"Possani","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-5808-4321","authenticated-orcid":false,"given":"Rodrigo
-      Fernando dos Santos","family":"Salazar","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2017,11,18]]},"container-title":["Ci\u00eancia
-      e Natura"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/27304\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/27304\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,11,20]],"date-time":"2017-11-20T18:04:57Z","timestamp":1511201097000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/view\/27304"}},"issued":{"date-parts":[[2017,11,18]]},"references-count":0,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2017,11,18]]}},"URL":"https:\/\/doi.org\/10.5902\/2179460x27304","ISSN":["2179-460X","0100-8307"],"issn-type":[{"type":"electronic","value":"2179-460X"},{"type":"print","value":"0100-8307"}],"published":{"date-parts":[[2017,11,18]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:19:35Z","timestamp":1740172775423,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CeN"],"abstract":"<jats:p>http:\/\/dx.doi.org\/10.5902\/2179460X14642In
-      this article, we discuss the behavior of the solutions of a system of linear
-      congruences related to the uniform step method. This is a method for constructing
-      magic squares of odd order proposed and mathematically analyzed by Lehmer (1929).
-      His analysis has several steps. In the first, involving the discussion of necessary
-      and sufficient conditions for filling the square, Lehmer says that if two numbers
-      keep a certain relationship to each other, they will be designated to occupy
-      the same cell of the square. We conclude here that numbers that fulfill the
-      mentioned relationship never occupy the same cell. In other words, what Lehmer
-      says is not true.<\/jats:p>","DOI":"10.5902\/2179460x14642","type":"journal-article","created":{"date-parts":[[2017,3,21]],"date-time":"2017-03-21T20:59:13Z","timestamp":1490129953000},"page":"419","source":"Crossref","is-referenced-by-count":0,"title":["QUADRADOS
-      M\u00c1GICOS: QUANDO O M\u00c9TODO FALHA"],"prefix":"10.5902","volume":"37","author":[{"given":"Jos\u00e9
-      Travassos","family":"Ichihara","sequence":"first","affiliation":[]},{"given":"Patricia
-      Nunes da","family":"Silva","sequence":"additional","affiliation":[]},{"given":"Renata
-      Cardoso Pires de","family":"Abreu","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2015,8,7]]},"container-title":["Ci\u00eancia
-      e Natura"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/14642\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/14642\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2017,3,21]],"date-time":"2017-03-21T21:00:12Z","timestamp":1490130012000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/view\/14642"}},"issued":{"date-parts":[[2015,8,7]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2179460x14642","ISSN":["2179-460X","0100-8307"],"issn-type":[{"type":"electronic","value":"2179-460X"},{"type":"print","value":"0100-8307"}],"published":{"date-parts":[[2015,8,7]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:19:08Z","timestamp":1740172748240,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CeN"],"abstract":"<jats:p>The
-      Seasonal Deciduous Forest (FED) is a deciduous and human-caused impacted vegetation,
-      occurring at the Upper Rio Uruguay basin and at the southern slope of Serra
-      Geral plateau, Rio Grande do Sul state. The aim of this study is to compile
-      results of tree layer floristics and phytosociological surveys on FED of Serra
-      Geral escarpment with the intention of supporting future interventions for the
-      recovery of degraded areas and sustainable management projects. To obtain the
-      data, was held a narrative review from 62 selected works from the digital libraries
-      of CAPES, Scielo and Google Scholar. For quantitative variables, was calculated
-      the median, standard deviation and amplitude. The hodgepodge of methods used
-      in the surveys conducts to difficulties in comparing data. The median species
-      richness is 54 and the Shannon-Wiener diversity index median is 3.10 nats. The
-      analyzed surveys show very important information to define methods and planning
-      for conservation, degraded area recovery and sustainable use of forest resources.<\/jats:p>","DOI":"10.5902\/2179460x28664","type":"journal-article","created":{"date-parts":[[2018,7,25]],"date-time":"2018-07-25T16:48:00Z","timestamp":1532537280000},"page":"41","source":"Crossref","is-referenced-by-count":2,"title":["Importance
-      of the review on floristic and phytosociological studies of the arboreal stratum
-      of the seasonal deciduous forest of the Serra Geral slope, Rio Grande do Sul,
-      Brazil, to support proposals for sustainable management"],"prefix":"10.5902","volume":"40","author":[{"ORCID":"https:\/\/orcid.org\/0000-0002-1503-2780","authenticated-orcid":false,"given":"Cristian
-      Mateus","family":"Zerwes","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-8573-0237","authenticated-orcid":false,"given":"Claudete","family":"Rempel","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-7967-0706","authenticated-orcid":false,"given":"Jana\u00edna
-      Kollet","family":"Schneider","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-8211-7303","authenticated-orcid":false,"given":"Leila
-      Teresinha","family":"Maranho","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2018,5,11]]},"container-title":["Ci\u00eancia
-      e Natura"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/28664\/pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/28664\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,1,17]],"date-time":"2019-01-17T07:29:08Z","timestamp":1547710148000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/view\/28664"}},"issued":{"date-parts":[[2018,5,11]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2179460x28664","ISSN":["2179-460X","0100-8307"],"issn-type":[{"type":"electronic","value":"2179-460X"},{"type":"print","value":"0100-8307"}],"published":{"date-parts":[[2018,5,11]]}},{"indexed":{"date-parts":[[2025,2,21]],"date-time":"2025-02-21T21:19:15Z","timestamp":1740172755868,"version":"3.37.3"},"reference-count":0,"publisher":"Universidade
-      Federal de Santa Maria","license":[{"start":{"date-parts":[[2020,1,21]],"date-time":"2020-01-21T00:00:00Z","timestamp":1579564800000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["CeN"],"abstract":"<jats:p>Considering
-      the risks of water contamination by anthropic activities in general, objectified
-      aimed to analyze the impacts of activities installed in the contribution basin
-      of one of the main springs of Lajeado Erval Novo, rural area of the municipality
-      of Bom Progresso\/RS. Bordering the source, after the riparian forest, there
-      is agricultural occupation with management of annual crops.. Far 280 m upstream
-      from the source operates a landfill. The evaluation of contamination by micro
-      pollutants was performed through the analysis of physical, chemical and microbiological
-      indicators, as well as the search for pesticides. Four analytical campaigns
-      were conducted during 2018, with sampling in January, April, July and October.
-      Among the findings of the study it is noteworthy that the landfill has negligible
-      potential for contamination to spring water and that no characteristic elements
-      of landfill leachate were found. The high concentration of aluminum and the
-      slightly acidic pH of the waters may be of natural origin. Sulphate and nitrate
-      contents, as well as the high total and thermotolerant coliforms count may indicate
-      agricultural contamination. No pesticide molecules were quantified. It was also
-      concluded by the classification of the source as Class 3.<\/jats:p>","DOI":"10.5902\/2179460x41844","type":"journal-article","created":{"date-parts":[[2021,2,10]],"date-time":"2021-02-10T09:02:59Z","timestamp":1612947779000},"page":"e58","source":"Crossref","is-referenced-by-count":0,"title":["An\u00e1lise
-      da presen\u00e7a de micropoluentes de origem antr\u00f3pica em nascente do Lajeado
-      Erval Novo, Bom Progresso\/RS"],"prefix":"10.5902","volume":"42","author":[{"ORCID":"https:\/\/orcid.org\/0000-0001-7712-8342","authenticated-orcid":false,"given":"Luma
-      Schervenski","family":"Tejada","sequence":"first","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-2001-8983","authenticated-orcid":false,"given":"Robson
-      Evaldo Gehlen","family":"Bohrer","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-1052-3521","authenticated-orcid":false,"given":"Ramiro
-      Pereira","family":"Bisognin","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-3600-0462","authenticated-orcid":false,"given":"Danni
-      Maisa da","family":"Silva","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0003-4834-0066","authenticated-orcid":false,"given":"Eduardo
-      Lorensi de","family":"Souza","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0001-5136-2763","authenticated-orcid":false,"given":"Divanilde","family":"Guerra","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-8634-6613","authenticated-orcid":false,"given":"Maiara
-      Ramires","family":"Figueiredo","sequence":"additional","affiliation":[]},{"ORCID":"https:\/\/orcid.org\/0000-0002-2244-1793","authenticated-orcid":false,"given":"Daniela
-      Mueller de","family":"Lara","sequence":"additional","affiliation":[]}],"member":"4419","published-online":{"date-parts":[[2020,1,21]]},"container-title":["Ci\u00eancia
-      e Natura"],"link":[{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/41844\/html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/viewFile\/41844\/html","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2021,6,9]],"date-time":"2021-06-09T03:29:34Z","timestamp":1623209374000},"score":25.92083,"resource":{"primary":{"URL":"https:\/\/periodicos.ufsm.br\/cienciaenatura\/article\/view\/41844"}},"issued":{"date-parts":[[2020,1,21]]},"references-count":0,"URL":"https:\/\/doi.org\/10.5902\/2179460x41844","ISSN":["2179-460X","0100-8307"],"issn-type":[{"type":"electronic","value":"2179-460X"},{"type":"print","value":"0100-8307"}],"published":{"date-parts":[[2020,1,21]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
+        Tz2/OdDSAQA=
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '27541'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:57 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -861,8 +598,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '32498'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 14:23:16 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -870,11 +615,14 @@ interactions:
       vary:
       - Accept-Encoding
       x-api-pool:
-      - public
-      x-ratelimit-interval:
+      - polite
+      x-concurrency-limit:
+      - '3'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '10'
+    status:
+      code: 200
+      message: OK
 version: 1

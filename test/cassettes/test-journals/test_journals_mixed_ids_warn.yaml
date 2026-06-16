@@ -5,30 +5,38 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/journals/1803-2427
   response:
-    content: '{"status":"ok","message-type":"journal","message-version":"1.0.0","message":{"last-status-check-time":1752287139880,"counts":{"current-dois":60,"backfile-dois":254,"total-dois":314},"breakdowns":{"dois-by-issued-year":[[2017,35],[2024,23],[2018,23],[2020,22],[2023,20],[2022,20],[2021,20],[2019,20],[2015,20],[2025,17],[2016,15],[2013,15],[2011,15],[2014,11],[2010,10],[2008,10],[2012,9],[2009,9]]},"publisher":"De
-      Gruyter Poland Sp. z o.o.","coverage":{"affiliations-current":1.0,"similarity-checking-current":1.0,"descriptions-current":0.0,"ror-ids-current":0.0,"funders-backfile":0.0,"licenses-backfile":0.7559055118110236,"funders-current":0.0,"affiliations-backfile":0.7519685039370079,"resource-links-backfile":0.7204724409448819,"orcids-backfile":0.03937007874015748,"update-policies-current":0.0,"ror-ids-backfile":0.0,"orcids-current":0.1666666666666667,"similarity-checking-backfile":0.984251968503937,"references-backfile":0.7559055118110236,"descriptions-backfile":0.0,"award-numbers-backfile":0.0,"update-policies-backfile":0.0,"licenses-current":1.0,"award-numbers-current":0.0,"abstracts-backfile":0.8740157480314961,"resource-links-current":0.0,"abstracts-current":1.0,"references-current":1.0},"title":"Journal
-      of Landscape Ecology","subjects":[],"coverage-type":{"all":{"last-status-check-time":1752287139880,"affiliations":0.7993630573248408,"abstracts":0.8980891719745223,"orcids":0.06369426751592357,"licenses":0.8025477707006369,"references":0.8025477707006369,"funders":0.0,"similarity-checking":0.9872611464968153,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.5828025477707006,"descriptions":0.0},"backfile":{"last-status-check-time":1752287139880,"affiliations":0.7519685039370079,"abstracts":0.8740157480314961,"orcids":0.03937007874015748,"licenses":0.7559055118110236,"references":0.7559055118110236,"funders":0.0,"similarity-checking":0.984251968503937,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.7204724409448819,"descriptions":0.0},"current":{"last-status-check-time":1752287139880,"affiliations":1.0,"abstracts":1.0,"orcids":0.1666666666666667,"licenses":1.0,"references":1.0,"funders":0.0,"similarity-checking":1.0,"award-numbers":0.0,"ror-ids":0.0,"update-policies":0.0,"resource-links":0.0,"descriptions":0.0}},"flags":{"deposits-abstracts-current":true,"deposits-orcids-current":true,"deposits":true,"deposits-affiliations-backfile":true,"deposits-update-policies-backfile":false,"deposits-similarity-checking-backfile":true,"deposits-award-numbers-current":false,"deposits-resource-links-current":false,"deposits-ror-ids-current":false,"deposits-articles":true,"deposits-affiliations-current":true,"deposits-funders-current":false,"deposits-references-backfile":true,"deposits-ror-ids-backfile":false,"deposits-abstracts-backfile":true,"deposits-licenses-backfile":true,"deposits-award-numbers-backfile":false,"deposits-descriptions-current":false,"deposits-references-current":true,"deposits-resource-links-backfile":true,"deposits-descriptions-backfile":false,"deposits-orcids-backfile":true,"deposits-funders-backfile":false,"deposits-update-policies-current":false,"deposits-similarity-checking-current":true,"deposits-licenses-current":true},"ISSN":["1803-2427","1805-4196"],"issn-type":[{"type":"print","value":"1803-2427"},{"type":"electronic","value":"1805-4196"}]}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/61XS4/jKBD+KxFnHAE2fvR5RqtdrVYr9bHVB+KQHiZu2wI8o2wr/33LMbENtrtn
+        d+YSylB8UF89qLwhY4XtDHpAzRlh9CqNES8yspdWwtzXptO1qGYL36Q2qqlhje7Jnkwr6OENVcLY
+        aACMyi+yPEdWvcIKzXLKsyIheZzEGJVNV1vTbyg7rWVto2Oj4DtnGB1EeT6pSropliUY2caKyk3E
+        PL2ClpbifGy+1zeUfiU6XCJlTCeP0UUKjR6enhhhHMfpMwaJZjjmN4mlmMWDlNwlmo9zBDM2SDFm
+        ZJDYKNG7RItR4qOUYjqcQeNRoqOUYEoHiWA67CD5XaIMF8NUAcIzmNh2h0qZLxJMQZ/k7jfdXazU
+        u7+bStTH3WO73/2za/bNHvV8glecC8QJ2FPCgo/ABwO94IA9wcioV1UJrexlcI6qXwKNozSlVm2w
+        mfRLutGROoazp64+QkBEd6+56UqVsjbSn8+yOGMsZW6Mp90+pmeBD0BIxoqCuREuJQ0EaCmjStVn
+        XzlNszyPGaVuxKjRZW+Ad1VOSZHkxX0Era49CiujtgEblNxiIbDXQc90ac4Klo4/2Tr7c5gi5wkE
+        CXdj2lt3koBXfsij57bgauK70Meo7l4PK34Kjd1yox8lPmTgvIOxWpTWx/I8QdN84bktEP/gGSHz
+        BUgWq2x/EvpjqFe75rT7E9LElKKVu89lUzUvF0gU0x2+yrIvPU/PU9q4Yge5U1X/oYrN4/RmJItJ
+        HGcky1MONvKZHTf/UigGLOYF54SnUHFc1NxszsHhJM0SwO9B8on7AZnnCUuLNIVQojGfM7G+7jLL
+        8bkSekPE5VmakCQpkjiH4hZ41g/59Yi563je7Cc5nQGzJPOD9LbtOhX7n2B9WRQ81peRN2N9mf1z
+        1pd55rO+Wc8+Yj3M81/H+rLorbE+5s7/JJ16Oeq+J1qXpW9iNUhjN/EDvC0Lz08RRdaYAWpOlXgZ
+        WgrZNkZBBVqpRVZ3Ek8aYfH3lxfqG89boLVdmU+iMnPN99+V8PD10h1iblXnhV7YFIQKQltVVvID
+        FraYXfQHy3uuvJAByPLJXlxy5c0KQFYamneZ3T5svcV6x7AtcjZ7n0BvozkIT1x0Rxu+2EbY7Jx+
+        JGK3rFy2IL0CZOrvj49/wTOOaE7iiCUsg+cdZB4ltEgRvO7wZ6B2L/vTG3L/Z1qtAAOjb6Lq+u9p
+        9xWPSrKCHkE3tSp9TYd9fb5e/wUssHeGNw0AAA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '940'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 03:20:19 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -36,8 +44,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '940'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 13:06:51 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -46,40 +62,36 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/journals/4444-4444
   response:
-    content: Resource not found.
+    body:
+      string: Resource not found.
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - text/plain
-      Date:
-      - Sat, 12 Jul 2025 03:20:20 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -87,16 +99,27 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - text/plain
+      date:
+      - Tue, 16 Jun 2026 13:06:52 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 404
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 404
+      message: Not Found
 version: 1

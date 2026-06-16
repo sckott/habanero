@@ -5,662 +5,409 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/types/journal-article/works
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":115141055,"items":[{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T21:49:01Z","timestamp":1651009741455},"reference-count":62,"publisher":"Springer
-      Science and Business Media LLC","issue":"9","license":[{"start":{"date-parts":[[1986,9,1]],"date-time":"1986-09-01T00:00:00Z","timestamp":525916800000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Radiophys
-      Quantum Electron"],"published-print":{"date-parts":[[1986,9]]},"DOI":"10.1007\/bf01034473","type":"journal-article","created":{"date-parts":[[2005,1,21]],"date-time":"2005-01-21T15:54:30Z","timestamp":1106322870000},"page":"768-781","source":"Crossref","is-referenced-by-count":3,"title":["Semiconductor
-      masers using cyclotron resonance"],"prefix":"10.1007","volume":"29","author":[{"given":"A.
-      A.","family":"Andronov","sequence":"first","affiliation":[]}],"member":"297","reference":[{"issue":"No.
-      4","key":"CR1","doi-asserted-by":"crossref","first-page":"567","DOI":"10.1071\/PH580564","volume":"11","author":"R.
-      Q. Twiss","year":"1958","unstructured":"R. Q. Twiss, Austral. J. Phys.,11, No.
-      4, 567 (1958).","journal-title":"Austral. J. Phys."},{"issue":"No. 3","key":"CR2","first-page":"450","volume":"2","author":"A.
-      V. Gaponov","year":"1959","unstructured":"A. V. Gaponov, Izv. Vyssh. Uchebn.
-      Zaved., Radiofiz.,2, No. 3, 450; No. 5, 836 (1959).","journal-title":"Izv. Vyssh.
-      Uchebn. Zaved., Radiofiz."},{"issue":"No. 1","key":"CR3","first-page":"57","volume":"3","author":"V.
-      V. Zheleznyakov","year":"1960","unstructured":"V. V. Zheleznyakov, Izv. Vyssh.
-      Uchebn. Zaved., Radiofiz.,3, No. 1, 57 (1960).","journal-title":"Izv. Vyssh.
-      Uchebn. Zaved., Radiofiz."},{"issue":"No. 6","key":"CR4","first-page":"1146","volume":"47","author":"R.
-      H. Pantell","year":"1959","unstructured":"R. H. Pantell, Proc. IRE,47, No. 6,
-      1146 (1959).","journal-title":"Proc. IRE"},{"issue":"No. 12","key":"CR5","doi-asserted-by":"crossref","first-page":"504","DOI":"10.1103\/PhysRevLett.2.504","volume":"2","author":"J.
-      Schmeider","year":"1959","unstructured":"J. Schmeider, Phys. Rev. Lett.,2, No.
-      12, 504 (1959).","journal-title":"Phys. Rev. Lett."},{"issue":"No. 2","key":"CR6","doi-asserted-by":"crossref","first-page":"368","DOI":"10.1103\/PhysRev.98.368","volume":"98","author":"G.
-      Dresselhaus","year":"1955","unstructured":"G. Dresselhaus, A. P. Kip, and S.
-      Kittel, Phys. Rev.,98, No. 2, 368 (1955); R. H. Dexter, H. J. Zeiger, and B.
-      Lax, Phys. Rev.,104, No. 3, 637 (1956).","journal-title":"Phys. Rev."},{"key":"CR7","first-page":"428","volume-title":"Quantum
-      Electronics Symposium","author":"B. Lax","year":"1960","unstructured":"B. Lax,
-      in: Quantum Electronics Symposium, Columbia Univ. Press, New York (1960), p.
-      428."},{"issue":"No. 3","key":"CR8","first-page":"808","volume":"35","author":"A.
-      C. Tager","year":"1958","unstructured":"A. C. Tager and A. D. Gladun, Zh. Eksp.
-      Teor. Fiz.,35, No. 3, 808 (1958).","journal-title":"Zh. Eksp. Teor. Fiz."},{"issue":"No.
-      5","key":"CR9","doi-asserted-by":"crossref","first-page":"1856","DOI":"10.1103\/PhysRev.109.1856","volume":"109","author":"H.
-      Kroemer","year":"1958","unstructured":"H. Kroemer, Phys. Rev.,109, No. 5, 1856
-      (1958).","journal-title":"Phys. Rev."},{"issue":"No. 2","key":"CR10","doi-asserted-by":"crossref","first-page":"551","DOI":"10.1103\/PhysRevLett.1.55","volume":"1","author":"G.
-      C. Dousmanis","year":"1958","unstructured":"G. C. Dousmanis, Phys. Rev. Lett.,1,
-      No. 2, 551 (1958).","journal-title":"Phys. Rev. Lett."},{"key":"CR11","unstructured":"G.
-      C. Dousmanis, R. C. Duncan, J. J. Thomas, and R. C. Williams, Proc. Int. Conf.
-      Semicond. Phys., Prague (1961), p. 603."},{"key":"CR12","first-page":"1","volume":"4","author":"H.
-      Kroemer","year":"1960","unstructured":"H. Kroemer, Prog. Semicond.,4, 1 (1960).","journal-title":"Prog.
-      Semicond."},{"issue":"No. 3","key":"CR13","doi-asserted-by":"crossref","first-page":"147","DOI":"10.1103\/PhysicsPhysiqueFizika.1.147","volume":"1","author":"P.
-      A. Wolff","year":"1964","unstructured":"P. A. Wolff, Physics,1, No. 3, 147 (1964).","journal-title":"Physics"},{"issue":"No.
-      2","key":"CR14","first-page":"165","volume":"2","author":"V. F. Elesin","year":"1968","unstructured":"V.
-      F. Elesin, Fiz. Tekh. Poluprovodn.,2, No. 2, 165 (1968).","journal-title":"Fiz.
-      Tekh. Poluprovodn."},{"issue":"No. 9-10","key":"CR15","first-page":"1414","volume":"10","author":"A.
-      V. Gaponov","year":"1967","unstructured":"A. V. Gaponov, M. I. Petelin, and
-      V. K. Yulpatov, Izv. Vyssh. Uchebn. Zaved., Radiofiz.,10, No. 9-10, 1414 (1967).","journal-title":"Izv.
-      Vyssh. Uchebn. Zaved., Radiofiz."},{"issue":"No. 6","key":"CR16","doi-asserted-by":"crossref","first-page":"514","DOI":"10.1109\/TMTT.1977.1129149","volume":"25","author":"V.
-      A. Flyagin","year":"1977","unstructured":"V. A. Flyagin, A. V. Gaponov, M. I.
-      Petelin, and V. K. Yulpatov, IEEE Trans., Mekh. Tverd. Tela,MTT-25, No. 6, 514
-      (1977).","journal-title":"IEEE Trans., Mekh. Tverd. Tela, MTT-"},{"issue":"No.
-      1","key":"CR17","first-page":"3","volume":"12","author":"V. N. Abakumov","year":"1978","unstructured":"V.
-      N. Abakumov, V. I. Perel'', and I. N. Yassievich, Fiz. Tekh. Poluprovodn.,12,
-      No. 1, 3 (1978).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No. 4","key":"CR18","first-page":"1170","volume":"5","author":"Yu.
-      M. Popov","year":"1963","unstructured":"Yu. M. Popov, Fiz. Tverd. Tela,5, No.
-      4, 1170 (1963).","journal-title":"Fiz. Tverd. Tela"},{"key":"CR19","first-page":"141","volume-title":"Proceedings
-      of the IX International Conference on Semiconductor Physics","author":"Kh. Yu.
-      F\u00e9n","year":"1969","unstructured":"Kh. Yu. F\u00e9n, Proceedings of the
-      IX International Conference on Semiconductor Physics [in Russian], Nauka, Moscow
-      (1969), p. 141."},{"issue":"No. 9","key":"CR20","first-page":"1637","volume":"19","author":"A.
-      A. Andronov","year":"1977","unstructured":"A. A. Andronov, Yu. N. Nozdrin, and
-      V. N. Shastin, Fiz. Tverd. Tela,19, No. 9, 1637 (1977).","journal-title":"Fiz.
-      Tverd. Tela"},{"issue":"No. 5","key":"CR21","first-page":"1577","volume":"20","author":"A.
-      A. Andronov","year":"1978","unstructured":"A. A. Andronov, Yu. N. Nozdrin, and
-      V. N. Shastin, Fiz. Tverd. Tela,20, No. 5, 1577 (1978).","journal-title":"Fiz.
-      Tverd. Tela"},{"key":"CR22","first-page":"606","volume-title":"Electromagnetic
-      Wave Propagation in Plasma","author":"V. L. Ginzburg","year":"1967","unstructured":"V.
-      L. Ginzburg, Electromagnetic Wave Propagation in Plasma [in Russian], Nauka,
-      Moscow (1967), p. 606."},{"issue":"No. 2","key":"CR23","doi-asserted-by":"crossref","first-page":"161","DOI":"10.3367\/UFNr.0072.196010a.0161","volume":"72","author":"I.
-      G. Basov","year":"1960","unstructured":"I. G. Basov, O. N. Krokhin, and Yu.
-      M. Popov, Usp. Fiz. Nauk,72, No. 2, 161 (1960).","journal-title":"Usp. Fiz.
-      Nauk"},{"issue":"No. 1","key":"CR24","doi-asserted-by":"crossref","first-page":"5","DOI":"10.1016\/0038-1101(78)90108-9","volume":"21","author":"C.
-      Hilsum","year":"1978","unstructured":"C. Hilsum, Solid-State Electron.,21, No.
-      1, 5 (1978).","journal-title":"Solid-State Electron."},{"issue":"No. 11","key":"CR25","doi-asserted-by":"crossref","first-page":"731","DOI":"10.1016\/0375-9601(69)90588-X","volume":"28A","author":"W.
-      Fawcett","year":"1969","unstructured":"W. Fawcett and H. D. Rees, Phys. Lett.,28A,
-      No. 11, 731 (1969).","journal-title":"Phys. Lett."},{"issue":"No. 2","key":"CR26","doi-asserted-by":"crossref","first-page":"562","DOI":"10.1143\/JPSJ.33.562","volume":"33","author":"H.
-      Maeda","year":"1972","unstructured":"H. Maeda and T. Kurosawa, J. Phys. Soc.
-      Jpn.,33, No. 2, 562 (1972).","journal-title":"J. Phys. Soc. Jpn."},{"issue":"No.
-      3","key":"CR27","first-page":"557","volume":"14","author":"V. N. Shastin","year":"1980","unstructured":"V.
-      N. Shastin, Fiz. Tekh. Poluprovodn.,14, No. 3, 557 (1980);15, No. 8, 1641 (1981).","journal-title":"Fiz.
-      Tekh. Poluprovodn."},{"issue":"No. 8","key":"CR28","first-page":"1660","volume":"50","author":"I.
-      I. Vosilyus","year":"1966","unstructured":"I. I. Vosilyus and I. B. Levinson,
-      Zh. Eksp. Teor. Fiz.,50, No. 8, 1660 (1966);52, No. 4, 1013 (1967).","journal-title":"Zh.
-      Eksp. Teor. Fiz."},{"issue":"No. 9","key":"CR29","first-page":"124","volume":"17","author":"A.
-      A. Andronov","year":"1973","unstructured":"A. A. Andronov and V. A. Kozlov,
-      Pis''ma Zh. Eksp. Teor. Fiz.,17, No. 9, 124 (1973); A. A. Andronov, V. A. Valov,
-      V. A. Kozlov, and L. S. Mazov, Fiz. Tverd. Tela,22, No. 5, 1275 (1980).","journal-title":"Pis''ma
-      Zh. Eksp. Teor. Fiz."},{"issue":"No. 3","key":"CR30","first-page":"1030","volume":"72","author":"Ya.
-      I. Al''ber","year":"1977","unstructured":"Ya. I. Al''ber, A. A. Andronov, V.
-      A. Valov, et al., Zh. Eksp. Teor. Fiz.,72, No. 3, 1030 (1977).","journal-title":"Zh.
-      Eksp. Teor. Fiz."},{"issue":"No. 3","key":"CR31","doi-asserted-by":"crossref","first-page":"645","DOI":"10.1103\/RevModPhys.55.645","volume":"55","author":"C.
-      Jacoboni","year":"1983","unstructured":"C. Jacoboni and L. Reggiani, Rev. Mod.
-      Phys.,55, No. 3, 645 (1983).","journal-title":"Rev. Mod. Phys."},{"issue":"No.
-      10","key":"CR32","first-page":"432","volume":"35","author":"V. I. Gavrilenko","year":"1982","unstructured":"V.
-      I. Gavrilenko, E. P. Dodin, Z. F. Krasil''nik, et al., Pis''ma Zh. Eksp. Teor.
-      Fiz.,35, No. 10, 432 (1982).","journal-title":"Pis''ma Zh. Eksp. Teor. Fiz."},{"issue":"No.
-      1","key":"CR33","first-page":"367","volume":"90","author":"A. A. Andronov","year":"1986","unstructured":"A.
-      A. Andronov, A. M. Belyantsev, E. P. Dodin, et al., Zh. Eksp. Teor. Fiz.,90,
-      No. 1, 367 (1986).","journal-title":"Zh. Eksp. Teor. Fiz."},{"key":"CR34","first-page":"210","volume":"134B","author":"A.
-      A. Andronov","year":"1985","unstructured":"A. A. Andronov, A. M. Belyantsev,
-      E. P. Dodin, et al., Physica,134B, 210 (1985).","journal-title":"Physica"},{"key":"CR35","volume-title":"Cyclotron
-      Resonance Semiconductor Masers","year":"1986","unstructured":"in: Cyclotron
-      Resonance Semiconductor Masers [in Russian], A. A. Andronov (ed.), Inst. Prikl.
-      Fiz. Akad. Nauk SSSR, Gor''kii (1986)"},{"key":"CR36","volume-title":"Inverted
-      Hot Electron Distributions in Semiconductors","year":"1983","unstructured":"in:
-      A. A. Andronov and Yu. K. Pozhela (eds.), Inverted Hot Electron Distributions
-      in Semiconductors [in Russian], Inst. Prikl. Fiz. Akad. Nauk SSSR, Gor''kii
-      (1983)."},{"issue":"No. 5A","key":"CR37","doi-asserted-by":"crossref","first-page":"1449","DOI":"10.1103\/PhysRev.136.A1449","volume":"136","author":"W.
-      E. Pinson","year":"1964","unstructured":"W. E. Pinson and R. Bray, Phys. Rev.,136,
-      No. 5A, 1449 (1964).","journal-title":"Phys. Rev."},{"issue":"No. 3","key":"CR38","doi-asserted-by":"crossref","first-page":"668","DOI":"10.1143\/JPSJ.31.668","volume":"31","author":"T.
-      Kurosawa","year":"1971","unstructured":"T. Kurosawa and H. Maeda, J. Phys. Soc.
-      Jpn.,31, No. 3, 668 (1971).","journal-title":"J. Phys. Soc. Jpn."},{"key":"CR39","volume-title":"Hot
-      Electrons in Semiconductors: Streaming and Anisotropic Distributions in Crossed
-      Fields","year":"1983","unstructured":"in: A. A. Andronov and Yu. K. Pozhela
-      (eds.), Hot Electrons in Semiconductors: Streaming and Anisotropic Distributions
-      in Crossed Fields [in Russian], Inst. Prikl. Fiz. Akad. Nauk SSSR, Gor''kii
-      (1983)."},{"issue":"No. 2","key":"CR40","first-page":"212","volume":"16","author":"A.
-      A. Andronov","year":"1982","unstructured":"A. A. Andronov, E. P. Dodin, and
-      Z. P. Krasil''nik, Fiz. Tekh. Poluprovodn.,16, No. 2, 212 (1982).","journal-title":"Fiz.
-      Tekh. Poluprovodn."},{"issue":"No. 2","key":"CR41","doi-asserted-by":"crossref","first-page":"347","DOI":"10.3367\/UFNr.0139.198302f.0347","volume":"139","author":"I.
-      B. Levinson","year":"1983","unstructured":"I. B. Levinson, Usp. Fiz. Nauk,139,
-      No. 2, 347 (1983).","journal-title":"Usp. Fiz. Nauk"},{"issue":"No. 4","key":"CR42","doi-asserted-by":"crossref","first-page":"357","DOI":"10.1016\/0038-1098(77)90228-9","volume":"24","author":"T.
-      Kurosawa","year":"1977","unstructured":"T. Kurosawa, Solid-State Commun.,24,
-      No. 4, 357 (1977).","journal-title":"Solid-State Commun."},{"issue":"No. 6","key":"CR43","first-page":"234","volume":"40","author":"A.
-      P. Chebotarev","year":"1984","unstructured":"A. P. Chebotarev and V. N. Murzin,
-      Pis''ma Zh. Eksp. Teor. Fiz.,40, No. 6, 234 (1984).","journal-title":"Pis''ma
-      Zh. Eksp. Teor. Fiz."},{"issue":"No. 5","key":"CR44","first-page":"924","volume":"11","author":"I.
-      I. Vosilyus","year":"1969","unstructured":"I. I. Vosilyus, Fiz. Tverd. Tela,11,
-      No. 5, 924 (1969).","journal-title":"Fiz. Tverd. Tela"},{"issue":"No. 3","key":"CR45","first-page":"142","volume":"37","author":"V.
-      A. Kozlov","year":"1983","unstructured":"V. A. Kozlov, L. S. Mazov, and I. M.
-      Nefedov, Pis''ma Zh. Eksp. Teor. Fiz.,37, No. 3, 142 (1983).","journal-title":"Pis''ma
-      Zh. Eksp. Teor. Fiz."},{"issue":"No. 4","key":"CR46","doi-asserted-by":"crossref","first-page":"869","DOI":"10.1103\/PhysRev.97.869","volume":"97","author":"J.
-      M. Luttinger","year":"1955","unstructured":"J. M. Luttinger and W. Kohn, Phys.
-      Rev.,97, No. 4, 869 (1955).","journal-title":"Phys. Rev."},{"issue":"No. 19","key":"CR47","first-page":"1204","volume":"9","author":"B.
-      M. Gorbovitskii","year":"1983","unstructured":"B. M. Gorbovitskii and V. I.
-      Perel'', Pis''ma Zh. Tekh. Fiz.,9, No. 19, 1204 (1983); B. M. Gorbovitskii,
-      Fiz. Tekh. Poluprovodn.,18, No. 4, 704 (1984).","journal-title":"Pis''ma Zh.
-      Tekh. Fiz."},{"issue":"No. 5","key":"CR48","first-page":"1857","volume":"87","author":"V.
-      Ya. Aleshkin","year":"1984","unstructured":"V. Ya. Aleshkin and Yu. A. Romanov,
-      Zh. Eksp. Teor. Fiz.,87, No. 5, 1857 (1984).","journal-title":"Zh. Eksp. Teor.
-      Fiz."},{"issue":"No. 10","key":"CR49","first-page":"613","volume":"9","author":"Yu.
-      L. Ivanov","year":"1983","unstructured":"Yu. L. Ivanov and Yu. B. Vasil''ev,
-      Pis''ma Zh. Tekh. Fiz.,9, No. 10, 613 (1983);10, No. 15, 949 (1984).","journal-title":"Pis''ma
-      Zh. Tekh. Fiz."},{"issue":"No. 12","key":"CR50","doi-asserted-by":"crossref","first-page":"1570","DOI":"10.1103\/PhysRevLett.54.1570","volume":"54","author":"J.
-      R. Hayes","year":"1985","unstructured":"J. R. Hayes, A. F. J. Levi, and W. Weigman,
-      Phys. Rev. Lett.,54, No. 12, 1570 (1985); A. P. Long, P. H. Benton, M. J. Kelley,
-      and T. M. Kerr, Electron. Lett.,22, No. 3, 130 (1986).","journal-title":"Phys.
-      Rev. Lett."},{"issue":"No. 8","key":"CR51","first-page":"373","volume":"43","author":"A.
-      A. Andronov","year":"1986","unstructured":"A. A. Andronov, E. P. Dodin, and
-      Z. F. Krasil''nik, Pis''ma Zh. Eksp. Teor. Fiz.,43, No. 8, 373 (1986).","journal-title":"Pis''ma
-      Zh. Eksp. Teor. Fiz."},{"issue":"No. 5","key":"CR52","first-page":"944","volume":"18","author":"E.
-      P. Dodin","year":"1984","unstructured":"E. P. Dodin and Z. F. Krasil''nik, Fiz.
-      Tekh. Poluprovodn.,18, No. 5, 944 (1984).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No.
-      6","key":"CR53","first-page":"1076","volume":"20","author":"E. V. Starikov","year":"1986","unstructured":"E.
-      V. Starikov and P. N. Shiktorov, Fiz. Tekh. Poluprovodn.,20, No. 6, 1076 (1986).","journal-title":"Fiz.
-      Tekh. Poluprovodn."},{"key":"CR54","first-page":"142","volume-title":"Inverted
-      Hot Electron Distributions in Semiconductors","author":"V. I. Gavrilenko","year":"1983","unstructured":"V.
-      I. Gavrilenko, E. P. Dodin, and Z. F. Krasil''nik, in: Inverted Hot Electron
-      Distributions in Semiconductors [in Russian], Inst. Prikl. Fiz. Akad. Nauk SSSR,
-      Gor''kii (1983), p. 142."},{"key":"CR55","volume-title":"Alfven Masers","author":"P.
-      A. Bespalov","year":"1986","unstructured":"P. A. Bespalov and V. Yu. Trakhtengerts,
-      in: Alfven Masers [in Russian], Inst. Prikl. Fiz. Akad. Nauk SSSR, Gor''kii
-      (1986)."},{"issue":"No. 9","key":"CR56","first-page":"583","volume":"30","author":"A.
-      A. Andronov","year":"1979","unstructured":"A. A. Andronov, V. A. Kozlov, L.
-      S. Mazov, and V. N. Shastin, Pis''ma Zh. Eksp. Teor. Fiz.,30, No. 9, 583 (1979).","journal-title":"Pis''ma
-      Zh. Eksp. Teor. Fiz."},{"issue":"No. 10","key":"CR57","first-page":"1000","volume":"11","author":"A.
-      A. Andronov","year":"1985","unstructured":"A. A. Andronov, V. A. Valov, V. A.
-      Kozlov, Yu. P. Nozdrin, S. A. Pavlov, and V. N. Shastin, Pis''ma Zh. Tekh. Fiz.,11,
-      No. 10, 1000 (1985); A. V. Murav''ev, Yu. I. Nozdrin, and V. N. Shastin, Pis''ma
-      Zh. Eksp. Teor. Fiz.,43, No. 7, 348 (1986); S. Komiyama, N. Iizuka, and J. Akasaka,
-      Appl. Phys. Lett.,47, No. 9, 958 (1985).","journal-title":"Pis''ma Zh. Tekh.
-      Fiz."},{"issue":"No. 3","key":"CR58","first-page":"499","volume":"18","author":"E.
-      M. Gershenzon","year":"1983","unstructured":"E. M. Gershenzon, A. P. Mel''nikov,
-      R. I. Rabinovich, and V. B. Smirnova, Fiz. Tekh. Poluprovodn.,18, No. 3, 499
-      (1983); E. B. Gol''dgur and R. I. Rabinovich, Zh. Eksp. Teor. Fiz.,84, No. 3,
-      1109 (1983).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No. 2","key":"CR59","first-page":"2218","volume":"17","author":"Yu.
-      A. Gurvich","year":"1983","unstructured":"Yu. A. Gurvich and M. D. Cherepanov,
-      Fiz. Tekh. Poluprovodn.,17, No. 2, 2218 (1983); L. A. Vorozhtsova, E. M. Gershenzon,
-      and Yu. A. Gurvich, Izv. Akad. Nauk SSSR, Ser. Fiz.,50, No. 2, 272 (1986).","journal-title":"Fiz.
-      Tekh. Poluprovodn."},{"issue":"No. 8","key":"CR60","first-page":"1576","volume":"6","author":"A.
-      A. Kastal''skii","year":"1972","unstructured":"A. A. Kastal''skii, Fiz. Tekh.
-      Poluprovodn.,6, No. 8, 1576 (1972).","journal-title":"Fiz. Tekh. Poluprovodn."},{"issue":"No.
-      6","key":"CR61","first-page":"295","volume":"29","author":"E. Gornik","year":"1972","unstructured":"E.
-      Gornik, Phys. Rev. Lett.,29, No. 6, 295 (1972); W. Muller. F. Kohl, and E. Gornik,
-      Infrared Phys.,18, No. 5\/6, 691 (1978).","journal-title":"Phys. Rev. Lett."},{"key":"CR62","unstructured":"E.
-      Otsuka, in: Infrared and Millimeter Waves, Vol. 3, Academic Press (1980), p.
-      347."}],"container-title":["Radiophysics and Quantum Electronics"],"language":"en","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01034473.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/BF01034473\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/BF01034473","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,4,30]],"date-time":"2019-04-30T02:57:14Z","timestamp":1556593034000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/BF01034473"}},"issued":{"date-parts":[[1986,9]]},"references-count":62,"journal-issue":{"issue":"9","published-print":{"date-parts":[[1986,9]]}},"alternative-id":["BF01034473"],"URL":"https:\/\/doi.org\/10.1007\/bf01034473","ISSN":["0033-8443","1573-9120"],"issn-type":[{"value":"0033-8443","type":"print"},{"value":"1573-9120","type":"electronic"}],"published":{"date-parts":[[1986,9]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T21:48:39Z","timestamp":1651009719886},"reference-count":0,"publisher":"Informa
-      UK Limited","issue":"4","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Critical
-      Studies in Media Communication"],"published-print":{"date-parts":[[2019,8,8]]},"DOI":"10.1080\/15295036.2019.1593479","type":"journal-article","created":{"date-parts":[[2019,3,27]],"date-time":"2019-03-27T21:38:45Z","timestamp":1553722725000},"page":"407-410","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":1,"title":["From
-      media hype to twitter storm: news explosions and their impact on issues, crises
-      and public opinion"],"prefix":"10.1080","volume":"36","author":[{"given":"Zeyu","family":"Zhang","sequence":"first","affiliation":[{"name":"Ohio
-      University"}]}],"member":"301","published-online":{"date-parts":[[2019,3,27]]},"container-title":["Critical
-      Studies in Media Communication"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/15295036.2019.1593479","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,9,2]],"date-time":"2019-09-02T07:52:49Z","timestamp":1567410769000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/15295036.2019.1593479"}},"subtitle":["by
-      Peter Vasterman, Amsterdam, Amsterdam University Press, 2018, 401 pp., $136
-      (Hardback), ISBN 9789462982178"],"issued":{"date-parts":[[2019,3,27]]},"references-count":0,"journal-issue":{"issue":"4","published-online":{"date-parts":[[2019,4,25]]},"published-print":{"date-parts":[[2019,8,8]]}},"alternative-id":["10.1080\/15295036.2019.1593479"],"URL":"https:\/\/doi.org\/10.1080\/15295036.2019.1593479","ISSN":["1529-5036","1479-5809"],"issn-type":[{"value":"1529-5036","type":"print"},{"value":"1479-5809","type":"electronic"}],"published":{"date-parts":[[2019,3,27]]},"assertion":[{"value":"The
-      publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
-      Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rcsm20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rcsm20","order":2,"name":"aims_and_scope_url","label":"Aim
-      & Scope"},{"value":"2019-03-27","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-      History"}}]},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T20:06:41Z","timestamp":1651003601274},"reference-count":2,"publisher":"Informa
-      UK Limited","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Rocks
-      &amp; Minerals"],"published-print":{"date-parts":[[1988,11]]},"DOI":"10.1080\/00357529.1988.11761883","type":"journal-article","created":{"date-parts":[[2016,9,2]],"date-time":"2016-09-02T23:10:58Z","timestamp":1472857858000},"page":"460-465","source":"Crossref","is-referenced-by-count":1,"title":["Harvard
-      Hosts a Mine Party: Palermo Revisited"],"prefix":"10.1080","volume":"63","author":[{"given":"F.
-      William","family":"Miller","sequence":"first","affiliation":[]},{"given":"Ronald
-      E.","family":"Bentley","sequence":"additional","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2016,9,2]]},"reference":[{"key":"CIT0001","first-page":"810","volume":"23","author":"Lisle
-      T. O.","year":"1948","journal-title":"Rocks & Minerals"},{"key":"CIT0002","first-page":"196","volume":"56","author":"Segeler
-      C.","year":"1981","journal-title":"Rocks & Minerals"}],"container-title":["Rocks
-      &amp; Minerals"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/00357529.1988.11761883","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,17]],"date-time":"2016-12-17T15:37:09Z","timestamp":1481989029000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/00357529.1988.11761883"}},"issued":{"date-parts":[[1988,11]]},"references-count":2,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2016,9,2]]},"published-print":{"date-parts":[[1988,11]]}},"alternative-id":["10.1080\/00357529.1988.11761883"],"URL":"https:\/\/doi.org\/10.1080\/00357529.1988.11761883","ISSN":["0035-7529","1940-1191"],"issn-type":[{"value":"0035-7529","type":"print"},{"value":"1940-1191","type":"electronic"}],"published":{"date-parts":[[1988,11]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T20:06:08Z","timestamp":1651003568278},"reference-count":0,"publisher":"JSTOR","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Asian
-      Folklore Studies"],"published-print":{"date-parts":[[1995]]},"DOI":"10.2307\/1178221","type":"journal-article","created":{"date-parts":[[2006,4,19]],"date-time":"2006-04-19T10:48:35Z","timestamp":1145443715000},"page":"119","source":"Crossref","is-referenced-by-count":1,"title":["Indexing
-      Folk Literature of South American Indians"],"prefix":"10.2307","volume":"54","author":[{"given":"Kristina","family":"Lindell","sequence":"first","affiliation":[]},{"given":"Johannes","family":"Wilbert","sequence":"additional","affiliation":[]},{"given":"Karin","family":"Simoneau","sequence":"additional","affiliation":[]}],"member":"1121","container-title":["Asian
-      Folklore Studies"],"deposited":{"date-parts":[[2018,4,18]],"date-time":"2018-04-18T06:53:23Z","timestamp":1524034403000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.jstor.org\/stable\/1178221?origin=crossref"}},"issued":{"date-parts":[[1995]]},"references-count":0,"journal-issue":{"issue":"1","published-print":{"date-parts":[[1995]]}},"URL":"https:\/\/doi.org\/10.2307\/1178221","ISSN":["0385-2342"],"issn-type":[{"value":"0385-2342","type":"print"}],"published":{"date-parts":[[1995]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T22:42:26Z","timestamp":1651012946027},"reference-count":0,"publisher":"Bajang
-      Institute","issue":"6","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["IJSS"],"abstract":"<jats:p>The
-      Lord''s Supper is a sacred ecclesiastical ceremony and this is the example set
-      by Jesus. The Holy Communion is a symbol of the sacrifice Jesus made on the
-      cross for the purpose of human salvation. The Holy Communion ceremony is not
-      just an ecclesiastical event but has spiritual meanings such as: a memorial
-      of God''s mercy, a higher form of cleansing, a fellowship of forgiveness, is
-      God''s command, and contains God''s blessing. This study uses a qualitative
-      literature study method that describes descriptively the meaning of the Holy
-      Communion according to the view of the Seventh-day Adventist Church, and the
-      results of this study are so that everyone can better understand the meaning
-      of the Holy Communion ceremony so that they can further build spiritual faith
-      and understand the meaning of Jesus'' sacrifice which is symbolized through
-      the ceremony. Holy communion.<\/jats:p>","DOI":"10.53625\/ijss.v1i6.1959","type":"journal-article","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T22:24:58Z","timestamp":1651011898000},"page":"1017-1024","source":"Crossref","is-referenced-by-count":0,"title":["SEVENTH
-      DAY ADVENTIST CHURCH\u2019S VIEW ABOUT HOLY COMMUNION ACCORDING TO JOHN 13:4-17"],"prefix":"10.53625","volume":"1","author":[{"given":"Polman","family":"Sinaga","sequence":"first","affiliation":[]},{"given":"Stimson","family":"Hutagalung","sequence":"additional","affiliation":[]},{"given":"Rolyana","family":"Ferinia","sequence":"additional","affiliation":[]}],"member":"31710","published-online":{"date-parts":[[2022,4,20]]},"container-title":["International
-      Journal of Social Science"],"link":[{"URL":"https:\/\/bajangjournal.com\/index.php\/IJSS\/article\/download\/1959\/1383","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/bajangjournal.com\/index.php\/IJSS\/article\/download\/1959\/1383","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T22:24:59Z","timestamp":1651011899000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/bajangjournal.com\/index.php\/IJSS\/article\/view\/1959"}},"issued":{"date-parts":[[2022,4,20]]},"references-count":0,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2022,4,3]]}},"URL":"https:\/\/doi.org\/10.53625\/ijss.v1i6.1959","ISSN":["2798-4079","2798-3463"],"issn-type":[{"value":"2798-4079","type":"electronic"},{"value":"2798-3463","type":"print"}],"published":{"date-parts":[[2022,4,20]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T19:27:03Z","timestamp":1651001223790},"reference-count":0,"publisher":"Kluwer
-      Law International BV","issue":"Issue 12","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["BULA"],"published-print":{"date-parts":[[1981,12,1]]},"DOI":"10.54648\/bula1981168","type":"journal-article","created":{"date-parts":[[2022,3,18]],"date-time":"2022-03-18T13:48:13Z","timestamp":1647611293000},"page":"354-354","source":"Crossref","is-referenced-by-count":1,"title":["Saint
-      Piran"],"prefix":"10.54648","volume":"2","member":"33083","container-title":["Business
-      Law Review"],"language":"en","link":[{"URL":"https:\/\/kluwerlawonline.com\/journalarticle\/Business+Law+Review\/2.12\/BULA1981168","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,3,18]],"date-time":"2022-03-18T14:00:56Z","timestamp":1647612056000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/kluwerlawonline.com\/journalarticle\/Business+Law+Review\/2.12\/BULA1981168"}},"issued":{"date-parts":[[1981,12,1]]},"references-count":0,"journal-issue":{"issue":"Issue
-      12","published-print":{"date-parts":[[1981,12,1]]}},"alternative-id":["0143-6295(19811201)2:12;1-J"],"URL":"https:\/\/doi.org\/10.54648\/bula1981168","ISSN":["0143-6295"],"issn-type":[{"value":"0143-6295","type":"electronic"}],"published":{"date-parts":[[1981,12,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:40:30Z","timestamp":1651034430477},"reference-count":27,"publisher":"Springer
-      Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2015,1,1]],"date-time":"2015-01-01T00:00:00Z","timestamp":1420070400000},"content-version":"tdm","delay-in-days":0,"URL":"http:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Radiologe"],"published-print":{"date-parts":[[2015,1]]},"DOI":"10.1007\/s00117-014-2706-7","type":"journal-article","created":{"date-parts":[[2015,1,21]],"date-time":"2015-01-21T12:08:52Z","timestamp":1421842132000},"page":"36-42","update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":2,"title":["Moderne
-      Bildgebung der Lebermetastasen"],"prefix":"10.1007","volume":"55","author":[{"given":"J.","family":"Breitenseher","sequence":"first","affiliation":[]},{"given":"M.","family":"Pones","sequence":"additional","affiliation":[]},{"given":"G.","family":"Wengert","sequence":"additional","affiliation":[]},{"given":"A.","family":"Ba-Ssalamah","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2015,1,23]]},"reference":[{"key":"2706_CR1","doi-asserted-by":"crossref","first-page":"74","DOI":"10.1002\/1097-0142(1950)3:1<74::AID-CNCR2820030111>3.0.CO;2-7","volume":"3","author":"Abrams","year":"1950","unstructured":"Abrams
-      HL, Spiro R, Goldstein N (1950) Metastases in carcinoma; analysis of 1000 autopsied
-      cases. Cancer 3:74\u201385","journal-title":"Cancer"},{"key":"2706_CR2","unstructured":"Prokop
-      M, Galanski M, Schaefer-Prokop C, Molen AJ van der (2007) Ganzk\u00f6rper-Computertomographie,
-      2.\u00a0Aufl. Thieme, Stuttgart"},{"key":"2706_CR3","doi-asserted-by":"crossref","first-page":"741","DOI":"10.1016\/S1064-9689(21)00641-3","volume":"8","author":"Imam","year":"2000","unstructured":"Imam
-      K, Bluemke DA (2000) MR imaging in the evaluation of hepatic metastases. Magn
-      Reson Imaging Clin North Am 8:741\u2013756","journal-title":"Magn Reson Imaging
-      Clin North Am"},{"key":"2706_CR4","doi-asserted-by":"crossref","first-page":"613","DOI":"10.1002\/bjs.9465","volume":"101","author":"Zech","year":"2014","unstructured":"Zech
-      CJ, Korpraphong P, Huppertz A et al (2014) Randomized multicentre trial of gadoxetic
-      acid-enhanced MRI versus conventional MRI or CT in the staging of colorectal
-      cancer liver metastases. Br J Surg 101:613\u2013621","journal-title":"Br J Surg"},{"key":"2706_CR5","doi-asserted-by":"crossref","first-page":"809","DOI":"10.2214\/ajr.181.3.1810809","volume":"181","author":"Danet","year":"2003","unstructured":"Danet
-      IM, Semelka RC, Leonardou P et al (2003) Spectrum of MRI appearances of untreated
-      metastases of the liver. AJR Am J Roentgenol 181:809\u2013817","journal-title":"AJR
-      Am J Roentgenol"},{"key":"2706_CR6","doi-asserted-by":"crossref","first-page":"342","DOI":"10.1007\/s00330-008-1172-x","volume":"19","author":"Ba-Ssalamah","year":"2009","unstructured":"Ba-Ssalamah
-      A, Uffmann M, Saini S et al (2009) Clinical value of MRI liver-specific contrast
-      agents: a tailored examination for a confident non-invasive diagnosis of focal
-      liver lesions. Eur Radiol 19:342\u2013357","journal-title":"Eur Radiol"},{"key":"2706_CR7","doi-asserted-by":"crossref","first-page":"895","DOI":"10.1148\/radiographics.21.4.g01jl16895","volume":"21","author":"Mortele","year":"2001","unstructured":"Mortele
-      KJ, Ros PR (2001) Cystic focal liver lesions in the adult: differential CT and
-      MR imaging features. Radiographics 21:895\u2013910","journal-title":"Radiographics"},{"key":"2706_CR8","doi-asserted-by":"crossref","first-page":"815","DOI":"10.1007\/s11596-010-0664-5","volume":"30","author":"Xu","year":"2010","unstructured":"Xu
-      L, Zhou Y, Qiu D (2010) Correlation between calcified liver metastases and histopathology
-      of primary colorectal carcinoma in Chinese. J Huazhong Univ Sci Technolog Med
-      Sci 30:815\u2013818","journal-title":"J Huazhong Univ Sci Technolog Med Sci"},{"key":"2706_CR9","doi-asserted-by":"crossref","first-page":"675","DOI":"10.1148\/radiographics.18.3.9599391","volume":"18","author":"Stoupis","year":"1998","unstructured":"Stoupis
-      C, Taylor HM, Paley MR et al (1998) The Rocky liver: radiologic-pathologic correlation
-      of calcified hepatic masses. Radiographics 18:675\u2013685 (quiz 726)","journal-title":"Radiographics"},{"key":"2706_CR10","doi-asserted-by":"crossref","first-page":"2187","DOI":"10.1007\/s00330-013-2824-z","volume":"23","author":"Scharitzer","year":"2013","unstructured":"Scharitzer
-      M, Ba-Ssalamah A, Ringl H et al (2013) Preoperative evaluation of colorectal
-      liver metastases: comparison between gadoxetic acid-enhanced 3.0-T MRI and contrast-enhanced
-      MDCT with histopathological correlation. Eur Radiol 23:2187\u20132196","journal-title":"Eur
-      Radiol"},{"key":"2706_CR11","doi-asserted-by":"crossref","first-page":"818","DOI":"10.1097\/01.sla.0000128305.90650.71","volume":"239","author":"Abdalla","year":"2004","unstructured":"Abdalla
-      EK, Vauthey JN, Ellis LM et al (2004) Recurrence and outcomes following hepatic
-      resection, radiofrequency ablation, and combined resection\/ablation for colorectal
-      liver metastases. Ann Surg 239:818\u2013825 (discussion 825\u2013817)","journal-title":"Ann
-      Surg"},{"key":"2706_CR12","doi-asserted-by":"crossref","first-page":"759","DOI":"10.1097\/00000658-200206000-00002","volume":"235","author":"Choti","year":"2002","unstructured":"Choti
-      MA, Sitzmann JV, Tiburi MF et al (2002) Trends in long-term survival following
-      liver resection for hepatic colorectal metastases. Ann Surg 235:759\u2013766","journal-title":"Ann
-      Surg"},{"key":"2706_CR13","doi-asserted-by":"crossref","first-page":"P25","DOI":"10.1007\/s10406-004-0088-z","volume":"14","author":"Albrecht","year":"2004","unstructured":"Albrecht
-      T, Hohmann J, Oldenburg A et al (2004) Detection and characterisation of liver
-      metastases. Eur Radiol 14(Suppl 8):P25\u2013P33","journal-title":"Eur Radiol"},{"key":"2706_CR14","doi-asserted-by":"crossref","first-page":"476","DOI":"10.1007\/s10350-004-6224-y","volume":"45","author":"Glover","year":"2002","unstructured":"Glover
-      C, Douse P, Kane P et al (2002) Accuracy of investigations for asymptomatic
-      colorectal liver metastases. Dis Colon Rectum 45:476\u2013484","journal-title":"Dis
-      Colon Rectum"},{"key":"2706_CR15","doi-asserted-by":"crossref","first-page":"9998","DOI":"10.3748\/wjg.v20.i29.9998","volume":"20","author":"Cantisani","year":"2014","unstructured":"Cantisani
-      V, Grazhdani H, Fioravanti C et al (2014) Liver metastases: contrast-enhanced
-      ultrasound compared with computed tomography and magnetic resonance. World J
-      Gastroenterol 20:9998\u201310007","journal-title":"World J Gastroenterol"},{"key":"2706_CR16","doi-asserted-by":"crossref","first-page":"16","DOI":"10.1007\/s001170050923","volume":"41","author":"Kulinna","year":"2001","unstructured":"Kulinna
-      C, Helmberger T, Kessler M, Reiser M (2001) Improvement in diagnosis of liver
-      metastases with the multi-detector CT. Radiologe 41:16\u201323","journal-title":"Radiologe"},{"key":"2706_CR17","doi-asserted-by":"crossref","first-page":"971","DOI":"10.1007\/s001170050590","volume":"39","author":"Kopka","year":"1999","unstructured":"Kopka
-      L, Grabbe E (1999) Biphasic liver diagnosis with multiplanar-detector spiral
-      CT. Radiologe 39:971\u2013978","journal-title":"Radiologe"},{"key":"2706_CR18","doi-asserted-by":"crossref","first-page":"e1","DOI":"10.1016\/j.ejrad.2010.03.004","volume":"79","author":"Kulemann","year":"2011","unstructured":"Kulemann
-      V, Schima W, Tamandl D et al (2011) Preoperative detection of colorectal liver
-      metastases in fatty liver: MDCT or MRI? Eur J Radiol 79:e1\u2013e6","journal-title":"Eur
-      J Radiol"},{"key":"2706_CR19","doi-asserted-by":"crossref","first-page":"670","DOI":"10.1016\/j.ejso.2012.05.004","volume":"38","author":"Berger-Kulemann","year":"2012","unstructured":"Berger-Kulemann
-      V, Schima W, Baroud S et al (2012) Gadoxetic acid-enhanced 3.0\u00a0T MR imaging
-      versus multidetector-row CT in the detection of colorectal metastases in fatty
-      liver using intraoperative ultrasound and histopathology as a standard of reference.
-      Eur J Surg Oncol 38:670\u2013676","journal-title":"Eur J Surg Oncol"},{"key":"2706_CR20","doi-asserted-by":"crossref","first-page":"903","DOI":"10.1007\/s00330-007-0847-z","volume":"18","author":"Koh","year":"2008","unstructured":"Koh
-      DM, Brown G, Riddell AM et al (2008) Detection of colorectal hepatic metastases
-      using MnDPDP MR imaging and diffusion-weighted imaging (DWI) alone and in combination.
-      Eur Radiol 18:903\u2013910","journal-title":"Eur Radiol"},{"key":"2706_CR21","unstructured":"Schima
-      W, Koelblinger C, Lesnik G, Ba-Ssalamah A (2011) Liver metastases. JBR-BTR 94:169\u2013177"},{"key":"2706_CR22","doi-asserted-by":"crossref","first-page":"777","DOI":"10.1148\/radiol.13130210","volume":"269","author":"Wibmer","year":"2013","unstructured":"Wibmer
-      A, Prusa AM, Nolz R et al (2013) Liver failure after major liver resection:
-      risk assessment by using preoperative gadoxetic acid-enhanced 3-T MR imaging.
-      Radiology 269:777\u2013786","journal-title":"Radiology"},{"key":"2706_CR23","doi-asserted-by":"crossref","first-page":"211","DOI":"10.1308\/003588414X13814021679195","volume":"96","author":"Lake","year":"2014","unstructured":"Lake
-      ES, Wadhwani S, Subar D et al (2014) The influence of FDG PET-CT on the detection
-      of extrahepatic disease in patients being considered for resection of colorectal
-      liver metastasis. Ann R Coll Surg Engl 96:211\u2013215","journal-title":"Ann
-      R Coll Surg Engl"},{"key":"2706_CR24","doi-asserted-by":"crossref","first-page":"1774","DOI":"10.1093\/annonc\/mdm108","volume":"18","author":"Herbertson","year":"2007","unstructured":"Herbertson
-      RA, Lee ST, Tebbutt N, Scott AM (2007) The expanding role of PET technology
-      in the management of patients with colorectal cancer. Ann Oncol 18:1774\u20131781","journal-title":"Ann
-      Oncol"},{"key":"2706_CR25","doi-asserted-by":"crossref","first-page":"938","DOI":"10.1097\/MNM.0b013e32833fa9ba","volume":"31","author":"Wiering","year":"2010","unstructured":"Wiering
-      B, Adang EM, Sijp JR van der et al (2010) Added value of positron emission tomography
-      imaging in the surgical treatment of colorectal liver metastases. Nucl Med Commun
-      31:938\u2013944","journal-title":"Nucl Med Commun"},{"key":"2706_CR26","first-page":"1200","volume":"44","author":"Bar-Shalom","year":"2003","unstructured":"Bar-Shalom
-      R, Yefremov N, Guralnik L et al (2003) Clinical performance of PET\/CT in evaluation
-      of cancer: additional value for diagnostic imaging and patient management. J
-      Nucl Med 44:1200\u20131209","journal-title":"J Nucl Med"},{"key":"2706_CR27","doi-asserted-by":"crossref","first-page":"508","DOI":"10.2967\/jnumed.106.035667","volume":"48","author":"Gabriel","year":"2007","unstructured":"Gabriel
-      M, Decristoforo C, Kendler D et al (2007) 68Ga-DOTA-Tyr3-octreotide PET in neuroendocrine
-      tumors: comparison with somatostatin receptor scintigraphy and CT. J Nucl Med
-      48:508\u2013518","journal-title":"J Nucl Med"}],"container-title":["Der Radiologe"],"language":"de","link":[{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00117-014-2706-7.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/article\/10.1007\/s00117-014-2706-7\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/link.springer.com\/content\/pdf\/10.1007\/s00117-014-2706-7","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:20:32Z","timestamp":1651033232000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/link.springer.com\/10.1007\/s00117-014-2706-7"}},"issued":{"date-parts":[[2015,1]]},"references-count":27,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2015,1]]}},"alternative-id":["2706"],"URL":"https:\/\/doi.org\/10.1007\/s00117-014-2706-7","ISSN":["0033-832X","1432-2102"],"issn-type":[{"value":"0033-832X","type":"print"},{"value":"1432-2102","type":"electronic"}],"published":{"date-parts":[[2015,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:42:19Z","timestamp":1651034539913},"reference-count":0,"publisher":"IJTHFAG
-      Journal","issue":"1","license":[{"start":{"date-parts":[[2022,3,23]],"date-time":"2022-03-23T00:00:00Z","timestamp":1647993600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/4.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["ijthfa"],"abstract":"<jats:p>Azerbaijan
-      is a country rich in its subsoil and surface natural resources. There is a colorful
-      hydrographic network in the Greater and Lesser Caucasus, and Kur lowland that
-      separate them. Our republic with a very fascinating landscape is more beautiful
-      in a river, lake, waterfall, spring and others. The Caspian Sea, high mountains
-      and green forests are further beautifying the homeland. Among such beauties,
-      sanatorium-resort complexes\u00a0are more attractive. Thermal waters with temperatures
-      of 72 C are used for treatment purposes in the territory of Shikhov, Baku city.
-      These waters play a big role in the treatment of spinal, skin-venereal, wind
-      and other diseases. Everyone may use thermal waters in Goran, Samukh, Gazanbulag,
-      Tartar, Barda, Aghjabadi, Khachmaz, Lankaran, Astara, Masall\u0131 and other
-      places for treatment purposes. Other territories of our republic also have sanatorium-resort
-      complexes. So, waters used in Galaalti are being for treatment of kidney stones.
-      There is a very important resort complex in the bosom of nature. In general,
-      Azerbaijan is a country distinguished with its beautiful resort zones. Sanatorium
-      hospitals which operate in these zones are well-known for treatment of cardiac,
-      cardiovascular, nervous system, gastrointestinal, chronic and other diseases.
-      In this regard, we welcome everyone from different countries of the world to
-      the sanatorium-resort hospitals of our republic.<\/jats:p>","DOI":"10.31214\/ijthfa.v5i1.86","type":"journal-article","created":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:22:15Z","timestamp":1651033335000},"page":"51-54","source":"Crossref","is-referenced-by-count":0,"title":["The
-      importance of Sanatorium-resort complexes for medical treatments in Azerbaijan"],"prefix":"10.31214","volume":"5","author":[{"given":"Sakhavat","family":"Salakhov","sequence":"first","affiliation":[]}],"member":"16088","published-online":{"date-parts":[[2022,3,23]]},"container-title":["International
-      Journal of Terrestrial Heat Flow and Applications"],"link":[{"URL":"http:\/\/ijthfa.com\/index.php\/journal\/article\/download\/86\/67","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/ijthfa.com\/index.php\/journal\/article\/download\/86\/67","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:22:27Z","timestamp":1651033347000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/ijthfa.com\/index.php\/journal\/article\/view\/86"}},"issued":{"date-parts":[[2022,3,23]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2022,4,4]]}},"URL":"https:\/\/doi.org\/10.31214\/ijthfa.v5i1.86","ISSN":["2595-4180"],"issn-type":[{"value":"2595-4180","type":"electronic"}],"published":{"date-parts":[[2022,3,23]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:42:38Z","timestamp":1651034558131},"reference-count":0,"publisher":"Universitas
-      Muhammadiyah Tangerang","issue":"1","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["al-muyassar"],"abstract":"<jats:p>Arabic
-      debate is one of the highest components of the art of speaking (maharah kalam)
-      in learning. This activity also trains students in addition to Arabic language
-      knowledge but also trains in arguing, studying, various kinds of perspectives.
-      Based on a wide variety of knowledge and sharp analysis of phenomena. So that
-      every Debate title is issued. Of course there are problems that are solved through
-      various points of view, for example in terms of economy, education, social,
-      culture and others. This study uses a qualitative approach with a descriptive
-      method. The purpose of this study was to determine the Arabic debate training
-      strategy for Al Kindy students at the Mahad Al Jami''ah Center of UIN Maulana
-      Malik Ibrahim Malang. Therefore, it has a strategic-systematic way of arguing
-      that is built to be accepted, until it is implemented. Of course it has a maximum
-      preparation process so that it can be realized. The following are the stages
-      of the debate training: (1) Before starting the exercise, students are given
-      various information about the exercise and are called to prepare several arguments
-      and data sources related to the title of the debate raised,(2) The process of
-      cross-member discussion\/study does not just flow, but there are presenters
-      who are scheduled to take turns, he is responsible for the flow of discussions
-      or studies related to current topics and issues led by a moderator and concluded
-      with the minutes, (3) The practice of practicing direct Arabic debate, using
-      two ASEAN Parliamentary systems consisting of two teams of three people each.
-      And the British Parliamentary system consists of four groups, namely the agree
-      group 1, the agree group 2, the contra group 1, the contra group 2, each group
-      consists of two people.<\/jats:p>","DOI":"10.31000\/al-muyassar.v1i1.6071","type":"journal-article","created":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:24:25Z","timestamp":1651033465000},"page":"41","source":"Crossref","is-referenced-by-count":0,"title":["Strategi
-      Pelatihan Bahasa Arab dengan Metode Debat bagi Mahasiswa Komunitas Al-Kindy
-      di Pusat Ma\u2019had Al-Jaami\u2019ah UIN Maulana Malik Ibrahim Malang"],"prefix":"10.31000","volume":"1","author":[{"given":"Agung","family":"Muttaqien","sequence":"first","affiliation":[]},{"given":"Faedurrohman","family":"Faedurrohman","sequence":"additional","affiliation":[]}],"member":"15945","published-online":{"date-parts":[[2022,3,6]]},"container-title":["Al-Muyassar:
-      Journal of Arabic Education"],"link":[{"URL":"http:\/\/jurnal.umt.ac.id\/index.php\/al\/article\/viewFile\/6071\/3215","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"http:\/\/jurnal.umt.ac.id\/index.php\/al\/article\/viewFile\/6071\/3215","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:24:35Z","timestamp":1651033475000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/jurnal.umt.ac.id\/index.php\/al\/article\/view\/6071"}},"issued":{"date-parts":[[2022,3,6]]},"references-count":0,"journal-issue":{"issue":"1","published-online":{"date-parts":[[2022,1,22]]}},"URL":"https:\/\/doi.org\/10.31000\/al-muyassar.v1i1.6071","ISSN":["2829-095X"],"issn-type":[{"value":"2829-095X","type":"electronic"}],"published":{"date-parts":[[2022,3,6]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:40:59Z","timestamp":1651027259933},"reference-count":35,"publisher":"Springer
-      Science and Business Media LLC","issue":"1","license":[{"start":{"date-parts":[[2022,3,1]],"date-time":"2022-03-01T00:00:00Z","timestamp":1646092800000},"content-version":"tdm","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"},{"start":{"date-parts":[[2022,3,1]],"date-time":"2022-03-01T00:00:00Z","timestamp":1646092800000},"content-version":"vor","delay-in-days":0,"URL":"https:\/\/www.springer.com\/tdm"}],"content-domain":{"domain":["link.springer.com"],"crossmark-restriction":false},"short-container-title":["Chem
-      Technol Fuels Oils"],"published-print":{"date-parts":[[2022,3]]},"DOI":"10.1007\/s10553-022-01347-x","type":"journal-article","created":{"date-parts":[[2022,3,30]],"date-time":"2022-03-30T02:03:41Z","timestamp":1648605821000},"page":"19-28","update-policy":"http:\/\/dx.doi.org\/10.1007\/springer_crossmark_policy","source":"Crossref","is-referenced-by-count":0,"title":["Formation
-      of \u042110\u2013\u042114 Adamantanes from Petroleum Protoadamantanes"],"prefix":"10.1007","volume":"58","author":[{"given":"G.
-      A.","family":"Gadzhiev","sequence":"first","affiliation":[]},{"given":"M. V.","family":"Giruts","sequence":"additional","affiliation":[]},{"given":"D.
-      S.","family":"Vylekzhanina","sequence":"additional","affiliation":[]},{"given":"G.
-      N.","family":"Gordadze","sequence":"additional","affiliation":[]}],"member":"297","published-online":{"date-parts":[[2022,3,30]]},"reference":[{"issue":"4","key":"1347_CR1","first-page":"243","volume":"48","author":"GN
-      Gordadze","year":"2008","unstructured":"G. N. Gordadze, Neftekhimiya, 48, No.
-      4, 243-255 (2008).","journal-title":"Neftekhimiya"},{"key":"1347_CR2","unstructured":"M.
-      V. Giruts, G N. Gordadze, Chemistry and Geochemistry of Hydrocarbons of Diamond-Like
-      Structure [in Russian], Nedra, Moscow (2017), 221 pp."},{"key":"1347_CR3","doi-asserted-by":"publisher","first-page":"1108","DOI":"10.1134\/S0965544119100098","volume":"59","author":"AI
-      Nekhaev","year":"2019","unstructured":"A. I. Nekhaev, A. L Maksimov, Petroleum
-      Chemistry, 59, 1108-1117 (2019).","journal-title":"Petroleum Chemistry"},{"key":"1347_CR4","unstructured":"E.
-      I. Bagrii, Adamantanes [in Russian], Nauka, Moscow (1989), 264 pp."},{"issue":"4","key":"1347_CR5","first-page":"243","volume":"48","author":"GN
-      Gordadze","year":"2008","unstructured":"G. N. Gordadze, Neftekhimiya, 48, No.
-      4, 243-255 (2008).","journal-title":"Neftekhimiya"},{"key":"1347_CR6","unstructured":"M.
-      V. Giruts, G. N. Gordadze, Chemistry and Geochemistry of Hydrocarbons with Diamond-Like
-      Structure [in Russian], Nedra, Moscow (2017), 221 pp."},{"issue":"3","key":"1347_CR7","first-page":"345","volume":"13","author":"ZV
-      Yakubson","year":"1973","unstructured":"Z. V. Yakubson, O. A. Aref\u2019ev,
-      Al. A. Petrov, Neftekhimiya, 13, No. 3, 345-351 (1973).","journal-title":"Neftekhimiya"},{"key":"1347_CR8","unstructured":"Al.
-      A. Petrov, Hydrocarbons of Oil [in Russian], Nauka, Moscow (1984), 263 pp."},{"issue":"3","key":"1347_CR9","first-page":"163","volume":"45","author":"MV
-      Giruts","year":"2005","unstructured":"M. V. Giruts, G. V. Rusinova, G. N. Gordadze,
-      Neftekhimiya, 45, No. 3, 163-177 (2005).","journal-title":"Neftekhimiya"},{"issue":"4","key":"1347_CR10","first-page":"251","volume":"46","author":"MV
-      Giruts","year":"2006","unstructured":"M. V. Giruts, G. V. Rusinova, G. N. Gordadze,
-      Neftekhimiya, 46, No. 4, 251-261 (2006).","journal-title":"Neftekhimiya"},{"issue":"1","key":"1347_CR11","first-page":"13","volume":"47","author":"MV
-      Giruts","year":"2007","unstructured":"M. V. Giruts, G. N. Gordadze, Neftekhimiya,
-      47, No. 1, 13-23 (2007).","journal-title":"Neftekhimiya"},{"issue":"5","key":"1347_CR12","first-page":"606","volume":"61","author":"GA
-      Gadzhiev","year":"2021","unstructured":"G. A. Gadzhiev, M. V. Giruts, 61, No.
-      5, 606-610 (2021).","journal-title":"M. V. Giruts"},{"issue":"3","key":"1347_CR13","first-page":"214","volume":"35","author":"EN
-      Bagrii","year":"1995","unstructured":"E. N. Bagrii, Neftekhimiya, 35, No. 3,
-      214-218 (1995).","journal-title":"Neftekhimiya"},{"key":"1347_CR14","unstructured":"G.
-      A. Mansoori, Diamondoid Molecules with Application in Biomedicine, Material
-      Science, Nanotechnology & Petroleum Science, World Scientific Publishing Co.
-      Pte. Ltd, Singapore (2012), 408 pp."},{"key":"1347_CR15","unstructured":"M.
-      V. Giruts, G. N. Gordadze, Chemistry and Geochemistry of Hydrocarbons with Diamond-Like
-      Structure [in Russian], Nedra, Moscow (2017), 221 pp."},{"key":"1347_CR16","doi-asserted-by":"crossref","unstructured":"R.
-      C. Merkle, Nanotechnology, 11, 89-99 (2000).","DOI":"10.1088\/0957-4484\/11\/2\/309"},{"key":"1347_CR17","doi-asserted-by":"publisher","first-page":"5","DOI":"10.1016\/S0167-7799(98)01278-5","volume":"17","author":"\u041aE
-      Drexler","year":"1999","unstructured":"\u041a. E. Drexler, Trends in Biotechnology,
-      17, 5-7 (1999).","journal-title":"Trends in Biotechnology"},{"issue":"6","key":"1347_CR18","doi-asserted-by":"publisher","first-page":"467","DOI":"10.7868\/S0028242113060026","volume":"53","author":"EN
-      Bagrii","year":"2013","unstructured":"E. N. Bagrii, G. B. Maravin, Neftekhimiya,
-      53, No. 6, 467-472 (2013).","journal-title":"Neftekhimiya"},{"key":"1347_CR19","unstructured":"US
-      Patent No. 5345020."},{"key":"1347_CR20","doi-asserted-by":"publisher","first-page":"95","DOI":"10.1016\/j.ces.2017.11.044","volume":"180","author":"X
-      Zhang","year":"2018","unstructured":"X. Zhang, L. Pan, L. Wang, et al., Chemical
-      Engineering Science, 180, 95-125 (2018).","journal-title":"Chemical Engineering
-      Science"},{"key":"1347_CR21","doi-asserted-by":"crossref","unstructured":"J.
-      Xie, T. Jia, S. Gong, et al., Fuel, 260. Article No. 116424 (2020).","DOI":"10.1016\/j.fuel.2019.116424"},{"issue":"3","key":"1347_CR22","doi-asserted-by":"publisher","first-page":"775","DOI":"10.1021\/je4008926","volume":"59","author":"X
-      Qin","year":"2014","unstructured":"X. Qin, X. Cao, Y. Guo, et al., Journal of
-      Chemical and Engineering Data, 59 (3), 775-783 (2014).","journal-title":"Journal
-      of Chemical and Engineering Data"},{"issue":"7","key":"1347_CR23","doi-asserted-by":"publisher","first-page":"2486","DOI":"10.1021\/ie303227g","volume":"52","author":"T
-      Ma","year":"2013","unstructured":"T. Ma, R. Feng, J. -J. Zou, et al., Industrial
-      and Engineering Chemistry Research, 52 (7), 2486-2492 (2013).","journal-title":"Industrial
-      and Engineering Chemistry Research"},{"issue":"1","key":"1347_CR24","doi-asserted-by":"publisher","first-page":"164","DOI":"10.1016\/j.fuel.2011.07.038","volume":"91","author":"L
-      Wang","year":"2012","unstructured":"L. Wang, J. -J. Zou, X. Zhang, et al., Fuel,
-      91 (1), 164-169 (2012).","journal-title":"Fuel"},{"issue":"3","key":"1347_CR25","doi-asserted-by":"publisher","first-page":"467","DOI":"10.1039\/C6SE00108D","volume":"1","author":"KW
-      Harrison","year":"2017","unstructured":"K. W. Harrison, B. G. Harvey, Sustainable
-      Energy and Fuels, 1 (3), 467-473 (2017).","journal-title":"Sustainable Energy
-      and Fuels"},{"issue":"7","key":"1347_CR26","doi-asserted-by":"publisher","first-page":"7786","DOI":"10.1021\/acs.energyfuels.8b00792","volume":"32","author":"KW
-      Harrison","year":"2018","unstructured":"K. W. Harrison, K. E. Rosenkoetter,
-      B. G. Harvey, Energy and Fuels, 32 (7), 7786-7791 (2018).","journal-title":"Energy
-      and Fuels"},{"key":"1347_CR27","doi-asserted-by":"publisher","first-page":"652","DOI":"10.1016\/j.fuel.2018.11.064","volume":"239","author":"J
-      Xie","year":"2019","unstructured":"J. Xie, X. Zhang, J. Xie, et al., Fuel, 239,
-      652-658 (2019).","journal-title":"Fuel"},{"issue":"12","key":"1347_CR28","doi-asserted-by":"publisher","first-page":"10171","DOI":"10.1021\/acs.energyfuels.6b01865","volume":"30","author":"BG
-      Harvey","year":"2016","unstructured":"B. G. Harvey, K. W. Harrison, M. C. Davis,
-      et al., Energy and Fuels, 30 (12), 10171-10178 (2016).","journal-title":"Energy
-      and Fuels"},{"key":"1347_CR29","unstructured":"E. I. Bagrii, Adamantanes [in
-      Russian], Nauka, Moscow (1989) 264 pp."},{"key":"1347_CR30","unstructured":"Patent
-      WO2002096804-A."},{"key":"1347_CR31","unstructured":"US Patent No. 5019665."},{"key":"1347_CR32","unstructured":"US
-      Patent No. 5461184."},{"key":"1347_CR33","unstructured":"US Patent No. 4952747."},{"issue":"2","key":"1347_CR34","doi-asserted-by":"publisher","first-page":"166","DOI":"10.31857\/S0028242121020040","volume":"61","author":"GA
-      Gadzhiev","year":"2021","unstructured":"G. A. Gadzhiev, Ch. M. Badmaev, G. N.
-      Gordadze, et al., Neftekhimiya, 61, No. 2, 166-171 (2021).","journal-title":"Neftekhimiya"},{"key":"1347_CR35","doi-asserted-by":"crossref","unstructured":"O.
-      R. Sergeeva, V. V. Chenets, V. G. Lipovich, 19, Is. 3-4, 411-414 (1982).","DOI":"10.1007\/BF02074072"}],"container-title":["Chemistry
-      and Technology of Fuels and Oils"],"language":"en","link":[{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s10553-022-01347-x.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/article\/10.1007\/s10553-022-01347-x\/fulltext.html","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/link.springer.com\/content\/pdf\/10.1007\/s10553-022-01347-x.pdf","content-type":"application\/pdf","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:18:43Z","timestamp":1651025923000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/link.springer.com\/10.1007\/s10553-022-01347-x"}},"issued":{"date-parts":[[2022,3]]},"references-count":35,"journal-issue":{"issue":"1","published-print":{"date-parts":[[2022,3]]}},"alternative-id":["1347"],"URL":"https:\/\/doi.org\/10.1007\/s10553-022-01347-x","ISSN":["0009-3092","1573-8310"],"issn-type":[{"value":"0009-3092","type":"print"},{"value":"1573-8310","type":"electronic"}],"published":{"date-parts":[[2022,3]]},"assertion":[{"value":"30
-      March 2022","order":1,"name":"first_online","label":"First Online","group":{"name":"ArticleHistory","label":"Article
-      History"}}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T03:10:22Z","timestamp":1651029022431},"reference-count":21,"publisher":"Informa
-      UK Limited","issue":"2","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Religion"],"published-print":{"date-parts":[[2015,4,3]]},"DOI":"10.1080\/0048721x.2014.992109","type":"journal-article","created":{"date-parts":[[2015,1,20]],"date-time":"2015-01-20T11:40:02Z","timestamp":1421754002000},"page":"191-208","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":3,"title":["Decolonising
-      the word: Themba Masinga and his religious poetry in Ibandla LamaNazaretha"],"prefix":"10.1080","volume":"45","author":[{"given":"Nkosinathi","family":"Sithole","sequence":"first","affiliation":[]}],"member":"301","published-online":{"date-parts":[[2015,1,20]]},"reference":[{"key":"CIT0002","first-page":"1","volume":"88","author":"Boer
-      R","year":"2001","journal-title":"Semia Special Issue: A Vanishing Mediator?
-      The Presence\/Absence of the Bible in Postcolonialism"},{"key":"CIT0003","volume-title":"Voicing
-      the Text: South African Oral Poetry and Performance","author":"Brown D","year":"1998"},{"key":"CIT0005","doi-asserted-by":"publisher","DOI":"10.1080\/1013929X.2008.9678297"},{"key":"CIT0006","doi-asserted-by":"publisher","DOI":"10.1080\/1013929X.2008.9678302"},{"key":"CIT0007","volume-title":"Religion
-      and Spirituality in South Africa: New Perspectives","author":"Brown D.","year":"2009"},{"key":"CIT0009","doi-asserted-by":"publisher","DOI":"10.7208\/chicago\/9780226114477.001.0001"},{"key":"CIT0010","volume-title":"Postcolonial
-      Feminist Interpretation of the Bible","author":"Dube M","year":"2000"},{"key":"CIT0011","doi-asserted-by":"crossref","DOI":"10.1163\/9789004496682","volume-title":"The
-      Man of Heaven and the Beautiful Ones of God: Writings from Ibandla lamaNazaretha,
-      a Nazaretha Church","author":"Gunner E","year":"2002"},{"key":"CIT0012","doi-asserted-by":"publisher","DOI":"10.1006\/reli.1997.0094"},{"key":"CIT0013","volume-title":"Where
-      is the Way: Song and Struggle in South Africa","author":"Kivnick H. Q.","year":"1990"},{"key":"CIT0014","volume-title":"Izwi
-      Lezulu","author":"Mpanza M","year":"1999"},{"key":"CIT0015","volume-title":"Rituals
-      of Fertility and the Sacrifice of Desire: Nazarite Women''s Performances in
-      South Africa","author":"Muller C","year":"1999"},{"issue":"2","key":"CIT0016","first-page":"12","volume":"2","author":"Oosthuizen
-      G. C.","year":"1981","journal-title":"Religion in Southern Africa"},{"key":"CIT0017","doi-asserted-by":"publisher","DOI":"10.1163\/157006699X00340"},{"issue":"1","key":"CIT0022","first-page":"209","volume":"24","author":"Sithole
-      N","year":"2011","journal-title":"Old Testament Essays"},{"key":"CIT0023","volume-title":"Bantu
-      Prophets in South Africa","author":"Sundkler B. G. M.","year":"1948"},{"key":"CIT0024","doi-asserted-by":"publisher","DOI":"10.1525\/nr.2006.9.4.079"},{"key":"CIT0025","volume-title":"Shembe:
-      The Revitalisation of African Society","author":"Vilakazi A.","year":"1986"},{"key":"CIT0026","volume-title":"The
-      Academy of the Poor: Towards a Dialogical Reading of the Bible","author":"West
-      G","year":"1999"},{"issue":"1","key":"CIT0028","first-page":"157","volume":"40","author":"West
-      G","year":"2006","journal-title":"Neotestamenica"},{"key":"CIT0030","volume-title":"Postcolonialism:
-      An Historical Introduction","author":"Young R. J. C.","year":"2001"}],"container-title":["Religion"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/0048721X.2014.992109","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:30:53Z","timestamp":1651026653000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.tandfonline.com\/doi\/full\/10.1080\/0048721X.2014.992109"}},"issued":{"date-parts":[[2015,1,20]]},"references-count":21,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2015,2,16]]},"published-print":{"date-parts":[[2015,4,3]]}},"alternative-id":["10.1080\/0048721X.2014.992109"],"URL":"https:\/\/doi.org\/10.1080\/0048721x.2014.992109","ISSN":["0048-721X","1096-1151"],"issn-type":[{"value":"0048-721X","type":"print"},{"value":"1096-1151","type":"electronic"}],"published":{"date-parts":[[2015,1,20]]},"assertion":[{"value":"The
-      publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
-      Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rrel20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=rrel20","order":2,"name":"aims_and_scope_url","label":"Aim
-      & Scope"}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T03:10:49Z","timestamp":1651029049720},"reference-count":0,"publisher":"Faculty
-      of Education and Teacher Training, Jambi University","issue":"2","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["JPJ"],"abstract":"<jats:p>Introduction
-      Santri who attend Islamic boarding schools, require them to live far apart from
-      their parents and families. And this condition can be a barrier for these students
-      to achieve happiness. The life of the Islamic boarding school which is different
-      from school life in general makes it difficult for some students to adapt. In
-      addition, the existing rules and learning programs stress the students. As a
-      result, it makes the students depressed and stressed and has an impact on the
-      happiness of the students. One of the factors affecting happiness is friendship.
-      A person will be happier when experiencing high quality friendships with his
-      friends.\nMethods The purpose of this study was to examine the relationship
-      between the quality of friendship and happiness in the students of the Imam
-      Ibnu Katsir Islamic boarding school in Rumbai District. The sample in this study
-      amounted to 151 people who were obtained through the quota sampling technique.
-      The instrument used in this study was the friendship quality scale with a reliability
-      coefficient of 0.891 and a happiness scale of 0.897. This research uses Product
-      moment analysis technique.\nResults of this study indicate a significant value
-      of = 0.000 (p \u2264 0.001) meaning that the hypothesis is accepted, that is,
-      there is a significant positive relationship between the quality of friendship
-      and happiness of the students. The effective contribution of friendship quality
-      to happiness is 7.5%. This shows that the quality of friendship plays an important
-      role in increasing happiness in students.\nConclusions and Recommendation This
-      research concluded that quality of friendship have influence for the conquest
-      of happiness in santri. Therefore this research that recommendation to santri
-      for cultivate a quality friendly relationship with other person.\nKeywords:
-      friendship quality, happiness, school.\nABSTRAK\nPendahuluan Santri yang bersekolah
-      di Pondok Pesantren, mengharuskan mereka untuk hidup jauh terpisah dari orangtua
-      maupun keluarganya. Dan kondisi tersebut bisa menjadi penghalang untuk santri
-      tersebut untuk mencapai kebahagiaan. Kehidupan Pondok Pesantren yang berbeda
-      dengan kehidupan sekolah pada umumnya membuat beberapa santri sulit untuk beradaptasi.
-      Selain itu, aturan-aturan serta program pembelajaran yang ada membuat santri
-      tertekan. Akibatnya membuat santri tertekan dan stress serta berdampak pada
-      kebahagiaan para santri. Salah satu faktor mempengaruhi kebahagiaan adalah persahabatan.
-      Seseorang akan lebih bahagia saat mengalami persahabatan dengan kualitas yang
-      tinggi dengan sahabat-sahabatnya.\nMetode Tujuan penelitian ini untuk meneliti
-      hubungan antara Kualitas Persahabatan dengan Kebahagiaan pada Santri Pondok
-      Pesantren Imam Ibnu Katsir di Kecamatan Rumbai. Sampel dalam penelitian ini
-      berjumlah 151 orang yang diperoleh melalui teknik kuota sampling. Instrumen
-      yang digunakan dalam penelitian ini adalah skala kualitas persahabatan dengan
-      koefisien reliabilitas sebesar 0,891 dan skala kebahagiaan sebesar 0,897. Penelitian
-      ini menggunakan teknik analisis Product moment.\nHasil Penelitian ini menunjukkan
-      nilai signifikan sebesar = 0,000 (p \u2264 0,001) artinya hipotesis diterima,
-      yaitu ada hubungan positif yang signifikan antara kualitas persahabatan dengan
-      kebahagiaan pada santri. Sumbangan efektif kualitas persahabatan terhadap kebahagiaan
-      yaitu sebesar 7,5%. Hal ini menunjukkan bahwa kualitas persahabatan berperan
-      penting dalam meningkatkan kebahagiaan pada santri.\nKesimpulan dan Saran Penelitian
-      ini disimpulkan bahwa kualitas persahabatan berperan penting dalam meraih kebahagiaan
-      pada santri. Oleh karena itu, direkomendasikan setiap santri hendaknya memupuk
-      hubungan persahabatan yang berkualitas dengan teman.\nKata Kunci: kualitas persahabatan,
-      kebahagiaan, sekolah\n\u00a0\n\u00a0<\/jats:p>","DOI":"10.22437\/jpj.v7i2.12637","type":"journal-article","created":{"date-parts":[[2021,11,5]],"date-time":"2021-11-05T08:13:01Z","timestamp":1636099981000},"page":"17-27","source":"Crossref","is-referenced-by-count":0,"title":["HUBUNGAN
-      ANTARA KUALITAS PERSAHABATAN DENGAN KEBAHAGIAAN PADA SANTRI PONDOK PESANTREN
-      IIK RIAU"],"prefix":"10.22437","volume":"5","author":[{"given":"Yuliani Intan","family":"Lestari","sequence":"first","affiliation":[]},{"given":"Winda","family":"Palasari","sequence":"additional","affiliation":[]}],"member":"9726","published-online":{"date-parts":[[2021,6,25]]},"container-title":["Jurnal
-      Psikologi Jambi"],"link":[{"URL":"https:\/\/online-journal.unja.ac.id\/jpj\/article\/download\/12637\/10965","content-type":"application\/pdf","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/online-journal.unja.ac.id\/jpj\/article\/download\/12637\/10965","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:44:08Z","timestamp":1651027448000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/online-journal.unja.ac.id\/jpj\/article\/view\/12637"}},"subtitle":["THE
-      RELATIONSHIP BETWEEN THE QUALITY OF FRIENDSHIP AND HAPPINESS IN SANTRI PONDOK
-      PESANTREN IIK RIAU"],"issued":{"date-parts":[[2021,6,25]]},"references-count":0,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2021,6,25]]}},"URL":"https:\/\/doi.org\/10.22437\/jpj.v7i2.12637","ISSN":["2580-7021","2528-2735"],"issn-type":[{"value":"2580-7021","type":"electronic"},{"value":"2528-2735","type":"print"}],"published":{"date-parts":[[2021,6,25]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:26:35Z","timestamp":1651033595212},"reference-count":0,"publisher":"Informa
-      UK Limited","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Minerals
-      &amp; Energy - Raw Materials Report"],"published-print":{"date-parts":[[1999,1]]},"DOI":"10.1080\/14041049909362532","type":"journal-article","created":{"date-parts":[[2008,11,21]],"date-time":"2008-11-21T16:21:34Z","timestamp":1227284494000},"page":"3-5","source":"Crossref","is-referenced-by-count":1,"title":["The
-      mining and energy research network: Aims and scope of the project"],"prefix":"10.1080","volume":"14","author":[{"given":"Alyson","family":"Warhurst","sequence":"first","affiliation":[]}],"member":"301","container-title":["Minerals
-      &amp; Energy - Raw Materials Report"],"language":"en","link":[{"URL":"http:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/14041049909362532","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2016,12,15]],"date-time":"2016-12-15T16:30:51Z","timestamp":1481819451000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.tandfonline.com\/doi\/abs\/10.1080\/14041049909362532"}},"issued":{"date-parts":[[1999,1]]},"references-count":0,"journal-issue":{"issue":"3","published-print":{"date-parts":[[1999,1]]}},"alternative-id":["10.1080\/14041049909362532"],"URL":"https:\/\/doi.org\/10.1080\/14041049909362532","ISSN":["1404-1049","1651-2286"],"issn-type":[{"value":"1404-1049","type":"print"},{"value":"1651-2286","type":"electronic"}],"published":{"date-parts":[[1999,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T04:25:45Z","timestamp":1651033545885},"reference-count":20,"publisher":"The
-      Korea Contents Association","issue":"3","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["The
-      Journal of the Korea Contents Association"],"published-print":{"date-parts":[[2014,3,28]]},"DOI":"10.5392\/jkca.2014.14.03.314","type":"journal-article","created":{"date-parts":[[2014,7,18]],"date-time":"2014-07-18T04:31:05Z","timestamp":1405657865000},"page":"314-327","source":"Crossref","is-referenced-by-count":3,"title":["Effectiveness
-      of an Emergent Care Management Simulation Education among Senior Nursing Students
-      According to Learning Styles"],"prefix":"10.5392","volume":"14","author":[{"given":"Hea
-      Kung","family":"Hur","sequence":"first","affiliation":[]},{"given":"Yun Hee","family":"Shin","sequence":"additional","affiliation":[]},{"given":"SoMi","family":"Park","sequence":"additional","affiliation":[]},{"given":"Young
-      Mi","family":"Lim","sequence":"additional","affiliation":[]},{"given":"Gi Yon","family":"Kim","sequence":"additional","affiliation":[]},{"given":"Ki
-      Kyong","family":"Kim","sequence":"additional","affiliation":[]},{"given":"Hee-Young","family":"Song","sequence":"additional","affiliation":[]},{"given":"Hyang
-      Ok","family":"Choi","sequence":"additional","affiliation":[]},{"given":"Jihea","family":"Choi","sequence":"additional","affiliation":[]}],"member":"3346","reference":[{"key":"CCTHCV_2014_v14n3_314_002","doi-asserted-by":"publisher","DOI":"10.7475\/kjan.2013.25.5.574"},{"key":"CCTHCV_2014_v14n3_314_003","first-page":"96","volume":"26","year":"2005","journal-title":"Nurs
-      Educ Perspect"},{"key":"CCTHCV_2014_v14n3_314_005","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2013.19.2.228"},{"key":"CCTHCV_2014_v14n3_314_006","first-page":"1","volume":"23","year":"2011","journal-title":"Korean
-      Journal of Adult Nursing"},{"key":"CCTHCV_2014_v14n3_314_008","first-page":"14","volume":"4","year":"0000","journal-title":"Teach
-      Lear Nurs"},{"key":"CCTHCV_2014_v14n3_314_009","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2012.18.1.111"},{"key":"CCTHCV_2014_v14n3_314_010","doi-asserted-by":"publisher","DOI":"10.5977\/JKASNE.2009.15.2.183"},{"key":"CCTHCV_2014_v14n3_314_012","doi-asserted-by":"crossref","first-page":"3","DOI":"10.1111\/j.1365-2648.2009.05240.x","volume":"66","year":"2010","journal-title":"J
-      Adv Nurs"},{"key":"CCTHCV_2014_v14n3_314_013","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2013.19.1.5"},{"key":"CCTHCV_2014_v14n3_314_014","doi-asserted-by":"crossref","first-page":"269","DOI":"10.3928\/01484834-20070601-06","volume":"46","year":"2007","journal-title":"J
-      Nurs Educ"},{"key":"CCTHCV_2014_v14n3_314_019","first-page":"13","volume":"13","year":"2007","journal-title":"The
-      Journal of Korean Academic Society of Nursing Education"},{"key":"CCTHCV_2014_v14n3_314_021","doi-asserted-by":"publisher","DOI":"10.13065\/jksdh.2013.13.2.343"},{"key":"CCTHCV_2014_v14n3_314_022","first-page":"200","volume":"16","year":"2009","journal-title":"Journal
-      of Korean Academy of Fundamentals of Nursing"},{"key":"CCTHCV_2014_v14n3_314_023","doi-asserted-by":"publisher","DOI":"10.7739\/jkafn.2012.19.3.334"},{"key":"CCTHCV_2014_v14n3_314_025","first-page":"731","volume":"20","year":"2008","journal-title":"Korean
-      Journal of Adult Nursing"},{"key":"CCTHCV_2014_v14n3_314_026","doi-asserted-by":"crossref","first-page":"1","DOI":"10.5688\/aj700101","volume":"70","year":"2006","journal-title":"Am
-      J Pharm Educ"},{"key":"CCTHCV_2014_v14n3_314_027","doi-asserted-by":"publisher","DOI":"10.5392\/JKCA.2013.13.11.1046"},{"key":"CCTHCV_2014_v14n3_314_035","doi-asserted-by":"publisher","DOI":"10.5977\/JKASNE.2011.17.3.355"},{"key":"CCTHCV_2014_v14n3_314_036","doi-asserted-by":"crossref","first-page":"506","DOI":"10.1016\/j.nedt.2011.08.001","volume":"32","year":"2012","journal-title":"Nurse
-      Educ Today"},{"key":"CCTHCV_2014_v14n3_314_037","doi-asserted-by":"publisher","DOI":"10.5977\/jkasne.2013.19.3.413"}],"container-title":["The
-      Journal of the Korea Contents Association"],"original-title":["\uac04\ud638\ub300\ud559
-      4\ud559\ub144 \ud559\uc0dd\uc758 \ud559\uc2b5\uc720\ud615\uc5d0 \ub530\ub978
-      \uc751\uae09\uc0c1\ud669\uad00\ub9ac \uc2dc\ubbac\ub808\uc774\uc158 \uad50\uc721\uc758
-      \ud6a8\uacfc"],"language":"en","deposited":{"date-parts":[[2020,8,22]],"date-time":"2020-08-22T10:53:26Z","timestamp":1598093606000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/koreascience.or.kr\/journal\/view.jsp?kj=CCTHCV&py=2014&vnc=v14n3&sp=314"}},"issued":{"date-parts":[[2014,3,28]]},"references-count":20,"journal-issue":{"issue":"3","published-print":{"date-parts":[[2014,3,28]]}},"URL":"https:\/\/doi.org\/10.5392\/jkca.2014.14.03.314","ISSN":["1598-4877"],"issn-type":[{"value":"1598-4877","type":"print"}],"published":{"date-parts":[[2014,3,28]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:11:56Z","timestamp":1651054316899},"reference-count":0,"publisher":"Informa
-      UK Limited","issue":"sup1","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Nordic
-      Journal of Psychiatry"],"published-print":{"date-parts":[[2021,12,31]]},"DOI":"10.1080\/08039488.2021.2019912","type":"journal-article","created":{"date-parts":[[2022,3,22]],"date-time":"2022-03-22T16:05:02Z","timestamp":1647965102000},"page":"S8-S8","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["Life
-      course associations between smoking and depressive symptoms. A 30-year Finnish
-      follow-up study"],"prefix":"10.1080","volume":"75","author":[{"given":"Olli","family":"Kiviruusu","sequence":"first","affiliation":[{"name":"Department
-      of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
-      Finland"},{"name":"Psychiatry, University of Helsinki and Helsinki University
-      Hospital, Helsinki, Finland"}]},{"given":"Noora","family":"Berg","sequence":"additional","affiliation":[{"name":"Department
-      of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
-      Finland"},{"name":"Department of Public Health and Caring Sciences, Uppsala
-      University, Uppsala, Sweden"},{"name":"Institute for Molecular Medicine Finland
-      (FIMM), HiLIFE, University of Helsinki, Helsinki, Finland"}]},{"given":"Maarit","family":"Piirtola","sequence":"additional","affiliation":[{"name":"Institute
-      for Molecular Medicine Finland (FIMM), HiLIFE, University of Helsinki, Helsinki,
-      Finland"}]},{"given":"Satu","family":"Vierti\u00f6","sequence":"additional","affiliation":[{"name":"Department
-      of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
-      Finland"}]},{"given":"Jaana","family":"Suvisaari","sequence":"additional","affiliation":[{"name":"Department
-      of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
-      Finland"}]},{"given":"Tellervo","family":"Korhonen","sequence":"additional","affiliation":[{"name":"Institute
-      for Molecular Medicine Finland (FIMM), HiLIFE, University of Helsinki, Helsinki,
-      Finland"}]},{"given":"Mauri","family":"Marttunen","sequence":"additional","affiliation":[{"name":"Department
-      of Public Health and Welfare, Finnish Institute for Health and Welfare, Helsinki,
-      Finland"},{"name":"Psychiatry, University of Helsinki and Helsinki University
-      Hospital, Helsinki, Finland"}]}],"member":"301","published-online":{"date-parts":[[2022,3,22]]},"container-title":["Nordic
-      Journal of Psychiatry"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/08039488.2021.2019912","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T09:29:19Z","timestamp":1651051759000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/08039488.2021.2019912"}},"issued":{"date-parts":[[2021,12,31]]},"references-count":0,"journal-issue":{"issue":"sup1","published-print":{"date-parts":[[2021,12,31]]}},"alternative-id":["10.1080\/08039488.2021.2019912"],"URL":"https:\/\/doi.org\/10.1080\/08039488.2021.2019912","ISSN":["0803-9488","1502-4725"],"issn-type":[{"value":"0803-9488","type":"print"},{"value":"1502-4725","type":"electronic"}],"published":{"date-parts":[[2021,12,31]]},"assertion":[{"value":"The
-      publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
-      Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","order":2,"name":"aims_and_scope_url","label":"Aim
-      & Scope"},{"value":"2022-03-22","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-      History"}}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:11:58Z","timestamp":1651054318085},"reference-count":0,"publisher":"Informa
-      UK Limited","issue":"sup1","content-domain":{"domain":["www.tandfonline.com"],"crossmark-restriction":true},"short-container-title":["Nordic
-      Journal of Psychiatry"],"published-print":{"date-parts":[[2021,12,31]]},"DOI":"10.1080\/08039488.2021.2019897","type":"journal-article","created":{"date-parts":[[2022,4,12]],"date-time":"2022-04-12T13:50:12Z","timestamp":1649771412000},"page":"S1-S1","update-policy":"http:\/\/dx.doi.org\/10.1080\/tandf_crossmark_01","source":"Crossref","is-referenced-by-count":0,"title":["SYMPOSIUM
-      1: suicide prevention: Nordic Perspectives"],"prefix":"10.1080","volume":"75","author":[{"given":"Erkki","family":"Isomets\u00e4","sequence":"first","affiliation":[{"name":"Professor
-      of Psychiatry, University of Helsinki, Helsinki, Finland"}]}],"member":"301","published-online":{"date-parts":[[2022,4,12]]},"container-title":["Nordic
-      Journal of Psychiatry"],"language":"en","link":[{"URL":"https:\/\/www.tandfonline.com\/doi\/pdf\/10.1080\/08039488.2021.2019897","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T09:29:06Z","timestamp":1651051746000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.tandfonline.com\/doi\/full\/10.1080\/08039488.2021.2019897"}},"issued":{"date-parts":[[2021,12,31]]},"references-count":0,"journal-issue":{"issue":"sup1","published-print":{"date-parts":[[2021,12,31]]}},"alternative-id":["10.1080\/08039488.2021.2019897"],"URL":"https:\/\/doi.org\/10.1080\/08039488.2021.2019897","ISSN":["0803-9488","1502-4725"],"issn-type":[{"value":"0803-9488","type":"print"},{"value":"1502-4725","type":"electronic"}],"published":{"date-parts":[[2021,12,31]]},"assertion":[{"value":"The
-      publishing and review policy for this title is described in its Aims & Scope.","order":1,"name":"peerreview_statement","label":"Peer
-      Review Statement"},{"value":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","URL":"http:\/\/www.tandfonline.com\/action\/journalInformation?show=aimsScope&journalCode=ipsc20","order":2,"name":"aims_and_scope_url","label":"Aim
-      & Scope"},{"value":"2022-04-12","order":3,"name":"published","label":"Published","group":{"name":"publication_history","label":"Publication
-      History"}}]},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:12:14Z","timestamp":1651054334514},"reference-count":0,"publisher":"Walter
-      de Gruyter GmbH","issue":"3","license":[{"start":{"date-parts":[[2014,5,29]],"date-time":"2014-05-29T00:00:00Z","timestamp":1401321600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2014,6,1]]},"DOI":"10.1515\/gps-2014-0032","type":"journal-article","created":{"date-parts":[[2014,6,2]],"date-time":"2014-06-02T21:08:35Z","timestamp":1401743315000},"page":"247-251","source":"Crossref","is-referenced-by-count":0,"title":["Conferences
-      2014\u20132017"],"prefix":"10.1515","volume":"3","member":"374","published-online":{"date-parts":[[2014,5,29]]},"container-title":["Green
-      Processing and Synthesis"],"language":"en","link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2014-0032\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2014-0032\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T09:28:06Z","timestamp":1651051686000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2014-0032\/html"}},"issued":{"date-parts":[[2014,5,29]]},"references-count":0,"journal-issue":{"issue":"3","published-online":{"date-parts":[[2014,4,18]]},"published-print":{"date-parts":[[2014,6,1]]}},"alternative-id":["10.1515\/gps-2014-0032"],"URL":"https:\/\/doi.org\/10.1515\/gps-2014-0032","ISSN":["2191-9550","2191-9542"],"issn-type":[{"value":"2191-9550","type":"electronic"},{"value":"2191-9542","type":"print"}],"published":{"date-parts":[[2014,5,29]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T11:12:43Z","timestamp":1651057963368},"reference-count":0,"publisher":"Walter
-      de Gruyter GmbH","issue":"6","license":[{"start":{"date-parts":[[2013,12,1]],"date-time":"2013-12-01T00:00:00Z","timestamp":1385856000000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0\/"}],"content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["Green
-      Processing and Synthesis"],"published-print":{"date-parts":[[2013,12,1]]},"DOI":"10.1515\/gps-2013-0098","type":"journal-article","created":{"date-parts":[[2013,11,5]],"date-time":"2013-11-05T17:16:41Z","timestamp":1383671801000},"page":"625-626","source":"Crossref","is-referenced-by-count":0,"title":["4th
-      International Congress of the Flow Chemistry Society (Barcelona, Spain, February
-      18\u201319, 2014)"],"prefix":"10.1515","volume":"2","author":[{"given":"Aaron","family":"Woodley","sequence":"first","affiliation":[{"name":"SELECTBIO
-      Ltd, 6 Woodview, Bull Lane, Acton, Sudbury CO10 0FD, UK"}]}],"member":"374","published-online":{"date-parts":[[2013,12,2]]},"container-title":["gps"],"language":"en","link":[{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2013-0098\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2013-0098\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:32:55Z","timestamp":1651055575000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/gps-2013-0098\/html"}},"issued":{"date-parts":[[2013,12,1]]},"references-count":0,"journal-issue":{"issue":"6","published-online":{"date-parts":[[2013,11,14]]},"published-print":{"date-parts":[[2013,12,1]]}},"alternative-id":["10.1515\/gps-2013-0098"],"URL":"https:\/\/doi.org\/10.1515\/gps-2013-0098","ISSN":["2191-9550","2191-9542"],"issn-type":[{"value":"2191-9550","type":"electronic"},{"value":"2191-9542","type":"print"}],"published":{"date-parts":[[2013,12,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T11:12:50Z","timestamp":1651057970208},"reference-count":20,"publisher":"EDP
-      Sciences","content-domain":{"domain":[],"crossmark-restriction":false},"short-container-title":["EPJ
-      Web of Conferences"],"published-print":{"date-parts":[[2015]]},"DOI":"10.1051\/epjconf\/20158201019","type":"journal-article","created":{"date-parts":[[2015,1,23]],"date-time":"2015-01-23T09:32:37Z","timestamp":1422005557000},"page":"01019","source":"Crossref","is-referenced-by-count":4,"title":["Mathematical
-      simulation of heat transfer at deciduous tree ignition by cloud-to-ground lightning
-      discharge"],"prefix":"10.1051","volume":"82","author":[{"given":"Geniy V.","family":"Kuznetsov","sequence":"first","affiliation":[]},{"given":"Nikolay
-      V.","family":"Baranovskiy","sequence":"additional","affiliation":[]},{"given":"Vladimir
-      B.","family":"Barakhnin","sequence":"additional","affiliation":[]}],"member":"250","published-online":{"date-parts":[[2015,1,20]]},"reference":[{"key":"R1","unstructured":"Baranovskiy
-      N.V.,Matematicheskoe modelirovanie naibolee veroyatnikh scenariev i usloviy
-      vozniknoveniya lesnikh pozharov. Diss. \u2026 Cand. fiz.-mat. nauk. (2007) (In
-      Russian)"},{"key":"R2","first-page":"835","volume":"6","author":"Baranovskiy","year":"2004","journal-title":"Sibirskiy
-      ecologicheskiy zhurnal"},{"key":"R3","first-page":"59","volume":"9","author":"Baranovskiy","year":"2008","journal-title":"Ecologia
-      i promyshlennost Rossii"},{"key":"R4","first-page":"147","volume":"1","author":"Ponomarev
-      E.I.","year":"2006","journal-title":"Geographia i prirodnie resursi"},{"key":"R5","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1051\/epjconf\/20147600001","volume":"76","author":"Kuznetsov","year":"2014","journal-title":"EPJ
-      Web of Conferences"},{"key":"R6","unstructured":"Esau K.Anatomy of seed plants.
-      (1977)"},{"key":"R7","doi-asserted-by":"crossref","first-page":"4242","DOI":"10.1063\/1.1516211","volume":"14","author":"Gusarov","year":"2002","journal-title":"Physics
-      of Fluid"},{"key":"R8","doi-asserted-by":"crossref","unstructured":"Majumdar
-      P.,Computational Methods for Heat and Mass Transfer.(2005)","DOI":"10.1201\/b15915"},{"key":"R9","first-page":"15","volume":"7
-      \u2013 8","author":"Zabolotniy","year":"1995","journal-title":"Voprosy specialnogo
-      mashinostroeniya"},{"key":"R10","unstructured":"Latham D., Williams E.,Forest
-      fires: Behavior and Ecological Effects. (2001)"},{"key":"R11","doi-asserted-by":"crossref","first-page":"531","DOI":"10.1016\/0021-9169(95)00054-2","volume":"58","author":"Burke","year":"1996","journal-title":"Journal
-      of Atmospheric and Solar-Terrestrial Physics"},{"key":"R12","doi-asserted-by":"crossref","first-page":"1632","DOI":"10.1016\/j.jastp.2005.08.019","volume":"67","author":"Soriano","year":"2005","journal-title":"Journal
-      of Atmospheric and Solar-Terrestrial Physics"},{"key":"R13","doi-asserted-by":"crossref","first-page":"9035","DOI":"10.1029\/98JD00153","volume":"103","author":"Cummins","year":"1998","journal-title":"Journal
-      of Geophysical Research"},{"key":"R14","first-page":"166","volume":"76","author":"Grishin","year":"2003","journal-title":"Journal
-      of Engineering Physics and Thermophysics"},{"key":"R15","doi-asserted-by":"crossref","unstructured":"Baranovskiy
-      N.V., Zharikova M.V., Lecture Notes in Geoinformation and Cartography \u2013
-      LNG&C.Thematic Cartography for the Society. 13 (2014)","DOI":"10.1007\/978-3-319-08180-9_2"},{"key":"R16","unstructured":"Baranovskiy
-      N.V., Yankovich E.P., Proceedings of 5th International Conference on Cartography
-      and GIS (Riviera, Bulgaria, 15 \u2013 20 june 2014),2, 756 (2014)"},{"key":"R17","unstructured":"Yankovich
-      E.P., Baranovskiy N.V., 14thInternational Multidisciplinary Scientific Geoconference
-      SGEM \u2013 2014. GeoConference on Informatics, Geoinformatics and Remote Sensing,1,
-      607 (2014) (DOI: 10.5593\/sgem2014B21)"},{"key":"R18","doi-asserted-by":"crossref","first-page":"1","DOI":"10.1016\/S0378-1127(00)00271-1","volume":"140","author":"Pew","year":"2001","journal-title":"Forest
-      Ecology and Management"},{"key":"R19","doi-asserted-by":"crossref","first-page":"S68","DOI":"10.1016\/j.foreco.2006.08.096","volume":"234","author":"Conedera","year":"2006","journal-title":"Forest
-      Ecology and Management"},{"key":"R20","unstructured":"Plummer F.G., Bulletin
-      111. USDA Forest Service. (1912)"}],"container-title":["EPJ Web of Conferences"],"link":[{"URL":"http:\/\/epjwoc.epj.org\/10.1051\/epjconf\/20158201019\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T10:39:25Z","timestamp":1651055965000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.epj-conferences.org\/10.1051\/epjconf\/20158201019"}},"editor":[{"given":"G.
-      V.","family":"Kuznetsov","sequence":"first","affiliation":[]},{"given":"P. A.","family":"Strizhak","sequence":"additional","affiliation":[]},{"given":"A.
-      O.","family":"Zhdanova","sequence":"additional","affiliation":[]},{"given":"E.
-      E.","family":"Bulba","sequence":"additional","affiliation":[]}],"issued":{"date-parts":[[2015]]},"references-count":20,"alternative-id":["epjconf-tbet2014_01019"],"URL":"https:\/\/doi.org\/10.1051\/epjconf\/20158201019","ISSN":["2100-014X"],"issn-type":[{"value":"2100-014X","type":"electronic"}],"published":{"date-parts":[[2015]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T12:12:48Z","timestamp":1651061568565},"reference-count":4,"publisher":"Walter
-      de Gruyter GmbH","issue":"2","license":[{"start":{"date-parts":[[2016,2,13]],"date-time":"2016-02-13T00:00:00Z","timestamp":1455321600000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by-nc-nd\/3.0"}],"content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2016,6,1]]},"abstract":"<jats:title>Abstract<\/jats:title>\n               <jats:p>C<jats:sub>14<\/jats:sub>H<jats:sub>15<\/jats:sub>N<jats:sub>3<\/jats:sub>O<jats:sub>2<\/jats:sub>,
-      monoclnic, <jats:italic>P<\/jats:italic>2<jats:sub>1<\/jats:sub>\/<jats:italic>c<\/jats:italic>
-      (no. 14), <jats:italic>a<\/jats:italic> = 8.2642(4)  \u00c5, <jats:italic>b<\/jats:italic>
-      = 6.0481(3)  \u00c5, <jats:italic>c<\/jats:italic> = 25.6897(11)  \u00c5, <jats:italic>\u03b2<\/jats:italic>
-      = 95.319(3)\u00b0, <jats:italic>V<\/jats:italic> = 1278.51(10)  \u00c5<jats:sup>3<\/jats:sup>,
-      <jats:italic>Z<\/jats:italic> = 4, <jats:italic>R<\/jats:italic>\n                  <jats:sub>gt<\/jats:sub>\n                  <jats:italic>(F)<\/jats:italic>
-      = 0.0584, <jats:italic>wR<\/jats:italic>\n                  <jats:sub>ref<\/jats:sub>\n                  <jats:italic>(F<jats:sup>2<\/jats:sup>)<\/jats:italic>
-      = 0.1931, <jats:italic>T<\/jats:italic> = 296 K.<\/jats:p>","DOI":"10.1515\/ncrs-2015-0127","type":"journal-article","created":{"date-parts":[[2016,5,2]],"date-time":"2016-05-02T09:57:02Z","timestamp":1462183022000},"page":"445-446","source":"Crossref","is-referenced-by-count":0,"title":["Crystal
-      structure of N\u2032-(2-hydroxybenzylidene)-3,4-dimethyl-1H-pyrrole-2-carbohydrazide,
-      C<sub>14<\/sub>H<sub>15<\/sub>N<sub>3<\/sub>O<sub>2<\/sub>"],"prefix":"10.1515","volume":"231","author":[{"given":"Wen-Tao","family":"Qiao","sequence":"first","affiliation":[{"name":"Department
-      of Physics and Chemistry, Henan Polytechnic University, Jiaozuo, 454000, P.
-      R. China"}]},{"given":"Hai-Yan","family":"Li","sequence":"additional","affiliation":[{"name":"Department
-      of Physics and Chemistry, Henan Polytechnic University, Jiaozuo, 454000, P.
-      R. China"}]},{"given":"Yuan","family":"Wang","sequence":"additional","affiliation":[{"name":"Department
-      of Physics and Chemistry, Henan Polytechnic University, Jiaozuo, 454000, P.
-      R. China"}]}],"member":"374","published-online":{"date-parts":[[2016,2,13]]},"reference":[{"key":"2022042708113418791_j_ncrs-2015-0127_ref_001_w2aab3b7d139b1b6b1ab2b1b1Aa","doi-asserted-by":"crossref","unstructured":"Wang,
-      Q.; Wang, Y.; Yang, Z.-Y.: Synthesis, characterization and antioxdative activity
-      of 4-{[3,4-dimethyl-pyrrole-2-carbonyl)hydrazono](phenyl)methyl}-3-methyl-1-\u03c0henylpyrazol-5-ol
-      and its zinc(II), copper(II), nickel(II) complexes. Chem. Pharm. Bull. 56 (2008)
-      1018\u20131021.","DOI":"10.1248\/cpb.56.1018"},{"key":"2022042708113418791_j_ncrs-2015-0127_ref_002_w2aab3b7d139b1b6b1ab2b1b2Aa","doi-asserted-by":"crossref","unstructured":"Wang,
-      Y.; Wu, W.-N.; Zhao, R.-Q.; Wang, Q.-F.; Qin, B.-F.: Crystal structure of ethyl
-      5-[(3,4-dimethyl-1H-pyrrole-2-carboxylimino)-methyl]-3,4-dimethyl-1H-pyrrole-
-      2-carboxylate monohydrate, C17H22N4O3 \u00b7 H2O. Z. Kristallogr. NCS 224 (2009)
-      625\u2013626.","DOI":"10.1524\/ncrs.2009.0275"},{"key":"2022042708113418791_j_ncrs-2015-0127_ref_003_w2aab3b7d139b1b6b1ab2b1b3Aa","doi-asserted-by":"crossref","unstructured":"Wang,
-      Y.; Yang, Z.-Y.; Chen, Z.-N.: Synthesis, characterization and DNA binding properties
-      of four Zn(II) complexes with bis(pyrrol-2-yl-methyleneamine) ligands. Bioorg.
-      Med. Chem. Lett. 18 (2008) 298\u2013303.","DOI":"10.1016\/j.bmcl.2007.10.085"},{"key":"2022042708113418791_j_ncrs-2015-0127_ref_004_w2aab3b7d139b1b6b1ab2b1b4Aa","doi-asserted-by":"crossref","unstructured":"Sheldrick,
-      G. M.: A short history of SHELX. Acta Crystallogr. A 64 (2008) 112\u2013122.","DOI":"10.1107\/S0108767307043930"}],"container-title":["Zeitschrift
-      f\u00fcr Kristallographie - New Crystal Structures"],"language":"en","link":[{"URL":"https:\/\/www.degruyter.com\/view\/journals\/ncrs\/231\/2\/article-p445.xml","content-type":"text\/html","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/ncrs-2015-0127\/xml","content-type":"application\/xml","content-version":"vor","intended-application":"text-mining"},{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/ncrs-2015-0127\/pdf","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T11:31:18Z","timestamp":1651059078000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.degruyter.com\/document\/doi\/10.1515\/ncrs-2015-0127\/html"}},"issued":{"date-parts":[[2016,2,13]]},"references-count":4,"journal-issue":{"issue":"2","published-online":{"date-parts":[[2016,3,17]]},"published-print":{"date-parts":[[2016,6,1]]}},"alternative-id":["10.1515\/ncrs-2015-0127"],"URL":"https:\/\/doi.org\/10.1515\/ncrs-2015-0127","ISSN":["2197-4578","1433-7266"],"issn-type":[{"value":"2197-4578","type":"electronic"},{"value":"1433-7266","type":"print"}],"published":{"date-parts":[[2016,2,13]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '23933'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:36 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -668,8 +415,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '22104'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:45:44 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -678,40 +433,36 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/types/tape/works
   response:
-    content: Resource not found.
+    body:
+      string: Resource not found.
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Sat, 12 Jul 2025 04:28:37 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -719,203 +470,153 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 16 Jun 2026 15:45:44 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 404
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 404
+      message: Not Found
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/types/report/works
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":824756,"items":[{"institution":[{"name":"Historical
-      Energy Database (United States)","acronym":["HEDB"]},{"name":"Oklahoma Univ.,
-      Norman (USA). School of Aerospace, Mechanical and Nuclear Engineering"}],"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T03:11:23Z","timestamp":1651029083918},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1978,1,1]]},"DOI":"10.2172\/5654064","type":"report","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T02:21:17Z","timestamp":1650939677000},"source":"Crossref","is-referenced-by-count":0,"title":["Ultrasonic
-      pulse propagation in the cold-worked layer of railroad rail. Final report, June
-      1, 1975-January 31, 1977"],"prefix":"10.2172","author":[{"given":"D.","family":"Bray","sequence":"first","affiliation":[]}],"member":"960","deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T02:35:31Z","timestamp":1651026931000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/5654064\/"}},"issued":{"date-parts":[[1978,1,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/5654064","published":{"date-parts":[[1978,1,1]]}},{"indexed":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T12:14:12Z","timestamp":1651061652855},"reference-count":0,"publisher":"\u041a\u0440\u0438\u0432\u043e\u0440\u0456\u0437\u044c\u043a\u0438\u0439
-      \u0434\u0435\u0440\u0436\u0430\u0432\u043d\u0438\u0439 \u043f\u0435\u0434\u0430\u0433\u043e\u0433\u0456\u0447\u043d\u0438\u0439
-      \u0443\u043d\u0456\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2020]]},"abstract":"<jats:p>\u0423
-      \u0441\u0442\u0430\u0442\u0442\u0456 \u0440\u0435\u043f\u0440\u0435\u0437\u0435\u043d\u0442\u043e\u0432\u0430\u043d\u043e
-      \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0443 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0430
-      \u0430\u043a\u0442\u0438\u0432\u043d\u043e \u0432\u0438\u043a\u043e\u0440\u0438\u0441\u0442\u043e\u0432\u0443\u0432\u0430\u043d\u0438\u0445
-      \u043a\u0440\u0438\u043b\u0430\u0442\u0438\u0445 \u0432\u0438\u0440\u0430\u0437\u0456\u0432
-      \u0443 \u0441\u0443\u0447\u0430\u0441\u043d\u0456\u0439 \u043d\u0456\u043c\u0435\u0446\u044c\u043a\u0456\u0439
-      \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u043d\u0456\u0439 \u043c\u043e\u0432\u0456.
-      \u0410\u043a\u0446\u0435\u043d\u0442\u043e\u0432\u0430\u043d\u043e \u043d\u0430
-      \u0442\u0435\u043a\u0441\u0442\u043e\u0432\u0438\u0445 \u0434\u0436\u0435\u0440\u0435\u043b\u0430\u0445
-      \u043a\u0440\u0438\u043b\u0430\u0442\u0438\u0445 \u0441\u043b\u0456\u0432 \u0443
-      \u043d\u0456\u043c\u0435\u0446\u044c\u043a\u0456\u0439 \u043c\u043e\u0432\u0456,
-      \u043f\u0440\u0438\u043d\u0446\u0438\u043f\u0430\u0445 \u043f\u043e\u0431\u0443\u0434\u043e\u0432\u0438
-      \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u0430, \u0439\u043e\u0433\u043e \u043e\u0431\u0441\u044f\u0433\u043e\u0432\u0456,
-      \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0456 \u0441\u043b\u043e\u0432\u043d\u0438\u043a\u043e\u0432\u043e\u0457
-      \u0441\u0442\u0430\u0442\u0442\u0456, \u0430 \u0442\u0430\u043a\u043e\u0436
-      \u043f\u0440\u043e\u0456\u043b\u044e\u0441\u0442\u0440\u043e\u0432\u0430\u043d\u043e
-      \u043f\u0440\u0438\u043a\u043b\u0430\u0434\u0438 \u043b\u0435\u043a\u0441\u0438\u043a\u043e\u0433\u0440\u0430\u0444\u0456\u0447\u043d\u043e\u0433\u043e
-      \u043e\u043f\u0438\u0441\u0443 \u043a\u0440\u0438\u043b\u0430\u0442\u0438\u0445
-      \u043d\u0456\u043c\u0435\u0446\u044c\u043a\u043e\u043c\u043e\u0432\u043d\u0438\u0445
-      \u0437\u0430 \u043f\u043e\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f\u043c
-      \u0432\u0438\u0440\u0430\u0437\u0456\u0432. \u041a\u043e\u0436\u0435\u043d \u0430\u043d\u0430\u043b\u0456\u0437\u043e\u0432\u0430\u043d\u0438\u0439
-      \u043d\u0456\u043c\u0435\u0446\u044c\u043a\u043e\u043c\u043e\u0432\u043d\u0438\u0439
-      \u0432\u0438\u0440\u0430\u0437 \u0441\u0443\u043f\u0440\u043e\u0432\u043e\u0434\u0436\u0443\u0432\u0430\u043d\u0438\u0439
-      \u0431\u0456\u043b\u043e\u0440\u0443\u0441\u044c\u043a\u043e\u043c\u043e\u0432\u043d\u0438\u043c
-      \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u0438\u043a\u043e\u043c.
-      \u041e\u043a\u0440\u0435\u0441\u043b\u0435\u043d\u043e \u043f\u0440\u0430\u043a\u0442\u0438\u0447\u043d\u0435
-      \u0437\u043d\u0430\u0447\u0435\u043d\u043d\u044f \u0437\u0430\u043f\u0440\u043e\u043f\u043e\u043d\u043e\u0432\u0430\u043d\u043e\u0457
-      \u043b\u0435\u043a\u0441\u0438\u043a\u043e\u0433\u0440\u0430\u0444\u0456\u0447\u043d\u043e\u0457
-      \u043f\u0440\u0430\u0446\u0456.<\/jats:p>","DOI":"10.31812\/123456789\/5682","type":"report","created":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T11:42:44Z","timestamp":1651059764000},"source":"Crossref","is-referenced-by-count":0,"title":["\u041e
-      \u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u0435 \u0441\u043b\u043e\u0432\u0430\u0440\u044f
-      \u043a\u0440\u044b\u043b\u0430\u0442\u044b\u0445 \u0441\u043b\u043e\u0432 \u0441\u043e\u0432\u0440\u0435\u043c\u0435\u043d\u043d\u043e\u0433\u043e
-      \u043d\u0435\u043c\u0435\u0446\u043a\u043e\u0433\u043e \u044f\u0437\u044b\u043a\u0430
-      (\u0434\u043b\u044f \u0431\u0435\u043b\u043e\u0440\u0443\u0441\u043e\u0432,
-      \u0438\u0437\u0443\u0447\u0430\u044e\u0449\u0438\u0445 \u043d\u0435\u043c\u0435\u0446\u043a\u0438\u0439
-      \u044f\u0437\u044b\u043a \u043a\u0430\u043a \u0438\u043d\u043e\u0441\u0442\u0440\u0430\u043d\u043d\u044b\u0439)"],"prefix":"10.31812","author":[{"given":"\u0410.","family":"\u0422\u0435\u043f\u043b\u044f\u043a\u043e\u0432\u0430","sequence":"first","affiliation":[]}],"member":"16984","deposited":{"date-parts":[[2022,4,27]],"date-time":"2022-04-27T11:42:44Z","timestamp":1651059764000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/elibrary.kdpu.edu.ua\/xmlui\/handle\/123456789\/5682"}},"issued":{"date-parts":[[2020]]},"references-count":0,"URL":"https:\/\/doi.org\/10.31812\/123456789\/5682","published":{"date-parts":[[2020]]}},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T11:43:02Z","timestamp":1650973382309},"reference-count":0,"publisher":"\u041a\u0414\u041f\u0423","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1999]]},"DOI":"10.31812\/123456789\/5368","type":"report","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T11:00:01Z","timestamp":1650970801000},"source":"Crossref","is-referenced-by-count":0,"title":["\u0415\u043a\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0456
-      \u0430\u0441\u043f\u0435\u043a\u0442\u0438 \u0437\u0430\u043a\u043e\u043d\u0443
-      \u0433\u043e\u043c\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0438\u0445 \u0440\u044f\u0434\u0456\u0432
-      \u0441\u043f\u0430\u0434\u043a\u043e\u0432\u043e\u0457 \u043c\u0456\u043d\u043b\u0438\u0432\u043e\u0441\u0442\u0456
-      \u041c. \u0406. \u0412\u0430\u0432\u0456\u043b\u043e\u0432\u0430"],"prefix":"10.31812","author":[{"given":"\u0410\u043d\u0430\u0442\u043e\u043b\u0456\u0439
-      \u041f\u0435\u0442\u0440\u043e\u0432\u0438\u0447","family":"\u0410\u0444\u043e\u043d\u0456\u043d","sequence":"first","affiliation":[]},{"given":"\u0404\u043b\u0456\u0437\u0430\u0432\u0435\u0442\u0430
-      \u0425\u0440\u0438\u0441\u0442\u0438\u0430\u043d\u0456\u0432\u043d\u0430","family":"\u0404\u0432\u0442\u0443\u0448\u0435\u043d\u043a\u043e","sequence":"additional","affiliation":[]}],"member":"16984","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T11:00:14Z","timestamp":1650970814000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/elibrary.kdpu.edu.ua\/xmlui\/handle\/123456789\/5368"}},"issued":{"date-parts":[[1999]]},"references-count":0,"URL":"https:\/\/doi.org\/10.31812\/123456789\/5368","published":{"date-parts":[[1999]]}},{"institution":[{"name":"Technsiche
-      Universit\u00e4t Dresden","acronym":["TU Dresden"],"place":["Dresden"]}],"indexed":{"date-parts":[[2022,6,18]],"date-time":"2022-06-18T11:41:48Z","timestamp":1655552508979},"reference-count":0,"publisher":"Technische
-      Universit\u00e4t Dresden","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2018]]},"abstract":"<jats:p>Ontology-based
-      access to large data-sets has recently gained a lot of attention. To access
-      data e_ciently, one approach is to rewrite the ontology into Datalog, and then
-      use powerful Datalog engines to compute implicit entailments. Existing rewriting
-      techniques support Description Logics (DLs) from ELH to Horn-SHIQ. We go one
-      step further and present one such data-independent rewriting technique for Horn-SRIQ\u2293,
-      the extension of Horn-SHIQ that supports role chain axioms, an expressive feature
-      prominently used in many real-world ontologies. We evaluated our rewriting technique
-      on a large known corpus of ontologies. Our experiments show that the resulting
-      rewritings are of moderate size, and that our approach is more efficient than
-      state-of-the-art DL reasoners when reasoning with data-intensive ontologies.<\/jats:p>","DOI":"10.25368\/2022.249","type":"report","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T12:30:41Z","timestamp":1655469041000},"source":"Crossref","is-referenced-by-count":0,"title":["From
-      Horn-SRIQ to Datalog: A Data-Independent Transformation that Preserves Assertion
-      Entailment (Extended Version)"],"prefix":"10.25368","author":[{"given":"David","family":"Carral","sequence":"first","affiliation":[]},{"given":"Larry","family":"Gonz\u00e1lez","sequence":"additional","affiliation":[]},{"given":"Patrick","family":"Koopmann","sequence":"additional","affiliation":[]}],"member":"26325","published-online":{"date-parts":[[2022]]},"deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T12:30:43Z","timestamp":1655469043000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/nbn-resolving.org\/urn:nbn:de:bsz:14-qucosa2-796129"}},"issued":{"date-parts":[[2018]]},"references-count":0,"URL":"https:\/\/doi.org\/10.25368\/2022.249","published":{"date-parts":[[2018]]}},{"indexed":{"date-parts":[[2022,6,18]],"date-time":"2022-06-18T11:11:57Z","timestamp":1655550717275},"reference-count":0,"publisher":"Institute
-      of Development Studies","content-domain":{"domain":[],"crossmark-restriction":false},"abstract":"<jats:p>The
-      widespread expansion of social media outlets has enabled the spread of mis\/disinformation,
-      hate speech and extremist narratives online. Internet-based technologies can
-      also be used to confront these types of communication. This report focuses on
-      counter-messaging efforts (also referred to as strategic communications) through
-      online platforms. This can comprise counter-narratives that challenge false
-      information or existing narratives (e.g. undermining the credibility of an extremist
-      group); or alternative narratives that seek to replace existing narratives,
-      rather than directly confront them (e.g. introducing messages of coexistence).<\/jats:p>","DOI":"10.19088\/k4d.2022.070","type":"report","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T07:59:49Z","timestamp":1655452789000},"source":"Crossref","is-referenced-by-count":0,"title":["Countering
-      Online Misinformation, Hate Speech or Extremist Narratives in the Global South"],"prefix":"10.19088","author":[{"given":"Huma","family":"Haider","sequence":"first","affiliation":[]}],"member":"8159","published-online":{"date-parts":[[2022,3,4]]},"deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T07:59:51Z","timestamp":1655452791000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/opendocs.ids.ac.uk\/opendocs\/handle\/20.500.12413\/17464"}},"issued":{"date-parts":[[2022,3,4]]},"references-count":0,"URL":"https:\/\/doi.org\/10.19088\/k4d.2022.070","published":{"date-parts":[[2022,3,4]]}},{"institution":[{"name":"National
-      Bureau of Economic Research","acronym":["NBER"],"place":["Cambridge, MA"]}],"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T10:29:52Z","timestamp":1724408992867},"publisher-location":"Cambridge,
-      MA","reference-count":0,"publisher":"National Bureau of Economic Research","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.3386\/w13574","type":"report","created":{"date-parts":[[2008,1,1]],"date-time":"2008-01-01T17:00:38Z","timestamp":1199206838000},"source":"Crossref","is-referenced-by-count":5,"title":["Environmental
-      Economics"],"prefix":"10.3386","author":[{"given":"Robert","family":"Stavins","sequence":"first","affiliation":[]}],"member":"1960","published-online":{"date-parts":[[2007,11]]},"deposited":{"date-parts":[[2020,9,27]],"date-time":"2020-09-27T02:10:27Z","timestamp":1601172627000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.nber.org\/papers\/w13574.pdf"}},"issued":{"date-parts":[[2007,11]]},"references-count":0,"URL":"https:\/\/doi.org\/10.3386\/w13574","published":{"date-parts":[[2007,11]]}},{"institution":[{"name":"Divison
-      of Technical Information Extension","acronym":["DTIE"],"place":["U.S. Atomic
-      Energy Commission"]},{"name":"Battelle Memorial Inst., Columbus, Ohio"}],"indexed":{"date-parts":[[2024,8,22]],"date-time":"2024-08-22T22:55:31Z","timestamp":1724367331367},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/4259310","type":"report","created":{"date-parts":[[2013,8,6]],"date-time":"2013-08-06T03:52:49Z","timestamp":1375761169000},"source":"Crossref","is-referenced-by-count":2,"title":["DELTA-PHASE
-      ZIRCONIUM HYDRIDE AS A SOLID MODERATOR"],"prefix":"10.2172","author":[{"given":"J.B.","family":"Vetrano","sequence":"first","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1957,12,18]]},"deposited":{"date-parts":[[2013,8,6]],"date-time":"2013-08-06T03:52:49Z","timestamp":1375761169000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/4259310\/"}},"issued":{"date-parts":[[1957,12,18]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/4259310","published":{"date-parts":[[1957,12,18]]}},{"institution":[{"name":"Division
-      of Technical Information Extension","acronym":["DTIE"],"place":["U.S. Atomic
-      Energy Commission"]},{"name":"North American Aviation, Inc., Canoga Park, CA
-      (United States). Atomics International Div."},{"name":"US Atomic Energy Commission
-      (AEC)"}],"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T00:12:55Z","timestamp":1724371975863},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1958,12,1]]},"DOI":"10.2172\/4281279","type":"report","created":{"date-parts":[[2023,12,27]],"date-time":"2023-12-27T03:11:03Z","timestamp":1703646663000},"source":"Crossref","is-referenced-by-count":0,"title":["Spectrophotometric
-      Determinations of Beryllium and Fluoride Using Chrome Azurol S"],"prefix":"10.2172","author":[{"given":"Louis","family":"Silverman","sequence":"first","affiliation":[{"name":"North
-      American Aviation, Inc., Canoga Park, CA (United States). Atomics International
-      Div."}]},{"given":"Mary","family":"Shideler","sequence":"additional","affiliation":[{"name":"North
-      American Aviation, Inc., Canoga Park, CA (United States). Atomics International
-      Div."}]}],"member":"960","deposited":{"date-parts":[[2024,8,22]],"date-time":"2024-08-22T03:40:14Z","timestamp":1724298014000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/4281279\/"}},"issued":{"date-parts":[[1958,12,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/4281279","published":{"date-parts":[[1958,12,1]]}},{"institution":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL)","acronym":["LLNL"],"place":["Livermore,
-      CA (United States)"]},{"name":"California Univ., Livermore (USA). Lawrence Livermore
-      Lab."}],"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T00:14:29Z","timestamp":1724372069937},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1979,9,1]]},"DOI":"10.2172\/5695144","type":"report","created":{"date-parts":[[2024,5,30]],"date-time":"2024-05-30T02:15:06Z","timestamp":1717035306000},"source":"Crossref","is-referenced-by-count":0,"title":["Dynamic,
-      inelastic buckling analysis of Mark I torus support columns"],"prefix":"10.2172","author":[{"given":"B","family":"Benda","sequence":"first","affiliation":[]}],"member":"960","deposited":{"date-parts":[[2024,8,22]],"date-time":"2024-08-22T03:40:37Z","timestamp":1724298037000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/5695144\/"}},"issued":{"date-parts":[[1979,9,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/5695144","published":{"date-parts":[[1979,9,1]]}},{"institution":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL)","acronym":["LLNL"],"place":["Livermore,
-      CA (United States)"]},{"name":"Lawrence Livermore National Laboratory (LLNL),
-      Livermore, CA (United States)"},{"name":"USDOE National Nuclear Security Administration
-      (NNSA)"}],"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T00:15:48Z","timestamp":1724372148189},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2024,7,13]]},"DOI":"10.2172\/2406129","type":"report","created":{"date-parts":[[2024,7,26]],"date-time":"2024-07-26T02:11:50Z","timestamp":1721959910000},"source":"Crossref","is-referenced-by-count":0,"title":["Detuned
-      synchronized waveform averaging for reducing distortions due to sample interleaving"],"prefix":"10.2172","author":[{"given":"Brandon","family":"Buckley","sequence":"first","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]}],"member":"960","deposited":{"date-parts":[[2024,8,22]],"date-time":"2024-08-22T02:14:34Z","timestamp":1724292874000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/2406129\/"}},"issued":{"date-parts":[[2024,7,13]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/2406129","published":{"date-parts":[[2024,7,13]]}},{"institution":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL)","acronym":["LLNL"],"place":["Livermore,
-      CA (United States)"]},{"name":"Lawrence Livermore National Laboratory (LLNL),
-      Livermore, CA (United States)"},{"name":"USDOE National Nuclear Security Administration
-      (NNSA)"}],"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T00:16:08Z","timestamp":1724372168419},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[2024,6,24]]},"DOI":"10.2172\/2406122","type":"report","created":{"date-parts":[[2024,7,26]],"date-time":"2024-07-26T02:11:48Z","timestamp":1721959908000},"source":"Crossref","is-referenced-by-count":0,"title":["National
-      User Resource for Biological Accelerator Mass Spectrometry"],"prefix":"10.2172","author":[{"given":"Graham","family":"Bench","sequence":"first","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]},{"given":"Bruce","family":"Buchholz","sequence":"additional","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]},{"given":"Ted","family":"Ognibene","sequence":"additional","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]},{"given":"Kenneth","family":"Turteltaub","sequence":"additional","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]},{"given":"Heather","family":"Enright","sequence":"additional","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]},{"given":"David","family":"Baliu-Rodriguez","sequence":"additional","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]},{"given":"Esther","family":"Ubick","sequence":"additional","affiliation":[{"name":"Lawrence
-      Livermore National Laboratory (LLNL), Livermore, CA (United States)"}]}],"member":"960","deposited":{"date-parts":[[2024,8,22]],"date-time":"2024-08-22T02:14:32Z","timestamp":1724292872000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/2406122\/"}},"issued":{"date-parts":[[2024,6,24]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/2406122","published":{"date-parts":[[2024,6,24]]}},{"institution":[{"name":"SLAC
-      National Accelerator Laboratory (SLAC)","acronym":["SLAC"],"place":["Menlo Park,
-      CA (United States)"]},{"name":"Stanford Linear Accelerator Center, Menlo Park,
-      CA (US)"},{"name":"USDOE Office of Science (US)"}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:36:45Z","timestamp":1649129805255},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/829712","type":"report","created":{"date-parts":[[2007,4,16]],"date-time":"2007-04-16T14:49:56Z","timestamp":1176734996000},"source":"Crossref","is-referenced-by-count":0,"title":["Halo
-      Generation and Beam Cleaning by Resonance Trapping"],"prefix":"10.2172","author":[{"given":"A","family":"Chao","sequence":"first","affiliation":[]}],"member":"960","published-online":{"date-parts":[[2004,8,17]]},"deposited":{"date-parts":[[2017,7,20]],"date-time":"2017-07-20T02:56:51Z","timestamp":1500519411000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/829712\/"}},"issued":{"date-parts":[[2004,8,17]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/829712","published":{"date-parts":[[2004,8,17]]}},{"institution":[{"name":"Oak
-      Ridge National Laboratory (ORNL)","acronym":["ORNL"],"place":["Oak Ridge, TN
-      (United States)"]},{"name":"USDOE"}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:36:43Z","timestamp":1649129803586},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/5809848","type":"report","created":{"date-parts":[[2013,5,17]],"date-time":"2013-05-17T03:46:33Z","timestamp":1368762393000},"source":"Crossref","is-referenced-by-count":0,"title":["Energy
-      availabilities for state and local development: projected energy patterns for
-      1985 and 1990"],"prefix":"10.2172","author":[{"given":"D. P.","family":"Vogt","sequence":"first","affiliation":[]},{"given":"P.
-      L.","family":"Rice","sequence":"additional","affiliation":[]},{"given":"T. A.","family":"Corey","sequence":"additional","affiliation":[]},{"given":"V.
-      P.","family":"Pai","sequence":"additional","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1979,11,1]]},"deposited":{"date-parts":[[2013,5,17]],"date-time":"2013-05-17T03:46:33Z","timestamp":1368762393000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/5809848\/"}},"issued":{"date-parts":[[1979,11,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/5809848","published":{"date-parts":[[1979,11,1]]}},{"institution":[{"name":"Historical
-      Energy Database (United States)","acronym":["HEDB"]},{"name":"Burns and Roe,
-      Inc., Oradell, NJ (USA)"}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:37:03Z","timestamp":1649129823701},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1978,12,1]]},"DOI":"10.2172\/6788477","type":"report","created":{"date-parts":[[2021,3,2]],"date-time":"2021-03-02T04:44:21Z","timestamp":1614660261000},"source":"Crossref","is-referenced-by-count":0,"title":["Conceptual
-      design of an atmospheric fluidized-bed combustion electric power generating
-      plant. Volume I. Interim report"],"prefix":"10.2172","member":"960","deposited":{"date-parts":[[2021,3,3]],"date-time":"2021-03-03T04:09:59Z","timestamp":1614744599000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/6788477\/"}},"issued":{"date-parts":[[1978,12,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/6788477","published":{"date-parts":[[1978,12,1]]}},{"institution":[{"name":"Reserve
-      Bank of Australia"}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:27:58Z","timestamp":1649129278774},"reference-count":0,"publisher":"Reserve
-      Bank of Australia","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.47688\/rba_archives_pn-001595","type":"report","created":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T03:36:22Z","timestamp":1614915382000},"source":"Crossref","is-referenced-by-count":0,"title":["Staff
-      - Sir Claude Reading"],"prefix":"10.47688","member":"27154","published-online":{"date-parts":[[2021,3,8]]},"deposited":{"date-parts":[[2021,3,5]],"date-time":"2021-03-05T03:57:33Z","timestamp":1614916653000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/unreserved.rba.gov.au\/nodes\/view\/45706"}},"issued":{"date-parts":[[2021,3,8]]},"references-count":0,"URL":"https:\/\/doi.org\/10.47688\/rba_archives_pn-001595","published":{"date-parts":[[2021,3,8]]}},{"institution":[{"name":"Historical
-      Energy Database (United States)","acronym":["HEDB"]},{"name":"Delaware Univ.,
-      Newark (USA)"}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:30:48Z","timestamp":1649129448239},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1981,2,1]]},"DOI":"10.2172\/5251681","type":"report","created":{"date-parts":[[2022,1,6]],"date-time":"2022-01-06T06:19:28Z","timestamp":1641449968000},"source":"Crossref","is-referenced-by-count":0,"title":["Grain-boundary
-      effects in photovoltaics. Final report, September 1, 1979-December 31, 1980"],"prefix":"10.2172","author":[{"given":"J.","family":"Edington","sequence":"first","affiliation":[]},{"given":"J.","family":"Echigoya","sequence":"additional","affiliation":[]}],"member":"960","deposited":{"date-parts":[[2022,1,7]],"date-time":"2022-01-07T04:37:03Z","timestamp":1641530223000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/5251681\/"}},"issued":{"date-parts":[[1981,2,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/5251681","published":{"date-parts":[[1981,2,1]]}},{"institution":[{"name":"Argonne
-      National Laboratory (ANL)","acronym":["ANL"],"place":["Argonne, IL (United States)"]},{"name":"DOE"}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:08:47Z","timestamp":1649128127398},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.2172\/12033503","type":"report","created":{"date-parts":[[2013,5,30]],"date-time":"2013-05-30T00:35:52Z","timestamp":1369874152000},"source":"Crossref","is-referenced-by-count":1,"title":["Evaluation
-      of Emission Control Strategies for Sulfur Dioxide and Particulates in the Chicago
-      Metropolitan Air Quality Control Region"],"prefix":"10.2172","author":[{"given":"J.
-      E.","family":"Norco","sequence":"first","affiliation":[]},{"given":"M. A.","family":"Snider","sequence":"additional","affiliation":[]},{"given":"J.
-      J.","family":"Roberts","sequence":"additional","affiliation":[]},{"given":"K.
-      G.","family":"Croke","sequence":"additional","affiliation":[]},{"given":"A.
-      S.","family":"Cohen","sequence":"additional","affiliation":[]},{"given":"A.
-      S.","family":"Kennedy","sequence":"additional","affiliation":[]},{"given":"O.","family":"Skala","sequence":"additional","affiliation":[]}],"member":"960","published-online":{"date-parts":[[1970,12,1]]},"deposited":{"date-parts":[[2013,5,30]],"date-time":"2013-05-30T00:35:52Z","timestamp":1369874152000},"score":0.0,"resource":{"primary":{"URL":"http:\/\/www.osti.gov\/servlets\/purl\/12033503\/"}},"issued":{"date-parts":[[1970,12,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/12033503","published":{"date-parts":[[1970,12,1]]}},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T02:53:53Z","timestamp":1649127233801},"reference-count":0,"publisher":"RFC
-      Editor","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.17487\/rfc8662","type":"report","created":{"date-parts":[[2019,12,6]],"date-time":"2019-12-06T16:49:25Z","timestamp":1575650965000},"source":"Crossref","is-referenced-by-count":0,"title":["Entropy
-      Label for Source Packet Routing in Networking (SPRING) Tunnels"],"prefix":"10.17487","author":[{"given":"S.","family":"Kini","sequence":"first","affiliation":[]},{"given":"K.","family":"Kompella","sequence":"additional","affiliation":[]},{"given":"S.","family":"Sivabalan","sequence":"additional","affiliation":[]},{"given":"S.","family":"Litkowski","sequence":"additional","affiliation":[]},{"given":"R.","family":"Shakir","sequence":"additional","affiliation":[]},{"given":"J.","family":"Tantsura","sequence":"additional","affiliation":[]}],"member":"7045","published-online":{"date-parts":[[2019,12]]},"deposited":{"date-parts":[[2019,12,6]],"date-time":"2019-12-06T16:49:27Z","timestamp":1575650967000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.rfc-editor.org\/info\/rfc8662"}},"issued":{"date-parts":[[2019,12]]},"references-count":0,"URL":"https:\/\/doi.org\/10.17487\/rfc8662","published":{"date-parts":[[2019,12]]}},{"institution":[{"name":"Crop
-      Protection Network","acronym":["CPN"],"place":["United States of America"]}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T02:52:32Z","timestamp":1649127152321},"publisher-location":"United
-      States of America","reference-count":0,"publisher":"Crop Protection Netework","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.31274\/cpn-20211011-000","type":"report","created":{"date-parts":[[2021,10,11]],"date-time":"2021-10-11T20:37:38Z","timestamp":1633984658000},"source":"Crossref","is-referenced-by-count":0,"title":["Fungicides
-      are More Than a Plant Disease Management Tool"],"prefix":"10.31274","author":[{"given":"Kiersten","family":"Wise","sequence":"first","affiliation":[]},{"given":"Marin","family":"Brewer","sequence":"additional","affiliation":[]},{"given":"Carl","family":"Bradley","sequence":"additional","affiliation":[]},{"given":"Daren","family":"Mueller","sequence":"additional","affiliation":[]},{"given":"Adam","family":"Sisson","sequence":"additional","affiliation":[]},{"given":"Albert","family":"Tenuta","sequence":"additional","affiliation":[]},{"given":"Tom","family":"Allen","sequence":"additional","affiliation":[]},{"given":"Gary","family":"Bergstrom","sequence":"additional","affiliation":[]},{"given":"Kaitlyn","family":"Bissonnette","sequence":"additional","affiliation":[]},{"given":"Emmanuel","family":"Byamukama","sequence":"additional","affiliation":[]},{"given":"Martin","family":"Chilvers","sequence":"additional","affiliation":[]},{"given":"Nick","family":"Dufault","sequence":"additional","affiliation":[]},{"given":"Travis","family":"Faske","sequence":"additional","affiliation":[]},{"given":"Andrew","family":"Friskop","sequence":"additional","affiliation":[]},{"given":"Heather","family":"Kelly","sequence":"additional","affiliation":[]},{"given":"Alyssa","family":"Koehler","sequence":"additional","affiliation":[]},{"given":"David","family":"Langston","sequence":"additional","affiliation":[]},{"given":"Samuel","family":"Markell","sequence":"additional","affiliation":[]},{"given":"Juliet","family":"Marshall","sequence":"additional","affiliation":[]},{"given":"Alfredo","family":"Martinez-Espinoza","sequence":"additional","affiliation":[]},{"given":"Pierce","family":"Paul","sequence":"additional","affiliation":[]},{"given":"Alison","family":"Robertson","sequence":"additional","affiliation":[]},{"given":"Damon","family":"Smith","sequence":"additional","affiliation":[]},{"given":"Darcy","family":"Telenko","sequence":"additional","affiliation":[]},{"given":"Paul","family":"Vincelli","sequence":"additional","affiliation":[]}],"member":"13687","published-online":{"date-parts":[[2021,10,11]]},"deposited":{"date-parts":[[2022,3,3]],"date-time":"2022-03-03T23:21:29Z","timestamp":1646349689000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/cropprotectionnetwork.org\/publications\/fungicides-are-more-than-a-plant-disease-management-tool"}},"issued":{"date-parts":[[2021,10,11]]},"references-count":0,"URL":"https:\/\/doi.org\/10.31274\/cpn-20211011-000","published":{"date-parts":[[2021,10,11]]}},{"institution":[{"name":"Historical
-      Energy Database (United States)","acronym":["HEDB"]},{"name":"Environmental
-      Law Inst., Washington, DC (USA)"}],"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:33:23Z","timestamp":1649129603303},"reference-count":0,"publisher":"Office
-      of Scientific and Technical Information (OSTI)","content-domain":{"domain":[],"crossmark-restriction":false},"published-print":{"date-parts":[[1978,3,1]]},"DOI":"10.2172\/7067303","type":"report","created":{"date-parts":[[2021,2,23]],"date-time":"2021-02-23T08:14:38Z","timestamp":1614068078000},"source":"Crossref","is-referenced-by-count":0,"title":["Legal
-      barriers to solar heating and cooling of buildings. [Extensive list of references]"],"prefix":"10.2172","member":"960","deposited":{"date-parts":[[2021,2,24]],"date-time":"2021-02-24T04:46:19Z","timestamp":1614141979000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.osti.gov\/servlets\/purl\/7067303\/"}},"issued":{"date-parts":[[1978,3,1]]},"references-count":0,"URL":"https:\/\/doi.org\/10.2172\/7067303","published":{"date-parts":[[1978,3,1]]}}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6922'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:37 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -923,8 +624,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '5737'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:45:53 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -933,10 +642,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

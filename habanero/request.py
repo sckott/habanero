@@ -1,6 +1,6 @@
 import warnings
 
-import httpx
+import httpx2
 
 from .exceptions import RequestError
 from .facets import validate_facets
@@ -87,19 +87,19 @@ def request(
     if ids is None:
         url = url.strip("/")
         try:
-            r = httpx.get(
+            r = httpx2.get(
                 url,
                 params=payload,
                 headers=make_ua(cr.mailto, cr.ua_string),
                 timeout=cr.timeout,
             )
             r.raise_for_status()
-        except httpx.HTTPStatusError:
+        except httpx2.HTTPStatusError:
             if is_json(r):
                 raise RequestError(r.status_code, parse_json_err(r))
             else:
                 r.raise_for_status()
-        except httpx.HTTPError as e:
+        except httpx2.HTTPError as e:
             raise RuntimeError(f"HTTP Exception for {e.request.url} - {e}")
             # raise RuntimeError(e)
         else:
@@ -147,7 +147,7 @@ def request(
 
                 endpt = endpt.strip("/")
 
-                r = httpx.get(
+                r = httpx2.get(
                     endpt,
                     params=payload,
                     headers=make_ua(cr.mailto, cr.ua_string),

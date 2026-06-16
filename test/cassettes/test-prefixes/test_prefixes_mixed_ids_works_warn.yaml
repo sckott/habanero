@@ -5,164 +5,209 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/prefixes/10.1371/works
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":4582152,"items":[{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:12Z","timestamp":1650994932462},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pmed.1003972.s026","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:24:54Z","timestamp":1650993894000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:25:07Z","timestamp":1650993907000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pmed.1003972.s026"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pmed.1003972.s026"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:13Z","timestamp":1650994933663},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0266623.t008","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:28:08Z","timestamp":1650994088000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:28:14Z","timestamp":1650994094000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0266623.t008"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0266623.t008"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:18Z","timestamp":1650994938023},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pgph.0000284.g002","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:26:30Z","timestamp":1650993990000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:26:36Z","timestamp":1650993996000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pgph.0000284.g002"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pgph.0000284.g002"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:29Z","timestamp":1650994949343},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pmed.1003972.s027","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:24:54Z","timestamp":1650993894000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:25:07Z","timestamp":1650993907000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pmed.1003972.s027"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pmed.1003972.s027"},{"indexed":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:42:29Z","timestamp":1650994949514},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pgph.0000372.s002","type":"component","created":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:27:12Z","timestamp":1650994032000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,4,26]],"date-time":"2022-04-26T17:27:15Z","timestamp":1650994035000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pgph.0000372.s002"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pgph.0000372.s002"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:03Z","timestamp":1655489703278},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0269971.r004","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:29:42Z","timestamp":1655486982000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:29:55Z","timestamp":1655486995000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0269971.r004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0269971.r004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:06Z","timestamp":1655489706053},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0269673.t003","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:50Z","timestamp":1655487350000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:53Z","timestamp":1655487353000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0269673.t003"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0269673.t003"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:06Z","timestamp":1655489706889},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0269529.r003","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:13Z","timestamp":1655487013000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:27Z","timestamp":1655487027000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0269529.r003"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0269529.r003"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:08Z","timestamp":1655489708253},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0268322.s005","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:33:03Z","timestamp":1655487183000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:33:05Z","timestamp":1655487185000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0268322.s005"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0268322.s005"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:15:10Z","timestamp":1655489710754},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270031.r006","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:28:29Z","timestamp":1655486909000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:28:43Z","timestamp":1655486923000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270031.r006"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270031.r006"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:28:31Z","timestamp":1655490511083},"reference-count":45,"publisher":"Public
-      Library of Science (PLoS)","issue":"4","license":[{"start":{"date-parts":[[2014,4,23]],"date-time":"2014-04-23T00:00:00Z","timestamp":1398211200000},"content-version":"unspecified","delay-in-days":0,"URL":"http:\/\/creativecommons.org\/licenses\/by\/4.0\/"}],"content-domain":{"domain":["www.plosone.org"],"crossmark-restriction":false},"short-container-title":["PLoS
-      ONE"],"DOI":"10.1371\/journal.pone.0095888","type":"journal-article","created":{"date-parts":[[2014,4,23]],"date-time":"2014-04-23T22:39:14Z","timestamp":1398292754000},"page":"e95888","update-policy":"http:\/\/dx.doi.org\/10.1371\/journal.pone.corrections_policy","source":"Crossref","is-referenced-by-count":4,"title":["Specific
-      Activation of K-RasG12D Allele in the Bladder Urothelium Results in Lung Alveolar
-      and Vascular Defects"],"prefix":"10.1371","volume":"9","author":[{"given":"Francisco","family":"Ayala
-      de la Pe\u00f1a","sequence":"first","affiliation":[]},{"given":"Keizo","family":"Kanasaki","sequence":"additional","affiliation":[]},{"given":"Megumi","family":"Kanasaki","sequence":"additional","affiliation":[]},{"given":"Sylvia","family":"Vong","sequence":"additional","affiliation":[]},{"given":"Carlota","family":"Rovira","sequence":"additional","affiliation":[]},{"given":"Raghu","family":"Kalluri","sequence":"additional","affiliation":[]}],"member":"340","published-online":{"date-parts":[[2014,4,23]]},"reference":[{"key":"ref1","doi-asserted-by":"crossref","first-page":"295","DOI":"10.1038\/nrc2109","article-title":"Hyperactive
-      Ras in developmental disorders and cancer","volume":"7","author":"S Schubbert","year":"2007","journal-title":"Nat
-      Rev Cancer"},{"key":"ref2","first-page":"145","article-title":"Mouse models
-      of K-ras-initiated carcinogenesis","volume":"1756","author":"KP Janssen","year":"2005","journal-title":"Biochim
-      Biophys Acta"},{"key":"ref3","doi-asserted-by":"crossref","first-page":"695","DOI":"10.1136\/jmg.2007.055772","article-title":"Clinical
-      and molecular aspects of RAS related disorders","volume":"45","author":"E Denayer","year":"2008","journal-title":"J
-      Med Genet"},{"key":"ref4","doi-asserted-by":"crossref","first-page":"1444","DOI":"10.1128\/MCB.21.5.1444-1452.2001","article-title":"Targeted
-      genomic disruption of H-ras and N-ras, individually or in combination, reveals
-      the dispensability of both loci for mouse growth and development","volume":"21","author":"LM
-      Esteban","year":"2001","journal-title":"Mol Cell Biol"},{"key":"ref5","doi-asserted-by":"crossref","first-page":"2468","DOI":"10.1101\/gad.11.19.2468","article-title":"K-ras
-      is an essential gene in the mouse with partial functional overlap with N-ras","volume":"11","author":"L
-      Johnson","year":"1997","journal-title":"Genes Dev"},{"key":"ref6","doi-asserted-by":"crossref","first-page":"111","DOI":"10.1016\/S1535-6108(03)00191-0","article-title":"Tumor
-      induction by an endogenous K-ras oncogene is highly dependent on cellular context","volume":"4","author":"C
-      Guerra","year":"2003","journal-title":"Cancer Cell"},{"key":"ref7","doi-asserted-by":"crossref","first-page":"7765","DOI":"10.1128\/MCB.00965-07","article-title":"Biochemical
-      and functional characterization of germ line KRAS mutations","volume":"27","author":"S
-      Schubbert","year":"2007","journal-title":"Mol Cell Biol"},{"key":"ref8","doi-asserted-by":"crossref","first-page":"694","DOI":"10.1101\/gad.1526207","article-title":"Sprouty-2
-      regulates oncogenic K-ras in lung development and tumorigenesis","volume":"21","author":"AT
-      Shaw","year":"2007","journal-title":"Genes Dev"},{"key":"ref9","doi-asserted-by":"crossref","first-page":"375","DOI":"10.1016\/S1535-6108(04)00085-6","article-title":"Endogenous
-      oncogenic K-ras(G12D) stimulates proliferation and widespread neoplastic and
-      developmental defects","volume":"5","author":"DA Tuveson","year":"2004","journal-title":"Cancer
-      Cell"},{"key":"ref10","doi-asserted-by":"crossref","first-page":"1973","DOI":"10.1038\/sj.onc.1204315","article-title":"Role
-      of Ha-ras activation in superficial papillary pathway of urothelial tumor formation","volume":"20","author":"ZT
-      Zhang","year":"2001","journal-title":"Oncogene"},{"key":"ref11","doi-asserted-by":"crossref","unstructured":"Cordon-Cardo
-      C (2008) Molecular alterations associated with bladder cancer initiation and
-      progression. Scand J Urol Nephrol Suppl: 154\u2013165.","DOI":"10.1080\/03008880802291915"},{"key":"ref12","doi-asserted-by":"crossref","first-page":"1987","DOI":"10.1097\/01.ju.0000088670.02905.78","article-title":"Review
-      Article: The Role of Ras Superfamily Proteins in Bladder Cancer Progression","volume":"170","author":"G
-      Oxford","year":"2003","journal-title":"J Urol"},{"key":"ref13","doi-asserted-by":"crossref","first-page":"e74809","DOI":"10.1371\/journal.pone.0074809","article-title":"Simultaneous
-      activation of Kras and inactivation of p53 induces soft tissue sarcoma and bladder
-      urothelial hyperplasia","volume":"8","author":"X Yang","year":"2013","journal-title":"PLoS
-      One"},{"key":"ref14","doi-asserted-by":"crossref","first-page":"e65189","DOI":"10.1371\/journal.pone.0065189","article-title":"Overexpression
-      of p16(INK4a) in urothelial carcinoma in situ is a marker for MAPK-mediated
-      epithelial-mesenchymal transition but is not related to human papillomavirus
-      infection","volume":"8","author":"J Steinestel","year":"2013","journal-title":"PLoS
-      One"},{"key":"ref15","doi-asserted-by":"crossref","first-page":"179","DOI":"10.1053\/j.semperi.2006.05.004","article-title":"Pathology
-      of Bronchopulmonary Dysplasia","volume":"30","author":"JJ Coalson","year":"2006","journal-title":"Semin
-      Perinatol"},{"key":"ref16","doi-asserted-by":"crossref","first-page":"1946","DOI":"10.1056\/NEJMra067279","article-title":"Chronic
-      lung disease after premature birth","volume":"357","author":"E Baraldi","year":"2007","journal-title":"N
-      Engl J Med"},{"key":"ref17","doi-asserted-by":"crossref","first-page":"20778","DOI":"10.1074\/jbc.M110.198069","article-title":"Loss
-      of p53 and acquisition of angiogenic microRNA profile are insufficient to facilitate
-      progression of bladder urothelial carcinoma in situ to invasive carcinoma","volume":"286","author":"F
-      Ayala de la Pena","year":"2011","journal-title":"J Biol Chem"},{"key":"ref18","doi-asserted-by":"crossref","first-page":"164","DOI":"10.1016\/j.ymgme.2006.03.014","article-title":"Mouth
-      cell collection device for newborn mice","volume":"89","author":"YH Zhang","year":"2006","journal-title":"Mol
-      Genet Metab"},{"key":"ref19","doi-asserted-by":"crossref","unstructured":"Birkedal-Hansen
-      H, Yamada S, Windsor J, Pollard AH, Lyons G, et al. (2008) Matrix metalloproteinases.
-      Curr Protoc Cell Biol Chapter 10: Unit 10 8.","DOI":"10.1002\/0471143030.cb1008s40"},{"key":"ref20","doi-asserted-by":"crossref","first-page":"F562","DOI":"10.1152\/ajprenal.00368.2004","article-title":"Gene
-      deletion in urothelium by specific expression of Cre recombinase","volume":"289","author":"L
-      Mo","year":"2005","journal-title":"Am J Physiol Ren Physiol"},{"key":"ref21","unstructured":"Schittny
-      PH. J B (2003) Morphogenesis of the mammalian lung: aspects of structure and
-      extracellular matrix components. In: Massaro D Chambon P, editors MGD, editor.
-      Lung development and regeneration. New York: Marcel Dekker Inc. pp. 275\u2013317."},{"key":"ref22","doi-asserted-by":"crossref","first-page":"113","DOI":"10.1002\/ppul.20252","article-title":"Similarities
-      and dissimilarities of branching and septation during lung development","volume":"40","author":"M
-      Roth-Kleiner","year":"2005","journal-title":"Pediatr Pulmonol"},{"key":"ref23","doi-asserted-by":"crossref","first-page":"1549","DOI":"10.1053\/jpsu.2000.18305","article-title":"Early
-      fetal obstructive uropathy produces Potter&apos;s syndrome in the lamb","volume":"35","author":"H
-      Kitagawa","year":"2000","journal-title":"J Pediatr Surg"},{"key":"ref24","doi-asserted-by":"crossref","first-page":"482","DOI":"10.1046\/j.1469-0705.2000.00252.x","article-title":"The
-      fetal lung. 2: Pulmonary hypoplasia","volume":"16","author":"JA Laudy","year":"2000","journal-title":"Ultrasound
-      Obs Gynecol"},{"key":"ref25","doi-asserted-by":"crossref","first-page":"5512","DOI":"10.1158\/0008-5472.CAN-05-0074","article-title":"K-ras
-      codon-specific mutations produce distinctive metabolic phenotypes in NIH3T3
-      mice [corrected] fibroblasts","volume":"65","author":"P Vizan","year":"2005","journal-title":"Cancer
-      Res"},{"key":"ref26","doi-asserted-by":"crossref","first-page":"455","DOI":"10.1203\/PDR.0b013e3181b3b0fa","article-title":"Placental
-      IL-10 dysregulation and association with bronchopulmonary dysplasia risk","volume":"66","author":"EC
-      McGowan","year":"2009","journal-title":"Pediatr Res"},{"key":"ref27","doi-asserted-by":"crossref","first-page":"791","DOI":"10.1091\/mbc.E08-07-0732","article-title":"Oncogenic
-      K-Ras regulates proliferation and cell junctions in lung epithelial cells through
-      induction of cyclooxygenase-2 and activation of metalloproteinase-9","volume":"20","author":"XQ
-      Wang","year":"2009","journal-title":"Mol Biol Cell"},{"key":"ref28","doi-asserted-by":"crossref","first-page":"341","DOI":"10.1038\/sj.jp.7211290","article-title":"Amniotic
-      Fluid: Not Just Fetal Urine Anymore","volume":"25","author":"MA Underwood","year":"2005","journal-title":"J
-      Perinatol"},{"key":"ref29","doi-asserted-by":"crossref","first-page":"679","DOI":"10.1073\/pnas.92.3.679","article-title":"A
-      tissue-specific promoter that can drive a foreign gene to express in the suprabasal
-      urothelial cells of transgenic mice","volume":"92","author":"JH Lin","year":"1995","journal-title":"Proc
-      Natl Acad Sci U S A"},{"key":"ref30","doi-asserted-by":"crossref","first-page":"6610","DOI":"10.1158\/1078-0432.CCR-08-1136","article-title":"Tumor-specific
-      urinary matrix metalloproteinase fingerprinting: identification of high molecular
-      weight urinary matrix metalloproteinase species","volume":"14","author":"R Roy","year":"2008","journal-title":"Clin
-      Cancer Res"},{"key":"ref31","doi-asserted-by":"crossref","first-page":"68","DOI":"10.1152\/jappl.1986.61.1.68","article-title":"Influence
-      of upper respiratory tract on liquid flow to and from fetal lungs","volume":"61","author":"R
-      Harding","year":"1986","journal-title":"J Appl Physiol"},{"key":"ref32","first-page":"1562","article-title":"Pitfalls,
-      Problems, and Progress in Bronchopulmonary Dysplasia 10.1542\/peds.2008-1962","volume":"123","author":"A
-      Bhandari","year":"2009","journal-title":"Pediatrics"},{"key":"ref33","doi-asserted-by":"crossref","first-page":"312","DOI":"10.1203\/PDR.0b013e31820bcb2a","article-title":"Developmental
-      stage is a major determinant of lung injury in a murine model of bronchopulmonary
-      dysplasia","volume":"69","author":"E Backstrom","year":"2011","journal-title":"Pediatr
-      Res"},{"key":"ref34","doi-asserted-by":"crossref","first-page":"8724","DOI":"10.1074\/jbc.M511798200","article-title":"Loss
-      of PECAM-1 function impairs alveolarization","volume":"281","author":"HM DeLisser","year":"2006","journal-title":"J
-      Biol Chem"},{"key":"ref35","first-page":"702","article-title":"Loss of HIF-2[alpha]
-      and inhibition of VEGF impair fetal lung maturation, whereas treatment with
-      VEGF prevents fatal respiratory distress in premature mice","volume":"8","author":"V
-      Compernolle","year":"2002"},{"key":"ref36","doi-asserted-by":"crossref","first-page":"978","DOI":"10.1164\/rccm.200611-1660PP","article-title":"Bronchopulmonary
-      dysplasia: where have all the vessels gone? Roles of angiogenic growth factors
-      in chronic lung disease","volume":"175","author":"B Thebaud","year":"2007","journal-title":"Am
-      J Respir Crit Care Med"},{"key":"ref37","doi-asserted-by":"crossref","first-page":"16","DOI":"10.1159\/000047179","article-title":"Basement
-      membrane biomarkers in very low birth weight premature infants. Association
-      with length of NICU stay and bronchopulmonary dysplasia","volume":"81","author":"ZH
-      Aghai","year":"2002","journal-title":"Biol Neonate"},{"key":"ref38","doi-asserted-by":"crossref","first-page":"1709","DOI":"10.1542\/peds.113.6.1709","article-title":"Low
-      levels of tissue inhibitors of metalloproteinases with a high matrix metalloproteinase-9\/tissue
-      inhibitor of metalloproteinase-1 ratio are present in tracheal aspirate fluids
-      of infants who develop chronic lung disease","volume":"113","author":"II Ekekezie","year":"2004","journal-title":"Pediatrics"},{"key":"ref39","first-page":"84","article-title":"Complex
-      Integration of Matrix, Oxidative Stress, and Apoptosis in Genetic Emphysema
-      10.2353\/ajpath.2009.080870","volume":"175","author":"M Podowski","year":"2009","journal-title":"Am
-      J Pathol"},{"key":"ref40","doi-asserted-by":"crossref","first-page":"15571","DOI":"10.1073\/pnas.1007625107","article-title":"Extracellular
-      superoxide dismutase protects against pulmonary emphysema by attenuating oxidative
-      fragmentation of ECM","volume":"107","author":"H Yao","year":"2010","journal-title":"Proc
-      Natl Acad Sci U S A"},{"key":"ref41","doi-asserted-by":"crossref","first-page":"1831","DOI":"10.1016\/S0002-9440(10)64318-0","article-title":"Matrilysin
-      (matrix metalloproteinase-7) mediates E-cadherin ectodomain shedding in injured
-      lung epithelium","volume":"162","author":"JK McGuire","year":"2003","journal-title":"Am
-      J Pathol"},{"key":"ref42","doi-asserted-by":"crossref","first-page":"204","DOI":"10.1164\/rccm.200506-927OC","article-title":"Growth
-      of pulmonary microvasculature in ventilated preterm infants","volume":"173","author":"ME
-      De Paepe","year":"2006","journal-title":"Am J Respir Crit Care Med"},{"key":"ref43","doi-asserted-by":"crossref","first-page":"2477","DOI":"10.1161\/CIRCULATIONAHA.105.541524","article-title":"Vascular
-      endothelial growth factor gene therapy increases survival, promotes lung angiogenesis,
-      and prevents alveolar damage in hyperoxia-induced lung injury: evidence that
-      angiogenesis participates in alveolarization","volume":"112","author":"B Thebaud","year":"2005","journal-title":"Circulation"},{"key":"ref44","doi-asserted-by":"crossref","first-page":"7529","DOI":"10.1158\/0008-5472.CAN-08-4382","article-title":"Pulmonary
-      vascular destabilization in the premetastatic phase facilitates lung metastasis","volume":"69","author":"Y
-      Huang","year":"2009","journal-title":"Cancer Res"},{"key":"ref45","doi-asserted-by":"crossref","first-page":"154","DOI":"10.1073\/pnas.98.1.154","article-title":"Urothelial
-      function reconsidered: a role in urinary protein secretion","volume":"98","author":"FM
-      Deng","year":"2001","journal-title":"Proc Natl Acad Sci U S A"}],"container-title":["PLoS
-      ONE"],"language":"en","link":[{"URL":"http:\/\/dx.plos.org\/10.1371\/journal.pone.0095888","content-type":"unspecified","content-version":"vor","intended-application":"similarity-checking"}],"deposited":{"date-parts":[[2019,8,9]],"date-time":"2019-08-09T21:03:13Z","timestamp":1565384593000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0095888"}},"editor":[{"given":"Rory
-      Edward","family":"Morty","sequence":"first","affiliation":[]}],"issued":{"date-parts":[[2014,4,23]]},"references-count":45,"journal-issue":{"issue":"4","published-online":{"date-parts":[[2014,4,23]]}},"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0095888","ISSN":["1932-6203"],"issn-type":[{"value":"1932-6203","type":"electronic"}],"published":{"date-parts":[[2014,4,23]]}},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:14:48Z","timestamp":1655489688488},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0266720.r004","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:32:29Z","timestamp":1655487149000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:32:40Z","timestamp":1655487160000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0266720.r004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0266720.r004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:14:51Z","timestamp":1655489691337},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270101.s005","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:09Z","timestamp":1655487309000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:35:16Z","timestamp":1655487316000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270101.s005"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270101.s005"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T18:14:57Z","timestamp":1655489697589},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270142.t001","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:44Z","timestamp":1655487044000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:30:46Z","timestamp":1655487046000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270142.t001"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270142.t001"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:41:50Z","timestamp":1655487710426},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pcbi.1010095.g006","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:50Z","timestamp":1655486750000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:54Z","timestamp":1655486754000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pcbi.1010095.g006"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pcbi.1010095.g006"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:41:52Z","timestamp":1655487712259},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pcbi.1010095.g007","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:50Z","timestamp":1655486750000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:25:54Z","timestamp":1655486754000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pcbi.1010095.g007"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pcbi.1010095.g007"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:42:11Z","timestamp":1655487731207},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270136.s004","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:26:47Z","timestamp":1655486807000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:26:51Z","timestamp":1655486811000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270136.s004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270136.s004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:42:16Z","timestamp":1655487736207},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270239.g002","type":"component","created":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:27:16Z","timestamp":1655486836000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T17:27:21Z","timestamp":1655486841000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270239.g002"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270239.g002"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T12:41:48Z","timestamp":1655469708102},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0270096.g004","type":"component","created":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:43:11Z","timestamp":1655401391000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:43:12Z","timestamp":1655401392000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0270096.g004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0270096.g004"},{"indexed":{"date-parts":[[2022,6,17]],"date-time":"2022-06-17T12:41:09Z","timestamp":1655469669174},"reference-count":0,"publisher":"Public
-      Library of Science (PLoS)","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.1371\/journal.pone.0268774.t004","type":"component","created":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:36:09Z","timestamp":1655400969000},"source":"Crossref","is-referenced-by-count":0,"prefix":"10.1371","member":"340","deposited":{"date-parts":[[2022,6,16]],"date-time":"2022-06-16T17:36:12Z","timestamp":1655400972000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/dx.plos.org\/10.1371\/journal.pone.0268774.t004"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.1371\/journal.pone.0268774.t004"}],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        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
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '6301'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:26:02 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -170,8 +215,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '10699'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:44:42 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -180,40 +233,36 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/prefixes/10.9999/works
   response:
-    content: Resource not found.
+    body:
+      string: Resource not found.
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json;charset=utf-8
-      Date:
-      - Sat, 12 Jul 2025 04:26:03 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -221,48 +270,52 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Tue, 16 Jun 2026 15:44:45 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       vary:
       - Accept
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 404
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 404
+      message: Not Found
 - request:
     body: ''
     headers:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/prefixes/10.4176/works
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":0,"items":[],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":0,"items":[],"items-per-page":20,"query":{"start-index":0,"search-terms":null}}}'
     headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:26:04 GMT
-      Transfer-Encoding:
-      - chunked
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -270,16 +323,27 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:44:53 GMT
       permissions-policy:
       - interest-cohort=()
       server:
       - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

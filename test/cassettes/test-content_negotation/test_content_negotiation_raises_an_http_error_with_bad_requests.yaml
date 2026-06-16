@@ -5,167 +5,105 @@ interactions:
       accept:
       - application/x-bibtex
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - doi.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://doi.org/10.1126/foo
   response:
-    content: "<!DOCTYPE html>\n<html lang=\"en-us\">\n<head>\n\n    <meta charset=\"UTF-8\">\n
-      \   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n
-      \   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <title>Error:
-      DOI Not Found</title>\n\n\n\n    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\"\n
-      \         rel=\"stylesheet\"\n          integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\"\n
-      \         crossorigin=\"anonymous\">\n    <script\n            src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js\"\n
-      \           integrity=\"sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM\"\n
-      \           crossorigin=\"anonymous\">\n    </script>\n\n    <script src=\"https://kit.fontawesome.com/731b8140c4.js\"
-      crossorigin=\"anonymous\"></script>\n\n    <link rel=\"stylesheet\" href=\"/static/css/style.css\"
-      integrity=\"\">\n\n    <style>\n        @import url(\"https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100&display=swap\");\n
-      \   </style>\n\n    <link rel=\"icon\" sizes=\"48x48\" href=\"/static/images/favicons/favicon.ico\">\n
-      \   <link rel=\"icon\" sizes=\"32x32\" href=\"/static/images/favicons/favicon-32x32.png\">\n
-      \   <link rel=\"icon\" sizes=\"16x16\" href=\"/static/images/favicons/favicon-16x16.png\">\n
-      \   <link rel=\"apple-touch-icon-precomposed\" href=\"/static/images/favicons/apple-touch-icon.png\">\n
-      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"192x192\" href=\"/static/images/favicons/android-chrome-192x192.png\">\n
-      \   <link rel=\"apple-touch-icon-precomposed\" sizes=\"512x512\" href=\"/static/images/favicons/android-chrome-512x512.png\">\n\n</head>\n<body
-      class=\"generic-page\">\n<header>\n    <div class=\"row\">\n        <div class=\"col
-      logo\">\n            <a href=\"https://www.doi.org\"><img class=\"header-logo\"
-      src=\"/static/images/logos/header_logo_cropped.svg\" /></a>\n        </div>\n
-      \       <div class=\"col home-link\">\n            <div class=\"link-alt\">\n
-      \               <a href=\"https://www.doi.org\">\n                    <span>VISIT
-      DOI.ORG</span>\n                    <i class=\"fa-solid fa-arrow-right-long
-      hover-move-right\"></i>\n                </a>\n            </div>\n        </div>\n
-      \   </div>\n\n</header>\n\n\n<main aria-role=\"main\">\n    <header class=\"homepage-header\">\n
-      \   </header>\n    <div class=\"homepage-content\">\n\n        <section class=\"single-top\">\n
-      \           <div class=\"row short\"></div>\n        </section>\n\n        <div
-      class=\"page-content\">\n            <article>\n                <div>\n                    <h2>DOI
-      Not Found</h2>\n\n                    \n\n                    <h3>10.1126/foo</h3>\n\n
-      \                   \n                    \n                    \n                    <p>This
-      DOI cannot be found in the DOI System.  Possible reasons are:</p>\n                    \n\n
-      \                   <ul>\n                        <li style=\"padding-bottom:
-      .5em;\">The DOI is incorrect in your source. Search for the item by name, title,
-      or other metadata using a search engine.</li>\n                        <li style=\"padding-bottom:
-      .5em;\">The DOI was copied incorrectly. Check to see that the string includes
-      all the characters before and after the slash and no sentence punctuation marks.</li>\n
-      \                       <li style=\"padding-bottom: .5em;\">The DOI has not
-      been activated yet. Please try again later, and report the problem if the error
-      continues.</li>\n                    </ul>\n                    \n                    \n
-      \               </div>\n            </article>\n        </div>\n\n        <section
-      class=\"home-infos\">\n            <div class=\"row\">\n                <div
-      class=\"col \">\n                    <h2 class=\"title\">WHAT CAN I DO NEXT?</h2>\n
-      \                   <ul>\n                        <li>If you believe this DOI
-      is valid, you may <strong>report this error</strong> to the responsible DOI
-      Registration Agency using the form here.</li>\n                        <li>If
-      your organization is the steward of this DOI prefix, please make sure you have
-      completed registration of this DOI with your Registration Agency.</li>\n                        <li>You
-      can try to search again from <a href=\"https://www.doi.org\">DOI.ORG homepage</a></li>\n
-      \                   </ul>\n                </div>\n                <div class=\"col
-      form\">\n                    <h2 class=\"title\"><img src=\"/static/images/exclamation.svg\">REPORT
-      AN ERROR</h2>\n                    <form action=\"/notfound\" method=\"post\"
-      enctype=\"application/x-www-form-urlencoded\" name=\"notFoundForm\" onsubmit=\"return
-      submitDoiNotFound(event);\">\n                        <div class=\"row\">\n
-      \                           <div class=\"col\"><label for=\"missingHandle\">DOI:</label></div>\n
-      \                           <div class=\"col\"><input id=\"missingHandle\" name=\"missingHandle\"
-      value=\"10.1126/foo\" type=\"text\" readonly=\"readonly\"></div>\n                        </div>\n
-      \                       <div class=\"row\">\n                            <div
-      class=\"col\"><label for=\"referringPage\">URL of Web Page Listing the DOI:</label></div>\n
-      \                           <div class=\"col\"><input id=\"referringPage\" name=\"referringPage\"
-      type=\"text\" ></div>\n                        </div>\n                        <div
-      class=\"row\">\n                            <div class=\"col\"><label for=\"userEmailAddress\">Your
-      Email Address:</label></div>\n                            <div class=\"col\"><input
-      id=\"userEmailAddress\" name=\"userEmailAddress\" type=\"text\" /></div>\n                        </div>\n
-      \                       <div class=\"row\">\n                            <div
-      class=\"col\"><label for=\"comments\">Additional Information About the Error:</label></div>\n
-      \                           <div class=\"col\"><textarea id=\"comments\" name=\"comments\"></textarea></div>\n
-      \                       </div>\n                        <div class=\"row\">\n
-      \                           <div class=\"col\"></div>\n                            <div
-      class=\"col\"><input class=\"submit\" type=\"submit\" value=\"Submit Error Report\"></div>\n
-      \                       </div>\n                        <div class=\"row\">\n
-      \                           <p id=\"invalidDoi\" style=\"display: none; background:#F5B7B1;
-      border-radius: 5px;\">The DOI entered is not a valid DOI: it should start with
-      10 followed by a dot, and contain a slash with no preceding whitespace.</p>\n
-      \                           <p id=\"invalidEmail\" style=\"display: none; background:#F5B7B1;
-      border-radius: 5px;\">The email address entered is invalid.</p>\n                            <p
-      id=\"fallback\" style=\"display: none;\">Please <a href=\"mailto:doi-help@doi.org?subject=DOI%20Not%20Found\">contact
-      us</a> if you wish to report this anyway.</p>\n                        </div>\n
-      \                   </form>\n                </div>\n            </div>\n\n
-      \       </section>\n    </div>\n    \n    \n</main>\n\n<footer>\n    <div class=\"row\">\n
-      \       <div class=\"col footer-left\">\n            <a href=\"https://www.doi.org\"><img
-      class=\"footer-logo\" src=\"/static/images/logos/footer_logo_cropped.svg\" /></a>\n
-      \       </div>\n        <div class=\"col footer-right\">\n            <div class=\"row
-      more-info-heading\">\n                <div class=\"col\">\n                    <h2>More
-      information on DOI resolution:</h2>\n                </div>\n            </div>\n
-      \           <div class=\"row\">\n                <div class=\"col\">\n                    <ul>\n
-      \                       <li><a href=\"https://www.doi.org/the-identifier/resources/factsheets/doi-resolution-documentation\">DOI
-      Resolution Factsheet</a></li>\n                    </ul>\n                </div>\n
-      \               <div class=\"col\">\n                    <ul>\n                        <li><a
-      href=\"https://www.doi.org/the-identifier/resources/handbook\">The DOI Handbook</a></li>\n
-      \                   </ul>\n                </div>\n                <div class=\"col\">\n
-      \                   <ul>\n                        <li><a href=\"https://www.doi.org/privacy-policy/\">Privacy
-      Policy</a></li>\n                    </ul>\n                </div>\n            </div>\n
-      \       </div>\n\n    </div>\n    <div class=\"row\">\n        <div class=\"col
-      copyright\">\n            <p>Copyright \xA9 2023 DOI Foundation. <i class=\"fa-brands
-      fa-fw fa-creative-commons\"></i><i class=\"fa-brands fa-fw fa-creative-commons-by\"></i>
-      The content of this site is licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\"
-      title=\"Creative Commons\" target=\"_blank\">Creative Commons Attribution 4.0
-      International License</a>.</p><p>DOI&reg;, DOI.ORG&reg;, and shortDOI&reg; are
-      trademarks of the DOI Foundation.</p>\n        </div>\n        <div class=\"col
-      socials\">\n            <ul class=\"socials-footer\">\n\n                <li><a
-      href=\"https://twitter.com/DOI_Foundation\"><i class=\"fa-brands fa-fw fa-twitter\"></i></a></li>\n\n
-      \               <li><a href=\"https://www.linkedin.com/company/doi-foundation-inc/\"><i
-      class=\"fa-brands fa-fw fa-linkedin\"></i></a></li>\n\n                <li><a
-      href=\"mailto:info@doi.org\"><i class=\"fa-solid fa-fw fa-envelope\"></i></a></li>\n\n
-      \           </ul>\n        </div>\n    </div>\n</footer>\n\n<script type=\"text/javascript\">\n
-      \   function submitDoiNotFound(event) {\n        try {\n            document.getElementById(\"invalidEmail\").style.display
-      = \"none\";\n            document.getElementById(\"invalidDoi\").style.display
-      = \"none\";\n            document.getElementById(\"fallback\").style.display
-      = \"none\";\n\n            const missingHandle = document.getElementById('missingHandle').value.trim();\n
-      \           const userEmailAddress = document.getElementById('userEmailAddress').value.trim();\n\n
-      \           if (!validateDoi(missingHandle)) {\n                event.preventDefault();\n
-      \               document.getElementById(\"invalidDoi\").style.display = \"block\";\n
-      \               document.getElementById(\"fallback\").style.display = \"block\";\n
-      \               return false;\n            }\n            if (!validateEmail(userEmailAddress))
-      {\n                event.preventDefault();\n                document.getElementById(\"invalidEmail\").style.display
-      = \"block\";\n                return false;\n            }\n        } catch
-      (error) {\n            // ignore\n        }\n    }\n\n    function validateEmail(email)
-      {\n        const regEx = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;\n        return regEx.test(email);\n
-      \   }\n\n    function validateDoi(doi) {\n        const regEx = /^10(?:\\.[^\\s\\/]+)?\\//;\n
-      \       return regEx.test(doi);\n    }\n</script>\n\n</body>\n</html>\n"
+    body:
+      string: !!binary |
+        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
     headers:
-      CF-RAY:
-      - 95dd66038ddb680f-SEA
-      Connection:
-      - keep-alive
-      Content-Encoding:
-      - gzip
-      Content-Type:
-      - text/html;charset=utf-8
-      Date:
-      - Sat, 12 Jul 2025 03:19:21 GMT
-      NEL:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=fN23kV0AuNx27M2mpHWWjDepDCFytEtkNgaJhfV73A4sMvbQTPnfj62FTG%2B5FGWBy1vn0HckOD3STODZDZVZcmLo9bxdk%2B1FVaPEQcOt0KiPcv%2FmvbbY0Z0%3D"}],"group":"cf-nel","max_age":604800}'
-      Server:
-      - cloudflare
-      Strict-Transport-Security:
-      - max-age=31536000; includeSubDomains; preload
-      Transfer-Encoding:
-      - chunked
       alt-svc:
       - h3=":443"; ma=86400
       cf-cache-status:
       - DYNAMIC
-      server-timing:
-      - cfL4;desc="?proto=TCP&rtt=17781&min_rtt=17135&rtt_var=7717&sent=4&recv=6&lost=0&retrans=0&sent_bytes=2828&recv_bytes=847&delivery_rate=129848&cwnd=237&unsent_bytes=0&cid=5e86d4f6786ff06c&ts=310&x=0"
+      cf-ray:
+      - a0ca05dece80e2dc-SEA
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-type:
+      - text/html;charset=utf-8
+      date:
+      - Tue, 16 Jun 2026 13:04:53 GMT
+      nel:
+      - '{"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}'
+      report-to:
+      - '{"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=dV0eaImtmxJxTGPkdGjHKxPJVo2Gg5%2BIYaApEwMdLGFf11mwjXunrCYIqCGOawxtORGM%2F762RaifykGR%2BvLqXnr1AzyGN2K9dRjfT58Tfjr9d2Rpnx7orcc%3D"}]}'
+      server:
+      - cloudflare
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains; preload
+      transfer-encoding:
+      - chunked
       vary:
       - Origin
       - accept-encoding
-    http_version: HTTP/1.1
-    status_code: 404
+    status:
+      code: 404
+      message: Not Found
 version: 1

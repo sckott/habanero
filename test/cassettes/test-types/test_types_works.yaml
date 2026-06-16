@@ -5,32 +5,39 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0
     method: GET
     uri: https://api.crossref.org/types/journal/works?rows=2
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":74521,"items":[{"indexed":{"date-parts":[[2024,8,23]],"date-time":"2024-08-23T00:26:24Z","timestamp":1724372784607},"reference-count":0,"publisher":"Green
-      Publication","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.53555\/\/kuey.v29i4.7348","type":"journal","created":{"date-parts":[[2024,8,22]],"date-time":"2024-08-22T09:54:42Z","timestamp":1724320482000},"source":"Crossref","is-referenced-by-count":0,"title":["Educational
-      Administration: Theory and Practice"],"prefix":"10.53555","member":"31492","deposited":{"date-parts":[[2024,8,22]],"date-time":"2024-08-22T10:38:43Z","timestamp":1724323123000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/kuey.net\/index.php\/kuey\/article\/view\/7348"}},"short-title":["kuey"],"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.53555\/\/kuey.v29i4.7348"},{"indexed":{"date-parts":[[2022,4,5]],"date-time":"2022-04-05T03:05:29Z","timestamp":1649127929121},"reference-count":0,"publisher":"Editions
-      Techniques de l Ingenieur","content-domain":{"domain":[],"crossmark-restriction":false},"DOI":"10.51257\/o-42286210","type":"journal","created":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T12:34:37Z","timestamp":1643373277000},"source":"Crossref","is-referenced-by-count":0,"title":["Micro\u00e9lectronique
-      : dispositifs, technologies et circuits"],"prefix":"10.51257","member":"28401","language":"fr","deposited":{"date-parts":[[2022,1,28]],"date-time":"2022-01-28T12:34:37Z","timestamp":1643373277000},"score":0.0,"resource":{"primary":{"URL":"https:\/\/www.techniques-ingenieur.fr\/doi\/10.51257\/o\/42286210"}},"issued":{"date-parts":[[null]]},"references-count":0,"URL":"https:\/\/doi.org\/10.51257\/o-42286210"}],"items-per-page":2,"query":{"start-index":0,"search-terms":null}}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/8VWwXLbNhD9FQ7PBAXApEjx5iRKqolrz9hyZxJLBxiEJFQkwAKgFcWjf++CYiwl
+        lqd1m05vFHYBvH373kKPoXXMtTYsQr0Oo7AW1rKlQG7bCFjbaLNGlbTuKPQgjJVaQZTEOMaHSFg8
+        hgvGhYPTHndR6LRjFTLCtpVfyilJ8iiUTtTw6+4xlKoUX0Tpt5XMCdQw4/Pu7iimZ1EWUTKfR/uQ
+        k7WH4wMIZ4iSKc4Lgos0+wz3+yiUUTdhQYb5aEQznGYkzQCDEQthhOICcd0qFxY4Cpv2HkpaCQMn
+        fmSGLZkqt8Gtkl1lbhvoReBWIlCsFv6bcVaKWnLJVDCOz+PgTbsWTj/AzVwrJ5RDpa6ZVF0l/dcd
+        QOdGW1szoBBIcEZy1/G2YJUVgO3d1cSTiOMzIGY0G9CU5IiMRrkvac//77o1ilX+JiOAiNNk4SiJ
+        yOgEWRjhBE6cEgJMFWnyI1lpntFRlmQJxhgAWbiN+61vPXCgDtKlRU8cluh+e8Sjk66C7Lvwze3F
+        xXg6uQyu3gfTX8bBx/Pr8w/nl+/Og9vLyW/j65vJ9FMcjN9eXV79+im4GV9PxjchoG3gZPnliINO
+        S/V91xkyTFIKC6VoNHTlH+skK5KkSPKTOkmTPO9L59rATtCz18w3Ih4BooQGbv3n7fUFHL1yrrHF
+        bDAbCGi+rrfgB+uUXMdr28brr7NBuPPnrbRx6MBQW8UBaC3uZBYHKBjD7tiTIK1tTxWn2qqaz48l
+        bI+4/xFMqWWszXI2OC2nyc3NpcdxvEaHwzOU4lHWo1C96cGZD6xqOx6fKxIIAQi76Cjp6ZynJFEJ
+        7oxWkoe7uc/9t1antKDP1Lu3epYkafZ3rD7mDIIm+FDpe1YF7yEJLvSO/Gk+PjujXhfdPTHFJIkT
+        Ql/pZjKMCI3y53yQISIU4XxKEu9m+kzSSU4oHuEkf72byZGbe/y1KCWHCrn0yc/sCqV+59Y8I/C7
+        kmrdKeigz94re046ifY0gFbJbNCUi9kAWAJcS2DXvyxIL1AtHPMvk+QAsYI119awDS2MrlFvSgRj
+        WWnODJdgROa3wdhGVauWqGyBOY0W8HS1oICuz37BJ9zrjaggrRYqblbNUfv7PrXKNoLLhYQOHYKH
+        d+9BG8+lXy6BRtY0FVC1F0VoZS0rZuAdQXwl+FqqJZjgL+bYz2v6a+ZY15rNZhOfbk8+GyxgCP3f
+        7TkxTnu8/9H4fMnF34YoydIEDYc4fXlwHlJemInz/o8QaoQB0P7PE43CP1qx7xFwC/V2U7PDawXQ
+        uEIObAnV+dp2u92fT/ZcmrwJAAA=
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '763'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:33 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -38,8 +45,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '989'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 15:45:38 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -48,10 +63,13 @@ interactions:
       - Accept-Encoding
       x-api-pool:
       - public
-      x-ratelimit-interval:
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
 version: 1

@@ -26,7 +26,7 @@ Usage::
    ## verbose curl output
    ### setup first
    import logging
-   import httpx
+   import httpx2
    logging.basicConfig(
       format="%(levelname)s [%(asctime)s] %(name)s - %(message)s",
       datefmt="%Y-%m-%d %H:%M:%S",

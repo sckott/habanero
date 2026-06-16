@@ -5,40 +5,30 @@ interactions:
       accept:
       - '*/*'
       accept-encoding:
-      - gzip, deflate
+      - gzip, deflate, zstd
       connection:
       - keep-alive
       host:
       - api.crossref.org
       user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
       x-user-agent:
-      - python-httpx/0.27.2 habanero/2.3.0
+      - python-httpx2/2.3.0 habanero/2.4.0 (mailto:myrmecocystus@gmail.com)
     method: GET
     uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
   response:
-    content: '{"status":"ok","message-type":"work-list","message-version":"1.0.0","message":{"facets":{},"total-results":551179,"items":[{"DOI":"10.1093\/obo\/9780199830060-0238","title":["Communicating
-      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0202","title":["Ecosystem Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0023","title":["Chemical
-      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0128","title":["Disease Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0042","title":["Community
-      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0026","title":["Fire Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0244","title":["Flood
-      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0249","title":["Ecology and Physics"]},{"DOI":"10.1093\/obo\/9780199830060-0222","title":["Urban
-      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0201","title":["Grazer Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0014","title":["Mycorrhizal
-      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0220","title":["Wetland Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0224","title":["Stochastic
-      Processes in Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0200","title":["Industrial
-      Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0039","title":["Applied Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0139","title":["Ecology
-      of the Himalaya"]},{"DOI":"10.1093\/obo\/9780199830060-0067","title":["Soil
-      Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0014","title":["Behavioral
-      Ecology"]},{"DOI":"10.1093\/hesc\/9780197614044.003.0036","title":["Global Ecology"]},{"DOI":"10.1093\/obo\/9780199830060-0192","title":["Animal
-      Population Ecology"]}],"items-per-page":20,"query":{"start-index":0,"search-terms":"ecology"}}}'
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/52VQU/cMBCF/0rkc7I4zjYke0MstBwqVkJVD8DBZIeNhZNJ7UlpWOW/10FIjQsH
+        nGM88pc3z+PnI7Mkqbdsw/CJxawBa+UBEho6cGvPaJ4SrSzNSr/BWIWtq6YrvuL/KmxzZI+yAnK0
+        4xgzQpI6MWB7PS19KfJcFDFTBI37vD2y7fXVROGrlJfZ3Qk+4N1JeVrwtCyLjPOcJ1xkhfsBKdIO
+        f8vOsWn6VlWSVHuILirUeBjY/Rh/DsbFHOa228E6NcEgJ8tTVUPjNOlgTiq87rbKgrSwQE4+x1wq
+        s4CxFh8YTUO4yevyP5On7ZFs99GuHqyqbMB5pXPUVyNfwIR3lnmCzrpOK9iH9yU8g36YB9kuMGft
+        nZRGXKCE8znkqt33loxaMH889eR8Hyo0plYvC1BCeKJ+AunpyMMxnqIbwqqWllQV7QxWLmfARmqB
+        77mnbgvQRTcgww3LTz15qBZc+tIbpLNWNc7vHXa9drGG4c2l2Yc3Dh8jqiH6NuHlIANmNHs/6Jfo
+        cpxm0u7fgjzpwCTda/oLHrNfPZhhegjcs2IoUe0e/rCNK7hkM1WdEJgp/Bm8gcZx/AunCm6YgwYA
+        AA==
     headers:
-      Connection:
-      - keep-alive
-      Content-Length:
-      - '475'
-      Content-Type:
-      - application/json
-      Date:
-      - Sat, 12 Jul 2025 04:28:58 GMT
       access-control-allow-headers:
       - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
         Accept-Ranges, Cache-Control
@@ -46,8 +36,16 @@ interactions:
       - '*'
       access-control-expose-headers:
       - Link
+      connection:
+      - keep-alive
       content-encoding:
       - gzip
+      content-length:
+      - '457'
+      content-type:
+      - application/json
+      date:
+      - Tue, 16 Jun 2026 14:06:00 GMT
       permissions-policy:
       - interest-cohort=()
       server:
@@ -55,11 +53,14 @@ interactions:
       vary:
       - Accept-Encoding
       x-api-pool:
-      - public
-      x-ratelimit-interval:
+      - polite
+      x-concurrency-limit:
+      - '3'
+      x-rate-limit-interval:
       - 1s
-      x-ratelimit-limit:
-      - '50'
-    http_version: HTTP/1.1
-    status_code: 200
+      x-rate-limit-limit:
+      - '10'
+    status:
+      code: 200
+      message: OK
 version: 1
