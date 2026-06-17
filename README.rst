@@ -7,6 +7,8 @@ This is a low level client for working with Crossref's search API. It's been nam
 
 `Crossref API docs <https://api.crossref.org/swagger-ui/index.html>`__
 
+`habanero docs <https://habanero.readthedocs.io/>`__
+
 Other Crossref API clients:
 
 - Ruby: `serrano`, `<https://github.com/sckott/serrano>`__
