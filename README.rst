@@ -13,30 +13,6 @@ Other Crossref API clients:
 
 Crossref's API issue tracker: https://crossref.atlassian.net/jira/software/c/projects/CR/issues/
 
-`habanero` includes three modules you can import as needed (or
-import all):
-
-`Crossref` - Crossref search API. The `Crossref` module includes methods matching Crossref API routes, and a few convenience methods for getting DOI agency and random DOIs:
-
-- `works` - `/works` route
-- `members` - `/members` route
-- `prefixes` - `/prefixes` route
-- `funders` - `/funders` route
-- `journals` - `/journals` route
-- `types` - `/types` route
-- `licenses` - `/licenses` route
-- `registration_agency` - get DOI minting agency
-- `random_dois` - get random set of DOIs
-
-`counts` - citation counts. Includes the single `citation_count` method
-
-`cn` - content negotiation. Includes the methods:
-
-- `content_negotiation` - get citations in a variety of formats
-- `csl_styles` - get CSL styles, used in `content_negotation` method
-
-`WorksContainer` - A class for handling Crossref works. Pass output of works from methods on the `Crossref` class to more easily extract specific fields of works.
-
 Note about searching:
 
 You are using the Crossref search API described at https://api.crossref.org/swagger-ui/index.html. When you search with query terms, on Crossref servers they are not searching full text, or even abstracts of articles, but only what is available in the data that is returned to you. That is, they search article titles, authors, etc. For some discussion on this, see https://gitlab.com/crossref/issues/-/issues/101
@@ -91,54 +67,6 @@ Or build it yourself locally
     cd habanero
     make install
 
-Usage
-=====
-
-Initialize a client
-
-.. code-block:: python
-
-    from habanero import Crossref
-    cr = Crossref()
-
-Works route
-
-.. code-block:: python
-
-  # query
-  x = cr.works(query = "ecology")
-  x['message']
-  x['message']['total-results']
-  x['message']['items']
-
-  # fetch data by DOI
-  cr.works(ids = '10.1371/journal.pone.0033693')
-
-Members route
-
-.. code-block:: python
-
-  # ids here is the Crossref Member ID; 98 = Hindawi
-  cr.members(ids = 98, works = True)
-
-Citation counts
-
-.. code-block:: python
-
-  from habanero import counts
-  counts.citation_count(doi = "10.1016/j.fbr.2012.01.001")
-
-Content negotiation - get citations in many formats
-
-.. code-block:: python
-
-  from habanero import cn
-  cn.content_negotiation(ids = '10.1126/science.169.3946.635')
-  cn.content_negotiation(ids = '10.1126/science.169.3946.635', format = "citeproc-json")
-  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "rdf-xml")
-  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text")
-  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "apa")
-  cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "bibentry")
 
 Meta
 ====
