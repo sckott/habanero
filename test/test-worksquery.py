@@ -57,9 +57,21 @@ def test_worksquery_same_as_wrapped_method_mocked():
         "status": "ok",
         "message": {
             "items": [
-                {"DOI": "10.1111/a", "title": ["Ecology A"], "published": {"date-parts": [[2021, 1]]}},
-                {"DOI": "10.1111/b", "title": ["Ecology B"], "published": {"date-parts": [[2021, 2]]}},
-                {"DOI": "10.1111/c", "title": ["Ecology C"], "published": {"date-parts": [[2021, 3]]}},
+                {
+                    "DOI": "10.1111/a",
+                    "title": ["Ecology A"],
+                    "published": {"date-parts": [[2021, 1]]},
+                },
+                {
+                    "DOI": "10.1111/b",
+                    "title": ["Ecology B"],
+                    "published": {"date-parts": [[2021, 2]]},
+                },
+                {
+                    "DOI": "10.1111/c",
+                    "title": ["Ecology C"],
+                    "published": {"date-parts": [[2021, 3]]},
+                },
             ]
         },
     }
@@ -79,8 +91,6 @@ def test_worksquery_same_as_wrapped_method_real_requests():
     """WorksQuery: same result as the wrapped method, but real requests"""
     query = q.members(98).select("DOI", "title").limit(3)
     result_WorksQuery = query.execute()
-    result_works = cr.members(
-        ids=98, works=True, select=["DOI", "title"], limit=3
-    )
+    result_works = cr.members(ids=98, works=True, select=["DOI", "title"], limit=3)
 
     assert result_WorksQuery == result_works
