@@ -19,7 +19,7 @@ opendocs:
 	open docs/_build/html/index.html
 
 lint-fix:
-	uv run ruff check --select I --fix habanero test
+	uv run ruff check --fix habanero test
 
 lint-check:
 	uv run ruff check habanero test
