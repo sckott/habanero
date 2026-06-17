@@ -25,7 +25,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
     Usage::
 
       from habanero import Crossref, WorksQuery
-      cr = Crossref(mailto="myrmecocystus@gmail.com")
+      cr = Crossref()
       q = WorksQuery(cr)
 
       # chain methods, nothing fires yet
