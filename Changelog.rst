@@ -1,6 +1,13 @@
 Changelog
 =========
 
+2.9.2 (2026-06-17)
+--------------------
+* `httpx` replaced by `httpx2` throughout this package (#219)
+* new class `WorksQuery`: a chainable query builder for any of the Crossref API queries that include `/works` (plain ol works, members, prefixes, etc.). (#220)
+* added integrated checking of values passed to `facets`, `select`, `sort`, and field query parameters to avoid invalid queries before making a real HTTP request
+* many internal refactoring improvements
+
 2.4.0 (2026-06-04)
 --------------------
 * fixed return type declaration for Crossref.works (#204) thanks @StarryWorm
