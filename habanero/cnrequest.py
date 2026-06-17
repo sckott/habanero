@@ -14,7 +14,7 @@ else:
     _has_bibtexparser = True
 
 
-def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
+def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):  # noqa: A002 (format)
     if not isinstance(ids, (str, list)):
         raise TypeError("'ids' must be a str or list of str's")
     if isinstance(ids, list) and not all(isinstance(z, str) for z in ids):

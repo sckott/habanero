@@ -216,7 +216,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None,
+        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -410,7 +410,7 @@ class Crossref:
         self,
         ids: List[str] | str | int | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None,
+        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -525,7 +525,7 @@ class Crossref:
     def prefixes(
         self,
         ids: List[str] | str,
-        filter: Optional[dict] = None,
+        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -641,7 +641,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None,
+        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -769,7 +769,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None,
+        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -892,7 +892,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None,
+        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -1140,7 +1140,7 @@ class Crossref:
         )
         return [z["DOI"] for z in res["message"]["items"]]
 
-    def filter_names(self, type: str = "works") -> list:
+    def filter_names(self, type: str = "works") -> list: # noqa: A002 (TODO: fix at next major version)
         """
         Filter names - just the names of each filter
 
@@ -1164,7 +1164,7 @@ class Crossref:
         nms.sort()
         return nms
 
-    def filter_details(self, type: str = "works") -> dict:
+    def filter_details(self, type: str = "works") -> dict: # noqa: A002 (TODO: fix at next major version)
         """
         Filter details - filter names, possible values, and description
 

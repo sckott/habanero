@@ -37,7 +37,7 @@ class WorksContainer:
             x.abstract
     """
 
-    def __init__(self, input) -> None:
+    def __init__(self, input) -> None: # noqa: A002 (TODO: fix at next major version)
         super(WorksContainer, self).__init__()
         if not input:
             raise ValueError("input len must be > zero")

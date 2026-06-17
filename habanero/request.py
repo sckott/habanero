@@ -25,7 +25,7 @@ def request(
     path,
     ids=None,
     query=None,
-    filter=None,
+    filter=None, # noqa: A002 (Crossref API uses filter)
     offset=None,
     limit=None,
     sample=None,

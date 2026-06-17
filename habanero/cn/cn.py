@@ -4,7 +4,7 @@ from .constants import CN_BASE_URL
 
 def content_negotiation(
     ids: str,
-    format: str = "bibtex",
+    format: str = "bibtex", # noqa: A002
     style: str = "apa",
     locale: str = "en-US",
     url: str = "",
