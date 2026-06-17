@@ -49,7 +49,7 @@ def validate_facets(facets: str | None) -> None:
             try:
                 int(facet_value)
             except ValueError:
-                raise ValueError(f"Invalid facet value: {facet_value}")
+                raise ValueError(f"Invalid facet value: {facet_value}") from None
         else:
             if facet not in VALID_FACETS:
                 raise ValueError(f"Invalid facet: {facet}")

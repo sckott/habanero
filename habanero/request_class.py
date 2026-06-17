@@ -107,7 +107,7 @@ class Request(object):
         payload["offset"] = ifelsestr(payload["offset"])
         payload["rows"] = ifelsestr(payload["rows"])
         # remove params with value None
-        payload = dict((k, v) for k, v in payload.items() if v)
+        payload = {k: v for k, v in payload.items() if v}
         # add field queries
         payload.update(filter_dict(self.kwargs))
         # rename field queries
@@ -166,14 +166,14 @@ class Request(object):
             except (ValueError, KeyError, IndexError):
                 if should_warn:
                     mssg = "%s: %s" % (r.status_code, r.reason_phrase)
-                    warnings.warn(mssg)
+                    warnings.warn(mssg, stacklevel=2)
                     return None
                 else:
                     r.raise_for_status()
         except ConnectTimeoutError as e:
-            raise httpx2.ConnectTimeout(str(e))
+            raise httpx2.ConnectTimeout(str(e)) from e
         except httpx2.HTTPError as e:
-            raise RuntimeError(e)
+            raise RuntimeError(e) from e
         else:
             if not r:
                 raise RuntimeError("An unknown problem occurred with an HTTP request")

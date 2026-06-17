@@ -35,7 +35,7 @@ def switch_classes(x, path, works):
 
 def check_kwargs(keys, kwargs):
     for x in range(len(keys)):
-        if keys[x] in kwargs.keys():
+        if keys[x] in kwargs:
             mssg = "The %s parameter is not allowed with this method" % keys[x]
             raise Exception(mssg)
 
@@ -87,13 +87,13 @@ def make_ua(mailto=None, ua_string=None):
 
 
 def filter_dict(x):
-    return dict((k, x[k]) for k, v in x.items() if k.find("query_") == 0)
+    return {k: x[k] for k, v in x.items() if k.find("query_") == 0}
 
 
 def rename_query_filters(x):
     newkeys = [re.sub("query_", "query.", v) for v in x]
     newkeys = [re.sub("_", "-", v) for v in newkeys]
-    mapping = dict(zip(x.keys(), newkeys))
+    mapping = dict(zip(x.keys(), newkeys, strict=True))
     return {mapping[k]: v for k, v in x.items()}
 
 

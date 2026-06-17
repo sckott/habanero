@@ -31,7 +31,7 @@ def test_works_with_many_ids():
     assert isinstance(res, list)
     assert len(res) == 5
     assert [len(x) for x in res] == [4, 4, 4, 4, 4]
-    assert [x["message-type"] for x in res][0] == "work"
+    assert next(x["message-type"] for x in res) == "work"
     assert dois[0] == res[0]["message"]["DOI"]
 
 

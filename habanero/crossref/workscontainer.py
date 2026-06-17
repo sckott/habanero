@@ -56,7 +56,7 @@ class WorksContainer:
 
     def works_handler(self, x: list | dict) -> list:
         message_type = (
-            [w["message-type"] for w in x][0]
+            next(w["message-type"] for w in x)
             if isinstance(x, list)
             else x["message-type"]
         )

@@ -45,9 +45,8 @@ def request(
     warning_thrown = False
     url = cr.base_url + path
 
-    if cursor_max is not None:
-        if not isinstance(cursor_max, int):
-            raise ValueError("cursor_max must be of class int")
+    if cursor_max and not isinstance(cursor_max, int):
+        raise ValueError("cursor_max must be of class int")
 
     filt = filter_handler(filter)
     if isinstance(select, list):
@@ -78,7 +77,7 @@ def request(
     payload["offset"] = ifelsestr(payload["offset"])
     payload["rows"] = ifelsestr(payload["rows"])
     # remove params with value None
-    payload = dict((k, v) for k, v in payload.items() if v)
+    payload = {k: v for k, v in payload.items() if v}
     # add field queries
     payload.update(filter_dict(kwargs))
     # rename field queries
@@ -94,13 +93,13 @@ def request(
                 timeout=cr.timeout,
             )
             r.raise_for_status()
-        except httpx2.HTTPStatusError:
+        except httpx2.HTTPStatusError as e:
             if is_json(r):
-                raise RequestError(r.status_code, parse_json_err(r))
+                raise RequestError(r.status_code, parse_json_err(r)) from e
             else:
                 r.raise_for_status()
         except httpx2.HTTPError as e:
-            raise RuntimeError(f"HTTP Exception for {e.request.url} - {e}")
+            raise RuntimeError(f"HTTP Exception for {e.request.url} - {e}") from e
             # raise RuntimeError(e)
         else:
             if not r:
@@ -140,13 +139,8 @@ def request(
                 ).do_request(should_warn=should_warn)
                 coll.append(res)
             else:
-                if agency:
-                    endpt = url + str(ids[i]) + "/agency"
-                else:
-                    endpt = url + str(ids[i])
-
+                endpt = url + str(ids[i]) + "/agency" if agency else url + str(ids[i])
                 endpt = endpt.strip("/")
-
                 r = httpx2.get(
                     endpt,
                     params=payload,
@@ -156,7 +150,7 @@ def request(
                 if r.status_code > 201 and should_warn:
                     warning_thrown = True
                     mssg = "%s on %s: %s" % (r.status_code, ids[i], r.reason_phrase)
-                    warnings.warn(mssg)
+                    warnings.warn(mssg, stacklevel=2)
                 else:
                     r.raise_for_status()
 

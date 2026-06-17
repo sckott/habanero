@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import pytest
 import yaml
 
@@ -15,7 +17,7 @@ def test_ua_string():
     """settings (ua_string) - with ua string, works"""
     cr_with_ua.works(ids="10.1371/journal.pone.0033693")
     try:
-        with open(vcr_path, "r") as f:
+        with Path(vcr_path).open("r") as f:
             x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
@@ -34,7 +36,7 @@ def test_no_ua_string():
     """settings (ua_string) - without ua string, works"""
     cr_without_ua.works(ids="10.1371/journal.pone.0033693")
     try:
-        with open(vcr_noua_path, "r") as f:
+        with Path(vcr_noua_path).open("r") as f:
             x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]
@@ -55,7 +57,7 @@ def test_ua_string_registration_agency():
     """settings (ua_string) - with ua string, registration_agency"""
     cr_with_ua.registration_agency("10.1126/science.169.3946.635")
     try:
-        with open(vcr_path_registration_agency, "r") as f:
+        with Path(vcr_path_registration_agency).open("r") as f:
             x = f.read()
         xy = yaml.safe_load(x)
         heads = xy["interactions"][0]["request"]["headers"]

@@ -17,9 +17,9 @@ else:
 def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
     if not isinstance(ids, (str, list)):
         raise TypeError("'ids' must be a str or list of str's")
-    if isinstance(ids, list):
-        if not all([isinstance(z, str) for z in ids]):
-            raise TypeError("'ids' must be a str or list of all str's")
+    if isinstance(ids, list) and not all(isinstance(z, str) for z in ids):
+        raise TypeError("'ids' must be a str or list of all str's")
+
     should_split = isinstance(ids, str)
     if should_split:
         ids = ids.split()
@@ -37,17 +37,17 @@ def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):
         return coll
 
 
-def make_request(url, ids, format, style, locale, fail, **kwargs):
-    type = cn_format_headers[format]
+def make_request(url, ids, for_mat, style, locale, fail, **kwargs):
+    ty_pe = cn_format_headers[for_mat]
 
-    if format == "citeproc-json":
-        url = "http://api.crossref.org/works/" + ids + "/" + type
+    if for_mat == "citeproc-json":
+        url = "http://api.crossref.org/works/" + ids + "/" + ty_pe
     else:
-        if format == "text":
-            type = type + "; style = " + style + "; locale = " + locale
+        if for_mat == "text":
+            ty_pe = ty_pe + "; style = " + style + "; locale = " + locale
         url = url + "/" + ids
 
-    htype = {"Accept": type}
+    htype = {"Accept": ty_pe}
     head = dict(make_ua(), **htype)
     r = httpx2.get(url, headers=head, follow_redirects=True, **kwargs)
 
@@ -58,12 +58,12 @@ def make_request(url, ids, format, style, locale, fail, **kwargs):
             r.raise_for_status()
         else:
             mssg = "%s: %s" % (r.status_code, r.url)
-            warnings.warn(mssg)
+            warnings.warn(mssg, stacklevel=2)
             return None
 
     r.encoding = "UTF-8"
     text = r.text
-    if format == "bibtex" and _has_bibtexparser:
+    if for_mat == "bibtex" and _has_bibtexparser:
         bibtexparser_ver = Version(bibtexparser.__version__)
         if bibtexparser_ver.major >= 2:
             text = fix_bibtex(text)

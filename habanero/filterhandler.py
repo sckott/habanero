@@ -12,7 +12,7 @@ def filter_handler(x: dict | None = None) -> str | None:
 
         # combine
         nn = x.keys()
-        if any([i in others for i in nn]):
+        if any(i in others for i in nn):
             out = []
             for i in nn:
                 if i in others:
@@ -22,14 +22,14 @@ def filter_handler(x: dict | None = None) -> str | None:
             nn = out
 
         newnn = [re.sub("_", "-", z) for z in nn]
-        newnnd = dict(zip(x.keys(), newnn))
+        newnnd = dict(zip(x.keys(), newnn, strict=True))
         x = rename_keys(x, newnnd)
 
         # split any lists into duplicated key/filter names
         newx = []
         for k, v in x.items():
             if isinstance(v, list):
-                for a, b in enumerate(v):
+                for _a, b in enumerate(v):
                     newx.append(":".join([k, str(b)]))
             else:
                 newx.append(":".join([k, str(v)]))
@@ -67,8 +67,8 @@ def switch_filters(x: str) -> str:
     return switch(x, dict_filts)
 
 
-def switch(x: str, dict: dict[str, str]) -> str:
-    return dict[x]
+def switch(x: str, y: dict[str, str]) -> str:
+    return y[x]
 
 
 # https://github.com/healthsites/healthsites/blob/3b10b12f004bfa783ee3121647ff9856836717f3/django_project/api/utils.py
