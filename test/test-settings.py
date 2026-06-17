@@ -1,4 +1,3 @@
-from typing import no_type_check
 
 import pytest
 import yaml

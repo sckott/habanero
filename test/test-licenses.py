@@ -10,7 +10,7 @@ def test_licenses():
     """licenses - basic test"""
     res = cr.licenses(query="science", limit=2)
     assert isinstance(res, dict)
-    assert 2 == len(res["message"]["items"])
+    assert len(res["message"]["items"]) == 2
 
 
 @pytest.mark.vcr

@@ -14,7 +14,7 @@ def test_funders():
     res = cr.funders(limit=2)
     assert isinstance(res, dict)
     assert isinstance(res["message"], dict)
-    assert 2 == res["message"]["items-per-page"]
+    assert res["message"]["items-per-page"] == 2
 
 
 @pytest.mark.vcr
@@ -23,7 +23,7 @@ def test_funders_query():
     res = cr.funders(query="NSF", limit=2)
     assert isinstance(res, dict)
     assert isinstance(res["message"], dict)
-    assert 2 == res["message"]["items-per-page"]
+    assert res["message"]["items-per-page"] == 2
 
 
 @pytest.mark.vcr
@@ -51,7 +51,7 @@ def test_funders_filter_works():
         ids="10.13039/100000001", works=True, filter={"has_assertion": True}
     )
     assert isinstance(res, dict)
-    assert 20 == res["message"]["items-per-page"]
+    assert res["message"]["items-per-page"] == 20
 
 
 @no_type_check
@@ -79,9 +79,9 @@ def test_funders_field_queries():
     )
     titles = [x.get("title") for x in res["message"]["items"]]
     assert isinstance(res, dict)
-    assert 5 == len(res["message"])
+    assert len(res["message"]) == 5
     assert isinstance(titles, list)
-    assert 100 == len(titles)
+    assert len(titles) == 100
 
 
 @pytest.mark.vcr

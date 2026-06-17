@@ -43,7 +43,7 @@ def test_prefixes_field_queries():
     )
     eds = [x.get("editor")[0] for x in res["message"]["items"]]
     assert isinstance(res, dict)
-    assert 5 == len(res["message"])
+    assert len(res["message"]) == 5
     assert isinstance(eds, list)
     assert isinstance(eds[0], dict)
 

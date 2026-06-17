@@ -27,8 +27,8 @@ def sub_str(x, n=3):
 def switch_classes(x, path, works):
     if (
         works
-        or re.sub("/", "", path) == "works"
-        and re.sub("/", "", path) != "licenses"
+        or (re.sub("/", "", path) == "works"
+        and re.sub("/", "", path) != "licenses")
     ):
         return Works(result=x)
     else:

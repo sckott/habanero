@@ -44,7 +44,7 @@ def test_members_field_queries():
     res = cr.members(ids=98, works=True, query_author="carl boettiger", limit=7)
     auths = [x["author"][0]["family"] for x in res["message"]["items"]]
     assert isinstance(res, dict)
-    assert 5 == len(res["message"])
+    assert len(res["message"]) == 5
     assert isinstance(auths, list)
     assert isinstance(auths[0], str)
 

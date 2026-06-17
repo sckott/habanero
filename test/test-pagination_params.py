@@ -12,14 +12,14 @@ cr = Crossref()
 def test_limit_of_zero_with_id():
     """param: limit - zero limit works"""
     res = cr.members(ids=2984, works=True, facet="issn:*", limit=0)
-    assert 0 == len(res["message"]["items"])
+    assert len(res["message"]["items"]) == 0
 
 
 @pytest.mark.vcr
 def test_offset_of_zero_with_id():
     """param: offset - zero offset works"""
     res = cr.members(ids=2984, works=True, limit=1, offset=0)
-    assert 0 == res["message"]["query"]["start-index"]
+    assert res["message"]["query"]["start-index"] == 0
     with open(
         "test/cassettes/test-pagination_params/test_offset_of_zero_with_id.yaml"
     ) as f:
@@ -32,14 +32,14 @@ def test_offset_of_zero_with_id():
 def test_limit_of_zero_without_id():
     """param: limit - zero limit works"""
     res = cr.members(limit=0)
-    assert 0 == len(res["message"]["items"])
+    assert len(res["message"]["items"]) == 0
 
 
 @pytest.mark.vcr
 def test_offset_of_zero_without_id():
     """param: offset - zero offset works"""
     res = cr.members(limit=1, offset=0)
-    assert 0 == res["message"]["query"]["start-index"]
+    assert res["message"]["query"]["start-index"] == 0
     with open(
         "test/cassettes/test-pagination_params/test_offset_of_zero_without_id.yaml"
     ) as f:

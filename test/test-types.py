@@ -63,7 +63,7 @@ def test_types_ids():
     """types - param: ids"""
     res = cr.types(ids="journal")
     assert isinstance(res, dict)
-    assert {"id": "journal", "label": "Journal"} == res["message"]
+    assert res["message"] == {"id": "journal", "label": "Journal"}
 
 
 @pytest.mark.vcr
@@ -71,7 +71,7 @@ def test_types_works():
     """types - param: works"""
     res = cr.types(ids="journal", works=True, limit=2)
     assert isinstance(res, dict)
-    assert "work-list" == res["message-type"]
+    assert res["message-type"] == "work-list"
 
 
 # FIXME: not sure why, but the line where we get titles obj is failing with

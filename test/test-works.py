@@ -13,8 +13,8 @@ def test_works_with_one_id():
     """works - param: ids, one DOI"""
     res = cr.works(ids="10.1371/journal.pone.0033693")
     assert isinstance(res, dict)
-    assert 4 == len(res)
-    assert "work" == res["message-type"]
+    assert len(res) == 4
+    assert res["message-type"] == "work"
 
 
 @pytest.mark.vcr
@@ -29,9 +29,9 @@ def test_works_with_many_ids():
     ]
     res = cr.works(ids=dois)
     assert isinstance(res, list)
-    assert 5 == len(res)
-    assert [4, 4, 4, 4, 4] == [len(x) for x in res]
-    assert "work" == [x["message-type"] for x in res][0]
+    assert len(res) == 5
+    assert [len(x) for x in res] == [4, 4, 4, 4, 4]
+    assert [x["message-type"] for x in res][0] == "work"
     assert dois[0] == res[0]["message"]["DOI"]
 
 
@@ -47,8 +47,8 @@ def test_works_no_id_withlimit():
     """works - param: limit, no other inputs"""
     res = cr.works(limit=2)
     assert isinstance(res, dict)
-    assert 5 == len(res["message"])
-    assert 2 == len(res["message"]["items"])
+    assert len(res["message"]) == 5
+    assert len(res["message"]["items"]) == 2
 
 
 @pytest.mark.vcr
@@ -56,7 +56,7 @@ def test_works_query():
     """works - param: query"""
     res = cr.works(query="ecology", limit=2)
     assert isinstance(res, dict)
-    assert 5 == len(res["message"])
+    assert len(res["message"]) == 5
 
 
 @pytest.mark.vcr
@@ -64,7 +64,7 @@ def test_works_sample():
     """works - param: sample"""
     res = cr.works(sample=2)
     assert isinstance(res, dict)
-    assert 5 == len(res["message"])
+    assert len(res["message"]) == 5
 
 
 # FIXME: this is constantly failing for unknown reason
@@ -81,7 +81,7 @@ def test_works_field_queries():
     res = cr.works(query="ecology", query_author="carl boettiger")
     assert isinstance(res, dict)
     auths = [x["author"][0]["family"] for x in res["message"]["items"]]
-    assert 5 == len(res["message"])
+    assert len(res["message"]) == 5
     assert "Boettiger" in auths
 
 

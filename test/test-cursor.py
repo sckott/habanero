@@ -11,8 +11,8 @@ def test_cursor():
     res = cr.works(query="widget", cursor="*", cursor_max=10)
     assert isinstance(res, dict)
     assert isinstance(res["message"], dict)
-    assert 4 == len(res)
-    assert 6 == len(res["message"])
+    assert len(res) == 4
+    assert len(res["message"]) == 6
 
 
 @pytest.mark.vcr
@@ -26,8 +26,8 @@ def test_cursor_max():
     items2 = [item for sublist in items2 for item in sublist]
     assert isinstance(res1, list)
     assert isinstance(res2, list)
-    assert 60 == len(items1)
-    assert 40 == len(items2)
+    assert len(items1) == 60
+    assert len(items2) == 40
 
 
 @pytest.mark.vcr
