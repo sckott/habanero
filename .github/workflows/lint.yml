@@ -23,4 +23,4 @@ jobs:
 
       # Include `--output-format=github` to enable automatic inline annotations.
       - name: Run Ruff
-        run: ruff check --output-format=github .
+        run: ruff check --output-format=github habanero test
