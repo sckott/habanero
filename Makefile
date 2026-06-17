@@ -30,6 +30,9 @@ format-fix:
 format-check:
 	uv run ruff format --check habanero test
 
+format-check-show:
+	uv run ruff format --check --diff habanero test
+
 ipython:
 	uv run --with rich --with ipython python -m IPython
 
