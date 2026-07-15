@@ -9,7 +9,7 @@ cr = Crossref()
 def test_workscontainer_with_one_id():
     """WorksContainer: one DOI"""
     res = cr.works(ids="10.1371/journal.pone.0033693")
-    x = WorksContainer(res)
+    x = WorksContainer(data=res)
     assert isinstance(x, WorksContainer)
     assert isinstance(x.works, list)
     assert len(x.works) == 1

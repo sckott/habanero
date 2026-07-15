@@ -27,9 +27,9 @@ def test_prefixes_works():
 
 @no_type_check
 def test_prefixes_filter():
-    """prefixes - param: filter"""
+    """prefixes - param: filters"""
     with pytest.raises(TypeError, match="missing 1 required positional"):
-        cr.prefixes(filter={"has_full_text": True})
+        cr.prefixes(filters={"has_full_text": True})
 
 
 @pytest.mark.vcr
@@ -39,7 +39,7 @@ def test_prefixes_field_queries():
         ids="10.1371",
         works=True,
         query_editor="cooper",
-        filter={"type": "journal-article"},
+        filters={"type": "journal-article"},
     )
     eds = [x.get("editor")[0] for x in res["message"]["items"]]
     assert isinstance(res, dict)

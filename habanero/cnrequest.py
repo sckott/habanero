@@ -14,7 +14,7 @@ else:
     _has_bibtexparser = True
 
 
-def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):  # noqa: A002 (format)
+def CNRequest(url, ids, citation_format=None, style=None, locale=None, **kwargs):
     if not isinstance(ids, (str, list)):
         raise TypeError("'ids' must be a str or list of str's")
     if isinstance(ids, list) and not all(isinstance(z, str) for z in ids):
@@ -25,11 +25,15 @@ def CNRequest(url, ids, format=None, style=None, locale=None, **kwargs):  # noqa
         ids = ids.split()
 
     if len(ids) == 1:
-        return make_request(url, ids[0], format, style, locale, fail=True, **kwargs)
+        return make_request(
+            url, ids[0], citation_format, style, locale, fail=True, **kwargs
+        )
     else:
         coll = []
         for i in range(len(ids)):
-            tt = make_request(url, ids[i], format, style, locale, fail=False, **kwargs)
+            tt = make_request(
+                url, ids[i], citation_format, style, locale, fail=False, **kwargs
+            )
             coll.append(tt)
 
         if len(coll) == 1:

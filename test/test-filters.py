@@ -10,8 +10,8 @@ cr = Crossref()
 def test_filter_names():
     """filter_names"""
     res_works = cr.filter_names()
-    res_members = cr.filter_names("members")
-    res_funders = cr.filter_names("funders")
+    res_members = cr.filter_names(route="members")
+    res_funders = cr.filter_names(route="funders")
     assert isinstance(res_works, list)
     assert isinstance(res_works[0], str)
     assert isinstance(res_members, list)
@@ -32,8 +32,8 @@ def test_filter_names_errors():
 def test_filter_details():
     """filter_details"""
     res_works = cr.filter_details()
-    res_members = cr.filter_details("members")
-    res_funders = cr.filter_details("funders")
+    res_members = cr.filter_details(route="members")
+    res_funders = cr.filter_details(route="funders")
     assert isinstance(res_works, dict)
     assert isinstance(res_members, dict)
     assert isinstance(res_funders, dict)

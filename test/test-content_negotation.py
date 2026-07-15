@@ -58,7 +58,7 @@ def test_content_negotiation_with_unicode_doi():
 def test_content_negotiation_citeproc_json():
     """content negotiation - citeproc-json"""
     res = cn.content_negotiation(
-        ids="10.1126/science.169.3946.635", format="citeproc-json"
+        ids="10.1126/science.169.3946.635", citation_format="citeproc-json"
     )
     assert isinstance(res, str)
 
@@ -76,10 +76,10 @@ def test_content_negotiation_alt_url():
 def test_content_negotiation_style():
     """content negotiation - style"""
     res_apa = cn.content_negotiation(
-        ids="10.1126/science.169.3946.635", format="text", style="apa"
+        ids="10.1126/science.169.3946.635", citation_format="text", style="apa"
     )
     res_ieee = cn.content_negotiation(
-        ids="10.1126/science.169.3946.635", format="text", style="ieee"
+        ids="10.1126/science.169.3946.635", citation_format="text", style="ieee"
     )
     assert res_apa != res_ieee
 
