@@ -25,7 +25,7 @@ def request(
     path,
     ids=None,
     query=None,
-    filter=None, # noqa: A002 (Crossref API uses filter)
+    filters=None,
     offset=None,
     limit=None,
     sample=None,
@@ -48,7 +48,7 @@ def request(
     if cursor_max and not isinstance(cursor_max, int):
         raise ValueError("cursor_max must be of class int")
 
-    filt = filter_handler(filter)
+    filt = filter_handler(filters)
     if isinstance(select, list):
         select = ",".join(select)
 
@@ -123,7 +123,7 @@ def request(
                     url,
                     str(ids[i]) + "/works",
                     query,
-                    filter,
+                    filters,
                     offset,
                     limit,
                     sample,

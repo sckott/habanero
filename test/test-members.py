@@ -35,7 +35,7 @@ def test_members_sample_err():
 @pytest.mark.vcr
 def test_members_filter():
     with pytest.raises(exceptions.RequestError):
-        cr.members(filter={"has_full_text": True})
+        cr.members(filters={"has_full_text": True})
 
 
 @pytest.mark.vcr

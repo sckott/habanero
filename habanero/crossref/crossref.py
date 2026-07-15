@@ -216,7 +216,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
+        filters: Optional[dict] = None,
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -235,7 +235,7 @@ class Crossref:
 
         :param ids: DOIs (digital object identifier) or other identifiers
         :param query: A query string
-        :param filter: Filter options. See examples for usage.
+        :param filters: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -296,11 +296,11 @@ class Crossref:
             x['message']['items']
 
             # Get full text links
-            x = cr.works(filter = {'has_full_text': True})
+            x = cr.works(filters = {'has_full_text': True})
             x
 
             # Parse output to various data pieces
-            x = cr.works(filter = {'has_full_text': True})
+            x = cr.works(filters = {'has_full_text': True})
             ## get doi for each item
             [ z['DOI'] for z in x['message']['items'] ]
             ## get doi and url for each item
@@ -311,11 +311,11 @@ class Crossref:
 
             # filters - pass in as a dict
             ## see https://github.com/CrossRef/rest-api-doc#filter-names
-            cr.works(filter = {'has_full_text': True})
-            cr.works(filter = {'has_funder': True, 'has_full_text': True})
-            cr.works(filter = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
+            cr.works(filters = {'has_full_text': True})
+            cr.works(filters = {'has_funder': True, 'has_full_text': True})
+            cr.works(filters = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
             ## to repeat a filter name, pass in a list
-            x = cr.works(filter = {'award_funder': ['10.13039/100004440', '10.13039/100000861']}, limit = 100)
+            x = cr.works(filters = {'award_funder': ['10.13039/100004440', '10.13039/100000861']}, limit = 100)
             map(lambda z:z['funder'][0]['DOI'], x['message']['items'])
 
             # Deep paging, using the cursor parameter
@@ -367,7 +367,7 @@ class Crossref:
                 "/works/",
                 ids,
                 query,
-                filter,
+                filters,
                 offset,
                 limit,
                 sample,
@@ -391,7 +391,7 @@ class Crossref:
                 self.base_url,
                 "/works/",
                 query,
-                filter,
+                filters,
                 offset,
                 limit,
                 sample,
@@ -410,7 +410,7 @@ class Crossref:
         self,
         ids: List[str] | str | int | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
+        filters: Optional[dict] = None,
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -430,7 +430,7 @@ class Crossref:
 
         :param ids: DOIs (digital object identifier) or other identifiers
         :param query: A query string
-        :param filter: Filter options. See examples for usage.
+        :param filters: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -498,14 +498,14 @@ class Crossref:
             [ x['author'][0]['family'] for x in res['message']['items'] ]
 
             # filters (as of this writing, 4 filters are avail., see filter_names())
-            res = cr.members(filter = {'has_public_references': True})
+            res = cr.members(filters = {'has_public_references': True})
         """
         return request(
             self,
             "/members/",
             ids,
             query,
-            filter,
+            filters,
             offset,
             limit,
             sample,
@@ -525,7 +525,7 @@ class Crossref:
     def prefixes(
         self,
         ids: List[str] | str,
-        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
+        filters: Optional[dict] = None,
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -544,7 +544,7 @@ class Crossref:
         Search Crossref prefixes
 
         :param ids: DOIs (digital object identifier) or other identifiers. required
-        :param filter: Filter options. See examples for usage.
+        :param filters: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -611,7 +611,7 @@ class Crossref:
             res = cr.prefixes(ids = "10.1016", works = True, cursor = "*", cursor_max = 200, progress_bar = True)
 
             # field queries
-            res = cr.prefixes(ids = "10.1371", works = True, query_editor = 'cooper', filter = {'type': 'journal-article'})
+            res = cr.prefixes(ids = "10.1371", works = True, query_editor = 'cooper', filters = {'type': 'journal-article'})
             eds = [ x.get('editor') for x in res['message']['items'] ]
             [ z for z in eds if z is not None ]
         """
@@ -621,7 +621,7 @@ class Crossref:
             "/prefixes/",
             ids,
             query=None,
-            filter=filter,
+            filters=filters,
             offset=offset,
             limit=limit,
             sample=sample,
@@ -641,7 +641,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
+        filters: Optional[dict] = None,
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -664,7 +664,7 @@ class Crossref:
 
         :param ids: DOIs (digital object identifier) or other identifiers
         :param query: A query string
-        :param filter: Filter options. See examples for usage.
+        :param filters: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -727,12 +727,12 @@ class Crossref:
             res = cr.funders(ids = '10.13039/100000001', works = True, cursor = "*", cursor_max = 200, progress_bar = True)
 
             # field queries
-            res = cr.funders(ids = "10.13039/100000001", works = True, query_container_title = 'engineering', filter = {'type': 'journal-article'})
+            res = cr.funders(ids = "10.13039/100000001", works = True, query_container_title = 'engineering', filters = {'type': 'journal-article'})
             eds = [ x.get('editor') for x in res['message']['items'] ]
             [ z for z in eds if z is not None ]
 
             # filters (as of this writing, only 1 filter is avail., "location")
-            cr.funders(filter = {'location': "Sweden"})
+            cr.funders(filters = {'location': "Sweden"})
 
             # warn
             cr.funders(ids = '10.13039/notarealdoi')
@@ -748,7 +748,7 @@ class Crossref:
             "/funders/",
             ids,
             query,
-            filter,
+            filters,
             offset,
             limit,
             sample,
@@ -769,7 +769,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
+        filters: Optional[dict] = None,
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -789,7 +789,7 @@ class Crossref:
 
         :param ids: DOIs (digital object identifier) or other identifiers
         :param query: A query string
-        :param filter: Filter options. See examples for usage.
+        :param filters: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -848,7 +848,7 @@ class Crossref:
             cr.journals(ids = "2167-8359", works = True)
             cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "asc")
             cr.journals(ids = "2167-8359", query = 'ecology', works = True, sort = 'score', order = "desc")
-            cr.journals(ids = "2167-8359", works = True, filter = {'from_pub_date': '2014-03-03'})
+            cr.journals(ids = "2167-8359", works = True, filters = {'from_pub_date': '2014-03-03'})
             cr.journals(ids = '1803-2427', works = True)
             cr.journals(ids = '1803-2427', works = True, sample = 1)
             cr.journals(limit: 2)
@@ -863,7 +863,7 @@ class Crossref:
             res = cr.journals(ids = "2167-8359", works = True, cursor = "*", cursor_max = 200, progress_bar = True)
 
             # field queries
-            res = cr.journals(ids = "2167-8359", works = True, query_bibliographic = 'fish', filter = {'type': 'journal-article'})
+            res = cr.journals(ids = "2167-8359", works = True, query_bibliographic = 'fish', filters = {'type': 'journal-article'})
             [ x.get('title') for x in res['message']['items'] ]
         """
         return request(
@@ -871,7 +871,7 @@ class Crossref:
             "/journals/",
             ids,
             query,
-            filter,
+            filters,
             offset,
             limit,
             sample,
@@ -892,7 +892,7 @@ class Crossref:
         self,
         ids: List[str] | str | None = None,
         query: Optional[str] = None,
-        filter: Optional[dict] = None, # noqa: A002 (TODO: fix at next major version)
+        filters: Optional[dict] = None,
         offset: Optional[float] = None,
         limit: Optional[float] = None,
         sample: Optional[float] = None,
@@ -912,7 +912,7 @@ class Crossref:
 
         :param ids: Type identifier, e.g., journal
         :param query: A query string
-        :param filter: Filter options. See examples for usage.
+        :param filters: Filter options. See examples for usage.
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
@@ -973,7 +973,7 @@ class Crossref:
             "/types/",
             ids,
             query,
-            filter,
+            filters,
             offset,
             limit,
             sample,
@@ -1140,7 +1140,7 @@ class Crossref:
         )
         return [z["DOI"] for z in res["message"]["items"]]
 
-    def filter_names(self, type: str = "works") -> list: # noqa: A002 (TODO: fix at next major version)
+    def filter_names(self, route: str = "works") -> list:
         """
         Filter names - just the names of each filter
 
@@ -1148,7 +1148,7 @@ class Crossref:
         As filters are introduced or taken away, we may get out of sync; check
         the docs for the latest https://github.com/CrossRef/rest-api-doc
 
-        :param type: what type of filters, i.e., what API route, matches
+        :param route: what type of filters, i.e., what API route, matches
             methods here. one of "works", "members", or "funders". Default: "works"
         :rtype: list
 
@@ -1160,11 +1160,11 @@ class Crossref:
             cr.filter_names("members")
             cr.filter_names("funders")
         """
-        nms = list(self.filter_details(type).keys())
+        nms = list(self.filter_details(route).keys())
         nms.sort()
         return nms
 
-    def filter_details(self, type: str = "works") -> dict: # noqa: A002 (TODO: fix at next major version)
+    def filter_details(self, route: str = "works") -> dict:
         """
         Filter details - filter names, possible values, and description
 
@@ -1172,7 +1172,7 @@ class Crossref:
         As filters are introduced or taken away, we may get out of sync; check
         the docs for the latest https://github.com/CrossRef/rest-api-doc
 
-        :param type: what type of filters, i.e., what API route,
+        :param route: what type of filters, i.e., what API route,
             matches methods here. one of "works", "members", or "funders".
             Default: "works"
         :rtype: dict
@@ -1189,11 +1189,11 @@ class Crossref:
             [ z['description'] for z in x.values() ]
         """
         types = ["works", "members", "funders"]
-        if type not in types:
-            raise ValueError("'type' must be one of " + "', '".join(types))
+        if route not in types:
+            raise ValueError("'route' must be one of " + "', '".join(types))
         output: dict[str, dict] = {
             "works": works_filter_details,
             "members": members_filter_details,
             "funders": funders_filter_details,
-        }[type]
+        }[route]
         return output

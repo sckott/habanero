@@ -37,12 +37,12 @@ class WorksContainer:
             x.abstract
     """
 
-    def __init__(self, input) -> None: # noqa: A002 (TODO: fix at next major version)
+    def __init__(self, data) -> None:
         super(WorksContainer, self).__init__()
-        if not input:
-            raise ValueError("input len must be > zero")
-        self.__input = input
-        self.works = self.works_handler(self.__input)
+        if not data:
+            raise ValueError("data len must be > zero")
+        self.__data = data
+        self.works = self.works_handler(self.__data)
         keys = list(self.works[0].keys())
         for key in keys:
             values = [work.get(key, None) for work in self.works]

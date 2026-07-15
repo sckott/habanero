@@ -4,7 +4,7 @@ from .constants import CN_BASE_URL
 
 def content_negotiation(
     ids: str,
-    format: str = "bibtex", # noqa: A002
+    citation_format: str = "bibtex",
     style: str = "apa",
     locale: str = "en-US",
     url: str = "",
@@ -17,7 +17,7 @@ def content_negotiation(
 
     :param ids: required. a single DOI or many DOIs, each a string. If many
         passed in, do so in a list
-    :param format: Name of the format. One of "rdf-xml", "turtle", "citeproc-json",
+    :param citation_format: Name of the format. One of "rdf-xml", "turtle", "citeproc-json",
         "citeproc-json-ish", "text", "ris", "bibtex" (Default), "crossref-xml",
         "datacite-xml","bibentry", or "crossref-tdm"
     :param style: A CSL style (for text format only). See :func:`~habanero.cn.csl_styles`
@@ -47,35 +47,35 @@ def content_negotiation(
         cn.content_negotiation(ids = "10.1400/22888")
 
         # get citeproc-json
-        cn.content_negotiation(ids = '10.1126/science.169.3946.635', format = "citeproc-json")
+        cn.content_negotiation(ids = '10.1126/science.169.3946.635', citation_format = "citeproc-json")
 
         # some other formats
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "rdf-xml")
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "crossref-xml")
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "rdf-xml")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "crossref-xml")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "text")
 
         # return an R bibentry type
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "bibentry")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "bibentry")
 
         # return an apa style citation
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "apa")
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "elsevier-harvard")
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "ecoscience")
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "heredity")
-        cn.content_negotiation(ids = "10.1126/science.169.3946.635", format = "text", style = "oikos")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "text", style = "apa")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "text", style = "elsevier-harvard")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "text", style = "ecoscience")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "text", style = "heredity")
+        cn.content_negotiation(ids = "10.1126/science.169.3946.635", citation_format = "text", style = "oikos")
 
         # Using DataCite DOIs
         ## some formats don't work
-        # cn.content_negotiation(ids = "10.15468/t4rau8", format = "crossref-xml")
+        # cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "crossref-xml")
 
         ## But most do work
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "crossref-tdm")
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "datacite-xml")
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "turtle")
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "ris")
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "bibtex")
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "bibentry")
-        cn.content_negotiation(ids = "10.15468/t4rau8", format = "bibtex")
+        cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "crossref-tdm")
+        cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "datacite-xml")
+        cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "turtle")
+        cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "ris")
+        cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "bibtex")
+        cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "bibentry")
+        cn.content_negotiation(ids = "10.15468/t4rau8", citation_format = "bibtex")
 
         # many DOIs
         dois = ['10.5167/UZH-30455','10.5167/UZH-49216','10.5167/UZH-503', '10.5167/UZH-38402','10.5167/UZH-41217']
@@ -88,4 +88,4 @@ def content_negotiation(
     if not url:
         url = CN_BASE_URL
 
-    return CNRequest(url, ids, format, style, locale, **kwargs)
+    return CNRequest(url, ids, citation_format, style, locale, **kwargs)

@@ -35,20 +35,20 @@ def test_funders_sample_err():
 @pytest.mark.vcr
 def test_funders_filter_fails_noidsworks():
     with pytest.raises(exceptions.RequestError):
-        cr.funders(filter={"from_pub_date": "2014-03-03"})
+        cr.funders(filters={"from_pub_date": "2014-03-03"})
 
 
 @pytest.mark.vcr
 def test_funders_filter_fails_noids():
     with pytest.raises(exceptions.RequestError):
-        cr.funders(works=True, filter={"has_assertion": True})
+        cr.funders(works=True, filters={"has_assertion": True})
 
 
 @pytest.mark.vcr
 def test_funders_filter_works():
     """funders - filter works when used with id and works=True"""
     res = cr.funders(
-        ids="10.13039/100000001", works=True, filter={"has_assertion": True}
+        ids="10.13039/100000001", works=True, filters={"has_assertion": True}
     )
     assert isinstance(res, dict)
     assert res["message"]["items-per-page"] == 20
@@ -74,7 +74,7 @@ def test_funders_field_queries():
         ids="10.13039/100000001",
         works=True,
         query_container_title="engineering",
-        filter={"type": "journal-article"},
+        filters={"type": "journal-article"},
         limit=100,
     )
     titles = [x.get("title") for x in res["message"]["items"]]

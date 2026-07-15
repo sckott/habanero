@@ -55,13 +55,13 @@ def test_journals_works():
 @pytest.mark.vcr
 def test_journals_filter_fails_noidsworks():
     with pytest.raises(exceptions.RequestError):
-        cr.journals(filter={"from_pub_date": "2014-03-03"})
+        cr.journals(filters={"from_pub_date": "2014-03-03"})
 
 
 @pytest.mark.vcr
 def test_journals_filter_fails_noids():
     with pytest.raises(exceptions.RequestError):
-        cr.journals(works=True, filter={"has_assertion": True})
+        cr.journals(works=True, filters={"has_assertion": True})
 
 
 @no_type_check
@@ -84,7 +84,7 @@ def test_journals_field_queries():
         ids="2167-8359",
         works=True,
         query_bibliographic="fish",
-        filter={"type": "journal-article"},
+        filters={"type": "journal-article"},
     )
     titles = [x.get("title")[0] for x in res["message"]["items"]]
     assert isinstance(res, dict)

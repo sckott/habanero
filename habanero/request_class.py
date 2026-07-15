@@ -35,7 +35,7 @@ class Request(object):
         url,
         path,
         query=None,
-        filter=None, # noqa: A002 (Crossref API uses filter)
+        filters=None,
         offset=None,
         limit=None,
         sample=None,
@@ -55,7 +55,7 @@ class Request(object):
         self.url = url
         self.path = path
         self.query = query
-        self.filter = filter
+        self.filters = filters
         self.offset = offset
         self.limit = limit
         self.sample = sample
@@ -74,7 +74,7 @@ class Request(object):
         return tmpurl.strip("/")
 
     def do_request(self, should_warn=False):
-        filt = filter_handler(self.filter)
+        filt = filter_handler(self.filters)
         if isinstance(self.select, list):
             self.select = ",".join(self.select)
 

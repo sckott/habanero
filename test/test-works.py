@@ -70,7 +70,7 @@ def test_works_sample():
 # FIXME: this is constantly failing for unknown reason
 # def test_works_filter():
 #     """works - param: filter"""
-#     res = cr.works(filter = {'has_full_text': True}, limit = 3)
+#     res = cr.works(filters = {'has_full_text': True}, limit = 3)
 #     assert isinstance(res, dict)
 #     assert 5 == len(res['message'])
 
