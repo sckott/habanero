@@ -12,15 +12,15 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import os
 import sys
+from pathlib import Path
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, os.path.abspath(".."))
+sys.path.insert(0, str(Path("..").resolve()))
 
-import habanero  # noqa
+import habanero
 
 # -- General configuration ------------------------------------------------
 
@@ -62,7 +62,7 @@ master_doc = "index"
 
 # General information about the project.
 project = "habanero"
-copyright = "2017, Scott Chamberlain"
+copyright = "2017, Scott Chamberlain"  # noqa: A001
 author = "Scott Chamberlain"
 
 # The version info for the project you're documenting, acts as replacement for
