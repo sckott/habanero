@@ -1,4 +1,5 @@
 import warnings
+from urllib.parse import quote
 
 import httpx2
 from packaging.version import Version
@@ -66,12 +67,26 @@ def make_request(url, ids, for_mat, style, locale, fail, **kwargs):
             return None
 
     r.encoding = "UTF-8"
-    text = r.text
+    text = unencode_doi(r.text, ids)
     if for_mat == "bibtex" and _has_bibtexparser:
         bibtexparser_ver = Version(bibtexparser.__version__)
         if bibtexparser_ver.major >= 2:
             text = fix_bibtex(text)
     return text
+
+
+def unencode_doi(x, doi):
+    """Restore the DOI in a citation to its unencoded form.
+
+    Crossref percent-encodes the DOI in the ``url`` field of the citations it
+    returns (e.g. ``10.1021%2Facs.jpcc.0c05161``), which makes the URL differ
+    from the DOI itself. Only the encoded form of the requested DOI is
+    replaced, so any other percent-encoded text in the citation is left alone.
+    """
+    encoded = quote(doi, safe="")
+    if encoded == doi:
+        return x
+    return x.replace(encoded, doi)
 
 
 def fix_bibtex(x):

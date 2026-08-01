@@ -3,6 +3,7 @@ Changelog
 
 DEVELOPMENT VERSION (xx)
 --------------------
+* `content_negotiation` now restores the requested DOI to its unencoded form in the returned citation; Crossref percent-encodes the DOI in the `url` field. (#99)
 * Renamed a number of arguments in methods/classes that were shadowing built-in names: `input` to `data` in `WorksContainer`; `type` to `route` in `filter_names` and `filter_details`; `format` to `citation_format` in `content_negotiation`; `filter` to `filters` in `Crossref` methods. (#222) (#223)
 
 2.9.2 (2026-06-17)

@@ -1,7 +1,9 @@
 import re
 import warnings
 from typing import no_type_check
+from unittest.mock import patch
 
+import httpx2
 import pytest
 from httpx2 import HTTPError
 
@@ -82,6 +84,27 @@ def test_content_negotiation_style():
         ids="10.1126/science.169.3946.635", citation_format="text", style="ieee"
     )
     assert res_apa != res_ieee
+
+
+# addresses https://github.com/sckott/habanero/issues/99
+# Crossref percent-encodes the DOI in the returned "url" field
+def test_content_negotiation_unencodes_doi_in_citation():
+    """content negotiation - percent-encoded DOI in the url field is restored"""
+    doi = "10.1021/acs.jpcc.0c05161"
+    body = (
+        "@article{Shao_2020,\n"
+        "\tdoi = {10.1021/acs.jpcc.0c05161},\n"
+        "\turl = {https://doi.org/10.1021%2Facs.jpcc.0c05161},\n"
+        "\tyear = 2020\n}"
+    )
+    response = httpx2.Response(
+        200, text=body, request=httpx2.Request("GET", "https://doi.org/" + doi)
+    )
+    with patch("habanero.cnrequest.httpx2.get", return_value=response):
+        res = cn.content_negotiation(ids=doi)
+
+    assert "url = {https://doi.org/" + doi + "}" in res
+    assert "%2F" not in res
 
 
 # errors
