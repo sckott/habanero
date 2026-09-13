@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 # habanero
 
 """
@@ -45,3 +43,14 @@ from .cn import content_negotiation, csl_styles
 from .counts import citation_count
 from .crossref import Crossref, WorksContainer, WorksQuery
 from .exceptions import Error, RequestError
+
+__all__ = [
+    "Crossref",
+    "Error",
+    "RequestError",
+    "WorksContainer",
+    "WorksQuery",
+    "citation_count",
+    "content_negotiation",
+    "csl_styles",
+]

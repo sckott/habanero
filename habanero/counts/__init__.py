@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 # counts
 
 """
@@ -16,3 +14,5 @@ Usage::
 """
 
 from .counts import citation_count
+
+__all__ = ["citation_count"]
