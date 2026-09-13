@@ -4,7 +4,7 @@ import re
 import httpx2
 
 from . import __version__
-from .exceptions import RequestError
+from .exceptions import IncompatibleParameterError, RequestError
 from .noworks import NoWorks
 from .response import Works
 
@@ -36,8 +36,8 @@ def switch_classes(x, path, works):
 def check_kwargs(keys, kwargs):
     for x in range(len(keys)):
         if keys[x] in kwargs:
-            mssg = "The %s parameter is not allowed with this method" % keys[x]
-            raise Exception(mssg)
+            mssg = f"The {keys[x]} parameter is not allowed with this method"
+            raise IncompatibleParameterError(mssg)
 
 
 def check_json(x):

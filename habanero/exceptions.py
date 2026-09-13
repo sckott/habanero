@@ -24,4 +24,8 @@ class RequestError(Error):
         return self.args[1]
 
     def __str__(self):
-        return '(%s) caused by "%s"' % (self.status_code, self.error)
+        return f'({self.status_code}) caused by "{self.error}"'
+
+
+class IncompatibleParameterError(TypeError):
+    pass

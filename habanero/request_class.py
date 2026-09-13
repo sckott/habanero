@@ -91,7 +91,7 @@ class Request:
             raise TypeError("cursor must be of class str")
 
         if not isinstance(self.cursor_max, (type(None), int)):
-            raise ValueError("cursor_max must be of class int")
+            raise TypeError("cursor_max must be of class int")
 
         payload = {
             "query": self.query,
