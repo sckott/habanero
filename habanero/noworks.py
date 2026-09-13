@@ -1,4 +1,4 @@
-class NoWorks(object):
+class NoWorks:
     """
     Habanero: agency class
     """

@@ -20,7 +20,7 @@ from .select import validate_select
 from .sort import validate_sort
 
 
-class Request(object):
+class Request:
     """
     Habanero: request class
 

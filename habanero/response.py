@@ -1,4 +1,4 @@
-class Works(object):
+class Works:
     """
     Habanero: response class
 
