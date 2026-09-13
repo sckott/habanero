@@ -1,0 +1,64 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/works?query=ecology&rows=3&select=DOI%2Ctitle%2Cauthor%2Cpublished
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/+2UP2+DMBDFv0p0syGG/GsyRonaTh06dCAMFziCFYNT25BGiO9eO0rVtFOlVp0y
+        IJk7/N47ftJ1YCzaxsAC1B4YVGQM7iiwpwO52lHpfSCFsVetlrQRqnbdKOQh/+zAooMCM7JOresZ
+        WGVRBppMI31pMp/E0wkDYalyr0kHq6dHr8LDiM9Hm2FJJtsM57M7Hs1n02jMx+OQ85F/ps7FCiud
+        RwL3Um1RDtaZkmp3gpQBNrZU+qy5Ey35bC9CSoHVYBW6qwVWQp5cdamOFdauYui1oTrzMxZCn+fD
+        ohDuij3PljhVrc5+3eXw4cKgVRluG4naS2ZaGaOpgD7t2af/M0p5+ub+gNme9Fd3zHPhLVH+TQR3
+        6dBsHbKScg8kR0vBAbUnkCQxj0csZrM07X3YHwOIxtcAllRiK5S+QfhfCPE1hHWrZONDDrDObxx+
+        ySG97KXgQNp94ZfZiIEL5jU7vyS1DUSd0xssuM+MOisDS9qvMqDL3+/7/h3fuqxJUQUAAA==
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '394'
+      content-type:
+      - application/json
+      date:
+      - Fri, 11 Sep 2026 23:32:32 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public-array
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

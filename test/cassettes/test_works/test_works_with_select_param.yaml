@@ -1,0 +1,70 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/works?query=ecology&select=DOI%2Ctitle
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/7VVbW/TMBD+K8Zf2KQmdd6Tapq0V5jEADHEl2VCXnJtzRI72E5pqfrfcbquTUq3
+        sUlUqpT4fM/dPXd5bo6VprpWeIDFHe7hEpSiI7D0rAJz9kvIO6tgSrdME5CKCW6sjk1ssrHgwRwP
+        aQbaoM0XPayFpoUlQdVFcxQkgRsGPcw0lOb1eo5PP100KMR2SOKl/TGoLO0nUUycJAodn/i+TYjX
+        /EMTRTNdmBjX+F0hbmmBzjJRiNEM3yx6L4By/DbUMYzphAn5eji3DXc2EUWtDTmI8vyfEePI9dw4
+        XiGSpI34BUrIGV1i7sZzPRKlfSeKPNdre16CppWo6mLprDoZ9basT0K7YZTEcQd7dR2JIfrGZK1A
+        Gat5egGNW0V3aLzgWoq8zhgfoaOqKhi8msxO2uc1z2kJ3IylanLfjel5YZj2Dev8tpaj8RLY8SPf
+        D0gUOA/AQRv4Khuz34JyWsw0y55uVOIRJ4jb3ukDnyledinFnwvKNVqfbgEFiReQBmmmYsuNA9/p
+        9GZagWT3VSJYNYoplAPNe6gQhtOCTQDBjntvHknZjZMw2TkAEh0zkdYuccjuqlfJxtFoGlnUHyb+
+        /0r2uVlwSDvyB8O0ymgFDzQvqb80PRxBE+eFOuAFz4ObZzVTRv2eCtMQrippRh+khCFI4Bl8d5PQ
+        6XT5fV1SvmZsLzMSW8sNN/uPNNL3HL+jpVdlrZ8TFsftfJ0noixrzvTswW+AjoyCtDpk9sVbhfYu
+        RQ6S76NTw5pkVSM0Bucv920KzC/t/7AdLwws1/cC2zWaaJuPxiP2tJ3Ix1pL1qBu6u6hYc2z7lnD
+        /QE7ROcbyyryQdpnh49UHYZBZ1KP1iKJvsJUo2Ez+jBinJt1aC6uuTgRpmGVvhfcpXpl9wpsAt2s
+        tp9luLKq5cp0SQ//rEHOmu1pdrHUFuM5TPHAGBRQmY0tDbLZmHhVEF4sFn8AIsR7K7gHAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '737'
+      content-type:
+      - application/json
+      date:
+      - Fri, 11 Sep 2026 23:32:24 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public-array
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

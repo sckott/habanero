@@ -1,0 +1,73 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/members?query=ecology&rows=2
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/+1XTZObMAz9KxmfcYaEbpLNrbPTQw9tD9ueOjk4oGTdAKa22V0mw3+vCGT5soHt
+        qdPJKcSSJVnSk5/PRGmmU0W2RJyIQyJQih2B6iwBXIsg2oOkIVe6IXwGqbiIUb6Yu3O3lpDtmXAN
+        kaIJ7kouK0uH/E5BZoUMfUlNeRzAK9m6DlHApP9ENcioiAB8EYpjRnKHaKFZSCWoNNQo8tZOaZhs
+        f55JyJSmZdzUfwL/RDWP0NVivbl3N5sN/tzdOySRPGIyozErhOQxU4WF2afKi0N8kcaF9TPxUykh
+        1jQQXF0i2zP/dOAh1CtlRNVfjHAvgZ0C8RJfDBTrdJ9RrlQKAc3wYBjqLi+igAN/hSJysnDnq/XG
+        W5Nd4RzTWOWMHdAXZxqTiicqY0Evc3TbEFEpJOUB+qmCq1QUj3jIJNdZmQ0eHztGAlC+5InJ/tVm
+        e/WQYo1kz1PIfYgV9Nav6tbQezuwsiKVPmBrxaeeVEjfcM7SCzVHnCYB00ATgTFysJ3S7Keta0pn
+        L/oD4A6/n4lWpjsy9sJkQOO0gFRP2I3flvlOilsmO7K90pL5eiz34/1m6g1bM9ZeOxWoU9YUvAHk
+        AmwrUp9ZmBaSNwDliCAekO3deuV6BThPEF8gpsq9uOc6TXZXoFdDDeEWhviT1ygv/73Fdc7zGp/v
+        23UI2bEcCJAIxdGpISEHFipwapVuG3blgzXpKA/ublarq2ZvwK7mMEB67s0t2lWzNWVPb+T8FG8Y
+        7ocwloh3Jdt+ut7k65/LMCrMVsbPNh6PCfRdHcMUHy6aXc98sQzkYGr9J7q0q/WuEFvlJldlOnSs
+        hxy8qa1lamvgkAmFf+lPHIgPLNpLHhzBmX356Mx+xMiSgtkjciMoZmAxUC9jsTtSkZkM86jF6t51
+        3XvP7fGoz1EEAQIEZo94WqzqXzGqVZtRrSYyqp9Ld7F0vJ1TfHjOsvy4cxY7A9dae97yRrVuVOtG
+        taxUawjMDdJ1QdKVc33w3GWTcvGrDdyjSisT6Bf5hZmJcQBUF3Y1A2puZVaYRNL6WycPuyaSunlu
+        tbK9iJ0+6lWljWQ7FIxNYOrGNvLMXW5sSAOSylYZq8Qtne9N5z/3TNAyvb0SRvJweyTcHgn/wSPh
+        u5Ai1sKZffvqzB5YzALWfBvYOcAu3+X5H/OgL88jFgAA
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '888'
+      content-type:
+      - application/json
+      date:
+      - Fri, 11 Sep 2026 23:31:53 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public-single
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
+version: 1

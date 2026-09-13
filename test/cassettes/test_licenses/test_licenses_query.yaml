@@ -1,0 +1,125 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/licenses?query=aps
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/62TTW+DMAyG/0vOhPA5VRx37mnSDtOyQ0YthgpJlZhOFeK/L1SVNhE4LOEWOcnj
+        137tkRgUOBhSEXUmEenBGNEAxdsFbKxra5AGaNca/HN7BW1aJe2DNE7i5PeGVCNBhaKjGszQoeWm
+        WRKRFqG35/eRvL4c7bcvxEvFGWe1BoHtFWrV90qaWOmGs0dWw9nzG2fFPcG30mdaq0EiqbIp+i/o
+        80ZlTeWJsywuOZtDC2gaAs0djaE4V18eQnSbmD4F8lyFmbcxRmwUHQJcqbn05O1sybq2IJojrkz8
+        cFvmetFmG+4LJ/SORLd5Bx/WLG0JKrxB+9T3QA1nG4ZGdLU6wYLrNSbrA5x79s01IPda/Y1ROxTT
+        xzT9AKrHZPWbBgAA
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '297'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 11 Sep 2026 23:31:49 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept, Accept-Encoding
+      x-api-pool:
+      - public-single
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/licenses?query=cellular+oncology
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/62UPW/CMBCG/0rlGdv5IBSylXZEDFQdqqaqnMQKKY4dxTYVQvz3HkQqVeKhTZhs
+        nX2P3/fu5CPShhmrUYzUDk1QxbVmBcfmUHOIiTLjUnMsSm1+ne55o0sl4YJPPOJdT1B8REYZJnDD
+        tRUGuNE8mKDS8Ar2b0f0sllB2taYOk5oQlnGcl6VGVG2JpmqEvqpbCOZ0AmtAQgLS5U1HxZ2ghdM
+        JFQqA7I0vPqlmh3OlJUGxf7iNOnjdZ0S1RQAsymYYQZk6zaOry+pmkvMGsCKPjeYusBWEaYrXoNP
+        3Qo/1wgv8IxsTSW6EAciazjI2XNI/t/tCiy0pobmrdq2gvP0kNAp8YajxA9q+YrXj3j9dAF2cMEg
+        3PPDzVgukD/AZHrA0l2x2TBYhmWe0IBECT2HxrehAy3lLZFhr4hhFI4E9k3PowE97jAdxRwvtCxU
+        X63r3/kz1jGVoTfKvWs2o+n9fD4aencbMf5s1AhekDnnOanNx3LTm+730+kbIKNdX9UGAAA=
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '395'
+      content-type:
+      - application/json;charset=utf-8
+      date:
+      - Fri, 11 Sep 2026 23:31:50 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept, Accept-Encoding
+      x-api-pool:
+      - public-single
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
+version: 1

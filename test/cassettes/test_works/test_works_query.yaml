@@ -1,0 +1,81 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/works?query=ecology&rows=2
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '1341'
+      content-type:
+      - application/json
+      date:
+      - Fri, 11 Sep 2026 23:32:22 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public-array
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '1'
+    status:
+      code: 200
+      message: OK
+version: 1

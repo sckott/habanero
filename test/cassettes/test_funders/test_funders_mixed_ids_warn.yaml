@@ -1,0 +1,127 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/funders/10.13039/100000001
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAA/5VXW2/qOBD+K1aegTr3wFvbLd0jbdlqaaWV2j54EwNRg40cp12E+O9nnJsn56Ti
+        HB7Qhz3zjefi8XBySs10VToLR747E2fPy5Jt+VQfDxzWNpXIuELrH1yVuRSw5c7ojNodZ3FydjlX
+        TKW741QwWDZLLqXUpRFNQOPvzSZPOZEb8k2UB55qqcg9F6BTAI+RBNl4PpDUO07+yFUt3Aq5QeC6
+        IHTLheaKbIDlWeyZEDwj17lKFdtosj6Wmu/LVsWjQRyCSsfENK/11k93D+Quq1KmjVO9sBePCD/x
+        dCdkIbfHCTgg5EetRJjIyCNTGvwod/mhM0nD2I2AZVVLsYKs05wLcOpGMpX1/tLEHTHVH6lm/7MC
+        78g/vJSVSnmJdP0R3Vu5P1QmMEb1m4ClfUPVHcCs34ltLjhXudi2dL4Lbpvz8v91m5Vaa8X1p1Tv
+        NfWKV0qWDU3vJmRjkLGbKttyPSHLXLDO3PUn+EwemIBC2UParAvUHYvRUkLd4ZzAJ45GnL3JTULy
+        1Ori8ARjoR3xPKTeT0V3C8W8GcSv2VcTcvm4bkBjHzu2YkLqvn4gR1JlEB/E22uGcxMScOzf5d1f
+        g6Q9IYK69pGryVh1yzRnxYTc8B37yGG9aHKfSiH3efpTxCCV8Q/X1HpvNLsSHM1kMpafBwaxNAxp
+        a/xxdyzH0uX5YXKhFMi9YlllmOEc3PQZsuRFIT/NtSOPSm4V26PzjF34e97Vb4lS5WHDY7k5TxzF
+        DwVLeTb97+gsXt4mjrkV0xROp51FECZe4k4c0/Yu1nPGy5TDT6GhQ76g8ralHiOcDHqFxd6gD+Ci
+        xyHA6bE4HlSOxXPbh2mIsNV1PXsGN8DYRzhAGPEEiCeIEU4QRmcIKcLIVughjOyGyG6I7IbIboj4
+        I8QfIc4IcUaIM0KcEeKMEGeMOGN05hjxx4g/Rvwx4kf14KJ6cFE9mLcSd2GLPYR9hAOEQ4QjhGOE
+        E4SRLZuXMLTxB2z5YxfjCOGeP4porxv7NqdxaGsMMF7v5JuJAl9g3HfxmIC7Kn7eLU4Qnlvc56WZ
+        HVrsJbTXrTtWiwMadDFpHtIOB17QY/PMvOH7P8U9JIz80PcnTp6Z4Yo2H2NAy3cu6lYh2r4Ci/YV
+        3uDeUpm29itizMiVm99QEbnmZm4x8yL/VTO9FfP91nfRsmmhlcrB153Wh3LxevV6lcl8JtX29cql
+        M9en/twgG4h+vOwGy2ZjOGWezoNR8uTspYKerFXFz4P5sRNsZ8MRwXYQHNlphztrqx7jxgSbIW1k
+        p523eopmjhqnMKPPF+TBF+T1SHM642uBftYzBj598oWb9UTwhenxQ7UPOSYfj2778J7OZ1hghe7+
+        M7w4z7P17MKQ9by+Jqv1skaXROvCJeu6bC/StqzmGwq0kO0/g8WQxjmfvwO43pQ2OQ0AAA==
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-encoding:
+      - gzip
+      content-length:
+      - '1078'
+      content-type:
+      - application/json
+      date:
+      - Fri, 11 Sep 2026 23:31:10 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      vary:
+      - Accept-Encoding
+      x-api-pool:
+      - public-single
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - api.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3
+    method: GET
+    uri: https://api.crossref.org/funders/10.13039/notarealdoi
+  response:
+    body:
+      string: Resource not found.
+    headers:
+      access-control-allow-headers:
+      - X-Requested-With, Accept, Accept-Encoding, Accept-Charset, Accept-Language,
+        Accept-Ranges, Cache-Control
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - Link
+      connection:
+      - keep-alive
+      content-type:
+      - text/plain
+      date:
+      - Fri, 11 Sep 2026 23:31:10 GMT
+      permissions-policy:
+      - interest-cohort=()
+      server:
+      - Jetty(9.4.40.v20210413)
+      transfer-encoding:
+      - chunked
+      x-api-pool:
+      - public-single
+      x-concurrency-limit:
+      - '1'
+      x-rate-limit-interval:
+      - 1s
+      x-rate-limit-limit:
+      - '5'
+    status:
+      code: 404
+      message: Not Found
+version: 1
