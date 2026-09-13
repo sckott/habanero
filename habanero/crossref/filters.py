@@ -1,6 +1,4 @@
-from typing import Dict
-
-works_filter_details: Dict[str, dict] = {
+works_filter_details: dict[str, dict] = {
     "has_funder": {
         "possible_values": None,
         "description": "metadata which includes one or more funder entry",
@@ -375,7 +373,7 @@ works_filter_details: Dict[str, dict] = {
     },
 }
 
-members_filter_details: Dict[str, dict] = {
+members_filter_details: dict[str, dict] = {
     "prefix": {
         "possible_values": "{string}",
         "description": "members with given DOI prefix, e.g. 10.5555.",
@@ -390,7 +388,7 @@ members_filter_details: Dict[str, dict] = {
     },
 }
 
-funders_filter_details: Dict[str, dict] = {
+funders_filter_details: dict[str, dict] = {
     "location": {
         "possible_values": "{string}",
         "description": "funders located in the given country",

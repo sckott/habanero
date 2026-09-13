@@ -38,7 +38,7 @@ class WorksContainer:
     """
 
     def __init__(self, data) -> None:
-        super(WorksContainer, self).__init__()
+        super().__init__()
         if not data:
             raise ValueError("data len must be > zero")
         self.__data = data

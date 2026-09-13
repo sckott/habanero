@@ -1,5 +1,3 @@
-from typing import List, Optional
-
 from ..habanero_utils import check_kwargs, sub_str
 from ..request import request
 from ..request_class import Request
@@ -188,9 +186,9 @@ class Crossref:
     def __init__(
         self,
         base_url: str = "https://api.crossref.org",
-        api_key: Optional[str] = None,
-        mailto: Optional[str] = None,
-        ua_string: Optional[str] = None,
+        api_key: str | None = None,
+        mailto: str | None = None,
+        ua_string: str | None = None,
         timeout: int = 5,
     ) -> None:
         self.base_url = base_url
@@ -200,31 +198,21 @@ class Crossref:
         self.timeout = timeout
 
     def __repr__(self):
-        return (
-            """< %s \nURL: %s\nKEY: %s\nMAILTO: %s\nADDITIONAL UA STRING: %s\nTimeout: %s\n>"""
-            % (
-                type(self).__name__,
-                self.base_url,
-                sub_str(self.api_key),
-                self.mailto,
-                self.ua_string,
-                self.timeout,
-            )
-        )
+        return f"""<{type(self).__name__} \nURL: {self.base_url}\nKEY: {sub_str(self.api_key)}\nMAILTO: {self.mailto}\nADDITIONAL UA STRING: {self.ua_string}\nTimeout: {self.timeout}\n>"""
 
     def works(
         self,
-        ids: List[str] | str | None = None,
-        query: Optional[str] = None,
-        filters: Optional[dict] = None,
-        offset: Optional[float] = None,
-        limit: Optional[float] = None,
-        sample: Optional[float] = None,
-        sort: Optional[str] = None,
-        order: Optional[str] = None,
+        ids: list[str] | str | None = None,
+        query: str | None = None,
+        filters: dict | None = None,
+        offset: float | None = None,
+        limit: float | None = None,
+        sample: float | None = None,
+        sort: str | None = None,
+        order: str | None = None,
         facet: str | bool | None = None,
-        select: List[str] | str | None = None,
-        cursor: Optional[str] = None,
+        select: list[str] | str | None = None,
+        cursor: str | None = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
@@ -408,18 +396,18 @@ class Crossref:
 
     def members(
         self,
-        ids: List[str] | str | int | None = None,
-        query: Optional[str] = None,
-        filters: Optional[dict] = None,
-        offset: Optional[float] = None,
-        limit: Optional[float] = None,
-        sample: Optional[float] = None,
-        sort: Optional[str] = None,
-        order: Optional[str] = None,
+        ids: list[str] | str | int | None = None,
+        query: str | None = None,
+        filters: dict | None = None,
+        offset: float | None = None,
+        limit: float | None = None,
+        sample: float | None = None,
+        sort: str | None = None,
+        order: str | None = None,
         facet: str | bool | None = None,
         works: bool = False,
-        select: List[str] | str | None = None,
-        cursor: Optional[str] = None,
+        select: list[str] | str | None = None,
+        cursor: str | None = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
@@ -524,17 +512,17 @@ class Crossref:
 
     def prefixes(
         self,
-        ids: List[str] | str,
-        filters: Optional[dict] = None,
-        offset: Optional[float] = None,
-        limit: Optional[float] = None,
-        sample: Optional[float] = None,
-        sort: Optional[str] = None,
-        order: Optional[str] = None,
+        ids: list[str] | str,
+        filters: dict | None = None,
+        offset: float | None = None,
+        limit: float | None = None,
+        sample: float | None = None,
+        sort: str | None = None,
+        order: str | None = None,
         facet: str | bool | None = None,
         works: bool = False,
-        select: List[str] | str | None = None,
-        cursor: Optional[str] = None,
+        select: list[str] | str | None = None,
+        cursor: str | None = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
@@ -639,18 +627,18 @@ class Crossref:
 
     def funders(
         self,
-        ids: List[str] | str | None = None,
-        query: Optional[str] = None,
-        filters: Optional[dict] = None,
-        offset: Optional[float] = None,
-        limit: Optional[float] = None,
-        sample: Optional[float] = None,
-        sort: Optional[str] = None,
-        order: Optional[str] = None,
+        ids: list[str] | str | None = None,
+        query: str | None = None,
+        filters: dict | None = None,
+        offset: float | None = None,
+        limit: float | None = None,
+        sample: float | None = None,
+        sort: str | None = None,
+        order: str | None = None,
         facet: str | bool | None = None,
         works: bool = False,
-        select: List[str] | str | None = None,
-        cursor: Optional[str] = None,
+        select: list[str] | str | None = None,
+        cursor: str | None = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
@@ -767,18 +755,18 @@ class Crossref:
 
     def journals(
         self,
-        ids: List[str] | str | None = None,
-        query: Optional[str] = None,
-        filters: Optional[dict] = None,
-        offset: Optional[float] = None,
-        limit: Optional[float] = None,
-        sample: Optional[float] = None,
-        sort: Optional[str] = None,
-        order: Optional[str] = None,
+        ids: list[str] | str | None = None,
+        query: str | None = None,
+        filters: dict | None = None,
+        offset: float | None = None,
+        limit: float | None = None,
+        sample: float | None = None,
+        sort: str | None = None,
+        order: str | None = None,
         facet: str | bool | None = None,
         works: bool = False,
-        select: List[str] | str | None = None,
-        cursor: Optional[str] = None,
+        select: list[str] | str | None = None,
+        cursor: str | None = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
@@ -890,18 +878,18 @@ class Crossref:
 
     def types(
         self,
-        ids: List[str] | str | None = None,
-        query: Optional[str] = None,
-        filters: Optional[dict] = None,
-        offset: Optional[float] = None,
-        limit: Optional[float] = None,
-        sample: Optional[float] = None,
-        sort: Optional[str] = None,
-        order: Optional[str] = None,
+        ids: list[str] | str | None = None,
+        query: str | None = None,
+        filters: dict | None = None,
+        offset: float | None = None,
+        limit: float | None = None,
+        sample: float | None = None,
+        sort: str | None = None,
+        order: str | None = None,
         facet: str | bool | None = None,
         works: bool = False,
-        select: List[str] | str | None = None,
-        cursor: Optional[str] = None,
+        select: list[str] | str | None = None,
+        cursor: str | None = None,
         cursor_max: float = 5000,
         progress_bar: bool = False,
         warn: bool = False,
@@ -992,11 +980,11 @@ class Crossref:
 
     def licenses(
         self,
-        query: Optional[str] = None,
-        offset: Optional[float] = None,
-        limit: Optional[float] = None,
-        sort: Optional[str] = None,
-        order: Optional[str] = None,
+        query: str | None = None,
+        offset: float | None = None,
+        limit: float | None = None,
+        sort: str | None = None,
+        order: str | None = None,
         facet: str | bool | None = None,
         **kwargs,
     ) -> dict:
@@ -1045,7 +1033,7 @@ class Crossref:
         )
         return res
 
-    def registration_agency(self, ids: List[str] | str, **kwargs) -> list:
+    def registration_agency(self, ids: list[str] | str, **kwargs) -> list:
         """
         Determine registration agency for DOIs
 

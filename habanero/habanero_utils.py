@@ -87,7 +87,7 @@ def make_ua(mailto=None, ua_string=None):
 
 
 def filter_dict(x):
-    return {k: x[k] for k, v in x.items() if k.find("query_") == 0}
+    return {k: v for k, v in x.items() if k.find("query_") == 0}
 
 
 def rename_query_filters(x):

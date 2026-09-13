@@ -134,8 +134,7 @@ class Request:
                 actual_max = (
                     self.cursor_max if self.cursor_max is not None else max_avail
                 )
-                if max_avail < actual_max:
-                    actual_max = max_avail
+                actual_max = min(actual_max, max_avail)
                 runs = math.ceil(actual_max / (self.limit or 20))
                 pbar = tqdm(total=runs - 1)
 
