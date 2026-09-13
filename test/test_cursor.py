@@ -2,8 +2,6 @@ import pytest
 
 from habanero import Crossref
 
-# cr = Crossref()
-
 
 @pytest.fixture
 def cross_ref():
