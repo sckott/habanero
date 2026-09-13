@@ -61,7 +61,7 @@ def make_request(url, ids, for_mat, style, locale, fail, **kwargs):
         if fail:
             r.raise_for_status()
         else:
-            mssg = "%s: %s" % (r.status_code, r.url)
+            mssg = f"{r.status_code}: {r.url}"
             warnings.warn(mssg, stacklevel=2)
             return None
 

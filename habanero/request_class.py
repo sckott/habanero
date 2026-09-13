@@ -168,7 +168,7 @@ class Request:
                 raise RequestError(r.status_code, f["message"][0]["message"])
             except (ValueError, KeyError, IndexError):
                 if should_warn:
-                    mssg = "%s: %s" % (r.status_code, r.reason_phrase)
+                    mssg = f"{r.status_code}: {r.reason_phrase}"
                     warnings.warn(mssg, stacklevel=2)
                     return None
                 else:

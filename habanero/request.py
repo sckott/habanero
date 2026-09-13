@@ -149,7 +149,7 @@ def request(
                 )
                 if r.status_code > 201 and should_warn:
                     warning_thrown = True
-                    mssg = "%s on %s: %s" % (r.status_code, ids[i], r.reason_phrase)
+                    mssg = f"{r.status_code} on {ids[i]}: {r.reason_phrase}"
                     warnings.warn(mssg, stacklevel=2)
                 else:
                     r.raise_for_status()

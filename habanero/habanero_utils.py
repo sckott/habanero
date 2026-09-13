@@ -74,10 +74,10 @@ def parse_json_err(x):
 
 def make_ua(mailto=None, ua_string=None):
     requa = "python-httpx2/" + httpx2.__version__
-    habua = "habanero/%s" % __version__
+    habua = f"habanero/{__version__}"
     ua = requa + " " + habua
     if mailto is not None:
-        ua = ua + " (mailto:%s)" % mailto
+        ua = ua + f" (mailto:{mailto})"
     if ua_string is not None:
         if not isinstance(ua_string, str):
             raise TypeError("ua_string must be a str")

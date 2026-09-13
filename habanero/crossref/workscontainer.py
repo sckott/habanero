@@ -49,10 +49,7 @@ class WorksContainer:
             setattr(self, key.lower().replace("-", "_"), values)
 
     def __repr__(self) -> str:
-        return """<%s: No. works: %s>""" % (
-            type(self).__name__,
-            len(self.works),
-        )
+        return f"""<{type(self).__name__}: No. works: {len(self.works)}>"""
 
     def works_handler(self, x: list | dict) -> list:
         message_type = (
