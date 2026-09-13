@@ -87,6 +87,9 @@ class Request:
         ]
         validate_field_queries(fq_keys if fq_keys else None)
 
+        if not isinstance(self.cursor, (type(None), str)):
+            raise TypeError("cursor must be of class str")
+
         if not isinstance(self.cursor_max, (type(None), int)):
             raise ValueError("cursor_max must be of class int")
 
