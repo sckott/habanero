@@ -37,4 +37,4 @@ def test_cursor_fails_cursor_type(cross_ref):
 
 def test_cursor_fails_cursor_max(cross_ref):
     with pytest.raises(TypeError):
-        cross_ref.works(query="widget", cursor="*", cursor_max="thing")  # ty: ignore[invalid-argument-type]
+        cross_ref.works(query="widget", cursor="*", cursor_max="thing")
