@@ -52,16 +52,6 @@ line-length = 88
 
 exclude = ["build", "dist"]
 
-[tool.ruff.lint]
-select = ["E4", "E7", "E9", "F", "I", "A", "ARG", "B", "SIM"]
-extend-select = ["PTH", "C4", "RUF"]
-
-[tool.ruff.lint.per-file-ignores]
-"__init__.py" = ["E402", "F401", "F403"]
-"habanero/request_class.py" = ["E722"]
-"test/*" = ["E501"]
-"habanero/*" = ["E501"]
-
 # from https://github.com/pypa/setuptools/discussions/3627
 [project.optional-dependencies]
 bibtex = ["bibtexparser>=2.0.0b7"]
@@ -74,7 +64,7 @@ dev = [
     "pytest-cov>=7.1.0",
     "pytest-recording>=0.13.4",
     "pyyaml>=6.0.3",
-    "ruff>=0.15.15",
+    "ruff>=0.16.7",
     "sphinx>=8.1.3",
     "sphinx-autodoc-typehints>=3.0.1",
     "sphinx-rtd-theme>=3.0.2",
