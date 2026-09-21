@@ -38,13 +38,11 @@ class Crossref:
 
     **What am I actually searching when using the Crossref search API?**
 
-    You are using the Crossref search API described at
-    https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md.
+    You are using the Crossref search API described at https://api.crossref.org.
     When you search with query terms on Crossref servers, they are not
     searching full text, or even abstracts of articles, but only what is
     available in the data that is returned to you. That is, they search
-    article titles, authors, etc. For some discussion on this, see
-    https://github.com/CrossRef/rest-api-doc/issues/101.
+    article titles, authors, etc.
 
     **The Polite Pool**
 
@@ -227,7 +225,7 @@ class Crossref:
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc#filter-names
+            See https://bit.ly/cr-rest-api-filters
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: Number of record to start at, from 1 to 10000
@@ -250,7 +248,7 @@ class Crossref:
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used.
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+            See https://api.crossref.org/swagger-ui/index.html#cursors
         :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
@@ -298,7 +296,7 @@ class Crossref:
                  print i['DOI']
 
             # filters - pass in as a dict
-            ## see https://github.com/CrossRef/rest-api-doc#filter-names
+            ## see https://api.crossref.org/swagger-ui/index.html#filters
             cr.works(filters = {'has_full_text': True})
             cr.works(filters = {'has_funder': True, 'has_full_text': True})
             cr.works(filters = {'award_number': 'CBET-0756451', 'award_funder': '10.13039/100000001'})
@@ -422,7 +420,7 @@ class Crossref:
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc#filter-names
+            See https://bit.ly/cr-rest-api-filters
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
             IMPORTANT: when `works=False` the filters that will work are the members
@@ -446,8 +444,7 @@ class Crossref:
         :param cursor: Cursor character string to do deep paging. Default is None.
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
-            and sample cannot be used. Only used if `works=True`
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+            and sample cannot be used. Only used if `works=True`. See https://bit.ly/4jgjiQU
         :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
@@ -536,7 +533,7 @@ class Crossref:
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc#filter-names
+            See https://bit.ly/cr-rest-api-filters
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: Number of record to start at, from 1 to 10000
@@ -559,7 +556,7 @@ class Crossref:
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+            See https://api.crossref.org/swagger-ui/index.html#cursors
         :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
@@ -656,7 +653,7 @@ class Crossref:
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc#filter-names
+            See https://bit.ly/cr-rest-api-filters
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
             IMPORTANT: when `works=False` the filters that will work are the funders
@@ -681,7 +678,7 @@ class Crossref:
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+            See https://api.crossref.org/swagger-ui/index.html#cursors
         :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
@@ -781,7 +778,7 @@ class Crossref:
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc#filter-names
+            See https://bit.ly/cr-rest-api-filters
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: Number of record to start at, from 1 to 10000
@@ -804,7 +801,7 @@ class Crossref:
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+            See https://api.crossref.org/swagger-ui/index.html#cursors
         :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
@@ -904,7 +901,7 @@ class Crossref:
             Accepts a dict, with filter names and their values. For repeating filter names
             pass in a list of the values to that filter name, e.g.,
             `{'award_funder': ['10.13039/100004440', '10.13039/100000861']}`.
-            See https://github.com/CrossRef/rest-api-doc#filter-names
+            See https://bit.ly/cr-rest-api-filters
             for filter names and their descriptions and :func:`~habanero.Crossref.filter_names`
             and :func:`~habanero.Crossref.filter_details`
         :param offset: Number of record to start at, from 1 to 10000
@@ -927,7 +924,7 @@ class Crossref:
             Pass in '*' to start deep paging. Any combination of query, filters and facets may be
             used with deep paging cursors. While rows may be specified along with cursor, offset
             and sample cannot be used. Only used if `works=True`
-            See https://github.com/CrossRef/rest-api-doc/blob/master/rest_api.md#deep-paging-with-cursors
+            See https://api.crossref.org/swagger-ui/index.html#cursors
         :param cursor_max: Max records to retrieve. Only used when cursor param used. Because
             deep paging can result in continuous requests until all are retrieved, use this
             parameter to set a maximum number of records. Of course, if there are less records
@@ -1134,7 +1131,7 @@ class Crossref:
 
         Filters are used in the Crossref search API to modify searches.
         As filters are introduced or taken away, we may get out of sync; check
-        the docs for the latest https://github.com/CrossRef/rest-api-doc
+        the docs for the latest https://api.crossref.org/
 
         :param route: what type of filters, i.e., what API route, matches
             methods here. one of "works", "members", or "funders". Default: "works"
@@ -1158,7 +1155,7 @@ class Crossref:
 
         Filters are used in the Crossref search API to modify searches.
         As filters are introduced or taken away, we may get out of sync; check
-        the docs for the latest https://github.com/CrossRef/rest-api-doc
+        the docs for the latest https://api.crossref.org/
 
         :param route: what type of filters, i.e., what API route,
             matches methods here. one of "works", "members", or "funders".
