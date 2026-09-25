@@ -95,7 +95,10 @@ def test_works_field_query_with_none_value_is_dropped():
     without_fq_none = cr.works(query="ecology", limit=0)
     assert isinstance(with_fq_none, dict)
     assert isinstance(without_fq_none, dict)
-    assert with_fq_none["message"]["total-results"] == without_fq_none["message"]["total-results"]
+    assert (
+        with_fq_none["message"]["total-results"]
+        == without_fq_none["message"]["total-results"]
+    )
 
 
 @pytest.mark.vcr
