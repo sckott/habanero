@@ -86,6 +86,19 @@ def test_works_field_queries():
 
 
 @pytest.mark.vcr
+def test_works_field_query_with_none_value_is_dropped():
+    """works - param: kwargs - field queries work as expected
+
+    See https://github.com/sckott/habanero/issues/232
+    """
+    with_fq_none = cr.works(query="ecology", query_author=None, limit=0)
+    without_fq_none = cr.works(query="ecology", limit=0)
+    assert isinstance(with_fq_none, dict)
+    assert isinstance(without_fq_none, dict)
+    assert with_fq_none["message"]["total-results"] == without_fq_none["message"]["total-results"]
+
+
+@pytest.mark.vcr
 def test_works_query_filters_not_allowed_with_dois():
     """works - param: kwargs - query filters not allowed on works/DOI/ route"""
     with pytest.raises(HTTPError):

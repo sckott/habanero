@@ -1,5 +1,6 @@
 import json
 import re
+from typing import Any
 
 import httpx2
 
@@ -86,8 +87,8 @@ def make_ua(mailto=None, ua_string=None):
     return strg
 
 
-def filter_dict(x):
-    return {k: v for k, v in x.items() if k.find("query_") == 0}
+def filter_dict(x: dict[str, Any | None]) -> dict[str, Any]:
+    return {k: v for k, v in x.items() if k.find("query_") == 0 and v is not None}
 
 
 def rename_query_filters(x):
