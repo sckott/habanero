@@ -45,11 +45,11 @@ def make_request(url, ids, for_mat, style, locale, fail, **kwargs):
     ty_pe = cn_format_headers[for_mat]
 
     if for_mat == "citeproc-json":
-        url = "http://api.crossref.org/works/" + ids + "/" + ty_pe
+        url = f"http://api.crossref.org/works/{ids}/{ty_pe}"
     else:
         if for_mat == "text":
             ty_pe = ty_pe + "; style = " + style + "; locale = " + locale
-        url = url + "/" + ids
+        url = f"{url}/{ids}"
 
     htype = {"Accept": ty_pe}
     head = dict(make_ua(), **htype)
