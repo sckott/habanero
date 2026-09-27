@@ -74,6 +74,6 @@ def make_request(url, ids, for_mat, style, locale, fail, **kwargs):
     return text
 
 
-def fix_bibtex(x):
+def fix_bibtex(x: str) -> str:
     parsed = bibtexparser.parse_string(x)
     return bibtexparser.write_string(parsed)
