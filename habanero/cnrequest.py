@@ -1,4 +1,5 @@
 import warnings
+from typing import Literal, overload
 
 import httpx2
 from packaging.version import Version
@@ -14,7 +15,14 @@ else:
     _has_bibtexparser = True
 
 
-def CNRequest(url, ids, citation_format=None, style=None, locale=None, **kwargs):
+def CNRequest(
+    url,
+    ids,
+    citation_format: str = "bibtex",
+    style: str = "apa",
+    locale: str = "en-US",
+    **kwargs,
+) -> str | list[str | None]:
     if not isinstance(ids, (str, list)):
         raise TypeError("'ids' must be a str or list of str's")
     if isinstance(ids, list) and not all(isinstance(z, str) for z in ids):
@@ -26,22 +34,64 @@ def CNRequest(url, ids, citation_format=None, style=None, locale=None, **kwargs)
 
     if len(ids) == 1:
         return make_request(
-            url, ids[0], citation_format, style, locale, fail=True, **kwargs
+            url,
+            ids[0],
+            fail=True,
+            for_mat=citation_format,
+            style=style,
+            locale=locale,
+            **kwargs,
         )
     else:
         coll = []
         for i in range(len(ids)):
             tt = make_request(
-                url, ids[i], citation_format, style, locale, fail=False, **kwargs
+                url,
+                ids[i],
+                fail=False,
+                for_mat=citation_format,
+                style=style,
+                locale=locale,
+                **kwargs,
             )
             coll.append(tt)
 
-        if len(coll) == 1:
-            coll = coll[0]
         return coll
 
 
-def make_request(url, ids, for_mat, style, locale, fail, **kwargs):
+@overload
+def make_request(
+    url: str,
+    ids: str,
+    fail: Literal[True],
+    for_mat: str = "bibtex",
+    style: str = "apa",
+    locale: str = "en-US",
+    **kwargs,
+) -> str: ...
+
+
+@overload
+def make_request(
+    url: str,
+    ids: str,
+    fail: Literal[False],
+    for_mat: str = "bibtex",
+    style: str = "apa",
+    locale: str = "en-US",
+    **kwargs,
+) -> str | None: ...
+
+
+def make_request(
+    url: str,
+    ids: str,
+    fail: bool,
+    for_mat: str = "bibtex",
+    style: str = "apa",
+    locale: str = "en-US",
+    **kwargs,
+) -> str | None:
     ty_pe = cn_format_headers[for_mat]
 
     if for_mat == "citeproc-json":
