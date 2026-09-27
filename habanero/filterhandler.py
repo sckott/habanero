@@ -38,7 +38,7 @@ def filter_handler(x: dict | None = None) -> str | None:
         return newx
 
 
-dict_filts = {
+dict_filts: dict[str, str] = {
     "license_url": "license.url",
     "license_version": "license.version",
     "license_delay": "license.delay",
