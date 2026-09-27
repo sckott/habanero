@@ -9,7 +9,7 @@ def content_negotiation(
     locale: str = "en-US",
     url: str = "",
     **kwargs,
-) -> str:
+) -> str | list[str | None]:
     """
     Get citations in various formats from CrossRef
 
