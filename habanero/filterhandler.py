@@ -38,29 +38,21 @@ def filter_handler(x: dict | None = None) -> str | None:
         return newx
 
 
-others = [
-    "license_url",
-    "license_version",
-    "license_delay",
-    "full_text_version",
-    "full_text_type",
-    "full_text_application",
-    "award_number",
-    "award_funder",
-]
-
 dict_filts = {
     "license_url": "license.url",
     "license_version": "license.version",
     "license_delay": "license.delay",
     "full_text_version": "full-text.version",
     "full_text_type": "full-text.type",
+    "full_text_application": "full-text.application",
     "award_number": "award.number",
     "award_funder": "award.funder",
     "relation_type": "relation.type",
     "relation_object": "relation.object",
     "relation_object_type": "relation.object-type",
 }
+
+others = list(dict_filts)
 
 
 def switch_filters(x: str) -> str:
