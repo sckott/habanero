@@ -347,7 +347,7 @@ class Crossref:
             x = Crossref()
             x.works(ids = '10.1371/journal.pone.0033693')
         """
-        if ids.__class__.__name__ != "NoneType":
+        if ids is not None:
             return request(
                 self,
                 "/works/",
