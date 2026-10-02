@@ -1,4 +1,4 @@
-from ..habanero_utils import check_kwargs, sub_str
+from ..habanero_utils import check_filter_kwarg, check_kwargs, sub_str
 from ..request import request
 from ..request_class import Request
 from .filters import (
@@ -370,6 +370,7 @@ class Crossref:
                 **kwargs,
             )
         else:
+            check_filter_kwarg(kwargs)
             return Request(
                 self.mailto,
                 self.ua_string,

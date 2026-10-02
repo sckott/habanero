@@ -5,6 +5,7 @@ DEVELOPMENT VERSION (xx)
 --------------------
 * Renamed a number of arguments in methods/classes that were shadowing built-in names: `input` to `data` in `WorksContainer`; `type` to `route` in `filter_names` and `filter_details`; `format` to `citation_format` in `content_negotiation`; `filter` to `filters` in `Crossref` methods. (#222) (#223)
 * Drop field queries that have values of None in internal method `filter_dict` (#232) thanks @ZacKienzle2
+* Passing the old `filter` argument (now `filters`) to `Crossref` methods now raises an `IncompatibleParameterError` telling you to use `filters` instead. Previously `filter` was silently dropped, so the query ran with no filters applied at all. (#235)
 
 2.9.2 (2026-06-17)
 --------------------

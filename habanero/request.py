@@ -7,6 +7,7 @@ from .facets import validate_facets
 from .field_queries import validate_field_queries
 from .filterhandler import filter_handler
 from .habanero_utils import (
+    check_filter_kwarg,
     check_json,
     filter_dict,
     ifelsestr,
@@ -42,6 +43,7 @@ def request(
     **kwargs,
 ):
     """HTTP request helper."""
+    check_filter_kwarg(kwargs)
     warning_thrown = False
     url = cr.base_url + path
 

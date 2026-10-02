@@ -1,8 +1,10 @@
 from typing import no_type_check
 
+import httpx2
 import pytest
 
 from habanero import Crossref
+from habanero.exceptions import IncompatibleParameterError
 from habanero.filterhandler import filter_handler
 
 cr = Crossref()
@@ -45,6 +47,55 @@ def test_filter_details_errors():
     with pytest.raises(ValueError):
         cr.filter_details("adf")
         cr.filter_details(5)
+
+
+def _stub_get(monkeypatch):
+    """Replace httpx2.get with a stub that records params and makes no request"""
+    calls = []
+
+    def fake_get(url, params=None, **kwargs):
+        calls.append(params)
+        body = {
+            "status": "ok",
+            "message": {"items": [], "total-results": 0},
+        }
+        return httpx2.Response(200, json=body, request=httpx2.Request("GET", url))
+
+    monkeypatch.setattr(httpx2, "get", fake_get)
+    return calls
+
+
+def test_filter_kwarg_raises(monkeypatch):
+    """using `filter` instead of `filters` raises, and no request is made"""
+    calls = _stub_get(monkeypatch)
+    with pytest.raises(IncompatibleParameterError, match="filters"):
+        cr.works(filter={"has_full_text": True})
+    assert calls == []
+
+
+def test_filter_kwarg_raises_with_ids(monkeypatch):
+    """the `filter` error also applies when ids are passed"""
+    calls = _stub_get(monkeypatch)
+    with pytest.raises(IncompatibleParameterError, match="filters"):
+        cr.works(ids="10.1371/journal.pone.0033693", filter={"has_full_text": True})
+    assert calls == []
+
+
+def test_filter_kwarg_raises_other_routes(monkeypatch):
+    """the `filter` error applies to other routes too"""
+    calls = _stub_get(monkeypatch)
+    with pytest.raises(IncompatibleParameterError, match="filters"):
+        cr.members(filter={"has_public_references": True})
+    with pytest.raises(IncompatibleParameterError, match="filters"):
+        cr.funders(filter={"location": "Sweden"})
+    assert calls == []
+
+
+def test_filters_kwarg_does_not_raise(monkeypatch):
+    """using `filters` correctly works, and the filter is sent"""
+    calls = _stub_get(monkeypatch)
+    cr.works(filters={"has_full_text": True})
+    assert calls[0]["filter"] == "has-full-text:true"
 
 
 def test_filter_handler_dotted_names():

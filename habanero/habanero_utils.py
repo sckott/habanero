@@ -22,6 +22,21 @@ def check_kwargs(keys: list, kwargs: dict) -> None:
             raise IncompatibleParameterError(mssg)
 
 
+def check_filter_kwarg(kwargs: dict) -> None:
+    """Raise if the old `filter` parameter was passed instead of `filters`
+
+    `filter` would otherwise be silently dropped, so the request would run
+    with no filters applied at all
+    """
+    if "filter" in kwargs:
+        mssg = (
+            "The `filter` parameter is no longer supported; use `filters` "
+            "instead, e.g., `filters = {'has_full_text': True}`. Passing "
+            "`filter` would have meant no filters were applied at all"
+        )
+        raise IncompatibleParameterError(mssg)
+
+
 def check_json(x: httpx2.Response) -> None:
     ctype = x.headers["Content-Type"]
     matched = re.match("application/json", ctype)
