@@ -49,52 +49,52 @@ def test_filter_details_errors():
         cr.filter_details(5)
 
 
-def _stub_get(monkeypatch):
-    """Replace httpx2.get with a stub that records params and makes no request"""
+def _stub_crossref():
+    """A Crossref whose client records query params and makes no real request"""
     calls = []
 
-    def fake_get(url, params=None, **kwargs):
-        calls.append(params)
+    def handler(request: httpx2.Request) -> httpx2.Response:
+        calls.append(dict(request.url.params))
         body = {
             "status": "ok",
             "message": {"items": [], "total-results": 0},
         }
-        return httpx2.Response(200, json=body, request=httpx2.Request("GET", url))
+        return httpx2.Response(200, json=body)
 
-    monkeypatch.setattr(httpx2, "get", fake_get)
-    return calls
+    client = httpx2.Client(transport=httpx2.MockTransport(handler))
+    return Crossref(client=client), calls
 
 
-def test_filter_kwarg_raises(monkeypatch):
+def test_filter_kwarg_raises():
     """using `filter` instead of `filters` raises, and no request is made"""
-    calls = _stub_get(monkeypatch)
+    stub, calls = _stub_crossref()
     with pytest.raises(IncompatibleParameterError, match="filters"):
-        cr.works(filter={"has_full_text": True})
+        stub.works(filter={"has_full_text": True})
     assert calls == []
 
 
-def test_filter_kwarg_raises_with_ids(monkeypatch):
+def test_filter_kwarg_raises_with_ids():
     """the `filter` error also applies when ids are passed"""
-    calls = _stub_get(monkeypatch)
+    stub, calls = _stub_crossref()
     with pytest.raises(IncompatibleParameterError, match="filters"):
-        cr.works(ids="10.1371/journal.pone.0033693", filter={"has_full_text": True})
+        stub.works(ids="10.1371/journal.pone.0033693", filter={"has_full_text": True})
     assert calls == []
 
 
-def test_filter_kwarg_raises_other_routes(monkeypatch):
+def test_filter_kwarg_raises_other_routes():
     """the `filter` error applies to other routes too"""
-    calls = _stub_get(monkeypatch)
+    stub, calls = _stub_crossref()
     with pytest.raises(IncompatibleParameterError, match="filters"):
-        cr.members(filter={"has_public_references": True})
+        stub.members(filter={"has_public_references": True})
     with pytest.raises(IncompatibleParameterError, match="filters"):
-        cr.funders(filter={"location": "Sweden"})
+        stub.funders(filter={"location": "Sweden"})
     assert calls == []
 
 
-def test_filters_kwarg_does_not_raise(monkeypatch):
+def test_filters_kwarg_does_not_raise():
     """using `filters` correctly works, and the filter is sent"""
-    calls = _stub_get(monkeypatch)
-    cr.works(filters={"has_full_text": True})
+    stub, calls = _stub_crossref()
+    stub.works(filters={"has_full_text": True})
     assert calls[0]["filter"] == "has-full-text:true"
 
 

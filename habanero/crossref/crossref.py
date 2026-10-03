@@ -1,3 +1,9 @@
+import weakref
+from types import TracebackType
+from typing import Any
+
+import httpx2
+
 from ..habanero_utils import (
     check_filter_kwarg,
     check_kwargs,
@@ -6,6 +12,7 @@ from ..habanero_utils import (
 )
 from ..request import request
 from ..request_class import Request
+from ..retry import RetryingClient
 from .filters import (
     funders_filter_details,
     members_filter_details,
@@ -21,7 +28,50 @@ class Crossref:
     :param api_key: An API key to send with each http request
     :param mailto: A mailto string, see section below
     :param ua_string: A user agent string, see section below
-    :param timeout: curl timeout
+    :param timeout: request timeout in seconds
+    :param retries: Maximum number of times to retry a request that fails for a
+        transient reason (see **Retries** below). Default: 3. Use 0 to turn off
+        retrying
+    :param backoff_factor: Base wait in seconds between retries, which doubles
+        with each retry: `backoff_factor * 2**attempt`, i.e., 1s, 2s, 4s by
+        default. Default: 1.0
+    :param client: An optional `httpx2.Client` to use for all requests. If not
+        given, a client is created on first use and reused for every request
+        made with this object (connection pooling). A client you pass in is
+        never closed by this class; you are responsible for closing it
+
+    **Connection reuse**
+
+    A `Crossref` object keeps one HTTP client, so many requests (many DOIs,
+    or the pages of a deep-paging `cursor` request) reuse the same
+    connection instead of opening a new one - and repeating the TLS
+    handshake - each time. Call :func:`~habanero.Crossref.close` when done, or
+    use the object as a context manager, which closes it for you::
+
+        with Crossref(mailto = "foo@bar.com") as cr:
+            cr.works(ids = ["10.1371/journal.pone.0033693", "10.1126/science.169.3946.635"])
+
+    A closed object can still be used; a new client is created on next use.
+
+    **Retries**
+
+    Requests are retried, up to `retries` times, when they fail in a way that
+    is likely to be temporary:
+
+    * HTTP status 429 (rate limited), 502, 503, or 504
+    * timeouts, and connections that are refused, dropped, or closed early
+
+    If the server sends a `Retry-After` header we wait that long (and don't
+    retry at all if it asks for more than 60 seconds); otherwise we wait
+    `backoff_factor * 2**attempt` seconds, up to 30 seconds. Other errors, such
+    as 400, 404 and 500, are never retried. Crossref limits how many requests
+    you can make per second (see the `x-rate-limit-limit` response header), and
+    giving a `mailto` gets you a more generous limit.
+
+    When retries run out, you get the same error you would have gotten without
+    retrying. Each retry is logged at INFO level on the `habanero` logger.
+    Retries also apply to a `client` you pass in. Settings are read on each
+    request, so changing `cr.retries` later works.
 
     |
     |
@@ -193,12 +243,77 @@ class Crossref:
         mailto: str | None = None,
         ua_string: str | None = None,
         timeout: int = 5,
+        retries: int = 3,
+        backoff_factor: float = 1.0,
+        client: httpx2.Client | None = None,
     ) -> None:
+        if isinstance(retries, bool) or not isinstance(retries, int):
+            raise TypeError("retries must be an int")
+        if retries < 0:
+            raise ValueError("retries must be >= 0")
+        if isinstance(backoff_factor, bool) or not isinstance(
+            backoff_factor, (int, float)
+        ):
+            raise TypeError("backoff_factor must be a number")
+        if backoff_factor < 0:
+            raise ValueError("backoff_factor must be >= 0")
         self.base_url = base_url
         self.api_key = api_key
         self.mailto = mailto
         self.ua_string = ua_string
         self.timeout = timeout
+        self.retries = retries
+        self.backoff_factor = backoff_factor
+        self._client = client
+        self._owns_client = client is None
+        self._finalizer: weakref.finalize | None = None
+
+    @property
+    def client(self) -> httpx2.Client:
+        """The HTTP client used for requests, created on first use"""
+        if self._client is None:
+            self._client = httpx2.Client()
+            self._owns_client = True
+            # close the client if the user never calls close()
+            self._finalizer = weakref.finalize(self, self._client.close)
+        return self._client
+
+    @property
+    def _http(self) -> RetryingClient:
+        """`client` plus retrying, using the current retry settings"""
+        return RetryingClient(self.client, self.retries, self.backoff_factor)
+
+    def close(self) -> None:
+        """Close the HTTP client created by this object, if any
+
+        A client passed in via the `client` parameter is left open. The object
+        remains usable; a new client is created on the next request.
+        """
+        if self._client is not None and self._owns_client:
+            if self._finalizer is not None:
+                self._finalizer.detach()
+                self._finalizer = None
+            self._client.close()
+            self._client = None
+
+    def __enter__(self) -> "Crossref":  # noqa: PYI034 (typing.Self needs py3.11)
+        return self
+
+    def __exit__(
+        self,
+        exc_type: type[BaseException] | None,
+        exc: BaseException | None,
+        tb: TracebackType | None,
+    ) -> None:
+        self.close()
+
+    def __getstate__(self) -> dict[str, Any]:
+        # an open HTTP client can't be pickled/copied; a new one is made on use
+        state = self.__dict__.copy()
+        state["_client"] = None
+        state["_owns_client"] = True
+        state["_finalizer"] = None
+        return state
 
     def __repr__(self):
         return f"""<{type(self).__name__} \nURL: {self.base_url}\nKEY: {sub_str(self.api_key)}\nMAILTO: {self.mailto}\nADDITIONAL UA STRING: {self.ua_string}\nTimeout: {self.timeout}\n>"""
@@ -397,6 +512,7 @@ class Crossref:
                 cursor_max,
                 None,
                 progress_bar,
+                client=self._http,
                 **kwargs,
             ).do_request(should_warn=warn)
 

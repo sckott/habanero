@@ -47,8 +47,13 @@ class Request:
         cursor_max=5000,
         agency=False,
         progress_bar=False,
+        *,
+        client=None,
         **kwargs,
     ):
+        # anything with a `.get(url, params=, headers=, timeout=)` method:
+        # an httpx2.Client (connection reuse), or the httpx2 module as fallback
+        self.client = client if client is not None else httpx2
         self.mailto = mailto
         self.ua_string = ua_string
         self.timeout = timeout
@@ -154,7 +159,7 @@ class Request:
 
     def _req(self, payload, should_warn):
         try:
-            r = httpx2.get(
+            r = self.client.get(
                 self._url(),
                 params=payload,
                 headers=make_ua(self.mailto, self.ua_string),

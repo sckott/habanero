@@ -87,26 +87,21 @@ def test_worksquery_same_as_wrapped_method_mocked():
     assert result_WorksQuery == result_works
 
 
-def _stub_get(monkeypatch):
-    """Replace httpx2.get with a stub that records params and makes no request"""
+def _stub_crossref():
+    """A Crossref whose client records (url, params) and makes no real request"""
     calls = []
 
-    def fake_get(url, params=None, **kwargs):
-        calls.append((url, params))
+    def handler(request: httpx2.Request) -> httpx2.Response:
+        calls.append((request.url.path, dict(request.url.params)))
         body = {
             "status": "ok",
             "message-type": "work-list",
             "message": {"items": [{"DOI": "10.1/a"}], "total-results": 1},
         }
-        return httpx2.Response(
-            200,
-            json=body,
-            headers={"Content-Type": "application/json"},
-            request=httpx2.Request("GET", url),
-        )
+        return httpx2.Response(200, json=body)
 
-    monkeypatch.setattr(httpx2, "get", fake_get)
-    return calls
+    client = httpx2.Client(transport=httpx2.MockTransport(handler))
+    return Crossref(client=client), calls
 
 
 def test_worksquery_filters_accumulates_and_is_immutable():
@@ -118,10 +113,10 @@ def test_worksquery_filters_accumulates_and_is_immutable():
     assert more._params["filters"] == {"from_pub_date": "2020", "has_funder": "true"}
 
 
-def test_worksquery_filters_execute_sends_filter(monkeypatch):
+def test_worksquery_filters_execute_sends_filter():
     """WorksQuery: execute() with filters() runs and sends the filter param"""
-    calls = _stub_get(monkeypatch)
-    res = WorksQuery(cr).query("zika").filters(from_pub_date="2020").execute()
+    stub, calls = _stub_crossref()
+    res = WorksQuery(stub).query("zika").filters(from_pub_date="2020").execute()
 
     assert res["message"]["items"] == [{"DOI": "10.1/a"}]
     assert len(calls) == 1
@@ -130,23 +125,23 @@ def test_worksquery_filters_execute_sends_filter(monkeypatch):
     assert params["query"] == "zika"
 
 
-def test_worksquery_filters_count_sends_filter(monkeypatch):
+def test_worksquery_filters_count_sends_filter():
     """WorksQuery: count() with filters() runs and sends the filter param"""
-    calls = _stub_get(monkeypatch)
-    n = WorksQuery(cr).filters(from_pub_date="2020", has_funder=True).count()
+    stub, calls = _stub_crossref()
+    n = WorksQuery(stub).filters(from_pub_date="2020", has_funder=True).count()
 
     assert n == 1
     _, params = calls[0]
     assert params["filter"] == "from-pub-date:2020,has-funder:true"
 
 
-def test_worksquery_filters_execute_other_endpoint(monkeypatch):
+def test_worksquery_filters_execute_other_endpoint():
     """WorksQuery: filters() also works for endpoints such as members"""
-    calls = _stub_get(monkeypatch)
-    WorksQuery(cr).members(98).filters(from_pub_date="2020").execute()
+    stub, calls = _stub_crossref()
+    WorksQuery(stub).members(98).filters(from_pub_date="2020").execute()
 
-    url, params = calls[0]
-    assert url.endswith("/members/98/works")
+    path, params = calls[0]
+    assert path == "/members/98/works"
     assert params["filter"] == "from-pub-date:2020"
 
 

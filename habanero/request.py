@@ -90,7 +90,7 @@ def request(
     if ids is None:
         url = url.strip("/")
         try:
-            r = httpx2.get(
+            r = cr._http.get(
                 url,
                 params=payload,
                 headers=make_ua(cr.mailto, cr.ua_string),
@@ -139,13 +139,14 @@ def request(
                     cursor_max,
                     None,
                     progress_bar,
+                    client=cr._http,
                     **kwargs,
                 ).do_request(should_warn=should_warn)
                 coll.append(res)
             else:
                 endpt = url + str(ids[i]) + "/agency" if agency else url + str(ids[i])
                 endpt = endpt.strip("/")
-                r = httpx2.get(
+                r = cr._http.get(
                     endpt,
                     params=payload,
                     headers=make_ua(cr.mailto, cr.ua_string),
