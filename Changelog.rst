@@ -7,6 +7,7 @@ DEVELOPMENT VERSION (xx)
 * Drop field queries that have values of None in internal method `filter_dict` (#232) thanks @ZacKienzle2
 * Fixed filter name handling in `filter_handler`: `relation_type`, `relation_object` and `relation_object_type` are now sent to Crossref as `relation.type`, `relation.object` and `relation.object-type` (previously sent with hyphens, which Crossref rejected with a 400), and `full_text_application` no longer raises a `KeyError` and is sent as `full-text.application`. (#233) thanks @guillaumegay13
 * Passing the old `filter` argument (now `filters`) to `Crossref` methods now raises an `IncompatibleParameterError` telling you to use `filters` instead. Previously `filter` was silently dropped, so the query ran with no filters applied at all. (#235)
+* Passing an unknown keyword argument to `Crossref` methods now raises a `TypeError`.
 
 2.9.2 (2026-06-17)
 --------------------

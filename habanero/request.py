@@ -9,6 +9,7 @@ from .filterhandler import filter_handler
 from .habanero_utils import (
     check_filter_kwarg,
     check_json,
+    check_unknown_kwargs,
     filter_dict,
     ifelsestr,
     is_json,
@@ -44,6 +45,7 @@ def request(
 ):
     """HTTP request helper."""
     check_filter_kwarg(kwargs)
+    check_unknown_kwargs(kwargs)
     warning_thrown = False
     url = cr.base_url + path
 

@@ -1,4 +1,9 @@
-from ..habanero_utils import check_filter_kwarg, check_kwargs, sub_str
+from ..habanero_utils import (
+    check_filter_kwarg,
+    check_kwargs,
+    check_unknown_kwargs,
+    sub_str,
+)
 from ..request import request
 from ..request_class import Request
 from .filters import (
@@ -258,8 +263,9 @@ class Crossref:
         :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :returns: list[dict] when cursor is used, and dict when cursor is not used
         :rtype: dict | list[dict]
 
@@ -371,6 +377,7 @@ class Crossref:
             )
         else:
             check_filter_kwarg(kwargs)
+            check_unknown_kwargs(kwargs)
             return Request(
                 self.mailto,
                 self.ua_string,
@@ -455,8 +462,9 @@ class Crossref:
         :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: dict
 
         Usage::
@@ -567,8 +575,9 @@ class Crossref:
         :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: dict
 
         Usage::
@@ -689,8 +698,9 @@ class Crossref:
         :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: dict
 
         Usage::
@@ -812,8 +822,9 @@ class Crossref:
         :param warn: warn instead of raise error upon HTTP request error. default: False
             Especially helpful when passing in many DOIs where some may lead to request failures.
             Returns `None` when `warn=True` for each DOI that errors.
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: dict
 
         Usage::
@@ -932,8 +943,9 @@ class Crossref:
             found than this value, you will get only those found. Only used if `works=True`
         :param progress_bar: print progress bar. only used when doing deep paging (
             when using cursor parameter). Only used if `works=True`. default: False
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: dict
 
         Usage::
@@ -951,7 +963,7 @@ class Crossref:
             res = cr.types(ids = "journal-article", works = True, cursor = "*", cursor_max = 120, progress_bar = True)
 
             # field queries
-            res = cr.types(ids = "journal-article", works = True, query_bibliographic = 'gender', rows = 100)
+            res = cr.types(ids = "journal-article", works = True, query_bibliographic = 'gender', limit = 100)
             [ x.get('title') for x in res['message']['items'] ]
         """
         return request(
@@ -999,8 +1011,9 @@ class Crossref:
         :param facet: Set to `true` to include facet results (default: false).
             Optionally, pass a query string, e.g., `facet=type-name:*` or `facet=license=*`
             See Facets_ for options.
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples and FieldQueries_)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: dict
 
         Usage::
@@ -1036,8 +1049,9 @@ class Crossref:
         Determine registration agency for DOIs
 
         :param ids: DOIs (digital object identifier) or other identifiers
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: list
 
         Usage::
@@ -1092,8 +1106,9 @@ class Crossref:
         Get a random set of DOIs
 
         :param sample: Number of random DOIs to return. Default: 10. Max: 100
-        :param kwargs: additional named arguments passed on to `requests.get`, e.g., field
-            queries (see examples)
+        :param kwargs: field queries, given as `query_<field>` keyword arguments, e.g.,
+            `query_author = "carl boettiger"` (see FieldQueries_). Any other keyword
+            argument raises a `TypeError`
         :rtype: list
 
         Usage::

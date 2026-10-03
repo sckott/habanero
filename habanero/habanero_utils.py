@@ -37,6 +37,23 @@ def check_filter_kwarg(kwargs: dict) -> None:
         raise IncompatibleParameterError(mssg)
 
 
+def check_unknown_kwargs(kwargs: dict) -> None:
+    """Raise if any keyword argument is not a field query (`query_<field>`)
+
+    Field queries are the only extra keyword arguments the Crossref methods
+    use. Anything else would otherwise be silently dropped, e.g., a typo like
+    `qurey_author`, or `rows` instead of `limit`
+    """
+    unknown = sorted(k for k in kwargs if not k.startswith("query_"))
+    if unknown:
+        names = ", ".join(f"'{k}'" for k in unknown)
+        raise TypeError(
+            f"unexpected keyword argument(s): {names}. Only field queries "
+            "(`query_<field>`, e.g., `query_author`) are accepted as extra "
+            "keyword arguments"
+        )
+
+
 def check_json(x: httpx2.Response) -> None:
     ctype = x.headers["Content-Type"]
     matched = re.match("application/json", ctype)
