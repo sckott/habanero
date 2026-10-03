@@ -15,7 +15,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
     ``message``, ``status``, etc.).  Calling :meth:`count` returns an ``int``.
     Calling :meth:`url` returns a ``str``.
 
-    All builder methods (:meth:`query`, :meth:`filter`, :meth:`sort`,
+    All builder methods (:meth:`query`, :meth:`filters`, :meth:`sort`,
     :meth:`order`, :meth:`select`, :meth:`facet`, :meth:`limit`,
     :meth:`cursor`) return a new :class:`WorksQuery` instance — the original
     is never mutated.
@@ -33,7 +33,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
         q.query("climate change")
           .query(author="Hansen")
           .query(publisher_name="plos")
-          .filter(from_pub_date="2010", has_funder="true")
+          .filters(from_pub_date="2010", has_funder="true")
           .sort("published")
           .order("desc")
           .select("DOI", "title", "author", "published")
@@ -57,7 +57,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
       # instances are immutable, so each call returns a new instance
       # so you can chain calls without modifying the original instance
       # compare the two modifications of the `base` query
-      base = WorksQuery(cr).query("zika").filter(from_pub_date="2020")
+      base = WorksQuery(cr).query("zika").filters(from_pub_date="2020")
       base.sort("published").order("asc")
       base.sort("published").order("desc")
     """
@@ -123,9 +123,9 @@ class WorksQuery(Iterable[dict[str, Any]]):
             updates[f"query_{k}"] = v
         return self._clone(**updates)
 
-    def filter(self, **kwargs) -> "WorksQuery":
-        new_filter = {**self._params.get("filter", {}), **kwargs}
-        return self._clone(filter=new_filter)
+    def filters(self, **kwargs) -> "WorksQuery":
+        new_filters = {**self._params.get("filters", {}), **kwargs}
+        return self._clone(filters=new_filters)
 
     def sort(self, field: str) -> "WorksQuery":
         return self._clone(sort=field)
