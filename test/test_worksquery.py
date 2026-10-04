@@ -104,6 +104,57 @@ def _stub_crossref():
     return Crossref(client=client), calls
 
 
+def _stub_urls():
+    """A Crossref whose client records the full URL of each request"""
+    urls = []
+
+    def handler(request: httpx2.Request) -> httpx2.Response:
+        urls.append(str(request.url))
+        body = {
+            "status": "ok",
+            "message-type": "work-list",
+            "message": {"items": [], "total-results": 0},
+        }
+        return httpx2.Response(200, json=body)
+
+    client = httpx2.Client(transport=httpx2.MockTransport(handler))
+    return Crossref(client=client), urls
+
+
+@pytest.mark.parametrize(
+    "build",
+    [
+        lambda w: w.query("zika"),
+        lambda w: w.query("zika", author="Hansen").limit(5),
+        lambda w: w.filters(from_pub_date="2020", has_funder=True),
+        lambda w: w.filters(award_funder=["10.1/a", "10.1/b"], license_url="x"),
+        lambda w: w.query("a b").select("DOI", "title").sort("published").order("asc"),
+        lambda w: w.facet("type-name", 10).limit(0),
+        lambda w: w.cursor("*", cursor_max=10).limit(2),
+        lambda w: w.members(98).filters(from_pub_date="2020").limit(3),
+        lambda w: w.members().query("x"),
+    ],
+)
+def test_worksquery_url_matches_actual_request(build):
+    """WorksQuery: .url is the URL that is actually requested"""
+    stub, urls = _stub_urls()
+    query = build(WorksQuery(stub))
+    printed = query.url
+    query.execute()
+
+    assert urls[0] == printed
+
+
+def test_worksquery_url_does_not_mutate_filters():
+    """WorksQuery: building the url or executing leaves stored filters intact"""
+    stub, _ = _stub_urls()
+    query = WorksQuery(stub).filters(has_funder=True)
+    assert query.url
+    query.execute()
+
+    assert query._params["filters"] == {"has_funder": True}
+
+
 def test_worksquery_filters_accumulates_and_is_immutable():
     """WorksQuery: filters() merges with earlier filters, original unchanged"""
     base = WorksQuery(cr).filters(from_pub_date="2020")

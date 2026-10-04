@@ -2,6 +2,9 @@ import copy
 from collections.abc import Iterable, Iterator
 from typing import Any
 
+import httpx2
+
+from ..request_class import Request
 from .crossref import Crossref
 
 
@@ -149,23 +152,46 @@ class WorksQuery(Iterable[dict[str, Any]]):
 
     @property
     def url(self) -> str:
-        from urllib.parse import urlencode
+        """The URL that :meth:`execute` requests.
 
-        base = "https://api.crossref.org"
+        Built with the same code that builds the real request, so it matches
+        what is sent. With multiple ``ids`` several requests are made; the URL
+        for the first one is returned.
+        """
+        ids = self._ids
+        if isinstance(ids, str):
+            ids = ids.split()
+        elif isinstance(ids, int):
+            ids = [ids]
+
         if self._endpoint == "works":
             path = "/works"
+        elif ids:
+            path = f"/{self._endpoint}/{ids[0]}/works"
         else:
-            path = (
-                f"/{self._endpoint}/{self._ids}/works"
-                if self._ids
-                else f"/{self._endpoint}/works"
-            )
-        flat = {
-            k: str(v)
-            for k, v in self._params.items()
-            if not isinstance(v, (dict, list))
-        }
-        return f"{base}{path}?{urlencode(flat)}"
+            path = f"/{self._endpoint}"
+
+        params = copy.deepcopy(self._params)
+        req = Request(
+            self._cr.mailto,
+            self._cr.ua_string,
+            self._cr.timeout,
+            self._cr.base_url,
+            path,
+            params.pop("query", None),
+            params.pop("filters", None),
+            params.pop("offset", None),
+            params.pop("limit", None),
+            params.pop("sample", None),
+            params.pop("sort", None),
+            params.pop("order", None),
+            params.pop("facet", None),
+            params.pop("select", None),
+            params.pop("cursor", None),
+            params.pop("cursor_max", 5000),
+            **params,
+        )
+        return str(httpx2.Request("GET", req._url(), params=req.payload()).url)
 
     def count(self) -> int:
         params = {k: v for k, v in self._params.items() if k != "limit"}
@@ -178,7 +204,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
         return result["message"]["total-results"]
 
     def _call_method(self, **extra_params) -> dict[str, Any] | list[dict[str, Any]]:
-        params = {**self._params, **extra_params}
+        params = copy.deepcopy({**self._params, **extra_params})
         if self._endpoint == "works":
             return self._cr.works(**params)
         method = getattr(self._cr, self._endpoint)

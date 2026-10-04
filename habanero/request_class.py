@@ -78,7 +78,9 @@ class Request:
         tmpurl = self.url + self.path
         return tmpurl.strip("/")
 
-    def do_request(self, should_warn=False):
+    def payload(self):
+        """Validate parameters and build the query string parameters
+        that are sent with the request"""
         filt = filter_handler(self.filters)
         if isinstance(self.select, list):
             self.select = ",".join(self.select)
@@ -119,7 +121,10 @@ class Request:
         # add field queries
         payload.update(filter_dict(self.kwargs))
         # rename field queries
-        payload = rename_query_filters(payload)
+        return rename_query_filters(payload)
+
+    def do_request(self, should_warn=False):
+        payload = self.payload()
 
         js = self._req(payload=payload, should_warn=should_warn)
         if js is None:

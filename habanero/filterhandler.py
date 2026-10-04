@@ -5,6 +5,8 @@ def filter_handler(x: dict | None = None) -> str | None:
     if x is None:
         return None
     else:
+        # work on a copy so the caller's dict is never mutated
+        x = dict(x)
         # lowercase bools
         for k, v in x.items():
             if isinstance(v, bool):
