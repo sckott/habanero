@@ -14,9 +14,6 @@ Usage::
    # setup a different base URL
    Crossref(base_url = "http://some.other.url")
 
-   # setup an api key
-   Crossref(api_key = "123456")
-
    # Make request against works route
    cr.works(ids = '10.1371/journal.pone.0033693')
 

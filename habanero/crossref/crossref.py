@@ -8,7 +8,6 @@ from ..habanero_utils import (
     check_filter_kwarg,
     check_kwargs,
     check_unknown_kwargs,
-    sub_str,
 )
 from ..request import request
 from ..request_class import Request
@@ -25,7 +24,6 @@ class Crossref:
     Crossref: Class for Crossref search API methods
 
     :param base_url: Base URL to use for http requests
-    :param api_key: An API key to send with each http request
     :param mailto: A mailto string, see section below
     :param ua_string: A user agent string, see section below
     :param timeout: request timeout in seconds
@@ -128,8 +126,6 @@ class Crossref:
         cr = Crossref()
         # set a different base url
         Crossref(base_url = "http://some.other.url")
-        # set an api key
-        Crossref(api_key = "123456")
         # set a mailto address to get into the "polite pool"
         Crossref(mailto = "foo@bar.com")
         # set an additional user-agent string
@@ -239,7 +235,6 @@ class Crossref:
     def __init__(
         self,
         base_url: str = "https://api.crossref.org",
-        api_key: str | None = None,
         mailto: str | None = None,
         ua_string: str | None = None,
         timeout: int = 5,
@@ -258,7 +253,6 @@ class Crossref:
         if backoff_factor < 0:
             raise ValueError("backoff_factor must be >= 0")
         self.base_url = base_url
-        self.api_key = api_key
         self.mailto = mailto
         self.ua_string = ua_string
         self.timeout = timeout
@@ -316,7 +310,7 @@ class Crossref:
         return state
 
     def __repr__(self):
-        return f"""<{type(self).__name__} \nURL: {self.base_url}\nKEY: {sub_str(self.api_key)}\nMAILTO: {self.mailto}\nADDITIONAL UA STRING: {self.ua_string}\nTimeout: {self.timeout}\n>"""
+        return f"""<{type(self).__name__} \nURL: {self.base_url}\nMAILTO: {self.mailto}\nADDITIONAL UA STRING: {self.ua_string}\nTimeout: {self.timeout}\n>"""
 
     def works(
         self,
