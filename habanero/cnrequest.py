@@ -95,7 +95,7 @@ def make_request(
     ty_pe = cn_format_headers[for_mat]
 
     if for_mat == "citeproc-json":
-        url = f"http://api.crossref.org/works/{ids}/{ty_pe}"
+        url = f"https://api.crossref.org/works/{ids}/{ty_pe}"
     else:
         if for_mat == "text":
             ty_pe = ty_pe + "; style = " + style + "; locale = " + locale

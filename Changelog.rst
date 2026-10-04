@@ -12,6 +12,7 @@ DEVELOPMENT VERSION (xx)
 * Requests are now retried when they fail for a likely-temporary reason: HTTP 429 (rate limited), 502, 503 and 504, plus timeouts and dropped or refused connections. Up to 3 retries by default, waiting 1s, 2s, 4s (or as long as the `Retry-After` header says, unless that is over 60s). Set `retries` and `backoff_factor` on `Crossref` to change this; `retries=0` turns it off. Other errors (400, 404, 500, ...) are never retried, and when retries run out you get the same error as before. Each retry is logged at INFO level on the `habanero` logger.
 * `WorksQuery.filter()` renamed to `WorksQuery.filters()` to match the `filters` parameter of `Crossref` methods. Also fixed a bug where `execute()`, `count()` and iteration raised an `IncompatibleParameterError` for any query that used it.
 * Drop `api_key` parameter from `Crossref` class; that parameter was not used; and there's no API key for the public portion of the Crossref API.
+* Change base URL used in `content_negotiation` to use `https` scheme intead of `http`.
 
 2.9.2 (2026-06-17)
 --------------------
