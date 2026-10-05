@@ -13,9 +13,12 @@ class WorksQuery(Iterable[dict[str, Any]]):
     Query builder for the Crossref API's works endpoint.
 
     Iterating over an instance (``for item in q``) yields individual work
-    records as ``dict[str, Any]``.  Calling :meth:`execute` returns the raw
-    Crossref API response as ``dict[str, Any]`` (the full envelope including
-    ``message``, ``status``, etc.).  Calling :meth:`count` returns an ``int``.
+    records as ``dict[str, Any]``, across all pages when :meth:`cursor` is
+    used.  Calling :meth:`execute` returns the raw Crossref API response, the
+    same thing the wrapped :class:`~habanero.Crossref` method returns: a
+    ``dict[str, Any]`` (the full envelope including ``message``, ``status``,
+    etc.), or a ``list`` of such dicts, one per page, when :meth:`cursor`
+    paged through several pages.  Calling :meth:`count` returns an ``int``.
     Calling :meth:`url` returns a ``str``.
 
     All builder methods (:meth:`query`, :meth:`filters`, :meth:`sort`,
@@ -74,7 +77,8 @@ class WorksQuery(Iterable[dict[str, Any]]):
 
     def __iter__(self) -> Iterator[dict[str, Any]]:
         data = self.execute()
-        return iter(data["message"]["items"])
+        pages = data if isinstance(data, list) else [data]
+        return (item for page in pages for item in page["message"]["items"])
 
     def __repr__(self):
         ids_part = f", ids={self._ids!r}" if self._ids else ""
@@ -147,7 +151,7 @@ class WorksQuery(Iterable[dict[str, Any]]):
     def limit(self, n: int) -> "WorksQuery":
         return self._clone(limit=n)
 
-    def cursor(self, value: str = "*", cursor_max: float = 5000) -> "WorksQuery":
+    def cursor(self, value: str = "*", cursor_max: int | None = 5000) -> "WorksQuery":
         return self._clone(cursor=value, cursor_max=cursor_max)
 
     @property
@@ -194,13 +198,22 @@ class WorksQuery(Iterable[dict[str, Any]]):
         return str(httpx2.Request("GET", req._url(), params=req.payload()).url)
 
     def count(self) -> int:
-        params = {k: v for k, v in self._params.items() if k != "limit"}
+        # cursor/cursor_max are dropped too: count() needs a single request,
+        # and paging with limit=0 would only ever return empty pages
+        params = {
+            k: v
+            for k, v in self._params.items()
+            if k not in ("limit", "cursor", "cursor_max")
+        }
         if self._endpoint == "works":
             result = self._cr.works(**params, limit=0)
         else:
             method = getattr(self._cr, self._endpoint)
             result = method(ids=self._ids, works=True, **params, limit=0)
-        assert isinstance(result, dict)
+        if not isinstance(result, dict):
+            raise TypeError(
+                f"count() expected a single response dict, got {type(result).__name__}"
+            )
         return result["message"]["total-results"]
 
     def _call_method(self, **extra_params) -> dict[str, Any] | list[dict[str, Any]]:
@@ -210,9 +223,18 @@ class WorksQuery(Iterable[dict[str, Any]]):
         method = getattr(self._cr, self._endpoint)
         return method(ids=self._ids, works=True, **params)
 
-    def execute(self) -> dict[str, Any]:
+    def execute(self) -> dict[str, Any] | list[dict[str, Any]]:
+        """Run the query and return the raw response.
+
+        Returns a ``dict``, or a ``list`` of ``dict`` (one per page) when
+        :meth:`cursor` paged through several pages.
+        """
         if self._result is None:
             result = self._call_method()
-            assert isinstance(result, dict)
+            if not isinstance(result, (dict, list)):
+                raise TypeError(
+                    "no usable response was returned (the request may have "
+                    f"failed); got {type(result).__name__}"
+                )
             self._result = result
         return self._result

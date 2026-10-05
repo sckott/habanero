@@ -98,7 +98,7 @@ class Request:
             raise TypeError("cursor must be of class str")
 
         if not isinstance(self.cursor_max, (type(None), int)):
-            raise TypeError("cursor_max must be of class int")
+            raise TypeError("cursor_max must be of class int (or None for no cap)")
 
         payload = {
             "query": self.query,
@@ -135,29 +135,42 @@ class Request:
         return res
 
     def _redo_req(self, js, payload, cu, max_avail, should_warn):
-        if cu is not None and self.cursor_max > len(js["message"]["items"]):
+        # cursor_max=None means no cap: page until everything is retrieved
+        cursor_max = math.inf if self.cursor_max is None else self.cursor_max
+        first_n = len(js["message"]["items"])
+
+        if cu is not None and cursor_max > first_n:
             res = [js]
-            total = len(js["message"]["items"])
+            total = first_n
 
             # progress bar setup
+            pbar = None
             if self.progress_bar:
-                actual_max = (
-                    self.cursor_max if self.cursor_max is not None else max_avail
-                )
-                actual_max = min(actual_max, max_avail)
+                actual_max = min(cursor_max, max_avail)
                 runs = math.ceil(actual_max / (self.limit or 20))
-                pbar = tqdm(total=runs - 1)
+                pbar = tqdm(total=max(runs - 1, 0))
 
-            while cu is not None and self.cursor_max > total and total < max_avail:
-                payload["cursor"] = cu
-                out = self._req(payload=payload, should_warn=should_warn)
-                cu = out["message"].get("next-cursor")
-                res.append(out)
-                total = sum([len(z["message"]["items"]) for z in res])
-                if self.progress_bar:
-                    pbar.update(1)
-            if self.progress_bar:
-                pbar.close()
+            try:
+                while cu is not None and cursor_max > total and total < max_avail:
+                    payload["cursor"] = cu
+                    out = self._req(payload=payload, should_warn=should_warn)
+                    if out is None:
+                        # request failed and should_warn=True: the warning was
+                        # already issued, so keep the pages retrieved so far
+                        break
+                    items = out["message"]["items"]
+                    if not items:
+                        # an empty page can still carry a next-cursor; stop
+                        # rather than loop forever
+                        break
+                    cu = out["message"].get("next-cursor")
+                    res.append(out)
+                    total += len(items)
+                    if pbar is not None:
+                        pbar.update(1)
+            finally:
+                if pbar is not None:
+                    pbar.close()
             return res
         else:
             return js

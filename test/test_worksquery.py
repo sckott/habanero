@@ -1,3 +1,7 @@
+import pathlib
+import subprocess
+import sys
+import textwrap
 from unittest.mock import patch
 
 import httpx2
@@ -204,3 +208,184 @@ def test_worksquery_same_as_wrapped_method_real_requests():
     result_works = cr.members(ids=98, works=True, select=["DOI", "title"], limit=3)
 
     assert result_WorksQuery == result_works
+
+
+# --- cursor paging ----------------------------------------------------------
+
+
+def _paged_stub(*pages, total=None):
+    """A Crossref serving `pages` (lists of DOIs) in order, one per request"""
+    calls = []
+    total = total if total is not None else sum(len(p) for p in pages)
+
+    def handler(request: httpx2.Request) -> httpx2.Response:
+        calls.append(dict(request.url.params))
+        i = len(calls) - 1
+        if i >= len(pages):
+            raise AssertionError("more requests than pages")
+        nxt = f"c{i + 1}" if i + 1 < len(pages) else None
+        body = {
+            "status": "ok",
+            "message-type": "work-list",
+            "message": {
+                "items": [{"DOI": d} for d in pages[i]],
+                "total-results": total,
+                "next-cursor": nxt,
+            },
+        }
+        return httpx2.Response(200, json=body)
+
+    client = httpx2.Client(transport=httpx2.MockTransport(handler))
+    return Crossref(client=client), calls
+
+
+def test_worksquery_cursor_execute_returns_all_pages():
+    """WorksQuery: execute() with cursor() returns the list of pages"""
+    stub, calls = _paged_stub(["a", "b"], ["c", "d"], ["e"])
+    res = WorksQuery(stub).query("x").limit(2).cursor("*", cursor_max=10).execute()
+
+    assert isinstance(res, list)
+    assert len(res) == 3
+    assert len(calls) == 3
+
+
+def test_worksquery_cursor_matches_wrapped_method():
+    """WorksQuery: cursor() result equals what Crossref.works returns"""
+    stub1, _ = _paged_stub(["a", "b"], ["c", "d"])
+    stub2, _ = _paged_stub(["a", "b"], ["c", "d"])
+
+    via_query = WorksQuery(stub1).query("x").limit(2).cursor("*", 10).execute()
+    via_works = stub2.works(query="x", limit=2, cursor="*", cursor_max=10)
+
+    assert via_query == via_works
+
+
+def test_worksquery_cursor_iter_yields_items_from_every_page():
+    """WorksQuery: iterating a cursor query yields items from all pages"""
+    stub, _ = _paged_stub(["a", "b"], ["c", "d"], ["e"])
+    query = WorksQuery(stub).query("x").limit(2).cursor("*", cursor_max=10)
+
+    assert [w["DOI"] for w in query] == list("abcde")
+
+
+def test_worksquery_cursor_iter_respects_cursor_max():
+    stub, _ = _paged_stub(["a", "b"], ["c", "d"], ["e", "f"])
+    query = WorksQuery(stub).query("x").limit(2).cursor("*", cursor_max=4)
+
+    assert [w["DOI"] for w in query] == list("abcd")
+
+
+def test_worksquery_cursor_single_page_is_a_dict_and_iterates():
+    """WorksQuery: a cursor query that fits in one page returns a dict"""
+    stub, _ = _paged_stub(["a", "b"])
+    query = WorksQuery(stub).query("x").limit(2).cursor("*", cursor_max=10)
+
+    assert isinstance(query.execute(), dict)
+    assert [w["DOI"] for w in query] == ["a", "b"]
+
+
+def test_worksquery_cursor_max_float_is_rejected():
+    """WorksQuery: cursor_max must be an int"""
+    stub, calls = _paged_stub(["a", "b"], ["c", "d"])
+    query = WorksQuery(stub).query("x").limit(2).cursor("*", cursor_max=4.0)  # type: ignore[arg-type]
+
+    with pytest.raises(TypeError):
+        query.execute()
+    assert calls == []
+
+
+def test_worksquery_cursor_cursor_max_none_fetches_everything():
+    stub, calls = _paged_stub(["a", "b"], ["c", "d"], ["e"])
+    query = WorksQuery(stub).query("x").limit(2).cursor("*", cursor_max=None)
+
+    assert [w["DOI"] for w in query] == list("abcde")
+    assert len(calls) == 3
+
+
+def test_worksquery_cursor_other_endpoint():
+    """WorksQuery: cursor() also works with endpoints such as members"""
+    stub, _ = _paged_stub(["a", "b"], ["c", "d"])
+    query = WorksQuery(stub).members(98).limit(2).cursor("*", cursor_max=10)
+
+    assert [w["DOI"] for w in query] == list("abcd")
+
+
+def test_worksquery_count_with_cursor_makes_a_single_request():
+    """WorksQuery: count() ignores cursor() and never pages"""
+    stub, calls = _paged_stub([], total=42)
+    n = WorksQuery(stub).query("x").limit(5).cursor("*", cursor_max=100).count()
+
+    assert n == 42
+    assert len(calls) == 1
+    assert "cursor" not in calls[0]
+    assert calls[0]["rows"] == "0"
+
+
+def test_worksquery_count_with_cursor_on_other_endpoint():
+    stub, calls = _paged_stub([], total=7)
+    n = WorksQuery(stub).members(98).cursor("*").count()
+
+    assert n == 7
+    assert len(calls) == 1
+    assert "cursor" not in calls[0]
+
+
+# --- no asserts for runtime validation --------------------------------------
+
+
+@pytest.mark.parametrize("bad", [None, "oops", 5])
+def test_worksquery_execute_raises_typeerror_on_unusable_result(bad):
+    """WorksQuery: bad results raise TypeError, not AssertionError"""
+    query = WorksQuery(cr).query("x")
+
+    with (
+        patch.object(WorksQuery, "_call_method", return_value=bad),
+        pytest.raises(TypeError),
+    ):
+        query.execute()
+
+
+@pytest.mark.parametrize("bad", [None, [{"message": {}}]])
+def test_worksquery_count_raises_typeerror_on_unusable_result(bad):
+    query = WorksQuery(cr).query("x")
+
+    with patch.object(cr, "works", return_value=bad), pytest.raises(TypeError):
+        query.count()
+
+
+def test_worksquery_validation_survives_python_O():
+    """WorksQuery: validation still happens when asserts are stripped (-O)"""
+    script = textwrap.dedent(
+        """
+        from unittest.mock import patch
+        from habanero import Crossref, WorksQuery
+
+        q = WorksQuery(Crossref()).query("x")
+        with patch.object(WorksQuery, "_call_method", return_value=None):
+            try:
+                q.execute()
+            except TypeError:
+                print("TypeError")
+            else:
+                print("no error")
+        with patch.object(Crossref, "works", return_value=None):
+            try:
+                q.count()
+            except TypeError:
+                print("TypeError")
+            else:
+                print("no error")
+        """
+    )
+    root = pathlib.Path(__file__).resolve().parent.parent
+    proc = subprocess.run(
+        [sys.executable, "-O", "-c", script],
+        capture_output=True,
+        text=True,
+        cwd=root,
+        timeout=60,
+        check=False,
+    )
+
+    assert proc.returncode == 0, proc.stderr
+    assert proc.stdout.split() == ["TypeError", "TypeError"]

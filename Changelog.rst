@@ -13,6 +13,8 @@ DEVELOPMENT VERSION (xx)
 * `WorksQuery.filter()` renamed to `WorksQuery.filters()` to match the `filters` parameter of `Crossref` methods. Also fixed a bug where `execute()`, `count()` and iteration raised an `IncompatibleParameterError` for any query that used it.
 * Drop `api_key` parameter from `Crossref` class; that parameter was not used; and there's no API key for the public portion of the Crossref API.
 * Change base URL used in `content_negotiation` to use `https` scheme intead of `http`.
+* `WorksQuery` now works with `.cursor()`: `execute()` returns what the wrapped `Crossref` method returns (a `dict`, or a list of pages when cursor paging fetched several), iterating yields the items from every page (previously only the first), and `count()` ignores the cursor and makes a single request.
+* Cursor paging fixes: with `warn=True` a failed page no longer raises a `TypeError`, paging stops and the pages retrieved so far are returned; `cursor_max=None` now means no cap (previously a `TypeError`); paging stops if a page comes back empty instead of looping forever.
 
 2.9.2 (2026-06-17)
 --------------------
