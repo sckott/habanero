@@ -44,15 +44,12 @@ Repository = "https://github.com/sckott/habanero"
 "Bug Tracker" = "https://github.com/sckott/habanero/issues"
 Changelog = "https://github.com/sckott/habanero/blob/main/Changelog.rst"
 
-[tool.setuptools.dynamic]
-version = { attr = "habanero.__version__" }
 
 [tool.ruff]
 line-length = 88
 
 exclude = ["build", "dist"]
 
-# from https://github.com/pypa/setuptools/discussions/3627
 [project.optional-dependencies]
 bibtex = ["bibtexparser>=2.0.0b7"]
 
@@ -71,6 +68,3 @@ dev = [
     "sphinxcontrib-issuetracker>=0.11",
     "vcrpy>=8.2.1",
 ]
-
-[tool.setuptools.packages.find]
-exclude = ["docs*", "test*"]
