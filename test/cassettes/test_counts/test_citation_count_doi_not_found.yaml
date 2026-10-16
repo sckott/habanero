@@ -1,0 +1,46 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - doi.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3.4
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3.4
+    method: GET
+    uri: https://doi.crossref.org/openurl?id=doi%3A10.1016%2Fj.fbr.2012&pid=some.email%40gmail.com&noredirect=true&format=unixsd
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<crossref_result xmlns=\"\
+        http://www.crossref.org/qrschema/3.0\" version=\"3.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\
+        \ xsi:schemaLocation=\"http://www.crossref.org/qrschema/3.0 http://www.crossref.org/schemas/crossref_query_output3.0.xsd\"\
+        >\r\n  <query_result>\r\n    <head>\r\n      <doi_batch_id>none</doi_batch_id>\r\
+        \n    </head>\r\n    <body>\r\n      <query status=\"unresolved\" fl_count=\"\
+        0\">\r\n        <doi>10.1016/j.fbr.2012</doi>\r\n      </query>\r\n    </body>\r\
+        \n  </query_result>\r\n</crossref_result>"
+    headers:
+      connection:
+      - keep-alive
+      content-language:
+      - en-US
+      content-type:
+      - text/xml;charset=UTF-8
+      crossref-deployment-name:
+      - query2-1
+      date:
+      - Fri, 16 Oct 2026 16:31:53 GMT
+      strict-transport-security:
+      - max-age=31536000;
+      transfer-encoding:
+      - chunked
+    status:
+      code: 200
+      message: ''
+version: 1

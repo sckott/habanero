@@ -15,6 +15,7 @@ DEVELOPMENT VERSION (xx)
 * Change base URL used in `content_negotiation` to use `https` scheme intead of `http`.
 * `WorksQuery` now works with `.cursor()`: `execute()` returns what the wrapped `Crossref` method returns (a `dict`, or a list of pages when cursor paging fetched several), iterating yields the items from every page (previously only the first), and `count()` ignores the cursor and makes a single request.
 * Cursor paging fixes: with `warn=True` a failed page no longer raises a `TypeError`, paging stops and the pages retrieved so far are returned; `cursor_max=None` now means no cap (previously a `TypeError`); paging stops if a page comes back empty instead of looping forever.
+* `citation_count()` changes: deprecate `key` parameter in favor of `email` and `email` is required; a DeprecationWarning is thrown if `key` is used; changed the base URL.
 
 2.9.2 (2026-06-17)
 --------------------

@@ -1,0 +1,138 @@
+interactions:
+- request:
+    body: ''
+    headers:
+      accept:
+      - '*/*'
+      accept-encoding:
+      - gzip, deflate, zstd
+      connection:
+      - keep-alive
+      host:
+      - doi.crossref.org
+      user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3.4
+      x-user-agent:
+      - python-httpx2/2.12.0 habanero/2.9.3.4
+    method: GET
+    uri: https://doi.crossref.org/openurl?id=doi%3A10.1371%2Fjournal.pone.0042793&pid=some.email%40gmail.com&noredirect=true&format=unixsd
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<crossref_result xmlns=\"\
+        http://www.crossref.org/qrschema/3.0\" version=\"3.0\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\
+        \ xsi:schemaLocation=\"http://www.crossref.org/qrschema/3.0 http://www.crossref.org/schemas/crossref_query_output3.0.xsd\"\
+        >\r\n  <query_result>\r\n    <head>\r\n      <doi_batch_id>none</doi_batch_id>\r\
+        \n    </head>\r\n    <body>\r\n      <query status=\"resolved\">\r\n     \
+        \   <doi type=\"journal_article\">10.1371/journal.pone.0042793</doi>\r\n \
+        \       <crm-item name=\"publisher-name\" type=\"string\">Public Library of\
+        \ Science (PLoS)</crm-item>\r\n        <crm-item name=\"prefix-name\" type=\"\
+        string\">Public Library of Science</crm-item>\r\n        <crm-item name=\"\
+        member-id\" type=\"number\">340</crm-item>\r\n        <crm-item name=\"citation-id\"\
+        \ type=\"number\">57090065</crm-item>\r\n        <crm-item name=\"journal-id\"\
+        \ type=\"number\">60407</crm-item>\r\n        <crm-item name=\"deposit-timestamp\"\
+        \ type=\"number\">20120815134710</crm-item>\r\n        <crm-item name=\"owner-prefix\"\
+        \ type=\"string\">10.1371</crm-item>\r\n        <crm-item name=\"last-update\"\
+        \ type=\"date\">2018-10-23T01:12:24Z</crm-item>\r\n        <crm-item name=\"\
+        created\" type=\"date\">2012-08-15T17:14:24Z</crm-item>\r\n        <crm-item\
+        \ name=\"citedby-count\" type=\"number\">71</crm-item>\r\n        <doi_record>\r\
+        \n          <crossref xmlns=\"http://www.crossref.org/xschema/1.1\" xsi:schemaLocation=\"\
+        http://www.crossref.org/xschema/1.1 http://doi.crossref.org/schemas/unixref1.1.xsd\"\
+        >\r\n            <journal>\r\n              <journal_metadata language=\"\
+        en\">\r\n                <full_title>PLoS ONE</full_title>\r\n           \
+        \     <abbrev_title>PLoS ONE</abbrev_title>\r\n                <issn media_type=\"\
+        electronic\">1932-6203</issn>\r\n              </journal_metadata>\r\n   \
+        \           <journal_issue>\r\n                <publication_date media_type=\"\
+        online\">\r\n                  <month>8</month>\r\n                  <day>15</day>\r\
+        \n                  <year>2012</year>\r\n                </publication_date>\r\
+        \n                <journal_volume>\r\n                  <volume>7</volume>\r\
+        \n                </journal_volume>\r\n                <issue>8</issue>\r\n\
+        \              </journal_issue>\r\n              <journal_article publication_type=\"\
+        full_text\">\r\n                <titles>\r\n                  <title>Well-Being\
+        \ and Social Capital on Planet Earth: Cross-National Evidence from 142 Countries</title>\r\
+        \n                </titles>\r\n                <contributors>\r\n        \
+        \          <person_name contributor_role=\"author\" sequence=\"first\">\r\n\
+        \                    <given_name>Roc\xEDo</given_name>\r\n               \
+        \     <surname>Calvo</surname>\r\n                  </person_name>\r\n   \
+        \               <person_name contributor_role=\"author\" sequence=\"additional\"\
+        >\r\n                    <given_name>Yuhui</given_name>\r\n              \
+        \      <surname>Zheng</surname>\r\n                  </person_name>\r\n  \
+        \                <person_name contributor_role=\"author\" sequence=\"additional\"\
+        >\r\n                    <given_name>Santosh</given_name>\r\n            \
+        \        <surname>Kumar</surname>\r\n                  </person_name>\r\n\
+        \                  <person_name contributor_role=\"author\" sequence=\"additional\"\
+        >\r\n                    <given_name>Analia</given_name>\r\n             \
+        \       <surname>Olgiati</surname>\r\n                  </person_name>\r\n\
+        \                  <person_name contributor_role=\"author\" sequence=\"additional\"\
+        >\r\n                    <given_name>Lisa</given_name>\r\n               \
+        \     <surname>Berkman</surname>\r\n                  </person_name>\r\n \
+        \                 <person_name contributor_role=\"editor\" sequence=\"first\"\
+        >\r\n                    <given_name>Nancy</given_name>\r\n              \
+        \      <surname>Mock</surname>\r\n                  </person_name>\r\n   \
+        \             </contributors>\r\n                <publication_date media_type=\"\
+        online\">\r\n                  <month>8</month>\r\n                  <day>15</day>\r\
+        \n                  <year>2012</year>\r\n                </publication_date>\r\
+        \n                <pages>\r\n                  <first_page>e42793</first_page>\r\
+        \n                </pages>\r\n                <publisher_item>\r\n       \
+        \           <item_number>10.1371/journal.pone.0042793</item_number>\r\n  \
+        \              </publisher_item>\r\n                <crossmark>\r\n      \
+        \            <crossmark_version>1</crossmark_version>\r\n                \
+        \  <crossmark_policy>10.1371/journal.pone.corrections_policy</crossmark_policy>\r\
+        \n                  <crossmark_domains>\r\n                    <crossmark_domain>\r\
+        \n                      <domain>www.plosone.org</domain>\r\n             \
+        \       </crossmark_domain>\r\n                  </crossmark_domains>\r\n\
+        \                  <crossmark_domain_exclusive>false</crossmark_domain_exclusive>\r\
+        \n                  <custom_metadata>\r\n                    <ai:program xmlns:ai=\"\
+        http://www.crossref.org/AccessIndicators.xsd\" name=\"AccessIndicators\">\r\
+        \n                      <ai:license_ref>http://creativecommons.org/licenses/by/4.0/</ai:license_ref>\r\
+        \n                    </ai:program>\r\n                  </custom_metadata>\r\
+        \n                </crossmark>\r\n                <doi_data>\r\n         \
+        \         <doi>10.1371/journal.pone.0042793</doi>\r\n                  <timestamp>20120815134710</timestamp>\r\
+        \n                  <resource>https://dx.plos.org/10.1371/journal.pone.0042793</resource>\r\
+        \n                </doi_data>\r\n                <component_list>\r\n    \
+        \              <component parent_relation=\"isPartOf\">\r\n              \
+        \      <description />\r\n                    <doi_data>\r\n             \
+        \         <doi>10.1371/journal.pone.0042793.t001</doi>\r\n               \
+        \       <resource>http://dx.plos.org/10.1371/journal.pone.0042793.t001</resource>\r\
+        \n                    </doi_data>\r\n                  </component>\r\n  \
+        \                <component parent_relation=\"isPartOf\">\r\n            \
+        \        <description />\r\n                    <doi_data>\r\n           \
+        \           <doi>10.1371/journal.pone.0042793.t002</doi>\r\n             \
+        \         <resource>http://dx.plos.org/10.1371/journal.pone.0042793.t002</resource>\r\
+        \n                    </doi_data>\r\n                  </component>\r\n  \
+        \                <component parent_relation=\"isPartOf\">\r\n            \
+        \        <description />\r\n                    <doi_data>\r\n           \
+        \           <doi>10.1371/journal.pone.0042793.t003</doi>\r\n             \
+        \         <resource>http://dx.plos.org/10.1371/journal.pone.0042793.t003</resource>\r\
+        \n                    </doi_data>\r\n                  </component>\r\n  \
+        \                <component parent_relation=\"isPartOf\">\r\n            \
+        \        <description />\r\n                    <doi_data>\r\n           \
+        \           <doi>10.1371/journal.pone.0042793.t004</doi>\r\n             \
+        \         <resource>http://dx.plos.org/10.1371/journal.pone.0042793.t004</resource>\r\
+        \n                    </doi_data>\r\n                  </component>\r\n  \
+        \                <component parent_relation=\"isPartOf\">\r\n            \
+        \        <description />\r\n                    <doi_data>\r\n           \
+        \           <doi>10.1371/journal.pone.0042793.t005</doi>\r\n             \
+        \         <resource>http://dx.plos.org/10.1371/journal.pone.0042793.t005</resource>\r\
+        \n                    </doi_data>\r\n                  </component>\r\n  \
+        \              </component_list>\r\n              </journal_article>\r\n \
+        \           </journal>\r\n          </crossref>\r\n        </doi_record>\r\
+        \n      </query>\r\n    </body>\r\n  </query_result>\r\n</crossref_result>"
+    headers:
+      connection:
+      - keep-alive
+      content-language:
+      - en-US
+      content-type:
+      - text/xml;charset=UTF-8
+      crossref-deployment-name:
+      - query2-1
+      date:
+      - Fri, 16 Oct 2026 16:31:52 GMT
+      strict-transport-security:
+      - max-age=31536000;
+      transfer-encoding:
+      - chunked
+    status:
+      code: 200
+      message: ''
+version: 1
