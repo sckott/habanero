@@ -42,6 +42,22 @@ def test_filter_details():
     assert isinstance(res_funders, dict)
 
 
+@pytest.mark.parametrize(
+    "name",
+    ["publisher_name", "affiliation", "public_references", "has_description", "location"],
+)
+def test_retired_works_filters_are_not_advertised(name):
+    assert name not in cr.filter_names(route="works")
+    assert name not in cr.filter_details(route="works")
+
+
+def test_route_specific_filters_remain_available():
+    assert "has_affiliation" in cr.filter_names(route="works")
+    assert "has_affiliation" in cr.filter_details(route="works")
+    assert "location" in cr.filter_names(route="funders")
+    assert "location" in cr.filter_details(route="funders")
+
+
 @no_type_check
 def test_filter_details_errors():
     with pytest.raises(ValueError):
