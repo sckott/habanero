@@ -11,10 +11,6 @@ works_filter_details: dict[str, dict] = {
         "possible_values": "{string}",
         "description": "metadata where funder DOI was asserted by the given body (crossref or publisher)",
     },
-    "location": {
-        "possible_values": "{country_name}",
-        "description": "funder records where location = {country name}. Only works on /funders route",
-    },
     "prefix": {
         "possible_values": "{owner_prefix}",
         "description": "metadata belonging to a DOI owner prefix {owner_prefix} (e.g. '10.1016' )",
@@ -195,10 +191,6 @@ works_filter_details: dict[str, dict] = {
         "possible_values": None,
         "description": "metadata for records that have been aliased and redirect to another DOI",
     },
-    "has_description": {
-        "possible_values": None,
-        "description": "metadata for records that have a description field",
-    },
     "has_award": {
         "possible_values": None,
         "description": "metadata for records that were funded by an award",
@@ -358,18 +350,6 @@ works_filter_details: dict[str, dict] = {
     "relation_object_type": {
         "possible_values": None,
         "description": "One of the identifier types from the Crossref relations schema (e.g. doi, issn)",
-    },
-    "public_references": {
-        "possible_values": None,
-        "description": "metadata where publishers allow references to be distributed publically",
-    },
-    "publisher_name": {
-        "possible_values": None,
-        "description": "metadata for records with an exact matching publisher name",
-    },
-    "affiliation": {
-        "possible_values": None,
-        "description": "metadata for records with at least one contributor with the given affiliation",
     },
 }
 
