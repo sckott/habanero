@@ -44,7 +44,13 @@ def test_filter_details():
 
 @pytest.mark.parametrize(
     "name",
-    ["publisher_name", "affiliation", "public_references", "has_description", "location"],
+    [
+        "publisher_name",
+        "affiliation",
+        "public_references",
+        "has_description",
+        "location",
+    ],
 )
 def test_retired_works_filters_are_not_advertised(name):
     assert name not in cr.filter_names(route="works")
