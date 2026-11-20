@@ -1,0 +1,35 @@
+name: Check filters
+
+# Once a day, check the filter dictionaries (works, members, funders) in
+# habanero/crossref/filters.py against the Crossref API. Fails the run if a
+# filter gets rejected, or if the API has a filter that's missing from the
+# dictionaries; known cases are listed in scripts/check_filters.py.
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4
+        with:
+          version: "0.12.22"
+          python-version: "3.14"
+
+      - name: Install the project
+        run: uv sync
+
+      - name: Check filters
+        env:
+          # optional; identifies requests to Crossref's polite pool
+          CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
+        run: uv run python scripts/check_filters.py
