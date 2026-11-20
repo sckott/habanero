@@ -3,6 +3,7 @@ Changelog
 
 DEVELOPMENT VERSION (xx)
 --------------------
+* Updated known set of works route filters (#234) (#237) thanks @Ychris12138
 * Renamed a number of arguments in methods/classes that were shadowing built-in names: `input` to `data` in `WorksContainer`; `type` to `route` in `filter_names` and `filter_details`; `format` to `citation_format` in `content_negotiation`; `filter` to `filters` in `Crossref` methods. (#222) (#223)
 * Drop field queries that have values of None in internal method `filter_dict` (#232) thanks @ZacKienzle2
 * Fixed filter name handling in `filter_handler`: `relation_type`, `relation_object` and `relation_object_type` are now sent to Crossref as `relation.type`, `relation.object` and `relation.object-type` (previously sent with hyphens, which Crossref rejected with a 400), and `full_text_application` no longer raises a `KeyError` and is sent as `full-text.application`. (#233) thanks @guillaumegay13
