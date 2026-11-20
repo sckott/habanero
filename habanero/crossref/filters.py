@@ -231,10 +231,6 @@ works_filter_details: dict[str, dict] = {
         "possible_values": "{type}",
         "description": "metadata records whose type = '{type}' Type must be an ID value from the list of types returned by the '/types' resource",
     },
-    "directory": {
-        "possible_values": "{directory}",
-        "description": "metadata records whose article or serial are mentioned in the given '{directory}'. Currently the only supported value is 'doaj'",
-    },
     "doi": {
         "possible_values": "{doi}",
         "description": "metadata describing the DOI '{doi}'",
