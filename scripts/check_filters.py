@@ -30,9 +30,9 @@ Run daily by ``.github/workflows/check-filters.yml``.
 
 Usage::
 
-    python scripts/check_filters.py
-    python scripts/check_filters.py --routes works members --delay 0.5
-    python scripts/check_filters.py --mailto you@example.com
+    uv run python scripts/check_filters.py
+    uv run python scripts/check_filters.py --routes works members --delay 0.5
+    uv run python scripts/check_filters.py --mailto you@example.com
 """
 
 import argparse
