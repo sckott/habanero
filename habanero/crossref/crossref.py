@@ -1,13 +1,18 @@
+import re
 import weakref
 from types import TracebackType
 from typing import Any
 
 import httpx2
 
+from ..exceptions import RequestError
 from ..habanero_utils import (
     check_filter_kwarg,
+    check_json,
     check_kwargs,
     check_unknown_kwargs,
+    is_json,
+    make_ua,
 )
 from ..request import request
 from ..request_class import Request
@@ -17,6 +22,15 @@ from .filters import (
     members_filter_details,
     works_filter_details,
 )
+
+
+def _bare_doi(doi: str | None) -> str | None:
+    """Drop any DOI URL prefix; the data citation API returns nothing with one"""
+    if doi is None:
+        return None
+    return re.sub(
+        r"^(https?://(dx\.)?doi\.org/|doi:)", "", doi.strip(), flags=re.IGNORECASE
+    )
 
 
 class Crossref:
@@ -1210,6 +1224,78 @@ class Crossref:
         else:
             k = res
         return [z["message"]["agency"]["label"] for z in k]
+
+    def data_citations(
+        self,
+        subject_id: str | None = None,
+        object_id: str | None = None,
+        member_id: str | int | None = None,
+        relation: str | None = None,
+        from_created_date: str | None = None,
+        until_created_date: str | None = None,
+        page: int | None = None,
+        limit: int | None = None,
+    ) -> dict:
+        """
+        Search data citations: links between Crossref works and datasets
+
+        Uses Crossref's data citation endpoint, the replacement for Event Data.
+        The endpoint is in beta, so its output may change. Crossref asks beta
+        users to identify themselves, so set `mailto` on `Crossref`. See
+        https://www.crossref.org/documentation/retrieve-metadata/data-citations/
+
+        :param subject_id: DOI of the citing work
+        :param object_id: DOI of the cited dataset
+        :param member_id: Crossref member ID of the citing work
+        :param relation: Relation type, e.g., `references`. An unknown relation
+            type returns no results rather than an error
+        :param from_created_date: Citations added after this date and/or time,
+            e.g., `2026-01-20T00:00:00`
+        :param until_created_date: Citations added up to and including this date
+            and/or time
+        :param page: Page of results to return, starting from 0. The next page
+            is given in `message["next-page"]`, which is `None` on the last page
+        :param limit: Number of results per page. Default: 20. Max: 1000
+        :rtype: dict
+
+        Usage::
+
+            from habanero import Crossref
+            cr = Crossref(mailto = "name@example.com")
+            cr.data_citations(object_id = "10.1037/t00742-000")
+            cr.data_citations(member_id = 78, limit = 5)
+            cr.data_citations(
+                from_created_date = "2026-01-20T00:00:00",
+                until_created_date = "2026-01-21T12:00:00",
+            )
+        """
+        params = {
+            "subject-id": _bare_doi(subject_id),
+            "object-id": _bare_doi(object_id),
+            "member-id": member_id,
+            "relation": relation,
+            "from-created-date": from_created_date,
+            "until-created-date": until_created_date,
+            "page": page,
+            "rows": limit,
+        }
+        params = {k: str(v) for k, v in params.items() if v is not None}
+        url = self.base_url.rstrip("/") + "/beta/datacitations"
+        try:
+            r = self._http.get(
+                url,
+                params=params,
+                headers=make_ua(self.mailto, self.ua_string),
+                timeout=self.timeout,
+            )
+        except httpx2.HTTPError as e:
+            raise RuntimeError(f"HTTP Exception for {url} - {e}") from e
+        if r.is_error:
+            # this endpoint reports errors in "reason", not "message"
+            reason = r.json().get("reason") if is_json(r) else None
+            raise RequestError(r.status_code, reason or r.reason_phrase)
+        check_json(r)
+        return r.json()
 
     def random_dois(self, sample: int = 10, **kwargs) -> list:
         """
